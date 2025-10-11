@@ -1,0 +1,28 @@
+var classunravel_1_1shadow_1_1shadowmap__generator =
+[
+    [ "shadowmap_generator", "classunravel_1_1shadow_1_1shadowmap__generator.html#ad981a3253f04b99a089c8445a5ff6a26", null ],
+    [ "~shadowmap_generator", "classunravel_1_1shadow_1_1shadowmap__generator.html#a3240720994d44d4085e4092621032f50", null ],
+    [ "already_updated", "classunravel_1_1shadow_1_1shadowmap__generator.html#aa56e10d326bf227cafa46172a5d9bff4", null ],
+    [ "deinit", "classunravel_1_1shadow_1_1shadowmap__generator.html#a055bf23f55f5675042df8290074abd3a", null ],
+    [ "deinit_textures", "classunravel_1_1shadow_1_1shadowmap__generator.html#a1ae3a47f088d718998a62bb346c4d5d7", null ],
+    [ "deinit_uniforms", "classunravel_1_1shadow_1_1shadowmap__generator.html#a9b16bb26f2cf96901e14517aca576927", null ],
+    [ "enable_adaptive_shadows", "classunravel_1_1shadow_1_1shadowmap__generator.html#ae9aaaad0dc0e622c860250e254d772d0", null ],
+    [ "generate_shadowmaps", "classunravel_1_1shadow_1_1shadowmap__generator.html#a21c5e728ef7f7b8336ea40c7e22dacf6", null ],
+    [ "get_adaptive_params", "classunravel_1_1shadow_1_1shadowmap__generator.html#a32e42382a51c0c7850738639e7515dd5", null ],
+    [ "get_altitude_scale_factor", "classunravel_1_1shadow_1_1shadowmap__generator.html#ad7ebbc237e870eb1c6b7883d0f9fb0d7", null ],
+    [ "get_csm_optimization_flags", "classunravel_1_1shadow_1_1shadowmap__generator.html#a1bf6164607738ed187f438c63c5ff689", null ],
+    [ "get_depth_render_program", "classunravel_1_1shadow_1_1shadowmap__generator.html#ab9d18bcf9fa29e7cc37c1cf041a447d0", null ],
+    [ "get_depth_type", "classunravel_1_1shadow_1_1shadowmap__generator.html#a41f905e755eb3a9c487acd1d8eed1fd4", null ],
+    [ "get_frustum_calculation_method", "classunravel_1_1shadow_1_1shadowmap__generator.html#a29ad0d98e6863c5a47d53d014e06068d", null ],
+    [ "get_max_altitude_boost", "classunravel_1_1shadow_1_1shadowmap__generator.html#a663dcfdac0c9952b81f78894a64acbfa", null ],
+    [ "get_min_altitude_boost", "classunravel_1_1shadow_1_1shadowmap__generator.html#a386514fcee1ec1678bae9b2732599b40", null ],
+    [ "get_rt_texture", "classunravel_1_1shadow_1_1shadowmap__generator.html#a54e7f069c6d5ffa39d4e03bd475a0a3b", null ],
+    [ "init", "classunravel_1_1shadow_1_1shadowmap__generator.html#a84263538f74afe5b0a06e89aadc6700b", null ],
+    [ "set_adaptive_params", "classunravel_1_1shadow_1_1shadowmap__generator.html#a0992ca5f1700104eb75cc34ca75c9d73", null ],
+    [ "set_altitude_boost_range", "classunravel_1_1shadow_1_1shadowmap__generator.html#a7027ce796662dd95776ecaa67717035a", null ],
+    [ "set_altitude_scale_factor", "classunravel_1_1shadow_1_1shadowmap__generator.html#ab70b91ae65d08b94fcc2b8af864c893a", null ],
+    [ "set_csm_optimization_flags", "classunravel_1_1shadow_1_1shadowmap__generator.html#a8bd86ab11f26c5c09ac8cffb89874b5e", null ],
+    [ "set_frustum_calculation_method", "classunravel_1_1shadow_1_1shadowmap__generator.html#abde04a3bcd7f8309d183d23cd8226838", null ],
+    [ "submit_uniforms", "classunravel_1_1shadow_1_1shadowmap__generator.html#a53f6b0994db031ac863c2a5de943b048", null ],
+    [ "update", "classunravel_1_1shadow_1_1shadowmap__generator.html#a775efd3cd08ecbae5d37473758d935bd", null ]
+];

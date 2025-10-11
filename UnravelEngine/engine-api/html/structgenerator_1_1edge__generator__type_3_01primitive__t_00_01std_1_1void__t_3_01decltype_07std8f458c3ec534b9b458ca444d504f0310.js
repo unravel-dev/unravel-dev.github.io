@@ -1,0 +1,4 @@
+var structgenerator_1_1edge__generator__type_3_01primitive__t_00_01std_1_1void__t_3_01decltype_07std8f458c3ec534b9b458ca444d504f0310 =
+[
+    [ "type", "structgenerator_1_1edge__generator__type_3_01primitive__t_00_01std_1_1void__t_3_01decltype_07std8f458c3ec534b9b458ca444d504f0310.html#ab4b27eb859f0120aac51c16bac45a6d7", null ]
+];

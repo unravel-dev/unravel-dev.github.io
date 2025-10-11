@@ -1,0 +1,25 @@
+var dir_f478d555252324e847550e81440d3a41 =
+[
+    [ "animation_panel", "dir_222be49cf376958da5b6740c6a7632a1.html", "dir_222be49cf376958da5b6740c6a7632a1" ],
+    [ "console_log_panel", "dir_eb5dc4f9459facdb9967dc3f8b64d540.html", "dir_eb5dc4f9459facdb9967dc3f8b64d540" ],
+    [ "content_browser_panel", "dir_895c17162f27c2406f635c8408309caa.html", "dir_895c17162f27c2406f635c8408309caa" ],
+    [ "deploy_panel", "dir_e6b6c69bd22665235abb0e7760cbd5ce.html", "dir_e6b6c69bd22665235abb0e7760cbd5ce" ],
+    [ "editor_settings_panel", "dir_12df6ec85021a085241529b0c2403e25.html", "dir_12df6ec85021a085241529b0c2403e25" ],
+    [ "footer_panel", "dir_997d4d6140f564cd4ac7e7f73821f2e5.html", "dir_997d4d6140f564cd4ac7e7f73821f2e5" ],
+    [ "game_panel", "dir_6a14c3db5b3ca91768b181fe1ed09194.html", "dir_6a14c3db5b3ca91768b181fe1ed09194" ],
+    [ "header_panel", "dir_e9ed70c5e39b567958acce96990fb9ba.html", "dir_e9ed70c5e39b567958acce96990fb9ba" ],
+    [ "hierarchy_panel", "dir_b70d016e5392e32545df5d99ee6a6401.html", "dir_b70d016e5392e32545df5d99ee6a6401" ],
+    [ "inspector_panel", "dir_83002aa61564eebb024d11ec558168ea.html", "dir_83002aa61564eebb024d11ec558168ea" ],
+    [ "project_settings_panel", "dir_bb49487ddd4785d99fc6541ade19691e.html", "dir_bb49487ddd4785d99fc6541ade19691e" ],
+    [ "scene_panel", "dir_ddc68cfc88884c41dbf13921c8fb0544.html", "dir_ddc68cfc88884c41dbf13921c8fb0544" ],
+    [ "statistics_panel", "dir_63e6661098a0bb2865a4ca2a8c960a37.html", "dir_63e6661098a0bb2865a4ca2a8c960a37" ],
+    [ "style_panel", "dir_80519a86907729772d98007a4abf5d3c.html", "dir_80519a86907729772d98007a4abf5d3c" ],
+    [ "undo_redo_panel", "dir_8a131955a6aec21b77f414a0da001fbe.html", "dir_8a131955a6aec21b77f414a0da001fbe" ],
+    [ "dockspace.cpp", "dockspace_8cpp.html", null ],
+    [ "dockspace.h", "dockspace_8h.html", "dockspace_8h" ],
+    [ "entity_panel.cpp", "entity__panel_8cpp.html", null ],
+    [ "entity_panel.h", "entity__panel_8h.html", "entity__panel_8h" ],
+    [ "panel.cpp", "panel_8cpp.html", null ],
+    [ "panel.h", "panel_8h.html", "panel_8h" ],
+    [ "panels_defs.h", "panels__defs_8h.html", "panels__defs_8h" ]
+];

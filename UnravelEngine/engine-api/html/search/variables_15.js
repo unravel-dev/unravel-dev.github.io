@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['w_0',['w',['../structinput_1_1zone.html#aa499ef7ca9167f3b9ba9fdadbdb5c354',1,'input::zone::w'],['../structinput_1_1input__reference__size.html#a63457de479141cd723f7a3116f1a8f15',1,'input::input_reference_size::w'],['../structmono_1_1managed__interface_1_1vector4.html#a6720412dbb5c33c6bd9ce21ba7ed5c3c',1,'mono::managed_interface::vector4::w'],['../structmono_1_1managed__interface_1_1quaternion.html#a64bffa0030e1016afe2c3e3abc0417df',1,'mono::managed_interface::quaternion::w']]],
+  ['wait_5fframes_1',['wait_frames',['../structunravel_1_1thumbnail__manager_1_1generator.html#a992ddf51ceab0129139eca202c5530b0',1,'unravel::thumbnail_manager::generator']]],
+  ['wantupdatemonitors_2',['WantUpdateMonitors',['../struct_im_gui___impl_o_s_p_p___data.html#a443a1ccc401df768760673c6541f5287',1,'ImGui_ImplOSPP_Data']]],
+  ['watchers_5f_3',['watchers_',['../classfs_1_1watcher.html#aaa0c3ae45a38731c4acb0ad72d16672b',1,'fs::watcher']]],
+  ['watching_5f_4',['watching_',['../classfs_1_1watcher.html#a6db2cbfb6cde0600d9d8be6a32974eb3',1,'fs::watcher']]],
+  ['wb_5',['wb',['../structunravel_1_1scratch__cache.html#a751dde537c40727061a3ac0f4c73160d',1,'unravel::scratch_cache']]],
+  ['weak_5fasset_6',['weak_asset',['../structasset__link.html#af147412e6744441af339741fd311c27c',1,'asset_link']]],
+  ['weight_7',['weight',['../structunravel_1_1skin__bind__data_1_1vertex__influence.html#aac0c657415865bea14b4509609bceddf',1,'unravel::skin_bind_data::vertex_influence']]],
+  ['weights_8',['weights',['../structunravel_1_1skin__bind__data_1_1vertex__data.html#adcb72433dd72a8fdd790efc088c86e24',1,'unravel::skin_bind_data::vertex_data']]],
+  ['weld_5fvertices_9',['weld_vertices',['../structunravel_1_1mesh__importer__meta_1_1model__meta.html#ade573e4b175e2a29fb8d4a2b6c2484d6',1,'unravel::mesh_importer_meta::model_meta']]],
+  ['white_5fglyph_10',['white_glyph',['../structgfx_1_1font__manager_1_1cached__font.html#a2ceb9689e38de538043a78b0b4cfc487',1,'gfx::font_manager::cached_font']]],
+  ['width_11',['width',['../structsize.html#a7bed016a142a5435d4f79caa7323f31a',1,'size::width'],['../structgfx_1_1clip__quad__def.html#a8fee770dc2feb26b290881a2ab67341a',1,'gfx::clip_quad_def::width'],['../structgfx_1_1_atlas_region.html#af012e471cafb15bd80f8f20bc1ee4156',1,'gfx::AtlasRegion::width'],['../structgfx_1_1glyph__info.html#aa69dc6d356bbbdad776f3f3bf0a4ad21',1,'gfx::glyph_info::width'],['../structgfx_1_1text__rectangle.html#aa7a0323294032cbb3d52c1f0baae2175',1,'gfx::text_rectangle::width'],['../structunravel_1_1frag__atom.html#af8c04352d6bac8c3c4dfc66bbdabd59e',1,'unravel::frag_atom::width'],['../structunravel_1_1wrapped__line.html#a787842479bae8d36d4557ff47c2e22d0',1,'unravel::wrapped_line::width'],['../structunravel_1_1settings_1_1resolution__settings_1_1resolution.html#a95fd9ac570689b875274541a23e94d36',1,'unravel::settings::resolution_settings::resolution::width']]],
+  ['window_12',['Window',['../struct_im_gui___impl_o_s_p_p___data.html#a42233c8db62ae2b4e161ac985d07fb26',1,'ImGui_ImplOSPP_Data::Window'],['../struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b',1,'ImGui_ImplOSPP_ViewportData::Window']]],
+  ['windowopacity_13',['WindowOpacity',['../struct_im_gui___impl_o_s_p_p___viewport_data.html#a727f6beeeab050e5afbe2b186e4e2ac9',1,'ImGui_ImplOSPP_ViewportData']]],
+  ['windowowned_14',['WindowOwned',['../struct_im_gui___impl_o_s_p_p___viewport_data.html#a6b248a0c16ae612713006d777f311f38',1,'ImGui_ImplOSPP_ViewportData']]],
+  ['windowshownatleastonce_15',['WindowShownAtLeastOnce',['../struct_im_gui___impl_o_s_p_p___viewport_data.html#a34fd375a65e70a1062fc537386b76ec2',1,'ImGui_ImplOSPP_ViewportData']]],
+  ['wireframe_5fselection_16',['wireframe_selection',['../structunravel_1_1editing__manager.html#a3cf3f4134a3c41e0444d8b504b76faa5',1,'unravel::editing_manager']]],
+  ['writing_17',['writing',['../namespaceunravel.html#a15ce120b64eeade36829348702b7ce8b',1,'unravel']]]
+];

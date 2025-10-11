@@ -1,0 +1,27 @@
+var classunravel_1_1imgui__panels =
+[
+    [ "imgui_panels", "classunravel_1_1imgui__panels.html#ae412abba270540774aa20f9b7cae31e7", null ],
+    [ "~imgui_panels", "classunravel_1_1imgui__panels.html#a3c99371ee4f4698ab6636586d4b67fc7", null ],
+    [ "add_external_drop_file", "classunravel_1_1imgui__panels.html#a21001c473d500aca0a9911a4643a9caf", null ],
+    [ "clear_external_drop_files", "classunravel_1_1imgui__panels.html#a7d479d0826372f24f027486dda05e519", null ],
+    [ "deinit", "classunravel_1_1imgui__panels.html#aa347ee6d17480e14662badf3a14a29e7", null ],
+    [ "get_animation_panel", "classunravel_1_1imgui__panels.html#ac03d48f189238c303a3e3fbde3393e1e", null ],
+    [ "get_console_log_panel", "classunravel_1_1imgui__panels.html#a8cb83de7829e6fd3c099cb3ff038090e", null ],
+    [ "get_deploy_panel", "classunravel_1_1imgui__panels.html#a8a2b133739fe6b1f3ddc2fd016b46d80", null ],
+    [ "get_editor_settings_panel", "classunravel_1_1imgui__panels.html#aa8cf1add228a88c9ea8c5b44ce08cb9c", null ],
+    [ "get_external_drop_files", "classunravel_1_1imgui__panels.html#a8f693dbd56d481d87cbf7a40e0b7a1fb", null ],
+    [ "get_external_drop_in_progress", "classunravel_1_1imgui__panels.html#a9c94106a2ad9a195177ae960b064b973", null ],
+    [ "get_external_drop_position", "classunravel_1_1imgui__panels.html#a2b8be1b38c5217ce01433d038e207fbc", null ],
+    [ "get_game_panel", "classunravel_1_1imgui__panels.html#a4b0f14c1331f508b365cfd5a76cc4235", null ],
+    [ "get_project_settings_panel", "classunravel_1_1imgui__panels.html#a2a2322b02a851f0e7b19961445c3183a", null ],
+    [ "get_scene_panel", "classunravel_1_1imgui__panels.html#a31a1ad6b65d4ed31f346ad203ff2cb96", null ],
+    [ "get_style_panel", "classunravel_1_1imgui__panels.html#ab952602115d314b2cf9ca82aa0fcb70f", null ],
+    [ "get_undo_redo_panel", "classunravel_1_1imgui__panels.html#afe80705ef3cb882e1cd5a7b18f4cb08a", null ],
+    [ "init", "classunravel_1_1imgui__panels.html#ac7ff700b7d362309aaf91e0d5e0ac447", null ],
+    [ "on_frame_before_render", "classunravel_1_1imgui__panels.html#a5ccdcdb2d8398ef0b839f34a2bcea77f", null ],
+    [ "on_frame_render", "classunravel_1_1imgui__panels.html#a414c0bb68cd0c23546f3f9c1ac01590f", null ],
+    [ "on_frame_ui_render", "classunravel_1_1imgui__panels.html#a2658daffb80d47055299347bc0f8bb40", null ],
+    [ "on_frame_update", "classunravel_1_1imgui__panels.html#a41147a8fd7e682389a405ef987634172", null ],
+    [ "set_external_drop_in_progress", "classunravel_1_1imgui__panels.html#a124177fb1f0c2da44faf5fa483ec0a2c", null ],
+    [ "set_external_drop_position", "classunravel_1_1imgui__panels.html#ab9711b0f33cb381b13d66e87d69726cc", null ]
+];

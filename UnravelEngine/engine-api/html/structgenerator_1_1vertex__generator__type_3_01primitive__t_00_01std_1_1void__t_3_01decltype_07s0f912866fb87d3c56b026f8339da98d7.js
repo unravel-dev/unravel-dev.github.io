@@ -1,0 +1,4 @@
+var structgenerator_1_1vertex__generator__type_3_01primitive__t_00_01std_1_1void__t_3_01decltype_07s0f912866fb87d3c56b026f8339da98d7 =
+[
+    [ "type", "structgenerator_1_1vertex__generator__type_3_01primitive__t_00_01std_1_1void__t_3_01decltype_07s0f912866fb87d3c56b026f8339da98d7.html#ad9718bfc4a476777282d252573d352fe", null ]
+];

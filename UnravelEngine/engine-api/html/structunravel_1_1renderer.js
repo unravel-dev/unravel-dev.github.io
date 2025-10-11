@@ -1,0 +1,27 @@
+var structunravel_1_1renderer =
+[
+    [ "render_window_t", "structunravel_1_1renderer.html#a3dce3e95c6c9ec32fe1cb6cc5e72e650", null ],
+    [ "renderer", "structunravel_1_1renderer.html#ab18be4760888a5d9357ef78cfb5ad37e", null ],
+    [ "~renderer", "structunravel_1_1renderer.html#a12afbaa772166779288d2d89e8c98518", null ],
+    [ "close_main_window", "structunravel_1_1renderer.html#acdd1e212a514760d9519b888f2371f70", null ],
+    [ "create_window_for_display", "structunravel_1_1renderer.html#ae1d9a22e4279c357932e8b39750095b9", null ],
+    [ "deinit", "structunravel_1_1renderer.html#a8b049c325bb984fac2fa050da75b6da3", null ],
+    [ "frame_begin", "structunravel_1_1renderer.html#a0a3c67bde7aa15ebb96f6e52f0390cd5", null ],
+    [ "frame_end", "structunravel_1_1renderer.html#a904ae8cef52766ca7c6263ee93374762", null ],
+    [ "get_main_window", "structunravel_1_1renderer.html#ae9d4feedeee60e586fc1ceb4d1d9921b", null ],
+    [ "get_renderer_type", "structunravel_1_1renderer.html#a38ec5a9fce7e63d02f9eddd1d629ffa2", null ],
+    [ "get_reset_flags", "structunravel_1_1renderer.html#a380436cc42539a89f20a518c491e3c9f", null ],
+    [ "get_reset_flags", "structunravel_1_1renderer.html#a0866a1a7a9b8403cfcfec0af8841ed81", null ],
+    [ "get_vsync", "structunravel_1_1renderer.html#a92163a207c17c456006d7c2d16a16868", null ],
+    [ "init", "structunravel_1_1renderer.html#ab4af621fc6f67d355f4fab1ffb014744", null ],
+    [ "init_backend", "structunravel_1_1renderer.html#a46b4c5a95d1beb2d51147d6f8ead4090", null ],
+    [ "on_os_event", "structunravel_1_1renderer.html#a859b251ff8b691b0bc90834f721c1a6a", null ],
+    [ "request_screenshot", "structunravel_1_1renderer.html#ab02faa5ba13213c3190bf7109d759853", null ],
+    [ "set_main_window", "structunravel_1_1renderer.html#ad88e122e4d328612322219bf387507d7", null ],
+    [ "set_vsync", "structunravel_1_1renderer.html#ab5ef27edad61693eb16cba6d0d0b541c", null ],
+    [ "init_window_", "structunravel_1_1renderer.html#a4d4529f8084110861a39810b269a4558", null ],
+    [ "render_window_", "structunravel_1_1renderer.html#a4bdef16f3716d1eb193315312cb81739", null ],
+    [ "request_screenshot_", "structunravel_1_1renderer.html#a0a0c33017b101a26963c0e7bedc9f423", null ],
+    [ "reset_flags_", "structunravel_1_1renderer.html#a40f30f07afb88ddddbdd2fcb7836d8e0", null ],
+    [ "sentinel_", "structunravel_1_1renderer.html#a97c2416e440ccb380befea8dc1503c5a", null ]
+];

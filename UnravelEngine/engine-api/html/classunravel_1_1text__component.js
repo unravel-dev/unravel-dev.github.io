@@ -1,0 +1,48 @@
+var classunravel_1_1text__component =
+[
+    [ "buffer_type", "classunravel_1_1text__component.html#a65ab1d004cf2e6ce62358acb6fc5254a", [
+      [ "static_buffer", "classunravel_1_1text__component.html#a65ab1d004cf2e6ce62358acb6fc5254aac62e58235f5137c7bd0b7201b7cd404a", null ],
+      [ "dynamic_buffer", "classunravel_1_1text__component.html#a65ab1d004cf2e6ce62358acb6fc5254aaba5cdee56530f6217d5fd6bf0e3a4a85", null ],
+      [ "transient_buffer", "classunravel_1_1text__component.html#a65ab1d004cf2e6ce62358acb6fc5254aa00329229d59dafd5d12f320a40116523", null ]
+    ] ],
+    [ "overflow_type", "classunravel_1_1text__component.html#aa74a23c417668235c93902ec885b780e", [
+      [ "none", "classunravel_1_1text__component.html#aa74a23c417668235c93902ec885b780ea334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
+      [ "word", "classunravel_1_1text__component.html#aa74a23c417668235c93902ec885b780eac47d187067c6cf953245f128b5fde62a", null ],
+      [ "grapheme", "classunravel_1_1text__component.html#aa74a23c417668235c93902ec885b780eac4de80fbaef2115445ca304eef40f45f", null ]
+    ] ],
+    [ "can_be_rendered", "classunravel_1_1text__component.html#ae9214ee252f87689aa1b541b09e08b37", null ],
+    [ "get_alignment", "classunravel_1_1text__component.html#a6963debfb2fdc6117ffc6824061c390c", null ],
+    [ "get_apply_kerning", "classunravel_1_1text__component.html#a0aa78ed404b0629b5bb50ee5fb5deac7", null ],
+    [ "get_area", "classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14", null ],
+    [ "get_auto_size", "classunravel_1_1text__component.html#a22b7f68d2e69763b5c445d06f98fd4ff", null ],
+    [ "get_auto_size_range", "classunravel_1_1text__component.html#a2779d61db35741b87f7b5d0719d31c70", null ],
+    [ "get_bounds", "classunravel_1_1text__component.html#a4c8bd43d5e124d9fa9566bc9e67fc1a2", null ],
+    [ "get_buffer_type", "classunravel_1_1text__component.html#ae06ffb0af52cbb70bc99b5ea854d189b", null ],
+    [ "get_font", "classunravel_1_1text__component.html#a59cd821d15016657afaa96b3357bd6c6", null ],
+    [ "get_font_size", "classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b", null ],
+    [ "get_is_rich_text", "classunravel_1_1text__component.html#a80f25dbbe035243e661791b75bcdd0e0", null ],
+    [ "get_lines", "classunravel_1_1text__component.html#a528927805547d8ff64891de617f8c840", null ],
+    [ "get_overflow_type", "classunravel_1_1text__component.html#aab1dee14a80c6ffad4c80d244aff72ed", null ],
+    [ "get_render_area", "classunravel_1_1text__component.html#a835233c3cb04da7bdc58844997345438", null ],
+    [ "get_render_bounds", "classunravel_1_1text__component.html#aaa1f059c463d3d98c2dce01a4ef53326", null ],
+    [ "get_render_buffers_count", "classunravel_1_1text__component.html#ab3a4ce835ca5892352df33c5e6adbc7d", null ],
+    [ "get_render_font_size", "classunravel_1_1text__component.html#a1454fe58ebc02f6e28bfd686691650ff", null ],
+    [ "get_scaled_font", "classunravel_1_1text__component.html#a8ceda95c9cdd10120b9b4a0229e79ea8", null ],
+    [ "get_style", "classunravel_1_1text__component.html#a0955260a7ea6efb8de0a68f8ff06d57e", null ],
+    [ "get_text", "classunravel_1_1text__component.html#a6577b4e8555a6f87e85c665c09384036", null ],
+    [ "meters_to_px", "classunravel_1_1text__component.html#a8100e079119c76721b8d469d6dceb984", null ],
+    [ "px_to_meters", "classunravel_1_1text__component.html#a9335ee1d3401579a98b7a941f352bb76", null ],
+    [ "set_alignment", "classunravel_1_1text__component.html#a1052ad0414cbfb413b8abccf92425df4", null ],
+    [ "set_apply_kerning", "classunravel_1_1text__component.html#af038a987c9bd0c2ce5e15213b4321ac5", null ],
+    [ "set_area", "classunravel_1_1text__component.html#a5fc28114993bd918c314aa4dbe2e47b7", null ],
+    [ "set_auto_size", "classunravel_1_1text__component.html#aa01243a8f142590be99bc1da78dba050", null ],
+    [ "set_auto_size_range", "classunravel_1_1text__component.html#ab2c6d07c86f18f891d5a49a6c6664fe3", null ],
+    [ "set_buffer_type", "classunravel_1_1text__component.html#a0135811e97beb1715be54da6e4baacce", null ],
+    [ "set_font", "classunravel_1_1text__component.html#a21c6f4b6402adfe37e04f892033a5bce", null ],
+    [ "set_font_size", "classunravel_1_1text__component.html#aa3565881cef269de5996b9f305e87fee", null ],
+    [ "set_is_rich_text", "classunravel_1_1text__component.html#a6162f44a38da3984b263dbc54a2a3df3", null ],
+    [ "set_overflow_type", "classunravel_1_1text__component.html#a6928491830597c1f1c063cd5486c2f2a", null ],
+    [ "set_style", "classunravel_1_1text__component.html#aeffca672d7f3780f27a23cf3c1ccd8d8", null ],
+    [ "set_text", "classunravel_1_1text__component.html#a87fce3f9bc0dc9b28d0f77d8b28a98cf", null ],
+    [ "submit", "classunravel_1_1text__component.html#a9d7f45afc94b038b7fecb821562bd6eb", null ]
+];

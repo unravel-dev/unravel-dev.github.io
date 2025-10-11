@@ -1,0 +1,26 @@
+var namespaceunravel_1_1shadow =
+[
+    [ "adaptive_shadow_params", "structunravel_1_1shadow_1_1adaptive__shadow__params.html", "structunravel_1_1shadow_1_1adaptive__shadow__params" ],
+    [ "ClearValues", "structunravel_1_1shadow_1_1_clear_values.html", "structunravel_1_1shadow_1_1_clear_values" ],
+    [ "csm_optimization_flags", "structunravel_1_1shadow_1_1csm__optimization__flags.html", "structunravel_1_1shadow_1_1csm__optimization__flags" ],
+    [ "DepthImpl", "structunravel_1_1shadow_1_1_depth_impl.html", "structunravel_1_1shadow_1_1_depth_impl" ],
+    [ "frustum_calculation_method", "structunravel_1_1shadow_1_1frustum__calculation__method.html", "structunravel_1_1shadow_1_1frustum__calculation__method" ],
+    [ "Light", "structunravel_1_1shadow_1_1_light.html", "structunravel_1_1shadow_1_1_light" ],
+    [ "LightType", "structunravel_1_1shadow_1_1_light_type.html", "structunravel_1_1shadow_1_1_light_type" ],
+    [ "PackDepth", "structunravel_1_1shadow_1_1_pack_depth.html", "structunravel_1_1shadow_1_1_pack_depth" ],
+    [ "PosColorTexCoord0Vertex", "structunravel_1_1shadow_1_1_pos_color_tex_coord0_vertex.html", "structunravel_1_1shadow_1_1_pos_color_tex_coord0_vertex" ],
+    [ "PosNormalTexcoordVertex", "structunravel_1_1shadow_1_1_pos_normal_texcoord_vertex.html", "structunravel_1_1shadow_1_1_pos_normal_texcoord_vertex" ],
+    [ "PosVertex", "structunravel_1_1shadow_1_1_pos_vertex.html", "structunravel_1_1shadow_1_1_pos_vertex" ],
+    [ "Programs", "structunravel_1_1shadow_1_1_programs.html", "structunravel_1_1shadow_1_1_programs" ],
+    [ "ProjType", "structunravel_1_1shadow_1_1_proj_type.html", "structunravel_1_1shadow_1_1_proj_type" ],
+    [ "RenderState", "structunravel_1_1shadow_1_1_render_state.html", "structunravel_1_1shadow_1_1_render_state" ],
+    [ "SceneSettings", "structunravel_1_1shadow_1_1_scene_settings.html", "structunravel_1_1shadow_1_1_scene_settings" ],
+    [ "shadowmap_generator", "classunravel_1_1shadow_1_1shadowmap__generator.html", "classunravel_1_1shadow_1_1shadowmap__generator" ],
+    [ "ShadowMapRenderTargets", "structunravel_1_1shadow_1_1_shadow_map_render_targets.html", "structunravel_1_1shadow_1_1_shadow_map_render_targets" ],
+    [ "ShadowMapSettings", "structunravel_1_1shadow_1_1_shadow_map_settings.html", "structunravel_1_1shadow_1_1_shadow_map_settings" ],
+    [ "SmImpl", "structunravel_1_1shadow_1_1_sm_impl.html", "structunravel_1_1shadow_1_1_sm_impl" ],
+    [ "SmType", "structunravel_1_1shadow_1_1_sm_type.html", "structunravel_1_1shadow_1_1_sm_type" ],
+    [ "TetrahedronFaces", "structunravel_1_1shadow_1_1_tetrahedron_faces.html", "structunravel_1_1shadow_1_1_tetrahedron_faces" ],
+    [ "Uniforms", "structunravel_1_1shadow_1_1_uniforms.html", "structunravel_1_1shadow_1_1_uniforms" ],
+    [ "shadow_map_models_t", "namespaceunravel_1_1shadow.html#a2874fe5cdd35210084393fb17d631be1", null ]
+];
