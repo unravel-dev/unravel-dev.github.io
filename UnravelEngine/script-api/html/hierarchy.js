@@ -43,6 +43,7 @@ var hierarchy =
       [ "Unravel.Core.TooltipAttribute", "class_unravel_1_1_core_1_1_tooltip_attribute.html", null ]
     ] ],
     [ "Unravel.Core.FixedUpdateInfo", "struct_unravel_1_1_core_1_1_fixed_update_info.html", null ],
+    [ "Unravel.Core.GCMonitor", "class_unravel_1_1_core_1_1_g_c_monitor.html", null ],
     [ "IEquatable", null, [
       [ "Bounds", "struct_bounds.html", null ],
       [ "Color", "struct_color.html", null ],
@@ -59,6 +60,7 @@ var hierarchy =
           [ "Unravel.Core.IdComponent", "class_unravel_1_1_core_1_1_id_component.html", null ],
           [ "Unravel.Core.LightComponent", "class_unravel_1_1_core_1_1_light_component.html", null ],
           [ "Unravel.Core.ModelComponent", "class_unravel_1_1_core_1_1_model_component.html", null ],
+          [ "Unravel.Core.ParticleEmitterComponent", "class_unravel_1_1_core_1_1_particle_emitter_component.html", null ],
           [ "Unravel.Core.PhysicsComponent", "class_unravel_1_1_core_1_1_physics_component.html", null ],
           [ "Unravel.Core.ReflectionProbeComponent", "class_unravel_1_1_core_1_1_reflection_probe_component.html", null ],
           [ "Unravel.Core.ScriptComponent", "class_unravel_1_1_core_1_1_script_component.html", [

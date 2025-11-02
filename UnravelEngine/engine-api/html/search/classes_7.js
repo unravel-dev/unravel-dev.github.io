@@ -22,7 +22,12 @@ var searchData=
   ['gizmos_5frenderer_19',['gizmos_renderer',['../classunravel_1_1gizmos__renderer.html',1,'unravel']]],
   ['glyph_5finfo_20',['glyph_info',['../structgfx_1_1glyph__info.html',1,'gfx']]],
   ['gpu_5fprogram_21',['gpu_program',['../classunravel_1_1gpu__program.html',1,'unravel']]],
-  ['graphics_5fsettings_22',['graphics_settings',['../structunravel_1_1settings_1_1graphics__settings.html',1,'unravel::settings']]],
-  ['grid_23',['grid',['../structunravel_1_1editing__manager_1_1grid.html',1,'unravel::editing_manager']]],
-  ['grid_5fshape_5ft_24',['grid_shape_t',['../classgenerator_1_1grid__shape__t.html',1,'generator']]]
+  ['gradient_22',['gradient',['../classmath_1_1gradient.html',1,'math']]],
+  ['gradient_3c_20float_20_3e_23',['gradient&lt; float &gt;',['../classmath_1_1gradient.html',1,'math']]],
+  ['gradient_3c_20math_3a_3acolor_20_3e_24',['gradient&lt; math::color &gt;',['../classmath_1_1gradient.html',1,'math']]],
+  ['gradient_3c_20range_20_3e_25',['gradient&lt; range &gt;',['../classmath_1_1gradient.html',1,'math']]],
+  ['gradient_5fpoint_26',['gradient_point',['../structmath_1_1gradient__point.html',1,'math']]],
+  ['graphics_5fsettings_27',['graphics_settings',['../structunravel_1_1settings_1_1graphics__settings.html',1,'unravel::settings']]],
+  ['grid_28',['grid',['../structunravel_1_1editing__manager_1_1grid.html',1,'unravel::editing_manager']]],
+  ['grid_5fshape_5ft_29',['grid_shape_t',['../classgenerator_1_1grid__shape__t.html',1,'generator']]]
 ];

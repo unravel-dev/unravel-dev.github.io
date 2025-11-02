@@ -6,13 +6,14 @@ var searchData=
   ['capslock_3',['Capslock',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab3e38568360f5f7ad2e74bc44328fd11',1,'Unravel::Core']]],
   ['capture_4',['Capture',['../namespace_unravel_1_1_core.html#adb276b979c8a2b883b67480b5a3506ffa44a50f07b4bdc57740901280f9eddaf5',1,'Unravel::Core']]],
   ['center_5',['Center',['../namespace_unravel_1_1_core.html#a11518538e717ba1d9bb9167adf9c1797a4f1f6016fc9f3f2353c0cc7c67b292bd',1,'Unravel::Core']]],
-  ['clear_6',['Clear',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fadc30bc0c7914db5918da4263fce93ad2',1,'Unravel::Core']]],
-  ['clearagain_7',['ClearAgain',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa5672990189fb1faa95099b89e58c4f42',1,'Unravel::Core']]],
-  ['comma_8',['Comma',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa58be47db9455679e6a44df2eff9c9fa6',1,'Unravel::Core']]],
-  ['copy_9',['Copy',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa5fb63579fc981698f97d55bfecb213ea',1,'Unravel::Core']]],
-  ['count_10',['Count',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fae93f994f01c537c4e2f7d8528c3eb5e9',1,'Unravel::Core']]],
-  ['crsel_11',['CrSel',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa95498e386a9b635e064bcd80809e5b79',1,'Unravel::Core']]],
-  ['currencysubunit_12',['CurrencySubUnit',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa107911dccb643f7786f995f63d20bdd0',1,'Unravel::Core']]],
-  ['currencyunit_13',['CurrencyUnit',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa9ddec94874b3a6a6e40a38a5283a7ab6',1,'Unravel::Core']]],
-  ['cut_14',['Cut',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172faeb334dca00e390e0d3ebf52d205807d7',1,'Unravel::Core']]]
+  ['circle_6',['Circle',['../namespace_unravel_1_1_core.html#a1ba72ba74bd4d7af950f767128cf10a6a30954d90085f6eaaf5817917fc5fecb3',1,'Unravel::Core']]],
+  ['clear_7',['Clear',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fadc30bc0c7914db5918da4263fce93ad2',1,'Unravel::Core']]],
+  ['clearagain_8',['ClearAgain',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa5672990189fb1faa95099b89e58c4f42',1,'Unravel::Core']]],
+  ['comma_9',['Comma',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa58be47db9455679e6a44df2eff9c9fa6',1,'Unravel::Core']]],
+  ['copy_10',['Copy',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa5fb63579fc981698f97d55bfecb213ea',1,'Unravel::Core']]],
+  ['count_11',['Count',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fae93f994f01c537c4e2f7d8528c3eb5e9',1,'Unravel::Core']]],
+  ['crsel_12',['CrSel',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa95498e386a9b635e064bcd80809e5b79',1,'Unravel::Core']]],
+  ['currencysubunit_13',['CurrencySubUnit',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa107911dccb643f7786f995f63d20bdd0',1,'Unravel::Core']]],
+  ['currencyunit_14',['CurrencyUnit',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa9ddec94874b3a6a6e40a38a5283a7ab6',1,'Unravel::Core']]],
+  ['cut_15',['Cut',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172faeb334dca00e390e0d3ebf52d205807d7',1,'Unravel::Core']]]
 ];

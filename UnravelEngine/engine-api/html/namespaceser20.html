@@ -389,6 +389,15 @@ requires (std::is_arithmetic_v&lt;T&gt;)</td></tr>
 <tr class="memitem:a7658122a2c1d544a39d8789656d7a42e" id="r_a7658122a2c1d544a39d8789656d7a42e"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
 <tr class="memitem:a7658122a2c1d544a39d8789656d7a42e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7658122a2c1d544a39d8789656d7a42e">SERIALIZE_FUNCTION_NAME</a> (Archive &amp;ar, <a class="el" href="structmath_1_1color.html">math::color</a> &amp;obj)</td></tr>
 <tr class="separator:a7658122a2c1d544a39d8789656d7a42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329be23b7ea5f7bb47ca464ce80d8495" id="r_a329be23b7ea5f7bb47ca464ce80d8495"><td class="memTemplParams" colspan="2">template&lt;typename Archive , typename T &gt; </td></tr>
+<tr class="memitem:a329be23b7ea5f7bb47ca464ce80d8495"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a329be23b7ea5f7bb47ca464ce80d8495">SERIALIZE_FUNCTION_NAME</a> (Archive &amp;ar, <a class="el" href="structmath_1_1gradient__point.html">math::gradient_point</a>&lt; T &gt; &amp;obj)</td></tr>
+<tr class="separator:a329be23b7ea5f7bb47ca464ce80d8495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c771bd195b67367a75fff02f3984f0" id="r_a61c771bd195b67367a75fff02f3984f0"><td class="memTemplParams" colspan="2">template&lt;typename Archive , typename T &gt; </td></tr>
+<tr class="memitem:a61c771bd195b67367a75fff02f3984f0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a61c771bd195b67367a75fff02f3984f0">SAVE_FUNCTION_NAME</a> (Archive &amp;ar, const <a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt; T &gt; &amp;obj)</td></tr>
+<tr class="separator:a61c771bd195b67367a75fff02f3984f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9032f988d39d84caafc1da9db9f7e71c" id="r_a9032f988d39d84caafc1da9db9f7e71c"><td class="memTemplParams" colspan="2">template&lt;typename Archive , typename T &gt; </td></tr>
+<tr class="memitem:a9032f988d39d84caafc1da9db9f7e71c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9032f988d39d84caafc1da9db9f7e71c">LOAD_FUNCTION_NAME</a> (Archive &amp;ar, <a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt; T &gt; &amp;obj)</td></tr>
+<tr class="separator:a9032f988d39d84caafc1da9db9f7e71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeac96648260bf9c23ea7fa874850260e" id="r_aeac96648260bf9c23ea7fa874850260e"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
 <tr class="memitem:aeac96648260bf9c23ea7fa874850260e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aeac96648260bf9c23ea7fa874850260e">save_entity_id</a> (Archive &amp;ar, const entt::const_handle &amp;obj)</td></tr>
 <tr class="separator:aeac96648260bf9c23ea7fa874850260e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1280,7 +1289,7 @@ template&lt;typename Archive &gt; </div>
 </div>
 </div>
 <a id="ada45aeff61577d9a28b5571259d315bb" name="ada45aeff61577d9a28b5571259d315bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada45aeff61577d9a28b5571259d315bb">&#9670;&#160;</a></span>LOAD_FUNCTION_NAME()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ada45aeff61577d9a28b5571259d315bb">&#9670;&#160;</a></span>LOAD_FUNCTION_NAME() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1309,6 +1318,39 @@ template&lt;typename Archive , typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="asset__handle_8hpp_source.html#l00021">21</a> of file <a class="el" href="asset__handle_8hpp_source.html">asset_handle.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9032f988d39d84caafc1da9db9f7e71c" name="a9032f988d39d84caafc1da9db9f7e71c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9032f988d39d84caafc1da9db9f7e71c">&#9670;&#160;</a></span>LOAD_FUNCTION_NAME() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Archive , typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ser20::LOAD_FUNCTION_NAME </td>
+          <td>(</td>
+          <td class="paramtype">Archive &amp;</td>          <td class="paramname"><span class="paramname"><em>ar</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00058">58</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
 
 </div>
 </div>
@@ -2263,7 +2305,7 @@ template&lt;typename Archive &gt; </div>
 </div>
 </div>
 <a id="a7a3580405e3bc2df161e43c49a19027c" name="a7a3580405e3bc2df161e43c49a19027c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a3580405e3bc2df161e43c49a19027c">&#9670;&#160;</a></span>SAVE_FUNCTION_NAME()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3580405e3bc2df161e43c49a19027c">&#9670;&#160;</a></span>SAVE_FUNCTION_NAME() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2292,6 +2334,39 @@ template&lt;typename Archive , typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="asset__handle_8hpp_source.html#l00015">15</a> of file <a class="el" href="asset__handle_8hpp_source.html">asset_handle.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a61c771bd195b67367a75fff02f3984f0" name="a61c771bd195b67367a75fff02f3984f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c771bd195b67367a75fff02f3984f0">&#9670;&#160;</a></span>SAVE_FUNCTION_NAME() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Archive , typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ser20::SAVE_FUNCTION_NAME </td>
+          <td>(</td>
+          <td class="paramtype">Archive &amp;</td>          <td class="paramname"><span class="paramname"><em>ar</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00052">52</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
 
 </div>
 </div>
@@ -3011,7 +3086,7 @@ template&lt;class Archive &gt; </div>
 </div>
 </div>
 <a id="a26b13cf4c69d3120e2ee968961d8cbc5" name="a26b13cf4c69d3120e2ee968961d8cbc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26b13cf4c69d3120e2ee968961d8cbc5">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[1/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b13cf4c69d3120e2ee968961d8cbc5">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[1/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3044,7 +3119,7 @@ template&lt;typename Archive &gt; </div>
 </div>
 </div>
 <a id="a7658122a2c1d544a39d8789656d7a42e" name="a7658122a2c1d544a39d8789656d7a42e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7658122a2c1d544a39d8789656d7a42e">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[2/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7658122a2c1d544a39d8789656d7a42e">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[2/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3072,12 +3147,45 @@ template&lt;typename Archive &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00033">33</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00034">34</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a329be23b7ea5f7bb47ca464ce80d8495" name="a329be23b7ea5f7bb47ca464ce80d8495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329be23b7ea5f7bb47ca464ce80d8495">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[3/21]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Archive , typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ser20::SERIALIZE_FUNCTION_NAME </td>
+          <td>(</td>
+          <td class="paramtype">Archive &amp;</td>          <td class="paramname"><span class="paramname"><em>ar</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmath_1_1gradient__point.html">math::gradient_point</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00044">44</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a2f82d4372242b5a5a9109023ce27ba7e" name="a2f82d4372242b5a5a9109023ce27ba7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f82d4372242b5a5a9109023ce27ba7e">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[3/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f82d4372242b5a5a9109023ce27ba7e">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[4/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3110,7 +3218,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="aa3197673f110850d70caba0862f0bb48" name="aa3197673f110850d70caba0862f0bb48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3197673f110850d70caba0862f0bb48">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[4/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3197673f110850d70caba0862f0bb48">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[5/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3143,7 +3251,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="afb86bbc07106d0870314dc874ef1b5ce" name="afb86bbc07106d0870314dc874ef1b5ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb86bbc07106d0870314dc874ef1b5ce">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[5/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afb86bbc07106d0870314dc874ef1b5ce">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[6/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3176,7 +3284,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="a2ee72a39aded77cf7d5e8e1976d9a1fe" name="a2ee72a39aded77cf7d5e8e1976d9a1fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ee72a39aded77cf7d5e8e1976d9a1fe">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[6/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee72a39aded77cf7d5e8e1976d9a1fe">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[7/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3209,7 +3317,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="aa37292fabde85bc232135aad39d71972" name="aa37292fabde85bc232135aad39d71972"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa37292fabde85bc232135aad39d71972">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[7/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37292fabde85bc232135aad39d71972">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[8/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3242,7 +3350,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="a102c322a5c1ff190509c973639879c81" name="a102c322a5c1ff190509c973639879c81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a102c322a5c1ff190509c973639879c81">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[8/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a102c322a5c1ff190509c973639879c81">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[9/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3275,7 +3383,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="af2efb5c8bfe748c6cced0e377e2b50d4" name="af2efb5c8bfe748c6cced0e377e2b50d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2efb5c8bfe748c6cced0e377e2b50d4">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[9/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2efb5c8bfe748c6cced0e377e2b50d4">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[10/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3308,7 +3416,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="a6f0ff8063ecec48a60a73da9c7974738" name="a6f0ff8063ecec48a60a73da9c7974738"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f0ff8063ecec48a60a73da9c7974738">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[10/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0ff8063ecec48a60a73da9c7974738">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[11/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3341,7 +3449,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="a0d1730f69a81acd09cd8051e3bcefa3e" name="a0d1730f69a81acd09cd8051e3bcefa3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d1730f69a81acd09cd8051e3bcefa3e">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[11/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d1730f69a81acd09cd8051e3bcefa3e">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[12/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3374,7 +3482,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="a31f1dd6b1cf335978731d637cf9d4b12" name="a31f1dd6b1cf335978731d637cf9d4b12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31f1dd6b1cf335978731d637cf9d4b12">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[12/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f1dd6b1cf335978731d637cf9d4b12">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[13/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3407,7 +3515,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="a280cf904538b26933b779e10433b0206" name="a280cf904538b26933b779e10433b0206"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a280cf904538b26933b779e10433b0206">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[13/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a280cf904538b26933b779e10433b0206">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[14/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3440,7 +3548,7 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </div>
 </div>
 <a id="a3c3af72fb06658857ffd2b8d22191baf" name="a3c3af72fb06658857ffd2b8d22191baf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c3af72fb06658857ffd2b8d22191baf">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[14/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3af72fb06658857ffd2b8d22191baf">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[15/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3468,12 +3576,12 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00009">9</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00010">10</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a48b79df6eab980aaf8b9107980e05b88" name="a48b79df6eab980aaf8b9107980e05b88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48b79df6eab980aaf8b9107980e05b88">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[15/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a48b79df6eab980aaf8b9107980e05b88">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[16/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3501,12 +3609,12 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00016">16</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00017">17</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
 
 </div>
 </div>
 <a id="af995f45b4125818a409f4bfe1c94873d" name="af995f45b4125818a409f4bfe1c94873d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af995f45b4125818a409f4bfe1c94873d">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[16/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af995f45b4125818a409f4bfe1c94873d">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[17/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3534,12 +3642,12 @@ template&lt;typename Archive , typename T , math::qualifier P&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00024">24</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html#l00025">25</a> of file <a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">vector.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a83767525ab6c2f6c5821499a598205e0" name="a83767525ab6c2f6c5821499a598205e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83767525ab6c2f6c5821499a598205e0">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[17/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83767525ab6c2f6c5821499a598205e0">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[18/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3572,7 +3680,7 @@ template&lt;typename Archive , typename T &gt; </div>
 </div>
 </div>
 <a id="a52486710c01eb076abd21641bd882089" name="a52486710c01eb076abd21641bd882089"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52486710c01eb076abd21641bd882089">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[18/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a52486710c01eb076abd21641bd882089">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[19/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3605,7 +3713,7 @@ template&lt;typename Archive , typename T &gt; </div>
 </div>
 </div>
 <a id="a33cdf413da6ef0993506afbdbb0707e5" name="a33cdf413da6ef0993506afbdbb0707e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33cdf413da6ef0993506afbdbb0707e5">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[19/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a33cdf413da6ef0993506afbdbb0707e5">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[20/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3638,7 +3746,7 @@ template&lt;typename Archive , typename T &gt; </div>
 </div>
 </div>
 <a id="a8e66bb95cdc9323331c34f3edda14642" name="a8e66bb95cdc9323331c34f3edda14642"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e66bb95cdc9323331c34f3edda14642">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[20/20]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e66bb95cdc9323331c34f3edda14642">&#9670;&#160;</a></span>SERIALIZE_FUNCTION_NAME() <span class="overload">[21/21]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

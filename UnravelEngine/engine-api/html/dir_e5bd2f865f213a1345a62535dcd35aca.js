@@ -21,6 +21,8 @@ var dir_e5bd2f865f213a1345a62535dcd35aca =
     [ "light_component.hpp", "light__component_8hpp.html", "light__component_8hpp" ],
     [ "model_component.cpp", "meta_2ecs_2components_2model__component_8cpp.html", "meta_2ecs_2components_2model__component_8cpp" ],
     [ "model_component.hpp", "model__component_8hpp.html", "model__component_8hpp" ],
+    [ "particle_emitter_component.cpp", "meta_2ecs_2components_2particle__emitter__component_8cpp.html", "meta_2ecs_2components_2particle__emitter__component_8cpp" ],
+    [ "particle_emitter_component.hpp", "particle__emitter__component_8hpp.html", "particle__emitter__component_8hpp" ],
     [ "physics_component.cpp", "meta_2ecs_2components_2physics__component_8cpp.html", "meta_2ecs_2components_2physics__component_8cpp" ],
     [ "physics_component.hpp", "physics__component_8hpp.html", "physics__component_8hpp" ],
     [ "prefab_component.cpp", "meta_2ecs_2components_2prefab__component_8cpp.html", "meta_2ecs_2components_2prefab__component_8cpp" ],

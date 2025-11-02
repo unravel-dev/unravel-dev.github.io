@@ -2,6 +2,7 @@ var namespace_im_gui =
 [
     [ "Font", "struct_im_gui_1_1_font.html", "struct_im_gui_1_1_font" ],
     [ "ImTexture", "union_im_gui_1_1_im_texture.html", "union_im_gui_1_1_im_texture" ],
+    [ "FromId", "namespace_im_gui.html#a810a195f332f8b261e16dcd5c8843860", null ],
     [ "GetDrawCalls", "namespace_im_gui.html#a9b54aec8f01a2cec1bd876129d4b765e", null ],
     [ "GetFont", "namespace_im_gui.html#ab40b8fe55be54915354c82b3009f9474", null ],
     [ "GetNotification", "namespace_im_gui.html#a81959179a923ab53ce0fe1471a7877b1", null ],

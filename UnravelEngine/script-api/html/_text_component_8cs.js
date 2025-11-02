@@ -16,5 +16,13 @@ var _text_component_8cs =
       [ "Baseline", "_text_component_8cs.html#a11518538e717ba1d9bb9167adf9c1797aa4a32c4764653e50488bff6ce2eb815b", null ],
       [ "TypographicMask", "_text_component_8cs.html#a11518538e717ba1d9bb9167adf9c1797abc6f4a8e331947b6d4bd5b935d2db434", null ],
       [ "VerticalTextMask", "_text_component_8cs.html#a11518538e717ba1d9bb9167adf9c1797ae5210675a09f29e753edf6542f7b9765", null ]
+    ] ],
+    [ "TextStyleFlags", "_text_component_8cs.html#a594b68392260df95ec830f9705bc744e", [
+      [ "Normal", "_text_component_8cs.html#a594b68392260df95ec830f9705bc744ea960b44c579bc2f6818d2daaf9e4c16f0", null ],
+      [ "Overline", "_text_component_8cs.html#a594b68392260df95ec830f9705bc744eaa7d7d34d28ecacfa945c78f1ae7ec675", null ],
+      [ "Underline", "_text_component_8cs.html#a594b68392260df95ec830f9705bc744ea852721aa5fc738dfedff2945d71da439", null ],
+      [ "StrikeThrough", "_text_component_8cs.html#a594b68392260df95ec830f9705bc744eadbcb83c76437232e6031f915989c7d23", null ],
+      [ "Background", "_text_component_8cs.html#a594b68392260df95ec830f9705bc744eaa9ded1e5ce5d75814730bb4caaf49419", null ],
+      [ "Foreground", "_text_component_8cs.html#a594b68392260df95ec830f9705bc744ea45bd1d5b32931106efbf1a82fe6a732f", null ]
     ] ]
 ];

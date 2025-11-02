@@ -14,6 +14,8 @@ var struct_unravel_1_1_core_1_1_entity =
     [ "HasComponent", "struct_unravel_1_1_core_1_1_entity.html#a7eebc713f06e0639b5d1da1634285d03", null ],
     [ "HasComponent< T >", "struct_unravel_1_1_core_1_1_entity.html#a7848bfd326aa7cd531670e0e603c44d2", null ],
     [ "IsValid", "struct_unravel_1_1_core_1_1_entity.html#a605ea2bde6555a72f76d52a0f88a5ec6", null ],
+    [ "RemoveComponent", "struct_unravel_1_1_core_1_1_entity.html#a3c1e9d866ce88e739ddcc14e4bb6aaf1", null ],
+    [ "RemoveComponent", "struct_unravel_1_1_core_1_1_entity.html#a0a41e9ff2239c7665f54dfe7c63ac0f8", null ],
     [ "RemoveComponent< T >", "struct_unravel_1_1_core_1_1_entity.html#a9e3ac101c3afab399b9528f3b43d7140", null ],
     [ "RemoveComponent< T >", "struct_unravel_1_1_core_1_1_entity.html#a0a5f4885c3f0fc7a71fc507a04393e0f", null ],
     [ "SetActive", "struct_unravel_1_1_core_1_1_entity.html#a456cbf77ddd16f1aac5592e8cdfdacad", null ],

@@ -6,6 +6,7 @@ var imgui_8h =
     [ "IMGUI_FLAGS_CUBEMAP", "imgui_8h.html#a45f5e47e2fb3e5970175f8c19244ff60", null ],
     [ "IMGUI_FLAGS_FLIP_UV", "imgui_8h.html#aaa3c26c02725a0a015fa233bf3e39f73", null ],
     [ "IMGUI_FLAGS_NONE", "imgui_8h.html#a6880730bfb2f512373432f45416d29b1", null ],
+    [ "FromId", "imgui_8h.html#a810a195f332f8b261e16dcd5c8843860", null ],
     [ "GetDrawCalls", "imgui_8h.html#a9b54aec8f01a2cec1bd876129d4b765e", null ],
     [ "GetFont", "imgui_8h.html#ab40b8fe55be54915354c82b3009f9474", null ],
     [ "GetSize", "imgui_8h.html#a0155d21fd454c916cd4c483fa76111d8", null ],

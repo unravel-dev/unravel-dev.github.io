@@ -6,6 +6,7 @@ var structunravel_1_1shadow_1_1_programs =
     [ "m_drawDepth", "structunravel_1_1shadow_1_1_programs.html#a8734671dabe1eb8791046f9ba962de9d", null ],
     [ "m_hBlur", "structunravel_1_1shadow_1_1_programs.html#a28c3634bdaf627050ff3965ecb649458", null ],
     [ "m_packDepth", "structunravel_1_1shadow_1_1_programs.html#a4fd6798df66d2a6ea42e39d6abec3834", null ],
+    [ "m_packDepthInstanced", "structunravel_1_1shadow_1_1_programs.html#a5e7eb2bc8b1e881d8c1f61a444eb9956", null ],
     [ "m_packDepthSkinned", "structunravel_1_1shadow_1_1_programs.html#a1b80bd370ace5e5987737d2e1ec4a7cf", null ],
     [ "m_vBlur", "structunravel_1_1shadow_1_1_programs.html#aec00d9c42c323c63ad68827118b73a35", null ]
 ];

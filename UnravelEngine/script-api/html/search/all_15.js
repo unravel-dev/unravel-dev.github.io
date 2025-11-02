@@ -12,11 +12,12 @@ var searchData=
   ['vector4_2ecs_9',['Vector4.cs',['../_vector4_8cs.html',1,'']]],
   ['velocity_10',['velocity',['../class_unravel_1_1_core_1_1_physics_component.html#a1e9556cb32a1dcc9940ee8106ec5f186',1,'Unravel::Core::PhysicsComponent']]],
   ['velocitychange_11',['VelocityChange',['../namespace_unravel_1_1_core.html#a52201a4c0c581b18429e983b768e72ada7c6c8f6e33aa732a3214ffe2e342cb2d',1,'Unravel::Core']]],
-  ['verticalmask_12',['VerticalMask',['../namespace_unravel_1_1_core.html#a11518538e717ba1d9bb9167adf9c1797a3ad195164a96b004121f484dd12c21aa',1,'Unravel::Core']]],
-  ['verticaltextmask_13',['VerticalTextMask',['../namespace_unravel_1_1_core.html#a11518538e717ba1d9bb9167adf9c1797ae5210675a09f29e753edf6542f7b9765',1,'Unravel::Core']]],
-  ['visualtree_14',['VisualTree',['../class_unravel_1_1_core_1_1_visual_tree.html',1,'Unravel::Core']]],
-  ['volume_15',['volume',['../class_unravel_1_1_core_1_1_audio_source_component.html#aa8ff1511218976616d93dd8c609c2ffc',1,'Unravel::Core::AudioSourceComponent']]],
-  ['volumedown_16',['VolumeDown',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa91f1f883ea91306f79dbf0ca1b108bad',1,'Unravel::Core']]],
-  ['volumerolloff_17',['volumeRolloff',['../class_unravel_1_1_core_1_1_audio_source_component.html#a0e04ece1873b416d8ded527653380626',1,'Unravel::Core::AudioSourceComponent']]],
-  ['volumeup_18',['VolumeUp',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172faf5311ec6ce071e43882685428cc9d56a',1,'Unravel::Core']]]
+  ['velocitydamping_12',['velocityDamping',['../class_unravel_1_1_core_1_1_particle_emitter_component.html#a6bff1ea47c2acb9a844fabed921d3b30',1,'Unravel::Core::ParticleEmitterComponent']]],
+  ['verticalmask_13',['VerticalMask',['../namespace_unravel_1_1_core.html#a11518538e717ba1d9bb9167adf9c1797a3ad195164a96b004121f484dd12c21aa',1,'Unravel::Core']]],
+  ['verticaltextmask_14',['VerticalTextMask',['../namespace_unravel_1_1_core.html#a11518538e717ba1d9bb9167adf9c1797ae5210675a09f29e753edf6542f7b9765',1,'Unravel::Core']]],
+  ['visualtree_15',['VisualTree',['../class_unravel_1_1_core_1_1_visual_tree.html',1,'Unravel::Core']]],
+  ['volume_16',['volume',['../class_unravel_1_1_core_1_1_audio_source_component.html#aa8ff1511218976616d93dd8c609c2ffc',1,'Unravel::Core::AudioSourceComponent']]],
+  ['volumedown_17',['VolumeDown',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa91f1f883ea91306f79dbf0ca1b108bad',1,'Unravel::Core']]],
+  ['volumerolloff_18',['volumeRolloff',['../class_unravel_1_1_core_1_1_audio_source_component.html#a0e04ece1873b416d8ded527653380626',1,'Unravel::Core::AudioSourceComponent']]],
+  ['volumeup_19',['VolumeUp',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172faf5311ec6ce071e43882685428cc9d56a',1,'Unravel::Core']]]
 ];

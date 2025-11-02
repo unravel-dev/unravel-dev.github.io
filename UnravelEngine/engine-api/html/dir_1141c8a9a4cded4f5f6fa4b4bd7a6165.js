@@ -18,6 +18,8 @@ var dir_1141c8a9a4cded4f5f6fa4b4bd7a6165 =
     [ "inspector_light.h", "inspector__light_8h.html", "inspector__light_8h" ],
     [ "inspector_math.cpp", "inspector__math_8cpp.html", null ],
     [ "inspector_math.h", "inspector__math_8h.html", "inspector__math_8h" ],
+    [ "inspector_particle_emitter.cpp", "inspector__particle__emitter_8cpp.html", null ],
+    [ "inspector_particle_emitter.h", "inspector__particle__emitter_8h.html", "inspector__particle__emitter_8h" ],
     [ "inspector_physics_shape.cpp", "inspector__physics__shape_8cpp.html", null ],
     [ "inspector_physics_shape.h", "inspector__physics__shape_8h.html", "inspector__physics__shape_8h" ],
     [ "inspector_prefab_component.cpp", "inspector__prefab__component_8cpp.html", null ],

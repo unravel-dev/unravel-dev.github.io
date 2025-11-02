@@ -17,5 +17,7 @@ var searchData=
   ['windowowned_14',['WindowOwned',['../struct_im_gui___impl_o_s_p_p___viewport_data.html#a6b248a0c16ae612713006d777f311f38',1,'ImGui_ImplOSPP_ViewportData']]],
   ['windowshownatleastonce_15',['WindowShownAtLeastOnce',['../struct_im_gui___impl_o_s_p_p___viewport_data.html#a34fd375a65e70a1062fc537386b76ec2',1,'ImGui_ImplOSPP_ViewportData']]],
   ['wireframe_5fselection_16',['wireframe_selection',['../structunravel_1_1editing__manager.html#a3cf3f4134a3c41e0444d8b504b76faa5',1,'unravel::editing_manager']]],
-  ['writing_17',['writing',['../namespaceunravel.html#a15ce120b64eeade36829348702b7ce8b',1,'unravel']]]
+  ['world_5fmatrix_17',['world_matrix',['../structunravel_1_1instance__vertex__data.html#a30ad27766a2f7257e2cbefce83c53907',1,'unravel::instance_vertex_data']]],
+  ['world_5ftransform_5fptr_18',['world_transform_ptr',['../structunravel_1_1batch__instance.html#a8f128cdb32b4bbac246f7ca679fa83c9',1,'unravel::batch_instance']]],
+  ['writing_19',['writing',['../namespaceunravel.html#a15ce120b64eeade36829348702b7ce8b',1,'unravel']]]
 ];

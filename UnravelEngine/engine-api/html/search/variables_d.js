@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['object_0',['object',['../structunravel_1_1editing__manager_1_1focused.html#a74f102deaede86a3d312925540c6c873',1,'unravel::editing_manager::focused::object'],['../bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8',1,'object:&#160;bullet_backend.cpp']]],
+  ['object_0',['object',['../structunravel_1_1defaults_1_1asset__preview__result.html#a4b1b2d7b0d02aab7a84e793f0c1ca196',1,'unravel::defaults::asset_preview_result::object'],['../structunravel_1_1editing__manager_1_1focused.html#a74f102deaede86a3d312925540c6c873',1,'unravel::editing_manager::focused::object'],['../bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8',1,'object:&#160;bullet_backend.cpp']]],
   ['objects_1',['objects',['../structunravel_1_1editing__manager_1_1selection.html#aeeb223cb5723a350b8e86b8f31f98e31',1,'unravel::editing_manager::selection']]],
   ['offset_5fx_2',['offset_x',['../structgfx_1_1clip__quad__def.html#a337b2004dd7047bd6c4ed123ac448468',1,'gfx::clip_quad_def::offset_x'],['../structgfx_1_1glyph__info.html#ac5f513ce7a82580d3884e7bf8d5505f4',1,'gfx::glyph_info::offset_x']]],
   ['offset_5fy_3',['offset_y',['../structgfx_1_1clip__quad__def.html#a9e5667635e47081f913a8d090433ce1f',1,'gfx::clip_quad_def::offset_y'],['../structgfx_1_1glyph__info.html#a0a8ce0e10787114db1e358dfbdf7dd15',1,'gfx::glyph_info::offset_y']]],

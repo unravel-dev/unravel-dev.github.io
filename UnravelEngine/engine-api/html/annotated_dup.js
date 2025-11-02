@@ -235,6 +235,8 @@ var annotated_dup =
       [ "bsphere", "classmath_1_1bsphere.html", "classmath_1_1bsphere" ],
       [ "color", "structmath_1_1color.html", "structmath_1_1color" ],
       [ "frustum", "classmath_1_1frustum.html", "classmath_1_1frustum" ],
+      [ "gradient", "classmath_1_1gradient.html", "classmath_1_1gradient" ],
+      [ "gradient_point", "structmath_1_1gradient__point.html", "structmath_1_1gradient__point" ],
       [ "plane", "structmath_1_1plane.html", "structmath_1_1plane" ],
       [ "transform_t", "classmath_1_1transform__t.html", "classmath_1_1transform__t" ]
     ] ],
@@ -295,6 +297,12 @@ var annotated_dup =
       [ "ConsumerToken", "structmoodycamel_1_1_consumer_token.html", "structmoodycamel_1_1_consumer_token" ],
       [ "ProducerToken", "structmoodycamel_1_1_producer_token.html", "structmoodycamel_1_1_producer_token" ]
     ] ],
+    [ "ps", "namespaceps.html", [
+      [ "Emitter", "structps_1_1_emitter.html", "structps_1_1_emitter" ],
+      [ "Particle", "structps_1_1_particle.html", "structps_1_1_particle" ],
+      [ "ParticleSort", "structps_1_1_particle_sort.html", "structps_1_1_particle_sort" ],
+      [ "ParticleSystem", "structps_1_1_particle_system.html", "structps_1_1_particle_system" ]
+    ] ],
     [ "rtti", "namespacertti.html", [
       [ "context", "structrtti_1_1context.html", "structrtti_1_1context" ]
     ] ],
@@ -324,13 +332,15 @@ var annotated_dup =
     [ "std", "namespacestd.html", [
       [ "hash< contact_key >", "structstd_1_1hash_3_01contact__key_01_4.html", "structstd_1_1hash_3_01contact__key_01_4" ],
       [ "hash< gfx::fbo_key >", "structstd_1_1hash_3_01gfx_1_1fbo__key_01_4.html", "structstd_1_1hash_3_01gfx_1_1fbo__key_01_4" ],
-      [ "hash< gfx::texture_key >", "structstd_1_1hash_3_01gfx_1_1texture__key_01_4.html", "structstd_1_1hash_3_01gfx_1_1texture__key_01_4" ]
+      [ "hash< gfx::texture_key >", "structstd_1_1hash_3_01gfx_1_1texture__key_01_4.html", "structstd_1_1hash_3_01gfx_1_1texture__key_01_4" ],
+      [ "hash< unravel::batch_key >", "structstd_1_1hash_3_01unravel_1_1batch__key_01_4.html", "structstd_1_1hash_3_01unravel_1_1batch__key_01_4" ]
     ] ],
     [ "subprocess", "namespacesubprocess.html", [
       [ "call_result", "structsubprocess_1_1call__result.html", "structsubprocess_1_1call__result" ]
     ] ],
     [ "unravel", "namespaceunravel.html", [
       [ "asset_compiler", "namespaceunravel_1_1asset__compiler.html", [
+        [ "asset_manifest", "structunravel_1_1asset__compiler_1_1asset__manifest.html", "structunravel_1_1asset__compiler_1_1asset__manifest" ],
         [ "script_compilation_entry", "structunravel_1_1asset__compiler_1_1script__compilation__entry.html", "structunravel_1_1asset__compiler_1_1script__compilation__entry" ]
       ] ],
       [ "crash", "namespaceunravel_1_1crash.html", [
@@ -349,8 +359,8 @@ var annotated_dup =
       [ "rendering", "namespaceunravel_1_1rendering.html", [
         [ "deferred", "classunravel_1_1rendering_1_1deferred.html", "classunravel_1_1rendering_1_1deferred" ],
         [ "lod_data", "structunravel_1_1rendering_1_1lod__data.html", "structunravel_1_1rendering_1_1lod__data" ],
-        [ "per_camera_data", "structunravel_1_1rendering_1_1per__camera__data.html", "structunravel_1_1rendering_1_1per__camera__data" ],
-        [ "pipeline", "classunravel_1_1rendering_1_1pipeline.html", "classunravel_1_1rendering_1_1pipeline" ]
+        [ "pipeline", "classunravel_1_1rendering_1_1pipeline.html", "classunravel_1_1rendering_1_1pipeline" ],
+        [ "pipeline_stats", "structunravel_1_1rendering_1_1pipeline__stats.html", "structunravel_1_1rendering_1_1pipeline__stats" ]
       ] ],
       [ "shadow", "namespaceunravel_1_1shadow.html", [
         [ "adaptive_shadow_params", "structunravel_1_1shadow_1_1adaptive__shadow__params.html", "structunravel_1_1shadow_1_1adaptive__shadow__params" ],
@@ -409,6 +419,12 @@ var annotated_dup =
       [ "base_font", "structunravel_1_1base__font.html", "structunravel_1_1base__font" ],
       [ "basic_component", "structunravel_1_1basic__component.html", "structunravel_1_1basic__component" ],
       [ "basic_storage", "structunravel_1_1basic__storage.html", "structunravel_1_1basic__storage" ],
+      [ "batch_collector", "classunravel_1_1batch__collector.html", "classunravel_1_1batch__collector" ],
+      [ "batch_group", "structunravel_1_1batch__group.html", "structunravel_1_1batch__group" ],
+      [ "batch_instance", "structunravel_1_1batch__instance.html", "structunravel_1_1batch__instance" ],
+      [ "batch_instance_collection", "classunravel_1_1batch__instance__collection.html", "classunravel_1_1batch__instance__collection" ],
+      [ "batch_key", "structunravel_1_1batch__key.html", "structunravel_1_1batch__key" ],
+      [ "batch_stats", "structunravel_1_1batch__stats.html", "structunravel_1_1batch__stats" ],
       [ "blend_over_param", "structunravel_1_1blend__over__param.html", "structunravel_1_1blend__over__param" ],
       [ "blend_over_time", "structunravel_1_1blend__over__time.html", "structunravel_1_1blend__over__time" ],
       [ "blend_space_def", "classunravel_1_1blend__space__def.html", "classunravel_1_1blend__space__def" ],
@@ -492,6 +508,7 @@ var annotated_dup =
       [ "inspector_asset_handle_style_sheet", "structunravel_1_1inspector__asset__handle__style__sheet.html", "structunravel_1_1inspector__asset__handle__style__sheet" ],
       [ "inspector_asset_handle_texture", "structunravel_1_1inspector__asset__handle__texture.html", "structunravel_1_1inspector__asset__handle__texture" ],
       [ "inspector_asset_handle_ui_tree", "structunravel_1_1inspector__asset__handle__ui__tree.html", "structunravel_1_1inspector__asset__handle__ui__tree" ],
+      [ "inspector_bbox", "structunravel_1_1inspector__bbox.html", "structunravel_1_1inspector__bbox" ],
       [ "inspector_bool", "structunravel_1_1inspector__bool.html", "structunravel_1_1inspector__bool" ],
       [ "inspector_bvec2", "structunravel_1_1inspector__bvec2.html", "structunravel_1_1inspector__bvec2" ],
       [ "inspector_bvec3", "structunravel_1_1inspector__bvec3.html", "structunravel_1_1inspector__bvec3" ],
@@ -502,6 +519,9 @@ var annotated_dup =
       [ "inspector_duration_sec_float", "structunravel_1_1inspector__duration__sec__float.html", "structunravel_1_1inspector__duration__sec__float" ],
       [ "inspector_entity", "structunravel_1_1inspector__entity.html", "structunravel_1_1inspector__entity" ],
       [ "inspector_float", "structunravel_1_1inspector__float.html", "structunravel_1_1inspector__float" ],
+      [ "inspector_gradient", "structunravel_1_1inspector__gradient.html", "structunravel_1_1inspector__gradient" ],
+      [ "inspector_gradient_float", "structunravel_1_1inspector__gradient__float.html", "structunravel_1_1inspector__gradient__float" ],
+      [ "inspector_gradient_frange", "structunravel_1_1inspector__gradient__frange.html", "structunravel_1_1inspector__gradient__frange" ],
       [ "inspector_int16", "structunravel_1_1inspector__int16.html", "structunravel_1_1inspector__int16" ],
       [ "inspector_int32", "structunravel_1_1inspector__int32.html", "structunravel_1_1inspector__int32" ],
       [ "inspector_int64", "structunravel_1_1inspector__int64.html", "structunravel_1_1inspector__int64" ],
@@ -511,6 +531,7 @@ var annotated_dup =
       [ "inspector_mono_object", "structunravel_1_1inspector__mono__object.html", "structunravel_1_1inspector__mono__object" ],
       [ "inspector_mono_scoped_object", "structunravel_1_1inspector__mono__scoped__object.html", "structunravel_1_1inspector__mono__scoped__object" ],
       [ "inspector_panel", "classunravel_1_1inspector__panel.html", "classunravel_1_1inspector__panel" ],
+      [ "inspector_particle_emitter_component", "structunravel_1_1inspector__particle__emitter__component.html", "structunravel_1_1inspector__particle__emitter__component" ],
       [ "inspector_path", "structunravel_1_1inspector__path.html", "structunravel_1_1inspector__path" ],
       [ "inspector_physics_compound_shape", "structunravel_1_1inspector__physics__compound__shape.html", "structunravel_1_1inspector__physics__compound__shape" ],
       [ "inspector_prefab_component", "structunravel_1_1inspector__prefab__component.html", "structunravel_1_1inspector__prefab__component" ],
@@ -550,6 +571,7 @@ var annotated_dup =
       [ "inspector_vec2", "structunravel_1_1inspector__vec2.html", "structunravel_1_1inspector__vec2" ],
       [ "inspector_vec3", "structunravel_1_1inspector__vec3.html", "structunravel_1_1inspector__vec3" ],
       [ "inspector_vec4", "structunravel_1_1inspector__vec4.html", "structunravel_1_1inspector__vec4" ],
+      [ "instance_vertex_data", "structunravel_1_1instance__vertex__data.html", "structunravel_1_1instance__vertex__data" ],
       [ "layer_component", "structunravel_1_1layer__component.html", "structunravel_1_1layer__component" ],
       [ "layer_mask", "structunravel_1_1layer__mask.html", "structunravel_1_1layer__mask" ],
       [ "light", "structunravel_1_1light.html", "structunravel_1_1light" ],
@@ -570,6 +592,7 @@ var annotated_dup =
       [ "mono_inspector< asset_handle< T > >", "structunravel_1_1mono__inspector_3_01asset__handle_3_01_t_01_4_01_4.html", null ],
       [ "mono_inspector< entt::handle >", "structunravel_1_1mono__inspector_3_01entt_1_1handle_01_4.html", null ],
       [ "mono_inspector< mono::mono_array< T > >", "structunravel_1_1mono__inspector_3_01mono_1_1mono__array_3_01_t_01_4_01_4.html", null ],
+      [ "mono_inspector_collection", "structunravel_1_1mono__inspector__collection.html", null ],
       [ "mono_inspector_enum", "structunravel_1_1mono__inspector__enum.html", null ],
       [ "mono_loader", "structunravel_1_1mono__loader.html", null ],
       [ "mono_loader< Archive, asset_handle< T > >", "structunravel_1_1mono__loader_3_01_archive_00_01asset__handle_3_01_t_01_4_01_4.html", null ],
@@ -580,6 +603,8 @@ var annotated_dup =
       [ "mono_saver< Archive, entt::entity >", "structunravel_1_1mono__saver_3_01_archive_00_01entt_1_1entity_01_4.html", null ],
       [ "named_anim", "structunravel_1_1named__anim.html", "structunravel_1_1named__anim" ],
       [ "owned_component", "classunravel_1_1owned__component.html", "classunravel_1_1owned__component" ],
+      [ "particle_emitter_component", "classunravel_1_1particle__emitter__component.html", "classunravel_1_1particle__emitter__component" ],
+      [ "particle_system", "classunravel_1_1particle__system.html", "classunravel_1_1particle__system" ],
       [ "pbr_material", "classunravel_1_1pbr__material.html", "classunravel_1_1pbr__material" ],
       [ "performance_profiler", "classunravel_1_1performance__profiler.html", "classunravel_1_1performance__profiler" ],
       [ "physics_box_shape", "structunravel_1_1physics__box__shape.html", "structunravel_1_1physics__box__shape" ],
@@ -588,6 +613,7 @@ var annotated_dup =
       [ "physics_compound_shape", "structunravel_1_1physics__compound__shape.html", "structunravel_1_1physics__compound__shape" ],
       [ "physics_cylinder_shape", "structunravel_1_1physics__cylinder__shape.html", "structunravel_1_1physics__cylinder__shape" ],
       [ "physics_material", "structunravel_1_1physics__material.html", "structunravel_1_1physics__material" ],
+      [ "physics_mesh_shape", "structunravel_1_1physics__mesh__shape.html", "structunravel_1_1physics__mesh__shape" ],
       [ "physics_sphere_shape", "structunravel_1_1physics__sphere__shape.html", "structunravel_1_1physics__sphere__shape" ],
       [ "physics_system", "classunravel_1_1physics__system.html", "classunravel_1_1physics__system" ],
       [ "picking_manager", "classunravel_1_1picking__manager.html", "classunravel_1_1picking__manager" ],
@@ -641,6 +667,7 @@ var annotated_dup =
       [ "style_panel", "classunravel_1_1style__panel.html", "classunravel_1_1style__panel" ],
       [ "style_sheet", "structunravel_1_1style__sheet.html", "structunravel_1_1style__sheet" ],
       [ "submesh_component", "structunravel_1_1submesh__component.html", "structunravel_1_1submesh__component" ],
+      [ "submit_context", "structunravel_1_1submit__context.html", "structunravel_1_1submit__context" ],
       [ "tag_component", "structunravel_1_1tag__component.html", "structunravel_1_1tag__component" ],
       [ "test_component", "structunravel_1_1test__component.html", "structunravel_1_1test__component" ],
       [ "text_buffer", "structunravel_1_1text__buffer.html", "structunravel_1_1text__buffer" ],
@@ -704,6 +731,10 @@ var annotated_dup =
     [ "DebugShapeVertex", "struct_debug_shape_vertex.html", "struct_debug_shape_vertex" ],
     [ "DebugUvVertex", "struct_debug_uv_vertex.html", "struct_debug_uv_vertex" ],
     [ "DebugVertex", "struct_debug_vertex.html", "struct_debug_vertex" ],
+    [ "EmitterDirection", "struct_emitter_direction.html", "struct_emitter_direction" ],
+    [ "EmitterHandle", "struct_emitter_handle.html", "struct_emitter_handle" ],
+    [ "EmitterShape", "struct_emitter_shape.html", "struct_emitter_shape" ],
+    [ "EmitterUniforms", "struct_emitter_uniforms.html", "struct_emitter_uniforms" ],
     [ "FontRangeMerge", "struct_font_range_merge.html", "struct_font_range_merge" ],
     [ "GeometryHandle", "struct_geometry_handle.html", "struct_geometry_handle" ],
     [ "GeometryT", "struct_geometry_t.html", "struct_geometry_t" ],
@@ -715,7 +746,9 @@ var annotated_dup =
     [ "OcornutImguiContext", "struct_ocornut_imgui_context.html", "struct_ocornut_imgui_context" ],
     [ "Pack2D", "struct_pack2_d.html", "struct_pack2_d" ],
     [ "PackCube", "struct_pack_cube.html", "struct_pack_cube" ],
+    [ "ParticleVertex", "struct_particle_vertex.html", "struct_particle_vertex" ],
     [ "point", "structpoint.html", "structpoint" ],
+    [ "PosColorTexCoord0Vertex", "struct_pos_color_tex_coord0_vertex.html", "struct_pos_color_tex_coord0_vertex" ],
     [ "Program", "struct_program.html", "struct_program" ],
     [ "range", "structrange.html", "structrange" ],
     [ "rect", "structrect.html", "structrect" ],
@@ -723,6 +756,7 @@ var annotated_dup =
     [ "RectPackCubeT", "class_rect_pack_cube_t.html", "class_rect_pack_cube_t" ],
     [ "rendering_pipeline", "classrendering__pipeline.html", null ],
     [ "service", "structservice.html", "structservice" ],
+    [ "SimulationSpace", "struct_simulation_space.html", "struct_simulation_space" ],
     [ "size", "structsize.html", "structsize" ],
     [ "SpriteHandle", "struct_sprite_handle.html", "struct_sprite_handle" ],
     [ "SpriteT", "struct_sprite_t.html", "struct_sprite_t" ],

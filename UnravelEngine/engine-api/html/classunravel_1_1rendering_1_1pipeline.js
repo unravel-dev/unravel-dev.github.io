@@ -16,9 +16,11 @@ var classunravel_1_1rendering_1_1pipeline =
     [ "~pipeline", "classunravel_1_1rendering_1_1pipeline.html#a2a87c10317c88fc16aab4b6c3e8a19ad", null ],
     [ "create_run_params", "classunravel_1_1rendering_1_1pipeline.html#af4365278b31f897807b184d2edd2f7c1", null ],
     [ "gather_visible_models", "classunravel_1_1rendering_1_1pipeline.html#a1a9a05f5b715555d13f5201e528d79f4", null ],
+    [ "get_stats", "classunravel_1_1rendering_1_1pipeline.html#a05957e3e970ab472584374115dab4a77", null ],
     [ "init", "classunravel_1_1rendering_1_1pipeline.html#a166c55179efc56563461c9aa4f644445", null ],
+    [ "particle_pass", "classunravel_1_1rendering_1_1pipeline.html#a1618f31299ca3bd56c2312de460f8701", null ],
     [ "run_pipeline", "classunravel_1_1rendering_1_1pipeline.html#a58a363c44472c3bf4f68ad23c4c4963d", null ],
-    [ "run_pipeline", "classunravel_1_1rendering_1_1pipeline.html#a5f834270daeef665106a07c3028fe1cb", null ],
+    [ "run_pipeline", "classunravel_1_1rendering_1_1pipeline.html#a3f706c963ee2628d75fde601e507c98a", null ],
     [ "set_debug_pass", "classunravel_1_1rendering_1_1pipeline.html#a7e4aedd2d9369e3707eea04df258f518", null ],
     [ "ui_pass", "classunravel_1_1rendering_1_1pipeline.html#a3e0d8bdf04ab721eeaa61652dced9d50", null ],
     [ "assao_pass_", "classunravel_1_1rendering_1_1pipeline.html#a7ca6d283f46b4f579283bfb1ee67ba65", null ],
@@ -28,7 +30,10 @@ var classunravel_1_1rendering_1_1pipeline =
     [ "blit_pass_", "classunravel_1_1rendering_1_1pipeline.html#a8b9845007b83fc4e40a4f29556a1f88f", null ],
     [ "fxaa_pass_", "classunravel_1_1rendering_1_1pipeline.html#af2fd3c0999571431083c3c05644e5755", null ],
     [ "hiz_pass_", "classunravel_1_1rendering_1_1pipeline.html#aceef1ed33515aa1528ab7cd2bf5e4ae2", null ],
+    [ "particle_program_", "classunravel_1_1rendering_1_1pipeline.html#af935063f9520309834af5035ab6c8a56", null ],
+    [ "particle_program_instanced_", "classunravel_1_1rendering_1_1pipeline.html#ad697ef54c8d0924fb48c476a73102c24", null ],
     [ "prefilter_pass_", "classunravel_1_1rendering_1_1pipeline.html#a3c103a8d47539b57091c6e0c3b5a6ebf", null ],
     [ "ssr_pass_", "classunravel_1_1rendering_1_1pipeline.html#ab406927135e733879cf51665d265091d", null ],
+    [ "stats_", "classunravel_1_1rendering_1_1pipeline.html#a31344f8ac4c948fab930dbf151f078bf", null ],
     [ "tonemapping_pass_", "classunravel_1_1rendering_1_1pipeline.html#a8a4d5b97191c2665c6ab7235ff052c3e", null ]
 ];

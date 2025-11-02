@@ -1,19 +1,7 @@
 var searchData=
 [
-  ['sample_5fdata_0',['sample_data',['../classunravel_1_1statistics__utils_1_1sample__data.html',1,'unravel::statistics_utils']]],
-  ['samplemouselookcomponent_1',['SampleMouseLookComponent',['../class_sample_mouse_look_component.html',1,'']]],
-  ['sampleorbitcomponent_2',['SampleOrbitComponent',['../class_sample_orbit_component.html',1,'']]],
-  ['sampleuiwrappercontroller_3',['SampleUIWrapperController',['../class_unravel_1_1_samples_1_1_sample_u_i_wrapper_controller.html',1,'Unravel::Samples']]],
-  ['scene_4',['Scene',['../class_unravel_1_1_core_1_1_scene.html',1,'Unravel::Core']]],
-  ['scene_5fpanel_5',['scene_panel',['../classunravel_1_1scene__panel.html',1,'unravel']]],
-  ['scriptcomponent_6',['ScriptComponent',['../class_unravel_1_1_core_1_1_script_component.html',1,'Unravel::Core']]],
-  ['scriptcomponentmanager_7',['ScriptComponentManager',['../class_unravel_1_1_core_1_1_script_component_manager.html',1,'Unravel::Core']]],
-  ['scriptsourcefileattribute_8',['ScriptSourceFileAttribute',['../class_unravel_1_1_core_1_1_script_source_file_attribute.html',1,'Unravel::Core']]],
-  ['selection_9',['selection',['../structunravel_1_1editing__manager_1_1selection.html',1,'unravel::editing_manager']]],
-  ['size_10',['Size',['../struct_size.html',1,'']]],
-  ['snap_11',['snap',['../structunravel_1_1editing__manager_1_1snap.html',1,'unravel::editing_manager']]],
-  ['statistics_5fpanel_12',['statistics_panel',['../classunravel_1_1statistics__panel.html',1,'unravel']]],
-  ['stepattribute_13',['StepAttribute',['../class_unravel_1_1_core_1_1_step_attribute.html',1,'Unravel::Core']]],
-  ['style_5fpanel_14',['style_panel',['../classunravel_1_1style__panel.html',1,'unravel']]],
-  ['stylesheet_15',['StyleSheet',['../class_unravel_1_1_core_1_1_style_sheet.html',1,'Unravel::Core']]]
+  ['vector2_0',['Vector2',['../struct_vector2.html',1,'']]],
+  ['vector3_1',['Vector3',['../struct_vector3.html',1,'']]],
+  ['vector4_2',['Vector4',['../struct_vector4.html',1,'']]],
+  ['visualtree_3',['VisualTree',['../class_unravel_1_1_core_1_1_visual_tree.html',1,'Unravel::Core']]]
 ];

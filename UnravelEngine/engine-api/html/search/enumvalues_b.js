@@ -32,11 +32,12 @@ var searchData=
   ['light_29',['Light',['../struct_im_gui_1_1_font.html#a328b7a5b692d04ddc34fe84bd113f088ab68ddec054e5ca6a721c4e88353c1bd4',1,'ImGui::Font']]],
   ['lighting_30',['lighting',['../classunravel_1_1rendering_1_1deferred.html#a9cefd7ec26dcefeff93aaa4f5489f489a415f9a2c4bb7464e43979d0e17ae215c',1,'unravel::rendering::deferred']]],
   ['linear_31',['Linear',['../structunravel_1_1shadow_1_1_depth_impl.html#a9cfb0dff02b37ab3c09d30300c66e154a0d03f3c81447007ccef16c547b4d492e',1,'unravel::shadow::DepthImpl']]],
-  ['linear_32',['linear',['../namespaceunravel.html#a66e490583179b968a82e2603419468f4a9a932b3cb396238423eb2f33ec17d6aa',1,'unravel']]],
+  ['linear_32',['linear',['../namespacemath.html#aa88b89f75110a247fd5f60cc30990300a9a932b3cb396238423eb2f33ec17d6aa',1,'math::linear'],['../namespaceunravel.html#a66e490583179b968a82e2603419468f4a9a932b3cb396238423eb2f33ec17d6aa',1,'unravel::linear']]],
   ['lines_33',['Lines',['../struct_program.html#a5745f4f583b453aec987cae6c5d75bf9a3bf41a20e01cc61fd0bce6c15d6e7a85',1,'Program']]],
   ['linesstipple_34',['LinesStipple',['../struct_program.html#a5745f4f583b453aec987cae6c5d75bf9ad88f77e30345f705442446719c325459',1,'Program']]],
   ['lineto_35',['LineTo',['../struct_debug_draw_encoder_impl_1_1_state.html#a03cd930b80f54ba9a95b9907dbb6393ba5f16a5adc0ddfeb7c99f6e40065d1f2f',1,'DebugDrawEncoderImpl::State']]],
-  ['low_36',['low',['../namespaceunravel.html#a1bffd1866c76016b12fca8eee898d73ba53cced8d281a1a0ace3cb6594daaa4f7',1,'unravel']]],
-  ['low_5fquality_37',['low_quality',['../structunravel_1_1texture__importer__meta.html#a9668c2767047da41fdda2d6f2fa0dcf0a403d16a54ad58b1559c44223e1523eeb',1,'unravel::texture_importer_meta']]],
-  ['lshift_38',['lshift',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca3774c4131e6d971a4609a9051f9cd6bd',1,'input']]]
+  ['local_36',['Local',['../struct_simulation_space.html#a514e011c1be1f9cdd5247bac1141364baa899af68f7636a81d0773c074a19688e',1,'SimulationSpace']]],
+  ['low_37',['low',['../namespaceunravel.html#a1bffd1866c76016b12fca8eee898d73ba53cced8d281a1a0ace3cb6594daaa4f7',1,'unravel']]],
+  ['low_5fquality_38',['low_quality',['../structunravel_1_1texture__importer__meta.html#a9668c2767047da41fdda2d6f2fa0dcf0a403d16a54ad58b1559c44223e1523eeb',1,'unravel::texture_importer_meta']]],
+  ['lshift_39',['lshift',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca3774c4131e6d971a4609a9051f9cd6bd',1,'input']]]
 ];

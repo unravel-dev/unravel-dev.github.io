@@ -107,6 +107,7 @@ $(function(){initNavTree('physics__component_8h.html',''); initResizable(true); 
 <code>#include &lt;<a class="el" href="basic__component_8h_source.html">engine/ecs/components/basic_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="physics__material_8h_source.html">engine/physics/physics_material.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="layer__mask_8h_source.html">engine/layers/layer_mask.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__handle_8h_source.html">engine/assets/asset_handle.h</a>&gt;</code><br />
 <code>#include &lt;hpp/variant.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
 <code>#include &lt;bitset&gt;</code><br />
@@ -127,6 +128,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1physics__cylinder__shape.html">unravel::physics_cylinder_shape</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a cylinder shape for physics calculations.  <a href="structunravel_1_1physics__cylinder__shape.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1physics__mesh__shape.html">unravel::physics_mesh_shape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a mesh shape for physics calculations.  <a href="structunravel_1_1physics__mesh__shape.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1physics__compound__shape.html">unravel::physics_compound_shape</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a compound shape that can contain multiple types of shapes.  <a href="structunravel_1_1physics__compound__shape.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +149,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ab2575bb473441137acc92b13673c469e" id="r_ab2575bb473441137acc92b13673c469e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ab2575bb473441137acc92b13673c469e">unravel::mesh_collision_type</a> : uint8_t { <a class="el" href="namespaceunravel.html#ab2575bb473441137acc92b13673c469eab9e9dd1fa31d98cf8eb1b96e735550ba">unravel::convex</a>
+, <a class="el" href="namespaceunravel.html#ab2575bb473441137acc92b13673c469ea4c75bc8e9803615edcd68a66688bb160">unravel::concave</a>
+ }</td></tr>
+<tr class="memdesc:ab2575bb473441137acc92b13673c469e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the type of mesh collision shape.  <a href="namespaceunravel.html#ab2575bb473441137acc92b13673c469e">More...</a><br /></td></tr>
+<tr class="separator:ab2575bb473441137acc92b13673c469e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acec4ffb55357d08580b8bf2a1057532f" id="r_acec4ffb55357d08580b8bf2a1057532f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#acec4ffb55357d08580b8bf2a1057532f">unravel::physics_property</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespaceunravel.html#acec4ffb55357d08580b8bf2a1057532fa67f2a835697e7c9c2c5146c76eca6038">unravel::gravity</a>
 , <a class="el" href="namespaceunravel.html#acec4ffb55357d08580b8bf2a1057532fad939aaf7d2291c6f69ceecee94880d7c">unravel::kind</a>

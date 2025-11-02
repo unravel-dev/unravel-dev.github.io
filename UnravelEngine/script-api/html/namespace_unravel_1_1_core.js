@@ -15,6 +15,7 @@ var namespace_unravel_1_1_core =
     [ "Entity", "struct_unravel_1_1_core_1_1_entity.html", "struct_unravel_1_1_core_1_1_entity" ],
     [ "FixedUpdateInfo", "struct_unravel_1_1_core_1_1_fixed_update_info.html", "struct_unravel_1_1_core_1_1_fixed_update_info" ],
     [ "Font", "class_unravel_1_1_core_1_1_font.html", null ],
+    [ "GCMonitor", "class_unravel_1_1_core_1_1_g_c_monitor.html", "class_unravel_1_1_core_1_1_g_c_monitor" ],
     [ "IdComponent", "class_unravel_1_1_core_1_1_id_component.html", null ],
     [ "LayerMask", "struct_unravel_1_1_core_1_1_layer_mask.html", "struct_unravel_1_1_core_1_1_layer_mask" ],
     [ "LightComponent", "class_unravel_1_1_core_1_1_light_component.html", "class_unravel_1_1_core_1_1_light_component" ],
@@ -25,6 +26,7 @@ var namespace_unravel_1_1_core =
     [ "MinAttribute", "class_unravel_1_1_core_1_1_min_attribute.html", "class_unravel_1_1_core_1_1_min_attribute" ],
     [ "ModelComponent", "class_unravel_1_1_core_1_1_model_component.html", "class_unravel_1_1_core_1_1_model_component" ],
     [ "NativeObject", "class_unravel_1_1_core_1_1_native_object.html", "class_unravel_1_1_core_1_1_native_object" ],
+    [ "ParticleEmitterComponent", "class_unravel_1_1_core_1_1_particle_emitter_component.html", "class_unravel_1_1_core_1_1_particle_emitter_component" ],
     [ "PhysicsComponent", "class_unravel_1_1_core_1_1_physics_component.html", "class_unravel_1_1_core_1_1_physics_component" ],
     [ "PhysicsMaterial", "class_unravel_1_1_core_1_1_physics_material.html", null ],
     [ "Prefab", "class_unravel_1_1_core_1_1_prefab.html", null ],
@@ -68,6 +70,17 @@ var namespace_unravel_1_1_core =
       [ "Baseline", "namespace_unravel_1_1_core.html#a11518538e717ba1d9bb9167adf9c1797aa4a32c4764653e50488bff6ce2eb815b", null ],
       [ "TypographicMask", "namespace_unravel_1_1_core.html#a11518538e717ba1d9bb9167adf9c1797abc6f4a8e331947b6d4bd5b935d2db434", null ],
       [ "VerticalTextMask", "namespace_unravel_1_1_core.html#a11518538e717ba1d9bb9167adf9c1797ae5210675a09f29e753edf6542f7b9765", null ]
+    ] ],
+    [ "EmitterDirection", "namespace_unravel_1_1_core.html#abf996454f455030520f6da5bd7576020", [
+      [ "Up", "namespace_unravel_1_1_core.html#abf996454f455030520f6da5bd7576020a258f49887ef8d14ac268c92b02503aaa", null ],
+      [ "Outward", "namespace_unravel_1_1_core.html#abf996454f455030520f6da5bd7576020ac9ec862b8c333c26eefb353c0b5205e9", null ]
+    ] ],
+    [ "EmitterShape", "namespace_unravel_1_1_core.html#a1ba72ba74bd4d7af950f767128cf10a6", [
+      [ "Sphere", "namespace_unravel_1_1_core.html#a1ba72ba74bd4d7af950f767128cf10a6ab7095f057db3fefa7325ad93a04e14fd", null ],
+      [ "Hemisphere", "namespace_unravel_1_1_core.html#a1ba72ba74bd4d7af950f767128cf10a6ab6aaa7e925897e017241470207dd7c0a", null ],
+      [ "Circle", "namespace_unravel_1_1_core.html#a1ba72ba74bd4d7af950f767128cf10a6a30954d90085f6eaaf5817917fc5fecb3", null ],
+      [ "Box", "namespace_unravel_1_1_core.html#a1ba72ba74bd4d7af950f767128cf10a6a3cfce651e667ab85486dd42a8185f98a", null ],
+      [ "Rect", "namespace_unravel_1_1_core.html#a1ba72ba74bd4d7af950f767128cf10a6a69ad58d91eec91b5c152d21ca117dc81", null ]
     ] ],
     [ "EventPhase", "namespace_unravel_1_1_core.html#adb276b979c8a2b883b67480b5a3506ff", [
       [ "None", "namespace_unravel_1_1_core.html#adb276b979c8a2b883b67480b5a3506ffa6adf97f83acf6453d4a6a4b1070f3754", null ],
@@ -341,6 +354,14 @@ var namespace_unravel_1_1_core =
       [ "Button14", "namespace_unravel_1_1_core.html#aca4cc9053531157b94f8601d5c1e3a2daf769ff0469d23edf256a251bf24d1db0", null ],
       [ "Button15", "namespace_unravel_1_1_core.html#aca4cc9053531157b94f8601d5c1e3a2dab445300f30fa6f3d226af8b79226a577", null ],
       [ "Button16", "namespace_unravel_1_1_core.html#aca4cc9053531157b94f8601d5c1e3a2da50797af028427c93d51eca44e1fdd2c6", null ]
+    ] ],
+    [ "TextStyleFlags", "namespace_unravel_1_1_core.html#a594b68392260df95ec830f9705bc744e", [
+      [ "Normal", "namespace_unravel_1_1_core.html#a594b68392260df95ec830f9705bc744ea960b44c579bc2f6818d2daaf9e4c16f0", null ],
+      [ "Overline", "namespace_unravel_1_1_core.html#a594b68392260df95ec830f9705bc744eaa7d7d34d28ecacfa945c78f1ae7ec675", null ],
+      [ "Underline", "namespace_unravel_1_1_core.html#a594b68392260df95ec830f9705bc744ea852721aa5fc738dfedff2945d71da439", null ],
+      [ "StrikeThrough", "namespace_unravel_1_1_core.html#a594b68392260df95ec830f9705bc744eadbcb83c76437232e6031f915989c7d23", null ],
+      [ "Background", "namespace_unravel_1_1_core.html#a594b68392260df95ec830f9705bc744eaa9ded1e5ce5d75814730bb4caaf49419", null ],
+      [ "Foreground", "namespace_unravel_1_1_core.html#a594b68392260df95ec830f9705bc744ea45bd1d5b32931106efbf1a82fe6a732f", null ]
     ] ],
     [ "UIEventCallback", "namespace_unravel_1_1_core.html#aeefb6587ccafea2445a455574727860e", null ]
 ];

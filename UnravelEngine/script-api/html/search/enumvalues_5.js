@@ -26,5 +26,6 @@ var searchData=
   ['f8_23',['F8',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa4787509ad9f9d747a81a30e9dde3d4a7',1,'Unravel::Core']]],
   ['f9_24',['F9',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa892a245e287c163080b23db737d3c4c9',1,'Unravel::Core']]],
   ['find_25',['Find',['../namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa4cfa6c981549e990fe2344e4c805405e',1,'Unravel::Core']]],
-  ['force_26',['Force',['../namespace_unravel_1_1_core.html#a52201a4c0c581b18429e983b768e72ada9eb6b78a99cdb6ffd3d40d18621d9f80',1,'Unravel::Core']]]
+  ['force_26',['Force',['../namespace_unravel_1_1_core.html#a52201a4c0c581b18429e983b768e72ada9eb6b78a99cdb6ffd3d40d18621d9f80',1,'Unravel::Core']]],
+  ['foreground_27',['Foreground',['../namespace_unravel_1_1_core.html#a594b68392260df95ec830f9705bc744ea45bd1d5b32931106efbf1a82fe6a732f',1,'Unravel::Core']]]
 ];

@@ -14,5 +14,6 @@ var structunravel_1_1shadow_1_1_shadow_map_settings =
     [ "SHADOW_FLOAT_PARAM", "structunravel_1_1shadow_1_1_shadow_map_settings.html#a7c5de30999521e2f6bd8015acb594bf5", null ],
     [ "m_doBlur", "structunravel_1_1shadow_1_1_shadow_map_settings.html#a2d73675f49eab5b17b01f3f63dd6bf15", null ],
     [ "m_progPack", "structunravel_1_1shadow_1_1_shadow_map_settings.html#ad0df26368fc1458806a6336536ab0f40", null ],
+    [ "m_progPackInstanced", "structunravel_1_1shadow_1_1_shadow_map_settings.html#ace7a9974d4bddf999319e1bff049dee5", null ],
     [ "m_progPackSkinned", "structunravel_1_1shadow_1_1_shadow_map_settings.html#ac0dfcbf8cae112b66159028529f0af3d", null ]
 ];

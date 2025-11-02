@@ -1,5 +1,6 @@
 var namespaceunravel_1_1asset__compiler =
 [
+    [ "asset_manifest", "structunravel_1_1asset__compiler_1_1asset__manifest.html", "structunravel_1_1asset__compiler_1_1asset__manifest" ],
     [ "script_compilation_entry", "structunravel_1_1asset__compiler_1_1script__compilation__entry.html", "structunravel_1_1asset__compiler_1_1script__compilation__entry" ],
     [ "compile", "namespaceunravel_1_1asset__compiler.html#abe2191e6543be154c6a7947d576675b2", null ],
     [ "compile< animation_clip >", "namespaceunravel_1_1asset__compiler.html#ad1b249ffbf6156d2312ba76f0268549c", null ],
@@ -16,11 +17,15 @@ var namespaceunravel_1_1asset__compiler =
     [ "compile< script_library >", "namespaceunravel_1_1asset__compiler.html#afa76b10eeeb43b44f747ef3467804457", null ],
     [ "compile< style_sheet >", "namespaceunravel_1_1asset__compiler.html#a43977f7fc13983eb05c5ac65488043cb", null ],
     [ "compile< ui_tree >", "namespaceunravel_1_1asset__compiler.html#ae527f6fbe971ffb9bf32f612876b47bc", null ],
+    [ "get_manifest_path", "namespaceunravel_1_1asset__compiler.html#a13ba4c2205b20181fab226ce3699da90", null ],
+    [ "is_source_file_changed", "namespaceunravel_1_1asset__compiler.html#aaa344a1c4e78cf8d0886002e6c96d5cd", null ],
+    [ "load_manifest", "namespaceunravel_1_1asset__compiler.html#abd4a1de6727070234d587b2d4a588884", null ],
     [ "parse_compilation_errors", "namespaceunravel_1_1asset__compiler.html#ab61818f6d62a788be2d4ded1c1d4548c", null ],
     [ "parse_compilation_warnings", "namespaceunravel_1_1asset__compiler.html#a832743876b204a36fc8bd22967176988", null ],
     [ "read_importer", "namespaceunravel_1_1asset__compiler.html#aa541711dec7ac46ab1a28f8dda3bd27f", null ],
     [ "read_importer< animation_clip >", "namespaceunravel_1_1asset__compiler.html#a65ff4bec9e2fa56f4d4295b94e764c13", null ],
     [ "read_importer< audio_clip >", "namespaceunravel_1_1asset__compiler.html#aa234e8de1c838b115d853d78ec40a152", null ],
     [ "read_importer< gfx::texture >", "namespaceunravel_1_1asset__compiler.html#ae42815964c62056306d62ac2dc2808ff", null ],
-    [ "read_importer< mesh >", "namespaceunravel_1_1asset__compiler.html#ad1d0daf58fe786f69dd8f60ad8c5f84c", null ]
+    [ "read_importer< mesh >", "namespaceunravel_1_1asset__compiler.html#ad1d0daf58fe786f69dd8f60ad8c5f84c", null ],
+    [ "save_manifest", "namespaceunravel_1_1asset__compiler.html#a91dafe038bf26d04c66f4d8af615a6c6", null ]
 ];

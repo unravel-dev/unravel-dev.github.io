@@ -7,10 +7,11 @@ var searchData=
   ['hard_4',['hard',['../namespaceunravel.html#a5b28574df53fa0b3d46e738923f90a52ad64a84456adc959f56de6af685d0dadd',1,'unravel']]],
   ['help_5',['Help',['../namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01ab244bdad3251550f51a684f84c681759',1,'ImBox']]],
   ['help_6',['help',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca657f8b8da628ef83cf69101b6817150a',1,'input']]],
-  ['high_7',['high',['../namespaceunravel.html#a1bffd1866c76016b12fca8eee898d73ba8d966b2253a917086c8604959e152243',1,'unravel']]],
-  ['high_5fquality_8',['high_quality',['../structunravel_1_1texture__importer__meta.html#a9668c2767047da41fdda2d6f2fa0dcf0adfe79c9bb9876037469b42443e270640',1,'unravel::texture_importer_meta']]],
-  ['home_9',['home',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca106a6c241b8797f52e1e77317b96a201',1,'input']]],
-  ['horizontal_10',['Horizontal',['../structunravel_1_1shadow_1_1_proj_type.html#a9b1e91e9337d9e43161f1a8317ee99a4af96f799418d59fa8fab31af0821fbf87',1,'unravel::shadow::ProjType']]],
-  ['horizontal_5fmask_11',['horizontal_mask',['../namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891ea146c86d85373e0b02225657de3caa282',1,'unravel']]],
-  ['hybrid_12',['hybrid',['../structunravel_1_1shadow_1_1frustum__calculation__method.html#a6d709d14839f47b4371c6e38583fca93aefdf622d9deca54ffd44f2f43a0ebd14',1,'unravel::shadow::frustum_calculation_method']]]
+  ['hemisphere_7',['Hemisphere',['../struct_emitter_shape.html#aa8daa104ec6c78ecccb70a4d8aebbaf5a07373b73c1ea5e45434ccb4a5c0d2521',1,'EmitterShape']]],
+  ['high_8',['high',['../namespaceunravel.html#a1bffd1866c76016b12fca8eee898d73ba8d966b2253a917086c8604959e152243',1,'unravel']]],
+  ['high_5fquality_9',['high_quality',['../structunravel_1_1texture__importer__meta.html#a9668c2767047da41fdda2d6f2fa0dcf0adfe79c9bb9876037469b42443e270640',1,'unravel::texture_importer_meta']]],
+  ['home_10',['home',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca106a6c241b8797f52e1e77317b96a201',1,'input']]],
+  ['horizontal_11',['Horizontal',['../structunravel_1_1shadow_1_1_proj_type.html#a9b1e91e9337d9e43161f1a8317ee99a4af96f799418d59fa8fab31af0821fbf87',1,'unravel::shadow::ProjType']]],
+  ['horizontal_5fmask_12',['horizontal_mask',['../namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891ea146c86d85373e0b02225657de3caa282',1,'unravel']]],
+  ['hybrid_13',['hybrid',['../structunravel_1_1shadow_1_1frustum__calculation__method.html#a6d709d14839f47b4371c6e38583fca93aefdf622d9deca54ffd44f2f43a0ebd14',1,'unravel::shadow::frustum_calculation_method']]]
 ];

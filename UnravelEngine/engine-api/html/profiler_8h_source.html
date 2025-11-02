@@ -254,7 +254,7 @@ $(function(){initNavTree('profiler_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">// Macro to create a unique variable name</span></div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="profiler_8h.html#ac84f69d7789f9a6c5de7ab91a01596df">  142</a></span><span class="preprocessor">#define APP_SCOPE_PERF_UNIQUE_VAR(prefix) APP_SCOPE_PERF_CONCATENATE(prefix, __LINE__)</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="profiler_8h.html#a3c2b68d72d3e15e0a8142a2746730387">  160</a></span><span class="preprocessor">#define APP_SCOPE_PERF(name) const scope_perf_timer APP_SCOPE_PERF_UNIQUE_VAR(timer)(name, get_app_profiler())</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="profiler_8h.html#a3c2b68d72d3e15e0a8142a2746730387">  160</a></span><span class="preprocessor">#define APP_SCOPE_PERF(name) const ::unravel::scope_perf_timer APP_SCOPE_PERF_UNIQUE_VAR(timer)(name, ::unravel::get_app_profiler())</span></div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>} <span class="comment">// namespace unravel</span></div>
 <div class="ttc" id="aclassunravel_1_1performance__profiler_html"><div class="ttname"><a href="classunravel_1_1performance__profiler.html">unravel::performance_profiler</a></div><div class="ttdef"><b>Definition</b> <a href="#l00021">profiler.h:22</a></div></div>

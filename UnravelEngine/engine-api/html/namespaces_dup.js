@@ -97,6 +97,7 @@ var namespaces_dup =
     [ "platform", "namespaceplatform.html", [
       [ "set_thread_name", "namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2", null ]
     ] ],
+    [ "ps", "namespaceps.html", "namespaceps" ],
     [ "refl_detail", "namespacerefl__detail.html", [
       [ "get_reg", "namespacerefl__detail.html#a6f5b5fb6983ff0006e4cdbff3b9370ed", null ]
     ] ],

@@ -8,11 +8,13 @@ var searchData=
   ['platform_5fdata_5',['platform_data',['../namespacegfx.html#af1ff3198d31896ace1160b49d86ab5a8',1,'gfx']]],
   ['platform_5fsink_5fmt_6',['platform_sink_mt',['../namespacespdlog_1_1sinks.html#abe151dad22479fb27aa89b4c50232dbe',1,'spdlog::sinks']]],
   ['platform_5fsink_5fst_7',['platform_sink_st',['../namespacespdlog_1_1sinks.html#a6cc5e3cb5804f96971b42c4f97b4f441',1,'spdlog::sinks']]],
-  ['pointer_8',['pointer',['../classutf8_1_1iterator.html#adabd07d9533c19c7074c5a4ba639efa2',1,'utf8::iterator::pointer'],['../classutf8_1_1unchecked_1_1iterator.html#ae5689931f7e995fe5cbe7a59c620e627',1,'utf8::unchecked::iterator::pointer'],['../classgenerator_1_1gen__iterator__t.html#a66dcfbcc750dd22d8f3fb4e23848f6f2',1,'generator::gen_iterator_t::pointer']]],
-  ['predicate_5ft_9',['predicate_t',['../structunravel_1_1asset__storage.html#a6b5e16276ed926901b423acd739532ee',1,'unravel::asset_storage']]],
-  ['producer_5ftoken_5ft_10',['producer_token_t',['../classmoodycamel_1_1_concurrent_queue.html#a032e418321bcbf32305fa0c3ae2bc528',1,'moodycamel::ConcurrentQueue']]],
-  ['program_5fhandle_11',['program_handle',['../namespacegfx.html#ad966cf18dfa4646096b763c1a9999394',1,'gfx']]],
-  ['property_5fpredicate_5ft_12',['property_predicate_t',['../namespaceentt.html#ae7397994dada156c6e1cc1871c419aae',1,'entt']]],
-  ['protocols_5ft_13',['protocols_t',['../namespacefs.html#a4676ca1910a45fd6803da5a148eb5c73',1,'fs']]],
-  ['ptr_14',['ptr',['../classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b',1,'gfx::handle_impl::ptr'],['../structseq_1_1seq__inspect__info.html#a910e0fc2384de8667e147025876b06c5',1,'seq::seq_inspect_info::ptr'],['../classunravel_1_1gpu__program.html#a2532fed17b041d3fa219822763d05cb9',1,'unravel::gpu_program::ptr']]]
+  ['point_5ft_8',['point_t',['../classmath_1_1gradient.html#a1effac69e30fda5b835c7ca4b1e00744',1,'math::gradient']]],
+  ['pointer_9',['pointer',['../classutf8_1_1iterator.html#adabd07d9533c19c7074c5a4ba639efa2',1,'utf8::iterator::pointer'],['../classutf8_1_1unchecked_1_1iterator.html#ae5689931f7e995fe5cbe7a59c620e627',1,'utf8::unchecked::iterator::pointer'],['../classgenerator_1_1gen__iterator__t.html#a66dcfbcc750dd22d8f3fb4e23848f6f2',1,'generator::gen_iterator_t::pointer']]],
+  ['points_5ft_10',['points_t',['../classmath_1_1gradient.html#a95b3482f2a9d9e0e974f6112f262d2d9',1,'math::gradient']]],
+  ['predicate_5ft_11',['predicate_t',['../structunravel_1_1asset__storage.html#a6b5e16276ed926901b423acd739532ee',1,'unravel::asset_storage']]],
+  ['producer_5ftoken_5ft_12',['producer_token_t',['../classmoodycamel_1_1_concurrent_queue.html#a032e418321bcbf32305fa0c3ae2bc528',1,'moodycamel::ConcurrentQueue']]],
+  ['program_5fhandle_13',['program_handle',['../namespacegfx.html#ad966cf18dfa4646096b763c1a9999394',1,'gfx']]],
+  ['property_5fpredicate_5ft_14',['property_predicate_t',['../namespaceentt.html#ae7397994dada156c6e1cc1871c419aae',1,'entt']]],
+  ['protocols_5ft_15',['protocols_t',['../namespacefs.html#a4676ca1910a45fd6803da5a148eb5c73',1,'fs']]],
+  ['ptr_16',['ptr',['../classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b',1,'gfx::handle_impl::ptr'],['../structseq_1_1seq__inspect__info.html#a910e0fc2384de8667e147025876b06c5',1,'seq::seq_inspect_info::ptr'],['../classunravel_1_1gpu__program.html#a2532fed17b041d3fa219822763d05cb9',1,'unravel::gpu_program::ptr']]]
 ];

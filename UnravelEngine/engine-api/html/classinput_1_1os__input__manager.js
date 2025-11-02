@@ -8,6 +8,7 @@ var classinput_1_1os__input__manager =
     [ "get_keyboard", "classinput_1_1os__input__manager.html#a79d71dfebdca93d7cf9a26b3465360a4", null ],
     [ "get_max_gamepads", "classinput_1_1os__input__manager.html#a2d96da92b2420fe21f535145b90720f8", null ],
     [ "get_mouse", "classinput_1_1os__input__manager.html#a5bdf349831bcf8c0d39c5bb55c5a5922", null ],
+    [ "get_work_zone", "classinput_1_1os__input__manager.html#a3abd5e422aa1fe2847cf728879567a36", null ],
     [ "init", "classinput_1_1os__input__manager.html#a2e33cf1d5b7d2f21e01f9f1128303818", null ],
     [ "is_input_allowed", "classinput_1_1os__input__manager.html#adb58f2dc868d4f6e77b960aabb17fdb0", null ],
     [ "is_inside_work_zone", "classinput_1_1os__input__manager.html#a0eea80acb00358590e60eccc19eabea7", null ],

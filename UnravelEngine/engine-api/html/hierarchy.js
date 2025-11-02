@@ -116,6 +116,9 @@ var hierarchy =
       [ "crtp_meta_type< inspector_asset_handle_ui_tree, inspector_asset_handle >", "structcrtp__meta__type.html", [
         [ "unravel::inspector_asset_handle_ui_tree", "structunravel_1_1inspector__asset__handle__ui__tree.html", null ]
       ] ],
+      [ "crtp_meta_type< inspector_bbox, inspector >", "structcrtp__meta__type.html", [
+        [ "unravel::inspector_bbox", "structunravel_1_1inspector__bbox.html", null ]
+      ] ],
       [ "crtp_meta_type< inspector_bool, inspector >", "structcrtp__meta__type.html", [
         [ "unravel::inspector_bool", "structunravel_1_1inspector__bool.html", null ]
       ] ],
@@ -146,6 +149,15 @@ var hierarchy =
       [ "crtp_meta_type< inspector_float, inspector >", "structcrtp__meta__type.html", [
         [ "unravel::inspector_float", "structunravel_1_1inspector__float.html", null ]
       ] ],
+      [ "crtp_meta_type< inspector_gradient, inspector >", "structcrtp__meta__type.html", [
+        [ "unravel::inspector_gradient", "structunravel_1_1inspector__gradient.html", null ]
+      ] ],
+      [ "crtp_meta_type< inspector_gradient_float, inspector >", "structcrtp__meta__type.html", [
+        [ "unravel::inspector_gradient_float", "structunravel_1_1inspector__gradient__float.html", null ]
+      ] ],
+      [ "crtp_meta_type< inspector_gradient_frange, inspector >", "structcrtp__meta__type.html", [
+        [ "unravel::inspector_gradient_frange", "structunravel_1_1inspector__gradient__frange.html", null ]
+      ] ],
       [ "crtp_meta_type< inspector_int16, inspector >", "structcrtp__meta__type.html", [
         [ "unravel::inspector_int16", "structunravel_1_1inspector__int16.html", null ]
       ] ],
@@ -169,6 +181,9 @@ var hierarchy =
       ] ],
       [ "crtp_meta_type< inspector_mono_scoped_object, inspector_mono_object >", "structcrtp__meta__type.html", [
         [ "unravel::inspector_mono_scoped_object", "structunravel_1_1inspector__mono__scoped__object.html", null ]
+      ] ],
+      [ "crtp_meta_type< inspector_particle_emitter_component, inspector >", "structcrtp__meta__type.html", [
+        [ "unravel::inspector_particle_emitter_component", "structunravel_1_1inspector__particle__emitter__component.html", null ]
       ] ],
       [ "crtp_meta_type< inspector_path, inspector >", "structcrtp__meta__type.html", [
         [ "unravel::inspector_path", "structunravel_1_1inspector__path.html", null ]
@@ -341,7 +356,9 @@ var hierarchy =
     [ "asset_handle< unravel::ui_tree >", "structasset__handle.html", null ],
     [ "asset_link< T >", "structasset__link.html", null ],
     [ "unravel::asset_manager", "classunravel_1_1asset__manager.html", null ],
+    [ "unravel::asset_compiler::asset_manifest", "structunravel_1_1asset__compiler_1_1asset__manifest.html", null ],
     [ "unravel::asset_meta", "structunravel_1_1asset__meta.html", null ],
+    [ "unravel::defaults::asset_preview_result", "structunravel_1_1defaults_1_1asset__preview__result.html", null ],
     [ "unravel::settings::asset_settings", "structunravel_1_1settings_1_1asset__settings.html", null ],
     [ "unravel::asset_watcher", "classunravel_1_1asset__watcher.html", null ],
     [ "gfx::Atlas", "classgfx_1_1_atlas.html", null ],
@@ -423,6 +440,9 @@ var hierarchy =
         [ "unravel::component_crtp< model_component, owned_component >", "structunravel_1_1component__crtp.html", [
           [ "unravel::model_component", "classunravel_1_1model__component.html", null ]
         ] ],
+        [ "unravel::component_crtp< particle_emitter_component, owned_component >", "structunravel_1_1component__crtp.html", [
+          [ "unravel::particle_emitter_component", "classunravel_1_1particle__emitter__component.html", null ]
+        ] ],
         [ "unravel::component_crtp< physics_component, owned_component >", "structunravel_1_1component__crtp.html", [
           [ "unravel::physics_component", "classunravel_1_1physics__component.html", null ]
         ] ],
@@ -450,6 +470,13 @@ var hierarchy =
     [ "unravel::basic_storage", "structunravel_1_1basic__storage.html", [
       [ "unravel::asset_storage< T >", "structunravel_1_1asset__storage.html", null ]
     ] ],
+    [ "unravel::batch_collector", "classunravel_1_1batch__collector.html", null ],
+    [ "unravel::batch_group", "structunravel_1_1batch__group.html", null ],
+    [ "unravel::batch_instance", "structunravel_1_1batch__instance.html", null ],
+    [ "unravel::batch_instance_collection", "classunravel_1_1batch__instance__collection.html", null ],
+    [ "unravel::batch_key", "structunravel_1_1batch__key.html", null ],
+    [ "unravel::batch_stats", "structunravel_1_1batch__stats.html", null ],
+    [ "ps::ParticleSystem::BatchedParticle", "structps_1_1_particle_system_1_1_batched_particle.html", null ],
     [ "math::bbox", "structmath_1_1bbox.html", null ],
     [ "mono::managed_interface::bbox", "structmono_1_1managed__interface_1_1bbox.html", null ],
     [ "generator::bezier_mesh_t< D0, D1 >", "classgenerator_1_1bezier__mesh__t.html", null ],
@@ -579,6 +606,11 @@ var hierarchy =
     [ "unravel::editor_actions", "structunravel_1_1editor__actions.html", null ],
     [ "unravel::editor_settings", "structunravel_1_1editor__settings.html", null ],
     [ "unravel::editor_settings_panel", "classunravel_1_1editor__settings__panel.html", null ],
+    [ "ps::Emitter", "structps_1_1_emitter.html", null ],
+    [ "EmitterDirection", "struct_emitter_direction.html", null ],
+    [ "EmitterHandle", "struct_emitter_handle.html", null ],
+    [ "EmitterShape", "struct_emitter_shape.html", null ],
+    [ "EmitterUniforms", "struct_emitter_uniforms.html", null ],
     [ "generator::empty_mesh", "classgenerator_1_1empty__mesh.html", [
       [ "generator::merge_mesh_t<>", "classgenerator_1_1merge__mesh__t_3_4.html", null ]
     ] ],
@@ -665,6 +697,11 @@ var hierarchy =
     [ "unravel::gizmos_renderer", "classunravel_1_1gizmos__renderer.html", null ],
     [ "gfx::glyph_info", "structgfx_1_1glyph__info.html", null ],
     [ "unravel::gpu_program", "classunravel_1_1gpu__program.html", null ],
+    [ "math::gradient< T >", "classmath_1_1gradient.html", null ],
+    [ "math::gradient< float >", "classmath_1_1gradient.html", null ],
+    [ "math::gradient< math::color >", "classmath_1_1gradient.html", null ],
+    [ "math::gradient< range >", "classmath_1_1gradient.html", null ],
+    [ "math::gradient_point< T >", "structmath_1_1gradient__point.html", null ],
     [ "unravel::settings::graphics_settings", "structunravel_1_1settings_1_1graphics__settings.html", null ],
     [ "unravel::editing_manager::grid", "structunravel_1_1editing__manager_1_1grid.html", null ],
     [ "generator::grid_shape_t", "classgenerator_1_1grid__shape__t.html", null ],
@@ -693,6 +730,7 @@ var hierarchy =
     [ "std::hash< contact_key >", "structstd_1_1hash_3_01contact__key_01_4.html", null ],
     [ "std::hash< gfx::fbo_key >", "structstd_1_1hash_3_01gfx_1_1fbo__key_01_4.html", null ],
     [ "std::hash< gfx::texture_key >", "structstd_1_1hash_3_01gfx_1_1texture__key_01_4.html", null ],
+    [ "std::hash< unravel::batch_key >", "structstd_1_1hash_3_01unravel_1_1batch__key_01_4.html", null ],
     [ "unravel::header_panel", "classunravel_1_1header__panel.html", null ],
     [ "generator::helix_path_t", "classgenerator_1_1helix__path__t.html", null ],
     [ "unravel::hiz_pass", "classunravel_1_1hiz__pass.html", null ],
@@ -734,6 +772,7 @@ var hierarchy =
     ] ],
     [ "unravel::inspect_result", "structunravel_1_1inspect__result.html", null ],
     [ "unravel::inspector_registry", "structunravel_1_1inspector__registry.html", null ],
+    [ "unravel::instance_vertex_data", "structunravel_1_1instance__vertex__data.html", null ],
     [ "unravel::editing_manager::inverse_kinematics", "structunravel_1_1editing__manager_1_1inverse__kinematics.html", null ],
     [ "std::is_trivially_destructible", null, [
       [ "moodycamel::details::is_trivially_destructible< T >", "structmoodycamel_1_1details_1_1is__trivially__destructible.html", null ]
@@ -827,6 +866,7 @@ var hierarchy =
     [ "unravel::mono_inspector< asset_handle< T > >", "structunravel_1_1mono__inspector_3_01asset__handle_3_01_t_01_4_01_4.html", null ],
     [ "unravel::mono_inspector< entt::handle >", "structunravel_1_1mono__inspector_3_01entt_1_1handle_01_4.html", null ],
     [ "unravel::mono_inspector< mono::mono_array< T > >", "structunravel_1_1mono__inspector_3_01mono_1_1mono__array_3_01_t_01_4_01_4.html", null ],
+    [ "unravel::mono_inspector_collection", "structunravel_1_1mono__inspector__collection.html", null ],
     [ "unravel::mono_inspector_enum< T >", "structunravel_1_1mono__inspector__enum.html", null ],
     [ "unravel::mono_loader< Archive, T >", "structunravel_1_1mono__loader.html", null ],
     [ "unravel::mono_loader< Archive, asset_handle< T > >", "structunravel_1_1mono__loader_3_01_archive_00_01asset__handle_3_01_t_01_4_01_4.html", null ],
@@ -863,11 +903,15 @@ var hierarchy =
     [ "generator::parametric_shape_t", "classgenerator_1_1parametric__shape__t.html", null ],
     [ "unravel::model::submit_callbacks::params", "structunravel_1_1model_1_1submit__callbacks_1_1params.html", null ],
     [ "cmd_line::parser", "classcmd__line_1_1parser.html", null ],
+    [ "ps::Particle", "structps_1_1_particle.html", null ],
+    [ "unravel::particle_system", "classunravel_1_1particle__system.html", null ],
+    [ "ps::ParticleSort", "structps_1_1_particle_sort.html", null ],
+    [ "ps::ParticleSystem", "structps_1_1_particle_system.html", null ],
+    [ "ParticleVertex", "struct_particle_vertex.html", null ],
     [ "serialization::path_context", "structserialization_1_1path__context.html", null ],
     [ "serialization::path_segment_guard", "structserialization_1_1path__segment__guard.html", null ],
     [ "generator::path_vertex_t", "classgenerator_1_1path__vertex__t.html", null ],
     [ "fs::pattern_filter", "classfs_1_1pattern__filter.html", null ],
-    [ "unravel::rendering::per_camera_data", "structunravel_1_1rendering_1_1per__camera__data.html", null ],
     [ "unravel::performance_profiler::per_frame_data", "structunravel_1_1performance__profiler_1_1per__frame__data.html", null ],
     [ "unravel::performance_profiler", "classunravel_1_1performance__profiler.html", null ],
     [ "unravel::physics_box_shape", "structunravel_1_1physics__box__shape.html", null ],
@@ -875,6 +919,7 @@ var hierarchy =
     [ "unravel::physics_compound_shape", "structunravel_1_1physics__compound__shape.html", null ],
     [ "unravel::physics_cylinder_shape", "structunravel_1_1physics__cylinder__shape.html", null ],
     [ "unravel::physics_material", "structunravel_1_1physics__material.html", null ],
+    [ "unravel::physics_mesh_shape", "structunravel_1_1physics__mesh__shape.html", null ],
     [ "unravel::physics_sphere_shape", "structunravel_1_1physics__sphere__shape.html", null ],
     [ "unravel::physics_system", "classunravel_1_1physics__system.html", null ],
     [ "unravel::picking_manager", "classunravel_1_1picking__manager.html", null ],
@@ -882,6 +927,7 @@ var hierarchy =
       [ "unravel::rendering::deferred", "classunravel_1_1rendering_1_1deferred.html", null ]
     ] ],
     [ "unravel::pipeline_camera", "classunravel_1_1pipeline__camera.html", null ],
+    [ "unravel::rendering::pipeline_stats", "structunravel_1_1rendering_1_1pipeline__stats.html", null ],
     [ "math::plane", "structmath_1_1plane.html", null ],
     [ "generator::plane_mesh_t", "classgenerator_1_1plane__mesh__t.html", null ],
     [ "input::point", "structinput_1_1point.html", null ],
@@ -890,6 +936,7 @@ var hierarchy =
     [ "point< std::int32_t >", "structpoint.html", null ],
     [ "point< std::uint32_t >", "structpoint.html", null ],
     [ "unravel::light::point_shadowmap_params", "structunravel_1_1light_1_1point__shadowmap__params.html", null ],
+    [ "PosColorTexCoord0Vertex", "struct_pos_color_tex_coord0_vertex.html", null ],
     [ "unravel::pose_mat4", "structunravel_1_1pose__mat4.html", null ],
     [ "unravel::pose_transform", "structunravel_1_1pose__transform.html", null ],
     [ "unravel::shadow::Light::Position", "unionunravel_1_1shadow_1_1_light_1_1_position.html", null ],
@@ -1002,6 +1049,7 @@ var hierarchy =
     [ "generator::shape_vertex_t", "classgenerator_1_1shape__vertex__t.html", null ],
     [ "unravel::crash::signal_info", "structunravel_1_1crash_1_1signal__info.html", null ],
     [ "unravel::simulation", "structunravel_1_1simulation.html", null ],
+    [ "SimulationSpace", "struct_simulation_space.html", null ],
     [ "size< T >", "structsize.html", null ],
     [ "size< float >", "structsize.html", null ],
     [ "size< std::int32_t >", "structsize.html", null ],
@@ -1059,6 +1107,7 @@ var hierarchy =
     [ "generator::subdivide_shape_t< shape_t >", "classgenerator_1_1subdivide__shape__t.html", null ],
     [ "unravel::mesh::submesh", "structunravel_1_1mesh_1_1submesh.html", null ],
     [ "unravel::model::submit_callbacks", "structunravel_1_1model_1_1submit__callbacks.html", null ],
+    [ "unravel::submit_context", "structunravel_1_1submit__context.html", null ],
     [ "subprocess_s", "structsubprocess__s.html", null ],
     [ "unravel::detail::sun_controller", "classunravel_1_1detail_1_1sun__controller.html", null ],
     [ "generator::svg_writer_t", "classgenerator_1_1svg__writer__t.html", null ],

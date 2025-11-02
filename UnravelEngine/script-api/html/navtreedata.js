@@ -55,11 +55,12 @@ var NAVTREEINDEX =
 [
 "_animation_component_8cs.html",
 "_key_code_8cs.html#ac76086cff6d2cc4c02a091ce6e88172fadf7e3a8bbf1a792d3193c4b3c458fea3",
-"class_unravel_1_1_core_1_1_bone_component.html",
-"class_unravel_1_1_core_1_1_tooltip_attribute.html#a8fdcfca710b742a2905cf67cdb84f212",
-"class_unravel_1_1_samples_1_1_sample_u_i_wrapper_controller.html",
-"namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa95dfde4807d4d6a9eec499203b3c24a0",
-"struct_unravel_1_1_core_1_1_entity.html#a70005f4d316f2dfd49d403713f49129a"
+"class_unravel_1_1_core_1_1_audio_source_component.html#a61a0e60dde16b87ef0debfeaa2cef90d",
+"class_unravel_1_1_core_1_1_script_component_manager.html#a32910fa628e0d52c3c7eaba01e5cf686",
+"class_unravel_1_1_core_1_1_u_i_element.html#a55824eeb15a0de353fe3d43283a96544",
+"namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fa164a1e9b972e107a40ae5162fd877ee2",
+"struct_bounds.html#a0ad183a6ada058372820e91c95e9cedf",
+"struct_vector3.html#ac728610ea3ca27db02604efb0810be0b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

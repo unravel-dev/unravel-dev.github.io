@@ -1,6 +1,8 @@
 var utils_8h =
 [
     [ "string_tokens_t", "utils_8h.html#a3cd29819e0dc5eeb2f8405f330eb28b5", null ],
+    [ "capitalize", "utils_8h.html#a61c06d4f098a26ec117ade8d8c8c3cda", null ],
+    [ "capitalize", "utils_8h.html#a071517eafd2407bb64027d00ef54d575", null ],
     [ "extract_substring", "utils_8h.html#a37b998007f6dc809ba37aa2e3e077905", null ],
     [ "ltrim", "utils_8h.html#a89ed75131f4d128b68bf3db088bd48b0", null ],
     [ "ltrim", "utils_8h.html#a63d11f55822914e45c6d3141cda3445d", null ],

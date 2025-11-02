@@ -105,6 +105,9 @@ $(function(){initNavTree('namespaceunravel_1_1asset__compiler.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manifest data for compiled assets.  <a href="structunravel_1_1asset__compiler_1_1asset__manifest.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1asset__compiler_1_1script__compilation__entry.html">script_compilation_entry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -174,6 +177,18 @@ Functions</h2></td></tr>
 <tr class="memitem:aa541711dec7ac46ab1a28f8dda3bd27f" id="r_aa541711dec7ac46ab1a28f8dda3bd27f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa541711dec7ac46ab1a28f8dda3bd27f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa541711dec7ac46ab1a28f8dda3bd27f">read_importer</a> (<a class="el" href="classunravel_1_1asset__manager.html">asset_manager</a> &amp;am, const fs::path &amp;key) -&gt; std::shared_ptr&lt; <a class="el" href="structunravel_1_1asset__importer__meta.html">asset_importer_meta</a> &gt;</td></tr>
 <tr class="separator:aa541711dec7ac46ab1a28f8dda3bd27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ba4c2205b20181fab226ce3699da90" id="r_a13ba4c2205b20181fab226ce3699da90"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13ba4c2205b20181fab226ce3699da90">get_manifest_path</a> (const fs::path &amp;compiled_asset_path) -&gt; fs::path</td></tr>
+<tr class="memdesc:a13ba4c2205b20181fab226ce3699da90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate manifest file path from compiled asset path.  <br /></td></tr>
+<tr class="separator:a13ba4c2205b20181fab226ce3699da90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91dafe038bf26d04c66f4d8af615a6c6" id="r_a91dafe038bf26d04c66f4d8af615a6c6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91dafe038bf26d04c66f4d8af615a6c6">save_manifest</a> (const fs::path &amp;manifest_path, const <a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a> &amp;manifest) -&gt; bool</td></tr>
+<tr class="memdesc:a91dafe038bf26d04c66f4d8af615a6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save manifest to file.  <br /></td></tr>
+<tr class="separator:a91dafe038bf26d04c66f4d8af615a6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4a1de6727070234d587b2d4a588884" id="r_abd4a1de6727070234d587b2d4a588884"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd4a1de6727070234d587b2d4a588884">load_manifest</a> (const fs::path &amp;manifest_path, <a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a> &amp;manifest) -&gt; bool</td></tr>
+<tr class="memdesc:abd4a1de6727070234d587b2d4a588884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load manifest from file.  <br /></td></tr>
+<tr class="separator:abd4a1de6727070234d587b2d4a588884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa344a1c4e78cf8d0886002e6c96d5cd" id="r_aaa344a1c4e78cf8d0886002e6c96d5cd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa344a1c4e78cf8d0886002e6c96d5cd">is_source_file_changed</a> (const fs::path &amp;source_path, const <a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a> &amp;manifest) -&gt; bool</td></tr>
+<tr class="memdesc:aaa344a1c4e78cf8d0886002e6c96d5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if source file has changed compared to manifest.  <br /></td></tr>
+<tr class="separator:aaa344a1c4e78cf8d0886002e6c96d5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abe2191e6543be154c6a7947d576675b2" name="abe2191e6543be154c6a7947d576675b2"></a>
@@ -241,7 +256,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00778">778</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00833">833</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -277,7 +292,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00953">953</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01078">1078</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -313,7 +328,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00816">816</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00884">884</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +364,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00523">523</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00541">541</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +400,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00579">579</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00603">603</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -421,7 +436,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00616">616</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00646">646</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +472,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00665">665</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00707">707</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -493,7 +508,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00849">849</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00935">935</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -529,7 +544,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00827">827</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00901">901</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -565,7 +580,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00838">838</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00918">918</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -601,7 +616,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01177">1177</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01316">1316</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -637,7 +652,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01057">1057</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01195">1195</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -673,7 +688,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00899">899</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01011">1011</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -709,7 +724,78 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00871">871</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00970">970</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13ba4c2205b20181fab226ce3699da90" name="a13ba4c2205b20181fab226ce3699da90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ba4c2205b20181fab226ce3699da90">&#9670;&#160;</a></span>get_manifest_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::asset_compiler::get_manifest_path </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>compiled_asset_path</em></span></td><td>)</td>
+          <td> -&gt;  fs::path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate manifest file path from compiled asset path. </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8cpp_source.html#l00049">49</a> of file <a class="el" href="asset__manifest_8cpp_source.html">asset_manifest.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaa344a1c4e78cf8d0886002e6c96d5cd" name="aaa344a1c4e78cf8d0886002e6c96d5cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa344a1c4e78cf8d0886002e6c96d5cd">&#9670;&#160;</a></span>is_source_file_changed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::asset_compiler::is_source_file_changed </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>source_path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>manifest</em></span>&#160;) -&gt;  bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if source file has changed compared to manifest. </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8cpp_source.html#l00113">113</a> of file <a class="el" href="asset__manifest_8cpp_source.html">asset_manifest.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abd4a1de6727070234d587b2d4a588884" name="abd4a1de6727070234d587b2d4a588884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4a1de6727070234d587b2d4a588884">&#9670;&#160;</a></span>load_manifest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::asset_compiler::load_manifest </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>manifest_path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>manifest</em></span>&#160;) -&gt;  bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load manifest from file. </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8cpp_source.html#l00080">80</a> of file <a class="el" href="asset__manifest_8cpp_source.html">asset_manifest.cpp</a>.</p>
 
 </div>
 </div>
@@ -729,7 +815,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01002">1002</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01140">1140</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -749,7 +835,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01029">1029</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01167">1167</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -798,7 +884,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00752">752</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00807">807</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -824,7 +910,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00927">927</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l01052">1052</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -850,7 +936,7 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00553">553</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00577">577</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -876,7 +962,32 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00639">639</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00681">681</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a91dafe038bf26d04c66f4d8af615a6c6" name="a91dafe038bf26d04c66f4d8af615a6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91dafe038bf26d04c66f4d8af615a6c6">&#9670;&#160;</a></span>save_manifest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::asset_compiler::save_manifest </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>manifest_path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>manifest</em></span>&#160;) -&gt;  bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save manifest to file. </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8cpp_source.html#l00054">54</a> of file <a class="el" href="asset__manifest_8cpp_source.html">asset_manifest.cpp</a>.</p>
 
 </div>
 </div>

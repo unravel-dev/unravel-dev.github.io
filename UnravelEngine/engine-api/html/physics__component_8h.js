@@ -4,6 +4,7 @@ var physics__component_8h =
     [ "unravel::physics_sphere_shape", "structunravel_1_1physics__sphere__shape.html", "structunravel_1_1physics__sphere__shape" ],
     [ "unravel::physics_capsule_shape", "structunravel_1_1physics__capsule__shape.html", "structunravel_1_1physics__capsule__shape" ],
     [ "unravel::physics_cylinder_shape", "structunravel_1_1physics__cylinder__shape.html", "structunravel_1_1physics__cylinder__shape" ],
+    [ "unravel::physics_mesh_shape", "structunravel_1_1physics__mesh__shape.html", "structunravel_1_1physics__mesh__shape" ],
     [ "unravel::physics_compound_shape", "structunravel_1_1physics__compound__shape.html", "structunravel_1_1physics__compound__shape" ],
     [ "unravel::manifold_point", "structunravel_1_1manifold__point.html", "structunravel_1_1manifold__point" ],
     [ "unravel::raycast_hit", "structunravel_1_1raycast__hit.html", "structunravel_1_1raycast__hit" ],
@@ -13,6 +14,10 @@ var physics__component_8h =
       [ "acceleration", "physics__component_8h.html#affd248520b0507ba13ad6d424101ece6ad3879b8802412d8dc066fd9f1a6dd2b4", null ],
       [ "impulse", "physics__component_8h.html#affd248520b0507ba13ad6d424101ece6a9090cf2efa28334b14a853251679809f", null ],
       [ "velocity_change", "physics__component_8h.html#affd248520b0507ba13ad6d424101ece6abd557891cfcd239be2d26ba8bb96dc96", null ]
+    ] ],
+    [ "mesh_collision_type", "physics__component_8h.html#ab2575bb473441137acc92b13673c469e", [
+      [ "convex", "physics__component_8h.html#ab2575bb473441137acc92b13673c469eab9e9dd1fa31d98cf8eb1b96e735550ba", null ],
+      [ "concave", "physics__component_8h.html#ab2575bb473441137acc92b13673c469ea4c75bc8e9803615edcd68a66688bb160", null ]
     ] ],
     [ "physics_property", "physics__component_8h.html#acec4ffb55357d08580b8bf2a1057532f", [
       [ "gravity", "physics__component_8h.html#acec4ffb55357d08580b8bf2a1057532fa67f2a835697e7c9c2c5146c76eca6038", null ],

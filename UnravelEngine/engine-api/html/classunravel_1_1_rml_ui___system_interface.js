@@ -10,5 +10,6 @@ var classunravel_1_1_rml_ui___system_interface =
     [ "LogMessage", "classunravel_1_1_rml_ui___system_interface.html#a9380453d998da21241ad481cdb0cb773", null ],
     [ "SetClipboardText", "classunravel_1_1_rml_ui___system_interface.html#a3c9b673994b3355a24242a77d8fb21f9", null ],
     [ "SetMouseCursor", "classunravel_1_1_rml_ui___system_interface.html#aff4727938427e9c9f709e523d6eb7da3", null ],
-    [ "shutdown", "classunravel_1_1_rml_ui___system_interface.html#a7787a4c43863749af63ac786a9b910a1", null ]
+    [ "shutdown", "classunravel_1_1_rml_ui___system_interface.html#a7787a4c43863749af63ac786a9b910a1", null ],
+    [ "TranslateString", "classunravel_1_1_rml_ui___system_interface.html#a5c0f328011123abcc3db644ffefc2fec", null ]
 ];

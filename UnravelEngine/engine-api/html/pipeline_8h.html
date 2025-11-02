@@ -104,26 +104,27 @@ $(function(){initNavTree('pipeline_8h.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="ecs_8h_source.html">engine/ecs/ecs.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="camera_8h_source.html">engine/rendering/camera.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="layer__mask_8h_source.html">engine/layers/layer_mask.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="camera_8h_source.html">engine/rendering/camera.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="batch__collector_8h_source.html">engine/rendering/batch_collector.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="frame__buffer_8h_source.html">graphics/frame_buffer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="render__view_8h_source.html">graphics/render_view.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="assao__pass_8h_source.html">passes/assao_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="atmospheric__pass_8h_source.html">passes/atmospheric_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="atmospheric__pass__perez_8h_source.html">passes/atmospheric_pass_perez.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="atmospheric__pass__skybox_8h_source.html">passes/atmospheric_pass_skybox.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="fxaa__pass_8h_source.html">passes/fxaa_pass.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="tonemapping__pass_8h_source.html">passes/tonemapping_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="blit__pass_8h_source.html">passes/blit_pass.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fxaa__pass_8h_source.html">passes/fxaa_pass.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hiz__pass_8h_source.html">passes/hiz_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="prefilter__pass_8h_source.html">passes/prefilter_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ssr__pass_8h_source.html">passes/ssr_pass.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="hiz__pass_8h_source.html">passes/hiz_pass.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tonemapping__pass_8h_source.html">passes/tonemapping_pass.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="context_8hpp_source.html">context/context.hpp</a>&gt;</code><br />
+<code>#include &lt;hpp/small_vector.hpp&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;hpp/small_vector.hpp&gt;</code><br />
 </div>
 <p><a href="pipeline_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -132,8 +133,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1rendering_1_1lod__data.html">unravel::rendering::lod_data</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains level of detail (LOD) data for an entity.  <a href="structunravel_1_1rendering_1_1lod__data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1rendering_1_1per__camera__data.html">unravel::rendering::per_camera_data</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains data specific to a camera, including LOD information.  <a href="structunravel_1_1rendering_1_1per__camera__data.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1rendering_1_1pipeline__stats.html">unravel::rendering::pipeline_stats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1rendering_1_1pipeline.html">unravel::rendering::pipeline</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

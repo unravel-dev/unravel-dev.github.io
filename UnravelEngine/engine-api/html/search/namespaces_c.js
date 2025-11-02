@@ -17,8 +17,9 @@ var searchData=
   ['unravel_3a_3ashortcuts_14',['shortcuts',['../namespaceunravel_1_1shortcuts.html',1,'unravel']]],
   ['unravel_3a_3astatistics_5futils_15',['statistics_utils',['../namespaceunravel_1_1statistics__utils.html',1,'unravel']]],
   ['unravel_3a_3atriangle_5fflags_16',['triangle_flags',['../namespaceunravel_1_1triangle__flags.html',1,'unravel']]],
-  ['utf8_17',['utf8',['../namespaceutf8.html',1,'']]],
-  ['utf8_3a_3ainternal_18',['internal',['../namespaceutf8_1_1internal.html',1,'utf8']]],
-  ['utf8_3a_3aunchecked_19',['unchecked',['../namespaceutf8_1_1unchecked.html',1,'utf8']]],
-  ['utils_20',['utils',['../namespaceutils.html',1,'']]]
+  ['unravel_3a_3autils_17',['utils',['../namespaceunravel_1_1utils.html',1,'unravel']]],
+  ['utf8_18',['utf8',['../namespaceutf8.html',1,'']]],
+  ['utf8_3a_3ainternal_19',['internal',['../namespaceutf8_1_1internal.html',1,'utf8']]],
+  ['utf8_3a_3aunchecked_20',['unchecked',['../namespaceutf8_1_1unchecked.html',1,'utf8']]],
+  ['utils_21',['utils',['../namespaceutils.html',1,'']]]
 ];

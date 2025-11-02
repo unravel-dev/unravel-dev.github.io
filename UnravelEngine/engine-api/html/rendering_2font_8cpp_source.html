@@ -923,185 +923,186 @@ $(function(){initNavTree('rendering_2font_8cpp_source.html',''); initResizable(t
 <div class="line"><a id="l00818" name="l00818"></a><span class="lineno"><a class="line" href="namespaceunravel.html#a5f755eadc0ba06e37d7873be0a8269d6">  818</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceunravel.html#a5f755eadc0ba06e37d7873be0a8269d6">deinit_fonts</a>()</div>
 <div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>{</div>
 <div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>    <span class="keyword">delete</span> ANONYMOUS::s_manager;</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>}</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    ANONYMOUS::s_manager = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>}</div>
 </div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span> </div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span><a class="code hl_function" href="structunravel_1_1base__font.html#af9a8cb72e95427ca210ac21ad722d720">base_font::base_font</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span> </div>
-<div class="foldopen" id="foldopen00825" data-start="{" data-end="}">
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno"><a class="line" href="structunravel_1_1base__font.html#a60c254cf25bf590e4495ff78d5e54c01">  825</a></span><a class="code hl_function" href="structunravel_1_1base__font.html#a60c254cf25bf590e4495ff78d5e54c01">base_font::~base_font</a>()</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>{</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="utils_2debugdraw_2debugdraw_8h.html#a0932d97442e94b416c19e0f9724e429a">isValid</a>(<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>))</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    {</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>        ANONYMOUS::s_manager-&gt;destroy_font(<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>);</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>    }</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>}</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span> </div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span><a class="code hl_function" href="structunravel_1_1base__font.html#af9a8cb72e95427ca210ac21ad722d720">base_font::base_font</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span> </div>
+<div class="foldopen" id="foldopen00826" data-start="{" data-end="}">
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno"><a class="line" href="structunravel_1_1base__font.html#a60c254cf25bf590e4495ff78d5e54c01">  826</a></span><a class="code hl_function" href="structunravel_1_1base__font.html#a60c254cf25bf590e4495ff78d5e54c01">base_font::~base_font</a>()</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>{</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="utils_2debugdraw_2debugdraw_8h.html#a0932d97442e94b416c19e0f9724e429a">isValid</a>(<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>))</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>    {</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>        ANONYMOUS::s_manager-&gt;destroy_font(<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>);</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>    }</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>}</div>
 </div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span> </div>
-<div class="foldopen" id="foldopen00833" data-start="{" data-end="}">
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno"><a class="line" href="structunravel_1_1base__font.html#ae52d9799318ca1915d2119b45ac71d07">  833</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1base__font.html#ae52d9799318ca1915d2119b45ac71d07">base_font::get_info</a>() const -&gt; const <a class="code hl_namespace" href="namespacegfx.html">gfx</a>::font_info&amp;</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>{</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>    <span class="keywordflow">return</span> ANONYMOUS::s_manager-&gt;get_font_info(<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>);</div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>}</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span> </div>
+<div class="foldopen" id="foldopen00834" data-start="{" data-end="}">
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno"><a class="line" href="structunravel_1_1base__font.html#ae52d9799318ca1915d2119b45ac71d07">  834</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1base__font.html#ae52d9799318ca1915d2119b45ac71d07">base_font::get_info</a>() const -&gt; const <a class="code hl_namespace" href="namespacegfx.html">gfx</a>::font_info&amp;</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>{</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>    <span class="keywordflow">return</span> ANONYMOUS::s_manager-&gt;get_font_info(<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>);</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>}</div>
 </div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span> </div>
-<div class="foldopen" id="foldopen00838" data-start="{" data-end="}">
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno"><a class="line" href="structunravel_1_1base__font.html#a971ab640c5f38fc680d92a9eb2d09700">  838</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1base__font.html#a971ab640c5f38fc680d92a9eb2d09700">base_font::get_line_height</a>() const -&gt; <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>{</div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; info = <a class="code hl_function" href="structunravel_1_1base__font.html#ae52d9799318ca1915d2119b45ac71d07">get_info</a>();</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>    <span class="keywordflow">return</span> info.line_gap + info.ascender - info.descender;</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>}</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span> </div>
+<div class="foldopen" id="foldopen00839" data-start="{" data-end="}">
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno"><a class="line" href="structunravel_1_1base__font.html#a971ab640c5f38fc680d92a9eb2d09700">  839</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1base__font.html#a971ab640c5f38fc680d92a9eb2d09700">base_font::get_line_height</a>() const -&gt; <span class="keywordtype">float</span></div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>{</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; info = <a class="code hl_function" href="structunravel_1_1base__font.html#ae52d9799318ca1915d2119b45ac71d07">get_info</a>();</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>    <span class="keywordflow">return</span> info.line_gap + info.ascender - info.descender;</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>}</div>
 </div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span> </div>
-<div class="foldopen" id="foldopen00844" data-start="{" data-end="}">
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno"><a class="line" href="structunravel_1_1base__font.html#adb1218bb002dfc2cd7484a707d1e1ea2">  844</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1base__font.html#adb1218bb002dfc2cd7484a707d1e1ea2">base_font::is_valid</a>() const -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>{</div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="utils_2debugdraw_2debugdraw_8h.html#a0932d97442e94b416c19e0f9724e429a">isValid</a>(<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>);</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>}</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span> </div>
+<div class="foldopen" id="foldopen00845" data-start="{" data-end="}">
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno"><a class="line" href="structunravel_1_1base__font.html#adb1218bb002dfc2cd7484a707d1e1ea2">  845</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1base__font.html#adb1218bb002dfc2cd7484a707d1e1ea2">base_font::is_valid</a>() const -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>{</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="utils_2debugdraw_2debugdraw_8h.html#a0932d97442e94b416c19e0f9724e429a">isValid</a>(<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>);</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>}</div>
 </div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
-<div class="foldopen" id="foldopen00849" data-start="{" data-end="}">
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#addae27eb64e208f5024bee830e21a386">  849</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#addae27eb64e208f5024bee830e21a386">font::get_scaled_font</a>(uint32_t pixel_size) <span class="keyword">const</span> -&gt; std::shared_ptr&lt;scaled_font&gt;</div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>{</div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    <span class="keyword">auto</span> f = std::make_shared&lt;scaled_font&gt;();</div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>    f-&gt;handle = ANONYMOUS::s_manager-&gt;create_scaled_font_to_pixel_size(<a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a>, pixel_size);</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>    <span class="keywordflow">return</span> f;</div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>}</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span> </div>
+<div class="foldopen" id="foldopen00850" data-start="{" data-end="}">
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#addae27eb64e208f5024bee830e21a386">  850</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#addae27eb64e208f5024bee830e21a386">font::get_scaled_font</a>(uint32_t pixel_size) <span class="keyword">const</span> -&gt; std::shared_ptr&lt;scaled_font&gt;</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>{</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>    <span class="keyword">auto</span> f = std::make_shared&lt;scaled_font&gt;();</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>    f-&gt;handle = ANONYMOUS::s_manager-&gt;create_scaled_font_to_pixel_size(<a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a>, pixel_size);</div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>    <span class="keywordflow">return</span> f;</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>}</div>
 </div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span> </div>
-<div class="foldopen" id="foldopen00856" data-start="{" data-end="}">
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#ae048f69021e89125d126110d9e3248f5">  856</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#ae048f69021e89125d126110d9e3248f5">font::default_thin</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>{</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>}</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span> </div>
+<div class="foldopen" id="foldopen00857" data-start="{" data-end="}">
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#ae048f69021e89125d126110d9e3248f5">  857</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#ae048f69021e89125d126110d9e3248f5">font::default_thin</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>{</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>}</div>
 </div>
-<div class="foldopen" id="foldopen00861" data-start="{" data-end="}">
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a3b7bbae5cbf89eed400ee51c8fcb2835">  861</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#a3b7bbae5cbf89eed400ee51c8fcb2835">font::default_extra_light</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>{</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>}</div>
+<div class="foldopen" id="foldopen00862" data-start="{" data-end="}">
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a3b7bbae5cbf89eed400ee51c8fcb2835">  862</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#a3b7bbae5cbf89eed400ee51c8fcb2835">font::default_extra_light</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>{</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>}</div>
 </div>
-<div class="foldopen" id="foldopen00866" data-start="{" data-end="}">
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a01b462eee01835ab21cc6046fd0090ea">  866</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#a01b462eee01835ab21cc6046fd0090ea">font::default_light</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>{</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>}</div>
+<div class="foldopen" id="foldopen00867" data-start="{" data-end="}">
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a01b462eee01835ab21cc6046fd0090ea">  867</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#a01b462eee01835ab21cc6046fd0090ea">font::default_light</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>{</div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>}</div>
 </div>
-<div class="foldopen" id="foldopen00871" data-start="{" data-end="}">
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#af95d3fa59654c4a82dc8a8b691aa6687">  871</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#af95d3fa59654c4a82dc8a8b691aa6687">font::default_medium</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>{</div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>}</div>
+<div class="foldopen" id="foldopen00872" data-start="{" data-end="}">
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#af95d3fa59654c4a82dc8a8b691aa6687">  872</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#af95d3fa59654c4a82dc8a8b691aa6687">font::default_medium</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>{</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>}</div>
 </div>
-<div class="foldopen" id="foldopen00876" data-start="{" data-end="}">
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a547f84ed7584168ba46a11ce22851f7d">  876</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#a547f84ed7584168ba46a11ce22851f7d">font::default_regular</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>{</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>}</div>
+<div class="foldopen" id="foldopen00877" data-start="{" data-end="}">
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a547f84ed7584168ba46a11ce22851f7d">  877</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#a547f84ed7584168ba46a11ce22851f7d">font::default_regular</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>{</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>}</div>
 </div>
-<div class="foldopen" id="foldopen00881" data-start="{" data-end="}">
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#ab3b07313a563b21c14a13e39c5b2e040">  881</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#ab3b07313a563b21c14a13e39c5b2e040">font::default_semi_bold</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>{</div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>}</div>
+<div class="foldopen" id="foldopen00882" data-start="{" data-end="}">
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#ab3b07313a563b21c14a13e39c5b2e040">  882</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#ab3b07313a563b21c14a13e39c5b2e040">font::default_semi_bold</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>{</div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>}</div>
 </div>
-<div class="foldopen" id="foldopen00886" data-start="{" data-end="}">
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a573bfe1d3ccdf332a55e1696ecc87c95">  886</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#a573bfe1d3ccdf332a55e1696ecc87c95">font::default_bold</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>{</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>}</div>
+<div class="foldopen" id="foldopen00887" data-start="{" data-end="}">
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a573bfe1d3ccdf332a55e1696ecc87c95">  887</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#a573bfe1d3ccdf332a55e1696ecc87c95">font::default_bold</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>{</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>}</div>
 </div>
-<div class="foldopen" id="foldopen00891" data-start="{" data-end="}">
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a1b2b4203124e089a87317d3f30db7320">  891</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#a1b2b4203124e089a87317d3f30db7320">font::default_heavy</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>{</div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>}</div>
+<div class="foldopen" id="foldopen00892" data-start="{" data-end="}">
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a1b2b4203124e089a87317d3f30db7320">  892</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#a1b2b4203124e089a87317d3f30db7320">font::default_heavy</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>{</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>}</div>
 </div>
-<div class="foldopen" id="foldopen00896" data-start="{" data-end="}">
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#aeb23398caa68dc52cf74ba35fe172182">  896</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#aeb23398caa68dc52cf74ba35fe172182">font::default_black</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>{</div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>}</div>
+<div class="foldopen" id="foldopen00897" data-start="{" data-end="}">
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#aeb23398caa68dc52cf74ba35fe172182">  897</a></span><span class="keyword">auto</span> <a class="code hl_function" href="structunravel_1_1font.html#aeb23398caa68dc52cf74ba35fe172182">font::default_black</a>() -&gt; <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a>&amp;</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>{</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;font&gt;</a> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>;</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>}</div>
 </div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span> </div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span><a class="code hl_function" href="structunravel_1_1font.html#a94f877c7088ea64673fdd905f124cae6">font::font</a>() = <span class="keywordflow">default</span>;</div>
-<div class="foldopen" id="foldopen00903" data-start="{" data-end="}">
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a1c4c0a65961418bca35bde7d8458e01d">  903</a></span><a class="code hl_function" href="structunravel_1_1font.html#a94f877c7088ea64673fdd905f124cae6">font::font</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path,</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>           uint32_t typeface_index,</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>           uint32_t pixel_ize,</div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>           uint32_t font_type,</div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>           uint16_t glyph_width_paddin,</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>           uint16_t glyph_height_padding)</div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>    : ttf_handle(<a class="code hl_namespace" href="namespace_a_n_o_n_y_m_o_u_s.html">ANONYMOUS</a>::load_ttf(<a class="code hl_namespace" href="namespace_a_n_o_n_y_m_o_u_s.html">ANONYMOUS</a>::s_manager, path))</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>{</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>    <a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a> = ANONYMOUS::s_manager-&gt;create_font_by_pixel_size(<a class="code hl_variable" href="structunravel_1_1font.html#ab155a7ee17b030bce60c6977e3c3694f">ttf_handle</a>,</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>                                                         typeface_index,</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>                                                         pixel_ize,</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>                                                         font_type,</div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>                                                         glyph_width_paddin,</div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>                                                         glyph_height_padding);</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span> </div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>    <span class="comment">// ANONYMOUS::s_manager-&gt;preload_glyph_ranges(handle, ANONYMOUS::get_glyph_ranges_default());</span></div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>}</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span> </div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span><a class="code hl_function" href="structunravel_1_1font.html#a94f877c7088ea64673fdd905f124cae6">font::font</a>() = <span class="keywordflow">default</span>;</div>
+<div class="foldopen" id="foldopen00904" data-start="{" data-end="}">
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a1c4c0a65961418bca35bde7d8458e01d">  904</a></span><a class="code hl_function" href="structunravel_1_1font.html#a94f877c7088ea64673fdd905f124cae6">font::font</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path,</div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>           uint32_t typeface_index,</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>           uint32_t pixel_ize,</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>           uint32_t font_type,</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>           uint16_t glyph_width_paddin,</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>           uint16_t glyph_height_padding)</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>    : ttf_handle(<a class="code hl_namespace" href="namespace_a_n_o_n_y_m_o_u_s.html">ANONYMOUS</a>::load_ttf(<a class="code hl_namespace" href="namespace_a_n_o_n_y_m_o_u_s.html">ANONYMOUS</a>::s_manager, path))</div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>{</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    <a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a> = ANONYMOUS::s_manager-&gt;create_font_by_pixel_size(<a class="code hl_variable" href="structunravel_1_1font.html#ab155a7ee17b030bce60c6977e3c3694f">ttf_handle</a>,</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>                                                         typeface_index,</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>                                                         pixel_ize,</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>                                                         font_type,</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>                                                         glyph_width_paddin,</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>                                                         glyph_height_padding);</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span> </div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>    <span class="comment">// ANONYMOUS::s_manager-&gt;preload_glyph_ranges(handle, ANONYMOUS::get_glyph_ranges_default());</span></div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>}</div>
 </div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
-<div class="foldopen" id="foldopen00921" data-start="{" data-end="}">
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a1985b5fcf1e77f2379bfbee289d260e9">  921</a></span><a class="code hl_function" href="structunravel_1_1font.html#a1985b5fcf1e77f2379bfbee289d260e9">font::~font</a>()</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>{</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="utils_2debugdraw_2debugdraw_8h.html#a0932d97442e94b416c19e0f9724e429a">isValid</a>(<a class="code hl_variable" href="structunravel_1_1font.html#ab155a7ee17b030bce60c6977e3c3694f">ttf_handle</a>))</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    {</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        ANONYMOUS::s_manager-&gt;destroy_ttf(<a class="code hl_variable" href="structunravel_1_1font.html#ab155a7ee17b030bce60c6977e3c3694f">ttf_handle</a>);</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>    }</div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>}</div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span> </div>
+<div class="foldopen" id="foldopen00922" data-start="{" data-end="}">
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno"><a class="line" href="structunravel_1_1font.html#a1985b5fcf1e77f2379bfbee289d260e9">  922</a></span><a class="code hl_function" href="structunravel_1_1font.html#a1985b5fcf1e77f2379bfbee289d260e9">font::~font</a>()</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>{</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    <span class="keywordflow">if</span>(ANONYMOUS::s_manager &amp;&amp; <a class="code hl_function" href="utils_2debugdraw_2debugdraw_8h.html#a0932d97442e94b416c19e0f9724e429a">isValid</a>(<a class="code hl_variable" href="structunravel_1_1font.html#ab155a7ee17b030bce60c6977e3c3694f">ttf_handle</a>))</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    {</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        ANONYMOUS::s_manager-&gt;destroy_ttf(<a class="code hl_variable" href="structunravel_1_1font.html#ab155a7ee17b030bce60c6977e3c3694f">ttf_handle</a>);</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>    }</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>}</div>
 </div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span> </div>
-<div class="foldopen" id="foldopen00929" data-start="{" data-end="}">
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno"><a class="line" href="structunravel_1_1text__buffer__builder.html#a2dffc0db19cbabd3b31797bb0d1ac19f">  929</a></span><a class="code hl_function" href="structunravel_1_1text__buffer__builder.html#a2dffc0db19cbabd3b31797bb0d1ac19f">text_buffer_builder::text_buffer_builder</a>() : manager(<a class="code hl_namespace" href="namespace_a_n_o_n_y_m_o_u_s.html">ANONYMOUS</a>::s_manager)</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>{</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>}</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span> </div>
+<div class="foldopen" id="foldopen00930" data-start="{" data-end="}">
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno"><a class="line" href="structunravel_1_1text__buffer__builder.html#a2dffc0db19cbabd3b31797bb0d1ac19f">  930</a></span><a class="code hl_function" href="structunravel_1_1text__buffer__builder.html#a2dffc0db19cbabd3b31797bb0d1ac19f">text_buffer_builder::text_buffer_builder</a>() : manager(<a class="code hl_namespace" href="namespace_a_n_o_n_y_m_o_u_s.html">ANONYMOUS</a>::s_manager)</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>{</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>}</div>
 </div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span> </div>
-<div class="foldopen" id="foldopen00933" data-start="{" data-end="}">
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno"><a class="line" href="structunravel_1_1text__buffer__builder.html#aea15d027fe3b8a204cc9b3d6a05f2124">  933</a></span><a class="code hl_function" href="structunravel_1_1text__buffer__builder.html#aea15d027fe3b8a204cc9b3d6a05f2124">text_buffer_builder::~text_buffer_builder</a>()</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>{</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    <a class="code hl_function" href="structunravel_1_1text__buffer__builder.html#a1a352e1710b8adb5d4b29b6e613e8a4a">destroy_buffers</a>();</div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>}</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span> </div>
+<div class="foldopen" id="foldopen00934" data-start="{" data-end="}">
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno"><a class="line" href="structunravel_1_1text__buffer__builder.html#aea15d027fe3b8a204cc9b3d6a05f2124">  934</a></span><a class="code hl_function" href="structunravel_1_1text__buffer__builder.html#aea15d027fe3b8a204cc9b3d6a05f2124">text_buffer_builder::~text_buffer_builder</a>()</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>{</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    <a class="code hl_function" href="structunravel_1_1text__buffer__builder.html#a1a352e1710b8adb5d4b29b6e613e8a4a">destroy_buffers</a>();</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>}</div>
 </div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span> </div>
-<div class="foldopen" id="foldopen00938" data-start="{" data-end="}">
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno"><a class="line" href="structunravel_1_1text__buffer__builder.html#a1a352e1710b8adb5d4b29b6e613e8a4a">  938</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="structunravel_1_1text__buffer__builder.html#a1a352e1710b8adb5d4b29b6e613e8a4a">text_buffer_builder::destroy_buffers</a>()</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>{</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; buffer : <a class="code hl_variable" href="structunravel_1_1text__buffer__builder.html#a391ffc8243c4111a02419c7500e8212f">buffers</a>)</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    {</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>        <a class="code hl_variable" href="structunravel_1_1text__buffer__builder.html#af0949ef597efc4d1b8400ed31962eb70">manager</a>.<a class="code hl_function" href="classgfx_1_1text__buffer__manager.html#a29926e07710b2ba6b352dcc89aa918d1">destroy_text_buffer</a>(buffer.handle);</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    }</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span> </div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    <a class="code hl_variable" href="structunravel_1_1text__buffer__builder.html#a391ffc8243c4111a02419c7500e8212f">buffers</a>.clear();</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>}</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span> </div>
+<div class="foldopen" id="foldopen00939" data-start="{" data-end="}">
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno"><a class="line" href="structunravel_1_1text__buffer__builder.html#a1a352e1710b8adb5d4b29b6e613e8a4a">  939</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="structunravel_1_1text__buffer__builder.html#a1a352e1710b8adb5d4b29b6e613e8a4a">text_buffer_builder::destroy_buffers</a>()</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>{</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; buffer : <a class="code hl_variable" href="structunravel_1_1text__buffer__builder.html#a391ffc8243c4111a02419c7500e8212f">buffers</a>)</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>    {</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>        <a class="code hl_variable" href="structunravel_1_1text__buffer__builder.html#af0949ef597efc4d1b8400ed31962eb70">manager</a>.<a class="code hl_function" href="classgfx_1_1text__buffer__manager.html#a29926e07710b2ba6b352dcc89aa918d1">destroy_text_buffer</a>(buffer.handle);</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    }</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span> </div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    <a class="code hl_variable" href="structunravel_1_1text__buffer__builder.html#a391ffc8243c4111a02419c7500e8212f">buffers</a>.clear();</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>}</div>
 </div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span> </div>
-<div class="foldopen" id="foldopen00948" data-start="{" data-end="}">
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno"><a class="line" href="structunravel_1_1text__metrics.html#ae12cb9b6b19f1da3b11d65b547c63095">  948</a></span><a class="code hl_function" href="structunravel_1_1text__metrics.html#ae12cb9b6b19f1da3b11d65b547c63095">text_metrics::text_metrics</a>() : metrics(<a class="code hl_namespace" href="namespace_a_n_o_n_y_m_o_u_s.html">ANONYMOUS</a>::s_manager)</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>{</div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>}</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span> </div>
+<div class="foldopen" id="foldopen00949" data-start="{" data-end="}">
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno"><a class="line" href="structunravel_1_1text__metrics.html#ae12cb9b6b19f1da3b11d65b547c63095">  949</a></span><a class="code hl_function" href="structunravel_1_1text__metrics.html#ae12cb9b6b19f1da3b11d65b547c63095">text_metrics::text_metrics</a>() : metrics(<a class="code hl_namespace" href="namespace_a_n_o_n_y_m_o_u_s.html">ANONYMOUS</a>::s_manager)</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>{</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>}</div>
 </div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span> </div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>} <span class="comment">// namespace unravel</span></div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span> </div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>} <span class="comment">// namespace unravel</span></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_ac7e73b30345a101c4b692eedac03de47"><div class="ttname"><a href="bgfx__utils_8cpp.html#ac7e73b30345a101c4b692eedac03de47">unload</a></div><div class="ttdeci">void unload(void *_ptr)</div><div class="ttdef"><b>Definition</b> <a href="bgfx__utils_8cpp_source.html#l00108">bgfx_utils.cpp:108</a></div></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_afefa8c6070c8c213c4ea12248fae5358"><div class="ttname"><a href="bgfx__utils_8cpp.html#afefa8c6070c8c213c4ea12248fae5358">load</a></div><div class="ttdeci">void * load(bx::FileReaderI *_reader, bx::AllocatorI *_allocator, const char *_filePath, uint32_t *_size)</div><div class="ttdef"><b>Definition</b> <a href="bgfx__utils_8cpp_source.html#l00075">bgfx_utils.cpp:75</a></div></div>
 <div class="ttc" id="abgfx__utils_8h_html"><div class="ttname"><a href="bgfx__utils_8h.html">bgfx_utils.h</a></div></div>
 <div class="ttc" id="aclassgfx_1_1font__manager_html"><div class="ttname"><a href="classgfx_1_1font__manager.html">gfx::font_manager</a></div><div class="ttdef"><b>Definition</b> <a href="font__manager_8h_source.html#l00135">font_manager.h:136</a></div></div>
 <div class="ttc" id="aclassgfx_1_1font__manager_html_a03c6b23f2dd32871120f267a05bee5c0"><div class="ttname"><a href="classgfx_1_1font__manager.html#a03c6b23f2dd32871120f267a05bee5c0">gfx::font_manager::create_ttf</a></div><div class="ttdeci">auto create_ttf(const uint8_t *buffer, uint32_t size) -&gt; true_type_handle</div><div class="ttdef"><b>Definition</b> <a href="font__manager_8cpp_source.html#l00449">font_manager.cpp:449</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a29926e07710b2ba6b352dcc89aa918d1"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a29926e07710b2ba6b352dcc89aa918d1">gfx::text_buffer_manager::destroy_text_buffer</a></div><div class="ttdeci">void destroy_text_buffer(text_buffer_handle handle)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l00959">text_buffer_manager.cpp:959</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a29926e07710b2ba6b352dcc89aa918d1"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a29926e07710b2ba6b352dcc89aa918d1">gfx::text_buffer_manager::destroy_text_buffer</a></div><div class="ttdeci">void destroy_text_buffer(text_buffer_handle handle)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l00961">text_buffer_manager.cpp:961</a></div></div>
 <div class="ttc" id="afont_8h_html"><div class="ttname"><a href="font_8h.html">font.h</a></div></div>
 <div class="ttc" id="ahub_8cpp_html_a942144e2202c3e053a7c4a63e8daa3b9"><div class="ttname"><a href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a></div><div class="ttdeci">ImGui::Font::Enum font</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00024">hub.cpp:24</a></div></div>
 <div class="ttc" id="anamespace_a_n_o_n_y_m_o_u_s_html"><div class="ttname"><a href="namespace_a_n_o_n_y_m_o_u_s.html">ANONYMOUS</a></div><div class="ttdef"><b>Definition</b> <a href="dodecahedron__mesh_8cpp_source.html#l00015">dodecahedron_mesh.cpp:16</a></div></div>
@@ -1114,30 +1115,30 @@ $(function(){initNavTree('rendering_2font_8cpp_source.html',''); initResizable(t
 <div class="ttc" id="astructasset__handle_html"><div class="ttname"><a href="structasset__handle.html">asset_handle</a></div><div class="ttdoc">Represents a handle to an asset, providing access and management functions.</div><div class="ttdef"><b>Definition</b> <a href="asset__handle_8h_source.html#l00042">asset_handle.h:43</a></div></div>
 <div class="ttc" id="astructsize_html"><div class="ttname"><a href="structsize.html">size</a></div><div class="ttdef"><b>Definition</b> <a href="core_2base_2basetypes_8hpp_source.html#l00042">basetypes.hpp:43</a></div></div>
 <div class="ttc" id="astructunravel_1_1base__font_html_a4cdfcf808e8bc67d1e9ab2fd934cf230"><div class="ttname"><a href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">unravel::base_font::handle</a></div><div class="ttdeci">gfx::font_handle handle</div><div class="ttdef"><b>Definition</b> <a href="font_8h_source.html#l00026">font.h:26</a></div></div>
-<div class="ttc" id="astructunravel_1_1base__font_html_a60c254cf25bf590e4495ff78d5e54c01"><div class="ttname"><a href="structunravel_1_1base__font.html#a60c254cf25bf590e4495ff78d5e54c01">unravel::base_font::~base_font</a></div><div class="ttdeci">~base_font()</div><div class="ttdef"><b>Definition</b> <a href="#l00825">font.cpp:825</a></div></div>
-<div class="ttc" id="astructunravel_1_1base__font_html_a971ab640c5f38fc680d92a9eb2d09700"><div class="ttname"><a href="structunravel_1_1base__font.html#a971ab640c5f38fc680d92a9eb2d09700">unravel::base_font::get_line_height</a></div><div class="ttdeci">auto get_line_height() const -&gt; float</div><div class="ttdef"><b>Definition</b> <a href="#l00838">font.cpp:838</a></div></div>
-<div class="ttc" id="astructunravel_1_1base__font_html_adb1218bb002dfc2cd7484a707d1e1ea2"><div class="ttname"><a href="structunravel_1_1base__font.html#adb1218bb002dfc2cd7484a707d1e1ea2">unravel::base_font::is_valid</a></div><div class="ttdeci">auto is_valid() const -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l00844">font.cpp:844</a></div></div>
-<div class="ttc" id="astructunravel_1_1base__font_html_ae52d9799318ca1915d2119b45ac71d07"><div class="ttname"><a href="structunravel_1_1base__font.html#ae52d9799318ca1915d2119b45ac71d07">unravel::base_font::get_info</a></div><div class="ttdeci">auto get_info() const -&gt; const gfx::font_info &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00833">font.cpp:833</a></div></div>
+<div class="ttc" id="astructunravel_1_1base__font_html_a60c254cf25bf590e4495ff78d5e54c01"><div class="ttname"><a href="structunravel_1_1base__font.html#a60c254cf25bf590e4495ff78d5e54c01">unravel::base_font::~base_font</a></div><div class="ttdeci">~base_font()</div><div class="ttdef"><b>Definition</b> <a href="#l00826">font.cpp:826</a></div></div>
+<div class="ttc" id="astructunravel_1_1base__font_html_a971ab640c5f38fc680d92a9eb2d09700"><div class="ttname"><a href="structunravel_1_1base__font.html#a971ab640c5f38fc680d92a9eb2d09700">unravel::base_font::get_line_height</a></div><div class="ttdeci">auto get_line_height() const -&gt; float</div><div class="ttdef"><b>Definition</b> <a href="#l00839">font.cpp:839</a></div></div>
+<div class="ttc" id="astructunravel_1_1base__font_html_adb1218bb002dfc2cd7484a707d1e1ea2"><div class="ttname"><a href="structunravel_1_1base__font.html#adb1218bb002dfc2cd7484a707d1e1ea2">unravel::base_font::is_valid</a></div><div class="ttdeci">auto is_valid() const -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l00845">font.cpp:845</a></div></div>
+<div class="ttc" id="astructunravel_1_1base__font_html_ae52d9799318ca1915d2119b45ac71d07"><div class="ttname"><a href="structunravel_1_1base__font.html#ae52d9799318ca1915d2119b45ac71d07">unravel::base_font::get_info</a></div><div class="ttdeci">auto get_info() const -&gt; const gfx::font_info &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00834">font.cpp:834</a></div></div>
 <div class="ttc" id="astructunravel_1_1base__font_html_af9a8cb72e95427ca210ac21ad722d720"><div class="ttname"><a href="structunravel_1_1base__font.html#af9a8cb72e95427ca210ac21ad722d720">unravel::base_font::base_font</a></div><div class="ttdeci">base_font()</div></div>
-<div class="ttc" id="astructunravel_1_1font_html_a01b462eee01835ab21cc6046fd0090ea"><div class="ttname"><a href="structunravel_1_1font.html#a01b462eee01835ab21cc6046fd0090ea">unravel::font::default_light</a></div><div class="ttdeci">static auto default_light() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00866">font.cpp:866</a></div></div>
-<div class="ttc" id="astructunravel_1_1font_html_a1985b5fcf1e77f2379bfbee289d260e9"><div class="ttname"><a href="structunravel_1_1font.html#a1985b5fcf1e77f2379bfbee289d260e9">unravel::font::~font</a></div><div class="ttdeci">~font()</div><div class="ttdef"><b>Definition</b> <a href="#l00921">font.cpp:921</a></div></div>
-<div class="ttc" id="astructunravel_1_1font_html_a1b2b4203124e089a87317d3f30db7320"><div class="ttname"><a href="structunravel_1_1font.html#a1b2b4203124e089a87317d3f30db7320">unravel::font::default_heavy</a></div><div class="ttdeci">static auto default_heavy() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00891">font.cpp:891</a></div></div>
-<div class="ttc" id="astructunravel_1_1font_html_a3b7bbae5cbf89eed400ee51c8fcb2835"><div class="ttname"><a href="structunravel_1_1font.html#a3b7bbae5cbf89eed400ee51c8fcb2835">unravel::font::default_extra_light</a></div><div class="ttdeci">static auto default_extra_light() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00861">font.cpp:861</a></div></div>
-<div class="ttc" id="astructunravel_1_1font_html_a547f84ed7584168ba46a11ce22851f7d"><div class="ttname"><a href="structunravel_1_1font.html#a547f84ed7584168ba46a11ce22851f7d">unravel::font::default_regular</a></div><div class="ttdeci">static auto default_regular() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00876">font.cpp:876</a></div></div>
-<div class="ttc" id="astructunravel_1_1font_html_a573bfe1d3ccdf332a55e1696ecc87c95"><div class="ttname"><a href="structunravel_1_1font.html#a573bfe1d3ccdf332a55e1696ecc87c95">unravel::font::default_bold</a></div><div class="ttdeci">static auto default_bold() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00886">font.cpp:886</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_a01b462eee01835ab21cc6046fd0090ea"><div class="ttname"><a href="structunravel_1_1font.html#a01b462eee01835ab21cc6046fd0090ea">unravel::font::default_light</a></div><div class="ttdeci">static auto default_light() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00867">font.cpp:867</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_a1985b5fcf1e77f2379bfbee289d260e9"><div class="ttname"><a href="structunravel_1_1font.html#a1985b5fcf1e77f2379bfbee289d260e9">unravel::font::~font</a></div><div class="ttdeci">~font()</div><div class="ttdef"><b>Definition</b> <a href="#l00922">font.cpp:922</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_a1b2b4203124e089a87317d3f30db7320"><div class="ttname"><a href="structunravel_1_1font.html#a1b2b4203124e089a87317d3f30db7320">unravel::font::default_heavy</a></div><div class="ttdeci">static auto default_heavy() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00892">font.cpp:892</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_a3b7bbae5cbf89eed400ee51c8fcb2835"><div class="ttname"><a href="structunravel_1_1font.html#a3b7bbae5cbf89eed400ee51c8fcb2835">unravel::font::default_extra_light</a></div><div class="ttdeci">static auto default_extra_light() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00862">font.cpp:862</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_a547f84ed7584168ba46a11ce22851f7d"><div class="ttname"><a href="structunravel_1_1font.html#a547f84ed7584168ba46a11ce22851f7d">unravel::font::default_regular</a></div><div class="ttdeci">static auto default_regular() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00877">font.cpp:877</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_a573bfe1d3ccdf332a55e1696ecc87c95"><div class="ttname"><a href="structunravel_1_1font.html#a573bfe1d3ccdf332a55e1696ecc87c95">unravel::font::default_bold</a></div><div class="ttdeci">static auto default_bold() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00887">font.cpp:887</a></div></div>
 <div class="ttc" id="astructunravel_1_1font_html_a94f877c7088ea64673fdd905f124cae6"><div class="ttname"><a href="structunravel_1_1font.html#a94f877c7088ea64673fdd905f124cae6">unravel::font::font</a></div><div class="ttdeci">font()</div></div>
 <div class="ttc" id="astructunravel_1_1font_html_ab155a7ee17b030bce60c6977e3c3694f"><div class="ttname"><a href="structunravel_1_1font.html#ab155a7ee17b030bce60c6977e3c3694f">unravel::font::ttf_handle</a></div><div class="ttdeci">gfx::true_type_handle ttf_handle</div><div class="ttdef"><b>Definition</b> <a href="font_8h_source.html#l00056">font.h:56</a></div></div>
-<div class="ttc" id="astructunravel_1_1font_html_ab3b07313a563b21c14a13e39c5b2e040"><div class="ttname"><a href="structunravel_1_1font.html#ab3b07313a563b21c14a13e39c5b2e040">unravel::font::default_semi_bold</a></div><div class="ttdeci">static auto default_semi_bold() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00881">font.cpp:881</a></div></div>
-<div class="ttc" id="astructunravel_1_1font_html_addae27eb64e208f5024bee830e21a386"><div class="ttname"><a href="structunravel_1_1font.html#addae27eb64e208f5024bee830e21a386">unravel::font::get_scaled_font</a></div><div class="ttdeci">auto get_scaled_font(uint32_t pixel_size) const -&gt; std::shared_ptr&lt; scaled_font &gt;</div><div class="ttdef"><b>Definition</b> <a href="#l00849">font.cpp:849</a></div></div>
-<div class="ttc" id="astructunravel_1_1font_html_ae048f69021e89125d126110d9e3248f5"><div class="ttname"><a href="structunravel_1_1font.html#ae048f69021e89125d126110d9e3248f5">unravel::font::default_thin</a></div><div class="ttdeci">static auto default_thin() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00856">font.cpp:856</a></div></div>
-<div class="ttc" id="astructunravel_1_1font_html_aeb23398caa68dc52cf74ba35fe172182"><div class="ttname"><a href="structunravel_1_1font.html#aeb23398caa68dc52cf74ba35fe172182">unravel::font::default_black</a></div><div class="ttdeci">static auto default_black() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00896">font.cpp:896</a></div></div>
-<div class="ttc" id="astructunravel_1_1font_html_af95d3fa59654c4a82dc8a8b691aa6687"><div class="ttname"><a href="structunravel_1_1font.html#af95d3fa59654c4a82dc8a8b691aa6687">unravel::font::default_medium</a></div><div class="ttdeci">static auto default_medium() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00871">font.cpp:871</a></div></div>
-<div class="ttc" id="astructunravel_1_1text__buffer__builder_html_a1a352e1710b8adb5d4b29b6e613e8a4a"><div class="ttname"><a href="structunravel_1_1text__buffer__builder.html#a1a352e1710b8adb5d4b29b6e613e8a4a">unravel::text_buffer_builder::destroy_buffers</a></div><div class="ttdeci">void destroy_buffers()</div><div class="ttdef"><b>Definition</b> <a href="#l00938">font.cpp:938</a></div></div>
-<div class="ttc" id="astructunravel_1_1text__buffer__builder_html_a2dffc0db19cbabd3b31797bb0d1ac19f"><div class="ttname"><a href="structunravel_1_1text__buffer__builder.html#a2dffc0db19cbabd3b31797bb0d1ac19f">unravel::text_buffer_builder::text_buffer_builder</a></div><div class="ttdeci">text_buffer_builder()</div><div class="ttdef"><b>Definition</b> <a href="#l00929">font.cpp:929</a></div></div>
-<div class="ttc" id="astructunravel_1_1text__buffer__builder_html_a391ffc8243c4111a02419c7500e8212f"><div class="ttname"><a href="structunravel_1_1text__buffer__builder.html#a391ffc8243c4111a02419c7500e8212f">unravel::text_buffer_builder::buffers</a></div><div class="ttdeci">std::vector&lt; text_buffer &gt; buffers</div><div class="ttdef"><b>Definition</b> <a href="font_8h_source.html#l00072">font.h:72</a></div></div>
-<div class="ttc" id="astructunravel_1_1text__buffer__builder_html_aea15d027fe3b8a204cc9b3d6a05f2124"><div class="ttname"><a href="structunravel_1_1text__buffer__builder.html#aea15d027fe3b8a204cc9b3d6a05f2124">unravel::text_buffer_builder::~text_buffer_builder</a></div><div class="ttdeci">~text_buffer_builder()</div><div class="ttdef"><b>Definition</b> <a href="#l00933">font.cpp:933</a></div></div>
-<div class="ttc" id="astructunravel_1_1text__buffer__builder_html_af0949ef597efc4d1b8400ed31962eb70"><div class="ttname"><a href="structunravel_1_1text__buffer__builder.html#af0949ef597efc4d1b8400ed31962eb70">unravel::text_buffer_builder::manager</a></div><div class="ttdeci">gfx::text_buffer_manager manager</div><div class="ttdef"><b>Definition</b> <a href="font_8h_source.html#l00073">font.h:73</a></div></div>
-<div class="ttc" id="astructunravel_1_1text__metrics_html_ae12cb9b6b19f1da3b11d65b547c63095"><div class="ttname"><a href="structunravel_1_1text__metrics.html#ae12cb9b6b19f1da3b11d65b547c63095">unravel::text_metrics::text_metrics</a></div><div class="ttdeci">text_metrics()</div><div class="ttdef"><b>Definition</b> <a href="#l00948">font.cpp:948</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_ab3b07313a563b21c14a13e39c5b2e040"><div class="ttname"><a href="structunravel_1_1font.html#ab3b07313a563b21c14a13e39c5b2e040">unravel::font::default_semi_bold</a></div><div class="ttdeci">static auto default_semi_bold() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00882">font.cpp:882</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_addae27eb64e208f5024bee830e21a386"><div class="ttname"><a href="structunravel_1_1font.html#addae27eb64e208f5024bee830e21a386">unravel::font::get_scaled_font</a></div><div class="ttdeci">auto get_scaled_font(uint32_t pixel_size) const -&gt; std::shared_ptr&lt; scaled_font &gt;</div><div class="ttdef"><b>Definition</b> <a href="#l00850">font.cpp:850</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_ae048f69021e89125d126110d9e3248f5"><div class="ttname"><a href="structunravel_1_1font.html#ae048f69021e89125d126110d9e3248f5">unravel::font::default_thin</a></div><div class="ttdeci">static auto default_thin() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00857">font.cpp:857</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_aeb23398caa68dc52cf74ba35fe172182"><div class="ttname"><a href="structunravel_1_1font.html#aeb23398caa68dc52cf74ba35fe172182">unravel::font::default_black</a></div><div class="ttdeci">static auto default_black() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00897">font.cpp:897</a></div></div>
+<div class="ttc" id="astructunravel_1_1font_html_af95d3fa59654c4a82dc8a8b691aa6687"><div class="ttname"><a href="structunravel_1_1font.html#af95d3fa59654c4a82dc8a8b691aa6687">unravel::font::default_medium</a></div><div class="ttdeci">static auto default_medium() -&gt; asset_handle&lt; font &gt; &amp;</div><div class="ttdef"><b>Definition</b> <a href="#l00872">font.cpp:872</a></div></div>
+<div class="ttc" id="astructunravel_1_1text__buffer__builder_html_a1a352e1710b8adb5d4b29b6e613e8a4a"><div class="ttname"><a href="structunravel_1_1text__buffer__builder.html#a1a352e1710b8adb5d4b29b6e613e8a4a">unravel::text_buffer_builder::destroy_buffers</a></div><div class="ttdeci">void destroy_buffers()</div><div class="ttdef"><b>Definition</b> <a href="#l00939">font.cpp:939</a></div></div>
+<div class="ttc" id="astructunravel_1_1text__buffer__builder_html_a2dffc0db19cbabd3b31797bb0d1ac19f"><div class="ttname"><a href="structunravel_1_1text__buffer__builder.html#a2dffc0db19cbabd3b31797bb0d1ac19f">unravel::text_buffer_builder::text_buffer_builder</a></div><div class="ttdeci">text_buffer_builder()</div><div class="ttdef"><b>Definition</b> <a href="#l00930">font.cpp:930</a></div></div>
+<div class="ttc" id="astructunravel_1_1text__buffer__builder_html_a391ffc8243c4111a02419c7500e8212f"><div class="ttname"><a href="structunravel_1_1text__buffer__builder.html#a391ffc8243c4111a02419c7500e8212f">unravel::text_buffer_builder::buffers</a></div><div class="ttdeci">std::vector&lt; text_buffer &gt; buffers</div><div class="ttdef"><b>Definition</b> <a href="font_8h_source.html#l00081">font.h:81</a></div></div>
+<div class="ttc" id="astructunravel_1_1text__buffer__builder_html_aea15d027fe3b8a204cc9b3d6a05f2124"><div class="ttname"><a href="structunravel_1_1text__buffer__builder.html#aea15d027fe3b8a204cc9b3d6a05f2124">unravel::text_buffer_builder::~text_buffer_builder</a></div><div class="ttdeci">~text_buffer_builder()</div><div class="ttdef"><b>Definition</b> <a href="#l00934">font.cpp:934</a></div></div>
+<div class="ttc" id="astructunravel_1_1text__buffer__builder_html_af0949ef597efc4d1b8400ed31962eb70"><div class="ttname"><a href="structunravel_1_1text__buffer__builder.html#af0949ef597efc4d1b8400ed31962eb70">unravel::text_buffer_builder::manager</a></div><div class="ttdeci">gfx::text_buffer_manager manager</div><div class="ttdef"><b>Definition</b> <a href="font_8h_source.html#l00082">font.h:82</a></div></div>
+<div class="ttc" id="astructunravel_1_1text__metrics_html_ae12cb9b6b19f1da3b11d65b547c63095"><div class="ttname"><a href="structunravel_1_1text__metrics.html#ae12cb9b6b19f1da3b11d65b547c63095">unravel::text_metrics::text_metrics</a></div><div class="ttdeci">text_metrics()</div><div class="ttdef"><b>Definition</b> <a href="#l00949">font.cpp:949</a></div></div>
 <div class="ttc" id="auniform_8cpp_html_a25110aea6715bd8cc91355b5f269eaf7"><div class="ttname"><a href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a></div><div class="ttdeci">gfx::uniform_handle handle</div><div class="ttdef"><b>Definition</b> <a href="uniform_8cpp_source.html#l00009">uniform.cpp:9</a></div></div>
 <div class="ttc" id="autils_2debugdraw_2debugdraw_8h_html_a0932d97442e94b416c19e0f9724e429a"><div class="ttname"><a href="utils_2debugdraw_2debugdraw_8h.html#a0932d97442e94b416c19e0f9724e429a">isValid</a></div><div class="ttdeci">bool isValid(SpriteHandle _handle)</div><div class="ttdef"><b>Definition</b> <a href="utils_2debugdraw_2debugdraw_8h_source.html#l00034">debugdraw.h:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

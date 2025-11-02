@@ -155,6 +155,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:acaf378613c957b37aa1910c69ab150e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d04d5da59d047bba58107c71ea63a81" id="r_a3d04d5da59d047bba58107c71ea63a81"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_unravel_1_1_core_1_1_entity.html">Entity</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d04d5da59d047bba58107c71ea63a81">FindEntitiesByName</a> (string name)</td></tr>
 <tr class="separator:a3d04d5da59d047bba58107c71ea63a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07592ab27e580a927e6b67cf0073dd05" id="r_a07592ab27e580a927e6b67cf0073dd05"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_unravel_1_1_core_1_1_entity.html">Entity</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07592ab27e580a927e6b67cf0073dd05">FindEntitiesWithComponent&lt; T &gt;</a> ()</td></tr>
+<tr class="memdesc:a07592ab27e580a927e6b67cf0073dd05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all entities that have the specified component type.  <br /></td></tr>
+<tr class="separator:a07592ab27e580a927e6b67cf0073dd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_unravel_1_1_core_1_1_asset"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_unravel_1_1_core_1_1_asset')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_unravel_1_1_core_1_1_asset.html">Unravel.Core.Asset&lt; Scene &gt;</a></td></tr>
 <tr class="memitem:a1844a8b6b44fef228c2131b8d3eef96e inherit pub_static_methods_class_unravel_1_1_core_1_1_asset" id="r_a1844a8b6b44fef228c2131b8d3eef96e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unravel_1_1_core_1_1_asset.html#a1844a8b6b44fef228c2131b8d3eef96e">operator==</a> (<a class="el" href="class_unravel_1_1_core_1_1_asset.html">Asset</a>&lt; <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; lhs, <a class="el" href="class_unravel_1_1_core_1_1_asset.html">Asset</a>&lt; <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; rhs)</td></tr>
 <tr class="memdesc:a1844a8b6b44fef228c2131b8d3eef96e inherit pub_static_methods_class_unravel_1_1_core_1_1_asset"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether two Asset&lt;T&gt; instances are equal.  <br /></td></tr>
@@ -400,6 +403,50 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The entities with the specified tag, or <code>empty</code> if no entities match.</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_scene_8cs_source.html#l00119">119</a> of file <a class="el" href="_scene_8cs_source.html">Scene.cs</a>.</p>
+
+</div>
+</div>
+<a id="a07592ab27e580a927e6b67cf0073dd05" name="a07592ab27e580a927e6b67cf0073dd05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07592ab27e580a927e6b67cf0073dd05">&#9670;&#160;</a></span>FindEntitiesWithComponent&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="struct_unravel_1_1_core_1_1_entity.html">Entity</a>[] Unravel.Core.Scene.FindEntitiesWithComponent&lt; <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds all entities that have the specified component type. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The component type to search for.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The entities that have the specified component, or empty if no entities match.</dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>Component</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">Definition at line <a class="el" href="_scene_8cs_source.html#l00155">155</a> of file <a class="el" href="_scene_8cs_source.html">Scene.cs</a>.</p>
 
 </div>
 </div>

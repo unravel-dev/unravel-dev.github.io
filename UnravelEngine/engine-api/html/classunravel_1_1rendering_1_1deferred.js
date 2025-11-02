@@ -7,6 +7,7 @@ var classunravel_1_1rendering_1_1deferred =
       [ "reflection_probe", "classunravel_1_1rendering_1_1deferred.html#a9cefd7ec26dcefeff93aaa4f5489f489a60e67e8f5fcace0843eb649e2ad417d9", null ],
       [ "lighting", "classunravel_1_1rendering_1_1deferred.html#a9cefd7ec26dcefeff93aaa4f5489f489a415f9a2c4bb7464e43979d0e17ae215c", null ],
       [ "atmospheric", "classunravel_1_1rendering_1_1deferred.html#a9cefd7ec26dcefeff93aaa4f5489f489aa8d32224492a6a3e54f9ca220b4c2811", null ],
+      [ "particles_pass", "classunravel_1_1rendering_1_1deferred.html#a9cefd7ec26dcefeff93aaa4f5489f489a131bf6cf557dcc3e966ac1ef1ff9243a", null ],
       [ "full", "classunravel_1_1rendering_1_1deferred.html#a9cefd7ec26dcefeff93aaa4f5489f489a4b21cba00ea29baedbaca291f1f9c8d8", null ],
       [ "probe", "classunravel_1_1rendering_1_1deferred.html#a9cefd7ec26dcefeff93aaa4f5489f489ab3ce16258ff38bb73d5c138e888fed5d", null ]
     ] ],

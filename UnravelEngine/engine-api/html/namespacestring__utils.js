@@ -1,6 +1,7 @@
 var namespacestring__utils =
 [
     [ "alterable", "namespacestring__utils_1_1alterable.html", [
+      [ "capitalize", "namespacestring__utils_1_1alterable.html#a61c06d4f098a26ec117ade8d8c8c3cda", null ],
       [ "ltrim", "namespacestring__utils_1_1alterable.html#a89ed75131f4d128b68bf3db088bd48b0", null ],
       [ "replace", "namespacestring__utils_1_1alterable.html#a49e210e0822cb94228e189a099b31ace", null ],
       [ "rtrim", "namespacestring__utils_1_1alterable.html#a446a509d3920ef435de951aa5d64ba3b", null ],
@@ -9,6 +10,7 @@ var namespacestring__utils =
       [ "trim", "namespacestring__utils_1_1alterable.html#a69d820bb2a0e68af5d2edc3e5f5ca847", null ]
     ] ],
     [ "string_tokens_t", "namespacestring__utils.html#a3cd29819e0dc5eeb2f8405f330eb28b5", null ],
+    [ "capitalize", "namespacestring__utils.html#a071517eafd2407bb64027d00ef54d575", null ],
     [ "extract_substring", "namespacestring__utils.html#a37b998007f6dc809ba37aa2e3e077905", null ],
     [ "ltrim", "namespacestring__utils.html#a63d11f55822914e45c6d3141cda3445d", null ],
     [ "replace", "namespacestring__utils.html#a263ebbce2bcb3d83ecab82a062d184e2", null ],

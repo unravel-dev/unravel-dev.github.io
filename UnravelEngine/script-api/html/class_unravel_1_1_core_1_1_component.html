@@ -121,12 +121,13 @@ Inheritance diagram for Unravel.Core.Component:</div>
 <area href="class_unravel_1_1_core_1_1_id_component.html" alt="Unravel.Core.IdComponent" shape="rect" coords="255,448,500,472"/>
 <area href="class_unravel_1_1_core_1_1_light_component.html" alt="Unravel.Core.LightComponent" shape="rect" coords="255,504,500,528"/>
 <area href="class_unravel_1_1_core_1_1_model_component.html" title="Represents a component that provides model rendering capabilities for an entity." alt="Unravel.Core.ModelComponent" shape="rect" coords="255,560,500,584"/>
-<area href="class_unravel_1_1_core_1_1_physics_component.html" title="Provides physics functionality for an entity." alt="Unravel.Core.PhysicsComponent" shape="rect" coords="255,616,500,640"/>
-<area href="class_unravel_1_1_core_1_1_reflection_probe_component.html" alt="Unravel.Core.ReflectionProbeComponent" shape="rect" coords="255,672,500,696"/>
-<area href="class_unravel_1_1_core_1_1_script_component.html" title="Represents a script component that provides lifecycle hooks and event handling for an entity." alt="Unravel.Core.ScriptComponent" shape="rect" coords="255,728,500,752"/>
-<area href="class_unravel_1_1_core_1_1_text_component.html" title="Mirrors ace::text_component, letting scripts manage text rendering via properties." alt="Unravel.Core.TextComponent" shape="rect" coords="255,784,500,808"/>
-<area href="class_unravel_1_1_core_1_1_transform_component.html" title="Represents a component that defines the position, rotation, scale, and other transformations of an en..." alt="Unravel.Core.TransformComponent" shape="rect" coords="255,840,500,864"/>
-<area href="class_unravel_1_1_core_1_1_u_i_document_component.html" title="Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces...." alt="Unravel.Core.UIDocumentComponent" shape="rect" coords="255,896,500,920"/>
+<area href="class_unravel_1_1_core_1_1_particle_emitter_component.html" title="Represents a component that provides particle emission capabilities for an entity." alt="Unravel.Core.ParticleEmitterComponent" shape="rect" coords="255,616,500,640"/>
+<area href="class_unravel_1_1_core_1_1_physics_component.html" title="Provides physics functionality for an entity." alt="Unravel.Core.PhysicsComponent" shape="rect" coords="255,672,500,696"/>
+<area href="class_unravel_1_1_core_1_1_reflection_probe_component.html" alt="Unravel.Core.ReflectionProbeComponent" shape="rect" coords="255,728,500,752"/>
+<area href="class_unravel_1_1_core_1_1_script_component.html" title="Represents a script component that provides lifecycle hooks and event handling for an entity." alt="Unravel.Core.ScriptComponent" shape="rect" coords="255,784,500,808"/>
+<area href="class_unravel_1_1_core_1_1_text_component.html" title="Mirrors ace::text_component, letting scripts manage text rendering via properties." alt="Unravel.Core.TextComponent" shape="rect" coords="255,840,500,864"/>
+<area href="class_unravel_1_1_core_1_1_transform_component.html" title="Represents a component that defines the position, rotation, scale, and other transformations of an en..." alt="Unravel.Core.TransformComponent" shape="rect" coords="255,896,500,920"/>
+<area href="class_unravel_1_1_core_1_1_u_i_document_component.html" title="Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces...." alt="Unravel.Core.UIDocumentComponent" shape="rect" coords="255,952,500,976"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -161,6 +162,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:af905937aef5c9a118a59e155c7cf8917 inherit pub_static_methods_class_unravel_1_1_core_1_1_native_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7934295ba69cc0203dcf5e50e45e6c43 inherit pub_static_methods_class_unravel_1_1_core_1_1_native_object" id="r_a7934295ba69cc0203dcf5e50e45e6c43"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unravel_1_1_core_1_1_native_object.html#a7934295ba69cc0203dcf5e50e45e6c43">operator!=</a> (<a class="el" href="class_unravel_1_1_core_1_1_native_object.html">NativeObject</a> left, <a class="el" href="class_unravel_1_1_core_1_1_native_object.html">NativeObject</a> right)</td></tr>
 <tr class="separator:a7934295ba69cc0203dcf5e50e45e6c43 inherit pub_static_methods_class_unravel_1_1_core_1_1_native_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9264dd9277387e12d8a61a80443212 inherit pub_static_methods_class_unravel_1_1_core_1_1_native_object" id="r_adf9264dd9277387e12d8a61a80443212"><td class="memItemLeft" align="right" valign="top">static implicit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unravel_1_1_core_1_1_native_object.html#adf9264dd9277387e12d8a61a80443212">operator bool</a> (<a class="el" href="class_unravel_1_1_core_1_1_native_object.html">NativeObject</a> obj)</td></tr>
+<tr class="memdesc:adf9264dd9277387e12d8a61a80443212 inherit pub_static_methods_class_unravel_1_1_core_1_1_native_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion to bool for null checking. Returns true if the object is valid.  <br /></td></tr>
+<tr class="separator:adf9264dd9277387e12d8a61a80443212 inherit pub_static_methods_class_unravel_1_1_core_1_1_native_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a base class for all components in the entity-component system. </p>

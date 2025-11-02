@@ -10,6 +10,8 @@ var dir_1dc4ef2158697348cec6ca2399c693d0 =
     [ "light_component.h", "light__component_8h.html", "light__component_8h" ],
     [ "model_component.cpp", "rendering_2ecs_2components_2model__component_8cpp.html", null ],
     [ "model_component.h", "model__component_8h.html", "model__component_8h" ],
+    [ "particle_emitter_component.cpp", "rendering_2ecs_2components_2particle__emitter__component_8cpp.html", "rendering_2ecs_2components_2particle__emitter__component_8cpp" ],
+    [ "particle_emitter_component.h", "particle__emitter__component_8h.html", "particle__emitter__component_8h" ],
     [ "reflection_probe_component.cpp", "rendering_2ecs_2components_2reflection__probe__component_8cpp.html", null ],
     [ "reflection_probe_component.h", "reflection__probe__component_8h.html", "reflection__probe__component_8h" ],
     [ "ssr_component.h", "ssr__component_8h.html", "ssr__component_8h" ],

@@ -83,9 +83,10 @@ var searchData=
   ['num_80',['num',['../struct_debug_draw_encoder_impl_1_1_matrix_stack.html#a5d22d050f4df6fa06188f050c117219d',1,'DebugDrawEncoderImpl::MatrixStack']]],
   ['num_5fhannels_81',['num_hannels',['../structgfx_1_1format__details.html#a904968950ba217ba1c86ec8b65765016',1,'gfx::format_details']]],
   ['num_5fnodes_82',['num_nodes',['../structunravel_1_1editing__manager_1_1inverse__kinematics.html#af611da32cd80ad41183fafef496793ed',1,'unravel::editing_manager::inverse_kinematics']]],
-  ['num_5fsamples_83',['NUM_SAMPLES',['../classunravel_1_1statistics__utils_1_1sample__data.html#a6407970503064608169fc17f2cb7c610',1,'unravel::statistics_utils::sample_data']]],
-  ['num_5fsplits_84',['num_splits',['../structunravel_1_1light_1_1directional__shadowmap__params.html#a3b3d5d85c0df7657f4a7d4bd43b874db',1,'unravel::light::directional_shadowmap_params']]],
-  ['numeric_5fbase_85',['numeric_base',['../classcmd__line_1_1numeric__base.html',1,'cmd_line::numeric_base&lt; T, num_base &gt;'],['../classcmd__line_1_1numeric__base.html#a1384119218b1aefd83b1b380fb3a7b5a',1,'cmd_line::numeric_base::numeric_base()'],['../classcmd__line_1_1numeric__base.html#ae49a66dd07282ff78f9fa51b8efa7857',1,'cmd_line::numeric_base::numeric_base(T val)']]],
-  ['numlockclear_86',['numlockclear',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca4380778381485d959c8e6b62cf434694',1,'input']]],
-  ['numstops_87',['NumStops',['../namespaceunravel.html#a448bc584dc8d55f52d61587ba1c5ba2fa29d3027c8135c540ab52081682bca384',1,'unravel']]]
+  ['num_5fparticles_5f_83',['num_particles_',['../structps_1_1_emitter.html#ab0e1512b024e6863c1f11bccadff7f8a',1,'ps::Emitter']]],
+  ['num_5fsamples_84',['NUM_SAMPLES',['../classunravel_1_1statistics__utils_1_1sample__data.html#a6407970503064608169fc17f2cb7c610',1,'unravel::statistics_utils::sample_data']]],
+  ['num_5fsplits_85',['num_splits',['../structunravel_1_1light_1_1directional__shadowmap__params.html#a3b3d5d85c0df7657f4a7d4bd43b874db',1,'unravel::light::directional_shadowmap_params']]],
+  ['numeric_5fbase_86',['numeric_base',['../classcmd__line_1_1numeric__base.html',1,'cmd_line::numeric_base&lt; T, num_base &gt;'],['../classcmd__line_1_1numeric__base.html#a1384119218b1aefd83b1b380fb3a7b5a',1,'cmd_line::numeric_base::numeric_base()'],['../classcmd__line_1_1numeric__base.html#ae49a66dd07282ff78f9fa51b8efa7857',1,'cmd_line::numeric_base::numeric_base(T val)']]],
+  ['numlockclear_87',['numlockclear',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca4380778381485d959c8e6b62cf434694',1,'input']]],
+  ['numstops_88',['NumStops',['../namespaceunravel.html#a448bc584dc8d55f52d61587ba1c5ba2fa29d3027c8135c540ab52081682bca384',1,'unravel']]]
 ];

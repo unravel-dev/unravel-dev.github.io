@@ -1216,421 +1216,417 @@ $(function(){initNavTree('rendering_2ecs_2components_2text__component_8cpp_sourc
 <div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; seg : wl.segments)</div>
 <div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>        {</div>
 <div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>            <span class="keywordtype">bool</span> create_new = !(last_segment &amp;&amp; can_batch_with(last_segment-&gt;state.style, seg.state.style));</div>
-<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>            <span class="keywordflow">if</span>(create_new)</div>
-<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>            {</div>
-<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>                <span class="keyword">auto</span> buf = builder_-&gt;manager.create_text_buffer(<a class="code hl_define" href="font__manager_8h.html#a02d1775b228112e2a4b412c95949ad3c">FONT_TYPE_DISTANCE_OUTLINE_DROP_SHADOW_IMAGE</a>, buf_type);</div>
-<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>                builder_-&gt;buffers.push_back({buf});</div>
-<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>            }</div>
-<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span> </div>
-<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>            <span class="keyword">auto</span>&amp; buf = builder_-&gt;buffers.back().handle;</div>
-<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>            apply_style(builder_-&gt;manager, buf, seg.state.style);</div>
-<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>            builder_-&gt;manager.set_apply_kerning(buf, apply_kerning_);</div>
-<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>            builder_-&gt;manager.set_pen_origin(buf, offset_x, offset_y);</div>
-<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>            builder_-&gt;manager.set_pen_position(buf, pen_x, pen_y);</div>
-<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>            builder_-&gt;manager.append_text(buf, final_font.handle, seg.text.data(), seg.text.data() + seg.text.size());</div>
-<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>            builder_-&gt;manager.get_pen_position(buf, &amp;pen_x, &amp;pen_y);</div>
-<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span> </div>
-<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>            last_segment = &amp;seg;</div>
-<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>        }</div>
-<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span> </div>
-<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>        pen_y += line_h;</div>
-<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>    }</div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>            <span class="keyword">auto</span>&amp; buffer = builder_-&gt;get_buffer(<a class="code hl_define" href="font__manager_8h.html#a02d1775b228112e2a4b412c95949ad3c">FONT_TYPE_DISTANCE_OUTLINE_DROP_SHADOW_IMAGE</a>, buf_type, create_new);</div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>            <span class="keyword">auto</span> buf = buffer.handle;</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>            apply_style(builder_-&gt;manager, buf, seg.state.style);</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>            </div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>            builder_-&gt;manager.set_apply_kerning(buf, apply_kerning_);</div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>            builder_-&gt;manager.set_pen_origin(buf, offset_x, offset_y);</div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>            builder_-&gt;manager.set_pen_position(buf, pen_x, pen_y);</div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>            builder_-&gt;manager.append_text(buf, final_font.handle, seg.text.data(), seg.text.data() + seg.text.size());</div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>            builder_-&gt;manager.get_pen_position(buf, &amp;pen_x, &amp;pen_y);</div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span> </div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>            last_segment = &amp;seg;</div>
+<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>        }</div>
+<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span> </div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>        pen_y += line_h;</div>
+<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>    }</div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span> </div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>    <span class="comment">// {</span></div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>    <span class="comment">//     debug_builder_-&gt;destroy_buffers();</span></div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>    <span class="comment">//     auto buf = debug_builder_-&gt;manager.create_text_buffer(FONT_TYPE_DISTANCE, buf_type);</span></div>
 <div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span> </div>
-<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>    <span class="comment">// {</span></div>
-<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>    <span class="comment">//     debug_builder_-&gt;destroy_buffers();</span></div>
-<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>    <span class="comment">//     auto buf = debug_builder_-&gt;manager.create_text_buffer(FONT_TYPE_DISTANCE, buf_type);</span></div>
-<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span> </div>
-<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>    <span class="comment">//     debug_builder_-&gt;manager.set_background_color(buf, 0xffffffff);</span></div>
-<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>    <span class="comment">//     for(size_t i = 0; i &lt; 6; ++i)</span></div>
-<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>    <span class="comment">//     {</span></div>
-<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>    <span class="comment">//         debug_builder_-&gt;manager.append_atlas_face(buf, i);</span></div>
-<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>    <span class="comment">//     }</span></div>
-<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>    <span class="comment">//     debug_builder_-&gt;buffers.push_back({buf});</span></div>
-<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>    <span class="comment">// }</span></div>
-<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span> </div>
-<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>    <span class="comment">// 6) mark clean</span></div>
-<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>    text_dirty_ = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>    scaled_font_dirty_ = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>    <span class="keywordflow">return</span> *builder_;</div>
-<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>}</div>
-<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span> </div>
-<div class="foldopen" id="foldopen01134" data-start="{" data-end="}">
-<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#aa3565881cef269de5996b9f305e87fee"> 1134</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#aa3565881cef269de5996b9f305e87fee">text_component::set_font_size</a>(uint32_t font_size)</div>
-<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span>{</div>
-<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span>    <span class="keywordflow">if</span>(font_size_ == font_size)</div>
-<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>    {</div>
-<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>    }</div>
-<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>    font_size_ = font_size;</div>
-<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span> </div>
-<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>    scaled_font_dirty_ = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>}</div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>    <span class="comment">//     debug_builder_-&gt;manager.set_background_color(buf, 0xffffffff);</span></div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>    <span class="comment">//     for(size_t i = 0; i &lt; 6; ++i)</span></div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>    <span class="comment">//     {</span></div>
+<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>    <span class="comment">//         debug_builder_-&gt;manager.append_atlas_face(buf, i);</span></div>
+<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>    <span class="comment">//     }</span></div>
+<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>    <span class="comment">//     debug_builder_-&gt;buffers.push_back({buf});</span></div>
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>    <span class="comment">// }</span></div>
+<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span> </div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>    <span class="comment">// 6) mark clean</span></div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>    text_dirty_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>    scaled_font_dirty_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>    <span class="keywordflow">return</span> *builder_;</div>
+<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>}</div>
+<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span> </div>
+<div class="foldopen" id="foldopen01130" data-start="{" data-end="}">
+<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#aa3565881cef269de5996b9f305e87fee"> 1130</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#aa3565881cef269de5996b9f305e87fee">text_component::set_font_size</a>(uint32_t font_size)</div>
+<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>{</div>
+<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>    <span class="keywordflow">if</span>(font_size_ == font_size)</div>
+<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>    {</div>
+<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span>    }</div>
+<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span>    font_size_ = font_size;</div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span> </div>
+<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>    scaled_font_dirty_ = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>}</div>
 </div>
-<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span> </div>
-<div class="foldopen" id="foldopen01145" data-start="{" data-end="}">
-<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b"> 1145</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b">text_component::get_font_size</a>() const -&gt; uint32_t</div>
-<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>{</div>
-<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>    <span class="keywordflow">return</span> font_size_;</div>
-<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>}</div>
+<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span> </div>
+<div class="foldopen" id="foldopen01141" data-start="{" data-end="}">
+<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b"> 1141</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b">text_component::get_font_size</a>() const -&gt; uint32_t</div>
+<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>{</div>
+<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>    <span class="keywordflow">return</span> font_size_;</div>
+<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>}</div>
 </div>
-<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span> </div>
-<div class="foldopen" id="foldopen01150" data-start="{" data-end="}">
-<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#aa01243a8f142590be99bc1da78dba050"> 1150</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#aa01243a8f142590be99bc1da78dba050">text_component::set_auto_size</a>(<span class="keywordtype">bool</span> auto_size)</div>
-<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>{</div>
-<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>    <span class="keywordflow">if</span>(auto_size_ == auto_size)</div>
-<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>    {</div>
-<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>    }</div>
+<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span> </div>
+<div class="foldopen" id="foldopen01146" data-start="{" data-end="}">
+<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#aa01243a8f142590be99bc1da78dba050"> 1146</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#aa01243a8f142590be99bc1da78dba050">text_component::set_auto_size</a>(<span class="keywordtype">bool</span> auto_size)</div>
+<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>{</div>
+<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>    <span class="keywordflow">if</span>(auto_size_ == auto_size)</div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>    {</div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>    }</div>
+<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span> </div>
+<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>    auto_size_ = auto_size;</div>
+<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>    text_dirty_ = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>}</div>
+</div>
 <div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span> </div>
-<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>    auto_size_ = auto_size;</div>
-<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>    text_dirty_ = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>}</div>
+<div class="foldopen" id="foldopen01157" data-start="{" data-end="}">
+<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a22b7f68d2e69763b5c445d06f98fd4ff"> 1157</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a22b7f68d2e69763b5c445d06f98fd4ff">text_component::get_auto_size</a>() const -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>{</div>
+<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>    <span class="keywordflow">return</span> auto_size_;</div>
+<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>}</div>
 </div>
-<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span> </div>
-<div class="foldopen" id="foldopen01161" data-start="{" data-end="}">
-<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a22b7f68d2e69763b5c445d06f98fd4ff"> 1161</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a22b7f68d2e69763b5c445d06f98fd4ff">text_component::get_auto_size</a>() const -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span>{</div>
-<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>    <span class="keywordflow">return</span> auto_size_;</div>
-<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>}</div>
+<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span> </div>
+<div class="foldopen" id="foldopen01162" data-start="{" data-end="}">
+<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a1454fe58ebc02f6e28bfd686691650ff"> 1162</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a1454fe58ebc02f6e28bfd686691650ff">text_component::get_render_font_size</a>() const -&gt; uint32_t</div>
+<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>{</div>
+<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>    <span class="keywordflow">return</span> calculated_font_size_;</div>
+<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>}</div>
 </div>
-<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span> </div>
-<div class="foldopen" id="foldopen01166" data-start="{" data-end="}">
-<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a1454fe58ebc02f6e28bfd686691650ff"> 1166</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a1454fe58ebc02f6e28bfd686691650ff">text_component::get_render_font_size</a>() const -&gt; uint32_t</div>
-<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>{</div>
-<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>    <span class="keywordflow">return</span> calculated_font_size_;</div>
-<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>}</div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span> </div>
+<div class="foldopen" id="foldopen01167" data-start="{" data-end="}">
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a6162f44a38da3984b263dbc54a2a3df3"> 1167</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a6162f44a38da3984b263dbc54a2a3df3">text_component::set_is_rich_text</a>(<span class="keywordtype">bool</span> is_rich)</div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>{</div>
+<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>    <span class="keywordflow">if</span>(is_rich_ == is_rich)</div>
+<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>    {</div>
+<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>    }</div>
+<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span> </div>
+<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>    is_rich_ = is_rich;</div>
+<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>    text_dirty_ = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>}</div>
 </div>
-<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span> </div>
-<div class="foldopen" id="foldopen01171" data-start="{" data-end="}">
-<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a6162f44a38da3984b263dbc54a2a3df3"> 1171</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a6162f44a38da3984b263dbc54a2a3df3">text_component::set_is_rich_text</a>(<span class="keywordtype">bool</span> is_rich)</div>
-<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>{</div>
-<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span>    <span class="keywordflow">if</span>(is_rich_ == is_rich)</div>
-<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>    {</div>
-<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>    }</div>
 <div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span> </div>
-<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>    is_rich_ = is_rich;</div>
-<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>    text_dirty_ = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>}</div>
+<div class="foldopen" id="foldopen01178" data-start="{" data-end="}">
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a80f25dbbe035243e661791b75bcdd0e0"> 1178</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a80f25dbbe035243e661791b75bcdd0e0">text_component::get_is_rich_text</a>() const -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>{</div>
+<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>    <span class="keywordflow">return</span> is_rich_;</div>
+<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>}</div>
 </div>
-<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span> </div>
-<div class="foldopen" id="foldopen01182" data-start="{" data-end="}">
-<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a80f25dbbe035243e661791b75bcdd0e0"> 1182</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a80f25dbbe035243e661791b75bcdd0e0">text_component::get_is_rich_text</a>() const -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>{</div>
-<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>    <span class="keywordflow">return</span> is_rich_;</div>
-<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>}</div>
+<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span> </div>
+<div class="foldopen" id="foldopen01183" data-start="{" data-end="}">
+<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#af038a987c9bd0c2ce5e15213b4321ac5"> 1183</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#af038a987c9bd0c2ce5e15213b4321ac5">text_component::set_apply_kerning</a>(<span class="keywordtype">bool</span> apply_kerning)</div>
+<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>{</div>
+<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>    <span class="keywordflow">if</span>(apply_kerning_ == apply_kerning)</div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>    {</div>
+<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>    }</div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span> </div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>    apply_kerning_ = apply_kerning;</div>
+<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>    text_dirty_ = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>}</div>
 </div>
-<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span> </div>
-<div class="foldopen" id="foldopen01187" data-start="{" data-end="}">
-<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#af038a987c9bd0c2ce5e15213b4321ac5"> 1187</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#af038a987c9bd0c2ce5e15213b4321ac5">text_component::set_apply_kerning</a>(<span class="keywordtype">bool</span> apply_kerning)</div>
-<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>{</div>
-<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>    <span class="keywordflow">if</span>(apply_kerning_ == apply_kerning)</div>
-<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>    {</div>
-<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>    }</div>
 <div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span> </div>
-<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>    apply_kerning_ = apply_kerning;</div>
-<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>    text_dirty_ = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>}</div>
+<div class="foldopen" id="foldopen01194" data-start="{" data-end="}">
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a0aa78ed404b0629b5bb50ee5fb5deac7"> 1194</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a0aa78ed404b0629b5bb50ee5fb5deac7">text_component::get_apply_kerning</a>() const -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>{</div>
+<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>    <span class="keywordflow">return</span> apply_kerning_;</div>
+<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>}</div>
 </div>
-<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span> </div>
-<div class="foldopen" id="foldopen01198" data-start="{" data-end="}">
-<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a0aa78ed404b0629b5bb50ee5fb5deac7"> 1198</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a0aa78ed404b0629b5bb50ee5fb5deac7">text_component::get_apply_kerning</a>() const -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>{</div>
-<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>    <span class="keywordflow">return</span> apply_kerning_;</div>
-<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>}</div>
+<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span> </div>
+<div class="foldopen" id="foldopen01199" data-start="{" data-end="}">
+<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a1052ad0414cbfb413b8abccf92425df4"> 1199</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a1052ad0414cbfb413b8abccf92425df4">text_component::set_alignment</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structunravel_1_1alignment.html">alignment</a>&amp; <a class="code hl_enumeration" href="namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891e">align</a>)</div>
+<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>{</div>
+<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>    <span class="keywordflow">if</span>(align_.<a class="code hl_variable" href="structunravel_1_1alignment.html#aa98d1bada0a0f684dbf7285da1649984">flags</a> == <a class="code hl_enumeration" href="namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891e">align</a>.flags)</div>
+<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>    {</div>
+<div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>    }</div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span> </div>
+<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>    align_ = <a class="code hl_enumeration" href="namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891e">align</a>;</div>
+<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>    text_dirty_ = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>}</div>
 </div>
-<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span> </div>
-<div class="foldopen" id="foldopen01203" data-start="{" data-end="}">
-<div class="line"><a id="l01203" name="l01203"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a1052ad0414cbfb413b8abccf92425df4"> 1203</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a1052ad0414cbfb413b8abccf92425df4">text_component::set_alignment</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structunravel_1_1alignment.html">alignment</a>&amp; <a class="code hl_enumeration" href="namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891e">align</a>)</div>
-<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>{</div>
-<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>    <span class="keywordflow">if</span>(align_.<a class="code hl_variable" href="structunravel_1_1alignment.html#aa98d1bada0a0f684dbf7285da1649984">flags</a> == <a class="code hl_enumeration" href="namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891e">align</a>.flags)</div>
-<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>    {</div>
-<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>    }</div>
 <div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span> </div>
-<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>    align_ = <a class="code hl_enumeration" href="namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891e">align</a>;</div>
-<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>    text_dirty_ = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>}</div>
+<div class="foldopen" id="foldopen01210" data-start="{" data-end="}">
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a6963debfb2fdc6117ffc6824061c390c"> 1210</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a6963debfb2fdc6117ffc6824061c390c">text_component::get_alignment</a>() const -&gt; const <a class="code hl_struct" href="structunravel_1_1alignment.html">alignment</a>&amp;</div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>{</div>
+<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>    <span class="keywordflow">return</span> align_;</div>
+<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>}</div>
 </div>
-<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span> </div>
-<div class="foldopen" id="foldopen01214" data-start="{" data-end="}">
-<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a6963debfb2fdc6117ffc6824061c390c"> 1214</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a6963debfb2fdc6117ffc6824061c390c">text_component::get_alignment</a>() const -&gt; const <a class="code hl_struct" href="structunravel_1_1alignment.html">alignment</a>&amp;</div>
-<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span>{</div>
-<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>    <span class="keywordflow">return</span> align_;</div>
-<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>}</div>
+<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span> </div>
+<div class="foldopen" id="foldopen01215" data-start="{" data-end="}">
+<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a5fc28114993bd918c314aa4dbe2e47b7"> 1215</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a5fc28114993bd918c314aa4dbe2e47b7">text_component::set_area</a>(<span class="keyword">const</span> <a class="code hl_class" href="structsize.html">fsize_t</a>&amp; area)</div>
+<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>{</div>
+<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>    <span class="keywordflow">if</span>(area_ == area)</div>
+<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span>    {</div>
+<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span>    }</div>
+<div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span> </div>
+<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>    area_ = area;</div>
+<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>    text_dirty_ = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>}</div>
 </div>
-<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span> </div>
-<div class="foldopen" id="foldopen01219" data-start="{" data-end="}">
-<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a5fc28114993bd918c314aa4dbe2e47b7"> 1219</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a5fc28114993bd918c314aa4dbe2e47b7">text_component::set_area</a>(<span class="keyword">const</span> <a class="code hl_class" href="structsize.html">fsize_t</a>&amp; area)</div>
-<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span>{</div>
-<div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span>    <span class="keywordflow">if</span>(area_ == area)</div>
-<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>    {</div>
-<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>    }</div>
 <div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span> </div>
-<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>    area_ = area;</div>
-<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>    text_dirty_ = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span>}</div>
+<div class="foldopen" id="foldopen01226" data-start="{" data-end="}">
+<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14"> 1226</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14">text_component::get_area</a>() const -&gt; const <a class="code hl_class" href="structsize.html">fsize_t</a>&amp;</div>
+<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>{</div>
+<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span>    <span class="keywordflow">return</span> area_;</div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>}</div>
 </div>
-<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span> </div>
-<div class="foldopen" id="foldopen01230" data-start="{" data-end="}">
-<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14"> 1230</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14">text_component::get_area</a>() const -&gt; const <a class="code hl_class" href="structsize.html">fsize_t</a>&amp;</div>
-<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>{</div>
-<div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>    <span class="keywordflow">return</span> area_;</div>
-<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span>}</div>
+<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span> </div>
+<div class="foldopen" id="foldopen01231" data-start="{" data-end="}">
+<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#ab2c6d07c86f18f891d5a49a6c6664fe3"> 1231</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#ab2c6d07c86f18f891d5a49a6c6664fe3">text_component::set_auto_size_range</a>(<span class="keyword">const</span> <a class="code hl_class" href="structrange.html">urange32_t</a>&amp; <a class="code hl_struct" href="structrange.html">range</a>)</div>
+<div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>{</div>
+<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span>    <span class="keywordflow">if</span>(auto_size_font_range_ == <a class="code hl_struct" href="structrange.html">range</a>)</div>
+<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>    {</div>
+<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>    }</div>
+<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span> </div>
+<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>    auto_size_font_range_ = <a class="code hl_struct" href="structrange.html">range</a>;</div>
+<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>    text_dirty_ = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>}</div>
 </div>
-<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span> </div>
-<div class="foldopen" id="foldopen01235" data-start="{" data-end="}">
-<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#ab2c6d07c86f18f891d5a49a6c6664fe3"> 1235</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#ab2c6d07c86f18f891d5a49a6c6664fe3">text_component::set_auto_size_range</a>(<span class="keyword">const</span> <a class="code hl_class" href="structrange.html">urange32_t</a>&amp; <a class="code hl_struct" href="structrange.html">range</a>)</div>
-<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>{</div>
-<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>    <span class="keywordflow">if</span>(auto_size_font_range_ == <a class="code hl_struct" href="structrange.html">range</a>)</div>
-<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>    {</div>
-<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>    }</div>
 <div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span> </div>
-<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span>    auto_size_font_range_ = <a class="code hl_struct" href="structrange.html">range</a>;</div>
-<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>    text_dirty_ = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>}</div>
+<div class="foldopen" id="foldopen01242" data-start="{" data-end="}">
+<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a2779d61db35741b87f7b5d0719d31c70"> 1242</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a2779d61db35741b87f7b5d0719d31c70">text_component::get_auto_size_range</a>() const -&gt; const <a class="code hl_class" href="structrange.html">urange32_t</a>&amp;</div>
+<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>{</div>
+<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>    <span class="keywordflow">return</span> auto_size_font_range_;</div>
+<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>}</div>
 </div>
-<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span> </div>
-<div class="foldopen" id="foldopen01246" data-start="{" data-end="}">
-<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a2779d61db35741b87f7b5d0719d31c70"> 1246</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a2779d61db35741b87f7b5d0719d31c70">text_component::get_auto_size_range</a>() const -&gt; const <a class="code hl_class" href="structrange.html">urange32_t</a>&amp;</div>
-<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span>{</div>
-<div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span>    <span class="keywordflow">return</span> auto_size_font_range_;</div>
-<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>}</div>
-</div>
-<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span> </div>
-<div class="foldopen" id="foldopen01251" data-start="{" data-end="}">
-<div class="line"><a id="l01251" name="l01251"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a4c8bd43d5e124d9fa9566bc9e67fc1a2"> 1251</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a4c8bd43d5e124d9fa9566bc9e67fc1a2">text_component::get_bounds</a>() const -&gt; <a class="code hl_namespace" href="namespacemath.html">math</a>::bbox</div>
-<div class="line"><a id="l01252" name="l01252"></a><span class="lineno"> 1252</span>{</div>
-<div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; area = <a class="code hl_function" href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14">get_area</a>();</div>
-<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span>    <a class="code hl_class" href="structmath_1_1bbox.html">math::bbox</a> bbox;</div>
-<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>    bbox.<a class="code hl_variable" href="structmath_1_1bbox.html#a8ebec1dff9969feda7ab43436304a617">min</a>.x = -area.width * 0.5f;</div>
-<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>    bbox.min.y = area.height * 0.5f;</div>
-<div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>    bbox.min.z = 0;</div>
+<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span> </div>
+<div class="foldopen" id="foldopen01247" data-start="{" data-end="}">
+<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a4c8bd43d5e124d9fa9566bc9e67fc1a2"> 1247</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a4c8bd43d5e124d9fa9566bc9e67fc1a2">text_component::get_bounds</a>() const -&gt; <a class="code hl_namespace" href="namespacemath.html">math</a>::bbox</div>
+<div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span>{</div>
+<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; area = <a class="code hl_function" href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14">get_area</a>();</div>
+<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span>    <a class="code hl_class" href="structmath_1_1bbox.html">math::bbox</a> bbox;</div>
+<div class="line"><a id="l01251" name="l01251"></a><span class="lineno"> 1251</span>    bbox.<a class="code hl_variable" href="structmath_1_1bbox.html#a8ebec1dff9969feda7ab43436304a617">min</a>.x = -area.width * 0.5f;</div>
+<div class="line"><a id="l01252" name="l01252"></a><span class="lineno"> 1252</span>    bbox.min.y = area.height * 0.5f;</div>
+<div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>    bbox.min.z = 0;</div>
+<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span> </div>
+<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>    bbox.max.x = area.width * 0.5f;</div>
+<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>    bbox.max.y = -area.height * 0.5f;</div>
+<div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>    bbox.max.z = 0.001f;</div>
 <div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span> </div>
-<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>    bbox.max.x = area.width * 0.5f;</div>
-<div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span>    bbox.max.y = -area.height * 0.5f;</div>
-<div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span>    bbox.max.z = 0.001f;</div>
-<div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span> </div>
-<div class="line"><a id="l01263" name="l01263"></a><span class="lineno"> 1263</span>    <span class="keywordflow">return</span> bbox;</div>
-<div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>}</div>
+<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>    <span class="keywordflow">return</span> bbox;</div>
+<div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span>}</div>
 </div>
-<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span> </div>
-<div class="foldopen" id="foldopen01266" data-start="{" data-end="}">
-<div class="line"><a id="l01266" name="l01266"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#aaa1f059c463d3d98c2dce01a4ef53326"> 1266</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#aaa1f059c463d3d98c2dce01a4ef53326">text_component::get_render_bounds</a>() const -&gt; <a class="code hl_namespace" href="namespacemath.html">math</a>::bbox</div>
-<div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span>{</div>
-<div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; area = <a class="code hl_function" href="classunravel_1_1text__component.html#a835233c3cb04da7bdc58844997345438">get_render_area</a>();</div>
-<div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span>    <a class="code hl_class" href="structmath_1_1bbox.html">math::bbox</a> bbox;</div>
-<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>    bbox.<a class="code hl_variable" href="structmath_1_1bbox.html#a8ebec1dff9969feda7ab43436304a617">min</a>.x = -area.width * 0.5f;</div>
-<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span>    bbox.min.y = area.height * 0.5f;</div>
-<div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>    bbox.min.z = 0;</div>
+<div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span> </div>
+<div class="foldopen" id="foldopen01262" data-start="{" data-end="}">
+<div class="line"><a id="l01262" name="l01262"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#aaa1f059c463d3d98c2dce01a4ef53326"> 1262</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#aaa1f059c463d3d98c2dce01a4ef53326">text_component::get_render_bounds</a>() const -&gt; <a class="code hl_namespace" href="namespacemath.html">math</a>::bbox</div>
+<div class="line"><a id="l01263" name="l01263"></a><span class="lineno"> 1263</span>{</div>
+<div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; area = <a class="code hl_function" href="classunravel_1_1text__component.html#a835233c3cb04da7bdc58844997345438">get_render_area</a>();</div>
+<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>    <a class="code hl_class" href="structmath_1_1bbox.html">math::bbox</a> bbox;</div>
+<div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span>    bbox.<a class="code hl_variable" href="structmath_1_1bbox.html#a8ebec1dff9969feda7ab43436304a617">min</a>.x = -area.width * 0.5f;</div>
+<div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span>    bbox.min.y = area.height * 0.5f;</div>
+<div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>    bbox.min.z = 0;</div>
+<div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span> </div>
+<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>    bbox.max.x = area.width * 0.5f;</div>
+<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span>    bbox.max.y = -area.height * 0.5f;</div>
+<div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>    bbox.max.z = 0.001f;</div>
 <div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span> </div>
-<div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>    bbox.max.x = area.width * 0.5f;</div>
-<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>    bbox.max.y = -area.height * 0.5f;</div>
-<div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>    bbox.max.z = 0.001f;</div>
-<div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span> </div>
-<div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span>    <span class="keywordflow">return</span> bbox;</div>
-<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>}</div>
+<div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>    <span class="keywordflow">return</span> bbox;</div>
+<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>}</div>
 </div>
-<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span> </div>
-<div class="foldopen" id="foldopen01281" data-start="{" data-end="}">
-<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#ab3a4ce835ca5892352df33c5e6adbc7d"> 1281</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#ab3a4ce835ca5892352df33c5e6adbc7d">text_component::get_render_buffers_count</a>() const -&gt; <span class="keywordtype">size_t</span></div>
-<div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>{</div>
-<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>    <span class="keywordflow">return</span> get_builder().buffers.size();</div>
-<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>}</div>
+<div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span> </div>
+<div class="foldopen" id="foldopen01277" data-start="{" data-end="}">
+<div class="line"><a id="l01277" name="l01277"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#ab3a4ce835ca5892352df33c5e6adbc7d"> 1277</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#ab3a4ce835ca5892352df33c5e6adbc7d">text_component::get_render_buffers_count</a>() const -&gt; <span class="keywordtype">size_t</span></div>
+<div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span>{</div>
+<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>    <span class="keywordflow">return</span> get_builder().buffers.size();</div>
+<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>}</div>
 </div>
-<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span> </div>
-<div class="foldopen" id="foldopen01286" data-start="{" data-end="}">
-<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a528927805547d8ff64891de617f8c840"> 1286</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a528927805547d8ff64891de617f8c840">text_component::get_lines</a>(<span class="keywordtype">bool</span> include_breaks) <span class="keyword">const</span> -&gt; <a class="code hl_typedef" href="namespaceunravel.html#a8b8f3a63cb62f37744dcf7d39627c37b">text_vector&lt;text_line&gt;</a></div>
-<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>{</div>
-<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>    <span class="keyword">auto</span>&amp; builder = get_builder();</div>
-<div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>    <span class="keyword">auto</span>&amp; layout = scratch_.layout;</div>
-<div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span> </div>
-<div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span>    <a class="code hl_typedef" href="namespaceunravel.html#a8b8f3a63cb62f37744dcf7d39627c37b">text_vector&lt;text_line&gt;</a> lines;</div>
-<div class="line"><a id="l01292" name="l01292"></a><span class="lineno"> 1292</span>    lines.reserve(layout.size());</div>
-<div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; layout_line : layout)</div>
-<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span>    {</div>
-<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span>        <span class="keyword">auto</span>&amp; line = lines.emplace_back();</div>
-<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span> </div>
-<div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; seg : layout_line.segments)</div>
-<div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span>        {</div>
-<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span>            line.line += std::string(seg.text);</div>
-<div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span>        }</div>
-<div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span> </div>
-<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>        <span class="keywordflow">if</span>(include_breaks)</div>
-<div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span>        {</div>
-<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span>            line.break_symbol = std::string(layout_line.brk_symbol);</div>
-<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>        }</div>
-<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>    }</div>
-<div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span> </div>
-<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>    <span class="keywordflow">return</span> lines;</div>
-<div class="line"><a id="l01309" name="l01309"></a><span class="lineno"> 1309</span>}</div>
+<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span> </div>
+<div class="foldopen" id="foldopen01282" data-start="{" data-end="}">
+<div class="line"><a id="l01282" name="l01282"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a528927805547d8ff64891de617f8c840"> 1282</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a528927805547d8ff64891de617f8c840">text_component::get_lines</a>(<span class="keywordtype">bool</span> include_breaks) <span class="keyword">const</span> -&gt; <a class="code hl_typedef" href="namespaceunravel.html#a8b8f3a63cb62f37744dcf7d39627c37b">text_vector&lt;text_line&gt;</a></div>
+<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>{</div>
+<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>    <span class="keyword">auto</span>&amp; builder = get_builder();</div>
+<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>    <span class="keyword">auto</span>&amp; layout = scratch_.layout;</div>
+<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span> </div>
+<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>    <a class="code hl_typedef" href="namespaceunravel.html#a8b8f3a63cb62f37744dcf7d39627c37b">text_vector&lt;text_line&gt;</a> lines;</div>
+<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>    lines.reserve(layout.size());</div>
+<div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; layout_line : layout)</div>
+<div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span>    {</div>
+<div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span>        <span class="keyword">auto</span>&amp; line = lines.emplace_back();</div>
+<div class="line"><a id="l01292" name="l01292"></a><span class="lineno"> 1292</span> </div>
+<div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; seg : layout_line.segments)</div>
+<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span>        {</div>
+<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span>            line.line += std::string(seg.text);</div>
+<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span>        }</div>
+<div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span> </div>
+<div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span>        <span class="keywordflow">if</span>(include_breaks)</div>
+<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span>        {</div>
+<div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span>            line.break_symbol = std::string(layout_line.brk_symbol);</div>
+<div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span>        }</div>
+<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>    }</div>
+<div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span> </div>
+<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span>    <span class="keywordflow">return</span> lines;</div>
+<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>}</div>
 </div>
-<div class="line"><a id="l01310" name="l01310"></a><span class="lineno"> 1310</span> </div>
+<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span> </div>
+<div class="foldopen" id="foldopen01307" data-start="{" data-end="}">
+<div class="line"><a id="l01307" name="l01307"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a8100e079119c76721b8d469d6dceb984"> 1307</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a8100e079119c76721b8d469d6dceb984">text_component::meters_to_px</a>(<span class="keywordtype">float</span> meters) <span class="keyword">const</span> -&gt; <span class="keywordtype">float</span></div>
+<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>{</div>
+<div class="line"><a id="l01309" name="l01309"></a><span class="lineno"> 1309</span>    <span class="keywordflow">return</span> meters * PIXELS_PER_METER;</div>
+<div class="line"><a id="l01310" name="l01310"></a><span class="lineno"> 1310</span>}</div>
+</div>
 <div class="foldopen" id="foldopen01311" data-start="{" data-end="}">
-<div class="line"><a id="l01311" name="l01311"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a8100e079119c76721b8d469d6dceb984"> 1311</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a8100e079119c76721b8d469d6dceb984">text_component::meters_to_px</a>(<span class="keywordtype">float</span> meters) <span class="keyword">const</span> -&gt; <span class="keywordtype">float</span></div>
+<div class="line"><a id="l01311" name="l01311"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a9335ee1d3401579a98b7a941f352bb76"> 1311</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a9335ee1d3401579a98b7a941f352bb76">text_component::px_to_meters</a>(<span class="keywordtype">float</span> px) <span class="keyword">const</span> -&gt; <span class="keywordtype">float</span></div>
 <div class="line"><a id="l01312" name="l01312"></a><span class="lineno"> 1312</span>{</div>
-<div class="line"><a id="l01313" name="l01313"></a><span class="lineno"> 1313</span>    <span class="keywordflow">return</span> meters * PIXELS_PER_METER;</div>
+<div class="line"><a id="l01313" name="l01313"></a><span class="lineno"> 1313</span>    <span class="keywordflow">return</span> px * METERS_PER_PIXEL;</div>
 <div class="line"><a id="l01314" name="l01314"></a><span class="lineno"> 1314</span>}</div>
 </div>
-<div class="foldopen" id="foldopen01315" data-start="{" data-end="}">
-<div class="line"><a id="l01315" name="l01315"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a9335ee1d3401579a98b7a941f352bb76"> 1315</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a9335ee1d3401579a98b7a941f352bb76">text_component::px_to_meters</a>(<span class="keywordtype">float</span> px) <span class="keyword">const</span> -&gt; <span class="keywordtype">float</span></div>
-<div class="line"><a id="l01316" name="l01316"></a><span class="lineno"> 1316</span>{</div>
-<div class="line"><a id="l01317" name="l01317"></a><span class="lineno"> 1317</span>    <span class="keywordflow">return</span> px * METERS_PER_PIXEL;</div>
-<div class="line"><a id="l01318" name="l01318"></a><span class="lineno"> 1318</span>}</div>
+<div class="line"><a id="l01315" name="l01315"></a><span class="lineno"> 1315</span> </div>
+<div class="foldopen" id="foldopen01316" data-start="{" data-end="}">
+<div class="line"><a id="l01316" name="l01316"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#ae9214ee252f87689aa1b541b09e08b37"> 1316</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#ae9214ee252f87689aa1b541b09e08b37">text_component::can_be_rendered</a>() const -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l01317" name="l01317"></a><span class="lineno"> 1317</span>{</div>
+<div class="line"><a id="l01318" name="l01318"></a><span class="lineno"> 1318</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structunravel_1_1font.html">font</a> = <a class="code hl_function" href="classunravel_1_1text__component.html#a8ceda95c9cdd10120b9b4a0229e79ea8">get_scaled_font</a>();</div>
+<div class="line"><a id="l01319" name="l01319"></a><span class="lineno"> 1319</span>    <span class="keyword">const</span> <span class="keyword">auto</span> font_scaled_size = <a class="code hl_function" href="classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b">get_font_size</a>();</div>
+<div class="line"><a id="l01320" name="l01320"></a><span class="lineno"> 1320</span> </div>
+<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>    <span class="keywordflow">return</span> font_scaled_size &gt; 0 &amp;&amp; <a class="code hl_struct" href="structunravel_1_1font.html">font</a>.<a class="code hl_function" href="structunravel_1_1base__font.html#adb1218bb002dfc2cd7484a707d1e1ea2">is_valid</a>();</div>
+<div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span>}</div>
 </div>
-<div class="line"><a id="l01319" name="l01319"></a><span class="lineno"> 1319</span> </div>
-<div class="foldopen" id="foldopen01320" data-start="{" data-end="}">
-<div class="line"><a id="l01320" name="l01320"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#ae9214ee252f87689aa1b541b09e08b37"> 1320</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#ae9214ee252f87689aa1b541b09e08b37">text_component::can_be_rendered</a>() const -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>{</div>
-<div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structunravel_1_1font.html">font</a> = <a class="code hl_function" href="classunravel_1_1text__component.html#a8ceda95c9cdd10120b9b4a0229e79ea8">get_scaled_font</a>();</div>
-<div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span>    <span class="keyword">const</span> <span class="keyword">auto</span> font_scaled_size = <a class="code hl_function" href="classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b">get_font_size</a>();</div>
-<div class="line"><a id="l01324" name="l01324"></a><span class="lineno"> 1324</span> </div>
-<div class="line"><a id="l01325" name="l01325"></a><span class="lineno"> 1325</span>    <span class="keywordflow">return</span> font_scaled_size &gt; 0 &amp;&amp; <a class="code hl_struct" href="structunravel_1_1font.html">font</a>.<a class="code hl_function" href="structunravel_1_1base__font.html#adb1218bb002dfc2cd7484a707d1e1ea2">is_valid</a>();</div>
-<div class="line"><a id="l01326" name="l01326"></a><span class="lineno"> 1326</span>}</div>
-</div>
-<div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span> </div>
-<div class="foldopen" id="foldopen01328" data-start="{" data-end="}">
-<div class="line"><a id="l01328" name="l01328"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a835233c3cb04da7bdc58844997345438"> 1328</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a835233c3cb04da7bdc58844997345438">text_component::get_render_area</a>() const -&gt; <a class="code hl_class" href="structsize.html">fsize_t</a></div>
-<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>{</div>
-<div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; builder = get_builder();</div>
-<div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span>    <a class="code hl_class" href="structsize.html">fsize_t</a> result;</div>
-<div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; sb : builder.buffers)</div>
-<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span>    {</div>
-<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span>        <span class="keyword">auto</span> r = builder.manager.get_rectangle(sb.handle);</div>
+<div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span> </div>
+<div class="foldopen" id="foldopen01324" data-start="{" data-end="}">
+<div class="line"><a id="l01324" name="l01324"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a835233c3cb04da7bdc58844997345438"> 1324</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a835233c3cb04da7bdc58844997345438">text_component::get_render_area</a>() const -&gt; <a class="code hl_class" href="structsize.html">fsize_t</a></div>
+<div class="line"><a id="l01325" name="l01325"></a><span class="lineno"> 1325</span>{</div>
+<div class="line"><a id="l01326" name="l01326"></a><span class="lineno"> 1326</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; builder = get_builder();</div>
+<div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span>    <a class="code hl_class" href="structsize.html">fsize_t</a> result;</div>
+<div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; sb : builder.buffers)</div>
+<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>    {</div>
+<div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span>        <span class="keyword">auto</span> r = builder.manager.get_rectangle(sb.handle);</div>
+<div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span> </div>
+<div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span>        result.<a class="code hl_variable" href="structsize.html#a7bed016a142a5435d4f79caa7323f31a">width</a> = std::max(result.<a class="code hl_variable" href="structsize.html#a7bed016a142a5435d4f79caa7323f31a">width</a>, r.width);</div>
+<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span>        result.<a class="code hl_variable" href="structsize.html#aa9a160508b89943240c1995a127695bb">height</a> = std::max(result.<a class="code hl_variable" href="structsize.html#aa9a160508b89943240c1995a127695bb">height</a>, r.height);</div>
+<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span>    }</div>
 <div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span> </div>
-<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>        result.<a class="code hl_variable" href="structsize.html#a7bed016a142a5435d4f79caa7323f31a">width</a> = std::max(result.<a class="code hl_variable" href="structsize.html#a7bed016a142a5435d4f79caa7323f31a">width</a>, r.width);</div>
-<div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>        result.<a class="code hl_variable" href="structsize.html#aa9a160508b89943240c1995a127695bb">height</a> = std::max(result.<a class="code hl_variable" href="structsize.html#aa9a160508b89943240c1995a127695bb">height</a>, r.height);</div>
-<div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>    }</div>
-<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span> </div>
-<div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span>    <span class="keyword">auto</span> area = <a class="code hl_function" href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14">get_area</a>();</div>
-<div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span>    result.<a class="code hl_variable" href="structsize.html#a7bed016a142a5435d4f79caa7323f31a">width</a> = std::max(result.<a class="code hl_variable" href="structsize.html#a7bed016a142a5435d4f79caa7323f31a">width</a> * METERS_PER_PIXEL, area.width);</div>
-<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span>    result.<a class="code hl_variable" href="structsize.html#aa9a160508b89943240c1995a127695bb">height</a> = std::max(result.<a class="code hl_variable" href="structsize.html#aa9a160508b89943240c1995a127695bb">height</a> * METERS_PER_PIXEL, area.height);</div>
-<div class="line"><a id="l01343" name="l01343"></a><span class="lineno"> 1343</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span>}</div>
+<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>    <span class="keyword">auto</span> area = <a class="code hl_function" href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14">get_area</a>();</div>
+<div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>    result.<a class="code hl_variable" href="structsize.html#a7bed016a142a5435d4f79caa7323f31a">width</a> = std::max(result.<a class="code hl_variable" href="structsize.html#a7bed016a142a5435d4f79caa7323f31a">width</a> * METERS_PER_PIXEL, area.width);</div>
+<div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>    result.<a class="code hl_variable" href="structsize.html#aa9a160508b89943240c1995a127695bb">height</a> = std::max(result.<a class="code hl_variable" href="structsize.html#aa9a160508b89943240c1995a127695bb">height</a> * METERS_PER_PIXEL, area.height);</div>
+<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span>}</div>
 </div>
+<div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span> </div>
+<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span><span class="keywordtype">void</span> text_component::recreate_scaled_font()<span class="keyword"> const</span></div>
+<div class="line"><a id="l01343" name="l01343"></a><span class="lineno"> 1343</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span>    font_version_ = font_.version();</div>
 <div class="line"><a id="l01345" name="l01345"></a><span class="lineno"> 1345</span> </div>
-<div class="line"><a id="l01346" name="l01346"></a><span class="lineno"> 1346</span><span class="keywordtype">void</span> text_component::recreate_scaled_font()<span class="keyword"> const</span></div>
-<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span>    font_version_ = font_.version();</div>
-<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span> </div>
-<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span>    <span class="keywordflow">if</span>(!font_)</div>
-<div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span>    {</div>
-<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>        scaled_font_.reset();</div>
-<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span>    }</div>
-<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a> = font_.get();</div>
-<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>)</div>
-<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>    {</div>
-<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>        scaled_font_.reset();</div>
-<div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>    }</div>
-<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>    scaled_font_ = <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>-&gt;get_scaled_font(<a class="code hl_function" href="classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b">get_font_size</a>());</div>
-<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>}</div>
-<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span> </div>
-<div class="foldopen" id="foldopen01364" data-start="{" data-end="}">
-<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a9d7f45afc94b038b7fecb821562bd6eb"> 1364</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a9d7f45afc94b038b7fecb821562bd6eb">text_component::submit</a>(<a class="code hl_typedef" href="namespacegfx.html#aab4cbe9dc5e1938791196b3a2e2b7f16">gfx::view_id</a> <span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code hl_class" href="classmath_1_1transform__t.html">math::transform</a>&amp; world, uint64_t state)</div>
-<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>{</div>
-<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>    <span class="keywordflow">if</span>(!<a class="code hl_function" href="classunravel_1_1text__component.html#ae9214ee252f87689aa1b541b09e08b37">can_be_rendered</a>())</div>
-<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span>    {</div>
-<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span>    }</div>
-<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>    <span class="keyword">auto</span> fit_m = <a class="code hl_function" href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14">get_area</a>();</div>
-<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>    <span class="keywordtype">float</span> fit_px_w = fit_m.width * PIXELS_PER_METER;</div>
-<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>    <span class="keywordtype">float</span> fit_px_h = fit_m.height * PIXELS_PER_METER;</div>
-<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span> </div>
-<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>    <a class="code hl_class" href="classmath_1_1transform__t.html">math::transform</a> pivot;</div>
-<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>    pivot.<a class="code hl_function" href="classmath_1_1transform__t.html#a5f0af8ce3158b265d8ec1ad15cca99a0">translate</a>(-fit_px_w * 0.5f, -fit_px_h * 0.5f);</div>
-<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span> </div>
-<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">auto</span> unit_scale = <a class="code hl_function" href="classmath_1_1transform__t.html#af6dea03fea2890fe826f5366cc0803df">math::transform::scaling</a>({METERS_PER_PIXEL, -METERS_PER_PIXEL, 1.0f});</div>
-<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span> </div>
-<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>    <span class="keyword">auto</span> text_transform = world * unit_scale * pivot;</div>
-<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>    <span class="keyword">auto</span>&amp; builder = get_builder();</div>
-<div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span> </div>
-<div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structunravel_1_1font.html">font</a> = <a class="code hl_function" href="classunravel_1_1text__component.html#a8ceda95c9cdd10120b9b4a0229e79ea8">get_scaled_font</a>();</div>
-<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"> 1383</span> </div>
-<div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; sb : builder.buffers)</div>
-<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span>    {</div>
-<div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span>        <a class="code hl_function" href="namespacegfx.html#a7b2c49166fbcf16751b24cf59738fcfe">gfx::set_transform</a>((<span class="keyword">const</span> <span class="keywordtype">float</span>*)text_transform);</div>
-<div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span>        builder.manager.submit_text_buffer(sb.handle, <a class="code hl_struct" href="structunravel_1_1font.html">font</a>.<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>, <span class="keywordtype">id</span>, state);</div>
-<div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span>    }</div>
-<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span> </div>
-<div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; sb : debug_builder_-&gt;buffers)</div>
-<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>    {</div>
-<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"> 1392</span>        <a class="code hl_function" href="namespacegfx.html#a7b2c49166fbcf16751b24cf59738fcfe">gfx::set_transform</a>((<span class="keyword">const</span> <span class="keywordtype">float</span>*)text_transform);</div>
-<div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span>        debug_builder_-&gt;manager.submit_text_buffer(sb.handle, <a class="code hl_struct" href="structunravel_1_1font.html">font</a>.<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>, <span class="keywordtype">id</span>, state);</div>
-<div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span>    }</div>
-<div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span>}</div>
+<div class="line"><a id="l01346" name="l01346"></a><span class="lineno"> 1346</span>    <span class="keywordflow">if</span>(!font_)</div>
+<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span>    {</div>
+<div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span>        scaled_font_.reset();</div>
+<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span>    }</div>
+<div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a> = font_.get();</div>
+<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>    <span class="keywordflow">if</span>(!<a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>)</div>
+<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span>    {</div>
+<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span>        scaled_font_.reset();</div>
+<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>    }</div>
+<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>    scaled_font_ = <a class="code hl_variable" href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a>-&gt;get_scaled_font(<a class="code hl_function" href="classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b">get_font_size</a>());</div>
+<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>}</div>
+<div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span> </div>
+<div class="foldopen" id="foldopen01360" data-start="{" data-end="}">
+<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"><a class="line" href="classunravel_1_1text__component.html#a9d7f45afc94b038b7fecb821562bd6eb"> 1360</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1text__component.html#a9d7f45afc94b038b7fecb821562bd6eb">text_component::submit</a>(<a class="code hl_typedef" href="namespacegfx.html#aab4cbe9dc5e1938791196b3a2e2b7f16">gfx::view_id</a> <span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code hl_class" href="classmath_1_1transform__t.html">math::transform</a>&amp; world, uint64_t state)</div>
+<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>{</div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>    <span class="keywordflow">if</span>(!<a class="code hl_function" href="classunravel_1_1text__component.html#ae9214ee252f87689aa1b541b09e08b37">can_be_rendered</a>())</div>
+<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span>    {</div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>    }</div>
+<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>    <span class="keyword">auto</span> fit_m = <a class="code hl_function" href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14">get_area</a>();</div>
+<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span>    <span class="keywordtype">float</span> fit_px_w = fit_m.width * PIXELS_PER_METER;</div>
+<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span>    <span class="keywordtype">float</span> fit_px_h = fit_m.height * PIXELS_PER_METER;</div>
+<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span> </div>
+<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>    <a class="code hl_class" href="classmath_1_1transform__t.html">math::transform</a> pivot;</div>
+<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>    pivot.<a class="code hl_function" href="classmath_1_1transform__t.html#a5f0af8ce3158b265d8ec1ad15cca99a0">translate</a>(-fit_px_w * 0.5f, -fit_px_h * 0.5f);</div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span> </div>
+<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">auto</span> unit_scale = <a class="code hl_function" href="classmath_1_1transform__t.html#af6dea03fea2890fe826f5366cc0803df">math::transform::scaling</a>({METERS_PER_PIXEL, -METERS_PER_PIXEL, 1.0f});</div>
+<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span> </div>
+<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>    <span class="keyword">auto</span> text_transform = world * unit_scale * pivot;</div>
+<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>    <span class="keyword">auto</span>&amp; builder = get_builder();</div>
+<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span> </div>
+<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structunravel_1_1font.html">font</a> = <a class="code hl_function" href="classunravel_1_1text__component.html#a8ceda95c9cdd10120b9b4a0229e79ea8">get_scaled_font</a>();</div>
+<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span> </div>
+<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; sb : builder.buffers)</div>
+<div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span>    {</div>
+<div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span>        <a class="code hl_function" href="namespacegfx.html#a7b2c49166fbcf16751b24cf59738fcfe">gfx::set_transform</a>((<span class="keyword">const</span> <span class="keywordtype">float</span>*)text_transform);</div>
+<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"> 1383</span>        builder.manager.submit_text_buffer(sb.handle, <a class="code hl_struct" href="structunravel_1_1font.html">font</a>.<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>, <span class="keywordtype">id</span>, state);</div>
+<div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span>    }</div>
+<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span> </div>
+<div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; sb : debug_builder_-&gt;buffers)</div>
+<div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span>    {</div>
+<div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span>        <a class="code hl_function" href="namespacegfx.html#a7b2c49166fbcf16751b24cf59738fcfe">gfx::set_transform</a>((<span class="keyword">const</span> <span class="keywordtype">float</span>*)text_transform);</div>
+<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span>        debug_builder_-&gt;manager.submit_text_buffer(sb.handle, <a class="code hl_struct" href="structunravel_1_1font.html">font</a>.<a class="code hl_variable" href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">handle</a>, <span class="keywordtype">id</span>, state);</div>
+<div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>    }</div>
+<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>}</div>
 </div>
-<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>} <span class="comment">// namespace unravel</span></div>
+<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"> 1392</span>} <span class="comment">// namespace unravel</span></div>
 <div class="ttc" id="abullet__backend_8cpp_html_a08221b587035b491f31d6dfe2b26dcd1"><div class="ttname"><a href="bullet__backend_8cpp.html#a08221b587035b491f31d6dfe2b26dcd1">b</a></div><div class="ttdeci">entt::handle b</div><div class="ttdef"><b>Definition</b> <a href="bullet__backend_8cpp_source.html#l00090">bullet_backend.cpp:90</a></div></div>
 <div class="ttc" id="abullet__backend_8cpp_html_a2542a9066337faae1d42acb19fc0efbe"><div class="ttname"><a href="bullet__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a></div><div class="ttdeci">manifold_type type</div><div class="ttdef"><b>Definition</b> <a href="bullet__backend_8cpp_source.html#l00087">bullet_backend.cpp:87</a></div></div>
 <div class="ttc" id="abullet__backend_8cpp_html_ac4cabb90211f9ac9d0a6b2c4bf9b680f"><div class="ttname"><a href="bullet__backend_8cpp.html#ac4cabb90211f9ac9d0a6b2c4bf9b680f">a</a></div><div class="ttdeci">entt::handle a</div><div class="ttdef"><b>Definition</b> <a href="bullet__backend_8cpp_source.html#l00089">bullet_backend.cpp:89</a></div></div>
 <div class="ttc" id="aclassgfx_1_1text__buffer__manager_html"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html">gfx::text_buffer_manager</a></div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8h_source.html#l00045">text_buffer_manager.h:46</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a11e118a32abc09a3c2b4bdd38f8bdbfd"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a11e118a32abc09a3c2b4bdd38f8bdbfd">gfx::text_buffer_manager::set_foreground_color</a></div><div class="ttdeci">void set_foreground_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01246">text_buffer_manager.cpp:1246</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a347b7f0778820d098f836946ebfc48c1"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a347b7f0778820d098f836946ebfc48c1">gfx::text_buffer_manager::set_strike_through_color</a></div><div class="ttdeci">void set_strike_through_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01267">text_buffer_manager.cpp:1267</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a4336d61e45a00e6830fa4faabe477ab5"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a4336d61e45a00e6830fa4faabe477ab5">gfx::text_buffer_manager::set_drop_shadow_softener</a></div><div class="ttdeci">void set_drop_shadow_softener(text_buffer_handle handle, float smoother=1.0f)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01302">text_buffer_manager.cpp:1302</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a51255576a359e6c63834779e755c2263"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a51255576a359e6c63834779e755c2263">gfx::text_buffer_manager::set_style</a></div><div class="ttdeci">void set_style(text_buffer_handle handle, uint32_t flags=style_normal)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01225">text_buffer_manager.cpp:1225</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a86de78b589e10d3480d024972432617e"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a86de78b589e10d3480d024972432617e">gfx::text_buffer_manager::set_outline_width</a></div><div class="ttdeci">void set_outline_width(text_buffer_handle handle, float outline_width=3.0f)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01281">text_buffer_manager.cpp:1281</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a8703795a4da57690a496d08efeb5699e"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a8703795a4da57690a496d08efeb5699e">gfx::text_buffer_manager::set_drop_shadow_offset</a></div><div class="ttdeci">void set_drop_shadow_offset(text_buffer_handle handle, float u, float v)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01295">text_buffer_manager.cpp:1295</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a9d2da4d11f87d307e8576ea59fa06ace"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a9d2da4d11f87d307e8576ea59fa06ace">gfx::text_buffer_manager::set_drop_shadow_color</a></div><div class="ttdeci">void set_drop_shadow_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01288">text_buffer_manager.cpp:1288</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_ab53deb34f8db8b70b1bf62737708eb80"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#ab53deb34f8db8b70b1bf62737708eb80">gfx::text_buffer_manager::set_text_color</a></div><div class="ttdeci">void set_text_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01232">text_buffer_manager.cpp:1232</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_ac15611207b59c9a2a252ae4f32ec4fd9"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#ac15611207b59c9a2a252ae4f32ec4fd9">gfx::text_buffer_manager::set_background_color</a></div><div class="ttdeci">void set_background_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01239">text_buffer_manager.cpp:1239</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_ada31c68301f4467995032b11e9df112c"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#ada31c68301f4467995032b11e9df112c">gfx::text_buffer_manager::set_underline_color</a></div><div class="ttdeci">void set_underline_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01260">text_buffer_manager.cpp:1260</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_ade29d7dd59eb41551d9125fad90228bb"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#ade29d7dd59eb41551d9125fad90228bb">gfx::text_buffer_manager::set_outline_color</a></div><div class="ttdeci">void set_outline_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01274">text_buffer_manager.cpp:1274</a></div></div>
-<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_ae1175a80789866c866d2014496b90385"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#ae1175a80789866c866d2014496b90385">gfx::text_buffer_manager::set_overline_color</a></div><div class="ttdeci">void set_overline_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01253">text_buffer_manager.cpp:1253</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a11e118a32abc09a3c2b4bdd38f8bdbfd"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a11e118a32abc09a3c2b4bdd38f8bdbfd">gfx::text_buffer_manager::set_foreground_color</a></div><div class="ttdeci">void set_foreground_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01248">text_buffer_manager.cpp:1248</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a347b7f0778820d098f836946ebfc48c1"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a347b7f0778820d098f836946ebfc48c1">gfx::text_buffer_manager::set_strike_through_color</a></div><div class="ttdeci">void set_strike_through_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01269">text_buffer_manager.cpp:1269</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a4336d61e45a00e6830fa4faabe477ab5"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a4336d61e45a00e6830fa4faabe477ab5">gfx::text_buffer_manager::set_drop_shadow_softener</a></div><div class="ttdeci">void set_drop_shadow_softener(text_buffer_handle handle, float smoother=1.0f)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01304">text_buffer_manager.cpp:1304</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a51255576a359e6c63834779e755c2263"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a51255576a359e6c63834779e755c2263">gfx::text_buffer_manager::set_style</a></div><div class="ttdeci">void set_style(text_buffer_handle handle, uint32_t flags=style_normal)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01227">text_buffer_manager.cpp:1227</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a86de78b589e10d3480d024972432617e"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a86de78b589e10d3480d024972432617e">gfx::text_buffer_manager::set_outline_width</a></div><div class="ttdeci">void set_outline_width(text_buffer_handle handle, float outline_width=3.0f)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01283">text_buffer_manager.cpp:1283</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a8703795a4da57690a496d08efeb5699e"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a8703795a4da57690a496d08efeb5699e">gfx::text_buffer_manager::set_drop_shadow_offset</a></div><div class="ttdeci">void set_drop_shadow_offset(text_buffer_handle handle, float u, float v)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01297">text_buffer_manager.cpp:1297</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_a9d2da4d11f87d307e8576ea59fa06ace"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#a9d2da4d11f87d307e8576ea59fa06ace">gfx::text_buffer_manager::set_drop_shadow_color</a></div><div class="ttdeci">void set_drop_shadow_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01290">text_buffer_manager.cpp:1290</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_ab53deb34f8db8b70b1bf62737708eb80"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#ab53deb34f8db8b70b1bf62737708eb80">gfx::text_buffer_manager::set_text_color</a></div><div class="ttdeci">void set_text_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01234">text_buffer_manager.cpp:1234</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_ac15611207b59c9a2a252ae4f32ec4fd9"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#ac15611207b59c9a2a252ae4f32ec4fd9">gfx::text_buffer_manager::set_background_color</a></div><div class="ttdeci">void set_background_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01241">text_buffer_manager.cpp:1241</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_ada31c68301f4467995032b11e9df112c"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#ada31c68301f4467995032b11e9df112c">gfx::text_buffer_manager::set_underline_color</a></div><div class="ttdeci">void set_underline_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01262">text_buffer_manager.cpp:1262</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_ade29d7dd59eb41551d9125fad90228bb"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#ade29d7dd59eb41551d9125fad90228bb">gfx::text_buffer_manager::set_outline_color</a></div><div class="ttdeci">void set_outline_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01276">text_buffer_manager.cpp:1276</a></div></div>
+<div class="ttc" id="aclassgfx_1_1text__buffer__manager_html_ae1175a80789866c866d2014496b90385"><div class="ttname"><a href="classgfx_1_1text__buffer__manager.html#ae1175a80789866c866d2014496b90385">gfx::text_buffer_manager::set_overline_color</a></div><div class="ttdeci">void set_overline_color(text_buffer_handle handle, uint32_t rgba=0x000000FF)</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8cpp_source.html#l01255">text_buffer_manager.cpp:1255</a></div></div>
 <div class="ttc" id="aclassmath_1_1transform__t_html"><div class="ttname"><a href="classmath_1_1transform__t.html">math::transform_t</a></div><div class="ttdoc">General purpose transformation class designed to maintain each component of the transformation separa...</div><div class="ttdef"><b>Definition</b> <a href="core_2math_2transform_8hpp_source.html#l00026">transform.hpp:27</a></div></div>
 <div class="ttc" id="aclassmath_1_1transform__t_html_a5f0af8ce3158b265d8ec1ad15cca99a0"><div class="ttname"><a href="classmath_1_1transform__t.html#a5f0af8ce3158b265d8ec1ad15cca99a0">math::transform_t::translate</a></div><div class="ttdeci">void translate(T x, T y, T z=T(0)) noexcept</div><div class="ttdoc">Translate the transform.</div><div class="ttdef"><b>Definition</b> <a href="core_2math_2transform_8hpp_source.html#l01083">transform.hpp:1083</a></div></div>
 <div class="ttc" id="aclassmath_1_1transform__t_html_af6dea03fea2890fe826f5366cc0803df"><div class="ttname"><a href="classmath_1_1transform__t.html#af6dea03fea2890fe826f5366cc0803df">math::transform_t::scaling</a></div><div class="ttdeci">static auto scaling(const vec2_t &amp;scale) noexcept -&gt; transform_t</div><div class="ttdoc">Create a scaling transform.</div><div class="ttdef"><b>Definition</b> <a href="core_2math_2transform_8hpp_source.html#l01299">transform.hpp:1299</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a0135811e97beb1715be54da6e4baacce"><div class="ttname"><a href="classunravel_1_1text__component.html#a0135811e97beb1715be54da6e4baacce">unravel::text_component::set_buffer_type</a></div><div class="ttdeci">void set_buffer_type(const buffer_type &amp;type)</div><div class="ttdoc">Sets the buffer type for text rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l00953">text_component.cpp:953</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a0955260a7ea6efb8de0a68f8ff06d57e"><div class="ttname"><a href="classunravel_1_1text__component.html#a0955260a7ea6efb8de0a68f8ff06d57e">unravel::text_component::get_style</a></div><div class="ttdeci">auto get_style() const -&gt; const text_style &amp;</div><div class="ttdoc">Gets the current text style settings.</div><div class="ttdef"><b>Definition</b> <a href="#l00948">text_component.cpp:948</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a0aa78ed404b0629b5bb50ee5fb5deac7"><div class="ttname"><a href="classunravel_1_1text__component.html#a0aa78ed404b0629b5bb50ee5fb5deac7">unravel::text_component::get_apply_kerning</a></div><div class="ttdeci">auto get_apply_kerning() const -&gt; bool</div><div class="ttdoc">Checks if kerning is enabled.</div><div class="ttdef"><b>Definition</b> <a href="#l01198">text_component.cpp:1198</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a0ab15a5d60c13014660ce16f06b36c14"><div class="ttname"><a href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14">unravel::text_component::get_area</a></div><div class="ttdeci">auto get_area() const -&gt; const fsize_t &amp;</div><div class="ttdoc">Gets the current text area bounds.</div><div class="ttdef"><b>Definition</b> <a href="#l01230">text_component.cpp:1230</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a1052ad0414cbfb413b8abccf92425df4"><div class="ttname"><a href="classunravel_1_1text__component.html#a1052ad0414cbfb413b8abccf92425df4">unravel::text_component::set_alignment</a></div><div class="ttdeci">void set_alignment(const alignment &amp;align)</div><div class="ttdoc">Sets the text alignment properties.</div><div class="ttdef"><b>Definition</b> <a href="#l01203">text_component.cpp:1203</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a1454fe58ebc02f6e28bfd686691650ff"><div class="ttname"><a href="classunravel_1_1text__component.html#a1454fe58ebc02f6e28bfd686691650ff">unravel::text_component::get_render_font_size</a></div><div class="ttdeci">auto get_render_font_size() const -&gt; uint32_t</div><div class="ttdoc">Gets the actual font size being used for rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01166">text_component.cpp:1166</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a0aa78ed404b0629b5bb50ee5fb5deac7"><div class="ttname"><a href="classunravel_1_1text__component.html#a0aa78ed404b0629b5bb50ee5fb5deac7">unravel::text_component::get_apply_kerning</a></div><div class="ttdeci">auto get_apply_kerning() const -&gt; bool</div><div class="ttdoc">Checks if kerning is enabled.</div><div class="ttdef"><b>Definition</b> <a href="#l01194">text_component.cpp:1194</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a0ab15a5d60c13014660ce16f06b36c14"><div class="ttname"><a href="classunravel_1_1text__component.html#a0ab15a5d60c13014660ce16f06b36c14">unravel::text_component::get_area</a></div><div class="ttdeci">auto get_area() const -&gt; const fsize_t &amp;</div><div class="ttdoc">Gets the current text area bounds.</div><div class="ttdef"><b>Definition</b> <a href="#l01226">text_component.cpp:1226</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a1052ad0414cbfb413b8abccf92425df4"><div class="ttname"><a href="classunravel_1_1text__component.html#a1052ad0414cbfb413b8abccf92425df4">unravel::text_component::set_alignment</a></div><div class="ttdeci">void set_alignment(const alignment &amp;align)</div><div class="ttdoc">Sets the text alignment properties.</div><div class="ttdef"><b>Definition</b> <a href="#l01199">text_component.cpp:1199</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a1454fe58ebc02f6e28bfd686691650ff"><div class="ttname"><a href="classunravel_1_1text__component.html#a1454fe58ebc02f6e28bfd686691650ff">unravel::text_component::get_render_font_size</a></div><div class="ttdeci">auto get_render_font_size() const -&gt; uint32_t</div><div class="ttdoc">Gets the actual font size being used for rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01162">text_component.cpp:1162</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a21c6f4b6402adfe37e04f892033a5bce"><div class="ttname"><a href="classunravel_1_1text__component.html#a21c6f4b6402adfe37e04f892033a5bce">unravel::text_component::set_font</a></div><div class="ttdeci">void set_font(const asset_handle&lt; font &gt; &amp;font)</div><div class="ttdoc">Sets the font to be used for rendering text.</div><div class="ttdef"><b>Definition</b> <a href="#l00981">text_component.cpp:981</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a22b7f68d2e69763b5c445d06f98fd4ff"><div class="ttname"><a href="classunravel_1_1text__component.html#a22b7f68d2e69763b5c445d06f98fd4ff">unravel::text_component::get_auto_size</a></div><div class="ttdeci">auto get_auto_size() const -&gt; bool</div><div class="ttdoc">Checks if auto-sizing is enabled.</div><div class="ttdef"><b>Definition</b> <a href="#l01161">text_component.cpp:1161</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a2779d61db35741b87f7b5d0719d31c70"><div class="ttname"><a href="classunravel_1_1text__component.html#a2779d61db35741b87f7b5d0719d31c70">unravel::text_component::get_auto_size_range</a></div><div class="ttdeci">auto get_auto_size_range() const -&gt; const urange32_t &amp;</div><div class="ttdoc">Gets the current auto-size range.</div><div class="ttdef"><b>Definition</b> <a href="#l01246">text_component.cpp:1246</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a436bdfaa99e28fd10a51974af2b24c4b"><div class="ttname"><a href="classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b">unravel::text_component::get_font_size</a></div><div class="ttdeci">auto get_font_size() const -&gt; uint32_t</div><div class="ttdoc">Gets the current font size.</div><div class="ttdef"><b>Definition</b> <a href="#l01145">text_component.cpp:1145</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a4c8bd43d5e124d9fa9566bc9e67fc1a2"><div class="ttname"><a href="classunravel_1_1text__component.html#a4c8bd43d5e124d9fa9566bc9e67fc1a2">unravel::text_component::get_bounds</a></div><div class="ttdeci">auto get_bounds() const -&gt; math::bbox</div><div class="ttdoc">Gets the bounding box of the text.</div><div class="ttdef"><b>Definition</b> <a href="#l01251">text_component.cpp:1251</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a528927805547d8ff64891de617f8c840"><div class="ttname"><a href="classunravel_1_1text__component.html#a528927805547d8ff64891de617f8c840">unravel::text_component::get_lines</a></div><div class="ttdeci">auto get_lines(bool include_breaks=true) const -&gt; text_vector&lt; text_line &gt;</div><div class="ttdoc">Gets the text content split into lines.</div><div class="ttdef"><b>Definition</b> <a href="#l01286">text_component.cpp:1286</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a22b7f68d2e69763b5c445d06f98fd4ff"><div class="ttname"><a href="classunravel_1_1text__component.html#a22b7f68d2e69763b5c445d06f98fd4ff">unravel::text_component::get_auto_size</a></div><div class="ttdeci">auto get_auto_size() const -&gt; bool</div><div class="ttdoc">Checks if auto-sizing is enabled.</div><div class="ttdef"><b>Definition</b> <a href="#l01157">text_component.cpp:1157</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a2779d61db35741b87f7b5d0719d31c70"><div class="ttname"><a href="classunravel_1_1text__component.html#a2779d61db35741b87f7b5d0719d31c70">unravel::text_component::get_auto_size_range</a></div><div class="ttdeci">auto get_auto_size_range() const -&gt; const urange32_t &amp;</div><div class="ttdoc">Gets the current auto-size range.</div><div class="ttdef"><b>Definition</b> <a href="#l01242">text_component.cpp:1242</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a436bdfaa99e28fd10a51974af2b24c4b"><div class="ttname"><a href="classunravel_1_1text__component.html#a436bdfaa99e28fd10a51974af2b24c4b">unravel::text_component::get_font_size</a></div><div class="ttdeci">auto get_font_size() const -&gt; uint32_t</div><div class="ttdoc">Gets the current font size.</div><div class="ttdef"><b>Definition</b> <a href="#l01141">text_component.cpp:1141</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a4c8bd43d5e124d9fa9566bc9e67fc1a2"><div class="ttname"><a href="classunravel_1_1text__component.html#a4c8bd43d5e124d9fa9566bc9e67fc1a2">unravel::text_component::get_bounds</a></div><div class="ttdeci">auto get_bounds() const -&gt; math::bbox</div><div class="ttdoc">Gets the bounding box of the text.</div><div class="ttdef"><b>Definition</b> <a href="#l01247">text_component.cpp:1247</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a528927805547d8ff64891de617f8c840"><div class="ttname"><a href="classunravel_1_1text__component.html#a528927805547d8ff64891de617f8c840">unravel::text_component::get_lines</a></div><div class="ttdeci">auto get_lines(bool include_breaks=true) const -&gt; text_vector&lt; text_line &gt;</div><div class="ttdoc">Gets the text content split into lines.</div><div class="ttdef"><b>Definition</b> <a href="#l01282">text_component.cpp:1282</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a59cd821d15016657afaa96b3357bd6c6"><div class="ttname"><a href="classunravel_1_1text__component.html#a59cd821d15016657afaa96b3357bd6c6">unravel::text_component::get_font</a></div><div class="ttdeci">auto get_font() const -&gt; const asset_handle&lt; font &gt; &amp;</div><div class="ttdoc">Gets the current font.</div><div class="ttdef"><b>Definition</b> <a href="#l00992">text_component.cpp:992</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a5fc28114993bd918c314aa4dbe2e47b7"><div class="ttname"><a href="classunravel_1_1text__component.html#a5fc28114993bd918c314aa4dbe2e47b7">unravel::text_component::set_area</a></div><div class="ttdeci">void set_area(const fsize_t &amp;area)</div><div class="ttdoc">Sets the area bounds for text rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01219">text_component.cpp:1219</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a6162f44a38da3984b263dbc54a2a3df3"><div class="ttname"><a href="classunravel_1_1text__component.html#a6162f44a38da3984b263dbc54a2a3df3">unravel::text_component::set_is_rich_text</a></div><div class="ttdeci">void set_is_rich_text(bool is_rich)</div><div class="ttdoc">Enables or disables rich text processing.</div><div class="ttdef"><b>Definition</b> <a href="#l01171">text_component.cpp:1171</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a5fc28114993bd918c314aa4dbe2e47b7"><div class="ttname"><a href="classunravel_1_1text__component.html#a5fc28114993bd918c314aa4dbe2e47b7">unravel::text_component::set_area</a></div><div class="ttdeci">void set_area(const fsize_t &amp;area)</div><div class="ttdoc">Sets the area bounds for text rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01215">text_component.cpp:1215</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a6162f44a38da3984b263dbc54a2a3df3"><div class="ttname"><a href="classunravel_1_1text__component.html#a6162f44a38da3984b263dbc54a2a3df3">unravel::text_component::set_is_rich_text</a></div><div class="ttdeci">void set_is_rich_text(bool is_rich)</div><div class="ttdoc">Enables or disables rich text processing.</div><div class="ttdef"><b>Definition</b> <a href="#l01167">text_component.cpp:1167</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a6577b4e8555a6f87e85c665c09384036"><div class="ttname"><a href="classunravel_1_1text__component.html#a6577b4e8555a6f87e85c665c09384036">unravel::text_component::get_text</a></div><div class="ttdeci">auto get_text() const -&gt; const std::string &amp;</div><div class="ttdoc">Gets the current text content.</div><div class="ttdef"><b>Definition</b> <a href="#l00933">text_component.cpp:933</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a65ab1d004cf2e6ce62358acb6fc5254a"><div class="ttname"><a href="classunravel_1_1text__component.html#a65ab1d004cf2e6ce62358acb6fc5254a">unravel::text_component::buffer_type</a></div><div class="ttdeci">buffer_type</div><div class="ttdef"><b>Definition</b> <a href="text__component_8h_source.html#l00188">text_component.h:189</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a65ab1d004cf2e6ce62358acb6fc5254aaba5cdee56530f6217d5fd6bf0e3a4a85"><div class="ttname"><a href="classunravel_1_1text__component.html#a65ab1d004cf2e6ce62358acb6fc5254aaba5cdee56530f6217d5fd6bf0e3a4a85">unravel::text_component::buffer_type::dynamic_buffer</a></div><div class="ttdeci">@ dynamic_buffer</div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a65ab1d004cf2e6ce62358acb6fc5254aac62e58235f5137c7bd0b7201b7cd404a"><div class="ttname"><a href="classunravel_1_1text__component.html#a65ab1d004cf2e6ce62358acb6fc5254aac62e58235f5137c7bd0b7201b7cd404a">unravel::text_component::buffer_type::static_buffer</a></div><div class="ttdeci">@ static_buffer</div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a6928491830597c1f1c063cd5486c2f2a"><div class="ttname"><a href="classunravel_1_1text__component.html#a6928491830597c1f1c063cd5486c2f2a">unravel::text_component::set_overflow_type</a></div><div class="ttdeci">void set_overflow_type(const overflow_type &amp;type)</div><div class="ttdoc">Sets how text should overflow when it exceeds its bounds.</div><div class="ttdef"><b>Definition</b> <a href="#l00967">text_component.cpp:967</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a6963debfb2fdc6117ffc6824061c390c"><div class="ttname"><a href="classunravel_1_1text__component.html#a6963debfb2fdc6117ffc6824061c390c">unravel::text_component::get_alignment</a></div><div class="ttdeci">auto get_alignment() const -&gt; const alignment &amp;</div><div class="ttdoc">Gets the current text alignment settings.</div><div class="ttdef"><b>Definition</b> <a href="#l01214">text_component.cpp:1214</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a80f25dbbe035243e661791b75bcdd0e0"><div class="ttname"><a href="classunravel_1_1text__component.html#a80f25dbbe035243e661791b75bcdd0e0">unravel::text_component::get_is_rich_text</a></div><div class="ttdeci">auto get_is_rich_text() const -&gt; bool</div><div class="ttdoc">Checks if rich text processing is enabled.</div><div class="ttdef"><b>Definition</b> <a href="#l01182">text_component.cpp:1182</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a8100e079119c76721b8d469d6dceb984"><div class="ttname"><a href="classunravel_1_1text__component.html#a8100e079119c76721b8d469d6dceb984">unravel::text_component::meters_to_px</a></div><div class="ttdeci">auto meters_to_px(float meters) const -&gt; float</div><div class="ttdoc">Converts meters to pixels based on current font metrics.</div><div class="ttdef"><b>Definition</b> <a href="#l01311">text_component.cpp:1311</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a835233c3cb04da7bdc58844997345438"><div class="ttname"><a href="classunravel_1_1text__component.html#a835233c3cb04da7bdc58844997345438">unravel::text_component::get_render_area</a></div><div class="ttdeci">auto get_render_area() const -&gt; fsize_t</div><div class="ttdoc">Gets the actual area used for rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01328">text_component.cpp:1328</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a6963debfb2fdc6117ffc6824061c390c"><div class="ttname"><a href="classunravel_1_1text__component.html#a6963debfb2fdc6117ffc6824061c390c">unravel::text_component::get_alignment</a></div><div class="ttdeci">auto get_alignment() const -&gt; const alignment &amp;</div><div class="ttdoc">Gets the current text alignment settings.</div><div class="ttdef"><b>Definition</b> <a href="#l01210">text_component.cpp:1210</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a80f25dbbe035243e661791b75bcdd0e0"><div class="ttname"><a href="classunravel_1_1text__component.html#a80f25dbbe035243e661791b75bcdd0e0">unravel::text_component::get_is_rich_text</a></div><div class="ttdeci">auto get_is_rich_text() const -&gt; bool</div><div class="ttdoc">Checks if rich text processing is enabled.</div><div class="ttdef"><b>Definition</b> <a href="#l01178">text_component.cpp:1178</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a8100e079119c76721b8d469d6dceb984"><div class="ttname"><a href="classunravel_1_1text__component.html#a8100e079119c76721b8d469d6dceb984">unravel::text_component::meters_to_px</a></div><div class="ttdeci">auto meters_to_px(float meters) const -&gt; float</div><div class="ttdoc">Converts meters to pixels based on current font metrics.</div><div class="ttdef"><b>Definition</b> <a href="#l01307">text_component.cpp:1307</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a835233c3cb04da7bdc58844997345438"><div class="ttname"><a href="classunravel_1_1text__component.html#a835233c3cb04da7bdc58844997345438">unravel::text_component::get_render_area</a></div><div class="ttdeci">auto get_render_area() const -&gt; fsize_t</div><div class="ttdoc">Gets the actual area used for rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01324">text_component.cpp:1324</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a87fce3f9bc0dc9b28d0f77d8b28a98cf"><div class="ttname"><a href="classunravel_1_1text__component.html#a87fce3f9bc0dc9b28d0f77d8b28a98cf">unravel::text_component::set_text</a></div><div class="ttdeci">void set_text(const std::string &amp;text)</div><div class="ttdoc">Sets the text content to be rendered.</div><div class="ttdef"><b>Definition</b> <a href="#l00923">text_component.cpp:923</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_a8ceda95c9cdd10120b9b4a0229e79ea8"><div class="ttname"><a href="classunravel_1_1text__component.html#a8ceda95c9cdd10120b9b4a0229e79ea8">unravel::text_component::get_scaled_font</a></div><div class="ttdeci">auto get_scaled_font() const -&gt; const scaled_font &amp;</div><div class="ttdoc">Gets the scaled font instance used for rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l00997">text_component.cpp:997</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a9335ee1d3401579a98b7a941f352bb76"><div class="ttname"><a href="classunravel_1_1text__component.html#a9335ee1d3401579a98b7a941f352bb76">unravel::text_component::px_to_meters</a></div><div class="ttdeci">auto px_to_meters(float px) const -&gt; float</div><div class="ttdoc">Converts pixels to meters based on current font metrics.</div><div class="ttdef"><b>Definition</b> <a href="#l01315">text_component.cpp:1315</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_a9d7f45afc94b038b7fecb821562bd6eb"><div class="ttname"><a href="classunravel_1_1text__component.html#a9d7f45afc94b038b7fecb821562bd6eb">unravel::text_component::submit</a></div><div class="ttdeci">void submit(gfx::view_id id, const math::transform &amp;world, uint64_t state)</div><div class="ttdoc">Submits the text for rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01364">text_component.cpp:1364</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_aa01243a8f142590be99bc1da78dba050"><div class="ttname"><a href="classunravel_1_1text__component.html#aa01243a8f142590be99bc1da78dba050">unravel::text_component::set_auto_size</a></div><div class="ttdeci">void set_auto_size(bool auto_size)</div><div class="ttdoc">Enables or disables automatic font sizing.</div><div class="ttdef"><b>Definition</b> <a href="#l01150">text_component.cpp:1150</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_aa3565881cef269de5996b9f305e87fee"><div class="ttname"><a href="classunravel_1_1text__component.html#aa3565881cef269de5996b9f305e87fee">unravel::text_component::set_font_size</a></div><div class="ttdeci">void set_font_size(uint32_t font_size)</div><div class="ttdoc">Sets the font size in pixels.</div><div class="ttdef"><b>Definition</b> <a href="#l01134">text_component.cpp:1134</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a9335ee1d3401579a98b7a941f352bb76"><div class="ttname"><a href="classunravel_1_1text__component.html#a9335ee1d3401579a98b7a941f352bb76">unravel::text_component::px_to_meters</a></div><div class="ttdeci">auto px_to_meters(float px) const -&gt; float</div><div class="ttdoc">Converts pixels to meters based on current font metrics.</div><div class="ttdef"><b>Definition</b> <a href="#l01311">text_component.cpp:1311</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_a9d7f45afc94b038b7fecb821562bd6eb"><div class="ttname"><a href="classunravel_1_1text__component.html#a9d7f45afc94b038b7fecb821562bd6eb">unravel::text_component::submit</a></div><div class="ttdeci">void submit(gfx::view_id id, const math::transform &amp;world, uint64_t state)</div><div class="ttdoc">Submits the text for rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01360">text_component.cpp:1360</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_aa01243a8f142590be99bc1da78dba050"><div class="ttname"><a href="classunravel_1_1text__component.html#aa01243a8f142590be99bc1da78dba050">unravel::text_component::set_auto_size</a></div><div class="ttdeci">void set_auto_size(bool auto_size)</div><div class="ttdoc">Enables or disables automatic font sizing.</div><div class="ttdef"><b>Definition</b> <a href="#l01146">text_component.cpp:1146</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_aa3565881cef269de5996b9f305e87fee"><div class="ttname"><a href="classunravel_1_1text__component.html#aa3565881cef269de5996b9f305e87fee">unravel::text_component::set_font_size</a></div><div class="ttdeci">void set_font_size(uint32_t font_size)</div><div class="ttdoc">Sets the font size in pixels.</div><div class="ttdef"><b>Definition</b> <a href="#l01130">text_component.cpp:1130</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_aa74a23c417668235c93902ec885b780e"><div class="ttname"><a href="classunravel_1_1text__component.html#aa74a23c417668235c93902ec885b780e">unravel::text_component::overflow_type</a></div><div class="ttdeci">overflow_type</div><div class="ttdef"><b>Definition</b> <a href="text__component_8h_source.html#l00195">text_component.h:196</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_aa74a23c417668235c93902ec885b780eac47d187067c6cf953245f128b5fde62a"><div class="ttname"><a href="classunravel_1_1text__component.html#aa74a23c417668235c93902ec885b780eac47d187067c6cf953245f128b5fde62a">unravel::text_component::overflow_type::word</a></div><div class="ttdeci">@ word</div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_aa74a23c417668235c93902ec885b780eac4de80fbaef2115445ca304eef40f45f"><div class="ttname"><a href="classunravel_1_1text__component.html#aa74a23c417668235c93902ec885b780eac4de80fbaef2115445ca304eef40f45f">unravel::text_component::overflow_type::grapheme</a></div><div class="ttdeci">@ grapheme</div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_aaa1f059c463d3d98c2dce01a4ef53326"><div class="ttname"><a href="classunravel_1_1text__component.html#aaa1f059c463d3d98c2dce01a4ef53326">unravel::text_component::get_render_bounds</a></div><div class="ttdeci">auto get_render_bounds() const -&gt; math::bbox</div><div class="ttdoc">Gets the bounding box used for rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01266">text_component.cpp:1266</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_aaa1f059c463d3d98c2dce01a4ef53326"><div class="ttname"><a href="classunravel_1_1text__component.html#aaa1f059c463d3d98c2dce01a4ef53326">unravel::text_component::get_render_bounds</a></div><div class="ttdeci">auto get_render_bounds() const -&gt; math::bbox</div><div class="ttdoc">Gets the bounding box used for rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01262">text_component.cpp:1262</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_aab1dee14a80c6ffad4c80d244aff72ed"><div class="ttname"><a href="classunravel_1_1text__component.html#aab1dee14a80c6ffad4c80d244aff72ed">unravel::text_component::get_overflow_type</a></div><div class="ttdeci">auto get_overflow_type() const -&gt; const overflow_type &amp;</div><div class="ttdoc">Gets the current overflow handling type.</div><div class="ttdef"><b>Definition</b> <a href="#l00976">text_component.cpp:976</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_ab2c6d07c86f18f891d5a49a6c6664fe3"><div class="ttname"><a href="classunravel_1_1text__component.html#ab2c6d07c86f18f891d5a49a6c6664fe3">unravel::text_component::set_auto_size_range</a></div><div class="ttdeci">void set_auto_size_range(const urange32_t &amp;range)</div><div class="ttdoc">Sets the range for automatic font sizing.</div><div class="ttdef"><b>Definition</b> <a href="#l01235">text_component.cpp:1235</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_ab3a4ce835ca5892352df33c5e6adbc7d"><div class="ttname"><a href="classunravel_1_1text__component.html#ab3a4ce835ca5892352df33c5e6adbc7d">unravel::text_component::get_render_buffers_count</a></div><div class="ttdeci">auto get_render_buffers_count() const -&gt; size_t</div><div class="ttdoc">Gets the number of render buffers being used.</div><div class="ttdef"><b>Definition</b> <a href="#l01281">text_component.cpp:1281</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_ab2c6d07c86f18f891d5a49a6c6664fe3"><div class="ttname"><a href="classunravel_1_1text__component.html#ab2c6d07c86f18f891d5a49a6c6664fe3">unravel::text_component::set_auto_size_range</a></div><div class="ttdeci">void set_auto_size_range(const urange32_t &amp;range)</div><div class="ttdoc">Sets the range for automatic font sizing.</div><div class="ttdef"><b>Definition</b> <a href="#l01231">text_component.cpp:1231</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_ab3a4ce835ca5892352df33c5e6adbc7d"><div class="ttname"><a href="classunravel_1_1text__component.html#ab3a4ce835ca5892352df33c5e6adbc7d">unravel::text_component::get_render_buffers_count</a></div><div class="ttdeci">auto get_render_buffers_count() const -&gt; size_t</div><div class="ttdoc">Gets the number of render buffers being used.</div><div class="ttdef"><b>Definition</b> <a href="#l01277">text_component.cpp:1277</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_ae06ffb0af52cbb70bc99b5ea854d189b"><div class="ttname"><a href="classunravel_1_1text__component.html#ae06ffb0af52cbb70bc99b5ea854d189b">unravel::text_component::get_buffer_type</a></div><div class="ttdeci">auto get_buffer_type() const -&gt; const buffer_type &amp;</div><div class="ttdoc">Gets the current buffer type.</div><div class="ttdef"><b>Definition</b> <a href="#l00962">text_component.cpp:962</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_ae9214ee252f87689aa1b541b09e08b37"><div class="ttname"><a href="classunravel_1_1text__component.html#ae9214ee252f87689aa1b541b09e08b37">unravel::text_component::can_be_rendered</a></div><div class="ttdeci">auto can_be_rendered() const -&gt; bool</div><div class="ttdoc">Checks if the text can be rendered.</div><div class="ttdef"><b>Definition</b> <a href="#l01320">text_component.cpp:1320</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_ae9214ee252f87689aa1b541b09e08b37"><div class="ttname"><a href="classunravel_1_1text__component.html#ae9214ee252f87689aa1b541b09e08b37">unravel::text_component::can_be_rendered</a></div><div class="ttdeci">auto can_be_rendered() const -&gt; bool</div><div class="ttdoc">Checks if the text can be rendered.</div><div class="ttdef"><b>Definition</b> <a href="#l01316">text_component.cpp:1316</a></div></div>
 <div class="ttc" id="aclassunravel_1_1text__component_html_aeffca672d7f3780f27a23cf3c1ccd8d8"><div class="ttname"><a href="classunravel_1_1text__component.html#aeffca672d7f3780f27a23cf3c1ccd8d8">unravel::text_component::set_style</a></div><div class="ttdeci">void set_style(const text_style &amp;style)</div><div class="ttdoc">Sets the text styling properties.</div><div class="ttdef"><b>Definition</b> <a href="#l00938">text_component.cpp:938</a></div></div>
-<div class="ttc" id="aclassunravel_1_1text__component_html_af038a987c9bd0c2ce5e15213b4321ac5"><div class="ttname"><a href="classunravel_1_1text__component.html#af038a987c9bd0c2ce5e15213b4321ac5">unravel::text_component::set_apply_kerning</a></div><div class="ttdeci">void set_apply_kerning(bool apply_kerning)</div><div class="ttdoc">Enables or disables kerning in text rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01187">text_component.cpp:1187</a></div></div>
+<div class="ttc" id="aclassunravel_1_1text__component_html_af038a987c9bd0c2ce5e15213b4321ac5"><div class="ttname"><a href="classunravel_1_1text__component.html#af038a987c9bd0c2ce5e15213b4321ac5">unravel::text_component::set_apply_kerning</a></div><div class="ttdeci">void set_apply_kerning(bool apply_kerning)</div><div class="ttdoc">Enables or disables kerning in text rendering.</div><div class="ttdef"><b>Definition</b> <a href="#l01183">text_component.cpp:1183</a></div></div>
 <div class="ttc" id="afont__manager_8h_html_a02d1775b228112e2a4b412c95949ad3c"><div class="ttname"><a href="font__manager_8h.html#a02d1775b228112e2a4b412c95949ad3c">FONT_TYPE_DISTANCE_OUTLINE_DROP_SHADOW_IMAGE</a></div><div class="ttdeci">#define FONT_TYPE_DISTANCE_OUTLINE_DROP_SHADOW_IMAGE</div><div class="ttdef"><b>Definition</b> <a href="font__manager_8h_source.html#l00029">font_manager.h:29</a></div></div>
 <div class="ttc" id="ahub_8cpp_html_a1d28dec57cce925ad92342891bd71e7c"><div class="ttname"><a href="hub_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a></div><div class="ttdeci">float scale</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00025">hub.cpp:25</a></div></div>
 <div class="ttc" id="ahub_8cpp_html_a942144e2202c3e053a7c4a63e8daa3b9"><div class="ttname"><a href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a></div><div class="ttdeci">ImGui::Font::Enum font</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00024">hub.cpp:24</a></div></div>
 <div class="ttc" id="ahub_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00027">hub.cpp:27</a></div></div>
 <div class="ttc" id="anamespacegfx_html"><div class="ttname"><a href="namespacegfx.html">gfx</a></div><div class="ttdef"><b>Definition</b> <a href="debugdraw_8cpp_source.html#l00006">debugdraw.cpp:7</a></div></div>
-<div class="ttc" id="anamespacegfx_html_a7b2c49166fbcf16751b24cf59738fcfe"><div class="ttname"><a href="namespacegfx.html#a7b2c49166fbcf16751b24cf59738fcfe">gfx::set_transform</a></div><div class="ttdeci">uint32_t set_transform(const void *_mtx, uint16_t _num)</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00788">graphics.cpp:788</a></div></div>
+<div class="ttc" id="anamespacegfx_html_a7b2c49166fbcf16751b24cf59738fcfe"><div class="ttname"><a href="namespacegfx.html#a7b2c49166fbcf16751b24cf59738fcfe">gfx::set_transform</a></div><div class="ttdeci">uint32_t set_transform(const void *_mtx, uint16_t _num)</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00789">graphics.cpp:789</a></div></div>
 <div class="ttc" id="anamespacegfx_html_aab4cbe9dc5e1938791196b3a2e2b7f16"><div class="ttname"><a href="namespacegfx.html#aab4cbe9dc5e1938791196b3a2e2b7f16">gfx::view_id</a></div><div class="ttdeci">bgfx::ViewId view_id</div><div class="ttdef"><b>Definition</b> <a href="graphics_8h_source.html#l00020">graphics.h:20</a></div></div>
 <div class="ttc" id="anamespacegfx_html_afdedc0428c5ca4c8d04c0980cbef590ea89f07b5b2329b7ca572f8fafc53bcf1f"><div class="ttname"><a href="namespacegfx.html#afdedc0428c5ca4c8d04c0980cbef590ea89f07b5b2329b7ca572f8fafc53bcf1f">gfx::style_foreground</a></div><div class="ttdeci">@ style_foreground</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8h_source.html#l00036">text_buffer_manager.h:36</a></div></div>
 <div class="ttc" id="anamespacegfx_html_afdedc0428c5ca4c8d04c0980cbef590eaac6b6177493e371287b4331b016e0a39"><div class="ttname"><a href="namespacegfx.html#afdedc0428c5ca4c8d04c0980cbef590eaac6b6177493e371287b4331b016e0a39">gfx::style_background</a></div><div class="ttdeci">@ style_background</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8h_source.html#l00035">text_buffer_manager.h:35</a></div></div>
@@ -1654,7 +1650,7 @@ $(function(){initNavTree('rendering_2ecs_2components_2text__component_8cpp_sourc
 <div class="ttc" id="anamespacemath_html_a682e272ccd68ec3cc492874919f34a4aa469bba0a564235dfceede42db14f17b0"><div class="ttname"><a href="namespacemath.html#a682e272ccd68ec3cc492874919f34a4aa469bba0a564235dfceede42db14f17b0">math::plane_query::back</a></div><div class="ttdeci">@ back</div></div>
 <div class="ttc" id="anamespaceseq_1_1scope_html_aa3c609b1becc97b6cd2789bfd12eebf4"><div class="ttname"><a href="namespaceseq_1_1scope.html#aa3c609b1becc97b6cd2789bfd12eebf4">seq::scope::close</a></div><div class="ttdeci">void close(const std::string &amp;scope)</div><div class="ttdoc">Closes the specified scope.</div><div class="ttdef"><b>Definition</b> <a href="seq_8cpp_source.html#l00139">seq.cpp:139</a></div></div>
 <div class="ttc" id="anamespaceseq_html_a2fcae4d10beaafdec7e81367077bb9cd"><div class="ttname"><a href="namespaceseq.html#a2fcae4d10beaafdec7e81367077bb9cd">seq::start</a></div><div class="ttdeci">auto start(seq_action action, const seq_scope_policy &amp;scope_policy, hpp::source_location location) -&gt; seq_id_t</div><div class="ttdoc">Starts a new action.</div><div class="ttdef"><b>Definition</b> <a href="seq_8cpp_source.html#l00008">seq.cpp:8</a></div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="render__view__keys_8h_source.html#l00036">render_view_keys.h:37</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">Hash specialization for batch_key to enable use in std::unordered_map.</div><div class="ttdef"><b>Definition</b> <a href="render__view__keys_8h_source.html#l00036">render_view_keys.h:37</a></div></div>
 <div class="ttc" id="anamespaceunravel_html"><div class="ttname"><a href="namespaceunravel.html">unravel</a></div><div class="ttdef"><b>Definition</b> <a href="crash_8cpp_source.html#l00020">crash.cpp:21</a></div></div>
 <div class="ttc" id="anamespaceunravel_html_a2466c7b9476d4ad9e6fd742bf5f7bd01"><div class="ttname"><a href="namespaceunravel.html#a2466c7b9476d4ad9e6fd742bf5f7bd01">unravel::fragment_list</a></div><div class="ttdeci">text_vector&lt; word_frag &gt; fragment_list</div><div class="ttdef"><b>Definition</b> <a href="text__component_8h_source.html#l00139">text_component.h:139</a></div></div>
 <div class="ttc" id="anamespaceunravel_html_a3a6845bea43d6ed2694aa39c776d3c0a"><div class="ttname"><a href="namespaceunravel.html#a3a6845bea43d6ed2694aa39c776d3c0a">unravel::segment_list</a></div><div class="ttdeci">text_vector&lt; rich_segment &gt; segment_list</div><div class="ttdef"><b>Definition</b> <a href="text__component_8h_source.html#l00153">text_component.h:153</a></div></div>
@@ -1684,9 +1680,9 @@ $(function(){initNavTree('rendering_2ecs_2components_2text__component_8cpp_sourc
 <div class="ttc" id="astructgfx_1_1buffer__type_html_a65f503aceffc90e53639065dfd0857f2a80470a29dc1f0a73484d152786d0307f"><div class="ttname"><a href="structgfx_1_1buffer__type.html#a65f503aceffc90e53639065dfd0857f2a80470a29dc1f0a73484d152786d0307f">gfx::buffer_type::Static</a></div><div class="ttdeci">@ Static</div><div class="ttdef"><b>Definition</b> <a href="text__buffer__manager_8h_source.html#l00022">text_buffer_manager.h:22</a></div></div>
 <div class="ttc" id="astructmath_1_1bbox_html"><div class="ttname"><a href="structmath_1_1bbox.html">math::bbox</a></div><div class="ttdoc">Storage for box vector values and wraps up common functionality.</div><div class="ttdef"><b>Definition</b> <a href="bbox_8h_source.html#l00020">bbox.h:21</a></div></div>
 <div class="ttc" id="astructmath_1_1bbox_html_a8ebec1dff9969feda7ab43436304a617"><div class="ttname"><a href="structmath_1_1bbox.html#a8ebec1dff9969feda7ab43436304a617">math::bbox::min</a></div><div class="ttdeci">vec3 min</div><div class="ttdoc">The minimum vector value of the bounding box.</div><div class="ttdef"><b>Definition</b> <a href="bbox_8h_source.html#l00306">bbox.h:306</a></div></div>
-<div class="ttc" id="astructmath_1_1color_html"><div class="ttname"><a href="structmath_1_1color.html">math::color</a></div><div class="ttdef"><b>Definition</b> <a href="math_8h_source.html#l00283">math.h:284</a></div></div>
-<div class="ttc" id="astructmath_1_1color_html_a41c782244856b4719a29581cad3eaa98"><div class="ttname"><a href="structmath_1_1color.html#a41c782244856b4719a29581cad3eaa98">math::color::white</a></div><div class="ttdeci">static color white()</div><div class="ttdef"><b>Definition</b> <a href="math_8h_source.html#l00287">math.h:287</a></div></div>
-<div class="ttc" id="astructmath_1_1color_html_a4bb655d00405744bbd9995e1159cdcc8"><div class="ttname"><a href="structmath_1_1color.html#a4bb655d00405744bbd9995e1159cdcc8">math::color::value</a></div><div class="ttdeci">vec4 value</div><div class="ttdef"><b>Definition</b> <a href="math_8h_source.html#l00354">math.h:354</a></div></div>
+<div class="ttc" id="astructmath_1_1color_html"><div class="ttname"><a href="structmath_1_1color.html">math::color</a></div><div class="ttdef"><b>Definition</b> <a href="color_8h_source.html#l00011">color.h:12</a></div></div>
+<div class="ttc" id="astructmath_1_1color_html_a41c782244856b4719a29581cad3eaa98"><div class="ttname"><a href="structmath_1_1color.html#a41c782244856b4719a29581cad3eaa98">math::color::white</a></div><div class="ttdeci">static color white()</div><div class="ttdef"><b>Definition</b> <a href="color_8h_source.html#l00013">color.h:13</a></div></div>
+<div class="ttc" id="astructmath_1_1color_html_a4bb655d00405744bbd9995e1159cdcc8"><div class="ttname"><a href="structmath_1_1color.html#a4bb655d00405744bbd9995e1159cdcc8">math::color::value</a></div><div class="ttdeci">vec4 value</div><div class="ttdef"><b>Definition</b> <a href="color_8h_source.html#l00080">color.h:80</a></div></div>
 <div class="ttc" id="astructrange_html"><div class="ttname"><a href="structrange.html">range&lt; std::uint32_t &gt;</a></div></div>
 <div class="ttc" id="astructsize_html"><div class="ttname"><a href="structsize.html">size&lt; float &gt;</a></div></div>
 <div class="ttc" id="astructsize_html_a7bed016a142a5435d4f79caa7323f31a"><div class="ttname"><a href="structsize.html#a7bed016a142a5435d4f79caa7323f31a">size::width</a></div><div class="ttdeci">T width</div><div class="ttdef"><b>Definition</b> <a href="core_2base_2basetypes_8hpp_source.html#l00055">basetypes.hpp:55</a></div></div>
@@ -1694,7 +1690,7 @@ $(function(){initNavTree('rendering_2ecs_2components_2text__component_8cpp_sourc
 <div class="ttc" id="astructunravel_1_1alignment_html"><div class="ttname"><a href="structunravel_1_1alignment.html">unravel::alignment</a></div><div class="ttdef"><b>Definition</b> <a href="text__component_8h_source.html#l00036">text_component.h:37</a></div></div>
 <div class="ttc" id="astructunravel_1_1alignment_html_aa98d1bada0a0f684dbf7285da1649984"><div class="ttname"><a href="structunravel_1_1alignment.html#aa98d1bada0a0f684dbf7285da1649984">unravel::alignment::flags</a></div><div class="ttdeci">uint32_t flags</div><div class="ttdef"><b>Definition</b> <a href="text__component_8h_source.html#l00038">text_component.h:38</a></div></div>
 <div class="ttc" id="astructunravel_1_1base__font_html_a4cdfcf808e8bc67d1e9ab2fd934cf230"><div class="ttname"><a href="structunravel_1_1base__font.html#a4cdfcf808e8bc67d1e9ab2fd934cf230">unravel::base_font::handle</a></div><div class="ttdeci">gfx::font_handle handle</div><div class="ttdef"><b>Definition</b> <a href="font_8h_source.html#l00026">font.h:26</a></div></div>
-<div class="ttc" id="astructunravel_1_1base__font_html_adb1218bb002dfc2cd7484a707d1e1ea2"><div class="ttname"><a href="structunravel_1_1base__font.html#adb1218bb002dfc2cd7484a707d1e1ea2">unravel::base_font::is_valid</a></div><div class="ttdeci">auto is_valid() const -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="rendering_2font_8cpp_source.html#l00844">font.cpp:844</a></div></div>
+<div class="ttc" id="astructunravel_1_1base__font_html_adb1218bb002dfc2cd7484a707d1e1ea2"><div class="ttname"><a href="structunravel_1_1base__font.html#adb1218bb002dfc2cd7484a707d1e1ea2">unravel::base_font::is_valid</a></div><div class="ttdeci">auto is_valid() const -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="rendering_2font_8cpp_source.html#l00845">font.cpp:845</a></div></div>
 <div class="ttc" id="astructunravel_1_1font_html"><div class="ttname"><a href="structunravel_1_1font.html">unravel::font</a></div><div class="ttdef"><b>Definition</b> <a href="font_8h_source.html#l00033">font.h:34</a></div></div>
 <div class="ttc" id="astructunravel_1_1scaled__font_html"><div class="ttname"><a href="structunravel_1_1scaled__font.html">unravel::scaled_font</a></div><div class="ttdef"><b>Definition</b> <a href="font_8h_source.html#l00029">font.h:30</a></div></div>
 <div class="ttc" id="astructunravel_1_1scratch__cache_html_a3c4e48d1946bf35be1affb70c38a5b9e"><div class="ttname"><a href="structunravel_1_1scratch__cache.html#a3c4e48d1946bf35be1affb70c38a5b9e">unravel::scratch_cache::layout</a></div><div class="ttdeci">text_layout layout</div><div class="ttdef"><b>Definition</b> <a href="text__component_8h_source.html#l00172">text_component.h:172</a></div></div>

@@ -117,8 +117,8 @@ Inheritance diagram for unravel::entity_remove_script_component_action_t:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae76d3dde96bd715502b0c48846219eea" id="r_ae76d3dde96bd715502b0c48846219eea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae76d3dde96bd715502b0c48846219eea">entity_remove_script_component_action_t</a> (entt::handle ent, const std::string &amp;type_name)</td></tr>
-<tr class="separator:ae76d3dde96bd715502b0c48846219eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a98a7370e089dab516870c9ed282f48" id="r_a2a98a7370e089dab516870c9ed282f48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a98a7370e089dab516870c9ed282f48">entity_remove_script_component_action_t</a> (entt::handle ent, const std::string &amp;type_name, int index=-1)</td></tr>
+<tr class="separator:a2a98a7370e089dab516870c9ed282f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab05253f368b33765bddc7b5aaecdc297" id="r_ab05253f368b33765bddc7b5aaecdc297"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab05253f368b33765bddc7b5aaecdc297">do_action</a> () override</td></tr>
 <tr class="separator:ab05253f368b33765bddc7b5aaecdc297"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f2b77259d08c54ccf68753e2d36d328" id="r_a6f2b77259d08c54ccf68753e2d36d328"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f2b77259d08c54ccf68753e2d36d328">undo_action</a> () override</td></tr>
@@ -145,6 +145,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab61c0fb4ed4bd080563acee79739d33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32fbf264256b5a12da5c56041a92f0c" id="r_af32fbf264256b5a12da5c56041a92f0c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af32fbf264256b5a12da5c56041a92f0c">script_type_name</a> {}</td></tr>
 <tr class="separator:af32fbf264256b5a12da5c56041a92f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b653ef5297510393972384480a2982c" id="r_a2b653ef5297510393972384480a2982c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b653ef5297510393972384480a2982c">script_index</a> {-1}</td></tr>
+<tr class="separator:a2b653ef5297510393972384480a2982c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7060c77dd6a143199df328de52c1dd49" id="r_a7060c77dd6a143199df328de52c1dd49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7060c77dd6a143199df328de52c1dd49">do_was_successful</a> {false}</td></tr>
 <tr class="separator:a7060c77dd6a143199df328de52c1dd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a834881a2fbb2bd1995d72f1b4efd7cfb" id="r_a834881a2fbb2bd1995d72f1b4efd7cfb"><td class="memItemLeft" align="right" valign="top">std::stringstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a834881a2fbb2bd1995d72f1b4efd7cfb">removed_script_object_data</a> {}</td></tr>
@@ -160,8 +162,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="entity__actions_8h_source.html#l00149">149</a> of file <a class="el" href="entity__actions_8h_source.html">entity_actions.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae76d3dde96bd715502b0c48846219eea" name="ae76d3dde96bd715502b0c48846219eea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae76d3dde96bd715502b0c48846219eea">&#9670;&#160;</a></span>entity_remove_script_component_action_t()</h2>
+<a id="a2a98a7370e089dab516870c9ed282f48" name="a2a98a7370e089dab516870c9ed282f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a98a7370e089dab516870c9ed282f48">&#9670;&#160;</a></span>entity_remove_script_component_action_t()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +176,12 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>type_name</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>type_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -207,7 +214,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity__actions_8cpp_source.html#l00481">481</a> of file <a class="el" href="entity__actions_8cpp_source.html">entity_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity__actions_8cpp_source.html#l00485">485</a> of file <a class="el" href="entity__actions_8cpp_source.html">entity_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -234,7 +241,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity__actions_8cpp_source.html#l00587">587</a> of file <a class="el" href="entity__actions_8cpp_source.html">entity_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity__actions_8cpp_source.html#l00615">615</a> of file <a class="el" href="entity__actions_8cpp_source.html">entity_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -261,7 +268,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity__actions_8cpp_source.html#l00577">577</a> of file <a class="el" href="entity__actions_8cpp_source.html">entity_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity__actions_8cpp_source.html#l00605">605</a> of file <a class="el" href="entity__actions_8cpp_source.html">entity_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -288,7 +295,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity__actions_8cpp_source.html#l00582">582</a> of file <a class="el" href="entity__actions_8cpp_source.html">entity_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity__actions_8cpp_source.html#l00610">610</a> of file <a class="el" href="entity__actions_8cpp_source.html">entity_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -315,7 +322,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity__actions_8cpp_source.html#l00524">524</a> of file <a class="el" href="entity__actions_8cpp_source.html">entity_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity__actions_8cpp_source.html#l00552">552</a> of file <a class="el" href="entity__actions_8cpp_source.html">entity_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -332,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity__actions_8h_source.html#l00154">154</a> of file <a class="el" href="entity__actions_8h_source.html">entity_actions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity__actions_8h_source.html#l00155">155</a> of file <a class="el" href="entity__actions_8h_source.html">entity_actions.h</a>.</p>
 
 </div>
 </div>
@@ -364,7 +371,23 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity__actions_8h_source.html#l00156">156</a> of file <a class="el" href="entity__actions_8h_source.html">entity_actions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity__actions_8h_source.html#l00157">157</a> of file <a class="el" href="entity__actions_8h_source.html">entity_actions.h</a>.</p>
+
+</div>
+</div>
+<a id="a2b653ef5297510393972384480a2982c" name="a2b653ef5297510393972384480a2982c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b653ef5297510393972384480a2982c">&#9670;&#160;</a></span>script_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unravel::entity_remove_script_component_action_t::script_index {-1}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="entity__actions_8h_source.html#l00153">153</a> of file <a class="el" href="entity__actions_8h_source.html">entity_actions.h</a>.</p>
 
 </div>
 </div>
