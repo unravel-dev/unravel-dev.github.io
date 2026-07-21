@@ -44,25 +44,20 @@ var NAVTREE =
         [ "Enumerations", "functions_enum.html", null ],
         [ "Properties", "functions_prop.html", null ]
       ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_animation_component_8cs.html",
-"_key_code_8cs.html#ac76086cff6d2cc4c02a091ce6e88172faece9aeba74741f4a172a796235cd4321",
-"class_unravel_1_1_core_1_1_asset.html#aec1ab299cb8eee0265b3e0aa22c09836",
-"class_unravel_1_1_core_1_1_model_component.html#a40c01cff5fd1ac0f8b71e507a24cf46d",
-"class_unravel_1_1_core_1_1_script_component_manager.html#ad3f4d95735b6abf1dce9b511ab59f607",
-"class_unravel_1_1_core_1_1_u_i_document_component.html#ad8829ae80d897e31e7e41ecfc56e2178",
-"namespace_unravel_1_1_core.html#a11518538e717ba1d9bb9167adf9c1797ae5210675a09f29e753edf6542f7b9765",
-"namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172faed24ff8971b1fa43a1efbb386618ce35",
-"struct_size.html#aa9e4ec030b91631e7d1eb9dab668faf6",
-"struct_vector3.html#a52160959aa7a67f2bc7674fe18b3e00c"
+"annotated.html",
+"class_unravel_1_1_core_1_1_input.html#a6167ad2e47edc496d4076eda217e1d0b",
+"class_unravel_1_1_core_1_1_scene.html#a514988947d6606bb07ef6242efb1adba",
+"class_unravel_1_1_core_1_1_transform_component.html#ab556dcca9d07bf771259bdcd8ec60b26",
+"functions_t.html",
+"namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fadd4fe0cc913f704600b97d1f5dd285de",
+"struct_quaternion.html#aeccb8e708b4c3139e12286c702628c92",
+"struct_vector2.html#afab0395acfa41cf5f05fb8050223abb0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

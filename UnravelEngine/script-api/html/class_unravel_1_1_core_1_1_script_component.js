@@ -1,6 +1,5 @@
 var class_unravel_1_1_core_1_1_script_component =
 [
-    [ "ScriptComponent", "class_unravel_1_1_core_1_1_script_component.html#af4a551179e0bcea0cb85847a517e8bd6", null ],
     [ "OnCollisionEnter", "class_unravel_1_1_core_1_1_script_component.html#ac64a2e111a13b6765b90a6e6df1b7f79", null ],
     [ "OnCollisionExit", "class_unravel_1_1_core_1_1_script_component.html#a56b02dc3d2e1e5c169a6e921c54def24", null ],
     [ "OnCreate", "class_unravel_1_1_core_1_1_script_component.html#a516539753321391f199e798f7d4f65bb", null ],
@@ -12,6 +11,5 @@ var class_unravel_1_1_core_1_1_script_component =
     [ "OnSensorEnter", "class_unravel_1_1_core_1_1_script_component.html#a9585e1ecce3a1755748fa72b13d02969", null ],
     [ "OnSensorExit", "class_unravel_1_1_core_1_1_script_component.html#a230c449511b7ad5cf2309b9f57245475", null ],
     [ "OnStart", "class_unravel_1_1_core_1_1_script_component.html#ae4eaaf2af301e7591c87e796525e5ddd", null ],
-    [ "OnUpdate", "class_unravel_1_1_core_1_1_script_component.html#a920682832a4565e1fe49cc969a179eb9", null ],
-    [ "SourceFilePath", "class_unravel_1_1_core_1_1_script_component.html#abcb77d7a4c8a1b41ee60ce73d07aebef", null ]
+    [ "OnUpdate", "class_unravel_1_1_core_1_1_script_component.html#a920682832a4565e1fe49cc969a179eb9", null ]
 ];

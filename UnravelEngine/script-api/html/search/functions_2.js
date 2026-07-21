@@ -16,7 +16,6 @@ var searchData=
   ['contains_13',['Contains',['../struct_range.html#adc96d399bc33769b44ac11c9c51f3e76',1,'Range']]],
   ['containspoint_14',['ContainsPoint',['../struct_bounds.html#a1d4ef3f0bd7e1f1f2a98643c915fe604',1,'Bounds.ContainsPoint(Vector3 p)'],['../struct_bounds.html#acb1872d6fd245c7998ccdcffd5e9c6ef',1,'Bounds.ContainsPoint(Vector3 p, Vector3 tol)'],['../struct_bounds.html#ac837dfe62d01ede3af4a8ef283ef090e',1,'Bounds.ContainsPoint(Vector3 p, float tol)']]],
   ['cos_15',['Cos',['../struct_mathf.html#acb885b88959e2b8168c5bab25b31fa04',1,'Mathf']]],
-  ['createdynamicelement_16',['CreateDynamicElement',['../class_unravel_1_1_samples_1_1_sample_u_i_wrapper_controller.html#a397bbfa03e779e7e9d80f79bf5484712',1,'Unravel::Samples::SampleUIWrapperController']]],
-  ['createentity_17',['CreateEntity',['../class_unravel_1_1_core_1_1_scene.html#a1254f6d5de221d643901a34dca88ae9f',1,'Unravel::Core::Scene']]],
-  ['cross_18',['Cross',['../struct_vector3.html#a11dec994a180c0020c77c2292dcc9733',1,'Vector3']]]
+  ['createentity_16',['CreateEntity',['../class_unravel_1_1_core_1_1_scene.html#a1254f6d5de221d643901a34dca88ae9f',1,'Unravel::Core::Scene']]],
+  ['cross_17',['Cross',['../struct_vector3.html#a11dec994a180c0020c77c2292dcc9733',1,'Vector3']]]
 ];
