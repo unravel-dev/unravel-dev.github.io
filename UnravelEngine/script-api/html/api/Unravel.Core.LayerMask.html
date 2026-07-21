@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct LayerMask | Unravel Engine Scripting API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct LayerMask | Unravel Engine Scripting API ">
+      
+      <meta name="description" content="Represents a layer mask that can be used to include or exclude layers.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/unravel-dev/UnravelEngine/new/main/apiSpec/new?filename=Unravel_Core_LayerMask.md&amp;value=---%0Auid%3A%20Unravel.Core.LayerMask%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Unravel Engine Scripting API">
+            Unravel Engine Scripting API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Unravel.Core.LayerMask">
+
+
+
+  <h1 id="Unravel_Core_LayerMask" data-uid="Unravel.Core.LayerMask" class="text-break">
+Struct LayerMask  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Unravel.html">Unravel</a>.<a class="xref" href="Unravel.Core.html">Core</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Represents a layer mask that can be used to include or exclude layers.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct LayerMask</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Unravel_Core_LayerMask_Everything" data-uid="Unravel.Core.LayerMask.Everything">
+  Everything
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int Everything = -1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Unravel_Core_LayerMask_Nothing" data-uid="Unravel.Core.LayerMask.Nothing">
+  Nothing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int Nothing = 0</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Unravel_Core_LayerMask_value" data-uid="Unravel.Core.LayerMask.value">
+  value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The raw integer value representing the layer mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int value</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Unravel_Core_LayerMask_GetMask_" data-uid="Unravel.Core.LayerMask.GetMask*"></a>
+
+  <h3 id="Unravel_Core_LayerMask_GetMask_System_String___" data-uid="Unravel.Core.LayerMask.GetMask(System.String[])">
+  GetMask(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given an array of layer names, returns a layer mask containing all the layers that match those names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMask(params string[] layerNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>The names of the layers to include in the mask.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer representing the combined layer mask for all provided layers.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">layerNames</code> is <code>null</code>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Unravel_Core_LayerMask_LayerToName_" data-uid="Unravel.Core.LayerMask.LayerToName*"></a>
+
+  <h3 id="Unravel_Core_LayerMask_LayerToName_System_Int32_" data-uid="Unravel.Core.LayerMask.LayerToName(System.Int32)">
+  LayerToName(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given a layer index, returns the name of the layer as defined in either a built-in
+or a user-defined layer configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LayerToName(int layer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the layer.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the layer, or <code>null</code> if the layer is not defined.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_LayerMask_NameToLayer_" data-uid="Unravel.Core.LayerMask.NameToLayer*"></a>
+
+  <h3 id="Unravel_Core_LayerMask_NameToLayer_System_String_" data-uid="Unravel.Core.LayerMask.NameToLayer(System.String)">
+  NameToLayer(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given a layer name, returns the corresponding layer index as defined in either a built-in
+or a user-defined layer configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NameToLayer(string layerName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the layer.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the layer, or <code>-1</code> if no layer with that name exists.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Unravel_Core_LayerMask_op_Addition_" data-uid="Unravel.Core.LayerMask.op_Addition*"></a>
+
+  <h3 id="Unravel_Core_LayerMask_op_Addition_Unravel_Core_LayerMask_System_Int32_" data-uid="Unravel.Core.LayerMask.op_Addition(Unravel.Core.LayerMask,System.Int32)">
+  operator +(LayerMask, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the specified layer index to this mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LayerMask operator +(LayerMask mask, int layerIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mask</code> <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>The original layer mask.</p>
+</dd>
+    <dt><code>layerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the layer to add.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>A new <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a> including the specified layer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_LayerMask_op_Addition_" data-uid="Unravel.Core.LayerMask.op_Addition*"></a>
+
+  <h3 id="Unravel_Core_LayerMask_op_Addition_Unravel_Core_LayerMask_Unravel_Core_LayerMask_" data-uid="Unravel.Core.LayerMask.op_Addition(Unravel.Core.LayerMask,Unravel.Core.LayerMask)">
+  operator +(LayerMask, LayerMask)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Combines two layer masks (union).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LayerMask operator +(LayerMask a, LayerMask b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>First layer mask.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>Second layer mask.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>A new <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a> that is the union of the two masks.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_LayerMask_op_Implicit_" data-uid="Unravel.Core.LayerMask.op_Implicit*"></a>
+
+  <h3 id="Unravel_Core_LayerMask_op_Implicit_System_Int32__Unravel_Core_LayerMask" data-uid="Unravel.Core.LayerMask.op_Implicit(System.Int32)~Unravel.Core.LayerMask">
+  implicit operator LayerMask(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> to a <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator LayerMask(int intVal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intVal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The integer value that represents a layer mask.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>A <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a> constructed from the integer value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_LayerMask_op_Implicit_" data-uid="Unravel.Core.LayerMask.op_Implicit*"></a>
+
+  <h3 id="Unravel_Core_LayerMask_op_Implicit_Unravel_Core_LayerMask__System_Int32" data-uid="Unravel.Core.LayerMask.op_Implicit(Unravel.Core.LayerMask)~System.Int32">
+  implicit operator int(LayerMask)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the specified <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a> to its integer representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator int(LayerMask mask)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mask</code> <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>The <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a> to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> that represents the layer mask.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_LayerMask_op_Subtraction_" data-uid="Unravel.Core.LayerMask.op_Subtraction*"></a>
+
+  <h3 id="Unravel_Core_LayerMask_op_Subtraction_Unravel_Core_LayerMask_System_Int32_" data-uid="Unravel.Core.LayerMask.op_Subtraction(Unravel.Core.LayerMask,System.Int32)">
+  operator -(LayerMask, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the specified layer index from this mask.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LayerMask operator -(LayerMask mask, int layerIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mask</code> <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>The original layer mask.</p>
+</dd>
+    <dt><code>layerIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the layer to remove.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>A new <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a> excluding the specified layer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_LayerMask_op_Subtraction_" data-uid="Unravel.Core.LayerMask.op_Subtraction*"></a>
+
+  <h3 id="Unravel_Core_LayerMask_op_Subtraction_Unravel_Core_LayerMask_Unravel_Core_LayerMask_" data-uid="Unravel.Core.LayerMask.op_Subtraction(Unravel.Core.LayerMask,Unravel.Core.LayerMask)">
+  operator -(LayerMask, LayerMask)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subtracts one layer mask from another (difference).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LayerMask operator -(LayerMask a, LayerMask b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>Original layer mask.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>Mask containing layers to remove from the original mask.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd><p>A new <a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a> with the layers in <code class="paramref">b</code> removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/LayerMask.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

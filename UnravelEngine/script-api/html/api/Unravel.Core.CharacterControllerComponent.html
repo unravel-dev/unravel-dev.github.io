@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CharacterControllerComponent | Unravel Engine Scripting API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CharacterControllerComponent | Unravel Engine Scripting API ">
+      
+      <meta name="description" content="Provides character controller physics functionality for an entity. Uses a capsule shape internally with sweep-based movement.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/unravel-dev/UnravelEngine/new/main/apiSpec/new?filename=Unravel_Core_CharacterControllerComponent.md&amp;value=---%0Auid%3A%20Unravel.Core.CharacterControllerComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Unravel Engine Scripting API">
+            Unravel Engine Scripting API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Unravel.Core.CharacterControllerComponent">
+
+
+
+  <h1 id="Unravel_Core_CharacterControllerComponent" data-uid="Unravel.Core.CharacterControllerComponent" class="text-break">
+Class CharacterControllerComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Unravel.html">Unravel</a>.<a class="xref" href="Unravel.Core.html">Core</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Provides character controller physics functionality for an entity.
+Uses a capsule shape internally with sweep-based movement.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CharacterControllerComponent : Component, IEquatable&lt;NativeObject&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Unravel.Core.NativeObject.html">NativeObject</a></div>
+      <div><a class="xref" href="Unravel.Core.Component.html">Component</a></div>
+      <div><span class="xref">CharacterControllerComponent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Unravel.Core.NativeObject.html">NativeObject</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Unravel.Core.Component.html#Unravel_Core_Component_owner">Component.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.Component.html#Unravel_Core_Component_transform">Component.transform</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.Component.html#Unravel_Core_Component_IsValid">Component.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.NativeObject.html#Unravel_Core_NativeObject_Equals_Unravel_Core_NativeObject_">NativeObject.Equals(NativeObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.NativeObject.html#Unravel_Core_NativeObject_Equals_System_Object_">NativeObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.NativeObject.html#Unravel_Core_NativeObject_GetHashCode">NativeObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_canJump_" data-uid="Unravel.Core.CharacterControllerComponent.canJump*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_canJump" data-uid="Unravel.Core.CharacterControllerComponent.canJump">
+  canJump
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the character can currently jump (equivalent to isGrounded).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canJump { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_center_" data-uid="Unravel.Core.CharacterControllerComponent.center*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_center" data-uid="Unravel.Core.CharacterControllerComponent.center">
+  center
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The center offset of the capsule relative to the entity transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 center { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_collisionLayers_" data-uid="Unravel.Core.CharacterControllerComponent.collisionLayers*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_collisionLayers" data-uid="Unravel.Core.CharacterControllerComponent.collisionLayers">
+  collisionLayers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Effective collision layer mask after applying include and exclude filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask collisionLayers { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_excludeLayers_" data-uid="Unravel.Core.CharacterControllerComponent.excludeLayers*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_excludeLayers" data-uid="Unravel.Core.CharacterControllerComponent.excludeLayers">
+  excludeLayers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Layers that this character should ignore (exclude filter).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask excludeLayers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_gravityScale_" data-uid="Unravel.Core.CharacterControllerComponent.gravityScale*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_gravityScale" data-uid="Unravel.Core.CharacterControllerComponent.gravityScale">
+  gravityScale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplier for world gravity applied to this controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float gravityScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_height_" data-uid="Unravel.Core.CharacterControllerComponent.height*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_height" data-uid="Unravel.Core.CharacterControllerComponent.height">
+  height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The total height of the character capsule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float height { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_includeLayers_" data-uid="Unravel.Core.CharacterControllerComponent.includeLayers*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_includeLayers" data-uid="Unravel.Core.CharacterControllerComponent.includeLayers">
+  includeLayers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Layers that this character should collide with (include filter).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask includeLayers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_isGrounded_" data-uid="Unravel.Core.CharacterControllerComponent.isGrounded*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_isGrounded" data-uid="Unravel.Core.CharacterControllerComponent.isGrounded">
+  isGrounded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the character is currently touching the ground.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isGrounded { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_linearDamping_" data-uid="Unravel.Core.CharacterControllerComponent.linearDamping*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_linearDamping" data-uid="Unravel.Core.CharacterControllerComponent.linearDamping">
+  linearDamping
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Damping applied to linear velocity each step. 0 = no damping, 1 = full damping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float linearDamping { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_linearVelocity_" data-uid="Unravel.Core.CharacterControllerComponent.linearVelocity*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_linearVelocity" data-uid="Unravel.Core.CharacterControllerComponent.linearVelocity">
+  linearVelocity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The linear velocity of the character controller. Setting this directly overrides the physics velocity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 linearVelocity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_radius_" data-uid="Unravel.Core.CharacterControllerComponent.radius*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_radius" data-uid="Unravel.Core.CharacterControllerComponent.radius">
+  radius
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The radius of the character capsule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float radius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_skinWidth_" data-uid="Unravel.Core.CharacterControllerComponent.skinWidth*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_skinWidth" data-uid="Unravel.Core.CharacterControllerComponent.skinWidth">
+  skinWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collision skin width around the character capsule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float skinWidth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_slopeLimit_" data-uid="Unravel.Core.CharacterControllerComponent.slopeLimit*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_slopeLimit" data-uid="Unravel.Core.CharacterControllerComponent.slopeLimit">
+  slopeLimit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum slope angle in degrees the character can walk up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float slopeLimit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_stepHeight_" data-uid="Unravel.Core.CharacterControllerComponent.stepHeight*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_stepHeight" data-uid="Unravel.Core.CharacterControllerComponent.stepHeight">
+  stepHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum height of obstacles the character can step over.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float stepHeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_terminalVelocity_" data-uid="Unravel.Core.CharacterControllerComponent.terminalVelocity*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_terminalVelocity" data-uid="Unravel.Core.CharacterControllerComponent.terminalVelocity">
+  terminalVelocity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum downward fall speed in m/s. Downward vertical velocity is clamped
+to this magnitude each simulation step. Default is 55 (skydiver terminal velocity).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float terminalVelocity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_velocity_" data-uid="Unravel.Core.CharacterControllerComponent.velocity*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_velocity" data-uid="Unravel.Core.CharacterControllerComponent.velocity">
+  velocity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current velocity of the character controller (read-only, synced from physics).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 velocity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_ApplyImpulse_" data-uid="Unravel.Core.CharacterControllerComponent.ApplyImpulse*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_ApplyImpulse_Vector3_" data-uid="Unravel.Core.CharacterControllerComponent.ApplyImpulse(Vector3)">
+  ApplyImpulse(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies an impulse to the character controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyImpulse(Vector3 impulse)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>impulse</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>The impulse vector to apply.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_Jump_" data-uid="Unravel.Core.CharacterControllerComponent.Jump*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_Jump_System_Single_" data-uid="Unravel.Core.CharacterControllerComponent.Jump(System.Single)">
+  Jump(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Makes the character jump straight up with the given initial speed (m/s).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Jump(float speed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>speed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Initial upward speed in m/s. Must be greater than 0.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_Jump_" data-uid="Unravel.Core.CharacterControllerComponent.Jump*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_Jump_Vector3_" data-uid="Unravel.Core.CharacterControllerComponent.Jump(Vector3)">
+  Jump(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Makes the character jump with an arbitrary world-space velocity. The vector's
+magnitude is the jump speed and its direction is the jump axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Jump(Vector3 velocity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>velocity</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>World-space jump velocity. Must be non-zero.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_Move_" data-uid="Unravel.Core.CharacterControllerComponent.Move*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_Move_Vector3_" data-uid="Unravel.Core.CharacterControllerComponent.Move(Vector3)">
+  Move(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves the character by a displacement vector. The movement is constrained by collisions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Move(Vector3 displacement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displacement</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>The world-space displacement to apply.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CharacterControllerComponent_Warp_" data-uid="Unravel.Core.CharacterControllerComponent.Warp*"></a>
+
+  <h3 id="Unravel_Core_CharacterControllerComponent_Warp_Vector3_" data-uid="Unravel.Core.CharacterControllerComponent.Warp(Vector3)">
+  Warp(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Teleports the character to a new position instantly, bypassing collision detection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Warp(Vector3 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>The target world position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

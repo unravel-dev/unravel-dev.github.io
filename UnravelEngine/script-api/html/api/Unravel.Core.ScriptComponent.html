@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScriptComponent | Unravel Engine Scripting API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScriptComponent | Unravel Engine Scripting API ">
+      
+      <meta name="description" content="Represents a script component that provides lifecycle hooks and event handling for an entity.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/unravel-dev/UnravelEngine/new/main/apiSpec/new?filename=Unravel_Core_ScriptComponent.md&amp;value=---%0Auid%3A%20Unravel.Core.ScriptComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Unravel Engine Scripting API">
+            Unravel Engine Scripting API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Unravel.Core.ScriptComponent">
+
+
+
+  <h1 id="Unravel_Core_ScriptComponent" data-uid="Unravel.Core.ScriptComponent" class="text-break">
+Class ScriptComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Unravel.html">Unravel</a>.<a class="xref" href="Unravel.Core.html">Core</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Represents a script component that provides lifecycle hooks and event handling for an entity.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ScriptComponent : Component, IEquatable&lt;NativeObject&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Unravel.Core.NativeObject.html">NativeObject</a></div>
+      <div><a class="xref" href="Unravel.Core.Component.html">Component</a></div>
+      <div><span class="xref">ScriptComponent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Unravel.Core.NativeObject.html">NativeObject</a>&gt;</div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Unravel.Samples.SampleUIWrapperController.html">SampleUIWrapperController</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Unravel.Core.Component.html#Unravel_Core_Component_owner">Component.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.Component.html#Unravel_Core_Component_transform">Component.transform</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.Component.html#Unravel_Core_Component_IsValid">Component.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.NativeObject.html#Unravel_Core_NativeObject_Equals_Unravel_Core_NativeObject_">NativeObject.Equals(NativeObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.NativeObject.html#Unravel_Core_NativeObject_Equals_System_Object_">NativeObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.NativeObject.html#Unravel_Core_NativeObject_GetHashCode">NativeObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Unravel_Core_ScriptComponent__ctor_" data-uid="Unravel.Core.ScriptComponent.#ctor*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent__ctor_System_String_" data-uid="Unravel.Core.ScriptComponent.#ctor(System.String)">
+  ScriptComponent(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ScriptComponent(string file = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Unravel_Core_ScriptComponent_SourceFilePath_" data-uid="Unravel.Core.ScriptComponent.SourceFilePath*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_SourceFilePath" data-uid="Unravel.Core.ScriptComponent.SourceFilePath">
+  SourceFilePath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string SourceFilePath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Unravel_Core_ScriptComponent_OnCollisionEnter_" data-uid="Unravel.Core.ScriptComponent.OnCollisionEnter*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnCollisionEnter_Unravel_Core_Collision_" data-uid="Unravel.Core.ScriptComponent.OnCollisionEnter(Unravel.Core.Collision)">
+  OnCollisionEnter(Collision)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when this entity begins a collision with another entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCollisionEnter(Collision collision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collision</code> <a class="xref" href="Unravel.Core.Collision.html">Collision</a></dt>
+    <dd><p>Details of the collision, including the other entity and contact points.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnCollisionExit_" data-uid="Unravel.Core.ScriptComponent.OnCollisionExit*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnCollisionExit_Unravel_Core_Collision_" data-uid="Unravel.Core.ScriptComponent.OnCollisionExit(Unravel.Core.Collision)">
+  OnCollisionExit(Collision)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when this entity ends a collision with another entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCollisionExit(Collision collision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collision</code> <a class="xref" href="Unravel.Core.Collision.html">Collision</a></dt>
+    <dd><p>Details of the collision, including the other entity and contact points.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnCreate_" data-uid="Unravel.Core.ScriptComponent.OnCreate*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnCreate" data-uid="Unravel.Core.ScriptComponent.OnCreate">
+  OnCreate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the script is created. Override this method to initialize resources or data.
+OnCreate is called when the script is first loaded, or when an object it is attached to is instantiated
+It only gets called once on each script, and only after other objects are initialised.
+This means that it is safe to create references to other game objects and components in OnCreate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCreate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnDestroy_" data-uid="Unravel.Core.ScriptComponent.OnDestroy*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnDestroy" data-uid="Unravel.Core.ScriptComponent.OnDestroy">
+  OnDestroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the script is destroyed. Override this method to clean up resources or data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnDisable_" data-uid="Unravel.Core.ScriptComponent.OnDisable*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnDisable" data-uid="Unravel.Core.ScriptComponent.OnDisable">
+  OnDisable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the script or entity is disabled. Override this method to clean up resources or data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnEnable_" data-uid="Unravel.Core.ScriptComponent.OnEnable*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnEnable" data-uid="Unravel.Core.ScriptComponent.OnEnable">
+  OnEnable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the script or entity is enabled. Override this method to initialize resources or data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnFixedUpdate_" data-uid="Unravel.Core.ScriptComponent.OnFixedUpdate*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnFixedUpdate" data-uid="Unravel.Core.ScriptComponent.OnFixedUpdate">
+  OnFixedUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A framerate-idependent interval update when physics calculations are performed. Override this method to implement frame-based logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnFixedUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnLateUpdate_" data-uid="Unravel.Core.ScriptComponent.OnLateUpdate*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnLateUpdate" data-uid="Unravel.Core.ScriptComponent.OnLateUpdate">
+  OnLateUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called on every frame update after other updates are finished. Override this method to implement frame-based logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnLateUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnSensorEnter_" data-uid="Unravel.Core.ScriptComponent.OnSensorEnter*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnSensorEnter_Unravel_Core_Collision_" data-uid="Unravel.Core.ScriptComponent.OnSensorEnter(Unravel.Core.Collision)">
+  OnSensorEnter(Collision)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when another entity enters a sensor attached to this entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSensorEnter(Collision collision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collision</code> <a class="xref" href="Unravel.Core.Collision.html">Collision</a></dt>
+    <dd><p>Details of the collision, including the other entity and contact points.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnSensorExit_" data-uid="Unravel.Core.ScriptComponent.OnSensorExit*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnSensorExit_Unravel_Core_Collision_" data-uid="Unravel.Core.ScriptComponent.OnSensorExit(Unravel.Core.Collision)">
+  OnSensorExit(Collision)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when another entity exits a sensor attached to this entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSensorExit(Collision collision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collision</code> <a class="xref" href="Unravel.Core.Collision.html">Collision</a></dt>
+    <dd><p>Details of the collision, including the other entity and contact points.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnStart_" data-uid="Unravel.Core.ScriptComponent.OnStart*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnStart" data-uid="Unravel.Core.ScriptComponent.OnStart">
+  OnStart()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the script starts execution. Override this method to set up logic at the start.
+Start is called once, before any Update methods and after OnCreate.
+It works in much the same way as OnCreate, with a few key differences.
+Unlike OnCreate, Start will not be called if the script is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ScriptComponent_OnUpdate_" data-uid="Unravel.Core.ScriptComponent.OnUpdate*"></a>
+
+  <h3 id="Unravel_Core_ScriptComponent_OnUpdate" data-uid="Unravel.Core.ScriptComponent.OnUpdate">
+  OnUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called on every frame update. Override this method to implement frame-based logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ScriptComponent.cs/#L24" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

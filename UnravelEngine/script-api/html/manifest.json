@@ -1,0 +1,1320 @@
+{
+  "source_base_path": "C:/Workspace/github/UnravelEngine/UnravelEngine/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Alignment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Alignment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Alignment",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Alignment.yml\" sourcestartlinenumber=\"1\">Flags for horizontal and vertical text alignment, matching ace::align.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.AnimationClip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.AnimationClip.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.AnimationClip",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.AnimationClip.yml\" sourcestartlinenumber=\"1\">Animation clip asset handle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.AnimationComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.AnimationComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.AnimationComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.AnimationComponent.yml\" sourcestartlinenumber=\"1\">Provides functionality to manage and blend animation clips on an entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Application.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Application",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Application.yml\" sourcestartlinenumber=\"1\">Provides application-level functionality and control.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Asset-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Asset-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Asset<T>",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Asset-1.yml\" sourcestartlinenumber=\"1\">Represents a generic asset with a unique identifier (UID).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Assets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Assets.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Assets",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Assets.yml\" sourcestartlinenumber=\"1\">Loads and resolves assets by key or unique identifier.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.AudioClip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.AudioClip.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.AudioClip",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.AudioClip.yml\" sourcestartlinenumber=\"1\">Audio clip asset handle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.AudioListenerComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.AudioListenerComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.AudioListenerComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.AudioListenerComponent.yml\" sourcestartlinenumber=\"1\">Marks an entity as the audio listener used for spatialized sound.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.AudioSourceComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.AudioSourceComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.AudioSourceComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.AudioSourceComponent.yml\" sourcestartlinenumber=\"1\">Represents an audio source component that can play, pause, and control audio playback in a scene.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.AutoStaticsCleanupAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.AutoStaticsCleanupAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.AutoStaticsCleanupAttribute",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.AutoStaticsCleanupAttribute.yml\" sourcestartlinenumber=\"1\">Marks a class whose static state must be reset when a script domain is\nunloaded (CoreCLR backend).</p>\n<p sourcefile=\"api/Unravel.Core.AutoStaticsCleanupAttribute.yml\" sourcestartlinenumber=\"4\">On Mono, unloading a domain destroys its statics wholesale. On CoreCLR\na collectible AssemblyLoadContext only unloads once nothing references\nit anymore, so static caches in a surviving assembly (e.g. managers\nholding script instances or script <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> objects) would\nsilently keep the unloaded domain alive. The runtime processes this\nattribute right before any domain is unloaded:</p>\n<ul><li>If the class defines <code>static void OnStaticsCleanup()</code> (any\nvisibility), that method is invoked and nothing else happens - use it\nto re-create managers or clear collections selectively.</li><li>Otherwise every non-readonly static field is reset to its\ndefault value. Readonly statics cannot be cleared by reflection and\nproduce a warning - define <code>OnStaticsCleanup</code> for those.</li></ul>\n<p sourcefile=\"api/Unravel.Core.AutoStaticsCleanupAttribute.yml\" sourcestartlinenumber=\"17\">The attribute is matched by name, so any assembly may use it without\nreferencing the engine. On Mono it is ignored.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.BoneComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.BoneComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.BoneComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.BoneComponent.yml\" sourcestartlinenumber=\"1\">Represents a component identifying a bone.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.CameraComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.CameraComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.CameraComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.CameraComponent.yml\" sourcestartlinenumber=\"1\">Represents a camera component that allows interaction with the camera, such as converting screen space positions to rays in 3D space.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.CharacterControllerComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.CharacterControllerComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.CharacterControllerComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.CharacterControllerComponent.yml\" sourcestartlinenumber=\"1\">Provides character controller physics functionality for an entity.\nUses a capsule shape internally with sweep-based movement.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Collision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Collision.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Collision",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Collision.yml\" sourcestartlinenumber=\"1\">Represents a collision that occurs between two entities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Component.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Component.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Component",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Component.yml\" sourcestartlinenumber=\"1\">Represents a base class for all components in the entity-component system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ContactPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ContactPoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ContactPoint",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ContactPoint.yml\" sourcestartlinenumber=\"1\">Represents a contact point where a collision occurs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.EmitterDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.EmitterDirection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.EmitterDirection",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.EmitterDirection.yml\" sourcestartlinenumber=\"1\">Emitter direction enumeration that matches the C++ EmitterDirection::Enum</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.EmitterShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.EmitterShape.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.EmitterShape",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.EmitterShape.yml\" sourcestartlinenumber=\"1\">Emitter shape enumeration that matches the C++ EmitterShape::Enum</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Entity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Entity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Entity",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Entity.yml\" sourcestartlinenumber=\"1\">Represents an entity within a scene. Provides methods to manage components and query entity properties.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.EventPhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.EventPhase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.EventPhase",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.EventPhase.yml\" sourcestartlinenumber=\"1\">Phase of UI event dispatch in the capture/target/bubble model.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ExceptionHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ExceptionHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ExceptionHelper",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ExceptionHelper.yml\" sourcestartlinenumber=\"1\">Helpers for throwing managed exceptions from native bridge code.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.FixedUpdateInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.FixedUpdateInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.FixedUpdateInfo",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.FixedUpdateInfo.yml\" sourcestartlinenumber=\"1\">Fixed-step timing values pushed from native into managed code.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Font.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Font.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Font",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Font.yml\" sourcestartlinenumber=\"1\">Font asset handle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ForceMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ForceMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ForceMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ForceMode.yml\" sourcestartlinenumber=\"1\">Specifies how forces are applied to physics components.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.GCMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.GCMonitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.GCMonitor",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.GCMonitor.yml\" sourcestartlinenumber=\"1\">Tracks managed GC activity and optionally logs collection/memory deltas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Gizmos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Gizmos.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Gizmos",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Gizmos.yml\" sourcestartlinenumber=\"1\">Draws debug primitives in the scene for visualization during development.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.HeaderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.HeaderAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.HeaderAttribute",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.HeaderAttribute.yml\" sourcestartlinenumber=\"1\">Adds a header to a field, providing a brief description or hint.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.HideAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.HideAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.HideAttribute",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.HideAttribute.yml\" sourcestartlinenumber=\"1\">Hides a field from the inspector, preventing it from being displayed or edited.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.IK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.IK.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.IK",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.IK.yml\" sourcestartlinenumber=\"1\">Inverse-kinematics helpers for skeletal chains.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.IdComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.IdComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.IdComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.IdComponent.yml\" sourcestartlinenumber=\"1\">Holds the entity's unique identifier used by the runtime and serialization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Input.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Input.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Input",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Input.yml\" sourcestartlinenumber=\"1\">Provides static methods to handle user input actions such as button presses and axis values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.KeyCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.KeyCode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.KeyCode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.KeyCode.yml\" sourcestartlinenumber=\"1\">Identifies a keyboard key for <xref href=\"Unravel.Core.Input\" data-throw-if-not-resolved=\"false\"></xref> queries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.LayerMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.LayerMask.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.LayerMask",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.LayerMask.yml\" sourcestartlinenumber=\"1\">Represents a layer mask that can be used to include or exclude layers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.LightComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.LightComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.LightComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.LightComponent.yml\" sourcestartlinenumber=\"1\">Light source component attached to an entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Log.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Log.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Log",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Log.yml\" sourcestartlinenumber=\"1\">Writes messages to the engine log with automatic call-site information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Material.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Material.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Material",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Material.yml\" sourcestartlinenumber=\"1\">Material asset with editable shading properties.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.MaterialProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.MaterialProperties.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.MaterialProperties",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.MaterialProperties.yml\" sourcestartlinenumber=\"1\">Blittable material property block exchanged with native code.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.MaxAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.MaxAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.MaxAttribute",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.MaxAttribute.yml\" sourcestartlinenumber=\"1\">Specifies the maximum allowable value for a numeric field.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Mesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Mesh.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Mesh",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Mesh.yml\" sourcestartlinenumber=\"1\">Mesh asset handle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.MinAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.MinAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.MinAttribute",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.MinAttribute.yml\" sourcestartlinenumber=\"1\">Specifies the minimum allowable value for a numeric field.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ModelComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ModelComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ModelComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ModelComponent.yml\" sourcestartlinenumber=\"1\">Represents a component that provides model rendering capabilities for an entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.MouseButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.MouseButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.MouseButton",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.MouseButton.yml\" sourcestartlinenumber=\"1\">Identifies a mouse button for <xref href=\"Unravel.Core.Input\" data-throw-if-not-resolved=\"false\"></xref> queries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.NativeObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.NativeObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.NativeObject",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.NativeObject.yml\" sourcestartlinenumber=\"1\">Base class for managed wrappers around native engine objects.\nEquality accounts for validity; invalid instances are never equal.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleEmitterComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleEmitterComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleEmitterComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleEmitterComponent.yml\" sourcestartlinenumber=\"1\">Represents a component that provides particle emission capabilities for an entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleSimBackend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleSimBackend.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleSimBackend",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleSimBackend.yml\" sourcestartlinenumber=\"1\">Particle simulation/pack backend. Matches C++ ps_soa::particle_sim_backend.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Physics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Physics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Physics",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Physics.yml\" sourcestartlinenumber=\"1\">Provides static methods for performing physics-related operations, such as raycasting.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.PhysicsComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.PhysicsComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.PhysicsComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.PhysicsComponent.yml\" sourcestartlinenumber=\"1\">Provides physics functionality for an entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.PhysicsMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.PhysicsMaterial.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.PhysicsMaterial",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.PhysicsMaterial.yml\" sourcestartlinenumber=\"1\">Physics material asset handle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Prefab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Prefab.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Prefab",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Prefab.yml\" sourcestartlinenumber=\"1\">Prefab asset that can be instantiated into a scene as an entity hierarchy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Profiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Profiler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Profiler",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Profiler.yml\" sourcestartlinenumber=\"1\">Performance profiler for measuring and recording execution times.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ProfilerScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ProfilerScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ProfilerScope",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ProfilerScope.yml\" sourcestartlinenumber=\"1\">Scoped profiler that measures execution time and automatically records it when disposed.\nUse with 'using' statement for automatic scope-based profiling.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.RangeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.RangeAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.RangeAttribute",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.RangeAttribute.yml\" sourcestartlinenumber=\"1\">Specifies a range for a numeric field in a class or struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Ray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Ray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Ray",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Ray.yml\" sourcestartlinenumber=\"1\">Represents a ray with an origin and a direction in 3D space.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.RaycastHit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.RaycastHit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.RaycastHit",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.RaycastHit.yml\" sourcestartlinenumber=\"1\">Represents information about a single hit during a raycasting operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ReflectionProbeComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ReflectionProbeComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ReflectionProbeComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ReflectionProbeComponent.yml\" sourcestartlinenumber=\"1\">Captures and provides reflection probe data for an entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Scene.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Scene.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Scene",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Scene.yml\" sourcestartlinenumber=\"1\">Represents a scene in the application, providing methods to manage entities and load or destroy scenes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ScriptComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ScriptComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ScriptComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ScriptComponent.yml\" sourcestartlinenumber=\"1\">Represents a script component that provides lifecycle hooks and event handling for an entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ScriptComponentManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ScriptComponentManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ScriptComponentManager",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ScriptComponentManager.yml\" sourcestartlinenumber=\"1\">Optimized manager for ScriptComponents with type-based priority.</p>\n<ul sourcefile=\"api/Unravel.Core.ScriptComponentManager.yml\" sourcestartlinenumber=\"2\">\n<li sourcefile=\"api/Unravel.Core.ScriptComponentManager.yml\" sourcestartlinenumber=\"2\">Per-type buckets: Components of same type never sorted against each other</li>\n<li sourcefile=\"api/Unravel.Core.ScriptComponentManager.yml\" sourcestartlinenumber=\"3\">Slot reuse: Removed components leave gaps that are reused (no shifting)</li>\n<li sourcefile=\"api/Unravel.Core.ScriptComponentManager.yml\" sourcestartlinenumber=\"4\">O(1) removal: Dictionary lookup instead of linear search</li>\n<li sourcefile=\"api/Unravel.Core.ScriptComponentManager.yml\" sourcestartlinenumber=\"5\">Minimal allocations: Reuses collections across frames</li>\n<li sourcefile=\"api/Unravel.Core.ScriptComponentManager.yml\" sourcestartlinenumber=\"6\">Deferred operations during invocation for thread safety</li>\n<li sourcefile=\"api/Unravel.Core.ScriptComponentManager.yml\" sourcestartlinenumber=\"7\">Method override detection: Only adds components that actually override Update/FixedUpdate/LateUpdate</li>\n</ul>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ScriptSourceFileAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ScriptSourceFileAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ScriptSourceFileAttribute",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ScriptSourceFileAttribute.yml\" sourcestartlinenumber=\"1\">Records the source file path of a script class for editor and tooling use.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.StepAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.StepAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.StepAttribute",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.StepAttribute.yml\" sourcestartlinenumber=\"1\">Specifies a step increment for a numeric field in a class or struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.StyleSheet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.StyleSheet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.StyleSheet",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.StyleSheet.yml\" sourcestartlinenumber=\"1\">UI stylesheet asset handle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.SystemManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.SystemManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.SystemManager",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.SystemManager.yml\" sourcestartlinenumber=\"1\">Entry point for native-to-managed frame updates and script component dispatch.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.TextComponent.BufferType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.TextComponent.BufferType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.TextComponent.BufferType",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.TextComponent.BufferType.yml\" sourcestartlinenumber=\"1\">Define the storage type for the vertex/index buffers</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.TextComponent.OverflowType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.TextComponent.OverflowType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.TextComponent.OverflowType",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.TextComponent.OverflowType.yml\" sourcestartlinenumber=\"1\">Defines the overflow behaviour</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.TextComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.TextComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.TextComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.TextComponent.yml\" sourcestartlinenumber=\"1\">Mirrors ace::text_component, letting scripts manage text rendering via properties.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.TextStyleFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.TextStyleFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.TextStyleFlags",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.TextStyleFlags.yml\" sourcestartlinenumber=\"1\">Text style flags for decorations and effects, matching gfx::text_style_flags.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Texture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Texture.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Texture",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Texture.yml\" sourcestartlinenumber=\"1\">Texture asset handle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Time.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Time.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Time",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Time.yml\" sourcestartlinenumber=\"1\">Provides global timing information for gameplay scripts.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.TooltipAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.TooltipAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.TooltipAttribute",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.TooltipAttribute.yml\" sourcestartlinenumber=\"1\">Adds a tooltip to a field, providing a brief description or hint.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.TransformComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.TransformComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.TransformComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.TransformComponent.yml\" sourcestartlinenumber=\"1\">Represents a component that defines the position, rotation, scale, and other transformations of an entity in 3D space.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.TransformComponentExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.TransformComponentExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.TransformComponentExtensions",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.TransformComponentExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for <xref href=\"Unravel.Core.TransformComponent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIChangeEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIChangeEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIChangeEvent.yml\" sourcestartlinenumber=\"1\">Represents a UI change event for handling string value changes.\nThis is for text inputs, dropdowns, and other elements that provide string values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIDocument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIDocument.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIDocument",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIDocument.yml\" sourcestartlinenumber=\"1\">Represents a wrapper around a native RmlUi document with managed lifetime.\nThe C++ side owns the lifetime and will invalidate this wrapper when the document is destroyed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIDocumentComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIDocumentComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIDocumentComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIDocumentComponent.yml\" sourcestartlinenumber=\"1\">Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces.\nEach component instance holds its own document while sharing the global UI context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIElement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIElement",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIElement.yml\" sourcestartlinenumber=\"1\">Represents a wrapper around a native RmlUi element with managed lifetime.\nThe C++ side owns the lifetime and will invalidate this wrapper when the element is destroyed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIEventBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIEventBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIEventBase",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIEventBase.yml\" sourcestartlinenumber=\"1\">Base type for UI events dispatched through <xref href=\"Unravel.Core.UIEventManager\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIEventCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIEventCallback.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIEventCallback",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIEventCallback.yml\" sourcestartlinenumber=\"1\">Callback invoked when a UI event is dispatched to a subscribed element.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIEventManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIEventManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIEventManager",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIEventManager.yml\" sourcestartlinenumber=\"1\">Global UI event manager that handles all UI event dispatching.\nSimilar to ScriptComponentManager but for UI events.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIKeyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIKeyEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIKeyEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIKeyEvent.yml\" sourcestartlinenumber=\"1\">Represents a keyboard-related UI event with key-specific properties.\nSimplified to only contain key code and modifier keys.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIPointerEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIPointerEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIPointerEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIPointerEvent.yml\" sourcestartlinenumber=\"1\">Represents a pointer-related UI event with pointer-specific properties.\nGeneric enough to handle mouse, touch, pen, and other pointer devices.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UISliderEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UISliderEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UISliderEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UISliderEvent.yml\" sourcestartlinenumber=\"1\">Represents a slider UI event for handling slider value changes.\nThis is separate from key events to handle composed slider value changes properly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UITextInputEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UITextInputEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UITextInputEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UITextInputEvent.yml\" sourcestartlinenumber=\"1\">Represents a text input UI event for handling text entry.\nThis is separate from key events to handle composed text input properly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UpdateInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UpdateInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UpdateInfo",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UpdateInfo.yml\" sourcestartlinenumber=\"1\">Per-frame timing values pushed from native into managed code.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.VisualTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.VisualTree.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.VisualTree",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.VisualTree.yml\" sourcestartlinenumber=\"1\">UI visual-tree (RML/layout) asset handle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Samples.SampleUIWrapperController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Samples.SampleUIWrapperController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Samples.SampleUIWrapperController",
+      "Summary": "<p sourcefile=\"api/Unravel.Samples.SampleUIWrapperController.yml\" sourcestartlinenumber=\"1\">Sample script demonstrating the use of UI wrapper objects for caching and direct manipulation.\nThis approach allows you to get UI elements once and keep them for later use without repeated searches.\nAlso demonstrates the new typed UI event system with UIPointerEvent and UIKeyEvent.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Samples.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Samples.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Samples",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "markdown/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "markdown/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "markdown/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "markdown/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "markdown/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "markdown/toc.html"
+        },
+        ".json": {
+          "relative_path": "markdown/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

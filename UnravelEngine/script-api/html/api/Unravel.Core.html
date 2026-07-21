@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace Unravel.Core | Unravel Engine Scripting API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace Unravel.Core | Unravel Engine Scripting API ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Unravel Engine Scripting API">
+            Unravel Engine Scripting API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Unravel.Core">
+
+  <h1 id="Unravel_Core" data-uid="Unravel.Core" class="text-break">Namespace Unravel.Core</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.AnimationClip.html">AnimationClip</a></dt>
+      <dd><p>Animation clip asset handle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.AnimationComponent.html">AnimationComponent</a></dt>
+      <dd><p>Provides functionality to manage and blend animation clips on an entity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Application.html">Application</a></dt>
+      <dd><p>Provides application-level functionality and control.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Asset-1.html">Asset&lt;T&gt;</a></dt>
+      <dd><p>Represents a generic asset with a unique identifier (UID).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Assets.html">Assets</a></dt>
+      <dd><p>Loads and resolves assets by key or unique identifier.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.AudioClip.html">AudioClip</a></dt>
+      <dd><p>Audio clip asset handle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.AudioListenerComponent.html">AudioListenerComponent</a></dt>
+      <dd><p>Marks an entity as the audio listener used for spatialized sound.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.AudioSourceComponent.html">AudioSourceComponent</a></dt>
+      <dd><p>Represents an audio source component that can play, pause, and control audio playback in a scene.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.AutoStaticsCleanupAttribute.html">AutoStaticsCleanupAttribute</a></dt>
+      <dd><p>Marks a class whose static state must be reset when a script domain is
+unloaded (CoreCLR backend).</p>
+<p>On Mono, unloading a domain destroys its statics wholesale. On CoreCLR
+a collectible AssemblyLoadContext only unloads once nothing references
+it anymore, so static caches in a surviving assembly (e.g. managers
+holding script instances or script <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a> objects) would
+silently keep the unloaded domain alive. The runtime processes this
+attribute right before any domain is unloaded:</p>
+<ul><li>If the class defines <code>static void OnStaticsCleanup()</code> (any
+visibility), that method is invoked and nothing else happens - use it
+to re-create managers or clear collections selectively.</li><li>Otherwise every non-readonly static field is reset to its
+default value. Readonly statics cannot be cleared by reflection and
+produce a warning - define <code>OnStaticsCleanup</code> for those.</li></ul>
+<p>The attribute is matched by name, so any assembly may use it without
+referencing the engine. On Mono it is ignored.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.BoneComponent.html">BoneComponent</a></dt>
+      <dd><p>Represents a component identifying a bone.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.CameraComponent.html">CameraComponent</a></dt>
+      <dd><p>Represents a camera component that allows interaction with the camera, such as converting screen space positions to rays in 3D space.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.CharacterControllerComponent.html">CharacterControllerComponent</a></dt>
+      <dd><p>Provides character controller physics functionality for an entity.
+Uses a capsule shape internally with sweep-based movement.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Collision.html">Collision</a></dt>
+      <dd><p>Represents a collision that occurs between two entities.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Component.html">Component</a></dt>
+      <dd><p>Represents a base class for all components in the entity-component system.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ExceptionHelper.html">ExceptionHelper</a></dt>
+      <dd><p>Helpers for throwing managed exceptions from native bridge code.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Font.html">Font</a></dt>
+      <dd><p>Font asset handle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.GCMonitor.html">GCMonitor</a></dt>
+      <dd><p>Tracks managed GC activity and optionally logs collection/memory deltas.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Gizmos.html">Gizmos</a></dt>
+      <dd><p>Draws debug primitives in the scene for visualization during development.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.HeaderAttribute.html">HeaderAttribute</a></dt>
+      <dd><p>Adds a header to a field, providing a brief description or hint.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.HideAttribute.html">HideAttribute</a></dt>
+      <dd><p>Hides a field from the inspector, preventing it from being displayed or edited.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.IK.html">IK</a></dt>
+      <dd><p>Inverse-kinematics helpers for skeletal chains.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.IdComponent.html">IdComponent</a></dt>
+      <dd><p>Holds the entity's unique identifier used by the runtime and serialization.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Input.html">Input</a></dt>
+      <dd><p>Provides static methods to handle user input actions such as button presses and axis values.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.LightComponent.html">LightComponent</a></dt>
+      <dd><p>Light source component attached to an entity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Log.html">Log</a></dt>
+      <dd><p>Writes messages to the engine log with automatic call-site information.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Material.html">Material</a></dt>
+      <dd><p>Material asset with editable shading properties.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.MaxAttribute.html">MaxAttribute</a></dt>
+      <dd><p>Specifies the maximum allowable value for a numeric field.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Mesh.html">Mesh</a></dt>
+      <dd><p>Mesh asset handle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.MinAttribute.html">MinAttribute</a></dt>
+      <dd><p>Specifies the minimum allowable value for a numeric field.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ModelComponent.html">ModelComponent</a></dt>
+      <dd><p>Represents a component that provides model rendering capabilities for an entity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.NativeObject.html">NativeObject</a></dt>
+      <dd><p>Base class for managed wrappers around native engine objects.
+Equality accounts for validity; invalid instances are never equal.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleEmitterComponent.html">ParticleEmitterComponent</a></dt>
+      <dd><p>Represents a component that provides particle emission capabilities for an entity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Physics.html">Physics</a></dt>
+      <dd><p>Provides static methods for performing physics-related operations, such as raycasting.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.PhysicsComponent.html">PhysicsComponent</a></dt>
+      <dd><p>Provides physics functionality for an entity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.PhysicsMaterial.html">PhysicsMaterial</a></dt>
+      <dd><p>Physics material asset handle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Prefab.html">Prefab</a></dt>
+      <dd><p>Prefab asset that can be instantiated into a scene as an entity hierarchy.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Profiler.html">Profiler</a></dt>
+      <dd><p>Performance profiler for measuring and recording execution times.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.RangeAttribute.html">RangeAttribute</a></dt>
+      <dd><p>Specifies a range for a numeric field in a class or struct.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ReflectionProbeComponent.html">ReflectionProbeComponent</a></dt>
+      <dd><p>Captures and provides reflection probe data for an entity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Scene.html">Scene</a></dt>
+      <dd><p>Represents a scene in the application, providing methods to manage entities and load or destroy scenes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ScriptComponent.html">ScriptComponent</a></dt>
+      <dd><p>Represents a script component that provides lifecycle hooks and event handling for an entity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ScriptComponentManager.html">ScriptComponentManager</a></dt>
+      <dd><p>Optimized manager for ScriptComponents with type-based priority.</p>
+<ul>
+<li>Per-type buckets: Components of same type never sorted against each other</li>
+<li>Slot reuse: Removed components leave gaps that are reused (no shifting)</li>
+<li>O(1) removal: Dictionary lookup instead of linear search</li>
+<li>Minimal allocations: Reuses collections across frames</li>
+<li>Deferred operations during invocation for thread safety</li>
+<li>Method override detection: Only adds components that actually override Update/FixedUpdate/LateUpdate</li>
+</ul>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ScriptSourceFileAttribute.html">ScriptSourceFileAttribute</a></dt>
+      <dd><p>Records the source file path of a script class for editor and tooling use.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.StepAttribute.html">StepAttribute</a></dt>
+      <dd><p>Specifies a step increment for a numeric field in a class or struct.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.StyleSheet.html">StyleSheet</a></dt>
+      <dd><p>UI stylesheet asset handle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.SystemManager.html">SystemManager</a></dt>
+      <dd><p>Entry point for native-to-managed frame updates and script component dispatch.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Tests.html">Tests</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.TextComponent.html">TextComponent</a></dt>
+      <dd><p>Mirrors ace::text_component, letting scripts manage text rendering via properties.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Texture.html">Texture</a></dt>
+      <dd><p>Texture asset handle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Time.html">Time</a></dt>
+      <dd><p>Provides global timing information for gameplay scripts.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.TooltipAttribute.html">TooltipAttribute</a></dt>
+      <dd><p>Adds a tooltip to a field, providing a brief description or hint.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.TransformComponent.html">TransformComponent</a></dt>
+      <dd><p>Represents a component that defines the position, rotation, scale, and other transformations of an entity in 3D space.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.TransformComponentExtensions.html">TransformComponentExtensions</a></dt>
+      <dd><p>Extension methods for <a class="xref" href="Unravel.Core.TransformComponent.html">TransformComponent</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIChangeEvent.html">UIChangeEvent</a></dt>
+      <dd><p>Represents a UI change event for handling string value changes.
+This is for text inputs, dropdowns, and other elements that provide string values.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIDocument.html">UIDocument</a></dt>
+      <dd><p>Represents a wrapper around a native RmlUi document with managed lifetime.
+The C++ side owns the lifetime and will invalidate this wrapper when the document is destroyed.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIDocumentComponent.html">UIDocumentComponent</a></dt>
+      <dd><p>Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces.
+Each component instance holds its own document while sharing the global UI context.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+      <dd><p>Represents a wrapper around a native RmlUi element with managed lifetime.
+The C++ side owns the lifetime and will invalidate this wrapper when the element is destroyed.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIEventBase.html">UIEventBase</a></dt>
+      <dd><p>Base type for UI events dispatched through <a class="xref" href="Unravel.Core.UIEventManager.html">UIEventManager</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIEventManager.html">UIEventManager</a></dt>
+      <dd><p>Global UI event manager that handles all UI event dispatching.
+Similar to ScriptComponentManager but for UI events.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIKeyEvent.html">UIKeyEvent</a></dt>
+      <dd><p>Represents a keyboard-related UI event with key-specific properties.
+Simplified to only contain key code and modifier keys.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIPointerEvent.html">UIPointerEvent</a></dt>
+      <dd><p>Represents a pointer-related UI event with pointer-specific properties.
+Generic enough to handle mouse, touch, pen, and other pointer devices.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UISliderEvent.html">UISliderEvent</a></dt>
+      <dd><p>Represents a slider UI event for handling slider value changes.
+This is separate from key events to handle composed slider value changes properly.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UITextInputEvent.html">UITextInputEvent</a></dt>
+      <dd><p>Represents a text input UI event for handling text entry.
+This is separate from key events to handle composed text input properly.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.VisualTree.html">VisualTree</a></dt>
+      <dd><p>UI visual-tree (RML/layout) asset handle.</p>
+</dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ContactPoint.html">ContactPoint</a></dt>
+      <dd><p>Represents a contact point where a collision occurs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Entity.html">Entity</a></dt>
+      <dd><p>Represents an entity within a scene. Provides methods to manage components and query entity properties.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.FixedUpdateInfo.html">FixedUpdateInfo</a></dt>
+      <dd><p>Fixed-step timing values pushed from native into managed code.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+      <dd><p>Represents a layer mask that can be used to include or exclude layers.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.MaterialProperties.html">MaterialProperties</a></dt>
+      <dd><p>Blittable material property block exchanged with native code.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ProfilerScope.html">ProfilerScope</a></dt>
+      <dd><p>Scoped profiler that measures execution time and automatically records it when disposed.
+Use with 'using' statement for automatic scope-based profiling.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Ray.html">Ray</a></dt>
+      <dd><p>Represents a ray with an origin and a direction in 3D space.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.RaycastHit.html">RaycastHit</a></dt>
+      <dd><p>Represents information about a single hit during a raycasting operation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UpdateInfo.html">UpdateInfo</a></dt>
+      <dd><p>Per-frame timing values pushed from native into managed code.</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Alignment.html">Alignment</a></dt>
+      <dd><p>Flags for horizontal and vertical text alignment, matching ace::align.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.EmitterDirection.html">EmitterDirection</a></dt>
+      <dd><p>Emitter direction enumeration that matches the C++ EmitterDirection::Enum</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.EmitterShape.html">EmitterShape</a></dt>
+      <dd><p>Emitter shape enumeration that matches the C++ EmitterShape::Enum</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.EventPhase.html">EventPhase</a></dt>
+      <dd><p>Phase of UI event dispatch in the capture/target/bubble model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ForceMode.html">ForceMode</a></dt>
+      <dd><p>Specifies how forces are applied to physics components.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.KeyCode.html">KeyCode</a></dt>
+      <dd><p>Identifies a keyboard key for <a class="xref" href="Unravel.Core.Input.html">Input</a> queries.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.MouseButton.html">MouseButton</a></dt>
+      <dd><p>Identifies a mouse button for <a class="xref" href="Unravel.Core.Input.html">Input</a> queries.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleSimBackend.html">ParticleSimBackend</a></dt>
+      <dd><p>Particle simulation/pack backend. Matches C++ ps_soa::particle_sim_backend.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.TextComponent.BufferType.html">TextComponent.BufferType</a></dt>
+      <dd><p>Define the storage type for the vertex/index buffers</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.TextComponent.OverflowType.html">TextComponent.OverflowType</a></dt>
+      <dd><p>Defines the overflow behaviour</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.TextStyleFlags.html">TextStyleFlags</a></dt>
+      <dd><p>Text style flags for decorations and effects, matching gfx::text_style_flags.</p>
+</dd>
+    </dl>
+    <h3 id="delegates">
+Delegates
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIEventCallback.html">UIEventCallback</a></dt>
+      <dd><p>Callback invoked when a UI event is dispatched to a subscribed element.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

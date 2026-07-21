@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ParticleEmitterComponent | Unravel Engine Scripting API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ParticleEmitterComponent | Unravel Engine Scripting API ">
+      
+      <meta name="description" content="Represents a component that provides particle emission capabilities for an entity.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/unravel-dev/UnravelEngine/new/main/apiSpec/new?filename=Unravel_Core_ParticleEmitterComponent.md&amp;value=---%0Auid%3A%20Unravel.Core.ParticleEmitterComponent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Unravel Engine Scripting API">
+            Unravel Engine Scripting API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Unravel.Core.ParticleEmitterComponent">
+
+
+
+  <h1 id="Unravel_Core_ParticleEmitterComponent" data-uid="Unravel.Core.ParticleEmitterComponent" class="text-break">
+Class ParticleEmitterComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Unravel.html">Unravel</a>.<a class="xref" href="Unravel.Core.html">Core</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Represents a component that provides particle emission capabilities for an entity.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ParticleEmitterComponent : Component, IEquatable&lt;NativeObject&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Unravel.Core.NativeObject.html">NativeObject</a></div>
+      <div><a class="xref" href="Unravel.Core.Component.html">Component</a></div>
+      <div><span class="xref">ParticleEmitterComponent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Unravel.Core.NativeObject.html">NativeObject</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Unravel.Core.Component.html#Unravel_Core_Component_owner">Component.owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.Component.html#Unravel_Core_Component_transform">Component.transform</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.Component.html#Unravel_Core_Component_IsValid">Component.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.NativeObject.html#Unravel_Core_NativeObject_Equals_Unravel_Core_NativeObject_">NativeObject.Equals(NativeObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.NativeObject.html#Unravel_Core_NativeObject_Equals_System_Object_">NativeObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Unravel.Core.NativeObject.html#Unravel_Core_NativeObject_GetHashCode">NativeObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_direction_" data-uid="Unravel.Core.ParticleEmitterComponent.direction*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_direction" data-uid="Unravel.Core.ParticleEmitterComponent.direction">
+  direction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the emitter direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmitterDirection direction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.EmitterDirection.html">EmitterDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_emissionLifetime_" data-uid="Unravel.Core.ParticleEmitterComponent.emissionLifetime*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_emissionLifetime" data-uid="Unravel.Core.ParticleEmitterComponent.emissionLifetime">
+  emissionLifetime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the emission lifetime in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float emissionLifetime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_emissionRate_" data-uid="Unravel.Core.ParticleEmitterComponent.emissionRate*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_emissionRate" data-uid="Unravel.Core.ParticleEmitterComponent.emissionRate">
+  emissionRate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the particle emission rate (particles per second).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float emissionRate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_emissionShapeScale_" data-uid="Unravel.Core.ParticleEmitterComponent.emissionShapeScale*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_emissionShapeScale" data-uid="Unravel.Core.ParticleEmitterComponent.emissionShapeScale">
+  emissionShapeScale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the emission shape scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 emissionShapeScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_enabled_" data-uid="Unravel.Core.ParticleEmitterComponent.enabled*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_enabled" data-uid="Unravel.Core.ParticleEmitterComponent.enabled">
+  enabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets whether the particle emitter is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_forceOverLifetime_" data-uid="Unravel.Core.ParticleEmitterComponent.forceOverLifetime*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_forceOverLifetime" data-uid="Unravel.Core.ParticleEmitterComponent.forceOverLifetime">
+  forceOverLifetime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the force applied over particle lifetime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 forceOverLifetime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_gravityScale_" data-uid="Unravel.Core.ParticleEmitterComponent.gravityScale*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_gravityScale" data-uid="Unravel.Core.ParticleEmitterComponent.gravityScale">
+  gravityScale
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the gravity scale applied to particles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float gravityScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_isPaused_" data-uid="Unravel.Core.ParticleEmitterComponent.isPaused*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_isPaused" data-uid="Unravel.Core.ParticleEmitterComponent.isPaused">
+  isPaused
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets whether the emitter is currently paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isPaused { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_isPlaying_" data-uid="Unravel.Core.ParticleEmitterComponent.isPlaying*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_isPlaying" data-uid="Unravel.Core.ParticleEmitterComponent.isPlaying">
+  isPlaying
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets whether the emitter is currently playing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isPlaying { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_lifetime_" data-uid="Unravel.Core.ParticleEmitterComponent.lifetime*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_lifetime" data-uid="Unravel.Core.ParticleEmitterComponent.lifetime">
+  lifetime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the particle lifetime in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lifetime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_loop_" data-uid="Unravel.Core.ParticleEmitterComponent.loop*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_loop" data-uid="Unravel.Core.ParticleEmitterComponent.loop">
+  loop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets whether the emitter loops continuously (true) or emits only once (false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool loop { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_maxParticles_" data-uid="Unravel.Core.ParticleEmitterComponent.maxParticles*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_maxParticles" data-uid="Unravel.Core.ParticleEmitterComponent.maxParticles">
+  maxParticles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of particles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint maxParticles { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_numParticles_" data-uid="Unravel.Core.ParticleEmitterComponent.numParticles*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_numParticles" data-uid="Unravel.Core.ParticleEmitterComponent.numParticles">
+  numParticles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current number of active particles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint numParticles { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_opacity_" data-uid="Unravel.Core.ParticleEmitterComponent.opacity*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_opacity" data-uid="Unravel.Core.ParticleEmitterComponent.opacity">
+  opacity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the opacity for particle opacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float opacity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_positionEasing_" data-uid="Unravel.Core.ParticleEmitterComponent.positionEasing*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_positionEasing" data-uid="Unravel.Core.ParticleEmitterComponent.positionEasing">
+  positionEasing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the position easing function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int positionEasing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_shape_" data-uid="Unravel.Core.ParticleEmitterComponent.shape*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_shape" data-uid="Unravel.Core.ParticleEmitterComponent.shape">
+  shape
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the emitter shape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmitterShape shape { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.EmitterShape.html">EmitterShape</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_simulationBackend_" data-uid="Unravel.Core.ParticleEmitterComponent.simulationBackend*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_simulationBackend" data-uid="Unravel.Core.ParticleEmitterComponent.simulationBackend">
+  simulationBackend
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the particle simulation backend (CPU batched gather vs GPU compute pack).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParticleSimBackend simulationBackend { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.ParticleSimBackend.html">ParticleSimBackend</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_temporalMotion_" data-uid="Unravel.Core.ParticleEmitterComponent.temporalMotion*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_temporalMotion" data-uid="Unravel.Core.ParticleEmitterComponent.temporalMotion">
+  temporalMotion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the temporal motion interpolation factor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float temporalMotion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_texture_" data-uid="Unravel.Core.ParticleEmitterComponent.texture*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_texture" data-uid="Unravel.Core.ParticleEmitterComponent.texture">
+  texture
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the texture asset used for particles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid texture { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_velocityDamping_" data-uid="Unravel.Core.ParticleEmitterComponent.velocityDamping*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_velocityDamping" data-uid="Unravel.Core.ParticleEmitterComponent.velocityDamping">
+  velocityDamping
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the velocity damping factor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float velocityDamping { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_Pause_" data-uid="Unravel.Core.ParticleEmitterComponent.Pause*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_Pause" data-uid="Unravel.Core.ParticleEmitterComponent.Pause">
+  Pause()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pauses particle emission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_Play_" data-uid="Unravel.Core.ParticleEmitterComponent.Play*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_Play" data-uid="Unravel.Core.ParticleEmitterComponent.Play">
+  Play()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts particle emission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Play()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_ResetEmitter_" data-uid="Unravel.Core.ParticleEmitterComponent.ResetEmitter*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_ResetEmitter" data-uid="Unravel.Core.ParticleEmitterComponent.ResetEmitter">
+  ResetEmitter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the emitter, clearing all particles and resetting internal state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetEmitter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_Resume_" data-uid="Unravel.Core.ParticleEmitterComponent.Resume*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_Resume" data-uid="Unravel.Core.ParticleEmitterComponent.Resume">
+  Resume()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resumes particle emission from a paused state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_Stop_" data-uid="Unravel.Core.ParticleEmitterComponent.Stop*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_Stop" data-uid="Unravel.Core.ParticleEmitterComponent.Stop">
+  Stop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops particle emission.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ParticleEmitterComponent_StopAndReset_" data-uid="Unravel.Core.ParticleEmitterComponent.StopAndReset*"></a>
+
+  <h3 id="Unravel_Core_ParticleEmitterComponent_StopAndReset" data-uid="Unravel.Core.ParticleEmitterComponent.StopAndReset">
+  StopAndReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops particle emission and resets the emitter state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAndReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ParticleEmitterComponent.cs/#L40" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
