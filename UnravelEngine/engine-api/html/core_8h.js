@@ -1,7 +1,7 @@
 var core_8h =
 [
-    [ "StaticAssert< Condition >", "struct_static_assert.html", null ],
-    [ "StaticAssert< true >", "struct_static_assert_3_01true_01_4.html", null ],
+    [ "StaticAssert< Condition >", "struct_static_assert.html", "struct_static_assert" ],
+    [ "StaticAssert< true >", "struct_static_assert_3_01true_01_4.html", "struct_static_assert_3_01true_01_4" ],
     [ "UTF8_CPP_INCREASE_AND_RETURN_ON_ERROR", "core_8h.html#aabde294c732cbacefd7c3ad1c0bd3f8b", null ],
     [ "UTF_CPP_CPLUSPLUS", "core_8h.html#a58a00a651e06ce4a7e8f1b5dc0b8756d", null ],
     [ "UTF_CPP_NOEXCEPT", "core_8h.html#af186f9cacae3c95037c5464c806e1448", null ],

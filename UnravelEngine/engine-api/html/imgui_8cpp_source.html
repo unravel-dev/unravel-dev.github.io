@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/editor/editor/imgui/integration/imgui.cpp Source File</title>
+<title>Unravel Engine C++ Reference: editor/editor/imgui/integration/imgui.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -143,12 +143,14 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;<a class="code" href="asset__manager_8h.html">engine/assets/asset_manager.h</a>&gt;</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;<a class="code" href="shader_8h.html">graphics/shader.h</a>&gt;</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacegfx.html#ac8fe91ff7e5d80832d8bafdbe93b29e3">gfx::embedded_shader</a> s_embeddedShaders[] = {BGFX_EMBEDDED_SHADER(vs_ocornut_imgui),</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#acd7ce6194ab0f5da31e8bda1ffd265e7">   45</a></span><span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacegfx.html#ac8fe91ff7e5d80832d8bafdbe93b29e3">gfx::embedded_shader</a> <a class="code hl_variable" href="imgui_8cpp.html#acd7ce6194ab0f5da31e8bda1ffd265e7">s_embeddedShaders</a>[] = {BGFX_EMBEDDED_SHADER(vs_ocornut_imgui),</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                                         BGFX_EMBEDDED_SHADER(fs_ocornut_imgui),</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                                                         BGFX_EMBEDDED_SHADER(vs_imgui_image),</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                                                         BGFX_EMBEDDED_SHADER(fs_imgui_image),</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                                         BGFX_EMBEDDED_SHADER_END()};</div>
+</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="foldopen" id="foldopen00052" data-start="{" data-end="};">
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="struct_font_range_merge.html">   52</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a></div>
@@ -160,18 +162,21 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
 </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">static</span> <a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a> s_fontRangeMerge[] = {</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="};">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">   60</a></span><span class="keyword">static</span> <a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a> <a class="code hl_variable" href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a>[] = {</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {<span class="stringliteral">&quot;MaterialDesignIcons&quot;</span>, s_iconsMaterialDesignIconsTtf, <span class="keyword">sizeof</span>(s_iconsMaterialDesignIconsTtf), {<a class="code hl_define" href="icons__material__design__icons_8h.html#a56a7479503abbe59af63ea3688b68b35">ICON_MIN_MDI</a>, <a class="code hl_define" href="icons__material__design__icons_8h.html#a7b72b2c834f4f5e58853b5c3d0aafee6">ICON_MAX_MDI</a>, 0}},</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">static</span> <span class="keywordtype">void</span>* memAlloc(<span class="keywordtype">size_t</span> _size, <span class="keywordtype">void</span>* _userData);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">static</span> <span class="keywordtype">void</span> memFree(<span class="keywordtype">void</span>* _ptr, <span class="keywordtype">void</span>* _userData);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">static</span> <span class="keywordtype">void</span>* <a class="code hl_function" href="imgui_8cpp.html#a656e32f05047078557caab159523dcb1">memAlloc</a>(<span class="keywordtype">size_t</span> _size, <span class="keywordtype">void</span>* _userData);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui_8cpp.html#ae311e5a32e836036b2c3e23250a883cd">memFree</a>(<span class="keywordtype">void</span>* _ptr, <span class="keywordtype">void</span>* _userData);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplGFX_DestroyTexture(ImTextureData* tex)</div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#a0dadb7d57162073f149f247f69412d27">   68</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui_8cpp.html#a0dadb7d57162073f149f247f69412d27">ImGui_ImplGFX_DestroyTexture</a>(ImTextureData* tex)</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">auto</span> tex_data = <a class="code hl_function" href="namespace_im_gui.html#a810a195f332f8b261e16dcd5c8843860">ImGui::FromId</a>(tex-&gt;TexID);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span> (tex_data.s.handle.idx == gfx::invalid_handle)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span> (tex_data.s.handle.idx == <a class="code hl_variable" href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">gfx::invalid_handle</a>)</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_function" href="namespacegfx.html#abbcfa6c6407b407ee32e1113dea354c5">gfx::destroy</a>(tex_data.s.handle);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
@@ -179,6 +184,7 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    tex-&gt;SetTexID(ImTextureID_Invalid);</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    tex-&gt;SetStatus(ImTextureStatus_Destroyed);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#ad057338622039db51074e3eeb2679ac3">   80</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui_8cpp.html#ad057338622039db51074e3eeb2679ac3">ImGui_ImplGFX_UpdateTexture</a>(ImTextureData* tex)</div>
@@ -204,7 +210,7 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                                           0,</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                                           <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <a class="code hl_union" href="union_im_gui_1_1_im_texture.html">ImGui::ImTexture</a> texture = <a class="code hl_function" href="namespace_im_gui.html#a4ecd439a5ce54d117906849ddc2330a0">ImGui::ToTex</a>(backend_texture, 0, {gfx::invalid_handle}, 0, <a class="code hl_define" href="imgui_8h.html#a555da64dc65813abae7261ec27144197">IMGUI_FLAGS_ALPHA_BLEND</a>);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <a class="code hl_union" href="union_im_gui_1_1_im_texture.html">ImGui::ImTexture</a> texture = <a class="code hl_function" href="namespace_im_gui.html#a4ecd439a5ce54d117906849ddc2330a0">ImGui::ToTex</a>(backend_texture, 0, {<a class="code hl_variable" href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">gfx::invalid_handle</a>}, 0, <a class="code hl_define" href="imgui_8h.html#a555da64dc65813abae7261ec27144197">IMGUI_FLAGS_ALPHA_BLEND</a>);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_function" href="namespacegfx.html#a44ce0ba457aa856518b26f9ea3d2d25e">gfx::update_texture_2d</a>(backend_texture, 0, 0, 0, 0, tex-&gt;Width, tex-&gt;Height, <a class="code hl_function" href="namespacegfx.html#a628998a9ed7492047c14eb04b630674a">gfx::make_ref</a>(tex-&gt;GetPixels(), tex-&gt;Width * tex-&gt;Height * bpp), tex-&gt;GetPitch());</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
@@ -231,7 +237,7 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tex-&gt;Status == ImTextureStatus_WantDestroy)</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        ImGui_ImplGFX_DestroyTexture(tex);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <a class="code hl_function" href="imgui_8cpp.html#a0dadb7d57162073f149f247f69412d27">ImGui_ImplGFX_DestroyTexture</a>(tex);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
 </div>
@@ -363,12 +369,12 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                        {</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                            <span class="keyword">const</span> <span class="keywordtype">float</span> lodEnabled[4] = {float(texture.<a class="code hl_variable" href="union_im_gui_1_1_im_texture.html#a4ab3ec8eb749d588eea1a97b8f87b2eb">s</a>.<a class="code hl_variable" href="union_im_gui_1_1_im_texture.html#a24100c56aa534cfb743592681d0c5cd8">mip</a>), 1.0f, 0.0f, 0.0f};</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                            <a class="code hl_function" href="namespacegfx.html#ad78233a2f931d4280308b7380e95d99b">gfx::set_uniform</a>(<a class="code hl_variable" href="struct_ocornut_imgui_context.html#a1ed0b6d4f836dbdc2d17c719b6d9f0d8">u_imageLodEnabled</a>, lodEnabled);</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                            program = (<a class="code hl_variable" href="struct_ocornut_imgui_context.html#adda093a5b50f2f1104d5c9d3540c28ed">m_cubemapImageProgram</a>.idx != gfx::invalid_handle)</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                            program = (<a class="code hl_variable" href="struct_ocornut_imgui_context.html#adda093a5b50f2f1104d5c9d3540c28ed">m_cubemapImageProgram</a>.idx != <a class="code hl_variable" href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">gfx::invalid_handle</a>)</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>                                          ? <a class="code hl_variable" href="struct_ocornut_imgui_context.html#adda093a5b50f2f1104d5c9d3540c28ed">m_cubemapImageProgram</a></div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>                                          : <a class="code hl_variable" href="struct_ocornut_imgui_context.html#a2d2fd9444f076f047eaaa9f0a8b4454b">m_imageProgram</a>;</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                        }</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                        <span class="keywordflow">if</span>(texture.<a class="code hl_variable" href="union_im_gui_1_1_im_texture.html#a4ab3ec8eb749d588eea1a97b8f87b2eb">s</a>.<a class="code hl_variable" href="union_im_gui_1_1_im_texture.html#a88f5c6f4fda13973ab863bc2ce9a25de">phandle</a>.idx != gfx::invalid_handle)</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                        <span class="keywordflow">if</span>(texture.<a class="code hl_variable" href="union_im_gui_1_1_im_texture.html#a4ab3ec8eb749d588eea1a97b8f87b2eb">s</a>.<a class="code hl_variable" href="union_im_gui_1_1_im_texture.html#a88f5c6f4fda13973ab863bc2ce9a25de">phandle</a>.idx != <a class="code hl_variable" href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">gfx::invalid_handle</a>)</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                        {</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                            program = texture.<a class="code hl_variable" href="union_im_gui_1_1_im_texture.html#a4ab3ec8eb749d588eea1a97b8f87b2eb">s</a>.<a class="code hl_variable" href="union_im_gui_1_1_im_texture.html#a88f5c6f4fda13973ab863bc2ce9a25de">phandle</a>;</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                        }</div>
@@ -444,7 +450,7 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            <a class="code hl_variable" href="struct_ocornut_imgui_context.html#abbefeba79db7d7f26b322c13c16b7a6d">m_allocator</a> = &amp;allocator;</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        }</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        ImGui::SetAllocatorFunctions(memAlloc, memFree, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        ImGui::SetAllocatorFunctions(<a class="code hl_function" href="imgui_8cpp.html#a656e32f05047078557caab159523dcb1">memAlloc</a>, <a class="code hl_function" href="imgui_8cpp.html#ae311e5a32e836036b2c3e23250a883cd">memFree</a>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        <a class="code hl_variable" href="struct_ocornut_imgui_context.html#a30795c686a3bcd621ed41026eca386b9">m_imgui</a> = ImGui::CreateContext();</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        ImGui::SetCurrentContext(<a class="code hl_variable" href="struct_ocornut_imgui_context.html#a30795c686a3bcd621ed41026eca386b9">m_imgui</a>);</div>
@@ -478,15 +484,15 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        io.ConfigDpiScaleViewports = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        </div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        <span class="keyword">auto</span> <a class="code hl_variable" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a> = <a class="code hl_function" href="namespacegfx.html#a32071b6099651fd31113a354f5b26a8d">gfx::get_renderer_type</a>();</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <a class="code hl_variable" href="struct_ocornut_imgui_context.html#ad4727d6514c950e12e88ed63339f79c4">m_program</a> = <a class="code hl_function" href="namespacegfx.html#a8183e3ce1be6c12f11f487a2a9914318">gfx::create_program</a>(<a class="code hl_function" href="namespacegfx.html#a6eb6ff9370f187d135c25a8ed7de101b">gfx::create_embedded_shader</a>(s_embeddedShaders, <a class="code hl_variable" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>, <span class="stringliteral">&quot;vs_ocornut_imgui&quot;</span>),</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                                        <a class="code hl_function" href="namespacegfx.html#a6eb6ff9370f187d135c25a8ed7de101b">gfx::create_embedded_shader</a>(s_embeddedShaders, <a class="code hl_variable" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>, <span class="stringliteral">&quot;fs_ocornut_imgui&quot;</span>),</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <a class="code hl_variable" href="struct_ocornut_imgui_context.html#ad4727d6514c950e12e88ed63339f79c4">m_program</a> = <a class="code hl_function" href="namespacegfx.html#a8183e3ce1be6c12f11f487a2a9914318">gfx::create_program</a>(<a class="code hl_function" href="namespacegfx.html#a6eb6ff9370f187d135c25a8ed7de101b">gfx::create_embedded_shader</a>(<a class="code hl_variable" href="imgui_8cpp.html#acd7ce6194ab0f5da31e8bda1ffd265e7">s_embeddedShaders</a>, <a class="code hl_variable" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>, <span class="stringliteral">&quot;vs_ocornut_imgui&quot;</span>),</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                                        <a class="code hl_function" href="namespacegfx.html#a6eb6ff9370f187d135c25a8ed7de101b">gfx::create_embedded_shader</a>(<a class="code hl_variable" href="imgui_8cpp.html#acd7ce6194ab0f5da31e8bda1ffd265e7">s_embeddedShaders</a>, <a class="code hl_variable" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>, <span class="stringliteral">&quot;fs_ocornut_imgui&quot;</span>),</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                                        <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        <a class="code hl_variable" href="struct_ocornut_imgui_context.html#a1ed0b6d4f836dbdc2d17c719b6d9f0d8">u_imageLodEnabled</a> = <a class="code hl_function" href="namespacegfx.html#a62e4eaabfe6177a089cb4f166ddee59f">gfx::create_uniform</a>(<span class="stringliteral">&quot;u_imageLodEnabled&quot;</span>, gfx::uniform_type::Vec4);</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        <a class="code hl_variable" href="struct_ocornut_imgui_context.html#a2d2fd9444f076f047eaaa9f0a8b4454b">m_imageProgram</a> = <a class="code hl_function" href="namespacegfx.html#a8183e3ce1be6c12f11f487a2a9914318">gfx::create_program</a>(<a class="code hl_function" href="namespacegfx.html#a6eb6ff9370f187d135c25a8ed7de101b">gfx::create_embedded_shader</a>(s_embeddedShaders, <a class="code hl_variable" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>, <span class="stringliteral">&quot;vs_imgui_image&quot;</span>),</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                                             <a class="code hl_function" href="namespacegfx.html#a6eb6ff9370f187d135c25a8ed7de101b">gfx::create_embedded_shader</a>(s_embeddedShaders, <a class="code hl_variable" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>, <span class="stringliteral">&quot;fs_imgui_image&quot;</span>),</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        <a class="code hl_variable" href="struct_ocornut_imgui_context.html#a2d2fd9444f076f047eaaa9f0a8b4454b">m_imageProgram</a> = <a class="code hl_function" href="namespacegfx.html#a8183e3ce1be6c12f11f487a2a9914318">gfx::create_program</a>(<a class="code hl_function" href="namespacegfx.html#a6eb6ff9370f187d135c25a8ed7de101b">gfx::create_embedded_shader</a>(<a class="code hl_variable" href="imgui_8cpp.html#acd7ce6194ab0f5da31e8bda1ffd265e7">s_embeddedShaders</a>, <a class="code hl_variable" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>, <span class="stringliteral">&quot;vs_imgui_image&quot;</span>),</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                                             <a class="code hl_function" href="namespacegfx.html#a6eb6ff9370f187d135c25a8ed7de101b">gfx::create_embedded_shader</a>(<a class="code hl_variable" href="imgui_8cpp.html#acd7ce6194ab0f5da31e8bda1ffd265e7">s_embeddedShaders</a>, <a class="code hl_variable" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>, <span class="stringliteral">&quot;fs_imgui_image&quot;</span>),</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                                             <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        <a class="code hl_variable" href="struct_ocornut_imgui_context.html#adda093a5b50f2f1104d5c9d3540c28ed">m_cubemapImageProgram</a> = {gfx::invalid_handle};</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        <a class="code hl_variable" href="struct_ocornut_imgui_context.html#adda093a5b50f2f1104d5c9d3540c28ed">m_cubemapImageProgram</a> = {<a class="code hl_variable" href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">gfx::invalid_handle</a>};</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>        <a class="code hl_variable" href="struct_ocornut_imgui_context.html#a7583a3afa2d8fa613cb1b9d31849d426">m_layout</a>.begin()</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>            .add(gfx::attribute::Position, 2, gfx::attribute_type::Float)</div>
@@ -502,9 +508,9 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        ImFontGlyphRangesBuilder exclude_ranges_builder;</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span> </div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>        <span class="keywordflow">for</span>(uint32_t ii = 0; ii &lt; BX_COUNTOF(s_fontRangeMerge); ++ii)</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>        <span class="keywordflow">for</span>(uint32_t ii = 0; ii &lt; BX_COUNTOF(<a class="code hl_variable" href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a>); ++ii)</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>        {</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>            <span class="keyword">const</span> <a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a>&amp; frm = s_fontRangeMerge[ii];</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>            <span class="keyword">const</span> <a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a>&amp; frm = <a class="code hl_variable" href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a>[ii];</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            exclude_ranges_builder.AddRanges(frm.<a class="code hl_variable" href="struct_font_range_merge.html#a8d87f5cfc1003eddfbbb107df8441928">ranges</a>);</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>        }</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
@@ -560,9 +566,9 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>                                                                          &amp;config,</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>                                                                          ranges);</div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>            <span class="keywordflow">for</span>(uint32_t ii = 0; ii &lt; BX_COUNTOF(s_fontRangeMerge); ++ii)</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>            <span class="keywordflow">for</span>(uint32_t ii = 0; ii &lt; BX_COUNTOF(<a class="code hl_variable" href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a>); ++ii)</div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>            {</div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>                <span class="keyword">const</span> <a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a>&amp; frm = s_fontRangeMerge[ii];</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>                <span class="keyword">const</span> <a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a>&amp; frm = <a class="code hl_variable" href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a>[ii];</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span> </div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>                ImFontConfig merge_config;</div>
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>                merge_config.FontDataOwnedByAtlas = <span class="keyword">false</span>;</div>
@@ -597,9 +603,9 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>                                                                          ranges);</div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>            </div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span> </div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>            <span class="keywordflow">for</span>(uint32_t ii = 0; ii &lt; BX_COUNTOF(s_fontRangeMerge); ++ii)</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>            <span class="keywordflow">for</span>(uint32_t ii = 0; ii &lt; BX_COUNTOF(<a class="code hl_variable" href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a>); ++ii)</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>            {</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>                <span class="keyword">const</span> <a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a>&amp; frm = s_fontRangeMerge[ii];</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>                <span class="keyword">const</span> <a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a>&amp; frm = <a class="code hl_variable" href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a>[ii];</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>                ImFontConfig merge_config;</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>                merge_config.FontDataOwnedByAtlas = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                merge_config.MergeMode = <span class="keyword">true</span>;</div>
@@ -613,9 +619,9 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>                                                                          &amp;config,</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>                                                                          ranges);</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span> </div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>            <span class="keywordflow">for</span>(uint32_t ii = 0; ii &lt; BX_COUNTOF(s_fontRangeMerge); ++ii)</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>            <span class="keywordflow">for</span>(uint32_t ii = 0; ii &lt; BX_COUNTOF(<a class="code hl_variable" href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a>); ++ii)</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>            {</div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>                <span class="keyword">const</span> <a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a>&amp; frm = s_fontRangeMerge[ii];</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>                <span class="keyword">const</span> <a class="code hl_struct" href="struct_font_range_merge.html">FontRangeMerge</a>&amp; frm = <a class="code hl_variable" href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a>[ii];</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span> </div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>                ImFontConfig merge_config;</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>                merge_config.FontDataOwnedByAtlas = <span class="keyword">false</span>;</div>
@@ -657,7 +663,7 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    {</div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span> tex : ImGui::GetIO().Fonts-&gt;TexList)</div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>        {</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>            ImGui_ImplGFX_DestroyTexture(tex);</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>            <a class="code hl_function" href="imgui_8cpp.html#a0dadb7d57162073f149f247f69412d27">ImGui_ImplGFX_DestroyTexture</a>(tex);</div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>        }</div>
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>        <a class="code hl_variable" href="struct_ocornut_imgui_context.html#adbd45d2ba07db589007a6e6d8b360c02">m_keepAlive</a>.clear();</div>
@@ -669,7 +675,7 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span> </div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        <a class="code hl_function" href="namespacegfx.html#abbcfa6c6407b407ee32e1113dea354c5">gfx::destroy</a>(<a class="code hl_variable" href="struct_ocornut_imgui_context.html#a1ed0b6d4f836dbdc2d17c719b6d9f0d8">u_imageLodEnabled</a>);</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>        <a class="code hl_function" href="namespacegfx.html#abbcfa6c6407b407ee32e1113dea354c5">gfx::destroy</a>(<a class="code hl_variable" href="struct_ocornut_imgui_context.html#a2d2fd9444f076f047eaaa9f0a8b4454b">m_imageProgram</a>);</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="struct_ocornut_imgui_context.html#adda093a5b50f2f1104d5c9d3540c28ed">m_cubemapImageProgram</a>.idx != gfx::invalid_handle)</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="struct_ocornut_imgui_context.html#adda093a5b50f2f1104d5c9d3540c28ed">m_cubemapImageProgram</a>.idx != <a class="code hl_variable" href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">gfx::invalid_handle</a>)</div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>        {</div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>            <a class="code hl_function" href="namespacegfx.html#abbcfa6c6407b407ee32e1113dea354c5">gfx::destroy</a>(<a class="code hl_variable" href="struct_ocornut_imgui_context.html#adda093a5b50f2f1104d5c9d3540c28ed">m_cubemapImageProgram</a>);</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        }</div>
@@ -718,52 +724,56 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>};</div>
 </div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span> </div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="keyword">static</span> <a class="code hl_struct" href="struct_ocornut_imgui_context.html">OcornutImguiContext</a> s_ctx;</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">  598</a></span><span class="keyword">static</span> <a class="code hl_struct" href="struct_ocornut_imgui_context.html">OcornutImguiContext</a> <a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>;</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="keyword">static</span> <span class="keywordtype">void</span>* memAlloc(<span class="keywordtype">size_t</span> _size, <span class="keywordtype">void</span>* _userData)</div>
+<div class="foldopen" id="foldopen00600" data-start="{" data-end="}">
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#a656e32f05047078557caab159523dcb1">  600</a></span><span class="keyword">static</span> <span class="keywordtype">void</span>* <a class="code hl_function" href="imgui_8cpp.html#a656e32f05047078557caab159523dcb1">memAlloc</a>(<span class="keywordtype">size_t</span> _size, <span class="keywordtype">void</span>* _userData)</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>{</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    BX_UNUSED(_userData);</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    <span class="keywordflow">return</span> bx::alloc(s_ctx.<a class="code hl_variable" href="struct_ocornut_imgui_context.html#abbefeba79db7d7f26b322c13c16b7a6d">m_allocator</a>, _size);</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    <span class="keywordflow">return</span> bx::alloc(<a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_variable" href="struct_ocornut_imgui_context.html#abbefeba79db7d7f26b322c13c16b7a6d">m_allocator</a>, _size);</div>
 <div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>}</div>
+</div>
 <div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span> </div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="keyword">static</span> <span class="keywordtype">void</span> memFree(<span class="keywordtype">void</span>* _ptr, <span class="keywordtype">void</span>* _userData)</div>
+<div class="foldopen" id="foldopen00606" data-start="{" data-end="}">
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#ae311e5a32e836036b2c3e23250a883cd">  606</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui_8cpp.html#ae311e5a32e836036b2c3e23250a883cd">memFree</a>(<span class="keywordtype">void</span>* _ptr, <span class="keywordtype">void</span>* _userData)</div>
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>{</div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    BX_UNUSED(_userData);</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    bx::free(s_ctx.<a class="code hl_variable" href="struct_ocornut_imgui_context.html#abbefeba79db7d7f26b322c13c16b7a6d">m_allocator</a>, _ptr);</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    bx::free(<a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_variable" href="struct_ocornut_imgui_context.html#abbefeba79db7d7f26b322c13c16b7a6d">m_allocator</a>, _ptr);</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>}</div>
+</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
 <div class="foldopen" id="foldopen00612" data-start="{" data-end="}">
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#a7e531562e2c56be9584142c831f4d76d">  612</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui_8cpp.html#a7e531562e2c56be9584142c831f4d76d">imguiCreate</a>(<a class="code hl_struct" href="structunravel_1_1render__window.html">unravel::render_window</a>* window, <span class="keywordtype">float</span> _fontSize, bx::AllocatorI* _allocator)</div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>{</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    s_ctx.<a class="code hl_function" href="struct_ocornut_imgui_context.html#a31e6aa62da10c397fb7f4746ea68e9cf">create</a>(window, _fontSize, _allocator);</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    <a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_function" href="struct_ocornut_imgui_context.html#a31e6aa62da10c397fb7f4746ea68e9cf">create</a>(window, _fontSize, _allocator);</div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>}</div>
 </div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
 <div class="foldopen" id="foldopen00617" data-start="{" data-end="}">
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#ad020eb7a12a8fe3d43313f6954b4d8d6">  617</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui_8cpp.html#ad020eb7a12a8fe3d43313f6954b4d8d6">imguiCreateCubemapProgram</a>()</div>
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>{</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    s_ctx.<a class="code hl_function" href="struct_ocornut_imgui_context.html#aa6b709986fd55c342d40ea198e6e746d">createCubemapProgram</a>();</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    <a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_function" href="struct_ocornut_imgui_context.html#aa6b709986fd55c342d40ea198e6e746d">createCubemapProgram</a>();</div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>}</div>
 </div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
 <div class="foldopen" id="foldopen00622" data-start="{" data-end="}">
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#ae07feb5aa02c6a112f8de06243f77def">  622</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui_8cpp.html#ae07feb5aa02c6a112f8de06243f77def">imguiDestroy</a>()</div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>{</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    s_ctx.<a class="code hl_function" href="struct_ocornut_imgui_context.html#ae22fc5a828152c693cd83d9b03179e64">destroy</a>();</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    <a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_function" href="struct_ocornut_imgui_context.html#ae22fc5a828152c693cd83d9b03179e64">destroy</a>();</div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>}</div>
 </div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span> </div>
 <div class="foldopen" id="foldopen00627" data-start="{" data-end="}">
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#a8c57882bf5f7d84275a98ef8f14d5a86">  627</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui_8cpp.html#a8c57882bf5f7d84275a98ef8f14d5a86">imguiProcessEvent</a>(os::event&amp; e)</div>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>{</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    s_ctx.<a class="code hl_function" href="struct_ocornut_imgui_context.html#a062bf8b6d24bb589e6c7ce988219b8b8">processEvent</a>(e);</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    <a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_function" href="struct_ocornut_imgui_context.html#a062bf8b6d24bb589e6c7ce988219b8b8">processEvent</a>(e);</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>}</div>
 </div>
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
 <div class="foldopen" id="foldopen00632" data-start="{" data-end="}">
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#aa54213d8559a88cbbab735dafe3bcb39">  632</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui_8cpp.html#aa54213d8559a88cbbab735dafe3bcb39">imguiBeginFrame</a>(<span class="keywordtype">float</span> dt)</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>{</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    s_ctx.<a class="code hl_function" href="struct_ocornut_imgui_context.html#a6593ead7e202ea28efac2a5300107de3">beginFrame</a>(dt);</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    <a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_function" href="struct_ocornut_imgui_context.html#a6593ead7e202ea28efac2a5300107de3">beginFrame</a>(dt);</div>
 <div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <a class="code hl_function" href="namespace_im_gui.html#a432beb05036842846e739e4df59c257d">ImGui::PushFont</a>(<a class="code hl_enumvalue" href="struct_im_gui_1_1_font.html#a328b7a5b692d04ddc34fe84bd113f088af47d41f679454cf9a56dbd273206bd36">ImGui::Font::Regular</a>);</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>}</div>
 </div>
@@ -772,7 +782,7 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno"><a class="line" href="imgui_8cpp.html#aae9ae6cca90edbba2e39c89863921bfd">  638</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui_8cpp.html#aae9ae6cca90edbba2e39c89863921bfd">imguiEndFrame</a>(<a class="code hl_typedef" href="namespacegfx.html#aab4cbe9dc5e1938791196b3a2e2b7f16">gfx::view_id</a> <span class="keywordtype">id</span>)</div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>{</div>
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    ImGui::PopFont();</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    s_ctx.<a class="code hl_function" href="struct_ocornut_imgui_context.html#a942b41bb940e6b6e47d28b6e93797e68">endFrame</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    <a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_function" href="struct_ocornut_imgui_context.html#a942b41bb940e6b6e47d28b6e93797e68">endFrame</a>(<span class="keywordtype">id</span>);</div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>}</div>
 </div>
 <div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
@@ -789,7 +799,7 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="foldopen" id="foldopen00652" data-start="{" data-end="}">
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno"><a class="line" href="namespace_im_gui.html#ab40b8fe55be54915354c82b3009f9474">  652</a></span>ImFont* <a class="code hl_function" href="namespace_im_gui.html#ab40b8fe55be54915354c82b3009f9474">GetFont</a>(<a class="code hl_enumeration" href="struct_im_gui_1_1_font.html#a328b7a5b692d04ddc34fe84bd113f088">Font::Enum</a> _font)</div>
 <div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>{</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <span class="keywordflow">return</span> s_ctx.<a class="code hl_variable" href="struct_ocornut_imgui_context.html#a0fa9ff7a6d4294939947f71b888a4062">m_font</a>[_font];</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_variable" href="struct_ocornut_imgui_context.html#a0fa9ff7a6d4294939947f71b888a4062">m_font</a>[_font];</div>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>}</div>
 </div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
@@ -901,14 +911,14 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="foldopen" id="foldopen00744" data-start="{" data-end="}">
 <div class="line"><a id="l00744" name="l00744"></a><span class="lineno"><a class="line" href="namespace_im_gui.html#a9b54aec8f01a2cec1bd876129d4b765e">  744</a></span>uint64_t <a class="code hl_function" href="namespace_im_gui.html#a9b54aec8f01a2cec1bd876129d4b765e">GetDrawCalls</a>()</div>
 <div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>{</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="keywordflow">return</span> s_ctx.<a class="code hl_variable" href="struct_ocornut_imgui_context.html#a635d54dafeb40cd98ace9eed94767443">m_drawCalls</a>;</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_variable" href="struct_ocornut_imgui_context.html#a635d54dafeb40cd98ace9eed94767443">m_drawCalls</a>;</div>
 <div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>}</div>
 </div>
 <div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span> </div>
 <div class="foldopen" id="foldopen00749" data-start="{" data-end="}">
 <div class="line"><a id="l00749" name="l00749"></a><span class="lineno"><a class="line" href="namespace_im_gui.html#ab5506d1a4b6fc0243f217f5d90ca64d6">  749</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespace_im_gui.html#ab5506d1a4b6fc0243f217f5d90ca64d6">KeepAliveOneFrame</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a>&amp; tex)</div>
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>{</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    s_ctx.<a class="code hl_variable" href="struct_ocornut_imgui_context.html#adbd45d2ba07db589007a6e6d8b360c02">m_keepAlive</a>.emplace_back(tex);</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    <a class="code hl_variable" href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a>.<a class="code hl_variable" href="struct_ocornut_imgui_context.html#adbd45d2ba07db589007a6e6d8b360c02">m_keepAlive</a>.emplace_back(tex);</div>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>}</div>
 </div>
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span> </div>
@@ -933,13 +943,19 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="ttc" id="ahub_8cpp_html_a942144e2202c3e053a7c4a63e8daa3b9"><div class="ttname"><a href="hub_8cpp.html#a942144e2202c3e053a7c4a63e8daa3b9">font</a></div><div class="ttdeci">ImGui::Font::Enum font</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00030">hub.cpp:30</a></div></div>
 <div class="ttc" id="aicons__material__design__icons_8h_html_a56a7479503abbe59af63ea3688b68b35"><div class="ttname"><a href="icons__material__design__icons_8h.html#a56a7479503abbe59af63ea3688b68b35">ICON_MIN_MDI</a></div><div class="ttdeci">#define ICON_MIN_MDI</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00008">icons_material_design_icons.h:8</a></div></div>
 <div class="ttc" id="aicons__material__design__icons_8h_html_a7b72b2c834f4f5e58853b5c3d0aafee6"><div class="ttname"><a href="icons__material__design__icons_8h.html#a7b72b2c834f4f5e58853b5c3d0aafee6">ICON_MAX_MDI</a></div><div class="ttdeci">#define ICON_MAX_MDI</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00009">icons_material_design_icons.h:9</a></div></div>
+<div class="ttc" id="aimgui_8cpp_html_a0dadb7d57162073f149f247f69412d27"><div class="ttname"><a href="imgui_8cpp.html#a0dadb7d57162073f149f247f69412d27">ImGui_ImplGFX_DestroyTexture</a></div><div class="ttdeci">static void ImGui_ImplGFX_DestroyTexture(ImTextureData *tex)</div><div class="ttdef"><b>Definition</b> <a href="#l00068">imgui.cpp:68</a></div></div>
+<div class="ttc" id="aimgui_8cpp_html_a656e32f05047078557caab159523dcb1"><div class="ttname"><a href="imgui_8cpp.html#a656e32f05047078557caab159523dcb1">memAlloc</a></div><div class="ttdeci">static void * memAlloc(size_t _size, void *_userData)</div><div class="ttdef"><b>Definition</b> <a href="#l00600">imgui.cpp:600</a></div></div>
 <div class="ttc" id="aimgui_8cpp_html_a7e531562e2c56be9584142c831f4d76d"><div class="ttname"><a href="imgui_8cpp.html#a7e531562e2c56be9584142c831f4d76d">imguiCreate</a></div><div class="ttdeci">void imguiCreate(unravel::render_window *window, float _fontSize, bx::AllocatorI *_allocator)</div><div class="ttdef"><b>Definition</b> <a href="#l00612">imgui.cpp:612</a></div></div>
 <div class="ttc" id="aimgui_8cpp_html_a8c57882bf5f7d84275a98ef8f14d5a86"><div class="ttname"><a href="imgui_8cpp.html#a8c57882bf5f7d84275a98ef8f14d5a86">imguiProcessEvent</a></div><div class="ttdeci">void imguiProcessEvent(os::event &amp;e)</div><div class="ttdef"><b>Definition</b> <a href="#l00627">imgui.cpp:627</a></div></div>
 <div class="ttc" id="aimgui_8cpp_html_aa54213d8559a88cbbab735dafe3bcb39"><div class="ttname"><a href="imgui_8cpp.html#aa54213d8559a88cbbab735dafe3bcb39">imguiBeginFrame</a></div><div class="ttdeci">void imguiBeginFrame(float dt)</div><div class="ttdef"><b>Definition</b> <a href="#l00632">imgui.cpp:632</a></div></div>
 <div class="ttc" id="aimgui_8cpp_html_aae9ae6cca90edbba2e39c89863921bfd"><div class="ttname"><a href="imgui_8cpp.html#aae9ae6cca90edbba2e39c89863921bfd">imguiEndFrame</a></div><div class="ttdeci">void imguiEndFrame(gfx::view_id id)</div><div class="ttdef"><b>Definition</b> <a href="#l00638">imgui.cpp:638</a></div></div>
+<div class="ttc" id="aimgui_8cpp_html_acd7ce6194ab0f5da31e8bda1ffd265e7"><div class="ttname"><a href="imgui_8cpp.html#acd7ce6194ab0f5da31e8bda1ffd265e7">s_embeddedShaders</a></div><div class="ttdeci">static const gfx::embedded_shader s_embeddedShaders[]</div><div class="ttdef"><b>Definition</b> <a href="#l00045">imgui.cpp:45</a></div></div>
 <div class="ttc" id="aimgui_8cpp_html_ad020eb7a12a8fe3d43313f6954b4d8d6"><div class="ttname"><a href="imgui_8cpp.html#ad020eb7a12a8fe3d43313f6954b4d8d6">imguiCreateCubemapProgram</a></div><div class="ttdeci">void imguiCreateCubemapProgram()</div><div class="ttdef"><b>Definition</b> <a href="#l00617">imgui.cpp:617</a></div></div>
 <div class="ttc" id="aimgui_8cpp_html_ad057338622039db51074e3eeb2679ac3"><div class="ttname"><a href="imgui_8cpp.html#ad057338622039db51074e3eeb2679ac3">ImGui_ImplGFX_UpdateTexture</a></div><div class="ttdeci">void ImGui_ImplGFX_UpdateTexture(ImTextureData *tex)</div><div class="ttdef"><b>Definition</b> <a href="#l00080">imgui.cpp:80</a></div></div>
+<div class="ttc" id="aimgui_8cpp_html_ad16367205880d1fecfc065560437ff63"><div class="ttname"><a href="imgui_8cpp.html#ad16367205880d1fecfc065560437ff63">s_ctx</a></div><div class="ttdeci">static OcornutImguiContext s_ctx</div><div class="ttdef"><b>Definition</b> <a href="#l00598">imgui.cpp:598</a></div></div>
 <div class="ttc" id="aimgui_8cpp_html_ae07feb5aa02c6a112f8de06243f77def"><div class="ttname"><a href="imgui_8cpp.html#ae07feb5aa02c6a112f8de06243f77def">imguiDestroy</a></div><div class="ttdeci">void imguiDestroy()</div><div class="ttdef"><b>Definition</b> <a href="#l00622">imgui.cpp:622</a></div></div>
+<div class="ttc" id="aimgui_8cpp_html_ae311e5a32e836036b2c3e23250a883cd"><div class="ttname"><a href="imgui_8cpp.html#ae311e5a32e836036b2c3e23250a883cd">memFree</a></div><div class="ttdeci">static void memFree(void *_ptr, void *_userData)</div><div class="ttdef"><b>Definition</b> <a href="#l00606">imgui.cpp:606</a></div></div>
+<div class="ttc" id="aimgui_8cpp_html_affc302c8577ce7b05f5dc5e2a533ec62"><div class="ttname"><a href="imgui_8cpp.html#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a></div><div class="ttdeci">static FontRangeMerge s_fontRangeMerge[]</div><div class="ttdef"><b>Definition</b> <a href="#l00060">imgui.cpp:60</a></div></div>
 <div class="ttc" id="aimgui_8h_html"><div class="ttname"><a href="imgui_8h.html">imgui.h</a></div></div>
 <div class="ttc" id="aimgui_8h_html_a45f5e47e2fb3e5970175f8c19244ff60"><div class="ttname"><a href="imgui_8h.html#a45f5e47e2fb3e5970175f8c19244ff60">IMGUI_FLAGS_CUBEMAP</a></div><div class="ttdeci">#define IMGUI_FLAGS_CUBEMAP</div><div class="ttdef"><b>Definition</b> <a href="imgui_8h_source.html#l00043">imgui.h:43</a></div></div>
 <div class="ttc" id="aimgui_8h_html_a555da64dc65813abae7261ec27144197"><div class="ttname"><a href="imgui_8h.html#a555da64dc65813abae7261ec27144197">IMGUI_FLAGS_ALPHA_BLEND</a></div><div class="ttdeci">#define IMGUI_FLAGS_ALPHA_BLEND</div><div class="ttdef"><b>Definition</b> <a href="imgui_8h_source.html#l00041">imgui.h:41</a></div></div>
@@ -984,6 +1000,7 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <div class="ttc" id="anamespacegfx_html_a8183e3ce1be6c12f11f487a2a9914318"><div class="ttname"><a href="namespacegfx.html#a8183e3ce1be6c12f11f487a2a9914318">gfx::create_program</a></div><div class="ttdeci">program_handle create_program(shader_handle _vsh, shader_handle _fsh, bool _destroyShaders)</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00641">graphics.cpp:641</a></div></div>
 <div class="ttc" id="anamespacegfx_html_a923be7a0d901d7d318fc677eba311a7c"><div class="ttname"><a href="namespacegfx.html#a923be7a0d901d7d318fc677eba311a7c">gfx::set_view_transform</a></div><div class="ttdeci">void set_view_transform(view_id _id, const void *_view, const void *_proj)</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00912">graphics.cpp:912</a></div></div>
 <div class="ttc" id="anamespacegfx_html_a958ba6d48761593b02493e8c39a6030d"><div class="ttname"><a href="namespacegfx.html#a958ba6d48761593b02493e8c39a6030d">gfx::get_caps</a></div><div class="ttdeci">const caps * get_caps()</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00445">graphics.cpp:445</a></div></div>
+<div class="ttc" id="anamespacegfx_html_a9f407b2706246095d81dbedfa180f254"><div class="ttname"><a href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">gfx::invalid_handle</a></div><div class="ttdeci">static const uint16_t invalid_handle</div><div class="ttdef"><b>Definition</b> <a href="graphics_8h_source.html#l00018">graphics.h:18</a></div></div>
 <div class="ttc" id="anamespacegfx_html_aab4cbe9dc5e1938791196b3a2e2b7f16"><div class="ttname"><a href="namespacegfx.html#aab4cbe9dc5e1938791196b3a2e2b7f16">gfx::view_id</a></div><div class="ttdeci">bgfx::ViewId view_id</div><div class="ttdef"><b>Definition</b> <a href="graphics_8h_source.html#l00020">graphics.h:20</a></div></div>
 <div class="ttc" id="anamespacegfx_html_aaf56bbe3b83d91f9908a3f7db97ea3cb"><div class="ttname"><a href="namespacegfx.html#aaf56bbe3b83d91f9908a3f7db97ea3cb">gfx::create_texture_2d</a></div><div class="ttdeci">texture_handle create_texture_2d(uint16_t _width, uint16_t _height, bool _hasMips, uint16_t _numLayers, texture_format _format, uint64_t _flags, const memory_view *_mem)</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00678">graphics.cpp:678</a></div></div>
 <div class="ttc" id="anamespacegfx_html_abbcfa6c6407b407ee32e1113dea354c5"><div class="ttname"><a href="namespacegfx.html#abbcfa6c6407b407ee32e1113dea354c5">gfx::destroy</a></div><div class="ttdeci">void destroy(index_buffer_handle _handle)</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00505">graphics.cpp:505</a></div></div>
@@ -1057,7 +1074,7 @@ $(function(){initNavTree('imgui_8cpp_source.html',''); initResizable(true); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_7ee7c878d2c6fb143540ee92c5ee17cf.html">editor</a></li><li class="navelem"><a class="el" href="dir_8f21e58f08ce6fe6a2b4e3fbe97b105e.html">editor</a></li><li class="navelem"><a class="el" href="dir_a9cccf8a390388b1dfd30e47e1bb1db5.html">imgui</a></li><li class="navelem"><a class="el" href="dir_74c9e0a675e8793d60fec5ecc195aa18.html">integration</a></li><li class="navelem"><a class="el" href="imgui_8cpp.html">imgui.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_bac5aa69239d34ac960582aca466258e.html">editor</a></li><li class="navelem"><a class="el" href="dir_193d69b3ac9ec318ea92bd9c004dbcbc.html">editor</a></li><li class="navelem"><a class="el" href="dir_9d1758494e710abaca10dbff32b43644.html">imgui</a></li><li class="navelem"><a class="el" href="dir_303471ffb896a3a0d5d824bd76219f8f.html">integration</a></li><li class="navelem"><a class="el" href="imgui_8cpp.html">imgui.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

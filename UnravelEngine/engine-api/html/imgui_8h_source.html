@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/editor/editor/imgui/integration/imgui.h Source File</title>
+<title>Unravel Engine C++ Reference: editor/editor/imgui/integration/imgui.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -215,7 +215,7 @@ $(function(){initNavTree('imgui_8h_source.html',''); initResizable(true); });
 <div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="namespace_im_gui.html#a7edd48d2b721c8995292697b66879d60">  103</a></span><span class="keyword">inline</span> ImTextureID <a class="code hl_function" href="namespace_im_gui.html#a7edd48d2b721c8995292697b66879d60">ToId</a>(<a class="code hl_typedef" href="namespacegfx.html#a8b2a3a96ac7cc15ff97dfdf4b911341b">gfx::texture_handle</a> _handle, uint8_t _mip = 0, uint8_t _flags = <a class="code hl_define" href="imgui_8h.html#a555da64dc65813abae7261ec27144197">IMGUI_FLAGS_ALPHA_BLEND</a>)</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>{</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_union" href="union_im_gui_1_1_im_texture.html">ImTexture</a> tex = <a class="code hl_function" href="namespace_im_gui.html#a4ecd439a5ce54d117906849ddc2330a0">ToTex</a>(_handle, 0, {gfx::invalid_handle}, _mip, _flags);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_union" href="union_im_gui_1_1_im_texture.html">ImTexture</a> tex = <a class="code hl_function" href="namespace_im_gui.html#a4ecd439a5ce54d117906849ddc2330a0">ToTex</a>(_handle, 0, {<a class="code hl_variable" href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">gfx::invalid_handle</a>}, _mip, _flags);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> tex.<a class="code hl_variable" href="union_im_gui_1_1_im_texture.html#a45a45b76ed0dadbcfa6d6b404402dc06">id</a>;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
 </div>
@@ -417,6 +417,7 @@ $(function(){initNavTree('imgui_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="anamespace_im_gui_html_aebfb284d4fb6a69aa419ca9d00bb9440"><div class="ttname"><a href="namespace_im_gui.html#aebfb284d4fb6a69aa419ca9d00bb9440">ImGui::PushReadonly</a></div><div class="ttdeci">void PushReadonly(bool _enabled)</div><div class="ttdef"><b>Definition</b> <a href="imgui_8cpp_source.html#l00678">imgui.cpp:678</a></div></div>
 <div class="ttc" id="anamespacebx_html"><div class="ttname"><a href="namespacebx.html">bx</a></div><div class="ttdef"><b>Definition</b> <a href="#l00024">imgui.h:25</a></div></div>
 <div class="ttc" id="anamespacegfx_html_a8b2a3a96ac7cc15ff97dfdf4b911341b"><div class="ttname"><a href="namespacegfx.html#a8b2a3a96ac7cc15ff97dfdf4b911341b">gfx::texture_handle</a></div><div class="ttdeci">bgfx::TextureHandle texture_handle</div><div class="ttdef"><b>Definition</b> <a href="graphics_8h_source.html#l00051">graphics.h:51</a></div></div>
+<div class="ttc" id="anamespacegfx_html_a9f407b2706246095d81dbedfa180f254"><div class="ttname"><a href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">gfx::invalid_handle</a></div><div class="ttdeci">static const uint16_t invalid_handle</div><div class="ttdef"><b>Definition</b> <a href="graphics_8h_source.html#l00018">graphics.h:18</a></div></div>
 <div class="ttc" id="anamespacegfx_html_aab4cbe9dc5e1938791196b3a2e2b7f16"><div class="ttname"><a href="namespacegfx.html#aab4cbe9dc5e1938791196b3a2e2b7f16">gfx::view_id</a></div><div class="ttdeci">bgfx::ViewId view_id</div><div class="ttdef"><b>Definition</b> <a href="graphics_8h_source.html#l00020">graphics.h:20</a></div></div>
 <div class="ttc" id="anamespacegfx_html_ad966cf18dfa4646096b763c1a9999394"><div class="ttname"><a href="namespacegfx.html#ad966cf18dfa4646096b763c1a9999394">gfx::program_handle</a></div><div class="ttdeci">bgfx::ProgramHandle program_handle</div><div class="ttdef"><b>Definition</b> <a href="graphics_8h_source.html#l00049">graphics.h:49</a></div></div>
 <div class="ttc" id="anamespacegfx_html_ae766edf6776ba6779cd89129d3493a87"><div class="ttname"><a href="namespacegfx.html#ae766edf6776ba6779cd89129d3493a87">gfx::is_origin_bottom_left</a></div><div class="ttdeci">auto is_origin_bottom_left() -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l01558">graphics.cpp:1558</a></div></div>
@@ -458,7 +459,7 @@ $(function(){initNavTree('imgui_8h_source.html',''); initResizable(true); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_7ee7c878d2c6fb143540ee92c5ee17cf.html">editor</a></li><li class="navelem"><a class="el" href="dir_8f21e58f08ce6fe6a2b4e3fbe97b105e.html">editor</a></li><li class="navelem"><a class="el" href="dir_a9cccf8a390388b1dfd30e47e1bb1db5.html">imgui</a></li><li class="navelem"><a class="el" href="dir_74c9e0a675e8793d60fec5ecc195aa18.html">integration</a></li><li class="navelem"><a class="el" href="imgui_8h.html">imgui.h</a></li>
+    <li class="navelem"><a class="el" href="dir_bac5aa69239d34ac960582aca466258e.html">editor</a></li><li class="navelem"><a class="el" href="dir_193d69b3ac9ec318ea92bd9c004dbcbc.html">editor</a></li><li class="navelem"><a class="el" href="dir_9d1758494e710abaca10dbff32b43644.html">imgui</a></li><li class="navelem"><a class="el" href="dir_303471ffb896a3a0d5d824bd76219f8f.html">integration</a></li><li class="navelem"><a class="el" href="imgui_8h.html">imgui.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

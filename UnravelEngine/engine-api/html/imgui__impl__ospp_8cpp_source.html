@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/editor/editor/imgui/integration/backend/imgui_impl_ospp.cpp Source File</title>
+<title>Unravel Engine C++ Reference: editor/editor/imgui/integration/backend/imgui_impl_ospp.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -164,7 +164,8 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
 </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">static</span> <span class="keywordtype">bool</span> ImOsIsDebuggerPresent()</div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#afb45bc3bdd71af391ba747ac6a7ba2c7">   64</a></span><span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#afb45bc3bdd71af391ba747ac6a7ba2c7">ImOsIsDebuggerPresent</a>()</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#ifdef _WIN32</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    return ::IsDebuggerPresent() != 0;</div>
@@ -212,13 +213,16 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">static</span> <span class="keywordtype">bool</span> ImOsOpenInShell(ImGuiContext* ctx, <span class="keyword">const</span> <span class="keywordtype">char</span>* path)</div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#abe24cfd371f02613079d7b225aa0befc">  113</a></span><span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#abe24cfd371f02613079d7b225aa0befc">ImOsOpenInShell</a>(ImGuiContext* ctx, <span class="keyword">const</span> <span class="keywordtype">char</span>* path)</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>{</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    fs::path <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca83878c91171338902e0fe0fb97a8c47a">p</a>(path);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    fs::path p(path);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    fs::show_in_graphical_env(p);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
+</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">// Helper structure we store in the void* RendererUserData field of each ImGuiViewport to easily retrieve our</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">// backend data.</span></div>
@@ -248,7 +252,8 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>};</div>
 </div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">static</span> <span class="keyword">auto</span> ImGui_ImplOSPP_GetViewportData(ImGuiViewport* viewport) -&gt; <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>*</div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">  142</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(ImGuiViewport* viewport) -&gt; <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>*</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">if</span>(viewport &amp;&amp; viewport-&gt;PlatformUserData)</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    {</div>
@@ -258,26 +263,30 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
+</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_ForEachViewport(</div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a2bfb83eff96863137e09bc7ff523d5cf">  153</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a2bfb83eff96863137e09bc7ff523d5cf">ImGui_ImplOSPP_ForEachViewport</a>(</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(ImGuiViewport* viewport, <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* data)&gt;&amp; callback)</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    ImGuiPlatformIO&amp; platform_io = ImGui::GetPlatformIO();</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741">i</a> != platform_io.Viewports.Size; <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741">i</a>++)</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i != platform_io.Viewports.Size; i++)</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    {</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keyword">auto</span> data = ImGui_ImplOSPP_GetViewportData(platform_io.Viewports[i]);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keyword">auto</span> data = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(platform_io.Viewports[i]);</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">if</span>(data)</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        {</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            callback(platform_io.Viewports[i], data);</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
+</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="keyword">static</span> <span class="keyword">auto</span> ImGui_ImplOSPP_GetViewportFromWindowId(uint32_t <span class="keywordtype">id</span>) -&gt; ImGuiViewport*</div>
+<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a08bb7b56029d85a32172599832d7f952">  168</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a08bb7b56029d85a32172599832d7f952">ImGui_ImplOSPP_GetViewportFromWindowId</a>(uint32_t <span class="keywordtype">id</span>) -&gt; ImGuiViewport*</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>{</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    ImGuiViewport* result{<span class="keyword">nullptr</span>};</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    ImGui_ImplOSPP_ForEachViewport(</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a2bfb83eff96863137e09bc7ff523d5cf">ImGui_ImplOSPP_ForEachViewport</a>(</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        [&amp;](ImGuiViewport* viewport, <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* data)</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        {</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <span class="keywordflow">if</span>(!result)</div>
@@ -291,11 +300,13 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}</div>
+</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keyword">static</span> <span class="keyword">auto</span> ImGui_ImplOSPP_GetFocusedViewport() -&gt; ImGuiViewport*</div>
+<div class="foldopen" id="foldopen00186" data-start="{" data-end="}">
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a7f7e5257208e0a870ba5ea9891f03f8f">  186</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a7f7e5257208e0a870ba5ea9891f03f8f">ImGui_ImplOSPP_GetFocusedViewport</a>() -&gt; ImGuiViewport*</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>{</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    ImGuiViewport* result{<span class="keyword">nullptr</span>};</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    ImGui_ImplOSPP_ForEachViewport(</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a2bfb83eff96863137e09bc7ff523d5cf">ImGui_ImplOSPP_ForEachViewport</a>(</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        [&amp;](ImGuiViewport* viewport, <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* data)</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        {</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keywordflow">if</span>(!result &amp;&amp; data-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().has_focus())</div>
@@ -306,16 +317,19 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}</div>
+</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">// Backend data stored in io.BackendPlatformUserData to allow support for multiple Dear ImGui contexts</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">// It is STRONGLY preferred that you use docking branch with multi-viewports (== single Dear ImGui context +</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">// multiple windows) instead of multiple Dear ImGui contexts.</span></div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">// FIXME: multi-context support is not well tested and probably dysfunctional in this backend.</span></div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">// FIXME: some shared resources (mouse cursor shape, gamepad) are mishandled when using multi-context.</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="keyword">static</span> <span class="keyword">auto</span> ImGui_ImplOSPP_GetBackendData() -&gt; <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>*</div>
+<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">  206</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a>() -&gt; <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>*</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>{</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keywordflow">return</span> ImGui::GetCurrentContext() ? (<a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>*)ImGui::GetIO().BackendPlatformUserData : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}</div>
+</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
 <div class="foldopen" id="foldopen00211" data-start="{" data-end="}">
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a74059eea51bbc1b695f357399fd74a39">  211</a></span><span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a74059eea51bbc1b695f357399fd74a39">ImGui_ImplOSPP_IdToHandle</a>(uint32_t <span class="keywordtype">id</span>) -&gt; <span class="keywordtype">void</span>*</div>
@@ -351,26 +365,31 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 </div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">// Forward Declarations</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_UpdateMonitors();</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_InitPlatformInterface(<a class="code hl_struct" href="structunravel_1_1render__window.html">unravel::render_window</a>* window);</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_ShutdownPlatformInterface();</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a709910603235d2073ea39b662f329eba">ImGui_ImplOSPP_UpdateMonitors</a>();</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9d35f34ad9171279618baeb9e1c242ba">ImGui_ImplOSPP_InitPlatformInterface</a>(<a class="code hl_struct" href="structunravel_1_1render__window.html">unravel::render_window</a>* window);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ac957fcb38c0053dc90a09dd24d85478c">ImGui_ImplOSPP_ShutdownPlatformInterface</a>();</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">// Functions</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="keyword">static</span> <span class="keyword">auto</span> ImGui_ImplOSPP_GetClipboardText(ImGuiContext* ctx) -&gt; <span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
+<div class="foldopen" id="foldopen00246" data-start="{" data-end="}">
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a9f5e6cddc1d064dc43f1383b5dcda0d9">  246</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f5e6cddc1d064dc43f1383b5dcda0d9">ImGui_ImplOSPP_GetClipboardText</a>(ImGuiContext* ctx) -&gt; <span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>{</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = ImGui_ImplOSPP_GetBackendData();</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a>();</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a6935a358778c8719155feae1caf1acc5">ClipboardTextData</a> = os::clipboard::get_text();</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keywordflow">return</span> bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a6935a358778c8719155feae1caf1acc5">ClipboardTextData</a>.c_str();</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>}</div>
+</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_SetClipboardText(ImGuiContext* ctx, <span class="keyword">const</span> <span class="keywordtype">char</span>* text)</div>
+<div class="foldopen" id="foldopen00254" data-start="{" data-end="}">
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#acf52a2e008a1b1498865839085241645">  254</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#acf52a2e008a1b1498865839085241645">ImGui_ImplOSPP_SetClipboardText</a>(ImGuiContext* ctx, <span class="keyword">const</span> <span class="keywordtype">char</span>* text)</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>{</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="keyword">auto</span> unwrapped_text = <a class="code hl_function" href="namespacestring__utils.html#a263ebbce2bcb3d83ecab82a062d184e2">string_utils::replace</a>(text, <span class="stringliteral">&quot;\n\r&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    os::clipboard::set_text(unwrapped_text);</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>}</div>
+</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_SetPlatformImeData(ImGuiContext* ctx, ImGuiViewport* viewport, ImGuiPlatformImeData* data)</div>
+<div class="foldopen" id="foldopen00260" data-start="{" data-end="}">
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a8a32a76a9a944851b11ed6dbf2644d4a">  260</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a8a32a76a9a944851b11ed6dbf2644d4a">ImGui_ImplOSPP_SetPlatformImeData</a>(ImGuiContext* ctx, ImGuiViewport* viewport, ImGuiPlatformImeData* data)</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>{</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">if</span>(data-&gt;WantVisible)</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    {</div>
@@ -382,6 +401,7 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="comment">//        OSPP_SetTextInputRect(&amp;r);</span></div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    }</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>}</div>
+</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
 <div class="foldopen" id="foldopen00273" data-start="{" data-end="}">
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a7b11c8c1ea5e0ee1b62e868b91a2825b">  273</a></span><span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a7b11c8c1ea5e0ee1b62e868b91a2825b">ImGui_ImplOSPP_KeycodeToImGuiKey</a>(os::key::code keycode) -&gt; ImGuiKey</div>
@@ -822,14 +842,16 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>}</div>
 </div>
 <div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span> </div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_UpdateKeyModifiers(os::key_event e)</div>
+<div class="foldopen" id="foldopen00708" data-start="{" data-end="}">
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a995182fb7b62b2276a6e40373011ce0f">  708</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a995182fb7b62b2276a6e40373011ce0f">ImGui_ImplOSPP_UpdateKeyModifiers</a>(os::key_event e)</div>
 <div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>{</div>
 <div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    ImGuiIO&amp; io = ImGui::GetIO();</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    io.AddKeyEvent(ImGuiMod_Ctrl, <a class="code hl_enumeration" href="namespacegfx_1_1format__search__flags.html#a4006da86f52de2fc747bc825bcba9bdb">e</a>.ctrl);</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>    io.AddKeyEvent(ImGuiMod_Shift, <a class="code hl_enumeration" href="namespacegfx_1_1format__search__flags.html#a4006da86f52de2fc747bc825bcba9bdb">e</a>.shift);</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    io.AddKeyEvent(ImGuiMod_Alt, <a class="code hl_enumeration" href="namespacegfx_1_1format__search__flags.html#a4006da86f52de2fc747bc825bcba9bdb">e</a>.alt);</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    io.AddKeyEvent(ImGuiMod_Super, <a class="code hl_enumeration" href="namespacegfx_1_1format__search__flags.html#a4006da86f52de2fc747bc825bcba9bdb">e</a>.system);</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    io.AddKeyEvent(ImGuiMod_Ctrl, e.ctrl);</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>    io.AddKeyEvent(ImGuiMod_Shift, e.shift);</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    io.AddKeyEvent(ImGuiMod_Alt, e.alt);</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    io.AddKeyEvent(ImGuiMod_Super, e.system);</div>
 <div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>}</div>
+</div>
 <div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
 <div class="foldopen" id="foldopen00717" data-start="{" data-end="}">
 <div class="line"><a id="l00717" name="l00717"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#ac5396099166fb8fde106df305567ad69">  717</a></span><span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ac5396099166fb8fde106df305567ad69">ImGui_IsAnyRealItemActive</a>() -&gt; <span class="keywordtype">bool</span></div>
@@ -866,7 +888,7 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00746" name="l00746"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#afc3394116986868171db59ef3dff97ad">  746</a></span><span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#afc3394116986868171db59ef3dff97ad">ImGui_ImplOSPP_ProcessEvent</a>(os::event&amp; <a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>{</div>
 <div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    ImGuiIO&amp; io = ImGui::GetIO();</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = ImGui_ImplOSPP_GetBackendData();</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a>();</div>
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
 <div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    <span class="keywordflow">switch</span>(<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.type)</div>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    {</div>
@@ -875,8 +897,8 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>            os::point mouse_pos(<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.motion.x, <a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.motion.y);</div>
 <div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>            <span class="keywordflow">if</span>(io.ConfigFlags &amp; ImGuiConfigFlags_ViewportsEnable)</div>
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>            {</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>                <span class="keyword">auto</span> viewport = ImGui_ImplOSPP_GetViewportFromWindowId(<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.motion.window_id);</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>                <span class="keyword">auto</span> vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>                <span class="keyword">auto</span> viewport = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a08bb7b56029d85a32172599832d7f952">ImGui_ImplOSPP_GetViewportFromWindowId</a>(<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.motion.window_id);</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>                <span class="keyword">auto</span> vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>                <span class="keywordflow">if</span>(vd)</div>
 <div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>                {</div>
 <div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>                    <span class="keyword">auto</span> window_pos = vd-&gt;Window-&gt;get_window().get_position();</div>
@@ -927,7 +949,7 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>        <span class="keywordflow">case</span> os::events::key_up:</div>
 <div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>        <span class="keywordflow">case</span> os::events::key_down:</div>
 <div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        {</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>            ImGui_ImplOSPP_UpdateKeyModifiers(<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.key);</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>            <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a995182fb7b62b2276a6e40373011ce0f">ImGui_ImplOSPP_UpdateKeyModifiers</a>(<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.key);</div>
 <div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>            ImGuiKey key = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a7b11c8c1ea5e0ee1b62e868b91a2825b">ImGui_ImplOSPP_KeycodeToImGuiKey</a>(<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.key.code);</div>
 <div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>            io.AddKeyEvent(key, (<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.type == os::events::key_down));</div>
 <div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>            io.SetKeyEventNativeData(key, <a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.key.code, <a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.key.code, <a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.key.code);</div>
@@ -972,7 +994,7 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>                <span class="keywordflow">case</span> os::window_event_id::close:</div>
 <div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>                <span class="keywordflow">case</span> os::window_event_id::moved:</div>
 <div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>                <span class="keywordflow">case</span> os::window_event_id::resized:</div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>                    <span class="keywordflow">if</span>(ImGuiViewport* viewport = ImGui_ImplOSPP_GetViewportFromWindowId(<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.window.window_id))</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>                    <span class="keywordflow">if</span>(ImGuiViewport* viewport = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a08bb7b56029d85a32172599832d7f952">ImGui_ImplOSPP_GetViewportFromWindowId</a>(<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.window.window_id))</div>
 <div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>                    {</div>
 <div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>                        <span class="keywordflow">if</span>(<a class="code hl_variable" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>.window.type == os::window_event_id::close)</div>
 <div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>                            viewport-&gt;PlatformRequestClose = <span class="keyword">true</span>;</div>
@@ -1059,11 +1081,11 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a443a1ccc401df768760673c6541f5287">WantUpdateMonitors</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span> </div>
 <div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>    ImGuiPlatformIO&amp; platform_io = ImGui::GetPlatformIO();</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    platform_io.Platform_SetClipboardTextFn = ImGui_ImplOSPP_SetClipboardText;</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    platform_io.Platform_GetClipboardTextFn = ImGui_ImplOSPP_GetClipboardText;</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>    platform_io.Platform_OpenInShellFn = ImOsOpenInShell;</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    platform_io.Platform_SetClipboardTextFn = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#acf52a2e008a1b1498865839085241645">ImGui_ImplOSPP_SetClipboardText</a>;</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    platform_io.Platform_GetClipboardTextFn = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f5e6cddc1d064dc43f1383b5dcda0d9">ImGui_ImplOSPP_GetClipboardText</a>;</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>    platform_io.Platform_OpenInShellFn = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#abe24cfd371f02613079d7b225aa0befc">ImOsOpenInShell</a>;</div>
 <div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    platform_io.Platform_ClipboardUserData = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    platform_io.Platform_SetImeDataFn = ImGui_ImplOSPP_SetPlatformImeData;</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    platform_io.Platform_SetImeDataFn = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a8a32a76a9a944851b11ed6dbf2644d4a">ImGui_ImplOSPP_SetPlatformImeData</a>;</div>
 <div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    </div>
 <div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span> </div>
 <div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    <span class="comment">// Set platform dependent data in viewport</span></div>
@@ -1089,7 +1111,7 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span> </div>
 <div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>    <span class="keywordflow">if</span>((io.ConfigFlags &amp; ImGuiConfigFlags_ViewportsEnable) &amp;&amp;</div>
 <div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>       (io.BackendFlags &amp; ImGuiBackendFlags_PlatformHasViewports))</div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>        ImGui_ImplOSPP_InitPlatformInterface(window);</div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>        <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9d35f34ad9171279618baeb9e1c242ba">ImGui_ImplOSPP_InitPlatformInterface</a>(window);</div>
 <div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span> </div>
 <div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>}</div>
@@ -1098,11 +1120,11 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="foldopen" id="foldopen00975" data-start="{" data-end="}">
 <div class="line"><a id="l00975" name="l00975"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a014465ee9d9329b68d8dac11fc4e1f1d">  975</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a014465ee9d9329b68d8dac11fc4e1f1d">ImGui_ImplOSPP_Shutdown</a>()</div>
 <div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>{</div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = ImGui_ImplOSPP_GetBackendData();</div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a>();</div>
 <div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>    IM_ASSERT(bd != <span class="keyword">nullptr</span> &amp;&amp; <span class="stringliteral">&quot;No platform backend to shutdown, or already shutdown?&quot;</span>);</div>
 <div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>    ImGuiIO&amp; io = ImGui::GetIO();</div>
 <div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span> </div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    ImGui_ImplOSPP_ShutdownPlatformInterface();</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ac957fcb38c0053dc90a09dd24d85478c">ImGui_ImplOSPP_ShutdownPlatformInterface</a>();</div>
 <div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span> </div>
 <div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>    io.BackendPlatformName = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>    io.BackendPlatformUserData = <span class="keyword">nullptr</span>;</div>
@@ -1115,9 +1137,10 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span> </div>
 <div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span><span class="comment">// This code is incredibly messy because some of the functions we need for full viewport support are not</span></div>
 <div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span><span class="comment">// available in OSPP &lt; 2.0.4.</span></div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_UpdateMouseData()</div>
+<div class="foldopen" id="foldopen00993" data-start="{" data-end="}">
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a49cbfebfc043a3486ba8719e08c199da">  993</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a49cbfebfc043a3486ba8719e08c199da">ImGui_ImplOSPP_UpdateMouseData</a>()</div>
 <div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>{</div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = ImGui_ImplOSPP_GetBackendData();</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a>();</div>
 <div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>    ImGuiIO&amp; io = ImGui::GetIO();</div>
 <div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span> </div>
 <div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>    <span class="keywordflow">if</span>(bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a90370401cffa81c1dbd0c14894c7c24d">PendingMouseLeaveFrame</a> &amp;&amp; bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a90370401cffa81c1dbd0c14894c7c24d">PendingMouseLeaveFrame</a> &gt;= ImGui::GetFrameCount() &amp;&amp; bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a9c076bbb981a7cca1830c934d56b8577">MouseButtonsDown</a> == 0)</div>
@@ -1142,7 +1165,7 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>    os::mouse::capture((bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a9c076bbb981a7cca1830c934d56b8577">MouseButtonsDown</a> != 0));</div>
 <div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span> </div>
 <div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    <span class="comment">// e.g. trigger other operations outside</span></div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>    ImGuiViewport* focused_viewport = ImGui_ImplOSPP_GetFocusedViewport();</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>    ImGuiViewport* focused_viewport = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a7f7e5257208e0a870ba5ea9891f03f8f">ImGui_ImplOSPP_GetFocusedViewport</a>();</div>
 <div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span> </div>
 <div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> is_app_focused = !!focused_viewport;</div>
 <div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span><span class="preprocessor">#else</span></div>
@@ -1175,7 +1198,7 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>            <span class="keyword">auto</span> mouse_pos = os::mouse::get_position();</div>
 <div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>            <span class="keywordflow">if</span>(!(io.ConfigFlags &amp; ImGuiConfigFlags_ViewportsEnable))</div>
 <div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>            {</div>
-<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>                <span class="keyword">auto</span> fvd = ImGui_ImplOSPP_GetViewportData(focused_viewport);</div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>                <span class="keyword">auto</span> fvd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(focused_viewport);</div>
 <div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>                <span class="keywordflow">if</span>(fvd)</div>
 <div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>                {</div>
 <div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>                    mouse_pos = os::mouse::get_position(fvd-&gt;Window-&gt;get_window());</div>
@@ -1199,21 +1222,23 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>    <span class="keywordflow">if</span>(io.BackendFlags &amp; ImGuiBackendFlags_HasMouseHoveredViewport)</div>
 <div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>    {</div>
 <div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>        ImGuiID mouse_viewport_id = 0;</div>
-<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>        <span class="keywordflow">if</span>(ImGuiViewport* mouse_viewport = ImGui_ImplOSPP_GetViewportFromWindowId(bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#acb1e1f6c77679e387502843812c98530">MouseWindowID</a>))</div>
+<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>        <span class="keywordflow">if</span>(ImGuiViewport* mouse_viewport = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a08bb7b56029d85a32172599832d7f952">ImGui_ImplOSPP_GetViewportFromWindowId</a>(bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#acb1e1f6c77679e387502843812c98530">MouseWindowID</a>))</div>
 <div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>        {</div>
-<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>            <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(mouse_viewport);</div>
+<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>            <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(mouse_viewport);</div>
 <div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>            mouse_viewport_id = mouse_viewport-&gt;ID;</div>
 <div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>        }</div>
 <div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>        io.AddMouseViewportEvent(mouse_viewport_id);</div>
 <div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>    }</div>
 <div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>}</div>
+</div>
 <div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span> </div>
-<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_UpdateMouseCursor()</div>
+<div class="foldopen" id="foldopen01086" data-start="{" data-end="}">
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a5722f5eff8c9aef8097dc80671565e08"> 1086</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a5722f5eff8c9aef8097dc80671565e08">ImGui_ImplOSPP_UpdateMouseCursor</a>()</div>
 <div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>{</div>
 <div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>    ImGuiIO&amp; io = ImGui::GetIO();</div>
 <div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>    <span class="keywordflow">if</span>(io.ConfigFlags &amp; ImGuiConfigFlags_NoMouseCursorChange)</div>
 <div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = ImGui_ImplOSPP_GetBackendData();</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a>();</div>
 <div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span> </div>
 <div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>    ImGuiMouseCursor imgui_cursor = ImGui::GetMouseCursor();</div>
 <div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>    <span class="keywordflow">if</span>(io.MouseDrawCursor || imgui_cursor == ImGuiMouseCursor_None)</div>
@@ -1233,14 +1258,18 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>        bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a42233c8db62ae2b4e161ac985d07fb26">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().show_cursor(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>    }</div>
 <div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>}</div>
+</div>
 <div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span> </div>
-<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_UpdateGamepads()</div>
+<div class="foldopen" id="foldopen01112" data-start="{" data-end="}">
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#ab7b876ad1e50aecbe8cbcfe496d93f36"> 1112</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ab7b876ad1e50aecbe8cbcfe496d93f36">ImGui_ImplOSPP_UpdateGamepads</a>()</div>
 <div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>{</div>
 <div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>}</div>
+</div>
 <div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span> </div>
-<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_UpdateMonitors()</div>
+<div class="foldopen" id="foldopen01116" data-start="{" data-end="}">
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a709910603235d2073ea39b662f329eba"> 1116</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a709910603235d2073ea39b662f329eba">ImGui_ImplOSPP_UpdateMonitors</a>()</div>
 <div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>{</div>
-<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = ImGui_ImplOSPP_GetBackendData();</div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a>();</div>
 <div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span> </div>
 <div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>    ImGuiPlatformIO&amp; platform_io = ImGui::GetPlatformIO();</div>
 <div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span> </div>
@@ -1274,13 +1303,13 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span> </div>
 <div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>    bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a4bb32d5a8713baaa6e3b5f63baab089c">NoMonitorDetected</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span> </div>
-<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> n = 0; <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca7b8b965ad4bca0e41ab51de7b31363a1">n</a> &lt; display_count; <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca7b8b965ad4bca0e41ab51de7b31363a1">n</a>++)</div>
+<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> n = 0; n &lt; display_count; n++)</div>
 <div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>    {</div>
 <div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>        <span class="comment">// Warning: the validity of monitor DPI information on Windows depends on the application DPI</span></div>
 <div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>        <span class="comment">// awareness settings, which generally needs to be set in the manifest or at runtime.</span></div>
 <div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>        ImGuiPlatformMonitor monitor;</div>
 <div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>        <span class="keyword">auto</span> bounds = os::display::get_bounds(n);</div>
-<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>        <span class="keyword">auto</span> <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca15d61712450a686a7f365adf4fef581f">mode</a> = os::display::get_desktop_mode(n);</div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>        <span class="keyword">auto</span> mode = os::display::get_desktop_mode(n);</div>
 <div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>        monitor.DpiScale = os::display::get_content_scale(n);</div>
 <div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>        monitor.MainPos = monitor.WorkPos = ImVec2(<span class="keywordtype">float</span>(bounds.x), <span class="keywordtype">float</span>(bounds.y));</div>
 <div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>        monitor.MainSize = monitor.WorkSize = ImVec2(<span class="keywordtype">float</span>(bounds.w), <span class="keywordtype">float</span>(bounds.h));</div>
@@ -1288,27 +1317,29 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>        monitor.WorkPos = ImVec2((<span class="keywordtype">float</span>)usable_bounds.x, (<span class="keywordtype">float</span>)usable_bounds.y);</div>
 <div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>        monitor.WorkSize = ImVec2((<span class="keywordtype">float</span>)usable_bounds.w, (<span class="keywordtype">float</span>)usable_bounds.h);</div>
 <div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span> </div>
-<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>        monitor.PlatformHandle = (<span class="keywordtype">void</span>*)(intptr_t)<a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca7b8b965ad4bca0e41ab51de7b31363a1">n</a>;</div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>        monitor.PlatformHandle = (<span class="keywordtype">void</span>*)(intptr_t)n;</div>
 <div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>        <span class="keywordflow">if</span> (monitor.DpiScale &lt;= 0.0f)</div>
 <div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>            <span class="keywordflow">continue</span>; <span class="comment">// Some accessibility applications are declaring virtual monitors with a DPI of 0, see #7902.</span></div>
 <div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>        platform_io.Monitors.push_back(monitor);</div>
 <div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>    }</div>
 <div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>}</div>
+</div>
 <div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span> </div>
-<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale(<a class="code hl_struct" href="structunravel_1_1render__window.html">unravel::render_window</a>* window, ImVec2* out_size, ImVec2* out_framebuffer_scale)</div>
+<div class="foldopen" id="foldopen01173" data-start="{" data-end="}">
+<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a1bf89a2d2067d16ba5d7c74e48bce368"> 1173</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a1bf89a2d2067d16ba5d7c74e48bce368">ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale</a>(<a class="code hl_struct" href="structunravel_1_1render__window.html">unravel::render_window</a>* window, ImVec2* out_size, ImVec2* out_framebuffer_scale)</div>
 <div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>{</div>
-<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>    <span class="keywordtype">int</span> <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeeccaf1290186a5d0b1ceab27f4e77c0c5d68">w</a>, <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca2510c39011c5be704182423e3a695e91">h</a>;</div>
+<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>    <span class="keywordtype">int</span> w, h;</div>
 <div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>    <span class="keywordtype">int</span> display_w, display_h;</div>
 <div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span> </div>
 <div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structsize.html">size</a> = window-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().get_size();</div>
 <div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>    <span class="keywordflow">if</span>(window-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().is_minimized())</div>
 <div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>    {</div>
-<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>        <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeeccaf1290186a5d0b1ceab27f4e77c0c5d68">w</a> = <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca2510c39011c5be704182423e3a695e91">h</a> = 0;</div>
+<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>        w = h = 0;</div>
 <div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>    }</div>
 <div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>    {</div>
-<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>        <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeeccaf1290186a5d0b1ceab27f4e77c0c5d68">w</a> = <a class="code hl_struct" href="structsize.html">size</a>.w;</div>
-<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>        <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca2510c39011c5be704182423e3a695e91">h</a> = <a class="code hl_struct" href="structsize.html">size</a>.h;</div>
+<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>        w = <a class="code hl_struct" href="structsize.html">size</a>.w;</div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>        h = <a class="code hl_struct" href="structsize.html">size</a>.h;</div>
 <div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>    }</div>
 <div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>    <span class="keyword">auto</span> surface_size = window-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a3423e8af74c539fe0460809dbb5f2a39">get_surface</a>()-&gt;get_size();</div>
 <div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>    <span class="keywordflow">if</span>(surface_size.width != <a class="code hl_struct" href="structsize.html">size</a>.w || surface_size.<a class="code hl_variable" href="structsize.html#aa9a160508b89943240c1995a127695bb">height</a> != <a class="code hl_struct" href="structsize.html">size</a>.h)</div>
@@ -1318,23 +1349,24 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>    }</div>
 <div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>    {</div>
-<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>        display_w = <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeeccaf1290186a5d0b1ceab27f4e77c0c5d68">w</a>;</div>
-<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>        display_h = <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca2510c39011c5be704182423e3a695e91">h</a>;</div>
+<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>        display_w = w;</div>
+<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>        display_h = h;</div>
 <div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>    }</div>
 <div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>    <span class="keywordflow">if</span> (out_size != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>        *out_size = ImVec2((<span class="keywordtype">float</span>)w, (<span class="keywordtype">float</span>)h);</div>
 <div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>    <span class="keywordflow">if</span> (out_framebuffer_scale != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>        *out_framebuffer_scale = (<a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeeccaf1290186a5d0b1ceab27f4e77c0c5d68">w</a> &gt; 0 &amp;&amp; <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca2510c39011c5be704182423e3a695e91">h</a> &gt; 0) ? ImVec2((<span class="keywordtype">float</span>)display_w / w, (<span class="keywordtype">float</span>)display_h / h) : ImVec2(1.0f, 1.0f);</div>
+<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>        *out_framebuffer_scale = (w &gt; 0 &amp;&amp; h &gt; 0) ? ImVec2((<span class="keywordtype">float</span>)display_w / w, (<span class="keywordtype">float</span>)display_h / h) : ImVec2(1.0f, 1.0f);</div>
 <div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>}</div>
+</div>
 <div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span> </div>
 <div class="foldopen" id="foldopen01205" data-start="{" data-end="}">
 <div class="line"><a id="l01205" name="l01205"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#adf5efed0cebd6d489562763d3c580ffc"> 1205</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#adf5efed0cebd6d489562763d3c580ffc">ImGui_ImplOSPP_NewFrame</a>(<span class="keywordtype">float</span> delta_time)</div>
 <div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>{</div>
-<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = ImGui_ImplOSPP_GetBackendData();</div>
+<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a>();</div>
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>    IM_ASSERT(bd != <span class="keyword">nullptr</span> &amp;&amp; <span class="stringliteral">&quot;Did you call ImGui_ImplOSPP_Init()?&quot;</span>);</div>
 <div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>    ImGuiIO&amp; io = ImGui::GetIO();</div>
 <div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span> </div>
-<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>    ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale(bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a42233c8db62ae2b4e161ac985d07fb26">Window</a>, &amp;io.DisplaySize, &amp;io.DisplayFramebufferScale);</div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>    <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a1bf89a2d2067d16ba5d7c74e48bce368">ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale</a>(bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a42233c8db62ae2b4e161ac985d07fb26">Window</a>, &amp;io.DisplaySize, &amp;io.DisplayFramebufferScale);</div>
 <div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span> </div>
 <div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>    io.DeltaTime = delta_time;</div>
 <div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>    <span class="keywordflow">if</span>(io.DeltaTime &lt;= 0.00001f)</div>
@@ -1343,13 +1375,13 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span> </div>
 <div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span>    <span class="comment">// Update monitors</span></div>
 <div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span>    <span class="keywordflow">if</span>(bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a443a1ccc401df768760673c6541f5287">WantUpdateMonitors</a>)</div>
-<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span>        ImGui_ImplOSPP_UpdateMonitors();</div>
+<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span>        <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a709910603235d2073ea39b662f329eba">ImGui_ImplOSPP_UpdateMonitors</a>();</div>
 <div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span> </div>
-<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>    ImGui_ImplOSPP_UpdateMouseData();</div>
-<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>    ImGui_ImplOSPP_UpdateMouseCursor();</div>
+<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>    <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a49cbfebfc043a3486ba8719e08c199da">ImGui_ImplOSPP_UpdateMouseData</a>();</div>
+<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>    <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a5722f5eff8c9aef8097dc80671565e08">ImGui_ImplOSPP_UpdateMouseCursor</a>();</div>
 <div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span> </div>
 <div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>    <span class="comment">// Update game controllers (if enabled and available)</span></div>
-<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>    ImGui_ImplOSPP_UpdateGamepads();</div>
+<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>    <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ab7b876ad1e50aecbe8cbcfe496d93f36">ImGui_ImplOSPP_UpdateGamepads</a>();</div>
 <div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>}</div>
 </div>
 <div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span> </div>
@@ -1376,13 +1408,14 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span><span class="comment">// that you completely ignore this section first..</span></div>
 <div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span><span class="comment">//--------------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span> </div>
-<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_CreateWindow(ImGuiViewport* viewport)</div>
+<div class="foldopen" id="foldopen01250" data-start="{" data-end="}">
+<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a636e11a4177eda2e963428d83488def7"> 1250</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a636e11a4177eda2e963428d83488def7">ImGui_ImplOSPP_CreateWindow</a>(ImGuiViewport* viewport)</div>
 <div class="line"><a id="l01251" name="l01251"></a><span class="lineno"> 1251</span>{</div>
 <div class="line"><a id="l01252" name="l01252"></a><span class="lineno"> 1252</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = IM_NEW(<a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>)();</div>
 <div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>    viewport-&gt;PlatformUserData = vd;</div>
 <div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span> </div>
 <div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>    ImGuiViewport* main_viewport = ImGui::GetMainViewport();</div>
-<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* main_viewport_data = ImGui_ImplOSPP_GetViewportData(main_viewport);</div>
+<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* main_viewport_data = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(main_viewport);</div>
 <div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span> </div>
 <div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span>    uint32_t win_flags = 0;</div>
 <div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>    win_flags |= os::window::hidden;</div>
@@ -1404,23 +1437,27 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>    viewport-&gt;PlatformHandle = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a74059eea51bbc1b695f357399fd74a39">ImGui_ImplOSPP_IdToHandle</a>(vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().get_id());</div>
 <div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>    viewport-&gt;PlatformHandleRaw = vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().get_native_handle();</div>
 <div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span>}</div>
+</div>
 <div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span> </div>
-<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_DestroyWindow(ImGuiViewport* viewport)</div>
+<div class="foldopen" id="foldopen01279" data-start="{" data-end="}">
+<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#aec92193095306b070776955dcebeb983"> 1279</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#aec92193095306b070776955dcebeb983">ImGui_ImplOSPP_DestroyWindow</a>(ImGuiViewport* viewport)</div>
 <div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>{</div>
-<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span>    <span class="keywordflow">if</span>(<a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport))</div>
+<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span>    <span class="keywordflow">if</span>(<a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport))</div>
 <div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>    {</div>
-<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>        <span class="keywordflow">if</span>(vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a> &amp;&amp; vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a6b248a0c16ae612713006d777f311f38">WindowOwned</a>)</div>
-<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>            IM_DELETE(vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>);</div>
+<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>        <span class="keywordflow">if</span>(vd-&gt;Window &amp;&amp; vd-&gt;WindowOwned)</div>
+<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>            IM_DELETE(vd-&gt;Window);</div>
 <div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span> </div>
-<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>        vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>        vd-&gt;Window = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>        IM_DELETE(vd);</div>
 <div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>    }</div>
 <div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>    viewport-&gt;PlatformUserData = viewport-&gt;PlatformHandle = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span>}</div>
+</div>
 <div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span> </div>
-<div class="line"><a id="l01292" name="l01292"></a><span class="lineno"> 1292</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_ShowWindow(ImGuiViewport* viewport)</div>
+<div class="foldopen" id="foldopen01292" data-start="{" data-end="}">
+<div class="line"><a id="l01292" name="l01292"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a15dc6fbe429410a9e54482a44f251994"> 1292</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a15dc6fbe429410a9e54482a44f251994">ImGui_ImplOSPP_ShowWindow</a>(ImGuiViewport* viewport)</div>
 <div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span>{</div>
-<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span> </div>
 <div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span><span class="preprocessor">#if defined(_WIN32) &amp;&amp;                                                                                                 \</span></div>
 <div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span><span class="preprocessor">    !(defined(WINAPI_FAMILY) &amp;&amp; (WINAPI_FAMILY == WINAPI_FAMILY_APP || WINAPI_FAMILY == WINAPI_FAMILY_GAMES))</span></div>
@@ -1452,80 +1489,101 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span>        vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().set_opacity(vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a727f6beeeab050e5afbe2b186e4e2ac9">WindowOpacity</a>);</div>
 <div class="line"><a id="l01324" name="l01324"></a><span class="lineno"> 1324</span>    }</div>
 <div class="line"><a id="l01325" name="l01325"></a><span class="lineno"> 1325</span>}</div>
+</div>
 <div class="line"><a id="l01326" name="l01326"></a><span class="lineno"> 1326</span> </div>
-<div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span><span class="keyword">static</span> <span class="keyword">auto</span> ImGui_ImplOSPP_GetWindowPos(ImGuiViewport* viewport) -&gt; ImVec2</div>
+<div class="foldopen" id="foldopen01327" data-start="{" data-end="}">
+<div class="line"><a id="l01327" name="l01327"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#ab102d375c3781c643a655abe09f2cd17"> 1327</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ab102d375c3781c643a655abe09f2cd17">ImGui_ImplOSPP_GetWindowPos</a>(ImGuiViewport* viewport) -&gt; ImVec2</div>
 <div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span>{</div>
-<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span>    <span class="keyword">auto</span> pos = vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().get_position();</div>
 <div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span>    <span class="keywordflow">return</span> {float(pos.x), float(pos.y)};</div>
 <div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span>}</div>
+</div>
 <div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span> </div>
-<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_SetWindowPos(ImGuiViewport* viewport, ImVec2 pos)</div>
+<div class="foldopen" id="foldopen01334" data-start="{" data-end="}">
+<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#ac1daac74f7871015d76c594bcd934ab4"> 1334</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ac1daac74f7871015d76c594bcd934ab4">ImGui_ImplOSPP_SetWindowPos</a>(ImGuiViewport* viewport, ImVec2 pos)</div>
 <div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span>{</div>
-<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>    vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().set_position(int32_t(pos.x), int32_t(pos.y));</div>
 <div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>}</div>
+</div>
 <div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span> </div>
-<div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span><span class="keyword">static</span> <span class="keyword">auto</span> ImGui_ImplOSPP_GetWindowSize(ImGuiViewport* viewport) -&gt; ImVec2</div>
+<div class="foldopen" id="foldopen01340" data-start="{" data-end="}">
+<div class="line"><a id="l01340" name="l01340"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a53a31c147a1ffed17b51525d5bdb299a"> 1340</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a53a31c147a1ffed17b51525d5bdb299a">ImGui_ImplOSPP_GetWindowSize</a>(ImGuiViewport* viewport) -&gt; ImVec2</div>
 <div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span>{</div>
-<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01343" name="l01343"></a><span class="lineno"> 1343</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structsize.html">size</a> = vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().get_size();</div>
 <div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span>    <span class="keywordflow">return</span> {float(<a class="code hl_struct" href="structsize.html">size</a>.w), float(<a class="code hl_struct" href="structsize.html">size</a>.h)};</div>
 <div class="line"><a id="l01345" name="l01345"></a><span class="lineno"> 1345</span>}</div>
+</div>
 <div class="line"><a id="l01346" name="l01346"></a><span class="lineno"> 1346</span> </div>
-<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_SetWindowSize(ImGuiViewport* viewport, ImVec2 <a class="code hl_struct" href="structsize.html">size</a>)</div>
+<div class="foldopen" id="foldopen01347" data-start="{" data-end="}">
+<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a977dea4b5c836fa83676a1314f5d05cc"> 1347</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a977dea4b5c836fa83676a1314f5d05cc">ImGui_ImplOSPP_SetWindowSize</a>(ImGuiViewport* viewport, ImVec2 <a class="code hl_struct" href="structsize.html">size</a>)</div>
 <div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span>{</div>
-<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span>    vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a71d47647e6b8280645f17f7a80680fcf">resize</a>(uint32_t(<a class="code hl_struct" href="structsize.html">size</a>.x), uint32_t(<a class="code hl_struct" href="structsize.html">size</a>.y));</div>
 <div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span>}</div>
+</div>
 <div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span> </div>
-<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span><span class="keyword">static</span> ImVec2 ImGui_ImplOSPP_GetWindowFramebufferScale(ImGuiViewport* viewport)</div>
+<div class="foldopen" id="foldopen01353" data-start="{" data-end="}">
+<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a08830ab2c80ea3d6ecfdc06966df360a"> 1353</a></span><span class="keyword">static</span> ImVec2 <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a08830ab2c80ea3d6ecfdc06966df360a">ImGui_ImplOSPP_GetWindowFramebufferScale</a>(ImGuiViewport* viewport)</div>
 <div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span>{</div>
-<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>    ImVec2 framebuffer_scale;</div>
-<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>    ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale(vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>, <span class="keyword">nullptr</span>, &amp;framebuffer_scale);</div>
+<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>    <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a1bf89a2d2067d16ba5d7c74e48bce368">ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale</a>(vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>, <span class="keyword">nullptr</span>, &amp;framebuffer_scale);</div>
 <div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>    <span class="keywordflow">return</span> framebuffer_scale;</div>
 <div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span>}</div>
+</div>
 <div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span> </div>
 <div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span> </div>
-<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_SetWindowTitle(ImGuiViewport* viewport, <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a>)</div>
+<div class="foldopen" id="foldopen01362" data-start="{" data-end="}">
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#aad15d02d23a1ec691ad7921d18e3f322"> 1362</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#aad15d02d23a1ec691ad7921d18e3f322">ImGui_ImplOSPP_SetWindowTitle</a>(ImGuiViewport* viewport, <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a>)</div>
 <div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span>{</div>
-<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>    vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().set_title(<a class="code hl_variable" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a>);</div>
 <div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>}</div>
+</div>
 <div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span> </div>
-<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_SetWindowAlpha(ImGuiViewport* viewport, <span class="keywordtype">float</span> alpha)</div>
+<div class="foldopen" id="foldopen01368" data-start="{" data-end="}">
+<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a21d8e2439e868718fc51543b528f1fa1"> 1368</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a21d8e2439e868718fc51543b528f1fa1">ImGui_ImplOSPP_SetWindowAlpha</a>(ImGuiViewport* viewport, <span class="keywordtype">float</span> alpha)</div>
 <div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span>{</div>
-<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>    <span class="keywordflow">if</span>(vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a34fd375a65e70a1062fc537386b76ec2">WindowShownAtLeastOnce</a>)</div>
 <div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>        vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().set_opacity(alpha);</div>
 <div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>        vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a727f6beeeab050e5afbe2b186e4e2ac9">WindowOpacity</a> = alpha;</div>
 <div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>}</div>
+</div>
 <div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span> </div>
-<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_SetWindowFocus(ImGuiViewport* viewport)</div>
+<div class="foldopen" id="foldopen01377" data-start="{" data-end="}">
+<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#aae6de2cbb20bf4cc579b42345e7f2ce0"> 1377</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#aae6de2cbb20bf4cc579b42345e7f2ce0">ImGui_ImplOSPP_SetWindowFocus</a>(ImGuiViewport* viewport)</div>
 <div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span>{</div>
-<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>    vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().request_focus();</div>
 <div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span>}</div>
+</div>
 <div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span> </div>
-<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"> 1383</span><span class="keyword">static</span> <span class="keyword">auto</span> ImGui_ImplOSPP_GetWindowFocus(ImGuiViewport* viewport) -&gt; <span class="keywordtype">bool</span></div>
+<div class="foldopen" id="foldopen01383" data-start="{" data-end="}">
+<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#aef7db7cea86b031fea3d6bf9ad574246"> 1383</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#aef7db7cea86b031fea3d6bf9ad574246">ImGui_ImplOSPP_GetWindowFocus</a>(ImGuiViewport* viewport) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span>{</div>
-<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span>    <span class="keywordflow">return</span> vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().has_focus();</div>
 <div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span>}</div>
+</div>
 <div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span> </div>
-<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span><span class="keyword">static</span> <span class="keyword">auto</span> ImGui_ImplOSPP_GetWindowMinimized(ImGuiViewport* viewport) -&gt; <span class="keywordtype">bool</span></div>
+<div class="foldopen" id="foldopen01389" data-start="{" data-end="}">
+<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a404af2e4d557908f452d1f54d5bf90ee"> 1389</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a404af2e4d557908f452d1f54d5bf90ee">ImGui_ImplOSPP_GetWindowMinimized</a>(ImGuiViewport* viewport) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>{</div>
-<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01392" name="l01392"></a><span class="lineno"> 1392</span>    <span class="keywordflow">return</span> vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().is_minimized();</div>
 <div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span>}</div>
+</div>
 <div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span> </div>
 <div class="foldopen" id="foldopen01395" data-start="{" data-end="}">
 <div class="line"><a id="l01395" name="l01395"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a28e242afcb4dece8a5dfd6c39c5f4848"> 1395</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a28e242afcb4dece8a5dfd6c39c5f4848">ImGui_ImplOSPP_RenderWindow</a>(ImGuiViewport* viewport, <span class="keywordtype">void</span>* rend_args)</div>
 <div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>{</div>
-<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = ImGui_ImplOSPP_GetBackendData();</div>
-<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a>();</div>
+<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span> </div>
 <div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span>    bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a36689f74badfe48dd0b6fab695b23e9e">RenderCallback</a>(vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>, viewport, rend_args);</div>
 <div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span>}</div>
@@ -1534,32 +1592,33 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="foldopen" id="foldopen01403" data-start="{" data-end="}">
 <div class="line"><a id="l01403" name="l01403"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a4245cf4b661fa0956d6c64de81dd8e28"> 1403</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a4245cf4b661fa0956d6c64de81dd8e28">ImGui_ImplOSPP_SwapBuffers</a>(ImGuiViewport* viewport, <span class="keywordtype">void</span>* rend_args)</div>
 <div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span>{</div>
-<div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = ImGui_ImplOSPP_GetBackendData();</div>
-<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = ImGui_ImplOSPP_GetViewportData(viewport);</div>
+<div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>* bd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a>();</div>
+<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span>    <a class="code hl_struct" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>* vd = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a>(viewport);</div>
 <div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span> </div>
 <div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span>    bd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___data.html#a6fa956397a681c043d1da89165a02827">SwapCallback</a>(vd-&gt;<a class="code hl_variable" href="struct_im_gui___impl_o_s_p_p___viewport_data.html#a16437bc61a8eec763457262374184e3b">Window</a>, viewport, rend_args);</div>
 <div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span>}</div>
 </div>
 <div class="line"><a id="l01410" name="l01410"></a><span class="lineno"> 1410</span> </div>
-<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_InitPlatformInterface(<a class="code hl_struct" href="structunravel_1_1render__window.html">unravel::render_window</a>* window)</div>
+<div class="foldopen" id="foldopen01411" data-start="{" data-end="}">
+<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#a9d35f34ad9171279618baeb9e1c242ba"> 1411</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a9d35f34ad9171279618baeb9e1c242ba">ImGui_ImplOSPP_InitPlatformInterface</a>(<a class="code hl_struct" href="structunravel_1_1render__window.html">unravel::render_window</a>* window)</div>
 <div class="line"><a id="l01412" name="l01412"></a><span class="lineno"> 1412</span>{</div>
 <div class="line"><a id="l01413" name="l01413"></a><span class="lineno"> 1413</span>    <span class="comment">// Register platform interface (will be coupled with a renderer interface)</span></div>
 <div class="line"><a id="l01414" name="l01414"></a><span class="lineno"> 1414</span>    ImGuiPlatformIO&amp; platform_io = ImGui::GetPlatformIO();</div>
-<div class="line"><a id="l01415" name="l01415"></a><span class="lineno"> 1415</span>    platform_io.Platform_CreateWindow = ImGui_ImplOSPP_CreateWindow;</div>
-<div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span>    platform_io.Platform_DestroyWindow = ImGui_ImplOSPP_DestroyWindow;</div>
-<div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span>    platform_io.Platform_ShowWindow = ImGui_ImplOSPP_ShowWindow;</div>
-<div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span>    platform_io.Platform_SetWindowPos = ImGui_ImplOSPP_SetWindowPos;</div>
-<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span>    platform_io.Platform_GetWindowPos = ImGui_ImplOSPP_GetWindowPos;</div>
-<div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span>    platform_io.Platform_SetWindowSize = ImGui_ImplOSPP_SetWindowSize;</div>
-<div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span>    platform_io.Platform_GetWindowSize = ImGui_ImplOSPP_GetWindowSize;</div>
-<div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span>    platform_io.Platform_GetWindowFramebufferScale = ImGui_ImplOSPP_GetWindowFramebufferScale;</div>
-<div class="line"><a id="l01423" name="l01423"></a><span class="lineno"> 1423</span>    platform_io.Platform_SetWindowFocus = ImGui_ImplOSPP_SetWindowFocus;</div>
-<div class="line"><a id="l01424" name="l01424"></a><span class="lineno"> 1424</span>    platform_io.Platform_GetWindowFocus = ImGui_ImplOSPP_GetWindowFocus;</div>
-<div class="line"><a id="l01425" name="l01425"></a><span class="lineno"> 1425</span>    platform_io.Platform_GetWindowMinimized = ImGui_ImplOSPP_GetWindowMinimized;</div>
-<div class="line"><a id="l01426" name="l01426"></a><span class="lineno"> 1426</span>    platform_io.Platform_SetWindowTitle = ImGui_ImplOSPP_SetWindowTitle;</div>
+<div class="line"><a id="l01415" name="l01415"></a><span class="lineno"> 1415</span>    platform_io.Platform_CreateWindow = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a636e11a4177eda2e963428d83488def7">ImGui_ImplOSPP_CreateWindow</a>;</div>
+<div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span>    platform_io.Platform_DestroyWindow = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#aec92193095306b070776955dcebeb983">ImGui_ImplOSPP_DestroyWindow</a>;</div>
+<div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span>    platform_io.Platform_ShowWindow = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a15dc6fbe429410a9e54482a44f251994">ImGui_ImplOSPP_ShowWindow</a>;</div>
+<div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span>    platform_io.Platform_SetWindowPos = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ac1daac74f7871015d76c594bcd934ab4">ImGui_ImplOSPP_SetWindowPos</a>;</div>
+<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span>    platform_io.Platform_GetWindowPos = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ab102d375c3781c643a655abe09f2cd17">ImGui_ImplOSPP_GetWindowPos</a>;</div>
+<div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span>    platform_io.Platform_SetWindowSize = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a977dea4b5c836fa83676a1314f5d05cc">ImGui_ImplOSPP_SetWindowSize</a>;</div>
+<div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span>    platform_io.Platform_GetWindowSize = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a53a31c147a1ffed17b51525d5bdb299a">ImGui_ImplOSPP_GetWindowSize</a>;</div>
+<div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span>    platform_io.Platform_GetWindowFramebufferScale = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a08830ab2c80ea3d6ecfdc06966df360a">ImGui_ImplOSPP_GetWindowFramebufferScale</a>;</div>
+<div class="line"><a id="l01423" name="l01423"></a><span class="lineno"> 1423</span>    platform_io.Platform_SetWindowFocus = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#aae6de2cbb20bf4cc579b42345e7f2ce0">ImGui_ImplOSPP_SetWindowFocus</a>;</div>
+<div class="line"><a id="l01424" name="l01424"></a><span class="lineno"> 1424</span>    platform_io.Platform_GetWindowFocus = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#aef7db7cea86b031fea3d6bf9ad574246">ImGui_ImplOSPP_GetWindowFocus</a>;</div>
+<div class="line"><a id="l01425" name="l01425"></a><span class="lineno"> 1425</span>    platform_io.Platform_GetWindowMinimized = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a404af2e4d557908f452d1f54d5bf90ee">ImGui_ImplOSPP_GetWindowMinimized</a>;</div>
+<div class="line"><a id="l01426" name="l01426"></a><span class="lineno"> 1426</span>    platform_io.Platform_SetWindowTitle = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#aad15d02d23a1ec691ad7921d18e3f322">ImGui_ImplOSPP_SetWindowTitle</a>;</div>
 <div class="line"><a id="l01427" name="l01427"></a><span class="lineno"> 1427</span>    platform_io.Platform_RenderWindow = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a28e242afcb4dece8a5dfd6c39c5f4848">ImGui_ImplOSPP_RenderWindow</a>;</div>
 <div class="line"><a id="l01428" name="l01428"></a><span class="lineno"> 1428</span>    platform_io.Platform_SwapBuffers = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a4245cf4b661fa0956d6c64de81dd8e28">ImGui_ImplOSPP_SwapBuffers</a>;</div>
-<div class="line"><a id="l01429" name="l01429"></a><span class="lineno"> 1429</span>    platform_io.Platform_SetWindowAlpha = ImGui_ImplOSPP_SetWindowAlpha;</div>
+<div class="line"><a id="l01429" name="l01429"></a><span class="lineno"> 1429</span>    platform_io.Platform_SetWindowAlpha = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a21d8e2439e868718fc51543b528f1fa1">ImGui_ImplOSPP_SetWindowAlpha</a>;</div>
 <div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span> </div>
 <div class="line"><a id="l01431" name="l01431"></a><span class="lineno"> 1431</span>    <span class="comment">// Register main window handle (which is owned by the main application, not by us)</span></div>
 <div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span>    <span class="comment">// This is mostly for simplicity and consistency, so that our code (e.g. mouse handling etc.) can use same</span></div>
@@ -1573,11 +1632,14 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>    main_viewport-&gt;PlatformHandle = <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#a74059eea51bbc1b695f357399fd74a39">ImGui_ImplOSPP_IdToHandle</a>(window-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().get_id());</div>
 <div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>    main_viewport-&gt;PlatformHandleRaw = window-&gt;<a class="code hl_function" href="structunravel_1_1render__window.html#a7ee102b5468d8c943b4d979b7c98de50">get_window</a>().get_native_handle();</div>
 <div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span>}</div>
+</div>
 <div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span> </div>
-<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span><span class="keyword">static</span> <span class="keywordtype">void</span> ImGui_ImplOSPP_ShutdownPlatformInterface()</div>
+<div class="foldopen" id="foldopen01444" data-start="{" data-end="}">
+<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"><a class="line" href="imgui__impl__ospp_8cpp.html#ac957fcb38c0053dc90a09dd24d85478c"> 1444</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="imgui__impl__ospp_8cpp.html#ac957fcb38c0053dc90a09dd24d85478c">ImGui_ImplOSPP_ShutdownPlatformInterface</a>()</div>
 <div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span>{</div>
 <div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>    ImGui::DestroyPlatformWindows();</div>
 <div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>}</div>
+</div>
 <div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span> </div>
 <div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span><span class="preprocessor">#if defined(__clang__)</span></div>
 <div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span><span class="preprocessor">#pragma clang diagnostic pop</span></div>
@@ -1586,27 +1648,51 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <div class="ttc" id="acreate__scene__modal_8cpp_html_a8214780964530800368b406c681fd1d9"><div class="ttname"><a href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a></div><div class="ttdeci">const char * title</div><div class="ttdef"><b>Definition</b> <a href="create__scene__modal_8cpp_source.html#l00017">create_scene_modal.cpp:17</a></div></div>
 <div class="ttc" id="afilesystem_8h_html"><div class="ttname"><a href="filesystem_8h.html">filesystem.h</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_a014465ee9d9329b68d8dac11fc4e1f1d"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a014465ee9d9329b68d8dac11fc4e1f1d">ImGui_ImplOSPP_Shutdown</a></div><div class="ttdeci">void ImGui_ImplOSPP_Shutdown()</div><div class="ttdef"><b>Definition</b> <a href="#l00975">imgui_impl_ospp.cpp:975</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a08830ab2c80ea3d6ecfdc06966df360a"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a08830ab2c80ea3d6ecfdc06966df360a">ImGui_ImplOSPP_GetWindowFramebufferScale</a></div><div class="ttdeci">static ImVec2 ImGui_ImplOSPP_GetWindowFramebufferScale(ImGuiViewport *viewport)</div><div class="ttdef"><b>Definition</b> <a href="#l01353">imgui_impl_ospp.cpp:1353</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a08bb7b56029d85a32172599832d7f952"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a08bb7b56029d85a32172599832d7f952">ImGui_ImplOSPP_GetViewportFromWindowId</a></div><div class="ttdeci">static auto ImGui_ImplOSPP_GetViewportFromWindowId(uint32_t id) -&gt; ImGuiViewport *</div><div class="ttdef"><b>Definition</b> <a href="#l00168">imgui_impl_ospp.cpp:168</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a15dc6fbe429410a9e54482a44f251994"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a15dc6fbe429410a9e54482a44f251994">ImGui_ImplOSPP_ShowWindow</a></div><div class="ttdeci">static void ImGui_ImplOSPP_ShowWindow(ImGuiViewport *viewport)</div><div class="ttdef"><b>Definition</b> <a href="#l01292">imgui_impl_ospp.cpp:1292</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_a1b6b4a331c4189365bbc275943875e79"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a1b6b4a331c4189365bbc275943875e79">ImGui_ImplOSPP_MapCursor</a></div><div class="ttdeci">auto ImGui_ImplOSPP_MapCursor(ImGuiMouseCursor cursor) -&gt; os::cursor::type</div><div class="ttdef"><b>Definition</b> <a href="#l00216">imgui_impl_ospp.cpp:216</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a1bf89a2d2067d16ba5d7c74e48bce368"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a1bf89a2d2067d16ba5d7c74e48bce368">ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale</a></div><div class="ttdeci">static void ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale(unravel::render_window *window, ImVec2 *out_size, ImVec2 *out_framebuffer_scale)</div><div class="ttdef"><b>Definition</b> <a href="#l01173">imgui_impl_ospp.cpp:1173</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a21d8e2439e868718fc51543b528f1fa1"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a21d8e2439e868718fc51543b528f1fa1">ImGui_ImplOSPP_SetWindowAlpha</a></div><div class="ttdeci">static void ImGui_ImplOSPP_SetWindowAlpha(ImGuiViewport *viewport, float alpha)</div><div class="ttdef"><b>Definition</b> <a href="#l01368">imgui_impl_ospp.cpp:1368</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_a28e242afcb4dece8a5dfd6c39c5f4848"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a28e242afcb4dece8a5dfd6c39c5f4848">ImGui_ImplOSPP_RenderWindow</a></div><div class="ttdeci">void ImGui_ImplOSPP_RenderWindow(ImGuiViewport *viewport, void *rend_args)</div><div class="ttdef"><b>Definition</b> <a href="#l01395">imgui_impl_ospp.cpp:1395</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a2bfb83eff96863137e09bc7ff523d5cf"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a2bfb83eff96863137e09bc7ff523d5cf">ImGui_ImplOSPP_ForEachViewport</a></div><div class="ttdeci">static void ImGui_ImplOSPP_ForEachViewport(const std::function&lt; void(ImGuiViewport *viewport, ImGui_ImplOSPP_ViewportData *data)&gt; &amp;callback)</div><div class="ttdef"><b>Definition</b> <a href="#l00153">imgui_impl_ospp.cpp:153</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a404af2e4d557908f452d1f54d5bf90ee"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a404af2e4d557908f452d1f54d5bf90ee">ImGui_ImplOSPP_GetWindowMinimized</a></div><div class="ttdeci">static auto ImGui_ImplOSPP_GetWindowMinimized(ImGuiViewport *viewport) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l01389">imgui_impl_ospp.cpp:1389</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_a4245cf4b661fa0956d6c64de81dd8e28"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a4245cf4b661fa0956d6c64de81dd8e28">ImGui_ImplOSPP_SwapBuffers</a></div><div class="ttdeci">void ImGui_ImplOSPP_SwapBuffers(ImGuiViewport *viewport, void *rend_args)</div><div class="ttdef"><b>Definition</b> <a href="#l01403">imgui_impl_ospp.cpp:1403</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a49cbfebfc043a3486ba8719e08c199da"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a49cbfebfc043a3486ba8719e08c199da">ImGui_ImplOSPP_UpdateMouseData</a></div><div class="ttdeci">static void ImGui_ImplOSPP_UpdateMouseData()</div><div class="ttdef"><b>Definition</b> <a href="#l00993">imgui_impl_ospp.cpp:993</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a53a31c147a1ffed17b51525d5bdb299a"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a53a31c147a1ffed17b51525d5bdb299a">ImGui_ImplOSPP_GetWindowSize</a></div><div class="ttdeci">static auto ImGui_ImplOSPP_GetWindowSize(ImGuiViewport *viewport) -&gt; ImVec2</div><div class="ttdef"><b>Definition</b> <a href="#l01340">imgui_impl_ospp.cpp:1340</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a5722f5eff8c9aef8097dc80671565e08"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a5722f5eff8c9aef8097dc80671565e08">ImGui_ImplOSPP_UpdateMouseCursor</a></div><div class="ttdeci">static void ImGui_ImplOSPP_UpdateMouseCursor()</div><div class="ttdef"><b>Definition</b> <a href="#l01086">imgui_impl_ospp.cpp:1086</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a636e11a4177eda2e963428d83488def7"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a636e11a4177eda2e963428d83488def7">ImGui_ImplOSPP_CreateWindow</a></div><div class="ttdeci">static void ImGui_ImplOSPP_CreateWindow(ImGuiViewport *viewport)</div><div class="ttdef"><b>Definition</b> <a href="#l01250">imgui_impl_ospp.cpp:1250</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a709910603235d2073ea39b662f329eba"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a709910603235d2073ea39b662f329eba">ImGui_ImplOSPP_UpdateMonitors</a></div><div class="ttdeci">static void ImGui_ImplOSPP_UpdateMonitors()</div><div class="ttdef"><b>Definition</b> <a href="#l01116">imgui_impl_ospp.cpp:1116</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_a74059eea51bbc1b695f357399fd74a39"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a74059eea51bbc1b695f357399fd74a39">ImGui_ImplOSPP_IdToHandle</a></div><div class="ttdeci">auto ImGui_ImplOSPP_IdToHandle(uint32_t id) -&gt; void *</div><div class="ttdef"><b>Definition</b> <a href="#l00211">imgui_impl_ospp.cpp:211</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_a7b11c8c1ea5e0ee1b62e868b91a2825b"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a7b11c8c1ea5e0ee1b62e868b91a2825b">ImGui_ImplOSPP_KeycodeToImGuiKey</a></div><div class="ttdeci">auto ImGui_ImplOSPP_KeycodeToImGuiKey(os::key::code keycode) -&gt; ImGuiKey</div><div class="ttdef"><b>Definition</b> <a href="#l00273">imgui_impl_ospp.cpp:273</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a7f7e5257208e0a870ba5ea9891f03f8f"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a7f7e5257208e0a870ba5ea9891f03f8f">ImGui_ImplOSPP_GetFocusedViewport</a></div><div class="ttdeci">static auto ImGui_ImplOSPP_GetFocusedViewport() -&gt; ImGuiViewport *</div><div class="ttdef"><b>Definition</b> <a href="#l00186">imgui_impl_ospp.cpp:186</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a8a32a76a9a944851b11ed6dbf2644d4a"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a8a32a76a9a944851b11ed6dbf2644d4a">ImGui_ImplOSPP_SetPlatformImeData</a></div><div class="ttdeci">static void ImGui_ImplOSPP_SetPlatformImeData(ImGuiContext *ctx, ImGuiViewport *viewport, ImGuiPlatformImeData *data)</div><div class="ttdef"><b>Definition</b> <a href="#l00260">imgui_impl_ospp.cpp:260</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_a8c60ea987bc08f53a76bd01653ab1610"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a8c60ea987bc08f53a76bd01653ab1610">ImGui_ImplOSPP_EndFrame</a></div><div class="ttdeci">void ImGui_ImplOSPP_EndFrame()</div><div class="ttdef"><b>Definition</b> <a href="#l01229">imgui_impl_ospp.cpp:1229</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a977dea4b5c836fa83676a1314f5d05cc"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a977dea4b5c836fa83676a1314f5d05cc">ImGui_ImplOSPP_SetWindowSize</a></div><div class="ttdeci">static void ImGui_ImplOSPP_SetWindowSize(ImGuiViewport *viewport, ImVec2 size)</div><div class="ttdef"><b>Definition</b> <a href="#l01347">imgui_impl_ospp.cpp:1347</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a995182fb7b62b2276a6e40373011ce0f"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a995182fb7b62b2276a6e40373011ce0f">ImGui_ImplOSPP_UpdateKeyModifiers</a></div><div class="ttdeci">static void ImGui_ImplOSPP_UpdateKeyModifiers(os::key_event e)</div><div class="ttdef"><b>Definition</b> <a href="#l00708">imgui_impl_ospp.cpp:708</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_a9b0253ec15949520138f1f01e6c82faa"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a9b0253ec15949520138f1f01e6c82faa">ImGui_ImplOSPP_Init</a></div><div class="ttdeci">auto ImGui_ImplOSPP_Init(unravel::render_window *window, ImGui_ImplOSPP_RenderWindow_Callback render_callback, ImGui_ImplOSPP_SwapBuffers_Callback swap_callback) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l00888">imgui_impl_ospp.cpp:888</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a9d35f34ad9171279618baeb9e1c242ba"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a9d35f34ad9171279618baeb9e1c242ba">ImGui_ImplOSPP_InitPlatformInterface</a></div><div class="ttdeci">static void ImGui_ImplOSPP_InitPlatformInterface(unravel::render_window *window)</div><div class="ttdef"><b>Definition</b> <a href="#l01411">imgui_impl_ospp.cpp:1411</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a9f12e84272716adbf9ee01bfce3fd307"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a></div><div class="ttdeci">static auto ImGui_ImplOSPP_GetViewportData(ImGuiViewport *viewport) -&gt; ImGui_ImplOSPP_ViewportData *</div><div class="ttdef"><b>Definition</b> <a href="#l00142">imgui_impl_ospp.cpp:142</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_a9f5e6cddc1d064dc43f1383b5dcda0d9"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#a9f5e6cddc1d064dc43f1383b5dcda0d9">ImGui_ImplOSPP_GetClipboardText</a></div><div class="ttdeci">static auto ImGui_ImplOSPP_GetClipboardText(ImGuiContext *ctx) -&gt; const char *</div><div class="ttdef"><b>Definition</b> <a href="#l00246">imgui_impl_ospp.cpp:246</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_aad15d02d23a1ec691ad7921d18e3f322"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#aad15d02d23a1ec691ad7921d18e3f322">ImGui_ImplOSPP_SetWindowTitle</a></div><div class="ttdeci">static void ImGui_ImplOSPP_SetWindowTitle(ImGuiViewport *viewport, const char *title)</div><div class="ttdef"><b>Definition</b> <a href="#l01362">imgui_impl_ospp.cpp:1362</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_aae6de2cbb20bf4cc579b42345e7f2ce0"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#aae6de2cbb20bf4cc579b42345e7f2ce0">ImGui_ImplOSPP_SetWindowFocus</a></div><div class="ttdeci">static void ImGui_ImplOSPP_SetWindowFocus(ImGuiViewport *viewport)</div><div class="ttdef"><b>Definition</b> <a href="#l01377">imgui_impl_ospp.cpp:1377</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_ab102d375c3781c643a655abe09f2cd17"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#ab102d375c3781c643a655abe09f2cd17">ImGui_ImplOSPP_GetWindowPos</a></div><div class="ttdeci">static auto ImGui_ImplOSPP_GetWindowPos(ImGuiViewport *viewport) -&gt; ImVec2</div><div class="ttdef"><b>Definition</b> <a href="#l01327">imgui_impl_ospp.cpp:1327</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_ab7b876ad1e50aecbe8cbcfe496d93f36"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#ab7b876ad1e50aecbe8cbcfe496d93f36">ImGui_ImplOSPP_UpdateGamepads</a></div><div class="ttdeci">static void ImGui_ImplOSPP_UpdateGamepads()</div><div class="ttdef"><b>Definition</b> <a href="#l01112">imgui_impl_ospp.cpp:1112</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_abe24cfd371f02613079d7b225aa0befc"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#abe24cfd371f02613079d7b225aa0befc">ImOsOpenInShell</a></div><div class="ttdeci">static bool ImOsOpenInShell(ImGuiContext *ctx, const char *path)</div><div class="ttdef"><b>Definition</b> <a href="#l00113">imgui_impl_ospp.cpp:113</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_ac1daac74f7871015d76c594bcd934ab4"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#ac1daac74f7871015d76c594bcd934ab4">ImGui_ImplOSPP_SetWindowPos</a></div><div class="ttdeci">static void ImGui_ImplOSPP_SetWindowPos(ImGuiViewport *viewport, ImVec2 pos)</div><div class="ttdef"><b>Definition</b> <a href="#l01334">imgui_impl_ospp.cpp:1334</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_ac5396099166fb8fde106df305567ad69"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#ac5396099166fb8fde106df305567ad69">ImGui_IsAnyRealItemActive</a></div><div class="ttdeci">auto ImGui_IsAnyRealItemActive() -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l00717">imgui_impl_ospp.cpp:717</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_ac957fcb38c0053dc90a09dd24d85478c"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#ac957fcb38c0053dc90a09dd24d85478c">ImGui_ImplOSPP_ShutdownPlatformInterface</a></div><div class="ttdeci">static void ImGui_ImplOSPP_ShutdownPlatformInterface()</div><div class="ttdef"><b>Definition</b> <a href="#l01444">imgui_impl_ospp.cpp:1444</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_acf52a2e008a1b1498865839085241645"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#acf52a2e008a1b1498865839085241645">ImGui_ImplOSPP_SetClipboardText</a></div><div class="ttdeci">static void ImGui_ImplOSPP_SetClipboardText(ImGuiContext *ctx, const char *text)</div><div class="ttdef"><b>Definition</b> <a href="#l00254">imgui_impl_ospp.cpp:254</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_ad20ac9819e6dcb10d2950d79f7cc2ce5"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#ad20ac9819e6dcb10d2950d79f7cc2ce5">ImGui_ImplOSPP_ImGuiKeyToKeycode</a></div><div class="ttdeci">auto ImGui_ImplOSPP_ImGuiKeyToKeycode(ImGuiKey key) -&gt; os::key::code</div><div class="ttdef"><b>Definition</b> <a href="#l00491">imgui_impl_ospp.cpp:491</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_adf5efed0cebd6d489562763d3c580ffc"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#adf5efed0cebd6d489562763d3c580ffc">ImGui_ImplOSPP_NewFrame</a></div><div class="ttdeci">void ImGui_ImplOSPP_NewFrame(float delta_time)</div><div class="ttdef"><b>Definition</b> <a href="#l01205">imgui_impl_ospp.cpp:1205</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_ae4dfbbdcd5060a5452f47bb75246f39e"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a></div><div class="ttdeci">static auto ImGui_ImplOSPP_GetBackendData() -&gt; ImGui_ImplOSPP_Data *</div><div class="ttdef"><b>Definition</b> <a href="#l00206">imgui_impl_ospp.cpp:206</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_aec92193095306b070776955dcebeb983"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#aec92193095306b070776955dcebeb983">ImGui_ImplOSPP_DestroyWindow</a></div><div class="ttdeci">static void ImGui_ImplOSPP_DestroyWindow(ImGuiViewport *viewport)</div><div class="ttdef"><b>Definition</b> <a href="#l01279">imgui_impl_ospp.cpp:1279</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_aef7db7cea86b031fea3d6bf9ad574246"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#aef7db7cea86b031fea3d6bf9ad574246">ImGui_ImplOSPP_GetWindowFocus</a></div><div class="ttdeci">static auto ImGui_ImplOSPP_GetWindowFocus(ImGuiViewport *viewport) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l01383">imgui_impl_ospp.cpp:1383</a></div></div>
+<div class="ttc" id="aimgui__impl__ospp_8cpp_html_afb45bc3bdd71af391ba747ac6a7ba2c7"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#afb45bc3bdd71af391ba747ac6a7ba2c7">ImOsIsDebuggerPresent</a></div><div class="ttdeci">static bool ImOsIsDebuggerPresent()</div><div class="ttdef"><b>Definition</b> <a href="#l00064">imgui_impl_ospp.cpp:64</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8cpp_html_afc3394116986868171db59ef3dff97ad"><div class="ttname"><a href="imgui__impl__ospp_8cpp.html#afc3394116986868171db59ef3dff97ad">ImGui_ImplOSPP_ProcessEvent</a></div><div class="ttdeci">auto ImGui_ImplOSPP_ProcessEvent(os::event &amp;event) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l00746">imgui_impl_ospp.cpp:746</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8h_html"><div class="ttname"><a href="imgui__impl__ospp_8h.html">imgui_impl_ospp.h</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8h_html_a6828a0b41936cbce619f8d930c4777e8"><div class="ttname"><a href="imgui__impl__ospp_8h.html#a6828a0b41936cbce619f8d930c4777e8">ImGui_ImplOSPP_RenderWindow_Callback</a></div><div class="ttdeci">std::function&lt; void(unravel::render_window *window, ImGuiViewport *viewport, void *)&gt; ImGui_ImplOSPP_RenderWindow_Callback</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__ospp_8h_source.html#l00005">imgui_impl_ospp.h:5</a></div></div>
 <div class="ttc" id="aimgui__impl__ospp_8h_html_a7590b0db9635079f5d22a0d0cf8ab632"><div class="ttname"><a href="imgui__impl__ospp_8h.html#a7590b0db9635079f5d22a0d0cf8ab632">ImGui_ImplOSPP_SwapBuffers_Callback</a></div><div class="ttdeci">std::function&lt; void(unravel::render_window *window, ImGuiViewport *viewport, void *)&gt; ImGui_ImplOSPP_SwapBuffers_Callback</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__ospp_8h_source.html#l00007">imgui_impl_ospp.h:7</a></div></div>
-<div class="ttc" id="anamespacegfx_1_1format__search__flags_html_a4006da86f52de2fc747bc825bcba9bdb"><div class="ttname"><a href="namespacegfx_1_1format__search__flags.html#a4006da86f52de2fc747bc825bcba9bdb">gfx::format_search_flags::e</a></div><div class="ttdeci">e</div><div class="ttdef"><b>Definition</b> <a href="format_8h_source.html#l00014">format.h:15</a></div></div>
-<div class="ttc" id="anamespaceinput_html_ab9139595ac6ca03adefcdfd7463eeecca15d61712450a686a7f365adf4fef581f"><div class="ttname"><a href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca15d61712450a686a7f365adf4fef581f">input::key_code::mode</a></div><div class="ttdeci">@ mode</div></div>
-<div class="ttc" id="anamespaceinput_html_ab9139595ac6ca03adefcdfd7463eeecca2510c39011c5be704182423e3a695e91"><div class="ttname"><a href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca2510c39011c5be704182423e3a695e91">input::key_code::h</a></div><div class="ttdeci">@ h</div></div>
-<div class="ttc" id="anamespaceinput_html_ab9139595ac6ca03adefcdfd7463eeecca7b8b965ad4bca0e41ab51de7b31363a1"><div class="ttname"><a href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca7b8b965ad4bca0e41ab51de7b31363a1">input::key_code::n</a></div><div class="ttdeci">@ n</div></div>
-<div class="ttc" id="anamespaceinput_html_ab9139595ac6ca03adefcdfd7463eeecca83878c91171338902e0fe0fb97a8c47a"><div class="ttname"><a href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca83878c91171338902e0fe0fb97a8c47a">input::key_code::p</a></div><div class="ttdeci">@ p</div></div>
-<div class="ttc" id="anamespaceinput_html_ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741"><div class="ttname"><a href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741">input::key_code::i</a></div><div class="ttdeci">@ i</div></div>
-<div class="ttc" id="anamespaceinput_html_ab9139595ac6ca03adefcdfd7463eeeccaf1290186a5d0b1ceab27f4e77c0c5d68"><div class="ttname"><a href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeeccaf1290186a5d0b1ceab27f4e77c0c5d68">input::key_code::w</a></div><div class="ttdeci">@ w</div></div>
 <div class="ttc" id="anamespacestring__utils_html_a263ebbce2bcb3d83ecab82a062d184e2"><div class="ttname"><a href="namespacestring__utils.html#a263ebbce2bcb3d83ecab82a062d184e2">string_utils::replace</a></div><div class="ttdeci">auto replace(const std::string &amp;str, const std::string &amp;search, const std::string &amp;replace) -&gt; std::string</div><div class="ttdef"><b>Definition</b> <a href="utils_8cpp_source.html#l00028">utils.cpp:28</a></div></div>
 <div class="ttc" id="astruct_im_gui___impl_o_s_p_p___data_html"><div class="ttname"><a href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a></div><div class="ttdef"><b>Definition</b> <a href="#l00045">imgui_impl_ospp.cpp:46</a></div></div>
 <div class="ttc" id="astruct_im_gui___impl_o_s_p_p___data_html_a08927029ae7b127219fbc76a2c2f5469"><div class="ttname"><a href="struct_im_gui___impl_o_s_p_p___data.html#a08927029ae7b127219fbc76a2c2f5469">ImGui_ImplOSPP_Data::MouseCanUseGlobalState</a></div><div class="ttdeci">bool MouseCanUseGlobalState</div><div class="ttdef"><b>Definition</b> <a href="#l00053">imgui_impl_ospp.cpp:53</a></div></div>
@@ -1641,7 +1727,7 @@ $(function(){initNavTree('imgui__impl__ospp_8cpp_source.html',''); initResizable
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_7ee7c878d2c6fb143540ee92c5ee17cf.html">editor</a></li><li class="navelem"><a class="el" href="dir_8f21e58f08ce6fe6a2b4e3fbe97b105e.html">editor</a></li><li class="navelem"><a class="el" href="dir_a9cccf8a390388b1dfd30e47e1bb1db5.html">imgui</a></li><li class="navelem"><a class="el" href="dir_74c9e0a675e8793d60fec5ecc195aa18.html">integration</a></li><li class="navelem"><a class="el" href="dir_f995143fb81647407fd83fdcebdacd94.html">backend</a></li><li class="navelem"><a class="el" href="imgui__impl__ospp_8cpp.html">imgui_impl_ospp.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_bac5aa69239d34ac960582aca466258e.html">editor</a></li><li class="navelem"><a class="el" href="dir_193d69b3ac9ec318ea92bd9c004dbcbc.html">editor</a></li><li class="navelem"><a class="el" href="dir_9d1758494e710abaca10dbff32b43644.html">imgui</a></li><li class="navelem"><a class="el" href="dir_303471ffb896a3a0d5d824bd76219f8f.html">integration</a></li><li class="navelem"><a class="el" href="dir_8363d2f7f2c805dcf2a17790f07ceabc.html">backend</a></li><li class="navelem"><a class="el" href="imgui__impl__ospp_8cpp.html">imgui_impl_ospp.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

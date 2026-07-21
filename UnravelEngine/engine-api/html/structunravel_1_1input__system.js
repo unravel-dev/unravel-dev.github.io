@@ -2,6 +2,7 @@ var structunravel_1_1input__system =
 [
     [ "deinit", "structunravel_1_1input__system.html#aeab166bb152d9806f12dee59889bef09", null ],
     [ "get_analog_value", "structunravel_1_1input__system.html#a5fd3a1cc3576db3b23931662253f036e", null ],
+    [ "get_default_mapping", "structunravel_1_1input__system.html#a38e15df325d8be898a46b0766b09a19e", null ],
     [ "get_digital_value", "structunravel_1_1input__system.html#a544fe6ed4a860124312bc10e9bd8cc15", null ],
     [ "init", "structunravel_1_1input__system.html#a93cbcb7e8e3ff1859e4ecbec7d6ce889", null ],
     [ "is_down", "structunravel_1_1input__system.html#ab5bd065665daa3a75564fb77ca5df6fc", null ],

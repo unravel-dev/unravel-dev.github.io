@@ -14,9 +14,11 @@ var classunravel_1_1batch__collector__t =
     [ "get_prepared_batches", "classunravel_1_1batch__collector__t.html#ae54a9638af48a3a774d3cf6946619ca0", null ],
     [ "get_stats", "classunravel_1_1batch__collector__t.html#a0ff97c9b6cf2c88d9804fcaf7856daf7", null ],
     [ "has_batches", "classunravel_1_1batch__collector__t.html#a41dd8e942396c9c2a1b8f0f583be9204", null ],
+    [ "is_static_mesh_batching_enabled", "classunravel_1_1batch__collector__t.html#a6f1dc20697f533ba334921ac36a40b30", null ],
     [ "operator=", "classunravel_1_1batch__collector__t.html#a9dd902874f44860e815a43ba5359c6a4", null ],
     [ "operator=", "classunravel_1_1batch__collector__t.html#ae129815137660564cf8f76283ebca3ca", null ],
     [ "prepare_batches", "classunravel_1_1batch__collector__t.html#a420fda87d16efa4edbc0a8d81b5ec72e", null ],
     [ "set_max_instances_per_batch", "classunravel_1_1batch__collector__t.html#a2501b77e78a7cb8a0dec82123d0bd204", null ],
-    [ "set_profiling_enabled", "classunravel_1_1batch__collector__t.html#a6039a2912adf8c7e4621f805a19fc82d", null ]
+    [ "set_profiling_enabled", "classunravel_1_1batch__collector__t.html#a6039a2912adf8c7e4621f805a19fc82d", null ],
+    [ "set_static_mesh_batching_enabled", "classunravel_1_1batch__collector__t.html#afff6f058f27a56eb6d213a2cdc6c6594", null ]
 ];

@@ -1,4 +1,4 @@
 var editor_8h =
 [
-    [ "unravel::editor", "structunravel_1_1editor.html", null ]
+    [ "unravel::editor", "structunravel_1_1editor.html", "structunravel_1_1editor" ]
 ];

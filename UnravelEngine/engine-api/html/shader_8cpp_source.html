@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/engine/core/graphics/shader.cpp Source File</title>
+<title>Unravel Engine C++ Reference: engine/core/graphics/shader.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,7 +106,7 @@ $(function(){initNavTree('shader_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
 <div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="structgfx_1_1shader.html#a26e499019ef9bb03309978733b91d7cc">    6</a></span><a class="code hl_function" href="structgfx_1_1shader.html#a3c4fc6ea3e3dd9e6c89420002edfec79">shader::shader</a>(<span class="keyword">const</span> std::string&amp; path)</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    : <a class="code hl_struct" href="structgfx_1_1shader.html">shader</a>(<a class="code hl_function" href="bgfx__utils_8cpp.html#a3d90e3a0dbad7c8bee994dd47a97bf05">loadShader</a>(<a class="code hl_namespace" href="namespacebx.html">bx</a>::FilePath(path.c_str())))</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    : <a class="code hl_struct" href="structgfx_1_1shader.html">shader</a>(<a class="code hl_function" href="bgfx__utils_8cpp.html#a0de6853102fe82c112e0ad9aeccd7f81">loadShader</a>(<a class="code hl_namespace" href="namespacebx.html">bx</a>::FilePath(path.c_str())))</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>}</div>
 </div>
@@ -150,7 +150,7 @@ $(function(){initNavTree('shader_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <span class="comment">// namespace gfx</span></div>
-<div class="ttc" id="abgfx__utils_8cpp_html_a3d90e3a0dbad7c8bee994dd47a97bf05"><div class="ttname"><a href="bgfx__utils_8cpp.html#a3d90e3a0dbad7c8bee994dd47a97bf05">loadShader</a></div><div class="ttdeci">bgfx::ShaderHandle loadShader(const bx::StringView &amp;_name)</div><div class="ttdef"><b>Definition</b> <a href="bgfx__utils_8cpp_source.html#l00185">bgfx_utils.cpp:185</a></div></div>
+<div class="ttc" id="abgfx__utils_8cpp_html_a0de6853102fe82c112e0ad9aeccd7f81"><div class="ttname"><a href="bgfx__utils_8cpp.html#a0de6853102fe82c112e0ad9aeccd7f81">loadShader</a></div><div class="ttdeci">static bgfx::ShaderHandle loadShader(bx::FileReaderI *_reader, const bx::StringView &amp;_name)</div><div class="ttdef"><b>Definition</b> <a href="bgfx__utils_8cpp_source.html#l00150">bgfx_utils.cpp:150</a></div></div>
 <div class="ttc" id="abgfx__utils_8h_html"><div class="ttname"><a href="bgfx__utils_8h.html">bgfx_utils.h</a></div></div>
 <div class="ttc" id="aclassgfx_1_1handle__impl_html_a524e2b21fb4afb5a0d51bc8f3fd4e80c"><div class="ttname"><a href="classgfx_1_1handle__impl.html#a524e2b21fb4afb5a0d51bc8f3fd4e80c">gfx::handle_impl&lt; shader, shader_handle &gt;::handle_</a></div><div class="ttdeci">shader_handle handle_</div><div class="ttdef"><b>Definition</b> <a href="handle__impl_8h_source.html#l00157">handle_impl.h:157</a></div></div>
 <div class="ttc" id="ahub_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00033">hub.cpp:33</a></div></div>
@@ -171,7 +171,7 @@ $(function(){initNavTree('shader_8cpp_source.html',''); initResizable(true); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_313a656c30f2f21a897c9e02f299f510.html">engine</a></li><li class="navelem"><a class="el" href="dir_ced40213a000e1ef9a529a7be3c50dd7.html">core</a></li><li class="navelem"><a class="el" href="dir_8d41dbf129e93d9f1fae7398249a3336.html">graphics</a></li><li class="navelem"><a class="el" href="shader_8cpp.html">shader.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_a0e47c104ecd6c0b6dccb5f33d071508.html">core</a></li><li class="navelem"><a class="el" href="dir_009a11a7a67d65df2515f25df003ba1b.html">graphics</a></li><li class="navelem"><a class="el" href="shader_8cpp.html">shader.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

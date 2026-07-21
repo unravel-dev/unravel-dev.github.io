@@ -71,7 +71,7 @@ var namespaceseq =
     [ "seq_action", "structseq_1_1seq__action.html", "structseq_1_1seq__action" ],
     [ "seq_inspect_info", "structseq_1_1seq__inspect__info.html", "structseq_1_1seq__inspect__info" ],
     [ "seq_manager", "structseq_1_1seq__manager.html", "structseq_1_1seq__manager" ],
-    [ "seq_private", "structseq_1_1seq__private.html", null ],
+    [ "seq_private", "structseq_1_1seq__private.html", "structseq_1_1seq__private" ],
     [ "seq_scope_policy", "structseq_1_1seq__scope__policy.html", "structseq_1_1seq__scope__policy" ],
     [ "values_t", "structseq_1_1values__t.html", "structseq_1_1values__t" ],
     [ "clock_t", "namespaceseq.html#ad9e7ddd7d7e35660206442ab98559206", null ],

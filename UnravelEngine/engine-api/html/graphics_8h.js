@@ -221,5 +221,6 @@ var graphics_8h =
     [ "update_texture_cube", "graphics_8h.html#ac7f123e1d71784a39c625102b5045a2a", null ],
     [ "vertex_convert", "graphics_8h.html#a2bbb9d3898afd6b3eedc78919822e08e", null ],
     [ "vertex_pack", "graphics_8h.html#a6fe5c439e39e5474883ca79595a45d2b", null ],
-    [ "vertex_unpack", "graphics_8h.html#afd9545b01d116d5f7dda040b36466643", null ]
+    [ "vertex_unpack", "graphics_8h.html#afd9545b01d116d5f7dda040b36466643", null ],
+    [ "invalid_handle", "graphics_8h.html#a9f407b2706246095d81dbedfa180f254", null ]
 ];

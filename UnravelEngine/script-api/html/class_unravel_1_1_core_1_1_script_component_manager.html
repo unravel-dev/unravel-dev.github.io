@@ -108,33 +108,25 @@ $(function(){initNavTree('class_unravel_1_1_core_1_1_script_component_manager.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a32910fa628e0d52c3c7eaba01e5cf686" id="r_a32910fa628e0d52c3c7eaba01e5cf686"><td class="memItemLeft" align="right" valign="top"><a id="a32910fa628e0d52c3c7eaba01e5cf686" name="a32910fa628e0d52c3c7eaba01e5cf686"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptComponentManager</b> (Dictionary&lt; Type, int &gt; typePriorityMap=null)</td></tr>
+<tr class="memitem:a32910fa628e0d52c3c7eaba01e5cf686" id="r_a32910fa628e0d52c3c7eaba01e5cf686"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32910fa628e0d52c3c7eaba01e5cf686">ScriptComponentManager</a> (Dictionary&lt; Type, int &gt; typePriorityMap=null)</td></tr>
 <tr class="separator:a32910fa628e0d52c3c7eaba01e5cf686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae565432ad7511c1d77872f4fbfe1f014" id="r_ae565432ad7511c1d77872f4fbfe1f014"><td class="memItemLeft" align="right" valign="top"><a id="ae565432ad7511c1d77872f4fbfe1f014" name="ae565432ad7511c1d77872f4fbfe1f014"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (<a class="el" href="class_unravel_1_1_core_1_1_script_component.html">ScriptComponent</a> comp)</td></tr>
-<tr class="memdesc:ae565432ad7511c1d77872f4fbfe1f014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="class_unravel_1_1_core_1_1_script_component.html" title="Represents a script component that provides lifecycle hooks and event handling for an entity.">ScriptComponent</a>. If we're currently invoking, we defer it into 'pendingOps'. Otherwise, we insert it directly into the appropriate type bucket. <br /></td></tr>
+<tr class="memitem:ae565432ad7511c1d77872f4fbfe1f014" id="r_ae565432ad7511c1d77872f4fbfe1f014"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae565432ad7511c1d77872f4fbfe1f014">Add</a> (<a class="el" href="class_unravel_1_1_core_1_1_script_component.html">ScriptComponent</a> comp)</td></tr>
+<tr class="memdesc:ae565432ad7511c1d77872f4fbfe1f014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="class_unravel_1_1_core_1_1_script_component.html" title="Represents a script component that provides lifecycle hooks and event handling for an entity.">ScriptComponent</a>. If we're currently invoking, we defer it into 'pendingOps'. Otherwise, we insert it directly into the appropriate type bucket.  <br /></td></tr>
 <tr class="separator:ae565432ad7511c1d77872f4fbfe1f014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3f4d95735b6abf1dce9b511ab59f607" id="r_ad3f4d95735b6abf1dce9b511ab59f607"><td class="memItemLeft" align="right" valign="top"><a id="ad3f4d95735b6abf1dce9b511ab59f607" name="ad3f4d95735b6abf1dce9b511ab59f607"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Remove</b> (<a class="el" href="class_unravel_1_1_core_1_1_script_component.html">ScriptComponent</a> comp)</td></tr>
-<tr class="memdesc:ad3f4d95735b6abf1dce9b511ab59f607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a <a class="el" href="class_unravel_1_1_core_1_1_script_component.html" title="Represents a script component that provides lifecycle hooks and event handling for an entity.">ScriptComponent</a>. Uses O(1) dictionary lookup instead of linear search. If we are invoking, defer the operation and collapse with existing operations. <br /></td></tr>
+<tr class="memitem:ad3f4d95735b6abf1dce9b511ab59f607" id="r_ad3f4d95735b6abf1dce9b511ab59f607"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3f4d95735b6abf1dce9b511ab59f607">Remove</a> (<a class="el" href="class_unravel_1_1_core_1_1_script_component.html">ScriptComponent</a> comp)</td></tr>
+<tr class="memdesc:ad3f4d95735b6abf1dce9b511ab59f607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a <a class="el" href="class_unravel_1_1_core_1_1_script_component.html" title="Represents a script component that provides lifecycle hooks and event handling for an entity.">ScriptComponent</a>. Uses <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172faf186217753c37b9b9f958d906208506e">O(1)</a> dictionary lookup instead of linear search. If we are invoking, defer the operation and collapse with existing operations.  <br /></td></tr>
 <tr class="separator:ad3f4d95735b6abf1dce9b511ab59f607"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0407affe3691b182013e3c01e838798e" id="r_a0407affe3691b182013e3c01e838798e"><td class="memItemLeft" align="right" valign="top"><a id="a0407affe3691b182013e3c01e838798e" name="a0407affe3691b182013e3c01e838798e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
-<tr class="memdesc:a0407affe3691b182013e3c01e838798e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears everything. <br /></td></tr>
+<tr class="memitem:a0407affe3691b182013e3c01e838798e" id="r_a0407affe3691b182013e3c01e838798e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0407affe3691b182013e3c01e838798e">Clear</a> ()</td></tr>
+<tr class="memdesc:a0407affe3691b182013e3c01e838798e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears everything.  <br /></td></tr>
 <tr class="separator:a0407affe3691b182013e3c01e838798e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac599157b60276fd4321e86beae2794a8" id="r_ac599157b60276fd4321e86beae2794a8"><td class="memItemLeft" align="right" valign="top"><a id="ac599157b60276fd4321e86beae2794a8" name="ac599157b60276fd4321e86beae2794a8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeUpdate</b> ()</td></tr>
+<tr class="memitem:ac599157b60276fd4321e86beae2794a8" id="r_ac599157b60276fd4321e86beae2794a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac599157b60276fd4321e86beae2794a8">InvokeUpdate</a> ()</td></tr>
 <tr class="separator:ac599157b60276fd4321e86beae2794a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c44cf9296b88fb9970b4f7a75a6448" id="r_a41c44cf9296b88fb9970b4f7a75a6448"><td class="memItemLeft" align="right" valign="top"><a id="a41c44cf9296b88fb9970b4f7a75a6448" name="a41c44cf9296b88fb9970b4f7a75a6448"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeFixedUpdate</b> ()</td></tr>
+<tr class="memitem:a41c44cf9296b88fb9970b4f7a75a6448" id="r_a41c44cf9296b88fb9970b4f7a75a6448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41c44cf9296b88fb9970b4f7a75a6448">InvokeFixedUpdate</a> ()</td></tr>
 <tr class="separator:a41c44cf9296b88fb9970b4f7a75a6448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26534787e68c829b6a21dd7ddfcff92a" id="r_a26534787e68c829b6a21dd7ddfcff92a"><td class="memItemLeft" align="right" valign="top"><a id="a26534787e68c829b6a21dd7ddfcff92a" name="a26534787e68c829b6a21dd7ddfcff92a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeLateUpdate</b> ()</td></tr>
+<tr class="memitem:a26534787e68c829b6a21dd7ddfcff92a" id="r_a26534787e68c829b6a21dd7ddfcff92a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26534787e68c829b6a21dd7ddfcff92a">InvokeLateUpdate</a> ()</td></tr>
 <tr class="separator:a26534787e68c829b6a21dd7ddfcff92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8756c7571509b177616c1469c98b8d82" id="r_a8756c7571509b177616c1469c98b8d82"><td class="memItemLeft" align="right" valign="top"><a id="a8756c7571509b177616c1469c98b8d82" name="a8756c7571509b177616c1469c98b8d82"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTypePriority</b> (Type t, int priority)</td></tr>
-<tr class="memdesc:a8756c7571509b177616c1469c98b8d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets or updates the priority for a given type. If the type already has components, the bucket priority is updated and buckets are re-sorted. <br /></td></tr>
+<tr class="memitem:a8756c7571509b177616c1469c98b8d82" id="r_a8756c7571509b177616c1469c98b8d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8756c7571509b177616c1469c98b8d82">SetTypePriority</a> (Type t, int priority)</td></tr>
+<tr class="memdesc:a8756c7571509b177616c1469c98b8d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets or updates the priority for a given type. If the type already has components, the bucket priority is updated and buckets are re-sorted.  <br /></td></tr>
 <tr class="separator:a8756c7571509b177616c1469c98b8d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -142,13 +134,163 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTypePriority</b> (
 <ul>
 <li>Per-type buckets: Components of same type never sorted against each other</li>
 <li>Slot reuse: Removed components leave gaps that are reused (no shifting)</li>
-<li>O(1) removal: Dictionary lookup instead of linear search</li>
+<li><a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172faf186217753c37b9b9f958d906208506e">O(1)</a> removal: Dictionary lookup instead of linear search</li>
 <li>Minimal allocations: Reuses collections across frames</li>
 <li>Deferred operations during invocation for thread safety</li>
 <li>Method override detection: Only adds components that actually override Update/FixedUpdate/LateUpdate </li>
 </ul>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>system/<b>System.cs</b></li>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a32910fa628e0d52c3c7eaba01e5cf686" name="a32910fa628e0d52c3c7eaba01e5cf686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32910fa628e0d52c3c7eaba01e5cf686">&#9670;&#160;</a></span>ScriptComponentManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Unravel.Core.ScriptComponentManager.ScriptComponentManager </td>
+          <td>(</td>
+          <td class="paramtype">Dictionary&lt; Type, int &gt;</td>          <td class="paramname"><span class="paramname"><em>typePriorityMap</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae565432ad7511c1d77872f4fbfe1f014" name="ae565432ad7511c1d77872f4fbfe1f014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae565432ad7511c1d77872f4fbfe1f014">&#9670;&#160;</a></span>Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Unravel.Core.ScriptComponentManager.Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unravel_1_1_core_1_1_script_component.html">ScriptComponent</a></td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a <a class="el" href="class_unravel_1_1_core_1_1_script_component.html" title="Represents a script component that provides lifecycle hooks and event handling for an entity.">ScriptComponent</a>. If we're currently invoking, we defer it into 'pendingOps'. Otherwise, we insert it directly into the appropriate type bucket. </p>
+
+</div>
+</div>
+<a id="a0407affe3691b182013e3c01e838798e" name="a0407affe3691b182013e3c01e838798e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0407affe3691b182013e3c01e838798e">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Unravel.Core.ScriptComponentManager.Clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears everything. </p>
+
+</div>
+</div>
+<a id="a41c44cf9296b88fb9970b4f7a75a6448" name="a41c44cf9296b88fb9970b4f7a75a6448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c44cf9296b88fb9970b4f7a75a6448">&#9670;&#160;</a></span>InvokeFixedUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Unravel.Core.ScriptComponentManager.InvokeFixedUpdate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26534787e68c829b6a21dd7ddfcff92a" name="a26534787e68c829b6a21dd7ddfcff92a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26534787e68c829b6a21dd7ddfcff92a">&#9670;&#160;</a></span>InvokeLateUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Unravel.Core.ScriptComponentManager.InvokeLateUpdate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac599157b60276fd4321e86beae2794a8" name="ac599157b60276fd4321e86beae2794a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac599157b60276fd4321e86beae2794a8">&#9670;&#160;</a></span>InvokeUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Unravel.Core.ScriptComponentManager.InvokeUpdate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3f4d95735b6abf1dce9b511ab59f607" name="ad3f4d95735b6abf1dce9b511ab59f607"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f4d95735b6abf1dce9b511ab59f607">&#9670;&#160;</a></span>Remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Unravel.Core.ScriptComponentManager.Remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_unravel_1_1_core_1_1_script_component.html">ScriptComponent</a></td>          <td class="paramname"><span class="paramname"><em>comp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a <a class="el" href="class_unravel_1_1_core_1_1_script_component.html" title="Represents a script component that provides lifecycle hooks and event handling for an entity.">ScriptComponent</a>. Uses <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172faf186217753c37b9b9f958d906208506e">O(1)</a> dictionary lookup instead of linear search. If we are invoking, defer the operation and collapse with existing operations. </p>
+
+</div>
+</div>
+<a id="a8756c7571509b177616c1469c98b8d82" name="a8756c7571509b177616c1469c98b8d82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8756c7571509b177616c1469c98b8d82">&#9670;&#160;</a></span>SetTypePriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Unravel.Core.ScriptComponentManager.SetTypePriority </td>
+          <td>(</td>
+          <td class="paramtype">Type</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>priority</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets or updates the priority for a given type. If the type already has components, the bucket priority is updated and buckets are re-sorted. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>system/<a class="el" href="_system_8cs.html">System.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

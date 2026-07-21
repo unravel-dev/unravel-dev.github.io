@@ -26,6 +26,8 @@ var classunravel_1_1model__component =
     [ "is_skinned", "classunravel_1_1model__component.html#ab839de53bdb2ccbedfa38836ab162d9f", null ],
     [ "is_static", "classunravel_1_1model__component.html#a67a2e93024b8e223a753a208a9db028a", null ],
     [ "mark_pose_dirty", "classunravel_1_1model__component.html#ab6cfbb02e2218570c48f0c2cc9ad1876", null ],
+    [ "on_create_component", "classunravel_1_1model__component.html#a0deb2db1e29b6c289a3c926ac949fc99", null ],
+    [ "on_destroy_component", "classunravel_1_1model__component.html#a7ee84008c3ec44f9c1a22cbe4caee33d", null ],
     [ "set_armature_entities", "classunravel_1_1model__component.html#ae1e3b27462b83c78146b5402def19bc0", null ],
     [ "set_casts_shadow", "classunravel_1_1model__component.html#af6f26cec9fecbf20fee640eec4d8ba41", null ],
     [ "set_enabled", "classunravel_1_1model__component.html#a41a84b2075a85868544ba666ccec199d", null ],

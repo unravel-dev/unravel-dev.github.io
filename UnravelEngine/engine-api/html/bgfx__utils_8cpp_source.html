@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/engine/core/graphics/utils/bgfx_utils.cpp Source File</title>
+<title>Unravel Engine C++ Reference: engine/core/graphics/utils/bgfx_utils.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -220,7 +220,8 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
 </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">static</span> <span class="keyword">const</span> bgfx::Memory* loadMem(bx::FileReaderI* _reader, <span class="keyword">const</span> <span class="keywordtype">char</span>* _filePath)</div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="bgfx__utils_8cpp.html#a03da0ad1dba2ca1b1a491953c7f879c5">  114</a></span><span class="keyword">static</span> <span class="keyword">const</span> bgfx::Memory* <a class="code hl_function" href="bgfx__utils_8cpp.html#a03da0ad1dba2ca1b1a491953c7f879c5">loadMem</a>(bx::FileReaderI* _reader, <span class="keyword">const</span> <span class="keywordtype">char</span>* _filePath)</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>{</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">if</span>(bx::open(_reader, _filePath))</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    {</div>
@@ -235,8 +236,10 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_define" href="dbg_8h.html#a3386b770af9e20c1a1befa290f3b8138">DBG</a>(<span class="stringliteral">&quot;Failed to load %s.&quot;</span>, _filePath);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="keyword">static</span> <span class="keywordtype">void</span>* loadMem(bx::FileReaderI* _reader, bx::AllocatorI* _allocator, <span class="keyword">const</span> bx::FilePath&amp; _filePath, uint32_t* _size)</div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="bgfx__utils_8cpp.html#a22d388b35bf3109535e14f7094ae390c">  130</a></span><span class="keyword">static</span> <span class="keywordtype">void</span>* <a class="code hl_function" href="bgfx__utils_8cpp.html#a03da0ad1dba2ca1b1a491953c7f879c5">loadMem</a>(bx::FileReaderI* _reader, bx::AllocatorI* _allocator, <span class="keyword">const</span> bx::FilePath&amp; _filePath, uint32_t* _size)</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>{</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">if</span>(bx::open(_reader, _filePath))</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    {</div>
@@ -255,8 +258,10 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <a class="code hl_define" href="dbg_8h.html#a3386b770af9e20c1a1befa290f3b8138">DBG</a>(<span class="stringliteral">&quot;Failed to load %s.&quot;</span>, _filePath);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
+</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">static</span> bgfx::ShaderHandle loadShader(bx::FileReaderI* _reader, <span class="keyword">const</span> bx::StringView&amp; _name)</div>
+<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="bgfx__utils_8cpp.html#a0de6853102fe82c112e0ad9aeccd7f81">  150</a></span><span class="keyword">static</span> bgfx::ShaderHandle <a class="code hl_function" href="bgfx__utils_8cpp.html#a0de6853102fe82c112e0ad9aeccd7f81">loadShader</a>(bx::FileReaderI* _reader, <span class="keyword">const</span> bx::StringView&amp; _name)</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>{</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    bx::FilePath filePath(<span class="stringliteral">&quot;shaders/&quot;</span>);</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
@@ -285,25 +290,26 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    filePath.join(fileName);</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    bgfx::ShaderHandle <a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a> = bgfx::createShader(loadMem(_reader, filePath.getCPtr() ) );</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    bgfx::ShaderHandle <a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a> = bgfx::createShader(<a class="code hl_function" href="bgfx__utils_8cpp.html#a03da0ad1dba2ca1b1a491953c7f879c5">loadMem</a>(_reader, filePath.getCPtr() ) );</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    bgfx::setName(<a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a>, _name.getPtr(), _name.getLength() );</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a>;</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>}</div>
+</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
 <div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="bgfx__utils_8cpp.html#a3d90e3a0dbad7c8bee994dd47a97bf05">  185</a></span>bgfx::ShaderHandle loadShader(<span class="keyword">const</span> bx::StringView&amp; _name)</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="bgfx__utils_8cpp.html#a3d90e3a0dbad7c8bee994dd47a97bf05">  185</a></span>bgfx::ShaderHandle <a class="code hl_function" href="bgfx__utils_8cpp.html#a0de6853102fe82c112e0ad9aeccd7f81">loadShader</a>(<span class="keyword">const</span> bx::StringView&amp; _name)</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    entry::FileReader reader;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">return</span> loadShader(&amp;reader, _name);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="bgfx__utils_8cpp.html#a0de6853102fe82c112e0ad9aeccd7f81">loadShader</a>(&amp;reader, _name);</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>}</div>
 </div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
 <div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="bgfx__utils_8cpp.html#aec795e4713fde55bd645b7716d07802f">  191</a></span>bgfx::ShaderHandle loadShader(<span class="keyword">const</span> bx::FilePath&amp; _filePath)</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="bgfx__utils_8cpp.html#aec795e4713fde55bd645b7716d07802f">  191</a></span>bgfx::ShaderHandle <a class="code hl_function" href="bgfx__utils_8cpp.html#a0de6853102fe82c112e0ad9aeccd7f81">loadShader</a>(<span class="keyword">const</span> bx::FilePath&amp; _filePath)</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    entry::FileReader reader;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    bgfx::ShaderHandle <a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a> = bgfx::createShader(loadMem(&amp;reader, _filePath.getCPtr() ) );</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    bgfx::ShaderHandle <a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a> = bgfx::createShader(<a class="code hl_function" href="bgfx__utils_8cpp.html#a03da0ad1dba2ca1b1a491953c7f879c5">loadMem</a>(&amp;reader, _filePath.getCPtr() ) );</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    bgfx::setName(<a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a>, _filePath.getFileName().getPtr(), int32_t(_filePath.getFileName().getLength() ) );</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a>;</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
@@ -312,11 +318,11 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="foldopen" id="foldopen00199" data-start="{" data-end="}">
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="bgfx__utils_8cpp.html#ad915993e0346f2087213c09fd97ad7de">  199</a></span>bgfx::ProgramHandle <a class="code hl_function" href="bgfx__utils_8cpp.html#ad915993e0346f2087213c09fd97ad7de">loadProgram</a>(bx::FileReaderI* _reader, <span class="keyword">const</span> bx::StringView&amp; _vsName, <span class="keyword">const</span> bx::StringView&amp; _fsName)</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>{</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    bgfx::ShaderHandle vsh = loadShader(_reader, _vsName);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    bgfx::ShaderHandle vsh = <a class="code hl_function" href="bgfx__utils_8cpp.html#a0de6853102fe82c112e0ad9aeccd7f81">loadShader</a>(_reader, _vsName);</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    bgfx::ShaderHandle fsh = BGFX_INVALID_HANDLE;</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">if</span>(NULL != _fsName)</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        fsh = loadShader(_reader, _fsName);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        fsh = <a class="code hl_function" href="bgfx__utils_8cpp.html#a0de6853102fe82c112e0ad9aeccd7f81">loadShader</a>(_reader, _fsName);</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    }</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keywordflow">return</span> bgfx::createProgram(vsh, fsh, <span class="keyword">true</span> <span class="comment">/* destroy shaders when program is destroyed */</span>);</div>
@@ -331,14 +337,17 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>}</div>
 </div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="keyword">static</span> <span class="keywordtype">void</span> imageReleaseCb(<span class="keywordtype">void</span>* _ptr, <span class="keywordtype">void</span>* _userData)</div>
+<div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="bgfx__utils_8cpp.html#a92a3ac6e890b77e760e3b0b29f136d51">  217</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="bgfx__utils_8cpp.html#a92a3ac6e890b77e760e3b0b29f136d51">imageReleaseCb</a>(<span class="keywordtype">void</span>* _ptr, <span class="keywordtype">void</span>* _userData)</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>{</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    BX_UNUSED(_ptr);</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    bimg::ImageContainer* imageContainer = (bimg::ImageContainer*)_userData;</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    bimg::imageFree(imageContainer);</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>}</div>
+</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="keyword">static</span> bgfx::TextureHandle loadTextureFromContainer(bimg::ImageContainer* imageContainer,</div>
+<div class="foldopen" id="foldopen00224" data-start="{" data-end="}">
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="bgfx__utils_8cpp.html#a2cc7942e303413ee6c79736f5bc6f5b5">  224</a></span><span class="keyword">static</span> bgfx::TextureHandle <a class="code hl_function" href="bgfx__utils_8cpp.html#a2cc7942e303413ee6c79736f5bc6f5b5">loadTextureFromContainer</a>(bimg::ImageContainer* imageContainer,</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                                                    uint64_t _flags,</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                                                    bgfx::TextureInfo* _info,</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                                                    <span class="keyword">const</span> <a class="code hl_typedef" href="bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6">TexturePreCreateFn</a>&amp; _preCreate = <span class="keyword">nullptr</span>)</div>
@@ -351,7 +360,7 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keyword">const</span> bgfx::Memory* mem = bgfx::makeRef(</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        imageContainer-&gt;m_data,</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        imageContainer-&gt;m_size,</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        imageReleaseCb,</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <a class="code hl_function" href="bgfx__utils_8cpp.html#a92a3ac6e890b77e760e3b0b29f136d51">imageReleaseCb</a>,</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        imageContainer);</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    bgfx::TextureInfo info;</div>
@@ -415,6 +424,7 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="keywordflow">return</span> BGFX_INVALID_HANDLE;</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>}</div>
+</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="keyword">namespace</span></div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>{</div>
@@ -644,7 +654,7 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>            *_orientation = imageContainer-&gt;m_orientation;</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        }</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>        <a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a> = loadTextureFromContainer(imageContainer, _flags, _info, _preCreate);</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>        <a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a> = <a class="code hl_function" href="bgfx__utils_8cpp.html#a2cc7942e303413ee6c79736f5bc6f5b5">loadTextureFromContainer</a>(imageContainer, _flags, _info, _preCreate);</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>        <span class="keywordflow">if</span>(bgfx::isValid(<a class="code hl_variable" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a>) &amp;&amp; NULL != _name)</div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>        {</div>
@@ -720,7 +730,7 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    entry::FileReader reader;</div>
 <div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    uint32_t <a class="code hl_struct" href="structsize.html">size</a> = 0;</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <span class="keywordtype">void</span>* data = loadMem(&amp;reader, entry::getAllocator(), _filePath, &amp;<a class="code hl_struct" href="structsize.html">size</a>);</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <span class="keywordtype">void</span>* data = <a class="code hl_function" href="bgfx__utils_8cpp.html#a03da0ad1dba2ca1b1a491953c7f879c5">loadMem</a>(&amp;reader, entry::getAllocator(), _filePath, &amp;<a class="code hl_struct" href="structsize.html">size</a>);</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span> </div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    <span class="keywordflow">if</span>(data == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    {</div>
@@ -1035,12 +1045,16 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <div class="ttc" id="aasset__compiler_8cpp_html_a325272ddd9a962f05deb905101d25cbd"><div class="ttname"><a href="asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd">width</a></div><div class="ttdeci">uint32_t width</div><div class="ttdef"><b>Definition</b> <a href="asset__compiler_8cpp_source.html#l00103">asset_compiler.cpp:103</a></div></div>
 <div class="ttc" id="aasset__compiler_8cpp_html_a6ad4f820ce4e75cda0686fcaad5168be"><div class="ttname"><a href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a></div><div class="ttdeci">uint32_t height</div><div class="ttdef"><b>Definition</b> <a href="asset__compiler_8cpp_source.html#l00104">asset_compiler.cpp:104</a></div></div>
 <div class="ttc" id="aasset__compiler_8cpp_html_aae58531c83698607139f2bf8c13d97fd"><div class="ttname"><a href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a></div><div class="ttdeci">gfx::texture_format format</div><div class="ttdef"><b>Definition</b> <a href="asset__compiler_8cpp_source.html#l00102">asset_compiler.cpp:102</a></div></div>
+<div class="ttc" id="abgfx__utils_8cpp_html_a03da0ad1dba2ca1b1a491953c7f879c5"><div class="ttname"><a href="bgfx__utils_8cpp.html#a03da0ad1dba2ca1b1a491953c7f879c5">loadMem</a></div><div class="ttdeci">static const bgfx::Memory * loadMem(bx::FileReaderI *_reader, const char *_filePath)</div><div class="ttdef"><b>Definition</b> <a href="#l00114">bgfx_utils.cpp:114</a></div></div>
+<div class="ttc" id="abgfx__utils_8cpp_html_a0de6853102fe82c112e0ad9aeccd7f81"><div class="ttname"><a href="bgfx__utils_8cpp.html#a0de6853102fe82c112e0ad9aeccd7f81">loadShader</a></div><div class="ttdeci">static bgfx::ShaderHandle loadShader(bx::FileReaderI *_reader, const bx::StringView &amp;_name)</div><div class="ttdef"><b>Definition</b> <a href="#l00150">bgfx_utils.cpp:150</a></div></div>
+<div class="ttc" id="abgfx__utils_8cpp_html_a2cc7942e303413ee6c79736f5bc6f5b5"><div class="ttname"><a href="bgfx__utils_8cpp.html#a2cc7942e303413ee6c79736f5bc6f5b5">loadTextureFromContainer</a></div><div class="ttdeci">static bgfx::TextureHandle loadTextureFromContainer(bimg::ImageContainer *imageContainer, uint64_t _flags, bgfx::TextureInfo *_info, const TexturePreCreateFn &amp;_preCreate=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="#l00224">bgfx_utils.cpp:224</a></div></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_a47e7b088fe9f722a93bf579c7588c10d"><div class="ttname"><a href="bgfx__utils_8cpp.html#a47e7b088fe9f722a93bf579c7588c10d">imageParseInfo</a></div><div class="ttdeci">bool imageParseInfo(const void *_data, uint32_t _size, bimg::ImageContainer &amp;_info, bx::Error *_err)</div><div class="ttdef"><b>Definition</b> <a href="#l00603">bgfx_utils.cpp:603</a></div></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_a491508725b1014fb0c4191ba597e2592"><div class="ttname"><a href="bgfx__utils_8cpp.html#a491508725b1014fb0c4191ba597e2592">calcTangents</a></div><div class="ttdeci">void calcTangents(void *_vertices, uint16_t _numVertices, bgfx::VertexLayout _layout, const uint16_t *_indices, uint32_t _numIndices)</div><div class="ttdef"><b>Definition</b> <a href="#l00628">bgfx_utils.cpp:628</a></div></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_a57212499d5d8d453cd2445f0a75e18ca"><div class="ttname"><a href="bgfx__utils_8cpp.html#a57212499d5d8d453cd2445f0a75e18ca">imageLoad</a></div><div class="ttdeci">bimg::ImageContainer * imageLoad(const void *data, uint32_t size, bgfx::TextureFormat::Enum _dstFormat)</div><div class="ttdef"><b>Definition</b> <a href="#l00583">bgfx_utils.cpp:583</a></div></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_a8c52c2b842ca50b4dcb761efd7f6a92b"><div class="ttname"><a href="bgfx__utils_8cpp.html#a8c52c2b842ca50b4dcb761efd7f6a92b">imageSave</a></div><div class="ttdeci">bool imageSave(const char *saveAs, bimg::ImageContainer *image)</div><div class="ttdef"><b>Definition</b> <a href="#l00789">bgfx_utils.cpp:789</a></div></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_a8c61b9c0c402b92836cacc469646337f"><div class="ttname"><a href="bgfx__utils_8cpp.html#a8c61b9c0c402b92836cacc469646337f">imageFlipTangentSpaceNormalY</a></div><div class="ttdeci">bool imageFlipTangentSpaceNormalY(bimg::ImageContainer *&amp;_image)</div><div class="ttdef"><b>Definition</b> <a href="#l00439">bgfx_utils.cpp:439</a></div></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_a8d00106b71ad519409149bbff31df7ee"><div class="ttname"><a href="bgfx__utils_8cpp.html#a8d00106b71ad519409149bbff31df7ee">load</a></div><div class="ttdeci">void * load(bx::FileReaderI *_reader, bx::AllocatorI *_allocator, const bx::FilePath &amp;_filePath, uint32_t *_size)</div><div class="ttdef"><b>Definition</b> <a href="#l00076">bgfx_utils.cpp:76</a></div></div>
+<div class="ttc" id="abgfx__utils_8cpp_html_a92a3ac6e890b77e760e3b0b29f136d51"><div class="ttname"><a href="bgfx__utils_8cpp.html#a92a3ac6e890b77e760e3b0b29f136d51">imageReleaseCb</a></div><div class="ttdeci">static void imageReleaseCb(void *_ptr, void *_userData)</div><div class="ttdef"><b>Definition</b> <a href="#l00217">bgfx_utils.cpp:217</a></div></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_ab890e26cdc87996dff44716222cf7c76"><div class="ttname"><a href="bgfx__utils_8cpp.html#ab890e26cdc87996dff44716222cf7c76">imagePrepareNormalMapBakePng</a></div><div class="ttdeci">bool imagePrepareNormalMapBakePng(bimg::ImageContainer *&amp;_image)</div><div class="ttdoc">Prepare a flipped normal map for PNG bake export (RGBA8, opaque alpha when unused).</div><div class="ttdef"><b>Definition</b> <a href="#l00467">bgfx_utils.cpp:467</a></div></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_ac7e73b30345a101c4b692eedac03de47"><div class="ttname"><a href="bgfx__utils_8cpp.html#ac7e73b30345a101c4b692eedac03de47">unload</a></div><div class="ttdeci">void unload(void *_ptr)</div><div class="ttdef"><b>Definition</b> <a href="#l00109">bgfx_utils.cpp:109</a></div></div>
 <div class="ttc" id="abgfx__utils_8cpp_html_ad915993e0346f2087213c09fd97ad7de"><div class="ttname"><a href="bgfx__utils_8cpp.html#ad915993e0346f2087213c09fd97ad7de">loadProgram</a></div><div class="ttdeci">bgfx::ProgramHandle loadProgram(bx::FileReaderI *_reader, const bx::StringView &amp;_vsName, const bx::StringView &amp;_fsName)</div><div class="ttdef"><b>Definition</b> <a href="#l00199">bgfx_utils.cpp:199</a></div></div>
@@ -1068,7 +1082,7 @@ $(function(){initNavTree('bgfx__utils_8cpp_source.html',''); initResizable(true)
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_313a656c30f2f21a897c9e02f299f510.html">engine</a></li><li class="navelem"><a class="el" href="dir_ced40213a000e1ef9a529a7be3c50dd7.html">core</a></li><li class="navelem"><a class="el" href="dir_8d41dbf129e93d9f1fae7398249a3336.html">graphics</a></li><li class="navelem"><a class="el" href="dir_3430a61ada3f7b10f98708b77b86f40f.html">utils</a></li><li class="navelem"><a class="el" href="bgfx__utils_8cpp.html">bgfx_utils.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_a0e47c104ecd6c0b6dccb5f33d071508.html">core</a></li><li class="navelem"><a class="el" href="dir_009a11a7a67d65df2515f25df003ba1b.html">graphics</a></li><li class="navelem"><a class="el" href="dir_b9c9f29d795ea8ef2e50b4c92d576dfc.html">utils</a></li><li class="navelem"><a class="el" href="bgfx__utils_8cpp.html">bgfx_utils.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

@@ -24,6 +24,8 @@ var classunravel_1_1physics__component =
     [ "is_property_dirty", "classunravel_1_1physics__component.html#ab24467793a7c7d8f67877498a990af42", null ],
     [ "is_sensor", "classunravel_1_1physics__component.html#ab10c58933dc0e4e0df2dec82b84f576c", null ],
     [ "is_using_gravity", "classunravel_1_1physics__component.html#a3c5805b74568b9506aab1fc11ced2b48", null ],
+    [ "on_create_component", "classunravel_1_1physics__component.html#aaa7cc564c71e6ea55623e0ef18876ed7", null ],
+    [ "on_destroy_component", "classunravel_1_1physics__component.html#aa0f1dc29fde4c71984183c98e241c761", null ],
     [ "set_angular_velocity", "classunravel_1_1physics__component.html#a9ef0d1c80eb4ec6c8a41f2b24d4bbe7c", null ],
     [ "set_collision_exclude_mask", "classunravel_1_1physics__component.html#a706902f0de029cd5121f28f8f84bf70f", null ],
     [ "set_collision_include_mask", "classunravel_1_1physics__component.html#a478fd399bd933e5f10ce540fe174eeea", null ],

@@ -124,19 +124,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d1a61c1af40ef11c22ef86e30638518" id="r_a5d1a61c1af40ef11c22ef86e30638518"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d1a61c1af40ef11c22ef86e30638518">UnsubscribeAll</a> (<a class="el" href="class_unravel_1_1_core_1_1_u_i_element.html">UIElement</a> elementWrapper)</td></tr>
 <tr class="memdesc:a5d1a61c1af40ef11c22ef86e30638518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe all callbacks from a specific <a class="el" href="class_unravel_1_1_core_1_1_u_i_element.html" title="Represents a wrapper around a native RmlUi element with managed lifetime. The C++ side owns the lifet...">UIElement</a>. This removes the element from both base and typed subscription dictionaries.  <br /></td></tr>
 <tr class="separator:a5d1a61c1af40ef11c22ef86e30638518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac497f734edaadac127e4f8430d97c00c" id="r_ac497f734edaadac127e4f8430d97c00c"><td class="memItemLeft" align="right" valign="top"><a id="ac497f734edaadac127e4f8430d97c00c" name="ac497f734edaadac127e4f8430d97c00c"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubscriptionCount</b> ()</td></tr>
-<tr class="memdesc:ac497f734edaadac127e4f8430d97c00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of active subscriptions (for debugging/monitoring). <br /></td></tr>
+<tr class="memitem:ac497f734edaadac127e4f8430d97c00c" id="r_ac497f734edaadac127e4f8430d97c00c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac497f734edaadac127e4f8430d97c00c">GetSubscriptionCount</a> ()</td></tr>
+<tr class="memdesc:ac497f734edaadac127e4f8430d97c00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of active subscriptions (for debugging/monitoring).  <br /></td></tr>
 <tr class="separator:ac497f734edaadac127e4f8430d97c00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f287a166a79b304ca0e982d366e859f" id="r_a7f287a166a79b304ca0e982d366e859f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f287a166a79b304ca0e982d366e859f">Subscribe&lt; T &gt;</a> (<a class="el" href="class_unravel_1_1_core_1_1_u_i_element.html">UIElement</a> elementWrapper, string eventType, Action&lt; T &gt; callback)</td></tr>
+<tr class="memitem:a7f287a166a79b304ca0e982d366e859f" id="r_a7f287a166a79b304ca0e982d366e859f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f287a166a79b304ca0e982d366e859f">Subscribe&lt; T &gt;</a> (<a class="el" href="class_unravel_1_1_core_1_1_u_i_element.html">UIElement</a> elementWrapper, string eventType, Action&lt; <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; callback)</td></tr>
 <tr class="memdesc:a7f287a166a79b304ca0e982d366e859f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to a typed UI event with compile-time type safety and zero runtime casting.  <br /></td></tr>
 <tr class="separator:a7f287a166a79b304ca0e982d366e859f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa47a6e38bc992445cfd5aa5da1a96549" id="r_aa47a6e38bc992445cfd5aa5da1a96549"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa47a6e38bc992445cfd5aa5da1a96549">Unsubscribe&lt; T &gt;</a> (<a class="el" href="class_unravel_1_1_core_1_1_u_i_element.html">UIElement</a> elementWrapper, string eventType, Action&lt; T &gt; callback)</td></tr>
+<tr class="memitem:aa47a6e38bc992445cfd5aa5da1a96549" id="r_aa47a6e38bc992445cfd5aa5da1a96549"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa47a6e38bc992445cfd5aa5da1a96549">Unsubscribe&lt; T &gt;</a> (<a class="el" href="class_unravel_1_1_core_1_1_u_i_element.html">UIElement</a> elementWrapper, string eventType, Action&lt; <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; callback)</td></tr>
 <tr class="memdesc:aa47a6e38bc992445cfd5aa5da1a96549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe from a typed UI event.  <br /></td></tr>
 <tr class="separator:aa47a6e38bc992445cfd5aa5da1a96549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25ddb09cbc8a207040f4664146a49391" id="r_a25ddb09cbc8a207040f4664146a49391"><td class="memItemLeft" align="right" valign="top"><a id="a25ddb09cbc8a207040f4664146a49391" name="a25ddb09cbc8a207040f4664146a49391"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubscriptionInfo</b> ()</td></tr>
-<tr class="memdesc:a25ddb09cbc8a207040f4664146a49391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get subscription info for debugging. <br /></td></tr>
+<tr class="memitem:a25ddb09cbc8a207040f4664146a49391" id="r_a25ddb09cbc8a207040f4664146a49391"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25ddb09cbc8a207040f4664146a49391">GetSubscriptionInfo</a> ()</td></tr>
+<tr class="memdesc:a25ddb09cbc8a207040f4664146a49391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get subscription info for debugging.  <br /></td></tr>
 <tr class="separator:a25ddb09cbc8a207040f4664146a49391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -164,6 +162,60 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubscript
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac497f734edaadac127e4f8430d97c00c" name="ac497f734edaadac127e4f8430d97c00c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac497f734edaadac127e4f8430d97c00c">&#9670;&#160;</a></span>GetSubscriptionCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int Unravel.Core.UIEventManager.GetSubscriptionCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of active subscriptions (for debugging/monitoring). </p>
+
+</div>
+</div>
+<a id="a25ddb09cbc8a207040f4664146a49391" name="a25ddb09cbc8a207040f4664146a49391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ddb09cbc8a207040f4664146a49391">&#9670;&#160;</a></span>GetSubscriptionInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string Unravel.Core.UIEventManager.GetSubscriptionInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get subscription info for debugging. </p>
 
 </div>
 </div>
@@ -221,7 +273,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubscript
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="#a288ce7b4b33f24fff5d770cf1a2c6c0e">Unravel.Core.UIEventManager.Subscribe</a>&lt; T &gt; </td>
+          <td class="memname">static void <a class="el" href="#a288ce7b4b33f24fff5d770cf1a2c6c0e">Unravel.Core.UIEventManager.Subscribe</a>&lt; <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_unravel_1_1_core_1_1_u_i_element.html">UIElement</a></td>          <td class="paramname"><span class="paramname"><em>elementWrapper</em></span>, </td>
         </tr>
@@ -233,7 +285,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubscript
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Action&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+          <td class="paramtype">Action&lt; <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -310,7 +362,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubscript
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool <a class="el" href="#ae377bd646c27affa0486e608a8d0b137">Unravel.Core.UIEventManager.Unsubscribe</a>&lt; T &gt; </td>
+          <td class="memname">static bool <a class="el" href="#ae377bd646c27affa0486e608a8d0b137">Unravel.Core.UIEventManager.Unsubscribe</a>&lt; <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_unravel_1_1_core_1_1_u_i_element.html">UIElement</a></td>          <td class="paramname"><span class="paramname"><em>elementWrapper</em></span>, </td>
         </tr>
@@ -322,7 +374,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubscript
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Action&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
+          <td class="paramtype">Action&lt; <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -379,7 +431,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubscript
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>ui/<b>UIEventManager.cs</b></li>
+<li>ui/<a class="el" href="_u_i_event_manager_8cs.html">UIEventManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

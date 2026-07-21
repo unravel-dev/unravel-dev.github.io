@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/engine/engine/rendering/pipeline/passes/assao_pass.cpp Source File</title>
+<title>Unravel Engine C++ Reference: engine/engine/rendering/pipeline/passes/assao_pass.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -143,7 +143,7 @@ $(function(){initNavTree('assao__pass_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
 </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">static</span> <span class="keyword">const</span> int32_t cMaxBlurPassCount = 6;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespaceunravel.html#a869909af4b59ef2fcfe70198609ac4b0">   39</a></span><span class="keyword">static</span> <span class="keyword">const</span> int32_t <a class="code hl_variable" href="namespaceunravel.html#a869909af4b59ef2fcfe70198609ac4b0">cMaxBlurPassCount</a> = 6;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classunravel_1_1assao__pass.html#a03a786e15b7bf50e37bc1d6d4fc60d8e">   41</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1assao__pass.html#a03a786e15b7bf50e37bc1d6d4fc60d8e">assao_pass::init</a>(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; ctx) -&gt; <span class="keywordtype">bool</span></div>
@@ -238,7 +238,7 @@ $(function(){initNavTree('assao__pass_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>             (dims.fullResOutScissorRect[2] + 1) / 2,</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>             (dims.fullResOutScissorRect[3] + 1) / 2);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">const</span> int32_t blurEnlarge =</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        cMaxBlurPassCount + bx::max(0, cMaxBlurPassCount - 2);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_variable" href="namespaceunravel.html#a869909af4b59ef2fcfe70198609ac4b0">cMaxBlurPassCount</a> + bx::max(0, <a class="code hl_variable" href="namespaceunravel.html#a869909af4b59ef2fcfe70198609ac4b0">cMaxBlurPassCount</a> - 2);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <a class="code hl_function" href="namespaceunravel.html#a7e561dd8f79a810c2563f7f98dbdfd15">vec4iSet</a>(dims.halfResOutScissorRect,</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>             bx::max(0, dims.halfResOutScissorRect[0] - blurEnlarge),</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>             bx::max(0, dims.halfResOutScissorRect[1] - blurEnlarge),</div>
@@ -391,7 +391,7 @@ $(function(){initNavTree('assao__pass_8cpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            }</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            int32_t blurPasses = m_settings.<a class="code hl_variable" href="structunravel_1_1assao__pass_1_1settings.html#a59fa07d24f81ba55336310c3a4e8fada">blur_pass_count</a>;</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            blurPasses = bx::min(blurPasses, cMaxBlurPassCount);</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            blurPasses = bx::min(blurPasses, <a class="code hl_variable" href="namespaceunravel.html#a869909af4b59ef2fcfe70198609ac4b0">cMaxBlurPassCount</a>);</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <span class="keywordflow">if</span>(m_settings.<a class="code hl_variable" href="structunravel_1_1assao__pass_1_1settings.html#a70fb55aea9b7bae61130036a1ef367f5">quality_level</a> == 3)</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            {</div>
@@ -934,6 +934,7 @@ $(function(){initNavTree('assao__pass_8cpp_source.html',''); initResizable(true)
 <div class="ttc" id="anamespaceunravel_html_a1c4dae3d72992d7a8985d1e4dc69e001"><div class="ttname"><a href="namespaceunravel.html#a1c4dae3d72992d7a8985d1e4dc69e001">unravel::vec4Set</a></div><div class="ttdeci">void vec4Set(float *_v, float _x, float _y, float _z, float _w)</div><div class="ttdef"><b>Definition</b> <a href="#l00023">assao_pass.cpp:23</a></div></div>
 <div class="ttc" id="anamespaceunravel_html_a4edb20ca7e38922a23335fd4ea0ef4a9ac77848cc02fefd0c360ce733a4affd93"><div class="ttname"><a href="namespaceunravel.html#a4edb20ca7e38922a23335fd4ea0ef4a9ac77848cc02fefd0c360ce733a4affd93">unravel::projection_mode::perspective</a></div><div class="ttdeci">@ perspective</div></div>
 <div class="ttc" id="anamespaceunravel_html_a7e561dd8f79a810c2563f7f98dbdfd15"><div class="ttname"><a href="namespaceunravel.html#a7e561dd8f79a810c2563f7f98dbdfd15">unravel::vec4iSet</a></div><div class="ttdeci">void vec4iSet(int32_t *_v, int32_t _x, int32_t _y, int32_t _z, int32_t _w)</div><div class="ttdef"><b>Definition</b> <a href="#l00031">assao_pass.cpp:31</a></div></div>
+<div class="ttc" id="anamespaceunravel_html_a869909af4b59ef2fcfe70198609ac4b0"><div class="ttname"><a href="namespaceunravel.html#a869909af4b59ef2fcfe70198609ac4b0">unravel::cMaxBlurPassCount</a></div><div class="ttdeci">static const int32_t cMaxBlurPassCount</div><div class="ttdef"><b>Definition</b> <a href="#l00039">assao_pass.cpp:39</a></div></div>
 <div class="ttc" id="anamespaceunravel_html_a9c92a2c854f620ca4d36bd3789f76657"><div class="ttname"><a href="namespaceunravel.html#a9c92a2c854f620ca4d36bd3789f76657">unravel::vec2Set</a></div><div class="ttdeci">void vec2Set(float *_v, float _x, float _y)</div><div class="ttdef"><b>Definition</b> <a href="#l00017">assao_pass.cpp:17</a></div></div>
 <div class="ttc" id="aparticle__system__soa_8cpp_html_ad172d714065755a3dbb38637f6d0b4aa"><div class="ttname"><a href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a></div><div class="ttdeci">std::vector&lt; float &gt; scale</div><div class="ttdef"><b>Definition</b> <a href="particle__system__soa_8cpp_source.html#l00376">particle_system_soa.cpp:376</a></div></div>
 <div class="ttc" id="arender__pass_8h_html"><div class="ttname"><a href="render__pass_8h.html">render_pass.h</a></div></div>
@@ -976,7 +977,7 @@ $(function(){initNavTree('assao__pass_8cpp_source.html',''); initResizable(true)
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_313a656c30f2f21a897c9e02f299f510.html">engine</a></li><li class="navelem"><a class="el" href="dir_fe4c16d53cd03e93df8190140fc6a855.html">engine</a></li><li class="navelem"><a class="el" href="dir_b820b6c3efcbb1512bc9db235027d2ce.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3cff47cd947a6589298ae5a66bddb56b.html">pipeline</a></li><li class="navelem"><a class="el" href="dir_aec6ed62704ac3e62b491600c9d16ea5.html">passes</a></li><li class="navelem"><a class="el" href="assao__pass_8cpp.html">assao_pass.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_d7cdb4e65164bd6dfc24cbda8766899e.html">engine</a></li><li class="navelem"><a class="el" href="dir_7a417b519920ff3d2359b1ba27c9cbce.html">rendering</a></li><li class="navelem"><a class="el" href="dir_91fecff5df773f832780fb4d70c47004.html">pipeline</a></li><li class="navelem"><a class="el" href="dir_6961c20857923ab844b8dc664c778309.html">passes</a></li><li class="navelem"><a class="el" href="assao__pass_8cpp.html">assao_pass.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

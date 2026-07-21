@@ -218,6 +218,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a598534149713902ce9dc01d478f458be" id="r_a598534149713902ce9dc01d478f458be"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a598534149713902ce9dc01d478f458be">make_pattern_filter</a> (const std::vector&lt; std::string &gt; &amp;includes, const std::vector&lt; std::string &gt; &amp;excludes={}) -&gt; <a class="el" href="classfs_1_1pattern__filter.html">pattern_filter</a></td></tr>
 <tr class="memdesc:a598534149713902ce9dc01d478f458be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to create a pattern filter with include and exclude lists.  <br /></td></tr>
 <tr class="separator:a598534149713902ce9dc01d478f458be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6291af5f75d93031f1ef6f035539b074" id="r_a6291af5f75d93031f1ef6f035539b074"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6291af5f75d93031f1ef6f035539b074">extract_entry_extension</a> (const fs::path &amp;path) -&gt; std::string</td></tr>
+<tr class="separator:a6291af5f75d93031f1ef6f035539b074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c0f68813590f827312e7063fabe3e8" id="r_a51c0f68813590f827312e7063fabe3e8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51c0f68813590f827312e7063fabe3e8">ensure_directory_exists</a> (const fs::path &amp;path)</td></tr>
+<tr class="separator:a51c0f68813590f827312e7063fabe3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90f57a40623b19e235d93ecd97edcee" id="r_ab90f57a40623b19e235d93ecd97edcee"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab90f57a40623b19e235d93ecd97edcee">entry_serialization_key</a> (const fs::path &amp;watch_root, const <a class="el" href="structfs_1_1watcher_1_1entry.html">fs::watcher::entry</a> &amp;entry) -&gt; std::string</td></tr>
+<tr class="memdesc:ab90f57a40623b19e235d93ecd97edcee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paths that share a key are processed on one worker in order (create -&gt; rename, etc.).  <br /></td></tr>
+<tr class="separator:ab90f57a40623b19e235d93ecd97edcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada19acb1dbc64a1dca8eaad7d270b45d" id="r_ada19acb1dbc64a1dca8eaad7d270b45d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada19acb1dbc64a1dca8eaad7d270b45d">to_string</a> (const <a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &amp;e) -&gt; std::string</td></tr>
 <tr class="separator:ada19acb1dbc64a1dca8eaad7d270b45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3315ca5d5c840f9403a9393746b4ccfb" id="r_a3315ca5d5c840f9403a9393746b4ccfb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3315ca5d5c840f9403a9393746b4ccfb">filetime_to_system_clock</a> (fs::file_time_type ft) -&gt; std::chrono::system_clock::time_point</td></tr>
@@ -426,6 +433,95 @@ Variables</h2></td></tr>
 <p>Oposite of the resolve_protocol this function tries to convert to protocol path from an absolute one. </p>
 
 <p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00266">266</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a51c0f68813590f827312e7063fabe3e8" name="a51c0f68813590f827312e7063fabe3e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c0f68813590f827312e7063fabe3e8">&#9670;&#160;</a></span>ensure_directory_exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void fs::ensure_directory_exists </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="syncer_8cpp_source.html#l00029">29</a> of file <a class="el" href="syncer_8cpp_source.html">syncer.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab90f57a40623b19e235d93ecd97edcee" name="ab90f57a40623b19e235d93ecd97edcee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab90f57a40623b19e235d93ecd97edcee">&#9670;&#160;</a></span>entry_serialization_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto fs::entry_serialization_key </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>watch_root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structfs_1_1watcher_1_1entry.html">fs::watcher::entry</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>entry</em></span>&#160;) -&gt; std::string
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Paths that share a key are processed on one worker in order (create -&gt; rename, etc.). </p>
+
+<p class="definition">Definition at line <a class="el" href="syncer_8cpp_source.html#l00043">43</a> of file <a class="el" href="syncer_8cpp_source.html">syncer.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6291af5f75d93031f1ef6f035539b074" name="a6291af5f75d93031f1ef6f035539b074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6291af5f75d93031f1ef6f035539b074">&#9670;&#160;</a></span>extract_entry_extension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto fs::extract_entry_extension </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td> -&gt; std::string
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="syncer_8cpp_source.html#l00017">17</a> of file <a class="el" href="syncer_8cpp_source.html">syncer.cpp</a>.</p>
 
 </div>
 </div>

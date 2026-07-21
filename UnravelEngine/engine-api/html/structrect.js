@@ -9,6 +9,8 @@ var structrect =
     [ "contains", "structrect.html#a5b208d18da1767fa116aa13df460e6b8", null ],
     [ "empty", "structrect.html#aad6e9faa0b2cb36bcf7e0f117c56d65f", null ],
     [ "height", "structrect.html#a4a03ab8cb2ef24decd89c6d196501ecf", null ],
+    [ "inflate", "structrect.html#a1330e7fa7b8852cf0d0e535dafafa2e8", null ],
+    [ "intersect", "structrect.html#a6baadc2d96cc8adc7403b158b4369058", null ],
     [ "operator!=", "structrect.html#a0dbc1ca04ea3d0e1acf206b850b454df", null ],
     [ "operator+=", "structrect.html#a5698bcafad8d469f5cf329684e6851ad", null ],
     [ "operator-=", "structrect.html#a35bb79873b5181fd4cb18f6aae8cd835", null ],

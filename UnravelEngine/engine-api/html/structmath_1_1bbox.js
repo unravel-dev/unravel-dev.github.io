@@ -27,7 +27,9 @@ var structmath_1_1bbox =
     [ "intersect", "structmath_1_1bbox.html#ab7161450cded6bb77983a9147769e51c", null ],
     [ "is_degenerate", "structmath_1_1bbox.html#aa451a04a7fa9a7dfa13b22d4f5f3aaa9", null ],
     [ "is_populated", "structmath_1_1bbox.html#acef1d3cd979af406b627e6d717abfb4c", null ],
+    [ "mul", "structmath_1_1bbox.html#a4c9eab30704d627605d286363caabe88", null ],
     [ "mul", "structmath_1_1bbox.html#a2c3e5a82204e7828214b23836128479a", null ],
+    [ "mul_no_scale", "structmath_1_1bbox.html#a870b3f186515367d7ef19ec26007891d", null ],
     [ "mul_no_scale", "structmath_1_1bbox.html#aadbc3639ef53b47ef665a497d315ee2e", null ],
     [ "operator!=", "structmath_1_1bbox.html#ad55b606639708179172fc987aa362569", null ],
     [ "operator*", "structmath_1_1bbox.html#a0c1cad86ad8b5dab0a5b003b870cdd23", null ],
@@ -38,6 +40,7 @@ var structmath_1_1bbox =
     [ "operator==", "structmath_1_1bbox.html#a7ec3898349d8afff31bc103408a85cb0", null ],
     [ "reset", "structmath_1_1bbox.html#a0ecec2ff5f844ce8b2402e17b42a0fd3", null ],
     [ "validate", "structmath_1_1bbox.html#ac759ac61cfb57b04d2d094dd62c81a30", null ],
+    [ "empty", "structmath_1_1bbox.html#ab4bb5d28a82a18f582b1058866e82da1", null ],
     [ "max", "structmath_1_1bbox.html#a08c8e942f4b7761f894b4a6618c26023", null ],
     [ "min", "structmath_1_1bbox.html#a8ebec1dff9969feda7ab43436304a617", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/engine/core/filesystem/syncer.cpp Source File</title>
+<title>Unravel Engine C++ Reference: engine/core/filesystem/syncer.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -115,7 +115,8 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefs.html">fs</a></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">static</span> <span class="keyword">auto</span> extract_entry_extension(<span class="keyword">const</span> fs::path&amp; path) -&gt; std::string</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="namespacefs.html#a6291af5f75d93031f1ef6f035539b074">   17</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacefs.html#a6291af5f75d93031f1ef6f035539b074">extract_entry_extension</a>(<span class="keyword">const</span> fs::path&amp; path) -&gt; std::string</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">auto</span> entry_path = path;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::string entry_extension;</div>
@@ -126,8 +127,10 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> entry_extension;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">static</span> <span class="keywordtype">void</span> ensure_directory_exists(<span class="keyword">const</span> fs::path&amp; path)</div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespacefs.html#a51c0f68813590f827312e7063fabe3e8">   29</a></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacefs.html#a51c0f68813590f827312e7063fabe3e8">ensure_directory_exists</a>(<span class="keyword">const</span> fs::path&amp; path)</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    fs::error_code err;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span>(path.has_extension())</div>
@@ -139,8 +142,10 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        fs::create_directories(path, err);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">static</span> <span class="keyword">auto</span> entry_serialization_key(<span class="keyword">const</span> fs::path&amp; watch_root, <span class="keyword">const</span> <a class="code hl_struct" href="structfs_1_1watcher_1_1entry.html">fs::watcher::entry</a>&amp; <a class="code hl_namespace" href="namespaceentry.html">entry</a>) -&gt; std::string</div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacefs.html#ab90f57a40623b19e235d93ecd97edcee">   43</a></span><span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacefs.html#ab90f57a40623b19e235d93ecd97edcee">entry_serialization_key</a>(<span class="keyword">const</span> fs::path&amp; watch_root, <span class="keyword">const</span> <a class="code hl_struct" href="structfs_1_1watcher_1_1entry.html">fs::watcher::entry</a>&amp; <a class="code hl_namespace" href="namespaceentry.html">entry</a>) -&gt; std::string</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">const</span> <span class="keyword">auto</span> normalize_key = [](<span class="keyword">const</span> fs::path&amp; path) -&gt; std::string</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
@@ -169,6 +174,7 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">const</span> fs::path key = parent.empty() ? watch_root : parent;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> normalize_key(key);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classfs_1_1syncer.html#a4adb6e3254956241267dec031f4cca67">   73</a></span><a class="code hl_function" href="classfs_1_1syncer.html#a4adb6e3254956241267dec031f4cca67">syncer::~syncer</a>()</div>
@@ -264,8 +270,8 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        synced_dir_ = synced_dir;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        reference_dir_.make_preferred();</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        synced_dir_.make_preferred();</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        ensure_directory_exists(reference_dir_);</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        ensure_directory_exists(synced_dir_);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <a class="code hl_function" href="namespacefs.html#a51c0f68813590f827312e7063fabe3e8">ensure_directory_exists</a>(reference_dir_);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <a class="code hl_function" href="namespacefs.html#a51c0f68813590f827312e7063fabe3e8">ensure_directory_exists</a>(synced_dir_);</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keyword">const</span> <span class="keyword">auto</span> on_change = [<span class="keyword">this</span>, on_progress](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#ad84b1cc98c280ddccebf713159edb5c1">entries</a>, <span class="keywordtype">bool</span> is_initial_listing)</div>
@@ -273,7 +279,7 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keyword">const</span> <span class="keyword">auto</span> process_entry = [<span class="keyword">this</span>, is_initial_listing](<span class="keyword">const</span> <a class="code hl_struct" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a>&amp; <a class="code hl_namespace" href="namespaceentry.html">entry</a>)</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        {</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <span class="keyword">const</span> <span class="keywordtype">bool</span> is_directory = (<a class="code hl_namespace" href="namespaceentry.html">entry</a>.type == fs::file_type::directory);</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keyword">const</span> std::string entry_extension = extract_entry_extension(<a class="code hl_namespace" href="namespaceentry.html">entry</a>.path);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keyword">const</span> std::string entry_extension = <a class="code hl_function" href="namespacefs.html#a6291af5f75d93031f1ef6f035539b074">extract_entry_extension</a>(<a class="code hl_namespace" href="namespaceentry.html">entry</a>.path);</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordflow">switch</span>(<a class="code hl_namespace" href="namespaceentry.html">entry</a>.status)</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            {</div>
@@ -283,7 +289,7 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; synced_entry : synced_entries)</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                    {</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                        ensure_directory_exists(synced_entry);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                        <a class="code hl_function" href="namespacefs.html#a51c0f68813590f827312e7063fabe3e8">ensure_directory_exists</a>(synced_entry);</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                    }</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                    <span class="keyword">auto</span> callback = this-&gt;get_on_created_callback(entry_extension);</div>
@@ -379,7 +385,7 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <span class="keywordflow">for</span>(<span class="keyword">auto</span> it = begin; it != end; ++it)</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            {</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                <span class="keyword">const</span> std::string key = entry_serialization_key(watch_root, *it);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                <span class="keyword">const</span> std::string key = <a class="code hl_function" href="namespacefs.html#ab90f57a40623b19e235d93ecd97edcee">entry_serialization_key</a>(watch_root, *it);</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                groups[key].push_back(&amp;(*it));</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            }</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
@@ -428,7 +434,7 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            run_entry_batch(chunk_begin, chunk_end);</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>            completed = std::min(offset + progress_stride, <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#ad84b1cc98c280ddccebf713159edb5c1">entries</a>.size());</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>            on_progress(completed, <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#ad84b1cc98c280ddccebf713159edb5c1">entries</a>.size(), extract_entry_extension(std::prev(chunk_end)-&gt;path));</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>            on_progress(completed, <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#ad84b1cc98c280ddccebf713159edb5c1">entries</a>.size(), <a class="code hl_function" href="namespacefs.html#a6291af5f75d93031f1ef6f035539b074">extract_entry_extension</a>(std::prev(chunk_end)-&gt;path));</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        }</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    };</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
@@ -617,7 +623,10 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <div class="ttc" id="alogging_8h_html"><div class="ttname"><a href="logging_8h.html">logging.h</a></div></div>
 <div class="ttc" id="anamespaceentry_html"><div class="ttname"><a href="namespaceentry.html">entry</a></div><div class="ttdef"><b>Definition</b> <a href="bgfx__utils_8cpp_source.html#l00032">bgfx_utils.cpp:33</a></div></div>
 <div class="ttc" id="anamespacefs_html"><div class="ttname"><a href="namespacefs.html">fs</a></div><div class="ttdef"><b>Definition</b> <a href="cache_8hpp_source.html#l00010">cache.hpp:11</a></div></div>
+<div class="ttc" id="anamespacefs_html_a51c0f68813590f827312e7063fabe3e8"><div class="ttname"><a href="namespacefs.html#a51c0f68813590f827312e7063fabe3e8">fs::ensure_directory_exists</a></div><div class="ttdeci">static void ensure_directory_exists(const fs::path &amp;path)</div><div class="ttdef"><b>Definition</b> <a href="#l00029">syncer.cpp:29</a></div></div>
+<div class="ttc" id="anamespacefs_html_a6291af5f75d93031f1ef6f035539b074"><div class="ttname"><a href="namespacefs.html#a6291af5f75d93031f1ef6f035539b074">fs::extract_entry_extension</a></div><div class="ttdeci">static auto extract_entry_extension(const fs::path &amp;path) -&gt; std::string</div><div class="ttdef"><b>Definition</b> <a href="#l00017">syncer.cpp:17</a></div></div>
 <div class="ttc" id="anamespacefs_html_a9299d6ff5f2945623fa552805a3ca911"><div class="ttname"><a href="namespacefs.html#a9299d6ff5f2945623fa552805a3ca911">fs::replace</a></div><div class="ttdeci">path replace(const path &amp;_path, const path &amp;_sequence, const path &amp;_new_sequence)</div><div class="ttdoc">Replacing any occurences of the specified path sequence with another.</div><div class="ttdef"><b>Definition</b> <a href="filesystem_8cpp_source.html#l00308">filesystem.cpp:308</a></div></div>
+<div class="ttc" id="anamespacefs_html_ab90f57a40623b19e235d93ecd97edcee"><div class="ttname"><a href="namespacefs.html#ab90f57a40623b19e235d93ecd97edcee">fs::entry_serialization_key</a></div><div class="ttdeci">static auto entry_serialization_key(const fs::path &amp;watch_root, const fs::watcher::entry &amp;entry) -&gt; std::string</div><div class="ttdoc">Paths that share a key are processed on one worker in order (create -&gt; rename, etc....</div><div class="ttdef"><b>Definition</b> <a href="#l00043">syncer.cpp:43</a></div></div>
 <div class="ttc" id="astructfs_1_1syncer_1_1mapping_html"><div class="ttname"><a href="structfs_1_1syncer_1_1mapping.html">fs::syncer::mapping</a></div><div class="ttdef"><b>Definition</b> <a href="syncer_8h_source.html#l00024">syncer.h:25</a></div></div>
 <div class="ttc" id="astructfs_1_1syncer_1_1mapping_html_a0cd448f1e3b5a0c5bec3f6a7d49cb379"><div class="ttname"><a href="structfs_1_1syncer_1_1mapping.html#a0cd448f1e3b5a0c5bec3f6a7d49cb379">fs::syncer::mapping::extensions</a></div><div class="ttdeci">std::vector&lt; std::string &gt; extensions</div><div class="ttdef"><b>Definition</b> <a href="syncer_8h_source.html#l00026">syncer.h:26</a></div></div>
 <div class="ttc" id="astructfs_1_1syncer_1_1mapping_html_a0f92701200b303e8291c65d5d812db15"><div class="ttname"><a href="structfs_1_1syncer_1_1mapping.html#a0f92701200b303e8291c65d5d812db15">fs::syncer::mapping::on_entry_removed</a></div><div class="ttdeci">on_entry_removed_t on_entry_removed</div><div class="ttdef"><b>Definition</b> <a href="syncer_8h_source.html#l00029">syncer.h:29</a></div></div>
@@ -632,7 +641,7 @@ $(function(){initNavTree('syncer_8cpp_source.html',''); initResizable(true); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_313a656c30f2f21a897c9e02f299f510.html">engine</a></li><li class="navelem"><a class="el" href="dir_ced40213a000e1ef9a529a7be3c50dd7.html">core</a></li><li class="navelem"><a class="el" href="dir_0907b204e41db53b8eb5e8adc612a4a4.html">filesystem</a></li><li class="navelem"><a class="el" href="syncer_8cpp.html">syncer.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_a0e47c104ecd6c0b6dccb5f33d071508.html">core</a></li><li class="navelem"><a class="el" href="dir_5e7af25d597ebbe8a25519bcdccdc3b9.html">filesystem</a></li><li class="navelem"><a class="el" href="syncer_8cpp.html">syncer.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

@@ -30,6 +30,7 @@ var struct_unravel_1_1_core_1_1_entity =
     [ "ToString", "struct_unravel_1_1_core_1_1_entity.html#a91d875d533cc73b2cec4b638078950de", null ],
     [ "ToString", "struct_unravel_1_1_core_1_1_entity.html#a546bfe68fc9b2c9790da4bfbac843f4c", null ],
     [ "Id", "struct_unravel_1_1_core_1_1_entity.html#a74b7796648114a1ae7b61788d57b119c", null ],
+    [ "Invalid", "struct_unravel_1_1_core_1_1_entity.html#a4d4c2ec91444fa0cd06a9bc630cecf44", null ],
     [ "active", "struct_unravel_1_1_core_1_1_entity.html#af1f0e08a8dd6ca183ec6a593b74fff07", null ],
     [ "activeLocal", "struct_unravel_1_1_core_1_1_entity.html#ae131b6d127b63305bb294ce36abdf3bd", null ],
     [ "layers", "struct_unravel_1_1_core_1_1_entity.html#a61d75b11ff90071f35624daf1b349819", null ],

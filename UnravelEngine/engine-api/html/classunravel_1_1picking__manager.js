@@ -11,5 +11,6 @@ var classunravel_1_1picking__manager =
     [ "on_frame_pick", "classunravel_1_1picking__manager.html#aed6e2868fdf6bada007bc6557fd53b76", null ],
     [ "on_frame_render", "classunravel_1_1picking__manager.html#aaccb211f1370905ded9c2096d514c4db", null ],
     [ "query_pick", "classunravel_1_1picking__manager.html#a039f5e333d6f666592e75254f550ddb0", null ],
-    [ "request_pick", "classunravel_1_1picking__manager.html#a45690a54baba920fd31f6334f54ed759", null ]
+    [ "request_pick", "classunravel_1_1picking__manager.html#a45690a54baba920fd31f6334f54ed759", null ],
+    [ "tex_id_dim", "classunravel_1_1picking__manager.html#a5ae89ba56edabd85b506681df77edd02", null ]
 ];

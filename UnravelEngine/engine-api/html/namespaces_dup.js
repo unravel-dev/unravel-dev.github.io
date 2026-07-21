@@ -20,7 +20,17 @@ var namespaces_dup =
       [ "SAVE_INSTANTIATE", "namespacebgfx.html#a16a7c7c3e4dc0f8ff71d6e1ab419d1ce", null ],
       [ "SAVE_INSTANTIATE", "namespacebgfx.html#aa6b01f8cf4599f79f596da4485d35a0f", null ]
     ] ],
-    [ "bits", "namespacebits.html", null ],
+    [ "bits", "namespacebits.html", [
+      [ "check_bit_flag", "namespacebits.html#a521806430d81b94046e094726cb8896f", null ],
+      [ "clear_bit", "namespacebits.html#a573af976ca201caf137e08d39e1775cc", null ],
+      [ "clear_bit_flag", "namespacebits.html#a6be1cf2af9af5398b2f29ae998495072", null ],
+      [ "get_bit", "namespacebits.html#a64a7947bbef725a1d12db226c3f60bfc", null ],
+      [ "get_bit_range", "namespacebits.html#aa9b33f4b71b55523ed8c51617517099a", null ],
+      [ "get_high_nibble", "namespacebits.html#accf98f4698632ad4479fd071fd32e518", null ],
+      [ "get_low_nibble", "namespacebits.html#abd5439300e0897fde974fbd17ec4b8d1", null ],
+      [ "set_bit", "namespacebits.html#a15fe4073156b0c64341c1054f18147b2", null ],
+      [ "set_bit_flag", "namespacebits.html#a5dbbf55d017187f6acb1661c93ba0f88", null ]
+    ] ],
     [ "bullet", "namespacebullet.html", null ],
     [ "bx", "namespacebx.html", null ],
     [ "cmd_line", "namespacecmd__line.html", "namespacecmd__line" ],

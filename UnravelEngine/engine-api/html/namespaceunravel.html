@@ -3775,6 +3775,10 @@ Functions</h2></td></tr>
 <tr class="separator:ae9a2a8e3ece20bda32ee2451a2f7b5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d73be8c262b487ccae984170e268fd" id="r_ac4d73be8c262b487ccae984170e268fd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4d73be8c262b487ccae984170e268fd">validate_paths</a> (const dotnet::compiler_paths &amp;paths, bool is_deploy_mode) -&gt; bool</td></tr>
 <tr class="separator:ac4d73be8c262b487ccae984170e268fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25952eeb1f960500269a94e8e78bd213" id="r_a25952eeb1f960500269a94e8e78bd213"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structgfx_1_1clip__quad__def.html">gfx::clip_quad_def</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25952eeb1f960500269a94e8e78bd213">create_positioned_blit_quad</a> (const Rml::Rectanglei &amp;src_rect, const Rml::Rectanglei &amp;dst_rect, const Rml::Vector2i &amp;src_texture_size, const Rml::Vector2i &amp;dst_framebuffer_size)</td></tr>
+<tr class="separator:a25952eeb1f960500269a94e8e78bd213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794bae752aec124b1941a8f131dfd48b" id="r_a794bae752aec124b1941a8f131dfd48b"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a794bae752aec124b1941a8f131dfd48b">blit_quad</a> (const Rml::Rectanglei &amp;src_rect, const Rml::Rectanglei &amp;dst_rect, const Rml::Vector2i &amp;src_texture_size, const Rml::Vector2i &amp;dst_framebuffer_size)</td></tr>
+<tr class="separator:a794bae752aec124b1941a8f131dfd48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61c99947019bc7b294b28b42ef492e11" id="r_a61c99947019bc7b294b28b42ef492e11"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61c99947019bc7b294b28b42ef492e11">find_entity_by_id</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn, const std::string &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) -&gt; entt::handle</td></tr>
 <tr class="memdesc:a61c99947019bc7b294b28b42ef492e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve an entity by UUID string or integral entt id.  <br /></td></tr>
 <tr class="separator:a61c99947019bc7b294b28b42ef492e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4104,11 +4108,25 @@ Variables</h2></td></tr>
 <tr class="separator:a90c1389f8544dd8429ce20c46aedb743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ec1400d5010f692cfe8b1e27c7fe4b7" id="r_a9ec1400d5010f692cfe8b1e27c7fe4b7"><td class="memItemLeft" align="right" valign="top">thread_local <a class="el" href="structunravel_1_1thread__profile__data.html">thread_profile_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ec1400d5010f692cfe8b1e27c7fe4b7">t_profile_data</a> = nullptr</td></tr>
 <tr class="separator:a9ec1400d5010f692cfe8b1e27c7fe4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869909af4b59ef2fcfe70198609ac4b0" id="r_a869909af4b59ef2fcfe70198609ac4b0"><td class="memItemLeft" align="right" valign="top">static const int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a869909af4b59ef2fcfe70198609ac4b0">cMaxBlurPassCount</a> = 6</td></tr>
+<tr class="separator:a869909af4b59ef2fcfe70198609ac4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50f6cf3c4edbe0b6e08060d3ffa2e672" id="r_a50f6cf3c4edbe0b6e08060d3ffa2e672"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50f6cf3c4edbe0b6e08060d3ffa2e672">UI_DEFAULT_PIXELS_PER_WORLD_UNIT</a> = 100.0f</td></tr>
 <tr class="memdesc:a50f6cf3c4edbe0b6e08060d3ffa2e672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default pixels per world unit (Unity-style). 100 px = 1 world unit.  <br /></td></tr>
 <tr class="separator:a50f6cf3c4edbe0b6e08060d3ffa2e672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7fcf7d12fc0d5be87fcda8645de73a5" id="r_ab7fcf7d12fc0d5be87fcda8645de73a5"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7fcf7d12fc0d5be87fcda8645de73a5">max_uniform_gradient_stop_colors</a> = 16</td></tr>
+<tr class="separator:ab7fcf7d12fc0d5be87fcda8645de73a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e8817445b63e506a42761e150cd3f4" id="r_aa5e8817445b63e506a42761e150cd3f4"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5e8817445b63e506a42761e150cd3f4">max_uniform_gradient_stop_positions</a> = 4</td></tr>
+<tr class="separator:aa5e8817445b63e506a42761e150cd3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1902f8b5ae338bfc1a0208b0dd4f59" id="r_a4f1902f8b5ae338bfc1a0208b0dd4f59"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f1902f8b5ae338bfc1a0208b0dd4f59">max_uniform_weights</a> = 4</td></tr>
+<tr class="separator:a4f1902f8b5ae338bfc1a0208b0dd4f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de96a542f2c8751f2d3e1e0ae114d0e" id="r_a3de96a542f2c8751f2d3e1e0ae114d0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3de96a542f2c8751f2d3e1e0ae114d0e">REFLECTION_REGISTRATION</a></td></tr>
 <tr class="separator:a3de96a542f2c8751f2d3e1e0ae114d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6207d5f2ae5693b481e30d9492cb0fd" id="r_af6207d5f2ae5693b481e30d9492cb0fd"><td class="memItemLeft" align="right" valign="top">static const std::array&lt; ImColor, size_t(level::n_levels)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6207d5f2ae5693b481e30d9492cb0fd">colors</a></td></tr>
+<tr class="separator:af6207d5f2ae5693b481e30d9492cb0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef266d246a1759d8e8edf777f03899b" id="r_afef266d246a1759d8e8edf777f03899b"><td class="memItemLeft" align="right" valign="top">static const std::array&lt; const char *, size_t(level::n_levels)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afef266d246a1759d8e8edf777f03899b">icons</a></td></tr>
+<tr class="separator:afef266d246a1759d8e8edf777f03899b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad671d36b74ce8a27eb5f34c0ad0086c" id="r_aad671d36b74ce8a27eb5f34c0ad0086c"><td class="memItemLeft" align="right" valign="top">static const std::array&lt; const char *, size_t(level::n_levels)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad671d36b74ce8a27eb5f34c0ad0086c">levels</a> {&quot;Trace&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Critical&quot;, &quot;&quot;}</td></tr>
+<tr class="separator:aad671d36b74ce8a27eb5f34c0ad0086c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a48974d35617505f71ba4f04ffe97000d" name="a48974d35617505f71ba4f04ffe97000d"></a>
@@ -6018,6 +6036,47 @@ template&lt;typename T , size_t StaticCapacity = 16&gt; </div>
 
 </div>
 </div>
+<a id="a794bae752aec124b1941a8f131dfd48b" name="a794bae752aec124b1941a8f131dfd48b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a794bae752aec124b1941a8f131dfd48b">&#9670;&#160;</a></span>blit_quad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint64_t unravel::blit_quad </td>
+          <td>(</td>
+          <td class="paramtype">const Rml::Rectanglei &amp;</td>          <td class="paramname"><span class="paramname"><em>src_rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Rml::Rectanglei &amp;</td>          <td class="paramname"><span class="paramname"><em>dst_rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Rml::Vector2i &amp;</td>          <td class="paramname"><span class="paramname"><em>src_texture_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Rml::Vector2i &amp;</td>          <td class="paramname"><span class="paramname"><em>dst_framebuffer_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rml_ui___render_interface_8cpp_source.html#l00094">94</a> of file <a class="el" href="_rml_ui___render_interface_8cpp_source.html">RmlUi_RenderInterface.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ad7ee5f4e0e42b41cc7062c9a202ddca4" name="ad7ee5f4e0e42b41cc7062c9a202ddca4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7ee5f4e0e42b41cc7062c9a202ddca4">&#9670;&#160;</a></span>bones_collect()</h2>
 
@@ -6299,6 +6358,57 @@ template&lt;typename T , size_t StaticCapacity = 16&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="entity_8cpp_source.html#l00029">29</a> of file <a class="el" href="entity_8cpp_source.html">entity.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a25952eeb1f960500269a94e8e78bd213" name="a25952eeb1f960500269a94e8e78bd213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25952eeb1f960500269a94e8e78bd213">&#9670;&#160;</a></span>create_positioned_blit_quad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structgfx_1_1clip__quad__def.html">gfx::clip_quad_def</a> unravel::create_positioned_blit_quad </td>
+          <td>(</td>
+          <td class="paramtype">const Rml::Rectanglei &amp;</td>          <td class="paramname"><span class="paramname"><em>src_rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Rml::Rectanglei &amp;</td>          <td class="paramname"><span class="paramname"><em>dst_rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Rml::Vector2i &amp;</td>          <td class="paramname"><span class="paramname"><em>src_texture_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Rml::Vector2i &amp;</td>          <td class="paramname"><span class="paramname"><em>dst_framebuffer_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Helper function that creates a positioned quad for blitting (no scissor needed) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src_rect</td><td>Source rectangle in texture coordinates </td></tr>
+    <tr><td class="paramname">dst_rect</td><td>Destination rectangle in framebuffer coordinates </td></tr>
+    <tr><td class="paramname">src_texture_size</td><td>Size of the source texture </td></tr>
+    <tr><td class="paramname">dst_framebuffer_size</td><td>Size of the destination framebuffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>clip_quad_def configured for positioned blit operation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_rml_ui___render_interface_8cpp_source.html#l00044">44</a> of file <a class="el" href="_rml_ui___render_interface_8cpp_source.html">RmlUi_RenderInterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -32719,6 +32829,121 @@ template&lt;&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a869909af4b59ef2fcfe70198609ac4b0" name="a869909af4b59ef2fcfe70198609ac4b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869909af4b59ef2fcfe70198609ac4b0">&#9670;&#160;</a></span>cMaxBlurPassCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t unravel::cMaxBlurPassCount = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="assao__pass_8cpp_source.html#l00039">39</a> of file <a class="el" href="assao__pass_8cpp_source.html">assao_pass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af6207d5f2ae5693b481e30d9492cb0fd" name="af6207d5f2ae5693b481e30d9492cb0fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6207d5f2ae5693b481e30d9492cb0fd">&#9670;&#160;</a></span>colors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::array&lt;ImColor, size_t(level::n_levels)&gt; unravel::colors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{ImColor{255, 255, 255},</div>
+<div class="line">                                                                 ImColor{255, 255, 255},</div>
+<div class="line">                                                                 ImColor{255, 255, 255},</div>
+<div class="line">                                                                 ImColor{255, 255, 0},</div>
+<div class="line">                                                                 ImColor{255, 0, 0},</div>
+<div class="line">                                                                 ImColor{180, 0, 0},</div>
+<div class="line">                                                                 ImColor{255, 255, 255}}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="console__log__panel_8cpp_source.html#l00021">21</a> of file <a class="el" href="console__log__panel_8cpp_source.html">console_log_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afef266d246a1759d8e8edf777f03899b" name="afef266d246a1759d8e8edf777f03899b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef266d246a1759d8e8edf777f03899b">&#9670;&#160;</a></span>icons</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::array&lt;const char*, size_t(level::n_levels)&gt; unravel::icons</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{<a class="code hl_define" href="icons__material__design__icons_8h.html#a4c4c52b68aa06536b9766c94c6d4f544">ICON_MDI_ALERT_CIRCLE_CHECK</a>,</div>
+<div class="line">                                                                    <a class="code hl_define" href="icons__material__design__icons_8h.html#a89ae66e2b57dbff7327332c6cdb3d0a0">ICON_MDI_BUG_CHECK_OUTLINE</a>,</div>
+<div class="line">                                                                    <a class="code hl_define" href="icons__material__design__icons_8h.html#a3dec27861ce701546cfaddba31bed710">ICON_MDI_ALERT_CIRCLE</a>,</div>
+<div class="line">                                                                    <a class="code hl_define" href="icons__material__design__icons_8h.html#a3bf5f5a3f9f7c0c8a12930f15edc98dc">ICON_MDI_ALERT_BOX</a>,</div>
+<div class="line">                                                                    <a class="code hl_define" href="icons__material__design__icons_8h.html#af39298018ef2d21ffb345544b5cb2b18">ICON_MDI_ALERT_OCTAGON</a>,</div>
+<div class="line">                                                                    <a class="code hl_define" href="icons__material__design__icons_8h.html#af39298018ef2d21ffb345544b5cb2b18">ICON_MDI_ALERT_OCTAGON</a>,</div>
+<div class="line">                                                                    <a class="code hl_define" href="icons__material__design__icons_8h.html#a3dec27861ce701546cfaddba31bed710">ICON_MDI_ALERT_CIRCLE</a>}</div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_a3bf5f5a3f9f7c0c8a12930f15edc98dc"><div class="ttname"><a href="icons__material__design__icons_8h.html#a3bf5f5a3f9f7c0c8a12930f15edc98dc">ICON_MDI_ALERT_BOX</a></div><div class="ttdeci">#define ICON_MDI_ALERT_BOX</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00132">icons_material_design_icons.h:132</a></div></div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_a3dec27861ce701546cfaddba31bed710"><div class="ttname"><a href="icons__material__design__icons_8h.html#a3dec27861ce701546cfaddba31bed710">ICON_MDI_ALERT_CIRCLE</a></div><div class="ttdeci">#define ICON_MDI_ALERT_CIRCLE</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00134">icons_material_design_icons.h:134</a></div></div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_a4c4c52b68aa06536b9766c94c6d4f544"><div class="ttname"><a href="icons__material__design__icons_8h.html#a4c4c52b68aa06536b9766c94c6d4f544">ICON_MDI_ALERT_CIRCLE_CHECK</a></div><div class="ttdeci">#define ICON_MDI_ALERT_CIRCLE_CHECK</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00135">icons_material_design_icons.h:135</a></div></div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_a89ae66e2b57dbff7327332c6cdb3d0a0"><div class="ttname"><a href="icons__material__design__icons_8h.html#a89ae66e2b57dbff7327332c6cdb3d0a0">ICON_MDI_BUG_CHECK_OUTLINE</a></div><div class="ttdeci">#define ICON_MDI_BUG_CHECK_OUTLINE</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00870">icons_material_design_icons.h:870</a></div></div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_af39298018ef2d21ffb345544b5cb2b18"><div class="ttname"><a href="icons__material__design__icons_8h.html#af39298018ef2d21ffb345544b5cb2b18">ICON_MDI_ALERT_OCTAGON</a></div><div class="ttdeci">#define ICON_MDI_ALERT_OCTAGON</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00140">icons_material_design_icons.h:140</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="console__log__panel_8cpp_source.html#l00029">29</a> of file <a class="el" href="console__log__panel_8cpp_source.html">console_log_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aad671d36b74ce8a27eb5f34c0ad0086c" name="aad671d36b74ce8a27eb5f34c0ad0086c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad671d36b74ce8a27eb5f34c0ad0086c">&#9670;&#160;</a></span>levels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::array&lt;const char*, size_t(level::n_levels)&gt; unravel::levels {&quot;Trace&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Critical&quot;, &quot;&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="console__log__panel_8cpp_source.html#l00038">38</a> of file <a class="el" href="console__log__panel_8cpp_source.html">console_log_panel.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a7c6fad222deedbe4ad5286f224efc1f3" name="a7c6fad222deedbe4ad5286f224efc1f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c6fad222deedbe4ad5286f224efc1f3">&#9670;&#160;</a></span>load_ctx_ptr</h2>
 
@@ -32732,6 +32957,78 @@ template&lt;&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="entity_8cpp_source.html#l00052">52</a> of file <a class="el" href="entity_8cpp_source.html">entity.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab7fcf7d12fc0d5be87fcda8645de73a5" name="ab7fcf7d12fc0d5be87fcda8645de73a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7fcf7d12fc0d5be87fcda8645de73a5">&#9670;&#160;</a></span>max_uniform_gradient_stop_colors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unravel::max_uniform_gradient_stop_colors = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rml_ui___render_interface_8cpp_source.html#l01261">1261</a> of file <a class="el" href="_rml_ui___render_interface_8cpp_source.html">RmlUi_RenderInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5e8817445b63e506a42761e150cd3f4" name="aa5e8817445b63e506a42761e150cd3f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e8817445b63e506a42761e150cd3f4">&#9670;&#160;</a></span>max_uniform_gradient_stop_positions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unravel::max_uniform_gradient_stop_positions = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rml_ui___render_interface_8cpp_source.html#l01262">1262</a> of file <a class="el" href="_rml_ui___render_interface_8cpp_source.html">RmlUi_RenderInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4f1902f8b5ae338bfc1a0208b0dd4f59" name="a4f1902f8b5ae338bfc1a0208b0dd4f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f1902f8b5ae338bfc1a0208b0dd4f59">&#9670;&#160;</a></span>max_uniform_weights</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unravel::max_uniform_weights = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rml_ui___render_interface_8cpp_source.html#l01263">1263</a> of file <a class="el" href="_rml_ui___render_interface_8cpp_source.html">RmlUi_RenderInterface.cpp</a>.</p>
 
 </div>
 </div>

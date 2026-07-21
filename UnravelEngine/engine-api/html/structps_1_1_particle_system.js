@@ -15,6 +15,7 @@ var structps_1_1_particle_system =
     [ "updateEmitter", "structps_1_1_particle_system.html#a370cb7d4de879033ed95b30b19be9ad8", null ],
     [ "writeBatchedInstanceChunk", "structps_1_1_particle_system.html#ad22c1a2f0b83d19880488b3e01829a90", null ],
     [ "writeDirectInstanceChunk", "structps_1_1_particle_system.html#aa0fdc783b20ff690b86c9c482fef6cfd", null ],
+    [ "writeParticleInstanceRow", "structps_1_1_particle_system.html#a65f257d24e6b15d89d0d4fbea3bded34", null ],
     [ "batched_particles_scratch_", "structps_1_1_particle_system.html#a4355d838fd2e1ff3d6dac2ddd49890e0", null ],
     [ "emitter_batch_prefix_scratch_", "structps_1_1_particle_system.html#a220df66f8e6825a19ea91d3c2770574e", null ],
     [ "m_allocator", "structps_1_1_particle_system.html#a749b63a8f87a6e98eb424d80ff64844a", null ],

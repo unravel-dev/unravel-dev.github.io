@@ -61,6 +61,7 @@ var particle__system__soa_8cpp =
     [ "lifespan", "particle__system__soa_8cpp.html#ad4c0e8c844e7d8c4a65e5d14da47e8a9", null ],
     [ "luts_gpu_dirty", "particle__system__soa_8cpp.html#ad5646112f353557333ab444a77fd1f45", null ],
     [ "luts_valid", "particle__system__soa_8cpp.html#ac5b8e69f04612b9b21cdfe163733a3f6", null ],
+    [ "ms_layout", "particle__system__soa_8cpp.html#a75e9ccddfcdb5636e0fad6e333a91403", null ],
     [ "particle_idx", "particle__system__soa_8cpp.html#ae4b39c182f42d3219a0923f8189792aa", null ],
     [ "particles_", "particle__system__soa_8cpp.html#a08aee38db937e0ab55b76733d6569e3e", null ],
     [ "pending_pack", "particle__system__soa_8cpp.html#abcba8bb85898e80c392003d2cb2759f4", null ],

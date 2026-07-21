@@ -1,5 +1,6 @@
 var structgfx_1_1pos__texcoord0__vertex =
 [
+    [ "init", "structgfx_1_1pos__texcoord0__vertex.html#a7830366ae328b940686dedb8debb387d", null ],
     [ "u", "structgfx_1_1pos__texcoord0__vertex.html#a109b1e7e7cbc9f80c566e2536abcbba5", null ],
     [ "v", "structgfx_1_1pos__texcoord0__vertex.html#a8874d32303639038d77f67d5699279e2", null ],
     [ "x", "structgfx_1_1pos__texcoord0__vertex.html#a1f5857700d4f0762fd4b81d5a438ae8e", null ],

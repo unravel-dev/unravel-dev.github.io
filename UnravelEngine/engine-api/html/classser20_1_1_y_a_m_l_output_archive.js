@@ -19,5 +19,6 @@ var classser20_1_1_y_a_m_l_output_archive =
     [ "saveValue", "classser20_1_1_y_a_m_l_output_archive.html#ae0e21e406ab18c6112421379dda7f603", null ],
     [ "setNextName", "classser20_1_1_y_a_m_l_output_archive.html#ac95d879418bc5510fa2159cc4dbaadc4", null ],
     [ "startNode", "classser20_1_1_y_a_m_l_output_archive.html#a168ffb6213a97185ef183816c7c2805e", null ],
-    [ "writeName", "classser20_1_1_y_a_m_l_output_archive.html#ae2519a72454cd8823d79c375b5cc19bd", null ]
+    [ "writeName", "classser20_1_1_y_a_m_l_output_archive.html#ae2519a72454cd8823d79c375b5cc19bd", null ],
+    [ "is_binary", "classser20_1_1_y_a_m_l_output_archive.html#a56e08f9b13a960dfe00ce8da68bd0c59", null ]
 ];

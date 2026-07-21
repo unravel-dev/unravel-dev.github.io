@@ -29,6 +29,7 @@ var structps_1_1_emitter =
     [ "rng_", "structps_1_1_emitter.html#a5530f1512a73d17d0976dadffa687493", null ],
     [ "shape_", "structps_1_1_emitter.html#a67a7e4eba2a75bd6aeeeb76e94f9b193", null ],
     [ "start_delay_elapsed_", "structps_1_1_emitter.html#a4b58ff57e3a19d9e4c6b18f49bfd3c7a", null ],
+    [ "TEMPORAL_BUFFER_SIZE", "structps_1_1_emitter.html#a74d42c244c1ee06d90f3503f7757e4c7", null ],
     [ "temporal_position_buffer_", "structps_1_1_emitter.html#a6a010f2e071579041e473fdaf88a3289", null ],
     [ "temporal_time_buffer_", "structps_1_1_emitter.html#afaf5b15fa9a22cf3f9245986697fede6", null ],
     [ "texture_mode_", "structps_1_1_emitter.html#aa151dac86d8688a628bb242371c35780", null ],

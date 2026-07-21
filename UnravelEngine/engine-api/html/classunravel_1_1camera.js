@@ -10,6 +10,7 @@ var classunravel_1_1camera =
     [ "get_aa_data", "classunravel_1_1camera.html#afeb4fda9e78988fe827c4d238b611841", null ],
     [ "get_aspect_ratio", "classunravel_1_1camera.html#ace7c88df8dc404c844a855e4b7407af7", null ],
     [ "get_clipping_volume", "classunravel_1_1camera.html#a557bbf00e7ca4172200512a52e3e4f99", null ],
+    [ "get_face_camera", "classunravel_1_1camera.html#a6eecbe732f9de86cff40f3d1a06b2b45", null ],
     [ "get_far_clip", "classunravel_1_1camera.html#a0a47caba61f8e26adfc9c2356532ca3d", null ],
     [ "get_fov", "classunravel_1_1camera.html#a118965d7c1ec21201063095f04693565", null ],
     [ "get_frustum", "classunravel_1_1camera.html#af507c1a63c0c65b1f1ac81a2b12a00d8", null ],

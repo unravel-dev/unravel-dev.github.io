@@ -77,5 +77,6 @@ var searchData=
   ['writepoint_74',['writePoint',['../classgenerator_1_1svg__writer__t.html#abf4f44b90fa1c7fad87cddde93038864',1,'generator::svg_writer_t']]],
   ['writeshape_75',['writeShape',['../classgenerator_1_1svg__writer__t.html#a32035da5f9e2220566d0f27e544e1179',1,'generator::svg_writer_t']]],
   ['writetriangle_76',['writeTriangle',['../classgenerator_1_1svg__writer__t.html#a6399abb00f3c8a4c7dd70e2a990798be',1,'generator::svg_writer_t::writeTriangle(const gml::dvec3 &amp;p1, const gml::dvec3 &amp;p2, const gml::dvec3 &amp;p3, const gml::dvec3 &amp;color)'],['../classgenerator_1_1svg__writer__t.html#ac7687a1d49f3e04ac609e59187e69156',1,'generator::svg_writer_t::writeTriangle(const gml::dvec3 &amp;p1, const gml::dvec3 &amp;p2, const gml::dvec3 &amp;p3)']]],
-  ['writing_77',['writing',['../namespaceunravel.html#a15ce120b64eeade36829348702b7ce8b',1,'unravel']]]
+  ['writeuv_77',['writeUV',['../namespacegfx.html#ae964da8d927fe2bc43e63f37ad03b102',1,'gfx']]],
+  ['writing_78',['writing',['../namespaceunravel.html#a15ce120b64eeade36829348702b7ce8b',1,'unravel']]]
 ];

@@ -18,5 +18,8 @@ var classunravel_1_1mcp__manager =
     [ "is_running", "classunravel_1_1mcp__manager.html#add0b1731aae3e5d192375a78fbb1841a", null ],
     [ "snapshot_activity", "classunravel_1_1mcp__manager.html#a35244c0d4697ca55b3b0fc3c6ed807d8", null ],
     [ "start", "classunravel_1_1mcp__manager.html#a10cd0534d8e6a08d12c8140a4ed56de5", null ],
-    [ "stop", "classunravel_1_1mcp__manager.html#a5aecd409eba0688c96f9ddcd7903a3c3", null ]
+    [ "stop", "classunravel_1_1mcp__manager.html#a5aecd409eba0688c96f9ddcd7903a3c3", null ],
+    [ "k_default_port", "classunravel_1_1mcp__manager.html#a26e10259de46d2e6955574030ca29ad4", null ],
+    [ "k_host", "classunravel_1_1mcp__manager.html#a17f892f1f003b35e15167a4cd147a433", null ],
+    [ "k_max_activity_entries", "classunravel_1_1mcp__manager.html#a7c13a42300464f1fbaec66a131958ec3", null ]
 ];

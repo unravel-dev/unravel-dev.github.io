@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/engine/engine/rendering/pipeline/passes/atmospheric_pass_skybox.cpp Source File</title>
+<title>Unravel Engine C++ Reference: engine/engine/rendering/pipeline/passes/atmospheric_pass_skybox.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -133,7 +133,7 @@ $(function(){initNavTree('atmospheric__pass__skybox_8cpp_source.html',''); initR
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    };</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// 8 corners</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">static</span> pos_vertex s_cubeVertices[] = {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">static</span> pos_vertex <a class="code hl_variable" href="utils_2debugdraw_2debugdraw_8cpp.html#af1d722a758e9a2ec62d9d3f706c5838b">s_cubeVertices</a>[] = {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {-1.0f, 1.0f, 1.0f},</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        {1.0f, 1.0f, 1.0f},</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        {-1.0f, -1.0f, 1.0f},</div>
@@ -147,7 +147,7 @@ $(function(){initNavTree('atmospheric__pass__skybox_8cpp_source.html',''); initR
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// Indices for an inside-out cube (36 total).</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// You can flip the order if you see backfaces incorrectly.</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <span class="keyword">const</span> uint16_t s_cubeIndices[] = {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <span class="keyword">const</span> uint16_t <a class="code hl_variable" href="utils_2debugdraw_2debugdraw_8cpp.html#a7768bc09343156525bfff255f39165b4">s_cubeIndices</a>[] = {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="comment">// -Z</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        2,1,0,</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        2,3,1,</div>
@@ -169,10 +169,10 @@ $(function(){initNavTree('atmospheric__pass__skybox_8cpp_source.html',''); initR
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    };</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// clang-format on</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    vb_ = std::make_unique&lt;gfx::vertex_buffer&gt;(<a class="code hl_function" href="namespacegfx.html#ac675d58a40fe0be327a7e2d8f07714c2">gfx::copy</a>(s_cubeVertices, <span class="keyword">sizeof</span>(s_cubeVertices)),</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    vb_ = std::make_unique&lt;gfx::vertex_buffer&gt;(<a class="code hl_function" href="namespacegfx.html#ac675d58a40fe0be327a7e2d8f07714c2">gfx::copy</a>(<a class="code hl_variable" href="utils_2debugdraw_2debugdraw_8cpp.html#af1d722a758e9a2ec62d9d3f706c5838b">s_cubeVertices</a>, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="utils_2debugdraw_2debugdraw_8cpp.html#af1d722a758e9a2ec62d9d3f706c5838b">s_cubeVertices</a>)),</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                                               <a class="code hl_function" href="structgfx_1_1vertex.html#a27fcc5c2a2c2cee187ee8d7724a9d594">gfx::pos_vertex::get_layout</a>());</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    ib_ = std::make_unique&lt;gfx::index_buffer&gt;(<a class="code hl_function" href="namespacegfx.html#ac675d58a40fe0be327a7e2d8f07714c2">gfx::copy</a>(s_cubeIndices, <span class="keyword">sizeof</span>(s_cubeIndices)));</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    ib_ = std::make_unique&lt;gfx::index_buffer&gt;(<a class="code hl_function" href="namespacegfx.html#ac675d58a40fe0be327a7e2d8f07714c2">gfx::copy</a>(<a class="code hl_variable" href="utils_2debugdraw_2debugdraw_8cpp.html#a7768bc09343156525bfff255f39165b4">s_cubeIndices</a>, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="utils_2debugdraw_2debugdraw_8cpp.html#a7768bc09343156525bfff255f39165b4">s_cubeIndices</a>)));</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
@@ -266,12 +266,14 @@ $(function(){initNavTree('atmospheric__pass__skybox_8cpp_source.html',''); initR
 <div class="ttc" id="astructunravel_1_1atmospheric__pass__skybox_1_1run__params_html"><div class="ttname"><a href="structunravel_1_1atmospheric__pass__skybox_1_1run__params.html">unravel::atmospheric_pass_skybox::run_params</a></div><div class="ttdef"><b>Definition</b> <a href="atmospheric__pass__skybox_8h_source.html#l00017">atmospheric_pass_skybox.h:18</a></div></div>
 <div class="ttc" id="astructunravel_1_1atmospheric__pass__skybox_1_1run__params_html_a3fb6301e3244da77cee4691d81f1e2f1"><div class="ttname"><a href="structunravel_1_1atmospheric__pass__skybox_1_1run__params.html#a3fb6301e3244da77cee4691d81f1e2f1">unravel::atmospheric_pass_skybox::run_params::sky_brightness</a></div><div class="ttdeci">float sky_brightness</div><div class="ttdoc">Sky brightness multiplier (1.0 = neutral). Affects visible sky and irradiance.</div><div class="ttdef"><b>Definition</b> <a href="atmospheric__pass__skybox_8h_source.html#l00021">atmospheric_pass_skybox.h:21</a></div></div>
 <div class="ttc" id="astructunravel_1_1atmospheric__pass__skybox_1_1run__params_html_a8fadf24668cfb284cc2cde203e35c71c"><div class="ttname"><a href="structunravel_1_1atmospheric__pass__skybox_1_1run__params.html#a8fadf24668cfb284cc2cde203e35c71c">unravel::atmospheric_pass_skybox::run_params::cubemap</a></div><div class="ttdeci">asset_handle&lt; gfx::texture &gt; cubemap</div><div class="ttdef"><b>Definition</b> <a href="atmospheric__pass__skybox_8h_source.html#l00019">atmospheric_pass_skybox.h:19</a></div></div>
+<div class="ttc" id="autils_2debugdraw_2debugdraw_8cpp_html_a7768bc09343156525bfff255f39165b4"><div class="ttname"><a href="utils_2debugdraw_2debugdraw_8cpp.html#a7768bc09343156525bfff255f39165b4">s_cubeIndices</a></div><div class="ttdeci">static const uint16_t s_cubeIndices[36]</div><div class="ttdef"><b>Definition</b> <a href="utils_2debugdraw_2debugdraw_8cpp_source.html#l00131">debugdraw.cpp:131</a></div></div>
+<div class="ttc" id="autils_2debugdraw_2debugdraw_8cpp_html_af1d722a758e9a2ec62d9d3f706c5838b"><div class="ttname"><a href="utils_2debugdraw_2debugdraw_8cpp.html#af1d722a758e9a2ec62d9d3f706c5838b">s_cubeVertices</a></div><div class="ttdeci">static DebugShapeVertex s_cubeVertices[8]</div><div class="ttdef"><b>Definition</b> <a href="utils_2debugdraw_2debugdraw_8cpp_source.html#l00120">debugdraw.cpp:120</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_313a656c30f2f21a897c9e02f299f510.html">engine</a></li><li class="navelem"><a class="el" href="dir_fe4c16d53cd03e93df8190140fc6a855.html">engine</a></li><li class="navelem"><a class="el" href="dir_b820b6c3efcbb1512bc9db235027d2ce.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3cff47cd947a6589298ae5a66bddb56b.html">pipeline</a></li><li class="navelem"><a class="el" href="dir_aec6ed62704ac3e62b491600c9d16ea5.html">passes</a></li><li class="navelem"><a class="el" href="atmospheric__pass__skybox_8cpp.html">atmospheric_pass_skybox.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_d7cdb4e65164bd6dfc24cbda8766899e.html">engine</a></li><li class="navelem"><a class="el" href="dir_7a417b519920ff3d2359b1ba27c9cbce.html">rendering</a></li><li class="navelem"><a class="el" href="dir_91fecff5df773f832780fb4d70c47004.html">pipeline</a></li><li class="navelem"><a class="el" href="dir_6961c20857923ab844b8dc664c778309.html">passes</a></li><li class="navelem"><a class="el" href="atmospheric__pass__skybox_8cpp.html">atmospheric_pass_skybox.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

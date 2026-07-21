@@ -22,6 +22,8 @@ var classunravel_1_1script__component =
     [ "has_script_components", "classunravel_1_1script__component.html#afacef1a3675237132c8c930309daa844", null ],
     [ "on_collision_enter", "classunravel_1_1script__component.html#a10bd0cf799c135b058c8349c65fd4f35", null ],
     [ "on_collision_exit", "classunravel_1_1script__component.html#a31d84872512584ea82c053efab781bae", null ],
+    [ "on_create_component", "classunravel_1_1script__component.html#ac39084bb53fe38c914faccbfb1d43c48", null ],
+    [ "on_destroy_component", "classunravel_1_1script__component.html#a840384cdd570fb39c04c9988fce8d250", null ],
     [ "on_sensor_enter", "classunravel_1_1script__component.html#a511666988832d4640711f759b6331f7e", null ],
     [ "on_sensor_exit", "classunravel_1_1script__component.html#ab17f1c2ebe2e3ccf029f890033a21258", null ],
     [ "process_pending_actions", "classunravel_1_1script__component.html#a84afc05416309e485edf397c43389395", null ],

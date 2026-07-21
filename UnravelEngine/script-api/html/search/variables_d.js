@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['phase_0',['phase',['../class_unravel_1_1_core_1_1_u_i_event_base.html#a79db705a8ac1552664bdc358d4b447bb',1,'Unravel::Core::UIEventBase']]],
-  ['pi_1',['PI',['../struct_mathf.html#a6568a520f1282598da02d4f184d984ee',1,'Mathf']]],
-  ['point_2',['point',['../struct_unravel_1_1_core_1_1_contact_point.html#a5b1fbc228ae559918d2b7ad6fd6a90f2',1,'Unravel.Core.ContactPoint.point'],['../struct_unravel_1_1_core_1_1_raycast_hit.html#acfd11a4b5f01d13559bc3a7cf0c7c80c',1,'Unravel.Core.RaycastHit.point']]]
+  ['negativeinfinity_0',['NegativeInfinity',['../struct_mathf.html#a5a95e21a854396123ca56c66ea10fce4',1,'Mathf']]],
+  ['normal_1',['normal',['../struct_unravel_1_1_core_1_1_contact_point.html#a601696d1fb2f96a0253ce7caf5b21b53',1,'Unravel.Core.ContactPoint.normal'],['../struct_unravel_1_1_core_1_1_raycast_hit.html#a9312cbe45f6068c6b8995b534b89a26e',1,'Unravel.Core.RaycastHit.normal']]],
+  ['nothing_2',['Nothing',['../struct_unravel_1_1_core_1_1_layer_mask.html#a9ab4dc3e55a4fb4004ca553261945767',1,'Unravel::Core::LayerMask']]]
 ];

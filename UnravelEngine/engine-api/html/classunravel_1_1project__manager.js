@@ -27,6 +27,7 @@ var classunravel_1_1project__manager =
     [ "load_project_info", "classunravel_1_1project__manager.html#a9c96750e6fb3cabfd2d6da30b566e552", null ],
     [ "load_project_settings", "classunravel_1_1project__manager.html#aa4d5d6645c3c05e6c19ef35bade56a22", null ],
     [ "open_project", "classunravel_1_1project__manager.html#ab46b1bdc414377b9a4b9420f40919979", null ],
+    [ "regenerate_agent_files", "classunravel_1_1project__manager.html#a08216457480a5b01184259a121f27afa", null ],
     [ "save_deploy_settings", "classunravel_1_1project__manager.html#aa276584e038c84c3d36dddfe1e434bd2", null ],
     [ "save_editor_settings", "classunravel_1_1project__manager.html#a08c1d7cdd662579b286559bf43d5a2f8", null ],
     [ "save_project_editor_settings", "classunravel_1_1project__manager.html#ae8d3e9a3cf87fa57ee742578b38a3d62", null ],

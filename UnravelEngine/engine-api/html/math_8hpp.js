@@ -1,9 +1,9 @@
 var math_8hpp =
 [
-    [ "gml::detail::bezierDerivativeImpl< O, D, VecT, T >", "structgml_1_1detail_1_1bezier_derivative_impl.html", null ],
-    [ "gml::detail::bezierDerivativeImpl< 0, D, VecT, T >", "structgml_1_1detail_1_1bezier_derivative_impl_3_010_00_01_d_00_01_vec_t_00_01_t_01_4.html", null ],
-    [ "gml::detail::bezierDerivativeImpl< 0, 1, VecT, T >", "structgml_1_1detail_1_1bezier_derivative_impl_3_010_00_011_00_01_vec_t_00_01_t_01_4.html", null ],
-    [ "gml::detail::bezierDerivativeImpl< O, 1, VecT, T >", "structgml_1_1detail_1_1bezier_derivative_impl_3_01_o_00_011_00_01_vec_t_00_01_t_01_4.html", null ],
+    [ "gml::detail::bezierDerivativeImpl< O, D, VecT, T >", "structgml_1_1detail_1_1bezier_derivative_impl.html", "structgml_1_1detail_1_1bezier_derivative_impl" ],
+    [ "gml::detail::bezierDerivativeImpl< 0, D, VecT, T >", "structgml_1_1detail_1_1bezier_derivative_impl_3_010_00_01_d_00_01_vec_t_00_01_t_01_4.html", "structgml_1_1detail_1_1bezier_derivative_impl_3_010_00_01_d_00_01_vec_t_00_01_t_01_4" ],
+    [ "gml::detail::bezierDerivativeImpl< 0, 1, VecT, T >", "structgml_1_1detail_1_1bezier_derivative_impl_3_010_00_011_00_01_vec_t_00_01_t_01_4.html", "structgml_1_1detail_1_1bezier_derivative_impl_3_010_00_011_00_01_vec_t_00_01_t_01_4" ],
+    [ "gml::detail::bezierDerivativeImpl< O, 1, VecT, T >", "structgml_1_1detail_1_1bezier_derivative_impl_3_01_o_00_011_00_01_vec_t_00_01_t_01_4.html", "structgml_1_1detail_1_1bezier_derivative_impl_3_01_o_00_011_00_01_vec_t_00_01_t_01_4" ],
     [ "GENERATOR_USE_GLM", "math_8hpp.html#a6017fee03b9955e4cd9bf72295626ad9", null ],
     [ "angle", "math_8hpp.html#a39b97e84f06f40a874cf43b1c46f5ab5", null ],
     [ "angle", "math_8hpp.html#a1c7f1d41ab42350e59a3adb367afe811", null ],

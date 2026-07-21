@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/editor/editor/imgui/integration/backend/imgui_impl_ospp.cpp File Reference</title>
+<title>Unravel Engine C++ Reference: editor/editor/imgui/integration/backend/imgui_impl_ospp.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -133,14 +133,42 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:afb45bc3bdd71af391ba747ac6a7ba2c7" id="r_afb45bc3bdd71af391ba747ac6a7ba2c7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb45bc3bdd71af391ba747ac6a7ba2c7">ImOsIsDebuggerPresent</a> ()</td></tr>
+<tr class="separator:afb45bc3bdd71af391ba747ac6a7ba2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe24cfd371f02613079d7b225aa0befc" id="r_abe24cfd371f02613079d7b225aa0befc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe24cfd371f02613079d7b225aa0befc">ImOsOpenInShell</a> (ImGuiContext *ctx, const char *path)</td></tr>
+<tr class="separator:abe24cfd371f02613079d7b225aa0befc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f12e84272716adbf9ee01bfce3fd307" id="r_a9f12e84272716adbf9ee01bfce3fd307"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f12e84272716adbf9ee01bfce3fd307">ImGui_ImplOSPP_GetViewportData</a> (ImGuiViewport *viewport) -&gt; <a class="el" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a> *</td></tr>
+<tr class="separator:a9f12e84272716adbf9ee01bfce3fd307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bfb83eff96863137e09bc7ff523d5cf" id="r_a2bfb83eff96863137e09bc7ff523d5cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bfb83eff96863137e09bc7ff523d5cf">ImGui_ImplOSPP_ForEachViewport</a> (const std::function&lt; void(ImGuiViewport *viewport, <a class="el" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a> *data)&gt; &amp;callback)</td></tr>
+<tr class="separator:a2bfb83eff96863137e09bc7ff523d5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bb7b56029d85a32172599832d7f952" id="r_a08bb7b56029d85a32172599832d7f952"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08bb7b56029d85a32172599832d7f952">ImGui_ImplOSPP_GetViewportFromWindowId</a> (uint32_t <a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) -&gt; ImGuiViewport *</td></tr>
+<tr class="separator:a08bb7b56029d85a32172599832d7f952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7e5257208e0a870ba5ea9891f03f8f" id="r_a7f7e5257208e0a870ba5ea9891f03f8f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f7e5257208e0a870ba5ea9891f03f8f">ImGui_ImplOSPP_GetFocusedViewport</a> () -&gt; ImGuiViewport *</td></tr>
+<tr class="separator:a7f7e5257208e0a870ba5ea9891f03f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4dfbbdcd5060a5452f47bb75246f39e" id="r_ae4dfbbdcd5060a5452f47bb75246f39e"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4dfbbdcd5060a5452f47bb75246f39e">ImGui_ImplOSPP_GetBackendData</a> () -&gt; <a class="el" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a> *</td></tr>
+<tr class="separator:ae4dfbbdcd5060a5452f47bb75246f39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74059eea51bbc1b695f357399fd74a39" id="r_a74059eea51bbc1b695f357399fd74a39"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74059eea51bbc1b695f357399fd74a39">ImGui_ImplOSPP_IdToHandle</a> (uint32_t <a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) -&gt; void *</td></tr>
 <tr class="separator:a74059eea51bbc1b695f357399fd74a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b6b4a331c4189365bbc275943875e79" id="r_a1b6b4a331c4189365bbc275943875e79"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b6b4a331c4189365bbc275943875e79">ImGui_ImplOSPP_MapCursor</a> (ImGuiMouseCursor cursor) -&gt; <a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">os::cursor::type</a></td></tr>
 <tr class="separator:a1b6b4a331c4189365bbc275943875e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709910603235d2073ea39b662f329eba" id="r_a709910603235d2073ea39b662f329eba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a709910603235d2073ea39b662f329eba">ImGui_ImplOSPP_UpdateMonitors</a> ()</td></tr>
+<tr class="separator:a709910603235d2073ea39b662f329eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d35f34ad9171279618baeb9e1c242ba" id="r_a9d35f34ad9171279618baeb9e1c242ba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d35f34ad9171279618baeb9e1c242ba">ImGui_ImplOSPP_InitPlatformInterface</a> (<a class="el" href="structunravel_1_1render__window.html">unravel::render_window</a> *window)</td></tr>
+<tr class="separator:a9d35f34ad9171279618baeb9e1c242ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac957fcb38c0053dc90a09dd24d85478c" id="r_ac957fcb38c0053dc90a09dd24d85478c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac957fcb38c0053dc90a09dd24d85478c">ImGui_ImplOSPP_ShutdownPlatformInterface</a> ()</td></tr>
+<tr class="separator:ac957fcb38c0053dc90a09dd24d85478c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5e6cddc1d064dc43f1383b5dcda0d9" id="r_a9f5e6cddc1d064dc43f1383b5dcda0d9"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f5e6cddc1d064dc43f1383b5dcda0d9">ImGui_ImplOSPP_GetClipboardText</a> (ImGuiContext *ctx) -&gt; const char *</td></tr>
+<tr class="separator:a9f5e6cddc1d064dc43f1383b5dcda0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf52a2e008a1b1498865839085241645" id="r_acf52a2e008a1b1498865839085241645"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf52a2e008a1b1498865839085241645">ImGui_ImplOSPP_SetClipboardText</a> (ImGuiContext *ctx, const char *text)</td></tr>
+<tr class="separator:acf52a2e008a1b1498865839085241645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a32a76a9a944851b11ed6dbf2644d4a" id="r_a8a32a76a9a944851b11ed6dbf2644d4a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a32a76a9a944851b11ed6dbf2644d4a">ImGui_ImplOSPP_SetPlatformImeData</a> (ImGuiContext *ctx, ImGuiViewport *viewport, ImGuiPlatformImeData *data)</td></tr>
+<tr class="separator:a8a32a76a9a944851b11ed6dbf2644d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b11c8c1ea5e0ee1b62e868b91a2825b" id="r_a7b11c8c1ea5e0ee1b62e868b91a2825b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b11c8c1ea5e0ee1b62e868b91a2825b">ImGui_ImplOSPP_KeycodeToImGuiKey</a> (os::key::code keycode) -&gt; ImGuiKey</td></tr>
 <tr class="separator:a7b11c8c1ea5e0ee1b62e868b91a2825b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad20ac9819e6dcb10d2950d79f7cc2ce5" id="r_ad20ac9819e6dcb10d2950d79f7cc2ce5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad20ac9819e6dcb10d2950d79f7cc2ce5">ImGui_ImplOSPP_ImGuiKeyToKeycode</a> (ImGuiKey key) -&gt; os::key::code</td></tr>
 <tr class="separator:ad20ac9819e6dcb10d2950d79f7cc2ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995182fb7b62b2276a6e40373011ce0f" id="r_a995182fb7b62b2276a6e40373011ce0f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a995182fb7b62b2276a6e40373011ce0f">ImGui_ImplOSPP_UpdateKeyModifiers</a> (os::key_event e)</td></tr>
+<tr class="separator:a995182fb7b62b2276a6e40373011ce0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5396099166fb8fde106df305567ad69" id="r_ac5396099166fb8fde106df305567ad69"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5396099166fb8fde106df305567ad69">ImGui_IsAnyRealItemActive</a> () -&gt; bool</td></tr>
 <tr class="separator:ac5396099166fb8fde106df305567ad69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc3394116986868171db59ef3dff97ad" id="r_afc3394116986868171db59ef3dff97ad"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc3394116986868171db59ef3dff97ad">ImGui_ImplOSPP_ProcessEvent</a> (<a class="el" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">os::event</a> &amp;<a class="el" href="bullet__backend_8cpp.html#a803838fe5618ac7a562a9112ca9f8789">event</a>) -&gt; bool</td></tr>
@@ -149,10 +177,44 @@ Functions</h2></td></tr>
 <tr class="separator:a9b0253ec15949520138f1f01e6c82faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a014465ee9d9329b68d8dac11fc4e1f1d" id="r_a014465ee9d9329b68d8dac11fc4e1f1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a014465ee9d9329b68d8dac11fc4e1f1d">ImGui_ImplOSPP_Shutdown</a> ()</td></tr>
 <tr class="separator:a014465ee9d9329b68d8dac11fc4e1f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cbfebfc043a3486ba8719e08c199da" id="r_a49cbfebfc043a3486ba8719e08c199da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49cbfebfc043a3486ba8719e08c199da">ImGui_ImplOSPP_UpdateMouseData</a> ()</td></tr>
+<tr class="separator:a49cbfebfc043a3486ba8719e08c199da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5722f5eff8c9aef8097dc80671565e08" id="r_a5722f5eff8c9aef8097dc80671565e08"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5722f5eff8c9aef8097dc80671565e08">ImGui_ImplOSPP_UpdateMouseCursor</a> ()</td></tr>
+<tr class="separator:a5722f5eff8c9aef8097dc80671565e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b876ad1e50aecbe8cbcfe496d93f36" id="r_ab7b876ad1e50aecbe8cbcfe496d93f36"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7b876ad1e50aecbe8cbcfe496d93f36">ImGui_ImplOSPP_UpdateGamepads</a> ()</td></tr>
+<tr class="separator:ab7b876ad1e50aecbe8cbcfe496d93f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf89a2d2067d16ba5d7c74e48bce368" id="r_a1bf89a2d2067d16ba5d7c74e48bce368"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bf89a2d2067d16ba5d7c74e48bce368">ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale</a> (<a class="el" href="structunravel_1_1render__window.html">unravel::render_window</a> *window, ImVec2 *out_size, ImVec2 *out_framebuffer_scale)</td></tr>
+<tr class="separator:a1bf89a2d2067d16ba5d7c74e48bce368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5efed0cebd6d489562763d3c580ffc" id="r_adf5efed0cebd6d489562763d3c580ffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf5efed0cebd6d489562763d3c580ffc">ImGui_ImplOSPP_NewFrame</a> (float delta_time)</td></tr>
 <tr class="separator:adf5efed0cebd6d489562763d3c580ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c60ea987bc08f53a76bd01653ab1610" id="r_a8c60ea987bc08f53a76bd01653ab1610"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c60ea987bc08f53a76bd01653ab1610">ImGui_ImplOSPP_EndFrame</a> ()</td></tr>
 <tr class="separator:a8c60ea987bc08f53a76bd01653ab1610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636e11a4177eda2e963428d83488def7" id="r_a636e11a4177eda2e963428d83488def7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a636e11a4177eda2e963428d83488def7">ImGui_ImplOSPP_CreateWindow</a> (ImGuiViewport *viewport)</td></tr>
+<tr class="separator:a636e11a4177eda2e963428d83488def7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec92193095306b070776955dcebeb983" id="r_aec92193095306b070776955dcebeb983"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec92193095306b070776955dcebeb983">ImGui_ImplOSPP_DestroyWindow</a> (ImGuiViewport *viewport)</td></tr>
+<tr class="separator:aec92193095306b070776955dcebeb983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15dc6fbe429410a9e54482a44f251994" id="r_a15dc6fbe429410a9e54482a44f251994"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15dc6fbe429410a9e54482a44f251994">ImGui_ImplOSPP_ShowWindow</a> (ImGuiViewport *viewport)</td></tr>
+<tr class="separator:a15dc6fbe429410a9e54482a44f251994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab102d375c3781c643a655abe09f2cd17" id="r_ab102d375c3781c643a655abe09f2cd17"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab102d375c3781c643a655abe09f2cd17">ImGui_ImplOSPP_GetWindowPos</a> (ImGuiViewport *viewport) -&gt; ImVec2</td></tr>
+<tr class="separator:ab102d375c3781c643a655abe09f2cd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1daac74f7871015d76c594bcd934ab4" id="r_ac1daac74f7871015d76c594bcd934ab4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1daac74f7871015d76c594bcd934ab4">ImGui_ImplOSPP_SetWindowPos</a> (ImGuiViewport *viewport, ImVec2 pos)</td></tr>
+<tr class="separator:ac1daac74f7871015d76c594bcd934ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a31c147a1ffed17b51525d5bdb299a" id="r_a53a31c147a1ffed17b51525d5bdb299a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53a31c147a1ffed17b51525d5bdb299a">ImGui_ImplOSPP_GetWindowSize</a> (ImGuiViewport *viewport) -&gt; ImVec2</td></tr>
+<tr class="separator:a53a31c147a1ffed17b51525d5bdb299a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977dea4b5c836fa83676a1314f5d05cc" id="r_a977dea4b5c836fa83676a1314f5d05cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a977dea4b5c836fa83676a1314f5d05cc">ImGui_ImplOSPP_SetWindowSize</a> (ImGuiViewport *viewport, ImVec2 <a class="el" href="structsize.html">size</a>)</td></tr>
+<tr class="separator:a977dea4b5c836fa83676a1314f5d05cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08830ab2c80ea3d6ecfdc06966df360a" id="r_a08830ab2c80ea3d6ecfdc06966df360a"><td class="memItemLeft" align="right" valign="top">static ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08830ab2c80ea3d6ecfdc06966df360a">ImGui_ImplOSPP_GetWindowFramebufferScale</a> (ImGuiViewport *viewport)</td></tr>
+<tr class="separator:a08830ab2c80ea3d6ecfdc06966df360a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad15d02d23a1ec691ad7921d18e3f322" id="r_aad15d02d23a1ec691ad7921d18e3f322"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad15d02d23a1ec691ad7921d18e3f322">ImGui_ImplOSPP_SetWindowTitle</a> (ImGuiViewport *viewport, const char *<a class="el" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a>)</td></tr>
+<tr class="separator:aad15d02d23a1ec691ad7921d18e3f322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d8e2439e868718fc51543b528f1fa1" id="r_a21d8e2439e868718fc51543b528f1fa1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21d8e2439e868718fc51543b528f1fa1">ImGui_ImplOSPP_SetWindowAlpha</a> (ImGuiViewport *viewport, float alpha)</td></tr>
+<tr class="separator:a21d8e2439e868718fc51543b528f1fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6de2cbb20bf4cc579b42345e7f2ce0" id="r_aae6de2cbb20bf4cc579b42345e7f2ce0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae6de2cbb20bf4cc579b42345e7f2ce0">ImGui_ImplOSPP_SetWindowFocus</a> (ImGuiViewport *viewport)</td></tr>
+<tr class="separator:aae6de2cbb20bf4cc579b42345e7f2ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7db7cea86b031fea3d6bf9ad574246" id="r_aef7db7cea86b031fea3d6bf9ad574246"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef7db7cea86b031fea3d6bf9ad574246">ImGui_ImplOSPP_GetWindowFocus</a> (ImGuiViewport *viewport) -&gt; bool</td></tr>
+<tr class="separator:aef7db7cea86b031fea3d6bf9ad574246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404af2e4d557908f452d1f54d5bf90ee" id="r_a404af2e4d557908f452d1f54d5bf90ee"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a404af2e4d557908f452d1f54d5bf90ee">ImGui_ImplOSPP_GetWindowMinimized</a> (ImGuiViewport *viewport) -&gt; bool</td></tr>
+<tr class="separator:a404af2e4d557908f452d1f54d5bf90ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28e242afcb4dece8a5dfd6c39c5f4848" id="r_a28e242afcb4dece8a5dfd6c39c5f4848"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28e242afcb4dece8a5dfd6c39c5f4848">ImGui_ImplOSPP_RenderWindow</a> (ImGuiViewport *viewport, void *rend_args)</td></tr>
 <tr class="separator:a28e242afcb4dece8a5dfd6c39c5f4848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4245cf4b661fa0956d6c64de81dd8e28" id="r_a4245cf4b661fa0956d6c64de81dd8e28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4245cf4b661fa0956d6c64de81dd8e28">ImGui_ImplOSPP_SwapBuffers</a> (ImGuiViewport *viewport, void *rend_args)</td></tr>
@@ -176,6 +238,60 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a636e11a4177eda2e963428d83488def7" name="a636e11a4177eda2e963428d83488def7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a636e11a4177eda2e963428d83488def7">&#9670;&#160;</a></span>ImGui_ImplOSPP_CreateWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_CreateWindow </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01250">1250</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aec92193095306b070776955dcebeb983" name="aec92193095306b070776955dcebeb983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec92193095306b070776955dcebeb983">&#9670;&#160;</a></span>ImGui_ImplOSPP_DestroyWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_DestroyWindow </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01279">1279</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a8c60ea987bc08f53a76bd01653ab1610" name="a8c60ea987bc08f53a76bd01653ab1610"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c60ea987bc08f53a76bd01653ab1610">&#9670;&#160;</a></span>ImGui_ImplOSPP_EndFrame()</h2>
 
@@ -192,6 +308,348 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01229">1229</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2bfb83eff96863137e09bc7ff523d5cf" name="a2bfb83eff96863137e09bc7ff523d5cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bfb83eff96863137e09bc7ff523d5cf">&#9670;&#160;</a></span>ImGui_ImplOSPP_ForEachViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_ForEachViewport </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; void(ImGuiViewport *viewport, <a class="el" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a> *data)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00153">153</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae4dfbbdcd5060a5452f47bb75246f39e" name="ae4dfbbdcd5060a5452f47bb75246f39e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4dfbbdcd5060a5452f47bb75246f39e">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetBackendData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto ImGui_ImplOSPP_GetBackendData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="struct_im_gui___impl_o_s_p_p___data.html">ImGui_ImplOSPP_Data</a>*
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00206">206</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f5e6cddc1d064dc43f1383b5dcda0d9" name="a9f5e6cddc1d064dc43f1383b5dcda0d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f5e6cddc1d064dc43f1383b5dcda0d9">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetClipboardText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto ImGui_ImplOSPP_GetClipboardText </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiContext *</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span></td><td>)</td>
+          <td> -&gt; const char*
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00246">246</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7f7e5257208e0a870ba5ea9891f03f8f" name="a7f7e5257208e0a870ba5ea9891f03f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f7e5257208e0a870ba5ea9891f03f8f">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetFocusedViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto ImGui_ImplOSPP_GetFocusedViewport </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; ImGuiViewport*
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00186">186</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f12e84272716adbf9ee01bfce3fd307" name="a9f12e84272716adbf9ee01bfce3fd307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f12e84272716adbf9ee01bfce3fd307">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetViewportData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto ImGui_ImplOSPP_GetViewportData </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="struct_im_gui___impl_o_s_p_p___viewport_data.html">ImGui_ImplOSPP_ViewportData</a>*
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00142">142</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a08bb7b56029d85a32172599832d7f952" name="a08bb7b56029d85a32172599832d7f952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08bb7b56029d85a32172599832d7f952">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetViewportFromWindowId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto ImGui_ImplOSPP_GetViewportFromWindowId </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> -&gt; ImGuiViewport*
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00168">168</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aef7db7cea86b031fea3d6bf9ad574246" name="aef7db7cea86b031fea3d6bf9ad574246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7db7cea86b031fea3d6bf9ad574246">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetWindowFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto ImGui_ImplOSPP_GetWindowFocus </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span></td><td>)</td>
+          <td> -&gt; bool
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01383">1383</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a08830ab2c80ea3d6ecfdc06966df360a" name="a08830ab2c80ea3d6ecfdc06966df360a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08830ab2c80ea3d6ecfdc06966df360a">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetWindowFramebufferScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ImVec2 ImGui_ImplOSPP_GetWindowFramebufferScale </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01353">1353</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a404af2e4d557908f452d1f54d5bf90ee" name="a404af2e4d557908f452d1f54d5bf90ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a404af2e4d557908f452d1f54d5bf90ee">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetWindowMinimized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto ImGui_ImplOSPP_GetWindowMinimized </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span></td><td>)</td>
+          <td> -&gt; bool
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01389">1389</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab102d375c3781c643a655abe09f2cd17" name="ab102d375c3781c643a655abe09f2cd17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab102d375c3781c643a655abe09f2cd17">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetWindowPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto ImGui_ImplOSPP_GetWindowPos </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span></td><td>)</td>
+          <td> -&gt; ImVec2
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01327">1327</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a53a31c147a1ffed17b51525d5bdb299a" name="a53a31c147a1ffed17b51525d5bdb299a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a31c147a1ffed17b51525d5bdb299a">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetWindowSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto ImGui_ImplOSPP_GetWindowSize </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span></td><td>)</td>
+          <td> -&gt; ImVec2
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01340">1340</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1bf89a2d2067d16ba5d7c74e48bce368" name="a1bf89a2d2067d16ba5d7c74e48bce368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bf89a2d2067d16ba5d7c74e48bce368">&#9670;&#160;</a></span>ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_GetWindowSizeAndFramebufferScale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1render__window.html">unravel::render_window</a> *</td>          <td class="paramname"><span class="paramname"><em>window</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImVec2 *</td>          <td class="paramname"><span class="paramname"><em>out_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImVec2 *</td>          <td class="paramname"><span class="paramname"><em>out_framebuffer_scale</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01173">1173</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
 
 </div>
 </div>
@@ -261,6 +719,33 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00888">888</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9d35f34ad9171279618baeb9e1c242ba" name="a9d35f34ad9171279618baeb9e1c242ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d35f34ad9171279618baeb9e1c242ba">&#9670;&#160;</a></span>ImGui_ImplOSPP_InitPlatformInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_InitPlatformInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1render__window.html">unravel::render_window</a> *</td>          <td class="paramname"><span class="paramname"><em>window</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01411">1411</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
 
 </div>
 </div>
@@ -366,6 +851,251 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acf52a2e008a1b1498865839085241645" name="acf52a2e008a1b1498865839085241645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf52a2e008a1b1498865839085241645">&#9670;&#160;</a></span>ImGui_ImplOSPP_SetClipboardText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_SetClipboardText </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiContext *</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>text</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00254">254</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8a32a76a9a944851b11ed6dbf2644d4a" name="a8a32a76a9a944851b11ed6dbf2644d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a32a76a9a944851b11ed6dbf2644d4a">&#9670;&#160;</a></span>ImGui_ImplOSPP_SetPlatformImeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_SetPlatformImeData </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiContext *</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImGuiPlatformImeData *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00260">260</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a21d8e2439e868718fc51543b528f1fa1" name="a21d8e2439e868718fc51543b528f1fa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d8e2439e868718fc51543b528f1fa1">&#9670;&#160;</a></span>ImGui_ImplOSPP_SetWindowAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_SetWindowAlpha </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01368">1368</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aae6de2cbb20bf4cc579b42345e7f2ce0" name="aae6de2cbb20bf4cc579b42345e7f2ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6de2cbb20bf4cc579b42345e7f2ce0">&#9670;&#160;</a></span>ImGui_ImplOSPP_SetWindowFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_SetWindowFocus </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01377">1377</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac1daac74f7871015d76c594bcd934ab4" name="ac1daac74f7871015d76c594bcd934ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1daac74f7871015d76c594bcd934ab4">&#9670;&#160;</a></span>ImGui_ImplOSPP_SetWindowPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_SetWindowPos </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImVec2</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01334">1334</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a977dea4b5c836fa83676a1314f5d05cc" name="a977dea4b5c836fa83676a1314f5d05cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977dea4b5c836fa83676a1314f5d05cc">&#9670;&#160;</a></span>ImGui_ImplOSPP_SetWindowSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_SetWindowSize </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ImVec2</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01347">1347</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aad15d02d23a1ec691ad7921d18e3f322" name="aad15d02d23a1ec691ad7921d18e3f322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad15d02d23a1ec691ad7921d18e3f322">&#9670;&#160;</a></span>ImGui_ImplOSPP_SetWindowTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_SetWindowTitle </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>title</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01362">1362</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15dc6fbe429410a9e54482a44f251994" name="a15dc6fbe429410a9e54482a44f251994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15dc6fbe429410a9e54482a44f251994">&#9670;&#160;</a></span>ImGui_ImplOSPP_ShowWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_ShowWindow </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiViewport *</td>          <td class="paramname"><span class="paramname"><em>viewport</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01292">1292</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a014465ee9d9329b68d8dac11fc4e1f1d" name="a014465ee9d9329b68d8dac11fc4e1f1d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a014465ee9d9329b68d8dac11fc4e1f1d">&#9670;&#160;</a></span>ImGui_ImplOSPP_Shutdown()</h2>
 
@@ -382,6 +1112,33 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00975">975</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac957fcb38c0053dc90a09dd24d85478c" name="ac957fcb38c0053dc90a09dd24d85478c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac957fcb38c0053dc90a09dd24d85478c">&#9670;&#160;</a></span>ImGui_ImplOSPP_ShutdownPlatformInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_ShutdownPlatformInterface </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01444">1444</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
 
 </div>
 </div>
@@ -408,6 +1165,141 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab7b876ad1e50aecbe8cbcfe496d93f36" name="ab7b876ad1e50aecbe8cbcfe496d93f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b876ad1e50aecbe8cbcfe496d93f36">&#9670;&#160;</a></span>ImGui_ImplOSPP_UpdateGamepads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_UpdateGamepads </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01112">1112</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a995182fb7b62b2276a6e40373011ce0f" name="a995182fb7b62b2276a6e40373011ce0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a995182fb7b62b2276a6e40373011ce0f">&#9670;&#160;</a></span>ImGui_ImplOSPP_UpdateKeyModifiers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_UpdateKeyModifiers </td>
+          <td>(</td>
+          <td class="paramtype">os::key_event</td>          <td class="paramname"><span class="paramname"><em>e</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00708">708</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a709910603235d2073ea39b662f329eba" name="a709910603235d2073ea39b662f329eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709910603235d2073ea39b662f329eba">&#9670;&#160;</a></span>ImGui_ImplOSPP_UpdateMonitors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_UpdateMonitors </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01116">1116</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5722f5eff8c9aef8097dc80671565e08" name="a5722f5eff8c9aef8097dc80671565e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5722f5eff8c9aef8097dc80671565e08">&#9670;&#160;</a></span>ImGui_ImplOSPP_UpdateMouseCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_UpdateMouseCursor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l01086">1086</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a49cbfebfc043a3486ba8719e08c199da" name="a49cbfebfc043a3486ba8719e08c199da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49cbfebfc043a3486ba8719e08c199da">&#9670;&#160;</a></span>ImGui_ImplOSPP_UpdateMouseData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplOSPP_UpdateMouseData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00993">993</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ac5396099166fb8fde106df305567ad69" name="ac5396099166fb8fde106df305567ad69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5396099166fb8fde106df305567ad69">&#9670;&#160;</a></span>ImGui_IsAnyRealItemActive()</h2>
 
@@ -428,12 +1320,70 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afb45bc3bdd71af391ba747ac6a7ba2c7" name="afb45bc3bdd71af391ba747ac6a7ba2c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb45bc3bdd71af391ba747ac6a7ba2c7">&#9670;&#160;</a></span>ImOsIsDebuggerPresent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ImOsIsDebuggerPresent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00064">64</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abe24cfd371f02613079d7b225aa0befc" name="abe24cfd371f02613079d7b225aa0befc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe24cfd371f02613079d7b225aa0befc">&#9670;&#160;</a></span>ImOsOpenInShell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ImOsOpenInShell </td>
+          <td>(</td>
+          <td class="paramtype">ImGuiContext *</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__impl__ospp_8cpp_source.html#l00113">113</a> of file <a class="el" href="imgui__impl__ospp_8cpp_source.html">imgui_impl_ospp.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_7ee7c878d2c6fb143540ee92c5ee17cf.html">editor</a></li><li class="navelem"><a class="el" href="dir_8f21e58f08ce6fe6a2b4e3fbe97b105e.html">editor</a></li><li class="navelem"><a class="el" href="dir_a9cccf8a390388b1dfd30e47e1bb1db5.html">imgui</a></li><li class="navelem"><a class="el" href="dir_74c9e0a675e8793d60fec5ecc195aa18.html">integration</a></li><li class="navelem"><a class="el" href="dir_f995143fb81647407fd83fdcebdacd94.html">backend</a></li><li class="navelem"><a class="el" href="imgui__impl__ospp_8cpp.html">imgui_impl_ospp.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_bac5aa69239d34ac960582aca466258e.html">editor</a></li><li class="navelem"><a class="el" href="dir_193d69b3ac9ec318ea92bd9c004dbcbc.html">editor</a></li><li class="navelem"><a class="el" href="dir_9d1758494e710abaca10dbff32b43644.html">imgui</a></li><li class="navelem"><a class="el" href="dir_303471ffb896a3a0d5d824bd76219f8f.html">integration</a></li><li class="navelem"><a class="el" href="dir_8363d2f7f2c805dcf2a17790f07ceabc.html">backend</a></li><li class="navelem"><a class="el" href="imgui__impl__ospp_8cpp.html">imgui_impl_ospp.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

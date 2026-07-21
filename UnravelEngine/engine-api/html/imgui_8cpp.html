@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/editor/editor/imgui/integration/imgui.cpp File Reference</title>
+<title>Unravel Engine C++ Reference: editor/editor/imgui/integration/imgui.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,7 +99,8 @@ $(function(){initNavTree('imgui_8cpp.html',''); initResizable(true); });
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">imgui.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -151,6 +152,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a656e32f05047078557caab159523dcb1" id="r_a656e32f05047078557caab159523dcb1"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a656e32f05047078557caab159523dcb1">memAlloc</a> (size_t _size, void *_userData)</td></tr>
+<tr class="separator:a656e32f05047078557caab159523dcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae311e5a32e836036b2c3e23250a883cd" id="r_ae311e5a32e836036b2c3e23250a883cd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae311e5a32e836036b2c3e23250a883cd">memFree</a> (void *_ptr, void *_userData)</td></tr>
+<tr class="separator:ae311e5a32e836036b2c3e23250a883cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dadb7d57162073f149f247f69412d27" id="r_a0dadb7d57162073f149f247f69412d27"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dadb7d57162073f149f247f69412d27">ImGui_ImplGFX_DestroyTexture</a> (ImTextureData *tex)</td></tr>
+<tr class="separator:a0dadb7d57162073f149f247f69412d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad057338622039db51074e3eeb2679ac3" id="r_ad057338622039db51074e3eeb2679ac3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad057338622039db51074e3eeb2679ac3">ImGui_ImplGFX_UpdateTexture</a> (ImTextureData *tex)</td></tr>
 <tr class="separator:ad057338622039db51074e3eeb2679ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e531562e2c56be9584142c831f4d76d" id="r_a7e531562e2c56be9584142c831f4d76d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e531562e2c56be9584142c831f4d76d">imguiCreate</a> (<a class="el" href="structunravel_1_1render__window.html">unravel::render_window</a> *window, float _fontSize, bx::AllocatorI *_allocator)</td></tr>
@@ -191,8 +198,44 @@ Functions</h2></td></tr>
 <tr class="separator:a9b54aec8f01a2cec1bd876129d4b765e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5506d1a4b6fc0243f217f5d90ca64d6" id="r_ab5506d1a4b6fc0243f217f5d90ca64d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_im_gui.html#ab5506d1a4b6fc0243f217f5d90ca64d6">ImGui::KeepAliveOneFrame</a> (const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> &amp;tex)</td></tr>
 <tr class="separator:ab5506d1a4b6fc0243f217f5d90ca64d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:acd7ce6194ab0f5da31e8bda1ffd265e7" id="r_acd7ce6194ab0f5da31e8bda1ffd265e7"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="namespacegfx.html#ac8fe91ff7e5d80832d8bafdbe93b29e3">gfx::embedded_shader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd7ce6194ab0f5da31e8bda1ffd265e7">s_embeddedShaders</a> []</td></tr>
+<tr class="separator:acd7ce6194ab0f5da31e8bda1ffd265e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc302c8577ce7b05f5dc5e2a533ec62" id="r_affc302c8577ce7b05f5dc5e2a533ec62"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_font_range_merge.html">FontRangeMerge</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affc302c8577ce7b05f5dc5e2a533ec62">s_fontRangeMerge</a> []</td></tr>
+<tr class="separator:affc302c8577ce7b05f5dc5e2a533ec62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16367205880d1fecfc065560437ff63" id="r_ad16367205880d1fecfc065560437ff63"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_ocornut_imgui_context.html">OcornutImguiContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad16367205880d1fecfc065560437ff63">s_ctx</a></td></tr>
+<tr class="separator:ad16367205880d1fecfc065560437ff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0dadb7d57162073f149f247f69412d27" name="a0dadb7d57162073f149f247f69412d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dadb7d57162073f149f247f69412d27">&#9670;&#160;</a></span>ImGui_ImplGFX_DestroyTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ImGui_ImplGFX_DestroyTexture </td>
+          <td>(</td>
+          <td class="paramtype">ImTextureData *</td>          <td class="paramname"><span class="paramname"><em>tex</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui_8cpp_source.html#l00068">68</a> of file <a class="el" href="imgui_8cpp_source.html">imgui.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ad057338622039db51074e3eeb2679ac3" name="ad057338622039db51074e3eeb2679ac3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad057338622039db51074e3eeb2679ac3">&#9670;&#160;</a></span>ImGui_ImplGFX_UpdateTexture()</h2>
 
@@ -335,12 +378,158 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a656e32f05047078557caab159523dcb1" name="a656e32f05047078557caab159523dcb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656e32f05047078557caab159523dcb1">&#9670;&#160;</a></span>memAlloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void * memAlloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>_userData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui_8cpp_source.html#l00600">600</a> of file <a class="el" href="imgui_8cpp_source.html">imgui.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae311e5a32e836036b2c3e23250a883cd" name="ae311e5a32e836036b2c3e23250a883cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae311e5a32e836036b2c3e23250a883cd">&#9670;&#160;</a></span>memFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void memFree </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>_ptr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>_userData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui_8cpp_source.html#l00606">606</a> of file <a class="el" href="imgui_8cpp_source.html">imgui.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ad16367205880d1fecfc065560437ff63" name="ad16367205880d1fecfc065560437ff63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad16367205880d1fecfc065560437ff63">&#9670;&#160;</a></span>s_ctx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ocornut_imgui_context.html">OcornutImguiContext</a> s_ctx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui_8cpp_source.html#l00598">598</a> of file <a class="el" href="imgui_8cpp_source.html">imgui.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd7ce6194ab0f5da31e8bda1ffd265e7" name="acd7ce6194ab0f5da31e8bda1ffd265e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd7ce6194ab0f5da31e8bda1ffd265e7">&#9670;&#160;</a></span>s_embeddedShaders</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacegfx.html#ac8fe91ff7e5d80832d8bafdbe93b29e3">gfx::embedded_shader</a> s_embeddedShaders[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {BGFX_EMBEDDED_SHADER(vs_ocornut_imgui),</div>
+<div class="line">                                                         BGFX_EMBEDDED_SHADER(fs_ocornut_imgui),</div>
+<div class="line">                                                         BGFX_EMBEDDED_SHADER(vs_imgui_image),</div>
+<div class="line">                                                         BGFX_EMBEDDED_SHADER(fs_imgui_image),</div>
+<div class="line"> </div>
+<div class="line">                                                         BGFX_EMBEDDED_SHADER_END()}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="imgui_8cpp_source.html#l00045">45</a> of file <a class="el" href="imgui_8cpp_source.html">imgui.cpp</a>.</p>
+
+</div>
+</div>
+<a id="affc302c8577ce7b05f5dc5e2a533ec62" name="affc302c8577ce7b05f5dc5e2a533ec62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc302c8577ce7b05f5dc5e2a533ec62">&#9670;&#160;</a></span>s_fontRangeMerge</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_font_range_merge.html">FontRangeMerge</a> s_fontRangeMerge[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {<span class="stringliteral">&quot;MaterialDesignIcons&quot;</span>, s_iconsMaterialDesignIconsTtf, <span class="keyword">sizeof</span>(s_iconsMaterialDesignIconsTtf), {<a class="code hl_define" href="icons__material__design__icons_8h.html#a56a7479503abbe59af63ea3688b68b35">ICON_MIN_MDI</a>, <a class="code hl_define" href="icons__material__design__icons_8h.html#a7b72b2c834f4f5e58853b5c3d0aafee6">ICON_MAX_MDI</a>, 0}},</div>
+<div class="line">}</div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_a56a7479503abbe59af63ea3688b68b35"><div class="ttname"><a href="icons__material__design__icons_8h.html#a56a7479503abbe59af63ea3688b68b35">ICON_MIN_MDI</a></div><div class="ttdeci">#define ICON_MIN_MDI</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00008">icons_material_design_icons.h:8</a></div></div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_a7b72b2c834f4f5e58853b5c3d0aafee6"><div class="ttname"><a href="icons__material__design__icons_8h.html#a7b72b2c834f4f5e58853b5c3d0aafee6">ICON_MAX_MDI</a></div><div class="ttdeci">#define ICON_MAX_MDI</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00009">icons_material_design_icons.h:9</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="imgui_8cpp_source.html#l00060">60</a> of file <a class="el" href="imgui_8cpp_source.html">imgui.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_7ee7c878d2c6fb143540ee92c5ee17cf.html">editor</a></li><li class="navelem"><a class="el" href="dir_8f21e58f08ce6fe6a2b4e3fbe97b105e.html">editor</a></li><li class="navelem"><a class="el" href="dir_a9cccf8a390388b1dfd30e47e1bb1db5.html">imgui</a></li><li class="navelem"><a class="el" href="dir_74c9e0a675e8793d60fec5ecc195aa18.html">integration</a></li><li class="navelem"><a class="el" href="imgui_8cpp.html">imgui.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_bac5aa69239d34ac960582aca466258e.html">editor</a></li><li class="navelem"><a class="el" href="dir_193d69b3ac9ec318ea92bd9c004dbcbc.html">editor</a></li><li class="navelem"><a class="el" href="dir_9d1758494e710abaca10dbff32b43644.html">imgui</a></li><li class="navelem"><a class="el" href="dir_303471ffb896a3a0d5d824bd76219f8f.html">integration</a></li><li class="navelem"><a class="el" href="imgui_8cpp.html">imgui.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

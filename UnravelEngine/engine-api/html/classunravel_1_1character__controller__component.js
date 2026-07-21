@@ -23,6 +23,8 @@ var classunravel_1_1character__controller__component =
     [ "jump", "classunravel_1_1character__controller__component.html#a8cd2493da8cba2aaa47bc7c0b6631970", null ],
     [ "jump", "classunravel_1_1character__controller__component.html#ab8ed1a093d12f61cab8b9b3b1ce52306", null ],
     [ "move", "classunravel_1_1character__controller__component.html#a78ea34d1337ba6927b15e16cf3340488", null ],
+    [ "on_create_component", "classunravel_1_1character__controller__component.html#a70204ed840b32853d9738fd6c2d4851a", null ],
+    [ "on_destroy_component", "classunravel_1_1character__controller__component.html#a5133c397642b60c43b05996c10f63005", null ],
     [ "set_center", "classunravel_1_1character__controller__component.html#aecbe04b0ac221e1b9ea3aac5de1c3f5c", null ],
     [ "set_collision_exclude_mask", "classunravel_1_1character__controller__component.html#a49026f9c41dbcb0ebf329dfdffb99c8c", null ],
     [ "set_collision_include_mask", "classunravel_1_1character__controller__component.html#a6953825660915e1da18bebc9be9cae5f", null ],

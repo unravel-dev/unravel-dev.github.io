@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/engine/core/graphics/graphics.h Source File</title>
+<title>Unravel Engine C++ Reference: engine/core/graphics/graphics.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -116,7 +116,7 @@ $(function(){initNavTree('graphics_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegfx.html">gfx</a></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="graphics_8h.html#add6d0cb310bd8cb2b99808c98b7926b4">   17</a></span><span class="preprocessor">#define GFX_INVALID_HANDLE BGFX_INVALID_HANDLE</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">static</span> <span class="keyword">const</span> uint16_t invalid_handle = bgfx::kInvalidHandle;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">   18</a></span><span class="keyword">static</span> <span class="keyword">const</span> uint16_t <a class="code hl_variable" href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">invalid_handle</a> = bgfx::kInvalidHandle;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacegfx.html#a143e5bf6e35a4f1a3dc558656dc3b535">   19</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacegfx.html#a143e5bf6e35a4f1a3dc558656dc3b535">init_type</a> = bgfx::Init;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespacegfx.html#aab4cbe9dc5e1938791196b3a2e2b7f16">   20</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacegfx.html#aab4cbe9dc5e1938791196b3a2e2b7f16">view_id</a> = bgfx::ViewId;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespacegfx.html#ac808c34bc3169786ea81b3a9329a2d19">   21</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacegfx.html#ac808c34bc3169786ea81b3a9329a2d19">renderer_type</a> = bgfx::RendererType::Enum;</div>
@@ -927,6 +927,7 @@ $(function(){initNavTree('graphics_8h_source.html',''); initResizable(true); });
 <div class="ttc" id="anamespacegfx_html_a958ba6d48761593b02493e8c39a6030d"><div class="ttname"><a href="namespacegfx.html#a958ba6d48761593b02493e8c39a6030d">gfx::get_caps</a></div><div class="ttdeci">const caps * get_caps()</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00445">graphics.cpp:445</a></div></div>
 <div class="ttc" id="anamespacegfx_html_a95f103ee9f0d15b041c90ebc89a3085d"><div class="ttname"><a href="namespacegfx.html#a95f103ee9f0d15b041c90ebc89a3085d">gfx::get_avail_instance_data_buffer</a></div><div class="ttdeci">uint32_t get_avail_instance_data_buffer(uint32_t _num, uint16_t _stride)</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00577">graphics.cpp:577</a></div></div>
 <div class="ttc" id="anamespacegfx_html_a99ef754d56cd02736d24e252f978ce5c"><div class="ttname"><a href="namespacegfx.html#a99ef754d56cd02736d24e252f978ce5c">gfx::get_renderer_name</a></div><div class="ttdeci">const char * get_renderer_name(renderer_type _type)</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00412">graphics.cpp:412</a></div></div>
+<div class="ttc" id="anamespacegfx_html_a9f407b2706246095d81dbedfa180f254"><div class="ttname"><a href="namespacegfx.html#a9f407b2706246095d81dbedfa180f254">gfx::invalid_handle</a></div><div class="ttdeci">static const uint16_t invalid_handle</div><div class="ttdef"><b>Definition</b> <a href="#l00018">graphics.h:18</a></div></div>
 <div class="ttc" id="anamespacegfx_html_aa09cbfb435018b3630321a68016bf26a"><div class="ttname"><a href="namespacegfx.html#aa09cbfb435018b3630321a68016bf26a">gfx::get_shader_uniforms</a></div><div class="ttdeci">uint16_t get_shader_uniforms(shader_handle _handle, uniform_handle *_uniforms, uint16_t _max)</div><div class="ttdef"><b>Definition</b> <a href="graphics_8cpp_source.html#l00621">graphics.cpp:621</a></div></div>
 <div class="ttc" id="anamespacegfx_html_aa0cff64741cf2e205c0edb0cc173094f"><div class="ttname"><a href="namespacegfx.html#aa0cff64741cf2e205c0edb0cc173094f">gfx::topology</a></div><div class="ttdeci">bgfx::Topology topology</div><div class="ttdef"><b>Definition</b> <a href="#l00037">graphics.h:37</a></div></div>
 <div class="ttc" id="anamespacegfx_html_aa15b5673af9674d9969610ffd6396e5a"><div class="ttname"><a href="namespacegfx.html#aa15b5673af9674d9969610ffd6396e5a">gfx::uniform_type</a></div><div class="ttdeci">bgfx::UniformType::Enum uniform_type</div><div class="ttdef"><b>Definition</b> <a href="#l00025">graphics.h:25</a></div></div>
@@ -1017,7 +1018,7 @@ $(function(){initNavTree('graphics_8h_source.html',''); initResizable(true); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_313a656c30f2f21a897c9e02f299f510.html">engine</a></li><li class="navelem"><a class="el" href="dir_ced40213a000e1ef9a529a7be3c50dd7.html">core</a></li><li class="navelem"><a class="el" href="dir_8d41dbf129e93d9f1fae7398249a3336.html">graphics</a></li><li class="navelem"><a class="el" href="graphics_8h.html">graphics.h</a></li>
+    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_a0e47c104ecd6c0b6dccb5f33d071508.html">core</a></li><li class="navelem"><a class="el" href="dir_009a11a7a67d65df2515f25df003ba1b.html">graphics</a></li><li class="navelem"><a class="el" href="graphics_8h.html">graphics.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

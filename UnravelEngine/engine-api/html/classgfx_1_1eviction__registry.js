@@ -9,6 +9,7 @@ var classgfx_1_1eviction__registry =
     [ "get_init_status", "classgfx_1_1eviction__registry.html#ad555ba43ef0e74747746e6020e02f22a", null ],
     [ "get_stats", "classgfx_1_1eviction__registry.html#a9a3501912343f7e7083d22c138ed73eb", null ],
     [ "init", "classgfx_1_1eviction__registry.html#a615e4bdaa995bf9e2c02890e44cab692", null ],
+    [ "instance", "classgfx_1_1eviction__registry.html#a01c4c489e66bd35c11a30ace76277885", null ],
     [ "note_pending_allocation", "classgfx_1_1eviction__registry.html#a5f057f8cd88e861c9f50a06778c6f288", null ],
     [ "on_frame_advanced", "classgfx_1_1eviction__registry.html#ad8762224697a99645f720bcdf41a1b5a", null ],
     [ "peek_external_queued_bytes", "classgfx_1_1eviction__registry.html#a830a76fb8aa4ba1bc95959808b6bf879", null ],

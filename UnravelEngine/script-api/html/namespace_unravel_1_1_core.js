@@ -54,7 +54,7 @@ var namespace_unravel_1_1_core =
     [ "StepAttribute", "class_unravel_1_1_core_1_1_step_attribute.html", "class_unravel_1_1_core_1_1_step_attribute" ],
     [ "StyleSheet", "class_unravel_1_1_core_1_1_style_sheet.html", null ],
     [ "SystemManager", "class_unravel_1_1_core_1_1_system_manager.html", "class_unravel_1_1_core_1_1_system_manager" ],
-    [ "Tests", "class_unravel_1_1_core_1_1_tests.html", null ],
+    [ "Tests", "class_unravel_1_1_core_1_1_tests.html", "class_unravel_1_1_core_1_1_tests" ],
     [ "TextComponent", "class_unravel_1_1_core_1_1_text_component.html", "class_unravel_1_1_core_1_1_text_component" ],
     [ "Texture", "class_unravel_1_1_core_1_1_texture.html", null ],
     [ "Time", "class_unravel_1_1_core_1_1_time.html", "class_unravel_1_1_core_1_1_time" ],

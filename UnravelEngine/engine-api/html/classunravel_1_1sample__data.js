@@ -7,5 +7,6 @@ var classunravel_1_1sample__data =
     [ "get_offset", "classunravel_1_1sample__data.html#a02e8e92c9deb0da925af98049abf72ea", null ],
     [ "get_values", "classunravel_1_1sample__data.html#aa9ad2b031c94b6f9ed02a2dd7d938d7b", null ],
     [ "push_sample", "classunravel_1_1sample__data.html#afcd72b09d385e630e7e1fb83b3d18cc4", null ],
-    [ "reset", "classunravel_1_1sample__data.html#a443ff48513d053bbfd883888792c205e", null ]
+    [ "reset", "classunravel_1_1sample__data.html#a443ff48513d053bbfd883888792c205e", null ],
+    [ "num_samples", "classunravel_1_1sample__data.html#a06c904377f7d64ff61b695302c30c3e0", null ]
 ];

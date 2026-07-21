@@ -7,6 +7,8 @@ var classunravel_1_1model =
     [ "calculate_submesh_lod", "classunravel_1_1model.html#a0eb78f9e5def69aaf9b1f33a8ec186cb", null ],
     [ "calculate_submesh_lod_from_world_bounds", "classunravel_1_1model.html#a18a843d5089b5b5a8a404649086fb3f1", null ],
     [ "compute_lod_index", "classunravel_1_1model.html#af5e8382a2af725024c7f2516d8051544", null ],
+    [ "default_material", "classunravel_1_1model.html#a5e9acb95b50f1f51f1c3c105d8c53b01", null ],
+    [ "fallback_material", "classunravel_1_1model.html#a19b31cf070c5cc613fe91ecc938624f1", null ],
     [ "get_lod", "classunravel_1_1model.html#a13ed84094afadf4b43058c2fe86ec7c9", null ],
     [ "get_lod_auto_screen_size_power_base", "classunravel_1_1model.html#ad8840ec14d386d1b574a58a6a481ddcd", null ],
     [ "get_lod_hysteresis", "classunravel_1_1model.html#adfc8459a44640ed2c934d0a0de2a4a69", null ],

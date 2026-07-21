@@ -123,9 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f65e852b0bae1c6fe45efb3224c50c6" id="r_a1f65e852b0bae1c6fe45efb3224c50c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f65e852b0bae1c6fe45efb3224c50c6">Bounds</a> (float xMin, float yMin, float zMin, float xMax, float yMax, float zMax)</td></tr>
 <tr class="memdesc:a1f65e852b0bae1c6fe45efb3224c50c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box by specifying each coordinate.  <br /></td></tr>
 <tr class="separator:a1f65e852b0bae1c6fe45efb3224c50c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d24919bfc8cd8e4d0ec719fbf28b03f" id="r_a0d24919bfc8cd8e4d0ec719fbf28b03f"><td class="memItemLeft" align="right" valign="top"><a id="a0d24919bfc8cd8e4d0ec719fbf28b03f" name="a0d24919bfc8cd8e4d0ec719fbf28b03f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
-<tr class="memdesc:a0d24919bfc8cd8e4d0ec719fbf28b03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets to an "unpopulated" state—ready for Grow/Encapsulate. <br /></td></tr>
+<tr class="memitem:a0d24919bfc8cd8e4d0ec719fbf28b03f" id="r_a0d24919bfc8cd8e4d0ec719fbf28b03f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d24919bfc8cd8e4d0ec719fbf28b03f">Reset</a> ()</td></tr>
+<tr class="memdesc:a0d24919bfc8cd8e4d0ec719fbf28b03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets to an "unpopulated" state—ready for Grow/Encapsulate.  <br /></td></tr>
 <tr class="separator:a0d24919bfc8cd8e4d0ec719fbf28b03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa076fee305d4b9c4b30cc90461b6860a" id="r_aa076fee305d4b9c4b30cc90461b6860a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa076fee305d4b9c4b30cc90461b6860a">IsPopulated</a> ()</td></tr>
 <tr class="memdesc:aa076fee305d4b9c4b30cc90461b6860a"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if <a class="el" href="#a0d24919bfc8cd8e4d0ec719fbf28b03f" title="Resets to an &quot;unpopulated&quot; state—ready for Grow/Encapsulate.">Reset()</a> has been called (i.e. not both corners = zero).  <br /></td></tr>
@@ -175,8 +174,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr
 <tr class="memitem:a78a7d05791d1ae2e23315ee7a8ac3438" id="r_a78a7d05791d1ae2e23315ee7a8ac3438"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78a7d05791d1ae2e23315ee7a8ac3438">Intersect</a> (<a class="el" href="struct_bounds.html">Bounds</a> b, <a class="el" href="struct_vector3.html">Vector3</a> tol)</td></tr>
 <tr class="memdesc:a78a7d05791d1ae2e23315ee7a8ac3438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlap with a tolerance vector.  <br /></td></tr>
 <tr class="separator:a78a7d05791d1ae2e23315ee7a8ac3438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb2b7838c7e5b61035ec27fe378507d" id="r_a5fb2b7838c7e5b61035ec27fe378507d"><td class="memItemLeft" align="right" valign="top"><a id="a5fb2b7838c7e5b61035ec27fe378507d" name="a5fb2b7838c7e5b61035ec27fe378507d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Slab</b> (float o, float d, float mn, float mx, ref float t0, ref float t1)</td></tr>
+<tr class="memitem:a5fb2b7838c7e5b61035ec27fe378507d" id="r_a5fb2b7838c7e5b61035ec27fe378507d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fb2b7838c7e5b61035ec27fe378507d">Slab</a> (float o, float d, float mn, float mx, ref float t0, ref float t1)</td></tr>
 <tr class="separator:a5fb2b7838c7e5b61035ec27fe378507d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6793dc7e5123407db9a30cf66cdc4de" id="r_af6793dc7e5123407db9a30cf66cdc4de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6793dc7e5123407db9a30cf66cdc4de">Intersect</a> (<a class="el" href="struct_vector3.html">Vector3</a> origin, <a class="el" href="struct_vector3.html">Vector3</a> dir, out float t, bool restrictRange=true)</td></tr>
 <tr class="memdesc:af6793dc7e5123407db9a30cf66cdc4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ray vs AABB (slab method). Returns true if hit; t = entry time in [0,1] if restrictRange.  <br /></td></tr>
@@ -211,20 +209,17 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a844c4a3b99a62ea6c126412fbfe3a5f5" id="r_a844c4a3b99a62ea6c126412fbfe3a5f5"><td class="memItemLeft" align="right" valign="top"><a id="a844c4a3b99a62ea6c126412fbfe3a5f5" name="a844c4a3b99a62ea6c126412fbfe3a5f5"></a>
-<a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Min</b></td></tr>
-<tr class="memdesc:a844c4a3b99a62ea6c126412fbfe3a5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum corner of the box. <br /></td></tr>
+<tr class="memitem:a844c4a3b99a62ea6c126412fbfe3a5f5" id="r_a844c4a3b99a62ea6c126412fbfe3a5f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a844c4a3b99a62ea6c126412fbfe3a5f5">Min</a></td></tr>
+<tr class="memdesc:a844c4a3b99a62ea6c126412fbfe3a5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum corner of the box.  <br /></td></tr>
 <tr class="separator:a844c4a3b99a62ea6c126412fbfe3a5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bb30ae7f49544989ddd62d5638d006" id="r_a83bb30ae7f49544989ddd62d5638d006"><td class="memItemLeft" align="right" valign="top"><a id="a83bb30ae7f49544989ddd62d5638d006" name="a83bb30ae7f49544989ddd62d5638d006"></a>
-<a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Max</b></td></tr>
-<tr class="memdesc:a83bb30ae7f49544989ddd62d5638d006"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum corner of the box. <br /></td></tr>
+<tr class="memitem:a83bb30ae7f49544989ddd62d5638d006" id="r_a83bb30ae7f49544989ddd62d5638d006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83bb30ae7f49544989ddd62d5638d006">Max</a></td></tr>
+<tr class="memdesc:a83bb30ae7f49544989ddd62d5638d006"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum corner of the box.  <br /></td></tr>
 <tr class="separator:a83bb30ae7f49544989ddd62d5638d006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:af6989d119129f4a7070ab08c8732b534" id="r_af6989d119129f4a7070ab08c8732b534"><td class="memItemLeft" align="right" valign="top"><a id="af6989d119129f4a7070ab08c8732b534" name="af6989d119129f4a7070ab08c8732b534"></a>
-static readonly <a class="el" href="struct_bounds.html">Bounds</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Empty</b> = new <a class="el" href="struct_bounds.html">Bounds</a>(<a class="el" href="struct_vector3.html#a999d6a68eed68d56e7f212b5cd22b9dc">Vector3.one</a> * float.MaxValue, <a class="el" href="struct_vector3.html#a999d6a68eed68d56e7f212b5cd22b9dc">Vector3.one</a> * float.MinValue)</td></tr>
-<tr class="memdesc:af6989d119129f4a7070ab08c8732b534"><td class="mdescLeft">&#160;</td><td class="mdescRight">An empty bounds box. <br /></td></tr>
+<tr class="memitem:af6989d119129f4a7070ab08c8732b534" id="r_af6989d119129f4a7070ab08c8732b534"><td class="memItemLeft" align="right" valign="top">static readonly <a class="el" href="struct_bounds.html">Bounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6989d119129f4a7070ab08c8732b534">Empty</a> = new <a class="el" href="struct_bounds.html">Bounds</a>(<a class="el" href="struct_vector3.html#a999d6a68eed68d56e7f212b5cd22b9dc">Vector3.one</a> * float.MaxValue, <a class="el" href="struct_vector3.html#a999d6a68eed68d56e7f212b5cd22b9dc">Vector3.one</a> * float.MinValue)</td></tr>
+<tr class="memdesc:af6989d119129f4a7070ab08c8732b534"><td class="mdescLeft">&#160;</td><td class="mdescRight">An empty bounds box.  <br /></td></tr>
 <tr class="separator:af6989d119129f4a7070ab08c8732b534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1033,8 +1028,125 @@ static readonly <a class="el" href="struct_bounds.html">Bounds</a>&#160;</td><td
 
 </div>
 </div>
+<a id="a0d24919bfc8cd8e4d0ec719fbf28b03f" name="a0d24919bfc8cd8e4d0ec719fbf28b03f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d24919bfc8cd8e4d0ec719fbf28b03f">&#9670;&#160;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Bounds.Reset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets to an "unpopulated" state—ready for Grow/Encapsulate. </p>
+
+</div>
+</div>
+<a id="a5fb2b7838c7e5b61035ec27fe378507d" name="a5fb2b7838c7e5b61035ec27fe378507d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fb2b7838c7e5b61035ec27fe378507d">&#9670;&#160;</a></span>Slab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Bounds.Slab </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>o</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>mn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>mx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref float</td>          <td class="paramname"><span class="paramname"><em>t0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref float</td>          <td class="paramname"><span class="paramname"><em>t1</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af6989d119129f4a7070ab08c8732b534" name="af6989d119129f4a7070ab08c8732b534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6989d119129f4a7070ab08c8732b534">&#9670;&#160;</a></span>Empty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="struct_bounds.html">Bounds</a> Bounds.Empty = new <a class="el" href="struct_bounds.html">Bounds</a>(<a class="el" href="struct_vector3.html#a999d6a68eed68d56e7f212b5cd22b9dc">Vector3.one</a> * float.MaxValue, <a class="el" href="struct_vector3.html#a999d6a68eed68d56e7f212b5cd22b9dc">Vector3.one</a> * float.MinValue)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An empty bounds box. </p>
+
+</div>
+</div>
+<a id="a83bb30ae7f49544989ddd62d5638d006" name="a83bb30ae7f49544989ddd62d5638d006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bb30ae7f49544989ddd62d5638d006">&#9670;&#160;</a></span>Max</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3.html">Vector3</a> Bounds.Max</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum corner of the box. </p>
+
+</div>
+</div>
+<a id="a844c4a3b99a62ea6c126412fbfe3a5f5" name="a844c4a3b99a62ea6c126412fbfe3a5f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844c4a3b99a62ea6c126412fbfe3a5f5">&#9670;&#160;</a></span>Min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector3.html">Vector3</a> Bounds.Min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The minimum corner of the box. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>math/<b>Bounds.cs</b></li>
+<li>math/<a class="el" href="_bounds_8cs.html">Bounds.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

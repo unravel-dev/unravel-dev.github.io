@@ -9,6 +9,7 @@ var classunravel_1_1property__layout =
     [ "property_layout", "classunravel_1_1property__layout.html#a9e5cfae24abeac58829978bd2d41bf8a", null ],
     [ "property_layout", "classunravel_1_1property__layout.html#a4e7eb2189e9a987cd6134e579ccdd437", null ],
     [ "~property_layout", "classunravel_1_1property__layout.html#adb17498072b0eea1d5c5d18703be2596", null ],
+    [ "get_current", "classunravel_1_1property__layout.html#a238564e27f9df5cabefc0aa4239c6e3c", null ],
     [ "operator=", "classunravel_1_1property__layout.html#a00709b5e8eee58dd5952d8b873b495cb", null ],
     [ "operator=", "classunravel_1_1property__layout.html#a2d8b8c86b7611e7a4615c5965e6ca28c", null ],
     [ "pop_layout", "classunravel_1_1property__layout.html#a83f34a170bcc2bf23c190e07e86b306e", null ],

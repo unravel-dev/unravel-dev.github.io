@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/engine/core/graphics/utils/font/utf8.cpp File Reference</title>
+<title>Unravel Engine C++ Reference: engine/core/graphics/utils/font/utf8.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,7 +97,8 @@ $(function(){initNavTree('utf8_8cpp.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">utf8.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -109,6 +110,11 @@ $(function(){initNavTree('utf8_8cpp.html',''); initResizable(true); });
 Functions</h2></td></tr>
 <tr class="memitem:a9dbdb2f265ccd840c39d85d3404fdd0c" id="r_a9dbdb2f265ccd840c39d85d3404fdd0c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dbdb2f265ccd840c39d85d3404fdd0c">utf8_decode</a> (uint32_t *_state, uint32_t *_codep, uint8_t _ch)</td></tr>
 <tr class="separator:a9dbdb2f265ccd840c39d85d3404fdd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2881ca41b43fb8b16f8dd27905034928" id="r_a2881ca41b43fb8b16f8dd27905034928"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2881ca41b43fb8b16f8dd27905034928">s_utf8d</a> [364]</td></tr>
+<tr class="separator:a2881ca41b43fb8b16f8dd27905034928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a9dbdb2f265ccd840c39d85d3404fdd0c" name="a9dbdb2f265ccd840c39d85d3404fdd0c"></a>
@@ -139,12 +145,58 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2881ca41b43fb8b16f8dd27905034928" name="a2881ca41b43fb8b16f8dd27905034928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2881ca41b43fb8b16f8dd27905034928">&#9670;&#160;</a></span>s_utf8d</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t s_utf8d[364]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">{</div>
+<div class="line">    </div>
+<div class="line">    </div>
+<div class="line">     0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,</div>
+<div class="line">     0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,</div>
+<div class="line">     0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,</div>
+<div class="line">     0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,</div>
+<div class="line">     1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,  9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,</div>
+<div class="line">     7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,  7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,</div>
+<div class="line">     8,8,2,2,2,2,2,2,2,2,2,2,2,2,2,2,  2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,</div>
+<div class="line">    10,3,3,3,3,3,3,3,3,3,3,3,3,4,3,3, 11,6,6,6,5,8,8,8,8,8,8,8,8,8,8,8,</div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line">    </div>
+<div class="line">     0,12,24,36,60,96,84,12,12,12,48,72, 12,12,12,12,12,12,12,12,12,12,12,12,</div>
+<div class="line">    12, 0,12,12,12,12,12, 0,12, 0,12,12, 12,24,12,12,12,12,12,24,12,24,12,12,</div>
+<div class="line">    12,12,12,12,12,12,12,24,12,12,12,12, 12,24,12,12,12,12,12,12,12,24,12,12,</div>
+<div class="line">    12,12,12,12,12,12,12,36,12,36,12,12, 12,36,12,12,12,12,12,36,12,36,12,12,</div>
+<div class="line">    12,36,12,12,12,12,12,12,12,12,12,12</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="utf8_8cpp_source.html#l00024">24</a> of file <a class="el" href="utf8_8cpp_source.html">utf8.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_313a656c30f2f21a897c9e02f299f510.html">engine</a></li><li class="navelem"><a class="el" href="dir_ced40213a000e1ef9a529a7be3c50dd7.html">core</a></li><li class="navelem"><a class="el" href="dir_8d41dbf129e93d9f1fae7398249a3336.html">graphics</a></li><li class="navelem"><a class="el" href="dir_3430a61ada3f7b10f98708b77b86f40f.html">utils</a></li><li class="navelem"><a class="el" href="dir_86d01881e271a3bf02ddb1a66609fdde.html">font</a></li><li class="navelem"><a class="el" href="utf8_8cpp.html">utf8.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_a0e47c104ecd6c0b6dccb5f33d071508.html">core</a></li><li class="navelem"><a class="el" href="dir_009a11a7a67d65df2515f25df003ba1b.html">graphics</a></li><li class="navelem"><a class="el" href="dir_b9c9f29d795ea8ef2e50b4c92d576dfc.html">utils</a></li><li class="navelem"><a class="el" href="dir_85f0eaa275d987e8977c246cf209d674.html">font</a></li><li class="navelem"><a class="el" href="utf8_8cpp.html">utf8.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

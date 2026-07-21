@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/engine/core/graphics/utils/bgfx_utils.cpp File Reference</title>
+<title>Unravel Engine C++ Reference: engine/core/graphics/utils/bgfx_utils.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -136,6 +136,12 @@ Functions</h2></td></tr>
 <tr class="separator:accb2dd70424d466ef9ef7b66f823d1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7e73b30345a101c4b692eedac03de47" id="r_ac7e73b30345a101c4b692eedac03de47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7e73b30345a101c4b692eedac03de47">unload</a> (void *_ptr)</td></tr>
 <tr class="separator:ac7e73b30345a101c4b692eedac03de47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03da0ad1dba2ca1b1a491953c7f879c5" id="r_a03da0ad1dba2ca1b1a491953c7f879c5"><td class="memItemLeft" align="right" valign="top">static const bgfx::Memory *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03da0ad1dba2ca1b1a491953c7f879c5">loadMem</a> (bx::FileReaderI *_reader, const char *_filePath)</td></tr>
+<tr class="separator:a03da0ad1dba2ca1b1a491953c7f879c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d388b35bf3109535e14f7094ae390c" id="r_a22d388b35bf3109535e14f7094ae390c"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22d388b35bf3109535e14f7094ae390c">loadMem</a> (bx::FileReaderI *_reader, bx::AllocatorI *_allocator, const bx::FilePath &amp;_filePath, uint32_t *_size)</td></tr>
+<tr class="separator:a22d388b35bf3109535e14f7094ae390c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de6853102fe82c112e0ad9aeccd7f81" id="r_a0de6853102fe82c112e0ad9aeccd7f81"><td class="memItemLeft" align="right" valign="top">static bgfx::ShaderHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0de6853102fe82c112e0ad9aeccd7f81">loadShader</a> (bx::FileReaderI *_reader, const bx::StringView &amp;_name)</td></tr>
+<tr class="separator:a0de6853102fe82c112e0ad9aeccd7f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d90e3a0dbad7c8bee994dd47a97bf05" id="r_a3d90e3a0dbad7c8bee994dd47a97bf05"><td class="memItemLeft" align="right" valign="top">bgfx::ShaderHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d90e3a0dbad7c8bee994dd47a97bf05">loadShader</a> (const bx::StringView &amp;_name)</td></tr>
 <tr class="separator:a3d90e3a0dbad7c8bee994dd47a97bf05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec795e4713fde55bd645b7716d07802f" id="r_aec795e4713fde55bd645b7716d07802f"><td class="memItemLeft" align="right" valign="top">bgfx::ShaderHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec795e4713fde55bd645b7716d07802f">loadShader</a> (const bx::FilePath &amp;_filePath)</td></tr>
@@ -144,6 +150,10 @@ Functions</h2></td></tr>
 <tr class="separator:ad915993e0346f2087213c09fd97ad7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d9994a36806a2172eba60f05338ba8d" id="r_a4d9994a36806a2172eba60f05338ba8d"><td class="memItemLeft" align="right" valign="top">bgfx::ProgramHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d9994a36806a2172eba60f05338ba8d">loadProgram</a> (const bx::StringView &amp;_vsName, const bx::StringView &amp;_fsName)</td></tr>
 <tr class="separator:a4d9994a36806a2172eba60f05338ba8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a3ac6e890b77e760e3b0b29f136d51" id="r_a92a3ac6e890b77e760e3b0b29f136d51"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92a3ac6e890b77e760e3b0b29f136d51">imageReleaseCb</a> (void *_ptr, void *_userData)</td></tr>
+<tr class="separator:a92a3ac6e890b77e760e3b0b29f136d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc7942e303413ee6c79736f5bc6f5b5" id="r_a2cc7942e303413ee6c79736f5bc6f5b5"><td class="memItemLeft" align="right" valign="top">static bgfx::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cc7942e303413ee6c79736f5bc6f5b5">loadTextureFromContainer</a> (bimg::ImageContainer *imageContainer, uint64_t _flags, bgfx::TextureInfo *_info, const <a class="el" href="bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6">TexturePreCreateFn</a> &amp;_preCreate=nullptr)</td></tr>
+<tr class="separator:a2cc7942e303413ee6c79736f5bc6f5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c61b9c0c402b92836cacc469646337f" id="r_a8c61b9c0c402b92836cacc469646337f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c61b9c0c402b92836cacc469646337f">imageFlipTangentSpaceNormalY</a> (bimg::ImageContainer *&amp;_image)</td></tr>
 <tr class="separator:a8c61b9c0c402b92836cacc469646337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab890e26cdc87996dff44716222cf7c76" id="r_ab890e26cdc87996dff44716222cf7c76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab890e26cdc87996dff44716222cf7c76">imagePrepareNormalMapBakePng</a> (bimg::ImageContainer *&amp;_image)</td></tr>
@@ -365,6 +375,37 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a92a3ac6e890b77e760e3b0b29f136d51" name="a92a3ac6e890b77e760e3b0b29f136d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a3ac6e890b77e760e3b0b29f136d51">&#9670;&#160;</a></span>imageReleaseCb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void imageReleaseCb </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>_ptr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>_userData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00217">217</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a8c52c2b842ca50b4dcb761efd7f6a92b" name="a8c52c2b842ca50b4dcb761efd7f6a92b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c52c2b842ca50b4dcb761efd7f6a92b">&#9670;&#160;</a></span>imageSave()</h2>
 
@@ -444,6 +485,78 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a22d388b35bf3109535e14f7094ae390c" name="a22d388b35bf3109535e14f7094ae390c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22d388b35bf3109535e14f7094ae390c">&#9670;&#160;</a></span>loadMem() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void * loadMem </td>
+          <td>(</td>
+          <td class="paramtype">bx::FileReaderI *</td>          <td class="paramname"><span class="paramname"><em>_reader</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bx::AllocatorI *</td>          <td class="paramname"><span class="paramname"><em>_allocator</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bx::FilePath &amp;</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>_size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00130">130</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a03da0ad1dba2ca1b1a491953c7f879c5" name="a03da0ad1dba2ca1b1a491953c7f879c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03da0ad1dba2ca1b1a491953c7f879c5">&#9670;&#160;</a></span>loadMem() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const bgfx::Memory * loadMem </td>
+          <td>(</td>
+          <td class="paramtype">bx::FileReaderI *</td>          <td class="paramname"><span class="paramname"><em>_reader</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00114">114</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ad915993e0346f2087213c09fd97ad7de" name="ad915993e0346f2087213c09fd97ad7de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad915993e0346f2087213c09fd97ad7de">&#9670;&#160;</a></span>loadProgram() <span class="overload">[1/2]</span></h2>
 
@@ -495,8 +608,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0de6853102fe82c112e0ad9aeccd7f81" name="a0de6853102fe82c112e0ad9aeccd7f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de6853102fe82c112e0ad9aeccd7f81">&#9670;&#160;</a></span>loadShader() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bgfx::ShaderHandle loadShader </td>
+          <td>(</td>
+          <td class="paramtype">bx::FileReaderI *</td>          <td class="paramname"><span class="paramname"><em>_reader</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bx::StringView &amp;</td>          <td class="paramname"><span class="paramname"><em>_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00150">150</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aec795e4713fde55bd645b7716d07802f" name="aec795e4713fde55bd645b7716d07802f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec795e4713fde55bd645b7716d07802f">&#9670;&#160;</a></span>loadShader() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aec795e4713fde55bd645b7716d07802f">&#9670;&#160;</a></span>loadShader() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -515,7 +659,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3d90e3a0dbad7c8bee994dd47a97bf05" name="a3d90e3a0dbad7c8bee994dd47a97bf05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d90e3a0dbad7c8bee994dd47a97bf05">&#9670;&#160;</a></span>loadShader() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d90e3a0dbad7c8bee994dd47a97bf05">&#9670;&#160;</a></span>loadShader() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -693,6 +837,47 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2cc7942e303413ee6c79736f5bc6f5b5" name="a2cc7942e303413ee6c79736f5bc6f5b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc7942e303413ee6c79736f5bc6f5b5">&#9670;&#160;</a></span>loadTextureFromContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bgfx::TextureHandle loadTextureFromContainer </td>
+          <td>(</td>
+          <td class="paramtype">bimg::ImageContainer *</td>          <td class="paramname"><span class="paramname"><em>imageContainer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>_flags</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bgfx::TextureInfo *</td>          <td class="paramname"><span class="paramname"><em>_info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6">TexturePreCreateFn</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_preCreate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00224">224</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aec1bdd65d683731b797048bde6d080c4" name="aec1bdd65d683731b797048bde6d080c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec1bdd65d683731b797048bde6d080c4">&#9670;&#160;</a></span>saveToFile()</h2>
 
@@ -755,7 +940,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_313a656c30f2f21a897c9e02f299f510.html">engine</a></li><li class="navelem"><a class="el" href="dir_ced40213a000e1ef9a529a7be3c50dd7.html">core</a></li><li class="navelem"><a class="el" href="dir_8d41dbf129e93d9f1fae7398249a3336.html">graphics</a></li><li class="navelem"><a class="el" href="dir_3430a61ada3f7b10f98708b77b86f40f.html">utils</a></li><li class="navelem"><a class="el" href="bgfx__utils_8cpp.html">bgfx_utils.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_a0e47c104ecd6c0b6dccb5f33d071508.html">core</a></li><li class="navelem"><a class="el" href="dir_009a11a7a67d65df2515f25df003ba1b.html">graphics</a></li><li class="navelem"><a class="el" href="dir_b9c9f29d795ea8ef2e50b4c92d576dfc.html">utils</a></li><li class="navelem"><a class="el" href="bgfx__utils_8cpp.html">bgfx_utils.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

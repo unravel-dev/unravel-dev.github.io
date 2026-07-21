@@ -10,6 +10,7 @@ var classmath_1_1bsphere =
     [ "operator+=", "classmath_1_1bsphere.html#af6667265ec8f0bc79aef1a0440ca9f0c", null ],
     [ "operator-=", "classmath_1_1bsphere.html#a7551570b04476802fa53d09099d154c9", null ],
     [ "operator==", "classmath_1_1bsphere.html#a9abc78453a49c5a9444b8eac540a4999", null ],
+    [ "empty", "classmath_1_1bsphere.html#a6e4cb21e227b57c832b32bf90cc8cbc5", null ],
     [ "position", "classmath_1_1bsphere.html#aa1149f97a59d130e527d3225e33fce39", null ],
     [ "radius", "classmath_1_1bsphere.html#a60d3a3cee46929a087fdb9f7f5b3c824", null ]
 ];

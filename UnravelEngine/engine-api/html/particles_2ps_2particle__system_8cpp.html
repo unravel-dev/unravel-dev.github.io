@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/engine/engine/rendering/particles/ps/particle_system.cpp File Reference</title>
+<title>Unravel Engine C++ Reference: engine/engine/rendering/particles/ps/particle_system.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,7 +100,8 @@ $(function(){initNavTree('particles_2ps_2particle__system_8cpp.html',''); initRe
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">particle_system.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -167,6 +168,15 @@ Functions</h2></td></tr>
 <tr class="separator:ad5696972fe471ee438527293dba94b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a336321efe858fb67ed6d0657594e17eb" id="r_a336321efe858fb67ed6d0657594e17eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a336321efe858fb67ed6d0657594e17eb">psRenderEmitterBatch</a> (const <a class="el" href="struct_emitter_handle.html">EmitterHandle</a> *_handles, uint32_t _count, uint8_t _view, bgfx::ProgramHandle _program, const float *_mtxView, const math::vec3 &amp;_eye, bgfx::TextureHandle _texture, uint64_t _blend_state, bool _sort_by_depth)</td></tr>
 <tr class="separator:a336321efe858fb67ed6d0657594e17eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a61597adf3cb1c865d110b2a7e6bbf61b" id="r_a61597adf3cb1c865d110b2a7e6bbf61b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_particle_vertex.html">ParticleVertex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61597adf3cb1c865d110b2a7e6bbf61b">s_quadVertices</a> [4]</td></tr>
+<tr class="separator:a61597adf3cb1c865d110b2a7e6bbf61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5577dd46a66a562e677d4fd1a70be60d" id="r_a5577dd46a66a562e677d4fd1a70be60d"><td class="memItemLeft" align="right" valign="top">static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5577dd46a66a562e677d4fd1a70be60d">s_quadIndices</a> [6]</td></tr>
+<tr class="separator:a5577dd46a66a562e677d4fd1a70be60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac918184e7799db93294d8ef7172ffd" id="r_a7ac918184e7799db93294d8ef7172ffd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structps_1_1_particle_system.html">ParticleSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceps.html#a7ac918184e7799db93294d8ef7172ffd">ps::s_ctx</a></td></tr>
+<tr class="separator:a7ac918184e7799db93294d8ef7172ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ab5015432a335c9c92bd63539fd0c02bf" name="ab5015432a335c9c92bd63539fd0c02bf"></a>
@@ -442,12 +452,70 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a5577dd46a66a562e677d4fd1a70be60d" name="a5577dd46a66a562e677d4fd1a70be60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5577dd46a66a562e677d4fd1a70be60d">&#9670;&#160;</a></span>s_quadIndices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint16_t s_quadIndices[6]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0, 1, 2, 2, 3, 0</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l00056">56</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a61597adf3cb1c865d110b2a7e6bbf61b" name="a61597adf3cb1c865d110b2a7e6bbf61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61597adf3cb1c865d110b2a7e6bbf61b">&#9670;&#160;</a></span>s_quadVertices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_particle_vertex.html">ParticleVertex</a> s_quadVertices[4]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {-0.5f, -0.5f, 0.0f, 0.0f, 1.0f}, </div>
+<div class="line">    { 0.5f, -0.5f, 0.0f, 1.0f, 1.0f}, </div>
+<div class="line">    { 0.5f,  0.5f, 0.0f, 1.0f, 0.0f}, </div>
+<div class="line">    {-0.5f,  0.5f, 0.0f, 0.0f, 0.0f}  </div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l00049">49</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_313a656c30f2f21a897c9e02f299f510.html">engine</a></li><li class="navelem"><a class="el" href="dir_fe4c16d53cd03e93df8190140fc6a855.html">engine</a></li><li class="navelem"><a class="el" href="dir_b820b6c3efcbb1512bc9db235027d2ce.html">rendering</a></li><li class="navelem"><a class="el" href="dir_31eaf7031be2e7dcb341cd0275364084.html">particles</a></li><li class="navelem"><a class="el" href="dir_3c2f75bf62deccbe9f31014c54d45bf4.html">ps</a></li><li class="navelem"><a class="el" href="particles_2ps_2particle__system_8cpp.html">particle_system.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_d7cdb4e65164bd6dfc24cbda8766899e.html">engine</a></li><li class="navelem"><a class="el" href="dir_7a417b519920ff3d2359b1ba27c9cbce.html">rendering</a></li><li class="navelem"><a class="el" href="dir_d5f0429c8a7e1933184cbb91f9b56cae.html">particles</a></li><li class="navelem"><a class="el" href="dir_88efab3fe0c6cba33fd28e56f7dd91ff.html">ps</a></li><li class="navelem"><a class="el" href="particles_2ps_2particle__system_8cpp.html">particle_system.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

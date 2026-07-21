@@ -1,5 +1,6 @@
 var structunravel_1_1shadow_1_1_pos_color_tex_coord0_vertex =
 [
+    [ "init", "structunravel_1_1shadow_1_1_pos_color_tex_coord0_vertex.html#a62b4027d0cf9f4b96104e5c98b421ceb", null ],
     [ "m_rgba", "structunravel_1_1shadow_1_1_pos_color_tex_coord0_vertex.html#a5fd95c762592655c9c629ae82a77ec2b", null ],
     [ "m_u", "structunravel_1_1shadow_1_1_pos_color_tex_coord0_vertex.html#a1c26845ed350031b85515ddd9c8cc07d", null ],
     [ "m_v", "structunravel_1_1shadow_1_1_pos_color_tex_coord0_vertex.html#a0ef6a21e229b88f53f6a05133ed32e19", null ],

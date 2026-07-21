@@ -8,6 +8,8 @@ var structasset__handle =
     [ "ensure", "structasset__handle.html#aea0ebf30f37c3a0b448edbe2b1fa2fba", null ],
     [ "extension", "structasset__handle.html#aa90dcce2e7d2a7f58b8a4c72685e082a", null ],
     [ "get", "structasset__handle.html#aa1d40472e018edec1766f8aef90e4013", null ],
+    [ "get_empty", "structasset__handle.html#a83b8a490bd24847f0a27b85441399b2b", null ],
+    [ "get_empty_id", "structasset__handle.html#a0c07adc8f0ad12d4354885f4cff4b5c1", null ],
     [ "id", "structasset__handle.html#a27ba3290e85d68caffdc390be8c17059", null ],
     [ "invalidate", "structasset__handle.html#a466348e08cd315bab30b012ed9bb4a21", null ],
     [ "is_deferred", "structasset__handle.html#ad77935080b6c4a9c6609fa177b581adb", null ],

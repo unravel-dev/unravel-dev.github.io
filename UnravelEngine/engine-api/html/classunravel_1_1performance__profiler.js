@@ -18,5 +18,8 @@ var classunravel_1_1performance__profiler =
     [ "set_max_frame_history", "classunravel_1_1performance__profiler.html#a8d2704169516cc0a3a34531561adde46", null ],
     [ "set_recording_state", "classunravel_1_1performance__profiler.html#acc0bb3053f3120708d3ddfd703c4336e", null ],
     [ "set_selected_frame", "classunravel_1_1performance__profiler.html#ac8eea72aaf40b35a1ea66c1a7615db6d", null ],
-    [ "swap", "classunravel_1_1performance__profiler.html#a2f7c20b08b87081127e69ee2c0eaaa01", null ]
+    [ "swap", "classunravel_1_1performance__profiler.html#a2f7c20b08b87081127e69ee2c0eaaa01", null ],
+    [ "default_frame_history", "classunravel_1_1performance__profiler.html#a32cb8940d2f05f0d9dcfa19ab6588e03", null ],
+    [ "max_frame_history_limit", "classunravel_1_1performance__profiler.html#acd0575c41ef5a942617e8d046df48386", null ],
+    [ "min_frame_history", "classunravel_1_1performance__profiler.html#a46e50783df820e579be7e0c8584b9f14", null ]
 ];

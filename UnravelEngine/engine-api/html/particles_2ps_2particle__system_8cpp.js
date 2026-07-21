@@ -15,5 +15,8 @@ var particles_2ps_2particle__system_8cpp =
     [ "psRenderEmitterBatch", "particles_2ps_2particle__system_8cpp.html#a336321efe858fb67ed6d0657594e17eb", null ],
     [ "psResetEmitter", "particles_2ps_2particle__system_8cpp.html#a26aa2b8db7bf96ad72f703d690fb6729", null ],
     [ "psShutdown", "particles_2ps_2particle__system_8cpp.html#a780cb2d7b0a1cf39997b7bb450a76cb1", null ],
-    [ "psUpdateEmitter", "particles_2ps_2particle__system_8cpp.html#abe2efbf98f75028d62271c4762f7d9b8", null ]
+    [ "psUpdateEmitter", "particles_2ps_2particle__system_8cpp.html#abe2efbf98f75028d62271c4762f7d9b8", null ],
+    [ "s_ctx", "particles_2ps_2particle__system_8cpp.html#a7ac918184e7799db93294d8ef7172ffd", null ],
+    [ "s_quadIndices", "particles_2ps_2particle__system_8cpp.html#a5577dd46a66a562e677d4fd1a70be60d", null ],
+    [ "s_quadVertices", "particles_2ps_2particle__system_8cpp.html#a61597adf3cb1c865d110b2a7e6bbf61b", null ]
 ];

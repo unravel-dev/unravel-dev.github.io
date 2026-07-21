@@ -13,6 +13,7 @@ var classgfx_1_1handle__impl =
     [ "fallback_handle", "classgfx_1_1handle__impl.html#a9a4b66f11372b5f0f6ff5a291da0078a", null ],
     [ "get_fallback_handle", "classgfx_1_1handle__impl.html#ac4e43d43586d36aec0ced98093074747", null ],
     [ "gpu_size", "classgfx_1_1handle__impl.html#aa486d7452fc439036b941e0b56a7becb", null ],
+    [ "invalid_handle", "classgfx_1_1handle__impl.html#a72809b56446c2ee3b27c861ffe46c5f6", null ],
     [ "is_valid", "classgfx_1_1handle__impl.html#a57246ecd0758d4f4a3fb9f1520bc88cc", null ],
     [ "make_evictable", "classgfx_1_1handle__impl.html#ab4a5351e606bdf2540b50acd7b36e22f", null ],
     [ "make_evictable_deferred", "classgfx_1_1handle__impl.html#adfeb86c52da7e2d4b466dc50cf902677", null ],

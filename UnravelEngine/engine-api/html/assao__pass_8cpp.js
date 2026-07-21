@@ -6,5 +6,6 @@ var assao__pass_8cpp =
     [ "SSAO_DEPTH_MIP_LEVELS", "assao__pass_8cpp.html#a46c8004904b1bde12fba0042a33233b4", null ],
     [ "vec2Set", "assao__pass_8cpp.html#a9c92a2c854f620ca4d36bd3789f76657", null ],
     [ "vec4iSet", "assao__pass_8cpp.html#a7e561dd8f79a810c2563f7f98dbdfd15", null ],
-    [ "vec4Set", "assao__pass_8cpp.html#a1c4dae3d72992d7a8985d1e4dc69e001", null ]
+    [ "vec4Set", "assao__pass_8cpp.html#a1c4dae3d72992d7a8985d1e4dc69e001", null ],
+    [ "cMaxBlurPassCount", "assao__pass_8cpp.html#a869909af4b59ef2fcfe70198609ac4b0", null ]
 ];

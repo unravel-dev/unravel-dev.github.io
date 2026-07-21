@@ -9,5 +9,7 @@ var struct_unravel_1_1_core_1_1_layer_mask =
     [ "operator+", "struct_unravel_1_1_core_1_1_layer_mask.html#a51f0a7e82e4d890c3954c482214f86d9", null ],
     [ "operator-", "struct_unravel_1_1_core_1_1_layer_mask.html#ab0bb2bf84869a04d9f713f123a861089", null ],
     [ "operator-", "struct_unravel_1_1_core_1_1_layer_mask.html#a13a513593ac2e1f24c62a31f4a4e8a8e", null ],
+    [ "Everything", "struct_unravel_1_1_core_1_1_layer_mask.html#a36a69c48045c62cf0a7db7a99794c82e", null ],
+    [ "Nothing", "struct_unravel_1_1_core_1_1_layer_mask.html#a9ab4dc3e55a4fb4004ca553261945767", null ],
     [ "value", "struct_unravel_1_1_core_1_1_layer_mask.html#a32bf2a723f97d6d7e7d386ee461e41dc", null ]
 ];

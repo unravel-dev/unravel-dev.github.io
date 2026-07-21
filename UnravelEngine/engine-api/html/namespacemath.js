@@ -68,6 +68,7 @@ var namespacemath =
     [ "interpolation_mode_from_string", "namespacemath.html#aa30e3ea76d0ef9d3da9b50c7630530eb", null ],
     [ "inverse", "namespacemath.html#a45e1fa374a9ed900edf3a35e4237f098", null ],
     [ "is_negative_float", "namespacemath.html#a941bafd81841db83d57f632a3442c0ec", null ],
+    [ "log_space", "namespacemath.html#a1466a34194ffcd38e36b5c3f2bd87642", null ],
     [ "operator*", "namespacemath.html#adbadfd1da9d8a593d857888228d1ba8c", null ],
     [ "operator<", "namespacemath.html#aabd7724d4003044acf5fe37d2114f82a", null ],
     [ "operator==", "namespacemath.html#a82f2aac59f2600bca68c9ba2dcf7fc41", null ],

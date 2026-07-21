@@ -37,8 +37,8 @@ var namespacegfx =
     [ "handle_impl", "classgfx_1_1handle__impl.html", "classgfx_1_1handle__impl" ],
     [ "ievictable", "classgfx_1_1ievictable.html", "classgfx_1_1ievictable" ],
     [ "index_buffer", "structgfx_1_1index__buffer.html", "structgfx_1_1index__buffer" ],
-    [ "mesh_vertex", "structgfx_1_1mesh__vertex.html", null ],
-    [ "pos_texcoord0_color0_vertex", "structgfx_1_1pos__texcoord0__color0__vertex.html", null ],
+    [ "mesh_vertex", "structgfx_1_1mesh__vertex.html", "structgfx_1_1mesh__vertex" ],
+    [ "pos_texcoord0_color0_vertex", "structgfx_1_1pos__texcoord0__color0__vertex.html", "structgfx_1_1pos__texcoord0__color0__vertex" ],
     [ "pos_texcoord0_vertex", "structgfx_1_1pos__texcoord0__vertex.html", "structgfx_1_1pos__texcoord0__vertex" ],
     [ "pos_vertex", "structgfx_1_1pos__vertex.html", "structgfx_1_1pos__vertex" ],
     [ "program", "structgfx_1_1program.html", "structgfx_1_1program" ],
@@ -56,7 +56,7 @@ var namespacegfx =
     [ "texture_key", "structgfx_1_1texture__key.html", "structgfx_1_1texture__key" ],
     [ "true_type_font", "classgfx_1_1true__type__font.html", "classgfx_1_1true__type__font" ],
     [ "uniform", "structgfx_1_1uniform.html", "structgfx_1_1uniform" ],
-    [ "vertex", "structgfx_1_1vertex.html", null ],
+    [ "vertex", "structgfx_1_1vertex.html", "structgfx_1_1vertex" ],
     [ "vertex_buffer", "structgfx_1_1vertex__buffer.html", "structgfx_1_1vertex__buffer" ],
     [ "access", "namespacegfx.html#a6343602ee3769c22c56756eb7e9e2f5a", null ],
     [ "attachment", "namespacegfx.html#a537fc3b389f39db6ade434cedf411eee", null ],
@@ -347,5 +347,8 @@ var namespacegfx =
     [ "update_texture_cube", "namespacegfx.html#ac7f123e1d71784a39c625102b5045a2a", null ],
     [ "vertex_convert", "namespacegfx.html#a2bbb9d3898afd6b3eedc78919822e08e", null ],
     [ "vertex_pack", "namespacegfx.html#a6fe5c439e39e5474883ca79595a45d2b", null ],
-    [ "vertex_unpack", "namespacegfx.html#afd9545b01d116d5f7dda040b36466643", null ]
+    [ "vertex_unpack", "namespacegfx.html#afd9545b01d116d5f7dda040b36466643", null ],
+    [ "writeUV", "namespacegfx.html#ae964da8d927fe2bc43e63f37ad03b102", null ],
+    [ "invalid_handle", "namespacegfx.html#a9f407b2706246095d81dbedfa180f254", null ],
+    [ "s_embedded_shaders", "namespacegfx.html#a6240ca645f862d3ea378fa2e22925a6f", null ]
 ];

@@ -9,6 +9,7 @@ var structunravel_1_1prefab__component =
     [ "remove_entity", "structunravel_1_1prefab__component.html#aa669ceaaee6b4648a58d91b310bf7631", null ],
     [ "remove_override", "structunravel_1_1prefab__component.html#a01a622d32f97ddb1fda86cc32308e1cc", null ],
     [ "changed", "structunravel_1_1prefab__component.html#a013e16c15bd60d9c020ae7123fe894b1", null ],
+    [ "in_place_delete", "structunravel_1_1prefab__component.html#af9211c651721cfcf806dc9207e2e3816", null ],
     [ "property_overrides", "structunravel_1_1prefab__component.html#a8eacdebd6fadcd62d25fdf41c710b976", null ],
     [ "removed_entities", "structunravel_1_1prefab__component.html#a8554237584c7957d1f40e96e436c1c8c", null ],
     [ "source", "structunravel_1_1prefab__component.html#ada9e16cdaf46ce0d9fc9a79cac88a96f", null ]

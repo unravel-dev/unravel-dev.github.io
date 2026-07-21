@@ -6,5 +6,8 @@ var class_generate_icon_font_cpp_headers_1_1_language =
     [ "line_icon", "class_generate_icon_font_cpp_headers_1_1_language.html#a9edb689f3f35f48365c7f214281c23f4", null ],
     [ "lines_minmax", "class_generate_icon_font_cpp_headers_1_1_language.html#ad8638516bca882108ecc8d0be46797c5", null ],
     [ "prelude", "class_generate_icon_font_cpp_headers_1_1_language.html#ab1630f0204ba53ff4a3a07a4e983db75", null ],
-    [ "save_to_file", "class_generate_icon_font_cpp_headers_1_1_language.html#afb24c4ea1e1fe7f4811f19ac39a678ac", null ]
+    [ "save_to_file", "class_generate_icon_font_cpp_headers_1_1_language.html#afb24c4ea1e1fe7f4811f19ac39a678ac", null ],
+    [ "file_name", "class_generate_icon_font_cpp_headers_1_1_language.html#ac9c9ed17734898df6085183febcd5f0d", null ],
+    [ "intermediate", "class_generate_icon_font_cpp_headers_1_1_language.html#abbd389084aa2d0203a95d560c52b3927", null ],
+    [ "language_name", "class_generate_icon_font_cpp_headers_1_1_language.html#a3fe8fea8a6452611eee1cc3b0b7541ef", null ]
 ];

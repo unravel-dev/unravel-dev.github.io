@@ -55,6 +55,8 @@ var classunravel_1_1particle__emitter__component =
     [ "is_paused", "classunravel_1_1particle__emitter__component.html#a0d2b064c58603271c02502504d8d1a81", null ],
     [ "is_playing", "classunravel_1_1particle__emitter__component.html#aa1c5355b6e389c4a7324a84c26e4f0bf", null ],
     [ "is_stopped", "classunravel_1_1particle__emitter__component.html#ab1ad9ed6f766cac800b5d9d8d572cae8", null ],
+    [ "on_create_component", "classunravel_1_1particle__emitter__component.html#ad9cdf4937325d634bd407d62ddac0f98", null ],
+    [ "on_destroy_component", "classunravel_1_1particle__emitter__component.html#a2e74a8b2780a9cd2028e7c21eeb25cdc", null ],
     [ "pause", "classunravel_1_1particle__emitter__component.html#a5c8fa3445afb6e7eb3ec91be17d7ead7", null ],
     [ "pause_sub_emitters", "classunravel_1_1particle__emitter__component.html#ade1096370335fe8c3a549a26cf7c5028", null ],
     [ "play", "classunravel_1_1particle__emitter__component.html#ad0c5bca430c8d4fd415762ecb40ce8c1", null ],

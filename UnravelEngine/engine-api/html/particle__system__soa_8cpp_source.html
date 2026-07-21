@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: C:/Workspace/github/UnravelEngine/UnravelEngine/engine/engine/rendering/particles/ps/particle_system_soa.cpp Source File</title>
+<title>Unravel Engine C++ Reference: engine/engine/rendering/particles/ps/particle_system_soa.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -439,13 +439,13 @@ $(function(){initNavTree('particle__system__soa_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceunravel_1_1ps__soa.html#a41b3306b74db10e8dbf966c64ac83660">init</a>()</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    {</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        ms_layout.begin()</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        <a class="code hl_variable" href="particle__system__soa_8cpp.html#a75e9ccddfcdb5636e0fad6e333a91403">ms_layout</a>.begin()</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            .add(bgfx::Attrib::Position, 3, bgfx::AttribType::Float)</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>            .add(bgfx::Attrib::TexCoord0, 2, bgfx::AttribType::Float)</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            .end();</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    }</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keyword">static</span> bgfx::VertexLayout ms_layout;</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="particle__system__soa_8cpp.html#a75e9ccddfcdb5636e0fad6e333a91403">  350</a></span>    <span class="keyword">static</span> bgfx::VertexLayout <a class="code hl_variable" href="particle__system__soa_8cpp.html#a75e9ccddfcdb5636e0fad6e333a91403">ms_layout</a>;</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>};</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>bgfx::VertexLayout particle_vertex::ms_layout;</div>
@@ -2699,6 +2699,7 @@ $(function(){initNavTree('particle__system__soa_8cpp_source.html',''); initResiz
 <div class="ttc" id="aparticle__system__soa_8cpp_html_a69230b44c27980496b4d9c9e9561cf1d"><div class="ttname"><a href="particle__system__soa_8cpp.html#a69230b44c27980496b4d9c9e9561cf1d">constants</a></div><div class="ttdeci">emitter_sim_constants constants</div><div class="ttdef"><b>Definition</b> <a href="#l00129">particle_system_soa.cpp:129</a></div></div>
 <div class="ttc" id="aparticle__system__soa_8cpp_html_a6baa32fb30b84fdcc35206e378421563"><div class="ttname"><a href="particle__system__soa_8cpp.html#a6baa32fb30b84fdcc35206e378421563">spawn_particles</a></div><div class="ttdeci">std::vector&lt; gpu_sim_particle &gt; spawn_particles</div><div class="ttdef"><b>Definition</b> <a href="#l00124">particle_system_soa.cpp:124</a></div></div>
 <div class="ttc" id="aparticle__system__soa_8cpp_html_a6e22bd2efbb5cc15fde1f81f35c7b22b"><div class="ttname"><a href="particle__system__soa_8cpp.html#a6e22bd2efbb5cc15fde1f81f35c7b22b">spawn_slots</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; spawn_slots</div><div class="ttdef"><b>Definition</b> <a href="#l00125">particle_system_soa.cpp:125</a></div></div>
+<div class="ttc" id="aparticle__system__soa_8cpp_html_a75e9ccddfcdb5636e0fad6e333a91403"><div class="ttname"><a href="particle__system__soa_8cpp.html#a75e9ccddfcdb5636e0fad6e333a91403">ms_layout</a></div><div class="ttdeci">static bgfx::VertexLayout ms_layout</div><div class="ttdef"><b>Definition</b> <a href="#l00350">particle_system_soa.cpp:350</a></div></div>
 <div class="ttc" id="aparticle__system__soa_8cpp_html_a77e5980d56f7b1356a45426503ecbe9c"><div class="ttname"><a href="particle__system__soa_8cpp.html#a77e5980d56f7b1356a45426503ecbe9c">high_water</a></div><div class="ttdeci">uint32_t high_water</div><div class="ttdoc">Exclusive end of slot range that may contain live sim data (for compact dispatch).</div><div class="ttdef"><b>Definition</b> <a href="#l00110">particle_system_soa.cpp:110</a></div></div>
 <div class="ttc" id="aparticle__system__soa_8cpp_html_a86988a65e0d3ece7990c032c159786d6"><div class="ttname"><a href="particle__system__soa_8cpp.html#a86988a65e0d3ece7990c032c159786d6">count</a></div><div class="ttdeci">uint32_t count</div><div class="ttdef"><b>Definition</b> <a href="#l00381">particle_system_soa.cpp:381</a></div></div>
 <div class="ttc" id="aparticle__system__soa_8cpp_html_a8d701fbcfa9c9a4aa2eb5aede8f212ea"><div class="ttname"><a href="particle__system__soa_8cpp.html#a8d701fbcfa9c9a4aa2eb5aede8f212ea">tex_color_</a></div><div class="ttdeci">bgfx::UniformHandle tex_color_</div><div class="ttdef"><b>Definition</b> <a href="#l02328">particle_system_soa.cpp:2328</a></div></div>
@@ -2779,7 +2780,7 @@ $(function(){initNavTree('particle__system__soa_8cpp_source.html',''); initResiz
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ba845f66afa14b523531d5701aca0500.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_efa5f4ad064fc83c1b5503df2ae4225b.html">UnravelEngine</a></li><li class="navelem"><a class="el" href="dir_313a656c30f2f21a897c9e02f299f510.html">engine</a></li><li class="navelem"><a class="el" href="dir_fe4c16d53cd03e93df8190140fc6a855.html">engine</a></li><li class="navelem"><a class="el" href="dir_b820b6c3efcbb1512bc9db235027d2ce.html">rendering</a></li><li class="navelem"><a class="el" href="dir_31eaf7031be2e7dcb341cd0275364084.html">particles</a></li><li class="navelem"><a class="el" href="dir_3c2f75bf62deccbe9f31014c54d45bf4.html">ps</a></li><li class="navelem"><a class="el" href="particle__system__soa_8cpp.html">particle_system_soa.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_d7cdb4e65164bd6dfc24cbda8766899e.html">engine</a></li><li class="navelem"><a class="el" href="dir_7a417b519920ff3d2359b1ba27c9cbce.html">rendering</a></li><li class="navelem"><a class="el" href="dir_d5f0429c8a7e1933184cbb91f9b56cae.html">particles</a></li><li class="navelem"><a class="el" href="dir_88efab3fe0c6cba33fd28e56f7dd91ff.html">ps</a></li><li class="navelem"><a class="el" href="particle__system__soa_8cpp.html">particle_system_soa.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

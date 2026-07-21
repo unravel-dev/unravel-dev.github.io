@@ -31,5 +31,7 @@ var classunravel_1_1_rml_ui___render_interface =
     [ "SetScissor", "classunravel_1_1_rml_ui___render_interface.html#a86a3fc42fd612ac5062b159a0c690bec", null ],
     [ "SetScissorRegion", "classunravel_1_1_rml_ui___render_interface.html#a1edb84036b52b810066b35f10b2e094e", null ],
     [ "SetTransform", "classunravel_1_1_rml_ui___render_interface.html#a9fd38464bcc5e1aa73a824d529765f88", null ],
-    [ "shutdown", "classunravel_1_1_rml_ui___render_interface.html#a5e2dbf12109fc2a289012331d2582263", null ]
+    [ "shutdown", "classunravel_1_1_rml_ui___render_interface.html#a5e2dbf12109fc2a289012331d2582263", null ],
+    [ "TextureEnableWithoutBinding", "classunravel_1_1_rml_ui___render_interface.html#a17f637d672db8e59f202545410c4e538", null ],
+    [ "TexturePostprocess", "classunravel_1_1_rml_ui___render_interface.html#a8420bbce888981bb6391f703f2e9fb37", null ]
 ];

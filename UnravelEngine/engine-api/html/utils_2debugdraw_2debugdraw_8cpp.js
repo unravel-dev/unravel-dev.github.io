@@ -19,6 +19,7 @@ var utils_2debugdraw_2debugdraw_8cpp =
     [ "SPRITE_TEXTURE_SIZE", "utils_2debugdraw_2debugdraw_8cpp.html#a0b67b028d61b93032d897edf446b22cb", null ],
     [ "Geometry", "utils_2debugdraw_2debugdraw_8cpp.html#a93f8af5a2f07a2a0bdb86ba23f0c2110", null ],
     [ "Sprite", "utils_2debugdraw_2debugdraw_8cpp.html#a880c9601977eb5b8f8cdfac2ebd08529", null ],
+    [ "circle", "utils_2debugdraw_2debugdraw_8cpp.html#ae04f8ed1ea1d668dc2336bcd16ba4681", null ],
     [ "ddCreateGeometry", "utils_2debugdraw_2debugdraw_8cpp.html#af3c1e2745354a1679cb6de72d3787160", null ],
     [ "ddCreateSprite", "utils_2debugdraw_2debugdraw_8cpp.html#a520c10806f351d8acada8da2f0323463", null ],
     [ "ddDestroy", "utils_2debugdraw_2debugdraw_8cpp.html#a569e31fac9d3fd0e18c9cb1026a2d78e", null ],
@@ -26,5 +27,16 @@ var utils_2debugdraw_2debugdraw_8cpp =
     [ "ddInit", "utils_2debugdraw_2debugdraw_8cpp.html#a773cfe3ac6c85edcc1ad05f6a47148c1", null ],
     [ "ddShutdown", "utils_2debugdraw_2debugdraw_8cpp.html#a728e28f17af918110f533d2a32133dec", null ],
     [ "genSphere", "utils_2debugdraw_2debugdraw_8cpp.html#a08a3364383251275afe3cf24ccacdca5", null ],
-    [ "getPoint", "utils_2debugdraw_2debugdraw_8cpp.html#a8d3209a4ce7e33872e40b68197d50956", null ]
+    [ "getCircleLod", "utils_2debugdraw_2debugdraw_8cpp.html#ad25b2d7fcd40c2d56d4e37702a80cb74", null ],
+    [ "getPoint", "utils_2debugdraw_2debugdraw_8cpp.html#a8d3209a4ce7e33872e40b68197d50956", null ],
+    [ "squircle", "utils_2debugdraw_2debugdraw_8cpp.html#ac17bdd24e109cd55234db0b2a05ee7fc", null ],
+    [ "s_circleLod", "utils_2debugdraw_2debugdraw_8cpp.html#a326e4a9b0c64e112ced9f1c48b56c1dc", null ],
+    [ "s_cubeIndices", "utils_2debugdraw_2debugdraw_8cpp.html#a7768bc09343156525bfff255f39165b4", null ],
+    [ "s_cubeVertices", "utils_2debugdraw_2debugdraw_8cpp.html#af1d722a758e9a2ec62d9d3f706c5838b", null ],
+    [ "s_dde", "utils_2debugdraw_2debugdraw_8cpp.html#a9f9c289d34c2b03e5a26a81816bff833", null ],
+    [ "s_dds", "utils_2debugdraw_2debugdraw_8cpp.html#a5ff541b2e88e66651b32d078870a867f", null ],
+    [ "s_embeddedShaders", "utils_2debugdraw_2debugdraw_8cpp.html#aff1bde0a4f186c9575288e547d7dca54", null ],
+    [ "s_initted", "utils_2debugdraw_2debugdraw_8cpp.html#aadebc89c6d531cfb229c63720c8196a8", null ],
+    [ "s_quadIndices", "utils_2debugdraw_2debugdraw_8cpp.html#a5577dd46a66a562e677d4fd1a70be60d", null ],
+    [ "s_quadVertices", "utils_2debugdraw_2debugdraw_8cpp.html#af9f400fc721509e9dada497795a8df98", null ]
 ];

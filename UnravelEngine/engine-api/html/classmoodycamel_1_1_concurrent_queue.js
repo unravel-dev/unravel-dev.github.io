@@ -15,6 +15,7 @@ var classmoodycamel_1_1_concurrent_queue =
     [ "enqueue", "classmoodycamel_1_1_concurrent_queue.html#aceaa7271014aa901829e3ed1b1005d65", null ],
     [ "enqueue_bulk", "classmoodycamel_1_1_concurrent_queue.html#a57b0aa33a19538a7c97d839fbf0d8459", null ],
     [ "enqueue_bulk", "classmoodycamel_1_1_concurrent_queue.html#a61a4b16a77535cc57fa3c76fb5ee3fba", null ],
+    [ "is_lock_free", "classmoodycamel_1_1_concurrent_queue.html#a926d7d31e785e36c61810d066ba4fba3", null ],
     [ "operator=", "classmoodycamel_1_1_concurrent_queue.html#abce8e204950aa2f7668c0cb4af2cdfd8", null ],
     [ "operator=", "classmoodycamel_1_1_concurrent_queue.html#a378eb0bbe9ed755db54f93bd316d6c51", null ],
     [ "size_approx", "classmoodycamel_1_1_concurrent_queue.html#aecab179b995f119c89da71f62b2d21a5", null ],
@@ -37,5 +38,12 @@ var classmoodycamel_1_1_concurrent_queue =
     [ "ExplicitProducer", "classmoodycamel_1_1_concurrent_queue.html#a7bebbfc18b6ad306d5837467e9c05323", null ],
     [ "ImplicitProducer", "classmoodycamel_1_1_concurrent_queue.html#ab79e82aa1a04eb71ff8297700ff94d58", null ],
     [ "moodycamel::swap", "classmoodycamel_1_1_concurrent_queue.html#ad65cc3887b8b356dff18ac235c21d6fa", null ],
-    [ "ProducerToken", "classmoodycamel_1_1_concurrent_queue.html#acfb3304f9d64003d203b0d2dbc3fbc41", null ]
+    [ "ProducerToken", "classmoodycamel_1_1_concurrent_queue.html#acfb3304f9d64003d203b0d2dbc3fbc41", null ],
+    [ "BLOCK_SIZE", "classmoodycamel_1_1_concurrent_queue.html#ae555aae96010307e7991b1028b41cfb8", null ],
+    [ "EXPLICIT_BLOCK_EMPTY_COUNTER_THRESHOLD", "classmoodycamel_1_1_concurrent_queue.html#aaadd55fc6ac80c277225977fe9bdecee", null ],
+    [ "EXPLICIT_CONSUMER_CONSUMPTION_QUOTA_BEFORE_ROTATE", "classmoodycamel_1_1_concurrent_queue.html#a8593fb32003144c034323c8fe353c359", null ],
+    [ "EXPLICIT_INITIAL_INDEX_SIZE", "classmoodycamel_1_1_concurrent_queue.html#ae29231222f904afacd0c9ed55d67cd09", null ],
+    [ "IMPLICIT_INITIAL_INDEX_SIZE", "classmoodycamel_1_1_concurrent_queue.html#a9a25b761a75bd2c3cd1f58037f9da89f", null ],
+    [ "INITIAL_IMPLICIT_PRODUCER_HASH_SIZE", "classmoodycamel_1_1_concurrent_queue.html#a52f4615c06da9bca3be093123c7cc160", null ],
+    [ "MAX_SUBQUEUE_SIZE", "classmoodycamel_1_1_concurrent_queue.html#a2302943ed9b7579ec9b9f6863c57f10a", null ]
 ];

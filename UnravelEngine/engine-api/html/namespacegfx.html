@@ -101,7 +101,8 @@ $(function(){initNavTree('namespacegfx.html',''); initResizable(true); });
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">gfx Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -732,6 +733,8 @@ Functions</h2></td></tr>
 <tr class="separator:a12b4eadee6c55b02dc86380c9e96ebcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0d935801091725f3ec48c2ec6f2e2dc" id="r_ad0d935801091725f3ec48c2ec6f2e2dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0d935801091725f3ec48c2ec6f2e2dc">deinit_uniform_cache</a> ()</td></tr>
 <tr class="separator:ad0d935801091725f3ec48c2ec6f2e2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae964da8d927fe2bc43e63f37ad03b102" id="r_ae964da8d927fe2bc43e63f37ad03b102"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae964da8d927fe2bc43e63f37ad03b102">writeUV</a> (uint8_t *_vertexBuffer, int16_t _x, int16_t _y, int16_t _z, int16_t _w)</td></tr>
+<tr class="separator:ae964da8d927fe2bc43e63f37ad03b102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c3eefab79261342cddad4396a49f3ca" id="r_a0c3eefab79261342cddad4396a49f3ca"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c3eefab79261342cddad4396a49f3ca">add_white_glyph</a> (<a class="el" href="classgfx_1_1_atlas.html">Atlas</a> *atlas, uint32_t <a class="el" href="structsize.html">size</a>) -&gt; <a class="el" href="structgfx_1_1glyph__info.html">glyph_info</a></td></tr>
 <tr class="separator:a0c3eefab79261342cddad4396a49f3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a302d655372c9f80ffeaabb3193f4dbff" id="r_a302d655372c9f80ffeaabb3193f4dbff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a302d655372c9f80ffeaabb3193f4dbff">REFLECT</a> (<a class="el" href="#adbf8da3e48efb696d7621545d64089c9">texture_info</a>)</td></tr>
@@ -788,6 +791,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a3ed4910d1c8f2b5617880be608fe7e36" id="r_a3ed4910d1c8f2b5617880be608fe7e36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ed4910d1c8f2b5617880be608fe7e36">set_uniform</a> (const <a class="el" href="structgfx_1_1program.html#a92ede79d69d2eaa786db6dd0500af362">gfx::program::uniform_ptr</a> &amp;<a class="el" href="structgfx_1_1uniform.html">uniform</a>, const math::vec2 &amp;value, std::uint16_t num=1)</td></tr>
 <tr class="memdesc:a3ed4910d1c8f2b5617880be608fe7e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a uniform value.  <br /></td></tr>
 <tr class="separator:a3ed4910d1c8f2b5617880be608fe7e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9f407b2706246095d81dbedfa180f254" id="r_a9f407b2706246095d81dbedfa180f254"><td class="memItemLeft" align="right" valign="top">static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f407b2706246095d81dbedfa180f254">invalid_handle</a> = bgfx::kInvalidHandle</td></tr>
+<tr class="separator:a9f407b2706246095d81dbedfa180f254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6240ca645f862d3ea378fa2e22925a6f" id="r_a6240ca645f862d3ea378fa2e22925a6f"><td class="memItemLeft" align="right" valign="top">static const bgfx::EmbeddedShader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6240ca645f862d3ea378fa2e22925a6f">s_embedded_shaders</a> []</td></tr>
+<tr class="separator:a6240ca645f862d3ea378fa2e22925a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Inspired from texture-atlas from freetype-gl (<a href="http://code.google.com/p/freetype-gl/">http://code.google.com/p/freetype-gl/</a>) by Nicolas Rougier (<a href="#" onclick="location.href='mai'+'lto:'+'Nic'+'ol'+'as.'+'Ro'+'ugi'+'er'+'@in'+'ri'+'a.f'+'r'; return false;">Nicol<span class="obfuscator">.nosp@m.</span>as.R<span class="obfuscator">.nosp@m.</span>ougie<span class="obfuscator">.nosp@m.</span>r@in<span class="obfuscator">.nosp@m.</span>ria.f<span class="obfuscator">.nosp@m.</span>r</a>) The actual implementation is based on the article by Jukka Jylänki : "A
@@ -7932,6 +7942,120 @@ Rectangle Bin Packing", February 27, 2010. More precisely, this is an implementa
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="graphics_8cpp_source.html#l00364">364</a> of file <a class="el" href="graphics_8cpp_source.html">graphics.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae964da8d927fe2bc43e63f37ad03b102" name="ae964da8d927fe2bc43e63f37ad03b102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae964da8d927fe2bc43e63f37ad03b102">&#9670;&#160;</a></span>writeUV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void gfx::writeUV </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>_vertexBuffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>_z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>_w</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cube__atlas_8cpp_source.html#l00446">446</a> of file <a class="el" href="cube__atlas_8cpp_source.html">cube_atlas.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a9f407b2706246095d81dbedfa180f254" name="a9f407b2706246095d81dbedfa180f254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f407b2706246095d81dbedfa180f254">&#9670;&#160;</a></span>invalid_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint16_t gfx::invalid_handle = bgfx::kInvalidHandle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="graphics_8h_source.html#l00018">18</a> of file <a class="el" href="graphics_8h_source.html">graphics.h</a>.</p>
+
+</div>
+</div>
+<a id="a6240ca645f862d3ea378fa2e22925a6f" name="a6240ca645f862d3ea378fa2e22925a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6240ca645f862d3ea378fa2e22925a6f">&#9670;&#160;</a></span>s_embedded_shaders</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bgfx::EmbeddedShader gfx::s_embedded_shaders[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(vs_font_basic),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(fs_font_basic),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(vs_font_distance_field),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(fs_font_distance_field),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(vs_font_distance_field_subpixel),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(fs_font_distance_field_subpixel),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(vs_font_distance_field_outline),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(fs_font_distance_field_outline),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(vs_font_distance_field_outline_image),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(fs_font_distance_field_outline_image),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(vs_font_distance_field_drop_shadow),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(fs_font_distance_field_drop_shadow),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(vs_font_distance_field_drop_shadow_image),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(fs_font_distance_field_drop_shadow_image),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(vs_font_distance_field_outline_drop_shadow_image),</div>
+<div class="line">    BGFX_EMBEDDED_SHADER(fs_font_distance_field_outline_drop_shadow_image),</div>
+<div class="line"> </div>
+<div class="line">    BGFX_EMBEDDED_SHADER_END()}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="text__buffer__manager_8cpp_source.html#l00044">44</a> of file <a class="el" href="text__buffer__manager_8cpp_source.html">text_buffer_manager.cpp</a>.</p>
 
 </div>
 </div>
