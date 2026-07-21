@@ -98,15 +98,21 @@ $(function(){initNavTree('ui__document__component_8h.html',''); initResizable(tr
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">ui_document_component.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="basic__component_8h_source.html">engine/ecs/components/basic_component.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="basic__component_8h_source.html">engine/ecs/components/basic_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__handle_8h_source.html">engine/assets/asset_handle.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ui__tree_8h_source.html">engine/ui/ui_tree.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="frame__buffer_8h_source.html">graphics/frame_buffer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &quot;<a class="el" href="_rml_ui___render_layer_stack_8h_source.html">../../rmlui/RmlUi_RenderLayerStack.h</a>&quot;</code><br />
 </div>
 <p><a href="ui__document__component_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -122,6 +128,20 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:adb0a4925f65534070772a075ea018261" id="r_adb0a4925f65534070772a075ea018261"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#adb0a4925f65534070772a075ea018261">unravel::ui_render_mode</a> { <a class="el" href="namespaceunravel.html#adb0a4925f65534070772a075ea018261a9b1970e70615b14ed646bcbae216f7b2">unravel::screen_space_overlay</a>
+, <a class="el" href="namespaceunravel.html#adb0a4925f65534070772a075ea018261af4b9d3eb46a141475ca96552331a3b3a">unravel::world_space</a>
+ }</td></tr>
+<tr class="memdesc:adb0a4925f65534070772a075ea018261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render mode for the UI document.  <a href="namespaceunravel.html#adb0a4925f65534070772a075ea018261">More...</a><br /></td></tr>
+<tr class="separator:adb0a4925f65534070772a075ea018261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a50f6cf3c4edbe0b6e08060d3ffa2e672" id="r_a50f6cf3c4edbe0b6e08060d3ffa2e672"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a50f6cf3c4edbe0b6e08060d3ffa2e672">unravel::UI_DEFAULT_PIXELS_PER_WORLD_UNIT</a> = 100.0f</td></tr>
+<tr class="memdesc:a50f6cf3c4edbe0b6e08060d3ffa2e672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default pixels per world unit (Unity-style). 100 px = 1 world unit.  <br /></td></tr>
+<tr class="separator:a50f6cf3c4edbe0b6e08060d3ffa2e672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

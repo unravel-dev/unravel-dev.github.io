@@ -100,7 +100,6 @@ $(function(){initNavTree('classunravel_1_1asset__database.html',''); initResizab
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classunravel_1_1asset__database-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::asset_database Class Reference</div></div>
 </div><!--header-->
@@ -140,7 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4fcc1f2497867bcf35a0b141d4c9683" id="r_ad4fcc1f2497867bcf35a0b141d4c9683"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4fcc1f2497867bcf35a0b141d4c9683">get_uuid</a> (const std::string &amp;location) const -&gt; const hpp::uuid &amp;</td></tr>
 <tr class="memdesc:ad4fcc1f2497867bcf35a0b141d4c9683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the UUID of an asset based on its location.  <br /></td></tr>
 <tr class="separator:ad4fcc1f2497867bcf35a0b141d4c9683"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a381c16c5ce7c224cc8cb300d1f742b37" id="r_a381c16c5ce7c224cc8cb300d1f742b37"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a381c16c5ce7c224cc8cb300d1f742b37">get_metadata</a> (const hpp::uuid &amp;id) const -&gt; const <a class="el" href="structunravel_1_1asset__database_1_1meta.html">meta</a> &amp;</td></tr>
+<tr class="memitem:a4382445262517956a19a56c84230a335" id="r_a4382445262517956a19a56c84230a335"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4382445262517956a19a56c84230a335">get_metadata</a> (const std::string &amp;location) const -&gt; const <a class="el" href="structunravel_1_1asset__database_1_1meta.html">meta</a> &amp;</td></tr>
+<tr class="separator:a4382445262517956a19a56c84230a335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381c16c5ce7c224cc8cb300d1f742b37" id="r_a381c16c5ce7c224cc8cb300d1f742b37"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a381c16c5ce7c224cc8cb300d1f742b37">get_metadata</a> (const hpp::uuid &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) const -&gt; const <a class="el" href="structunravel_1_1asset__database_1_1meta.html">meta</a> &amp;</td></tr>
 <tr class="memdesc:a381c16c5ce7c224cc8cb300d1f742b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the metadata of an asset based on its UUID.  <br /></td></tr>
 <tr class="separator:a381c16c5ce7c224cc8cb300d1f742b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a776db15ffef312522eef66ca91fbfc" id="r_a1a776db15ffef312522eef66ca91fbfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a776db15ffef312522eef66ca91fbfc">rename_asset</a> (const std::string &amp;key, const std::string &amp;new_key)</td></tr>
@@ -149,17 +150,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a036f4031d1c7bb6a599024cb23fb1f5a" id="r_a036f4031d1c7bb6a599024cb23fb1f5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a036f4031d1c7bb6a599024cb23fb1f5a">remove_asset</a> (const std::string &amp;key)</td></tr>
 <tr class="memdesc:a036f4031d1c7bb6a599024cb23fb1f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an asset from the database.  <br /></td></tr>
 <tr class="separator:a036f4031d1c7bb6a599024cb23fb1f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d671aecbc089ee33567083cdcfe7f33" id="r_a7d671aecbc089ee33567083cdcfe7f33"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d671aecbc089ee33567083cdcfe7f33">generate_id</a> (const fs::path &amp;p) -&gt; hpp::uuid</td></tr>
-<tr class="memdesc:a7d671aecbc089ee33567083cdcfe7f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a UUID based on the file path.  <br /></td></tr>
-<tr class="separator:a7d671aecbc089ee33567083cdcfe7f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages asset metadata and provides functionality for adding, removing, and querying assets. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00139">139</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00193">193</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="acc9227778018819442f061fccafe404e" name="acc9227778018819442f061fccafe404e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc9227778018819442f061fccafe404e">&#9670;&#160;</a></span>database_t</h2>
@@ -175,7 +170,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Type definition for the asset database. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00155">155</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00209">209</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -214,53 +209,23 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds an asset to the database. </p>
+<p>If an entry already exists for <code>location</code>:</p><ul>
+<li><code>override == false</code>: returns the existing UUID and does nothing else.</li>
+<li><code>override == true</code>: updates the entry's metadata <em>in place</em>, keeping the original UUID so that any link referencing it stays valid.</li>
+</ul>
+<p>Otherwise inserts a new entry keyed by <code>meta.uid</code>.</p>
+<p>The entire operation runs under a single lock: looking up the existing entry, deciding whether to insert vs. update, and mutating the map all happen atomically. The previous implementation released the lock between the lookup and the insert, which opened a TOC-TOU window where another thread could remove the entry and we'd end up inserting under a fresh random UUID instead of preserving the existing one (or, with override, creating a duplicate entry that aliased the same location under two different UUIDs).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">location</td><td>The location of the asset. </td></tr>
     <tr><td class="paramname">meta</td><td>The metadata of the asset. </td></tr>
+    <tr><td class="paramname">override</td><td>Whether to overwrite an existing entry's metadata. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The UUID of the added asset. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The UUID of the added (or pre-existing) asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00201">201</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
-
-</div>
-</div>
-<a id="a7d671aecbc089ee33567083cdcfe7f33" name="a7d671aecbc089ee33567083cdcfe7f33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d671aecbc089ee33567083cdcfe7f33">&#9670;&#160;</a></span>generate_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto unravel::asset_database::generate_id </td>
-          <td>(</td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
-          <td> -&gt; hpp::uuid
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Generates a UUID based on the file path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p</td><td>The file path. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The generated UUID. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00162">162</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00263">263</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -291,12 +256,12 @@ Static Public Member Functions</h2></td></tr>
 <p>Gets the entire asset database. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the asset database. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00171">171</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00215">215</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
 <a id="a381c16c5ce7c224cc8cb300d1f742b37" name="a381c16c5ce7c224cc8cb300d1f742b37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a381c16c5ce7c224cc8cb300d1f742b37">&#9670;&#160;</a></span>get_metadata()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a381c16c5ce7c224cc8cb300d1f742b37">&#9670;&#160;</a></span>get_metadata() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +293,35 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The metadata of the asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00255">255</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00329">329</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+
+</div>
+</div>
+<a id="a4382445262517956a19a56c84230a335" name="a4382445262517956a19a56c84230a335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4382445262517956a19a56c84230a335">&#9670;&#160;</a></span>get_metadata() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::asset_database::get_metadata </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>location</em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="structunravel_1_1asset__database_1_1meta.html">meta</a>&amp;
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00310">310</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -363,9 +356,9 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The UUID of the asset. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The UUID of the asset, or a nil UUID if not found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00232">232</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00296">296</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +387,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Removes all assets from the database. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00189">189</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00233">233</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +422,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00294">294</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00368">368</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +462,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00274">274</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00348">348</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +497,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00180">180</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00224">224</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>

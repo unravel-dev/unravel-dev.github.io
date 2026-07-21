@@ -111,11 +111,353 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac5cf3119479959dedddcb1913e39fef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f6b683280d504334ef5bb269d13b304" id="r_a7f6b683280d504334ef5bb269d13b304"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f6b683280d504334ef5bb269d13b304">turbidity</a> = 1.9f</td></tr>
 <tr class="separator:a7f6b683280d504334ef5bb269d13b304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b8f1b56f4a2fbecc1219edc551b71f" id="r_ab2b8f1b56f4a2fbecc1219edc551b71f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2b8f1b56f4a2fbecc1219edc551b71f">cloud_mode</a> = 2</td></tr>
+<tr class="memdesc:ab2b8f1b56f4a2fbecc1219edc551b71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud mode: 0=none, 1=flat, 2=volumetric.  <br /></td></tr>
+<tr class="separator:ab2b8f1b56f4a2fbecc1219edc551b71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993909f8e9940cdc8076ae0d6bf32bc8" id="r_a993909f8e9940cdc8076ae0d6bf32bc8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a993909f8e9940cdc8076ae0d6bf32bc8">cloud_coverage</a> = 0.52f</td></tr>
+<tr class="memdesc:a993909f8e9940cdc8076ae0d6bf32bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud coverage [0.0 = clear sky, 1.0 = overcast]. Controls the density threshold.  <br /></td></tr>
+<tr class="separator:a993909f8e9940cdc8076ae0d6bf32bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95d3c9f9c3207cee8fbed6452876c36" id="r_ad95d3c9f9c3207cee8fbed6452876c36"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad95d3c9f9c3207cee8fbed6452876c36">cloud_base_altitude</a> = 27500.0f</td></tr>
+<tr class="memdesc:ad95d3c9f9c3207cee8fbed6452876c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud base altitude in world units. Vol: slab bottom. Flat: projection height.  <br /></td></tr>
+<tr class="separator:ad95d3c9f9c3207cee8fbed6452876c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db328f4efbd1b507c794b2c8ce60e59" id="r_a8db328f4efbd1b507c794b2c8ce60e59"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8db328f4efbd1b507c794b2c8ce60e59">cloud_top_altitude</a> = 35000.0f</td></tr>
+<tr class="memdesc:a8db328f4efbd1b507c794b2c8ce60e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud top altitude in world units. Vol: slab top. Flat: ignored.  <br /></td></tr>
+<tr class="separator:a8db328f4efbd1b507c794b2c8ce60e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6246d86f6a4b8d55c77850a1ceedeb" id="r_acd6246d86f6a4b8d55c77850a1ceedeb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd6246d86f6a4b8d55c77850a1ceedeb">cloud_time</a> = 0.0f</td></tr>
+<tr class="memdesc:acd6246d86f6a4b8d55c77850a1ceedeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accumulated elapsed time (seconds) for cloud animation.  <br /></td></tr>
+<tr class="separator:acd6246d86f6a4b8d55c77850a1ceedeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45db74a07035df36423ec7ed2751452b" id="r_a45db74a07035df36423ec7ed2751452b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45db74a07035df36423ec7ed2751452b">cloud_density</a> = 1.5f</td></tr>
+<tr class="memdesc:a45db74a07035df36423ec7ed2751452b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud density/opacity multiplier.  <br /></td></tr>
+<tr class="separator:a45db74a07035df36423ec7ed2751452b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e225b97c49eec00bda377f7843b5e6" id="r_a51e225b97c49eec00bda377f7843b5e6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51e225b97c49eec00bda377f7843b5e6">cloud_absorption</a> = 0.08f</td></tr>
+<tr class="memdesc:a51e225b97c49eec00bda377f7843b5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beer-Lambert extinction coefficient [0.01-0.5].  <br /></td></tr>
+<tr class="separator:a51e225b97c49eec00bda377f7843b5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa978197ea4982300a86236c2af8537" id="r_a7aa978197ea4982300a86236c2af8537"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7aa978197ea4982300a86236c2af8537">cloud_light_absorption</a> = 0.10f</td></tr>
+<tr class="memdesc:a7aa978197ea4982300a86236c2af8537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light absorption / self-shadow strength [0.01-0.5].  <br /></td></tr>
+<tr class="separator:a7aa978197ea4982300a86236c2af8537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c83d6ad454519fa604d2cc057acf98" id="r_ad2c83d6ad454519fa604d2cc057acf98"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2c83d6ad454519fa604d2cc057acf98">sky_brightness</a> = 1.0f</td></tr>
+<tr class="memdesc:ad2c83d6ad454519fa604d2cc057acf98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sky brightness multiplier (1.0 = neutral). Affects visible sky and irradiance.  <br /></td></tr>
+<tr class="separator:ad2c83d6ad454519fa604d2cc057acf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bbc87aff5312b13508424746e8dbed" id="r_a46bbc87aff5312b13508424746e8dbed"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46bbc87aff5312b13508424746e8dbed">irradiance_intensity</a> = 0.15f</td></tr>
+<tr class="memdesc:a46bbc87aff5312b13508424746e8dbed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Irradiance intensity. Scales cloud ambient (sky-scattered light into clouds).  <br /></td></tr>
+<tr class="separator:a46bbc87aff5312b13508424746e8dbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450438425e1b559c1542e16ee32349e0" id="r_a450438425e1b559c1542e16ee32349e0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a450438425e1b559c1542e16ee32349e0">cloud_vol_uv_scale</a> = 0.00008f</td></tr>
+<tr class="memdesc:a450438425e1b559c1542e16ee32349e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volumetric cloud u_cloudParams3: uv scale, edge width, shape power, detail erode.  <br /></td></tr>
+<tr class="separator:a450438425e1b559c1542e16ee32349e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a9d879bcd531a677832131d716dc6f" id="r_a43a9d879bcd531a677832131d716dc6f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43a9d879bcd531a677832131d716dc6f">cloud_vol_edge_width</a> = 0.20f</td></tr>
+<tr class="separator:a43a9d879bcd531a677832131d716dc6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f3db650f0097b8ddb91f0b1f83fdd9" id="r_ae8f3db650f0097b8ddb91f0b1f83fdd9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8f3db650f0097b8ddb91f0b1f83fdd9">cloud_vol_shape_power</a> = 1.12f</td></tr>
+<tr class="separator:ae8f3db650f0097b8ddb91f0b1f83fdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c148539f3c8250eb0eaad2d2f1d532e" id="r_a8c148539f3c8250eb0eaad2d2f1d532e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c148539f3c8250eb0eaad2d2f1d532e">cloud_vol_detail_erode</a> = 0.48f</td></tr>
+<tr class="separator:a8c148539f3c8250eb0eaad2d2f1d532e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88476e31d3aa024fb1bb8e7c5acd5655" id="r_a88476e31d3aa024fb1bb8e7c5acd5655"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88476e31d3aa024fb1bb8e7c5acd5655">cloud_vol_macro_strength</a> = 0.36f</td></tr>
+<tr class="memdesc:a88476e31d3aa024fb1bb8e7c5acd5655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volumetric cloud u_cloudParams4: macro strength, coarse scale, base mix, sun intensity.  <br /></td></tr>
+<tr class="separator:a88476e31d3aa024fb1bb8e7c5acd5655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3adc73d59309a71602494a7ef29b967e" id="r_a3adc73d59309a71602494a7ef29b967e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3adc73d59309a71602494a7ef29b967e">cloud_vol_coarse_scale</a> = 0.38f</td></tr>
+<tr class="separator:a3adc73d59309a71602494a7ef29b967e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f55458f0d03f4dec60ff18b599bc76" id="r_a56f55458f0d03f4dec60ff18b599bc76"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56f55458f0d03f4dec60ff18b599bc76">cloud_vol_base_mix</a> = 0.45f</td></tr>
+<tr class="separator:a56f55458f0d03f4dec60ff18b599bc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f52a85e13ff1b81721d4a82b4a505ca" id="r_a6f52a85e13ff1b81721d4a82b4a505ca"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f52a85e13ff1b81721d4a82b4a505ca">cloud_vol_sun_intensity</a> = 24.0f</td></tr>
+<tr class="separator:a6f52a85e13ff1b81721d4a82b4a505ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00146">146</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a51e225b97c49eec00bda377f7843b5e6" name="a51e225b97c49eec00bda377f7843b5e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e225b97c49eec00bda377f7843b5e6">&#9670;&#160;</a></span>cloud_absorption</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_absorption = 0.08f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Beer-Lambert extinction coefficient [0.01-0.5]. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00166">166</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="ad95d3c9f9c3207cee8fbed6452876c36" name="ad95d3c9f9c3207cee8fbed6452876c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad95d3c9f9c3207cee8fbed6452876c36">&#9670;&#160;</a></span>cloud_base_altitude</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_base_altitude = 27500.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cloud base altitude in world units. Vol: slab bottom. Flat: projection height. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00158">158</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a993909f8e9940cdc8076ae0d6bf32bc8" name="a993909f8e9940cdc8076ae0d6bf32bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993909f8e9940cdc8076ae0d6bf32bc8">&#9670;&#160;</a></span>cloud_coverage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_coverage = 0.52f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cloud coverage [0.0 = clear sky, 1.0 = overcast]. Controls the density threshold. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00156">156</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a45db74a07035df36423ec7ed2751452b" name="a45db74a07035df36423ec7ed2751452b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45db74a07035df36423ec7ed2751452b">&#9670;&#160;</a></span>cloud_density</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_density = 1.5f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cloud density/opacity multiplier. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00164">164</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a7aa978197ea4982300a86236c2af8537" name="a7aa978197ea4982300a86236c2af8537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa978197ea4982300a86236c2af8537">&#9670;&#160;</a></span>cloud_light_absorption</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_light_absorption = 0.10f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Light absorption / self-shadow strength [0.01-0.5]. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00168">168</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="ab2b8f1b56f4a2fbecc1219edc551b71f" name="ab2b8f1b56f4a2fbecc1219edc551b71f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2b8f1b56f4a2fbecc1219edc551b71f">&#9670;&#160;</a></span>cloud_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unravel::atmospheric_pass_perez::run_params::cloud_mode = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cloud mode: 0=none, 1=flat, 2=volumetric. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00154">154</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="acd6246d86f6a4b8d55c77850a1ceedeb" name="acd6246d86f6a4b8d55c77850a1ceedeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6246d86f6a4b8d55c77850a1ceedeb">&#9670;&#160;</a></span>cloud_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_time = 0.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accumulated elapsed time (seconds) for cloud animation. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00162">162</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a8db328f4efbd1b507c794b2c8ce60e59" name="a8db328f4efbd1b507c794b2c8ce60e59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db328f4efbd1b507c794b2c8ce60e59">&#9670;&#160;</a></span>cloud_top_altitude</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_top_altitude = 35000.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cloud top altitude in world units. Vol: slab top. Flat: ignored. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00160">160</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a56f55458f0d03f4dec60ff18b599bc76" name="a56f55458f0d03f4dec60ff18b599bc76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f55458f0d03f4dec60ff18b599bc76">&#9670;&#160;</a></span>cloud_vol_base_mix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_vol_base_mix = 0.45f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00182">182</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a3adc73d59309a71602494a7ef29b967e" name="a3adc73d59309a71602494a7ef29b967e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3adc73d59309a71602494a7ef29b967e">&#9670;&#160;</a></span>cloud_vol_coarse_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_vol_coarse_scale = 0.38f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00181">181</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a8c148539f3c8250eb0eaad2d2f1d532e" name="a8c148539f3c8250eb0eaad2d2f1d532e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c148539f3c8250eb0eaad2d2f1d532e">&#9670;&#160;</a></span>cloud_vol_detail_erode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_vol_detail_erode = 0.48f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00178">178</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a43a9d879bcd531a677832131d716dc6f" name="a43a9d879bcd531a677832131d716dc6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a9d879bcd531a677832131d716dc6f">&#9670;&#160;</a></span>cloud_vol_edge_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_vol_edge_width = 0.20f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00176">176</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a88476e31d3aa024fb1bb8e7c5acd5655" name="a88476e31d3aa024fb1bb8e7c5acd5655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88476e31d3aa024fb1bb8e7c5acd5655">&#9670;&#160;</a></span>cloud_vol_macro_strength</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_vol_macro_strength = 0.36f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Volumetric cloud u_cloudParams4: macro strength, coarse scale, base mix, sun intensity. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00180">180</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="ae8f3db650f0097b8ddb91f0b1f83fdd9" name="ae8f3db650f0097b8ddb91f0b1f83fdd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f3db650f0097b8ddb91f0b1f83fdd9">&#9670;&#160;</a></span>cloud_vol_shape_power</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_vol_shape_power = 1.12f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00177">177</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a6f52a85e13ff1b81721d4a82b4a505ca" name="a6f52a85e13ff1b81721d4a82b4a505ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f52a85e13ff1b81721d4a82b4a505ca">&#9670;&#160;</a></span>cloud_vol_sun_intensity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_vol_sun_intensity = 24.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00183">183</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a450438425e1b559c1542e16ee32349e0" name="a450438425e1b559c1542e16ee32349e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450438425e1b559c1542e16ee32349e0">&#9670;&#160;</a></span>cloud_vol_uv_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::cloud_vol_uv_scale = 0.00008f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Volumetric cloud u_cloudParams3: uv scale, edge width, shape power, detail erode. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00175">175</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="a46bbc87aff5312b13508424746e8dbed" name="a46bbc87aff5312b13508424746e8dbed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46bbc87aff5312b13508424746e8dbed">&#9670;&#160;</a></span>irradiance_intensity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::irradiance_intensity = 0.15f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Irradiance intensity. Scales cloud ambient (sky-scattered light into clouds). </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00172">172</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
 <a id="ac5cf3119479959dedddcb1913e39fef1" name="ac5cf3119479959dedddcb1913e39fef1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5cf3119479959dedddcb1913e39fef1">&#9670;&#160;</a></span>light_direction</h2>
 
@@ -129,6 +471,24 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00148">148</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
+
+</div>
+</div>
+<a id="ad2c83d6ad454519fa604d2cc057acf98" name="ad2c83d6ad454519fa604d2cc057acf98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c83d6ad454519fa604d2cc057acf98">&#9670;&#160;</a></span>sky_brightness</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::atmospheric_pass_perez::run_params::sky_brightness = 1.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sky brightness multiplier (1.0 = neutral). Affects visible sky and irradiance. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8h_source.html#l00170">170</a> of file <a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>.</p>
 
 </div>
 </div>

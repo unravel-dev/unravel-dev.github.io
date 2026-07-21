@@ -38,8 +38,9 @@ var imgui__messagebox_8h =
       [ "DontSave", "imgui__messagebox_8h.html#a14978fda4d00e2bef836686b69e6af01ac1b9fa9c8db83eef359e7d8d940af6b8", null ],
       [ "CancelDelete", "imgui__messagebox_8h.html#a14978fda4d00e2bef836686b69e6af01a2531bd84a14a9d105604e3f5c181db64", null ]
     ] ],
+    [ "IsConfirmation", "imgui__messagebox_8h.html#aadf99dd78bdf545089f0f562bc26995e", null ],
     [ "RenderMessageBoxes", "imgui__messagebox_8h.html#afab6d46549ed3ff696bfd7538b29711a", null ],
-    [ "ShowConfirmation", "imgui__messagebox_8h.html#aed473497bfb6da5452817de53472e88c", null ],
+    [ "ShowConfirmation", "imgui__messagebox_8h.html#a3fe9dc641dfb8d7199289ec5a00d9a49", null ],
     [ "ShowDeleteConfirmation", "imgui__messagebox_8h.html#a1ed6515dbb4df2f757bcf986b744739f", null ],
     [ "ShowError", "imgui__messagebox_8h.html#aee659262eac9f4bc53e3ec3510ef80c0", null ],
     [ "ShowInfo", "imgui__messagebox_8h.html#a38c4d5c88c9b15317e29d94c3a7e89d6", null ],

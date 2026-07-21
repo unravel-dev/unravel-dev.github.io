@@ -114,6 +114,7 @@ $(function(){initNavTree('bgfx__utils_8cpp.html',''); initResizable(true); });
 <code>#include &lt;bx/readerwriter.h&gt;</code><br />
 <code>#include &lt;bx/string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="bgfx__utils_8h_source.html">bgfx_utils.h</a>&quot;</code><br />
+<code>#include &lt;bimg/bimg.h&gt;</code><br />
 <code>#include &lt;bimg/decode.h&gt;</code><br />
 <code>#include &lt;bx/bx.h&gt;</code><br />
 <code>#include &lt;bx/file.h&gt;</code><br />
@@ -129,30 +130,44 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afefa8c6070c8c213c4ea12248fae5358" id="r_afefa8c6070c8c213c4ea12248fae5358"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afefa8c6070c8c213c4ea12248fae5358">load</a> (bx::FileReaderI *_reader, bx::AllocatorI *_allocator, const char *_filePath, uint32_t *_size)</td></tr>
-<tr class="separator:afefa8c6070c8c213c4ea12248fae5358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce1072f0016856be80bed985f309ec3" id="r_a8ce1072f0016856be80bed985f309ec3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ce1072f0016856be80bed985f309ec3">load</a> (const char *_filePath, uint32_t *_size)</td></tr>
-<tr class="separator:a8ce1072f0016856be80bed985f309ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d00106b71ad519409149bbff31df7ee" id="r_a8d00106b71ad519409149bbff31df7ee"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d00106b71ad519409149bbff31df7ee">load</a> (bx::FileReaderI *_reader, bx::AllocatorI *_allocator, const bx::FilePath &amp;_filePath, uint32_t *_size)</td></tr>
+<tr class="separator:a8d00106b71ad519409149bbff31df7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb2dd70424d466ef9ef7b66f823d1cc" id="r_accb2dd70424d466ef9ef7b66f823d1cc"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accb2dd70424d466ef9ef7b66f823d1cc">load</a> (const bx::FilePath &amp;_filePath, uint32_t *_size)</td></tr>
+<tr class="separator:accb2dd70424d466ef9ef7b66f823d1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7e73b30345a101c4b692eedac03de47" id="r_ac7e73b30345a101c4b692eedac03de47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7e73b30345a101c4b692eedac03de47">unload</a> (void *_ptr)</td></tr>
 <tr class="separator:ac7e73b30345a101c4b692eedac03de47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3d140e1025227619cc5b3f5e4f7c428" id="r_ae3d140e1025227619cc5b3f5e4f7c428"><td class="memItemLeft" align="right" valign="top">bgfx::ShaderHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3d140e1025227619cc5b3f5e4f7c428">loadShader</a> (const char *_name)</td></tr>
-<tr class="separator:ae3d140e1025227619cc5b3f5e4f7c428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a546ef87a0e3c0d420178eebb96d56493" id="r_a546ef87a0e3c0d420178eebb96d56493"><td class="memItemLeft" align="right" valign="top">bgfx::ProgramHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a546ef87a0e3c0d420178eebb96d56493">loadProgram</a> (bx::FileReaderI *_reader, const char *_vsName, const char *_fsName)</td></tr>
-<tr class="separator:a546ef87a0e3c0d420178eebb96d56493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1a9ee6d4ed37ddb2432e80ac0764a37" id="r_ad1a9ee6d4ed37ddb2432e80ac0764a37"><td class="memItemLeft" align="right" valign="top">bgfx::ProgramHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1a9ee6d4ed37ddb2432e80ac0764a37">loadProgram</a> (const char *_vsName, const char *_fsName)</td></tr>
-<tr class="separator:ad1a9ee6d4ed37ddb2432e80ac0764a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc6744662c3edd7760e22ea5bfc8bc8b" id="r_adc6744662c3edd7760e22ea5bfc8bc8b"><td class="memItemLeft" align="right" valign="top">bgfx::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc6744662c3edd7760e22ea5bfc8bc8b">loadTexture</a> (bx::FileReaderI *_reader, const char *_filePath, uint64_t _flags, uint8_t _skip, bgfx::TextureInfo *_info, bimg::Orientation::Enum *_orientation)</td></tr>
-<tr class="separator:adc6744662c3edd7760e22ea5bfc8bc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af93635a404807dc1f0ae3b0cf614d008" id="r_af93635a404807dc1f0ae3b0cf614d008"><td class="memItemLeft" align="right" valign="top">bgfx::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af93635a404807dc1f0ae3b0cf614d008">loadTexture</a> (const char *_name, uint64_t _flags, uint8_t _skip, bgfx::TextureInfo *_info, bimg::Orientation::Enum *_orientation)</td></tr>
-<tr class="separator:af93635a404807dc1f0ae3b0cf614d008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d90e3a0dbad7c8bee994dd47a97bf05" id="r_a3d90e3a0dbad7c8bee994dd47a97bf05"><td class="memItemLeft" align="right" valign="top">bgfx::ShaderHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d90e3a0dbad7c8bee994dd47a97bf05">loadShader</a> (const bx::StringView &amp;_name)</td></tr>
+<tr class="separator:a3d90e3a0dbad7c8bee994dd47a97bf05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec795e4713fde55bd645b7716d07802f" id="r_aec795e4713fde55bd645b7716d07802f"><td class="memItemLeft" align="right" valign="top">bgfx::ShaderHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec795e4713fde55bd645b7716d07802f">loadShader</a> (const bx::FilePath &amp;_filePath)</td></tr>
+<tr class="separator:aec795e4713fde55bd645b7716d07802f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad915993e0346f2087213c09fd97ad7de" id="r_ad915993e0346f2087213c09fd97ad7de"><td class="memItemLeft" align="right" valign="top">bgfx::ProgramHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad915993e0346f2087213c09fd97ad7de">loadProgram</a> (bx::FileReaderI *_reader, const bx::StringView &amp;_vsName, const bx::StringView &amp;_fsName)</td></tr>
+<tr class="separator:ad915993e0346f2087213c09fd97ad7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9994a36806a2172eba60f05338ba8d" id="r_a4d9994a36806a2172eba60f05338ba8d"><td class="memItemLeft" align="right" valign="top">bgfx::ProgramHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d9994a36806a2172eba60f05338ba8d">loadProgram</a> (const bx::StringView &amp;_vsName, const bx::StringView &amp;_fsName)</td></tr>
+<tr class="separator:a4d9994a36806a2172eba60f05338ba8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c61b9c0c402b92836cacc469646337f" id="r_a8c61b9c0c402b92836cacc469646337f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c61b9c0c402b92836cacc469646337f">imageFlipTangentSpaceNormalY</a> (bimg::ImageContainer *&amp;_image)</td></tr>
+<tr class="separator:a8c61b9c0c402b92836cacc469646337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab890e26cdc87996dff44716222cf7c76" id="r_ab890e26cdc87996dff44716222cf7c76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab890e26cdc87996dff44716222cf7c76">imagePrepareNormalMapBakePng</a> (bimg::ImageContainer *&amp;_image)</td></tr>
+<tr class="memdesc:ab890e26cdc87996dff44716222cf7c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare a flipped normal map for PNG bake export (RGBA8, opaque alpha when unused).  <br /></td></tr>
+<tr class="separator:ab890e26cdc87996dff44716222cf7c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba2cf652ad544207f412f1dee65b702" id="r_afba2cf652ad544207f412f1dee65b702"><td class="memItemLeft" align="right" valign="top">bgfx::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afba2cf652ad544207f412f1dee65b702">loadTexture</a> (const void *_data, uint32_t _size, uint64_t _flags, uint8_t _skip, bgfx::TextureInfo *_info, bimg::Orientation::Enum *_orientation, const char *_name, bx::Error *_err, const <a class="el" href="bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6">TexturePreCreateFn</a> &amp;_preCreate)</td></tr>
+<tr class="separator:afba2cf652ad544207f412f1dee65b702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad458f41e3cb9d44c593f51c6b3b731c" id="r_aad458f41e3cb9d44c593f51c6b3b731c"><td class="memItemLeft" align="right" valign="top">bgfx::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad458f41e3cb9d44c593f51c6b3b731c">loadTexture</a> (bx::FileReaderI *_reader, const bx::FilePath &amp;_filePath, uint64_t _flags, uint8_t _skip, bgfx::TextureInfo *_info, bimg::Orientation::Enum *_orientation, bx::Error *_err, const <a class="el" href="bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6">TexturePreCreateFn</a> &amp;_preCreate=nullptr)</td></tr>
+<tr class="separator:aad458f41e3cb9d44c593f51c6b3b731c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6e2c353f9907f64bbf45b69f7ae210" id="r_adf6e2c353f9907f64bbf45b69f7ae210"><td class="memItemLeft" align="right" valign="top">bgfx::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf6e2c353f9907f64bbf45b69f7ae210">loadTexture</a> (const bx::FilePath &amp;_filePath, uint64_t _flags, uint8_t _skip, bgfx::TextureInfo *_info, bimg::Orientation::Enum *_orientation, bx::Error *_err, const <a class="el" href="bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6">TexturePreCreateFn</a> &amp;_preCreate)</td></tr>
+<tr class="separator:adf6e2c353f9907f64bbf45b69f7ae210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57212499d5d8d453cd2445f0a75e18ca" id="r_a57212499d5d8d453cd2445f0a75e18ca"><td class="memItemLeft" align="right" valign="top">bimg::ImageContainer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57212499d5d8d453cd2445f0a75e18ca">imageLoad</a> (const void *data, uint32_t <a class="el" href="structsize.html">size</a>, bgfx::TextureFormat::Enum _dstFormat)</td></tr>
 <tr class="separator:a57212499d5d8d453cd2445f0a75e18ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad88e30f36b6b383c77a09d947f40d328" id="r_ad88e30f36b6b383c77a09d947f40d328"><td class="memItemLeft" align="right" valign="top">bimg::ImageContainer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad88e30f36b6b383c77a09d947f40d328">imageLoad</a> (const char *_filePath, bgfx::TextureFormat::Enum _dstFormat)</td></tr>
-<tr class="separator:ad88e30f36b6b383c77a09d947f40d328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d60986a05230116eaa3c083c2c7e58" id="r_a99d60986a05230116eaa3c083c2c7e58"><td class="memItemLeft" align="right" valign="top">bimg::ImageContainer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99d60986a05230116eaa3c083c2c7e58">imageLoad</a> (const bx::FilePath &amp;_filePath, bgfx::TextureFormat::Enum _dstFormat)</td></tr>
+<tr class="separator:a99d60986a05230116eaa3c083c2c7e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e7b088fe9f722a93bf579c7588c10d" id="r_a47e7b088fe9f722a93bf579c7588c10d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47e7b088fe9f722a93bf579c7588c10d">imageParseInfo</a> (const void *_data, uint32_t _size, bimg::ImageContainer &amp;_info, bx::Error *_err)</td></tr>
+<tr class="separator:a47e7b088fe9f722a93bf579c7588c10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf028977d2f18a3c7d6e0d107b5cda8" id="r_aebf028977d2f18a3c7d6e0d107b5cda8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebf028977d2f18a3c7d6e0d107b5cda8">imageParseInfo</a> (const bx::FilePath &amp;_filePath, bimg::ImageContainer &amp;_info, bx::Error *_err)</td></tr>
+<tr class="memdesc:aebf028977d2f18a3c7d6e0d107b5cda8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse image metadata without decoding pixel data.  <br /></td></tr>
+<tr class="separator:aebf028977d2f18a3c7d6e0d107b5cda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a491508725b1014fb0c4191ba597e2592" id="r_a491508725b1014fb0c4191ba597e2592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a491508725b1014fb0c4191ba597e2592">calcTangents</a> (void *_vertices, uint16_t _numVertices, bgfx::VertexLayout _layout, const uint16_t *_indices, uint32_t _numIndices)</td></tr>
 <tr class="separator:a491508725b1014fb0c4191ba597e2592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0cc4150b145b10768af364171724d66" id="r_ae0cc4150b145b10768af364171724d66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0cc4150b145b10768af364171724d66">saveToFile</a> (bgfx::ViewId viewId, const char *_filePath, bgfx::FrameBufferHandle fbo, uint32_t width, uint32_t height)</td></tr>
-<tr class="separator:ae0cc4150b145b10768af364171724d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1bdd65d683731b797048bde6d080c4" id="r_aec1bdd65d683731b797048bde6d080c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec1bdd65d683731b797048bde6d080c4">saveToFile</a> (bgfx::ViewId viewId, const bx::FilePath &amp;_filePath, bgfx::FrameBufferHandle fbo, uint32_t <a class="el" href="asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd">width</a>, uint32_t <a class="el" href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a>)</td></tr>
+<tr class="separator:aec1bdd65d683731b797048bde6d080c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c52c2b842ca50b4dcb761efd7f6a92b" id="r_a8c52c2b842ca50b4dcb761efd7f6a92b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c52c2b842ca50b4dcb761efd7f6a92b">imageSave</a> (const char *saveAs, bimg::ImageContainer *image)</td></tr>
 <tr class="separator:a8c52c2b842ca50b4dcb761efd7f6a92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -191,12 +206,32 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00345">345</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00628">628</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ad88e30f36b6b383c77a09d947f40d328" name="ad88e30f36b6b383c77a09d947f40d328"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad88e30f36b6b383c77a09d947f40d328">&#9670;&#160;</a></span>imageLoad() <span class="overload">[1/2]</span></h2>
+<a id="a8c61b9c0c402b92836cacc469646337f" name="a8c61b9c0c402b92836cacc469646337f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c61b9c0c402b92836cacc469646337f">&#9670;&#160;</a></span>imageFlipTangentSpaceNormalY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool imageFlipTangentSpaceNormalY </td>
+          <td>(</td>
+          <td class="paramtype">bimg::ImageContainer *&amp;</td>          <td class="paramname"><span class="paramname"><em>_image</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flip tangent-space normal map Y (tangent-space +Y / green channel via bimg unpack/pack). Preserves the container format for uncompressed sources. Compressed inputs are decoded to RGBA8 and left as RGBA8 (no lossy re-encode back to BC). </p>
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00439">439</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a99d60986a05230116eaa3c083c2c7e58" name="a99d60986a05230116eaa3c083c2c7e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d60986a05230116eaa3c083c2c7e58">&#9670;&#160;</a></span>imageLoad() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +239,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bimg::ImageContainer * imageLoad </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
+          <td class="paramtype">const bx::FilePath &amp;</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -214,7 +249,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00335">335</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00588">588</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -242,7 +277,91 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00330">330</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00583">583</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aebf028977d2f18a3c7d6e0d107b5cda8" name="aebf028977d2f18a3c7d6e0d107b5cda8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf028977d2f18a3c7d6e0d107b5cda8">&#9670;&#160;</a></span>imageParseInfo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool imageParseInfo </td>
+          <td>(</td>
+          <td class="paramtype">const bx::FilePath &amp;</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bimg::ImageContainer &amp;</td>          <td class="paramname"><span class="paramname"><em>_info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bx::Error *</td>          <td class="paramname"><span class="paramname"><em>_err</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse image metadata without decoding pixel data. </p>
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00613">613</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a47e7b088fe9f722a93bf579c7588c10d" name="a47e7b088fe9f722a93bf579c7588c10d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e7b088fe9f722a93bf579c7588c10d">&#9670;&#160;</a></span>imageParseInfo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool imageParseInfo </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bimg::ImageContainer &amp;</td>          <td class="paramname"><span class="paramname"><em>_info</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bx::Error *</td>          <td class="paramname"><span class="paramname"><em>_err</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00603">603</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab890e26cdc87996dff44716222cf7c76" name="ab890e26cdc87996dff44716222cf7c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab890e26cdc87996dff44716222cf7c76">&#9670;&#160;</a></span>imagePrepareNormalMapBakePng()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool imagePrepareNormalMapBakePng </td>
+          <td>(</td>
+          <td class="paramtype">bimg::ImageContainer *&amp;</td>          <td class="paramname"><span class="paramname"><em>_image</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepare a flipped normal map for PNG bake export (RGBA8, opaque alpha when unused). </p>
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00467">467</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -265,12 +384,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00506">506</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00789">789</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="afefa8c6070c8c213c4ea12248fae5358" name="afefa8c6070c8c213c4ea12248fae5358"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afefa8c6070c8c213c4ea12248fae5358">&#9670;&#160;</a></span>load() <span class="overload">[1/2]</span></h2>
+<a id="a8d00106b71ad519409149bbff31df7ee" name="a8d00106b71ad519409149bbff31df7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d00106b71ad519409149bbff31df7ee">&#9670;&#160;</a></span>load() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +407,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
+          <td class="paramtype">const bx::FilePath &amp;</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -298,12 +417,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00075">75</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00076">76</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a8ce1072f0016856be80bed985f309ec3" name="a8ce1072f0016856be80bed985f309ec3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ce1072f0016856be80bed985f309ec3">&#9670;&#160;</a></span>load() <span class="overload">[2/2]</span></h2>
+<a id="accb2dd70424d466ef9ef7b66f823d1cc" name="accb2dd70424d466ef9ef7b66f823d1cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb2dd70424d466ef9ef7b66f823d1cc">&#9670;&#160;</a></span>load() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,7 +430,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void * load </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
+          <td class="paramtype">const bx::FilePath &amp;</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -321,12 +440,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00102">102</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00103">103</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a546ef87a0e3c0d420178eebb96d56493" name="a546ef87a0e3c0d420178eebb96d56493"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a546ef87a0e3c0d420178eebb96d56493">&#9670;&#160;</a></span>loadProgram() <span class="overload">[1/2]</span></h2>
+<a id="ad915993e0346f2087213c09fd97ad7de" name="ad915993e0346f2087213c09fd97ad7de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad915993e0346f2087213c09fd97ad7de">&#9670;&#160;</a></span>loadProgram() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,22 +458,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_vsName</em></span>, </td>
+          <td class="paramtype">const bx::StringView &amp;</td>          <td class="paramname"><span class="paramname"><em>_vsName</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fsName</em></span>&#160;)</td>
+          <td class="paramtype">const bx::StringView &amp;</td>          <td class="paramname"><span class="paramname"><em>_fsName</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00203">203</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00199">199</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ad1a9ee6d4ed37ddb2432e80ac0764a37" name="ad1a9ee6d4ed37ddb2432e80ac0764a37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1a9ee6d4ed37ddb2432e80ac0764a37">&#9670;&#160;</a></span>loadProgram() <span class="overload">[2/2]</span></h2>
+<a id="a4d9994a36806a2172eba60f05338ba8d" name="a4d9994a36806a2172eba60f05338ba8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9994a36806a2172eba60f05338ba8d">&#9670;&#160;</a></span>loadProgram() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -362,22 +481,22 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bgfx::ProgramHandle loadProgram </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_vsName</em></span>, </td>
+          <td class="paramtype">const bx::StringView &amp;</td>          <td class="paramname"><span class="paramname"><em>_vsName</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fsName</em></span>&#160;)</td>
+          <td class="paramtype">const bx::StringView &amp;</td>          <td class="paramname"><span class="paramname"><em>_fsName</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00215">215</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00211">211</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae3d140e1025227619cc5b3f5e4f7c428" name="ae3d140e1025227619cc5b3f5e4f7c428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3d140e1025227619cc5b3f5e4f7c428">&#9670;&#160;</a></span>loadShader()</h2>
+<a id="aec795e4713fde55bd645b7716d07802f" name="aec795e4713fde55bd645b7716d07802f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec795e4713fde55bd645b7716d07802f">&#9670;&#160;</a></span>loadShader() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,18 +504,37 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bgfx::ShaderHandle loadShader </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_name</em></span></td><td>)</td>
+          <td class="paramtype">const bx::FilePath &amp;</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00197">197</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00191">191</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="adc6744662c3edd7760e22ea5bfc8bc8b" name="adc6744662c3edd7760e22ea5bfc8bc8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc6744662c3edd7760e22ea5bfc8bc8b">&#9670;&#160;</a></span>loadTexture() <span class="overload">[1/2]</span></h2>
+<a id="a3d90e3a0dbad7c8bee994dd47a97bf05" name="a3d90e3a0dbad7c8bee994dd47a97bf05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d90e3a0dbad7c8bee994dd47a97bf05">&#9670;&#160;</a></span>loadShader() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bgfx::ShaderHandle loadShader </td>
+          <td>(</td>
+          <td class="paramtype">const bx::StringView &amp;</td>          <td class="paramname"><span class="paramname"><em>_name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00185">185</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aad458f41e3cb9d44c593f51c6b3b731c" name="aad458f41e3cb9d44c593f51c6b3b731c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad458f41e3cb9d44c593f51c6b3b731c">&#9670;&#160;</a></span>loadTexture() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -409,7 +547,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
+          <td class="paramtype">const bx::FilePath &amp;</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -429,17 +567,27 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bimg::Orientation::Enum *</td>          <td class="paramname"><span class="paramname"><em>_orientation</em></span>&#160;)</td>
+          <td class="paramtype">bimg::Orientation::Enum *</td>          <td class="paramname"><span class="paramname"><em>_orientation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bx::Error *</td>          <td class="paramname"><span class="paramname"><em>_err</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6">TexturePreCreateFn</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_preCreate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00228">228</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00536">536</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af93635a404807dc1f0ae3b0cf614d008" name="af93635a404807dc1f0ae3b0cf614d008"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af93635a404807dc1f0ae3b0cf614d008">&#9670;&#160;</a></span>loadTexture() <span class="overload">[2/2]</span></h2>
+<a id="adf6e2c353f9907f64bbf45b69f7ae210" name="adf6e2c353f9907f64bbf45b69f7ae210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6e2c353f9907f64bbf45b69f7ae210">&#9670;&#160;</a></span>loadTexture() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -447,7 +595,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bgfx::TextureHandle loadTexture </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_name</em></span>, </td>
+          <td class="paramtype">const bx::FilePath &amp;</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -467,17 +615,86 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bimg::Orientation::Enum *</td>          <td class="paramname"><span class="paramname"><em>_orientation</em></span>&#160;)</td>
+          <td class="paramtype">bimg::Orientation::Enum *</td>          <td class="paramname"><span class="paramname"><em>_orientation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bx::Error *</td>          <td class="paramname"><span class="paramname"><em>_err</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6">TexturePreCreateFn</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_preCreate</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00320">320</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00571">571</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae0cc4150b145b10768af364171724d66" name="ae0cc4150b145b10768af364171724d66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0cc4150b145b10768af364171724d66">&#9670;&#160;</a></span>saveToFile()</h2>
+<a id="afba2cf652ad544207f412f1dee65b702" name="afba2cf652ad544207f412f1dee65b702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba2cf652ad544207f412f1dee65b702">&#9670;&#160;</a></span>loadTexture() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bgfx::TextureHandle loadTexture </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>_flags</em></span><span class="paramdefsep"> = </span><span class="paramdefval">BGFX_TEXTURE_NONE|BGFX_SAMPLER_NONE</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>_skip</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bgfx::TextureInfo *</td>          <td class="paramname"><span class="paramname"><em>_info</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bimg::Orientation::Enum *</td>          <td class="paramname"><span class="paramname"><em>_orientation</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bx::Error *</td>          <td class="paramname"><span class="paramname"><em>_err</em></span><span class="paramdefsep"> = </span><span class="paramdefval">NULL</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6">TexturePreCreateFn</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_preCreate</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load a texture from memory (DDS, KTX, PNG, etc.). <em>_name</em> is optional debug label. <em>_preCreate</em> is invoked after the image header has been parsed, right before the GPU texture is created. </p>
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00491">491</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aec1bdd65d683731b797048bde6d080c4" name="aec1bdd65d683731b797048bde6d080c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec1bdd65d683731b797048bde6d080c4">&#9670;&#160;</a></span>saveToFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -490,7 +707,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
+          <td class="paramtype">const bx::FilePath &amp;</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -510,7 +727,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00446">446</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00729">729</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -529,7 +746,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00108">108</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00109">109</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>

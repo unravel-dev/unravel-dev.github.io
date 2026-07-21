@@ -106,19 +106,28 @@ $(function(){initNavTree('pipeline_8h.html',''); initResizable(true); });
 <div class="textblock"><code>#include &lt;<a class="el" href="ecs_8h_source.html">engine/ecs/ecs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="layer__mask_8h_source.html">engine/layers/layer_mask.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="camera_8h_source.html">engine/rendering/camera.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="model_8h_source.html">engine/rendering/model.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="batch__collector_8h_source.html">engine/rendering/batch_collector.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="frame__buffer_8h_source.html">graphics/frame_buffer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="render__view_8h_source.html">graphics/render_view.h</a>&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &quot;<a class="el" href="assao__pass_8h_source.html">passes/assao_pass.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="atmospheric__pass_8h_source.html">passes/atmospheric_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="atmospheric__pass__perez_8h_source.html">passes/atmospheric_pass_perez.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="atmospheric__pass__skybox_8h_source.html">passes/atmospheric_pass_skybox.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="auto__exposure__pass_8h_source.html">passes/auto_exposure_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="blit__pass_8h_source.html">passes/blit_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fxaa__pass_8h_source.html">passes/fxaa_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hiz__pass_8h_source.html">passes/hiz_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="prefilter__pass_8h_source.html">passes/prefilter_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ssr__pass_8h_source.html">passes/ssr_pass.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ssil__pass_8h_source.html">passes/ssil_pass.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bloom__pass_8h_source.html">passes/bloom_pass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tonemapping__pass_8h_source.html">passes/tonemapping_pass.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="taa__pass_8h_source.html">passes/taa_pass.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="volume__resolver_8h_source.html">volume_resolver.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="ui__document__component_8h_source.html">engine/ui/ecs/components/ui_document_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="text__component_8h_source.html">engine/rendering/ecs/components/text_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="context_8hpp_source.html">context/context.hpp</a>&gt;</code><br />
 <code>#include &lt;hpp/small_vector.hpp&gt;</code><br />
@@ -130,8 +139,7 @@ $(function(){initNavTree('pipeline_8h.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1rendering_1_1lod__data.html">unravel::rendering::lod_data</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains level of detail (LOD) data for an entity.  <a href="structunravel_1_1rendering_1_1lod__data.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1rendering_1_1visibility__data.html">unravel::rendering::visibility_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1rendering_1_1pipeline__stats.html">unravel::rendering::pipeline_stats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,10 +157,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aa854e90e29ace9a61fe585ae0def6c37" id="r_aa854e90e29ace9a61fe585ae0def6c37"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1rendering.html#aa854e90e29ace9a61fe585ae0def6c37">unravel::rendering::lod_data_container</a> = std::map&lt;entt::handle, <a class="el" href="structunravel_1_1rendering_1_1lod__data.html">lod_data</a>&gt;</td></tr>
-<tr class="separator:aa854e90e29ace9a61fe585ae0def6c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac04748f7fc39e3d7826075cee0ce7ebc" id="r_ac04748f7fc39e3d7826075cee0ce7ebc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1rendering.html#ac04748f7fc39e3d7826075cee0ce7ebc">unravel::rendering::visibility_set_models_t</a> = hpp::small_vector&lt;entt::handle&gt;</td></tr>
-<tr class="separator:ac04748f7fc39e3d7826075cee0ce7ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7399e9f0694c437d17cf4575f693947f" id="r_a7399e9f0694c437d17cf4575f693947f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1rendering.html#a7399e9f0694c437d17cf4575f693947f">unravel::rendering::visibility_set_models_t</a> = hpp::small_vector&lt;<a class="el" href="structunravel_1_1rendering_1_1visibility__data.html">visibility_data</a>&gt;</td></tr>
+<tr class="separator:a7399e9f0694c437d17cf4575f693947f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

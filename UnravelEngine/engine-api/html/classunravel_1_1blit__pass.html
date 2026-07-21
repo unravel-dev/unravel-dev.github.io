@@ -116,9 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2472b82ad89172f0271b5490d330985b" id="r_a2472b82ad89172f0271b5490d330985b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2472b82ad89172f0271b5490d330985b">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
 <tr class="memdesc:a2472b82ad89172f0271b5490d330985b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called once (after bgfx::init() and after <code><a class="el" href="classunravel_1_1asset__manager.html" title="Manages assets, including loading, unloading, and storage.">asset_manager</a></code> is registered in context).  <br /></td></tr>
 <tr class="separator:a2472b82ad89172f0271b5490d330985b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe4078b6c1b5a6b290705a9092b178df" id="r_abe4078b6c1b5a6b290705a9092b178df"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe4078b6c1b5a6b290705a9092b178df">run</a> (const <a class="el" href="structunravel_1_1blit__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
-<tr class="memdesc:abe4078b6c1b5a6b290705a9092b178df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the blit: copies <code>params.input</code> → <code>params.output</code>. Returns the actual output framebuffer.  <br /></td></tr>
-<tr class="separator:abe4078b6c1b5a6b290705a9092b178df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05a2b3dc4c71e63f9b94981e0ca7cf1" id="r_ad05a2b3dc4c71e63f9b94981e0ca7cf1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad05a2b3dc4c71e63f9b94981e0ca7cf1">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1blit__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
+<tr class="memdesc:ad05a2b3dc4c71e63f9b94981e0ca7cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the blit: copies <code>params.input</code> → <code>params.output</code>. Returns the actual output framebuffer.  <br /></td></tr>
+<tr class="separator:ad05a2b3dc4c71e63f9b94981e0ca7cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -145,8 +145,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abe4078b6c1b5a6b290705a9092b178df" name="abe4078b6c1b5a6b290705a9092b178df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe4078b6c1b5a6b290705a9092b178df">&#9670;&#160;</a></span>run()</h2>
+<a id="ad05a2b3dc4c71e63f9b94981e0ca7cf1" name="ad05a2b3dc4c71e63f9b94981e0ca7cf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05a2b3dc4c71e63f9b94981e0ca7cf1">&#9670;&#160;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,15 +154,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto unravel::blit_pass::run </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structunravel_1_1blit__pass_1_1run__params.html">run_params</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1blit__pass_1_1run__params.html">run_params</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>&#160;) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Executes the blit: copies <code>params.input</code> → <code>params.output</code>. Returns the actual output framebuffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="blit__pass_8cpp_source.html#l00085">85</a> of file <a class="el" href="blit__pass_8cpp_source.html">blit_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="blit__pass_8cpp_source.html#l00061">61</a> of file <a class="el" href="blit__pass_8cpp_source.html">blit_pass.cpp</a>.</p>
 
 </div>
 </div>

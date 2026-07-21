@@ -8,5 +8,5 @@ var structunravel_1_1entity__add__component__action__t =
     [ "undo_action", "structunravel_1_1entity__add__component__action__t.html#a9b57f967287ee9e497b331a59f193915", null ],
     [ "component_type", "structunravel_1_1entity__add__component__action__t.html#a8f1e5902e72aeb366c42a375469cc5c2", null ],
     [ "do_was_successful", "structunravel_1_1entity__add__component__action__t.html#a3423d831f106f1dd45ad8ed6c9b5cfc4", null ],
-    [ "entity", "structunravel_1_1entity__add__component__action__t.html#ab0111446c976ab9fd7c13923a26318e3", null ]
+    [ "entity", "structunravel_1_1entity__add__component__action__t.html#a386dc67c0e0ffc84c1781968de3e6272", null ]
 ];

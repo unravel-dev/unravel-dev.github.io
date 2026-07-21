@@ -132,8 +132,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8f128cdb32b4bbac246f7ca679fa83c9" id="r_a8f128cdb32b4bbac246f7ca679fa83c9"><td class="memItemLeft" align="right" valign="top">const math::mat4 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f128cdb32b4bbac246f7ca679fa83c9">world_transform_ptr</a> = nullptr</td></tr>
 <tr class="memdesc:a8f128cdb32b4bbac246f7ca679fa83c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to world transformation matrix for this instance (valid only during frame processing)  <br /></td></tr>
 <tr class="separator:a8f128cdb32b4bbac246f7ca679fa83c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab186a6efc6abefcfee8f186b552283b0" id="r_ab186a6efc6abefcfee8f186b552283b0"><td class="memItemLeft" align="right" valign="top">math::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab186a6efc6abefcfee8f186b552283b0">lod_params</a> = math::vec3(0.0f, -1.0f, 0.0f)</td></tr>
-<tr class="memdesc:ab186a6efc6abefcfee8f186b552283b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">LOD blending parameters (x = current blend factor, y = target blend, z = transition time)  <br /></td></tr>
+<tr class="memitem:ab186a6efc6abefcfee8f186b552283b0" id="r_ab186a6efc6abefcfee8f186b552283b0"><td class="memItemLeft" align="right" valign="top">math::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab186a6efc6abefcfee8f186b552283b0">lod_params</a> = math::vec3(0.0f, 0.0f, 0.0f)</td></tr>
+<tr class="memdesc:ab186a6efc6abefcfee8f186b552283b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">LOD blending parameters (x = transition factor: +[0,1] = fade out, -[0,1] = fade in; y,z reserved)  <br /></td></tr>
 <tr class="separator:ab186a6efc6abefcfee8f186b552283b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8445f7b094a43d34b5d3866b3fa4a4b" id="r_ae8445f7b094a43d34b5d3866b3fa4a4b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8445f7b094a43d34b5d3866b3fa4a4b">padding</a> = 0.0f</td></tr>
 <tr class="memdesc:ae8445f7b094a43d34b5d3866b3fa4a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Padding to ensure alignment (unused, reserved for future use)  <br /></td></tr>
@@ -292,12 +292,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">math::vec3 unravel::batch_instance::lod_params = math::vec3(0.0f, -1.0f, 0.0f)</td>
+          <td class="memname">math::vec3 unravel::batch_instance::lod_params = math::vec3(0.0f, 0.0f, 0.0f)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>LOD blending parameters (x = current blend factor, y = target blend, z = transition time) </p>
+<p>LOD blending parameters (x = transition factor: +[0,1] = fade out, -[0,1] = fade in; y,z reserved) </p>
 
 <p class="definition">Definition at line <a class="el" href="batch__instance_8h_source.html#l00022">22</a> of file <a class="el" href="batch__instance_8h_source.html">batch_instance.h</a>.</p>
 

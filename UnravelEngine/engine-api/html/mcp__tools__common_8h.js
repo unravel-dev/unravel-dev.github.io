@@ -1,0 +1,25 @@
+var mcp__tools__common_8h =
+[
+    [ "unravel::mcp::transform_snapshot", "structunravel_1_1mcp_1_1transform__snapshot.html", "structunravel_1_1mcp_1_1transform__snapshot" ],
+    [ "apply_pose_direct", "mcp__tools__common_8h.html#a8be5d804cfddf9591f06412afef500f3", null ],
+    [ "bbox_to_json", "mcp__tools__common_8h.html#adf8a6a00610cce07799ee5298f4d064b", null ],
+    [ "contains_ci", "mcp__tools__common_8h.html#ac706fb8a6d01d539feaeeddec641dc9e", null ],
+    [ "empty_object_schema", "mcp__tools__common_8h.html#a1438a898a2355283565b98291e821433", null ],
+    [ "entity_id_string", "mcp__tools__common_8h.html#a86090bd4c4ac21d631f20dbac29f4e92", null ],
+    [ "find_entity", "mcp__tools__common_8h.html#a411eb5ca73ea3736442d88a5dd84fa40", null ],
+    [ "normalize_asset_type_filter", "mcp__tools__common_8h.html#adef06d6dd564c9f69fc24809aecaa3d1", null ],
+    [ "protocol_to_group", "mcp__tools__common_8h.html#a12d6c2271a650580ecb0b1d586ffcfba", null ],
+    [ "read_bool", "mcp__tools__common_8h.html#a71c7db1b8dfd6b3a26a8079eb1322a55", null ],
+    [ "read_double", "mcp__tools__common_8h.html#a725bdd8e989f0af151e77d3103680592", null ],
+    [ "read_string", "mcp__tools__common_8h.html#aac6b95086bc158e524a6349b647b106b", null ],
+    [ "read_transform_snapshot", "mcp__tools__common_8h.html#aea30551543fa6b8634027130515940a3", null ],
+    [ "read_transform_space", "mcp__tools__common_8h.html#aa58df2c84fda613153b170f6b8e24d52", null ],
+    [ "read_vec3", "mcp__tools__common_8h.html#a0b1da1d8a6e5f62092dccf3b5c1bb820", null ],
+    [ "read_wait_ms", "mcp__tools__common_8h.html#aa2c2d5fb17250dc744357c5b2a4c9139", null ],
+    [ "require_edit_scene", "mcp__tools__common_8h.html#a660b906df2e6762819b6ca2dce043d06", null ],
+    [ "require_not_play_mode", "mcp__tools__common_8h.html#a00720f2261fae7692fc8cd31a0ab8dfb", null ],
+    [ "require_open_project", "mcp__tools__common_8h.html#ab6908bc94aae7770453990cc9fccdcbb", null ],
+    [ "sleep_worker", "mcp__tools__common_8h.html#a11190f25314aaadd4aa991a800050aa7", null ],
+    [ "starts_with", "mcp__tools__common_8h.html#a9628cbe742b49900bdd5a4ef0312a605", null ],
+    [ "to_lower_ascii", "mcp__tools__common_8h.html#a62b305baf3e47ac4a57e3c0ea558cc31", null ]
+];

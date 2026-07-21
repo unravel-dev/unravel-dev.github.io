@@ -12,12 +12,20 @@ var imgui__notify_8h =
     [ "NOTIFY_PADDING_MESSAGE_Y", "imgui__notify_8h.html#a4fb432a810a2fa8924c24e2cbcae4354", null ],
     [ "NOTIFY_PADDING_X", "imgui__notify_8h.html#a1b2b6b93536885e0ab757e3b06100f7a", null ],
     [ "NOTIFY_PADDING_Y", "imgui__notify_8h.html#a9677b849889a666186bc17934035dbc1", null ],
+    [ "NOTIFY_RENDER_LIMIT", "imgui__notify_8h.html#a414832c0fdebe28f7e121cdea17d8554", null ],
     [ "NOTIFY_TOAST_FLAGS", "imgui__notify_8h.html#a9fdf7333e97f8ab093a78880eb8ebffb", null ],
+    [ "NOTIFY_USE_DISMISS_BUTTON", "imgui__notify_8h.html#ada24a36bf6f4b41bd785bfdbf0870c98", null ],
     [ "NOTIFY_USE_SEPARATOR", "imgui__notify_8h.html#a6f4575c1416a9ad0378fd68e1938176e", null ],
     [ "ImGuiToastDrawCallback", "imgui__notify_8h.html#aeb1bdc99e24e91f982db72a21679a398", null ],
+    [ "ImGuiToastHorizontalPos", "imgui__notify_8h.html#a968b17971eb1114dc5fadc78afa01b2f", null ],
     [ "ImGuiToastPhase", "imgui__notify_8h.html#ad129b7f3070a6e342d6319a2f1d305de", null ],
     [ "ImGuiToastPos", "imgui__notify_8h.html#a7549662a36c0e32d3bf1936c3c243748", null ],
     [ "ImGuiToastType", "imgui__notify_8h.html#a37619c915743b52657cba1c4c6902f95", null ],
+    [ "ImGuiToastHorizontalPos_", "imgui__notify_8h.html#a1f0b5eea3770228fa22cd4e00554ea08", [
+      [ "ImGuiToastHorizontalPos_Left", "imgui__notify_8h.html#a1f0b5eea3770228fa22cd4e00554ea08a0f4ae33c6748c2882d23794b7f7defd1", null ],
+      [ "ImGuiToastHorizontalPos_Right", "imgui__notify_8h.html#a1f0b5eea3770228fa22cd4e00554ea08ac756ca4905260397a2f9142fb1456c6e", null ],
+      [ "ImGuiToastHorizontalPos_COUNT", "imgui__notify_8h.html#a1f0b5eea3770228fa22cd4e00554ea08a70d552ae2f3bcc863a70f4fb4e7ffc44", null ]
+    ] ],
     [ "ImGuiToastPhase_", "imgui__notify_8h.html#a288ef548df9fe6b406ab5a37fb86f471", [
       [ "ImGuiToastPhase_FadeIn", "imgui__notify_8h.html#a288ef548df9fe6b406ab5a37fb86f471ad61d70081a71c6d42805b272cccd5a0d", null ],
       [ "ImGuiToastPhase_Wait", "imgui__notify_8h.html#a288ef548df9fe6b406ab5a37fb86f471a3e0d1b2e5981674c777eec02ee4e2b44", null ],

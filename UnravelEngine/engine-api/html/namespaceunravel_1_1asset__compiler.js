@@ -18,7 +18,10 @@ var namespaceunravel_1_1asset__compiler =
     [ "compile< style_sheet >", "namespaceunravel_1_1asset__compiler.html#a43977f7fc13983eb05c5ac65488043cb", null ],
     [ "compile< ui_tree >", "namespaceunravel_1_1asset__compiler.html#ae527f6fbe971ffb9bf32f612876b47bc", null ],
     [ "get_manifest_path", "namespaceunravel_1_1asset__compiler.html#a13ba4c2205b20181fab226ce3699da90", null ],
+    [ "is_compiled_format_changed", "namespaceunravel_1_1asset__compiler.html#a4313e8f9625bed0112845cd064a61926", null ],
+    [ "is_fingerprint_algorithm_current", "namespaceunravel_1_1asset__compiler.html#a62c5843feaa1b0e2916a8b9cf35c74ed", null ],
     [ "is_source_file_changed", "namespaceunravel_1_1asset__compiler.html#aaa344a1c4e78cf8d0886002e6c96d5cd", null ],
+    [ "is_source_file_changed", "namespaceunravel_1_1asset__compiler.html#a7c219cfe9d8a41783c5c6d07eb0a7abb", null ],
     [ "load_manifest", "namespaceunravel_1_1asset__compiler.html#abd4a1de6727070234d587b2d4a588884", null ],
     [ "parse_compilation_errors", "namespaceunravel_1_1asset__compiler.html#ab61818f6d62a788be2d4ded1c1d4548c", null ],
     [ "parse_compilation_warnings", "namespaceunravel_1_1asset__compiler.html#a832743876b204a36fc8bd22967176988", null ],
@@ -27,5 +30,10 @@ var namespaceunravel_1_1asset__compiler =
     [ "read_importer< audio_clip >", "namespaceunravel_1_1asset__compiler.html#aa234e8de1c838b115d853d78ec40a152", null ],
     [ "read_importer< gfx::texture >", "namespaceunravel_1_1asset__compiler.html#ae42815964c62056306d62ac2dc2808ff", null ],
     [ "read_importer< mesh >", "namespaceunravel_1_1asset__compiler.html#ad1d0daf58fe786f69dd8f60ad8c5f84c", null ],
+    [ "resolve_dependencies", "namespaceunravel_1_1asset__compiler.html#ae6acdb6289da494458bce87ff3eec3ef", null ],
+    [ "resolve_dependencies< gfx::shader >", "namespaceunravel_1_1asset__compiler.html#aac47129347cbeab9bbf6ec341cd49836", null ],
+    [ "resolve_dependencies< gfx::shader >", "namespaceunravel_1_1asset__compiler.html#aac47129347cbeab9bbf6ec341cd49836", null ],
+    [ "resolve_dependencies< ui_tree >", "namespaceunravel_1_1asset__compiler.html#a439f551f1cad53675c7420ef901fef4b", null ],
+    [ "resolve_dependencies< ui_tree >", "namespaceunravel_1_1asset__compiler.html#a439f551f1cad53675c7420ef901fef4b", null ],
     [ "save_manifest", "namespaceunravel_1_1asset__compiler.html#a91dafe038bf26d04c66f4d8af615a6c6", null ]
 ];

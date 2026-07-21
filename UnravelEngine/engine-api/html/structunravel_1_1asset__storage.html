@@ -128,9 +128,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a8834205f76b130b5d6ea8408b94f0123"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8834205f76b130b5d6ea8408b94f0123">callable</a> = std::function&lt;F&gt;</td></tr>
 <tr class="memdesc:a8834205f76b130b5d6ea8408b94f0123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for callable functions.  <br /></td></tr>
 <tr class="separator:a8834205f76b130b5d6ea8408b94f0123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3350cef46847f725ca048d6003726003" id="r_a3350cef46847f725ca048d6003726003"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3350cef46847f725ca048d6003726003">load_from_file_t</a> = <a class="el" href="#a8834205f76b130b5d6ea8408b94f0123">callable</a>&lt;bool(tpp::thread_pool&amp; pool, <a class="el" href="structasset__handle.html">asset_handle</a>&lt;T&gt;&amp;, const std::string&amp;)&gt;</td></tr>
-<tr class="memdesc:a3350cef46847f725ca048d6003726003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type for loading from file.  <br /></td></tr>
-<tr class="separator:a3350cef46847f725ca048d6003726003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2a6ec7265f05590f3bdd17331f25dc" id="r_a3e2a6ec7265f05590f3bdd17331f25dc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e2a6ec7265f05590f3bdd17331f25dc">load_from_file_t</a> = <a class="el" href="#a8834205f76b130b5d6ea8408b94f0123">callable</a>&lt;bool(tpp::thread_pool&amp; pool, <a class="el" href="structasset__handle.html">asset_handle</a>&lt;T&gt;&amp;, const std::string&amp;, <a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8c">load_mode</a>)&gt;</td></tr>
+<tr class="memdesc:a3e2a6ec7265f05590f3bdd17331f25dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type for loading from file.  <br /></td></tr>
+<tr class="separator:a3e2a6ec7265f05590f3bdd17331f25dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b5e16276ed926901b423acd739532ee" id="r_a6b5e16276ed926901b423acd739532ee"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b5e16276ed926901b423acd739532ee">predicate_t</a> = <a class="el" href="#a8834205f76b130b5d6ea8408b94f0123">callable</a>&lt;bool(const <a class="el" href="structasset__handle.html">asset_handle</a>&lt;T&gt;&amp;)&gt;</td></tr>
 <tr class="memdesc:a6b5e16276ed926901b423acd739532ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type for loading from instance. Predicate function type.  <br /></td></tr>
 <tr class="separator:a6b5e16276ed926901b423acd739532ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,13 +162,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ee36d922d8518a86e3e8313fd4cbdf2" id="r_a3ee36d922d8518a86e3e8313fd4cbdf2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ee36d922d8518a86e3e8313fd4cbdf2">get_group</a> (const std::string &amp;group) const -&gt; std::vector&lt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &gt;</td></tr>
 <tr class="memdesc:a3ee36d922d8518a86e3e8313fd4cbdf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all assets in a specified group.  <br /></td></tr>
 <tr class="separator:a3ee36d922d8518a86e3e8313fd4cbdf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cabde8365707b78ab71b265efe75895" id="r_a8cabde8365707b78ab71b265efe75895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cabde8365707b78ab71b265efe75895">evict_unused</a> (tpp::thread_pool &amp;pool, const std::string &amp;group, std::chrono::steady_clock::duration max_idle) final</td></tr>
+<tr class="memdesc:a8cabde8365707b78ab71b265efe75895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evicts loaded assets not accessed within the given duration. Assets whose weak_ptr has expired (no external references) and that have been idle longer than max_idle are demoted back to deferred state.  <br /></td></tr>
+<tr class="separator:a8cabde8365707b78ab71b265efe75895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35d95c437775ebf8b087192dbfb89c5" id="r_ac35d95c437775ebf8b087192dbfb89c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac35d95c437775ebf8b087192dbfb89c5">preload_all</a> () final</td></tr>
+<tr class="memdesc:ac35d95c437775ebf8b087192dbfb89c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers loading on all deferred handles in this storage. Non-blocking: starts background loads but does not wait.  <br /></td></tr>
+<tr class="separator:ac35d95c437775ebf8b087192dbfb89c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structunravel_1_1basic__storage"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structunravel_1_1basic__storage')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structunravel_1_1basic__storage.html">unravel::basic_storage</a></td></tr>
 <tr class="memitem:a3ddc4e5cd2ade1cdb549e98f3f897989 inherit pub_methods_structunravel_1_1basic__storage" id="r_a3ddc4e5cd2ade1cdb549e98f3f897989"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1basic__storage.html#a3ddc4e5cd2ade1cdb549e98f3f897989">~basic_storage</a> ()=default</td></tr>
 <tr class="separator:a3ddc4e5cd2ade1cdb549e98f3f897989 inherit pub_methods_structunravel_1_1basic__storage"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae8424bf1d4944f45b634378f5adecd20" id="r_ae8424bf1d4944f45b634378f5adecd20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a3350cef46847f725ca048d6003726003">load_from_file_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8424bf1d4944f45b634378f5adecd20">load_from_file</a></td></tr>
+<tr class="memitem:ae8424bf1d4944f45b634378f5adecd20" id="r_ae8424bf1d4944f45b634378f5adecd20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a3e2a6ec7265f05590f3bdd17331f25dc">load_from_file_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8424bf1d4944f45b634378f5adecd20">load_from_file</a></td></tr>
 <tr class="memdesc:ae8424bf1d4944f45b634378f5adecd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for loading assets from file.  <br /></td></tr>
 <tr class="separator:ae8424bf1d4944f45b634378f5adecd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37db70d5c19235a4d70bacdd09871a45" id="r_a37db70d5c19235a4d70bacdd09871a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a658c51c47741e4754b88e5fdad30ab42">load_from_instance_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37db70d5c19235a4d70bacdd09871a45">load_from_instance</a></td></tr>
@@ -191,7 +197,7 @@ struct unravel::asset_storage&lt; T &gt;</div><p>Manages storage and loading of 
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00353">353</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00472">472</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a8834205f76b130b5d6ea8408b94f0123" name="a8834205f76b130b5d6ea8408b94f0123"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8834205f76b130b5d6ea8408b94f0123">&#9670;&#160;</a></span>callable</h2>
@@ -211,12 +217,12 @@ template&lt;typename F &gt; </div>
 
 <p>Type alias for callable functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00359">359</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00478">478</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
-<a id="a3350cef46847f725ca048d6003726003" name="a3350cef46847f725ca048d6003726003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3350cef46847f725ca048d6003726003">&#9670;&#160;</a></span>load_from_file_t</h2>
+<a id="a3e2a6ec7265f05590f3bdd17331f25dc" name="a3e2a6ec7265f05590f3bdd17331f25dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2a6ec7265f05590f3bdd17331f25dc">&#9670;&#160;</a></span>load_from_file_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,14 +230,14 @@ template&lt;typename F &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structunravel_1_1asset__storage.html">unravel::asset_storage</a>&lt; T &gt;::load_from_file_t = <a class="el" href="#a8834205f76b130b5d6ea8408b94f0123">callable</a>&lt;bool(tpp::thread_pool&amp; pool, <a class="el" href="structasset__handle.html">asset_handle</a>&lt;T&gt;&amp;, const std::string&amp;)&gt;</td>
+          <td class="memname">using <a class="el" href="structunravel_1_1asset__storage.html">unravel::asset_storage</a>&lt; T &gt;::load_from_file_t = <a class="el" href="#a8834205f76b130b5d6ea8408b94f0123">callable</a>&lt;bool(tpp::thread_pool&amp; pool, <a class="el" href="structasset__handle.html">asset_handle</a>&lt;T&gt;&amp;, const std::string&amp;, <a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8c">load_mode</a>)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Function type for loading from file. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00362">362</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00481">481</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +255,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00366">366</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00485">485</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -269,7 +275,7 @@ template&lt;typename T &gt; </div>
 
 <p>Function type for loading from instance. Predicate function type. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00365">365</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00484">484</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +295,7 @@ template&lt;typename T &gt; </div>
 
 <p>Container for asset requests. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00356">356</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00475">475</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -322,6 +328,55 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8cabde8365707b78ab71b265efe75895" name="a8cabde8365707b78ab71b265efe75895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cabde8365707b78ab71b265efe75895">&#9670;&#160;</a></span>evict_unused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structunravel_1_1asset__storage.html">unravel::asset_storage</a>&lt; T &gt;::evict_unused </td>
+          <td>(</td>
+          <td class="paramtype">tpp::thread_pool &amp;</td>          <td class="paramname"><span class="paramname"><em>pool</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>group</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::steady_clock::duration</td>          <td class="paramname"><span class="paramname"><em>max_idle</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evicts loaded assets not accessed within the given duration. Assets whose weak_ptr has expired (no external references) and that have been idle longer than max_idle are demoted back to deferred state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>The thread pool. </td></tr>
+    <tr><td class="paramname">max_idle</td><td>Maximum idle duration before eviction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="structunravel_1_1basic__storage.html#abcbe082ce182ac79bc4b9feb7ef65859">unravel::basic_storage</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00613">613</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+
+</div>
+</div>
 <a id="a3ee36d922d8518a86e3e8313fd4cbdf2" name="a3ee36d922d8518a86e3e8313fd4cbdf2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ee36d922d8518a86e3e8313fd4cbdf2">&#9670;&#160;</a></span>get_group()</h2>
 
@@ -357,7 +412,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of asset handles in the group. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00476">476</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00595">595</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +451,40 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of asset handles that satisfy the condition. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00453">453</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00572">572</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+
+</div>
+</div>
+<a id="ac35d95c437775ebf8b087192dbfb89c5" name="ac35d95c437775ebf8b087192dbfb89c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35d95c437775ebf8b087192dbfb89c5">&#9670;&#160;</a></span>preload_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structunravel_1_1asset__storage.html">unravel::asset_storage</a>&lt; T &gt;::preload_all </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Triggers loading on all deferred handles in this storage. Non-blocking: starts background loads but does not wait. </p>
+
+<p>Implements <a class="el" href="structunravel_1_1basic__storage.html#a28d12e018216355b6bf5a0694d888f8a">unravel::basic_storage</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00640">640</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +523,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="structunravel_1_1basic__storage.html#a0a8ec865a87d89b7f99f3db5264dad68">unravel::basic_storage</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00408">408</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00527">527</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -479,7 +567,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="structunravel_1_1basic__storage.html#a7f75297450c314162f7ad4aff3338179">unravel::basic_storage</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00422">422</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00541">541</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +609,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00375">375</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00494">494</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -565,7 +653,7 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="structunravel_1_1basic__storage.html#a037d75c7706aef093b1d756895743056">unravel::basic_storage</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00438">438</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00557">557</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -607,7 +695,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00386">386</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00505">505</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -628,7 +716,7 @@ template&lt;typename T &gt; </div>
 
 <p>Container for asset requests. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00492">492</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00657">657</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -656,7 +744,7 @@ template&lt;typename T &gt; </div>
 
 <p>Mutex for container operations. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00494">494</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00659">659</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -669,14 +757,14 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a3350cef46847f725ca048d6003726003">load_from_file_t</a> <a class="el" href="structunravel_1_1asset__storage.html">unravel::asset_storage</a>&lt; T &gt;::load_from_file</td>
+          <td class="memname"><a class="el" href="#a3e2a6ec7265f05590f3bdd17331f25dc">load_from_file_t</a> <a class="el" href="structunravel_1_1asset__storage.html">unravel::asset_storage</a>&lt; T &gt;::load_from_file</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Function for loading assets from file. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00488">488</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00653">653</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -696,7 +784,7 @@ template&lt;typename T &gt; </div>
 
 <p>Function for loading assets from instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00490">490</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00655">655</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>

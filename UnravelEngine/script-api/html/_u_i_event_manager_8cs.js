@@ -1,6 +1,7 @@
 var _u_i_event_manager_8cs =
 [
     [ "Unravel.Core.UIEventBase", "class_unravel_1_1_core_1_1_u_i_event_base.html", "class_unravel_1_1_core_1_1_u_i_event_base" ],
+    [ "Unravel.Core.UIEventManager", "class_unravel_1_1_core_1_1_u_i_event_manager.html", "class_unravel_1_1_core_1_1_u_i_event_manager" ],
     [ "EventPhase", "_u_i_event_manager_8cs.html#adb276b979c8a2b883b67480b5a3506ff", [
       [ "None", "_u_i_event_manager_8cs.html#adb276b979c8a2b883b67480b5a3506ffa6adf97f83acf6453d4a6a4b1070f3754", null ],
       [ "Capture", "_u_i_event_manager_8cs.html#adb276b979c8a2b883b67480b5a3506ffa44a50f07b4bdc57740901280f9eddaf5", null ],

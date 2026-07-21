@@ -114,6 +114,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings_1_1cone__tracing__settings.html">cone_tracing_settings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cone tracing parameters.  <a href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings_1_1cone__tracing__settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings_1_1spatial__denoise__settings.html">spatial_denoise_settings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatial denoise parameters (a-trous wavelet filter between trace and temporal resolve)  <a href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings_1_1spatial__denoise__settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings_1_1temporal__settings.html">temporal_settings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporal accumulation parameters.  <a href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings_1_1temporal__settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,7 +126,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a296c66bee1bf601d9a3437af3c1a7f80" id="r_a296c66bee1bf601d9a3437af3c1a7f80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a296c66bee1bf601d9a3437af3c1a7f80">max_steps</a> = 64</td></tr>
 <tr class="memdesc:a296c66bee1bf601d9a3437af3c1a7f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum ray marching steps for hierarchical traversal.  <br /></td></tr>
 <tr class="separator:a296c66bee1bf601d9a3437af3c1a7f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac21b39f3502a077dfb814495bc9c6cfd" id="r_ac21b39f3502a077dfb814495bc9c6cfd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac21b39f3502a077dfb814495bc9c6cfd">max_rays</a> = 8</td></tr>
+<tr class="memitem:ac21b39f3502a077dfb814495bc9c6cfd" id="r_ac21b39f3502a077dfb814495bc9c6cfd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac21b39f3502a077dfb814495bc9c6cfd">max_rays</a> = 4</td></tr>
 <tr class="memdesc:ac21b39f3502a077dfb814495bc9c6cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum rays for rough surfaces (future: cone tracing)  <br /></td></tr>
 <tr class="separator:ac21b39f3502a077dfb814495bc9c6cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0326f84ae5ad0f5c026693baef072c" id="r_a2b0326f84ae5ad0f5c026693baef072c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b0326f84ae5ad0f5c026693baef072c">depth_tolerance</a> = 0.1f</td></tr>
@@ -142,11 +145,9 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:af2619b04049bd025c19cd833efc75c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen edge fade start.  <br /></td></tr>
 <tr class="separator:af2619b04049bd025c19cd833efc75c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a59fc30adf53b176a6c26d852557e9f" id="r_a8a59fc30adf53b176a6c26d852557e9f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a59fc30adf53b176a6c26d852557e9f">fade_in_end</a> = 0.2f</td></tr>
-<tr class="memdesc:a8a59fc30adf53b176a6c26d852557e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen edge fade end.  <br /></td></tr>
 <tr class="separator:a8a59fc30adf53b176a6c26d852557e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12216e250faf469f07cf8c7f5e22ed18" id="r_a12216e250faf469f07cf8c7f5e22ed18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12216e250faf469f07cf8c7f5e22ed18">enable_half_res</a> = false</td></tr>
-<tr class="memdesc:a12216e250faf469f07cf8c7f5e22ed18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable half resolution for SSR buffers.  <br /></td></tr>
-<tr class="separator:a12216e250faf469f07cf8c7f5e22ed18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8f654421063476dfef7b158a3472e5" id="r_a2d8f654421063476dfef7b158a3472e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceunravel.html#a47d1596711acdbef6fd863da2aedd4bb">trace_resolution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d8f654421063476dfef7b158a3472e5">resolution</a> = <a class="el" href="namespaceunravel.html#a47d1596711acdbef6fd863da2aedd4bbae9dc924f238fa6cc29465942875fe8f0">trace_resolution::full</a></td></tr>
+<tr class="separator:a2d8f654421063476dfef7b158a3472e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab12e3b08cc24a80c93d1f3a90b84c954" id="r_ab12e3b08cc24a80c93d1f3a90b84c954"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab12e3b08cc24a80c93d1f3a90b84c954">enable_cone_tracing</a> = false</td></tr>
 <tr class="memdesc:ab12e3b08cc24a80c93d1f3a90b84c954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable cone tracing for glossy reflections.  <br /></td></tr>
 <tr class="separator:ab12e3b08cc24a80c93d1f3a90b84c954"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,11 +160,17 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a61e53cd68b03a759b9ff4edafbce6cae" id="r_a61e53cd68b03a759b9ff4edafbce6cae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings_1_1temporal__settings.html">temporal_settings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61e53cd68b03a759b9ff4edafbce6cae">temporal</a></td></tr>
 <tr class="memdesc:a61e53cd68b03a759b9ff4edafbce6cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporal accumulation settings.  <br /></td></tr>
 <tr class="separator:a61e53cd68b03a759b9ff4edafbce6cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef4b13c3d753b06fd3a7d5e34909018" id="r_a8ef4b13c3d753b06fd3a7d5e34909018"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ef4b13c3d753b06fd3a7d5e34909018">enable_spatial_denoise</a> = false</td></tr>
+<tr class="memdesc:a8ef4b13c3d753b06fd3a7d5e34909018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable spatial denoising before temporal resolve.  <br /></td></tr>
+<tr class="separator:a8ef4b13c3d753b06fd3a7d5e34909018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff11d8b2ec93f60c05d0dd00c5eef410" id="r_aff11d8b2ec93f60c05d0dd00c5eef410"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings_1_1spatial__denoise__settings.html">spatial_denoise_settings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff11d8b2ec93f60c05d0dd00c5eef410">spatial_denoise</a></td></tr>
+<tr class="memdesc:aff11d8b2ec93f60c05d0dd00c5eef410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spatial denoise settings.  <br /></td></tr>
+<tr class="separator:aff11d8b2ec93f60c05d0dd00c5eef410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>FidelityFX SSR settings. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00019">19</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00020">20</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a9864914e787d6a89cec8b780a4ce37ba" name="a9864914e787d6a89cec8b780a4ce37ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9864914e787d6a89cec8b780a4ce37ba">&#9670;&#160;</a></span>brightness</h2>
@@ -179,7 +186,7 @@ Public Attributes</h2></td></tr>
 
 <p>Reflection brightness multiplier. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00044">44</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00045">45</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -197,7 +204,7 @@ Public Attributes</h2></td></tr>
 
 <p>Cone tracing specific settings. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00052">52</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00055">55</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -215,7 +222,7 @@ Public Attributes</h2></td></tr>
 
 <p>Depth tolerance for hit validation. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00043">43</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00044">44</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -233,25 +240,25 @@ Public Attributes</h2></td></tr>
 
 <p>Enable cone tracing for glossy reflections. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00051">51</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00054">54</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
-<a id="a12216e250faf469f07cf8c7f5e22ed18" name="a12216e250faf469f07cf8c7f5e22ed18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12216e250faf469f07cf8c7f5e22ed18">&#9670;&#160;</a></span>enable_half_res</h2>
+<a id="a8ef4b13c3d753b06fd3a7d5e34909018" name="a8ef4b13c3d753b06fd3a7d5e34909018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef4b13c3d753b06fd3a7d5e34909018">&#9670;&#160;</a></span>enable_spatial_denoise</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool unravel::ssr_pass::fidelityfx_ssr_settings::enable_half_res = false</td>
+          <td class="memname">bool unravel::ssr_pass::fidelityfx_ssr_settings::enable_spatial_denoise = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable half resolution for SSR buffers. </p>
+<p>Enable spatial denoising before temporal resolve. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00049">49</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00071">71</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -269,7 +276,7 @@ Public Attributes</h2></td></tr>
 
 <p>Enable temporal accumulation. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00055">55</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00058">58</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -287,7 +294,7 @@ Public Attributes</h2></td></tr>
 
 <p>Fade factor for camera-facing reflections. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00045">45</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00046">46</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -302,10 +309,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Screen edge fade end </p>
 
-<p>Screen edge fade end. </p>
-
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00048">48</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00049">49</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -323,7 +329,7 @@ Public Attributes</h2></td></tr>
 
 <p>Screen edge fade start. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00047">47</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00048">48</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -334,14 +340,14 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int unravel::ssr_pass::fidelityfx_ssr_settings::max_rays = 8</td>
+          <td class="memname">int unravel::ssr_pass::fidelityfx_ssr_settings::max_rays = 4</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Maximum rays for rough surfaces (future: cone tracing) </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00042">42</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00043">43</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -359,7 +365,24 @@ Public Attributes</h2></td></tr>
 
 <p>Maximum ray marching steps for hierarchical traversal. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00041">41</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00042">42</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="a2d8f654421063476dfef7b158a3472e5" name="a2d8f654421063476dfef7b158a3472e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8f654421063476dfef7b158a3472e5">&#9670;&#160;</a></span>resolution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceunravel.html#a47d1596711acdbef6fd863da2aedd4bb">trace_resolution</a> unravel::ssr_pass::fidelityfx_ssr_settings::resolution = <a class="el" href="namespaceunravel.html#a47d1596711acdbef6fd863da2aedd4bbae9dc924f238fa6cc29465942875fe8f0">trace_resolution::full</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Trace resolution divisor. SSR is runtime-capped at <code>half</code> because sub-half tracing breaks Hi-Z traversal, temporal clamp and the spatial denoiser. </p>
+
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00052">52</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -377,7 +400,25 @@ Public Attributes</h2></td></tr>
 
 <p>Additional depth tolerance for rough surfaces. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00046">46</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00047">47</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="aff11d8b2ec93f60c05d0dd00c5eef410" name="aff11d8b2ec93f60c05d0dd00c5eef410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff11d8b2ec93f60c05d0dd00c5eef410">&#9670;&#160;</a></span>spatial_denoise</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings_1_1spatial__denoise__settings.html">spatial_denoise_settings</a> unravel::ssr_pass::fidelityfx_ssr_settings::spatial_denoise</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Spatial denoise settings. </p>
+
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00072">72</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +436,7 @@ Public Attributes</h2></td></tr>
 
 <p>Temporal accumulation settings. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00057">57</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00060">60</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 
 </div>
 </div>

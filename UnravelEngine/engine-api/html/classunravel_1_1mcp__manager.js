@@ -1,0 +1,22 @@
+var classunravel_1_1mcp__manager =
+[
+    [ "mcp_manager", "classunravel_1_1mcp__manager.html#a33ead8d22441da4e12aaf7719dff20e7", null ],
+    [ "~mcp_manager", "classunravel_1_1mcp__manager.html#a264b3db53b6efc0490fb20edf7978367", null ],
+    [ "clear_activity", "classunravel_1_1mcp__manager.html#acfe036f966c504cc669d86c94b8afca3", null ],
+    [ "deinit", "classunravel_1_1mcp__manager.html#ad4b841da14d8a483bc468ff68f146197", null ],
+    [ "get_endpoint_url", "classunravel_1_1mcp__manager.html#a9b90dc3d0d5c7971d7dad5e9b243e5ba", null ],
+    [ "get_error_count", "classunravel_1_1mcp__manager.html#a24f6ce5b3495711cb55efa17157aef0c", null ],
+    [ "get_health_url", "classunravel_1_1mcp__manager.html#a2df2fc774974c577b70695a01ef4b5f5", null ],
+    [ "get_host", "classunravel_1_1mcp__manager.html#a7ef2706aeef755273ab27bba6e98e300", null ],
+    [ "get_port", "classunravel_1_1mcp__manager.html#aecec361d6ef7658355c4a282ac3cf928", null ],
+    [ "get_request_count", "classunravel_1_1mcp__manager.html#a0bb3440c8b34c6febb758125d0b487ee", null ],
+    [ "get_tool_call_count", "classunravel_1_1mcp__manager.html#a2beb02d5e50275cc1e658fe332355262", null ],
+    [ "get_tool_count", "classunravel_1_1mcp__manager.html#adcd91803d666dfeb755fa2a7751b88e8", null ],
+    [ "init", "classunravel_1_1mcp__manager.html#aea57ab9db74fb087a2e262818a1ba791", null ],
+    [ "invoke_on_main", "classunravel_1_1mcp__manager.html#ac33cdddb92cf1b024dabd72aae01f085", null ],
+    [ "is_enabled", "classunravel_1_1mcp__manager.html#ad1792de726c26ee5179617d3e0e8ef54", null ],
+    [ "is_running", "classunravel_1_1mcp__manager.html#add0b1731aae3e5d192375a78fbb1841a", null ],
+    [ "snapshot_activity", "classunravel_1_1mcp__manager.html#a35244c0d4697ca55b3b0fc3c6ed807d8", null ],
+    [ "start", "classunravel_1_1mcp__manager.html#a10cd0534d8e6a08d12c8140a4ed56de5", null ],
+    [ "stop", "classunravel_1_1mcp__manager.html#a5aecd409eba0688c96f9ddcd7903a3c3", null ]
+];

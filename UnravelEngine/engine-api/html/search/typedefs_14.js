@@ -13,5 +13,6 @@ var searchData=
   ['view_5fid_10',['view_id',['../namespacegfx.html#aab4cbe9dc5e1938791196b3a2e2b7f16',1,'gfx']]],
   ['view_5fmode_11',['view_mode',['../namespacegfx.html#ae21185e71dbb619385f0c4f3bddc815f',1,'gfx']]],
   ['visibility_5fflags_12',['visibility_flags',['../classunravel_1_1rendering_1_1pipeline.html#ab7d709bbeac0eb2a01a8c40a86fa90ea',1,'unravel::rendering::pipeline']]],
-  ['visibility_5fset_5fmodels_5ft_13',['visibility_set_models_t',['../namespaceunravel_1_1rendering.html#ac04748f7fc39e3d7826075cee0ce7ebc',1,'unravel::rendering']]]
+  ['visibility_5fset_5fmodels_5ft_13',['visibility_set_models_t',['../namespaceunravel_1_1rendering.html#a7399e9f0694c437d17cf4575f693947f',1,'unravel::rendering']]],
+  ['visualizer_5ffn_14',['visualizer_fn',['../structunravel_1_1loading__screen.html#a36950f67ccb29ab70474ae6c4f9622e1',1,'unravel::loading_screen']]]
 ];

@@ -102,11 +102,11 @@ $(function(){initNavTree('scripting_2ecs_2components_2script__component_8cpp.htm
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="script__component_8h_source.html">script_component.h</a>&quot;</code><br />
-<code>#include &lt;monopp/mono_property.h&gt;</code><br />
-<code>#include &lt;monopp/mono_property_invoker.h&gt;</code><br />
+<code>#include &lt;dotnetpp/dotnetpp.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2events_8h_source.html">engine/events.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="play__mode_8h_source.html">engine/play_mode.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script__system_8h_source.html">engine/scripting/ecs/systems/script_system.h</a>&gt;</code><br />
 </div>
 <p><a href="scripting_2ecs_2components_2script__component_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -116,119 +116,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a06f14a9abd47b91465f895d5259cdc1b" name="a06f14a9abd47b91465f895d5259cdc1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f14a9abd47b91465f895d5259cdc1b">&#9670;&#160;</a></span>distance</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float distance {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00024">24</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ac7155760e2c3ffcfabfb37cd74809825" name="ac7155760e2c3ffcfabfb37cd74809825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7155760e2c3ffcfabfb37cd74809825">&#9670;&#160;</a></span>impulse</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float impulse {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00025">25</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a2aca6e787a829692d2c80d53696285d1" name="a2aca6e787a829692d2c80d53696285d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aca6e787a829692d2c80d53696285d1">&#9670;&#160;</a></span>normal</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">managed_vector3 normal {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00023">23</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a42875751f5c08f633eb69c2af89a13d6" name="a42875751f5c08f633eb69c2af89a13d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42875751f5c08f633eb69c2af89a13d6">&#9670;&#160;</a></span>point</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">managed_vector3 point {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00022">22</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ad0da36b2558901e21e7a30f6c227a45e" name="ad0da36b2558901e21e7a30f6c227a45e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0da36b2558901e21e7a30f6c227a45e">&#9670;&#160;</a></span>x</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float x</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00017">17</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aa4f0d3eebc3c443f9be81bf48561a217" name="aa4f0d3eebc3c443f9be81bf48561a217"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4f0d3eebc3c443f9be81bf48561a217">&#9670;&#160;</a></span>y</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float y</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00017">17</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
-
-</div>
-</div>
-<a id="af73583b1e980b0aa03f9884812e9fd4d" name="af73583b1e980b0aa03f9884812e9fd4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af73583b1e980b0aa03f9884812e9fd4d">&#9670;&#160;</a></span>z</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float z</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00017">17</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

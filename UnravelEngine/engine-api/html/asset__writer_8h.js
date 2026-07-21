@@ -5,6 +5,7 @@ var asset__writer_8h =
     [ "atomic_save_to_file", "asset__writer_8h.html#a36a80521ed942611e957a3ecf83d34b0", null ],
     [ "atomic_save_to_file", "asset__writer_8h.html#ad52b30e7fec41bf7a56880b4dbf805c7", null ],
     [ "atomic_write_file", "asset__writer_8h.html#af1abd5cde17c8475673b86ee6f40eb4c", null ],
+    [ "cleanup_stale_temp_files", "asset__writer_8h.html#a5be8f2bbf96f4eab6308936a7aa1d26f", null ],
     [ "make_temp_path", "asset__writer_8h.html#a267933cc8c4828dee48c4d65a6e0c745", null ],
     [ "resolve_meta_file", "asset__writer_8h.html#ad8a96cadef0d8476ae4981c7a3eef0a0", null ]
 ];

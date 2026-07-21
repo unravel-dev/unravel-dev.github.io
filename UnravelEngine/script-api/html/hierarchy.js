@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "Unravel.Core.Application", "class_unravel_1_1_core_1_1_application.html", null ],
     [ "Unravel.Core.Asset< AnimationClip >", "class_unravel_1_1_core_1_1_asset.html", [
       [ "Unravel.Core.AnimationClip", "class_unravel_1_1_core_1_1_animation_clip.html", null ]
     ] ],
@@ -35,6 +36,9 @@ var hierarchy =
     ] ],
     [ "Unravel.Core.Assets", "class_unravel_1_1_core_1_1_assets.html", null ],
     [ "Attribute", null, [
+      [ "Unravel.Core.AutoStaticsCleanupAttribute", "class_unravel_1_1_core_1_1_auto_statics_cleanup_attribute.html", null ],
+      [ "Unravel.Core.HeaderAttribute", "class_unravel_1_1_core_1_1_header_attribute.html", null ],
+      [ "Unravel.Core.HideAttribute", "class_unravel_1_1_core_1_1_hide_attribute.html", null ],
       [ "Unravel.Core.MaxAttribute", "class_unravel_1_1_core_1_1_max_attribute.html", null ],
       [ "Unravel.Core.MinAttribute", "class_unravel_1_1_core_1_1_min_attribute.html", null ],
       [ "Unravel.Core.RangeAttribute", "class_unravel_1_1_core_1_1_range_attribute.html", null ],
@@ -42,8 +46,14 @@ var hierarchy =
       [ "Unravel.Core.StepAttribute", "class_unravel_1_1_core_1_1_step_attribute.html", null ],
       [ "Unravel.Core.TooltipAttribute", "class_unravel_1_1_core_1_1_tooltip_attribute.html", null ]
     ] ],
+    [ "ByteArrayExtensions", "class_byte_array_extensions.html", null ],
+    [ "Unravel.Core.ExceptionHelper", "class_unravel_1_1_core_1_1_exception_helper.html", null ],
     [ "Unravel.Core.FixedUpdateInfo", "struct_unravel_1_1_core_1_1_fixed_update_info.html", null ],
     [ "Unravel.Core.GCMonitor", "class_unravel_1_1_core_1_1_g_c_monitor.html", null ],
+    [ "Unravel.Core.Gizmos", "class_unravel_1_1_core_1_1_gizmos.html", null ],
+    [ "IDisposable", null, [
+      [ "Unravel.Core.ProfilerScope", "struct_unravel_1_1_core_1_1_profiler_scope.html", null ]
+    ] ],
     [ "IEquatable", null, [
       [ "Bounds", "struct_bounds.html", null ],
       [ "Color", "struct_color.html", null ],
@@ -57,6 +67,7 @@ var hierarchy =
           [ "Unravel.Core.AudioSourceComponent", "class_unravel_1_1_core_1_1_audio_source_component.html", null ],
           [ "Unravel.Core.BoneComponent", "class_unravel_1_1_core_1_1_bone_component.html", null ],
           [ "Unravel.Core.CameraComponent", "class_unravel_1_1_core_1_1_camera_component.html", null ],
+          [ "Unravel.Core.CharacterControllerComponent", "class_unravel_1_1_core_1_1_character_controller_component.html", null ],
           [ "Unravel.Core.IdComponent", "class_unravel_1_1_core_1_1_id_component.html", null ],
           [ "Unravel.Core.LightComponent", "class_unravel_1_1_core_1_1_light_component.html", null ],
           [ "Unravel.Core.ModelComponent", "class_unravel_1_1_core_1_1_model_component.html", null ],
@@ -64,7 +75,7 @@ var hierarchy =
           [ "Unravel.Core.PhysicsComponent", "class_unravel_1_1_core_1_1_physics_component.html", null ],
           [ "Unravel.Core.ReflectionProbeComponent", "class_unravel_1_1_core_1_1_reflection_probe_component.html", null ],
           [ "Unravel.Core.ScriptComponent", "class_unravel_1_1_core_1_1_script_component.html", [
-            [ "NewComponentTemplate", "class_new_component_template.html", null ],
+            [ "SampleCharacterController", "class_sample_character_controller.html", null ],
             [ "SampleMouseLookComponent", "class_sample_mouse_look_component.html", null ],
             [ "SampleOrbitComponent", "class_sample_orbit_component.html", null ],
             [ "Unravel.Samples.SampleUIWrapperController", "class_unravel_1_1_samples_1_1_sample_u_i_wrapper_controller.html", null ]
@@ -92,13 +103,24 @@ var hierarchy =
       [ "Vector3", "struct_vector3.html", null ],
       [ "Vector4", "struct_vector4.html", null ]
     ] ],
+    [ "Unravel.Core.IK", "class_unravel_1_1_core_1_1_i_k.html", null ],
+    [ "Unravel.Core.Input", "class_unravel_1_1_core_1_1_input.html", null ],
     [ "Unravel.Core.LayerMask", "struct_unravel_1_1_core_1_1_layer_mask.html", null ],
+    [ "Unravel.Core.Log", "class_unravel_1_1_core_1_1_log.html", null ],
     [ "Unravel.Core.MaterialProperties", "struct_unravel_1_1_core_1_1_material_properties.html", null ],
     [ "Mathf", "struct_mathf.html", null ],
     [ "MathfInternal", "struct_mathf_internal.html", null ],
+    [ "Unravel.Core.Physics", "class_unravel_1_1_core_1_1_physics.html", null ],
+    [ "Unravel.Core.Profiler", "class_unravel_1_1_core_1_1_profiler.html", null ],
+    [ "Random", "class_random.html", null ],
     [ "Range< T >", "struct_range.html", null ],
     [ "Unravel.Core.ScriptComponentManager", "class_unravel_1_1_core_1_1_script_component_manager.html", null ],
     [ "Size< T >", "struct_size.html", null ],
+    [ "StableSortExtensions", "class_stable_sort_extensions.html", null ],
+    [ "Unravel.Core.SystemManager", "class_unravel_1_1_core_1_1_system_manager.html", null ],
+    [ "Unravel.Core.Tests", "class_unravel_1_1_core_1_1_tests.html", null ],
+    [ "Unravel.Core.Time", "class_unravel_1_1_core_1_1_time.html", null ],
+    [ "Unravel.Core.TransformComponentExtensions", "class_unravel_1_1_core_1_1_transform_component_extensions.html", null ],
     [ "Unravel.Core.UIEventBase", "class_unravel_1_1_core_1_1_u_i_event_base.html", [
       [ "Unravel.Core.UIChangeEvent", "class_unravel_1_1_core_1_1_u_i_change_event.html", null ],
       [ "Unravel.Core.UIKeyEvent", "class_unravel_1_1_core_1_1_u_i_key_event.html", null ],
@@ -106,5 +128,6 @@ var hierarchy =
       [ "Unravel.Core.UISliderEvent", "class_unravel_1_1_core_1_1_u_i_slider_event.html", null ],
       [ "Unravel.Core.UITextInputEvent", "class_unravel_1_1_core_1_1_u_i_text_input_event.html", null ]
     ] ],
+    [ "Unravel.Core.UIEventManager", "class_unravel_1_1_core_1_1_u_i_event_manager.html", null ],
     [ "Unravel.Core.UpdateInfo", "struct_unravel_1_1_core_1_1_update_info.html", null ]
 ];

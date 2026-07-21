@@ -98,6 +98,7 @@ $(function(){initNavTree('structunravel_1_1meta__any__proxy.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structunravel_1_1meta__any__proxy-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::meta_any_proxy Struct Reference</div></div>
@@ -115,6 +116,11 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation containing the deferred access functions.  <a href="structunravel_1_1meta__any__proxy_1_1meta__any__proxy__impl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:acf8234eab8f2c14c2d19c81336bc5f81" id="r_acf8234eab8f2c14c2d19c81336bc5f81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf8234eab8f2c14c2d19c81336bc5f81">detach</a> ()</td></tr>
+<tr class="separator:acf8234eab8f2c14c2d19c81336bc5f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae49d892fef7f122cbec08d474dd0a03d" id="r_ae49d892fef7f122cbec08d474dd0a03d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structunravel_1_1meta__any__proxy_1_1meta__any__proxy__impl.html">meta_any_proxy_impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae49d892fef7f122cbec08d474dd0a03d">impl</a> = std::make_shared&lt;<a class="el" href="structunravel_1_1meta__any__proxy_1_1meta__any__proxy__impl.html">meta_any_proxy_impl</a>&gt;()</td></tr>
@@ -131,8 +137,37 @@ Public Attributes</h2></td></tr>
 </ul>
 <p>Example: Instead of storing <code>&amp;entity.transform.position.x</code>, we store a chain of functions that can navigate: entity → transform → position → x each time. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00197">197</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00215">215</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="acf8234eab8f2c14c2d19c81336bc5f81" name="acf8234eab8f2c14c2d19c81336bc5f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8234eab8f2c14c2d19c81336bc5f81">&#9670;&#160;</a></span>detach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::meta_any_proxy::detach </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Detach the root proxy, switching from reference-based to resolver-based access. Safe to call multiple times; no-op if no resolver is set. </p>
+
+<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00279">279</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="ae49d892fef7f122cbec08d474dd0a03d" name="ae49d892fef7f122cbec08d474dd0a03d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae49d892fef7f122cbec08d474dd0a03d">&#9670;&#160;</a></span>impl</h2>
 
@@ -146,7 +181,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Shared implementation allows copying proxies without duplicating the path logic Multiple proxies can safely reference the same property access method </p>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00221">221</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00274">274</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
 
 </div>
 </div>

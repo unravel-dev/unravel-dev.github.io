@@ -139,9 +139,32 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a7efd097546671cc849b29e8b5a7e38f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class representing the reflection method.  <a href="namespaceunravel.html#a7efd097546671cc849b29e8b5a7e38f2">More...</a><br /></td></tr>
 <tr class="separator:a7efd097546671cc849b29e8b5a7e38f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207fb911bfcef29e614613ac4c443806" id="r_a207fb911bfcef29e614613ac4c443806"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a207fb911bfcef29e614613ac4c443806">unravel::probe_update_mode</a> : std::uint8_t { <a class="el" href="namespaceunravel.html#a207fb911bfcef29e614613ac4c443806a1ac8fa15d98e4e8abe2cb614063b9e3b">unravel::on_demand</a> = 0
+, <a class="el" href="namespaceunravel.html#a207fb911bfcef29e614613ac4c443806ae2eff6c2dafd909df8508f891b385d88">unravel::once</a> = 1
+, <a class="el" href="namespaceunravel.html#a207fb911bfcef29e614613ac4c443806a37e2a166d3ab28426a1d1a481d356d33">unravel::realtime</a> = 2
+ }</td></tr>
+<tr class="memdesc:a207fb911bfcef29e614613ac4c443806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class describing when a reflection probe refreshes its cubemap.  <a href="namespaceunravel.html#a207fb911bfcef29e614613ac4c443806">More...</a><br /></td></tr>
+<tr class="separator:a207fb911bfcef29e614613ac4c443806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29aa3988a4b556e2a9b77fb67996aff5" id="r_a29aa3988a4b556e2a9b77fb67996aff5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5">unravel::probe_resolution</a> : std::uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5aec24c9a2d75c2289115bc5d0feab5573">unravel::res_16</a> = 0
+, <a class="el" href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5aa99a9c6428b9d6027e433a9f7a898a32">unravel::res_32</a>
+, <a class="el" href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5a378d0955063d6052130e6d784435b60e">unravel::res_64</a>
+, <a class="el" href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5a002dae3d066baa67d3711db4f1db52e3">unravel::res_128</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5a737f7201c952553c7536ef5edcb203ea">unravel::res_256</a>
+, <a class="el" href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5ae5b5471b48f1e4ef50b112727773aa58">unravel::res_512</a>
+, <a class="el" href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5acd46ebc4653d8d2f651be0d169fb7b0a">unravel::res_1024</a>
+, <a class="el" href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5ae2942a04780e223b215eb8b663cf5353">unravel::count</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a29aa3988a4b556e2a9b77fb67996aff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed cubemap face resolutions supported by reflection probes.  <a href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5">More...</a><br /></td></tr>
+<tr class="separator:a29aa3988a4b556e2a9b77fb67996aff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6b69525cf6d372ccb0d03f459324f919" id="r_a6b69525cf6d372ccb0d03f459324f919"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a6b69525cf6d372ccb0d03f459324f919">unravel::probe_resolution_to_size</a> (<a class="el" href="namespaceunravel.html#a29aa3988a4b556e2a9b77fb67996aff5">probe_resolution</a> resolution) -&gt; std::uint16_t</td></tr>
+<tr class="memdesc:a6b69525cf6d372ccb0d03f459324f919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a probe_resolution enum value to its pixel size.  <br /></td></tr>
+<tr class="separator:a6b69525cf6d372ccb0d03f459324f919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef68eaf9b0801778b3d0668f21d1f41c" id="r_aef68eaf9b0801778b3d0668f21d1f41c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aef68eaf9b0801778b3d0668f21d1f41c">unravel::operator==</a> (const <a class="el" href="structunravel_1_1reflection__probe.html">reflection_probe</a> &amp;pr1, const <a class="el" href="structunravel_1_1reflection__probe.html">reflection_probe</a> &amp;pr2) -&gt; bool</td></tr>
 <tr class="memdesc:aef68eaf9b0801778b3d0668f21d1f41c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator for <a class="el" href="structunravel_1_1reflection__probe.html" title="Structure representing a reflection probe.">reflection_probe</a>.  <br /></td></tr>
 <tr class="separator:aef68eaf9b0801778b3d0668f21d1f41c"><td class="memSeparator" colspan="2">&#160;</td></tr>

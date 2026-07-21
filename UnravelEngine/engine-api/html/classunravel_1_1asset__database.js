@@ -5,6 +5,7 @@ var classunravel_1_1asset__database =
     [ "add_asset", "classunravel_1_1asset__database.html#ae897527a4628ab36d7f18ae2573ce825", null ],
     [ "get_database", "classunravel_1_1asset__database.html#aa29fb20e937e3f666abe92031ac2b2ce", null ],
     [ "get_metadata", "classunravel_1_1asset__database.html#a381c16c5ce7c224cc8cb300d1f742b37", null ],
+    [ "get_metadata", "classunravel_1_1asset__database.html#a4382445262517956a19a56c84230a335", null ],
     [ "get_uuid", "classunravel_1_1asset__database.html#ad4fcc1f2497867bcf35a0b141d4c9683", null ],
     [ "remove_all", "classunravel_1_1asset__database.html#a7c0e5c670249f4013f2bda9c99b40df5", null ],
     [ "remove_asset", "classunravel_1_1asset__database.html#a036f4031d1c7bb6a599024cb23fb1f5a", null ],

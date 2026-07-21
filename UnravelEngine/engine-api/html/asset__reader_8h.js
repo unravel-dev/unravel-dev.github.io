@@ -1,6 +1,8 @@
 var asset__reader_8h =
 [
     [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#a661e4caaa1f768045d38222abdb5f792", null ],
+    [ "compiled_extension", "asset__reader_8h.html#a959f5da69994a5cdf56aa8a87d021ee0", null ],
+    [ "compiled_extension< gfx::shader >", "asset__reader_8h.html#ae2db43a112122afab02acb9c41ed1790", null ],
     [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#afcc8130593182b2c2610078cf163fda8", null ],
     [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#ab3ec603158b8badd90fbceb11cae31d9", null ],
     [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#ad9436160a7e2380fdad1c40730f6ff1d", null ],
@@ -15,8 +17,10 @@ var asset__reader_8h =
     [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#a3661a3cf3969c8a79ce1f35219fd3c1e", null ],
     [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#a8d29b4691b39225640ef704b66ecbb6a", null ],
     [ "get_job_name", "asset__reader_8h.html#af5a636ddb1ac76c21791cb6d5561c428", null ],
-    [ "load_from_file", "asset__reader_8h.html#a036c2b84a60a0e941f5e2ce5e50da8f7", null ],
+    [ "load_from_file", "asset__reader_8h.html#a497eede0cd8e944c843ee38c76c1e651", null ],
     [ "load_from_instance", "asset__reader_8h.html#af414b8856011fd0359292455e2d05db0", null ],
+    [ "resolve_compiled_asset_path", "asset__reader_8h.html#a514d0df2afb27c90b4651cf4b3bfa4b8", null ],
     [ "resolve_compiled_key", "asset__reader_8h.html#ac74501361d75be4b06b0528453c076ba", null ],
-    [ "resolve_compiled_path", "asset__reader_8h.html#a6f5535d059d12fff6255982d842c2b3b", null ]
+    [ "resolve_compiled_path", "asset__reader_8h.html#a6f5535d059d12fff6255982d842c2b3b", null ],
+    [ "resolve_compiled_path", "asset__reader_8h.html#a5efb73bd153bb42cdf82cd37414ad23b", null ]
 ];

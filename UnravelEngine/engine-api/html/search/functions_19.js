@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['z_5faxis_0',['z_axis',['../classmath_1_1transform__t.html#affec2df8a767592e3b38202b4660d6ec',1,'math::transform_t']]],
-  ['z_5funit_5faxis_1',['z_unit_axis',['../classmath_1_1transform__t.html#a63051d2c127e0b14af037390cca4726d',1,'math::transform_t::z_unit_axis()'],['../classunravel_1_1camera.html#ab3c390d38d634f5cf9da59e5795f4b7b',1,'unravel::camera::z_unit_axis()']]]
+  ['y_5faxis_0',['y_axis',['../classmath_1_1transform__t.html#a48e053007bc95c058db73fd963f544bd',1,'math::transform_t']]],
+  ['y_5funit_5faxis_1',['y_unit_axis',['../classmath_1_1transform__t.html#a7ea66db0a802132830c1460e36f0ac44',1,'math::transform_t::y_unit_axis()'],['../classunravel_1_1camera.html#aa927389a14c9931c8ac9ee2f33627538',1,'unravel::camera::y_unit_axis()']]],
+  ['yamlinputarchive_2',['YAMLInputArchive',['../classser20_1_1_y_a_m_l_input_archive.html#a6cd3af0994cad693afe8cf0834795729',1,'ser20::YAMLInputArchive']]],
+  ['yamloutputarchive_3',['YAMLOutputArchive',['../classser20_1_1_y_a_m_l_output_archive.html#a6ee4952d16a979fdc5eb5d6aa9286b5c',1,'ser20::YAMLOutputArchive']]],
+  ['yz_5fplane_4',['yz_plane',['../structmath_1_1plane.html#ab7c1ffda49863095f89ab4f38322b696',1,'math::plane']]]
 ];

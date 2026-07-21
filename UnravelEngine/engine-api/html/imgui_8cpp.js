@@ -7,6 +7,7 @@ var imgui_8cpp =
     [ "ImGui_ImplGFX_UpdateTexture", "imgui_8cpp.html#ad057338622039db51074e3eeb2679ac3", null ],
     [ "imguiBeginFrame", "imgui_8cpp.html#aa54213d8559a88cbbab735dafe3bcb39", null ],
     [ "imguiCreate", "imgui_8cpp.html#a7e531562e2c56be9584142c831f4d76d", null ],
+    [ "imguiCreateCubemapProgram", "imgui_8cpp.html#ad020eb7a12a8fe3d43313f6954b4d8d6", null ],
     [ "imguiDestroy", "imgui_8cpp.html#ae07feb5aa02c6a112f8de06243f77def", null ],
     [ "imguiEndFrame", "imgui_8cpp.html#aae9ae6cca90edbba2e39c89863921bfd", null ],
     [ "imguiProcessEvent", "imgui_8cpp.html#a8c57882bf5f7d84275a98ef8f14d5a86", null ],

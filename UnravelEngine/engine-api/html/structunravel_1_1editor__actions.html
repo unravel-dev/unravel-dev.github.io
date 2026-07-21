@@ -119,33 +119,173 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:adf9f6a835eda06f778607a188ffed9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b60d1f6ec28d6f7439ae7c76dc24d8" id="r_a89b60d1f6ec28d6f7439ae7c76dc24d8"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89b60d1f6ec28d6f7439ae7c76dc24d8">prompt_save_scene</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const std::function&lt; void()&gt; &amp;on_continue) -&gt; bool</td></tr>
 <tr class="separator:a89b60d1f6ec28d6f7439ae7c76dc24d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28437ac85e72e8d438b6a62145a8f46e" id="r_a28437ac85e72e8d438b6a62145a8f46e"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28437ac85e72e8d438b6a62145a8f46e">load_scene_from_asset</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1scene__prefab.html">scene_prefab</a> &gt; &amp;asset, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; bool</td></tr>
+<tr class="memdesc:a28437ac85e72e8d438b6a62145a8f46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-modal scene load (shared by File menu + MCP). Clears edit state, loads asset, syncs prefabs, clears unsaved flag, and updates project opened_scene. Returns false on failure.  <br /></td></tr>
+<tr class="separator:a28437ac85e72e8d438b6a62145a8f46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae887fcc6a883b25c74811cf7b6a3160b" id="r_ae887fcc6a883b25c74811cf7b6a3160b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae887fcc6a883b25c74811cf7b6a3160b">new_scene_from_preset</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, <a class="el" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25">defaults::scene_preset</a> <a class="el" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a>) -&gt; bool</td></tr>
+<tr class="memdesc:ae887fcc6a883b25c74811cf7b6a3160b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-modal new scene from preset (shared by create-scene modal + MCP). Cancels any pending create-scene modal, builds <a class="el" href="structunravel_1_1defaults.html#a165dca3f8d6f03e29e118e238475e185" title="Creates a 3D scene from a quality preset.">defaults::create_scene_from_preset</a>, clears opened_scene.  <br /></td></tr>
+<tr class="separator:ae887fcc6a883b25c74811cf7b6a3160b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a32084cecadbb9146e1075bdaccf016" id="r_a5a32084cecadbb9146e1075bdaccf016"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a32084cecadbb9146e1075bdaccf016">save_scene_to_path</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const fs::path &amp;path, bool update_source=true, bool show_notification=true) -&gt; bool</td></tr>
+<tr class="memdesc:a5a32084cecadbb9146e1075bdaccf016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomic-save active scene to path/key. When update_source is true, sets <a class="el" href="structunravel_1_1scene.html#a33cdf00db23181fed69a344de252c0a8" title="The source prefab asset handle for the scene.">scene.source</a> and project opened_scene. Returns false on play mode or write failure.  <br /></td></tr>
+<tr class="separator:a5a32084cecadbb9146e1075bdaccf016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0af9717818373ea1ca703cd9e38a9de8" id="r_a0af9717818373ea1ca703cd9e38a9de8"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0af9717818373ea1ca703cd9e38a9de8">close_project</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
 <tr class="separator:a0af9717818373ea1ca703cd9e38a9de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd4f47027a812347a609b79151c1a60c" id="r_acd4f47027a812347a609b79151c1a60c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd4f47027a812347a609b79151c1a60c">reload_project</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
 <tr class="separator:acd4f47027a812347a609b79151c1a60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f4fa0ace60bb48751ee0bc42e9333c2" id="r_a7f4fa0ace60bb48751ee0bc42e9333c2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f4fa0ace60bb48751ee0bc42e9333c2">run_project</a> (const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;params)</td></tr>
-<tr class="separator:a7f4fa0ace60bb48751ee0bc42e9333c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1234672e598b23dfbb9a53e7c9aef4ce" id="r_a1234672e598b23dfbb9a53e7c9aef4ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1234672e598b23dfbb9a53e7c9aef4ce">run_project</a> (const fs::path &amp;executable_path)</td></tr>
+<tr class="separator:a1234672e598b23dfbb9a53e7c9aef4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4c4880d533974b7481b9151b0add7af" id="r_ae4c4880d533974b7481b9151b0add7af"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4c4880d533974b7481b9151b0add7af">deploy_project</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;params) -&gt; std::map&lt; std::string, tpp::shared_future&lt; void &gt; &gt;</td></tr>
 <tr class="separator:ae4c4880d533974b7481b9151b0add7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f25a894129732c50bc68769175a8740" id="r_a6f25a894129732c50bc68769175a8740"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f25a894129732c50bc68769175a8740">recompile_shaders</a> ()</td></tr>
-<tr class="separator:a6f25a894129732c50bc68769175a8740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca09fead0cfc26163ffdea70b4fff1c1" id="r_aca09fead0cfc26163ffdea70b4fff1c1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca09fead0cfc26163ffdea70b4fff1c1">recompile_textures</a> ()</td></tr>
-<tr class="separator:aca09fead0cfc26163ffdea70b4fff1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6385f4f48faf20047f473429a0ff92e9" id="r_a6385f4f48faf20047f473429a0ff92e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6385f4f48faf20047f473429a0ff92e9">recompile_ui</a> ()</td></tr>
-<tr class="separator:a6385f4f48faf20047f473429a0ff92e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdcb6b71f5676471731b9459ecf224e0" id="r_abdcb6b71f5676471731b9459ecf224e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdcb6b71f5676471731b9459ecf224e0">recompile_scripts</a> ()</td></tr>
-<tr class="separator:abdcb6b71f5676471731b9459ecf224e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dc46bb3e8b3265ccc4e89b73cd332ef" id="r_a2dc46bb3e8b3265ccc4e89b73cd332ef"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dc46bb3e8b3265ccc4e89b73cd332ef">recompile_all</a> ()</td></tr>
-<tr class="separator:a2dc46bb3e8b3265ccc4e89b73cd332ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec4f769f357257ade9d24e8d85dfd1a1" id="r_aec4f769f357257ade9d24e8d85dfd1a1"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec4f769f357257ade9d24e8d85dfd1a1">can_deploy_project</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;params) -&gt; bool</td></tr>
+<tr class="separator:aec4f769f357257ade9d24e8d85dfd1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a5ed6e1c4eea34d6123c951ca7646b" id="r_a52a5ed6e1c4eea34d6123c951ca7646b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52a5ed6e1c4eea34d6123c951ca7646b">recompile_shaders</a> (const std::string &amp;group=&quot;&quot;)</td></tr>
+<tr class="separator:a52a5ed6e1c4eea34d6123c951ca7646b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76cefa699affb6cbd594e3aa3caee575" id="r_a76cefa699affb6cbd594e3aa3caee575"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76cefa699affb6cbd594e3aa3caee575">recompile_textures</a> (const std::string &amp;group=&quot;&quot;)</td></tr>
+<tr class="separator:a76cefa699affb6cbd594e3aa3caee575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1a0ecfa3d96b2234d3cd328251933d" id="r_a5b1a0ecfa3d96b2234d3cd328251933d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b1a0ecfa3d96b2234d3cd328251933d">recompile_ui</a> (const std::string &amp;group=&quot;&quot;)</td></tr>
+<tr class="separator:a5b1a0ecfa3d96b2234d3cd328251933d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a11b54a4d896f48132118ccf07606e7" id="r_a5a11b54a4d896f48132118ccf07606e7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a11b54a4d896f48132118ccf07606e7">recompile_scripts</a> (const std::string &amp;group=&quot;&quot;)</td></tr>
+<tr class="separator:a5a11b54a4d896f48132118ccf07606e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7865ea1d9e4627a4e4cc4d6db573e5f" id="r_ae7865ea1d9e4627a4e4cc4d6db573e5f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7865ea1d9e4627a4e4cc4d6db573e5f">recompile_meshes</a> (const std::string &amp;group=&quot;&quot;)</td></tr>
+<tr class="separator:ae7865ea1d9e4627a4e4cc4d6db573e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d589ea6ddab34549e1d2ae73a0b33a" id="r_aa0d589ea6ddab34549e1d2ae73a0b33a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0d589ea6ddab34549e1d2ae73a0b33a">recompile_all</a> (const std::string &amp;group=&quot;&quot;)</td></tr>
+<tr class="separator:aa0d589ea6ddab34549e1d2ae73a0b33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6a1e36cc15610cce4aa5c63d730b283" id="r_af6a1e36cc15610cce4aa5c63d730b283"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6a1e36cc15610cce4aa5c63d730b283">generate_script_workspace</a> ()</td></tr>
 <tr class="separator:af6a1e36cc15610cce4aa5c63d730b283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4db0dc848437f90fd5894dea3335d2f4" id="r_a4db0dc848437f90fd5894dea3335d2f4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4db0dc848437f90fd5894dea3335d2f4">open_workspace_on_file</a> (const fs::path &amp;file, int line=0)</td></tr>
 <tr class="separator:a4db0dc848437f90fd5894dea3335d2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe8b31781afb61546c3f4e94d9a4052" id="r_adfe8b31781afb61546c3f4e94d9a4052"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfe8b31781afb61546c3f4e94d9a4052">rebuild_reflection_probes</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, bool force_full_first_frame=true) -&gt; size_t</td></tr>
+<tr class="memdesc:adfe8b31781afb61546c3f4e94d9a4052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags every reflection probe across all loaded scenes for rebuild.  <br /></td></tr>
+<tr class="separator:adfe8b31781afb61546c3f4e94d9a4052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21cbdd275c9de14e904e7225d4c5ba4b" id="r_a21cbdd275c9de14e904e7225d4c5ba4b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21cbdd275c9de14e904e7225d4c5ba4b">can_enter_play</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; bool</td></tr>
+<tr class="separator:a21cbdd275c9de14e904e7225d4c5ba4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73002ffb0239bbf50e3fa8d3d02b8435" id="r_a73002ffb0239bbf50e3fa8d3d02b8435"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73002ffb0239bbf50e3fa8d3d02b8435">get_play_state</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; <a class="el" href="structunravel_1_1play__state__info.html">play_state_info</a></td></tr>
+<tr class="separator:a73002ffb0239bbf50e3fa8d3d02b8435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72eb4f88af11a12002459c0a37f84a87" id="r_a72eb4f88af11a12002459c0a37f84a87"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72eb4f88af11a12002459c0a37f84a87">set_play_active</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, bool active, bool allow_splash=true, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; bool</td></tr>
+<tr class="separator:a72eb4f88af11a12002459c0a37f84a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2850a76ece65c2d541dc80497477a89" id="r_ae2850a76ece65c2d541dc80497477a89"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2850a76ece65c2d541dc80497477a89">toggle_play</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, bool allow_splash=true, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; bool</td></tr>
+<tr class="separator:ae2850a76ece65c2d541dc80497477a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7afec0893d4c8dc025b9dbea29da89" id="r_abb7afec0893d4c8dc025b9dbea29da89"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb7afec0893d4c8dc025b9dbea29da89">set_play_paused</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, bool <a class="el" href="namespaceunravel.html#a4907c3e63963954dd431235569f845dfad13c3f7baed576768b11a714ef4d90e2">paused</a>, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; bool</td></tr>
+<tr class="separator:abb7afec0893d4c8dc025b9dbea29da89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323c274c8411e66275aee293af06fe7e" id="r_a323c274c8411e66275aee293af06fe7e"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a323c274c8411e66275aee293af06fe7e">skip_play_frame</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; bool</td></tr>
+<tr class="separator:a323c274c8411e66275aee293af06fe7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a9a83870d7bbf4a9814d0551e8ab29" id="r_af6a9a83870d7bbf4a9814d0551e8ab29"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6a9a83870d7bbf4a9814d0551e8ab29">get_selection</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; <a class="el" href="structunravel_1_1selection__info.html">selection_info</a></td></tr>
+<tr class="separator:af6a9a83870d7bbf4a9814d0551e8ab29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8770ec08ea4209f7bdd711509e02b1d8" id="r_a8770ec08ea4209f7bdd711509e02b1d8"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8770ec08ea4209f7bdd711509e02b1d8">set_selection</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const std::vector&lt; std::string &gt; &amp;entity_ids, bool add=false, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; bool</td></tr>
+<tr class="separator:a8770ec08ea4209f7bdd711509e02b1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7326087a50cc2a103a125c793427b67a" id="r_a7326087a50cc2a103a125c793427b67a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7326087a50cc2a103a125c793427b67a">clear_selection</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx)</td></tr>
+<tr class="separator:a7326087a50cc2a103a125c793427b67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be6affd0767b4d833fd4be5092bc96a" id="r_a8be6affd0767b4d833fd4be5092bc96a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8be6affd0767b4d833fd4be5092bc96a">get_recent_logs</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, level::level_enum min_level, size_t max_count, uint64_t after_id=0) -&gt; std::vector&lt; <a class="el" href="structunravel_1_1log__query__entry.html">log_query_entry</a> &gt;</td></tr>
+<tr class="separator:a8be6affd0767b4d833fd4be5092bc96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb04f3a9ee8e0af9d7cb1aa000a6043" id="r_a8cb04f3a9ee8e0af9d7cb1aa000a6043"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cb04f3a9ee8e0af9d7cb1aa000a6043">inspect_entity</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const std::string &amp;entity_id, bool include_components, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; std::string</td></tr>
+<tr class="separator:a8cb04f3a9ee8e0af9d7cb1aa000a6043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8074a7a6bb39eb11291d698cbb204675" id="r_a8074a7a6bb39eb11291d698cbb204675"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8074a7a6bb39eb11291d698cbb204675">focus_scene_panel</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; bool</td></tr>
+<tr class="separator:a8074a7a6bb39eb11291d698cbb204675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52d8ee62350158e9ce6ded12a4ba2df" id="r_aa52d8ee62350158e9ce6ded12a4ba2df"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa52d8ee62350158e9ce6ded12a4ba2df">focus_game_panel</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; bool</td></tr>
+<tr class="separator:aa52d8ee62350158e9ce6ded12a4ba2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721dc2c942ed30859d1876db9e4d2fb6" id="r_a721dc2c942ed30859d1876db9e4d2fb6"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a721dc2c942ed30859d1876db9e4d2fb6">request_main_window_focus</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, std::string *<a class="el" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>=nullptr) -&gt; bool</td></tr>
+<tr class="memdesc:a721dc2c942ed30859d1876db9e4d2fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Focus/raise the OS main window so asset watcher and similar focus-gated work can run (e.g. after MCP creates materials while Cursor has focus).  <br /></td></tr>
+<tr class="separator:a721dc2c942ed30859d1876db9e4d2fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3344d8cf3cd99fcf0f0ad3d540096b4c" id="r_a3344d8cf3cd99fcf0f0ad3d540096b4c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3344d8cf3cd99fcf0f0ad3d540096b4c">import_files</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const std::vector&lt; std::string &gt; &amp;paths, const fs::path &amp;target_path, bool async=true) -&gt; std::vector&lt; <a class="el" href="structunravel_1_1import__files__item.html">import_files_item</a> &gt;</td></tr>
+<tr class="memdesc:a3344d8cf3cd99fcf0f0ad3d540096b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy external files/folders into target_path (content-browser Import parity).  <br /></td></tr>
+<tr class="separator:a3344d8cf3cd99fcf0f0ad3d540096b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57aad232bdc732671f0c8cfefa1dcfb" id="r_ae57aad232bdc732671f0c8cfefa1dcfb"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae57aad232bdc732671f0c8cfefa1dcfb">wait_import_jobs</a> (std::vector&lt; <a class="el" href="structunravel_1_1import__files__item.html">import_files_item</a> &gt; &amp;<a class="el" href="gpu__frame__stats__widgets_8cpp.html#a2f1d7e8c57390a01a479fe2cba5f618e">items</a>, std::chrono::milliseconds timeout) -&gt; bool</td></tr>
+<tr class="memdesc:ae57aad232bdc732671f0c8cfefa1dcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block until all import copy jobs complete or timeout elapses.  <br /></td></tr>
+<tr class="separator:ae57aad232bdc732671f0c8cfefa1dcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="editor__actions_8h_source.html#l00016">16</a> of file <a class="el" href="editor__actions_8h_source.html">editor_actions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8h_source.html#l00061">61</a> of file <a class="el" href="editor__actions_8h_source.html">editor_actions.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aec4f769f357257ade9d24e8d85dfd1a1" name="aec4f769f357257ade9d24e8d85dfd1a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec4f769f357257ade9d24e8d85dfd1a1">&#9670;&#160;</a></span>can_deploy_project()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::can_deploy_project </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01325">1325</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a21cbdd275c9de14e904e7225d4c5ba4b" name="a21cbdd275c9de14e904e7225d4c5ba4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21cbdd275c9de14e904e7225d4c5ba4b">&#9670;&#160;</a></span>can_enter_play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::can_enter_play </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01874">1874</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7326087a50cc2a103a125c793427b67a" name="a7326087a50cc2a103a125c793427b67a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7326087a50cc2a103a125c793427b67a">&#9670;&#160;</a></span>clear_selection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::editor_actions::clear_selection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l02044">2044</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a0af9717818373ea1ca703cd9e38a9de8" name="a0af9717818373ea1ca703cd9e38a9de8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0af9717818373ea1ca703cd9e38a9de8">&#9670;&#160;</a></span>close_project()</h2>
 
@@ -169,7 +309,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01039">1039</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01278">1278</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +340,69 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01079">1079</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01335">1335</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa52d8ee62350158e9ce6ded12a4ba2df" name="aa52d8ee62350158e9ce6ded12a4ba2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52d8ee62350158e9ce6ded12a4ba2df">&#9670;&#160;</a></span>focus_game_panel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::focus_game_panel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l02176">2176</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8074a7a6bb39eb11291d698cbb204675" name="a8074a7a6bb39eb11291d698cbb204675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8074a7a6bb39eb11291d698cbb204675">&#9670;&#160;</a></span>focus_scene_panel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::focus_scene_panel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l02160">2160</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -227,7 +429,225 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01317">1317</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01682">1682</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73002ffb0239bbf50e3fa8d3d02b8435" name="a73002ffb0239bbf50e3fa8d3d02b8435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73002ffb0239bbf50e3fa8d3d02b8435">&#9670;&#160;</a></span>get_play_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::get_play_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structunravel_1_1play__state__info.html">play_state_info</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01893">1893</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8be6affd0767b4d833fd4be5092bc96a" name="a8be6affd0767b4d833fd4be5092bc96a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be6affd0767b4d833fd4be5092bc96a">&#9670;&#160;</a></span>get_recent_logs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::get_recent_logs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">level::level_enum</td>          <td class="paramname"><span class="paramname"><em>min_level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>max_count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>after_id</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;) -&gt; std::vector&lt;<a class="el" href="structunravel_1_1log__query__entry.html">log_query_entry</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l02049">2049</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af6a9a83870d7bbf4a9814d0551e8ab29" name="af6a9a83870d7bbf4a9814d0551e8ab29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a9a83870d7bbf4a9814d0551e8ab29">&#9670;&#160;</a></span>get_selection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::get_selection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structunravel_1_1selection__info.html">selection_info</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01984">1984</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3344d8cf3cd99fcf0f0ad3d540096b4c" name="a3344d8cf3cd99fcf0f0ad3d540096b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3344d8cf3cd99fcf0f0ad3d540096b4c">&#9670;&#160;</a></span>import_files()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::import_files </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>paths</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>target_path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>async</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) -&gt; std::vector&lt;<a class="el" href="structunravel_1_1import__files__item.html">import_files_item</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy external files/folders into target_path (content-browser Import parity). </p>
+<p>When async is true (default), schedules thread-pool copy jobs and returns immediately — call wait_import_jobs before treating destinations as present. When async is false, copies synchronously and sets each item's future to a ready result (preferred for MCP / automation). Asset compilation remains asynchronous via the asset watcher after files land on disk. </p>
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l02230">2230</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8cb04f3a9ee8e0af9d7cb1aa000a6043" name="a8cb04f3a9ee8e0af9d7cb1aa000a6043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb04f3a9ee8e0af9d7cb1aa000a6043">&#9670;&#160;</a></span>inspect_entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::inspect_entity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>entity_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>include_components</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; std::string</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l02077">2077</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a28437ac85e72e8d438b6a62145a8f46e" name="a28437ac85e72e8d438b6a62145a8f46e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28437ac85e72e8d438b6a62145a8f46e">&#9670;&#160;</a></span>load_scene_from_asset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::load_scene_from_asset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1scene__prefab.html">scene_prefab</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>asset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Non-modal scene load (shared by File menu + MCP). Clears edit state, loads asset, syncs prefabs, clears unsaved flag, and updates project opened_scene. Returns false on failure. </p>
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01059">1059</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -254,7 +674,40 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l00895">895</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01039">1039</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae887fcc6a883b25c74811cf7b6a3160b" name="ae887fcc6a883b25c74811cf7b6a3160b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae887fcc6a883b25c74811cf7b6a3160b">&#9670;&#160;</a></span>new_scene_from_preset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::new_scene_from_preset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25">defaults::scene_preset</a></td>          <td class="paramname"><span class="paramname"><em>preset</em></span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Non-modal new scene from preset (shared by create-scene modal + MCP). Cancels any pending create-scene modal, builds <a class="el" href="structunravel_1_1defaults.html#a165dca3f8d6f03e29e118e238475e185" title="Creates a 3D scene from a quality preset.">defaults::create_scene_from_preset</a>, clears opened_scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01091">1091</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -281,7 +734,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l00914">914</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01162">1162</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -312,7 +765,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l00941">941</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01190">1190</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -343,7 +796,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01348">1348</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01721">1721</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -374,12 +827,47 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01005">1005</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01243">1243</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a2dc46bb3e8b3265ccc4e89b73cd332ef" name="a2dc46bb3e8b3265ccc4e89b73cd332ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dc46bb3e8b3265ccc4e89b73cd332ef">&#9670;&#160;</a></span>recompile_all()</h2>
+<a id="adfe8b31781afb61546c3f4e94d9a4052" name="adfe8b31781afb61546c3f4e94d9a4052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfe8b31781afb61546c3f4e94d9a4052">&#9670;&#160;</a></span>rebuild_reflection_probes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::rebuild_reflection_probes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>force_full_first_frame</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) -&gt; size_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flags every reflection probe across all loaded scenes for rebuild. </p>
+<p>Mirrors Unreal's "Build &gt; Build Reflection Captures" menu. When force_full_first_frame is true, each probe bakes all six faces in a single frame for instant visible results; when false, bakes are time-sliced to avoid editor hitches.</p>
+<dl class="section return"><dt>Returns</dt><dd>Number of probes that were flagged. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01859">1859</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa0d589ea6ddab34549e1d2ae73a0b33a" name="aa0d589ea6ddab34549e1d2ae73a0b33a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d589ea6ddab34549e1d2ae73a0b33a">&#9670;&#160;</a></span>recompile_all()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,7 +878,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void unravel::editor_actions::recompile_all </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>group</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -401,12 +889,39 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01451">1451</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01844">1844</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
-<a id="abdcb6b71f5676471731b9459ecf224e0" name="abdcb6b71f5676471731b9459ecf224e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdcb6b71f5676471731b9459ecf224e0">&#9670;&#160;</a></span>recompile_scripts()</h2>
+<a id="ae7865ea1d9e4627a4e4cc4d6db573e5f" name="ae7865ea1d9e4627a4e4cc4d6db573e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7865ea1d9e4627a4e4cc4d6db573e5f">&#9670;&#160;</a></span>recompile_meshes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::editor_actions::recompile_meshes </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>group</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01789">1789</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5a11b54a4d896f48132118ccf07606e7" name="a5a11b54a4d896f48132118ccf07606e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a11b54a4d896f48132118ccf07606e7">&#9670;&#160;</a></span>recompile_scripts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,7 +932,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void unravel::editor_actions::recompile_scripts </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>group</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -428,12 +943,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01438">1438</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01830">1830</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a6f25a894129732c50bc68769175a8740" name="a6f25a894129732c50bc68769175a8740"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f25a894129732c50bc68769175a8740">&#9670;&#160;</a></span>recompile_shaders()</h2>
+<a id="a52a5ed6e1c4eea34d6123c951ca7646b" name="a52a5ed6e1c4eea34d6123c951ca7646b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52a5ed6e1c4eea34d6123c951ca7646b">&#9670;&#160;</a></span>recompile_shaders()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +959,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void unravel::editor_actions::recompile_shaders </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>group</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -455,12 +970,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01386">1386</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01759">1759</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aca09fead0cfc26163ffdea70b4fff1c1" name="aca09fead0cfc26163ffdea70b4fff1c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca09fead0cfc26163ffdea70b4fff1c1">&#9670;&#160;</a></span>recompile_textures()</h2>
+<a id="a76cefa699affb6cbd594e3aa3caee575" name="a76cefa699affb6cbd594e3aa3caee575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76cefa699affb6cbd594e3aa3caee575">&#9670;&#160;</a></span>recompile_textures()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,7 +986,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void unravel::editor_actions::recompile_textures </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>group</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -482,12 +997,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01400">1400</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01774">1774</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a6385f4f48faf20047f473429a0ff92e9" name="a6385f4f48faf20047f473429a0ff92e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6385f4f48faf20047f473429a0ff92e9">&#9670;&#160;</a></span>recompile_ui()</h2>
+<a id="a5b1a0ecfa3d96b2234d3cd328251933d" name="a5b1a0ecfa3d96b2234d3cd328251933d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1a0ecfa3d96b2234d3cd328251933d">&#9670;&#160;</a></span>recompile_ui()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,7 +1013,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void unravel::editor_actions::recompile_ui </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>group</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -509,7 +1024,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01414">1414</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01804">1804</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -536,12 +1051,45 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01055">1055</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01295">1295</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a7f4fa0ace60bb48751ee0bc42e9333c2" name="a7f4fa0ace60bb48751ee0bc42e9333c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f4fa0ace60bb48751ee0bc42e9333c2">&#9670;&#160;</a></span>run_project()</h2>
+<a id="a721dc2c942ed30859d1876db9e4d2fb6" name="a721dc2c942ed30859d1876db9e4d2fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a721dc2c942ed30859d1876db9e4d2fb6">&#9670;&#160;</a></span>request_main_window_focus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::request_main_window_focus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Focus/raise the OS main window so asset watcher and similar focus-gated work can run (e.g. after MCP creates materials while Cursor has focus). </p>
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l02192">2192</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1234672e598b23dfbb9a53e7c9aef4ce" name="a1234672e598b23dfbb9a53e7c9aef4ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1234672e598b23dfbb9a53e7c9aef4ce">&#9670;&#160;</a></span>run_project()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +1100,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void unravel::editor_actions::run_project </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>executable_path</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -563,7 +1111,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01073">1073</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01320">1320</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -590,7 +1138,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l00964">964</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01202">1202</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>
@@ -617,7 +1165,269 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l00996">996</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01234">1234</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5a32084cecadbb9146e1075bdaccf016" name="a5a32084cecadbb9146e1075bdaccf016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a32084cecadbb9146e1075bdaccf016">&#9670;&#160;</a></span>save_scene_to_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::save_scene_to_path </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>update_source</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>show_notification</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Atomic-save active scene to path/key. When update_source is true, sets <a class="el" href="structunravel_1_1scene.html#a33cdf00db23181fed69a344de252c0a8" title="The source prefab asset handle for the scene.">scene.source</a> and project opened_scene. Returns false on play mode or write failure. </p>
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01113">1113</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a72eb4f88af11a12002459c0a37f84a87" name="a72eb4f88af11a12002459c0a37f84a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72eb4f88af11a12002459c0a37f84a87">&#9670;&#160;</a></span>set_play_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::set_play_active </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>active</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>allow_splash</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01925">1925</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abb7afec0893d4c8dc025b9dbea29da89" name="abb7afec0893d4c8dc025b9dbea29da89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7afec0893d4c8dc025b9dbea29da89">&#9670;&#160;</a></span>set_play_paused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::set_play_paused </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>paused</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01946">1946</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8770ec08ea4209f7bdd711509e02b1d8" name="a8770ec08ea4209f7bdd711509e02b1d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8770ec08ea4209f7bdd711509e02b1d8">&#9670;&#160;</a></span>set_selection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::set_selection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>entity_ids</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>add</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l02002">2002</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a323c274c8411e66275aee293af06fe7e" name="a323c274c8411e66275aee293af06fe7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323c274c8411e66275aee293af06fe7e">&#9670;&#160;</a></span>skip_play_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::skip_play_frame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01961">1961</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae2850a76ece65c2d541dc80497477a89" name="ae2850a76ece65c2d541dc80497477a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2850a76ece65c2d541dc80497477a89">&#9670;&#160;</a></span>toggle_play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::toggle_play </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>allow_splash</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l01935">1935</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae57aad232bdc732671f0c8cfefa1dcfb" name="ae57aad232bdc732671f0c8cfefa1dcfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57aad232bdc732671f0c8cfefa1dcfb">&#9670;&#160;</a></span>wait_import_jobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::editor_actions::wait_import_jobs </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structunravel_1_1import__files__item.html">import_files_item</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>items</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::milliseconds</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Block until all import copy jobs complete or timeout elapses. </p>
+<dl class="section return"><dt>Returns</dt><dd>true when every job finished successfully within timeout. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="editor__actions_8cpp_source.html#l02295">2295</a> of file <a class="el" href="editor__actions_8cpp_source.html">editor_actions.cpp</a>.</p>
 
 </div>
 </div>

@@ -106,7 +106,7 @@ $(function(){initNavTree('thread_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// An attempt at making a wrapper to deal with many Linuxes as well as Windows. Please edit as needed.</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#if UNRAVEL_PLATFORM_WINDOWS &amp;&amp; UNRAVEL_COMPILER_MSVC</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#if UNRAVEL_PLATFORM_WINDOWS &amp;&amp; (UNRAVEL_COMPILER_MSVC || UNRAVEL_COMPILER_CLANG)</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define WIN32_LEAN_AND_MEAN</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -159,41 +159,125 @@ $(function(){initNavTree('thread_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">//DWORD threadId = ::GetThreadId(reinterpret_cast&lt;HANDLE&gt;(thread.native_handle()));</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_function" href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">set_thread_name</a>(threadId, threadName);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>} <span class="comment">// namespace platform</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#elif UNRAVEL_PLATFORM_LINUX</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceplatform.html">platform</a></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">set_thread_name</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* threadName)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    pthread_setname_np(pthread_self(), threadName);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>} <span class="comment">// namespace platform</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#elif UNRAVEL_PLATFORM_OSX</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceplatform.html">platform</a></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">set_thread_name</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* threadName)</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    pthread_setname_np(threadName);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>} <span class="comment">// namespace platform</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#else</span></div>
-<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="namespaceplatform.html">   81</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceplatform.html">platform</a></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">inline</span> <span class="keyword">auto</span> get_boot_max_mhz() -&gt; DWORD</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">using </span>get_max_proc_freq_fn = DWORD(WINAPI*)(DWORD, BYTE);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">static</span> <span class="keyword">const</span> get_max_proc_freq_fn fn = []() -&gt; get_max_proc_freq_fn</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>get_max_proc_freq_fn<span class="keyword">&gt;</span>(</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            GetProcAddress(GetModuleHandleW(L<span class="stringliteral">&quot;kernel32.dll&quot;</span>), <span class="stringliteral">&quot;GetMaximumProcessorFrequency&quot;</span>));</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">if</span>(fn != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keyword">const</span> DWORD <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca6f8f57715090da2632453988d9a1501b">m</a> = fn(0, 0);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span>(m != 0)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca6f8f57715090da2632453988d9a1501b">m</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> 3000;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceplatform.html#ab519e78c2541b5b50ecb1b1bd51f4231">get_thread_cpu_time_ns</a>() -&gt; int64_t</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>{</div>
-<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">   83</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">set_thread_name</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* threadName)</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// GetThreadTimes() is valid for &quot;CPU time used&quot; but its counters advance at the</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">// system timer resolution (~15.6 ms by default). Scoped measurements shorter than</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">// that almost always see identical user+kernel FILETIMEs -&gt; delta 0 -&gt; bogus 0% CPU.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// QueryThreadCycleTime() counts CPU cycles attributed to the thread while it runs;</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="comment">// deltas are fine-grained. We convert cumulative cycles to approximate nanoseconds</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="comment">// using the CPU&#39;s advertised max frequency (GetMaximumProcessorFrequency when present).</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    ULONG64 cycles = 0;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">if</span>(QueryThreadCycleTime(GetCurrentThread(), &amp;cycles))</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">double</span> ns_per_cycle = []() -&gt; <span class="keywordtype">double</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keyword">const</span> DWORD mhz = get_boot_max_mhz();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keyword">const</span> <span class="keywordtype">double</span> hz = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(mhz) * 1e6;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">return</span> 1e9 / hz;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(cycles) * ns_per_cycle);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    FILETIME creation, exit, kernel, user;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">if</span>(GetThreadTimes(GetCurrentThread(), &amp;creation, &amp;exit, &amp;kernel, &amp;user))</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keyword">auto</span> filetime_to_ns = [](<span class="keyword">const</span> FILETIME&amp; ft) -&gt; int64_t</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            ULARGE_INTEGER li;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            li.LowPart = ft.dwLowDateTime;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            li.HighPart = ft.dwHighDateTime;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(li.QuadPart) * 100;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        };</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">return</span> filetime_to_ns(kernel) + filetime_to_ns(user);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>} <span class="comment">// namespace platform</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#elif UNRAVEL_PLATFORM_LINUX</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceplatform.html">platform</a></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>{</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">set_thread_name</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* threadName)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>{</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    pthread_setname_np(pthread_self(), threadName);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceplatform.html#ab519e78c2541b5b50ecb1b1bd51f4231">get_thread_cpu_time_ns</a>() -&gt; int64_t</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">struct </span>timespec ts{};</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">if</span>(clock_gettime(CLOCK_THREAD_CPUTIME_ID, &amp;ts) == 0)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(ts.tv_sec) * 1&#39;000&#39;000&#39;000LL + <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(ts.tv_nsec);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>} <span class="comment">// namespace platform</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#elif UNRAVEL_PLATFORM_OSX</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceplatform.html">platform</a></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>{</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">set_thread_name</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* threadName)</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    pthread_setname_np(threadName);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceplatform.html#ab519e78c2541b5b50ecb1b1bd51f4231">get_thread_cpu_time_ns</a>() -&gt; int64_t</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>{</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">struct </span>timespec ts{};</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">if</span>(clock_gettime(CLOCK_THREAD_CPUTIME_ID, &amp;ts) == 0)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(ts.tv_sec) * 1&#39;000&#39;000&#39;000LL + <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(ts.tv_nsec);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>} <span class="comment">// namespace platform</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceplatform.html">platform</a></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>{</div>
+<div class="foldopen" id="foldopen00160" data-start="{" data-end="}">
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">  160</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">set_thread_name</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* threadName)</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>{</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}</div>
 </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>} <span class="comment">// namespace platform</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="foldopen" id="foldopen00164" data-start="{" data-end="}">
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="namespaceplatform.html#ab519e78c2541b5b50ecb1b1bd51f4231">  164</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceplatform.html#ab519e78c2541b5b50ecb1b1bd51f4231">get_thread_cpu_time_ns</a>() -&gt; int64_t</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>{</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
 </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>} <span class="comment">// namespace platform</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
 <div class="ttc" id="aconfig_8hpp_html"><div class="ttname"><a href="config_8hpp.html">config.hpp</a></div></div>
-<div class="ttc" id="anamespaceplatform_html"><div class="ttname"><a href="namespaceplatform.html">platform</a></div><div class="ttdef"><b>Definition</b> <a href="#l00081">thread.hpp:82</a></div></div>
-<div class="ttc" id="anamespaceplatform_html_a18f15fc4a75d5a546b4f9baeff19eea2"><div class="ttname"><a href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">platform::set_thread_name</a></div><div class="ttdeci">void set_thread_name(const char *threadName)</div><div class="ttdef"><b>Definition</b> <a href="#l00083">thread.hpp:83</a></div></div>
+<div class="ttc" id="anamespaceinput_html_ab9139595ac6ca03adefcdfd7463eeecca6f8f57715090da2632453988d9a1501b"><div class="ttname"><a href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca6f8f57715090da2632453988d9a1501b">input::key_code::m</a></div><div class="ttdeci">@ m</div></div>
+<div class="ttc" id="anamespaceplatform_html"><div class="ttname"><a href="namespaceplatform.html">platform</a></div><div class="ttdef"><b>Definition</b> <a href="process__memory_8hpp_source.html#l00213">process_memory.hpp:214</a></div></div>
+<div class="ttc" id="anamespaceplatform_html_a18f15fc4a75d5a546b4f9baeff19eea2"><div class="ttname"><a href="namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2">platform::set_thread_name</a></div><div class="ttdeci">void set_thread_name(const char *threadName)</div><div class="ttdef"><b>Definition</b> <a href="#l00160">thread.hpp:160</a></div></div>
+<div class="ttc" id="anamespaceplatform_html_ab519e78c2541b5b50ecb1b1bd51f4231"><div class="ttname"><a href="namespaceplatform.html#ab519e78c2541b5b50ecb1b1bd51f4231">platform::get_thread_cpu_time_ns</a></div><div class="ttdeci">auto get_thread_cpu_time_ns() -&gt; int64_t</div><div class="ttdef"><b>Definition</b> <a href="#l00164">thread.hpp:164</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

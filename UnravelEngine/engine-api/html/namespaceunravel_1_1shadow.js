@@ -15,6 +15,7 @@ var namespaceunravel_1_1shadow =
     [ "ProjType", "structunravel_1_1shadow_1_1_proj_type.html", "structunravel_1_1shadow_1_1_proj_type" ],
     [ "RenderState", "structunravel_1_1shadow_1_1_render_state.html", "structunravel_1_1shadow_1_1_render_state" ],
     [ "SceneSettings", "structunravel_1_1shadow_1_1_scene_settings.html", "structunravel_1_1shadow_1_1_scene_settings" ],
+    [ "shadow_visibility_data", "structunravel_1_1shadow_1_1shadow__visibility__data.html", "structunravel_1_1shadow_1_1shadow__visibility__data" ],
     [ "shadowmap_generator", "classunravel_1_1shadow_1_1shadowmap__generator.html", "classunravel_1_1shadow_1_1shadowmap__generator" ],
     [ "ShadowMapRenderTargets", "structunravel_1_1shadow_1_1_shadow_map_render_targets.html", "structunravel_1_1shadow_1_1_shadow_map_render_targets" ],
     [ "ShadowMapSettings", "structunravel_1_1shadow_1_1_shadow_map_settings.html", "structunravel_1_1shadow_1_1_shadow_map_settings" ],
@@ -22,5 +23,5 @@ var namespaceunravel_1_1shadow =
     [ "SmType", "structunravel_1_1shadow_1_1_sm_type.html", "structunravel_1_1shadow_1_1_sm_type" ],
     [ "TetrahedronFaces", "structunravel_1_1shadow_1_1_tetrahedron_faces.html", "structunravel_1_1shadow_1_1_tetrahedron_faces" ],
     [ "Uniforms", "structunravel_1_1shadow_1_1_uniforms.html", "structunravel_1_1shadow_1_1_uniforms" ],
-    [ "shadow_map_models_t", "namespaceunravel_1_1shadow.html#a2874fe5cdd35210084393fb17d631be1", null ]
+    [ "shadow_map_models_t", "namespaceunravel_1_1shadow.html#a74f8e3c3cdd81526a65115682ed78ac4", null ]
 ];

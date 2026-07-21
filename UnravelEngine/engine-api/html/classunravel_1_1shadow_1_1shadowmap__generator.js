@@ -7,7 +7,7 @@ var classunravel_1_1shadow_1_1shadowmap__generator =
     [ "deinit_textures", "classunravel_1_1shadow_1_1shadowmap__generator.html#a1ae3a47f088d718998a62bb346c4d5d7", null ],
     [ "deinit_uniforms", "classunravel_1_1shadow_1_1shadowmap__generator.html#a9b16bb26f2cf96901e14517aca576927", null ],
     [ "enable_adaptive_shadows", "classunravel_1_1shadow_1_1shadowmap__generator.html#ae9aaaad0dc0e622c860250e254d772d0", null ],
-    [ "generate_shadowmaps", "classunravel_1_1shadow_1_1shadowmap__generator.html#a21c5e728ef7f7b8336ea40c7e22dacf6", null ],
+    [ "generate_shadowmaps", "classunravel_1_1shadow_1_1shadowmap__generator.html#a7e12dec01c3e6d2b58026fe52cce9487", null ],
     [ "get_adaptive_params", "classunravel_1_1shadow_1_1shadowmap__generator.html#a32e42382a51c0c7850738639e7515dd5", null ],
     [ "get_altitude_scale_factor", "classunravel_1_1shadow_1_1shadowmap__generator.html#ad7ebbc237e870eb1c6b7883d0f9fb0d7", null ],
     [ "get_csm_optimization_flags", "classunravel_1_1shadow_1_1shadowmap__generator.html#a1bf6164607738ed187f438c63c5ff689", null ],

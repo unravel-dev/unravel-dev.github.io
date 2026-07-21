@@ -128,6 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7182d5cd4a87455625762f724f99ce94" id="r_a7182d5cd4a87455625762f724f99ce94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7182d5cd4a87455625762f724f99ce94">run_one_frame</a> (bool is_active)</td></tr>
 <tr class="memdesc:a7182d5cd4a87455625762f724f99ce94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform on frame computations with specified fps.  <br /></td></tr>
 <tr class="separator:a7182d5cd4a87455625762f724f99ce94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875c867cf2767521028d8d8521576ae5" id="r_a875c867cf2767521028d8d8521576ae5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a875c867cf2767521028d8d8521576ae5">reset_delta_clock</a> ()</td></tr>
+<tr class="separator:a875c867cf2767521028d8d8521576ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75058710a147ec53b03e7c0aeae22ed8" id="r_a75058710a147ec53b03e7c0aeae22ed8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75058710a147ec53b03e7c0aeae22ed8">get_frame</a> () const -&gt; uint64_t</td></tr>
 <tr class="separator:a75058710a147ec53b03e7c0aeae22ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad85b3baf1ca9650a9f510e888de24c6b" id="r_ad85b3baf1ca9650a9f510e888de24c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad85b3baf1ca9650a9f510e888de24c6b">set_min_fps</a> (uint32_t fps)</td></tr>
@@ -155,6 +157,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a36dc24c79057c21ed69d6073acdfa7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ef40ef5bee7f685f3fd782522602ae8" id="r_a0ef40ef5bee7f685f3fd782522602ae8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ef40ef5bee7f685f3fd782522602ae8">get_time_scale</a> () const -&gt; float</td></tr>
 <tr class="separator:a0ef40ef5bee7f685f3fd782522602ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb1fcdfc250af99f39452c9bb3da087" id="r_aceb1fcdfc250af99f39452c9bb3da087"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aceb1fcdfc250af99f39452c9bb3da087">get_max_fps</a> () const -&gt; uint32_t</td></tr>
+<tr class="memdesc:aceb1fcdfc250af99f39452c9bb3da087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the configured software FPS cap (0 means uncapped).  <br /></td></tr>
+<tr class="separator:aceb1fcdfc250af99f39452c9bb3da087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa9e591a322f475193f162e68f5b63d" id="r_aaaa9e591a322f475193f162e68f5b63d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaa9e591a322f475193f162e68f5b63d">get_last_sleep_duration</a> () const -&gt; <a class="el" href="#addc4cd806a48431b8a1b329b94aa4bb1">duration_t</a></td></tr>
+<tr class="memdesc:aaaa9e591a322f475193f162e68f5b63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how long run_one_frame spent sleeping during the last call. Useful for stats overlays so they can distinguish actual CPU work from time spent in the software frame limiter.  <br /></td></tr>
+<tr class="separator:aaaa9e591a322f475193f162e68f5b63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -173,6 +181,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a5baef8fe0dca904945c496c45ca28c71" id="r_a5baef8fe0dca904945c496c45ca28c71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#addc4cd806a48431b8a1b329b94aa4bb1">duration_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5baef8fe0dca904945c496c45ca28c71">timestep_</a> = duration_t::zero()</td></tr>
 <tr class="memdesc:a5baef8fe0dca904945c496c45ca28c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">next frame time step in seconds  <br /></td></tr>
 <tr class="separator:a5baef8fe0dca904945c496c45ca28c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4823e0f730d27547293c9ff6be4ed966" id="r_a4823e0f730d27547293c9ff6be4ed966"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#addc4cd806a48431b8a1b329b94aa4bb1">duration_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4823e0f730d27547293c9ff6be4ed966">last_sleep_duration_</a> = duration_t::zero()</td></tr>
+<tr class="memdesc:a4823e0f730d27547293c9ff6be4ed966"><td class="mdescLeft">&#160;</td><td class="mdescRight">time spent sleeping inside the last run_one_frame call  <br /></td></tr>
+<tr class="separator:a4823e0f730d27547293c9ff6be4ed966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad7ddef70d1b381147b9e6b55987436a" id="r_aad7ddef70d1b381147b9e6b55987436a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad7ddef70d1b381147b9e6b55987436a">frame_</a> = 0</td></tr>
 <tr class="memdesc:aad7ddef70d1b381147b9e6b55987436a"><td class="mdescLeft">&#160;</td><td class="mdescRight">current frame  <br /></td></tr>
 <tr class="separator:aad7ddef70d1b381147b9e6b55987436a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,7 +282,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00010">10</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00009">9</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +304,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns the delta time in seconds. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00139">139</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00160">160</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -314,7 +325,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns frames per second. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00133">133</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00154">154</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +344,49 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00103">103</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00124">124</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaaa9e591a322f475193f162e68f5b63d" name="aaaa9e591a322f475193f162e68f5b63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa9e591a322f475193f162e68f5b63d">&#9670;&#160;</a></span>get_last_sleep_duration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::simulation::get_last_sleep_duration </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#addc4cd806a48431b8a1b329b94aa4bb1">duration_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns how long run_one_frame spent sleeping during the last call. Useful for stats overlays so they can distinguish actual CPU work from time spent in the software frame limiter. </p>
+
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00181">181</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aceb1fcdfc250af99f39452c9bb3da087" name="aceb1fcdfc250af99f39452c9bb3da087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb1fcdfc250af99f39452c9bb3da087">&#9670;&#160;</a></span>get_max_fps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::simulation::get_max_fps </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the configured software FPS cap (0 means uncapped). </p>
+
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00176">176</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -352,7 +405,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00150">150</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00171">171</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +426,27 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns duration since launch. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00128">128</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00149">149</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a875c867cf2767521028d8d8521576ae5" name="a875c867cf2767521028d8d8521576ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875c867cf2767521028d8d8521576ae5">&#9670;&#160;</a></span>reset_delta_clock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::simulation::reset_delta_clock </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Drop smoothed history and restart the frame clock from now. Call when entering play simulation so a preceding hitch (domain reload, scene load) does not inflate subsequent deltas. </p>
+
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00116">116</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -394,7 +467,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Perform on frame computations with specified fps. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00018">18</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00017">17</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -415,7 +488,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Set maximum frames per second. The engine will sleep if fps is higher than this. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00113">113</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00134">134</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -436,7 +509,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Set maximum frames per second when the application does not have input focus. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00118">118</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00139">139</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +530,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Set minimum frames per second. If fps goes lower than this, time will appear to slow. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00108">108</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00129">129</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -476,7 +549,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00145">145</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00166">166</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +570,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Set how many frames to average for timestep smoothing. </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00123">123</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8cpp_source.html#l00144">144</a> of file <a class="el" href="simulation_8cpp_source.html">simulation.cpp</a>.</p>
 
 </div>
 </div>
@@ -524,7 +597,7 @@ Protected Attributes</h2></td></tr>
 
 <p>current frame </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00123">123</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00148">148</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +623,33 @@ Protected Attributes</h2></td></tr>
 
 <p>frame update timer </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00127">127</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00152">152</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+
+</div>
+</div>
+<a id="a4823e0f730d27547293c9ff6be4ed966" name="a4823e0f730d27547293c9ff6be4ed966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4823e0f730d27547293c9ff6be4ed966">&#9670;&#160;</a></span>last_sleep_duration_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#addc4cd806a48431b8a1b329b94aa4bb1">duration_t</a> unravel::simulation::last_sleep_duration_ = duration_t::zero()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>time spent sleeping inside the last run_one_frame call </p>
+
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00146">146</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -576,7 +675,7 @@ Protected Attributes</h2></td></tr>
 
 <p>time point when we launched </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00129">129</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00154">154</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -600,7 +699,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00115">115</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00138">138</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -624,7 +723,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00117">117</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00140">140</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -650,7 +749,7 @@ Protected Attributes</h2></td></tr>
 
 <p>minimum/maximum frames per second </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00113">113</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00136">136</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -676,7 +775,7 @@ Protected Attributes</h2></td></tr>
 
 <p>previous time steps for smoothing in seconds </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00119">119</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00142">142</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -702,7 +801,7 @@ Protected Attributes</h2></td></tr>
 
 <p>how many frames to average for the smoothed time step </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00125">125</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00150">150</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -726,7 +825,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00111">111</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00134">134</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>
@@ -752,7 +851,7 @@ Protected Attributes</h2></td></tr>
 
 <p>next frame time step in seconds </p>
 
-<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00121">121</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simulation_8h_source.html#l00144">144</a> of file <a class="el" href="simulation_8h_source.html">simulation.h</a>.</p>
 
 </div>
 </div>

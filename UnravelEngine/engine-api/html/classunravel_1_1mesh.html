@@ -100,9 +100,9 @@ $(function(){initNavTree('classunravel_1_1mesh.html',''); initResizable(true); }
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classunravel_1_1mesh-members.html">List of all members</a>  </div>
@@ -129,6 +129,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1load__data.html">load_data</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct used for mesh construction.  <a href="structunravel_1_1mesh_1_1load__data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1lod__level.html">lod_level</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure describing a LOD level with its own index buffer and submeshes.  <a href="structunravel_1_1mesh_1_1lod__level.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1lod__load__data.html">lod_load_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure describing a LOD level in <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> (for serialization).  <a href="structunravel_1_1mesh_1_1lod__load__data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1mesh__submesh__key.html">mesh_submesh_key</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,9 +181,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa2e27cd4d222c5b486a28f40350cc25" id="r_aaa2e27cd4d222c5b486a28f40350cc25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa2e27cd4d222c5b486a28f40350cc25">dispose</a> ()</td></tr>
 <tr class="memdesc:aaa2e27cd4d222c5b486a28f40350cc25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears out all the mesh data.  <br /></td></tr>
 <tr class="separator:aaa2e27cd4d222c5b486a28f40350cc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8097708dda2e739f0cefca85562e950f" id="r_a8097708dda2e739f0cefca85562e950f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8097708dda2e739f0cefca85562e950f">bind_render_buffers_for_submesh</a> (const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *<a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a>)</td></tr>
-<tr class="memdesc:a8097708dda2e739f0cefca85562e950f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the mesh data for rendering the selected batch of primitives.  <br /></td></tr>
-<tr class="separator:a8097708dda2e739f0cefca85562e950f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50bade7ededaf81dc1273fac5f175016" id="r_a50bade7ededaf81dc1273fac5f175016"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50bade7ededaf81dc1273fac5f175016">get_info</a> () const -&gt; <a class="el" href="structunravel_1_1mesh_1_1info.html">info</a></td></tr>
+<tr class="separator:a50bade7ededaf81dc1273fac5f175016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a169280ee4bba87daba64f817b022a2" id="r_a6a169280ee4bba87daba64f817b022a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a169280ee4bba87daba64f817b022a2">bind_render_buffers_for_submesh</a> (const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *<a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a>, uint32_t lod_index=0)</td></tr>
+<tr class="memdesc:a6a169280ee4bba87daba64f817b022a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the mesh data for rendering the selected batch of primitives.  <br /></td></tr>
+<tr class="separator:a6a169280ee4bba87daba64f817b022a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac82ac73b6a2bc09caf9778018f5c18df" id="r_ac82ac73b6a2bc09caf9778018f5c18df"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac82ac73b6a2bc09caf9778018f5c18df">prepare_mesh</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;vertex_format) -&gt; bool</td></tr>
 <tr class="memdesc:ac82ac73b6a2bc09caf9778018f5c18df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the mesh with the specified vertex format.  <br /></td></tr>
 <tr class="separator:ac82ac73b6a2bc09caf9778018f5c18df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,39 +209,42 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab53830ad2b1d9f65c56d95cbc7aaf5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2d49ca70e11301fa816d1e3c86cf0d7" id="r_aa2d49ca70e11301fa816d1e3c86cf0d7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2d49ca70e11301fa816d1e3c86cf0d7">load_mesh</a> (<a class="el" href="structunravel_1_1mesh_1_1load__data.html">load_data</a> &amp;&amp;data) -&gt; bool</td></tr>
 <tr class="separator:aa2d49ca70e11301fa816d1e3c86cf0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dc6e6ba2268606fb3b656f3814dee8e" id="r_a1dc6e6ba2268606fb3b656f3814dee8e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc6e6ba2268606fb3b656f3814dee8e">create_plane</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, float width, float height, uint32_t width_segments, uint32_t height_segments, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:a1dc6e6ba2268606fb3b656f3814dee8e" id="r_a1dc6e6ba2268606fb3b656f3814dee8e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc6e6ba2268606fb3b656f3814dee8e">create_plane</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, float <a class="el" href="asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd">width</a>, float <a class="el" href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a>, uint32_t width_segments, uint32_t height_segments, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:a1dc6e6ba2268606fb3b656f3814dee8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a plane geometry.  <br /></td></tr>
 <tr class="separator:a1dc6e6ba2268606fb3b656f3814dee8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ac1d058083d405487ac9bf78ce6f93" id="r_ab0ac1d058083d405487ac9bf78ce6f93"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0ac1d058083d405487ac9bf78ce6f93">create_cube</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, float width, float height, float depth, uint32_t width_segments, uint32_t height_segments, uint32_t depth_segments, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:af343cd6b4aaf35b615a84a07d1aaa2ca" id="r_af343cd6b4aaf35b615a84a07d1aaa2ca"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af343cd6b4aaf35b615a84a07d1aaa2ca">create_heightfield</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, hpp::span&lt; const float &gt; heights, uint32_t segments_x, uint32_t segments_z, float half_extent_x, float half_extent_z, float height_scale, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memdesc:af343cd6b4aaf35b615a84a07d1aaa2ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a heightfield on the XZ plane (Y up): vertex grid (segments_x+1)*(segments_z+1).  <br /></td></tr>
+<tr class="separator:af343cd6b4aaf35b615a84a07d1aaa2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ac1d058083d405487ac9bf78ce6f93" id="r_ab0ac1d058083d405487ac9bf78ce6f93"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0ac1d058083d405487ac9bf78ce6f93">create_cube</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, float <a class="el" href="asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd">width</a>, float <a class="el" href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a>, float depth, uint32_t width_segments, uint32_t height_segments, uint32_t depth_segments, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:ab0ac1d058083d405487ac9bf78ce6f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a cube geometry.  <br /></td></tr>
 <tr class="separator:ab0ac1d058083d405487ac9bf78ce6f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8623d535095bd4204bbec2142f0cd860" id="r_a8623d535095bd4204bbec2142f0cd860"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8623d535095bd4204bbec2142f0cd860">create_rounded_cube</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, float width, float height, float depth, uint32_t width_segments, uint32_t height_segments, uint32_t depth_segments, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:a8623d535095bd4204bbec2142f0cd860" id="r_a8623d535095bd4204bbec2142f0cd860"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8623d535095bd4204bbec2142f0cd860">create_rounded_cube</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, float <a class="el" href="asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd">width</a>, float <a class="el" href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a>, float depth, uint32_t width_segments, uint32_t height_segments, uint32_t depth_segments, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="separator:a8623d535095bd4204bbec2142f0cd860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36881653ceb1e851ec2e7bd60d33ad05" id="r_a36881653ceb1e851ec2e7bd60d33ad05"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36881653ceb1e851ec2e7bd60d33ad05">create_sphere</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, float radius, uint32_t stacks, uint32_t slices, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:a36881653ceb1e851ec2e7bd60d33ad05" id="r_a36881653ceb1e851ec2e7bd60d33ad05"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36881653ceb1e851ec2e7bd60d33ad05">create_sphere</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, float radius, uint32_t stacks, uint32_t slices, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:a36881653ceb1e851ec2e7bd60d33ad05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a sphere geometry.  <br /></td></tr>
 <tr class="separator:a36881653ceb1e851ec2e7bd60d33ad05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf25bef4e12f81b49ae4d3cf5c7bcc7f" id="r_abf25bef4e12f81b49ae4d3cf5c7bcc7f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf25bef4e12f81b49ae4d3cf5c7bcc7f">create_cylinder</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, float radius, float height, uint32_t stacks, uint32_t slices, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:abf25bef4e12f81b49ae4d3cf5c7bcc7f" id="r_abf25bef4e12f81b49ae4d3cf5c7bcc7f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf25bef4e12f81b49ae4d3cf5c7bcc7f">create_cylinder</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, float radius, float <a class="el" href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a>, uint32_t stacks, uint32_t slices, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:abf25bef4e12f81b49ae4d3cf5c7bcc7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a cylinder geometry.  <br /></td></tr>
 <tr class="separator:abf25bef4e12f81b49ae4d3cf5c7bcc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a370922e5d3e9f1d473413fed09dbd31c" id="r_a370922e5d3e9f1d473413fed09dbd31c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a370922e5d3e9f1d473413fed09dbd31c">create_capsule</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, float radius, float height, uint32_t stacks, uint32_t slices, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:a370922e5d3e9f1d473413fed09dbd31c" id="r_a370922e5d3e9f1d473413fed09dbd31c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a370922e5d3e9f1d473413fed09dbd31c">create_capsule</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, float radius, float <a class="el" href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a>, uint32_t stacks, uint32_t slices, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:a370922e5d3e9f1d473413fed09dbd31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a capsule geometry.  <br /></td></tr>
 <tr class="separator:a370922e5d3e9f1d473413fed09dbd31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d8d0f1ef48a5a23ccd52329ffa9a06e" id="r_a6d8d0f1ef48a5a23ccd52329ffa9a06e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d8d0f1ef48a5a23ccd52329ffa9a06e">create_cone</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, float radius, float radius_tip, float height, uint32_t stacks, uint32_t slices, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:a6d8d0f1ef48a5a23ccd52329ffa9a06e" id="r_a6d8d0f1ef48a5a23ccd52329ffa9a06e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d8d0f1ef48a5a23ccd52329ffa9a06e">create_cone</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, float radius, float radius_tip, float <a class="el" href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a>, uint32_t stacks, uint32_t slices, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:a6d8d0f1ef48a5a23ccd52329ffa9a06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a cone geometry.  <br /></td></tr>
 <tr class="separator:a6d8d0f1ef48a5a23ccd52329ffa9a06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef825d403e4adaac4b33c0ea177551bc" id="r_aef825d403e4adaac4b33c0ea177551bc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef825d403e4adaac4b33c0ea177551bc">create_torus</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, float outer_radius, float inner_radius, uint32_t bands, uint32_t sides, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:aef825d403e4adaac4b33c0ea177551bc" id="r_aef825d403e4adaac4b33c0ea177551bc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef825d403e4adaac4b33c0ea177551bc">create_torus</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, float outer_radius, float inner_radius, uint32_t bands, uint32_t sides, <a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a> origin, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:aef825d403e4adaac4b33c0ea177551bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a torus geometry.  <br /></td></tr>
 <tr class="separator:aef825d403e4adaac4b33c0ea177551bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66e3fa4bc26def9a3dd4a1c20906e44d" id="r_a66e3fa4bc26def9a3dd4a1c20906e44d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66e3fa4bc26def9a3dd4a1c20906e44d">create_teapot</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:a66e3fa4bc26def9a3dd4a1c20906e44d" id="r_a66e3fa4bc26def9a3dd4a1c20906e44d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66e3fa4bc26def9a3dd4a1c20906e44d">create_teapot</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:a66e3fa4bc26def9a3dd4a1c20906e44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a teapot geometry.  <br /></td></tr>
 <tr class="separator:a66e3fa4bc26def9a3dd4a1c20906e44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40d8a412ed63757f01ec0f2b1848768a" id="r_a40d8a412ed63757f01ec0f2b1848768a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40d8a412ed63757f01ec0f2b1848768a">create_icosahedron</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:a40d8a412ed63757f01ec0f2b1848768a" id="r_a40d8a412ed63757f01ec0f2b1848768a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40d8a412ed63757f01ec0f2b1848768a">create_icosahedron</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:a40d8a412ed63757f01ec0f2b1848768a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an icosahedron geometry.  <br /></td></tr>
 <tr class="separator:a40d8a412ed63757f01ec0f2b1848768a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16d982777b4baaa9590dde73769082e4" id="r_a16d982777b4baaa9590dde73769082e4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16d982777b4baaa9590dde73769082e4">create_dodecahedron</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:a16d982777b4baaa9590dde73769082e4" id="r_a16d982777b4baaa9590dde73769082e4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16d982777b4baaa9590dde73769082e4">create_dodecahedron</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:a16d982777b4baaa9590dde73769082e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a dodecahedron geometry.  <br /></td></tr>
 <tr class="separator:a16d982777b4baaa9590dde73769082e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b848c5d939e8ea47225da985532a23d" id="r_a9b848c5d939e8ea47225da985532a23d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b848c5d939e8ea47225da985532a23d">create_icosphere</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;format, int tesselation_level, bool hardware_copy=true) -&gt; bool</td></tr>
+<tr class="memitem:a9b848c5d939e8ea47225da985532a23d" id="r_a9b848c5d939e8ea47225da985532a23d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b848c5d939e8ea47225da985532a23d">create_icosphere</a> (const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;<a class="el" href="asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd">format</a>, int tesselation_level, bool hardware_copy=true) -&gt; bool</td></tr>
 <tr class="memdesc:a9b848c5d939e8ea47225da985532a23d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an icosphere geometry.  <br /></td></tr>
 <tr class="separator:a9b848c5d939e8ea47225da985532a23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a671862a93671d253dafb92dcf66d2900" id="r_a671862a93671d253dafb92dcf66d2900"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a671862a93671d253dafb92dcf66d2900">end_prepare</a> (bool hardware_copy=true, bool build_buffers=true, bool weld=false, bool optimize=false) -&gt; bool</td></tr>
@@ -263,6 +274,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8657551ea159684ce232699fb56b5c5a" id="r_a8657551ea159684ce232699fb56b5c5a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8657551ea159684ce232699fb56b5c5a">get_vertex_format</a> () const -&gt; const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;</td></tr>
 <tr class="memdesc:a8657551ea159684ce232699fb56b5c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the format of the underlying mesh vertex data.  <br /></td></tr>
 <tr class="separator:a8657551ea159684ce232699fb56b5c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6594bcd769e229bd26c7e47f20bc229d" id="r_a6594bcd769e229bd26c7e47f20bc229d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6594bcd769e229bd26c7e47f20bc229d">get_hardware_vb</a> () const -&gt; std::shared_ptr&lt; <a class="el" href="structgfx_1_1vertex__buffer.html">gfx::vertex_buffer</a> &gt;</td></tr>
+<tr class="memdesc:a6594bcd769e229bd26c7e47f20bc229d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the hardware vertex buffer for the mesh (shared across all LODs).  <br /></td></tr>
+<tr class="separator:a6594bcd769e229bd26c7e47f20bc229d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac558d3dc8e161a6afbafb4040d43a007" id="r_ac558d3dc8e161a6afbafb4040d43a007"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac558d3dc8e161a6afbafb4040d43a007">get_hardware_ib</a> (uint32_t lod_index=0) const -&gt; std::shared_ptr&lt; <a class="el" href="structgfx_1_1index__buffer.html">gfx::index_buffer</a> &gt;</td></tr>
+<tr class="memdesc:ac558d3dc8e161a6afbafb4040d43a007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the hardware index buffer for a given LOD.  <br /></td></tr>
+<tr class="separator:ac558d3dc8e161a6afbafb4040d43a007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac38c7833e987c45492d13ef7bb7da5ca" id="r_ac38c7833e987c45492d13ef7bb7da5ca"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac38c7833e987c45492d13ef7bb7da5ca">get_skin_bind_data</a> () const -&gt; const <a class="el" href="classunravel_1_1skin__bind__data.html">skin_bind_data</a> &amp;</td></tr>
 <tr class="memdesc:ac38c7833e987c45492d13ef7bb7da5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the skin bind data if this mesh has been bound as a skin.  <br /></td></tr>
 <tr class="separator:ac38c7833e987c45492d13ef7bb7da5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,14 +289,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6994829ccf96827a6c741d36336e781" id="r_ab6994829ccf96827a6c741d36336e781"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6994829ccf96827a6c741d36336e781">get_armature</a> () const -&gt; const std::unique_ptr&lt; <a class="el" href="structunravel_1_1mesh_1_1armature__node.html">armature_node</a> &gt; &amp;</td></tr>
 <tr class="memdesc:ab6994829ccf96827a6c741d36336e781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the armature tree of the mesh.  <br /></td></tr>
 <tr class="separator:ab6994829ccf96827a6c741d36336e781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5243ee41c94abb576c2f9dc5601c9b" id="r_ace5243ee41c94abb576c2f9dc5601c9b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace5243ee41c94abb576c2f9dc5601c9b">get_submesh_node_transforms</a> (uint32_t lod_index=0) const -&gt; std::vector&lt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &gt;</td></tr>
+<tr class="memdesc:ace5243ee41c94abb576c2f9dc5601c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the accumulated node transform for each submesh.  <br /></td></tr>
+<tr class="separator:ace5243ee41c94abb576c2f9dc5601c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a648103d503ccd72839468e4742a89b92" id="r_a648103d503ccd72839468e4742a89b92"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a648103d503ccd72839468e4742a89b92">calculate_screen_rect</a> (const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;world, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam) const -&gt; <a class="el" href="core_2base_2basetypes_8hpp.html#a773f83d184adb60d5fe7d9876564c681">irect32_t</a></td></tr>
-<tr class="memdesc:a648103d503ccd72839468e4742a89b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the screen rectangle of the mesh based on its world transform and the camera.  <br /></td></tr>
+<tr class="memdesc:a648103d503ccd72839468e4742a89b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the screen rectangle of the mesh based on its world transform and the camera. This version uses a conservative approach - if any corners are behind the camera, it returns the full viewport as the screen rect. Fast but may overestimate coverage.  <br /></td></tr>
 <tr class="separator:a648103d503ccd72839468e4742a89b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9a07eba3797cef448ed00e2814a537f" id="r_ae9a07eba3797cef448ed00e2814a537f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9a07eba3797cef448ed00e2814a537f">get_submeshes</a> () const -&gt; const <a class="el" href="#adbf95b3d2c7664701f222acf91366789">submesh_array_t</a> &amp;</td></tr>
-<tr class="memdesc:ae9a07eba3797cef448ed00e2814a537f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information about the submesh of the mesh associated with the specified data group identifier.  <br /></td></tr>
-<tr class="separator:ae9a07eba3797cef448ed00e2814a537f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f31fa47d7719709fe325358e07c7226" id="r_a4f31fa47d7719709fe325358e07c7226"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f31fa47d7719709fe325358e07c7226">get_submesh</a> (uint32_t submesh_index=0) const -&gt; const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *</td></tr>
-<tr class="separator:a4f31fa47d7719709fe325358e07c7226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94225cd8c976304387ebad8face6861" id="r_ad94225cd8c976304387ebad8face6861"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad94225cd8c976304387ebad8face6861">calculate_screen_rect_precise</a> (const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;world, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam) const -&gt; <a class="el" href="core_2base_2basetypes_8hpp.html#a773f83d184adb60d5fe7d9876564c681">irect32_t</a></td></tr>
+<tr class="memdesc:ad94225cd8c976304387ebad8face6861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the screen rectangle of the mesh with precise near-plane clipping. This version properly clips edges that cross the near plane for accurate screen coverage. More accurate but slightly more expensive than calculate_screen_rect.  <br /></td></tr>
+<tr class="separator:ad94225cd8c976304387ebad8face6861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0d3ed560e58949d87c216e0eb8f14b" id="r_abb0d3ed560e58949d87c216e0eb8f14b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb0d3ed560e58949d87c216e0eb8f14b">get_submeshes</a> (uint32_t lod_index=0) const -&gt; const <a class="el" href="#adbf95b3d2c7664701f222acf91366789">submesh_array_t</a> &amp;</td></tr>
+<tr class="memdesc:abb0d3ed560e58949d87c216e0eb8f14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information about the submesh of the mesh associated with the specified data group identifier.  <br /></td></tr>
+<tr class="separator:abb0d3ed560e58949d87c216e0eb8f14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad574e72ec862fb499f231a7b0fcc67ee" id="r_ad574e72ec862fb499f231a7b0fcc67ee"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad574e72ec862fb499f231a7b0fcc67ee">get_submesh</a> (uint32_t submesh_index=0, uint32_t lod_index=0) const -&gt; const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *</td></tr>
+<tr class="separator:ad574e72ec862fb499f231a7b0fcc67ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a94126ac12cc139836876e54fa4336b" id="r_a6a94126ac12cc139836876e54fa4336b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a94126ac12cc139836876e54fa4336b">get_bounds</a> () const -&gt; const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;</td></tr>
 <tr class="memdesc:a6a94126ac12cc139836876e54fa4336b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the local bounding box for this mesh.  <br /></td></tr>
 <tr class="separator:a6a94126ac12cc139836876e54fa4336b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,19 +312,66 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae313a88122be108b52f77b9e610c59ad" id="r_ae313a88122be108b52f77b9e610c59ad"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae313a88122be108b52f77b9e610c59ad">get_data_groups_count</a> () const -&gt; size_t</td></tr>
 <tr class="memdesc:ae313a88122be108b52f77b9e610c59ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of data groups(materials) for this mesh.  <br /></td></tr>
 <tr class="separator:ae313a88122be108b52f77b9e610c59ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a608d4f83707cfdd0a6af050aa03889e0" id="r_a608d4f83707cfdd0a6af050aa03889e0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a608d4f83707cfdd0a6af050aa03889e0">get_submeshes_count</a> () const -&gt; size_t</td></tr>
-<tr class="memdesc:a608d4f83707cfdd0a6af050aa03889e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of submeshes for this mesh.  <br /></td></tr>
-<tr class="separator:a608d4f83707cfdd0a6af050aa03889e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1c22b98335232c87210cbe6cbcb784f" id="r_af1c22b98335232c87210cbe6cbcb784f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1c22b98335232c87210cbe6cbcb784f">get_skinned_submeshes_count</a> () const -&gt; size_t</td></tr>
-<tr class="separator:af1c22b98335232c87210cbe6cbcb784f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5982d17a10f0e53df7a5f8e0fb912581" id="r_a5982d17a10f0e53df7a5f8e0fb912581"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5982d17a10f0e53df7a5f8e0fb912581">get_skinned_submeshes_indices</a> (uint32_t data_group_id) const -&gt; const <a class="el" href="#ac3ec10a396ed9ff8b75c8ce542c3feaa">submesh_array_indices_t</a> &amp;</td></tr>
-<tr class="separator:a5982d17a10f0e53df7a5f8e0fb912581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79a49b68a98599a2f36a3ec05713ca08" id="r_a79a49b68a98599a2f36a3ec05713ca08"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79a49b68a98599a2f36a3ec05713ca08">get_non_skinned_submeshes_count</a> () const -&gt; size_t</td></tr>
-<tr class="separator:a79a49b68a98599a2f36a3ec05713ca08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c60038014cee7a14da776aedba8a465" id="r_a5c60038014cee7a14da776aedba8a465"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c60038014cee7a14da776aedba8a465">get_non_skinned_submeshes_indices</a> (uint32_t data_group_id) const -&gt; const <a class="el" href="#ac3ec10a396ed9ff8b75c8ce542c3feaa">submesh_array_indices_t</a> &amp;</td></tr>
-<tr class="separator:a5c60038014cee7a14da776aedba8a465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a003b05f133d727cf812e3a93297097" id="r_a0a003b05f133d727cf812e3a93297097"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a003b05f133d727cf812e3a93297097">get_submesh_index</a> (const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *s) const -&gt; int</td></tr>
-<tr class="separator:a0a003b05f133d727cf812e3a93297097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f3693ffef960a68d50edf82d4f3352" id="r_a56f3693ffef960a68d50edf82d4f3352"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56f3693ffef960a68d50edf82d4f3352">get_default_material_uids</a> () const -&gt; const std::vector&lt; hpp::uuid &gt; &amp;</td></tr>
+<tr class="memdesc:a56f3693ffef960a68d50edf82d4f3352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default material UIDs generated during import.  <br /></td></tr>
+<tr class="separator:a56f3693ffef960a68d50edf82d4f3352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4493e4989fc15b995e15b1309d30448a" id="r_a4493e4989fc15b995e15b1309d30448a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4493e4989fc15b995e15b1309d30448a">get_imported_materials</a> () const -&gt; std::vector&lt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1material.html">material</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a4493e4989fc15b995e15b1309d30448a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the imported materials generated during import.  <br /></td></tr>
+<tr class="separator:a4493e4989fc15b995e15b1309d30448a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7727910916738a865cae992172bae440" id="r_a7727910916738a865cae992172bae440"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7727910916738a865cae992172bae440">get_submeshes_count</a> (uint32_t lod_index=0) const -&gt; size_t</td></tr>
+<tr class="memdesc:a7727910916738a865cae992172bae440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of submeshes for this mesh.  <br /></td></tr>
+<tr class="separator:a7727910916738a865cae992172bae440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf9ee2fc9f92b3cd629999b6b1d1d84" id="r_aadf9ee2fc9f92b3cd629999b6b1d1d84"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadf9ee2fc9f92b3cd629999b6b1d1d84">find_submesh_index_by_stable_id</a> (uint32_t stable_id, uint32_t lod_index=0) const -&gt; int</td></tr>
+<tr class="memdesc:aadf9ee2fc9f92b3cd629999b6b1d1d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the submesh array index matching an import-stable submesh identifier.  <br /></td></tr>
+<tr class="separator:aadf9ee2fc9f92b3cd629999b6b1d1d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92bd1b8fb5cc5ed6838bb84034e440a4" id="r_a92bd1b8fb5cc5ed6838bb84034e440a4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92bd1b8fb5cc5ed6838bb84034e440a4">get_skinned_submeshes_count</a> (uint32_t lod_index=0) const -&gt; size_t</td></tr>
+<tr class="memdesc:a92bd1b8fb5cc5ed6838bb84034e440a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of skinned submeshes for this mesh.  <br /></td></tr>
+<tr class="separator:a92bd1b8fb5cc5ed6838bb84034e440a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f413987bd0755e50adb8815f94980a" id="r_ab1f413987bd0755e50adb8815f94980a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1f413987bd0755e50adb8815f94980a">get_skinned_submeshes_indices</a> (uint32_t data_group_id, uint32_t lod_index=0) const -&gt; const <a class="el" href="#ac3ec10a396ed9ff8b75c8ce542c3feaa">submesh_array_indices_t</a> &amp;</td></tr>
+<tr class="memdesc:ab1f413987bd0755e50adb8815f94980a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the indices of skinned submeshes for a specific data group.  <br /></td></tr>
+<tr class="separator:ab1f413987bd0755e50adb8815f94980a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959237e1b0fdfedbd4e1c5228edc175e" id="r_a959237e1b0fdfedbd4e1c5228edc175e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a959237e1b0fdfedbd4e1c5228edc175e">get_non_skinned_submeshes_count</a> (uint32_t lod_index=0) const -&gt; size_t</td></tr>
+<tr class="memdesc:a959237e1b0fdfedbd4e1c5228edc175e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of non-skinned submeshes for this mesh.  <br /></td></tr>
+<tr class="separator:a959237e1b0fdfedbd4e1c5228edc175e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb08f50e414cfc3ac4610d13e2a5431a" id="r_adb08f50e414cfc3ac4610d13e2a5431a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb08f50e414cfc3ac4610d13e2a5431a">get_non_skinned_submeshes_indices</a> (uint32_t data_group_id, uint32_t lod_index=0) const -&gt; const <a class="el" href="#ac3ec10a396ed9ff8b75c8ce542c3feaa">submesh_array_indices_t</a> &amp;</td></tr>
+<tr class="memdesc:adb08f50e414cfc3ac4610d13e2a5431a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the indices of non-skinned submeshes for a specific data group.  <br /></td></tr>
+<tr class="separator:adb08f50e414cfc3ac4610d13e2a5431a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfef1083f07856fa281cb3dc834240e1" id="r_adfef1083f07856fa281cb3dc834240e1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfef1083f07856fa281cb3dc834240e1">get_submesh_index</a> (const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *s, uint32_t lod_index=0) const -&gt; int</td></tr>
+<tr class="memdesc:adfef1083f07856fa281cb3dc834240e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of a submesh within the submesh array.  <br /></td></tr>
+<tr class="separator:adfef1083f07856fa281cb3dc834240e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efdecc75d5b66cd1351ded079484678" id="r_a3efdecc75d5b66cd1351ded079484678"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3efdecc75d5b66cd1351ded079484678">get_lod_count</a> () const -&gt; uint32_t</td></tr>
+<tr class="memdesc:a3efdecc75d5b66cd1351ded079484678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of LOD levels available.  <br /></td></tr>
+<tr class="separator:a3efdecc75d5b66cd1351ded079484678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834ee6cca0d519f069b5ca3645cedef0" id="r_a834ee6cca0d519f069b5ca3645cedef0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a834ee6cca0d519f069b5ca3645cedef0">get_lod_submeshes</a> (uint32_t lod_index) const -&gt; const <a class="el" href="#adbf95b3d2c7664701f222acf91366789">submesh_array_t</a> *</td></tr>
+<tr class="memdesc:a834ee6cca0d519f069b5ca3645cedef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets submeshes for a specific LOD level.  <br /></td></tr>
+<tr class="separator:a834ee6cca0d519f069b5ca3645cedef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07e4a70a7d47391c9fef80c75b9767e" id="r_ab07e4a70a7d47391c9fef80c75b9767e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab07e4a70a7d47391c9fef80c75b9767e">get_lod_face_count</a> (uint32_t lod_index) const -&gt; uint32_t</td></tr>
+<tr class="memdesc:ab07e4a70a7d47391c9fef80c75b9767e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the face count for a specific LOD level.  <br /></td></tr>
+<tr class="separator:ab07e4a70a7d47391c9fef80c75b9767e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a0d9beac67a54ce651ca5a9d95e488" id="r_a07a0d9beac67a54ce651ca5a9d95e488"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07a0d9beac67a54ce651ca5a9d95e488">get_lod_index_data</a> (uint32_t lod_index, std::vector&lt; uint32_t &gt; &amp;out_indices, float &amp;out_error) const -&gt; bool</td></tr>
+<tr class="memdesc:a07a0d9beac67a54ce651ca5a9d95e488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets index buffer data for a specific LOD level (for serialization).  <br /></td></tr>
+<tr class="separator:a07a0d9beac67a54ce651ca5a9d95e488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e80e38f6620937cbc8b6513b17d3830" id="r_a1e80e38f6620937cbc8b6513b17d3830"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e80e38f6620937cbc8b6513b17d3830">restore_lods_from_load_data</a> (const <a class="el" href="structunravel_1_1mesh_1_1load__data.html">load_data</a> &amp;data) -&gt; bool</td></tr>
+<tr class="memdesc:a1e80e38f6620937cbc8b6513b17d3830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores LOD levels from <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> into the mesh.  <br /></td></tr>
+<tr class="separator:a1e80e38f6620937cbc8b6513b17d3830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ace6e3aab332c387f05f43e85aa5a315b" id="r_ace6e3aab332c387f05f43e85aa5a315b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace6e3aab332c387f05f43e85aa5a315b">get_max_lod_count</a> () -&gt; uint32_t</td></tr>
+<tr class="memdesc:ace6e3aab332c387f05f43e85aa5a315b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the maximum number of LODs that can be used for this mesh including base LOD.  <br /></td></tr>
+<tr class="separator:ace6e3aab332c387f05f43e85aa5a315b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce5d7c516eff223d1333f27135d10cf" id="r_afce5d7c516eff223d1333f27135d10cf"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afce5d7c516eff223d1333f27135d10cf">get_max_generated_lod_count</a> () -&gt; uint32_t</td></tr>
+<tr class="memdesc:afce5d7c516eff223d1333f27135d10cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the maximum number of LODs that can be generated for a mesh.  <br /></td></tr>
+<tr class="separator:afce5d7c516eff223d1333f27135d10cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75575e5fc475432683fa3d80f0f1700e" id="r_a75575e5fc475432683fa3d80f0f1700e"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75575e5fc475432683fa3d80f0f1700e">generate_default_lod_configs</a> (const <a class="el" href="structunravel_1_1mesh_1_1load__data.html">load_data</a> &amp;data, float target_error=0.01f) -&gt; std::vector&lt; std::pair&lt; size_t, float &gt; &gt;</td></tr>
+<tr class="memdesc:a75575e5fc475432683fa3d80f0f1700e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates default LOD configurations based on mesh triangle count.  <br /></td></tr>
+<tr class="separator:a75575e5fc475432683fa3d80f0f1700e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02287bf779cad0d35228bde9a5d1514b" id="r_a02287bf779cad0d35228bde9a5d1514b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02287bf779cad0d35228bde9a5d1514b">apply_skin_to_load_data</a> (<a class="el" href="structunravel_1_1mesh_1_1load__data.html">load_data</a> &amp;data) -&gt; bool</td></tr>
+<tr class="memdesc:a02287bf779cad0d35228bde9a5d1514b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies skinning vertex duplication to <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> (for offline LOD generation).  <br /></td></tr>
+<tr class="separator:a02287bf779cad0d35228bde9a5d1514b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a216e5db8b56534c63e915a5b902b259b" id="r_a216e5db8b56534c63e915a5b902b259b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a216e5db8b56534c63e915a5b902b259b">generate_lods_for_load_data</a> (<a class="el" href="structunravel_1_1mesh_1_1load__data.html">load_data</a> &amp;data, const std::vector&lt; std::pair&lt; size_t, float &gt; &gt; &amp;lod_configs) -&gt; bool</td></tr>
+<tr class="memdesc:a216e5db8b56534c63e915a5b902b259b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates LOD levels directly in <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> without creating GPU buffers.  <br /></td></tr>
+<tr class="separator:a216e5db8b56534c63e915a5b902b259b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -335,15 +405,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a7ca348ed4cc296d20104090df1373253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the data in the mesh into material and data group order.  <br /></td></tr>
 <tr class="separator:a7ca348ed4cc296d20104090df1373253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6e270f4896155cc4b4203308635b45fe" id="r_a6e270f4896155cc4b4203308635b45fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e270f4896155cc4b4203308635b45fe">build_optimized_index_buffer</a> (const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *<a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a>, uint32_t *source_buffer_ptr, uint32_t *destination_buffer_ptr, uint32_t minimum_vertex, uint32_t maximum_vertex)</td></tr>
-<tr class="memdesc:a6e270f4896155cc4b4203308635b45fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the best order for triangle data, optimizing for efficient use of the hardware vertex cache.  <br /></td></tr>
-<tr class="separator:a6e270f4896155cc4b4203308635b45fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0b8bb070224c1e352ba6e7d927d089d" id="r_ae0b8bb070224c1e352ba6e7d927d089d"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0b8bb070224c1e352ba6e7d927d089d">find_vertex_optimizer_score</a> (const <a class="el" href="structunravel_1_1mesh_1_1optimizer__vertex__info.html">optimizer_vertex_info</a> *vertex_info_ptr) -&gt; float</td></tr>
-<tr class="memdesc:ae0b8bb070224c1e352ba6e7d927d089d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates scores used to identify important vertices when ordering triangle data.  <br /></td></tr>
-<tr class="separator:ae0b8bb070224c1e352ba6e7d927d089d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a968fc0a11f0f66e19ebb2dac7502667f" id="r_a968fc0a11f0f66e19ebb2dac7502667f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a968fc0a11f0f66e19ebb2dac7502667f">force_tangent_generation_</a> = false</td></tr>
@@ -362,20 +423,26 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a85b018ca9d74b2af0d793c61faa8a31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vertex format used for the mesh internal vertex data.  <br /></td></tr>
 <tr class="separator:a85b018ca9d74b2af0d793c61faa8a31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a054af0f5a06e736c8d0eca270b70b158" id="r_a054af0f5a06e736c8d0eca270b70b158"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a054af0f5a06e736c8d0eca270b70b158">vertex_format_</a></td></tr>
-<tr class="memdesc:a054af0f5a06e736c8d0eca270b70b158"><td class="mdescLeft">&#160;</td><td class="mdescRight">The final system memory copy of the index buffer.  <br /></td></tr>
+<tr class="memdesc:a054af0f5a06e736c8d0eca270b70b158"><td class="mdescLeft">&#160;</td><td class="mdescRight">The final system memory copy of the index buffer (LOD 0 - base mesh).  <br /></td></tr>
 <tr class="separator:a054af0f5a06e736c8d0eca270b70b158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfa51e314bc5e48544f7ced4d57eddf8" id="r_acfa51e314bc5e48544f7ced4d57eddf8"><td class="memItemLeft" align="right" valign="top">uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfa51e314bc5e48544f7ced4d57eddf8">system_ib_</a> = nullptr</td></tr>
 <tr class="memdesc:acfa51e314bc5e48544f7ced4d57eddf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Material and data group information for each triangle.  <br /></td></tr>
 <tr class="separator:acfa51e314bc5e48544f7ced4d57eddf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4f9260f6de76bbbc4031797d206383d" id="r_af4f9260f6de76bbbc4031797d206383d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a429c5cc5b501f1ce582d7bbbd895d73d">submesh_key_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4f9260f6de76bbbc4031797d206383d">triangle_data_</a></td></tr>
-<tr class="memdesc:af4f9260f6de76bbbc4031797d206383d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual hardware vertex buffer resource.  <br /></td></tr>
+<tr class="memdesc:af4f9260f6de76bbbc4031797d206383d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual hardware vertex buffer resource (shared by all LODs).  <br /></td></tr>
 <tr class="separator:af4f9260f6de76bbbc4031797d206383d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283f3b79d720107f6de52b1f3f88ce17" id="r_a283f3b79d720107f6de52b1f3f88ce17"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a283f3b79d720107f6de52b1f3f88ce17">hardware_vb_</a></td></tr>
-<tr class="memdesc:a283f3b79d720107f6de52b1f3f88ce17"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual hardware index buffer resource.  <br /></td></tr>
+<tr class="memdesc:a283f3b79d720107f6de52b1f3f88ce17"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual hardware index buffer resource (LOD 0 - base mesh).  <br /></td></tr>
 <tr class="separator:a283f3b79d720107f6de52b1f3f88ce17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a852e26087b88176832f2928dc13cd817" id="r_a852e26087b88176832f2928dc13cd817"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a852e26087b88176832f2928dc13cd817">hardware_ib_</a></td></tr>
-<tr class="memdesc:a852e26087b88176832f2928dc13cd817"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual list of submeshes maintained by this mesh.  <br /></td></tr>
+<tr class="memdesc:a852e26087b88176832f2928dc13cd817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional LOD levels (LOD 1, 2, 3, ...) with simplified index buffers.  <br /></td></tr>
 <tr class="separator:a852e26087b88176832f2928dc13cd817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad347a6f617cd7f47af098e23d4a0bf9" id="r_aad347a6f617cd7f47af098e23d4a0bf9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structunravel_1_1mesh_1_1lod__level.html">lod_level</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad347a6f617cd7f47af098e23d4a0bf9">lods_</a></td></tr>
+<tr class="memdesc:aad347a6f617cd7f47af098e23d4a0bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current LOD count (including base LOD 0).  <br /></td></tr>
+<tr class="separator:aad347a6f617cd7f47af098e23d4a0bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd83867f5f48d644f2ce2a86f9ef823" id="r_affd83867f5f48d644f2ce2a86f9ef823"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affd83867f5f48d644f2ce2a86f9ef823">lod_count_</a> = 1</td></tr>
+<tr class="memdesc:affd83867f5f48d644f2ce2a86f9ef823"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual list of submeshes maintained by this mesh.  <br /></td></tr>
+<tr class="separator:affd83867f5f48d644f2ce2a86f9ef823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38888a4f8ff2f5eaca369d438c42ba92" id="r_a38888a4f8ff2f5eaca369d438c42ba92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#adbf95b3d2c7664701f222acf91366789">submesh_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38888a4f8ff2f5eaca369d438c42ba92">mesh_submeshes_</a></td></tr>
 <tr class="memdesc:a38888a4f8ff2f5eaca369d438c42ba92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indices in the subset array which are skinned.  <br /></td></tr>
 <tr class="separator:a38888a4f8ff2f5eaca369d438c42ba92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,7 +487,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a2528beca09a3eba15967462edaeabb17"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of armature nodes.  <br /></td></tr>
 <tr class="separator:a2528beca09a3eba15967462edaeabb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b8a63a028f007393540b22b54c778b" id="r_a34b8a63a028f007393540b22b54c778b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structunravel_1_1mesh_1_1armature__node.html">armature_node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34b8a63a028f007393540b22b54c778b">root_</a> = nullptr</td></tr>
+<tr class="memdesc:a34b8a63a028f007393540b22b54c778b"><td class="mdescLeft">&#160;</td><td class="mdescRight">UIDs of default materials generated during import, indexed by data_group_id.  <br /></td></tr>
 <tr class="separator:a34b8a63a028f007393540b22b54c778b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7430bc0280f5f1110245c80bb253fd4a" id="r_a7430bc0280f5f1110245c80bb253fd4a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; hpp::uuid &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7430bc0280f5f1110245c80bb253fd4a">default_material_uids_</a></td></tr>
+<tr class="separator:a7430bc0280f5f1110245c80bb253fd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -436,7 +506,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main class representing a 3D mesh with support for different LODs, submeshes, and skinning. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00309">309</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00322">322</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af6e399f8eb1fdf794656a767cb91c8e7" name="af6e399f8eb1fdf794656a767cb91c8e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6e399f8eb1fdf794656a767cb91c8e7">&#9670;&#160;</a></span>bone_combination_map_t</h2>
@@ -458,7 +528,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00944">944</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01200">1200</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -474,7 +544,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00363">363</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00390">390</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -490,7 +560,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00368">368</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00395">395</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -506,7 +576,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00367">367</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00394">394</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -522,7 +592,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00364">364</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00391">391</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -538,7 +608,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00365">365</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00392">392</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -554,7 +624,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00362">362</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00389">389</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -578,7 +648,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00918">918</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01174">1174</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -602,7 +672,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00917">917</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01173">1173</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -618,7 +688,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00361">361</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00388">388</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +710,7 @@ Friends</h2></td></tr>
 
 <p>Constructs a mesh object. </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00115">115</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00159">159</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -661,11 +731,47 @@ Friends</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00119">119</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00163">163</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a02287bf779cad0d35228bde9a5d1514b" name="a02287bf779cad0d35228bde9a5d1514b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02287bf779cad0d35228bde9a5d1514b">&#9670;&#160;</a></span>apply_skin_to_load_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::apply_skin_to_load_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1mesh_1_1load__data.html">load_data</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td> -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies skinning vertex duplication to <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> (for offline LOD generation). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> to apply skinning to (will be modified) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if skinning was applied successfully </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02033">2033</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ab53830ad2b1d9f65c56d95cbc7aaf5fc" name="ab53830ad2b1d9f65c56d95cbc7aaf5fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab53830ad2b1d9f65c56d95cbc7aaf5fc">&#9670;&#160;</a></span>bind_armature()</h2>
 
@@ -692,12 +798,12 @@ Friends</h2></td></tr>
 <dd>
 false If binding the armature failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00715">715</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00816">816</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a8097708dda2e739f0cefca85562e950f" name="a8097708dda2e739f0cefca85562e950f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8097708dda2e739f0cefca85562e950f">&#9670;&#160;</a></span>bind_render_buffers_for_submesh()</h2>
+<a id="a6a169280ee4bba87daba64f817b022a2" name="a6a169280ee4bba87daba64f817b022a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a169280ee4bba87daba64f817b022a2">&#9670;&#160;</a></span>bind_render_buffers_for_submesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -705,8 +811,12 @@ false If binding the armature failed. </dd></dl>
         <tr>
           <td class="memname">void unravel::mesh::bind_render_buffers_for_submesh </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *</td>          <td class="paramname"><span class="paramname"><em>submesh</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *</td>          <td class="paramname"><span class="paramname"><em>submesh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -722,7 +832,7 @@ false If binding the armature failed. </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02811">2811</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l04110">4110</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -752,7 +862,7 @@ false If binding the armature failed. </dd></dl>
 <dd>
 false If binding the mesh as a skin failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00478">478</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00579">579</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -779,65 +889,7 @@ false If binding the mesh as a skin failed. </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01104">1104</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a6e270f4896155cc4b4203308635b45fe" name="a6e270f4896155cc4b4203308635b45fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e270f4896155cc4b4203308635b45fe">&#9670;&#160;</a></span>build_optimized_index_buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void unravel::mesh::build_optimized_index_buffer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *</td>          <td class="paramname"><span class="paramname"><em>submesh</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>source_buffer_ptr</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>destination_buffer_ptr</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>minimum_vertex</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>maximum_vertex</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Calculates the best order for triangle data, optimizing for efficient use of the hardware vertex cache. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">submesh</td><td>The submesh to optimize. </td></tr>
-    <tr><td class="paramname">source_buffer_ptr</td><td>Pointer to the source index buffer. </td></tr>
-    <tr><td class="paramname">destination_buffer_ptr</td><td>Pointer to the destination index buffer. </td></tr>
-    <tr><td class="paramname">minimum_vertex</td><td>The minimum vertex index. </td></tr>
-    <tr><td class="paramname">maximum_vertex</td><td>The maximum vertex index. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02851">2851</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01310">1310</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -864,7 +916,7 @@ false If binding the mesh as a skin failed. </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01090">1090</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01291">1291</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -887,7 +939,7 @@ false If binding the mesh as a skin failed. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates the screen rectangle of the mesh based on its world transform and the camera. </p>
+<p>Calculates the screen rectangle of the mesh based on its world transform and the camera. This version uses a conservative approach - if any corners are behind the camera, it returns the full viewport as the screen rect. Fast but may overestimate coverage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world transform of the mesh. </td></tr>
@@ -897,7 +949,40 @@ false If binding the mesh as a skin failed. </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>irect32_t The screen rectangle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01414">1414</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01790">1790</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad94225cd8c976304387ebad8face6861" name="ad94225cd8c976304387ebad8face6861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94225cd8c976304387ebad8face6861">&#9670;&#160;</a></span>calculate_screen_rect_precise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::calculate_screen_rect_precise </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>world</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cam</em></span>&#160;) const -&gt; <a class="el" href="core_2base_2basetypes_8hpp.html#a773f83d184adb60d5fe7d9876564c681">irect32_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the screen rectangle of the mesh with precise near-plane clipping. This version properly clips edges that cross the near plane for accurate screen coverage. More accurate but slightly more expensive than calculate_screen_rect. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world</td><td>The world transform of the mesh. </td></tr>
+    <tr><td class="paramname">cam</td><td>The camera. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>irect32_t The screen rectangle. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01680">1680</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -924,7 +1009,7 @@ false If binding the mesh as a skin failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00982">982</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01183">1183</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -989,7 +1074,7 @@ false If binding the mesh as a skin failed. </dd></dl>
 <dd>
 false If creating the capsule failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00857">857</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01058">1058</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1060,7 +1145,7 @@ false If creating the capsule failed. </dd></dl>
 <dd>
 false If creating the cone failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00878">878</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01079">1079</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1222,7 @@ false If creating the cone failed. </dd></dl>
 <dd>
 false If creating the cube failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00765">765</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00966">966</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1287,7 @@ false If creating the cube failed. </dd></dl>
 <dd>
 false If creating the cylinder failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00832">832</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01033">1033</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1322,76 @@ false If creating the cylinder failed. </dd></dl>
 <dd>
 false If creating the dodecahedron failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00951">951</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01152">1152</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af343cd6b4aaf35b615a84a07d1aaa2ca" name="af343cd6b4aaf35b615a84a07d1aaa2ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af343cd6b4aaf35b615a84a07d1aaa2ca">&#9670;&#160;</a></span>create_heightfield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::create_heightfield </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>format</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">hpp::span&lt; const float &gt;</td>          <td class="paramname"><span class="paramname"><em>heights</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>segments_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>segments_z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>half_extent_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>half_extent_z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>height_scale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceunravel.html#aea4ac0704c54bb386169acdca314578a">mesh_create_origin</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>hardware_copy</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a heightfield on the XZ plane (Y up): vertex grid (segments_x+1)*(segments_z+1). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">heights</td><td>Row-major samples indexed by z * (segments_x+1) + x, values in arbitrary units scaled by height_scale. </td></tr>
+    <tr><td class="paramname">half_extent_x</td><td>Half world size along X; vertices span [-half_extent_x, half_extent_x]. </td></tr>
+    <tr><td class="paramname">half_extent_z</td><td>Half world size along Z. </td></tr>
+    <tr><td class="paramname">height_scale</td><td>Multiplier applied to each height sample before placing along Y. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00904">904</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1272,7 +1426,7 @@ false If creating the dodecahedron failed. </dd></dl>
 <dd>
 false If creating the icosahedron failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00936">936</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01137">1137</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1313,7 +1467,7 @@ false If creating the icosahedron failed. </dd></dl>
 <dd>
 false If creating the icosphere failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00966">966</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01167">1167</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1532,7 @@ false If creating the icosphere failed. </dd></dl>
 <dd>
 false If creating the plane failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00740">740</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00879">879</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1590,7 @@ false If creating the plane failed. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00789">789</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00990">990</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1495,7 +1649,7 @@ false If creating the plane failed. </dd></dl>
 <dd>
 false If creating the sphere failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00812">812</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01013">1013</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1530,7 +1684,7 @@ false If creating the sphere failed. </dd></dl>
 <dd>
 false If creating the teapot failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00921">921</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01122">1122</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1595,7 +1749,7 @@ false If creating the teapot failed. </dd></dl>
 <dd>
 false If creating the torus failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00900">900</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01101">1101</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1616,7 +1770,7 @@ false If creating the torus failed. </dd></dl>
 
 <p>Clears out all the mesh data. </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00124">124</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00168">168</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1663,43 +1817,40 @@ false If creating the torus failed. </dd></dl>
 <dd>
 false If the mesh preparation failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01017">1017</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01218">1218</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae0b8bb070224c1e352ba6e7d927d089d" name="ae0b8bb070224c1e352ba6e7d927d089d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0b8bb070224c1e352ba6e7d927d089d">&#9670;&#160;</a></span>find_vertex_optimizer_score()</h2>
+<a id="aadf9ee2fc9f92b3cd629999b6b1d1d84" name="aadf9ee2fc9f92b3cd629999b6b1d1d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf9ee2fc9f92b3cd629999b6b1d1d84">&#9670;&#160;</a></span>find_submesh_index_by_stable_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::mesh::find_vertex_optimizer_score </td>
+          <td class="memname">auto unravel::mesh::find_submesh_index_by_stable_id </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structunravel_1_1mesh_1_1optimizer__vertex__info.html">optimizer_vertex_info</a> *</td>          <td class="paramname"><span class="paramname"><em>vertex_info_ptr</em></span></td><td>)</td>
-          <td> -&gt; float</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>stable_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;) const -&gt; int</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Generates scores used to identify important vertices when ordering triangle data. </p>
+<p>Finds the submesh array index matching an import-stable submesh identifier. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vertex_info_ptr</td><td>Pointer to the vertex information. </td></tr>
+    <tr><td class="paramname">stable_id</td><td>The stable identifier assigned at import time (see <a class="el" href="structunravel_1_1mesh_1_1submesh.html#aed37c43c74bb2a53092efa75c55552cf">submesh::stable_id</a>). </td></tr>
+    <tr><td class="paramname">lod_index</td><td>LOD index (0 = base, 1+ = simplified) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>float The vertex score. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Index of the submesh, or -1 if no submesh carries that id. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l03092">3092</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01922">1922</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1729,7 +1880,90 @@ false If the mesh preparation failed. </dd></dl>
 <dd>
 false If generating the adjacency information failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01131">1131</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01344">1344</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a75575e5fc475432683fa3d80f0f1700e" name="a75575e5fc475432683fa3d80f0f1700e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75575e5fc475432683fa3d80f0f1700e">&#9670;&#160;</a></span>generate_default_lod_configs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::generate_default_lod_configs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1mesh_1_1load__data.html">load_data</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>target_error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.01f</span>&#160;) -&gt; std::vector&lt;std::pair&lt;size_t, float&gt;&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates default LOD configurations based on mesh triangle count. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> to generate LOD configs for </td></tr>
+    <tr><td class="paramname">target_error</td><td>Base target error for LOD generation (default: 0.01) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vector of LOD configurations: {target_triangle_count, target_error} </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02018">2018</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a216e5db8b56534c63e915a5b902b259b" name="a216e5db8b56534c63e915a5b902b259b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a216e5db8b56534c63e915a5b902b259b">&#9670;&#160;</a></span>generate_lods_for_load_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::generate_lods_for_load_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1mesh_1_1load__data.html">load_data</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; size_t, float &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lod_configs</em></span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates LOD levels directly in <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> without creating GPU buffers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> to generate LODs for (will be modified) </td></tr>
+    <tr><td class="paramname">lod_configs</td><td>Vector of LOD configurations: {target_triangle_count, target_error} </td></tr>
+    <tr><td class="paramname">options</td><td>meshoptimizer simplification options (default: 0) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if LODs were generated successfully </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02236">2236</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1767,7 +2001,7 @@ false If generating the adjacency information failed. </dd></dl>
 <dd>
 false If generating the vertex barycentric coordinates failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02066">2066</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l03309">3309</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1805,7 +2039,7 @@ false If generating the vertex barycentric coordinates failed. </dd></dl>
 <dd>
 false If generating the vertex components failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01705">1705</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02948">2948</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1848,7 +2082,7 @@ false If generating the vertex components failed. </dd></dl>
 <dd>
 false If generating the vertex normals failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01781">1781</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l03024">3024</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1880,7 +2114,7 @@ false If generating the vertex normals failed. </dd></dl>
 <dd>
 false If generating the vertex tangents failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02072">2072</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l03315">3315</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1902,7 +2136,7 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Retrieves the armature tree of the mesh. </p>
 <dl class="section return"><dt>Returns</dt><dd>const std::unique_ptr&lt;armature_node&gt;&amp; The root node of the armature tree. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01409">1409</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01642">1642</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1924,7 +2158,7 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Retrieves the compiled bone combination palette data if this mesh has been bound as a skin. </p>
 <dl class="section return"><dt>Returns</dt><dd>const bone_palette_array_t&amp; The bone palette data. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01404">1404</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01637">1637</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1946,7 +2180,7 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Gets the local bounding box for this mesh. </p>
 <dl class="section return"><dt>Returns</dt><dd>const <a class="el" href="structmath_1_1bbox.html" title="Storage for box vector values and wraps up common functionality.">math::bbox</a>&amp; The bounding box. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01507">1507</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02730">2730</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1968,7 +2202,29 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Gets the number of data groups(materials) for this mesh. </p>
 <dl class="section return"><dt>Returns</dt><dd>size_t The number of data groups. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01517">1517</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02740">2740</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a56f3693ffef960a68d50edf82d4f3352" name="a56f3693ffef960a68d50edf82d4f3352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f3693ffef960a68d50edf82d4f3352">&#9670;&#160;</a></span>get_default_material_uids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_default_material_uids </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;hpp::uuid&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the default material UIDs generated during import. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the vector of material UIDs, indexed by data_group_id. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02759">2759</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -1990,12 +2246,282 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Determines the number of faces stored in the mesh. </p>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The number of faces. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01356">1356</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01569">1569</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a79a49b68a98599a2f36a3ec05713ca08" name="a79a49b68a98599a2f36a3ec05713ca08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79a49b68a98599a2f36a3ec05713ca08">&#9670;&#160;</a></span>get_non_skinned_submeshes_count()</h2>
+<a id="ac558d3dc8e161a6afbafb4040d43a007" name="ac558d3dc8e161a6afbafb4040d43a007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac558d3dc8e161a6afbafb4040d43a007">&#9670;&#160;</a></span>get_hardware_ib()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_hardware_ib </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td> const -&gt; std::shared_ptr&lt;<a class="el" href="structgfx_1_1index__buffer.html">gfx::index_buffer</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the hardware index buffer for a given LOD. </p>
+<p>The buffer is created with BGFX_BUFFER_COMPUTE_READ so it can be bound to compute-style read buffers in shaders (e.g. vertex pulling).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lod_index</td><td>The LOD level (0 = base). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;gfx::index_buffer&gt; The hardware index buffer, or null if unavailable. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01617">1617</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6594bcd769e229bd26c7e47f20bc229d" name="a6594bcd769e229bd26c7e47f20bc229d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6594bcd769e229bd26c7e47f20bc229d">&#9670;&#160;</a></span>get_hardware_vb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_hardware_vb </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; std::shared_ptr&lt;<a class="el" href="structgfx_1_1vertex__buffer.html">gfx::vertex_buffer</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the hardware vertex buffer for the mesh (shared across all LODs). </p>
+<p>The buffer is created with BGFX_BUFFER_COMPUTE_READ so it can be bound to compute-style read buffers in shaders (e.g. vertex pulling).</p>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;gfx::vertex_buffer&gt; The hardware vertex buffer, or null if unavailable. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01612">1612</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4493e4989fc15b995e15b1309d30448a" name="a4493e4989fc15b995e15b1309d30448a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4493e4989fc15b995e15b1309d30448a">&#9670;&#160;</a></span>get_imported_materials()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_imported_materials </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; std::vector&lt;<a class="el" href="structasset__handle.html">asset_handle</a>&lt;<a class="el" href="classunravel_1_1material.html">material</a>&gt;&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the imported materials generated during import. </p>
+<dl class="section return"><dt>Returns</dt><dd>A constant reference to the vector of imported materials. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02765">2765</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a50bade7ededaf81dc1273fac5f175016" name="a50bade7ededaf81dc1273fac5f175016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50bade7ededaf81dc1273fac5f175016">&#9670;&#160;</a></span>get_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_info </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="structunravel_1_1mesh_1_1info.html">info</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00248">248</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3efdecc75d5b66cd1351ded079484678" name="a3efdecc75d5b66cd1351ded079484678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3efdecc75d5b66cd1351ded079484678">&#9670;&#160;</a></span>get_lod_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_lod_count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of LOD levels available. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of LODs (including base LOD 0) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01942">1942</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab07e4a70a7d47391c9fef80c75b9767e" name="ab07e4a70a7d47391c9fef80c75b9767e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07e4a70a7d47391c9fef80c75b9767e">&#9670;&#160;</a></span>get_lod_face_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_lod_face_count </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span></td><td>)</td>
+          <td> const -&gt; uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the face count for a specific LOD level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lod_index</td><td>LOD index (0 = base, 1+ = simplified) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Face count, or 0 if LOD doesn't exist </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01962">1962</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a07a0d9beac67a54ce651ca5a9d95e488" name="a07a0d9beac67a54ce651ca5a9d95e488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07a0d9beac67a54ce651ca5a9d95e488">&#9670;&#160;</a></span>get_lod_index_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_lod_index_data </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; uint32_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_indices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>out_error</em></span>&#160;) const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets index buffer data for a specific LOD level (for serialization). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lod_index</td><td>LOD index (0 = base, 1+ = simplified) </td></tr>
+    <tr><td class="paramname">out_indices</td><td>Output vector to store index data </td></tr>
+    <tr><td class="paramname">out_error</td><td>Output simplification error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if LOD data was retrieved successfully </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01977">1977</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a834ee6cca0d519f069b5ca3645cedef0" name="a834ee6cca0d519f069b5ca3645cedef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834ee6cca0d519f069b5ca3645cedef0">&#9670;&#160;</a></span>get_lod_submeshes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_lod_submeshes </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="#adbf95b3d2c7664701f222acf91366789">submesh_array_t</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets submeshes for a specific LOD level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lod_index</td><td>LOD index (0 = base, 1+ = simplified) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to submesh array, or nullptr if LOD doesn't exist </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01947">1947</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afce5d7c516eff223d1333f27135d10cf" name="afce5d7c516eff223d1333f27135d10cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce5d7c516eff223d1333f27135d10cf">&#9670;&#160;</a></span>get_max_generated_lod_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_max_generated_lod_count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the maximum number of LODs that can be generated for a mesh. </p>
+<dl class="section return"><dt>Returns</dt><dd>The maximum number of LODs that can be generated. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02013">2013</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace6e3aab332c387f05f43e85aa5a315b" name="ace6e3aab332c387f05f43e85aa5a315b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace6e3aab332c387f05f43e85aa5a315b">&#9670;&#160;</a></span>get_max_lod_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_max_lod_count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the maximum number of LODs that can be used for this mesh including base LOD. </p>
+<dl class="section return"><dt>Returns</dt><dd>The maximum number of LODs that can be used. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02008">2008</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a959237e1b0fdfedbd4e1c5228edc175e" name="a959237e1b0fdfedbd4e1c5228edc175e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a959237e1b0fdfedbd4e1c5228edc175e">&#9670;&#160;</a></span>get_non_skinned_submeshes_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2003,18 +2529,27 @@ false If generating the vertex tangents failed. </dd></dl>
         <tr>
           <td class="memname">auto unravel::mesh::get_non_skinned_submeshes_count </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
           <td> const -&gt; size_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01490">1490</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p>Gets the number of non-skinned submeshes for this mesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lod_index</td><td>LOD index (0 = base, 1+ = simplified) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size_t The number of non-skinned submeshes. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02687">2687</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a5c60038014cee7a14da776aedba8a465" name="a5c60038014cee7a14da776aedba8a465"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c60038014cee7a14da776aedba8a465">&#9670;&#160;</a></span>get_non_skinned_submeshes_indices()</h2>
+<a id="adb08f50e414cfc3ac4610d13e2a5431a" name="adb08f50e414cfc3ac4610d13e2a5431a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb08f50e414cfc3ac4610d13e2a5431a">&#9670;&#160;</a></span>get_non_skinned_submeshes_indices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2022,13 +2557,27 @@ false If generating the vertex tangents failed. </dd></dl>
         <tr>
           <td class="memname">auto unravel::mesh::get_non_skinned_submeshes_indices </td>
           <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>data_group_id</em></span></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="#ac3ec10a396ed9ff8b75c8ce542c3feaa">submesh_array_indices_t</a>&amp;</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>data_group_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;) const -&gt; const <a class="el" href="#ac3ec10a396ed9ff8b75c8ce542c3feaa">submesh_array_indices_t</a>&amp;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01495">1495</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p>Gets the indices of non-skinned submeshes for a specific data group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data_group_id</td><td>The data group identifier. </td></tr>
+    <tr><td class="paramname">lod_index</td><td>LOD index (0 = base, 1+ = simplified) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const submesh_array_indices_t&amp; The indices of non-skinned submeshes. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02701">2701</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2050,12 +2599,12 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Retrieves the skin bind data if this mesh has been bound as a skin. </p>
 <dl class="section return"><dt>Returns</dt><dd>const <a class="el" href="classunravel_1_1skin__bind__data.html" title="Structure describing how a skinned mesh should be bound to any bones that influence its vertices.">skin_bind_data</a>&amp; The skin bind data. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01399">1399</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01632">1632</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af1c22b98335232c87210cbe6cbcb784f" name="af1c22b98335232c87210cbe6cbcb784f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1c22b98335232c87210cbe6cbcb784f">&#9670;&#160;</a></span>get_skinned_submeshes_count()</h2>
+<a id="a92bd1b8fb5cc5ed6838bb84034e440a4" name="a92bd1b8fb5cc5ed6838bb84034e440a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92bd1b8fb5cc5ed6838bb84034e440a4">&#9670;&#160;</a></span>get_skinned_submeshes_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2063,18 +2612,27 @@ false If generating the vertex tangents failed. </dd></dl>
         <tr>
           <td class="memname">auto unravel::mesh::get_skinned_submeshes_count </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
           <td> const -&gt; size_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01473">1473</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p>Gets the number of skinned submeshes for this mesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lod_index</td><td>LOD index (0 = base, 1+ = simplified) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size_t The number of skinned submeshes. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02644">2644</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a5982d17a10f0e53df7a5f8e0fb912581" name="a5982d17a10f0e53df7a5f8e0fb912581"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5982d17a10f0e53df7a5f8e0fb912581">&#9670;&#160;</a></span>get_skinned_submeshes_indices()</h2>
+<a id="ab1f413987bd0755e50adb8815f94980a" name="ab1f413987bd0755e50adb8815f94980a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f413987bd0755e50adb8815f94980a">&#9670;&#160;</a></span>get_skinned_submeshes_indices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2082,13 +2640,27 @@ false If generating the vertex tangents failed. </dd></dl>
         <tr>
           <td class="memname">auto unravel::mesh::get_skinned_submeshes_indices </td>
           <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>data_group_id</em></span></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="#ac3ec10a396ed9ff8b75c8ce542c3feaa">submesh_array_indices_t</a>&amp;</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>data_group_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;) const -&gt; const <a class="el" href="#ac3ec10a396ed9ff8b75c8ce542c3feaa">submesh_array_indices_t</a>&amp;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01478">1478</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p>Gets the indices of skinned submeshes for a specific data group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data_group_id</td><td>The data group identifier. </td></tr>
+    <tr><td class="paramname">lod_index</td><td>LOD index (0 = base, 1+ = simplified) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const submesh_array_indices_t&amp; The indices of skinned submeshes. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02658">2658</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2110,12 +2682,12 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Gets the preparation status for this mesh. </p>
 <dl class="section return"><dt>Returns</dt><dd>mesh_status The preparation status. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01512">1512</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02735">2735</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a4f31fa47d7719709fe325358e07c7226" name="a4f31fa47d7719709fe325358e07c7226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f31fa47d7719709fe325358e07c7226">&#9670;&#160;</a></span>get_submesh()</h2>
+<a id="ad574e72ec862fb499f231a7b0fcc67ee" name="ad574e72ec862fb499f231a7b0fcc67ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad574e72ec862fb499f231a7b0fcc67ee">&#9670;&#160;</a></span>get_submesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2123,18 +2695,22 @@ false If generating the vertex tangents failed. </dd></dl>
         <tr>
           <td class="memname">auto unravel::mesh::get_submesh </td>
           <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>submesh_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a>*</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>submesh_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;) const -&gt; const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a>*</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01453">1453</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01896">1896</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a0a003b05f133d727cf812e3a93297097" name="a0a003b05f133d727cf812e3a93297097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a003b05f133d727cf812e3a93297097">&#9670;&#160;</a></span>get_submesh_index()</h2>
+<a id="adfef1083f07856fa281cb3dc834240e1" name="adfef1083f07856fa281cb3dc834240e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfef1083f07856fa281cb3dc834240e1">&#9670;&#160;</a></span>get_submesh_index()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2142,18 +2718,61 @@ false If generating the vertex tangents failed. </dd></dl>
         <tr>
           <td class="memname">auto unravel::mesh::get_submesh_index </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
-          <td> const -&gt; int</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1mesh_1_1submesh.html">submesh</a> *</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;) const -&gt; int</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01458">1458</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p>Gets the index of a submesh within the submesh array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to the submesh to find. </td></tr>
+    <tr><td class="paramname">lod_index</td><td>LOD index (0 = base, 1+ = simplified) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Index of the submesh, or -1 if not found. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01906">1906</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae9a07eba3797cef448ed00e2814a537f" name="ae9a07eba3797cef448ed00e2814a537f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9a07eba3797cef448ed00e2814a537f">&#9670;&#160;</a></span>get_submeshes()</h2>
+<a id="ace5243ee41c94abb576c2f9dc5601c9b" name="ace5243ee41c94abb576c2f9dc5601c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5243ee41c94abb576c2f9dc5601c9b">&#9670;&#160;</a></span>get_submesh_node_transforms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::get_submesh_node_transforms </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td> const -&gt; std::vector&lt;<a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the accumulated node transform for each submesh. </p>
+<p>The mesh vertex buffer stores positions in node-local space; the renderer applies each submesh's accumulated armature node transform (relative to the model root) on top. This helper walks the armature tree and returns, for every submesh index, the transform (relative to the model root) of the node that owns that submesh. Submeshes not referenced by any node receive identity.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lod_index</td><td>The LOD level whose submesh count is used to size the result. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;math::transform&gt; Per-submesh node transforms indexed by submesh index. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01672">1672</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abb0d3ed560e58949d87c216e0eb8f14b" name="abb0d3ed560e58949d87c216e0eb8f14b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb0d3ed560e58949d87c216e0eb8f14b">&#9670;&#160;</a></span>get_submeshes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2161,7 +2780,7 @@ false If generating the vertex tangents failed. </dd></dl>
         <tr>
           <td class="memname">auto unravel::mesh::get_submeshes </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
           <td> const -&gt; const <a class="el" href="#adbf95b3d2c7664701f222acf91366789">submesh_array_t</a>&amp;</td>
         </tr>
       </table>
@@ -2176,12 +2795,12 @@ false If generating the vertex tangents failed. </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const submesh* Pointer to the submesh information. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01443">1443</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01864">1864</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a608d4f83707cfdd0a6af050aa03889e0" name="a608d4f83707cfdd0a6af050aa03889e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a608d4f83707cfdd0a6af050aa03889e0">&#9670;&#160;</a></span>get_submeshes_count()</h2>
+<a id="a7727910916738a865cae992172bae440" name="a7727910916738a865cae992172bae440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7727910916738a865cae992172bae440">&#9670;&#160;</a></span>get_submeshes_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2189,16 +2808,22 @@ false If generating the vertex tangents failed. </dd></dl>
         <tr>
           <td class="memname">auto unravel::mesh::get_submeshes_count </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
           <td> const -&gt; size_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Gets the number of submeshes for this mesh. </p>
-<dl class="section return"><dt>Returns</dt><dd>size_t The number of data groups. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lod_index</td><td>LOD index (0 = base, 1+ = simplified) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size_t The number of submeshes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01448">1448</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01880">1880</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2220,7 +2845,7 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Retrieves the underlying index data from the mesh. </p>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t* The index data. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01389">1389</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01602">1602</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2242,7 +2867,7 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Retrieves the underlying vertex data from the mesh. </p>
 <dl class="section return"><dt>Returns</dt><dd>uint8_t* The vertex data. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01384">1384</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01597">1597</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2264,7 +2889,7 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Determines the number of vertices stored in the mesh. </p>
 <dl class="section return"><dt>Returns</dt><dd>uint32_t The number of vertices. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01370">1370</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01583">1583</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2286,7 +2911,7 @@ false If generating the vertex tangents failed. </dd></dl>
 <p>Retrieves the format of the underlying mesh vertex data. </p>
 <dl class="section return"><dt>Returns</dt><dd>const <a class="el" href="namespacegfx.html#a2cda7f52b7ffffceaa974d138fbbacce">gfx::vertex_layout</a>&amp; The vertex format. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01394">1394</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01607">1607</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2305,7 +2930,7 @@ false If generating the vertex tangents failed. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00723">723</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00824">824</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2335,7 +2960,35 @@ false If generating the vertex tangents failed. </dd></dl>
 <dd>
 false If the mesh preparation failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00188">188</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00270">270</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1e80e38f6620937cbc8b6513b17d3830" name="a1e80e38f6620937cbc8b6513b17d3830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e80e38f6620937cbc8b6513b17d3830">&#9670;&#160;</a></span>restore_lods_from_load_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mesh::restore_lods_from_load_data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1mesh_1_1load__data.html">load_data</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td> -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Restores LOD levels from <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> into the mesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> containing LOD information </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if LODs were restored successfully </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02570">2570</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2354,7 +3007,7 @@ false If the mesh preparation failed. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00297">297</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00398">398</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2384,7 +3037,7 @@ false If the mesh preparation failed. </dd></dl>
 <dd>
 false If adding the primitives failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00323">323</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00424">424</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2403,7 +3056,7 @@ false If adding the primitives failed. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00305">305</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00406">406</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2431,7 +3084,7 @@ false If adding the primitives failed. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00214">214</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l00296">296</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2502,7 +3155,7 @@ false If setting the vertex source failed. </dd></dl>
 <dd>
 false If sorting the mesh data failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02739">2739</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l04038">4038</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2545,7 +3198,7 @@ false If sorting the mesh data failed. </dd></dl>
 <dd>
 false If welding the vertices failed. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02258">2258</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l03530">3530</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2577,7 +3230,7 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01536">1536</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02779">2779</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2608,7 +3261,7 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01672">1672</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02915">2915</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2639,7 +3292,7 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01569">1569</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02812">2812</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2670,7 +3323,7 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l01574">1574</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2mesh_8cpp_source.html#l02817">2817</a> of file <a class="el" href="rendering_2mesh_8cpp_source.html">mesh.cpp</a>.</p>
 
 </div>
 </div>
@@ -2697,7 +3350,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Total number of faces in the prepared mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01072">1072</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01311">1311</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2723,7 +3376,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>List of armature nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01086">1086</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01325">1325</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2749,7 +3402,31 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Whether the mesh uses a hardware vertex/index buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01065">1065</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01304">1304</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a id="a7430bc0280f5f1110245c80bb253fd4a" name="a7430bc0280f5f1110245c80bb253fd4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7430bc0280f5f1110245c80bb253fd4a">&#9670;&#160;</a></span>default_material_uids_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;hpp::uuid&gt; unravel::mesh::default_material_uids_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01330">1330</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2775,7 +3452,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>The vertex data during data insertion and system memory copy. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01038">1038</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01272">1272</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2801,7 +3478,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Total number of vertices in the prepared mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01074">1074</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01313">1313</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2827,7 +3504,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Whether to disable the automatic re-sort operation. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01036">1036</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01270">1270</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2853,7 +3530,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Whether to force the generation of vertex barycentric coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01034">1034</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01268">1268</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2880,7 +3557,7 @@ false If welding the vertices failed. </dd></dl>
 <p>&lt; Whether to force the generation of tangent space vectors. </p>
 <p>Whether to force the generation of vertex normals. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01032">1032</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01266">1266</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2904,9 +3581,9 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>The actual list of submeshes maintained by this mesh. </p>
+<p>Additional LOD levels (LOD 1, 2, 3, ...) with simplified index buffers. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01051">1051</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01285">1285</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2932,7 +3609,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Whether the mesh was optimized when it was prepared. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01068">1068</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01307">1307</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2956,9 +3633,61 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>The actual hardware index buffer resource. </p>
+<p>The actual hardware index buffer resource (LOD 0 - base mesh). </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01049">1049</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01283">1283</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a id="affd83867f5f48d644f2ce2a86f9ef823" name="affd83867f5f48d644f2ce2a86f9ef823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd83867f5f48d644f2ce2a86f9ef823">&#9670;&#160;</a></span>lod_count_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t unravel::mesh::lod_count_ = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The actual list of submeshes maintained by this mesh. </p>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01290">1290</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a id="aad347a6f617cd7f47af098e23d4a0bf9" name="aad347a6f617cd7f47af098e23d4a0bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad347a6f617cd7f47af098e23d4a0bf9">&#9670;&#160;</a></span>lods_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structunravel_1_1mesh_1_1lod__level.html">lod_level</a>&gt; unravel::mesh::lods_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Current LOD count (including base LOD 0). </p>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01288">1288</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -2984,7 +3713,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Indices in the subset array which are skinned. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01054">1054</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01293">1293</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3010,7 +3739,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Lookup information mapping data groups to submeshes batched by material. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01062">1062</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01301">1301</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3034,7 +3763,7 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01061">1061</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01300">1300</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3060,7 +3789,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p><a class="el" href="struct_axis.html">Axis</a> aligned bounding box describing object dimensions in object space. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01070">1070</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01309">1309</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3086,7 +3815,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Data describing how the mesh should be bound as a skin with supplied bone matrices. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01081">1081</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01320">1320</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3112,7 +3841,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Input data used for constructing the final mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01079">1079</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01318">1318</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3136,7 +3865,9 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01088">1088</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p>UIDs of default materials generated during import, indexed by data_group_id. </p>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01327">1327</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3162,7 +3893,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>List of unique combinations of bones to use during rendering. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01084">1084</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01323">1323</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3188,7 +3919,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Indices in the subset array which are not skinned. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01058">1058</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01297">1297</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3212,7 +3943,7 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01057">1057</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01296">1296</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3238,7 +3969,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Material and data group information for each triangle. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01045">1045</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01279">1279</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3264,7 +3995,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>The vertex format used for the mesh internal vertex data. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01041">1041</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01275">1275</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3288,9 +4019,9 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>The actual hardware vertex buffer resource. </p>
+<p>The actual hardware vertex buffer resource (shared by all LODs). </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01047">1047</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01281">1281</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3316,7 +4047,7 @@ false If welding the vertices failed. </dd></dl>
 
 <p>Preparation status of the mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01076">1076</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01315">1315</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -3340,9 +4071,9 @@ false If welding the vertices failed. </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>The final system memory copy of the index buffer. </p>
+<p>The final system memory copy of the index buffer (LOD 0 - base mesh). </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01043">1043</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l01277">1277</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>

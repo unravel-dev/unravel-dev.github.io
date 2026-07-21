@@ -106,9 +106,13 @@ $(function(){initNavTree('namespaceserialization.html',''); initResizable(true);
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structserialization_1_1init__data.html">init_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structserialization_1_1path__context.html">path_context</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structserialization_1_1path__segment__guard.html">path_segment_guard</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structserialization_1_1path__skip__segment__guard.html">path_skip_segment_guard</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -118,8 +122,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad95bf8a1861a7a3da8d55244358b3df4" id="r_ad95bf8a1861a7a3da8d55244358b3df4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad95bf8a1861a7a3da8d55244358b3df4">set_warning_logger</a> (const std::function&lt; void(const std::string &amp;, const hpp::source_location &amp;loc)&gt; &amp;logger)</td></tr>
-<tr class="separator:ad95bf8a1861a7a3da8d55244358b3df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b932b1b6cc741591fa769cebd5b54f" id="r_a03b932b1b6cc741591fa769cebd5b54f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03b932b1b6cc741591fa769cebd5b54f">log_warning</a> (const std::string &amp;log_msg, const hpp::source_location &amp;loc)</td></tr>
 <tr class="separator:a03b932b1b6cc741591fa769cebd5b54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe5684f4796e1663de990259aec54d66" id="r_abe5684f4796e1663de990259aec54d66"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe5684f4796e1663de990259aec54d66">get_path_context</a> () -&gt; <a class="el" href="structserialization_1_1path__context.html">path_context</a> *</td></tr>
@@ -128,8 +130,8 @@ Functions</h2></td></tr>
 <tr class="separator:a72a20031ba5a29519750df94eb6a6737"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26834bddcd16d57cc02e017d9a40ad28" id="r_a26834bddcd16d57cc02e017d9a40ad28"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26834bddcd16d57cc02e017d9a40ad28">get_current_deserialization_path</a> () -&gt; std::string</td></tr>
 <tr class="separator:a26834bddcd16d57cc02e017d9a40ad28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cac4f7078c8b6071ed52ccd7b495ed2" id="r_a7cac4f7078c8b6071ed52ccd7b495ed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cac4f7078c8b6071ed52ccd7b495ed2">set_warning_logger</a> (const <a class="el" href="#a56f69fe3dd2236eb43ac77d7073c50aa">log_callback_t</a> &amp;logger)</td></tr>
-<tr class="separator:a7cac4f7078c8b6071ed52ccd7b495ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3205f25d2f831a8d2b2b516e239796" id="r_abb3205f25d2f831a8d2b2b516e239796"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb3205f25d2f831a8d2b2b516e239796">init</a> (const <a class="el" href="structserialization_1_1init__data.html">init_data</a> &amp;data)</td></tr>
+<tr class="separator:abb3205f25d2f831a8d2b2b516e239796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a56f69fe3dd2236eb43ac77d7073c50aa" name="a56f69fe3dd2236eb43ac77d7073c50aa"></a>
@@ -144,7 +146,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="serialization_8h_source.html#l00023">23</a> of file <a class="el" href="serialization_8h_source.html">serialization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="serialization_8h_source.html#l00024">24</a> of file <a class="el" href="serialization_8h_source.html">serialization.h</a>.</p>
 
 </div>
 </div>
@@ -164,7 +166,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="serialization_8cpp_source.html#l00123">123</a> of file <a class="el" href="serialization_8cpp_source.html">serialization.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="serialization_8cpp_source.html#l00149">149</a> of file <a class="el" href="serialization_8cpp_source.html">serialization.cpp</a>.</p>
 
 </div>
 </div>
@@ -183,7 +185,26 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="serialization_8cpp_source.html#l00029">29</a> of file <a class="el" href="serialization_8cpp_source.html">serialization.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="serialization_8cpp_source.html#l00026">26</a> of file <a class="el" href="serialization_8cpp_source.html">serialization.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abb3205f25d2f831a8d2b2b516e239796" name="abb3205f25d2f831a8d2b2b516e239796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb3205f25d2f831a8d2b2b516e239796">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void serialization::init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structserialization_1_1init__data.html">init_data</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="serialization_8cpp_source.html#l00161">161</a> of file <a class="el" href="serialization_8cpp_source.html">serialization.cpp</a>.</p>
 
 </div>
 </div>
@@ -206,7 +227,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="serialization_8cpp_source.html#l00022">22</a> of file <a class="el" href="serialization_8cpp_source.html">serialization.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="serialization_8cpp_source.html#l00019">19</a> of file <a class="el" href="serialization_8cpp_source.html">serialization.cpp</a>.</p>
 
 </div>
 </div>
@@ -225,43 +246,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="serialization_8cpp_source.html#l00034">34</a> of file <a class="el" href="serialization_8cpp_source.html">serialization.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a7cac4f7078c8b6071ed52ccd7b495ed2" name="a7cac4f7078c8b6071ed52ccd7b495ed2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cac4f7078c8b6071ed52ccd7b495ed2">&#9670;&#160;</a></span>set_warning_logger() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void serialization::set_warning_logger </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#a56f69fe3dd2236eb43ac77d7073c50aa">log_callback_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>logger</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad95bf8a1861a7a3da8d55244358b3df4" name="ad95bf8a1861a7a3da8d55244358b3df4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad95bf8a1861a7a3da8d55244358b3df4">&#9670;&#160;</a></span>set_warning_logger() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void serialization::set_warning_logger </td>
-          <td>(</td>
-          <td class="paramtype">const std::function&lt; void(const std::string &amp;, const hpp::source_location &amp;loc)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>logger</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="serialization_8cpp_source.html#l00018">18</a> of file <a class="el" href="serialization_8cpp_source.html">serialization.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="serialization_8cpp_source.html#l00031">31</a> of file <a class="el" href="serialization_8cpp_source.html">serialization.cpp</a>.</p>
 
 </div>
 </div>

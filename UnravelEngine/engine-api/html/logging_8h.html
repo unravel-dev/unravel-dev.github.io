@@ -117,6 +117,8 @@ $(function(){initNavTree('logging_8h.html',''); initResizable(true); });
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1logging.html">unravel::logging</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1log__duration.html">unravel::log_duration&lt; lvl, T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1log__stopwatch.html">unravel::log_stopwatch&lt; lvl, T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -157,9 +159,9 @@ Macros</h2></td></tr>
 <tr class="separator:abde4692b0c8dd6462bae501f32afa179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c85c4dc4d560683a9a3f7ca7216eae0" id="r_a8c85c4dc4d560683a9a3f7ca7216eae0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c85c4dc4d560683a9a3f7ca7216eae0">APPLOG_FLUSH</a>()</td></tr>
 <tr class="separator:a8c85c4dc4d560683a9a3f7ca7216eae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f113ddfe3089c9bcdd0ca349e2e88b8" id="r_a9f113ddfe3089c9bcdd0ca349e2e88b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f113ddfe3089c9bcdd0ca349e2e88b8">APPLOG_CONCATENATE_DETAIL</a>(<a class="el" href="scripting_2ecs_2components_2script__component_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>,  <a class="el" href="scripting_2ecs_2components_2script__component_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:a9f113ddfe3089c9bcdd0ca349e2e88b8" id="r_a9f113ddfe3089c9bcdd0ca349e2e88b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f113ddfe3089c9bcdd0ca349e2e88b8">APPLOG_CONCATENATE_DETAIL</a>(<a class="el" href="cloud__noise_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>,  <a class="el" href="cloud__noise_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
 <tr class="separator:a9f113ddfe3089c9bcdd0ca349e2e88b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa95e991566d03090ebb08206dfec5e0a" id="r_aa95e991566d03090ebb08206dfec5e0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa95e991566d03090ebb08206dfec5e0a">APPLOG_CONCATENATE</a>(<a class="el" href="scripting_2ecs_2components_2script__component_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>,  <a class="el" href="scripting_2ecs_2components_2script__component_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:aa95e991566d03090ebb08206dfec5e0a" id="r_aa95e991566d03090ebb08206dfec5e0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa95e991566d03090ebb08206dfec5e0a">APPLOG_CONCATENATE</a>(<a class="el" href="cloud__noise_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>,  <a class="el" href="cloud__noise_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
 <tr class="separator:aa95e991566d03090ebb08206dfec5e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b18e33067cfadf29f77abcf39e47ab1" id="r_a2b18e33067cfadf29f77abcf39e47ab1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(prefix)</td></tr>
 <tr class="separator:a2b18e33067cfadf29f77abcf39e47ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +177,18 @@ Macros</h2></td></tr>
 <tr class="separator:a7591f9c70ee621c2fa588c97f365eaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09983851893a74273269ec6d679a3f2e" id="r_a09983851893a74273269ec6d679a3f2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09983851893a74273269ec6d679a3f2e">APPLOG_DEBUG_PERF_NAMED</a>(T,  <a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
 <tr class="separator:a09983851893a74273269ec6d679a3f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0e98f7e5ced1de3337ded19fe4077c" id="r_a8b0e98f7e5ced1de3337ded19fe4077c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b0e98f7e5ced1de3337ded19fe4077c">APPLOG_INFO_PERF_ALLOC</a>(T)</td></tr>
+<tr class="separator:a8b0e98f7e5ced1de3337ded19fe4077c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e96eac8a69783048745323804d73b3" id="r_a53e96eac8a69783048745323804d73b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53e96eac8a69783048745323804d73b3">APPLOG_TRACE_PERF_ALLOC</a>(T)</td></tr>
+<tr class="separator:a53e96eac8a69783048745323804d73b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e936ab5ee75b0028019035ed7d94b2" id="r_ae3e936ab5ee75b0028019035ed7d94b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3e936ab5ee75b0028019035ed7d94b2">APPLOG_DEBUG_PERF_ALLOC</a>(T)</td></tr>
+<tr class="separator:ae3e936ab5ee75b0028019035ed7d94b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb092dce3146d9d7f3c6c5c7505b1a6" id="r_acdb092dce3146d9d7f3c6c5c7505b1a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdb092dce3146d9d7f3c6c5c7505b1a6">APPLOG_INFO_PERF_NAMED_ALLOC</a>(T,  <a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
+<tr class="separator:acdb092dce3146d9d7f3c6c5c7505b1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545f5779b2441ae6e3b0e0ec8418dcda" id="r_a545f5779b2441ae6e3b0e0ec8418dcda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a545f5779b2441ae6e3b0e0ec8418dcda">APPLOG_TRACE_PERF_NAMED_ALLOC</a>(T,  <a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
+<tr class="separator:a545f5779b2441ae6e3b0e0ec8418dcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d631aba7521f975bcc374e0725c7c2" id="r_a98d631aba7521f975bcc374e0725c7c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98d631aba7521f975bcc374e0725c7c2">APPLOG_DEBUG_PERF_NAMED_ALLOC</a>(T,  <a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
+<tr class="separator:a98d631aba7521f975bcc374e0725c7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -207,21 +221,21 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">#define APPLOG_CONCATENATE</td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="scripting_2ecs_2components_2script__component_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></em></span>, </td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="cloud__noise_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="scripting_2ecs_2components_2script__component_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></em></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="cloud__noise_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a9f113ddfe3089c9bcdd0ca349e2e88b8">APPLOG_CONCATENATE_DETAIL</a>(<a class="code hl_variable" href="scripting_2ecs_2components_2script__component_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="scripting_2ecs_2components_2script__component_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</div>
-<div class="ttc" id="alogging_8h_html_a9f113ddfe3089c9bcdd0ca349e2e88b8"><div class="ttname"><a href="#a9f113ddfe3089c9bcdd0ca349e2e88b8">APPLOG_CONCATENATE_DETAIL</a></div><div class="ttdeci">#define APPLOG_CONCATENATE_DETAIL(x, y)</div><div class="ttdef"><b>Definition</b> <a href="logging_8h_source.html#l00083">logging.h:83</a></div></div>
-<div class="ttc" id="ascripting_2ecs_2components_2script__component_8cpp_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="scripting_2ecs_2components_2script__component_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> <a href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00017">script_component.cpp:17</a></div></div>
-<div class="ttc" id="ascripting_2ecs_2components_2script__component_8cpp_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="scripting_2ecs_2components_2script__component_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> <a href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00017">script_component.cpp:17</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a9f113ddfe3089c9bcdd0ca349e2e88b8">APPLOG_CONCATENATE_DETAIL</a>(<a class="code hl_variable" href="cloud__noise_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="cloud__noise_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</div>
+<div class="ttc" id="acloud__noise_8cpp_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="cloud__noise_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> <a href="cloud__noise_8cpp_source.html#l00039">cloud_noise.cpp:39</a></div></div>
+<div class="ttc" id="acloud__noise_8cpp_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="cloud__noise_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> <a href="cloud__noise_8cpp_source.html#l00039">cloud_noise.cpp:39</a></div></div>
+<div class="ttc" id="alogging_8h_html_a9f113ddfe3089c9bcdd0ca349e2e88b8"><div class="ttname"><a href="#a9f113ddfe3089c9bcdd0ca349e2e88b8">APPLOG_CONCATENATE_DETAIL</a></div><div class="ttdeci">#define APPLOG_CONCATENATE_DETAIL(x, y)</div><div class="ttdef"><b>Definition</b> <a href="logging_8h_source.html#l00108">logging.h:108</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00084">84</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00109">109</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -234,18 +248,18 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">#define APPLOG_CONCATENATE_DETAIL</td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="scripting_2ecs_2components_2script__component_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></em></span>, </td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="cloud__noise_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="scripting_2ecs_2components_2script__component_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></em></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="cloud__noise_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_variable" href="scripting_2ecs_2components_2script__component_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>##<a class="code hl_variable" href="scripting_2ecs_2components_2script__component_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_variable" href="cloud__noise_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>##<a class="code hl_variable" href="cloud__noise_8cpp.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00083">83</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00108">108</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -374,9 +388,29 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">log_stopwatch&lt;spdlog::level::debug, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(__func__);</div>
-<div class="ttc" id="alogging_8h_html_a2b18e33067cfadf29f77abcf39e47ab1"><div class="ttname"><a href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a></div><div class="ttdeci">#define APPLOG_UNIQUE_VAR(prefix)</div><div class="ttdef"><b>Definition</b> <a href="logging_8h_source.html#l00087">logging.h:87</a></div></div>
+<div class="ttc" id="alogging_8h_html_a2b18e33067cfadf29f77abcf39e47ab1"><div class="ttname"><a href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a></div><div class="ttdeci">#define APPLOG_UNIQUE_VAR(prefix)</div><div class="ttdef"><b>Definition</b> <a href="logging_8h_source.html#l00112">logging.h:112</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00091">91</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00116">116</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+
+</div>
+</div>
+<a id="ae3e936ab5ee75b0028019035ed7d94b2" name="ae3e936ab5ee75b0028019035ed7d94b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e936ab5ee75b0028019035ed7d94b2">&#9670;&#160;</a></span>APPLOG_DEBUG_PERF_ALLOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APPLOG_DEBUG_PERF_ALLOC</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>T</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">log_duration&lt;spdlog::level::debug, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(__func__);</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00126">126</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -399,9 +433,33 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">log_stopwatch&lt;spdlog::level::trace, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(<a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>);</div>
-<div class="ttc" id="ahub_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00027">hub.cpp:27</a></div></div>
+<div class="ttc" id="ahub_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00033">hub.cpp:33</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00096">96</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00121">121</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+
+</div>
+</div>
+<a id="a98d631aba7521f975bcc374e0725c7c2" name="a98d631aba7521f975bcc374e0725c7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d631aba7521f975bcc374e0725c7c2">&#9670;&#160;</a></span>APPLOG_DEBUG_PERF_NAMED_ALLOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APPLOG_DEBUG_PERF_NAMED_ALLOC</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>T</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">log_duration&lt;spdlog::level::trace, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(<a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>);</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00131">131</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -549,7 +607,27 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">log_stopwatch&lt;spdlog::level::info, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(__func__);</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00089">89</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00114">114</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+
+</div>
+</div>
+<a id="a8b0e98f7e5ced1de3337ded19fe4077c" name="a8b0e98f7e5ced1de3337ded19fe4077c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b0e98f7e5ced1de3337ded19fe4077c">&#9670;&#160;</a></span>APPLOG_INFO_PERF_ALLOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APPLOG_INFO_PERF_ALLOC</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>T</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">log_duration&lt;spdlog::level::info, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(__func__);</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00124">124</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +651,31 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">log_stopwatch&lt;spdlog::level::info, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(<a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>);</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00094">94</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00119">119</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+
+</div>
+</div>
+<a id="acdb092dce3146d9d7f3c6c5c7505b1a6" name="acdb092dce3146d9d7f3c6c5c7505b1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb092dce3146d9d7f3c6c5c7505b1a6">&#9670;&#160;</a></span>APPLOG_INFO_PERF_NAMED_ALLOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APPLOG_INFO_PERF_NAMED_ALLOC</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>T</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">log_duration&lt;spdlog::level::info, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(<a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>);</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00129">129</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -647,7 +749,27 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">log_stopwatch&lt;spdlog::level::trace, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(__func__);</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00090">90</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00115">115</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+
+</div>
+</div>
+<a id="a53e96eac8a69783048745323804d73b3" name="a53e96eac8a69783048745323804d73b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53e96eac8a69783048745323804d73b3">&#9670;&#160;</a></span>APPLOG_TRACE_PERF_ALLOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APPLOG_TRACE_PERF_ALLOC</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>T</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">log_duration&lt;spdlog::level::trace, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(__func__);</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00125">125</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -671,7 +793,31 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">log_stopwatch&lt;spdlog::level::trace, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(<a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>);</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00095">95</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00120">120</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+
+</div>
+</div>
+<a id="a545f5779b2441ae6e3b0e0ec8418dcda" name="a545f5779b2441ae6e3b0e0ec8418dcda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a545f5779b2441ae6e3b0e0ec8418dcda">&#9670;&#160;</a></span>APPLOG_TRACE_PERF_NAMED_ALLOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APPLOG_TRACE_PERF_NAMED_ALLOC</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>T</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">log_duration&lt;spdlog::level::trace, T&gt; <a class="code hl_define" href="#a2b18e33067cfadf29f77abcf39e47ab1">APPLOG_UNIQUE_VAR</a>(_test)(<a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>);</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00130">130</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>
@@ -690,9 +836,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#aa95e991566d03090ebb08206dfec5e0a">APPLOG_CONCATENATE</a>(prefix, __LINE__)</div>
-<div class="ttc" id="alogging_8h_html_aa95e991566d03090ebb08206dfec5e0a"><div class="ttname"><a href="#aa95e991566d03090ebb08206dfec5e0a">APPLOG_CONCATENATE</a></div><div class="ttdeci">#define APPLOG_CONCATENATE(x, y)</div><div class="ttdef"><b>Definition</b> <a href="logging_8h_source.html#l00084">logging.h:84</a></div></div>
+<div class="ttc" id="alogging_8h_html_aa95e991566d03090ebb08206dfec5e0a"><div class="ttname"><a href="#aa95e991566d03090ebb08206dfec5e0a">APPLOG_CONCATENATE</a></div><div class="ttdeci">#define APPLOG_CONCATENATE(x, y)</div><div class="ttdef"><b>Definition</b> <a href="logging_8h_source.html#l00109">logging.h:109</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00087">87</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="logging_8h_source.html#l00112">112</a> of file <a class="el" href="logging_8h_source.html">logging.h</a>.</p>
 
 </div>
 </div>

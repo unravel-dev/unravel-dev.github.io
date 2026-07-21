@@ -102,6 +102,7 @@ $(function(){initNavTree('editing__manager_8cpp.html',''); initResizable(true); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="editing__manager_8h_source.html">editing_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="profiler_8h_source.html">engine/profiler/profiler.h</a>&quot;</code><br />
 <code>#include &quot;imgui/imgui.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&quot;</code><br />
@@ -111,15 +112,20 @@ $(function(){initNavTree('editing__manager_8cpp.html',''); initResizable(true); 
 <code>#include &lt;<a class="el" href="prefab__component_8h_source.html">engine/ecs/components/prefab_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tag__component_8h_source.html">engine/ecs/components/tag_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="script__component_8h_source.html">engine/scripting/ecs/components/script_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ecs_8h_source.html">engine/ecs/ecs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rendering__system_8h_source.html">engine/rendering/ecs/systems/rendering_system.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2events_8h_source.html">engine/events.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="play__mode_8h_source.html">engine/play_mode.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="engine_2engine_2settings_2settings_8h_source.html">engine/settings/settings.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="defaults_8h_source.html">engine/defaults/defaults.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="entity_8hpp_source.html">engine/meta/ecs/entity.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__writer_8h_source.html">engine/assets/impl/asset_writer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="editor_2editor_2events_8h_source.html">editor/events.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="inspectors_8h_source.html">editor/hub/panels/inspector_panel/inspectors/inspectors.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="project__manager_8h_source.html">editor/system/project_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script__system_8h_source.html">engine/scripting/ecs/systems/script_system.h</a>&gt;</code><br />
 <code>#include &lt;imgui_widgets/gizmo.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="imgui__notify_8h_source.html">editor/imgui/integration/imgui_notify.h</a>&gt;</code><br />
@@ -146,7 +152,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editing__manager_8cpp_source.html#l00037">37</a> of file <a class="el" href="editing__manager_8cpp_source.html">editing_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editing__manager_8cpp_source.html#l00060">60</a> of file <a class="el" href="editing__manager_8cpp_source.html">editing_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -162,7 +168,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editing__manager_8cpp_source.html#l00036">36</a> of file <a class="el" href="editing__manager_8cpp_source.html">editing_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editing__manager_8cpp_source.html#l00059">59</a> of file <a class="el" href="editing__manager_8cpp_source.html">editing_manager.cpp</a>.</p>
 
 </div>
 </div>

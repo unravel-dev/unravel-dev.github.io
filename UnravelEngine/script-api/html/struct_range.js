@@ -4,6 +4,8 @@ var struct_range =
     [ "Contains", "struct_range.html#adc96d399bc33769b44ac11c9c51f3e76", null ],
     [ "Equals", "struct_range.html#aff6744cd1c97c581577a677f33c5e58b", null ],
     [ "GetHashCode", "struct_range.html#a0138d401fbeab5df776d8266d1390a10", null ],
+    [ "operator!=", "struct_range.html#afd5f8254cf7008b2aa4229110ea2f907", null ],
+    [ "operator==", "struct_range.html#a71ea91d2408b3db1d04db14574c45c34", null ],
     [ "Max", "struct_range.html#a2df10fb54c01ad1a2e22008dcb5b4c7c", null ],
     [ "Min", "struct_range.html#ab30e22f7e7ffc318f901727a68905a30", null ]
 ];

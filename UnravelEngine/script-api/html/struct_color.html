@@ -105,6 +105,9 @@ $(function(){initNavTree('struct_color.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Color Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Representation of RGBA colors in floating-point format (0-1 range).  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Color:</div>
 <div class="dyncontent">
@@ -115,103 +118,149 @@ Inheritance diagram for Color:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c26be6b3e6df075cdebfd4ff10679d6" id="r_a6c26be6b3e6df075cdebfd4ff10679d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c26be6b3e6df075cdebfd4ff10679d6">Color</a> (float <a class="el" href="#aca7ff5725d5b18c074e656ce2071c2bb">r</a>, float <a class="el" href="#a19ace064fb71b33a8bb88c68e9d7b596">g</a>, float <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>, float <a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a>)</td></tr>
+<tr class="memdesc:a6c26be6b3e6df075cdebfd4ff10679d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> with given r,g,b,a components.  <br /></td></tr>
 <tr class="separator:a6c26be6b3e6df075cdebfd4ff10679d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a405905273d44d5d125ade3c8a2220df1" id="r_a405905273d44d5d125ade3c8a2220df1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a405905273d44d5d125ade3c8a2220df1">Color</a> (float <a class="el" href="#aca7ff5725d5b18c074e656ce2071c2bb">r</a>, float <a class="el" href="#a19ace064fb71b33a8bb88c68e9d7b596">g</a>, float <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>)</td></tr>
+<tr class="memdesc:a405905273d44d5d125ade3c8a2220df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> with given r,g,b components and sets a to 1.  <br /></td></tr>
 <tr class="separator:a405905273d44d5d125ade3c8a2220df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe8a4fa0de7833fcbe7b8039b2805f7" id="r_aafe8a4fa0de7833fcbe7b8039b2805f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafe8a4fa0de7833fcbe7b8039b2805f7">Color</a> (int <a class="el" href="#aca7ff5725d5b18c074e656ce2071c2bb">r</a>, int <a class="el" href="#a19ace064fb71b33a8bb88c68e9d7b596">g</a>, int <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>, int <a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a>)</td></tr>
+<tr class="memdesc:aafe8a4fa0de7833fcbe7b8039b2805f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> with given r,g,b,a components as integers (0-255 range).  <br /></td></tr>
+<tr class="separator:aafe8a4fa0de7833fcbe7b8039b2805f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1565fa11244293317dd03f107ad7c2cb" id="r_a1565fa11244293317dd03f107ad7c2cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1565fa11244293317dd03f107ad7c2cb">Color</a> (int <a class="el" href="#aca7ff5725d5b18c074e656ce2071c2bb">r</a>, int <a class="el" href="#a19ace064fb71b33a8bb88c68e9d7b596">g</a>, int <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>)</td></tr>
+<tr class="memdesc:a1565fa11244293317dd03f107ad7c2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> with given r,g,b components as integers (0-255 range) and sets a to 255.  <br /></td></tr>
+<tr class="separator:a1565fa11244293317dd03f107ad7c2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c1fb4157d9ee56538c033271ceb920" id="r_a34c1fb4157d9ee56538c033271ceb920"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34c1fb4157d9ee56538c033271ceb920">ToString</a> ()</td></tr>
+<tr class="memdesc:a34c1fb4157d9ee56538c033271ceb920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a formatted string of this color.  <br /></td></tr>
 <tr class="separator:a34c1fb4157d9ee56538c033271ceb920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af38507730cdfd752a616bea8f7ae6f6b" id="r_af38507730cdfd752a616bea8f7ae6f6b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af38507730cdfd752a616bea8f7ae6f6b">ToString</a> (string format)</td></tr>
+<tr class="memdesc:af38507730cdfd752a616bea8f7ae6f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a formatted string of this color.  <br /></td></tr>
 <tr class="separator:af38507730cdfd752a616bea8f7ae6f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab70e7240b01f00a4945070ac152facc3" id="r_ab70e7240b01f00a4945070ac152facc3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab70e7240b01f00a4945070ac152facc3">ToString</a> (string format, IFormatProvider formatProvider)</td></tr>
+<tr class="memdesc:ab70e7240b01f00a4945070ac152facc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a formatted string of this color.  <br /></td></tr>
 <tr class="separator:ab70e7240b01f00a4945070ac152facc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad92ea26f3193ac50c42a885a8b452d79" id="r_ad92ea26f3193ac50c42a885a8b452d79"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad92ea26f3193ac50c42a885a8b452d79">GetHashCode</a> ()</td></tr>
+<tr class="memdesc:ad92ea26f3193ac50c42a885a8b452d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hash code for this instance.  <br /></td></tr>
 <tr class="separator:ad92ea26f3193ac50c42a885a8b452d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b3f20927a35a99d173cb238b3a019f8" id="r_a3b3f20927a35a99d173cb238b3a019f8"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b3f20927a35a99d173cb238b3a019f8">Equals</a> (object other)</td></tr>
+<tr class="memdesc:a3b3f20927a35a99d173cb238b3a019f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given color is exactly equal to this color.  <br /></td></tr>
 <tr class="separator:a3b3f20927a35a99d173cb238b3a019f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3793e44e5e5862a3f7f29c44884a53e4" id="r_a3793e44e5e5862a3f7f29c44884a53e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3793e44e5e5862a3f7f29c44884a53e4">Equals</a> (<a class="el" href="struct_color.html">Color</a> other)</td></tr>
+<tr class="memdesc:a3793e44e5e5862a3f7f29c44884a53e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given color is exactly equal to this color.  <br /></td></tr>
 <tr class="separator:a3793e44e5e5862a3f7f29c44884a53e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af2039978f652beceb4abfde2bafa1b1f" id="r_af2039978f652beceb4abfde2bafa1b1f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2039978f652beceb4abfde2bafa1b1f">operator+</a> (<a class="el" href="struct_color.html">Color</a> <a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a>, <a class="el" href="struct_color.html">Color</a> <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>)</td></tr>
+<tr class="memdesc:af2039978f652beceb4abfde2bafa1b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds two colors component-wise.  <br /></td></tr>
 <tr class="separator:af2039978f652beceb4abfde2bafa1b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaefd735d3ce61eb03ef00a1f886e4426" id="r_aaefd735d3ce61eb03ef00a1f886e4426"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaefd735d3ce61eb03ef00a1f886e4426">operator-</a> (<a class="el" href="struct_color.html">Color</a> <a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a>, <a class="el" href="struct_color.html">Color</a> <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>)</td></tr>
+<tr class="memdesc:aaefd735d3ce61eb03ef00a1f886e4426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts two colors component-wise.  <br /></td></tr>
 <tr class="separator:aaefd735d3ce61eb03ef00a1f886e4426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aaea08b3d72f7fe43c681e793b45fcb" id="r_a0aaea08b3d72f7fe43c681e793b45fcb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0aaea08b3d72f7fe43c681e793b45fcb">operator*</a> (<a class="el" href="struct_color.html">Color</a> <a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a>, <a class="el" href="struct_color.html">Color</a> <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>)</td></tr>
+<tr class="memdesc:a0aaea08b3d72f7fe43c681e793b45fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies two colors component-wise.  <br /></td></tr>
 <tr class="separator:a0aaea08b3d72f7fe43c681e793b45fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4569772c64fa70147e84f1c6d8bfb985" id="r_a4569772c64fa70147e84f1c6d8bfb985"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4569772c64fa70147e84f1c6d8bfb985">operator*</a> (<a class="el" href="struct_color.html">Color</a> <a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a>, float <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>)</td></tr>
+<tr class="memdesc:a4569772c64fa70147e84f1c6d8bfb985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a color by a scalar.  <br /></td></tr>
 <tr class="separator:a4569772c64fa70147e84f1c6d8bfb985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cb90d67f020acb86dbc8a49d2dac368" id="r_a9cb90d67f020acb86dbc8a49d2dac368"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cb90d67f020acb86dbc8a49d2dac368">operator*</a> (float <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>, <a class="el" href="struct_color.html">Color</a> <a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a>)</td></tr>
+<tr class="memdesc:a9cb90d67f020acb86dbc8a49d2dac368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a scalar by a color.  <br /></td></tr>
 <tr class="separator:a9cb90d67f020acb86dbc8a49d2dac368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ad89345cd798de6ad368e38fe9326fa" id="r_a9ad89345cd798de6ad368e38fe9326fa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ad89345cd798de6ad368e38fe9326fa">operator/</a> (<a class="el" href="struct_color.html">Color</a> <a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a>, float <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>)</td></tr>
+<tr class="memdesc:a9ad89345cd798de6ad368e38fe9326fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides a color by a scalar.  <br /></td></tr>
 <tr class="separator:a9ad89345cd798de6ad368e38fe9326fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f026dee106fe3eb2c16f0f51479918" id="r_af8f026dee106fe3eb2c16f0f51479918"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8f026dee106fe3eb2c16f0f51479918">operator==</a> (<a class="el" href="struct_color.html">Color</a> lhs, <a class="el" href="struct_color.html">Color</a> rhs)</td></tr>
+<tr class="memdesc:af8f026dee106fe3eb2c16f0f51479918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether two colors are equal.  <br /></td></tr>
 <tr class="separator:af8f026dee106fe3eb2c16f0f51479918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad49571531ed537bb4d5113c1dc21c0a0" id="r_ad49571531ed537bb4d5113c1dc21c0a0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad49571531ed537bb4d5113c1dc21c0a0">operator!=</a> (<a class="el" href="struct_color.html">Color</a> lhs, <a class="el" href="struct_color.html">Color</a> rhs)</td></tr>
+<tr class="memdesc:ad49571531ed537bb4d5113c1dc21c0a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether two colors are not equal.  <br /></td></tr>
 <tr class="separator:ad49571531ed537bb4d5113c1dc21c0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21771af41525d07cca13a3a6363a8ef3" id="r_a21771af41525d07cca13a3a6363a8ef3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21771af41525d07cca13a3a6363a8ef3">Lerp</a> (<a class="el" href="struct_color.html">Color</a> <a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a>, <a class="el" href="struct_color.html">Color</a> <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>, float t)</td></tr>
+<tr class="memdesc:a21771af41525d07cca13a3a6363a8ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between colors a and b by t.  <br /></td></tr>
 <tr class="separator:a21771af41525d07cca13a3a6363a8ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8012d17a87e234bbb8401e161a451e46" id="r_a8012d17a87e234bbb8401e161a451e46"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8012d17a87e234bbb8401e161a451e46">LerpUnclamped</a> (<a class="el" href="struct_color.html">Color</a> <a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a>, <a class="el" href="struct_color.html">Color</a> <a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a>, float t)</td></tr>
+<tr class="memdesc:a8012d17a87e234bbb8401e161a451e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between colors a and b by t without clamping the interpolation parameter.  <br /></td></tr>
 <tr class="separator:a8012d17a87e234bbb8401e161a451e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20971139e9d6e9235144ede2cdc96418" id="r_a20971139e9d6e9235144ede2cdc96418"><td class="memItemLeft" align="right" valign="top">static implicit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20971139e9d6e9235144ede2cdc96418">operator Vector4</a> (<a class="el" href="struct_color.html">Color</a> c)</td></tr>
+<tr class="memdesc:a20971139e9d6e9235144ede2cdc96418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicitly converts a <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> to a <a class="el" href="struct_vector4.html" title="Representation of four-dimensional vectors.">Vector4</a>.  <br /></td></tr>
 <tr class="separator:a20971139e9d6e9235144ede2cdc96418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac63b133358deef94640dd2f0c651f360" id="r_ac63b133358deef94640dd2f0c651f360"><td class="memItemLeft" align="right" valign="top">static implicit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac63b133358deef94640dd2f0c651f360">operator Color</a> (<a class="el" href="struct_vector4.html">Vector4</a> v)</td></tr>
+<tr class="memdesc:ac63b133358deef94640dd2f0c651f360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicitly converts a <a class="el" href="struct_vector4.html" title="Representation of four-dimensional vectors.">Vector4</a> to a <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a>.  <br /></td></tr>
 <tr class="separator:ac63b133358deef94640dd2f0c651f360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86a7f41e601b7dd6adcb9bd8cdb5908" id="r_ac86a7f41e601b7dd6adcb9bd8cdb5908"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac86a7f41e601b7dd6adcb9bd8cdb5908">RGBToHSV</a> (<a class="el" href="struct_color.html">Color</a> rgbColor, out float H, out float S, out float V)</td></tr>
+<tr class="memdesc:ac86a7f41e601b7dd6adcb9bd8cdb5908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an RGB color to HSV color space.  <br /></td></tr>
 <tr class="separator:ac86a7f41e601b7dd6adcb9bd8cdb5908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa60c88c48465dc0c17b1582382ed4fd6" id="r_aa60c88c48465dc0c17b1582382ed4fd6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa60c88c48465dc0c17b1582382ed4fd6">HSVToRGB</a> (float H, float S, float V)</td></tr>
+<tr class="memdesc:aa60c88c48465dc0c17b1582382ed4fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an RGB colour from HSV input.  <br /></td></tr>
 <tr class="separator:aa60c88c48465dc0c17b1582382ed4fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb94c99fdeaee4497c3b1518badbd0da" id="r_aeb94c99fdeaee4497c3b1518badbd0da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb94c99fdeaee4497c3b1518badbd0da">HSVToRGB</a> (float H, float S, float V, bool hdr)</td></tr>
+<tr class="memdesc:aeb94c99fdeaee4497c3b1518badbd0da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an RGB colour from HSV input.  <br /></td></tr>
 <tr class="separator:aeb94c99fdeaee4497c3b1518badbd0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aca7ff5725d5b18c074e656ce2071c2bb" id="r_aca7ff5725d5b18c074e656ce2071c2bb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca7ff5725d5b18c074e656ce2071c2bb">r</a></td></tr>
+<tr class="memdesc:aca7ff5725d5b18c074e656ce2071c2bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Red component of the color.  <br /></td></tr>
 <tr class="separator:aca7ff5725d5b18c074e656ce2071c2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19ace064fb71b33a8bb88c68e9d7b596" id="r_a19ace064fb71b33a8bb88c68e9d7b596"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19ace064fb71b33a8bb88c68e9d7b596">g</a></td></tr>
+<tr class="memdesc:a19ace064fb71b33a8bb88c68e9d7b596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Green component of the color.  <br /></td></tr>
 <tr class="separator:a19ace064fb71b33a8bb88c68e9d7b596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a362a60354169bcb3a3ea4aae08dc141a" id="r_a362a60354169bcb3a3ea4aae08dc141a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a362a60354169bcb3a3ea4aae08dc141a">b</a></td></tr>
+<tr class="memdesc:a362a60354169bcb3a3ea4aae08dc141a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blue component of the color.  <br /></td></tr>
 <tr class="separator:a362a60354169bcb3a3ea4aae08dc141a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17b23f33d7514bb4012b2deddccce922" id="r_a17b23f33d7514bb4012b2deddccce922"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17b23f33d7514bb4012b2deddccce922">a</a></td></tr>
+<tr class="memdesc:a17b23f33d7514bb4012b2deddccce922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alpha component of the color (0 is transparent, 1 is opaque).  <br /></td></tr>
 <tr class="separator:a17b23f33d7514bb4012b2deddccce922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:aac083e6131c26dd95840494a74abd1b4" id="r_aac083e6131c26dd95840494a74abd1b4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac083e6131c26dd95840494a74abd1b4">red</a><code> [get]</code></td></tr>
+<tr class="memdesc:aac083e6131c26dd95840494a74abd1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solid red. RGBA is (1, 0, 0, 1).  <br /></td></tr>
 <tr class="separator:aac083e6131c26dd95840494a74abd1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0afbf74a3f625a9e13a1241a96461033" id="r_a0afbf74a3f625a9e13a1241a96461033"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0afbf74a3f625a9e13a1241a96461033">green</a><code> [get]</code></td></tr>
+<tr class="memdesc:a0afbf74a3f625a9e13a1241a96461033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solid green. RGBA is (0, 1, 0, 1).  <br /></td></tr>
 <tr class="separator:a0afbf74a3f625a9e13a1241a96461033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9fa19127cb12e281837c7d8c6bbc16a" id="r_ad9fa19127cb12e281837c7d8c6bbc16a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9fa19127cb12e281837c7d8c6bbc16a">blue</a><code> [get]</code></td></tr>
+<tr class="memdesc:ad9fa19127cb12e281837c7d8c6bbc16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solid blue. RGBA is (0, 0, 1, 1).  <br /></td></tr>
 <tr class="separator:ad9fa19127cb12e281837c7d8c6bbc16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed3437a6b72245235202d5c8c3e2987c" id="r_aed3437a6b72245235202d5c8c3e2987c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed3437a6b72245235202d5c8c3e2987c">white</a><code> [get]</code></td></tr>
+<tr class="memdesc:aed3437a6b72245235202d5c8c3e2987c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solid white. RGBA is (1, 1, 1, 1).  <br /></td></tr>
 <tr class="separator:aed3437a6b72245235202d5c8c3e2987c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53fc7636060a9ca6abb5ca55441c5736" id="r_a53fc7636060a9ca6abb5ca55441c5736"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53fc7636060a9ca6abb5ca55441c5736">black</a><code> [get]</code></td></tr>
+<tr class="memdesc:a53fc7636060a9ca6abb5ca55441c5736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solid black. RGBA is (0, 0, 0, 1).  <br /></td></tr>
 <tr class="separator:a53fc7636060a9ca6abb5ca55441c5736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e3ab5d91a86ba796701ce978c24e6cf" id="r_a0e3ab5d91a86ba796701ce978c24e6cf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e3ab5d91a86ba796701ce978c24e6cf">yellow</a><code> [get]</code></td></tr>
+<tr class="memdesc:a0e3ab5d91a86ba796701ce978c24e6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yellow. RGBA is (1, 0.92, 0.016, 1), but the color is nice to look at!  <br /></td></tr>
 <tr class="separator:a0e3ab5d91a86ba796701ce978c24e6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a525e493756c1025772812eac68a0fff6" id="r_a525e493756c1025772812eac68a0fff6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a525e493756c1025772812eac68a0fff6">cyan</a><code> [get]</code></td></tr>
+<tr class="memdesc:a525e493756c1025772812eac68a0fff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cyan. RGBA is (0, 1, 1, 1).  <br /></td></tr>
 <tr class="separator:a525e493756c1025772812eac68a0fff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a986fe7b496abd6ed36061de27cceee01" id="r_a986fe7b496abd6ed36061de27cceee01"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a986fe7b496abd6ed36061de27cceee01">magenta</a><code> [get]</code></td></tr>
+<tr class="memdesc:a986fe7b496abd6ed36061de27cceee01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magenta. RGBA is (1, 0, 1, 1).  <br /></td></tr>
 <tr class="separator:a986fe7b496abd6ed36061de27cceee01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3ad8a41b1b6a122eee9d29f8628459f" id="r_ac3ad8a41b1b6a122eee9d29f8628459f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3ad8a41b1b6a122eee9d29f8628459f">gray</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac3ad8a41b1b6a122eee9d29f8628459f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gray. RGBA is (0.5, 0.5, 0.5, 1).  <br /></td></tr>
 <tr class="separator:ac3ad8a41b1b6a122eee9d29f8628459f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8e44447930974852d6f403f753e4d46" id="r_aa8e44447930974852d6f403f753e4d46"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8e44447930974852d6f403f753e4d46">grey</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa8e44447930974852d6f403f753e4d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">English spelling for gray. RGBA is the same (0.5, 0.5, 0.5, 1).  <br /></td></tr>
 <tr class="separator:aa8e44447930974852d6f403f753e4d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e1c08221076d95f2bee62bc9c2a8d1b" id="r_a2e1c08221076d95f2bee62bc9c2a8d1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e1c08221076d95f2bee62bc9c2a8d1b">clear</a><code> [get]</code></td></tr>
+<tr class="memdesc:a2e1c08221076d95f2bee62bc9c2a8d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completely transparent. RGBA is (0, 0, 0, 0).  <br /></td></tr>
 <tr class="separator:a2e1c08221076d95f2bee62bc9c2a8d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4904aed3992c3324bf9e3f5978636a91" id="r_a4904aed3992c3324bf9e3f5978636a91"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4904aed3992c3324bf9e3f5978636a91">grayscale</a><code> [get]</code></td></tr>
+<tr class="memdesc:a4904aed3992c3324bf9e3f5978636a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grayscale value of the color. (Read Only)  <br /></td></tr>
 <tr class="separator:a4904aed3992c3324bf9e3f5978636a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3df5f99076ff2f0c0a6c7dd56747d8c4" id="r_a3df5f99076ff2f0c0a6c7dd56747d8c4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3df5f99076ff2f0c0a6c7dd56747d8c4">maxColorComponent</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3df5f99076ff2f0c0a6c7dd56747d8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum color component value: Max(r,g,b).  <br /></td></tr>
 <tr class="separator:a3df5f99076ff2f0c0a6c7dd56747d8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd1d9790f0f74d2ddeba09ce81344d1" id="r_addd1d9790f0f74d2ddeba09ce81344d1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addd1d9790f0f74d2ddeba09ce81344d1">this[int index]</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:addd1d9790f0f74d2ddeba09ce81344d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the component at the specified index.  <br /></td></tr>
 <tr class="separator:addd1d9790f0f74d2ddeba09ce81344d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00007">7</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<div class="textblock"><p>Representation of RGBA colors in floating-point format (0-1 range). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6c26be6b3e6df075cdebfd4ff10679d6" name="a6c26be6b3e6df075cdebfd4ff10679d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c26be6b3e6df075cdebfd4ff10679d6">&#9670;&#160;</a></span>Color() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c26be6b3e6df075cdebfd4ff10679d6">&#9670;&#160;</a></span>Color() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,12 +288,21 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00236">236</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Constructs a new <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> with given r,g,b,a components. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Red component.</td></tr>
+    <tr><td class="paramname">g</td><td>Green component.</td></tr>
+    <tr><td class="paramname">b</td><td>Blue component.</td></tr>
+    <tr><td class="paramname">a</td><td>Alpha component.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <a id="a405905273d44d5d125ade3c8a2220df1" name="a405905273d44d5d125ade3c8a2220df1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a405905273d44d5d125ade3c8a2220df1">&#9670;&#160;</a></span>Color() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a405905273d44d5d125ade3c8a2220df1">&#9670;&#160;</a></span>Color() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +325,93 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00257">257</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Constructs a new <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> with given r,g,b components and sets a to 1. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Red component.</td></tr>
+    <tr><td class="paramname">g</td><td>Green component.</td></tr>
+    <tr><td class="paramname">b</td><td>Blue component.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aafe8a4fa0de7833fcbe7b8039b2805f7" name="aafe8a4fa0de7833fcbe7b8039b2805f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafe8a4fa0de7833fcbe7b8039b2805f7">&#9670;&#160;</a></span>Color() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color.Color </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> with given r,g,b,a components as integers (0-255 range). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Red component (0-255).</td></tr>
+    <tr><td class="paramname">g</td><td>Green component (0-255).</td></tr>
+    <tr><td class="paramname">b</td><td>Blue component (0-255).</td></tr>
+    <tr><td class="paramname">a</td><td>Alpha component (0-255).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1565fa11244293317dd03f107ad7c2cb" name="a1565fa11244293317dd03f107ad7c2cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1565fa11244293317dd03f107ad7c2cb">&#9670;&#160;</a></span>Color() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color.Color </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a new <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> with given r,g,b components as integers (0-255 range) and sets a to 255. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Red component (0-255).</td></tr>
+    <tr><td class="paramname">g</td><td>Green component (0-255).</td></tr>
+    <tr><td class="paramname">b</td><td>Blue component (0-255).</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -287,7 +431,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00338">338</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Returns true if the given color is exactly equal to this color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The color to compare with the current instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the given color is exactly equal to this color.</dd></dl>
 
 </div>
 </div>
@@ -306,7 +457,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00328">328</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Returns true if the given color is exactly equal to this color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The object to compare with the current instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the given color is exactly equal to this color.</dd></dl>
 
 </div>
 </div>
@@ -325,7 +483,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00323">323</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Returns the hash code for this instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>A 32-bit signed integer that is the hash code for this instance.</dd></dl>
 
 </div>
 </div>
@@ -361,7 +520,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00510">510</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Creates an RGB colour from HSV input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">H</td><td>Hue [0..1].</td></tr>
+    <tr><td class="paramname">S</td><td>Saturation [0..1].</td></tr>
+    <tr><td class="paramname">V</td><td>Brightness value [0..1].</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An opaque colour with HSV matching the input.</dd></dl>
 
 </div>
 </div>
@@ -402,7 +570,17 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00535">535</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Creates an RGB colour from HSV input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">H</td><td>Hue [0..1].</td></tr>
+    <tr><td class="paramname">S</td><td>Saturation [0..1].</td></tr>
+    <tr><td class="paramname">V</td><td>Brightness value [0..1].</td></tr>
+    <tr><td class="paramname">hdr</td><td>Output HDR colours. If true, the returned colour will not be clamped to [0..1].</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An opaque colour with HSV matching the input.</dd></dl>
 
 </div>
 </div>
@@ -438,7 +616,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00396">396</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Linearly interpolates between colors a and b by t. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td><a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> a.</td></tr>
+    <tr><td class="paramname">b</td><td><a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> b.</td></tr>
+    <tr><td class="paramname">t</td><td>Float for combining a and b.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The interpolated color.</dd></dl>
 
 </div>
 </div>
@@ -474,7 +661,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00412">412</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Linearly interpolates between colors a and b by t without clamping the interpolation parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first color.</td></tr>
+    <tr><td class="paramname">b</td><td>The second color.</td></tr>
+    <tr><td class="paramname">t</td><td>The interpolation parameter (not clamped).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The interpolated color.</dd></dl>
 
 </div>
 </div>
@@ -501,7 +697,14 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00437">437</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Implicitly converts a <a class="el" href="struct_vector4.html" title="Representation of four-dimensional vectors.">Vector4</a> to a <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The <a class="el" href="struct_vector4.html" title="Representation of four-dimensional vectors.">Vector4</a> to convert.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> with r, g, b, a components from the <a class="el" href="struct_vector4.html" title="Representation of four-dimensional vectors.">Vector4</a>.</dd></dl>
 
 </div>
 </div>
@@ -528,7 +731,14 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00432">432</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Implicitly converts a <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> to a <a class="el" href="struct_vector4.html" title="Representation of four-dimensional vectors.">Vector4</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>The <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a> to convert.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="struct_vector4.html" title="Representation of four-dimensional vectors.">Vector4</a> with r, g, b, a components from the <a class="el" href="struct_color.html" title="Representation of RGBA colors in floating-point format (0-1 range).">Color</a>.</dd></dl>
 
 </div>
 </div>
@@ -559,7 +769,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00378">378</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Determines whether two colors are not equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side color.</td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the colors are not equal; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -590,7 +808,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00353">353</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Multiplies two colors component-wise. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first color.</td></tr>
+    <tr><td class="paramname">b</td><td>The second color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The component-wise product of the two colors.</dd></dl>
 
 </div>
 </div>
@@ -621,7 +847,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00358">358</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Multiplies a color by a scalar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The color.</td></tr>
+    <tr><td class="paramname">b</td><td>The scalar value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled color.</dd></dl>
 
 </div>
 </div>
@@ -652,7 +886,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00363">363</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Multiplies a scalar by a color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>The scalar value.</td></tr>
+    <tr><td class="paramname">a</td><td>The color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled color.</dd></dl>
 
 </div>
 </div>
@@ -683,7 +925,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00343">343</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Adds two colors component-wise. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first color.</td></tr>
+    <tr><td class="paramname">b</td><td>The second color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sum of the two colors.</dd></dl>
 
 </div>
 </div>
@@ -714,7 +964,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00348">348</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Subtracts two colors component-wise. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first color.</td></tr>
+    <tr><td class="paramname">b</td><td>The second color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The difference of the two colors.</dd></dl>
 
 </div>
 </div>
@@ -745,7 +1003,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00368">368</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Divides a color by a scalar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The color.</td></tr>
+    <tr><td class="paramname">b</td><td>The scalar value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The divided color.</dd></dl>
 
 </div>
 </div>
@@ -776,7 +1042,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00373">373</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Determines whether two colors are equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side color.</td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side color.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the colors are equal; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -817,7 +1091,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00442">442</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Converts an RGB color to HSV color space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rgbColor</td><td>The RGB color to convert.</td></tr>
+    <tr><td class="paramname">H</td><td>The hue component (0-1).</td></tr>
+    <tr><td class="paramname">S</td><td>The saturation component (0-1).</td></tr>
+    <tr><td class="paramname">V</td><td>The value/brightness component (0-1).</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -836,7 +1119,10 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00276">276</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Returns a formatted string of this color. </p>
+<dl class="section return"><dt>Returns</dt><dd>A formatted string representation of the color.</dd></dl>
+<p>Returns a formatted string of this color.</p>
+<dl class="section return"><dt>Returns</dt><dd>A formatted string representation of the color.</dd></dl>
 
 </div>
 </div>
@@ -855,7 +1141,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00292">292</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Returns a formatted string of this color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>A numeric format string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A formatted string representation of the color.</dd></dl>
 
 </div>
 </div>
@@ -878,7 +1171,15 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00308">308</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Returns a formatted string of this color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>A numeric format string.</td></tr>
+    <tr><td class="paramname">formatProvider</td><td>An object that specifies culture-specific formatting.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A formatted string representation of the color.</dd></dl>
 
 </div>
 </div>
@@ -895,7 +1196,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00027">27</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Alpha component of the color (0 is transparent, 1 is opaque). </p>
 
 </div>
 </div>
@@ -911,7 +1212,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00022">22</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Blue component of the color. </p>
 
 </div>
 </div>
@@ -927,7 +1228,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00017">17</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Green component of the color. </p>
 
 </div>
 </div>
@@ -943,7 +1244,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00012">12</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Red component of the color. </p>
 
 </div>
 </div>
@@ -968,7 +1269,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00080">80</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Solid black. RGBA is (0, 0, 0, 1). </p>
 
 </div>
 </div>
@@ -992,7 +1293,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00056">56</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Solid blue. RGBA is (0, 0, 1, 1). </p>
 
 </div>
 </div>
@@ -1016,7 +1317,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00152">152</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Completely transparent. RGBA is (0, 0, 0, 0). </p>
 
 </div>
 </div>
@@ -1040,7 +1341,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00104">104</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Cyan. RGBA is (0, 1, 1, 1). </p>
 
 </div>
 </div>
@@ -1064,7 +1365,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00128">128</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Gray. RGBA is (0.5, 0.5, 0.5, 1). </p>
 
 </div>
 </div>
@@ -1088,7 +1389,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00164">164</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>The grayscale value of the color. (Read Only) </p>
 
 </div>
 </div>
@@ -1112,7 +1413,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00044">44</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Solid green. RGBA is (0, 1, 0, 1). </p>
 
 </div>
 </div>
@@ -1136,7 +1437,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00140">140</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>English spelling for gray. RGBA is the same (0.5, 0.5, 0.5, 1). </p>
 
 </div>
 </div>
@@ -1160,7 +1461,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00116">116</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Magenta. RGBA is (1, 0, 1, 1). </p>
 
 </div>
 </div>
@@ -1184,7 +1485,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00176">176</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Returns the maximum color component value: Max(r,g,b). </p>
 
 </div>
 </div>
@@ -1208,7 +1509,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00032">32</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Solid red. RGBA is (1, 0, 0, 1). </p>
 
 </div>
 </div>
@@ -1232,7 +1533,20 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00178">178</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Gets or sets the component at the specified index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the component (0 = r, 1 = g, 2 = b, 3 = a).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The component value at the specified index.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IndexOutOfRangeException</td><td>Thrown when index is out of range [0, 3].</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1256,7 +1570,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00068">68</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Solid white. RGBA is (1, 1, 1, 1). </p>
 
 </div>
 </div>
@@ -1280,12 +1594,12 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_color_8cs_source.html#l00092">92</a> of file <a class="el" href="_color_8cs_source.html">Color.cs</a>.</p>
+<p>Yellow. RGBA is (1, 0.92, 0.016, 1), but the color is nice to look at! </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/math/<a class="el" href="_color_8cs_source.html">Color.cs</a></li>
+<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/math/<a class="el" href="_color_8cs.html">Color.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

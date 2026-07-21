@@ -23,7 +23,8 @@ var shadow_8h =
     [ "unravel::shadow::frustum_calculation_method", "structunravel_1_1shadow_1_1frustum__calculation__method.html", "structunravel_1_1shadow_1_1frustum__calculation__method" ],
     [ "unravel::shadow::csm_optimization_flags", "structunravel_1_1shadow_1_1csm__optimization__flags.html", "structunravel_1_1shadow_1_1csm__optimization__flags" ],
     [ "unravel::shadow::adaptive_shadow_params", "structunravel_1_1shadow_1_1adaptive__shadow__params.html", "structunravel_1_1shadow_1_1adaptive__shadow__params" ],
+    [ "unravel::shadow::shadow_visibility_data", "structunravel_1_1shadow_1_1shadow__visibility__data.html", "structunravel_1_1shadow_1_1shadow__visibility__data" ],
     [ "unravel::shadow::shadowmap_generator", "classunravel_1_1shadow_1_1shadowmap__generator.html", "classunravel_1_1shadow_1_1shadowmap__generator" ],
     [ "SHADOW_FLOAT_PARAM", "shadow_8h.html#a7ba2c489d03760e59b046e56750d2fe0", null ],
-    [ "shadow_map_models_t", "shadow_8h.html#a2874fe5cdd35210084393fb17d631be1", null ]
+    [ "shadow_map_models_t", "shadow_8h.html#a74f8e3c3cdd81526a65115682ed78ac4", null ]
 ];

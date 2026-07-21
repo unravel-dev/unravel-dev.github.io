@@ -103,6 +103,8 @@ $(function(){initNavTree('asset__writer_8h.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="asset__handle_8h_source.html">../asset_handle.h</a>&quot;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&gt;</code><br />
 <code>#include &lt;filesystem&gt;</code><br />
 <code>#include &lt;<a class="el" href="utils_8h_source.html">string_utils/utils.h</a>&gt;</code><br />
@@ -127,6 +129,8 @@ Functions</h2></td></tr>
 <tr class="separator:a89fb067ac49122ed2fb008a07d3c4df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1abd5cde17c8475673b86ee6f40eb4c" id="r_af1abd5cde17c8475673b86ee6f40eb4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#af1abd5cde17c8475673b86ee6f40eb4c">unravel::asset_writer::atomic_write_file</a> (const fs::path &amp;dst, const std::function&lt; void(const fs::path &amp;)&gt; &amp;callback, fs::error_code &amp;ec) noexcept</td></tr>
 <tr class="separator:af1abd5cde17c8475673b86ee6f40eb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be8f2bbf96f4eab6308936a7aa1d26f" id="r_a5be8f2bbf96f4eab6308936a7aa1d26f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#a5be8f2bbf96f4eab6308936a7aa1d26f">unravel::asset_writer::cleanup_stale_temp_files</a> (const fs::path &amp;dir, bool recursive, std::chrono::seconds min_age) noexcept -&gt; std::size_t</td></tr>
+<tr class="separator:a5be8f2bbf96f4eab6308936a7aa1d26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a96cadef0d8476ae4981c7a3eef0a0" id="r_ad8a96cadef0d8476ae4981c7a3eef0a0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad8a96cadef0d8476ae4981c7a3eef0a0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#ad8a96cadef0d8476ae4981c7a3eef0a0">unravel::asset_writer::resolve_meta_file</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &amp;asset) -&gt; fs::path</td></tr>
 <tr class="separator:ad8a96cadef0d8476ae4981c7a3eef0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>

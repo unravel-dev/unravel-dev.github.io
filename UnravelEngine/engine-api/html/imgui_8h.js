@@ -18,6 +18,7 @@ var imgui_8h =
     [ "ImageButton", "imgui_8h.html#a50174557d0b81f48ebad9e500e52eb73", null ],
     [ "imguiBeginFrame", "imgui_8h.html#aa54213d8559a88cbbab735dafe3bcb39", null ],
     [ "imguiCreate", "imgui_8h.html#a8c4566a202671913ce63f373e2f18fee", null ],
+    [ "imguiCreateCubemapProgram", "imgui_8h.html#ad020eb7a12a8fe3d43313f6954b4d8d6", null ],
     [ "imguiDestroy", "imgui_8h.html#ae07feb5aa02c6a112f8de06243f77def", null ],
     [ "imguiEndFrame", "imgui_8h.html#aae9ae6cca90edbba2e39c89863921bfd", null ],
     [ "imguiProcessEvent", "imgui_8h.html#a8c57882bf5f7d84275a98ef8f14d5a86", null ],

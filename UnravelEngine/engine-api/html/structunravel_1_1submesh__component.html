@@ -97,6 +97,7 @@ $(function(){initNavTree('structunravel_1_1submesh__component.html',''); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structunravel_1_1submesh__component-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::submesh_component Struct Reference</div></div>
@@ -115,10 +116,20 @@ Inheritance diagram for unravel::submesh_component:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a693ba0b99f5c3d7c240d7972853534fd" id="r_a693ba0b99f5c3d7c240d7972853534fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a693ba0b99f5c3d7c240d7972853534fd">migrate_legacy_indices</a> (const std::vector&lt; uint32_t &gt; &amp;legacy_indices)</td></tr>
+<tr class="memdesc:a693ba0b99f5c3d7c240d7972853534fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Migrates legacy serialized data that only stored bare submesh indices. Creates default-valued entries for <code>legacy_indices</code> when no entries were loaded.  <br /></td></tr>
+<tr class="separator:a693ba0b99f5c3d7c240d7972853534fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structunravel_1_1basic__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structunravel_1_1basic__component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structunravel_1_1basic__component.html">unravel::basic_component</a></td></tr>
+<tr class="memitem:a77b51a3686a5557487ae8fb473f3de33 inherit pub_methods_structunravel_1_1basic__component" id="r_a77b51a3686a5557487ae8fb473f3de33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1basic__component.html#a77b51a3686a5557487ae8fb473f3de33">touch</a> ()</td></tr>
+<tr class="memdesc:a77b51a3686a5557487ae8fb473f3de33 inherit pub_methods_structunravel_1_1basic__component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the component as 'touched'.  <br /></td></tr>
+<tr class="separator:a77b51a3686a5557487ae8fb473f3de33 inherit pub_methods_structunravel_1_1basic__component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a73404defe7ab5b65a9c92e2cee006465" id="r_a73404defe7ab5b65a9c92e2cee006465"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73404defe7ab5b65a9c92e2cee006465">submeshes</a> {}</td></tr>
-<tr class="separator:a73404defe7ab5b65a9c92e2cee006465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f81005aa3247c2d336bfb6bab47b849" id="r_a3f81005aa3247c2d336bfb6bab47b849"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structunravel_1_1submesh__entry.html">submesh_entry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f81005aa3247c2d336bfb6bab47b849">entries</a> {}</td></tr>
+<tr class="separator:a3f81005aa3247c2d336bfb6bab47b849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structunravel_1_1basic__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structunravel_1_1basic__component')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structunravel_1_1basic__component.html">unravel::basic_component</a></td></tr>
 <tr class="memitem:a080e32dbf810d5ec3301f47661e098a1 inherit pub_attribs_structunravel_1_1basic__component" id="r_a080e32dbf810d5ec3301f47661e098a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1basic__component.html#a080e32dbf810d5ec3301f47661e098a1">eto</a> {}</td></tr>
 <tr class="memdesc:a080e32dbf810d5ec3301f47661e098a1 inherit pub_attribs_structunravel_1_1basic__component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable empty type optimizations.  <br /></td></tr>
@@ -129,10 +140,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_structunravel_1_1component__crtp"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_structunravel_1_1component__crtp')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structunravel_1_1component__crtp.html">unravel::component_crtp&lt; submesh_component &gt;</a></td></tr>
 <tr class="memitem:ae56fdc9177cb583da8be567eb17b4033 inherit pub_types_structunravel_1_1component__crtp" id="r_ae56fdc9177cb583da8be567eb17b4033"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1component__crtp.html#ae56fdc9177cb583da8be567eb17b4033">base</a></td></tr>
 <tr class="separator:ae56fdc9177cb583da8be567eb17b4033 inherit pub_types_structunravel_1_1component__crtp"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_structunravel_1_1basic__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structunravel_1_1basic__component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structunravel_1_1basic__component.html">unravel::basic_component</a></td></tr>
-<tr class="memitem:a77b51a3686a5557487ae8fb473f3de33 inherit pub_methods_structunravel_1_1basic__component" id="r_a77b51a3686a5557487ae8fb473f3de33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1basic__component.html#a77b51a3686a5557487ae8fb473f3de33">touch</a> ()</td></tr>
-<tr class="memdesc:a77b51a3686a5557487ae8fb473f3de33 inherit pub_methods_structunravel_1_1basic__component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the component as 'touched'.  <br /></td></tr>
-<tr class="separator:a77b51a3686a5557487ae8fb473f3de33 inherit pub_methods_structunravel_1_1basic__component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_structunravel_1_1component__crtp"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_structunravel_1_1component__crtp')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="structunravel_1_1component__crtp.html">unravel::component_crtp&lt; submesh_component &gt;</a></td></tr>
 <tr class="memitem:a3acf6172065ed6482d352f65271245e5 inherit pub_static_attribs_structunravel_1_1component__crtp" id="r_a3acf6172065ed6482d352f65271245e5"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1component__crtp.html#a3acf6172065ed6482d352f65271245e5">in_place_delete</a></td></tr>
 <tr class="memdesc:a3acf6172065ed6482d352f65271245e5 inherit pub_static_attribs_structunravel_1_1component__crtp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if the component can be deleted in place.  <br /></td></tr>
@@ -140,21 +147,52 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="model__component_8h_source.html#l00214">214</a> of file <a class="el" href="model__component_8h_source.html">model_component.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a73404defe7ab5b65a9c92e2cee006465" name="a73404defe7ab5b65a9c92e2cee006465"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73404defe7ab5b65a9c92e2cee006465">&#9670;&#160;</a></span>submeshes</h2>
+<p class="definition">Definition at line <a class="el" href="model__component_8h_source.html#l00385">385</a> of file <a class="el" href="model__component_8h_source.html">model_component.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a693ba0b99f5c3d7c240d7972853534fd" name="a693ba0b99f5c3d7c240d7972853534fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693ba0b99f5c3d7c240d7972853534fd">&#9670;&#160;</a></span>migrate_legacy_indices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::submesh_component::migrate_legacy_indices </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint32_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>legacy_indices</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Migrates legacy serialized data that only stored bare submesh indices. Creates default-valued entries for <code>legacy_indices</code> when no entries were loaded. </p>
+
+<p class="definition">Definition at line <a class="el" href="model__component_8h_source.html#l00396">396</a> of file <a class="el" href="model__component_8h_source.html">model_component.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3f81005aa3247c2d336bfb6bab47b849" name="a3f81005aa3247c2d336bfb6bab47b849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f81005aa3247c2d336bfb6bab47b849">&#9670;&#160;</a></span>entries</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;uint32_t&gt; unravel::submesh_component::submeshes {}</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structunravel_1_1submesh__entry.html">submesh_entry</a>&gt; unravel::submesh_component::entries {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Per-submesh render settings for the submeshes affected by this node. Rebuilt from the mesh asset on armature init (see rebuild_submesh_entries), so the entry list itself is derived data - only the per-entry settings are authored. </p>
 
-<p class="definition">Definition at line <a class="el" href="model__component_8h_source.html#l00216">216</a> of file <a class="el" href="model__component_8h_source.html">model_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__component_8h_source.html#l00390">390</a> of file <a class="el" href="model__component_8h_source.html">model_component.h</a>.</p>
 
 </div>
 </div>

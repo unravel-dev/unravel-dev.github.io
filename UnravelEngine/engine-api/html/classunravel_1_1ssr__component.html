@@ -97,6 +97,7 @@ $(function(){initNavTree('classunravel_1_1ssr__component.html',''); initResizabl
 
 <div class="header">
   <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classunravel_1_1ssr__component-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::ssr_component Class Reference</div></div>
@@ -115,6 +116,12 @@ Inheritance diagram for unravel::ssr_component:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a87b88acebdb2813d778eac7e3e90a005" id="r_a87b88acebdb2813d778eac7e3e90a005"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87b88acebdb2813d778eac7e3e90a005">merge_into</a> (<a class="el" href="structunravel_1_1ssr__pass_1_1ssr__settings.html">ssr_pass::ssr_settings</a> &amp;result, const <a class="el" href="structunravel_1_1ssr__pass_1_1ssr__settings.html">ssr_pass::ssr_settings</a> &amp;from, float <a class="el" href="volume__resolver_8cpp.html#a432bf7e0b66554685f44a3af79ccaf8b">contribution</a>, bool is_first)</td></tr>
+<tr class="memdesc:a87b88acebdb2813d778eac7e3e90a005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges this component's settings into result. For first contribution, copies; otherwise lerps.  <br /></td></tr>
+<tr class="separator:a87b88acebdb2813d778eac7e3e90a005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae87dfded3fb4453d6b487356aa8caa4e" id="r_ae87dfded3fb4453d6b487356aa8caa4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae87dfded3fb4453d6b487356aa8caa4e">enabled</a> = true</td></tr>
@@ -144,8 +151,52 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ssr__component_8h_source.html#l00009">9</a> of file <a class="el" href="ssr__component_8h_source.html">ssr_component.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="ssr__component_8h_source.html#l00010">10</a> of file <a class="el" href="ssr__component_8h_source.html">ssr_component.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a87b88acebdb2813d778eac7e3e90a005" name="a87b88acebdb2813d778eac7e3e90a005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b88acebdb2813d778eac7e3e90a005">&#9670;&#160;</a></span>merge_into()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void unravel::ssr_component::merge_into </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1ssr__pass_1_1ssr__settings.html">ssr_pass::ssr_settings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1ssr__pass_1_1ssr__settings.html">ssr_pass::ssr_settings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>contribution</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_first</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Merges this component's settings into result. For first contribution, copies; otherwise lerps. </p>
+
+<p class="definition">Definition at line <a class="el" href="ssr__component_8h_source.html#l00020">20</a> of file <a class="el" href="ssr__component_8h_source.html">ssr_component.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="ae87dfded3fb4453d6b487356aa8caa4e" name="ae87dfded3fb4453d6b487356aa8caa4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae87dfded3fb4453d6b487356aa8caa4e">&#9670;&#160;</a></span>enabled</h2>
 
@@ -160,7 +211,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Whether SSR is enabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__component_8h_source.html#l00013">13</a> of file <a class="el" href="ssr__component_8h_source.html">ssr_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__component_8h_source.html#l00014">14</a> of file <a class="el" href="ssr__component_8h_source.html">ssr_component.h</a>.</p>
 
 </div>
 </div>
@@ -178,7 +229,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>SSR pass settings. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__component_8h_source.html#l00016">16</a> of file <a class="el" href="ssr__component_8h_source.html">ssr_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__component_8h_source.html#l00017">17</a> of file <a class="el" href="ssr__component_8h_source.html">ssr_component.h</a>.</p>
 
 </div>
 </div>

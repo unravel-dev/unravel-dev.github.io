@@ -2,6 +2,8 @@ var engine_2engine_2settings_2settings_8h =
 [
     [ "unravel::settings", "structunravel_1_1settings.html", "structunravel_1_1settings" ],
     [ "unravel::settings::app_settings", "structunravel_1_1settings_1_1app__settings.html", "structunravel_1_1settings_1_1app__settings" ],
+    [ "unravel::settings::splash_logo_entry", "structunravel_1_1settings_1_1splash__logo__entry.html", "structunravel_1_1settings_1_1splash__logo__entry" ],
+    [ "unravel::settings::splash_settings", "structunravel_1_1settings_1_1splash__settings.html", "structunravel_1_1settings_1_1splash__settings" ],
     [ "unravel::settings::asset_settings", "structunravel_1_1settings_1_1asset__settings.html", "structunravel_1_1settings_1_1asset__settings" ],
     [ "unravel::settings::asset_settings::texture_importer_settings", "structunravel_1_1settings_1_1asset__settings_1_1texture__importer__settings.html", "structunravel_1_1settings_1_1asset__settings_1_1texture__importer__settings" ],
     [ "unravel::settings::asset_settings::mesh_settings", "structunravel_1_1settings_1_1asset__settings_1_1mesh__settings.html", "structunravel_1_1settings_1_1asset__settings_1_1mesh__settings" ],

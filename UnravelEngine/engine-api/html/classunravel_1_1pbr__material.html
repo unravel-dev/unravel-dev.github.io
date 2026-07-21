@@ -139,6 +139,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a930f12bd8967c454723fb17503ac956e" id="r_a930f12bd8967c454723fb17503ac956e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a930f12bd8967c454723fb17503ac956e">set_emissive_color</a> (const <a class="el" href="structmath_1_1color.html">math::color</a> &amp;val)</td></tr>
 <tr class="memdesc:a930f12bd8967c454723fb17503ac956e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the emissive color of the material.  <br /></td></tr>
 <tr class="separator:a930f12bd8967c454723fb17503ac956e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d4d36b6d29f9a9165ba90a3cba0e0b" id="r_a28d4d36b6d29f9a9165ba90a3cba0e0b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28d4d36b6d29f9a9165ba90a3cba0e0b">get_emissive_intensity</a> () const -&gt; float</td></tr>
+<tr class="separator:a28d4d36b6d29f9a9165ba90a3cba0e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447f2c7bd604cd0dd073e02cf1a9cd21" id="r_a447f2c7bd604cd0dd073e02cf1a9cd21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a447f2c7bd604cd0dd073e02cf1a9cd21">set_emissive_intensity</a> (float val)</td></tr>
+<tr class="separator:a447f2c7bd604cd0dd073e02cf1a9cd21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46f45282971ce1c7d72f58d4b4ffb802" id="r_a46f45282971ce1c7d72f58d4b4ffb802"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46f45282971ce1c7d72f58d4b4ffb802">get_roughness</a> () const -&gt; float</td></tr>
 <tr class="memdesc:a46f45282971ce1c7d72f58d4b4ffb802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the roughness of the material.  <br /></td></tr>
 <tr class="separator:a46f45282971ce1c7d72f58d4b4ffb802"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,12 +161,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a688fcd5b2395e4209daf37173faf79f5" id="r_a688fcd5b2395e4209daf37173faf79f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a688fcd5b2395e4209daf37173faf79f5">set_bumpiness</a> (float bumpiness)</td></tr>
 <tr class="memdesc:a688fcd5b2395e4209daf37173faf79f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the bumpiness of the material.  <br /></td></tr>
 <tr class="separator:a688fcd5b2395e4209daf37173faf79f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e44ddc830a9a0f3119b51f57dc818ad" id="r_a3e44ddc830a9a0f3119b51f57dc818ad"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e44ddc830a9a0f3119b51f57dc818ad">get_alpha_test_value</a> () const -&gt; float</td></tr>
-<tr class="memdesc:a3e44ddc830a9a0f3119b51f57dc818ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the alpha test value of the material.  <br /></td></tr>
-<tr class="separator:a3e44ddc830a9a0f3119b51f57dc818ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4a6870c8d83b001396624ebeaa5f78f" id="r_ab4a6870c8d83b001396624ebeaa5f78f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4a6870c8d83b001396624ebeaa5f78f">set_alpha_test_value</a> (float alpha_test_value)</td></tr>
-<tr class="memdesc:ab4a6870c8d83b001396624ebeaa5f78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the alpha test value of the material.  <br /></td></tr>
-<tr class="separator:ab4a6870c8d83b001396624ebeaa5f78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a81b75c84abc246f1200a20372571c" id="r_a03a81b75c84abc246f1200a20372571c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03a81b75c84abc246f1200a20372571c">get_alpha_mode</a> () const -&gt; <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219">alpha_mode</a></td></tr>
+<tr class="memdesc:a03a81b75c84abc246f1200a20372571c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the alpha mode (opaque / mask / blend).  <br /></td></tr>
+<tr class="separator:a03a81b75c84abc246f1200a20372571c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79eab0357779f0655ca6c7f50cac6d4" id="r_ab79eab0357779f0655ca6c7f50cac6d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab79eab0357779f0655ca6c7f50cac6d4">set_alpha_mode</a> (<a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219">alpha_mode</a> mode)</td></tr>
+<tr class="memdesc:ab79eab0357779f0655ca6c7f50cac6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the alpha mode.  <br /></td></tr>
+<tr class="separator:ab79eab0357779f0655ca6c7f50cac6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6758cd6591471bf12a54811bf27bab5b" id="r_a6758cd6591471bf12a54811bf27bab5b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6758cd6591471bf12a54811bf27bab5b">get_alpha_cutoff</a> () const -&gt; float</td></tr>
+<tr class="memdesc:a6758cd6591471bf12a54811bf27bab5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the alpha cutoff used when <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219">alpha_mode</a> is <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219af2ce11ebf110993621bedd8e747d7b1b">alpha_mode::mask</a>.  <br /></td></tr>
+<tr class="separator:a6758cd6591471bf12a54811bf27bab5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6dcc69d8a54f3fcea9e9715932c2f2b" id="r_ac6dcc69d8a54f3fcea9e9715932c2f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6dcc69d8a54f3fcea9e9715932c2f2b">set_alpha_cutoff</a> (float cutoff)</td></tr>
+<tr class="memdesc:ac6dcc69d8a54f3fcea9e9715932c2f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the alpha cutoff for <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219af2ce11ebf110993621bedd8e747d7b1b">alpha_mode::mask</a> materials.  <br /></td></tr>
+<tr class="separator:ac6dcc69d8a54f3fcea9e9715932c2f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b2ba2cdc424219313ff9855a5dd630" id="r_a62b2ba2cdc424219313ff9855a5dd630"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62b2ba2cdc424219313ff9855a5dd630">uses_alpha_cutout</a> () const -&gt; bool</td></tr>
+<tr class="memdesc:a62b2ba2cdc424219313ff9855a5dd630"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219">alpha_mode</a> is <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219af2ce11ebf110993621bedd8e747d7b1b">alpha_mode::mask</a> (hard alpha clip + cutout shadows).  <br /></td></tr>
+<tr class="separator:a62b2ba2cdc424219313ff9855a5dd630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6148ab12823740b1ae43a8654ea6998a" id="r_a6148ab12823740b1ae43a8654ea6998a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6148ab12823740b1ae43a8654ea6998a">casts_shadow</a> () const -&gt; bool</td></tr>
+<tr class="memdesc:a6148ab12823740b1ae43a8654ea6998a"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when this material should contribute to shadow maps.  <br /></td></tr>
+<tr class="separator:a6148ab12823740b1ae43a8654ea6998a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f1cffeef521d4f77687e9dca030cad" id="r_a25f1cffeef521d4f77687e9dca030cad"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25f1cffeef521d4f77687e9dca030cad">make_shadow_cutout_state</a> () const -&gt; <a class="el" href="structunravel_1_1shadow__cutout__state.html">shadow_cutout_state</a></td></tr>
+<tr class="memdesc:a25f1cffeef521d4f77687e9dca030cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Snapshot of shader state needed by the shadow cutout pass.  <br /></td></tr>
+<tr class="separator:a25f1cffeef521d4f77687e9dca030cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da7a424906eddf58aeeedd2b6e2b98f" id="r_a5da7a424906eddf58aeeedd2b6e2b98f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5da7a424906eddf58aeeedd2b6e2b98f">infer_alpha_mode_from_legacy_cutoff</a> ()</td></tr>
+<tr class="memdesc:a5da7a424906eddf58aeeedd2b6e2b98f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Infer <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219">alpha_mode</a> when loading legacy assets that only stored a cutoff value.  <br /></td></tr>
+<tr class="separator:a5da7a424906eddf58aeeedd2b6e2b98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66759a78e538e8ec062e6b3242935b16" id="r_a66759a78e538e8ec062e6b3242935b16"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66759a78e538e8ec062e6b3242935b16">get_surface_data</a> () const -&gt; const math::vec4 &amp;</td></tr>
 <tr class="memdesc:a66759a78e538e8ec062e6b3242935b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the surface data of the material.  <br /></td></tr>
 <tr class="separator:a66759a78e538e8ec062e6b3242935b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,7 +246,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab683d0fb45aa6614305adeeb675d3f85 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab800b944cafcf43c8407e27d0c785300 inherit pub_methods_structcrtp__meta__type" id="r_ab800b944cafcf43c8407e27d0c785300"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#ab800b944cafcf43c8407e27d0c785300">is</a> () const -&gt; bool</td></tr>
 <tr class="separator:ab800b944cafcf43c8407e27d0c785300 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type" id="r_a85fd8cca6ee7590180c1d6b985292a98"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a85fd8cca6ee7590180c1d6b985292a98">is</a> (const entt::meta_type &amp;<a class="el" href="bullet__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) const -&gt; bool</td></tr>
+<tr class="memitem:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type" id="r_a85fd8cca6ee7590180c1d6b985292a98"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a85fd8cca6ee7590180c1d6b985292a98">is</a> (const entt::meta_type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) const -&gt; bool</td></tr>
 <tr class="separator:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a960687703825bbc6a1b6b452a517b2 inherit pub_methods_structcrtp__meta__type" id="r_a7a960687703825bbc6a1b6b452a517b2"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a7a960687703825bbc6a1b6b452a517b2">as_derived</a> () -&gt; entt::meta_any</td></tr>
 <tr class="separator:a7a960687703825bbc6a1b6b452a517b2 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,8 +260,37 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for physically-based rendering (PBR) materials. </p>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00099">99</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00111">111</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6148ab12823740b1ae43a8654ea6998a" name="a6148ab12823740b1ae43a8654ea6998a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6148ab12823740b1ae43a8654ea6998a">&#9670;&#160;</a></span>casts_shadow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::pbr_material::casts_shadow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True when this material should contribute to shadow maps. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2material_8cpp_source.html#l00117">117</a> of file <a class="el" href="rendering_2material_8cpp_source.html">material.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a687b0aa93ae78ded1ed35b7f1cbd1349" name="a687b0aa93ae78ded1ed35b7f1cbd1349"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a687b0aa93ae78ded1ed35b7f1cbd1349">&#9670;&#160;</a></span>clone()</h2>
 
@@ -263,12 +314,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2material_8cpp_source.html#l00074">74</a> of file <a class="el" href="rendering_2material_8cpp_source.html">material.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2material_8cpp_source.html#l00085">85</a> of file <a class="el" href="rendering_2material_8cpp_source.html">material.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a3e44ddc830a9a0f3119b51f57dc818ad" name="a3e44ddc830a9a0f3119b51f57dc818ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e44ddc830a9a0f3119b51f57dc818ad">&#9670;&#160;</a></span>get_alpha_test_value()</h2>
+<a id="a6758cd6591471bf12a54811bf27bab5b" name="a6758cd6591471bf12a54811bf27bab5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6758cd6591471bf12a54811bf27bab5b">&#9670;&#160;</a></span>get_alpha_cutoff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +328,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::pbr_material::get_alpha_test_value </td>
+          <td class="memname">auto unravel::pbr_material::get_alpha_cutoff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const -&gt; float
@@ -291,10 +342,39 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the alpha test value of the material. </p>
-<dl class="section return"><dt>Returns</dt><dd>The alpha test value. </dd></dl>
+<p>Gets the alpha cutoff used when <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219">alpha_mode</a> is <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219af2ce11ebf110993621bedd8e747d7b1b">alpha_mode::mask</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00218">218</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00252">252</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+
+</div>
+</div>
+<a id="a03a81b75c84abc246f1200a20372571c" name="a03a81b75c84abc246f1200a20372571c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a81b75c84abc246f1200a20372571c">&#9670;&#160;</a></span>get_alpha_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::pbr_material::get_alpha_mode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219">alpha_mode</a>
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the alpha mode (opaque / mask / blend). </p>
+
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00239">239</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -325,7 +405,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the ambient occlusion map of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the ambient occlusion map asset handle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00371">371</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00417">417</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the base color of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the base color. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00110">110</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00122">122</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -387,7 +467,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the bumpiness of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>The bumpiness value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00200">200</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00222">222</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +498,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the color map of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the color map asset handle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00299">299</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00345">345</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +529,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the dither threshold of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the dither threshold vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00281">281</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00327">327</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +560,35 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the emissive color of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the emissive color. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00146">146</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00158">158</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+
+</div>
+</div>
+<a id="a28d4d36b6d29f9a9165ba90a3cba0e0b" name="a28d4d36b6d29f9a9165ba90a3cba0e0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d4d36b6d29f9a9165ba90a3cba0e0b">&#9670;&#160;</a></span>get_emissive_intensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::pbr_material::get_emissive_intensity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00172">172</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +619,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the emissive map of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the emissive map asset handle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00389">389</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00435">435</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -542,7 +650,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the metalness of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>The metalness value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00182">182</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00204">204</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +681,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the metalness map of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the metalness map asset handle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00353">353</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00399">399</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -604,7 +712,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the normal map of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the normal map asset handle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00317">317</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00363">363</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +743,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the roughness of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>The roughness value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00164">164</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00186">186</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -666,7 +774,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the roughness map of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the roughness map asset handle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00335">335</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00381">381</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -697,7 +805,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the subsurface color of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the subsurface color. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00128">128</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00140">140</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -728,7 +836,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the surface data of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the surface data vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00236">236</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00278">278</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +867,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets additional surface data for the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A vector containing additional surface data. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00245">245</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00287">287</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -790,7 +898,57 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the tiling factor of the material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the tiling vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00263">263</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00309">309</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+
+</div>
+</div>
+<a id="a5da7a424906eddf58aeeedd2b6e2b98f" name="a5da7a424906eddf58aeeedd2b6e2b98f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da7a424906eddf58aeeedd2b6e2b98f">&#9670;&#160;</a></span>infer_alpha_mode_from_legacy_cutoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::pbr_material::infer_alpha_mode_from_legacy_cutoff </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Infer <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219">alpha_mode</a> when loading legacy assets that only stored a cutoff value. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2material_8cpp_source.html#l00134">134</a> of file <a class="el" href="rendering_2material_8cpp_source.html">material.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a25f1cffeef521d4f77687e9dca030cad" name="a25f1cffeef521d4f77687e9dca030cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f1cffeef521d4f77687e9dca030cad">&#9670;&#160;</a></span>make_shadow_cutout_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::pbr_material::make_shadow_cutout_state </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="structunravel_1_1shadow__cutout__state.html">shadow_cutout_state</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Snapshot of shader state needed by the shadow cutout pass. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2material_8cpp_source.html#l00122">122</a> of file <a class="el" href="rendering_2material_8cpp_source.html">material.cpp</a>.</p>
 
 </div>
 </div>
@@ -818,42 +976,49 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00254">254</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00300">300</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
-<a id="ab4a6870c8d83b001396624ebeaa5f78f" name="ab4a6870c8d83b001396624ebeaa5f78f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4a6870c8d83b001396624ebeaa5f78f">&#9670;&#160;</a></span>set_alpha_test_value()</h2>
+<a id="ac6dcc69d8a54f3fcea9e9715932c2f2b" name="ac6dcc69d8a54f3fcea9e9715932c2f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6dcc69d8a54f3fcea9e9715932c2f2b">&#9670;&#160;</a></span>set_alpha_cutoff()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void unravel::pbr_material::set_alpha_test_value </td>
+          <td class="memname">void unravel::pbr_material::set_alpha_cutoff </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>alpha_test_value</em></span></td><td>)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>cutoff</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Sets the alpha test value of the material. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">alpha_test_value</td><td>The alpha test value to set. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Sets the alpha cutoff for <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219af2ce11ebf110993621bedd8e747d7b1b">alpha_mode::mask</a> materials. </p>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00227">227</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2material_8cpp_source.html#l00097">97</a> of file <a class="el" href="rendering_2material_8cpp_source.html">material.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab79eab0357779f0655ca6c7f50cac6d4" name="ab79eab0357779f0655ca6c7f50cac6d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79eab0357779f0655ca6c7f50cac6d4">&#9670;&#160;</a></span>set_alpha_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::pbr_material::set_alpha_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219">alpha_mode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the alpha mode. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2material_8cpp_source.html#l00091">91</a> of file <a class="el" href="rendering_2material_8cpp_source.html">material.cpp</a>.</p>
 
 </div>
 </div>
@@ -888,7 +1053,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00380">380</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00426">426</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -923,7 +1088,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00119">119</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00131">131</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -958,7 +1123,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00209">209</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00231">231</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -993,7 +1158,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00308">308</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00354">354</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1193,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00290">290</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00336">336</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1228,34 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00155">155</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00167">167</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+
+</div>
+</div>
+<a id="a447f2c7bd604cd0dd073e02cf1a9cd21" name="a447f2c7bd604cd0dd073e02cf1a9cd21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a447f2c7bd604cd0dd073e02cf1a9cd21">&#9670;&#160;</a></span>set_emissive_intensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::pbr_material::set_emissive_intensity </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00177">177</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -1098,7 +1290,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00398">398</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00444">444</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1325,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00191">191</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00213">213</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1360,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00362">362</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00408">408</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -1203,7 +1395,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00326">326</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00372">372</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1430,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00173">173</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00195">195</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -1273,7 +1465,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00344">344</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00390">390</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -1308,7 +1500,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00137">137</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00149">149</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
 
 </div>
 </div>
@@ -1343,7 +1535,36 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00272">272</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="material_8h_source.html#l00318">318</a> of file <a class="el" href="material_8h_source.html">material.h</a>.</p>
+
+</div>
+</div>
+<a id="a62b2ba2cdc424219313ff9855a5dd630" name="a62b2ba2cdc424219313ff9855a5dd630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62b2ba2cdc424219313ff9855a5dd630">&#9670;&#160;</a></span>uses_alpha_cutout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::pbr_material::uses_alpha_cutout </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>True when <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219">alpha_mode</a> is <a class="el" href="namespaceunravel.html#a711922eb52f0ff80465d951cbd4fa219af2ce11ebf110993621bedd8e747d7b1b">alpha_mode::mask</a> (hard alpha clip + cutout shadows). </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2material_8cpp_source.html#l00112">112</a> of file <a class="el" href="rendering_2material_8cpp_source.html">material.cpp</a>.</p>
 
 </div>
 </div>

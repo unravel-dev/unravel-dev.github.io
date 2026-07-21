@@ -111,9 +111,10 @@ Inheritance diagram for unravel::gizmo:</div>
  <div class="center">
   <img src="structunravel_1_1gizmo.png" usemap="#unravel::gizmo_map" alt=""/>
   <map id="unravel::gizmo_map" name="unravel::gizmo_map">
-<area href="structcrtp__meta__type.html" alt="crtp_meta_type&lt; gizmo &gt;" shape="rect" coords="110,56,321,80"/>
-<area href="structunravel_1_1gizmo__entity.html" alt="unravel::gizmo_entity" shape="rect" coords="0,168,211,192"/>
-<area href="structunravel_1_1gizmo__physics__component.html" alt="unravel::gizmo_physics_component" shape="rect" coords="221,168,432,192"/>
+<area href="structcrtp__meta__type.html" alt="crtp_meta_type&lt; gizmo &gt;" shape="rect" coords="294,56,578,80"/>
+<area href="structunravel_1_1gizmo__character__controller__component.html" alt="unravel::gizmo_character_controller_component" shape="rect" coords="0,168,284,192"/>
+<area href="structunravel_1_1gizmo__entity.html" alt="unravel::gizmo_entity" shape="rect" coords="294,168,578,192"/>
+<area href="structunravel_1_1gizmo__physics__component.html" alt="unravel::gizmo_physics_component" shape="rect" coords="588,168,872,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -121,8 +122,8 @@ Inheritance diagram for unravel::gizmo:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a10125d88004aea350f42fe29b9635919" id="r_a10125d88004aea350f42fe29b9635919"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10125d88004aea350f42fe29b9635919">~gizmo</a> ()=default</td></tr>
 <tr class="separator:a10125d88004aea350f42fe29b9635919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a85c20ff22bdc6b64998203ae7f9d6c" id="r_a4a85c20ff22bdc6b64998203ae7f9d6c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a85c20ff22bdc6b64998203ae7f9d6c">draw</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, entt::meta_any &amp;var, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="structgfx_1_1dd__raii.html">gfx::dd_raii</a> &amp;dd)=0</td></tr>
-<tr class="separator:a4a85c20ff22bdc6b64998203ae7f9d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae864095ba7386660fc1f21c69f28ab8e" id="r_ae864095ba7386660fc1f21c69f28ab8e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae864095ba7386660fc1f21c69f28ab8e">draw</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, entt::meta_any &amp;var, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="structgfx_1_1dd__raii.html">gfx::dd_raii</a> &amp;dd, <a class="el" href="structunravel_1_1dd__2d__raii.html">dd_2d_raii</a> &amp;dd_2d)=0</td></tr>
+<tr class="separator:ae864095ba7386660fc1f21c69f28ab8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ad3d9943ac07e68c134d49c1de2ced6" id="r_a8ad3d9943ac07e68c134d49c1de2ced6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ad3d9943ac07e68c134d49c1de2ced6">draw_billboard</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, entt::meta_any &amp;var, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="structgfx_1_1dd__raii.html">gfx::dd_raii</a> &amp;dd)=0</td></tr>
 <tr class="separator:a8ad3d9943ac07e68c134d49c1de2ced6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structcrtp__meta__type"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structcrtp__meta__type')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structcrtp__meta__type.html">crtp_meta_type&lt; gizmo &gt;</a></td></tr>
@@ -130,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab683d0fb45aa6614305adeeb675d3f85 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab800b944cafcf43c8407e27d0c785300 inherit pub_methods_structcrtp__meta__type" id="r_ab800b944cafcf43c8407e27d0c785300"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#ab800b944cafcf43c8407e27d0c785300">is</a> () const -&gt; bool</td></tr>
 <tr class="separator:ab800b944cafcf43c8407e27d0c785300 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type" id="r_a85fd8cca6ee7590180c1d6b985292a98"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a85fd8cca6ee7590180c1d6b985292a98">is</a> (const entt::meta_type &amp;<a class="el" href="bullet__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) const -&gt; bool</td></tr>
+<tr class="memitem:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type" id="r_a85fd8cca6ee7590180c1d6b985292a98"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a85fd8cca6ee7590180c1d6b985292a98">is</a> (const entt::meta_type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) const -&gt; bool</td></tr>
 <tr class="separator:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a960687703825bbc6a1b6b452a517b2 inherit pub_methods_structcrtp__meta__type" id="r_a7a960687703825bbc6a1b6b452a517b2"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a7a960687703825bbc6a1b6b452a517b2">as_derived</a> () -&gt; entt::meta_any</td></tr>
 <tr class="separator:a7a960687703825bbc6a1b6b452a517b2 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,7 +147,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="gizmo_8h_source.html#l00014">14</a> of file <a class="el" href="gizmo_8h_source.html">gizmo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gizmo_8h_source.html#l00019">19</a> of file <a class="el" href="gizmo_8h_source.html">gizmo.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a10125d88004aea350f42fe29b9635919" name="a10125d88004aea350f42fe29b9635919"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10125d88004aea350f42fe29b9635919">&#9670;&#160;</a></span>~gizmo()</h2>
@@ -203,12 +204,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gizmo_8h_source.html#l00022">22</a> of file <a class="el" href="gizmo_8h_source.html">gizmo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gizmo_8h_source.html#l00027">27</a> of file <a class="el" href="gizmo_8h_source.html">gizmo.h</a>.</p>
 
 </div>
 </div>
-<a id="a4a85c20ff22bdc6b64998203ae7f9d6c" name="a4a85c20ff22bdc6b64998203ae7f9d6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a85c20ff22bdc6b64998203ae7f9d6c">&#9670;&#160;</a></span>draw()</h2>
+<a id="ae864095ba7386660fc1f21c69f28ab8e" name="ae864095ba7386660fc1f21c69f28ab8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae864095ba7386660fc1f21c69f28ab8e">&#9670;&#160;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,7 +235,12 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structgfx_1_1dd__raii.html">gfx::dd_raii</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dd</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="structgfx_1_1dd__raii.html">gfx::dd_raii</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1dd__2d__raii.html">dd_2d_raii</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dd_2d</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -244,7 +250,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="structunravel_1_1gizmo__entity.html#a64af806154f1269e815e03f64689396d">unravel::gizmo_entity</a>, and <a class="el" href="structunravel_1_1gizmo__physics__component.html#a8b355461264cf518d96f94bda4f6f2b3">unravel::gizmo_physics_component</a>.</p>
+<p>Implemented in <a class="el" href="structunravel_1_1gizmo__character__controller__component.html#aacb50ae10907bef9787f0c67a53882eb">unravel::gizmo_character_controller_component</a>, <a class="el" href="structunravel_1_1gizmo__entity.html#a9b03bdba939798f03af4efcbae0ce586">unravel::gizmo_entity</a>, and <a class="el" href="structunravel_1_1gizmo__physics__component.html#a001bbaf488eff558fdb414a952713f82">unravel::gizmo_physics_component</a>.</p>
 
 </div>
 </div>
@@ -285,7 +291,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="structunravel_1_1gizmo__entity.html#a071fd4a5990ca4a4506210b0569beeec">unravel::gizmo_entity</a>, and <a class="el" href="structunravel_1_1gizmo__physics__component.html#a8bc3a2f16145edabb55069032619707d">unravel::gizmo_physics_component</a>.</p>
+<p>Implemented in <a class="el" href="structunravel_1_1gizmo__character__controller__component.html#af2f5271e9e5b4935479de0203cc8da25">unravel::gizmo_character_controller_component</a>, <a class="el" href="structunravel_1_1gizmo__entity.html#a071fd4a5990ca4a4506210b0569beeec">unravel::gizmo_entity</a>, and <a class="el" href="structunravel_1_1gizmo__physics__component.html#a8bc3a2f16145edabb55069032619707d">unravel::gizmo_physics_component</a>.</p>
 
 </div>
 </div>

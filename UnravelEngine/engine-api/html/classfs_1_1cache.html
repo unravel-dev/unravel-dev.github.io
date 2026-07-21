@@ -156,6 +156,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae5b1dbc8f1d1862c7ba16a489ccf6364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a488955007e6bd7961636a40f034a3f07" id="r_a488955007e6bd7961636a40f034a3f07"><td class="memItemLeft" align="right" valign="top">const fs::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a488955007e6bd7961636a40f034a3f07">get_path</a> () const</td></tr>
 <tr class="separator:a488955007e6bd7961636a40f034a3f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7401bc3a300bc15eae150fe1a1016d" id="r_abf7401bc3a300bc15eae150fe1a1016d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf7401bc3a300bc15eae150fe1a1016d">clear</a> ()</td></tr>
+<tr class="separator:abf7401bc3a300bc15eae150fe1a1016d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52ae66bf58b5a4e186af31f9358787ef" id="r_a52ae66bf58b5a4e186af31f9358787ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52ae66bf58b5a4e186af31f9358787ef">set_path</a> (const fs::path &amp;path, const <a class="el" href="classfs_1_1pattern__filter.html">fs::pattern_filter</a> &amp;filter)</td></tr>
 <tr class="separator:a52ae66bf58b5a4e186af31f9358787ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0514309c849ef64e5cbbfa88816ebc52" id="r_a0514309c849ef64e5cbbfa88816ebc52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0514309c849ef64e5cbbfa88816ebc52">set_scan_frequency</a> (clock_t::duration scan_frequency)</td></tr>
@@ -384,7 +386,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00089">89</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00091">91</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -416,7 +418,7 @@ template&lt;typename T &gt; </div>
 
 <p>Directly index into the underlying cached container. </p>
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00141">141</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00143">143</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -447,7 +449,36 @@ template&lt;typename T &gt; </div>
 
 <p>Returns the begin iterator for the underlying cached container and also refreshes the container if needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00100">100</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00102">102</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+
+</div>
+</div>
+<a id="abf7401bc3a300bc15eae150fe1a1016d" name="abf7401bc3a300bc15eae150fe1a1016d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7401bc3a300bc15eae150fe1a1016d">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfs_1_1cache.html">fs::cache</a>&lt; T &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00201">201</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -478,7 +509,7 @@ template&lt;typename T &gt; </div>
 
 <p>Returns the end iterator for the underlying cached container. </p>
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00115">115</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00117">117</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -507,7 +538,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00194">194</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00196">196</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -536,7 +567,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00076">76</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00077">77</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -565,7 +596,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00063">63</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00064">64</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -594,7 +625,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00145">145</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00147">147</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -625,7 +656,7 @@ template&lt;typename T &gt; </div>
 
 <p>Refreshes the cache and updates the timestamp of the last refresh. This operation is slow so try to not call it often. By default it is called only if iterated and marked by the dir watcher since its last refresh. </p>
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00159">159</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00161">161</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -658,7 +689,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00199">199</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00209">209</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -687,7 +718,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00212">212</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00222">222</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -718,7 +749,7 @@ template&lt;typename T &gt; </div>
 
 <p>Returns the size for the underlying cached container. </p>
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00126">126</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00128">128</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>

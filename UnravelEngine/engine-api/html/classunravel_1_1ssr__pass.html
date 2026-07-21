@@ -125,6 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5008d470d64eff64c0c932195d158a6a" id="r_a5008d470d64eff64c0c932195d158a6a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5008d470d64eff64c0c932195d158a6a">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
 <tr class="memdesc:a5008d470d64eff64c0c932195d158a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the SSR pass. Returns the actual output framebuffer.  <br /></td></tr>
 <tr class="separator:a5008d470d64eff64c0c932195d158a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec7510081a9b23a54b7ed15c99ad0ba" id="r_afec7510081a9b23a54b7ed15c99ad0ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afec7510081a9b23a54b7ed15c99ad0ba">release_resources</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview)</td></tr>
+<tr class="memdesc:afec7510081a9b23a54b7ed15c99ad0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases all GPU resources owned by this pass from the render_view.  <br /></td></tr>
+<tr class="separator:afec7510081a9b23a54b7ed15c99ad0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21302f60a8b5a3c830d2269870863848" id="r_a21302f60a8b5a3c830d2269870863848"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21302f60a8b5a3c830d2269870863848">run_fidelityfx</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
 <tr class="memdesc:a21302f60a8b5a3c830d2269870863848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the FidelityFX SSR pass. Returns the actual output framebuffer.  <br /></td></tr>
 <tr class="separator:a21302f60a8b5a3c830d2269870863848"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,10 +146,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ea062aaa256d5cd07f496a47eb7c5a0" id="r_a0ea062aaa256d5cd07f496a47eb7c5a0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ea062aaa256d5cd07f496a47eb7c5a0">generate_blurred_color_buffer</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> &amp;input_color, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;g_buffer, const <a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings.html">fidelityfx_ssr_settings</a> &amp;<a class="el" href="structunravel_1_1settings.html">settings</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
 <tr class="memdesc:a0ea062aaa256d5cd07f496a47eb7c5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates blurred color buffer with mip chain for cone tracing.  <br /></td></tr>
 <tr class="separator:a0ea062aaa256d5cd07f496a47eb7c5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67cb939fb20dc7b2320b2efbe8b131e0" id="r_a67cb939fb20dc7b2320b2efbe8b131e0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67cb939fb20dc7b2320b2efbe8b131e0">run_spatial_denoise</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;ssr_curr, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;g_buffer, const <a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings.html">fidelityfx_ssr_settings</a> &amp;<a class="el" href="structunravel_1_1settings.html">settings</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
+<tr class="memdesc:a67cb939fb20dc7b2320b2efbe8b131e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes spatial denoise on SSR result before temporal resolve.  <br /></td></tr>
+<tr class="separator:a67cb939fb20dc7b2320b2efbe8b131e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00014">14</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00015">15</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0ea062aaa256d5cd07f496a47eb7c5a0" name="a0ea062aaa256d5cd07f496a47eb7c5a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ea062aaa256d5cd07f496a47eb7c5a0">&#9670;&#160;</a></span>generate_blurred_color_buffer()</h2>
@@ -179,7 +185,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Generates blurred color buffer with mip chain for cone tracing. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00226">226</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00204">204</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +206,28 @@ Public Member Functions</h2></td></tr>
 
 <p>Must be called once (after bgfx::init() and after <code><a class="el" href="classunravel_1_1asset__manager.html" title="Manages assets, including loading, unloading, and storage.">asset_manager</a></code> is registered in context). </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00011">11</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00012">12</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afec7510081a9b23a54b7ed15c99ad0ba" name="afec7510081a9b23a54b7ed15c99ad0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec7510081a9b23a54b7ed15c99ad0ba">&#9670;&#160;</a></span>release_resources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::ssr_pass::release_resources </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Releases all GPU resources owned by this pass from the render_view. </p>
+
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00656">656</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -225,7 +252,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes the SSR pass. Returns the actual output framebuffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00207">207</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00185">185</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -270,7 +297,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes the composite pass. Returns final blended output. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00505">505</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00610">610</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +322,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes the FidelityFX SSR pass. Returns the actual output framebuffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00219">219</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00197">197</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -320,7 +347,42 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes the three-pass SSR pipeline (trace, temporal resolve, composite) </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00305">305</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00372">372</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a67cb939fb20dc7b2320b2efbe8b131e0" name="a67cb939fb20dc7b2320b2efbe8b131e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67cb939fb20dc7b2320b2efbe8b131e0">&#9670;&#160;</a></span>run_spatial_denoise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::ssr_pass::run_spatial_denoise </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ssr_curr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>g_buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings.html">fidelityfx_ssr_settings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>settings</em></span>&#160;) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Executes spatial denoise on SSR result before temporal resolve. </p>
+
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00315">315</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +407,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes the SSR trace pass only. Returns SSR current frame buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00329">329</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00413">413</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +447,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes the temporal resolve pass. Returns updated SSR history buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00425">425</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00518">518</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>

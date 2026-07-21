@@ -110,20 +110,32 @@ $(function(){initNavTree('defaults_8cpp.html',''); initResizable(true); });
 <code>#include &lt;<a class="el" href="tag__component_8h_source.html">engine/ecs/components/tag_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="assao__component_8h_source.html">engine/rendering/ecs/components/assao_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="auto__exposure__component_8h_source.html">engine/rendering/ecs/components/auto_exposure_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="camera__component_8h_source.html">engine/rendering/ecs/components/camera_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fxaa__component_8h_source.html">engine/rendering/ecs/components/fxaa_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="taa__component_8h_source.html">engine/rendering/ecs/components/taa_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="bloom__component_8h_source.html">engine/rendering/ecs/components/bloom_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tonemapping__component_8h_source.html">engine/rendering/ecs/components/tonemapping_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ssr__component_8h_source.html">engine/rendering/ecs/components/ssr_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ssil__component_8h_source.html">engine/rendering/ecs/components/ssil_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="light__component_8h_source.html">engine/rendering/ecs/components/light_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="model__component_8h_source.html">engine/rendering/ecs/components/model_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="reflection__probe__component_8h_source.html">engine/rendering/ecs/components/reflection_probe_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="text__component_8h_source.html">engine/rendering/ecs/components/text_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="particle__emitter__component_8h_source.html">engine/rendering/ecs/components/particle_emitter_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="default__textures_8h_source.html">engine/rendering/default_textures.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="volume__component_8h_source.html">engine/rendering/ecs/components/volume_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ui__document__component_8h_source.html">engine/ui/ecs/components/ui_document_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="physics__component_8h_source.html">engine/physics/ecs/components/physics_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="utils_8h_source.html">string_utils/utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="seq_8h_source.html">seq/seq.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="graphics_8h_source.html">graphics/graphics.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="defaults_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -132,6 +144,87 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a201fdb242bcb0a74547fb8de91882b20" name="a201fdb242bcb0a74547fb8de91882b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201fdb242bcb0a74547fb8de91882b20">&#9670;&#160;</a></span>contact</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">math::vec3 contact {0.0f, 0.0f, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00252">252</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a60be6f7b3d0d908fcedf0842fd96c1f4" name="a60be6f7b3d0d908fcedf0842fd96c1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60be6f7b3d0d908fcedf0842fd96c1f4">&#9670;&#160;</a></span>hit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hit = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00051">51</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa2dc239d6b57d6930239acb4e31dfb3d" name="aa2dc239d6b57d6930239acb4e31dfb3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2dc239d6b57d6930239acb4e31dfb3d">&#9670;&#160;</a></span>normal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">math::vec3 normal {0.0f, 1.0f, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00053">53</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad25626a9b29beef74c9d6afed5b120f8" name="ad25626a9b29beef74c9d6afed5b120f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25626a9b29beef74c9d6afed5b120f8">&#9670;&#160;</a></span>on_surface</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool on_surface = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00254">254</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a55bc5b9b40c7f612c8f73e5d3acfab00" name="a55bc5b9b40c7f612c8f73e5d3acfab00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55bc5b9b40c7f612c8f73e5d3acfab00">&#9670;&#160;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">math::vec3 position {0.0f, 0.0f, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00052">52</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

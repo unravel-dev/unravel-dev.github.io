@@ -104,11 +104,15 @@ $(function(){initNavTree('asset__watcher_8cpp.html',''); initResizable(true); })
 <div class="textblock"><code>#include &quot;<a class="el" href="asset__watcher_8h_source.html">asset_watcher.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ui__tree_8h_source.html">engine/ui/ui_tree.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&quot;</code><br />
+<code>#include &quot;threadpp/thread.h&quot;</code><br />
 <code>#include &lt;<a class="el" href="animation_8h_source.html">engine/animation/animation.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__compiler_8h_source.html">engine/assets/impl/asset_compiler.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__dependencies_8h_source.html">engine/assets/impl/asset_dependencies.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__extensions_8h_source.html">engine/assets/impl/asset_extensions.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__manifest_8h_source.html">engine/assets/impl/asset_manifest.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__writer_8h_source.html">engine/assets/impl/asset_writer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__dependency__graph_8h_source.html">engine/assets/asset_dependency_graph.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="audio__clip_8h_source.html">engine/audio/audio_clip.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ecs_8h_source.html">engine/ecs/ecs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="prefab_8h_source.html">engine/ecs/prefab.h</a>&gt;</code><br />
@@ -123,11 +127,12 @@ $(function(){initNavTree('asset__watcher_8cpp.html',''); initResizable(true); })
 <code>#include &lt;<a class="el" href="asset__database_8hpp_source.html">engine/meta/assets/asset_database.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="threader_8h_source.html">engine/threading/threader.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="editing__manager_8h_source.html">editor/editing/editing_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="thumbnail__invalidation_8h_source.html">editor/editing/thumbnail_invalidation.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="thumbnail__manager_8h_source.html">editor/editing/thumbnail_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="watcher_8h_source.html">filesystem/watcher.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="graphics_8h_source.html">graphics/graphics.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 </div>
 <p><a href="asset__watcher_8cpp_source.html">Go to the source code of this file.</a></p>

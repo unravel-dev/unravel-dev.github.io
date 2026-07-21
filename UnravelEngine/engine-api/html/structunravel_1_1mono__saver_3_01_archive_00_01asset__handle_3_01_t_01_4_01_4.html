@@ -105,21 +105,23 @@ $(function(){initNavTree('structunravel_1_1mono__saver_3_01_archive_00_01asset__
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a60757f77522199a745d7e1ab79b076e6" id="r_a60757f77522199a745d7e1ab79b076e6"><td class="memTemplParams" colspan="2">template&lt;typename Invoker &gt; </td></tr>
-<tr class="memitem:a60757f77522199a745d7e1ab79b076e6"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a60757f77522199a745d7e1ab79b076e6">try_save_mono_invoker</a> (ser20::detail::OutputArchiveBase &amp;arbase, const mono::mono_object &amp;obj, const Invoker &amp;invoker) -&gt; bool</td></tr>
-<tr class="separator:a60757f77522199a745d7e1ab79b076e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe4c8b63a826515059162d17e76101f" id="r_adbe4c8b63a826515059162d17e76101f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbe4c8b63a826515059162d17e76101f">try_save_mono_field</a> (ser20::detail::OutputArchiveBase &amp;arbase, const mono::mono_object &amp;obj, const mono::mono_field &amp;field) -&gt; bool</td></tr>
-<tr class="separator:adbe4c8b63a826515059162d17e76101f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30d3e05000dc683b82fdb0fe071150ba" id="r_a30d3e05000dc683b82fdb0fe071150ba"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30d3e05000dc683b82fdb0fe071150ba">try_save_mono_property</a> (ser20::detail::OutputArchiveBase &amp;arbase, const mono::mono_object &amp;obj, const mono::mono_property &amp;prop) -&gt; bool</td></tr>
-<tr class="separator:a30d3e05000dc683b82fdb0fe071150ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7b9706e6747f341f3a287fef43de9a" id="r_adb7b9706e6747f341f3a287fef43de9a"><td class="memTemplParams" colspan="2">template&lt;typename Invoker &gt; </td></tr>
+<tr class="memitem:adb7b9706e6747f341f3a287fef43de9a"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adb7b9706e6747f341f3a287fef43de9a">try_save_mono_invoker</a> (ser20::detail::OutputArchiveBase &amp;arbase, const dotnet::object &amp;obj, const Invoker &amp;invoker) -&gt; bool</td></tr>
+<tr class="separator:adb7b9706e6747f341f3a287fef43de9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7079719d15698e751eac145755569b" id="r_aab7079719d15698e751eac145755569b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab7079719d15698e751eac145755569b">try_save_mono_object</a> (ser20::detail::OutputArchiveBase &amp;arbase, const dotnet::object &amp;obj) -&gt; bool</td></tr>
+<tr class="separator:aab7079719d15698e751eac145755569b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64de094790f1ededf86a4b084e09818a" id="r_a64de094790f1ededf86a4b084e09818a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64de094790f1ededf86a4b084e09818a">try_save_mono_field</a> (ser20::detail::OutputArchiveBase &amp;arbase, const dotnet::object &amp;obj, const dotnet::field &amp;field) -&gt; bool</td></tr>
+<tr class="separator:a64de094790f1ededf86a4b084e09818a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551bcbcc78e60e73e3a590122b19e725" id="r_a551bcbcc78e60e73e3a590122b19e725"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a551bcbcc78e60e73e3a590122b19e725">try_save_mono_property</a> (ser20::detail::OutputArchiveBase &amp;arbase, const dotnet::object &amp;obj, const dotnet::property &amp;prop) -&gt; bool</td></tr>
+<tr class="separator:a551bcbcc78e60e73e3a590122b19e725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Archive, typename T&gt;<br />
 struct unravel::mono_saver&lt; Archive, asset_handle&lt; T &gt; &gt;</div>
-<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00136">136</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00180">180</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="adbe4c8b63a826515059162d17e76101f" name="adbe4c8b63a826515059162d17e76101f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbe4c8b63a826515059162d17e76101f">&#9670;&#160;</a></span>try_save_mono_field()</h2>
+<a id="a64de094790f1ededf86a4b084e09818a" name="a64de094790f1ededf86a4b084e09818a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64de094790f1ededf86a4b084e09818a">&#9670;&#160;</a></span>try_save_mono_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,12 +139,12 @@ template&lt;typename Archive , typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mono::mono_object &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+          <td class="paramtype">const dotnet::object &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mono::mono_field &amp;</td>          <td class="paramname"><span class="paramname"><em>field</em></span>&#160;) -&gt; bool
+          <td class="paramtype">const dotnet::field &amp;</td>          <td class="paramname"><span class="paramname"><em>field</em></span>&#160;) -&gt; bool
     </td>
         </tr>
       </table>
@@ -153,12 +155,12 @@ template&lt;typename Archive , typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00163">163</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00231">231</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a60757f77522199a745d7e1ab79b076e6" name="a60757f77522199a745d7e1ab79b076e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60757f77522199a745d7e1ab79b076e6">&#9670;&#160;</a></span>try_save_mono_invoker()</h2>
+<a id="adb7b9706e6747f341f3a287fef43de9a" name="adb7b9706e6747f341f3a287fef43de9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7b9706e6747f341f3a287fef43de9a">&#9670;&#160;</a></span>try_save_mono_invoker()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +180,7 @@ template&lt;typename Invoker &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mono::mono_object &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+          <td class="paramtype">const dotnet::object &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -194,12 +196,46 @@ template&lt;typename Invoker &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00139">139</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00183">183</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a30d3e05000dc683b82fdb0fe071150ba" name="a30d3e05000dc683b82fdb0fe071150ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30d3e05000dc683b82fdb0fe071150ba">&#9670;&#160;</a></span>try_save_mono_property()</h2>
+<a id="aab7079719d15698e751eac145755569b" name="aab7079719d15698e751eac145755569b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7079719d15698e751eac145755569b">&#9670;&#160;</a></span>try_save_mono_object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Archive , typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="structunravel_1_1mono__saver.html">unravel::mono_saver</a>&lt; Archive, <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &gt;::try_save_mono_object </td>
+          <td>(</td>
+          <td class="paramtype">ser20::detail::OutputArchiveBase &amp;</td>          <td class="paramname"><span class="paramname"><em>arbase</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const dotnet::object &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>&#160;) -&gt; bool
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00207">207</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a551bcbcc78e60e73e3a590122b19e725" name="a551bcbcc78e60e73e3a590122b19e725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a551bcbcc78e60e73e3a590122b19e725">&#9670;&#160;</a></span>try_save_mono_property()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,12 +253,12 @@ template&lt;typename Archive , typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mono::mono_object &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+          <td class="paramtype">const dotnet::object &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const mono::mono_property &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;) -&gt; bool
+          <td class="paramtype">const dotnet::property &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;) -&gt; bool
     </td>
         </tr>
       </table>
@@ -233,7 +269,7 @@ template&lt;typename Archive , typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00171">171</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00239">239</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>

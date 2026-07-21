@@ -103,6 +103,9 @@ $(function(){initNavTree('class_unravel_1_1_core_1_1_u_i_event_base.html',''); i
   <div class="headertitle"><div class="title">Unravel.Core.UIEventBase Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base type for UI events dispatched through <a class="el" href="class_unravel_1_1_core_1_1_u_i_event_manager.html" title="Global UI event manager that handles all UI event dispatching. Similar to ScriptComponentManager but ...">UIEventManager</a>.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Unravel.Core.UIEventBase:</div>
 <div class="dyncontent">
@@ -129,21 +132,26 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a4ade8ff328f2534569d6eda2ffc54430" id="r_a4ade8ff328f2534569d6eda2ffc54430"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ade8ff328f2534569d6eda2ffc54430">targetElementId</a></td></tr>
+<tr class="memdesc:a4ade8ff328f2534569d6eda2ffc54430"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the element that triggered the event.  <br /></td></tr>
 <tr class="separator:a4ade8ff328f2534569d6eda2ffc54430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dae6cd4f2941d36b73f839b3775856b" id="r_a7dae6cd4f2941d36b73f839b3775856b"><td class="memItemLeft" align="right" valign="top">IntPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dae6cd4f2941d36b73f839b3775856b">targetElementPtr</a> = IntPtr.Zero</td></tr>
+<tr class="memdesc:a7dae6cd4f2941d36b73f839b3775856b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Native pointer to the element that triggered the event.  <br /></td></tr>
 <tr class="separator:a7dae6cd4f2941d36b73f839b3775856b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb71bbc1c66f4eb496fc6e248b80e711" id="r_afb71bbc1c66f4eb496fc6e248b80e711"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb71bbc1c66f4eb496fc6e248b80e711">currentElementId</a></td></tr>
+<tr class="memdesc:afb71bbc1c66f4eb496fc6e248b80e711"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the element that received the event.  <br /></td></tr>
 <tr class="separator:afb71bbc1c66f4eb496fc6e248b80e711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d209b57df010e06329eeaa396044405" id="r_a6d209b57df010e06329eeaa396044405"><td class="memItemLeft" align="right" valign="top">IntPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d209b57df010e06329eeaa396044405">currentElementPtr</a> = IntPtr.Zero</td></tr>
+<tr class="memdesc:a6d209b57df010e06329eeaa396044405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Native pointer to the element that received the event.  <br /></td></tr>
 <tr class="separator:a6d209b57df010e06329eeaa396044405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79db705a8ac1552664bdc358d4b447bb" id="r_a79db705a8ac1552664bdc358d4b447bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_unravel_1_1_core.html#adb276b979c8a2b883b67480b5a3506ff">EventPhase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79db705a8ac1552664bdc358d4b447bb">phase</a> = <a class="el" href="namespace_unravel_1_1_core.html#adb276b979c8a2b883b67480b5a3506ffa6adf97f83acf6453d4a6a4b1070f3754">EventPhase.None</a></td></tr>
+<tr class="memdesc:a79db705a8ac1552664bdc358d4b447bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current dispatch phase of the event.  <br /></td></tr>
 <tr class="separator:a79db705a8ac1552664bdc358d4b447bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae696ca3a8c6bda27e7e346f4edfd6afc" id="r_ae696ca3a8c6bda27e7e346f4edfd6afc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae696ca3a8c6bda27e7e346f4edfd6afc">eventType</a></td></tr>
+<tr class="memdesc:ae696ca3a8c6bda27e7e346f4edfd6afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of event that occurred (e.g., "click", "mousedown").  <br /></td></tr>
 <tr class="separator:ae696ca3a8c6bda27e7e346f4edfd6afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_u_i_event_manager_8cs_source.html#l00015">15</a> of file <a class="el" href="_u_i_event_manager_8cs_source.html">UIEventManager.cs</a>.</p>
+<div class="textblock"><p>Base type for UI events dispatched through <a class="el" href="class_unravel_1_1_core_1_1_u_i_event_manager.html" title="Global UI event manager that handles all UI event dispatching. Similar to ScriptComponentManager but ...">UIEventManager</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad047b56e2d57910919072ac88681ee18" name="ad047b56e2d57910919072ac88681ee18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad047b56e2d57910919072ac88681ee18">&#9670;&#160;</a></span>StopImmediatePropagation()</h2>
@@ -161,8 +169,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stops propagation of the event if it is interruptible, including to any other listeners on the current element. </p>
-
-<p class="definition">Definition at line <a class="el" href="_u_i_event_manager_8cs_source.html#l00050">50</a> of file <a class="el" href="_u_i_event_manager_8cs_source.html">UIEventManager.cs</a>.</p>
 
 </div>
 </div>
@@ -183,8 +189,6 @@ Public Attributes</h2></td></tr>
 
 <p>Stops propagation of the event if it is interruptible, but finish all listeners on the current element. </p>
 
-<p class="definition">Definition at line <a class="el" href="_u_i_event_manager_8cs_source.html#l00042">42</a> of file <a class="el" href="_u_i_event_manager_8cs_source.html">UIEventManager.cs</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -200,7 +204,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_u_i_event_manager_8cs_source.html#l00027">27</a> of file <a class="el" href="_u_i_event_manager_8cs_source.html">UIEventManager.cs</a>.</p>
+<p>The ID of the element that received the event. </p>
 
 </div>
 </div>
@@ -216,7 +220,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_u_i_event_manager_8cs_source.html#l00028">28</a> of file <a class="el" href="_u_i_event_manager_8cs_source.html">UIEventManager.cs</a>.</p>
+<p>Native pointer to the element that received the event. </p>
 
 </div>
 </div>
@@ -232,7 +236,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_u_i_event_manager_8cs_source.html#l00034">34</a> of file <a class="el" href="_u_i_event_manager_8cs_source.html">UIEventManager.cs</a>.</p>
+<p>The type of event that occurred (e.g., "click", "mousedown"). </p>
 
 </div>
 </div>
@@ -248,7 +252,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_u_i_event_manager_8cs_source.html#l00030">30</a> of file <a class="el" href="_u_i_event_manager_8cs_source.html">UIEventManager.cs</a>.</p>
+<p>Current dispatch phase of the event. </p>
 
 </div>
 </div>
@@ -264,7 +268,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_u_i_event_manager_8cs_source.html#l00021">21</a> of file <a class="el" href="_u_i_event_manager_8cs_source.html">UIEventManager.cs</a>.</p>
+<p>The ID of the element that triggered the event. </p>
 
 </div>
 </div>
@@ -280,12 +284,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_u_i_event_manager_8cs_source.html#l00022">22</a> of file <a class="el" href="_u_i_event_manager_8cs_source.html">UIEventManager.cs</a>.</p>
+<p>Native pointer to the element that triggered the event. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/ui/<a class="el" href="_u_i_event_manager_8cs_source.html">UIEventManager.cs</a></li>
+<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/ui/<a class="el" href="_u_i_event_manager_8cs.html">UIEventManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

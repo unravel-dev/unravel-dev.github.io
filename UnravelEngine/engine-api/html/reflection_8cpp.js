@@ -13,6 +13,12 @@ var reflection_8cpp =
     [ "get_pretty_name", "reflection_8cpp.html#a6ae0b25f969f71e384d0962371b8cd93", null ],
     [ "get_pretty_name", "reflection_8cpp.html#a9d879ad2b31060897926da3496c70939", null ],
     [ "get_pretty_name", "reflection_8cpp.html#a75f7ce5a151e0953769a0a8577e997c8", null ],
-    [ "property_predicate", "reflection_8cpp.html#ae67ce55f5eff6289257b54f585bb53c5", null ],
+    [ "get_property_hint", "reflection_8cpp.html#a630cb2f1a1aeb88fa65d5678fbfcb5ed", null ],
+    [ "is_property_flattable", "reflection_8cpp.html#a4b053e9c6d9a9202bbd2b25c08acc72e", null ],
+    [ "is_property_flattable", "reflection_8cpp.html#ad764bb719c01c1b0dc1748c5bd86e454", null ],
+    [ "is_property_readonly", "reflection_8cpp.html#a041725ba9aff5d8914f3b13b2e887361", null ],
+    [ "is_property_readonly", "reflection_8cpp.html#ad35891b8cd61630f8c93710a8bc67ccd", null ],
+    [ "is_property_visible", "reflection_8cpp.html#a6c8b0a847d3c629c038da553d1a3121c", null ],
+    [ "is_property_visible", "reflection_8cpp.html#a9d8a7d714e1270ab89a0ae685e361def", null ],
     [ "register_type_helper", "reflection_8cpp.html#a8994e4735a8fc498ebf8857afe29ed3a", null ]
 ];

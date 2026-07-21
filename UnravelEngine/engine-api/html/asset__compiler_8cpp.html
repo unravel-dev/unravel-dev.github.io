@@ -104,14 +104,17 @@ $(function(){initNavTree('asset__compiler_8cpp.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="asset__compiler_8h_source.html">asset_compiler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="asset__dependencies_8h_source.html">asset_dependencies.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="asset__writer_8h_source.html">asset_writer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>&quot;</code><br />
+<code>#include &quot;bimg/bimg.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="mesh__importer_8h_source.html">importers/mesh_importer.h</a>&quot;</code><br />
 <code>#include &lt;bx/error.h&gt;</code><br />
 <code>#include &lt;bx/process.h&gt;</code><br />
 <code>#include &lt;bx/string.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="shader_8h_source.html">graphics/shader.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="texture_8h_source.html">graphics/texture.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="bgfx__utils_8h_source.html">graphics/utils/bgfx_utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="uuid_8h_source.html">uuid/uuid.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="associative__archive_8h_source.html">serialization/associative_archive.h</a>&gt;</code><br />
@@ -132,8 +135,9 @@ $(function(){initNavTree('asset__compiler_8cpp.html',''); initResizable(true); }
 <code>#include &lt;<a class="el" href="mesh_8hpp_source.html">engine/meta/rendering/mesh.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script_8hpp_source.html">engine/meta/scripting/script.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script__system_8h_source.html">engine/scripting/ecs/systems/script_system.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="profiler_8h_source.html">engine/profiler/profiler.h</a>&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;monopp/mono_jit.h&gt;</code><br />
+<code>#include &lt;dotnetpp/dotnetpp.h&gt;</code><br />
 <code>#include &lt;regex&gt;</code><br />
 <code>#include &lt;<a class="el" href="subprocess_8hpp_source.html">subprocess/subprocess.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="config_8hpp_source.html">core/base/platform/config.hpp</a>&gt;</code><br />
@@ -213,6 +217,71 @@ Functions</h2></td></tr>
 <tr class="memitem:a43f41753a904ff3fd7c61ae718e1eec8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__compiler.html#a43f41753a904ff3fd7c61ae718e1eec8">unravel::asset_compiler::compile&lt; script &gt;</a> (<a class="el" href="classunravel_1_1asset__manager.html">asset_manager</a> &amp;am, const fs::path &amp;key, const fs::path &amp;output, uint32_t flags) -&gt; bool</td></tr>
 <tr class="separator:a43f41753a904ff3fd7c61ae718e1eec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ad734ee10120baec9de74730ac0b1e186" name="ad734ee10120baec9de74730ac0b1e186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad734ee10120baec9de74730ac0b1e186">&#9670;&#160;</a></span>fits_max_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fits_max_size {true}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00105">105</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aae58531c83698607139f2bf8c13d97fd" name="aae58531c83698607139f2bf8c13d97fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae58531c83698607139f2bf8c13d97fd">&#9670;&#160;</a></span>format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacegfx.html#a41c939b88cfa449146b653d53896354b">gfx::texture_format</a> format {gfx::texture_format::RGBA8}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00102">102</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6ad4f820ce4e75cda0686fcaad5168be" name="a6ad4f820ce4e75cda0686fcaad5168be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ad4f820ce4e75cda0686fcaad5168be">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t height {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00104">104</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a325272ddd9a962f05deb905101d25cbd" name="a325272ddd9a962f05deb905101d25cbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325272ddd9a962f05deb905101d25cbd">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t width {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="asset__compiler_8cpp_source.html#l00103">103</a> of file <a class="el" href="asset__compiler_8cpp_source.html">asset_compiler.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

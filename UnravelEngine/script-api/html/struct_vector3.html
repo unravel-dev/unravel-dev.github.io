@@ -105,6 +105,9 @@ $(function(){initNavTree('struct_vector3.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Vector3 Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Representation of 3D vectors and points.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Vector3:</div>
 <div class="dyncontent">
@@ -115,132 +118,188 @@ Inheritance diagram for Vector3:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ada6d914f16b260e20be68741ae3cf41c" id="r_ada6d914f16b260e20be68741ae3cf41c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada6d914f16b260e20be68741ae3cf41c">Vector3</a> (float <a class="el" href="#aad33c87fcc162480524b289d6ae3aaa2">x</a>, float <a class="el" href="#ae1457df0a9b9abd77075568154466156">y</a>, float <a class="el" href="#ac728610ea3ca27db02604efb0810be0b">z</a>)</td></tr>
+<tr class="memdesc:ada6d914f16b260e20be68741ae3cf41c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new vector with given x, y, z components.  <br /></td></tr>
 <tr class="separator:ada6d914f16b260e20be68741ae3cf41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9611f42c613b9be921859e04d7ce39c" id="r_ae9611f42c613b9be921859e04d7ce39c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9611f42c613b9be921859e04d7ce39c">Vector3</a> (float <a class="el" href="#aad33c87fcc162480524b289d6ae3aaa2">x</a>, float <a class="el" href="#ae1457df0a9b9abd77075568154466156">y</a>)</td></tr>
+<tr class="memdesc:ae9611f42c613b9be921859e04d7ce39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new vector with given x, y components and sets z to zero.  <br /></td></tr>
 <tr class="separator:ae9611f42c613b9be921859e04d7ce39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a570249d758bea4c09909a77cf18e98dc" id="r_a570249d758bea4c09909a77cf18e98dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a570249d758bea4c09909a77cf18e98dc">Set</a> (float newX, float newY, float newZ)</td></tr>
+<tr class="memdesc:a570249d758bea4c09909a77cf18e98dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set x, y and z components of an existing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>.  <br /></td></tr>
 <tr class="separator:a570249d758bea4c09909a77cf18e98dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52160959aa7a67f2bc7674fe18b3e00c" id="r_a52160959aa7a67f2bc7674fe18b3e00c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52160959aa7a67f2bc7674fe18b3e00c">Scale</a> (<a class="el" href="struct_vector3.html">Vector3</a> scale)</td></tr>
+<tr class="memdesc:a52160959aa7a67f2bc7674fe18b3e00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies every component of this vector by the same component of scale.  <br /></td></tr>
 <tr class="separator:a52160959aa7a67f2bc7674fe18b3e00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8073d153e460442e6d86a55173958362" id="r_a8073d153e460442e6d86a55173958362"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8073d153e460442e6d86a55173958362">GetHashCode</a> ()</td></tr>
+<tr class="memdesc:a8073d153e460442e6d86a55173958362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hash code for this instance.  <br /></td></tr>
 <tr class="separator:a8073d153e460442e6d86a55173958362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c8e37821a5eff5f9ae1b02c96e25680" id="r_a1c8e37821a5eff5f9ae1b02c96e25680"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c8e37821a5eff5f9ae1b02c96e25680">Equals</a> (object other)</td></tr>
+<tr class="memdesc:a1c8e37821a5eff5f9ae1b02c96e25680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given vector is exactly equal to this vector.  <br /></td></tr>
 <tr class="separator:a1c8e37821a5eff5f9ae1b02c96e25680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bb649dea7465a932f1ce1f164270851" id="r_a6bb649dea7465a932f1ce1f164270851"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bb649dea7465a932f1ce1f164270851">Equals</a> (<a class="el" href="struct_vector3.html">Vector3</a> other)</td></tr>
+<tr class="memdesc:a6bb649dea7465a932f1ce1f164270851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given vector is exactly equal to this vector.  <br /></td></tr>
 <tr class="separator:a6bb649dea7465a932f1ce1f164270851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840adac8ac6d2899e4c78a10de410c26" id="r_a840adac8ac6d2899e4c78a10de410c26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a840adac8ac6d2899e4c78a10de410c26">Normalize</a> ()</td></tr>
+<tr class="memdesc:a840adac8ac6d2899e4c78a10de410c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes this vector have a magnitude of 1.  <br /></td></tr>
 <tr class="separator:a840adac8ac6d2899e4c78a10de410c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2200bb05185f291cacafbcce8e4fa5" id="r_a5f2200bb05185f291cacafbcce8e4fa5"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f2200bb05185f291cacafbcce8e4fa5">ToString</a> ()</td></tr>
+<tr class="memdesc:a5f2200bb05185f291cacafbcce8e4fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a formatted string for this vector.  <br /></td></tr>
 <tr class="separator:a5f2200bb05185f291cacafbcce8e4fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2fafb72802c5e66561fb5b32d060c9" id="r_a4a2fafb72802c5e66561fb5b32d060c9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a2fafb72802c5e66561fb5b32d060c9">ToString</a> (string format)</td></tr>
+<tr class="memdesc:a4a2fafb72802c5e66561fb5b32d060c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a formatted string for this vector.  <br /></td></tr>
 <tr class="separator:a4a2fafb72802c5e66561fb5b32d060c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06c6773e807d538eb0c4536555fee116" id="r_a06c6773e807d538eb0c4536555fee116"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06c6773e807d538eb0c4536555fee116">ToString</a> (string format, IFormatProvider formatProvider)</td></tr>
+<tr class="memdesc:a06c6773e807d538eb0c4536555fee116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a formatted string for this vector.  <br /></td></tr>
 <tr class="separator:a06c6773e807d538eb0c4536555fee116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a212bbf316ba864224247c83c7f9e4b" id="r_a7a212bbf316ba864224247c83c7f9e4b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a212bbf316ba864224247c83c7f9e4b">Slerp</a> (<a class="el" href="struct_vector3.html">Vector3</a> a, <a class="el" href="struct_vector3.html">Vector3</a> b, float t)</td></tr>
+<tr class="memdesc:a7a212bbf316ba864224247c83c7f9e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spherically interpolates between two vectors.  <br /></td></tr>
 <tr class="separator:a7a212bbf316ba864224247c83c7f9e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef8cb3c1d35c6977c0bb0b479341dcda" id="r_aef8cb3c1d35c6977c0bb0b479341dcda"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef8cb3c1d35c6977c0bb0b479341dcda">SlerpClamped</a> (<a class="el" href="struct_vector3.html">Vector3</a> a, <a class="el" href="struct_vector3.html">Vector3</a> b, float t)</td></tr>
+<tr class="memdesc:aef8cb3c1d35c6977c0bb0b479341dcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spherically interpolates between two vectors, clamping the interpolation parameter to [0, 1].  <br /></td></tr>
 <tr class="separator:aef8cb3c1d35c6977c0bb0b479341dcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bfeb5b9f7a7394f30cc95a539cd4603" id="r_a7bfeb5b9f7a7394f30cc95a539cd4603"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bfeb5b9f7a7394f30cc95a539cd4603">Lerp</a> (<a class="el" href="struct_vector3.html">Vector3</a> a, <a class="el" href="struct_vector3.html">Vector3</a> b, float t)</td></tr>
+<tr class="memdesc:a7bfeb5b9f7a7394f30cc95a539cd4603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between two points.  <br /></td></tr>
 <tr class="separator:a7bfeb5b9f7a7394f30cc95a539cd4603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abacf5772054ca55f04abd956f072223e" id="r_abacf5772054ca55f04abd956f072223e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abacf5772054ca55f04abd956f072223e">LerpUnclamped</a> (<a class="el" href="struct_vector3.html">Vector3</a> a, <a class="el" href="struct_vector3.html">Vector3</a> b, float t)</td></tr>
+<tr class="memdesc:abacf5772054ca55f04abd956f072223e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly interpolates between two vectors without clamping the interpolation parameter.  <br /></td></tr>
 <tr class="separator:abacf5772054ca55f04abd956f072223e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4a4535c689cca8db761fba79d91ba86" id="r_aa4a4535c689cca8db761fba79d91ba86"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4a4535c689cca8db761fba79d91ba86">MoveTowards</a> (<a class="el" href="struct_vector3.html">Vector3</a> current, <a class="el" href="struct_vector3.html">Vector3</a> target, float maxDistanceDelta)</td></tr>
+<tr class="memdesc:aa4a4535c689cca8db761fba79d91ba86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a position between the points specified by current and target, moving no farther than the distance specified by maxDistanceDelta.  <br /></td></tr>
 <tr class="separator:aa4a4535c689cca8db761fba79d91ba86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d9ea35b0142aef47a103f4b930fcf66" id="r_a0d9ea35b0142aef47a103f4b930fcf66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d9ea35b0142aef47a103f4b930fcf66">SmoothDamp</a> (<a class="el" href="struct_vector3.html">Vector3</a> current, <a class="el" href="struct_vector3.html">Vector3</a> target, ref <a class="el" href="struct_vector3.html">Vector3</a> currentVelocity, float smoothTime, float maxSpeed, float deltaTime)</td></tr>
+<tr class="memdesc:a0d9ea35b0142aef47a103f4b930fcf66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradually changes a vector towards a desired goal over time.  <br /></td></tr>
 <tr class="separator:a0d9ea35b0142aef47a103f4b930fcf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16ee2cbd477963192957c30db251ff83" id="r_a16ee2cbd477963192957c30db251ff83"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16ee2cbd477963192957c30db251ff83">Scale</a> (<a class="el" href="struct_vector3.html">Vector3</a> a, <a class="el" href="struct_vector3.html">Vector3</a> b)</td></tr>
+<tr class="memdesc:a16ee2cbd477963192957c30db251ff83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies two vectors component-wise.  <br /></td></tr>
 <tr class="separator:a16ee2cbd477963192957c30db251ff83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11dec994a180c0020c77c2292dcc9733" id="r_a11dec994a180c0020c77c2292dcc9733"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11dec994a180c0020c77c2292dcc9733">Cross</a> (<a class="el" href="struct_vector3.html">Vector3</a> lhs, <a class="el" href="struct_vector3.html">Vector3</a> rhs)</td></tr>
+<tr class="memdesc:a11dec994a180c0020c77c2292dcc9733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross Product of two vectors.  <br /></td></tr>
 <tr class="separator:a11dec994a180c0020c77c2292dcc9733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cffa4d0dec74c8a6dfd6af52778a867" id="r_a0cffa4d0dec74c8a6dfd6af52778a867"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cffa4d0dec74c8a6dfd6af52778a867">Reflect</a> (<a class="el" href="struct_vector3.html">Vector3</a> inDirection, <a class="el" href="struct_vector3.html">Vector3</a> inNormal)</td></tr>
+<tr class="memdesc:a0cffa4d0dec74c8a6dfd6af52778a867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflects a vector off the plane defined by a normal.  <br /></td></tr>
 <tr class="separator:a0cffa4d0dec74c8a6dfd6af52778a867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4c4f3906401bb33def1f7087c4b3e7f" id="r_ad4c4f3906401bb33def1f7087c4b3e7f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4c4f3906401bb33def1f7087c4b3e7f">Normalize</a> (<a class="el" href="struct_vector3.html">Vector3</a> value)</td></tr>
+<tr class="memdesc:ad4c4f3906401bb33def1f7087c4b3e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes this vector have a magnitude of 1.  <br /></td></tr>
 <tr class="separator:ad4c4f3906401bb33def1f7087c4b3e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a383f3a5ac3afbdb06cec6a8a588488ef" id="r_a383f3a5ac3afbdb06cec6a8a588488ef"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a383f3a5ac3afbdb06cec6a8a588488ef">Dot</a> (<a class="el" href="struct_vector3.html">Vector3</a> lhs, <a class="el" href="struct_vector3.html">Vector3</a> rhs)</td></tr>
+<tr class="memdesc:a383f3a5ac3afbdb06cec6a8a588488ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dot Product of two vectors.  <br /></td></tr>
 <tr class="separator:a383f3a5ac3afbdb06cec6a8a588488ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f264965617e2b20956c5a68e3936746" id="r_a9f264965617e2b20956c5a68e3936746"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f264965617e2b20956c5a68e3936746">Project</a> (<a class="el" href="struct_vector3.html">Vector3</a> vector, <a class="el" href="struct_vector3.html">Vector3</a> onNormal)</td></tr>
+<tr class="memdesc:a9f264965617e2b20956c5a68e3936746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects a vector onto another vector.  <br /></td></tr>
 <tr class="separator:a9f264965617e2b20956c5a68e3936746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acab11381f91cee6b44a4fedd295a67a4" id="r_acab11381f91cee6b44a4fedd295a67a4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acab11381f91cee6b44a4fedd295a67a4">ProjectOnPlane</a> (<a class="el" href="struct_vector3.html">Vector3</a> vector, <a class="el" href="struct_vector3.html">Vector3</a> planeNormal)</td></tr>
+<tr class="memdesc:acab11381f91cee6b44a4fedd295a67a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects a vector onto a plane defined by a normal orthogonal to the plane.  <br /></td></tr>
 <tr class="separator:acab11381f91cee6b44a4fedd295a67a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e4ad8ed6260a5d1314dbb31e587651" id="r_ad9e4ad8ed6260a5d1314dbb31e587651"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9e4ad8ed6260a5d1314dbb31e587651">Angle</a> (<a class="el" href="struct_vector3.html">Vector3</a> from, <a class="el" href="struct_vector3.html">Vector3</a> to)</td></tr>
+<tr class="memdesc:ad9e4ad8ed6260a5d1314dbb31e587651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the angle between vectors from and to.  <br /></td></tr>
 <tr class="separator:ad9e4ad8ed6260a5d1314dbb31e587651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada5266d92d2af4f1bf733817b8fb8f02" id="r_ada5266d92d2af4f1bf733817b8fb8f02"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada5266d92d2af4f1bf733817b8fb8f02">SignedAngle</a> (<a class="el" href="struct_vector3.html">Vector3</a> from, <a class="el" href="struct_vector3.html">Vector3</a> to, <a class="el" href="struct_vector3.html">Vector3</a> axis)</td></tr>
+<tr class="memdesc:ada5266d92d2af4f1bf733817b8fb8f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the signed angle between vectors from and to in relation to axis.  <br /></td></tr>
 <tr class="separator:ada5266d92d2af4f1bf733817b8fb8f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add7ce55e7888802425c62b4700f72e5a" id="r_add7ce55e7888802425c62b4700f72e5a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add7ce55e7888802425c62b4700f72e5a">Distance</a> (<a class="el" href="struct_vector3.html">Vector3</a> a, <a class="el" href="struct_vector3.html">Vector3</a> b)</td></tr>
+<tr class="memdesc:add7ce55e7888802425c62b4700f72e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between a and b.  <br /></td></tr>
 <tr class="separator:add7ce55e7888802425c62b4700f72e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4a496803c3686339580f51a7dbaa3e8" id="r_ac4a496803c3686339580f51a7dbaa3e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4a496803c3686339580f51a7dbaa3e8">ClampMagnitude</a> (<a class="el" href="struct_vector3.html">Vector3</a> vector, float maxLength)</td></tr>
+<tr class="memdesc:ac4a496803c3686339580f51a7dbaa3e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of vector with its magnitude clamped to maxLength.  <br /></td></tr>
 <tr class="separator:ac4a496803c3686339580f51a7dbaa3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a558183f8b4e219e8a8dba90f914ced12" id="r_a558183f8b4e219e8a8dba90f914ced12"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a558183f8b4e219e8a8dba90f914ced12">Magnitude</a> (<a class="el" href="struct_vector3.html">Vector3</a> vector)</td></tr>
+<tr class="memdesc:a558183f8b4e219e8a8dba90f914ced12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the vector.  <br /></td></tr>
 <tr class="separator:a558183f8b4e219e8a8dba90f914ced12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9fba9657759f0231d6896b40e1c9669" id="r_ab9fba9657759f0231d6896b40e1c9669"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9fba9657759f0231d6896b40e1c9669">SqrMagnitude</a> (<a class="el" href="struct_vector3.html">Vector3</a> vector)</td></tr>
+<tr class="memdesc:ab9fba9657759f0231d6896b40e1c9669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the squared length of the vector.  <br /></td></tr>
 <tr class="separator:ab9fba9657759f0231d6896b40e1c9669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f779dc27812ffc505d4aacc1175038" id="r_ad7f779dc27812ffc505d4aacc1175038"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7f779dc27812ffc505d4aacc1175038">Min</a> (<a class="el" href="struct_vector3.html">Vector3</a> lhs, <a class="el" href="struct_vector3.html">Vector3</a> rhs)</td></tr>
+<tr class="memdesc:ad7f779dc27812ffc505d4aacc1175038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector that is made from the smallest components of two vectors.  <br /></td></tr>
 <tr class="separator:ad7f779dc27812ffc505d4aacc1175038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56ea195d5b2448c2a96a6d1374c57b26" id="r_a56ea195d5b2448c2a96a6d1374c57b26"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56ea195d5b2448c2a96a6d1374c57b26">Max</a> (<a class="el" href="struct_vector3.html">Vector3</a> lhs, <a class="el" href="struct_vector3.html">Vector3</a> rhs)</td></tr>
+<tr class="memdesc:a56ea195d5b2448c2a96a6d1374c57b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector that is made from the largest components of two vectors.  <br /></td></tr>
 <tr class="separator:a56ea195d5b2448c2a96a6d1374c57b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6003df96d6d08f81b3d225355e6d631" id="r_ad6003df96d6d08f81b3d225355e6d631"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6003df96d6d08f81b3d225355e6d631">operator+</a> (<a class="el" href="struct_vector3.html">Vector3</a> a, <a class="el" href="struct_vector3.html">Vector3</a> b)</td></tr>
+<tr class="memdesc:ad6003df96d6d08f81b3d225355e6d631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds two vectors component-wise.  <br /></td></tr>
 <tr class="separator:ad6003df96d6d08f81b3d225355e6d631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf9a56c34c904b6d8ad460f62193bfd" id="r_a5cf9a56c34c904b6d8ad460f62193bfd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cf9a56c34c904b6d8ad460f62193bfd">operator-</a> (<a class="el" href="struct_vector3.html">Vector3</a> a, <a class="el" href="struct_vector3.html">Vector3</a> b)</td></tr>
+<tr class="memdesc:a5cf9a56c34c904b6d8ad460f62193bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts two vectors component-wise.  <br /></td></tr>
 <tr class="separator:a5cf9a56c34c904b6d8ad460f62193bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f277848816899688edd9c777c63f708" id="r_a7f277848816899688edd9c777c63f708"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f277848816899688edd9c777c63f708">operator-</a> (<a class="el" href="struct_vector3.html">Vector3</a> a)</td></tr>
+<tr class="memdesc:a7f277848816899688edd9c777c63f708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negates a vector.  <br /></td></tr>
 <tr class="separator:a7f277848816899688edd9c777c63f708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b20a2071b40992f0afa29b5fbe3f486" id="r_a7b20a2071b40992f0afa29b5fbe3f486"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b20a2071b40992f0afa29b5fbe3f486">operator*</a> (<a class="el" href="struct_vector3.html">Vector3</a> a, float d)</td></tr>
+<tr class="memdesc:a7b20a2071b40992f0afa29b5fbe3f486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a vector by a scalar.  <br /></td></tr>
 <tr class="separator:a7b20a2071b40992f0afa29b5fbe3f486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a228babc3da7f7df19a3fbf629ca80955" id="r_a228babc3da7f7df19a3fbf629ca80955"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a228babc3da7f7df19a3fbf629ca80955">operator*</a> (float d, <a class="el" href="struct_vector3.html">Vector3</a> a)</td></tr>
+<tr class="memdesc:a228babc3da7f7df19a3fbf629ca80955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a scalar by a vector.  <br /></td></tr>
 <tr class="separator:a228babc3da7f7df19a3fbf629ca80955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef44f0a0d019f82b0de81997654a49c9" id="r_aef44f0a0d019f82b0de81997654a49c9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef44f0a0d019f82b0de81997654a49c9">operator/</a> (<a class="el" href="struct_vector3.html">Vector3</a> a, float d)</td></tr>
+<tr class="memdesc:aef44f0a0d019f82b0de81997654a49c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides a vector by a scalar.  <br /></td></tr>
 <tr class="separator:aef44f0a0d019f82b0de81997654a49c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf88a16a95f91bbcc687503c22467052" id="r_acf88a16a95f91bbcc687503c22467052"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf88a16a95f91bbcc687503c22467052">operator==</a> (<a class="el" href="struct_vector3.html">Vector3</a> lhs, <a class="el" href="struct_vector3.html">Vector3</a> rhs)</td></tr>
+<tr class="memdesc:acf88a16a95f91bbcc687503c22467052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether two vectors are approximately equal.  <br /></td></tr>
 <tr class="separator:acf88a16a95f91bbcc687503c22467052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d885b5bb94803fa5121f7b3fbaa5e1" id="r_a60d885b5bb94803fa5121f7b3fbaa5e1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60d885b5bb94803fa5121f7b3fbaa5e1">operator!=</a> (<a class="el" href="struct_vector3.html">Vector3</a> lhs, <a class="el" href="struct_vector3.html">Vector3</a> rhs)</td></tr>
+<tr class="memdesc:a60d885b5bb94803fa5121f7b3fbaa5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether two vectors are not approximately equal.  <br /></td></tr>
 <tr class="separator:a60d885b5bb94803fa5121f7b3fbaa5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aad33c87fcc162480524b289d6ae3aaa2" id="r_aad33c87fcc162480524b289d6ae3aaa2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad33c87fcc162480524b289d6ae3aaa2">x</a></td></tr>
+<tr class="memdesc:aad33c87fcc162480524b289d6ae3aaa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">X component of the vector.  <br /></td></tr>
 <tr class="separator:aad33c87fcc162480524b289d6ae3aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1457df0a9b9abd77075568154466156" id="r_ae1457df0a9b9abd77075568154466156"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1457df0a9b9abd77075568154466156">y</a></td></tr>
+<tr class="memdesc:ae1457df0a9b9abd77075568154466156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y component of the vector.  <br /></td></tr>
 <tr class="separator:ae1457df0a9b9abd77075568154466156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac728610ea3ca27db02604efb0810be0b" id="r_ac728610ea3ca27db02604efb0810be0b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac728610ea3ca27db02604efb0810be0b">z</a></td></tr>
+<tr class="memdesc:ac728610ea3ca27db02604efb0810be0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Z component of the vector.  <br /></td></tr>
 <tr class="separator:ac728610ea3ca27db02604efb0810be0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ab18f85b82650e31285dcc3abdef3a8ab" id="r_ab18f85b82650e31285dcc3abdef3a8ab"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab18f85b82650e31285dcc3abdef3a8ab">this[int index]</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab18f85b82650e31285dcc3abdef3a8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the component at the specified index.  <br /></td></tr>
 <tr class="separator:ab18f85b82650e31285dcc3abdef3a8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6253ee739de51710f4eb3fa2f1f584e3" id="r_a6253ee739de51710f4eb3fa2f1f584e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6253ee739de51710f4eb3fa2f1f584e3">normalized</a><code> [get]</code></td></tr>
+<tr class="memdesc:a6253ee739de51710f4eb3fa2f1f584e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this vector with a magnitude of 1 (Read Only).  <br /></td></tr>
 <tr class="separator:a6253ee739de51710f4eb3fa2f1f584e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4be3aecf6e628adb03ec89615cef063b" id="r_a4be3aecf6e628adb03ec89615cef063b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4be3aecf6e628adb03ec89615cef063b">magnitude</a><code> [get]</code></td></tr>
+<tr class="memdesc:a4be3aecf6e628adb03ec89615cef063b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of this vector (Read Only).  <br /></td></tr>
 <tr class="separator:a4be3aecf6e628adb03ec89615cef063b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81314b64c5933933c7286b2ca84dbc8a" id="r_a81314b64c5933933c7286b2ca84dbc8a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81314b64c5933933c7286b2ca84dbc8a">sqrMagnitude</a><code> [get]</code></td></tr>
+<tr class="memdesc:a81314b64c5933933c7286b2ca84dbc8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the squared length of this vector (Read Only).  <br /></td></tr>
 <tr class="separator:a81314b64c5933933c7286b2ca84dbc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac55da163aa74addef8a6220f920e9b04" id="r_ac55da163aa74addef8a6220f920e9b04"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac55da163aa74addef8a6220f920e9b04">zero</a><code> [get]</code></td></tr>
+<tr class="memdesc:ac55da163aa74addef8a6220f920e9b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3(0, 0, 0)</a>.  <br /></td></tr>
 <tr class="separator:ac55da163aa74addef8a6220f920e9b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a999d6a68eed68d56e7f212b5cd22b9dc" id="r_a999d6a68eed68d56e7f212b5cd22b9dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a999d6a68eed68d56e7f212b5cd22b9dc">one</a><code> [get]</code></td></tr>
+<tr class="memdesc:a999d6a68eed68d56e7f212b5cd22b9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3(1, 1, 1)</a>.  <br /></td></tr>
 <tr class="separator:a999d6a68eed68d56e7f212b5cd22b9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981280df1cb3a485fb6b99d1d67d59de" id="r_a981280df1cb3a485fb6b99d1d67d59de"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a981280df1cb3a485fb6b99d1d67d59de">forward</a><code> [get]</code></td></tr>
+<tr class="memdesc:a981280df1cb3a485fb6b99d1d67d59de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3(0, 0, 1)</a>.  <br /></td></tr>
 <tr class="separator:a981280df1cb3a485fb6b99d1d67d59de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeff2243c50a26f732fbc1da21f47e65" id="r_afeff2243c50a26f732fbc1da21f47e65"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afeff2243c50a26f732fbc1da21f47e65">back</a><code> [get]</code></td></tr>
+<tr class="memdesc:afeff2243c50a26f732fbc1da21f47e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>(0, 0, -1).  <br /></td></tr>
 <tr class="separator:afeff2243c50a26f732fbc1da21f47e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf4c9a3511644c59a95d0dcc560c6be8" id="r_acf4c9a3511644c59a95d0dcc560c6be8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf4c9a3511644c59a95d0dcc560c6be8">up</a><code> [get]</code></td></tr>
+<tr class="memdesc:acf4c9a3511644c59a95d0dcc560c6be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3(0, 1, 0)</a>.  <br /></td></tr>
 <tr class="separator:acf4c9a3511644c59a95d0dcc560c6be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbbf6f66851e50a0aa8b9595950beb59" id="r_abbbf6f66851e50a0aa8b9595950beb59"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbbf6f66851e50a0aa8b9595950beb59">down</a><code> [get]</code></td></tr>
+<tr class="memdesc:abbbf6f66851e50a0aa8b9595950beb59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>(0, -1, 0).  <br /></td></tr>
 <tr class="separator:abbbf6f66851e50a0aa8b9595950beb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4cfb6abd93083d12a2426f3d439e31" id="r_a5b4cfb6abd93083d12a2426f3d439e31"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b4cfb6abd93083d12a2426f3d439e31">left</a><code> [get]</code></td></tr>
+<tr class="memdesc:a5b4cfb6abd93083d12a2426f3d439e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>(-1, 0, 0).  <br /></td></tr>
 <tr class="separator:a5b4cfb6abd93083d12a2426f3d439e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a489da69b1f49f76e4292001ff99a0bcb" id="r_a489da69b1f49f76e4292001ff99a0bcb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a489da69b1f49f76e4292001ff99a0bcb">right</a><code> [get]</code></td></tr>
+<tr class="memdesc:a489da69b1f49f76e4292001ff99a0bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3(1, 0, 0)</a>.  <br /></td></tr>
 <tr class="separator:a489da69b1f49f76e4292001ff99a0bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d0c96e8efba8c18c8c5b3551383efd9" id="r_a7d0c96e8efba8c18c8c5b3551383efd9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d0c96e8efba8c18c8c5b3551383efd9">positiveInfinity</a><code> [get]</code></td></tr>
+<tr class="memdesc:a7d0c96e8efba8c18c8c5b3551383efd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity).  <br /></td></tr>
 <tr class="separator:a7d0c96e8efba8c18c8c5b3551383efd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a449452c85ef92fb505d62cce1b401056" id="r_a449452c85ef92fb505d62cce1b401056"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a449452c85ef92fb505d62cce1b401056">negativeInfinity</a><code> [get]</code></td></tr>
+<tr class="memdesc:a449452c85ef92fb505d62cce1b401056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>(float.NegativeInfinity, float.NegativeInfinity, float.NegativeInfinity).  <br /></td></tr>
 <tr class="separator:a449452c85ef92fb505d62cce1b401056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00007">7</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<div class="textblock"><p>Representation of 3D vectors and points. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ada6d914f16b260e20be68741ae3cf41c" name="ada6d914f16b260e20be68741ae3cf41c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada6d914f16b260e20be68741ae3cf41c">&#9670;&#160;</a></span>Vector3() <span class="overload">[1/2]</span></h2>
@@ -266,7 +325,15 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00413">413</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Creates a new vector with given x, y, z components. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The x component.</td></tr>
+    <tr><td class="paramname">y</td><td>The y component.</td></tr>
+    <tr><td class="paramname">z</td><td>The z component.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -289,7 +356,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00430">430</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Creates a new vector with given x, y components and sets z to zero. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The x component.</td></tr>
+    <tr><td class="paramname">y</td><td>The y component.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -321,7 +395,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00650">650</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Calculates the angle between vectors from and to. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>The vector from which the angular difference is measured.</td></tr>
+    <tr><td class="paramname">to</td><td>The vector to which the angular difference is measured.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The angle in degrees between the two vectors.</dd></dl>
 
 </div>
 </div>
@@ -352,7 +434,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00716">716</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns a copy of vector with its magnitude clamped to maxLength. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>The vector to clamp.</td></tr>
+    <tr><td class="paramname">maxLength</td><td>The maximum length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A copy of the vector with magnitude clamped to maxLength.</dd></dl>
 
 </div>
 </div>
@@ -383,7 +473,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00494">494</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Cross Product of two vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side vector.</td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The cross product of the two vectors.</dd></dl>
 
 </div>
 </div>
@@ -414,7 +512,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00699">699</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns the distance between a and b. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first vector.</td></tr>
+    <tr><td class="paramname">b</td><td>The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The distance between the two vectors.</dd></dl>
 
 </div>
 </div>
@@ -445,7 +551,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00584">584</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Dot Product of two vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side vector.</td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The dot product of the two vectors.</dd></dl>
 
 </div>
 </div>
@@ -464,7 +578,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00512">512</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns true if the given vector is exactly equal to this vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The object to compare with the current instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the given vector is exactly equal to this vector.</dd></dl>
 
 </div>
 </div>
@@ -483,7 +604,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00523">523</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns true if the given vector is exactly equal to this vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The vector to compare with the current instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the given vector is exactly equal to this vector.</dd></dl>
 
 </div>
 </div>
@@ -502,7 +630,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00500">500</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns the hash code for this instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>A 32-bit signed integer that is the hash code for this instance.</dd></dl>
 
 </div>
 </div>
@@ -538,7 +667,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00291">291</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Linearly interpolates between two points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Start value, returned when t = 0.</td></tr>
+    <tr><td class="paramname">b</td><td>End value, returned when t = 1.</td></tr>
+    <tr><td class="paramname">t</td><td>Value used to interpolate between a and b.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Interpolated value, equals to a + (b - a) * t.</dd></dl>
 
 </div>
 </div>
@@ -574,7 +712,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00308">308</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Linearly interpolates between two vectors without clamping the interpolation parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first vector.</td></tr>
+    <tr><td class="paramname">b</td><td>The second vector.</td></tr>
+    <tr><td class="paramname">t</td><td>The interpolation parameter (not clamped).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The linearly interpolated vector.</dd></dl>
 
 </div>
 </div>
@@ -601,7 +748,14 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00732">732</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns the length of the vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>The vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The length of the vector.</dd></dl>
 
 </div>
 </div>
@@ -632,7 +786,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00766">766</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns a vector that is made from the largest components of two vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side vector.</td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector with the maximum components.</dd></dl>
 
 </div>
 </div>
@@ -663,7 +825,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00752">752</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns a vector that is made from the smallest components of two vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side vector.</td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector with the minimum components.</dd></dl>
 
 </div>
 </div>
@@ -699,7 +869,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00331">331</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Calculate a position between the points specified by current and target, moving no farther than the distance specified by maxDistanceDelta. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current</td><td>The position to move from.</td></tr>
+    <tr><td class="paramname">target</td><td>The position to move towards.</td></tr>
+    <tr><td class="paramname">maxDistanceDelta</td><td>Distance to move current per call.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new position.</dd></dl>
 
 </div>
 </div>
@@ -718,7 +897,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00562">562</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Makes this vector have a magnitude of 1. </p>
 
 </div>
 </div>
@@ -745,7 +924,14 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00550">550</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Makes this vector have a magnitude of 1. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The vector to normalize.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The normalized vector.</dd></dl>
 
 </div>
 </div>
@@ -776,7 +962,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00818">818</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Determines whether two vectors are not approximately equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side vector.</td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the vectors are not approximately equal; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -807,7 +1001,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00796">796</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Multiplies a scalar by a vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>The scalar value.</td></tr>
+    <tr><td class="paramname">a</td><td>The vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled vector.</dd></dl>
 
 </div>
 </div>
@@ -838,7 +1040,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00790">790</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Multiplies a vector by a scalar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The vector.</td></tr>
+    <tr><td class="paramname">d</td><td>The scalar value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled vector.</dd></dl>
 
 </div>
 </div>
@@ -869,7 +1079,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00772">772</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Adds two vectors component-wise. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first vector.</td></tr>
+    <tr><td class="paramname">b</td><td>The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sum of the two vectors.</dd></dl>
 
 </div>
 </div>
@@ -896,7 +1114,14 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00784">784</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Negates a vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The vector to negate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The negated vector.</dd></dl>
 
 </div>
 </div>
@@ -927,7 +1152,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00778">778</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Subtracts two vectors component-wise. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first vector.</td></tr>
+    <tr><td class="paramname">b</td><td>The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The difference of the two vectors.</dd></dl>
 
 </div>
 </div>
@@ -958,7 +1191,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00802">802</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Divides a vector by a scalar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The vector.</td></tr>
+    <tr><td class="paramname">d</td><td>The scalar value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The divided vector.</dd></dl>
 
 </div>
 </div>
@@ -989,7 +1230,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00808">808</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Determines whether two vectors are approximately equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side vector.</td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the vectors are approximately equal; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -1020,7 +1269,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00598">598</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Projects a vector onto another vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>The vector to project.</td></tr>
+    <tr><td class="paramname">onNormal</td><td>The normal vector to project onto.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The projected vector.</dd></dl>
 
 </div>
 </div>
@@ -1051,7 +1308,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00624">624</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Projects a vector onto a plane defined by a normal orthogonal to the plane. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>The location of the vector above the plane.</td></tr>
+    <tr><td class="paramname">planeNormal</td><td>The direction from the vector towards the plane.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The location of the vector on the plane.</dd></dl>
 
 </div>
 </div>
@@ -1082,7 +1347,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00537">537</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Reflects a vector off the plane defined by a normal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inDirection</td><td>The direction vector to reflect.</td></tr>
+    <tr><td class="paramname">inNormal</td><td>The normal of the plane.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The reflected vector.</dd></dl>
 
 </div>
 </div>
@@ -1113,7 +1386,15 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00466">466</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Multiplies two vectors component-wise. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first vector.</td></tr>
+    <tr><td class="paramname">b</td><td>The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new vector with components multiplied.</dd></dl>
 
 </div>
 </div>
@@ -1132,7 +1413,13 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00478">478</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Multiplies every component of this vector by the same component of scale. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scale</td><td>The scale vector.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1160,7 +1447,15 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00450">450</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Set x, y and z components of an existing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newX</td><td>The new x component.</td></tr>
+    <tr><td class="paramname">newY</td><td>The new y component.</td></tr>
+    <tr><td class="paramname">newZ</td><td>The new z component.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1196,7 +1491,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00680">680</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Calculates the signed angle between vectors from and to in relation to axis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>The vector from which the angular difference is measured.</td></tr>
+    <tr><td class="paramname">to</td><td>The vector to which the angular difference is measured.</td></tr>
+    <tr><td class="paramname">axis</td><td>A vector around which the other vectors are rotated.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the signed angle between from and to in degrees.</dd></dl>
 
 </div>
 </div>
@@ -1232,7 +1536,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00251">251</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Spherically interpolates between two vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first vector.</td></tr>
+    <tr><td class="paramname">b</td><td>The second vector.</td></tr>
+    <tr><td class="paramname">t</td><td>The interpolation parameter.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The spherically interpolated vector.</dd></dl>
 
 </div>
 </div>
@@ -1268,7 +1581,16 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00268">268</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Spherically interpolates between two vectors, clamping the interpolation parameter to [0, 1]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first vector.</td></tr>
+    <tr><td class="paramname">b</td><td>The second vector.</td></tr>
+    <tr><td class="paramname">t</td><td>The interpolation parameter, clamped to [0, 1].</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The spherically interpolated vector.</dd></dl>
 
 </div>
 </div>
@@ -1319,7 +1641,19 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00347">347</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Gradually changes a vector towards a desired goal over time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current</td><td>The current position.</td></tr>
+    <tr><td class="paramname">target</td><td>The position we are trying to reach.</td></tr>
+    <tr><td class="paramname">currentVelocity</td><td>The current velocity, this value is modified by the function every time you call it.</td></tr>
+    <tr><td class="paramname">smoothTime</td><td>Approximately the time it will take to reach the target. A smaller value will reach the target faster.</td></tr>
+    <tr><td class="paramname">maxSpeed</td><td>Optionally allows you to clamp the maximum speed.</td></tr>
+    <tr><td class="paramname">deltaTime</td><td>The time since the last call to this function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The smoothed vector.</dd></dl>
 
 </div>
 </div>
@@ -1346,7 +1680,14 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00738">738</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns the squared length of the vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>The vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The squared length of the vector.</dd></dl>
 
 </div>
 </div>
@@ -1365,7 +1706,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00834">834</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns a formatted string for this vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>A formatted string representation of the vector.</dd></dl>
 
 </div>
 </div>
@@ -1384,7 +1726,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00850">850</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns a formatted string for this vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>A numeric format string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A formatted string representation of the vector.</dd></dl>
 
 </div>
 </div>
@@ -1407,7 +1756,15 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00866">866</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns a formatted string for this vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>A numeric format string.</td></tr>
+    <tr><td class="paramname">formatProvider</td><td>An object that specifies culture-specific formatting.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A formatted string representation of the vector.</dd></dl>
 
 </div>
 </div>
@@ -1424,7 +1781,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00012">12</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>X component of the vector. </p>
 
 </div>
 </div>
@@ -1440,7 +1797,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00017">17</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Y component of the vector. </p>
 
 </div>
 </div>
@@ -1456,7 +1813,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00022">22</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Z component of the vector. </p>
 
 </div>
 </div>
@@ -1481,7 +1838,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00157">157</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>(0, 0, -1). </p>
 
 </div>
 </div>
@@ -1505,7 +1862,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00181">181</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>(0, -1, 0). </p>
 
 </div>
 </div>
@@ -1529,7 +1886,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00145">145</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3(0, 0, 1)</a>. </p>
 
 </div>
 </div>
@@ -1553,7 +1910,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00193">193</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>(-1, 0, 0). </p>
 
 </div>
 </div>
@@ -1577,7 +1934,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00097">97</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns the length of this vector (Read Only). </p>
 
 </div>
 </div>
@@ -1601,7 +1958,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00231">231</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>(float.NegativeInfinity, float.NegativeInfinity, float.NegativeInfinity). </p>
 
 </div>
 </div>
@@ -1625,7 +1982,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00085">85</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns this vector with a magnitude of 1 (Read Only). </p>
 
 </div>
 </div>
@@ -1649,7 +2006,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00133">133</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3(1, 1, 1)</a>. </p>
 
 </div>
 </div>
@@ -1673,7 +2030,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00218">218</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3</a>(float.PositiveInfinity, float.PositiveInfinity, float.PositiveInfinity). </p>
 
 </div>
 </div>
@@ -1697,7 +2054,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00205">205</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3(1, 0, 0)</a>. </p>
 
 </div>
 </div>
@@ -1721,7 +2078,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00109">109</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Returns the squared length of this vector (Read Only). </p>
 
 </div>
 </div>
@@ -1745,7 +2102,20 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00045">45</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Gets or sets the component at the specified index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the component (0 = x, 1 = y, 2 = z).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The component value at the specified index.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IndexOutOfRangeException</td><td>Thrown when index is out of range [0, 2].</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1769,7 +2139,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00169">169</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3(0, 1, 0)</a>. </p>
 
 </div>
 </div>
@@ -1793,12 +2163,12 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector3_8cs_source.html#l00121">121</a> of file <a class="el" href="_vector3_8cs_source.html">Vector3.cs</a>.</p>
+<p>Shorthand for writing <a class="el" href="struct_vector3.html" title="Representation of 3D vectors and points.">Vector3(0, 0, 0)</a>. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/math/<a class="el" href="_vector3_8cs_source.html">Vector3.cs</a></li>
+<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/math/<a class="el" href="_vector3_8cs.html">Vector3.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

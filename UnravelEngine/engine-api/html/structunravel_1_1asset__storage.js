@@ -1,13 +1,15 @@
 var structunravel_1_1asset__storage =
 [
     [ "callable", "structunravel_1_1asset__storage.html#a8834205f76b130b5d6ea8408b94f0123", null ],
-    [ "load_from_file_t", "structunravel_1_1asset__storage.html#a3350cef46847f725ca048d6003726003", null ],
+    [ "load_from_file_t", "structunravel_1_1asset__storage.html#a3e2a6ec7265f05590f3bdd17331f25dc", null ],
     [ "load_from_instance_t", "structunravel_1_1asset__storage.html#a658c51c47741e4754b88e5fdad30ab42", null ],
     [ "predicate_t", "structunravel_1_1asset__storage.html#a6b5e16276ed926901b423acd739532ee", null ],
     [ "request_container_t", "structunravel_1_1asset__storage.html#aa43901e361ba509a77d7da7fec0e33bf", null ],
     [ "~asset_storage", "structunravel_1_1asset__storage.html#acccaac3ab1f407c69e7e97a6b37f173d", null ],
+    [ "evict_unused", "structunravel_1_1asset__storage.html#a8cabde8365707b78ab71b265efe75895", null ],
     [ "get_group", "structunravel_1_1asset__storage.html#a3ee36d922d8518a86e3e8313fd4cbdf2", null ],
     [ "get_with_condition", "structunravel_1_1asset__storage.html#af54e5b21396236819878dabf87633571", null ],
+    [ "preload_all", "structunravel_1_1asset__storage.html#ac35d95c437775ebf8b087192dbfb89c5", null ],
     [ "unload_all", "structunravel_1_1asset__storage.html#a4c931317a94aaa41d25a85acefc6bbe7", null ],
     [ "unload_group", "structunravel_1_1asset__storage.html#acdac6d423746e37e3c83ab6249dead29", null ],
     [ "unload_handle", "structunravel_1_1asset__storage.html#a861d26aba21dde5f2a3b6debf3a7b4c4", null ],

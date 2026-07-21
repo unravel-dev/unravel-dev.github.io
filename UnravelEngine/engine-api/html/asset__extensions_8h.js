@@ -6,6 +6,14 @@ var asset__extensions_8h =
     [ "get_data_directory", "asset__extensions_8h.html#a2beb5dab1cc4d4db92b09bfb4cc77d23", null ],
     [ "get_data_directory_no_slash", "asset__extensions_8h.html#ae549419221dd707ce56cfc48ff74d58d", null ],
     [ "get_format", "asset__extensions_8h.html#a10364a2654501630fb598cec92b0e5f7", null ],
+    [ "get_format_version", "asset__extensions_8h.html#ad281432fe43de76aff023ed49ca4ee54", null ],
+    [ "get_format_version", "asset__extensions_8h.html#a48cb0ef4af75ca9701415c7a63c79dbc", null ],
+    [ "get_format_version< gfx::texture >", "asset__extensions_8h.html#abfb132666c63980733f6538587f9871d", null ],
+    [ "get_format_version< unravel::animation_clip >", "asset__extensions_8h.html#a5d7275873a08123240fa2cb002bb6a7b", null ],
+    [ "get_format_version< unravel::audio_clip >", "asset__extensions_8h.html#abcb318589574b6b7109e28f0a7cffac0", null ],
+    [ "get_format_version< unravel::material >", "asset__extensions_8h.html#a3864bbb4a8eee42075a6950559b5c478", null ],
+    [ "get_format_version< unravel::mesh >", "asset__extensions_8h.html#afe723d2f4e2d8037336dd8e7d4a3fe52", null ],
+    [ "get_format_version< unravel::physics_material >", "asset__extensions_8h.html#ae137025fd98c77665e6ba69f8e746544", null ],
     [ "get_meta_directory", "asset__extensions_8h.html#aa5928dc24e3c99d6708a8be3f61548f9", null ],
     [ "get_meta_directory_no_slash", "asset__extensions_8h.html#a69b54c000e625d81a7661e93533db229", null ],
     [ "get_meta_format", "asset__extensions_8h.html#a8f12df46aeca0d26af3c52a4780622cc", null ],
@@ -29,5 +37,6 @@ var asset__extensions_8h =
     [ "get_suported_formats_with_wildcard", "asset__extensions_8h.html#aec5a7b4ede0f14a7fe4bf2fba2d61e51", null ],
     [ "get_type", "asset__extensions_8h.html#a56a7b82ed8729b0d25d7d37a5fb6bcb8", null ],
     [ "get_type", "asset__extensions_8h.html#af56464daa377f9b125f425e0e3af32b7", null ],
+    [ "is_binary", "asset__extensions_8h.html#abc8f5419d0b3add306f158a20f28b0a3", null ],
     [ "is_format", "asset__extensions_8h.html#a56bae4a3bf4248ce0f176020eca36b0b", null ]
 ];

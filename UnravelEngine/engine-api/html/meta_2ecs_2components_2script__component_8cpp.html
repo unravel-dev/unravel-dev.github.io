@@ -104,14 +104,16 @@ $(function(){initNavTree('meta_2ecs_2components_2script__component_8cpp.html',''
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="serialization_8h_source.html">serialization/serialization.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="associative__archive_8h_source.html">serialization/associative_archive.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="binary__archive_8h_source.html">serialization/binary_archive.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="core_2serialization_2types_2vector_8hpp_source.html">serialization/types/vector.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2events_8h_source.html">engine/events.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script__system_8h_source.html">engine/scripting/ecs/systems/script_system.h</a>&gt;</code><br />
-<code>#include &lt;monopp/mono_field_invoker.h&gt;</code><br />
-<code>#include &lt;monopp/mono_property_invoker.h&gt;</code><br />
+<code>#include &lt;dotnetpp/dotnetpp.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2meta_2core_2math_2vector_8hpp_source.html">engine/meta/core/math/vector.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="quaternion_8hpp_source.html">engine/meta/core/math/quaternion.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__handle_8hpp_source.html">engine/meta/assets/asset_handle.hpp</a>&gt;</code><br />
@@ -124,6 +126,7 @@ $(function(){initNavTree('meta_2ecs_2components_2script__component_8cpp.html',''
 <code>#include &lt;<a class="el" href="physics__material_8hpp_source.html">engine/meta/physics/physics_material.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="layer__mask_8hpp_source.html">engine/meta/layers/layer_mask.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="texture_8h_source.html">graphics/texture.h</a>&gt;</code><br />
+<code>#include &lt;hpp/finally.hpp&gt;</code><br />
 </div>
 <p><a href="meta_2ecs_2components_2script__component_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -137,6 +140,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mono__loader.html">unravel::mono_loader&lt; Archive, T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mono__loader_3_01_archive_00_01std_1_1string_01_4.html">unravel::mono_loader&lt; Archive, std::string &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mono__loader_3_01_archive_00_01entt_1_1entity_01_4.html">unravel::mono_loader&lt; Archive, entt::entity &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mono__loader_3_01_archive_00_01asset__handle_3_01_t_01_4_01_4.html">unravel::mono_loader&lt; Archive, asset_handle&lt; T &gt; &gt;</a></td></tr>
@@ -146,11 +151,35 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceser20.html">ser20</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a2de17c3164a081e3efdf0ea1ccf1a118" id="r_a2de17c3164a081e3efdf0ea1ccf1a118"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a2de17c3164a081e3efdf0ea1ccf1a118">unravel::REFLECT</a> (<a class="el" href="classunravel_1_1script__component.html">script_component</a>)</td></tr>
 <tr class="separator:a2de17c3164a081e3efdf0ea1ccf1a118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dcbbeb33921bcb0d25d9ff2f86c5820" id="r_a4dcbbeb33921bcb0d25d9ff2f86c5820"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dcbbeb33921bcb0d25d9ff2f86c5820">get_type_by_fullname</a> (const std::string &amp;fullname) -&gt; <a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">dotnet::type</a></td></tr>
+<tr class="separator:a4dcbbeb33921bcb0d25d9ff2f86c5820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e741e15c83846e0f1586514e314fbd" id="r_ae8e741e15c83846e0f1586514e314fbd"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
+<tr class="memitem:ae8e741e15c83846e0f1586514e314fbd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#ae8e741e15c83846e0f1586514e314fbd">ser20::try_save_mono_type</a> (Archive &amp;ar, const char *<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, const dotnet::type &amp;t) -&gt; bool</td></tr>
+<tr class="separator:ae8e741e15c83846e0f1586514e314fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a04a01062c64472199e634605b4471c" id="r_a4a04a01062c64472199e634605b4471c"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
+<tr class="memitem:a4a04a01062c64472199e634605b4471c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a4a04a01062c64472199e634605b4471c">ser20::try_load_mono_type</a> (Archive &amp;ar, const char *<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, dotnet::type &amp;t) -&gt; bool</td></tr>
+<tr class="separator:a4a04a01062c64472199e634605b4471c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c6fa9e2b9bc16b2540e058e7a0484c" id="r_a61c6fa9e2b9bc16b2540e058e7a0484c"><td class="memTemplParams" colspan="2">template&lt;typename Archive , typename T &gt; </td></tr>
+<tr class="memitem:a61c6fa9e2b9bc16b2540e058e7a0484c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a61c6fa9e2b9bc16b2540e058e7a0484c">ser20::SAVE_FUNCTION_NAME</a> (Archive &amp;ar, const dotnet::vector_like_wrapper&lt; T &gt; &amp;obj)</td></tr>
+<tr class="separator:a61c6fa9e2b9bc16b2540e058e7a0484c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e68e5aec09dfd58d23cf3e94a625740" id="r_a6e68e5aec09dfd58d23cf3e94a625740"><td class="memTemplParams" colspan="2">template&lt;typename Archive , typename T &gt; </td></tr>
+<tr class="memitem:a6e68e5aec09dfd58d23cf3e94a625740"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a6e68e5aec09dfd58d23cf3e94a625740">ser20::LOAD_FUNCTION_NAME</a> (Archive &amp;ar, dotnet::vector_like_wrapper&lt; T &gt; &amp;obj)</td></tr>
+<tr class="separator:a6e68e5aec09dfd58d23cf3e94a625740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e28921f62a3535ff83cfd1d954421df" id="r_a9e28921f62a3535ff83cfd1d954421df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a9e28921f62a3535ff83cfd1d954421df">ser20::SAVE</a> (dotnet::object)</td></tr>
+<tr class="separator:a9e28921f62a3535ff83cfd1d954421df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0010c1b5ae736db99ab9207949f79c9f" id="r_a0010c1b5ae736db99ab9207949f79c9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a0010c1b5ae736db99ab9207949f79c9f">ser20::LOAD</a> (dotnet::object)</td></tr>
+<tr class="separator:a0010c1b5ae736db99ab9207949f79c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9bf4b2e880c40701ee9627e94f3912" id="r_adb9bf4b2e880c40701ee9627e94f3912"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceser20.html#adb9bf4b2e880c40701ee9627e94f3912">ser20::LOAD_INSTANTIATE</a> (dotnet::object, <a class="el" href="namespaceser20.html#abee0f5d51ca99c0bd0f8c82a137cdb0e">ser20::iarchive_associative_t</a>)</td></tr>
+<tr class="separator:adb9bf4b2e880c40701ee9627e94f3912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37fc97835204acb3e7fd8c62d2a10e29" id="r_a37fc97835204acb3e7fd8c62d2a10e29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a37fc97835204acb3e7fd8c62d2a10e29">ser20::LOAD_INSTANTIATE</a> (dotnet::object, <a class="el" href="namespaceser20.html#a514f65aa325b6dc3cb2ec927d7b30d77">ser20::iarchive_binary_t</a>)</td></tr>
+<tr class="separator:a37fc97835204acb3e7fd8c62d2a10e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3061238b8bb44e424892459bc3f0b6ff" id="r_a3061238b8bb44e424892459bc3f0b6ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a3061238b8bb44e424892459bc3f0b6ff">unravel::SAVE</a> (<a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_component::script_object</a>)</td></tr>
 <tr class="separator:a3061238b8bb44e424892459bc3f0b6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59984c079eeca35545e57f83520780f0" id="r_a59984c079eeca35545e57f83520780f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a59984c079eeca35545e57f83520780f0">unravel::SAVE_INSTANTIATE</a> (<a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_component::script_object</a>, <a class="el" href="namespaceser20.html#a908cdc886899ac6ca92ea7206d1d5ab3">ser20::oarchive_associative_t</a>)</td></tr>
@@ -180,6 +209,27 @@ Functions</h2></td></tr>
 <tr class="memitem:aa8503e0919a3c401b14de3289bf9707f" id="r_aa8503e0919a3c401b14de3289bf9707f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aa8503e0919a3c401b14de3289bf9707f">unravel::load_from_stream</a> (std::istream &amp;stream, entt::handle e, <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_component::script_object</a> &amp;obj) -&gt; bool</td></tr>
 <tr class="separator:aa8503e0919a3c401b14de3289bf9707f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a4dcbbeb33921bcb0d25d9ff2f86c5820" name="a4dcbbeb33921bcb0d25d9ff2f86c5820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dcbbeb33921bcb0d25d9ff2f86c5820">&#9670;&#160;</a></span>get_type_by_fullname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto get_type_by_fullname </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>fullname</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">dotnet::type</a>
+</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00576">576</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ad6bd82d432a29784bdef821f4982b8b7" name="ad6bd82d432a29784bdef821f4982b8b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6bd82d432a29784bdef821f4982b8b7">&#9670;&#160;</a></span>script_objects</h2>
@@ -193,7 +243,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00034">34</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html#l00037">37</a> of file <a class="el" href="meta_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>

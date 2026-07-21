@@ -121,12 +121,22 @@ Inheritance diagram for unravel::skylight_component:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:adf5be5e3acba59f5fbeb97d7ecfb148a" id="r_adf5be5e3acba59f5fbeb97d7ecfb148a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf5be5e3acba59f5fbeb97d7ecfb148a">sky_mode</a> { <a class="el" href="#adf5be5e3acba59f5fbeb97d7ecfb148aac00f0c4675b91fb8b918e4079a0b1bac">standard</a>
-, <a class="el" href="#adf5be5e3acba59f5fbeb97d7ecfb148aa765ba753b609d84b3813991fe23f81b3">perez</a>
-, <a class="el" href="#adf5be5e3acba59f5fbeb97d7ecfb148aae1f407b4ac4bf9c008e26ae2c1b067f9">skybox</a>
+<tr class="memitem:adf5be5e3acba59f5fbeb97d7ecfb148a" id="r_adf5be5e3acba59f5fbeb97d7ecfb148a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf5be5e3acba59f5fbeb97d7ecfb148a">sky_mode</a> { <a class="el" href="#adf5be5e3acba59f5fbeb97d7ecfb148aa54609813aa0aae363bbb9f793a7121a6">reserved_0</a> = 0
+, <a class="el" href="#adf5be5e3acba59f5fbeb97d7ecfb148aa765ba753b609d84b3813991fe23f81b3">perez</a> = 1
+, <a class="el" href="#adf5be5e3acba59f5fbeb97d7ecfb148aae1f407b4ac4bf9c008e26ae2c1b067f9">skybox</a> = 2
  }</td></tr>
 <tr class="memdesc:adf5be5e3acba59f5fbeb97d7ecfb148a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for sky modes.  <a href="#adf5be5e3acba59f5fbeb97d7ecfb148a">More...</a><br /></td></tr>
 <tr class="separator:adf5be5e3acba59f5fbeb97d7ecfb148a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad027aaa949b5bb4d5c785d2e970c9c0" id="r_aad027aaa949b5bb4d5c785d2e970c9c0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad027aaa949b5bb4d5c785d2e970c9c0">irradiance_quality</a> { <a class="el" href="#aad027aaa949b5bb4d5c785d2e970c9c0a37fc7edee25a177474eaebe7f7b09785">flat</a>
+, <a class="el" href="#aad027aaa949b5bb4d5c785d2e970c9c0aff17f76a314be3abfb17f7c9e849ba34">directional</a>
+ }</td></tr>
+<tr class="memdesc:aad027aaa949b5bb4d5c785d2e970c9c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directional variation of the indirect diffuse ambient.  <a href="#aad027aaa949b5bb4d5c785d2e970c9c0">More...</a><br /></td></tr>
+<tr class="separator:aad027aaa949b5bb4d5c785d2e970c9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa37d982c8cbefe4da2e4d69f3f4f67a" id="r_aaa37d982c8cbefe4da2e4d69f3f4f67a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa37d982c8cbefe4da2e4d69f3f4f67a">cloud_mode</a> { <a class="el" href="#aaa37d982c8cbefe4da2e4d69f3f4f67aa334c4a4c42fdb79d7ebc3e73b517e6f8">none</a> = 0
+, <a class="el" href="#aaa37d982c8cbefe4da2e4d69f3f4f67aa37fc7edee25a177474eaebe7f7b09785">flat</a> = 1
+, <a class="el" href="#aaa37d982c8cbefe4da2e4d69f3f4f67aa73308b64b7f54ef79a2e055b86944f4b">volumetric</a> = 2
+ }</td></tr>
+<tr class="separator:aaa37d982c8cbefe4da2e4d69f3f4f67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_structunravel_1_1component__crtp"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_structunravel_1_1component__crtp')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structunravel_1_1component__crtp.html">unravel::component_crtp&lt; skylight_component &gt;</a></td></tr>
 <tr class="memitem:ae56fdc9177cb583da8be567eb17b4033 inherit pub_types_structunravel_1_1component__crtp" id="r_ae56fdc9177cb583da8be567eb17b4033"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1component__crtp.html#ae56fdc9177cb583da8be567eb17b4033">base</a></td></tr>
 <tr class="separator:ae56fdc9177cb583da8be567eb17b4033 inherit pub_types_structunravel_1_1component__crtp"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,10 +155,133 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa864ef965c870fb2be9dcd2271c44fea" id="r_aa864ef965c870fb2be9dcd2271c44fea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa864ef965c870fb2be9dcd2271c44fea">set_turbidity</a> (float turbidity)</td></tr>
 <tr class="memdesc:aa864ef965c870fb2be9dcd2271c44fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the turbidity value.  <br /></td></tr>
 <tr class="separator:aa864ef965c870fb2be9dcd2271c44fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0074c1cbe26aa12dfc0cc41c695d572" id="r_ad0074c1cbe26aa12dfc0cc41c695d572"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0074c1cbe26aa12dfc0cc41c695d572">get_cloud_mode</a> () const noexcept -&gt; <a class="el" href="#aaa37d982c8cbefe4da2e4d69f3f4f67a">cloud_mode</a></td></tr>
+<tr class="memdesc:ad0074c1cbe26aa12dfc0cc41c695d572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cloud rendering mode.  <br /></td></tr>
+<tr class="separator:ad0074c1cbe26aa12dfc0cc41c695d572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65604a7be2d3026a4c5c1e7df776edcf" id="r_a65604a7be2d3026a4c5c1e7df776edcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65604a7be2d3026a4c5c1e7df776edcf">set_cloud_mode</a> (<a class="el" href="#aaa37d982c8cbefe4da2e4d69f3f4f67a">cloud_mode</a> mode)</td></tr>
+<tr class="memdesc:a65604a7be2d3026a4c5c1e7df776edcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the cloud rendering mode.  <br /></td></tr>
+<tr class="separator:a65604a7be2d3026a4c5c1e7df776edcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a68eb7332db72b4f190d948aebf85b" id="r_a73a68eb7332db72b4f190d948aebf85b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73a68eb7332db72b4f190d948aebf85b">get_cloud_coverage</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a73a68eb7332db72b4f190d948aebf85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cloud coverage value.  <br /></td></tr>
+<tr class="separator:a73a68eb7332db72b4f190d948aebf85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf94b193c764c444909304bd6b7cf86" id="r_abdf94b193c764c444909304bd6b7cf86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdf94b193c764c444909304bd6b7cf86">set_cloud_coverage</a> (float coverage)</td></tr>
+<tr class="memdesc:abdf94b193c764c444909304bd6b7cf86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the cloud coverage value.  <br /></td></tr>
+<tr class="separator:abdf94b193c764c444909304bd6b7cf86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc814f3041e56886206397b97990d3a" id="r_aecc814f3041e56886206397b97990d3a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecc814f3041e56886206397b97990d3a">get_cloud_base_altitude</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:aecc814f3041e56886206397b97990d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cloud base altitude in world units.  <br /></td></tr>
+<tr class="separator:aecc814f3041e56886206397b97990d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6662b54ec7f85a9f75fdf89dee5ed0c" id="r_ad6662b54ec7f85a9f75fdf89dee5ed0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6662b54ec7f85a9f75fdf89dee5ed0c">set_cloud_base_altitude</a> (float altitude)</td></tr>
+<tr class="memdesc:ad6662b54ec7f85a9f75fdf89dee5ed0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the cloud base altitude.  <br /></td></tr>
+<tr class="separator:ad6662b54ec7f85a9f75fdf89dee5ed0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e556c22f2af1d04a8d15cd8aac87fcd" id="r_a0e556c22f2af1d04a8d15cd8aac87fcd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e556c22f2af1d04a8d15cd8aac87fcd">get_cloud_top_altitude</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a0e556c22f2af1d04a8d15cd8aac87fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cloud top altitude in world units (volumetric slab top).  <br /></td></tr>
+<tr class="separator:a0e556c22f2af1d04a8d15cd8aac87fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50f4851fff4cacaf693f8cbe93cd52c" id="r_ad50f4851fff4cacaf693f8cbe93cd52c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad50f4851fff4cacaf693f8cbe93cd52c">set_cloud_top_altitude</a> (float altitude)</td></tr>
+<tr class="memdesc:ad50f4851fff4cacaf693f8cbe93cd52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the cloud top altitude. Must be greater than base altitude.  <br /></td></tr>
+<tr class="separator:ad50f4851fff4cacaf693f8cbe93cd52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3973415fe12af38cad3eff4e4b36208" id="r_af3973415fe12af38cad3eff4e4b36208"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3973415fe12af38cad3eff4e4b36208">get_cloud_speed</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:af3973415fe12af38cad3eff4e4b36208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cloud speed multiplier.  <br /></td></tr>
+<tr class="separator:af3973415fe12af38cad3eff4e4b36208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa595fb913289382f36bf27b1229e40" id="r_aefa595fb913289382f36bf27b1229e40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefa595fb913289382f36bf27b1229e40">set_cloud_speed</a> (float speed)</td></tr>
+<tr class="memdesc:aefa595fb913289382f36bf27b1229e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the cloud speed multiplier.  <br /></td></tr>
+<tr class="separator:aefa595fb913289382f36bf27b1229e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42797dc2e7d679e95d888ecabdf48f2d" id="r_a42797dc2e7d679e95d888ecabdf48f2d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42797dc2e7d679e95d888ecabdf48f2d">get_cloud_density</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a42797dc2e7d679e95d888ecabdf48f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cloud density multiplier.  <br /></td></tr>
+<tr class="separator:a42797dc2e7d679e95d888ecabdf48f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af860c71e6bfab96b4b2d074a237f72e1" id="r_af860c71e6bfab96b4b2d074a237f72e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af860c71e6bfab96b4b2d074a237f72e1">set_cloud_density</a> (float density)</td></tr>
+<tr class="memdesc:af860c71e6bfab96b4b2d074a237f72e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the cloud density multiplier.  <br /></td></tr>
+<tr class="separator:af860c71e6bfab96b4b2d074a237f72e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a6e25bc55d1b8f98933ec19ac7ecde" id="r_a64a6e25bc55d1b8f98933ec19ac7ecde"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64a6e25bc55d1b8f98933ec19ac7ecde">get_cloud_absorption</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a64a6e25bc55d1b8f98933ec19ac7ecde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cloud absorption coefficient (Beer-Lambert extinction).  <br /></td></tr>
+<tr class="separator:a64a6e25bc55d1b8f98933ec19ac7ecde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0b0b985cd0b943eefe2c1a18eec9bb" id="r_a9c0b0b985cd0b943eefe2c1a18eec9bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c0b0b985cd0b943eefe2c1a18eec9bb">set_cloud_absorption</a> (float absorption)</td></tr>
+<tr class="memdesc:a9c0b0b985cd0b943eefe2c1a18eec9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the cloud absorption coefficient.  <br /></td></tr>
+<tr class="separator:a9c0b0b985cd0b943eefe2c1a18eec9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8ed44813af72f031fe97eaed5b6bcf" id="r_abe8ed44813af72f031fe97eaed5b6bcf"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe8ed44813af72f031fe97eaed5b6bcf">get_cloud_light_absorption</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:abe8ed44813af72f031fe97eaed5b6bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cloud light absorption (self-shadow strength).  <br /></td></tr>
+<tr class="separator:abe8ed44813af72f031fe97eaed5b6bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a0c7edcc7e4ee39c7cc7dfd6b66df4" id="r_a36a0c7edcc7e4ee39c7cc7dfd6b66df4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36a0c7edcc7e4ee39c7cc7dfd6b66df4">set_cloud_light_absorption</a> (float absorption)</td></tr>
+<tr class="memdesc:a36a0c7edcc7e4ee39c7cc7dfd6b66df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the cloud light absorption (self-shadow strength).  <br /></td></tr>
+<tr class="separator:a36a0c7edcc7e4ee39c7cc7dfd6b66df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b37a0b8ab3bcd5ca7428e65654ae64" id="r_a85b37a0b8ab3bcd5ca7428e65654ae64"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85b37a0b8ab3bcd5ca7428e65654ae64">get_cloud_vol_uv_scale</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a85b37a0b8ab3bcd5ca7428e65654ae64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volumetric cloud shape: world-to-noise UV scale (smaller = larger features).  <br /></td></tr>
+<tr class="separator:a85b37a0b8ab3bcd5ca7428e65654ae64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b6d469b4713d19ee8796278e648b85" id="r_a74b6d469b4713d19ee8796278e648b85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74b6d469b4713d19ee8796278e648b85">set_cloud_vol_uv_scale</a> (float <a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>)</td></tr>
+<tr class="separator:a74b6d469b4713d19ee8796278e648b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5a8ae434c1177c6474f4953878352f" id="r_a6d5a8ae434c1177c6474f4953878352f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d5a8ae434c1177c6474f4953878352f">get_cloud_vol_edge_width</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a6d5a8ae434c1177c6474f4953878352f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volumetric cloud shape: smoothstep edge width for the density mask.  <br /></td></tr>
+<tr class="separator:a6d5a8ae434c1177c6474f4953878352f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7a298e39e3ea8dd973deeb8b2b4557" id="r_a3f7a298e39e3ea8dd973deeb8b2b4557"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f7a298e39e3ea8dd973deeb8b2b4557">set_cloud_vol_edge_width</a> (float <a class="el" href="asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd">width</a>)</td></tr>
+<tr class="separator:a3f7a298e39e3ea8dd973deeb8b2b4557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8528d82c39c99a4f65b795e06a107418" id="r_a8528d82c39c99a4f65b795e06a107418"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8528d82c39c99a4f65b795e06a107418">get_cloud_vol_shape_power</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a8528d82c39c99a4f65b795e06a107418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volumetric cloud shape: contrast on the density mask (pow exponent).  <br /></td></tr>
+<tr class="separator:a8528d82c39c99a4f65b795e06a107418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b44966a1dfca8bfd10fd03b8de1d7d" id="r_a15b44966a1dfca8bfd10fd03b8de1d7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15b44966a1dfca8bfd10fd03b8de1d7d">set_cloud_vol_shape_power</a> (float power)</td></tr>
+<tr class="separator:a15b44966a1dfca8bfd10fd03b8de1d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba7e2c6707e4a4b893c4303522a5625" id="r_a6ba7e2c6707e4a4b893c4303522a5625"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ba7e2c6707e4a4b893c4303522a5625">get_cloud_vol_detail_erode</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a6ba7e2c6707e4a4b893c4303522a5625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volumetric cloud shape: Worley detail erosion strength.  <br /></td></tr>
+<tr class="separator:a6ba7e2c6707e4a4b893c4303522a5625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506ab249604e29747f3bc07444546164" id="r_a506ab249604e29747f3bc07444546164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a506ab249604e29747f3bc07444546164">set_cloud_vol_detail_erode</a> (float erode)</td></tr>
+<tr class="separator:a506ab249604e29747f3bc07444546164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759da3159d3a9fa1e7f7e3e590e9634d" id="r_a759da3159d3a9fa1e7f7e3e590e9634d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a759da3159d3a9fa1e7f7e3e590e9634d">get_cloud_vol_macro_strength</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a759da3159d3a9fa1e7f7e3e590e9634d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volumetric cloud shape: macro Worley threshold jitter (clearings vs sheet).  <br /></td></tr>
+<tr class="separator:a759da3159d3a9fa1e7f7e3e590e9634d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305359ab736fa1a78fb22ede26d74f3e" id="r_a305359ab736fa1a78fb22ede26d74f3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a305359ab736fa1a78fb22ede26d74f3e">set_cloud_vol_macro_strength</a> (float strength)</td></tr>
+<tr class="separator:a305359ab736fa1a78fb22ede26d74f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59bbb525acba08bfac491704540f90be" id="r_a59bbb525acba08bfac491704540f90be"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59bbb525acba08bfac491704540f90be">get_cloud_vol_coarse_scale</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a59bbb525acba08bfac491704540f90be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volumetric cloud shape: coarse noise sample scale (larger masses).  <br /></td></tr>
+<tr class="separator:a59bbb525acba08bfac491704540f90be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c8d97b7e538a6917b7b754a0d4a0a5" id="r_ad3c8d97b7e538a6917b7b754a0d4a0a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3c8d97b7e538a6917b7b754a0d4a0a5">set_cloud_vol_coarse_scale</a> (float <a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>)</td></tr>
+<tr class="separator:ad3c8d97b7e538a6917b7b754a0d4a0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbfb3e5db314d4bece1e9377c515001" id="r_abcbfb3e5db314d4bece1e9377c515001"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcbfb3e5db314d4bece1e9377c515001">get_cloud_vol_base_mix</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:abcbfb3e5db314d4bece1e9377c515001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volumetric cloud shape: blend between coarse and fine base noise.  <br /></td></tr>
+<tr class="separator:abcbfb3e5db314d4bece1e9377c515001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e7dfde4c51d5a517936b431417fd69" id="r_a13e7dfde4c51d5a517936b431417fd69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13e7dfde4c51d5a517936b431417fd69">set_cloud_vol_base_mix</a> (float mix)</td></tr>
+<tr class="separator:a13e7dfde4c51d5a517936b431417fd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f8c466e3b4512a66b4845bb1167919" id="r_aa2f8c466e3b4512a66b4845bb1167919"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2f8c466e3b4512a66b4845bb1167919">get_cloud_vol_sun_intensity</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:aa2f8c466e3b4512a66b4845bb1167919"><td class="mdescLeft">&#160;</td><td class="mdescRight">Volumetric cloud lighting: sun contribution multiplier in the cloud integrator.  <br /></td></tr>
+<tr class="separator:aa2f8c466e3b4512a66b4845bb1167919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa209bc0fcb7ac2bf9ba5f33a6c085442" id="r_aa209bc0fcb7ac2bf9ba5f33a6c085442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa209bc0fcb7ac2bf9ba5f33a6c085442">set_cloud_vol_sun_intensity</a> (float intensity)</td></tr>
+<tr class="separator:aa209bc0fcb7ac2bf9ba5f33a6c085442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9d02cf89f90ef1806c4f3f485bcd61" id="r_a1b9d02cf89f90ef1806c4f3f485bcd61"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b9d02cf89f90ef1806c4f3f485bcd61">get_irradiance_intensity</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a1b9d02cf89f90ef1806c4f3f485bcd61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the irradiance intensity (strength of indirect diffuse).  <br /></td></tr>
+<tr class="separator:a1b9d02cf89f90ef1806c4f3f485bcd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e040f95a27c56cf50142f538b65413b" id="r_a1e040f95a27c56cf50142f538b65413b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e040f95a27c56cf50142f538b65413b">set_irradiance_intensity</a> (float intensity)</td></tr>
+<tr class="memdesc:a1e040f95a27c56cf50142f538b65413b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the irradiance intensity.  <br /></td></tr>
+<tr class="separator:a1e040f95a27c56cf50142f538b65413b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e495a011c525e7840bd6be181662e5a" id="r_a1e495a011c525e7840bd6be181662e5a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e495a011c525e7840bd6be181662e5a">get_irradiance_tint</a> () const noexcept -&gt; const <a class="el" href="structmath_1_1color.html">math::color</a> &amp;</td></tr>
+<tr class="memdesc:a1e495a011c525e7840bd6be181662e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the optional irradiance tint override (default from sky when white).  <br /></td></tr>
+<tr class="separator:a1e495a011c525e7840bd6be181662e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3bad5bccfc57c82bde926c901c6cf5" id="r_a1d3bad5bccfc57c82bde926c901c6cf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d3bad5bccfc57c82bde926c901c6cf5">set_irradiance_tint</a> (const <a class="el" href="structmath_1_1color.html">math::color</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a140fb0ac0ccbf7cb238a3ec53af0b1cd">color</a>)</td></tr>
+<tr class="memdesc:a1d3bad5bccfc57c82bde926c901c6cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the irradiance tint override.  <br /></td></tr>
+<tr class="separator:a1d3bad5bccfc57c82bde926c901c6cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c25843b84b5053589897fac33efc4f1" id="r_a5c25843b84b5053589897fac33efc4f1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c25843b84b5053589897fac33efc4f1">get_irradiance_quality</a> () const noexcept -&gt; <a class="el" href="#aad027aaa949b5bb4d5c785d2e970c9c0">irradiance_quality</a></td></tr>
+<tr class="memdesc:a5c25843b84b5053589897fac33efc4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the irradiance quality for indirect diffuse.  <br /></td></tr>
+<tr class="separator:a5c25843b84b5053589897fac33efc4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4188a78eafcc416208c726ec3caee1f" id="r_ac4188a78eafcc416208c726ec3caee1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4188a78eafcc416208c726ec3caee1f">set_irradiance_quality</a> (<a class="el" href="#aad027aaa949b5bb4d5c785d2e970c9c0">irradiance_quality</a> quality)</td></tr>
+<tr class="memdesc:ac4188a78eafcc416208c726ec3caee1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the irradiance quality.  <br /></td></tr>
+<tr class="separator:ac4188a78eafcc416208c726ec3caee1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca27f9acdecb5730cfa104dc2f409ad" id="r_a9ca27f9acdecb5730cfa104dc2f409ad"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ca27f9acdecb5730cfa104dc2f409ad">get_irradiance_use_sky</a> () const noexcept -&gt; bool</td></tr>
+<tr class="memdesc:a9ca27f9acdecb5730cfa104dc2f409ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the sky color contributes to the ambient irradiance.  <br /></td></tr>
+<tr class="separator:a9ca27f9acdecb5730cfa104dc2f409ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2987a223013eacd4872e3ce0e5411472" id="r_a2987a223013eacd4872e3ce0e5411472"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2987a223013eacd4872e3ce0e5411472">set_irradiance_use_sky</a> (bool use_sky)</td></tr>
+<tr class="memdesc:a2987a223013eacd4872e3ce0e5411472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the sky color contributes to the ambient irradiance.  <br /></td></tr>
+<tr class="separator:a2987a223013eacd4872e3ce0e5411472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e06755fe22f1fb43043826488c5e3e" id="r_a52e06755fe22f1fb43043826488c5e3e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52e06755fe22f1fb43043826488c5e3e">get_sky_brightness</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a52e06755fe22f1fb43043826488c5e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the sky brightness multiplier (affects atmospheric pass and irradiance).  <br /></td></tr>
+<tr class="separator:a52e06755fe22f1fb43043826488c5e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b15194065c59ad69c733884377510e" id="r_a31b15194065c59ad69c733884377510e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31b15194065c59ad69c733884377510e">set_sky_brightness</a> (float brightness)</td></tr>
+<tr class="memdesc:a31b15194065c59ad69c733884377510e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sky brightness multiplier.  <br /></td></tr>
+<tr class="separator:a31b15194065c59ad69c733884377510e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3af83b45ed3a5da78967d0ad7d157224" id="r_a3af83b45ed3a5da78967d0ad7d157224"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3af83b45ed3a5da78967d0ad7d157224">get_cubemap</a> () const noexcept -&gt; const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structgfx_1_1texture.html">gfx::texture</a> &gt; &amp;</td></tr>
 <tr class="separator:a3af83b45ed3a5da78967d0ad7d157224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d2108bfb2957cf2969a274cdb06aa6" id="r_a21d2108bfb2957cf2969a274cdb06aa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21d2108bfb2957cf2969a274cdb06aa6">set_cubemap</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structgfx_1_1texture.html">gfx::texture</a> &gt; &amp;cubemap)</td></tr>
 <tr class="separator:a21d2108bfb2957cf2969a274cdb06aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c2c4639d7db7a442d655c1c36463a2" id="r_a73c2c4639d7db7a442d655c1c36463a2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73c2c4639d7db7a442d655c1c36463a2">get_cloud_time</a> () const noexcept -&gt; float</td></tr>
+<tr class="memdesc:a73c2c4639d7db7a442d655c1c36463a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the accumulated time for cloud animation.  <br /></td></tr>
+<tr class="separator:a73c2c4639d7db7a442d655c1c36463a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fbc13c1503dbb8854defbe5cd6fecad" id="r_a9fbc13c1503dbb8854defbe5cd6fecad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fbc13c1503dbb8854defbe5cd6fecad">update</a> (<a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> dt)</td></tr>
+<tr class="separator:a9fbc13c1503dbb8854defbe5cd6fecad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structunravel_1_1basic__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structunravel_1_1basic__component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structunravel_1_1basic__component.html">unravel::basic_component</a></td></tr>
 <tr class="memitem:a77b51a3686a5557487ae8fb473f3de33 inherit pub_methods_structunravel_1_1basic__component" id="r_a77b51a3686a5557487ae8fb473f3de33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1basic__component.html#a77b51a3686a5557487ae8fb473f3de33">touch</a> ()</td></tr>
 <tr class="memdesc:a77b51a3686a5557487ae8fb473f3de33 inherit pub_methods_structunravel_1_1basic__component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the component as 'touched'.  <br /></td></tr>
@@ -170,6 +303,71 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="light__component_8h_source.html#l00082">82</a> of file <a class="el" href="light__component_8h_source.html">light_component.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aaa37d982c8cbefe4da2e4d69f3f4f67a" name="aaa37d982c8cbefe4da2e4d69f3f4f67a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa37d982c8cbefe4da2e4d69f3f4f67a">&#9670;&#160;</a></span>cloud_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#aaa37d982c8cbefe4da2e4d69f3f4f67a">unravel::skylight_component::cloud_mode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaa37d982c8cbefe4da2e4d69f3f4f67aa334c4a4c42fdb79d7ebc3e73b517e6f8" name="aaa37d982c8cbefe4da2e4d69f3f4f67aa334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"><p>No clouds rendered. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaa37d982c8cbefe4da2e4d69f3f4f67aa37fc7edee25a177474eaebe7f7b09785" name="aaa37d982c8cbefe4da2e4d69f3f4f67aa37fc7edee25a177474eaebe7f7b09785"></a>flat&#160;</td><td class="fielddoc"><p>Flat projected clouds (cheap, single-sample scattering) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaa37d982c8cbefe4da2e4d69f3f4f67aa73308b64b7f54ef79a2e055b86944f4b" name="aaa37d982c8cbefe4da2e4d69f3f4f67aa73308b64b7f54ef79a2e055b86944f4b"></a>volumetric&#160;</td><td class="fielddoc"><p>Volumetric raymarched clouds (full scattering, half-res with temporal) </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="light__component_8h_source.html#l00113">113</a> of file <a class="el" href="light__component_8h_source.html">light_component.h</a>.</p>
+
+</div>
+</div>
+<a id="aad027aaa949b5bb4d5c785d2e970c9c0" name="aad027aaa949b5bb4d5c785d2e970c9c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad027aaa949b5bb4d5c785d2e970c9c0">&#9670;&#160;</a></span>irradiance_quality</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#aad027aaa949b5bb4d5c785d2e970c9c0">unravel::skylight_component::irradiance_quality</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Directional variation of the indirect diffuse ambient. </p>
+<dl class="section note"><dt>Note</dt><dd>Orthogonal to sky contribution (see get_irradiance_use_sky). This axis only controls whether the ambient varies with the surface normal. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aad027aaa949b5bb4d5c785d2e970c9c0a37fc7edee25a177474eaebe7f7b09785" name="aad027aaa949b5bb4d5c785d2e970c9c0a37fc7edee25a177474eaebe7f7b09785"></a>flat&#160;</td><td class="fielddoc"><p>Flat ambient: only the constant SH band (L0) is written, same color for every normal. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aad027aaa949b5bb4d5c785d2e970c9c0aff17f76a314be3abfb17f7c9e849ba34" name="aad027aaa949b5bb4d5c785d2e970c9c0aff17f76a314be3abfb17f7c9e849ba34"></a>directional&#160;</td><td class="fielddoc"><p>Directional ambient: full L0-L2 spherical harmonics, varies with the surface normal. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="light__component_8h_source.html#l00105">105</a> of file <a class="el" href="light__component_8h_source.html">light_component.h</a>.</p>
+
+</div>
+</div>
 <a id="adf5be5e3acba59f5fbeb97d7ecfb148a" name="adf5be5e3acba59f5fbeb97d7ecfb148a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf5be5e3acba59f5fbeb97d7ecfb148a">&#9670;&#160;</a></span>sky_mode</h2>
 
@@ -192,7 +390,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Enumeration for sky modes. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adf5be5e3acba59f5fbeb97d7ecfb148aac00f0c4675b91fb8b918e4079a0b1bac" name="adf5be5e3acba59f5fbeb97d7ecfb148aac00f0c4675b91fb8b918e4079a0b1bac"></a>standard&#160;</td><td class="fielddoc"><p>Standard sky mode. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adf5be5e3acba59f5fbeb97d7ecfb148aa54609813aa0aae363bbb9f793a7121a6" name="adf5be5e3acba59f5fbeb97d7ecfb148aa54609813aa0aae363bbb9f793a7121a6"></a>reserved_0&#160;</td><td class="fielddoc"><p>Reserved sky mode. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="adf5be5e3acba59f5fbeb97d7ecfb148aa765ba753b609d84b3813991fe23f81b3" name="adf5be5e3acba59f5fbeb97d7ecfb148aa765ba753b609d84b3813991fe23f81b3"></a>perez&#160;</td><td class="fielddoc"><p>Perez sky mode. </p>
 </td></tr>
@@ -205,6 +403,509 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a64a6e25bc55d1b8f98933ec19ac7ecde" name="a64a6e25bc55d1b8f98933ec19ac7ecde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a6e25bc55d1b8f98933ec19ac7ecde">&#9670;&#160;</a></span>get_cloud_absorption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_absorption </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the cloud absorption coefficient (Beer-Lambert extinction). </p>
+<dl class="section return"><dt>Returns</dt><dd>The current absorption value. Higher = more opaque clouds. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00214">214</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aecc814f3041e56886206397b97990d3a" name="aecc814f3041e56886206397b97990d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc814f3041e56886206397b97990d3a">&#9670;&#160;</a></span>get_cloud_base_altitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_base_altitude </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the cloud base altitude in world units. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current cloud base altitude. Volumetric: slab bottom. Flat: projection height. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00174">174</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73a68eb7332db72b4f190d948aebf85b" name="a73a68eb7332db72b4f190d948aebf85b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a68eb7332db72b4f190d948aebf85b">&#9670;&#160;</a></span>get_cloud_coverage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_coverage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the cloud coverage value. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current cloud coverage value [0.0 = clear sky, 1.0 = overcast]. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00164">164</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a42797dc2e7d679e95d888ecabdf48f2d" name="a42797dc2e7d679e95d888ecabdf48f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42797dc2e7d679e95d888ecabdf48f2d">&#9670;&#160;</a></span>get_cloud_density()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_density </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the cloud density multiplier. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current cloud density multiplier. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00204">204</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abe8ed44813af72f031fe97eaed5b6bcf" name="abe8ed44813af72f031fe97eaed5b6bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe8ed44813af72f031fe97eaed5b6bcf">&#9670;&#160;</a></span>get_cloud_light_absorption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_light_absorption </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the cloud light absorption (self-shadow strength). </p>
+<dl class="section return"><dt>Returns</dt><dd>The current light absorption value. Higher = darker shadowed sides. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00224">224</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad0074c1cbe26aa12dfc0cc41c695d572" name="ad0074c1cbe26aa12dfc0cc41c695d572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0074c1cbe26aa12dfc0cc41c695d572">&#9670;&#160;</a></span>get_cloud_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_mode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#aaa37d982c8cbefe4da2e4d69f3f4f67a">cloud_mode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the cloud rendering mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current cloud mode (none, flat, volumetric). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00154">154</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af3973415fe12af38cad3eff4e4b36208" name="af3973415fe12af38cad3eff4e4b36208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3973415fe12af38cad3eff4e4b36208">&#9670;&#160;</a></span>get_cloud_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_speed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the cloud speed multiplier. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current cloud speed multiplier. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00194">194</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a73c2c4639d7db7a442d655c1c36463a2" name="a73c2c4639d7db7a442d655c1c36463a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c2c4639d7db7a442d655c1c36463a2">&#9670;&#160;</a></span>get_cloud_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_time </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the accumulated time for cloud animation. </p>
+<dl class="section return"><dt>Returns</dt><dd>The accumulated time for cloud animation. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="light__component_8h_source.html#l00365">365</a> of file <a class="el" href="light__component_8h_source.html">light_component.h</a>.</p>
+
+</div>
+</div>
+<a id="a0e556c22f2af1d04a8d15cd8aac87fcd" name="a0e556c22f2af1d04a8d15cd8aac87fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e556c22f2af1d04a8d15cd8aac87fcd">&#9670;&#160;</a></span>get_cloud_top_altitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_top_altitude </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the cloud top altitude in world units (volumetric slab top). </p>
+<dl class="section return"><dt>Returns</dt><dd>The current cloud top altitude. Flat clouds ignore this. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00184">184</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abcbfb3e5db314d4bece1e9377c515001" name="abcbfb3e5db314d4bece1e9377c515001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbfb3e5db314d4bece1e9377c515001">&#9670;&#160;</a></span>get_cloud_vol_base_mix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_vol_base_mix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Volumetric cloud shape: blend between coarse and fine base noise. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00294">294</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a59bbb525acba08bfac491704540f90be" name="a59bbb525acba08bfac491704540f90be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59bbb525acba08bfac491704540f90be">&#9670;&#160;</a></span>get_cloud_vol_coarse_scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_vol_coarse_scale </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Volumetric cloud shape: coarse noise sample scale (larger masses). </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00284">284</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6ba7e2c6707e4a4b893c4303522a5625" name="a6ba7e2c6707e4a4b893c4303522a5625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba7e2c6707e4a4b893c4303522a5625">&#9670;&#160;</a></span>get_cloud_vol_detail_erode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_vol_detail_erode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Volumetric cloud shape: Worley detail erosion strength. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00264">264</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6d5a8ae434c1177c6474f4953878352f" name="a6d5a8ae434c1177c6474f4953878352f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d5a8ae434c1177c6474f4953878352f">&#9670;&#160;</a></span>get_cloud_vol_edge_width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_vol_edge_width </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Volumetric cloud shape: smoothstep edge width for the density mask. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00244">244</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a759da3159d3a9fa1e7f7e3e590e9634d" name="a759da3159d3a9fa1e7f7e3e590e9634d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759da3159d3a9fa1e7f7e3e590e9634d">&#9670;&#160;</a></span>get_cloud_vol_macro_strength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_vol_macro_strength </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Volumetric cloud shape: macro Worley threshold jitter (clearings vs sheet). </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00274">274</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8528d82c39c99a4f65b795e06a107418" name="a8528d82c39c99a4f65b795e06a107418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8528d82c39c99a4f65b795e06a107418">&#9670;&#160;</a></span>get_cloud_vol_shape_power()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_vol_shape_power </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Volumetric cloud shape: contrast on the density mask (pow exponent). </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00254">254</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa2f8c466e3b4512a66b4845bb1167919" name="aa2f8c466e3b4512a66b4845bb1167919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f8c466e3b4512a66b4845bb1167919">&#9670;&#160;</a></span>get_cloud_vol_sun_intensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_vol_sun_intensity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Volumetric cloud lighting: sun contribution multiplier in the cloud integrator. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00304">304</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a85b37a0b8ab3bcd5ca7428e65654ae64" name="a85b37a0b8ab3bcd5ca7428e65654ae64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b37a0b8ab3bcd5ca7428e65654ae64">&#9670;&#160;</a></span>get_cloud_vol_uv_scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_cloud_vol_uv_scale </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Volumetric cloud shape: world-to-noise UV scale (smaller = larger features). </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00234">234</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a3af83b45ed3a5da78967d0ad7d157224" name="a3af83b45ed3a5da78967d0ad7d157224"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3af83b45ed3a5da78967d0ad7d157224">&#9670;&#160;</a></span>get_cubemap()</h2>
 
@@ -229,7 +930,127 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__component_8h_source.html#l00123">123</a> of file <a class="el" href="light__component_8h_source.html">light_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__component_8h_source.html#l00352">352</a> of file <a class="el" href="light__component_8h_source.html">light_component.h</a>.</p>
+
+</div>
+</div>
+<a id="a1b9d02cf89f90ef1806c4f3f485bcd61" name="a1b9d02cf89f90ef1806c4f3f485bcd61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9d02cf89f90ef1806c4f3f485bcd61">&#9670;&#160;</a></span>get_irradiance_intensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_irradiance_intensity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the irradiance intensity (strength of indirect diffuse). </p>
+<dl class="section return"><dt>Returns</dt><dd>The irradiance intensity value. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00314">314</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5c25843b84b5053589897fac33efc4f1" name="a5c25843b84b5053589897fac33efc4f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c25843b84b5053589897fac33efc4f1">&#9670;&#160;</a></span>get_irradiance_quality()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_irradiance_quality </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#aad027aaa949b5bb4d5c785d2e970c9c0">irradiance_quality</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the irradiance quality for indirect diffuse. </p>
+<dl class="section return"><dt>Returns</dt><dd>The irradiance quality. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00334">334</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1e495a011c525e7840bd6be181662e5a" name="a1e495a011c525e7840bd6be181662e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e495a011c525e7840bd6be181662e5a">&#9670;&#160;</a></span>get_irradiance_tint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_irradiance_tint </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="structmath_1_1color.html">math::color</a>&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the optional irradiance tint override (default from sky when white). </p>
+<dl class="section return"><dt>Returns</dt><dd>The irradiance tint. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00324">324</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9ca27f9acdecb5730cfa104dc2f409ad" name="a9ca27f9acdecb5730cfa104dc2f409ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca27f9acdecb5730cfa104dc2f409ad">&#9670;&#160;</a></span>get_irradiance_use_sky()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_irradiance_use_sky </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets whether the sky color contributes to the ambient irradiance. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the sky/environment color is used; false for a flat tint-only ambient. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00344">344</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -263,6 +1084,36 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a52e06755fe22f1fb43043826488c5e3e" name="a52e06755fe22f1fb43043826488c5e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e06755fe22f1fb43043826488c5e3e">&#9670;&#160;</a></span>get_sky_brightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::skylight_component::get_sky_brightness </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the sky brightness multiplier (affects atmospheric pass and irradiance). </p>
+<dl class="section return"><dt>Returns</dt><dd>The sky brightness value (1.0 = neutral). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00354">354</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a763bbc8fc120fd86bb53d45090f1508e" name="a763bbc8fc120fd86bb53d45090f1508e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a763bbc8fc120fd86bb53d45090f1508e">&#9670;&#160;</a></span>get_turbidity()</h2>
 
@@ -293,6 +1144,374 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a9c0b0b985cd0b943eefe2c1a18eec9bb" name="a9c0b0b985cd0b943eefe2c1a18eec9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0b0b985cd0b943eefe2c1a18eec9bb">&#9670;&#160;</a></span>set_cloud_absorption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_absorption </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>absorption</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the cloud absorption coefficient. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">absorption</td><td>The absorption to set, in the range [0.01, 0.5]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00219">219</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad6662b54ec7f85a9f75fdf89dee5ed0c" name="ad6662b54ec7f85a9f75fdf89dee5ed0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6662b54ec7f85a9f75fdf89dee5ed0c">&#9670;&#160;</a></span>set_cloud_base_altitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_base_altitude </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>altitude</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the cloud base altitude. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">altitude</td><td>The cloud base altitude to set, in world units. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00179">179</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abdf94b193c764c444909304bd6b7cf86" name="abdf94b193c764c444909304bd6b7cf86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf94b193c764c444909304bd6b7cf86">&#9670;&#160;</a></span>set_cloud_coverage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_coverage </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>coverage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the cloud coverage value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">coverage</td><td>The cloud coverage value to set, in the range 0.0f-1.0f. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00169">169</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af860c71e6bfab96b4b2d074a237f72e1" name="af860c71e6bfab96b4b2d074a237f72e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af860c71e6bfab96b4b2d074a237f72e1">&#9670;&#160;</a></span>set_cloud_density()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_density </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>density</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the cloud density multiplier. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">density</td><td>The cloud density multiplier to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00209">209</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a36a0c7edcc7e4ee39c7cc7dfd6b66df4" name="a36a0c7edcc7e4ee39c7cc7dfd6b66df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a0c7edcc7e4ee39c7cc7dfd6b66df4">&#9670;&#160;</a></span>set_cloud_light_absorption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_light_absorption </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>absorption</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the cloud light absorption (self-shadow strength). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">absorption</td><td>The light absorption to set, in the range [0.01, 0.5]. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00229">229</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a65604a7be2d3026a4c5c1e7df776edcf" name="a65604a7be2d3026a4c5c1e7df776edcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65604a7be2d3026a4c5c1e7df776edcf">&#9670;&#160;</a></span>set_cloud_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aaa37d982c8cbefe4da2e4d69f3f4f67a">cloud_mode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the cloud rendering mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>The cloud mode to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00159">159</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aefa595fb913289382f36bf27b1229e40" name="aefa595fb913289382f36bf27b1229e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefa595fb913289382f36bf27b1229e40">&#9670;&#160;</a></span>set_cloud_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_speed </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speed</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the cloud speed multiplier. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">speed</td><td>The cloud speed multiplier to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00199">199</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad50f4851fff4cacaf693f8cbe93cd52c" name="ad50f4851fff4cacaf693f8cbe93cd52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad50f4851fff4cacaf693f8cbe93cd52c">&#9670;&#160;</a></span>set_cloud_top_altitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_top_altitude </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>altitude</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the cloud top altitude. Must be greater than base altitude. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">altitude</td><td>The cloud top altitude to set, in world units. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00189">189</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13e7dfde4c51d5a517936b431417fd69" name="a13e7dfde4c51d5a517936b431417fd69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e7dfde4c51d5a517936b431417fd69">&#9670;&#160;</a></span>set_cloud_vol_base_mix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_vol_base_mix </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>mix</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00299">299</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad3c8d97b7e538a6917b7b754a0d4a0a5" name="ad3c8d97b7e538a6917b7b754a0d4a0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c8d97b7e538a6917b7b754a0d4a0a5">&#9670;&#160;</a></span>set_cloud_vol_coarse_scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_vol_coarse_scale </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>scale</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00289">289</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a506ab249604e29747f3bc07444546164" name="a506ab249604e29747f3bc07444546164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506ab249604e29747f3bc07444546164">&#9670;&#160;</a></span>set_cloud_vol_detail_erode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_vol_detail_erode </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>erode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00269">269</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3f7a298e39e3ea8dd973deeb8b2b4557" name="a3f7a298e39e3ea8dd973deeb8b2b4557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f7a298e39e3ea8dd973deeb8b2b4557">&#9670;&#160;</a></span>set_cloud_vol_edge_width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_vol_edge_width </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>width</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00249">249</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a305359ab736fa1a78fb22ede26d74f3e" name="a305359ab736fa1a78fb22ede26d74f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a305359ab736fa1a78fb22ede26d74f3e">&#9670;&#160;</a></span>set_cloud_vol_macro_strength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_vol_macro_strength </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>strength</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00279">279</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15b44966a1dfca8bfd10fd03b8de1d7d" name="a15b44966a1dfca8bfd10fd03b8de1d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b44966a1dfca8bfd10fd03b8de1d7d">&#9670;&#160;</a></span>set_cloud_vol_shape_power()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_vol_shape_power </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>power</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00259">259</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa209bc0fcb7ac2bf9ba5f33a6c085442" name="aa209bc0fcb7ac2bf9ba5f33a6c085442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa209bc0fcb7ac2bf9ba5f33a6c085442">&#9670;&#160;</a></span>set_cloud_vol_sun_intensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_vol_sun_intensity </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>intensity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00309">309</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a74b6d469b4713d19ee8796278e648b85" name="a74b6d469b4713d19ee8796278e648b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b6d469b4713d19ee8796278e648b85">&#9670;&#160;</a></span>set_cloud_vol_uv_scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_cloud_vol_uv_scale </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>scale</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00239">239</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a21d2108bfb2957cf2969a274cdb06aa6" name="a21d2108bfb2957cf2969a274cdb06aa6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21d2108bfb2957cf2969a274cdb06aa6">&#9670;&#160;</a></span>set_cubemap()</h2>
 
@@ -316,7 +1535,115 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="light__component_8h_source.html#l00127">127</a> of file <a class="el" href="light__component_8h_source.html">light_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="light__component_8h_source.html#l00356">356</a> of file <a class="el" href="light__component_8h_source.html">light_component.h</a>.</p>
+
+</div>
+</div>
+<a id="a1e040f95a27c56cf50142f538b65413b" name="a1e040f95a27c56cf50142f538b65413b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e040f95a27c56cf50142f538b65413b">&#9670;&#160;</a></span>set_irradiance_intensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_irradiance_intensity </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>intensity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the irradiance intensity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intensity</td><td>The irradiance intensity to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00319">319</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac4188a78eafcc416208c726ec3caee1f" name="ac4188a78eafcc416208c726ec3caee1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4188a78eafcc416208c726ec3caee1f">&#9670;&#160;</a></span>set_irradiance_quality()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_irradiance_quality </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aad027aaa949b5bb4d5c785d2e970c9c0">irradiance_quality</a></td>          <td class="paramname"><span class="paramname"><em>quality</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the irradiance quality. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">quality</td><td>The irradiance quality to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00339">339</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d3bad5bccfc57c82bde926c901c6cf5" name="a1d3bad5bccfc57c82bde926c901c6cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3bad5bccfc57c82bde926c901c6cf5">&#9670;&#160;</a></span>set_irradiance_tint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_irradiance_tint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmath_1_1color.html">math::color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the irradiance tint override. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>The irradiance tint to set (white = use sky-derived color). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00329">329</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2987a223013eacd4872e3ce0e5411472" name="a2987a223013eacd4872e3ce0e5411472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2987a223013eacd4872e3ce0e5411472">&#9670;&#160;</a></span>set_irradiance_use_sky()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_irradiance_use_sky </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>use_sky</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether the sky color contributes to the ambient irradiance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">use_sky</td><td>true to tint the ambient by the sky/environment color, false to use only the irradiance tint as a flat artist-defined ambient (sky ignored). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00349">349</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -347,6 +1674,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a31b15194065c59ad69c733884377510e" name="a31b15194065c59ad69c733884377510e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b15194065c59ad69c733884377510e">&#9670;&#160;</a></span>set_sky_brightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::set_sky_brightness </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>brightness</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the sky brightness multiplier. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">brightness</td><td>The sky brightness to set (1.0 = neutral, &gt;1 brighter, &lt;1 darker). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00359">359</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aa864ef965c870fb2be9dcd2271c44fea" name="aa864ef965c870fb2be9dcd2271c44fea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa864ef965c870fb2be9dcd2271c44fea">&#9670;&#160;</a></span>set_turbidity()</h2>
 
@@ -371,6 +1725,33 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html#l00149">149</a> of file <a class="el" href="rendering_2ecs_2components_2light__component_8cpp_source.html">light_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9fbc13c1503dbb8854defbe5cd6fecad" name="a9fbc13c1503dbb8854defbe5cd6fecad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fbc13c1503dbb8854defbe5cd6fecad">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::skylight_component::update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a></td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="light__component_8h_source.html#l00370">370</a> of file <a class="el" href="light__component_8h_source.html">light_component.h</a>.</p>
 
 </div>
 </div>

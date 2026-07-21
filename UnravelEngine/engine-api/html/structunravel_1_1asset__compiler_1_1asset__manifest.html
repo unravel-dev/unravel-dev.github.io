@@ -113,27 +113,30 @@ $(function(){initNavTree('structunravel_1_1asset__compiler_1_1asset__manifest.ht
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a78f5f8278ea77d3f5391aadd39991df2" id="r_a78f5f8278ea77d3f5391aadd39991df2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78f5f8278ea77d3f5391aadd39991df2">asset_manifest</a> ()=default</td></tr>
 <tr class="separator:a78f5f8278ea77d3f5391aadd39991df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8962e16c39000212eb1813d4cee43dbd" id="r_a8962e16c39000212eb1813d4cee43dbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8962e16c39000212eb1813d4cee43dbd">asset_manifest</a> (const fs::path &amp;source_path)</td></tr>
-<tr class="separator:a8962e16c39000212eb1813d4cee43dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69bf7694b6d97e9039cda47f6742d797" id="r_a69bf7694b6d97e9039cda47f6742d797"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69bf7694b6d97e9039cda47f6742d797">compute_source_sha</a> ()</td></tr>
-<tr class="separator:a69bf7694b6d97e9039cda47f6742d797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0946de5f16101b7817d9fb5b937a4c" id="r_a2d0946de5f16101b7817d9fb5b937a4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d0946de5f16101b7817d9fb5b937a4c">asset_manifest</a> (const fs::path &amp;key)</td></tr>
+<tr class="separator:a2d0946de5f16101b7817d9fb5b937a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97122dd89f7b815d4968529975d436c" id="r_ae97122dd89f7b815d4968529975d436c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae97122dd89f7b815d4968529975d436c">compute_source_fingerprint</a> (const fs::path &amp;source_key)</td></tr>
+<tr class="memdesc:ae97122dd89f7b815d4968529975d436c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute fingerprint from source file only.  <br /></td></tr>
+<tr class="separator:ae97122dd89f7b815d4968529975d436c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f0270410a40b12683b22080b0409da9" id="r_a1f0270410a40b12683b22080b0409da9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f0270410a40b12683b22080b0409da9">compute_source_fingerprint</a> (const fs::path &amp;source_key, const std::vector&lt; fs::path &gt; &amp;dependency_paths)</td></tr>
+<tr class="separator:a1f0270410a40b12683b22080b0409da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a28f25d45bd8df897104c758fa80b18f3" id="r_a28f25d45bd8df897104c758fa80b18f3"><td class="memItemLeft" align="right" valign="top">fs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28f25d45bd8df897104c758fa80b18f3">source_file_path</a></td></tr>
-<tr class="memdesc:a28f25d45bd8df897104c758fa80b18f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the source file.  <br /></td></tr>
-<tr class="separator:a28f25d45bd8df897104c758fa80b18f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0e295a4894af483212df8517dcdc583" id="r_ac0e295a4894af483212df8517dcdc583"><td class="memItemLeft" align="right" valign="top">fs::file_time_type::clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0e295a4894af483212df8517dcdc583">source_timestamp</a></td></tr>
-<tr class="memdesc:ac0e295a4894af483212df8517dcdc583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp when the asset was compiled.  <br /></td></tr>
-<tr class="separator:ac0e295a4894af483212df8517dcdc583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7aeff6132312ab26e112cd5835c41cb" id="r_ae7aeff6132312ab26e112cd5835c41cb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7aeff6132312ab26e112cd5835c41cb">source_sha</a></td></tr>
-<tr class="memdesc:ae7aeff6132312ab26e112cd5835c41cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA1 hash of the source file content.  <br /></td></tr>
-<tr class="separator:ae7aeff6132312ab26e112cd5835c41cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b7f5a313bff39621a352610ed3c365" id="r_a41b7f5a313bff39621a352610ed3c365"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41b7f5a313bff39621a352610ed3c365">source_fingerprint</a></td></tr>
+<tr class="memdesc:a41b7f5a313bff39621a352610ed3c365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content fingerprint of source inputs (xxHash3 128-bit hex).  <br /></td></tr>
+<tr class="separator:a41b7f5a313bff39621a352610ed3c365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1993335cb924e304a88d883dbe904f" id="r_a0f1993335cb924e304a88d883dbe904f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1993335cb924e304a88d883dbe904f">format_version</a> = 0</td></tr>
+<tr class="memdesc:a0f1993335cb924e304a88d883dbe904f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version of the compiled format.  <br /></td></tr>
+<tr class="separator:a0f1993335cb924e304a88d883dbe904f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8563e79c434e179a432edb4f99e585" id="r_afd8563e79c434e179a432edb4f99e585"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd8563e79c434e179a432edb4f99e585">fingerprint_version</a> = 0</td></tr>
+<tr class="memdesc:afd8563e79c434e179a432edb4f99e585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fingerprint algorithm version. Legacy manifests use 0 (SHA1).  <br /></td></tr>
+<tr class="separator:afd8563e79c434e179a432edb4f99e585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manifest data for compiled assets. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__manifest_8h_source.html#l00013">13</a> of file <a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8h_source.html#l00024">24</a> of file <a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a78f5f8278ea77d3f5391aadd39991df2" name="a78f5f8278ea77d3f5391aadd39991df2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78f5f8278ea77d3f5391aadd39991df2">&#9670;&#160;</a></span>asset_manifest() <span class="overload">[1/2]</span></h2>
@@ -160,8 +163,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8962e16c39000212eb1813d4cee43dbd" name="a8962e16c39000212eb1813d4cee43dbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8962e16c39000212eb1813d4cee43dbd">&#9670;&#160;</a></span>asset_manifest() <span class="overload">[2/2]</span></h2>
+<a id="a2d0946de5f16101b7817d9fb5b937a4c" name="a2d0946de5f16101b7817d9fb5b937a4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0946de5f16101b7817d9fb5b937a4c">&#9670;&#160;</a></span>asset_manifest() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +175,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">unravel::asset_compiler::asset_manifest::asset_manifest </td>
           <td>(</td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>source_path</em></span></td><td>)</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -183,82 +186,108 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__manifest_8h_source.html#l00026">26</a> of file <a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8h_source.html#l00038">38</a> of file <a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a69bf7694b6d97e9039cda47f6742d797" name="a69bf7694b6d97e9039cda47f6742d797"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69bf7694b6d97e9039cda47f6742d797">&#9670;&#160;</a></span>compute_source_sha()</h2>
+<a id="ae97122dd89f7b815d4968529975d436c" name="ae97122dd89f7b815d4968529975d436c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97122dd89f7b815d4968529975d436c">&#9670;&#160;</a></span>compute_source_fingerprint() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unravel::asset_compiler::asset_manifest::compute_source_sha </td>
+          <td class="memname">void unravel::asset_compiler::asset_manifest::compute_source_fingerprint </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>source_key</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__manifest_8cpp_source.html#l00016">16</a> of file <a class="el" href="asset__manifest_8cpp_source.html">asset_manifest.cpp</a>.</p>
+<p>Compute fingerprint from source file only. </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8cpp_source.html#l00025">25</a> of file <a class="el" href="asset__manifest_8cpp_source.html">asset_manifest.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1f0270410a40b12683b22080b0409da9" name="a1f0270410a40b12683b22080b0409da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f0270410a40b12683b22080b0409da9">&#9670;&#160;</a></span>compute_source_fingerprint() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::asset_compiler::asset_manifest::compute_source_fingerprint </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>source_key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; fs::path &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>dependency_paths</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compute fingerprint from the source file plus external dependency paths (in that order). If dependency_paths is empty, falls back to source-only. </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8cpp_source.html#l00030">30</a> of file <a class="el" href="asset__manifest_8cpp_source.html">asset_manifest.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a28f25d45bd8df897104c758fa80b18f3" name="a28f25d45bd8df897104c758fa80b18f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28f25d45bd8df897104c758fa80b18f3">&#9670;&#160;</a></span>source_file_path</h2>
+<a id="afd8563e79c434e179a432edb4f99e585" name="afd8563e79c434e179a432edb4f99e585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd8563e79c434e179a432edb4f99e585">&#9670;&#160;</a></span>fingerprint_version</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fs::path unravel::asset_compiler::asset_manifest::source_file_path</td>
+          <td class="memname">uint64_t unravel::asset_compiler::asset_manifest::fingerprint_version = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Path to the source file. </p>
+<p>Fingerprint algorithm version. Legacy manifests use 0 (SHA1). </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__manifest_8h_source.html#l00016">16</a> of file <a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8h_source.html#l00034">34</a> of file <a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>.</p>
 
 </div>
 </div>
-<a id="ae7aeff6132312ab26e112cd5835c41cb" name="ae7aeff6132312ab26e112cd5835c41cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7aeff6132312ab26e112cd5835c41cb">&#9670;&#160;</a></span>source_sha</h2>
+<a id="a0f1993335cb924e304a88d883dbe904f" name="a0f1993335cb924e304a88d883dbe904f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f1993335cb924e304a88d883dbe904f">&#9670;&#160;</a></span>format_version</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string unravel::asset_compiler::asset_manifest::source_sha</td>
+          <td class="memname">uint64_t unravel::asset_compiler::asset_manifest::format_version = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>SHA1 hash of the source file content. </p>
+<p>Version of the compiled format. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__manifest_8h_source.html#l00021">21</a> of file <a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8h_source.html#l00031">31</a> of file <a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>.</p>
 
 </div>
 </div>
-<a id="ac0e295a4894af483212df8517dcdc583" name="ac0e295a4894af483212df8517dcdc583"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0e295a4894af483212df8517dcdc583">&#9670;&#160;</a></span>source_timestamp</h2>
+<a id="a41b7f5a313bff39621a352610ed3c365" name="a41b7f5a313bff39621a352610ed3c365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41b7f5a313bff39621a352610ed3c365">&#9670;&#160;</a></span>source_fingerprint</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fs::file_time_type::clock::time_point unravel::asset_compiler::asset_manifest::source_timestamp</td>
+          <td class="memname">std::string unravel::asset_compiler::asset_manifest::source_fingerprint</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Timestamp when the asset was compiled. </p>
+<p>Content fingerprint of source inputs (xxHash3 128-bit hex). </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__manifest_8h_source.html#l00018">18</a> of file <a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manifest_8h_source.html#l00028">28</a> of file <a class="el" href="asset__manifest_8h_source.html">asset_manifest.h</a>.</p>
 
 </div>
 </div>

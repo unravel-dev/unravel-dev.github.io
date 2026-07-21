@@ -9,8 +9,9 @@ var classunravel_1_1rendering__system =
     [ "on_frame_end", "classunravel_1_1rendering__system.html#a585c297d3a949660e0c2a2f732c3acc2", null ],
     [ "on_frame_update", "classunravel_1_1rendering__system.html#a4390c5201ac235270baa800f97dd16b4", null ],
     [ "on_play_begin", "classunravel_1_1rendering__system.html#a04e26459e6d013080c745d5fa851e898", null ],
-    [ "render_scene", "classunravel_1_1rendering__system.html#a2592b79201124e7e24b4d2deea5f2cf0", null ],
+    [ "release_pipeline_resources", "classunravel_1_1rendering__system.html#a70eb21632c7fa9fca95d9d9bf1a254c9", null ],
+    [ "render_scene", "classunravel_1_1rendering__system.html#a3c4c39a3ce329ec1236790b01ff377e1", null ],
     [ "render_scene", "classunravel_1_1rendering__system.html#a76939edc66dd4d20a3d94c6487b79286", null ],
-    [ "render_scene", "classunravel_1_1rendering__system.html#aa23dba02985909b1a10eed2aa04c2f9b", null ],
+    [ "render_scene", "classunravel_1_1rendering__system.html#aaed3052adef395e56cd412cf513d7497", null ],
     [ "render_scene", "classunravel_1_1rendering__system.html#aa24da61e9eeaa0c91b6b3e58751186b9", null ]
 ];

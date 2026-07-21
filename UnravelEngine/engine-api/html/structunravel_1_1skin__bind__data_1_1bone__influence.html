@@ -118,11 +118,13 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9e0dc82195048e8b1e6b05e21b0c1263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceec63abc8026613b9cb71f86883c8aa" id="r_aceec63abc8026613b9cb71f86883c8aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1skin__bind__data.html#a6e7f2dd52d8a6531dd45e6888962f4d1">vertex_influence_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aceec63abc8026613b9cb71f86883c8aa">influences</a></td></tr>
 <tr class="separator:aceec63abc8026613b9cb71f86883c8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b24a88033acdb8d6f5fa2f5b57c851b" id="r_a0b24a88033acdb8d6f5fa2f5b57c851b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmath_1_1bbox.html">math::bbox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b24a88033acdb8d6f5fa2f5b57c851b">bounds</a> {}</td></tr>
+<tr class="separator:a0b24a88033acdb8d6f5fa2f5b57c851b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes the vertices that are connected to the referenced bone and how much influence it has on them. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00062">62</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00070">70</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a9e0dc82195048e8b1e6b05e21b0c1263" name="a9e0dc82195048e8b1e6b05e21b0c1263"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e0dc82195048e8b1e6b05e21b0c1263">&#9670;&#160;</a></span>bind_pose_transform</h2>
@@ -138,7 +140,7 @@ Public Attributes</h2></td></tr>
 
 <p>List of vertices influenced by the bone. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00067">67</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00075">75</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -157,7 +159,23 @@ Public Attributes</h2></td></tr>
 <p>&lt; The unique identifier of the bone. </p>
 <p>The "bind pose" or "offset" transform of the bone. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00065">65</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00073">73</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a id="a0b24a88033acdb8d6f5fa2f5b57c851b" name="a0b24a88033acdb8d6f5fa2f5b57c851b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b24a88033acdb8d6f5fa2f5b57c851b">&#9670;&#160;</a></span>bounds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmath_1_1bbox.html">math::bbox</a> unravel::skin_bind_data::bone_influence::bounds {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00082">82</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -172,8 +190,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Bone-space bounds of all vertices influenced by this bone (vertex positions pre-multiplied by the bind pose transform). Transforming this box by the bone's world transform yields a conservative world-space bound of the skinned vertices, enabling frustum culling of animated meshes. May be unpopulated for legacy assets. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00069">69</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00077">77</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>

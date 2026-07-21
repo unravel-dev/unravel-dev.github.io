@@ -12,6 +12,6 @@ var classunravel_1_1animation__player =
     [ "set_blend_space", "classunravel_1_1animation__player.html#a38fbc40696bc809e42214b8ac4321fa0", null ],
     [ "set_blend_space_parameters", "classunravel_1_1animation__player.html#a8a45a09fc55c72c63ccefe389c426398", null ],
     [ "stop", "classunravel_1_1animation__player.html#a47584299c23e4917f188f904981872f8", null ],
-    [ "update_poses", "classunravel_1_1animation__player.html#af530870704c757535b504c2eae26fbb9", null ],
+    [ "update_poses", "classunravel_1_1animation__player.html#ac5a82e0e9fb0c5bcf6973d640212f421", null ],
     [ "update_time", "classunravel_1_1animation__player.html#abc6fac19b75d2c2ae162a5d9a33ca2d4", null ]
 ];

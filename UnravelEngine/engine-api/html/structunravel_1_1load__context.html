@@ -109,7 +109,7 @@ $(function(){initNavTree('structunravel_1_1load__context.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1load__context_1_1uid__mapping__t.html">uid_mapping_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1load__context_1_1prefab__uid__mapping__t.html">prefab_uid_mapping_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -123,18 +123,22 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a6a277abd466af2e0d5d6f2253e2830cc" id="r_a6a277abd466af2e0d5d6f2253e2830cc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structunravel_1_1entity__data.html">entity_data</a>&lt; entt::handle &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a277abd466af2e0d5d6f2253e2830cc">entities</a></td></tr>
+<tr class="separator:a6a277abd466af2e0d5d6f2253e2830cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed22b9b63958fc9e8ecd754edd711ad" id="r_a2ed22b9b63958fc9e8ecd754edd711ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceunravel.html#acaef721adab770c45d7c349648f72025">clone_mode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ed22b9b63958fc9e8ecd754edd711ad">clone_mode</a> {}</td></tr>
 <tr class="separator:a2ed22b9b63958fc9e8ecd754edd711ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64cc1909b70de207ecd6ecb5bf48821c" id="r_a64cc1909b70de207ecd6ecb5bf48821c"><td class="memItemLeft" align="right" valign="top">entt::registry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64cc1909b70de207ecd6ecb5bf48821c">reg</a> {}</td></tr>
 <tr class="separator:a64cc1909b70de207ecd6ecb5bf48821c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43058b320717bc812702081426f123b9" id="r_a43058b320717bc812702081426f123b9"><td class="memItemLeft" align="right" valign="top">std::map&lt; entt::entity, entt::handle &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43058b320717bc812702081426f123b9">mapping_by_eid</a></td></tr>
 <tr class="separator:a43058b320717bc812702081426f123b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa38446da1e0e1872d6a3233106ebd8e" id="r_afa38446da1e0e1872d6a3233106ebd8e"><td class="memItemLeft" align="right" valign="top">std::map&lt; hpp::uuid, <a class="el" href="structunravel_1_1load__context_1_1uid__mapping__t.html">uid_mapping_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa38446da1e0e1872d6a3233106ebd8e">mapping_by_uid</a></td></tr>
-<tr class="separator:afa38446da1e0e1872d6a3233106ebd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ce852cd84e922c5fd78e1eb5c61942" id="r_aa8ce852cd84e922c5fd78e1eb5c61942"><td class="memItemLeft" align="right" valign="top">std::map&lt; hpp::uuid, entt::handle &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8ce852cd84e922c5fd78e1eb5c61942">mapping_by_uid</a></td></tr>
+<tr class="separator:aa8ce852cd84e922c5fd78e1eb5c61942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f47eeb92b11ddc157c45d2a01d02c54" id="r_a8f47eeb92b11ddc157c45d2a01d02c54"><td class="memItemLeft" align="right" valign="top">std::map&lt; hpp::uuid, <a class="el" href="structunravel_1_1load__context_1_1prefab__uid__mapping__t.html">prefab_uid_mapping_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f47eeb92b11ddc157c45d2a01d02c54">mapping_by_prefab_uid</a></td></tr>
+<tr class="separator:a8f47eeb92b11ddc157c45d2a01d02c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00040">40</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00053">53</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3b31c93fa72f9be1e61e576d8d855248" name="a3b31c93fa72f9be1e61e576d8d855248"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b31c93fa72f9be1e61e576d8d855248">&#9670;&#160;</a></span>get_clone_mode()</h2>
@@ -160,7 +164,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00042">42</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00055">55</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
 
 </div>
 </div>
@@ -188,7 +192,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00047">47</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00060">60</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
 
 </div>
 </div>
@@ -216,7 +220,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00052">52</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00065">65</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
 
 </div>
 </div>
@@ -233,7 +237,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00057">57</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00072">72</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6a277abd466af2e0d5d6f2253e2830cc" name="a6a277abd466af2e0d5d6f2253e2830cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a277abd466af2e0d5d6f2253e2830cc">&#9670;&#160;</a></span>entities</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structunravel_1_1entity__data.html">entity_data</a>&lt;entt::handle&gt; &gt; unravel::load_context::entities</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00071">71</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
 
 </div>
 </div>
@@ -249,23 +269,39 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00061">61</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00076">76</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
 
 </div>
 </div>
-<a id="afa38446da1e0e1872d6a3233106ebd8e" name="afa38446da1e0e1872d6a3233106ebd8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa38446da1e0e1872d6a3233106ebd8e">&#9670;&#160;</a></span>mapping_by_uid</h2>
+<a id="a8f47eeb92b11ddc157c45d2a01d02c54" name="a8f47eeb92b11ddc157c45d2a01d02c54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f47eeb92b11ddc157c45d2a01d02c54">&#9670;&#160;</a></span>mapping_by_prefab_uid</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;hpp::uuid, <a class="el" href="structunravel_1_1load__context_1_1uid__mapping__t.html">uid_mapping_t</a>&gt; unravel::load_context::mapping_by_uid</td>
+          <td class="memname">std::map&lt;hpp::uuid, <a class="el" href="structunravel_1_1load__context_1_1prefab__uid__mapping__t.html">prefab_uid_mapping_t</a>&gt; unravel::load_context::mapping_by_prefab_uid</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00070">70</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00088">88</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa8ce852cd84e922c5fd78e1eb5c61942" name="aa8ce852cd84e922c5fd78e1eb5c61942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ce852cd84e922c5fd78e1eb5c61942">&#9670;&#160;</a></span>mapping_by_uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;hpp::uuid, entt::handle&gt; unravel::load_context::mapping_by_uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00079">79</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
 
 </div>
 </div>
@@ -281,7 +317,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00058">58</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="entity_8hpp_source.html#l00073">73</a> of file <a class="el" href="entity_8hpp_source.html">entity.hpp</a>.</p>
 
 </div>
 </div>

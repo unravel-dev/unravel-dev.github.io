@@ -5,9 +5,6 @@ var structunravel_1_1events =
     [ "skip_next_frame", "structunravel_1_1events.html#a2ca71e122365b5862a1e1e02a659294b", null ],
     [ "toggle_pause", "structunravel_1_1events.html#ac63239f25c9e3a1f51d16795255a6a60", null ],
     [ "toggle_play_mode", "structunravel_1_1events.html#aa9c18010d8f45c7370ac79d2a836afa2", null ],
-    [ "frames_playing", "structunravel_1_1events.html#a75a424170c33c746c1d032c7f6ab34b2", null ],
-    [ "is_paused", "structunravel_1_1events.html#ab2459a8a6a140028a911ac516a7bf0ba", null ],
-    [ "is_playing", "structunravel_1_1events.html#ae4a53e3587d728c888b7f6901644807d", null ],
     [ "on_frame_before_render", "structunravel_1_1events.html#a635dbf93bb6a19145c91fbd419499d81", null ],
     [ "on_frame_begin", "structunravel_1_1events.html#a6648ec298271b57b9ae2cd4f312eb72a", null ],
     [ "on_frame_end", "structunravel_1_1events.html#a7e5c225decac6988976306f4cd605c3d", null ],
@@ -20,6 +17,7 @@ var structunravel_1_1events =
     [ "on_play_before_begin", "structunravel_1_1events.html#ac385b7dcca95b356d89e1d100df20bef", null ],
     [ "on_play_begin", "structunravel_1_1events.html#a6adf71dd583ffecf770cbce39d434183", null ],
     [ "on_play_end", "structunravel_1_1events.html#acdfbf4448ae90dc4898b4f610fd93654", null ],
+    [ "on_project_opened", "structunravel_1_1events.html#a776e84cb348571586d827822bce1a475", null ],
     [ "on_resume", "structunravel_1_1events.html#a44ae360a3c08e2f970d1de285d1e4c43", null ],
     [ "on_script_recompile", "structunravel_1_1events.html#ac2d6bec275b69748e929ff339ed640e3", null ],
     [ "on_skip_next_frame", "structunravel_1_1events.html#a2e1999b5cb83614183d21c75eb6cb9e1", null ]

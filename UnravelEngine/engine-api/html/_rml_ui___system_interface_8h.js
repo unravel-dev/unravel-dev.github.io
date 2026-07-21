@@ -1,6 +1,7 @@
 var _rml_ui___system_interface_8h =
 [
     [ "unravel::RmlUi_SystemInterface", "classunravel_1_1_rml_ui___system_interface.html", "classunravel_1_1_rml_ui___system_interface" ],
+    [ "consume_input_event", "_rml_ui___system_interface_8h.html#a1b89e81f2d38875a9adcf352bbb18afc", null ],
     [ "convert_key", "_rml_ui___system_interface_8h.html#a197f7e9ace7011478d7a457cd67dcb97", null ],
     [ "convert_mouse_button", "_rml_ui___system_interface_8h.html#a402f3eb7044a778b3a4b33ad9931ef99", null ],
     [ "convert_rml_key_to_input", "_rml_ui___system_interface_8h.html#aad2f4abf83bce9695d8c2c13349c5796", null ],

@@ -9,7 +9,6 @@ var dir_512252a15e49f7f660c0f38ec0631763 =
     [ "samples", "dir_df20eb6ae57ebb8c3f5a7bf963de2fcf.html", "dir_df20eb6ae57ebb8c3f5a7bf963de2fcf" ],
     [ "scene", "dir_bd14f749875b4f591746902967d37e3f.html", "dir_bd14f749875b4f591746902967d37e3f" ],
     [ "system", "dir_cca516fb73a53868a1f0c46cee8dec45.html", "dir_cca516fb73a53868a1f0c46cee8dec45" ],
-    [ "template", "dir_d3aea664133e53c884e2498bebfee676.html", "dir_d3aea664133e53c884e2498bebfee676" ],
     [ "test", "dir_973df6f80b2ec7e0446fdbc6f0583842.html", "dir_973df6f80b2ec7e0446fdbc6f0583842" ],
     [ "ui", "dir_a57ee1217c2afdf3d7962a30beaefffd.html", "dir_a57ee1217c2afdf3d7962a30beaefffd" ]
 ];

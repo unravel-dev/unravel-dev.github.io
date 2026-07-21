@@ -31,6 +31,7 @@ var config_8hpp =
     [ "UNRAVEL_CRT_NAME", "config_8hpp.html#a152be0c8394c2c759d5ddc0a028fe30e", null ],
     [ "UNRAVEL_CRT_NEWLIB", "config_8hpp.html#aa6a78868e8042cc31a8be77c29d59038", null ],
     [ "UNRAVEL_CRT_NONE", "config_8hpp.html#afd51e456a524eebadda9835029932cf9", null ],
+    [ "UNRAVEL_DEBUG", "config_8hpp.html#accecbf1edcca32032c7c945442356d86", null ],
     [ "UNRAVEL_LANGUAGE_CPP17", "config_8hpp.html#a631c593732b9fcb41f0fb0801197879f", null ],
     [ "UNRAVEL_LANGUAGE_CPP20", "config_8hpp.html#ae1ef377fd81cd0d712f5be48f872da4d", null ],
     [ "UNRAVEL_LANGUAGE_CPP23", "config_8hpp.html#a0e8e35ea5f16a3240fc3ff3111f53a52", null ],
@@ -57,5 +58,6 @@ var config_8hpp =
     [ "UNRAVEL_PLATFORM_VISIONOS", "config_8hpp.html#a287f778fa92235a3a01ebe9be9f08fb0", null ],
     [ "UNRAVEL_PLATFORM_WINDOWS", "config_8hpp.html#a1144cf678796dd0e3b40cb4e3d47416b", null ],
     [ "UNRAVEL_PLATFORM_WINRT", "config_8hpp.html#aa323954ba09b6fdde447baf3de1e1497", null ],
-    [ "UNRAVEL_PLATFORM_XBOXONE", "config_8hpp.html#aeb7af65b9efd2368989719be2550b8bb", null ]
+    [ "UNRAVEL_PLATFORM_XBOXONE", "config_8hpp.html#aeb7af65b9efd2368989719be2550b8bb", null ],
+    [ "UNRAVEL_RELEASE", "config_8hpp.html#a9dc4a109b0f1e101ab8bbd76c101fa0e", null ]
 ];

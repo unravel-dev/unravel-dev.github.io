@@ -109,7 +109,7 @@ $(function(){initNavTree('gradient_8hpp_source.html',''); initResizable(true); }
 <div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#a8e9a0ae0be1463006e221a2114c8191f">    8</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classmath_1_1gradient.html#a8e9a0ae0be1463006e221a2114c8191f">gradient&lt;T&gt;::add_point</a>(<span class="keyword">const</span> T&amp; element, <span class="keywordtype">float</span> progress) -&gt; <span class="keywordtype">size_t</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_struct" href="structmath_1_1gradient__point.html">point_t</a> <a class="code hl_variable" href="scripting_2ecs_2components_2script__component_8cpp.html#a42875751f5c08f633eb69c2af89a13d6">point</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_struct" href="structmath_1_1gradient__point.html">point_t</a> <a class="code hl_struct" href="structpoint.html">point</a>;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_struct" href="structpoint.html">point</a>.element = element;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_struct" href="structpoint.html">point</a>.progress = progress;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    points_.emplace_back(<a class="code hl_struct" href="structpoint.html">point</a>);</div>
@@ -125,14 +125,14 @@ $(function(){initNavTree('gradient_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#aec6a730d93f2844b81dcaaae8e791ef9">   24</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classmath_1_1gradient.html#aec6a730d93f2844b81dcaaae8e791ef9">gradient&lt;T&gt;::remove_point</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#aec6a730d93f2844b81dcaaae8e791ef9">   24</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classmath_1_1gradient.html#aec6a730d93f2844b81dcaaae8e791ef9">gradient&lt;T&gt;::remove_point</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>)</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span>(index &gt;= <span class="keywordtype">int</span>(points_.size()))</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a> &gt;= <span class="keywordtype">int</span>(points_.size()))</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    points_.erase(points_.begin() + index);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    points_.erase(points_.begin() + <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    std::sort(points_.begin(), points_.end());</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    mark_lut_dirty(); <span class="comment">// Invalidate LUT when gradient changes</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
@@ -176,11 +176,11 @@ $(function(){initNavTree('gradient_8hpp_source.html',''); initResizable(true); }
 <div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#a2ca1bc997214f88a58247b8b6b48df29">   61</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#a29b1a017db2daeeca9629c88b26c6b51">   62</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classmath_1_1gradient.html#a29b1a017db2daeeca9629c88b26c6b51">gradient&lt;T&gt;::set_progress</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">float</span> progress)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#a29b1a017db2daeeca9629c88b26c6b51">   62</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classmath_1_1gradient.html#a29b1a017db2daeeca9629c88b26c6b51">gradient&lt;T&gt;::set_progress</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>, <span class="keywordtype">float</span> progress)</div>
 <div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#a65fa1fde06b5a078e5325ab3dd3b42f4">   63</a></span>{</div>
 <div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#ae23753f83fcf51bbfba2b1aafe0af03c">   64</a></span>    <span class="keywordflow">if</span>(index &gt;= <span class="keywordtype">int</span>(points_.size()))</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#ae23753f83fcf51bbfba2b1aafe0af03c">   64</a></span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a> &gt;= <span class="keywordtype">int</span>(points_.size()))</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
 <div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#ae9b84a6f394d3a865ded0f51fad41c61">   66</a></span>        <span class="keywordflow">return</span>;</div>
@@ -188,7 +188,7 @@ $(function(){initNavTree('gradient_8hpp_source.html',''); initResizable(true); }
 <div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#a2fe6fef7b4bf0b47409b16964038048c">   68</a></span> </div>
 <div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#af25f227a529789356d128bee35b688b1">   69</a></span>    points_[index].progress = progress;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#af25f227a529789356d128bee35b688b1">   69</a></span>    points_[<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>].progress = progress;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    std::sort(points_.begin(), points_.end());</div>
 <div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#ad26a4025c868c1742b026ce7dc740e7b">   71</a></span>    mark_lut_dirty(); <span class="comment">// Invalidate LUT when gradient changes</span></div>
@@ -197,42 +197,42 @@ $(function(){initNavTree('gradient_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#aaef8e41681768d99b135cefcc3aa0034">   75</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classmath_1_1gradient.html#a2ca1bc997214f88a58247b8b6b48df29">gradient&lt;T&gt;::get_progress</a>(<span class="keywordtype">int</span> index) -&gt; <span class="keywordtype">float</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#aaef8e41681768d99b135cefcc3aa0034">   75</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classmath_1_1gradient.html#a2ca1bc997214f88a58247b8b6b48df29">gradient&lt;T&gt;::get_progress</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>) -&gt; <span class="keywordtype">float</span></div>
 <div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#a523fbaeff4129d752377a120501763d3">   76</a></span>{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span>(index &gt;= <span class="keywordtype">int</span>(points_.size()))</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a> &gt;= <span class="keywordtype">int</span>(points_.size()))</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
 <div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#a309d008248f593e7cbf9645a06f216c9">   79</a></span>        <span class="keywordflow">return</span> 0.0f;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> points_[index].progress;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> points_[<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>].progress;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#a65fa1fde06b5a078e5325ab3dd3b42f4">   86</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classmath_1_1gradient.html#a65fa1fde06b5a078e5325ab3dd3b42f4">gradient&lt;T&gt;::set_element</a>(<span class="keywordtype">int</span> index, <span class="keyword">const</span> T&amp; element)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#a65fa1fde06b5a078e5325ab3dd3b42f4">   86</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classmath_1_1gradient.html#a65fa1fde06b5a078e5325ab3dd3b42f4">gradient&lt;T&gt;::set_element</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>, <span class="keyword">const</span> T&amp; element)</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">if</span>(index &gt;= <span class="keywordtype">int</span>(points_.size()))</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a> &gt;= <span class="keywordtype">int</span>(points_.size()))</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    {</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    points_[index].element = element;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    points_[<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>].element = element;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    mark_lut_dirty(); <span class="comment">// Invalidate LUT when gradient changes</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
 </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00098" data-start="{" data-end="}">
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#ae23753f83fcf51bbfba2b1aafe0af03c">   98</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classmath_1_1gradient.html#ae23753f83fcf51bbfba2b1aafe0af03c">gradient&lt;T&gt;::get_element</a>(<span class="keywordtype">int</span> index) -&gt; T</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classmath_1_1gradient.html#ae23753f83fcf51bbfba2b1aafe0af03c">   98</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classmath_1_1gradient.html#ae23753f83fcf51bbfba2b1aafe0af03c">gradient&lt;T&gt;::get_element</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>) -&gt; T</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>{</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">if</span>(index &gt;= <span class="keywordtype">int</span>(points_.size()))</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a> &gt;= <span class="keywordtype">int</span>(points_.size()))</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    {</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span> {};</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> points_[index].element;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> points_[<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>].element;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
 </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
@@ -412,17 +412,17 @@ $(function(){initNavTree('gradient_8hpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    </div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="comment">// Calculate LUT index with fractional part</span></div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> index_f = progress * float(lut_size_ - 1);</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> index = size_t(index_f);</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> frac = index_f - float(index);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a> = size_t(index_f);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> frac = index_f - float(<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>);</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    </div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="comment">// Handle edge case</span></div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordflow">if</span>(index &gt;= lut_size_ - 1)</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a> &gt;= lut_size_ - 1)</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    {</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordflow">return</span> lut_.back();</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    </div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="comment">// Linear interpolation between LUT entries for smooth results</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemath.html#a71d11a7e457713c45130ec20e0426411">gradient_lerp</a>(lut_[index], lut_[index + 1], frac);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemath.html#a71d11a7e457713c45130ec20e0426411">gradient_lerp</a>(lut_[<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>], lut_[<a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a> + 1], frac);</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>}</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>} <span class="comment">// namespace math</span></div>
@@ -460,6 +460,7 @@ $(function(){initNavTree('gradient_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="aclassmath_1_1gradient_html_ae9b84a6f394d3a865ded0f51fad41c61"><div class="ttname"><a href="classmath_1_1gradient.html#ae9b84a6f394d3a865ded0f51fad41c61">math::gradient::reverse</a></div><div class="ttdeci">void reverse()</div><div class="ttdef"><b>Definition</b> <a href="#l00051">gradient.hpp:51</a></div></div>
 <div class="ttc" id="aclassmath_1_1gradient_html_aec6a730d93f2844b81dcaaae8e791ef9"><div class="ttname"><a href="classmath_1_1gradient.html#aec6a730d93f2844b81dcaaae8e791ef9">math::gradient::remove_point</a></div><div class="ttdeci">void remove_point(int index)</div><div class="ttdef"><b>Definition</b> <a href="#l00024">gradient.hpp:24</a></div></div>
 <div class="ttc" id="aclassmath_1_1gradient_html_af25f227a529789356d128bee35b688b1"><div class="ttname"><a href="classmath_1_1gradient.html#af25f227a529789356d128bee35b688b1">math::gradient::sample</a></div><div class="ttdeci">auto sample(float progress) const -&gt; T</div><div class="ttdef"><b>Definition</b> <a href="#l00115">gradient.hpp:115</a></div></div>
+<div class="ttc" id="agpu__frame__stats__widgets_8cpp_html_a3f42f10d93f6edb91d7d3f6edad25921"><div class="ttname"><a href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a></div><div class="ttdeci">uint16_t index</div><div class="ttdef"><b>Definition</b> <a href="gpu__frame__stats__widgets_8cpp_source.html#l00031">gpu_frame_stats_widgets.cpp:31</a></div></div>
 <div class="ttc" id="agradient_8h_html"><div class="ttname"><a href="gradient_8h.html">gradient.h</a></div></div>
 <div class="ttc" id="anamespacemath_html"><div class="ttname"><a href="namespacemath.html">math</a></div><div class="ttdef"><b>Definition</b> <a href="bbox_8cpp_source.html#l00004">bbox.cpp:5</a></div></div>
 <div class="ttc" id="anamespacemath_html_a71d11a7e457713c45130ec20e0426411"><div class="ttname"><a href="namespacemath.html#a71d11a7e457713c45130ec20e0426411">math::gradient_lerp</a></div><div class="ttdeci">auto gradient_lerp(const vec4 &amp;start, const vec4 &amp;end, float progress) -&gt; vec4</div><div class="ttdef"><b>Definition</b> <a href="gradient_8cpp_source.html#l00008">gradient.cpp:8</a></div></div>
@@ -469,7 +470,6 @@ $(function(){initNavTree('gradient_8hpp_source.html',''); initResizable(true); }
 <div class="ttc" id="anamespaceunravel_html_a1bffd1866c76016b12fca8eee898d73ba53cced8d281a1a0ace3cb6594daaa4f7"><div class="ttname"><a href="namespaceunravel.html#a1bffd1866c76016b12fca8eee898d73ba53cced8d281a1a0ace3cb6594daaa4f7">unravel::sm_resolution::low</a></div><div class="ttdeci">@ low</div></div>
 <div class="ttc" id="anamespaceunravel_html_a1bffd1866c76016b12fca8eee898d73ba8d966b2253a917086c8604959e152243"><div class="ttname"><a href="namespaceunravel.html#a1bffd1866c76016b12fca8eee898d73ba8d966b2253a917086c8604959e152243">unravel::sm_resolution::high</a></div><div class="ttdeci">@ high</div></div>
 <div class="ttc" id="anamespaceunravel_html_a5b241d7d7938bb69f6735a0ccd60891ea4409a416357089cc9b780a485b99d46b"><div class="ttname"><a href="namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891ea4409a416357089cc9b780a485b99d46b">unravel::middle</a></div><div class="ttdeci">@ middle</div><div class="ttdef"><b>Definition</b> <a href="text__component_8h_source.html#l00023">text_component.h:23</a></div></div>
-<div class="ttc" id="ascripting_2ecs_2components_2script__component_8cpp_html_a42875751f5c08f633eb69c2af89a13d6"><div class="ttname"><a href="scripting_2ecs_2components_2script__component_8cpp.html#a42875751f5c08f633eb69c2af89a13d6">point</a></div><div class="ttdeci">managed_vector3 point</div><div class="ttdef"><b>Definition</b> <a href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00022">script_component.cpp:22</a></div></div>
 <div class="ttc" id="astructmath_1_1gradient__point_html"><div class="ttname"><a href="structmath_1_1gradient__point.html">math::gradient_point</a></div><div class="ttdef"><b>Definition</b> <a href="gradient_8h_source.html#l00028">gradient.h:29</a></div></div>
 <div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdef"><b>Definition</b> <a href="core_2base_2basetypes_8hpp_source.html#l00096">basetypes.hpp:97</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

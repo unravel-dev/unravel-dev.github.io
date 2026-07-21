@@ -38,6 +38,7 @@ var _rml_ui___render_interface_8h =
       [ "Weights", "_rml_ui___render_interface_8h.html#a448bc584dc8d55f52d61587ba1c5ba2fa8831731b52fdc6cb7f162f9767d66e4d", null ],
       [ "Value", "_rml_ui___render_interface_8h.html#a448bc584dc8d55f52d61587ba1c5ba2fa689202409e48743b914713f96d93947c", null ],
       [ "Dimensions", "_rml_ui___render_interface_8h.html#a448bc584dc8d55f52d61587ba1c5ba2faf4843c1c797abf1a256c8802b6cd9f51", null ],
+      [ "TexRequiresPremultiplication", "_rml_ui___render_interface_8h.html#a448bc584dc8d55f52d61587ba1c5ba2faa4b516fba4a5a3c9dab99a622a9d756e", null ],
       [ "Count", "_rml_ui___render_interface_8h.html#a448bc584dc8d55f52d61587ba1c5ba2fae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ]
 ];

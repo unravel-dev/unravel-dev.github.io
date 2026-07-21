@@ -114,21 +114,15 @@ Inheritance diagram for unravel::owned_component:</div>
  <div class="center">
   <img src="classunravel_1_1owned__component.png" usemap="#unravel::owned_5Fcomponent_map" alt=""/>
   <map id="unravel::owned_5Fcomponent_map" name="unravel::owned_5Fcomponent_map">
-<area href="structunravel_1_1basic__component.html" title="Basic component structure that other components can inherit from." alt="unravel::basic_component" shape="rect" coords="1359,0,1802,24"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; model_component, owned_component &gt;" shape="rect" coords="0,112,443,136"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; particle_emitter_component, owned_component &gt;" shape="rect" coords="453,112,896,136"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; physics_component, owned_component &gt;" shape="rect" coords="906,112,1349,136"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; prefab_component, owned_component &gt;" shape="rect" coords="1359,112,1802,136"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; script_component, owned_component &gt;" shape="rect" coords="1812,112,2255,136"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; transform_component, owned_component &gt;" shape="rect" coords="2265,112,2708,136"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; ui_document_component, owned_component &gt;" shape="rect" coords="2718,112,3161,136"/>
-<area href="classunravel_1_1model__component.html" title="Class that contains core data for meshes." alt="unravel::model_component" shape="rect" coords="0,168,443,192"/>
-<area href="classunravel_1_1particle__emitter__component.html" title="Component that wraps particle system emitter functionality." alt="unravel::particle_emitter_component" shape="rect" coords="453,168,896,192"/>
-<area href="classunravel_1_1physics__component.html" title="Component that handles physics properties and behaviors." alt="unravel::physics_component" shape="rect" coords="906,168,1349,192"/>
-<area href="structunravel_1_1prefab__component.html" title="Component that holds a reference to a prefab asset and tracks property overrides." alt="unravel::prefab_component" shape="rect" coords="1359,168,1802,192"/>
-<area href="classunravel_1_1script__component.html" title="Class that contains core data for audio listeners. There can only be one instance of it per scene." alt="unravel::script_component" shape="rect" coords="1812,168,2255,192"/>
-<area href="classunravel_1_1transform__component.html" title="Component that handles transformations (position, rotation, scale, etc.) in the ACE framework." alt="unravel::transform_component" shape="rect" coords="2265,168,2708,192"/>
-<area href="structunravel_1_1ui__document__component.html" title="Component that holds a reference to a UI document for RmlUi rendering." alt="unravel::ui_document_component" shape="rect" coords="2718,168,3161,192"/>
+<area href="structunravel_1_1basic__component.html" title="Basic component structure that other components can inherit from." alt="unravel::basic_component" shape="rect" coords="0,0,473,24"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; character_controller_component, owned_component &gt;" shape="rect" coords="483,112,956,136"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; model_component, owned_component &gt;" shape="rect" coords="483,168,956,192"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; particle_emitter_component, owned_component &gt;" shape="rect" coords="483,224,956,248"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; physics_component, owned_component &gt;" shape="rect" coords="483,280,956,304"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; prefab_component, owned_component &gt;" shape="rect" coords="483,336,956,360"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; script_component, owned_component &gt;" shape="rect" coords="483,392,956,416"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; transform_component, owned_component &gt;" shape="rect" coords="483,448,956,472"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; ui_document_component, owned_component &gt;" shape="rect" coords="483,504,956,528"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -136,7 +130,7 @@ Inheritance diagram for unravel::owned_component:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0a7c504d9d2455ab7208b881fd6146da" id="r_a0a7c504d9d2455ab7208b881fd6146da"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a7c504d9d2455ab7208b881fd6146da">operator=</a> (const <a class="el" href="classunravel_1_1owned__component.html">owned_component</a> &amp;other) -&gt; <a class="el" href="classunravel_1_1owned__component.html">owned_component</a> &amp;=default</td></tr>
 <tr class="separator:a0a7c504d9d2455ab7208b881fd6146da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0c277357fed4d13144932fa1f1936e3" id="r_ac0c277357fed4d13144932fa1f1936e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0c277357fed4d13144932fa1f1936e3">set_owner</a> (entt::handle owner)</td></tr>
+<tr class="memitem:ac0c277357fed4d13144932fa1f1936e3" id="r_ac0c277357fed4d13144932fa1f1936e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0c277357fed4d13144932fa1f1936e3">set_owner</a> (entt::handle <a class="el" href="version__manager_8cpp.html#a9cda4a5b233a9922811e6143bdfed3c4">owner</a>)</td></tr>
 <tr class="memdesc:ac0c277357fed4d13144932fa1f1936e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the owner of the component.  <br /></td></tr>
 <tr class="separator:ac0c277357fed4d13144932fa1f1936e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaace07f27ab0539925a223b9ce28be42" id="r_aaace07f27ab0539925a223b9ce28be42"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaace07f27ab0539925a223b9ce28be42">get_owner</a> () const noexcept -&gt; entt::const_handle</td></tr>

@@ -106,6 +106,7 @@ $(function(){initNavTree('asset__reader_8h.html',''); initResizable(true); });
 <div class="textblock"><code>#include &quot;<a class="el" href="asset__extensions_8h_source.html">asset_extensions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="threader_8h_source.html">../../threading/threader.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="asset__handle_8h_source.html">../asset_handle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="asset__flags_8h_source.html">../asset_flags.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="shader_8h_source.html">graphics/shader.h</a>&gt;</code><br />
 </div>
 <p><a href="asset__reader_8h_source.html">Go to the source code of this file.</a></p>
@@ -117,6 +118,8 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader.html">unravel::asset_reader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader_1_1detail.html">unravel::asset_reader::detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -130,9 +133,20 @@ Functions</h2></td></tr>
 <tr class="separator:ac74501361d75be4b06b0528453c076ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f5535d059d12fff6255982d842c2b3b" id="r_a6f5535d059d12fff6255982d842c2b3b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader.html#a6f5535d059d12fff6255982d842c2b3b">unravel::asset_reader::resolve_compiled_path</a> (const std::string &amp;key) -&gt; fs::path</td></tr>
 <tr class="separator:a6f5535d059d12fff6255982d842c2b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a036c2b84a60a0e941f5e2ce5e50da8f7" id="r_a036c2b84a60a0e941f5e2ce5e50da8f7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a036c2b84a60a0e941f5e2ce5e50da8f7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader.html#a036c2b84a60a0e941f5e2ce5e50da8f7">unravel::asset_reader::load_from_file</a> (tpp::thread_pool &amp;pool, <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &amp;output, const std::string &amp;key) -&gt; bool</td></tr>
-<tr class="separator:a036c2b84a60a0e941f5e2ce5e50da8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959f5da69994a5cdf56aa8a87d021ee0" id="r_a959f5da69994a5cdf56aa8a87d021ee0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a959f5da69994a5cdf56aa8a87d021ee0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader_1_1detail.html#a959f5da69994a5cdf56aa8a87d021ee0">unravel::asset_reader::detail::compiled_extension</a> () -&gt; std::string</td></tr>
+<tr class="separator:a959f5da69994a5cdf56aa8a87d021ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2db43a112122afab02acb9c41ed1790" id="r_ae2db43a112122afab02acb9c41ed1790"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ae2db43a112122afab02acb9c41ed1790"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader_1_1detail.html#ae2db43a112122afab02acb9c41ed1790">unravel::asset_reader::detail::compiled_extension&lt; gfx::shader &gt;</a> () -&gt; std::string</td></tr>
+<tr class="separator:ae2db43a112122afab02acb9c41ed1790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efb73bd153bb42cdf82cd37414ad23b" id="r_a5efb73bd153bb42cdf82cd37414ad23b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5efb73bd153bb42cdf82cd37414ad23b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader.html#a5efb73bd153bb42cdf82cd37414ad23b">unravel::asset_reader::resolve_compiled_path</a> (const std::string &amp;key) -&gt; fs::path</td></tr>
+<tr class="separator:a5efb73bd153bb42cdf82cd37414ad23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514d0df2afb27c90b4651cf4b3bfa4b8" id="r_a514d0df2afb27c90b4651cf4b3bfa4b8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader.html#a514d0df2afb27c90b4651cf4b3bfa4b8">unravel::asset_reader::resolve_compiled_asset_path</a> (const std::string &amp;key, const std::string &amp;source_extension) -&gt; fs::path</td></tr>
+<tr class="separator:a514d0df2afb27c90b4651cf4b3bfa4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497eede0cd8e944c843ee38c76c1e651" id="r_a497eede0cd8e944c843ee38c76c1e651"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a497eede0cd8e944c843ee38c76c1e651"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader.html#a497eede0cd8e944c843ee38c76c1e651">unravel::asset_reader::load_from_file</a> (tpp::thread_pool &amp;pool, <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &amp;output, const std::string &amp;key, <a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8c">load_mode</a> mode=<a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8ca516ff1e73f558b0ae701ae4561a63e2c">load_mode::immediate</a>) -&gt; bool</td></tr>
+<tr class="separator:a497eede0cd8e944c843ee38c76c1e651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae3e880b9a3b03d93b5f3dcf207fea66" id="r_aae3e880b9a3b03d93b5f3dcf207fea66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader.html#aae3e880b9a3b03d93b5f3dcf207fea66">unravel::asset_reader::DECLARE_LOADER_SPEC</a> (<a class="el" href="structgfx_1_1shader.html">gfx::shader</a>)</td></tr>
 <tr class="separator:aae3e880b9a3b03d93b5f3dcf207fea66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27021e95beefdfb2934faa0bc852ed24" id="r_a27021e95beefdfb2934faa0bc852ed24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__reader.html#a27021e95beefdfb2934faa0bc852ed24">unravel::asset_reader::DECLARE_LOADER_SPEC</a> (<a class="el" href="structgfx_1_1texture.html">gfx::texture</a>)</td></tr>
@@ -182,10 +196,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;\</div>
-<div class="line"><span class="keyword">auto</span> load_from_file&lt;T&gt;(tpp::thread_pool&amp; pool, <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;T&gt;</a>&amp; output, <span class="keyword">const</span> std::string&amp; key) -&gt; <span class="keywordtype">bool</span></div>
-<div class="ttc" id="astructasset__handle_html"><div class="ttname"><a href="structasset__handle.html">asset_handle</a></div><div class="ttdoc">Represents a handle to an asset, providing access and management functions.</div><div class="ttdef"><b>Definition</b> <a href="asset__handle_8h_source.html#l00042">asset_handle.h:43</a></div></div>
+<div class="line"><span class="keyword">auto</span> load_from_file&lt;T&gt;(tpp::thread_pool&amp; pool, <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;T&gt;</a>&amp; output, <span class="keyword">const</span> std::string&amp; key, load_mode mode) -&gt; <span class="keywordtype">bool</span></div>
+<div class="ttc" id="astructasset__handle_html"><div class="ttname"><a href="structasset__handle.html">asset_handle</a></div><div class="ttdoc">Thread-safe handle to an asset.</div><div class="ttdef"><b>Definition</b> <a href="asset__handle_8h_source.html#l00144">asset_handle.h:145</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="asset__reader_8h_source.html#l00037">37</a> of file <a class="el" href="asset__reader_8h_source.html">asset_reader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__reader_8h_source.html#l00067">67</a> of file <a class="el" href="asset__reader_8h_source.html">asset_reader.h</a>.</p>
 
 </div>
 </div>

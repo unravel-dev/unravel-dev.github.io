@@ -1,5 +1,6 @@
 var structgfx_1_1render__pass =
 [
+    [ "scope", "structgfx_1_1render__pass_1_1scope.html", "structgfx_1_1render__pass_1_1scope" ],
     [ "render_pass", "structgfx_1_1render__pass.html#ae19be2fd14d9b7f866d05abd03d00b58", null ],
     [ "render_pass", "structgfx_1_1render__pass.html#aed323bd3d6ccda16f751c97ca13d58b7", null ],
     [ "bind", "structgfx_1_1render__pass.html#afafd407e23de612a6e1b3ad9d405a1ef", null ],

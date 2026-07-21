@@ -97,6 +97,7 @@ $(function(){initNavTree('_rml_ui___backend___engine_8h.html',''); initResizable
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -110,9 +111,16 @@ $(function(){initNavTree('_rml_ui___backend___engine_8h.html',''); initResizable
 <code>#include &lt;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="context_8hpp_source.html">context/context.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="frame__buffer_8h_source.html">graphics/frame_buffer.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="_rml_ui___render_layer_stack_8h_source.html">RmlUi_RenderLayerStack.h</a>&quot;</code><br />
 </div>
 <p><a href="_rml_ui___backend___engine_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1_rml_ui___frame_state.html">unravel::RmlUi_FrameState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-frame state passed to begin_frame. Contains all mutable state for the render pass.  <a href="structunravel_1_1_rml_ui___frame_state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
@@ -125,12 +133,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a212b44889dfe94a256908e77d540d506" id="r_a212b44889dfe94a256908e77d540d506"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a212b44889dfe94a256908e77d540d506">unravel::KeyDownCallback</a> = bool (*)(Rml::Context* context, Rml::Input::KeyIdentifier key, int key_modifier, float native_dp_ratio, bool priority)</td></tr>
+<tr class="memitem:a212b44889dfe94a256908e77d540d506" id="r_a212b44889dfe94a256908e77d540d506"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a212b44889dfe94a256908e77d540d506">unravel::KeyDownCallback</a> = bool (*)(Rml::Context* context, Rml::Input::KeyIdentifier key, int key_modifier, float native_dp_ratio, bool <a class="el" href="volume__resolver_8cpp.html#acec9ce2df15222151ad66fcb1d74eb9f">priority</a>)</td></tr>
 <tr class="separator:a212b44889dfe94a256908e77d540d506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a905e6d8c235a11ddcac4510ec5375e42" id="r_a905e6d8c235a11ddcac4510ec5375e42"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a905e6d8c235a11ddcac4510ec5375e42">unravel::RmlUi_Backend_Engine::initialize</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const char *window_name=&quot;RmlUi&quot;, int width=1024, int height=768) -&gt; bool</td></tr>
+<tr class="memitem:a905e6d8c235a11ddcac4510ec5375e42" id="r_a905e6d8c235a11ddcac4510ec5375e42"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a905e6d8c235a11ddcac4510ec5375e42">unravel::RmlUi_Backend_Engine::initialize</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const char *window_name=&quot;RmlUi&quot;, int <a class="el" href="asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd">width</a>=1024, int <a class="el" href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a>=768) -&gt; bool</td></tr>
 <tr class="memdesc:a905e6d8c235a11ddcac4510ec5375e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RmlUi backend with engine context.  <br /></td></tr>
 <tr class="separator:a905e6d8c235a11ddcac4510ec5375e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac43cceb4e64f320d76d64ffc37bce50" id="r_aac43cceb4e64f320d76d64ffc37bce50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#aac43cceb4e64f320d76d64ffc37bce50">unravel::RmlUi_Backend_Engine::shutdown</a> ()</td></tr>
@@ -148,15 +156,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a11d01ebbb998f9f33f47c3793cac1fda" id="r_a11d01ebbb998f9f33f47c3793cac1fda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a11d01ebbb998f9f33f47c3793cac1fda">unravel::RmlUi_Backend_Engine::request_exit</a> ()</td></tr>
 <tr class="memdesc:a11d01ebbb998f9f33f47c3793cac1fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request the backend to exit during next event processing.  <br /></td></tr>
 <tr class="separator:a11d01ebbb998f9f33f47c3793cac1fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae07dd14833ba7438d50723f4456fc55" id="r_aae07dd14833ba7438d50723f4456fc55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#aae07dd14833ba7438d50723f4456fc55">unravel::RmlUi_Backend_Engine::begin_frame</a> ()</td></tr>
-<tr class="memdesc:aae07dd14833ba7438d50723f4456fc55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare render state for RmlUi rendering Call this before rendering RmlUi context.  <br /></td></tr>
-<tr class="separator:aae07dd14833ba7438d50723f4456fc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf05a735d8ec556698bd3616cd127850" id="r_aaf05a735d8ec556698bd3616cd127850"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#aaf05a735d8ec556698bd3616cd127850">unravel::RmlUi_Backend_Engine::present_frame</a> (const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;framebuffer)</td></tr>
-<tr class="memdesc:aaf05a735d8ec556698bd3616cd127850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present the rendered frame Call this after rendering RmlUi context.  <br /></td></tr>
-<tr class="separator:aaf05a735d8ec556698bd3616cd127850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f2b6361b1effd4f88f5f4738bfa48f" id="r_a32f2b6361b1effd4f88f5f4738bfa48f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a32f2b6361b1effd4f88f5f4738bfa48f">unravel::RmlUi_Backend_Engine::set_viewport</a> (int width, int height)</td></tr>
-<tr class="memdesc:a32f2b6361b1effd4f88f5f4738bfa48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update viewport size (call on window resize)  <br /></td></tr>
-<tr class="separator:a32f2b6361b1effd4f88f5f4738bfa48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104630577aef5d439551750d75d1034d" id="r_a104630577aef5d439551750d75d1034d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a104630577aef5d439551750d75d1034d">unravel::RmlUi_Backend_Engine::begin_frame</a> (<a class="el" href="structunravel_1_1_rml_ui___frame_state.html">RmlUi_FrameState</a> &amp;state)</td></tr>
+<tr class="memdesc:a104630577aef5d439551750d75d1034d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare render state for RmlUi rendering Call this before rendering RmlUi context.  <br /></td></tr>
+<tr class="separator:a104630577aef5d439551750d75d1034d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094905cf5c2336d4990d9c581237ad47" id="r_a094905cf5c2336d4990d9c581237ad47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a094905cf5c2336d4990d9c581237ad47">unravel::RmlUi_Backend_Engine::end_frame</a> ()</td></tr>
+<tr class="memdesc:a094905cf5c2336d4990d9c581237ad47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish frame and present to the framebuffer specified in begin_frame state Call this after rendering RmlUi context.  <br /></td></tr>
+<tr class="separator:a094905cf5c2336d4990d9c581237ad47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

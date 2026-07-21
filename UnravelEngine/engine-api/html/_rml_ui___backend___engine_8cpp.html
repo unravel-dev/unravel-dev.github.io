@@ -109,6 +109,9 @@ $(function(){initNavTree('_rml_ui___backend___engine_8cpp.html',''); initResizab
 <code>#include &lt;RmlUi/Core/Core.h&gt;</code><br />
 <code>#include &lt;RmlUi/Core/Context.h&gt;</code><br />
 <code>#include &lt;RmlUi/Core/Log.h&gt;</code><br />
+<code>#include &lt;RmlUi/Core/Plugin.h&gt;</code><br />
+<code>#include &lt;RmlUi/Core/StyleSheetContainer.h&gt;</code><br />
+<code>#include &lt;RmlUi/Core/ElementDocument.h&gt;</code><br />
 <code>#include &lt;RmlUi/Debugger/Debugger.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
@@ -125,7 +128,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a905e6d8c235a11ddcac4510ec5375e42" id="r_a905e6d8c235a11ddcac4510ec5375e42"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a905e6d8c235a11ddcac4510ec5375e42">unravel::RmlUi_Backend_Engine::initialize</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const char *window_name=&quot;RmlUi&quot;, int width=1024, int height=768) -&gt; bool</td></tr>
+<tr class="memitem:a905e6d8c235a11ddcac4510ec5375e42" id="r_a905e6d8c235a11ddcac4510ec5375e42"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a905e6d8c235a11ddcac4510ec5375e42">unravel::RmlUi_Backend_Engine::initialize</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const char *window_name=&quot;RmlUi&quot;, int <a class="el" href="asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd">width</a>=1024, int <a class="el" href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a>=768) -&gt; bool</td></tr>
 <tr class="memdesc:a905e6d8c235a11ddcac4510ec5375e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RmlUi backend with engine context.  <br /></td></tr>
 <tr class="separator:a905e6d8c235a11ddcac4510ec5375e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac43cceb4e64f320d76d64ffc37bce50" id="r_aac43cceb4e64f320d76d64ffc37bce50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#aac43cceb4e64f320d76d64ffc37bce50">unravel::RmlUi_Backend_Engine::shutdown</a> ()</td></tr>
@@ -143,17 +146,30 @@ Functions</h2></td></tr>
 <tr class="memitem:a11d01ebbb998f9f33f47c3793cac1fda" id="r_a11d01ebbb998f9f33f47c3793cac1fda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a11d01ebbb998f9f33f47c3793cac1fda">unravel::RmlUi_Backend_Engine::request_exit</a> ()</td></tr>
 <tr class="memdesc:a11d01ebbb998f9f33f47c3793cac1fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request the backend to exit during next event processing.  <br /></td></tr>
 <tr class="separator:a11d01ebbb998f9f33f47c3793cac1fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae07dd14833ba7438d50723f4456fc55" id="r_aae07dd14833ba7438d50723f4456fc55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#aae07dd14833ba7438d50723f4456fc55">unravel::RmlUi_Backend_Engine::begin_frame</a> ()</td></tr>
-<tr class="memdesc:aae07dd14833ba7438d50723f4456fc55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare render state for RmlUi rendering Call this before rendering RmlUi context.  <br /></td></tr>
-<tr class="separator:aae07dd14833ba7438d50723f4456fc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf05a735d8ec556698bd3616cd127850" id="r_aaf05a735d8ec556698bd3616cd127850"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#aaf05a735d8ec556698bd3616cd127850">unravel::RmlUi_Backend_Engine::present_frame</a> (const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;framebuffer)</td></tr>
-<tr class="memdesc:aaf05a735d8ec556698bd3616cd127850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present the rendered frame Call this after rendering RmlUi context.  <br /></td></tr>
-<tr class="separator:aaf05a735d8ec556698bd3616cd127850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f2b6361b1effd4f88f5f4738bfa48f" id="r_a32f2b6361b1effd4f88f5f4738bfa48f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a32f2b6361b1effd4f88f5f4738bfa48f">unravel::RmlUi_Backend_Engine::set_viewport</a> (int width, int height)</td></tr>
-<tr class="memdesc:a32f2b6361b1effd4f88f5f4738bfa48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update viewport size (call on window resize)  <br /></td></tr>
-<tr class="separator:a32f2b6361b1effd4f88f5f4738bfa48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104630577aef5d439551750d75d1034d" id="r_a104630577aef5d439551750d75d1034d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a104630577aef5d439551750d75d1034d">unravel::RmlUi_Backend_Engine::begin_frame</a> (<a class="el" href="structunravel_1_1_rml_ui___frame_state.html">RmlUi_FrameState</a> &amp;state)</td></tr>
+<tr class="memdesc:a104630577aef5d439551750d75d1034d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare render state for RmlUi rendering Call this before rendering RmlUi context.  <br /></td></tr>
+<tr class="separator:a104630577aef5d439551750d75d1034d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094905cf5c2336d4990d9c581237ad47" id="r_a094905cf5c2336d4990d9c581237ad47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_rml_ui___backend___engine.html#a094905cf5c2336d4990d9c581237ad47">unravel::RmlUi_Backend_Engine::end_frame</a> ()</td></tr>
+<tr class="memdesc:a094905cf5c2336d4990d9c581237ad47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish frame and present to the framebuffer specified in begin_frame state Call this after rendering RmlUi context.  <br /></td></tr>
+<tr class="separator:a094905cf5c2336d4990d9c581237ad47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a41d39a5ba1c6d63fda5287beede38c9b" name="a41d39a5ba1c6d63fda5287beede38c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d39a5ba1c6d63fda5287beede38c9b">&#9670;&#160;</a></span>default_stylesheet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rml::SharedPtr&lt;Rml::StyleSheetContainer&gt; default_stylesheet = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00032">32</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aa3b90ad97c2a91539b301081f04c46a5" name="aa3b90ad97c2a91539b301081f04c46a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3b90ad97c2a91539b301081f04c46a5">&#9670;&#160;</a></span>engine_ctx</h2>
 
@@ -166,7 +182,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00032">32</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00061">61</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
 
 </div>
 </div>
@@ -182,7 +198,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00031">31</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00060">60</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
 
 </div>
 </div>
@@ -198,7 +214,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00034">34</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00063">63</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
 
 </div>
 </div>
@@ -214,7 +230,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00030">30</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00059">59</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
 
 </div>
 </div>
@@ -230,7 +246,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00033">33</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00062">62</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
 
 </div>
 </div>
@@ -246,7 +262,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00029">29</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00058">58</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae5695c4112940680e77e652e937d60b9" name="ae5695c4112940680e77e652e937d60b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5695c4112940680e77e652e937d60b9">&#9670;&#160;</a></span>unravel_plugin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;PreloadStylesheetPlugin&gt; unravel_plugin = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rml_ui___backend___engine_8cpp_source.html#l00057">57</a> of file <a class="el" href="_rml_ui___backend___engine_8cpp_source.html">RmlUi_Backend_Engine.cpp</a>.</p>
 
 </div>
 </div>

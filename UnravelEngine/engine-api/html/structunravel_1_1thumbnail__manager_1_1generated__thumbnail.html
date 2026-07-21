@@ -110,19 +110,29 @@ $(function(){initNavTree('structunravel_1_1thumbnail__manager_1_1generated__thum
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a92fbeb5c9510534fc927bbd41ff35888" id="r_a92fbeb5c9510534fc927bbd41ff35888"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92fbeb5c9510534fc927bbd41ff35888">get</a> () -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
 <tr class="separator:a92fbeb5c9510534fc927bbd41ff35888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaff3c0012b0c51a1bc270a4e565adf3b" id="r_aaff3c0012b0c51a1bc270a4e565adf3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaff3c0012b0c51a1bc270a4e565adf3b">set</a> (<a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> fbo)</td></tr>
-<tr class="separator:aaff3c0012b0c51a1bc270a4e565adf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa414bdce3696dec2b306a2c95376182" id="r_afa414bdce3696dec2b306a2c95376182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa414bdce3696dec2b306a2c95376182">set</a> (<a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> tex)</td></tr>
+<tr class="separator:afa414bdce3696dec2b306a2c95376182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae49cae6d098bc830a6cfd2dbbffda149" id="r_ae49cae6d098bc830a6cfd2dbbffda149"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae49cae6d098bc830a6cfd2dbbffda149">needs_regeneration</a> {true}</td></tr>
 <tr class="separator:ae49cae6d098bc830a6cfd2dbbffda149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0db961f9bd2e14296c985f155a712bc" id="r_ab0db961f9bd2e14296c985f155a712bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0db961f9bd2e14296c985f155a712bc">thumbnail</a></td></tr>
-<tr class="separator:ab0db961f9bd2e14296c985f155a712bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3894bd24c070217e4bf092e000e4fa21" id="r_a3894bd24c070217e4bf092e000e4fa21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3894bd24c070217e4bf092e000e4fa21">snapshot</a></td></tr>
+<tr class="memdesc:a3894bd24c070217e4bf092e000e4fa21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Owned snapshot copied from the preview OBUFFER (not a live render target).  <br /></td></tr>
+<tr class="separator:a3894bd24c070217e4bf092e000e4fa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429752ea5d34eb0ff9f822dcd89af594" id="r_a429752ea5d34eb0ff9f822dcd89af594"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a429752ea5d34eb0ff9f822dcd89af594">pending_snapshot</a></td></tr>
+<tr class="memdesc:a429752ea5d34eb0ff9f822dcd89af594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queued during capture; committed after <a class="el" href="namespacegfx.html#a7142efcc992b2e99f33592db646e7006">gfx::frame()</a> so the GPU blit has finished.  <br /></td></tr>
+<tr class="separator:a429752ea5d34eb0ff9f822dcd89af594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb07638e83b3016341fc3ed7eeb3a528" id="r_acb07638e83b3016341fc3ed7eeb3a528"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb07638e83b3016341fc3ed7eeb3a528">is_cached_on_disk</a> {false}</td></tr>
+<tr class="separator:acb07638e83b3016341fc3ed7eeb3a528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a283d67e8d01a8bfa997a44e4ecbcebc4" id="r_a283d67e8d01a8bfa997a44e4ecbcebc4"><td class="memItemLeft" align="right" valign="top">fs::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a283d67e8d01a8bfa997a44e4ecbcebc4">cache_path</a> {}</td></tr>
+<tr class="separator:a283d67e8d01a8bfa997a44e4ecbcebc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2e82072a47f47fb31e7bb9ee894947" id="r_a1b2e82072a47f47fb31e7bb9ee894947"><td class="memItemLeft" align="right" valign="top">clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b2e82072a47f47fb31e7bb9ee894947">last_access_time</a> {clock::now()}</td></tr>
+<tr class="separator:a1b2e82072a47f47fb31e7bb9ee894947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00041">41</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00045">45</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a92fbeb5c9510534fc927bbd41ff35888" name="a92fbeb5c9510534fc927bbd41ff35888"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92fbeb5c9510534fc927bbd41ff35888">&#9670;&#160;</a></span>get()</h2>
@@ -139,12 +149,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8cpp_source.html#l00372">372</a> of file <a class="el" href="thumbnail__manager_8cpp_source.html">thumbnail_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8cpp_source.html#l00587">587</a> of file <a class="el" href="thumbnail__manager_8cpp_source.html">thumbnail_manager.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aaff3c0012b0c51a1bc270a4e565adf3b" name="aaff3c0012b0c51a1bc270a4e565adf3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaff3c0012b0c51a1bc270a4e565adf3b">&#9670;&#160;</a></span>set()</h2>
+<a id="afa414bdce3696dec2b306a2c95376182" name="afa414bdce3696dec2b306a2c95376182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa414bdce3696dec2b306a2c95376182">&#9670;&#160;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,17 +162,65 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void unravel::thumbnail_manager::generated_thumbnail::set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td>          <td class="paramname"><span class="paramname"><em>fbo</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td>          <td class="paramname"><span class="paramname"><em>tex</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8cpp_source.html#l00382">382</a> of file <a class="el" href="thumbnail__manager_8cpp_source.html">thumbnail_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8cpp_source.html#l00603">603</a> of file <a class="el" href="thumbnail__manager_8cpp_source.html">thumbnail_manager.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a283d67e8d01a8bfa997a44e4ecbcebc4" name="a283d67e8d01a8bfa997a44e4ecbcebc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a283d67e8d01a8bfa997a44e4ecbcebc4">&#9670;&#160;</a></span>cache_path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fs::path unravel::thumbnail_manager::generated_thumbnail::cache_path {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00057">57</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
+
+</div>
+</div>
+<a id="acb07638e83b3016341fc3ed7eeb3a528" name="acb07638e83b3016341fc3ed7eeb3a528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb07638e83b3016341fc3ed7eeb3a528">&#9670;&#160;</a></span>is_cached_on_disk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool unravel::thumbnail_manager::generated_thumbnail::is_cached_on_disk {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00056">56</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
+
+</div>
+</div>
+<a id="a1b2e82072a47f47fb31e7bb9ee894947" name="a1b2e82072a47f47fb31e7bb9ee894947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2e82072a47f47fb31e7bb9ee894947">&#9670;&#160;</a></span>last_access_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">clock::time_point unravel::thumbnail_manager::generated_thumbnail::last_access_time {clock::now()}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00059">59</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
+
+</div>
+</div>
 <a id="ae49cae6d098bc830a6cfd2dbbffda149" name="ae49cae6d098bc830a6cfd2dbbffda149"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae49cae6d098bc830a6cfd2dbbffda149">&#9670;&#160;</a></span>needs_regeneration</h2>
 
@@ -175,23 +233,43 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00046">46</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00050">50</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
 
 </div>
 </div>
-<a id="ab0db961f9bd2e14296c985f155a712bc" name="ab0db961f9bd2e14296c985f155a712bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0db961f9bd2e14296c985f155a712bc">&#9670;&#160;</a></span>thumbnail</h2>
+<a id="a429752ea5d34eb0ff9f822dcd89af594" name="a429752ea5d34eb0ff9f822dcd89af594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429752ea5d34eb0ff9f822dcd89af594">&#9670;&#160;</a></span>pending_snapshot</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> unravel::thumbnail_manager::generated_thumbnail::thumbnail</td>
+          <td class="memname"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> unravel::thumbnail_manager::generated_thumbnail::pending_snapshot</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00047">47</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
+<p>Queued during capture; committed after <a class="el" href="namespacegfx.html#a7142efcc992b2e99f33592db646e7006">gfx::frame()</a> so the GPU blit has finished. </p>
+
+<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00054">54</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
+
+</div>
+</div>
+<a id="a3894bd24c070217e4bf092e000e4fa21" name="a3894bd24c070217e4bf092e000e4fa21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3894bd24c070217e4bf092e000e4fa21">&#9670;&#160;</a></span>snapshot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> unravel::thumbnail_manager::generated_thumbnail::snapshot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Owned snapshot copied from the preview OBUFFER (not a live render target). </p>
+
+<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00052">52</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
 
 </div>
 </div>

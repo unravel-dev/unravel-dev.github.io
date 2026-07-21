@@ -114,6 +114,8 @@ Functions</h2></td></tr>
 <tr class="separator:a89fb067ac49122ed2fb008a07d3c4df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1abd5cde17c8475673b86ee6f40eb4c" id="r_af1abd5cde17c8475673b86ee6f40eb4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1abd5cde17c8475673b86ee6f40eb4c">atomic_write_file</a> (const fs::path &amp;dst, const std::function&lt; void(const fs::path &amp;)&gt; &amp;callback, fs::error_code &amp;ec) noexcept</td></tr>
 <tr class="separator:af1abd5cde17c8475673b86ee6f40eb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be8f2bbf96f4eab6308936a7aa1d26f" id="r_a5be8f2bbf96f4eab6308936a7aa1d26f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5be8f2bbf96f4eab6308936a7aa1d26f">cleanup_stale_temp_files</a> (const fs::path &amp;dir, bool recursive, std::chrono::seconds min_age) noexcept -&gt; std::size_t</td></tr>
+<tr class="separator:a5be8f2bbf96f4eab6308936a7aa1d26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a96cadef0d8476ae4981c7a3eef0a0" id="r_ad8a96cadef0d8476ae4981c7a3eef0a0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad8a96cadef0d8476ae4981c7a3eef0a0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad8a96cadef0d8476ae4981c7a3eef0a0">resolve_meta_file</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &amp;asset) -&gt; fs::path</td></tr>
 <tr class="separator:ad8a96cadef0d8476ae4981c7a3eef0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,7 +159,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00156">156</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00541">541</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
 
 </div>
 </div>
@@ -193,7 +195,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00119">119</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00180">180</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
 
 </div>
 </div>
@@ -219,7 +221,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__writer_8h_source.html#l00043">43</a> of file <a class="el" href="asset__writer_8h_source.html">asset_writer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__writer_8h_source.html#l00056">56</a> of file <a class="el" href="asset__writer_8h_source.html">asset_writer.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +247,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__writer_8h_source.html#l00068">68</a> of file <a class="el" href="asset__writer_8h_source.html">asset_writer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__writer_8h_source.html#l00081">81</a> of file <a class="el" href="asset__writer_8h_source.html">asset_writer.h</a>.</p>
 
 </div>
 </div>
@@ -281,7 +283,43 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00202">202</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00595">595</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5be8f2bbf96f4eab6308936a7aa1d26f" name="a5be8f2bbf96f4eab6308936a7aa1d26f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be8f2bbf96f4eab6308936a7aa1d26f">&#9670;&#160;</a></span>cleanup_stale_temp_files()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::asset_writer::cleanup_stale_temp_files </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>recursive</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::seconds</td>          <td class="paramname"><span class="paramname"><em>min_age</em></span>&#160;) -&gt;  std::size_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00641">641</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
 
 </div>
 </div>
@@ -317,7 +355,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00130">130</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00497">497</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
 
 </div>
 </div>
@@ -339,7 +377,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__writer_8h_source.html#l00029">29</a> of file <a class="el" href="asset__writer_8h_source.html">asset_writer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__writer_8h_source.html#l00042">42</a> of file <a class="el" href="asset__writer_8h_source.html">asset_writer.h</a>.</p>
 
 </div>
 </div>
@@ -371,7 +409,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00067">67</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00134">134</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
 
 </div>
 </div>

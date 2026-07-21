@@ -100,6 +100,7 @@ $(function(){initNavTree('classunravel_1_1rendering_1_1pipeline.html',''); initR
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classunravel_1_1rendering_1_1pipeline-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::rendering::pipeline Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
@@ -124,17 +125,18 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a249516e1b047b015371d581ff666c2c6" id="r_a249516e1b047b015371d581ff666c2c6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a249516e1b047b015371d581ff666c2c6">visibility_query</a> : uint32_t { <br />
-&#160;&#160;<a class="el" href="#a249516e1b047b015371d581ff666c2c6a307c52e277b68356d9207e0407508bef">not_specified</a> = 1 &lt;&lt; 0
+<tr class="memitem:a249516e1b047b015371d581ff666c2c6" id="r_a249516e1b047b015371d581ff666c2c6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a249516e1b047b015371d581ff666c2c6">visibility_query</a> : uint32_t { <a class="el" href="#a249516e1b047b015371d581ff666c2c6a307c52e277b68356d9207e0407508bef">not_specified</a> = 1 &lt;&lt; 0
 , <a class="el" href="#a249516e1b047b015371d581ff666c2c6a89b55161d419650a8691c3cb353f0966">is_dirty</a> = 1 &lt;&lt; 1
 , <a class="el" href="#a249516e1b047b015371d581ff666c2c6ad64508002cdb0dc97a1b61ef22786e7a">is_static</a> = 1 &lt;&lt; 2
 , <a class="el" href="#a249516e1b047b015371d581ff666c2c6af1ebaa49608531af4a0ef672f651e7b5">is_shadow_caster</a> = 1 &lt;&lt; 3
-, <br />
-&#160;&#160;<a class="el" href="#a249516e1b047b015371d581ff666c2c6a970d2e22b34a8f3d6541dbb107d80a47">is_reflection_caster</a> = 1 &lt;&lt; 4
-<br />
  }</td></tr>
 <tr class="memdesc:a249516e1b047b015371d581ff666c2c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags for visibility queries.  <a href="#a249516e1b047b015371d581ff666c2c6">More...</a><br /></td></tr>
 <tr class="separator:a249516e1b047b015371d581ff666c2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f49f91f29588260d2cd096704b9c7d" id="r_a43f49f91f29588260d2cd096704b9c7d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43f49f91f29588260d2cd096704b9c7d">pipeline_run_type</a> : std::uint8_t { <a class="el" href="#a43f49f91f29588260d2cd096704b9c7dadd6d2dcc679d12b9430a9787bab45b33">camera</a> = 0
+, <a class="el" href="#a43f49f91f29588260d2cd096704b9c7da5d1d3c484289e335b37ddf92d493da61">reflection_probe_capture</a> = 1
+ }</td></tr>
+<tr class="memdesc:a43f49f91f29588260d2cd096704b9c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes which high-level pipeline path is executing. Pass enablement is controlled separately via <code><a class="el" href="structunravel_1_1rendering_1_1pipeline_1_1run__params.html#a2bcbdf9a0441e6e2fa27f95300c234be" title="Deferred pipeline only: bitmask of enabled passes (deferred::pipeline_steps).">run_params::pflags</a></code>.  <a href="#a43f49f91f29588260d2cd096704b9c7d">More...</a><br /></td></tr>
+<tr class="separator:a43f49f91f29588260d2cd096704b9c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae946c1ba87baf4f0e5d8371c89564414" id="r_ae946c1ba87baf4f0e5d8371c89564414"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae946c1ba87baf4f0e5d8371c89564414">uptr</a> = std::unique_ptr&lt;<a class="el" href="classunravel_1_1rendering_1_1pipeline.html">pipeline</a>&gt;</td></tr>
 <tr class="separator:ae946c1ba87baf4f0e5d8371c89564414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cb96ac853ffa61da36288b61dd20c48" id="r_a9cb96ac853ffa61da36288b61dd20c48"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cb96ac853ffa61da36288b61dd20c48">sptr</a> = std::shared_ptr&lt;<a class="el" href="classunravel_1_1rendering_1_1pipeline.html">pipeline</a>&gt;</td></tr>
@@ -144,6 +146,8 @@ Public Types</h2></td></tr>
 <tr class="memitem:ab7d709bbeac0eb2a01a8c40a86fa90ea" id="r_ab7d709bbeac0eb2a01a8c40a86fa90ea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7d709bbeac0eb2a01a8c40a86fa90ea">visibility_flags</a> = uint32_t</td></tr>
 <tr class="memdesc:ab7d709bbeac0eb2a01a8c40a86fa90ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for visibility flags.  <br /></td></tr>
 <tr class="separator:ab7d709bbeac0eb2a01a8c40a86fa90ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6420c6dc332f1b1a3c84ae574b6bb564" id="r_a6420c6dc332f1b1a3c84ae574b6bb564"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6420c6dc332f1b1a3c84ae574b6bb564">pipeline_flags</a> = uint32_t</td></tr>
+<tr class="separator:a6420c6dc332f1b1a3c84ae574b6bb564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -153,9 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2a87c10317c88fc16aab4b6c3e8a19ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166c55179efc56563461c9aa4f644445" id="r_a166c55179efc56563461c9aa4f644445"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a166c55179efc56563461c9aa4f644445">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
 <tr class="separator:a166c55179efc56563461c9aa4f644445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a9a05f5b715555d13f5201e528d79f4" id="r_a1a9a05f5b715555d13f5201e528d79f4"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a9a05f5b715555d13f5201e528d79f4">gather_visible_models</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn, const <a class="el" href="classmath_1_1frustum.html">math::frustum</a> *frustum, <a class="el" href="#ab7d709bbeac0eb2a01a8c40a86fa90ea">visibility_flags</a> query, const <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a> &amp;render_mask) -&gt; <a class="el" href="namespaceunravel_1_1rendering.html#ac04748f7fc39e3d7826075cee0ce7ebc">visibility_set_models_t</a></td></tr>
-<tr class="memdesc:a1a9a05f5b715555d13f5201e528d79f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gathers visible models from the scene based on the given query.  <br /></td></tr>
-<tr class="separator:a1a9a05f5b715555d13f5201e528d79f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814b4f7ee91aed1e5700047d9c6030c2" id="r_a814b4f7ee91aed1e5700047d9c6030c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a814b4f7ee91aed1e5700047d9c6030c2">gather_visible_models</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn, const <a class="el" href="classunravel_1_1camera.html">camera</a> *cam, <a class="el" href="#ab7d709bbeac0eb2a01a8c40a86fa90ea">visibility_flags</a> query, const <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a> &amp;render_mask, <a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> dt, const std::function&lt; void(entt::handle <a class="el" href="rendering_2ecs_2components_2model__component_8cpp.html#a8881ff40e399ee1fad686418663aee85">entity</a>, const <a class="el" href="structunravel_1_1lod__data.html">lod_data</a> &amp;<a class="el" href="structunravel_1_1lod__data.html">lod_data</a>)&gt; &amp;lod_data_callback, const <a class="el" href="classunravel_1_1camera.html">camera</a> *lod_reference_cam=nullptr)</td></tr>
+<tr class="memdesc:a814b4f7ee91aed1e5700047d9c6030c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gathers visible models from the scene based on the given query.  <br /></td></tr>
+<tr class="separator:a814b4f7ee91aed1e5700047d9c6030c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f706c963ee2628d75fde601e507c98a" id="r_a3f706c963ee2628d75fde601e507c98a"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f706c963ee2628d75fde601e507c98a">run_pipeline</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;<a class="el" href="classunravel_1_1camera.html">camera</a>, <a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, <a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> dt, const <a class="el" href="structunravel_1_1rendering_1_1pipeline_1_1run__params.html">run_params</a> &amp;params, <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a> render_mask=<a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>{ <a class="el" href="namespaceunravel.html#a47ce3b3181229ae21aaf08c4d4b48c74a424653be3849cd665846b3d65bc5a0d3">layer_reserved::everything_layer</a>}) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a>=0</td></tr>
 <tr class="memdesc:a3f706c963ee2628d75fde601e507c98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the entire scene from the camera's perspective.  <br /></td></tr>
 <tr class="separator:a3f706c963ee2628d75fde601e507c98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,14 +168,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a58a363c44472c3bf4f68ad23c4c4963d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e4aedd2d9369e3707eea04df258f518" id="r_a7e4aedd2d9369e3707eea04df258f518"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e4aedd2d9369e3707eea04df258f518">set_debug_pass</a> (int pass)=0</td></tr>
 <tr class="separator:a7e4aedd2d9369e3707eea04df258f518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e0d8bdf04ab721eeaa61652dced9d50" id="r_a3e0d8bdf04ab721eeaa61652dced9d50"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e0d8bdf04ab721eeaa61652dced9d50">ui_pass</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;<a class="el" href="classunravel_1_1camera.html">camera</a>, <a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;output)</td></tr>
-<tr class="separator:a3e0d8bdf04ab721eeaa61652dced9d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1618f31299ca3bd56c2312de460f8701" id="r_a1618f31299ca3bd56c2312de460f8701"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1618f31299ca3bd56c2312de460f8701">particle_pass</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;<a class="el" href="classunravel_1_1camera.html">camera</a>, <a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;output)</td></tr>
-<tr class="separator:a1618f31299ca3bd56c2312de460f8701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d590e6b4559b5ee58218848c573eb1" id="r_a75d590e6b4559b5ee58218848c573eb1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75d590e6b4559b5ee58218848c573eb1">run_ui_pass</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;<a class="el" href="classunravel_1_1camera.html">camera</a>, <a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;output)</td></tr>
+<tr class="separator:a75d590e6b4559b5ee58218848c573eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134e67fcdd6f7453026e0c0f47c777c7" id="r_a134e67fcdd6f7453026e0c0f47c777c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a134e67fcdd6f7453026e0c0f47c777c7">run_particle_pass</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;<a class="el" href="classunravel_1_1camera.html">camera</a>, <a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;output)</td></tr>
+<tr class="separator:a134e67fcdd6f7453026e0c0f47c777c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4365278b31f897807b184d2edd2f7c1" id="r_af4365278b31f897807b184d2edd2f7c1"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4365278b31f897807b184d2edd2f7c1">create_run_params</a> (entt::handle camera_ent) const -&gt; <a class="el" href="structunravel_1_1rendering_1_1pipeline_1_1run__params.html">rendering::pipeline::run_params</a></td></tr>
 <tr class="separator:af4365278b31f897807b184d2edd2f7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5e5fecc548dd56bff7961ed7e79ab6" id="r_aad5e5fecc548dd56bff7961ed7e79ab6"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad5e5fecc548dd56bff7961ed7e79ab6">create_run_params</a> (entt::handle camera_ent, <a class="el" href="structunravel_1_1scene.html">scene</a> *scn, const <a class="el" href="classunravel_1_1camera.html">camera</a> *cam) const -&gt; <a class="el" href="structunravel_1_1rendering_1_1pipeline_1_1run__params.html">rendering::pipeline::run_params</a></td></tr>
+<tr class="separator:aad5e5fecc548dd56bff7961ed7e79ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05957e3e970ab472584374115dab4a77" id="r_a05957e3e970ab472584374115dab4a77"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05957e3e970ab472584374115dab4a77">get_stats</a> () -&gt; <a class="el" href="structunravel_1_1rendering_1_1pipeline__stats.html">pipeline_stats</a> &amp;</td></tr>
 <tr class="separator:a05957e3e970ab472584374115dab4a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2e64972517a0fc534d65c024362092df" id="r_a2e64972517a0fc534d65c024362092df"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e64972517a0fc534d65c024362092df">get_shadow_lod_bias</a> () -&gt; float</td></tr>
+<tr class="memdesc:a2e64972517a0fc534d65c024362092df"><td class="mdescLeft">&#160;</td><td class="mdescRight">LOD bias applied on top of the main selection when rendering shadows. 0 = shadows use the same LOD the main view would pick; positive values push shadow rendering toward coarser LODs. Replaces the old behavior of always using LOD 0.  <br /></td></tr>
+<tr class="separator:a2e64972517a0fc534d65c024362092df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d34b624bd06a7415f4e0fe0f4fb5373" id="r_a9d34b624bd06a7415f4e0fe0f4fb5373"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d34b624bd06a7415f4e0fe0f4fb5373">set_shadow_lod_bias</a> (float bias)</td></tr>
+<tr class="separator:a9d34b624bd06a7415f4e0fe0f4fb5373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -179,16 +193,20 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a3c103a8d47539b57091c6e0c3b5a6ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9845007b83fc4e40a4f29556a1f88f" id="r_a8b9845007b83fc4e40a4f29556a1f88f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1blit__pass.html">blit_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b9845007b83fc4e40a4f29556a1f88f">blit_pass_</a> {}</td></tr>
 <tr class="separator:a8b9845007b83fc4e40a4f29556a1f88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae290c645f41a617fa9376c79e5b42289" id="r_ae290c645f41a617fa9376c79e5b42289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1atmospheric__pass.html">atmospheric_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae290c645f41a617fa9376c79e5b42289">atmospheric_pass_</a> {}</td></tr>
-<tr class="separator:ae290c645f41a617fa9376c79e5b42289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f6b4f16efd44e3902b6ff1545b14bfc" id="r_a7f6b4f16efd44e3902b6ff1545b14bfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1atmospheric__pass__perez.html">atmospheric_pass_perez</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f6b4f16efd44e3902b6ff1545b14bfc">atmospheric_pass_perez_</a> {}</td></tr>
 <tr class="separator:a7f6b4f16efd44e3902b6ff1545b14bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b4e1ac5884324e3061c567369c8d077" id="r_a2b4e1ac5884324e3061c567369c8d077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1atmospheric__pass__skybox.html">atmospheric_pass_skybox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b4e1ac5884324e3061c567369c8d077">atmospheric_pass_skybox_</a> {}</td></tr>
 <tr class="separator:a2b4e1ac5884324e3061c567369c8d077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ca6d283f46b4f579283bfb1ee67ba65" id="r_a7ca6d283f46b4f579283bfb1ee67ba65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1assao__pass.html">assao_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ca6d283f46b4f579283bfb1ee67ba65">assao_pass_</a> {}</td></tr>
 <tr class="separator:a7ca6d283f46b4f579283bfb1ee67ba65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785a50a2c9cdc0f49a7c03c043f35b03" id="r_a785a50a2c9cdc0f49a7c03c043f35b03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1auto__exposure__pass.html">auto_exposure_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a785a50a2c9cdc0f49a7c03c043f35b03">auto_exposure_pass_</a> {}</td></tr>
+<tr class="separator:a785a50a2c9cdc0f49a7c03c043f35b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33684e22512a4603c4d2c8e0c54d68d" id="r_aa33684e22512a4603c4d2c8e0c54d68d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1bloom__pass.html">bloom_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa33684e22512a4603c4d2c8e0c54d68d">bloom_pass_</a> {}</td></tr>
+<tr class="separator:aa33684e22512a4603c4d2c8e0c54d68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2fd3c0999571431083c3c05644e5755" id="r_af2fd3c0999571431083c3c05644e5755"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1fxaa__pass.html">fxaa_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2fd3c0999571431083c3c05644e5755">fxaa_pass_</a> {}</td></tr>
 <tr class="separator:af2fd3c0999571431083c3c05644e5755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64de7bb1a9a4faf4da0571946d5a0697" id="r_a64de7bb1a9a4faf4da0571946d5a0697"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1taa__pass.html">taa_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64de7bb1a9a4faf4da0571946d5a0697">taa_pass_</a> {}</td></tr>
+<tr class="separator:a64de7bb1a9a4faf4da0571946d5a0697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a4d5b97191c2665c6ab7235ff052c3e" id="r_a8a4d5b97191c2665c6ab7235ff052c3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1tonemapping__pass.html">tonemapping_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a4d5b97191c2665c6ab7235ff052c3e">tonemapping_pass_</a> {}</td></tr>
 <tr class="separator:a8a4d5b97191c2665c6ab7235ff052c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab406927135e733879cf51665d265091d" id="r_ab406927135e733879cf51665d265091d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1ssr__pass.html">ssr_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab406927135e733879cf51665d265091d">ssr_pass_</a> {}</td></tr>
@@ -196,17 +214,43 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aceef1ed33515aa1528ab7cd2bf5e4ae2" id="r_aceef1ed33515aa1528ab7cd2bf5e4ae2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1hiz__pass.html">hiz_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aceef1ed33515aa1528ab7cd2bf5e4ae2">hiz_pass_</a> {}</td></tr>
 <tr class="memdesc:aceef1ed33515aa1528ab7cd2bf5e4ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hi-Z buffer generation pass.  <br /></td></tr>
 <tr class="separator:aceef1ed33515aa1528ab7cd2bf5e4ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98edf8c1b68dedc4b23e5ea19af627ad" id="r_a98edf8c1b68dedc4b23e5ea19af627ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1ssil__pass.html">ssil_pass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98edf8c1b68dedc4b23e5ea19af627ad">ssil_pass_</a> {}</td></tr>
+<tr class="separator:a98edf8c1b68dedc4b23e5ea19af627ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af935063f9520309834af5035ab6c8a56" id="r_af935063f9520309834af5035ab6c8a56"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classunravel_1_1gpu__program.html">gpu_program</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af935063f9520309834af5035ab6c8a56">particle_program_</a> {}</td></tr>
 <tr class="separator:af935063f9520309834af5035ab6c8a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad697ef54c8d0924fb48c476a73102c24" id="r_ad697ef54c8d0924fb48c476a73102c24"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classunravel_1_1gpu__program.html">gpu_program</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad697ef54c8d0924fb48c476a73102c24">particle_program_instanced_</a> {}</td></tr>
 <tr class="separator:ad697ef54c8d0924fb48c476a73102c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565c0606d1295082a6241ef6c8d5c3db" id="r_a565c0606d1295082a6241ef6c8d5c3db"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classunravel_1_1gpu__program.html">gpu_program</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a565c0606d1295082a6241ef6c8d5c3db">particle_program_instanced_mask_</a> {}</td></tr>
+<tr class="separator:a565c0606d1295082a6241ef6c8d5c3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90efb60246eb17558aab07bef0bd3ae" id="r_ae90efb60246eb17558aab07bef0bd3ae"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classunravel_1_1gpu__program.html">gpu_program</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae90efb60246eb17558aab07bef0bd3ae">world_quad_program_</a> {}</td></tr>
+<tr class="separator:ae90efb60246eb17558aab07bef0bd3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31344f8ac4c948fab930dbf151f078bf" id="r_a31344f8ac4c948fab930dbf151f078bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structunravel_1_1rendering_1_1pipeline__stats.html">pipeline_stats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31344f8ac4c948fab930dbf151f078bf">stats_</a> {}</td></tr>
 <tr class="separator:a31344f8ac4c948fab930dbf151f078bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e88e9a4b20ebc99fd4615ef83c22ba8" id="r_a3e88e9a4b20ebc99fd4615ef83c22ba8"><td class="memItemLeft" align="right" valign="top">entt::registry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e88e9a4b20ebc99fd4615ef83c22ba8">cache_registry_</a></td></tr>
+<tr class="separator:a3e88e9a4b20ebc99fd4615ef83c22ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f6d24356392748853bb111190d3b7f" id="r_ae4f6d24356392748853bb111190d3b7f"><td class="memItemLeft" align="right" valign="top">entt::entity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4f6d24356392748853bb111190d3b7f">cache_entity_</a></td></tr>
+<tr class="separator:ae4f6d24356392748853bb111190d3b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00078">78</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00092">92</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6420c6dc332f1b1a3c84ae574b6bb564" name="a6420c6dc332f1b1a3c84ae574b6bb564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6420c6dc332f1b1a3c84ae574b6bb564">&#9670;&#160;</a></span>pipeline_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a6420c6dc332f1b1a3c84ae574b6bb564">unravel::rendering::pipeline::pipeline_flags</a> = uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00112">112</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+
+</div>
+</div>
 <a id="a9cb96ac853ffa61da36288b61dd20c48" name="a9cb96ac853ffa61da36288b61dd20c48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9cb96ac853ffa61da36288b61dd20c48">&#9670;&#160;</a></span>sptr</h2>
 
@@ -219,7 +263,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00082">82</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00096">96</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -235,7 +279,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00081">81</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00095">95</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +297,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Type alias for visibility flags. </p>
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00098">98</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00111">111</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -269,11 +313,43 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00083">83</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00097">97</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a43f49f91f29588260d2cd096704b9c7d" name="a43f49f91f29588260d2cd096704b9c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f49f91f29588260d2cd096704b9c7d">&#9670;&#160;</a></span>pipeline_run_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a43f49f91f29588260d2cd096704b9c7d">unravel::rendering::pipeline::pipeline_run_type</a> : std::uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Describes which high-level pipeline path is executing. Pass enablement is controlled separately via <code><a class="el" href="structunravel_1_1rendering_1_1pipeline_1_1run__params.html#a2bcbdf9a0441e6e2fa27f95300c234be" title="Deferred pipeline only: bitmask of enabled passes (deferred::pipeline_steps).">run_params::pflags</a></code>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a43f49f91f29588260d2cd096704b9c7dadd6d2dcc679d12b9430a9787bab45b33" name="a43f49f91f29588260d2cd096704b9c7dadd6d2dcc679d12b9430a9787bab45b33"></a>camera&#160;</td><td class="fielddoc"><p>Main camera / viewport rendering (post-processing, UI, probe build, etc.). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a43f49f91f29588260d2cd096704b9c7da5d1d3c484289e335b37ddf92d493da61" name="a43f49f91f29588260d2cd096704b9c7da5d1d3c484289e335b37ddf92d493da61"></a>reflection_probe_capture&#160;</td><td class="fielddoc"><p>Single cubemap face capture for reflection probe baking. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00118">118</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+
+</div>
+</div>
 <a id="a249516e1b047b015371d581ff666c2c6" name="a249516e1b047b015371d581ff666c2c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a249516e1b047b015371d581ff666c2c6">&#9670;&#160;</a></span>visibility_query</h2>
 
@@ -296,11 +372,9 @@ Protected Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a249516e1b047b015371d581ff666c2c6af1ebaa49608531af4a0ef672f651e7b5" name="a249516e1b047b015371d581ff666c2c6af1ebaa49608531af4a0ef672f651e7b5"></a>is_shadow_caster&#160;</td><td class="fielddoc"><p>Query for shadow casting entities. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a249516e1b047b015371d581ff666c2c6a970d2e22b34a8f3d6541dbb107d80a47" name="a249516e1b047b015371d581ff666c2c6a970d2e22b34a8f3d6541dbb107d80a47"></a>is_reflection_caster&#160;</td><td class="fielddoc"><p>Query for reflection casting entities. </p>
-</td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00089">89</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00103">103</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -357,7 +431,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af4365278b31f897807b184d2edd2f7c1" name="af4365278b31f897807b184d2edd2f7c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4365278b31f897807b184d2edd2f7c1">&#9670;&#160;</a></span>create_run_params()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4365278b31f897807b184d2edd2f7c1">&#9670;&#160;</a></span>create_run_params() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,12 +453,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00125">125</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00231">231</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a1a9a05f5b715555d13f5201e528d79f4" name="a1a9a05f5b715555d13f5201e528d79f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a9a05f5b715555d13f5201e528d79f4">&#9670;&#160;</a></span>gather_visible_models()</h2>
+<a id="aad5e5fecc548dd56bff7961ed7e79ab6" name="aad5e5fecc548dd56bff7961ed7e79ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad5e5fecc548dd56bff7961ed7e79ab6">&#9670;&#160;</a></span>create_run_params() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,14 +467,50 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::rendering::pipeline::gather_visible_models </td>
+          <td class="memname">auto unravel::rendering::pipeline::create_run_params </td>
+          <td>(</td>
+          <td class="paramtype">entt::handle</td>          <td class="paramname"><span class="paramname"><em>camera_ent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1scene.html">scene</a> *</td>          <td class="paramname"><span class="paramname"><em>scn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> *</td>          <td class="paramname"><span class="paramname"><em>cam</em></span>&#160;) const -&gt; <a class="el" href="structunravel_1_1rendering_1_1pipeline_1_1run__params.html">rendering::pipeline::run_params</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00346">346</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a814b4f7ee91aed1e5700047d9c6030c2" name="a814b4f7ee91aed1e5700047d9c6030c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a814b4f7ee91aed1e5700047d9c6030c2">&#9670;&#160;</a></span>gather_visible_models()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::rendering::pipeline::gather_visible_models </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structunravel_1_1scene.html">scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scn</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classmath_1_1frustum.html">math::frustum</a> *</td>          <td class="paramname"><span class="paramname"><em>frustum</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> *</td>          <td class="paramname"><span class="paramname"><em>cam</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -410,7 +520,22 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>render_mask</em></span>&#160;) -&gt; <a class="el" href="namespaceunravel_1_1rendering.html#ac04748f7fc39e3d7826075cee0ce7ebc">visibility_set_models_t</a></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>render_mask</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a></td>          <td class="paramname"><span class="paramname"><em>dt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; void(entt::handle <a class="el" href="rendering_2ecs_2components_2model__component_8cpp.html#a8881ff40e399ee1fad686418663aee85">entity</a>, const <a class="el" href="structunravel_1_1lod__data.html">lod_data</a> &amp;<a class="el" href="structunravel_1_1lod__data.html">lod_data</a>)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>lod_data_callback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> *</td>          <td class="paramname"><span class="paramname"><em>lod_reference_cam</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -424,15 +549,47 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scn</td><td>The scene to gather models from. </td></tr>
-    <tr><td class="paramname">frustum</td><td>The frustum used for visibility determination. </td></tr>
+    <tr><td class="paramname">cam</td><td>The camera used for visibility determination. </td></tr>
     <tr><td class="paramname">query</td><td>The visibility query flags. </td></tr>
     <tr><td class="paramname">render_mask</td><td>Render mask to filter entities by layers. </td></tr>
+    <tr><td class="paramname">dt</td><td>The delta time. </td></tr>
+    <tr><td class="paramname">lod_data_callback</td><td>The callback to call for each visible model. </td></tr>
+    <tr><td class="paramname">lod_reference_cam</td><td>Optional camera used only for LOD selection when <code>cam</code> is null (e.g. shadow gathering, which must not frustum-cull but benefits from distance-appropriate LODs). The shadow LOD bias is applied on top. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of handles to the visible models. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00055">55</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00110">110</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2e64972517a0fc534d65c024362092df" name="a2e64972517a0fc534d65c024362092df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e64972517a0fc534d65c024362092df">&#9670;&#160;</a></span>get_shadow_lod_bias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::rendering::pipeline::get_shadow_lod_bias </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; float</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>LOD bias applied on top of the main selection when rendering shadows. 0 = shadows use the same LOD the main view would pick; positive values push shadow rendering toward coarser LODs. Replaces the old behavior of always using LOD 0. </p>
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00100">100</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
 
 </div>
 </div>
@@ -460,7 +617,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00178">178</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00233">233</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -489,12 +646,12 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classunravel_1_1rendering_1_1deferred.html#ad8fec6624ff46446204140bf893c0c13">unravel::rendering::deferred</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00025">25</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00058">58</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a1618f31299ca3bd56c2312de460f8701" name="a1618f31299ca3bd56c2312de460f8701"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1618f31299ca3bd56c2312de460f8701">&#9670;&#160;</a></span>particle_pass()</h2>
+<a id="a134e67fcdd6f7453026e0c0f47c777c7" name="a134e67fcdd6f7453026e0c0f47c777c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134e67fcdd6f7453026e0c0f47c777c7">&#9670;&#160;</a></span>run_particle_pass()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -503,7 +660,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void unravel::rendering::pipeline::particle_pass </td>
+          <td class="memname">void unravel::rendering::pipeline::run_particle_pass </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structunravel_1_1scene.html">scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scn</em></span>, </td>
         </tr>
@@ -530,7 +687,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00215">215</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00548">548</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
 
 </div>
 </div>
@@ -669,6 +826,47 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a75d590e6b4559b5ee58218848c573eb1" name="a75d590e6b4559b5ee58218848c573eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d590e6b4559b5ee58218848c573eb1">&#9670;&#160;</a></span>run_ui_pass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::rendering::pipeline::run_ui_pass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1scene.html">scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scn</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>output</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00417">417</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a7e4aedd2d9369e3707eea04df258f518" name="a7e4aedd2d9369e3707eea04df258f518"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e4aedd2d9369e3707eea04df258f518">&#9670;&#160;</a></span>set_debug_pass()</h2>
 
@@ -696,8 +894,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e0d8bdf04ab721eeaa61652dced9d50" name="a3e0d8bdf04ab721eeaa61652dced9d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e0d8bdf04ab721eeaa61652dced9d50">&#9670;&#160;</a></span>ui_pass()</h2>
+<a id="a9d34b624bd06a7415f4e0fe0f4fb5373" name="a9d34b624bd06a7415f4e0fe0f4fb5373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d34b624bd06a7415f4e0fe0f4fb5373">&#9670;&#160;</a></span>set_shadow_lod_bias()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -706,34 +904,20 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void unravel::rendering::pipeline::ui_pass </td>
+          <td class="memname">void unravel::rendering::pipeline::set_shadow_lod_bias </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structunravel_1_1scene.html">scene</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scn</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>bias</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>output</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00184">184</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00105">105</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
 
 </div>
 </div>
@@ -758,31 +942,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00189">189</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
-
-</div>
-</div>
-<a id="ae290c645f41a617fa9376c79e5b42289" name="ae290c645f41a617fa9376c79e5b42289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae290c645f41a617fa9376c79e5b42289">&#9670;&#160;</a></span>atmospheric_pass_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classunravel_1_1atmospheric__pass.html">atmospheric_pass</a> unravel::rendering::pipeline::atmospheric_pass_ {}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00186">186</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00243">243</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -806,7 +966,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00187">187</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00241">241</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -830,7 +990,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00188">188</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00242">242</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+
+</div>
+</div>
+<a id="a785a50a2c9cdc0f49a7c03c043f35b03" name="a785a50a2c9cdc0f49a7c03c043f35b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785a50a2c9cdc0f49a7c03c043f35b03">&#9670;&#160;</a></span>auto_exposure_pass_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classunravel_1_1auto__exposure__pass.html">auto_exposure_pass</a> unravel::rendering::pipeline::auto_exposure_pass_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00244">244</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -854,7 +1038,79 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00185">185</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00240">240</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+
+</div>
+</div>
+<a id="aa33684e22512a4603c4d2c8e0c54d68d" name="aa33684e22512a4603c4d2c8e0c54d68d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33684e22512a4603c4d2c8e0c54d68d">&#9670;&#160;</a></span>bloom_pass_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classunravel_1_1bloom__pass.html">bloom_pass</a> unravel::rendering::pipeline::bloom_pass_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00245">245</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+
+</div>
+</div>
+<a id="ae4f6d24356392748853bb111190d3b7f" name="ae4f6d24356392748853bb111190d3b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f6d24356392748853bb111190d3b7f">&#9670;&#160;</a></span>cache_entity_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">entt::entity unravel::rendering::pipeline::cache_entity_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00262">262</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+
+</div>
+</div>
+<a id="a3e88e9a4b20ebc99fd4615ef83c22ba8" name="a3e88e9a4b20ebc99fd4615ef83c22ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e88e9a4b20ebc99fd4615ef83c22ba8">&#9670;&#160;</a></span>cache_registry_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">entt::registry unravel::rendering::pipeline::cache_registry_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00261">261</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -878,7 +1134,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00190">190</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00246">246</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -904,7 +1160,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Hi-Z buffer generation pass. </p>
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00193">193</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00250">250</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -928,7 +1184,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00195">195</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00253">253</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -952,7 +1208,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00196">196</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00254">254</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+
+</div>
+</div>
+<a id="a565c0606d1295082a6241ef6c8d5c3db" name="a565c0606d1295082a6241ef6c8d5c3db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a565c0606d1295082a6241ef6c8d5c3db">&#9670;&#160;</a></span>particle_program_instanced_mask_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classunravel_1_1gpu__program.html">gpu_program</a>&gt; unravel::rendering::pipeline::particle_program_instanced_mask_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00255">255</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -976,7 +1256,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00184">184</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00239">239</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+
+</div>
+</div>
+<a id="a98edf8c1b68dedc4b23e5ea19af627ad" name="a98edf8c1b68dedc4b23e5ea19af627ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98edf8c1b68dedc4b23e5ea19af627ad">&#9670;&#160;</a></span>ssil_pass_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classunravel_1_1ssil__pass.html">ssil_pass</a> unravel::rendering::pipeline::ssil_pass_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00251">251</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +1304,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00192">192</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00249">249</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +1328,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00198">198</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00258">258</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+
+</div>
+</div>
+<a id="a64de7bb1a9a4faf4da0571946d5a0697" name="a64de7bb1a9a4faf4da0571946d5a0697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64de7bb1a9a4faf4da0571946d5a0697">&#9670;&#160;</a></span>taa_pass_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classunravel_1_1taa__pass.html">taa_pass</a> unravel::rendering::pipeline::taa_pass_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00247">247</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>
@@ -1048,7 +1376,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00191">191</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00248">248</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
+
+</div>
+</div>
+<a id="ae90efb60246eb17558aab07bef0bd3ae" name="ae90efb60246eb17558aab07bef0bd3ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90efb60246eb17558aab07bef0bd3ae">&#9670;&#160;</a></span>world_quad_program_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classunravel_1_1gpu__program.html">gpu_program</a>&gt; unravel::rendering::pipeline::world_quad_program_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pipeline_8h_source.html#l00256">256</a> of file <a class="el" href="pipeline_8h_source.html">pipeline.h</a>.</p>
 
 </div>
 </div>

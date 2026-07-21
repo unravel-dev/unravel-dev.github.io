@@ -27,6 +27,7 @@ var structunravel_1_1texture__importer__meta =
       [ "equirect", "structunravel_1_1texture__importer__meta.html#a99141ce9cded169751d68c111f1aeb61a39bbee5de41b6884c41ea8b01e8ddcf4", null ]
     ] ],
     [ "generate_mipmaps", "structunravel_1_1texture__importer__meta.html#a931d1d4766d2f27e253c55f720fac8fc", null ],
+    [ "invert_normal_y", "structunravel_1_1texture__importer__meta.html#aea8c1c0d60dd484d59ca509a84c4aab0", null ],
     [ "quality", "structunravel_1_1texture__importer__meta.html#aa045aefb5ec5ea0be75804145f88041e", null ],
     [ "type", "structunravel_1_1texture__importer__meta.html#a232617f6def35a2a53989b4dc3f646b9", null ]
 ];

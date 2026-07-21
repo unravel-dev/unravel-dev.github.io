@@ -1,6 +1,7 @@
 var namespaces_dup =
 [
     [ "ANONYMOUS", "namespace_a_n_o_n_y_m_o_u_s.html", null ],
+    [ "asset_detail", "namespaceasset__detail.html", "namespaceasset__detail" ],
     [ "audio", "namespaceaudio.html", [
       [ "LOAD", "namespaceaudio.html#a10f7cc81f37e231dafc8d59004dee3bb", null ],
       [ "LOAD", "namespaceaudio.html#a2a9aebd63be39e8d8b2f1948ca29f5fe", null ],
@@ -23,31 +24,9 @@ var namespaces_dup =
     [ "bullet", "namespacebullet.html", null ],
     [ "bx", "namespacebx.html", null ],
     [ "cmd_line", "namespacecmd__line.html", "namespacecmd__line" ],
+    [ "dotnetpp_backend", "namespacedotnetpp__backend.html", "namespacedotnetpp__backend" ],
     [ "entry", "namespaceentry.html", null ],
-    [ "entt", "namespaceentt.html", [
-      [ "attribute", "namespaceentt.html#a70e70ddd929931f82acbfeb7d72f3aec", null ],
-      [ "attributes", "namespaceentt.html#ad0c4d1fdcb6e7abbd3204968cd6ffe30", null ],
-      [ "property_predicate_t", "namespaceentt.html#ae7397994dada156c6e1cc1871c419aae", null ],
-      [ "as_derived", "namespaceentt.html#a96975805cabc3d6132360cd4a1eed617", null ],
-      [ "copy_meta_any", "namespaceentt.html#abdd5c4f20b945596cfb6e0651c9ef66d", null ],
-      [ "get_attribute", "namespaceentt.html#aca7547d197439c9d3b3b167bb02f6a99", null ],
-      [ "get_attribute", "namespaceentt.html#ad92ef3796e3da0300e5d9d8b43a7c3b1", null ],
-      [ "get_attribute", "namespaceentt.html#a7b3ae321dab5d4de0ef1b00aee01534b", null ],
-      [ "get_attribute_as", "namespaceentt.html#aa01f529cc240a9b2161e7239e1fe0612", null ],
-      [ "get_attribute_as", "namespaceentt.html#a23c2f116094a4b4a788909dc2be7dae0", null ],
-      [ "get_attribute_as", "namespaceentt.html#a943dafb501e83d6d6a097d1721f64072", null ],
-      [ "get_attribute_as< std::string >", "namespaceentt.html#a99a3a1b9e9203ed0b7b9b540b77c27ca", null ],
-      [ "get_derived_type", "namespaceentt.html#ae8fe3b3abb2726656824228cce127c3d", null ],
-      [ "get_derived_types", "namespaceentt.html#a28317a2027c1a7473d802dcb545bdadc", null ],
-      [ "get_name", "namespaceentt.html#ad3ceaa4a58bf7b9f35e05968fb4cd838", null ],
-      [ "get_name", "namespaceentt.html#a67fe5d0c5be511e15bb602f64461f68b", null ],
-      [ "get_name", "namespaceentt.html#af34b8b188b52566c54394888a10bea86", null ],
-      [ "get_pretty_name", "namespaceentt.html#a6ae0b25f969f71e384d0962371b8cd93", null ],
-      [ "get_pretty_name", "namespaceentt.html#a9d879ad2b31060897926da3496c70939", null ],
-      [ "get_pretty_name", "namespaceentt.html#a75f7ce5a151e0953769a0a8577e997c8", null ],
-      [ "make_custom", "namespaceentt.html#af53bc79f7cbecca95bb72a1717bbf9a3", null ],
-      [ "property_predicate", "namespaceentt.html#ae67ce55f5eff6289257b54f585bb53c5", null ]
-    ] ],
+    [ "entt", "namespaceentt.html", "namespaceentt" ],
     [ "ex", "namespaceex.html", [
       [ "get_all_formats", "namespaceex.html#a0f3d5563efc47f9c22191a401ae07253", null ],
       [ "get_compiled_directory", "namespaceex.html#a9084511920c06eac49736e94a69c3f2c", null ],
@@ -55,6 +34,14 @@ var namespaces_dup =
       [ "get_data_directory", "namespaceex.html#a2beb5dab1cc4d4db92b09bfb4cc77d23", null ],
       [ "get_data_directory_no_slash", "namespaceex.html#ae549419221dd707ce56cfc48ff74d58d", null ],
       [ "get_format", "namespaceex.html#a10364a2654501630fb598cec92b0e5f7", null ],
+      [ "get_format_version", "namespaceex.html#ad281432fe43de76aff023ed49ca4ee54", null ],
+      [ "get_format_version", "namespaceex.html#a48cb0ef4af75ca9701415c7a63c79dbc", null ],
+      [ "get_format_version< gfx::texture >", "namespaceex.html#abfb132666c63980733f6538587f9871d", null ],
+      [ "get_format_version< unravel::animation_clip >", "namespaceex.html#a5d7275873a08123240fa2cb002bb6a7b", null ],
+      [ "get_format_version< unravel::audio_clip >", "namespaceex.html#abcb318589574b6b7109e28f0a7cffac0", null ],
+      [ "get_format_version< unravel::material >", "namespaceex.html#a3864bbb4a8eee42075a6950559b5c478", null ],
+      [ "get_format_version< unravel::mesh >", "namespaceex.html#afe723d2f4e2d8037336dd8e7d4a3fe52", null ],
+      [ "get_format_version< unravel::physics_material >", "namespaceex.html#ae137025fd98c77665e6ba69f8e746544", null ],
       [ "get_meta_directory", "namespaceex.html#aa5928dc24e3c99d6708a8be3f61548f9", null ],
       [ "get_meta_directory_no_slash", "namespaceex.html#a69b54c000e625d81a7661e93533db229", null ],
       [ "get_meta_format", "namespaceex.html#a8f12df46aeca0d26af3c52a4780622cc", null ],
@@ -78,6 +65,7 @@ var namespaces_dup =
       [ "get_suported_formats_with_wildcard", "namespaceex.html#aec5a7b4ede0f14a7fe4bf2fba2d61e51", null ],
       [ "get_type", "namespaceex.html#a56a7b82ed8729b0d25d7d37a5fb6bcb8", null ],
       [ "get_type", "namespaceex.html#af56464daa377f9b125f425e0e3af32b7", null ],
+      [ "is_binary", "namespaceex.html#abc8f5419d0b3add306f158a20f28b0a3", null ],
       [ "is_format", "namespaceex.html#a56bae4a3bf4248ce0f176020eca36b0b", null ]
     ] ],
     [ "fs", "namespacefs.html", "namespacefs" ],
@@ -87,14 +75,31 @@ var namespaces_dup =
     [ "glm", "namespaceglm.html", "namespaceglm" ],
     [ "gml", "namespacegml.html", "namespacegml" ],
     [ "helper", "namespacehelper.html", "namespacehelper" ],
+    [ "httplib", "namespacehttplib.html", null ],
     [ "ImBox", "namespace_im_box.html", "namespace_im_box" ],
     [ "ImGui", "namespace_im_gui.html", "namespace_im_gui" ],
+    [ "imgui_style", "namespaceimgui__style.html", [
+      [ "set_cool_blue_theme", "namespaceimgui__style.html#aa967cf638bb6c01a72135eb58a8dfd35", null ],
+      [ "set_dark_theme", "namespaceimgui__style.html#aa83cb7e1873d82a15fca1827b2358dca", null ],
+      [ "set_dark_theme_red", "namespaceimgui__style.html#ab7bbd9fbd5e36cb767a8365e89a92b9b", null ],
+      [ "set_minimalist_green_theme", "namespaceimgui__style.html#a48c320b917f40401f045723f4c451a7f", null ],
+      [ "set_modern_purple_theme", "namespaceimgui__style.html#a3acb5d9a0cee23e962b995e90a320e52", null ],
+      [ "set_photoshop_theme", "namespaceimgui__style.html#af19769ea2105d75aae752fc7d7ffecbb", null ],
+      [ "set_professional_dark_theme", "namespaceimgui__style.html#aa426a821b03af0a0e026d605cbbb86d7", null ],
+      [ "set_unity_inspired_theme", "namespaceimgui__style.html#a46e8bd4823520f3fcba18e6bfbb7f7c1", null ],
+      [ "set_unity_theme", "namespaceimgui__style.html#a2b4f52e3d510f008d1e7f0126ba0fbc3", null ],
+      [ "set_warm_amber_theme", "namespaceimgui__style.html#a9278afa77f0b0da52f10d5e828f1661a", null ]
+    ] ],
     [ "input", "namespaceinput.html", "namespaceinput" ],
     [ "inspector", "namespaceinspector.html", null ],
     [ "math", "namespacemath.html", "namespacemath" ],
-    [ "mono", "namespacemono.html", "namespacemono" ],
     [ "moodycamel", "namespacemoodycamel.html", "namespacemoodycamel" ],
     [ "platform", "namespaceplatform.html", [
+      [ "get_process_resident_set_bytes", "namespaceplatform.html#aaf0d7f97ff411dbf340cd3fe5f4d34b3", null ],
+      [ "get_system_available_physical_memory_bytes", "namespaceplatform.html#a71ca212a29385ecb55bf441019dddc5e", null ],
+      [ "get_system_physical_memory_bytes", "namespaceplatform.html#afbd67f3c0fdd8288625e1c475ec83d98", null ],
+      [ "get_system_used_physical_memory_bytes", "namespaceplatform.html#a90b744e7eb80a94f001ffe726e224b50", null ],
+      [ "get_thread_cpu_time_ns", "namespaceplatform.html#ab519e78c2541b5b50ecb1b1bd51f4231", null ],
       [ "set_thread_name", "namespaceplatform.html#a18f15fc4a75d5a546b4f9baeff19eea2", null ]
     ] ],
     [ "ps", "namespaceps.html", "namespaceps" ],
@@ -117,10 +122,5 @@ var namespaces_dup =
     [ "utils", "namespaceutils.html", [
       [ "hash_combine", "namespaceutils.html#a5521631d01f958e0a118c2d074468ba0", null ]
     ] ],
-    [ "version", "namespaceversion.html", [
-      [ "get_full", "namespaceversion.html#a33ad3abd2e2138e59c7a5e376aacd026", null ],
-      [ "get_major", "namespaceversion.html#a40a6c30ca3a59545b38d8845d509085a", null ],
-      [ "get_minor", "namespaceversion.html#a0983c05d8948721ad41e2b6325da5544", null ],
-      [ "get_patch", "namespaceversion.html#aa991b373af2a25d05d1308511771afe3", null ]
-    ] ]
+    [ "version", "namespaceversion.html", "namespaceversion" ]
 ];

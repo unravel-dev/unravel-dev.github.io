@@ -104,9 +104,12 @@ $(function(){initNavTree('mesh_8h.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;engine/engine_export.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__handle_8h_source.html">engine/assets/asset_handle.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="material_8h_source.html">engine/rendering/material.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="graphics_8h_source.html">graphics/graphics.h</a>&gt;</code><br />
 <code>#include &lt;hpp/span.hpp&gt;</code><br />
+<code>#include &lt;hpp/uuid.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
@@ -141,10 +144,19 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1info.html">unravel::mesh::info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1info_1_1lod__info.html">unravel::mesh::info::lod_info</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Structure describing LOD level information. Total number of vertices.  <a href="structunravel_1_1mesh_1_1info_1_1lod__info.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1triangle.html">unravel::mesh::triangle</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure describing data for a single triangle in the mesh.  <a href="structunravel_1_1mesh_1_1triangle.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1lod__level.html">unravel::mesh::lod_level</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure describing a LOD level with its own index buffer and submeshes.  <a href="structunravel_1_1mesh_1_1lod__level.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1armature__node.html">unravel::mesh::armature_node</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1lod__load__data.html">unravel::mesh::lod_load_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure describing a LOD level in <a class="el" href="structunravel_1_1mesh_1_1load__data.html" title="Struct used for mesh construction.">load_data</a> (for serialization).  <a href="structunravel_1_1mesh_1_1lod__load__data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1load__data.html">unravel::mesh::load_data</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct used for mesh construction.  <a href="structunravel_1_1mesh_1_1load__data.html#details">More...</a><br /></td></tr>
@@ -168,6 +180,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfx.html">gfx</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1triangle__flags.html">unravel::triangle_flags</a></td></tr>

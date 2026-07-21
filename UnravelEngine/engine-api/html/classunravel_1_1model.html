@@ -98,6 +98,7 @@ $(function(){initNavTree('classunravel_1_1model.html',''); initResizable(true); 
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classunravel_1_1model-members.html">List of all members</a>  </div>
@@ -124,26 +125,37 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1model_1_1submit__callbacks.html">submit_callbacks</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callbacks for submitting the model for rendering.  <a href="structunravel_1_1model_1_1submit__callbacks.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1model_1_1submit__vertex__pulling__callbacks.html">submit_vertex_pulling_callbacks</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callbacks for submitting the model using vertex-pulling rendering.  <a href="structunravel_1_1model_1_1submit__vertex__pulling__callbacks.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa3b14b8644cf532fde0f56cc2093ed8a" id="r_aa3b14b8644cf532fde0f56cc2093ed8a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3b14b8644cf532fde0f56cc2093ed8a">seconds_t</a> = std::chrono::duration&lt;float&gt;</td></tr>
+<tr class="separator:aa3b14b8644cf532fde0f56cc2093ed8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2a69ecda3e90e086ccad2a23ed3296dc" id="r_a2a69ecda3e90e086ccad2a23ed3296dc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a69ecda3e90e086ccad2a23ed3296dc">is_valid</a> () const -&gt; bool</td></tr>
-<tr class="memdesc:a2a69ecda3e90e086ccad2a23ed3296dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the model is valid.  <br /></td></tr>
-<tr class="separator:a2a69ecda3e90e086ccad2a23ed3296dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4453a442d392cbc4512716065e0e2b7e" id="r_a4453a442d392cbc4512716065e0e2b7e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4453a442d392cbc4512716065e0e2b7e">is_valid</a> () const -&gt; bool</td></tr>
+<tr class="memdesc:a4453a442d392cbc4512716065e0e2b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the model is valid.  <br /></td></tr>
+<tr class="separator:a4453a442d392cbc4512716065e0e2b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13ed84094afadf4b43058c2fe86ec7c9" id="r_a13ed84094afadf4b43058c2fe86ec7c9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13ed84094afadf4b43058c2fe86ec7c9">get_lod</a> (uint32_t lod) const -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1mesh.html">mesh</a> &gt;</td></tr>
 <tr class="memdesc:a13ed84094afadf4b43058c2fe86ec7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the LOD (Level of Detail) mesh for the specified level.  <br /></td></tr>
 <tr class="separator:a13ed84094afadf4b43058c2fe86ec7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5e0781f41b71bf2e15e10e25f75b2eb" id="r_ad5e0781f41b71bf2e15e10e25f75b2eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5e0781f41b71bf2e15e10e25f75b2eb">set_lod</a> (<a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1mesh.html">mesh</a> &gt; <a class="el" href="classunravel_1_1mesh.html">mesh</a>, uint32_t lod)</td></tr>
 <tr class="memdesc:ad5e0781f41b71bf2e15e10e25f75b2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the LOD (Level of Detail) mesh for the specified level.  <br /></td></tr>
 <tr class="separator:ad5e0781f41b71bf2e15e10e25f75b2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2502088e65fb6b853d206fb2274c1eab" id="r_a2502088e65fb6b853d206fb2274c1eab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2502088e65fb6b853d206fb2274c1eab">set_material</a> (<a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1material.html">material</a> &gt; <a class="el" href="classunravel_1_1material.html">material</a>, uint32_t index)</td></tr>
+<tr class="memitem:a2502088e65fb6b853d206fb2274c1eab" id="r_a2502088e65fb6b853d206fb2274c1eab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2502088e65fb6b853d206fb2274c1eab">set_material</a> (<a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1material.html">material</a> &gt; <a class="el" href="classunravel_1_1material.html">material</a>, uint32_t <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>)</td></tr>
 <tr class="memdesc:a2502088e65fb6b853d206fb2274c1eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the material for the specified index.  <br /></td></tr>
 <tr class="separator:a2502088e65fb6b853d206fb2274c1eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab53f5ab3fcecb3deb567d23db4020194" id="r_ab53f5ab3fcecb3deb567d23db4020194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab53f5ab3fcecb3deb567d23db4020194">set_material_instance</a> (<a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a> <a class="el" href="classunravel_1_1material.html">material</a>, uint32_t index)</td></tr>
+<tr class="memitem:ab53f5ab3fcecb3deb567d23db4020194" id="r_ab53f5ab3fcecb3deb567d23db4020194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab53f5ab3fcecb3deb567d23db4020194">set_material_instance</a> (<a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a> <a class="el" href="classunravel_1_1material.html">material</a>, uint32_t <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>)</td></tr>
 <tr class="separator:ab53f5ab3fcecb3deb567d23db4020194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae27620a0c94335f672b7a4bf4772712b" id="r_ae27620a0c94335f672b7a4bf4772712b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae27620a0c94335f672b7a4bf4772712b">get_lods</a> () const -&gt; const std::vector&lt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1mesh.html">mesh</a> &gt; &gt; &amp;</td></tr>
 <tr class="memdesc:ae27620a0c94335f672b7a4bf4772712b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all the LOD meshes.  <br /></td></tr>
 <tr class="separator:ae27620a0c94335f672b7a4bf4772712b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bc003c9de56bf9e06c900d3ff2e5e4" id="r_ac4bc003c9de56bf9e06c900d3ff2e5e4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4bc003c9de56bf9e06c900d3ff2e5e4">get_lods_count</a> () const -&gt; uint32_t</td></tr>
+<tr class="memdesc:ac4bc003c9de56bf9e06c900d3ff2e5e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of LOD levels available. If there is only one explicit mesh, returns the internal LOD count of that mesh. Otherwise, returns the number of mesh LODs.  <br /></td></tr>
+<tr class="separator:ac4bc003c9de56bf9e06c900d3ff2e5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9705156807f30d5de5542ef061b1ee9" id="r_ab9705156807f30d5de5542ef061b1ee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9705156807f30d5de5542ef061b1ee9">set_lods</a> (const std::vector&lt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1mesh.html">mesh</a> &gt; &gt; &amp;lods)</td></tr>
 <tr class="memdesc:ab9705156807f30d5de5542ef061b1ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the LOD meshes.  <br /></td></tr>
 <tr class="separator:ab9705156807f30d5de5542ef061b1ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,28 +169,94 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a531a57759a66bbbf5601b5988cba8523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a578bf003f2f3fd2173fb5144c8d4e903" id="r_a578bf003f2f3fd2173fb5144c8d4e903"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a578bf003f2f3fd2173fb5144c8d4e903">set_material_instances</a> (const std::vector&lt; <a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a> &gt; &amp;materials)</td></tr>
 <tr class="separator:a578bf003f2f3fd2173fb5144c8d4e903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a067805921ed99ea781b6e2d78144b9b5" id="r_a067805921ed99ea781b6e2d78144b9b5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a067805921ed99ea781b6e2d78144b9b5">get_material</a> (uint32_t index) const -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1material.html">material</a> &gt;</td></tr>
+<tr class="memitem:a067805921ed99ea781b6e2d78144b9b5" id="r_a067805921ed99ea781b6e2d78144b9b5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a067805921ed99ea781b6e2d78144b9b5">get_material</a> (uint32_t <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>) const -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1material.html">material</a> &gt;</td></tr>
 <tr class="memdesc:a067805921ed99ea781b6e2d78144b9b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the material for the specified index.  <br /></td></tr>
 <tr class="separator:a067805921ed99ea781b6e2d78144b9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a9b1cd822724a4827e29d5b3ab0be09" id="r_a8a9b1cd822724a4827e29d5b3ab0be09"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a9b1cd822724a4827e29d5b3ab0be09">get_material_instance</a> (uint32_t index) const -&gt; <a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a></td></tr>
+<tr class="memitem:a8a9b1cd822724a4827e29d5b3ab0be09" id="r_a8a9b1cd822724a4827e29d5b3ab0be09"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a9b1cd822724a4827e29d5b3ab0be09">get_material_instance</a> (uint32_t <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>) const -&gt; <a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a></td></tr>
 <tr class="separator:a8a9b1cd822724a4827e29d5b3ab0be09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9a4dc648d5ed33ec10cdc8949160d09" id="r_ac9a4dc648d5ed33ec10cdc8949160d09"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9a4dc648d5ed33ec10cdc8949160d09">get_or_emplace_material_instance</a> (uint32_t index) -&gt; <a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a></td></tr>
+<tr class="memitem:ac9a4dc648d5ed33ec10cdc8949160d09" id="r_ac9a4dc648d5ed33ec10cdc8949160d09"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9a4dc648d5ed33ec10cdc8949160d09">get_or_emplace_material_instance</a> (uint32_t <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>) -&gt; <a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a></td></tr>
 <tr class="separator:ac9a4dc648d5ed33ec10cdc8949160d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4026377138a9eb154b9d0d83c1e08c10" id="r_a4026377138a9eb154b9d0d83c1e08c10"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4026377138a9eb154b9d0d83c1e08c10">get_lod_limits</a> () const -&gt; const std::vector&lt; <a class="el" href="core_2base_2basetypes_8hpp.html#a6e1ce8c9303903fae646f9cfcdf46bc5">urange32_t</a> &gt; &amp;</td></tr>
-<tr class="memdesc:a4026377138a9eb154b9d0d83c1e08c10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the LOD limits.  <br /></td></tr>
-<tr class="separator:a4026377138a9eb154b9d0d83c1e08c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f1a56380ef80ac61506d413357b27d3" id="r_a0f1a56380ef80ac61506d413357b27d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1a56380ef80ac61506d413357b27d3">set_lod_limits</a> (const std::vector&lt; <a class="el" href="core_2base_2basetypes_8hpp.html#a6e1ce8c9303903fae646f9cfcdf46bc5">urange32_t</a> &gt; &amp;limits)</td></tr>
-<tr class="memdesc:a0f1a56380ef80ac61506d413357b27d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the LOD limits.  <br /></td></tr>
-<tr class="separator:a0f1a56380ef80ac61506d413357b27d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79820ccaf4a71d5425f5b1b0e189a0f0" id="r_a79820ccaf4a71d5425f5b1b0e189a0f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79820ccaf4a71d5425f5b1b0e189a0f0">submit</a> (const math::mat4 &amp;world_transform, const <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &amp;submesh_transforms, const <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &amp;bone_transforms, const std::vector&lt; <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &gt; &amp;skinning_matrices, unsigned int lod, const <a class="el" href="structunravel_1_1model_1_1submit__callbacks.html">submit_callbacks</a> &amp;callbacks) const</td></tr>
-<tr class="memdesc:a79820ccaf4a71d5425f5b1b0e189a0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits the model for rendering.  <br /></td></tr>
-<tr class="separator:a79820ccaf4a71d5425f5b1b0e189a0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46a9086452e707b8dbc2fe1135f257b" id="r_aa46a9086452e707b8dbc2fe1135f257b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa46a9086452e707b8dbc2fe1135f257b">get_lod_override_enabled</a> () const -&gt; bool</td></tr>
+<tr class="memdesc:aa46a9086452e707b8dbc2fe1135f257b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether LOD override is enabled.  <br /></td></tr>
+<tr class="separator:aa46a9086452e707b8dbc2fe1135f257b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086aaebb22cfff42a2f4bd4b218c11fb" id="r_a086aaebb22cfff42a2f4bd4b218c11fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a086aaebb22cfff42a2f4bd4b218c11fb">set_lod_override_enabled</a> (bool <a class="el" href="volume__resolver_8cpp.html#a8740ba80e30dd75e71d09fa1dcf04f3d">enabled</a>)</td></tr>
+<tr class="memdesc:a086aaebb22cfff42a2f4bd4b218c11fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether LOD override is enabled.  <br /></td></tr>
+<tr class="separator:a086aaebb22cfff42a2f4bd4b218c11fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346493c9a5eab1e7bf1d58ca08163cf8" id="r_a346493c9a5eab1e7bf1d58ca08163cf8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a346493c9a5eab1e7bf1d58ca08163cf8">get_lod_override_level</a> () const -&gt; uint32_t</td></tr>
+<tr class="memdesc:a346493c9a5eab1e7bf1d58ca08163cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the LOD override level.  <br /></td></tr>
+<tr class="separator:a346493c9a5eab1e7bf1d58ca08163cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac645c5cafd96eb54a4e27853611fe90c" id="r_ac645c5cafd96eb54a4e27853611fe90c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac645c5cafd96eb54a4e27853611fe90c">set_lod_override_level</a> (uint32_t level)</td></tr>
+<tr class="memdesc:ac645c5cafd96eb54a4e27853611fe90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the LOD override level.  <br /></td></tr>
+<tr class="separator:ac645c5cafd96eb54a4e27853611fe90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9045298426b5cc9a641038c4b760f247" id="r_a9045298426b5cc9a641038c4b760f247"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9045298426b5cc9a641038c4b760f247">get_lod_selection_bias</a> () const -&gt; float</td></tr>
+<tr class="memdesc:a9045298426b5cc9a641038c4b760f247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the LOD selection bias.  <br /></td></tr>
+<tr class="separator:a9045298426b5cc9a641038c4b760f247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa464c2246bb96933653db7c71a75f963" id="r_aa464c2246bb96933653db7c71a75f963"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa464c2246bb96933653db7c71a75f963">set_lod_selection_bias</a> (float bias)</td></tr>
+<tr class="memdesc:aa464c2246bb96933653db7c71a75f963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the LOD selection bias.  <br /></td></tr>
+<tr class="separator:aa464c2246bb96933653db7c71a75f963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc8459a44640ed2c934d0a0de2a4a69" id="r_adfc8459a44640ed2c934d0a0de2a4a69"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfc8459a44640ed2c934d0a0de2a4a69">get_lod_hysteresis</a> () const -&gt; float</td></tr>
+<tr class="memdesc:adfc8459a44640ed2c934d0a0de2a4a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the LOD hysteresis factor used to prevent rapid LOD switching.  <br /></td></tr>
+<tr class="separator:adfc8459a44640ed2c934d0a0de2a4a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e90b362b4b9de1b983c792428124e77" id="r_a9e90b362b4b9de1b983c792428124e77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e90b362b4b9de1b983c792428124e77">set_lod_hysteresis</a> (float hysteresis)</td></tr>
+<tr class="memdesc:a9e90b362b4b9de1b983c792428124e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the LOD hysteresis factor.  <br /></td></tr>
+<tr class="separator:a9e90b362b4b9de1b983c792428124e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0f6158baf61be3b26d6343ebc26fbb" id="r_aed0f6158baf61be3b26d6343ebc26fbb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed0f6158baf61be3b26d6343ebc26fbb">get_lod_transition_time</a> () const -&gt; <a class="el" href="#aa3b14b8644cf532fde0f56cc2093ed8a">seconds_t</a></td></tr>
+<tr class="memdesc:aed0f6158baf61be3b26d6343ebc26fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the LOD transition time in seconds.  <br /></td></tr>
+<tr class="separator:aed0f6158baf61be3b26d6343ebc26fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15aff5ba98a55d09274645a97a426a87" id="r_a15aff5ba98a55d09274645a97a426a87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15aff5ba98a55d09274645a97a426a87">set_lod_transition_time</a> (<a class="el" href="#aa3b14b8644cf532fde0f56cc2093ed8a">seconds_t</a> time)</td></tr>
+<tr class="memdesc:a15aff5ba98a55d09274645a97a426a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the LOD transition time in seconds.  <br /></td></tr>
+<tr class="separator:a15aff5ba98a55d09274645a97a426a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0e4715132e631440af50042dcad888" id="r_abf0e4715132e631440af50042dcad888"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf0e4715132e631440af50042dcad888">calculate_lod_data</a> (<a class="el" href="structunravel_1_1lod__data.html">lod_data</a> &amp;data, const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;world_bounds, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, float dt) const -&gt; bool</td></tr>
+<tr class="memdesc:abf0e4715132e631440af50042dcad888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the LOD data for the model using distance-based hysteresis with time-based transitions. Hysteresis prevents rapid LOD switching; transitions smooth the actual switch when it occurs. Uses data.current_lod_index for hysteresis and updates target_lod_index when a switch is triggered.  <br /></td></tr>
+<tr class="separator:abf0e4715132e631440af50042dcad888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb78f9e5def69aaf9b1f33a8ec186cb" id="r_a0eb78f9e5def69aaf9b1f33a8ec186cb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eb78f9e5def69aaf9b1f33a8ec186cb">calculate_submesh_lod</a> (const <a class="el" href="classunravel_1_1mesh.html">mesh</a> &amp;m, uint32_t submesh_index, uint32_t base_lod, const math::mat4 &amp;world_matrix, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam) const -&gt; uint32_t</td></tr>
+<tr class="memdesc:a0eb78f9e5def69aaf9b1f33a8ec186cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a LOD for a specific submesh based on its own screen size.  <br /></td></tr>
+<tr class="separator:a0eb78f9e5def69aaf9b1f33a8ec186cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a843d5089b5b5a8a404649086fb3f1" id="r_a18a843d5089b5b5a8a404649086fb3f1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18a843d5089b5b5a8a404649086fb3f1">calculate_submesh_lod_from_world_bounds</a> (const <a class="el" href="classunravel_1_1mesh.html">mesh</a> &amp;m, uint32_t submesh_index, uint32_t base_lod, const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;world_bounds, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam) const -&gt; uint32_t</td></tr>
+<tr class="memdesc:a18a843d5089b5b5a8a404649086fb3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a LOD for a submesh from an already-known world-space AABB.  <br /></td></tr>
+<tr class="separator:a18a843d5089b5b5a8a404649086fb3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e8382a2af725024c7f2516d8051544" id="r_af5e8382a2af725024c7f2516d8051544"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5e8382a2af725024c7f2516d8051544">compute_lod_index</a> (const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;world_bounds, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, float extra_bias=0.0f) const -&gt; uint32_t</td></tr>
+<tr class="memdesc:af5e8382a2af725024c7f2516d8051544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a LOD index for this model without hysteresis, transitions or visibility culling.  <br /></td></tr>
+<tr class="separator:af5e8382a2af725024c7f2516d8051544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ac20d8239546b661ebd13d6194364b" id="r_a13ac20d8239546b661ebd13d6194364b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13ac20d8239546b661ebd13d6194364b">get_lod_screen_size_min</a> () const -&gt; float</td></tr>
+<tr class="memdesc:a13ac20d8239546b661ebd13d6194364b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the minimum screen size used by the screen-radius-squared LOD and culling method.  <br /></td></tr>
+<tr class="separator:a13ac20d8239546b661ebd13d6194364b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8faf668205b7595fa3aaa6a90468cfad" id="r_a8faf668205b7595fa3aaa6a90468cfad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8faf668205b7595fa3aaa6a90468cfad">set_lod_screen_size_min</a> (float value)</td></tr>
+<tr class="memdesc:a8faf668205b7595fa3aaa6a90468cfad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the minimum screen size used by the screen-radius-squared LOD and culling method.  <br /></td></tr>
+<tr class="separator:a8faf668205b7595fa3aaa6a90468cfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8840ec14d386d1b574a58a6a481ddcd" id="r_ad8840ec14d386d1b574a58a6a481ddcd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8840ec14d386d1b574a58a6a481ddcd">get_lod_auto_screen_size_power_base</a> () const -&gt; float</td></tr>
+<tr class="memdesc:ad8840ec14d386d1b574a58a6a481ddcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the auto LOD screen size power base (used for generating a screen-size table).  <br /></td></tr>
+<tr class="separator:ad8840ec14d386d1b574a58a6a481ddcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aaecd4e5ca9473dbcf40c04955d747a" id="r_a8aaecd4e5ca9473dbcf40c04955d747a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8aaecd4e5ca9473dbcf40c04955d747a">set_lod_auto_screen_size_power_base</a> (float value)</td></tr>
+<tr class="memdesc:a8aaecd4e5ca9473dbcf40c04955d747a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the auto LOD screen size power base (used for generating a screen-size table).  <br /></td></tr>
+<tr class="separator:a8aaecd4e5ca9473dbcf40c04955d747a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ccac037471666e4140d1b3821cfa32" id="r_ac4ccac037471666e4140d1b3821cfa32"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4ccac037471666e4140d1b3821cfa32">get_lod_screen_sizes</a> () const -&gt; const std::vector&lt; float &gt; &amp;</td></tr>
+<tr class="memdesc:ac4ccac037471666e4140d1b3821cfa32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the per-LOD screen size table used by the screen-radius-squared method.  <br /></td></tr>
+<tr class="separator:ac4ccac037471666e4140d1b3821cfa32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4434e3163b43a338c62bf5eebc3ba01d" id="r_a4434e3163b43a338c62bf5eebc3ba01d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4434e3163b43a338c62bf5eebc3ba01d">set_lod_screen_sizes</a> (const std::vector&lt; float &gt; &amp;sizes)</td></tr>
+<tr class="memdesc:a4434e3163b43a338c62bf5eebc3ba01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the per-LOD screen size table used by the screen-radius-squared method.  <br /></td></tr>
+<tr class="separator:a4434e3163b43a338c62bf5eebc3ba01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffaa95d76ff61e1ea59d19dadaf1c22" id="r_acffaa95d76ff61e1ea59d19dadaf1c22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acffaa95d76ff61e1ea59d19dadaf1c22">recalulate_lod_screen_size_limits</a> (uint32_t lod_count)</td></tr>
+<tr class="memdesc:acffaa95d76ff61e1ea59d19dadaf1c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculates the screen-size LOD thresholds for the provided LOD count. This is a separate mechanism from the percent-based LOD limits and is used by calculate_lod_data_screen_size.  <br /></td></tr>
+<tr class="separator:acffaa95d76ff61e1ea59d19dadaf1c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bda469b8f0c48dec1d012b51a46499e" id="r_a7bda469b8f0c48dec1d012b51a46499e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bda469b8f0c48dec1d012b51a46499e">submit</a> (const math::mat4 &amp;world_transform, const <a class="el" href="structunravel_1_1submesh__pose__mat4.html">submesh_pose_mat4</a> &amp;submesh_transforms, const <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &amp;bone_transforms, const std::vector&lt; <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &gt; &amp;skinning_transforms, unsigned int lod, const <a class="el" href="structunravel_1_1model_1_1submit__callbacks.html">submit_callbacks</a> &amp;callbacks, const <a class="el" href="classmath_1_1frustum.html">math::frustum</a> *frustum=nullptr, const <a class="el" href="classunravel_1_1camera.html">camera</a> *<a class="el" href="gpu__frame__stats__widgets_8cpp.html#a27694887ddb9ed0512542d67a4736ff7">view</a>=nullptr, const <a class="el" href="structunravel_1_1model__submit__extras.html">model_submit_extras</a> &amp;extras={}) const</td></tr>
+<tr class="memdesc:a7bda469b8f0c48dec1d012b51a46499e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits the model for rendering.  <br /></td></tr>
+<tr class="separator:a7bda469b8f0c48dec1d012b51a46499e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0659038fbc64e2a7f1d06ae95f685236" id="r_a0659038fbc64e2a7f1d06ae95f685236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0659038fbc64e2a7f1d06ae95f685236">submit_for_vertex_pulling</a> (const math::mat4 &amp;world_transform, const <a class="el" href="structunravel_1_1submesh__pose__mat4.html">submesh_pose_mat4</a> &amp;submesh_transforms, const std::vector&lt; <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &gt; &amp;skinning_transforms, unsigned int lod, const <a class="el" href="structunravel_1_1model_1_1submit__vertex__pulling__callbacks.html">submit_vertex_pulling_callbacks</a> &amp;callbacks, const <a class="el" href="classmath_1_1frustum.html">math::frustum</a> *frustum=nullptr, const <a class="el" href="classunravel_1_1camera.html">camera</a> *<a class="el" href="gpu__frame__stats__widgets_8cpp.html#a27694887ddb9ed0512542d67a4736ff7">view</a>=nullptr, const <a class="el" href="structunravel_1_1model__submit__extras.html">model_submit_extras</a> &amp;extras={}) const</td></tr>
+<tr class="memdesc:a0659038fbc64e2a7f1d06ae95f685236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits the model using vertex-pulling rendering.  <br /></td></tr>
+<tr class="separator:a0659038fbc64e2a7f1d06ae95f685236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de6483cae21cf004b5704ca63a8befc" id="r_a7de6483cae21cf004b5704ca63a8befc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7de6483cae21cf004b5704ca63a8befc">submit_for_batching</a> (<a class="el" href="namespaceunravel.html#a39228d9ed74eea4bd5321c34b362eb92">batch_collector</a> &amp;collector, const math::mat4 &amp;world_transform, const <a class="el" href="structunravel_1_1submesh__pose__mat4.html">submesh_pose_mat4</a> &amp;submesh_transforms, uint32_t lod_index, float lod_param=0.0f, const <a class="el" href="classmath_1_1frustum.html">math::frustum</a> *frustum=nullptr, const <a class="el" href="classunravel_1_1camera.html">camera</a> *<a class="el" href="gpu__frame__stats__widgets_8cpp.html#a27694887ddb9ed0512542d67a4736ff7">view</a>=nullptr, const <a class="el" href="structunravel_1_1model__submit__extras.html">model_submit_extras</a> &amp;extras={}) const</td></tr>
+<tr class="memdesc:a7de6483cae21cf004b5704ca63a8befc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects this model into a batch collector for instanced rendering.  <br /></td></tr>
+<tr class="separator:a7de6483cae21cf004b5704ca63a8befc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5bcb85c540f6708a479c7279c53dca" id="r_aab5bcb85c540f6708a479c7279c53dca"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab5bcb85c540f6708a479c7279c53dca">submit_for_shadow_batching_cascaded</a> (std::vector&lt; <a class="el" href="namespaceunravel.html#a8431dfee5fc0584d987ab6e4bde3d899">shadow_batch_collector</a> &gt; &amp;collectors, uint8_t cascade_count, const math::mat4 &amp;world_transform, const <a class="el" href="structunravel_1_1submesh__pose__mat4.html">submesh_pose_mat4</a> &amp;submesh_transforms, uint32_t lod_index, float lod_param, const <a class="el" href="classmath_1_1frustum.html">math::frustum</a> *frustums, bool nested_cascades, const <a class="el" href="structunravel_1_1model__submit__extras.html">model_submit_extras</a> &amp;extras={}) const -&gt; bool</td></tr>
+<tr class="memdesc:aab5bcb85c540f6708a479c7279c53dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects shadow-map geometry into per-cascade shadow batch collectors. Batches by mesh/lod/submesh/cull and alpha-cutout state instead of material pointer.  <br /></td></tr>
+<tr class="separator:aab5bcb85c540f6708a479c7279c53dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structcrtp__meta__type"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structcrtp__meta__type')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structcrtp__meta__type.html">crtp_meta_type&lt; model &gt;</a></td></tr>
 <tr class="memitem:ab683d0fb45aa6614305adeeb675d3f85 inherit pub_methods_structcrtp__meta__type" id="r_ab683d0fb45aa6614305adeeb675d3f85"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#ab683d0fb45aa6614305adeeb675d3f85">get_meta_type</a> () const -&gt; entt::meta_type</td></tr>
 <tr class="separator:ab683d0fb45aa6614305adeeb675d3f85 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab800b944cafcf43c8407e27d0c785300 inherit pub_methods_structcrtp__meta__type" id="r_ab800b944cafcf43c8407e27d0c785300"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#ab800b944cafcf43c8407e27d0c785300">is</a> () const -&gt; bool</td></tr>
 <tr class="separator:ab800b944cafcf43c8407e27d0c785300 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type" id="r_a85fd8cca6ee7590180c1d6b985292a98"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a85fd8cca6ee7590180c1d6b985292a98">is</a> (const entt::meta_type &amp;<a class="el" href="bullet__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) const -&gt; bool</td></tr>
+<tr class="memitem:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type" id="r_a85fd8cca6ee7590180c1d6b985292a98"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a85fd8cca6ee7590180c1d6b985292a98">is</a> (const entt::meta_type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) const -&gt; bool</td></tr>
 <tr class="separator:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a960687703825bbc6a1b6b452a517b2 inherit pub_methods_structcrtp__meta__type" id="r_a7a960687703825bbc6a1b6b452a517b2"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a7a960687703825bbc6a1b6b452a517b2">as_derived</a> () -&gt; entt::meta_any</td></tr>
 <tr class="separator:a7a960687703825bbc6a1b6b452a517b2 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,8 +276,211 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure describing a LOD group (set of meshes), LOD transitions, and their materials. </p>
 
-<p class="definition">Definition at line <a class="el" href="model_8h_source.html#l00041">41</a> of file <a class="el" href="model_8h_source.html">model.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="model_8h_source.html#l00274">274</a> of file <a class="el" href="model_8h_source.html">model.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa3b14b8644cf532fde0f56cc2093ed8a" name="aa3b14b8644cf532fde0f56cc2093ed8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b14b8644cf532fde0f56cc2093ed8a">&#9670;&#160;</a></span>seconds_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aa3b14b8644cf532fde0f56cc2093ed8a">unravel::model::seconds_t</a> = std::chrono::duration&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="model_8h_source.html#l00279">279</a> of file <a class="el" href="model_8h_source.html">model.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abf0e4715132e631440af50042dcad888" name="abf0e4715132e631440af50042dcad888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0e4715132e631440af50042dcad888">&#9670;&#160;</a></span>calculate_lod_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::calculate_lod_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structunravel_1_1lod__data.html">lod_data</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>world_bounds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cam</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span>&#160;) const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the LOD data for the model using distance-based hysteresis with time-based transitions. Hysteresis prevents rapid LOD switching; transitions smooth the actual switch when it occurs. Uses data.current_lod_index for hysteresis and updates target_lod_index when a switch is triggered. </p>
+<p>Screen size is measured from the pose-aware world bounds (the same box culling uses - see <a class="el" href="classunravel_1_1model__component.html#adc441658574474ce1d6a501a7a7f5f4b" title="Gets the pose-aware world-space bounding box for this model.">model_component::get_world_bounds</a>), so animated/root-motion models select LOD from where their geometry actually is, not from the bind-pose box at the entity transform.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The LOD data to calculate and update. </td></tr>
+    <tr><td class="paramname">world_bounds</td><td>Pose-aware world-space bounds of the model. </td></tr>
+    <tr><td class="paramname">cam</td><td>The camera. </td></tr>
+    <tr><td class="paramname">dt</td><td>Delta time for updating transition progress. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the LOD data was calculated successfully, false when the model is not loaded, has unpopulated bounds, or is below the minimum screen size (culled). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00360">360</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0eb78f9e5def69aaf9b1f33a8ec186cb" name="a0eb78f9e5def69aaf9b1f33a8ec186cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb78f9e5def69aaf9b1f33a8ec186cb">&#9670;&#160;</a></span>calculate_submesh_lod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::calculate_submesh_lod </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1mesh.html">mesh</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>submesh_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>base_lod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const math::mat4 &amp;</td>          <td class="paramname"><span class="paramname"><em>world_matrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cam</em></span>&#160;) const -&gt; uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects a LOD for a specific submesh based on its own screen size. </p>
+<p>Used at submit time when per-submesh culling is active (multi-submesh meshes) and a view camera is available. Each submesh independently picks its LOD from its world- space bounding sphere so tiny/distant submeshes on a large model can drop to a cheaper LOD than the model-wide selection would.</p>
+<p>The returned LOD is CLAMPED to be at least <code>base_lod:</code> per-submesh selection is only allowed to drop quality relative to the model-wide LOD, never raise it. This preserves the guarantee made by <a class="el" href="#abf0e4715132e631440af50042dcad888">calculate_lod_data</a> (with its hysteresis and dithered transitions) that the model-wide LOD is a quality floor.</p>
+<p>Returns <code>base_lod</code> (i.e. "no change") when per-submesh LOD is not viable:</p><ul>
+<li>The model uses manual multi-mesh LODs (submesh identity is not comparable across different mesh assets).</li>
+<li>No screen-size table is populated, or the model has only one LOD.</li>
+<li>LOD override is enabled.</li>
+<li>The submesh has no populated per-submesh bbox (indistinguishable from the whole model).</li>
+</ul>
+<p>Must run on the graphics API thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>The mesh asset (must be the same one returned by <a class="el" href="#a13ed84094afadf4b43058c2fe86ec7c9">get_lod</a> for <code>base_lod</code>). </td></tr>
+    <tr><td class="paramname">submesh_index</td><td>Index into <code>m's</code> submesh array at <code>base_lod</code>. </td></tr>
+    <tr><td class="paramname">base_lod</td><td>Model-wide LOD (floor for the returned value). </td></tr>
+    <tr><td class="paramname">world_matrix</td><td>World transform for this submesh instance. </td></tr>
+    <tr><td class="paramname">cam</td><td>Camera whose position/projection drives the screen-size computation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00523">523</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a18a843d5089b5b5a8a404649086fb3f1" name="a18a843d5089b5b5a8a404649086fb3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a843d5089b5b5a8a404649086fb3f1">&#9670;&#160;</a></span>calculate_submesh_lod_from_world_bounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::calculate_submesh_lod_from_world_bounds </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1mesh.html">mesh</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>submesh_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>base_lod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>world_bounds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cam</em></span>&#160;) const -&gt; uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects a LOD for a submesh from an already-known world-space AABB. </p>
+<p>Same semantics and guards as <a class="el" href="#a0eb78f9e5def69aaf9b1f33a8ec186cb">calculate_submesh_lod</a> but skips the per-call world matrix decomposition by using cached world bounds (see <a class="el" href="structunravel_1_1submesh__render__proxies.html">submesh_render_proxies</a>). Also usable for skinned submeshes whose animated bounds are tracked per frame. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00552">552</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af5e8382a2af725024c7f2516d8051544" name="af5e8382a2af725024c7f2516d8051544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e8382a2af725024c7f2516d8051544">&#9670;&#160;</a></span>compute_lod_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::compute_lod_index </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>world_bounds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cam</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>extra_bias</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0f</span>&#160;) const -&gt; uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes a LOD index for this model without hysteresis, transitions or visibility culling. </p>
+<p>Used by passes that need a distance-appropriate LOD but do not track per-camera LOD state (e.g. shadow rendering, which previously always used LOD 0).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world_bounds</td><td>Pose-aware world-space bounds of the model (see <a class="el" href="classunravel_1_1model__component.html#adc441658574474ce1d6a501a7a7f5f4b" title="Gets the pose-aware world-space bounding box for this model.">model_component::get_world_bounds</a>). </td></tr>
+    <tr><td class="paramname">cam</td><td>Camera whose position drives the screen-size computation. </td></tr>
+    <tr><td class="paramname">extra_bias</td><td>Additional LOD bias on top of the model's own selection bias (positive = coarser). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The selected LOD index (0 when no LOD table is available). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00567">567</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a5e9acb95b50f1f51f1c3c105d8c53b01" name="a5e9acb95b50f1f51f1c3c105d8c53b01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e9acb95b50f1f51f1c3c105d8c53b01">&#9670;&#160;</a></span>default_material()</h2>
 
@@ -226,7 +507,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Gets the default material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the default material asset handle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00363">363</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l01242">1242</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -256,7 +537,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Gets the fallback material. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the fallback material asset handle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00369">369</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l01248">1248</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -284,29 +565,183 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The asset handle for the mesh at the specified LOD. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00014">14</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00179">179</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a4026377138a9eb154b9d0d83c1e08c10" name="a4026377138a9eb154b9d0d83c1e08c10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4026377138a9eb154b9d0d83c1e08c10">&#9670;&#160;</a></span>get_lod_limits()</h2>
+<a id="ad8840ec14d386d1b574a58a6a481ddcd" name="ad8840ec14d386d1b574a58a6a481ddcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8840ec14d386d1b574a58a6a481ddcd">&#9670;&#160;</a></span>get_lod_auto_screen_size_power_base()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::model::get_lod_limits </td>
+          <td class="memname">auto unravel::model::get_lod_auto_screen_size_power_base </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; const std::vector&lt;<a class="el" href="core_2base_2basetypes_8hpp.html#a6e1ce8c9303903fae646f9cfcdf46bc5">urange32_t</a>&gt;&amp;</td>
+          <td> const -&gt; float</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the LOD limits. </p>
-<dl class="section return"><dt>Returns</dt><dd>A constant reference to the vector of LOD limits. </dd></dl>
+<p>Gets the auto LOD screen size power base (used for generating a screen-size table). </p>
+<dl class="section return"><dt>Returns</dt><dd>Power base. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00183">183</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00699">699</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adfc8459a44640ed2c934d0a0de2a4a69" name="adfc8459a44640ed2c934d0a0de2a4a69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfc8459a44640ed2c934d0a0de2a4a69">&#9670;&#160;</a></span>get_lod_hysteresis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::get_lod_hysteresis </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the LOD hysteresis factor used to prevent rapid LOD switching. </p>
+<dl class="section return"><dt>Returns</dt><dd>The hysteresis factor (percentage units for percent-based, dimensionless for screen-radius). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00669">669</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa46a9086452e707b8dbc2fe1135f257b" name="aa46a9086452e707b8dbc2fe1135f257b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46a9086452e707b8dbc2fe1135f257b">&#9670;&#160;</a></span>get_lod_override_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::get_lod_override_enabled </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets whether LOD override is enabled. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if LOD override is enabled, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00639">639</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a346493c9a5eab1e7bf1d58ca08163cf8" name="a346493c9a5eab1e7bf1d58ca08163cf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346493c9a5eab1e7bf1d58ca08163cf8">&#9670;&#160;</a></span>get_lod_override_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::get_lod_override_level </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the LOD override level. </p>
+<dl class="section return"><dt>Returns</dt><dd>The LOD level to use when override is enabled. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00649">649</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13ac20d8239546b661ebd13d6194364b" name="a13ac20d8239546b661ebd13d6194364b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ac20d8239546b661ebd13d6194364b">&#9670;&#160;</a></span>get_lod_screen_size_min()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::get_lod_screen_size_min </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the minimum screen size used by the screen-radius-squared LOD and culling method. </p>
+<dl class="section return"><dt>Returns</dt><dd>Minimum screen size. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00689">689</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac4ccac037471666e4140d1b3821cfa32" name="ac4ccac037471666e4140d1b3821cfa32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ccac037471666e4140d1b3821cfa32">&#9670;&#160;</a></span>get_lod_screen_sizes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::get_lod_screen_sizes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;float&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the per-LOD screen size table used by the screen-radius-squared method. </p>
+<dl class="section return"><dt>Returns</dt><dd>Screen size table. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00709">709</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9045298426b5cc9a641038c4b760f247" name="a9045298426b5cc9a641038c4b760f247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9045298426b5cc9a641038c4b760f247">&#9670;&#160;</a></span>get_lod_selection_bias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::get_lod_selection_bias </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the LOD selection bias. </p>
+<dl class="section return"><dt>Returns</dt><dd>The bias value added to the calculated LOD index. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00659">659</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aed0f6158baf61be3b26d6343ebc26fbb" name="aed0f6158baf61be3b26d6343ebc26fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0f6158baf61be3b26d6343ebc26fbb">&#9670;&#160;</a></span>get_lod_transition_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::get_lod_transition_time </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#aa3b14b8644cf532fde0f56cc2093ed8a">seconds_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the LOD transition time in seconds. </p>
+<dl class="section return"><dt>Returns</dt><dd>The transition duration (0 = instant switch, &gt;0 = smooth dithered crossfade). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00679">679</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -328,7 +763,29 @@ Static Public Member Functions</h2></td></tr>
 <p>Gets all the LOD meshes. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the vector of LOD meshes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00076">76</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00240">240</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac4bc003c9de56bf9e06c900d3ff2e5e4" name="ac4bc003c9de56bf9e06c900d3ff2e5e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4bc003c9de56bf9e06c900d3ff2e5e4">&#9670;&#160;</a></span>get_lods_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::get_lods_count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of LOD levels available. If there is only one explicit mesh, returns the internal LOD count of that mesh. Otherwise, returns the number of mesh LODs. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of LOD levels available. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00245">245</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -356,7 +813,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The asset handle for the material of the specified index. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00121">121</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00298">298</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -375,7 +832,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00131">131</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00308">308</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -394,7 +851,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00105">105</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00282">282</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -416,7 +873,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Gets all the materials. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the vector of materials. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00100">100</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00277">277</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -435,18 +892,18 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00151">151</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00328">328</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a2a69ecda3e90e086ccad2a23ed3296dc" name="a2a69ecda3e90e086ccad2a23ed3296dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a69ecda3e90e086ccad2a23ed3296dc">&#9670;&#160;</a></span>is_valid()</h2>
+<a id="a4453a442d392cbc4512716065e0e2b7e" name="a4453a442d392cbc4512716065e0e2b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4453a442d392cbc4512716065e0e2b7e">&#9670;&#160;</a></span>is_valid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool unravel::model::is_valid </td>
+          <td class="memname">auto unravel::model::is_valid </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const -&gt; bool</td>
@@ -457,7 +914,34 @@ Static Public Member Functions</h2></td></tr>
 <p>Checks if the model is valid. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the model is valid, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00009">9</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00174">174</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acffaa95d76ff61e1ea59d19dadaf1c22" name="acffaa95d76ff61e1ea59d19dadaf1c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acffaa95d76ff61e1ea59d19dadaf1c22">&#9670;&#160;</a></span>recalulate_lod_screen_size_limits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model::recalulate_lod_screen_size_limits </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_count</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recalculates the screen-size LOD thresholds for the provided LOD count. This is a separate mechanism from the percent-based LOD limits and is used by calculate_lod_data_screen_size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lod_count</td><td>Number of LOD levels to calculate thresholds for. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00614">614</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -489,34 +973,223 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00044">44</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00200">200</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a0f1a56380ef80ac61506d413357b27d3" name="a0f1a56380ef80ac61506d413357b27d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f1a56380ef80ac61506d413357b27d3">&#9670;&#160;</a></span>set_lod_limits()</h2>
+<a id="a8aaecd4e5ca9473dbcf40c04955d747a" name="a8aaecd4e5ca9473dbcf40c04955d747a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aaecd4e5ca9473dbcf40c04955d747a">&#9670;&#160;</a></span>set_lod_auto_screen_size_power_base()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unravel::model::set_lod_limits </td>
+          <td class="memname">void unravel::model::set_lod_auto_screen_size_power_base </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="core_2base_2basetypes_8hpp.html#a6e1ce8c9303903fae646f9cfcdf46bc5">urange32_t</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>limits</em></span></td><td>)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the LOD limits. </p>
+<p>Sets the auto LOD screen size power base (used for generating a screen-size table). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">limits</td><td>The vector of LOD limits to set. </td></tr>
+    <tr><td class="paramname">value</td><td>Power base. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00188">188</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00704">704</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9e90b362b4b9de1b983c792428124e77" name="a9e90b362b4b9de1b983c792428124e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e90b362b4b9de1b983c792428124e77">&#9670;&#160;</a></span>set_lod_hysteresis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model::set_lod_hysteresis </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>hysteresis</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the LOD hysteresis factor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hysteresis</td><td>The hysteresis factor to prevent ping-ponging between LOD levels. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00674">674</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a086aaebb22cfff42a2f4bd4b218c11fb" name="a086aaebb22cfff42a2f4bd4b218c11fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086aaebb22cfff42a2f4bd4b218c11fb">&#9670;&#160;</a></span>set_lod_override_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model::set_lod_override_enabled </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether LOD override is enabled. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>True to enable LOD override, false to disable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00644">644</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac645c5cafd96eb54a4e27853611fe90c" name="ac645c5cafd96eb54a4e27853611fe90c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac645c5cafd96eb54a4e27853611fe90c">&#9670;&#160;</a></span>set_lod_override_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model::set_lod_override_level </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the LOD override level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The LOD level to use when override is enabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00654">654</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8faf668205b7595fa3aaa6a90468cfad" name="a8faf668205b7595fa3aaa6a90468cfad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8faf668205b7595fa3aaa6a90468cfad">&#9670;&#160;</a></span>set_lod_screen_size_min()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model::set_lod_screen_size_min </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the minimum screen size used by the screen-radius-squared LOD and culling method. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Minimum screen size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00694">694</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4434e3163b43a338c62bf5eebc3ba01d" name="a4434e3163b43a338c62bf5eebc3ba01d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4434e3163b43a338c62bf5eebc3ba01d">&#9670;&#160;</a></span>set_lod_screen_sizes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model::set_lod_screen_sizes </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; float &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>sizes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the per-LOD screen size table used by the screen-radius-squared method. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sizes</td><td>Screen size table. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00714">714</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa464c2246bb96933653db7c71a75f963" name="aa464c2246bb96933653db7c71a75f963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa464c2246bb96933653db7c71a75f963">&#9670;&#160;</a></span>set_lod_selection_bias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model::set_lod_selection_bias </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>bias</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the LOD selection bias. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bias</td><td>The bias value to add to the calculated LOD index. Positive values select less detailed LODs, negative values select more detailed LODs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00664">664</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15aff5ba98a55d09274645a97a426a87" name="a15aff5ba98a55d09274645a97a426a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15aff5ba98a55d09274645a97a426a87">&#9670;&#160;</a></span>set_lod_transition_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model::set_lod_transition_time </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa3b14b8644cf532fde0f56cc2093ed8a">seconds_t</a></td>          <td class="paramname"><span class="paramname"><em>time</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the LOD transition time in seconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>The transition duration (0 = instant switch, &gt;0 = smooth dithered crossfade). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00684">684</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -543,7 +1216,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00081">81</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00264">264</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -575,7 +1248,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00056">56</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00220">220</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -598,7 +1271,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00066">66</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00230">230</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -617,7 +1290,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00116">116</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00293">293</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
@@ -644,12 +1317,12 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00111">111</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00288">288</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a79820ccaf4a71d5425f5b1b0e189a0f0" name="a79820ccaf4a71d5425f5b1b0e189a0f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79820ccaf4a71d5425f5b1b0e189a0f0">&#9670;&#160;</a></span>submit()</h2>
+<a id="a7bda469b8f0c48dec1d012b51a46499e" name="a7bda469b8f0c48dec1d012b51a46499e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bda469b8f0c48dec1d012b51a46499e">&#9670;&#160;</a></span>submit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -662,7 +1335,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>submesh_transforms</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1submesh__pose__mat4.html">submesh_pose_mat4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>submesh_transforms</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -672,7 +1345,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>skinning_matrices</em></span>, </td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>skinning_transforms</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -682,7 +1355,22 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structunravel_1_1model_1_1submit__callbacks.html">submit_callbacks</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callbacks</em></span>&#160;) const</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1model_1_1submit__callbacks.html">submit_callbacks</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callbacks</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmath_1_1frustum.html">math::frustum</a> *</td>          <td class="paramname"><span class="paramname"><em>frustum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> *</td>          <td class="paramname"><span class="paramname"><em>view</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1model__submit__extras.html">model_submit_extras</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>extras</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -691,14 +1379,213 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world_transform</td><td>The world transform of the model. </td></tr>
+    <tr><td class="paramname">submesh_transforms</td><td>The submesh transforms (many-to-many mapping). </td></tr>
     <tr><td class="paramname">bone_transforms</td><td>The bone transforms for skinned models. </td></tr>
+    <tr><td class="paramname">skinning_transforms</td><td>The skinning matrices per submesh. </td></tr>
     <tr><td class="paramname">lod</td><td>The level of detail to render. </td></tr>
     <tr><td class="paramname">callbacks</td><td>The submit callbacks. </td></tr>
+    <tr><td class="paramname">frustum</td><td>Optional view frustum for per-submesh culling on large meshes. </td></tr>
+    <tr><td class="paramname">view</td><td>Optional camera enabling per-submesh LOD selection. When supplied together with <code>frustum</code> and the mesh has enough submeshes to warrant per-submesh work, distant submeshes may pick a cheaper LOD than <code>lod</code> via <a class="el" href="#a0eb78f9e5def69aaf9b1f33a8ec186cb">calculate_submesh_lod</a>. Only affects non-skinned submeshes. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00193">193</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00720">720</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7de6483cae21cf004b5704ca63a8befc" name="a7de6483cae21cf004b5704ca63a8befc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7de6483cae21cf004b5704ca63a8befc">&#9670;&#160;</a></span>submit_for_batching()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model::submit_for_batching </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel.html#a39228d9ed74eea4bd5321c34b362eb92">batch_collector</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>collector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const math::mat4 &amp;</td>          <td class="paramname"><span class="paramname"><em>world_transform</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1submesh__pose__mat4.html">submesh_pose_mat4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>submesh_transforms</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>lod_param</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmath_1_1frustum.html">math::frustum</a> *</td>          <td class="paramname"><span class="paramname"><em>frustum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> *</td>          <td class="paramname"><span class="paramname"><em>view</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1model__submit__extras.html">model_submit_extras</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>extras</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Collects this model into a batch collector for instanced rendering. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collector</td><td>The batch collector to add this model to. </td></tr>
+    <tr><td class="paramname">world_transform</td><td>The world transform of the model. </td></tr>
+    <tr><td class="paramname">submesh_transforms</td><td>The submesh transforms (many-to-many mapping). </td></tr>
+    <tr><td class="paramname">lod_index</td><td>The level of detail to use. </td></tr>
+    <tr><td class="paramname">lod_param</td><td>The LOD transition parameter (for smooth LOD transitions). </td></tr>
+    <tr><td class="paramname">frustum</td><td>Optional view frustum for per-submesh culling on large meshes. </td></tr>
+    <tr><td class="paramname">view</td><td>Optional camera enabling per-submesh LOD selection. When supplied and the mesh has many submeshes, each submesh may be collected under a batch key with a per-submesh LOD &gt;= <code>lod_index</code>. The batching layer already keys on LOD, so mixed-LOD submeshes for the same model land in the correct batches automatically. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l01254">1254</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aab5bcb85c540f6708a479c7279c53dca" name="aab5bcb85c540f6708a479c7279c53dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab5bcb85c540f6708a479c7279c53dca">&#9670;&#160;</a></span>submit_for_shadow_batching_cascaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model::submit_for_shadow_batching_cascaded </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceunravel.html#a8431dfee5fc0584d987ab6e4bde3d899">shadow_batch_collector</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>collectors</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>cascade_count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const math::mat4 &amp;</td>          <td class="paramname"><span class="paramname"><em>world_transform</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1submesh__pose__mat4.html">submesh_pose_mat4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>submesh_transforms</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>lod_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>lod_param</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmath_1_1frustum.html">math::frustum</a> *</td>          <td class="paramname"><span class="paramname"><em>frustums</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>nested_cascades</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1model__submit__extras.html">model_submit_extras</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>extras</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;) const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Collects shadow-map geometry into per-cascade shadow batch collectors. Batches by mesh/lod/submesh/cull and alpha-cutout state instead of material pointer. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l01386">1386</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0659038fbc64e2a7f1d06ae95f685236" name="a0659038fbc64e2a7f1d06ae95f685236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0659038fbc64e2a7f1d06ae95f685236">&#9670;&#160;</a></span>submit_for_vertex_pulling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model::submit_for_vertex_pulling </td>
+          <td>(</td>
+          <td class="paramtype">const math::mat4 &amp;</td>          <td class="paramname"><span class="paramname"><em>world_transform</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1submesh__pose__mat4.html">submesh_pose_mat4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>submesh_transforms</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>skinning_transforms</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>lod</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1model_1_1submit__vertex__pulling__callbacks.html">submit_vertex_pulling_callbacks</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>callbacks</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmath_1_1frustum.html">math::frustum</a> *</td>          <td class="paramname"><span class="paramname"><em>frustum</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> *</td>          <td class="paramname"><span class="paramname"><em>view</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1model__submit__extras.html">model_submit_extras</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>extras</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submits the model using vertex-pulling rendering. </p>
+<p>Mirrors <a class="el" href="#a7bda469b8f0c48dec1d012b51a46499e">submit</a> but skips per-submesh material handling and bind_render_buffers calls, and instead exposes the raw vertex/index buffers as read-only compute buffers so the shader can procedurally generate vertices from <code>gl_VertexID</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world_transform</td><td>The world transform of the model. </td></tr>
+    <tr><td class="paramname">submesh_transforms</td><td>The submesh transforms (many-to-many mapping). </td></tr>
+    <tr><td class="paramname">skinning_transforms</td><td>The per-submesh skinning matrices. </td></tr>
+    <tr><td class="paramname">lod</td><td>The level of detail to render. </td></tr>
+    <tr><td class="paramname">callbacks</td><td>The vertex-pulling submit callbacks. </td></tr>
+    <tr><td class="paramname">frustum</td><td>Optional view frustum for per-submesh culling on large meshes. </td></tr>
+    <tr><td class="paramname">view</td><td>Optional camera enabling per-submesh LOD selection. Same semantics as <a class="el" href="#a7bda469b8f0c48dec1d012b51a46499e">submit</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2model_8cpp_source.html#l00990">990</a> of file <a class="el" href="rendering_2model_8cpp_source.html">model.cpp</a>.</p>
 
 </div>
 </div>

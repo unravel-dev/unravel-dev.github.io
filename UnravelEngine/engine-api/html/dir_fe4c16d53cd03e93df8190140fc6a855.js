@@ -17,7 +17,12 @@ var dir_fe4c16d53cd03e93df8190140fc6a855 =
     [ "ui", "dir_4b46bf5b5c2d50a0cd541a6d68185df6.html", "dir_4b46bf5b5c2d50a0cd541a6d68185df6" ],
     [ "engine.cpp", "engine_8cpp.html", null ],
     [ "engine.h", "engine_8h.html", "engine_8h" ],
-    [ "events.cpp", "events_8cpp.html", null ],
     [ "events.h", "engine_2engine_2events_8h.html", "engine_2engine_2events_8h" ],
-    [ "pch.h", "engine_2pch_8h.html", null ]
+    [ "loading_screen.cpp", "loading__screen_8cpp.html", null ],
+    [ "loading_screen.h", "loading__screen_8h.html", "loading__screen_8h" ],
+    [ "pch.h", "engine_2pch_8h.html", null ],
+    [ "play_mode.cpp", "play__mode_8cpp.html", null ],
+    [ "play_mode.h", "play__mode_8h.html", "play__mode_8h" ],
+    [ "splash_scene.cpp", "splash__scene_8cpp.html", "splash__scene_8cpp" ],
+    [ "splash_scene.h", "splash__scene_8h.html", "splash__scene_8h" ]
 ];

@@ -98,36 +98,52 @@ $(function(){initNavTree('batch__collector_8h.html',''); initResizable(true); })
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">batch_collector.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="batch__key_8h_source.html">batch_key.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="batch__instance_8h_source.html">batch_instance.h</a>&quot;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>&quot;</code><br />
 </div>
 <p><a href="batch__collector_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1batch__stats.html">unravel::batch_stats</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statistics for batch collection and rendering performance.  <a href="structunravel_1_1batch__stats.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1submit__context.html">unravel::submit_context</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context information for batch submission.  <a href="structunravel_1_1submit__context.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1batch__group.html">unravel::batch_group</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A group of instances that can be rendered together.  <a href="structunravel_1_1batch__group.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1batch__group__t.html">unravel::batch_group_t&lt; Key &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1batch__collector.html">unravel::batch_collector</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core batch collection system for grouping compatible draw calls.  <a href="classunravel_1_1batch__collector.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1batch__collector__t.html">unravel::batch_collector_t&lt; Key &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1batch__collector__detail.html">unravel::batch_collector_detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a3e4e314e08ff93cce0ac844716325ffb" id="r_a3e4e314e08ff93cce0ac844716325ffb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a3e4e314e08ff93cce0ac844716325ffb">unravel::batch_group</a> = <a class="el" href="structunravel_1_1batch__group__t.html">batch_group_t</a>&lt;<a class="el" href="structunravel_1_1batch__key.html">batch_key</a>&gt;</td></tr>
+<tr class="separator:a3e4e314e08ff93cce0ac844716325ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39228d9ed74eea4bd5321c34b362eb92" id="r_a39228d9ed74eea4bd5321c34b362eb92"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a39228d9ed74eea4bd5321c34b362eb92">unravel::batch_collector</a> = <a class="el" href="classunravel_1_1batch__collector__t.html">batch_collector_t</a>&lt;<a class="el" href="structunravel_1_1batch__key.html">batch_key</a>&gt;</td></tr>
+<tr class="separator:a39228d9ed74eea4bd5321c34b362eb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8431dfee5fc0584d987ab6e4bde3d899" id="r_a8431dfee5fc0584d987ab6e4bde3d899"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a8431dfee5fc0584d987ab6e4bde3d899">unravel::shadow_batch_collector</a> = <a class="el" href="classunravel_1_1batch__collector__t.html">batch_collector_t</a>&lt;<a class="el" href="structunravel_1_1shadow__batch__key.html">shadow_batch_key</a>&gt;</td></tr>
+<tr class="separator:a8431dfee5fc0584d987ab6e4bde3d899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a41d3e67904cacada152da2b88b90bec3" id="r_a41d3e67904cacada152da2b88b90bec3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1batch__collector__detail.html#a41d3e67904cacada152da2b88b90bec3">unravel::batch_collector_detail::static_mesh_batching_enabled</a> () -&gt; bool &amp;</td></tr>
+<tr class="separator:a41d3e67904cacada152da2b88b90bec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

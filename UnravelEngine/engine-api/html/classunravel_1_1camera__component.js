@@ -18,6 +18,7 @@ var classunravel_1_1camera__component =
     [ "get_render_view", "classunravel_1_1camera__component.html#a048b1e4b41222b61f529072dbc34f81f", null ],
     [ "get_storage", "classunravel_1_1camera__component.html#a3f1c4be223087a8bca5f3eecacba1a55", null ],
     [ "get_viewport_size", "classunravel_1_1camera__component.html#a62829e9bd62e96d9a5f1e3144c9ede69", null ],
+    [ "release_resources", "classunravel_1_1camera__component.html#acaabead551dec759c1046338c87c1eb5", null ],
     [ "set_far_clip", "classunravel_1_1camera__component.html#ae7e175eae0abb6a5eeb740335732430f", null ],
     [ "set_fov", "classunravel_1_1camera__component.html#a90d5836567ca32ca09b61640f302973d", null ],
     [ "set_near_clip", "classunravel_1_1camera__component.html#a25fa9727a83cd94a87e6ed238076fc20", null ],

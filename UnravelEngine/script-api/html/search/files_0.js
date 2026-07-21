@@ -6,5 +6,6 @@ var searchData=
   ['assets_2ecs_3',['Assets.cs',['../_assets_8cs.html',1,'']]],
   ['attributes_2ecs_4',['Attributes.cs',['../_attributes_8cs.html',1,'']]],
   ['audiolistenercomponent_2ecs_5',['AudioListenerComponent.cs',['../_audio_listener_component_8cs.html',1,'']]],
-  ['audiosourcecomponent_2ecs_6',['AudioSourceComponent.cs',['../_audio_source_component_8cs.html',1,'']]]
+  ['audiosourcecomponent_2ecs_6',['AudioSourceComponent.cs',['../_audio_source_component_8cs.html',1,'']]],
+  ['autostaticscleanup_2ecs_7',['AutoStaticsCleanup.cs',['../_auto_statics_cleanup_8cs.html',1,'']]]
 ];

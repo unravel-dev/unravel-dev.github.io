@@ -1,0 +1,28 @@
+var classunravel_1_1panel__base =
+[
+    [ "panel_base", "classunravel_1_1panel__base.html#a9254586a6f47c9830283ffb746c0d3d5", null ],
+    [ "~panel_base", "classunravel_1_1panel__base.html#ab87e3fff32ef69049cc098f82e97cca6", null ],
+    [ "begin_panel", "classunravel_1_1panel__base.html#a60aa377d0bbddb30ef71cdfc8a647287", null ],
+    [ "draw_ui", "classunravel_1_1panel__base.html#a565b7a2002a890a11c8e5c409c8b5054", null ],
+    [ "end_panel", "classunravel_1_1panel__base.html#a213e6589dbfd792f947fb105f9f188ff", null ],
+    [ "focus", "classunravel_1_1panel__base.html#a0829a4549f9249f1dae845472a05105f", null ],
+    [ "get_name", "classunravel_1_1panel__base.html#a566857b17eedcf383c20ba2a8c4e53d3", null ],
+    [ "get_window_flags", "classunravel_1_1panel__base.html#a78f666acce1e0b8ed3f911f7444d9b4f", null ],
+    [ "get_window_name", "classunravel_1_1panel__base.html#a58936bc023ba05ffe0284211ec49875c", null ],
+    [ "is_focused", "classunravel_1_1panel__base.html#af1ad186708bdfdb880ff32d1040f2383", null ],
+    [ "is_fullscreen", "classunravel_1_1panel__base.html#a70b0b09f9bc9f3ac2680e98dc9e31792", null ],
+    [ "is_visible", "classunravel_1_1panel__base.html#a7dec6a9859bf5c59fd8877ece198864d", null ],
+    [ "on_after_render", "classunravel_1_1panel__base.html#ac1cf56ccf1ee6f8c71573e3b4bde1470", null ],
+    [ "on_before_render", "classunravel_1_1panel__base.html#a136c134370153e69a139db6b282916eb", null ],
+    [ "on_frame_ui_render", "classunravel_1_1panel__base.html#a616024035c5f03d7444654dc63774aa9", null ],
+    [ "render_panel", "classunravel_1_1panel__base.html#ac2feedccff23ad465bbc9a192c8aecea", null ],
+    [ "set_fullscreen", "classunravel_1_1panel__base.html#a6a4acf4664cc932b52130bc7e66468f7", null ],
+    [ "set_visible", "classunravel_1_1panel__base.html#a14214d47366053bdc405f8bdf9bbc16e", null ],
+    [ "toggle_fullscreen", "classunravel_1_1panel__base.html#a06d14b24597ff71b14e6d02582234c56", null ],
+    [ "is_focused_", "classunravel_1_1panel__base.html#a94add86668cfd9a975f4176ce1bb2853", null ],
+    [ "is_fullscreen_", "classunravel_1_1panel__base.html#adf4cf33907db13f4f5cb973fcf07fa7e", null ],
+    [ "is_visible_", "classunravel_1_1panel__base.html#a5d861c7d2547f4775d93fb869629db47", null ],
+    [ "name_", "classunravel_1_1panel__base.html#abbc98da925311db637e45ed3a391da5a", null ],
+    [ "name_fullscreen_", "classunravel_1_1panel__base.html#a611038708b5de7577c831303cd9fccf4", null ],
+    [ "request_focus_", "classunravel_1_1panel__base.html#ac77f3d5ad6119c221c464f323ac81501", null ]
+];

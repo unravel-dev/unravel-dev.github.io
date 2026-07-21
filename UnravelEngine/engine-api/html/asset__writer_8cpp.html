@@ -107,8 +107,12 @@ $(function(){initNavTree('asset__writer_8cpp.html',''); initResizable(true); });
 <code>#include &lt;fcntl.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
 </div>
 <p><a href="asset__writer_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -136,6 +140,8 @@ Functions</h2></td></tr>
 <tr class="separator:a89fb067ac49122ed2fb008a07d3c4df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1abd5cde17c8475673b86ee6f40eb4c" id="r_af1abd5cde17c8475673b86ee6f40eb4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#af1abd5cde17c8475673b86ee6f40eb4c">unravel::asset_writer::atomic_write_file</a> (const fs::path &amp;dst, const std::function&lt; void(const fs::path &amp;)&gt; &amp;callback, fs::error_code &amp;ec) noexcept</td></tr>
 <tr class="separator:af1abd5cde17c8475673b86ee6f40eb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be8f2bbf96f4eab6308936a7aa1d26f" id="r_a5be8f2bbf96f4eab6308936a7aa1d26f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#a5be8f2bbf96f4eab6308936a7aa1d26f">unravel::asset_writer::cleanup_stale_temp_files</a> (const fs::path &amp;dir, bool recursive, std::chrono::seconds min_age) noexcept -&gt; std::size_t</td></tr>
+<tr class="separator:a5be8f2bbf96f4eab6308936a7aa1d26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aaaeecb32b7ed9a1fd4164b717fe5e8ea" name="aaaeecb32b7ed9a1fd4164b717fe5e8ea"></a>
@@ -150,7 +156,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00066">66</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__writer_8cpp_source.html#l00133">133</a> of file <a class="el" href="asset__writer_8cpp_source.html">asset_writer.cpp</a>.</p>
 
 </div>
 </div>

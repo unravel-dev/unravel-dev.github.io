@@ -20,6 +20,7 @@ var seq_8cpp =
     [ "pop", "seq_8cpp.html#a9f4ee4c1ed064f7d6ee45e0a55153019", null ],
     [ "push", "seq_8cpp.html#abd516af61ead4e38ee04ad0dbbc3b2f2", null ],
     [ "push", "seq_8cpp.html#a248e0e893aa715e57587c0a72315dc27", null ],
+    [ "queue", "seq_8cpp.html#a75099e3ee04bb48875e902f967fd2ff1", null ],
     [ "resume", "seq_8cpp.html#a2479867b98e9ab28f9c8fc94a8e57484", null ],
     [ "resume_all", "seq_8cpp.html#ac84c55c0cb89cf0ec61a200fd5b5ee86", null ],
     [ "resume_all", "seq_8cpp.html#ad007cec4d50ee124a3a3f5d97c7ca2e9", null ],

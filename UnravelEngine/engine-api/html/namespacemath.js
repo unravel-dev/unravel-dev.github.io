@@ -74,6 +74,9 @@ var namespacemath =
     [ "power_of_n_round_down", "namespacemath.html#a1004851815e60208accdef8a645ee835", null ],
     [ "recompose_impl", "namespacemath.html#add181d586261c8ffc5e3d891ec9c6580", null ],
     [ "square", "namespacemath.html#a103fc14131e516be6564df9d63628422", null ],
+    [ "taa_subpixel_offset_halton", "namespacemath.html#a4aaee6353537d7dc67130a11a99cf425", null ],
+    [ "taa_subpixel_offset_progressive", "namespacemath.html#a3dfe5add95e00c2a58810d860d51d40a", null ],
+    [ "taa_subpixel_offset_r2", "namespacemath.html#ab51b2a95ff60e0f961395c259b67f9e2", null ],
     [ "to_string", "namespacemath.html#abba84b504727e287f2b17323c0377e2b", null ],
     [ "to_string", "namespacemath.html#ae86d46ff4f89793f9e699779edcfa7fc", null ],
     [ "transpose", "namespacemath.html#ae33df94beed6b358ad5fb11eda34ea4c", null ]

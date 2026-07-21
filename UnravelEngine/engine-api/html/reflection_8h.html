@@ -146,8 +146,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:ad0c4d1fdcb6e7abbd3204968cd6ffe30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e70ddd929931f82acbfeb7d72f3aec" id="r_a70e70ddd929931f82acbfeb7d72f3aec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#a70e70ddd929931f82acbfeb7d72f3aec">entt::attribute</a> = attributes::value_type</td></tr>
 <tr class="separator:a70e70ddd929931f82acbfeb7d72f3aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7397994dada156c6e1cc1871c419aae" id="r_ae7397994dada156c6e1cc1871c419aae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#ae7397994dada156c6e1cc1871c419aae">entt::property_predicate_t</a> = std::function&lt;bool(const meta_any&amp;)&gt;</td></tr>
-<tr class="separator:ae7397994dada156c6e1cc1871c419aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ff6d00291d6a2cf77989e27f387c34" id="r_ac8ff6d00291d6a2cf77989e27f387c34"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac8ff6d00291d6a2cf77989e27f387c34"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceentt.html#ac8ff6d00291d6a2cf77989e27f387c34">entt::property_predicate_t</a> = std::function&lt;T(const meta_any&amp;)&gt;</td></tr>
+<tr class="separator:ac8ff6d00291d6a2cf77989e27f387c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -189,11 +190,26 @@ Functions</h2></td></tr>
 <tr class="separator:a6ae0b25f969f71e384d0962371b8cd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3ceaa4a58bf7b9f35e05968fb4cd838" id="r_ad3ceaa4a58bf7b9f35e05968fb4cd838"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#ad3ceaa4a58bf7b9f35e05968fb4cd838">entt::get_name</a> (const meta_custom &amp;t) -&gt; std::string</td></tr>
 <tr class="separator:ad3ceaa4a58bf7b9f35e05968fb4cd838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae67ce55f5eff6289257b54f585bb53c5" id="r_ae67ce55f5eff6289257b54f585bb53c5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#ae67ce55f5eff6289257b54f585bb53c5">entt::property_predicate</a> (<a class="el" href="namespaceentt.html#ae7397994dada156c6e1cc1871c419aae">property_predicate_t</a> predicate) -&gt; <a class="el" href="namespaceentt.html#ae7397994dada156c6e1cc1871c419aae">property_predicate_t</a></td></tr>
-<tr class="separator:ae67ce55f5eff6289257b54f585bb53c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd6c5dc85872b16d67d0a7d3b72b7b6" id="r_a0dd6c5dc85872b16d67d0a7d3b72b7b6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0dd6c5dc85872b16d67d0a7d3b72b7b6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceentt.html#a0dd6c5dc85872b16d67d0a7d3b72b7b6">entt::property_predicate</a> (<a class="el" href="namespaceentt.html#ac8ff6d00291d6a2cf77989e27f387c34">property_predicate_t</a>&lt; T &gt; predicate) -&gt; <a class="el" href="namespaceentt.html#ac8ff6d00291d6a2cf77989e27f387c34">property_predicate_t</a>&lt; T &gt;</td></tr>
+<tr class="separator:a0dd6c5dc85872b16d67d0a7d3b72b7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af53bc79f7cbecca95bb72a1717bbf9a3" id="r_af53bc79f7cbecca95bb72a1717bbf9a3"><td class="memTemplParams" colspan="2">template&lt;typename Value , typename... Args&gt; </td></tr>
 <tr class="memitem:af53bc79f7cbecca95bb72a1717bbf9a3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceentt.html#af53bc79f7cbecca95bb72a1717bbf9a3">entt::make_custom</a> (Args &amp;&amp;...args) -&gt; entt::meta_custom</td></tr>
 <tr class="separator:af53bc79f7cbecca95bb72a1717bbf9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8a7d714e1270ab89a0ae685e361def" id="r_a9d8a7d714e1270ab89a0ae685e361def"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#a9d8a7d714e1270ab89a0ae685e361def">entt::is_property_visible</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_data &amp;prop) -&gt; bool</td></tr>
+<tr class="separator:a9d8a7d714e1270ab89a0ae685e361def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35891b8cd61630f8c93710a8bc67ccd" id="r_ad35891b8cd61630f8c93710a8bc67ccd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#ad35891b8cd61630f8c93710a8bc67ccd">entt::is_property_readonly</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_data &amp;prop) -&gt; bool</td></tr>
+<tr class="separator:ad35891b8cd61630f8c93710a8bc67ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad764bb719c01c1b0dc1748c5bd86e454" id="r_ad764bb719c01c1b0dc1748c5bd86e454"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#ad764bb719c01c1b0dc1748c5bd86e454">entt::is_property_flattable</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_data &amp;prop) -&gt; bool</td></tr>
+<tr class="separator:ad764bb719c01c1b0dc1748c5bd86e454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8b0a847d3c629c038da553d1a3121c" id="r_a6c8b0a847d3c629c038da553d1a3121c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#a6c8b0a847d3c629c038da553d1a3121c">entt::is_property_visible</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_custom &amp;custom) -&gt; bool</td></tr>
+<tr class="separator:a6c8b0a847d3c629c038da553d1a3121c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041725ba9aff5d8914f3b13b2e887361" id="r_a041725ba9aff5d8914f3b13b2e887361"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#a041725ba9aff5d8914f3b13b2e887361">entt::is_property_readonly</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_custom &amp;custom) -&gt; bool</td></tr>
+<tr class="separator:a041725ba9aff5d8914f3b13b2e887361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b053e9c6d9a9202bbd2b25c08acc72e" id="r_a4b053e9c6d9a9202bbd2b25c08acc72e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#a4b053e9c6d9a9202bbd2b25c08acc72e">entt::is_property_flattable</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_custom &amp;custom) -&gt; bool</td></tr>
+<tr class="separator:a4b053e9c6d9a9202bbd2b25c08acc72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630cb2f1a1aeb88fa65d5678fbfcb5ed" id="r_a630cb2f1a1aeb88fa65d5678fbfcb5ed"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#a630cb2f1a1aeb88fa65d5678fbfcb5ed">entt::get_property_hint</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_data &amp;prop) -&gt; std::string</td></tr>
+<tr class="separator:a630cb2f1a1aeb88fa65d5678fbfcb5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f5b5fb6983ff0006e4cdbff3b9370ed" id="r_a6f5b5fb6983ff0006e4cdbff3b9370ed"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6f5b5fb6983ff0006e4cdbff3b9370ed"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerefl__detail.html#a6f5b5fb6983ff0006e4cdbff3b9370ed">refl_detail::get_reg</a> (void(*f)())</td></tr>
 <tr class="separator:a6f5b5fb6983ff0006e4cdbff3b9370ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,9 +230,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a7269d7ffb50f43ad9a3eff01d3f0a367">CAT_</a>(str, __LINE__)</div>
-<div class="ttc" id="areflection_8h_html_a7269d7ffb50f43ad9a3eff01d3f0a367"><div class="ttname"><a href="#a7269d7ffb50f43ad9a3eff01d3f0a367">CAT_</a></div><div class="ttdeci">#define CAT_(a, b)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00099">reflection.h:99</a></div></div>
+<div class="ttc" id="areflection_8h_html_a7269d7ffb50f43ad9a3eff01d3f0a367"><div class="ttname"><a href="#a7269d7ffb50f43ad9a3eff01d3f0a367">CAT_</a></div><div class="ttdeci">#define CAT_(a, b)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00115">reflection.h:115</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00103">103</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00119">119</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
 
 </div>
 </div>
@@ -239,11 +255,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a1eeb7fe2321dd57425b1c2a5525a1f73">CAT_IMPL_</a>(<a class="code hl_variable" href="bullet__backend_8cpp.html#ac4cabb90211f9ac9d0a6b2c4bf9b680f">a</a>, <a class="code hl_variable" href="bullet__backend_8cpp.html#a08221b587035b491f31d6dfe2b26dcd1">b</a>)</div>
-<div class="ttc" id="abullet__backend_8cpp_html_a08221b587035b491f31d6dfe2b26dcd1"><div class="ttname"><a href="bullet__backend_8cpp.html#a08221b587035b491f31d6dfe2b26dcd1">b</a></div><div class="ttdeci">entt::handle b</div><div class="ttdef"><b>Definition</b> <a href="bullet__backend_8cpp_source.html#l00090">bullet_backend.cpp:90</a></div></div>
-<div class="ttc" id="abullet__backend_8cpp_html_ac4cabb90211f9ac9d0a6b2c4bf9b680f"><div class="ttname"><a href="bullet__backend_8cpp.html#ac4cabb90211f9ac9d0a6b2c4bf9b680f">a</a></div><div class="ttdeci">entt::handle a</div><div class="ttdef"><b>Definition</b> <a href="bullet__backend_8cpp_source.html#l00089">bullet_backend.cpp:89</a></div></div>
-<div class="ttc" id="areflection_8h_html_a1eeb7fe2321dd57425b1c2a5525a1f73"><div class="ttname"><a href="#a1eeb7fe2321dd57425b1c2a5525a1f73">CAT_IMPL_</a></div><div class="ttdeci">#define CAT_IMPL_(a, b)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00098">reflection.h:98</a></div></div>
+<div class="ttc" id="abullet__backend_8cpp_html_a08221b587035b491f31d6dfe2b26dcd1"><div class="ttname"><a href="bullet__backend_8cpp.html#a08221b587035b491f31d6dfe2b26dcd1">b</a></div><div class="ttdeci">entt::handle b</div><div class="ttdef"><b>Definition</b> <a href="bullet__backend_8cpp_source.html#l00099">bullet_backend.cpp:99</a></div></div>
+<div class="ttc" id="abullet__backend_8cpp_html_ac4cabb90211f9ac9d0a6b2c4bf9b680f"><div class="ttname"><a href="bullet__backend_8cpp.html#ac4cabb90211f9ac9d0a6b2c4bf9b680f">a</a></div><div class="ttdeci">entt::handle a</div><div class="ttdef"><b>Definition</b> <a href="bullet__backend_8cpp_source.html#l00098">bullet_backend.cpp:98</a></div></div>
+<div class="ttc" id="areflection_8h_html_a1eeb7fe2321dd57425b1c2a5525a1f73"><div class="ttname"><a href="#a1eeb7fe2321dd57425b1c2a5525a1f73">CAT_IMPL_</a></div><div class="ttdeci">#define CAT_IMPL_(a, b)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00114">reflection.h:114</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00099">99</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00115">115</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +283,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_variable" href="bullet__backend_8cpp.html#ac4cabb90211f9ac9d0a6b2c4bf9b680f">a</a>##<a class="code hl_variable" href="bullet__backend_8cpp.html#a08221b587035b491f31d6dfe2b26dcd1">b</a></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00098">98</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00114">114</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +304,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span>&lt;&gt;                                                                                                         \</div>
 <div class="line">    <span class="keywordtype">void</span> reflection_auto_register_reflection_function_t&lt;cls&gt;()</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00133">133</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00149">149</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
 
 </div>
 </div>
@@ -312,9 +328,9 @@ Functions</h2></td></tr>
 <div class="line">    <span class="keywordtype">void</span> reflection_auto_register_reflection_function_t&lt;cls&gt;();                                                              \</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_define" href="#a618540e501ba6f829a32f41e1ead2182">ANONYMOUS_VARIABLE</a>(auto_register__) =                                                             \</div>
 <div class="line">        refl_detail::get_reg&lt;cls&gt;(&amp;reflection_auto_register_reflection_function_t&lt;cls&gt;)</div>
-<div class="ttc" id="areflection_8h_html_a618540e501ba6f829a32f41e1ead2182"><div class="ttname"><a href="#a618540e501ba6f829a32f41e1ead2182">ANONYMOUS_VARIABLE</a></div><div class="ttdeci">#define ANONYMOUS_VARIABLE(str)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00103">reflection.h:103</a></div></div>
+<div class="ttc" id="areflection_8h_html_a618540e501ba6f829a32f41e1ead2182"><div class="ttname"><a href="#a618540e501ba6f829a32f41e1ead2182">ANONYMOUS_VARIABLE</a></div><div class="ttdeci">#define ANONYMOUS_VARIABLE(str)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00119">reflection.h:119</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00120">120</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00136">136</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
 
 </div>
 </div>
@@ -335,9 +351,9 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="#a00cfb707a45509baf09e4d5f09b03e37">REFLECT_EXTERN</a>(cls);                                                                                               \</div>
 <div class="line">    <span class="keyword">template</span>&lt;&gt;                                                                                                         \</div>
 <div class="line">    <span class="keyword">inline</span> <span class="keywordtype">void</span> reflection_auto_register_reflection_function_t&lt;cls&gt;()</div>
-<div class="ttc" id="areflection_8h_html_a00cfb707a45509baf09e4d5f09b03e37"><div class="ttname"><a href="#a00cfb707a45509baf09e4d5f09b03e37">REFLECT_EXTERN</a></div><div class="ttdeci">#define REFLECT_EXTERN(cls)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00120">reflection.h:120</a></div></div>
+<div class="ttc" id="areflection_8h_html_a00cfb707a45509baf09e4d5f09b03e37"><div class="ttname"><a href="#a00cfb707a45509baf09e4d5f09b03e37">REFLECT_EXTERN</a></div><div class="ttdeci">#define REFLECT_EXTERN(cls)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00136">reflection.h:136</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00128">128</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00144">144</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +382,7 @@ Functions</h2></td></tr>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> reflection__auto__register__ <a class="code hl_define" href="#a618540e501ba6f829a32f41e1ead2182">ANONYMOUS_VARIABLE</a>(auto_register__);                                     \</div>
 <div class="line">    <span class="keyword">static</span> <span class="keywordtype">void</span> reflection_auto_register_reflection_function_()</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00137">137</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00153">153</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
 
 </div>
 </div>

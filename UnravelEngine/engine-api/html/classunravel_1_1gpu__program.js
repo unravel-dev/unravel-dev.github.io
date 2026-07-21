@@ -19,5 +19,6 @@ var classunravel_1_1gpu__program =
     [ "set_uniform", "classunravel_1_1gpu__program.html#a05cd0483743fd4ec251e4c8616ecc41b", null ],
     [ "set_uniform", "classunravel_1_1gpu__program.html#ab6b3944587a8b88b5c6bf8290624da23", null ],
     [ "set_uniform", "classunravel_1_1gpu__program.html#a8f895a5bebcc13d85c0d18615ee35b13", null ],
-    [ "set_uniform", "classunravel_1_1gpu__program.html#a666befc2a49d63a423cb3a94e8203b56", null ]
+    [ "set_uniform", "classunravel_1_1gpu__program.html#a666befc2a49d63a423cb3a94e8203b56", null ],
+    [ "was_repopulated", "classunravel_1_1gpu__program.html#a3e04661e54bce25691bac2e4542535bb", null ]
 ];

@@ -115,14 +115,14 @@ $(function(){initNavTree('parser_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>parser::cmd_base::cmd_base(<span class="keyword">const</span> std::string&amp; <a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>,</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                           <span class="keyword">const</span> std::string&amp; alternative,</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                           <span class="keyword">const</span> std::string&amp; description,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                           <span class="keyword">const</span> std::string&amp; <a class="code hl_variable" href="create__scene__modal_8cpp.html#a68344fa88cf4e86b5079fd69a5c22d57">description</a>,</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                           <span class="keywordtype">bool</span> required,</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                           <span class="keywordtype">bool</span> dominant,</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>                           <span class="keywordtype">bool</span> is_variadic)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    : <a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>(<a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    , command(!<a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>.empty() ? <span class="stringliteral">&quot;-&quot;</span> + <a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a> : <span class="stringliteral">&quot;&quot;</span>)</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    , alternative(!alternative.empty() ? <span class="stringliteral">&quot;--&quot;</span> + alternative : <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    , description(description)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    , <a class="code hl_variable" href="create__scene__modal_8cpp.html#a68344fa88cf4e86b5079fd69a5c22d57">description</a>(<a class="code hl_variable" href="create__scene__modal_8cpp.html#a68344fa88cf4e86b5079fd69a5c22d57">description</a>)</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    , required(required)</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    , handled(false)</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    , arguments({})</div>
@@ -336,7 +336,7 @@ $(function(){initNavTree('parser_8cpp_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
 <div class="foldopen" id="foldopen00216" data-start="{" data-end="}">
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classcmd__line_1_1parser.html#a3ff420208466e77e335747fdc623668f">  216</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classcmd__line_1_1parser.html#a48a7af3b2c4c4e54102d12a9318ae95a">parser::run</a>(std::ostream&amp; output, std::ostream&amp; error) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classcmd__line_1_1parser.html#a3ff420208466e77e335747fdc623668f">  216</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classcmd__line_1_1parser.html#a48a7af3b2c4c4e54102d12a9318ae95a">parser::run</a>(std::ostream&amp; output, std::ostream&amp; <a class="code hl_variable" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>{</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">if</span>(!arguments_.empty())</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    {</div>
@@ -378,9 +378,9 @@ $(function(){initNavTree('parser_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; command_pair : commands_)</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    {</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="keyword">auto</span>&amp; command = command_pair.second;</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordflow">if</span>(command-&gt;handled &amp;&amp; command-&gt;dominant &amp;&amp; !command-&gt;parse(output, error))</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordflow">if</span>(command-&gt;handled &amp;&amp; command-&gt;dominant &amp;&amp; !command-&gt;parse(output, <a class="code hl_variable" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>))</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        {</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            error &lt;&lt; howto_use(command);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <a class="code hl_variable" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a> &lt;&lt; howto_use(command);</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
@@ -391,7 +391,7 @@ $(function(){initNavTree('parser_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; command = command_pair.second;</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordflow">if</span>(command-&gt;required &amp;&amp; !command-&gt;handled)</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        {</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            error &lt;&lt; howto_required(command);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <a class="code hl_variable" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a> &lt;&lt; howto_required(command);</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        }</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    }</div>
@@ -400,9 +400,9 @@ $(function(){initNavTree('parser_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; command_pair : commands_)</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    {</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        <span class="keyword">auto</span>&amp; command = command_pair.second;</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <span class="keywordflow">if</span>(command-&gt;handled &amp;&amp; !command-&gt;dominant &amp;&amp; !command-&gt;parse(output, error))</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <span class="keywordflow">if</span>(command-&gt;handled &amp;&amp; !command-&gt;dominant &amp;&amp; !command-&gt;parse(output, <a class="code hl_variable" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a>))</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        {</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            error &lt;&lt; howto_use(command);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            <a class="code hl_variable" href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a> &lt;&lt; howto_use(command);</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        }</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    }</div>
@@ -414,18 +414,18 @@ $(function(){initNavTree('parser_8cpp_source.html',''); initResizable(true); });
 <div class="foldopen" id="foldopen00290" data-start="{" data-end="}">
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="classcmd__line_1_1parser.html#ac10b4c96efbf2a559819c8165a869f3e">  290</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classcmd__line_1_1parser.html#ac10b4c96efbf2a559819c8165a869f3e">parser::requirements</a>() const -&gt; <span class="keywordtype">int</span></div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>{</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordtype">int</span> count = 0;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="particle__system__soa_8cpp.html#a86988a65e0d3ece7990c032c159786d6">count</a> = 0;</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; command_pair : commands_)</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    {</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; command = command_pair.second;</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <span class="keywordflow">if</span>(command-&gt;required)</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        {</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            ++count;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            ++<a class="code hl_variable" href="particle__system__soa_8cpp.html#a86988a65e0d3ece7990c032c159786d6">count</a>;</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        }</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    }</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordflow">return</span> count;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="particle__system__soa_8cpp.html#a86988a65e0d3ece7990c032c159786d6">count</a>;</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>}</div>
 </div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
@@ -570,11 +570,14 @@ $(function(){initNavTree('parser_8cpp_source.html',''); initResizable(true); });
 <div class="ttc" id="aclasscmd__line_1_1parser_html_ac10b4c96efbf2a559819c8165a869f3e"><div class="ttname"><a href="classcmd__line_1_1parser.html#ac10b4c96efbf2a559819c8165a869f3e">cmd_line::parser::requirements</a></div><div class="ttdeci">auto requirements() const -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="#l00290">parser.cpp:290</a></div></div>
 <div class="ttc" id="aclasscmd__line_1_1parser_html_ac3b73e64154f32fae24fa354c32aefa5"><div class="ttname"><a href="classcmd__line_1_1parser.html#ac3b73e64154f32fae24fa354c32aefa5">cmd_line::parser::commands</a></div><div class="ttdeci">auto commands() const -&gt; int</div><div class="ttdef"><b>Definition</b> <a href="#l00306">parser.cpp:306</a></div></div>
 <div class="ttc" id="aclasscmd__line_1_1parser_html_ac62f75b5386dc7165a630d2d78ee99c7"><div class="ttname"><a href="classcmd__line_1_1parser.html#ac62f75b5386dc7165a630d2d78ee99c7">cmd_line::parser::find</a></div><div class="ttdeci">auto find(const std::string &amp;name) -&gt; cmd_base *</div><div class="ttdef"><b>Definition</b> <a href="#l00395">parser.cpp:395</a></div></div>
-<div class="ttc" id="ahub_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00027">hub.cpp:27</a></div></div>
+<div class="ttc" id="acreate__scene__modal_8cpp_html_a68344fa88cf4e86b5079fd69a5c22d57"><div class="ttname"><a href="create__scene__modal_8cpp.html#a68344fa88cf4e86b5079fd69a5c22d57">description</a></div><div class="ttdeci">const char * description</div><div class="ttdef"><b>Definition</b> <a href="create__scene__modal_8cpp_source.html#l00018">create_scene_modal.cpp:18</a></div></div>
+<div class="ttc" id="ahub_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00033">hub.cpp:33</a></div></div>
+<div class="ttc" id="amcp__async_8cpp_html_a8c94119e5bd6fbde0680ef83f01c9685"><div class="ttname"><a href="mcp__async_8cpp.html#a8c94119e5bd6fbde0680ef83f01c9685">error</a></div><div class="ttdeci">std::string error</div><div class="ttdef"><b>Definition</b> <a href="mcp__async_8cpp_source.html#l00033">mcp_async.cpp:33</a></div></div>
 <div class="ttc" id="anamespacecmd__line_1_1detail_html_acd8c0ba6afe326509aa474328c1ba3c6"><div class="ttname"><a href="namespacecmd__line_1_1detail.html#acd8c0ba6afe326509aa474328c1ba3c6">cmd_line::detail::get_internal_id</a></div><div class="ttdeci">auto get_internal_id() -&gt; std::uint64_t</div><div class="ttdef"><b>Definition</b> <a href="#l00006">parser.cpp:6</a></div></div>
 <div class="ttc" id="anamespacecmd__line_html"><div class="ttname"><a href="namespacecmd__line.html">cmd_line</a></div><div class="ttdef"><b>Definition</b> <a href="#l00003">parser.cpp:4</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">Hash specialization for batch_key to enable use in std::unordered_map.</div><div class="ttdef"><b>Definition</b> <a href="render__view__keys_8h_source.html#l00036">render_view_keys.h:37</a></div></div>
 <div class="ttc" id="aparser_8h_html"><div class="ttname"><a href="parser_8h.html">parser.h</a></div></div>
+<div class="ttc" id="aparticle__system__soa_8cpp_html_a86988a65e0d3ece7990c032c159786d6"><div class="ttname"><a href="particle__system__soa_8cpp.html#a86988a65e0d3ece7990c032c159786d6">count</a></div><div class="ttdeci">uint32_t count</div><div class="ttdef"><b>Definition</b> <a href="particle__system__soa_8cpp_source.html#l00381">particle_system_soa.cpp:381</a></div></div>
 <div class="ttc" id="astructcmd__line_1_1callback__args_html"><div class="ttname"><a href="structcmd__line_1_1callback__args.html">cmd_line::callback_args</a></div><div class="ttdef"><b>Definition</b> <a href="parser_8h_source.html#l00054">parser.h:55</a></div></div>
 <div class="ttc" id="astructcmd__line_1_1callback__args_html_a01ba9c6c12692fdd98502f2a8f455391"><div class="ttname"><a href="structcmd__line_1_1callback__args.html#a01ba9c6c12692fdd98502f2a8f455391">cmd_line::callback_args::output</a></div><div class="ttdeci">std::ostream &amp; output</div><div class="ttdef"><b>Definition</b> <a href="parser_8h_source.html#l00057">parser.h:57</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -18,6 +18,8 @@ var format_8h =
     [ "get_best_format", "format_8h.html#afe9afccdc4ef2f8724868884ad854026", null ],
     [ "get_default_rt_sampler_flags", "format_8h.html#ae8330a94e2c62a8b9babf721a6c9ce33", null ],
     [ "get_format_info", "format_8h.html#aa16a1da14080444e8672655b4842b16c", null ],
+    [ "is_compressed_format", "format_8h.html#a371b51ba1d0d3fb321f15edfc82c6837", null ],
     [ "is_format_supported", "format_8h.html#ab64d026d10e0bef20c4ef960d56e654c", null ],
+    [ "normal_map_needs_z_reconstruction", "format_8h.html#a4f12a12a5ed33a52348f5c8eea4b0357", null ],
     [ "to_string", "format_8h.html#a00f91f24de230ac751049d180838ae87", null ]
 ];

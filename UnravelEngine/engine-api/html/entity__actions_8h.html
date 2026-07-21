@@ -105,14 +105,24 @@ $(function(){initNavTree('entity__actions_8h.html',''); initResizable(true); });
 <div class="textblock"><code>#include &quot;<a class="el" href="editing__action_8h_source.html">editing_action.h</a>&quot;</code><br />
 <code>#include &quot;entt/meta/meta.hpp&quot;</code><br />
 <code>#include &lt;<a class="el" href="asset__handle_8h_source.html">engine/assets/asset_handle.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="scene_8h_source.html">engine/ecs/scene.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;<a class="el" href="uuid_8h_source.html">uuid/uuid.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="entity__actions_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1create__entities__action__t.html">unravel::create_entities_action_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undoable create for entity subtrees: invokes a user-supplied factory on first execution, snapshots the newly-created roots, and restores them with identical UUIDs on redo.  <a href="structunravel_1_1create__entities__action__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1delete__entities__action__t.html">unravel::delete_entities_action_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undoable delete for entity subtrees: snapshots serialized roots at construction, deletes on do, restores on undo.  <a href="structunravel_1_1delete__entities__action__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1entity__add__component__action__t.html">unravel::entity_add_component_action_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1entity__remove__component__action__t.html">unravel::entity_remove_component_action_t</a></td></tr>
@@ -126,6 +136,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1entity__set__materials__action__t.html">unravel::entity_set_materials_action_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1entity__set__text__bounds__action__t.html">unravel::entity_set_text_bounds_action_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1entity__set__ui__document__component__bounds__action__t.html">unravel::entity_set_ui_document_component_bounds_action_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1entity__add__script__component__action__t.html">unravel::entity_add_script_component_action_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

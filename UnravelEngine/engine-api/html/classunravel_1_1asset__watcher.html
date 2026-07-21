@@ -115,14 +115,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa8003dc15c080a250ba0ea6e593c29c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a005a7268e99e5e3255a786d44e0c75d6" id="r_a005a7268e99e5e3255a786d44e0c75d6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a005a7268e99e5e3255a786d44e0c75d6">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
 <tr class="separator:a005a7268e99e5e3255a786d44e0c75d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6554428371166e515f9a4636f7546df6" id="r_a6554428371166e515f9a4636f7546df6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6554428371166e515f9a4636f7546df6">watch_assets</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const std::string &amp;protocol, bool wait=false)</td></tr>
-<tr class="separator:a6554428371166e515f9a4636f7546df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ce7238a8e0ad284737192c08e9fca4" id="r_a22ce7238a8e0ad284737192c08e9fca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22ce7238a8e0ad284737192c08e9fca4">watch_assets</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const std::string &amp;protocol, bool wait=false, const <a class="el" href="namespaceunravel.html#a32a1fd706da7f56c8a245f3c0b57763b">on_wait_progress_t</a> &amp;on_progress=nullptr)</td></tr>
+<tr class="separator:a22ce7238a8e0ad284737192c08e9fca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab197c36b975f467f46cf21278e85c3ba" id="r_ab197c36b975f467f46cf21278e85c3ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab197c36b975f467f46cf21278e85c3ba">unwatch_assets</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const std::string &amp;protocol)</td></tr>
 <tr class="separator:ab197c36b975f467f46cf21278e85c3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24de7e1ec057dd46daa462885ddff812" id="r_a24de7e1ec057dd46daa462885ddff812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24de7e1ec057dd46daa462885ddff812">recreate_meta_files</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const std::string &amp;protocol)</td></tr>
+<tr class="separator:a24de7e1ec057dd46daa462885ddff812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d0a8c86e30a1d759cae5632d3c0854" id="r_a13d0a8c86e30a1d759cae5632d3c0854"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13d0a8c86e30a1d759cae5632d3c0854">get_pending_jobs_count</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) const -&gt; size_t</td></tr>
+<tr class="separator:a13d0a8c86e30a1d759cae5632d3c0854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="asset__watcher_8h_source.html#l00011">11</a> of file <a class="el" href="asset__watcher_8h_source.html">asset_watcher.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__watcher_8h_source.html#l00016">16</a> of file <a class="el" href="asset__watcher_8h_source.html">asset_watcher.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa3e6784952f52eb2344a102a3f4599bb" name="aa3e6784952f52eb2344a102a3f4599bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3e6784952f52eb2344a102a3f4599bb">&#9670;&#160;</a></span>asset_watcher()</h2>
@@ -139,7 +143,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00773">773</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00776">776</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
 
 </div>
 </div>
@@ -158,7 +162,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00777">777</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00780">780</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
 
 </div>
 </div>
@@ -178,7 +182,26 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00816">816</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00817">817</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13d0a8c86e30a1d759cae5632d3c0854" name="a13d0a8c86e30a1d759cae5632d3c0854"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13d0a8c86e30a1d759cae5632d3c0854">&#9670;&#160;</a></span>get_pending_jobs_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::asset_watcher::get_pending_jobs_count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span></td><td>)</td>
+          <td> const -&gt; size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00877">877</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
 
 </div>
 </div>
@@ -197,7 +220,30 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00804">804</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00807">807</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a24de7e1ec057dd46daa462885ddff812" name="a24de7e1ec057dd46daa462885ddff812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24de7e1ec057dd46daa462885ddff812">&#9670;&#160;</a></span>recreate_meta_files()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::asset_watcher::recreate_meta_files </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>protocol</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00883">883</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
 
 </div>
 </div>
@@ -220,12 +266,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00847">847</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__watcher_8cpp_source.html#l00857">857</a> of file <a class="el" href="asset__watcher_8cpp_source.html">asset_watcher.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a6554428371166e515f9a4636f7546df6" name="a6554428371166e515f9a4636f7546df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6554428371166e515f9a4636f7546df6">&#9670;&#160;</a></span>watch_assets()</h2>
+<a id="a22ce7238a8e0ad284737192c08e9fca4" name="a22ce7238a8e0ad284737192c08e9fca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22ce7238a8e0ad284737192c08e9fca4">&#9670;&#160;</a></span>watch_assets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +289,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>wait</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>wait</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceunravel.html#a32a1fd706da7f56c8a245f3c0b57763b">on_wait_progress_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>on_progress</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

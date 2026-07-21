@@ -7,6 +7,7 @@ var structunravel_1_1prefab__override__context =
     [ "pop_segment", "structunravel_1_1prefab__override__context.html#add783a0460eafa0f3e84329762c31bca", null ],
     [ "push_segment", "structunravel_1_1prefab__override__context.html#abe373af9ec612cf58e06d3614d4e217c", null ],
     [ "record_override", "structunravel_1_1prefab__override__context.html#aac2dc0e5e2b706cca12b9ae20deafad6", null ],
+    [ "reset_override", "structunravel_1_1prefab__override__context.html#ab59cde06b3b94550046f760f30cbd69a", null ],
     [ "set_component_type", "structunravel_1_1prefab__override__context.html#a9728e25e71500f30c33b46696e231e68", null ],
     [ "set_entity_uuid", "structunravel_1_1prefab__override__context.html#a1d5adc6fe81cc65f8fdfe41c80067e8c", null ],
     [ "entity", "structunravel_1_1prefab__override__context.html#a3c63f2787095a894c1fcff6cf1302247", null ],

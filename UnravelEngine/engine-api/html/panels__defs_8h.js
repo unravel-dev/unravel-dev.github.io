@@ -8,7 +8,9 @@ var panels__defs_8h =
     [ "GAME_VIEW", "panels__defs_8h.html#aa258c3276e2468b40b3a259b043357dc", null ],
     [ "HIERARCHY_VIEW", "panels__defs_8h.html#a4b043e8d8e173942429cc60dd22d31ca", null ],
     [ "INSPECTOR_VIEW", "panels__defs_8h.html#a7eb6f15b0199bff563ddd818dd62f5a4", null ],
+    [ "LAYOUTS_VIEW", "panels__defs_8h.html#ae44d063d9de8af612f9b633f9657001c", null ],
+    [ "MCP_VIEW", "panels__defs_8h.html#a74c680731567c6f04bb9dc52436255df", null ],
+    [ "PROFILER_VIEW", "panels__defs_8h.html#a966d9ce62d4ef25c0828fe0990d7ade5", null ],
     [ "PROJECT_SETTINGS_VIEW", "panels__defs_8h.html#a9ae81d6ec69be3bbdcf8e016a54b0825", null ],
-    [ "SCENE_VIEW", "panels__defs_8h.html#a7ccbe9d00fd9f8033d707ccb66fa6980", null ],
-    [ "STATISTICS_VIEW", "panels__defs_8h.html#a4b1c3806cd6200d91112ac83b667b992", null ]
+    [ "SCENE_VIEW", "panels__defs_8h.html#a7ccbe9d00fd9f8033d707ccb66fa6980", null ]
 ];

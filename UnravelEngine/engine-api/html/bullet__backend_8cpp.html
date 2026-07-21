@@ -104,6 +104,7 @@ $(function(){initNavTree('bullet__backend_8cpp.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="bullet__backend_8h_source.html">bullet_backend.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="graphics_8h_source.html">graphics/graphics.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="defaults_8h_source.html">engine/defaults/defaults.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2events_8h_source.html">engine/events.h</a>&gt;</code><br />
 <code>#include &lt;math/transform.hpp&gt;</code><br />
@@ -113,17 +114,24 @@ $(function(){initNavTree('bullet__backend_8cpp.html',''); initResizable(true); }
 <code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ecs_8h_source.html">engine/ecs/ecs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="character__controller__component_8h_source.html">engine/physics/ecs/components/character_controller_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script__component_8h_source.html">engine/scripting/ecs/components/script_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script__system_8h_source.html">engine/scripting/ecs/systems/script_system.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2settings_2settings_8h_source.html">engine/settings/settings.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="profiler_8h_source.html">engine/profiler/profiler.h</a>&gt;</code><br />
 <code>#include &lt;BulletCollision/CollisionDispatch/btCollisionDispatcherMt.h&gt;</code><br />
 <code>#include &lt;BulletCollision/NarrowPhaseCollision/btRaycastCallback.h&gt;</code><br />
 <code>#include &lt;BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolverMt.h&gt;</code><br />
 <code>#include &lt;BulletDynamics/Dynamics/btDiscreteDynamicsWorldMt.h&gt;</code><br />
 <code>#include &lt;btBulletCollisionCommon.h&gt;</code><br />
 <code>#include &lt;btBulletDynamicsCommon.h&gt;</code><br />
+<code>#include &lt;BulletDynamics/Character/btKinematicCharacterController.h&gt;</code><br />
+<code>#include &lt;BulletCollision/CollisionDispatch/btGhostObject.h&gt;</code><br />
 <code>#include &lt;hpp/flat_map.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="bullet__backend_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -170,7 +178,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00017">17</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00020">20</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +265,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00089">89</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00098">98</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -273,7 +281,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00684">684</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00702">702</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -289,7 +297,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00090">90</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00099">99</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -305,7 +313,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00668">668</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00686">686</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -321,7 +329,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00683">683</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00701">701</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -337,7 +345,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00672">672</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00690">690</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -353,7 +361,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00662">662</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00671">671</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +377,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00663">663</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00672">672</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +393,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00092">92</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00101">101</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +409,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00686">686</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00704">704</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afcf8265965efd630a6983e30dec546b2" name="afcf8265965efd630a6983e30dec546b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf8265965efd630a6983e30dec546b2">&#9670;&#160;</a></span>controller</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;btKinematicCharacterController&gt; controller {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00679">679</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -417,7 +441,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00669">669</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00687">687</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -433,7 +457,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00673">673</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00691">691</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -449,7 +473,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00691">691</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00709">709</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -465,7 +489,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00088">88</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00097">97</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -481,7 +505,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00551">551</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00560">560</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af36e96f7d41a141c7621d851ba6ede9d" name="af36e96f7d41a141c7621d851ba6ede9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af36e96f7d41a141c7621d851ba6ede9d">&#9670;&#160;</a></span>ghost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;btPairCachingGhostObject&gt; ghost {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00677">677</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +537,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00553">553</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00562">562</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -513,7 +553,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00690">690</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00708">708</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -529,7 +569,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00660">660</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00669">669</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +585,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00661">661</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00670">670</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -561,7 +601,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00462">462</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00471">471</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -577,7 +617,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00607">607</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00616">616</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -593,7 +633,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00550">550</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00559">559</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -609,7 +649,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00549">549</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00558">558</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -625,7 +665,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00463">463</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00472">472</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab32ba9711f3b323f966229372c16f43a" name="ab32ba9711f3b323f966229372c16f43a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab32ba9711f3b323f966229372c16f43a">&#9670;&#160;</a></span>shape</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;btCapsuleShape&gt; shape {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00678">678</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -641,7 +697,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00670">670</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00688">688</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -657,7 +713,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00671">671</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00689">689</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -673,7 +729,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00687">687</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00705">705</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -689,7 +745,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00688">688</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00706">706</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -705,7 +761,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00087">87</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00096">96</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>

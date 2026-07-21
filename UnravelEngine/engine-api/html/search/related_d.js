@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['watcher_0',['watcher',['../classfs_1_1watcher_1_1impl.html#ab1ffdab9f4319520dcf8416846fe276b',1,'fs::watcher::impl']]]
+  ['watcher_5ffallback_0',['watcher_fallback',['../classfs_1_1watcher__fallback_1_1directory__listener.html#afdb91273d4b8d368eafe048c6b0d5ba0',1,'fs::watcher_fallback::directory_listener']]]
 ];

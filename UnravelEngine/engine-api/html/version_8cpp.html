@@ -103,6 +103,8 @@ $(function(){initNavTree('version_8cpp.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="version_8h_source.html">version.h</a>&quot;</code><br />
+<code>#include &lt;cctype&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
 </div>
 <p><a href="version_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -113,14 +115,25 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a40a6c30ca3a59545b38d8845d509085a" id="r_a40a6c30ca3a59545b38d8845d509085a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#a40a6c30ca3a59545b38d8845d509085a">version::get_major</a> ()</td></tr>
-<tr class="separator:a40a6c30ca3a59545b38d8845d509085a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0983c05d8948721ad41e2b6325da5544" id="r_a0983c05d8948721ad41e2b6325da5544"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#a0983c05d8948721ad41e2b6325da5544">version::get_minor</a> ()</td></tr>
-<tr class="separator:a0983c05d8948721ad41e2b6325da5544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa991b373af2a25d05d1308511771afe3" id="r_aa991b373af2a25d05d1308511771afe3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#aa991b373af2a25d05d1308511771afe3">version::get_patch</a> ()</td></tr>
-<tr class="separator:aa991b373af2a25d05d1308511771afe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33ad3abd2e2138e59c7a5e376aacd026" id="r_a33ad3abd2e2138e59c7a5e376aacd026"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#a33ad3abd2e2138e59c7a5e376aacd026">version::get_full</a> ()</td></tr>
-<tr class="separator:a33ad3abd2e2138e59c7a5e376aacd026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b354cab680fa41e6a024939620840c" id="r_a90b354cab680fa41e6a024939620840c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#a90b354cab680fa41e6a024939620840c">version::operator==</a> (const <a class="el" href="structversion_1_1engine__version.html">engine_version</a> &amp;<a class="el" href="bullet__backend_8cpp.html#ac4cabb90211f9ac9d0a6b2c4bf9b680f">a</a>, const <a class="el" href="structversion_1_1engine__version.html">engine_version</a> &amp;<a class="el" href="bullet__backend_8cpp.html#a08221b587035b491f31d6dfe2b26dcd1">b</a>) -&gt; bool</td></tr>
+<tr class="separator:a90b354cab680fa41e6a024939620840c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d67a90c827e2bfe6c6704019a8cf46" id="r_ab6d67a90c827e2bfe6c6704019a8cf46"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#ab6d67a90c827e2bfe6c6704019a8cf46">version::operator&lt;=&gt;</a> (const <a class="el" href="structversion_1_1engine__version.html">engine_version</a> &amp;<a class="el" href="bullet__backend_8cpp.html#ac4cabb90211f9ac9d0a6b2c4bf9b680f">a</a>, const <a class="el" href="structversion_1_1engine__version.html">engine_version</a> &amp;<a class="el" href="bullet__backend_8cpp.html#a08221b587035b491f31d6dfe2b26dcd1">b</a>) -&gt; std::strong_ordering</td></tr>
+<tr class="separator:ab6d67a90c827e2bfe6c6704019a8cf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a067001069df577e9413911bdfd99385a" id="r_a067001069df577e9413911bdfd99385a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#a067001069df577e9413911bdfd99385a">version::parse</a> (std::string_view text) -&gt; std::optional&lt; <a class="el" href="structversion_1_1engine__version.html">engine_version</a> &gt;</td></tr>
+<tr class="memdesc:a067001069df577e9413911bdfd99385a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a version string. Returns nullopt on malformed input.  <br /></td></tr>
+<tr class="separator:a067001069df577e9413911bdfd99385a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891993a614755ffb0f0ac0c4bc4eec60" id="r_a891993a614755ffb0f0ac0c4bc4eec60"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#a891993a614755ffb0f0ac0c4bc4eec60">version::compare</a> (const <a class="el" href="structversion_1_1engine__version.html">engine_version</a> &amp;<a class="el" href="bullet__backend_8cpp.html#ac4cabb90211f9ac9d0a6b2c4bf9b680f">a</a>, const <a class="el" href="structversion_1_1engine__version.html">engine_version</a> &amp;<a class="el" href="bullet__backend_8cpp.html#a08221b587035b491f31d6dfe2b26dcd1">b</a>) -&gt; int</td></tr>
+<tr class="separator:a891993a614755ffb0f0ac0c4bc4eec60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b42d22ed7d3faf55eff6518e26027d8" id="r_a8b42d22ed7d3faf55eff6518e26027d8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#a8b42d22ed7d3faf55eff6518e26027d8">version::get_current</a> () -&gt; <a class="el" href="structversion_1_1engine__version.html">engine_version</a></td></tr>
+<tr class="separator:a8b42d22ed7d3faf55eff6518e26027d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceef9c1d98b8d5aebe78881c57939336" id="r_aceef9c1d98b8d5aebe78881c57939336"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#aceef9c1d98b8d5aebe78881c57939336">version::get_major</a> () -&gt; std::string</td></tr>
+<tr class="separator:aceef9c1d98b8d5aebe78881c57939336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a902545df8d74e1c02d12c539e398930e" id="r_a902545df8d74e1c02d12c539e398930e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#a902545df8d74e1c02d12c539e398930e">version::get_minor</a> () -&gt; std::string</td></tr>
+<tr class="separator:a902545df8d74e1c02d12c539e398930e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5516d5598b1c87f5d07ca578119a37d6" id="r_a5516d5598b1c87f5d07ca578119a37d6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#a5516d5598b1c87f5d07ca578119a37d6">version::get_patch</a> () -&gt; std::string</td></tr>
+<tr class="separator:a5516d5598b1c87f5d07ca578119a37d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a433be4ff531fc29db32f7381b470dfb4" id="r_a433be4ff531fc29db32f7381b470dfb4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceversion.html#a433be4ff531fc29db32f7381b470dfb4">version::get_full</a> () -&gt; std::string</td></tr>
+<tr class="separator:a433be4ff531fc29db32f7381b470dfb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

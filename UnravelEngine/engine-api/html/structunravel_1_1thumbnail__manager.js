@@ -2,8 +2,10 @@ var structunravel_1_1thumbnail__manager =
 [
     [ "generated_thumbnail", "structunravel_1_1thumbnail__manager_1_1generated__thumbnail.html", "structunravel_1_1thumbnail__manager_1_1generated__thumbnail" ],
     [ "generator", "structunravel_1_1thumbnail__manager_1_1generator.html", "structunravel_1_1thumbnail__manager_1_1generator" ],
+    [ "clock", "structunravel_1_1thumbnail__manager.html#a4cbd9a6cf138e12e9431043f8e9c2f03", null ],
     [ "clear_thumbnails", "structunravel_1_1thumbnail__manager.html#a447cc7ccfc1025ea1aadcae46b006d59", null ],
     [ "deinit", "structunravel_1_1thumbnail__manager.html#a59d72af51afdda4a17cc2d248ec09d17", null ],
+    [ "get_cache_path", "structunravel_1_1thumbnail__manager.html#afbae4a9ee7f913546568c6c943d6e74e", null ],
     [ "get_gizmo_icon", "structunravel_1_1thumbnail__manager.html#aad4942124372d73580dabf519f3d7e70", null ],
     [ "get_thumbnail", "structunravel_1_1thumbnail__manager.html#a9f3129d14189931b41284dadcc6cf9af", null ],
     [ "get_thumbnail", "structunravel_1_1thumbnail__manager.html#ace3777e0c6f6ad35260e245f0802b4e6", null ],
@@ -19,7 +21,12 @@ var structunravel_1_1thumbnail__manager =
     [ "get_thumbnail", "structunravel_1_1thumbnail__manager.html#ae8596a14e373b776b868d27b248a7be9", null ],
     [ "get_thumbnail", "structunravel_1_1thumbnail__manager.html#ac1f7842ff64497040a9559300755a33f", null ],
     [ "init", "structunravel_1_1thumbnail__manager.html#a26248244331e3b6c91c8130b099a760c", null ],
+    [ "invalidate_cache_entry", "structunravel_1_1thumbnail__manager.html#a059f1343cfe4194ed1a1adc05710559a", null ],
+    [ "load_cached_thumbnail", "structunravel_1_1thumbnail__manager.html#a08f79545821cb2364b3181daa25186e0", null ],
+    [ "on_frame_end", "structunravel_1_1thumbnail__manager.html#ada417179612aada62f0eb0de90017eb7", null ],
     [ "on_frame_update", "structunravel_1_1thumbnail__manager.html#ad6b86dc585c57aa881623a3783c0b5a3", null ],
     [ "regenerate_thumbnail", "structunravel_1_1thumbnail__manager.html#aea9073473a44ad85674a13ae966e2153", null ],
-    [ "remove_thumbnail", "structunravel_1_1thumbnail__manager.html#ae71f7fe7387d7309d250e1dbd88d8786", null ]
+    [ "remove_thumbnail", "structunravel_1_1thumbnail__manager.html#ae71f7fe7387d7309d250e1dbd88d8786", null ],
+    [ "save_thumbnail_to_cache", "structunravel_1_1thumbnail__manager.html#aaa7ea193b6757a4df024b4f60bc75fe7", null ],
+    [ "set_cache_directory", "structunravel_1_1thumbnail__manager.html#a8934ca1f14830da430016a00f0dfbbb2", null ]
 ];

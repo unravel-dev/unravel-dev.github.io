@@ -100,20 +100,19 @@ $(function(){initNavTree('conceptunravel_1_1string__literal.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>Concept to ensure only string literals are accepted.  
+<p>Concept to ensure only string literals (char arrays) are accepted. With <code>const T&amp;</code> parameter binding, T deduces as <code>char[N]</code>.  
 <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="profiler_8h_source.html">profiler.h</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptunravel_1_1string__literal.html">unravel::string_literal</a> =  std::is_array_v&lt;std::remove_reference_t&lt;T&gt;&gt; &amp;&amp; </div>
-<div class="line">                         std::is_same_v&lt;std::remove_extent_t&lt;std::remove_reference_t&lt;T&gt;&gt;, <span class="keyword">const</span> <span class="keywordtype">char</span>&gt;</div>
-<div class="ttc" id="aconceptunravel_1_1string__literal_html"><div class="ttname"><a href="conceptunravel_1_1string__literal.html">unravel::string_literal</a></div><div class="ttdoc">Concept to ensure only string literals are accepted.</div><div class="ttdef"><b>Definition</b> <a href="profiler_8h_source.html#l00018">profiler.h:18</a></div></div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptunravel_1_1string__literal.html">unravel::string_literal</a> =  std::is_array_v&lt;std::remove_reference_t&lt;T&gt;&gt; &amp;&amp;</div>
+<div class="line">                         std::is_same_v&lt;std::remove_const_t&lt;std::remove_extent_t&lt;std::remove_reference_t&lt;T&gt;&gt;&gt;, <span class="keywordtype">char</span>&gt;</div>
+<div class="ttc" id="aconceptunravel_1_1string__literal_html"><div class="ttname"><a href="conceptunravel_1_1string__literal.html">unravel::string_literal</a></div><div class="ttdoc">Concept to ensure only string literals (char arrays) are accepted. With const T&amp; parameter binding,...</div><div class="ttdef"><b>Definition</b> <a href="profiler_8h_source.html#l00589">profiler.h:589</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Concept to ensure only string literals are accepted. </p>
-<p>A string literal is a const char array with fixed size known at compile time </p>
+<div class="textblock"><p>Concept to ensure only string literals (char arrays) are accepted. With <code>const T&amp;</code> parameter binding, T deduces as <code>char[N]</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00018">18</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00589">589</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

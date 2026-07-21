@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['idcomponent_0',['IdComponent',['../class_unravel_1_1_core_1_1_id_component.html',1,'Unravel::Core']]]
+  ['headerattribute_0',['HeaderAttribute',['../class_unravel_1_1_core_1_1_header_attribute.html',1,'Unravel::Core']]],
+  ['hideattribute_1',['HideAttribute',['../class_unravel_1_1_core_1_1_hide_attribute.html',1,'Unravel::Core']]]
 ];

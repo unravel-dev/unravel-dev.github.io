@@ -22,8 +22,14 @@ var struct_bounds =
     [ "Intersect", "struct_bounds.html#af6793dc7e5123407db9a30cf66cdc4de", null ],
     [ "IsDegenerate", "struct_bounds.html#a00b14b6a130bcae92f7838d1eac479c5", null ],
     [ "IsPopulated", "struct_bounds.html#aa076fee305d4b9c4b30cc90461b6860a", null ],
+    [ "operator!=", "struct_bounds.html#a7a32509ee325531fb14afc73b6f73af2", null ],
+    [ "operator*", "struct_bounds.html#ac952077219d44319d21765f64869dca2", null ],
+    [ "operator+", "struct_bounds.html#ae2c10d5359e5b84b404bb75cce2e2bb2", null ],
+    [ "operator-", "struct_bounds.html#a2f56c02fbfcf53dc1b9a8acceeb9a6f2", null ],
+    [ "operator==", "struct_bounds.html#a2eb1f535ea3ad9d35bfc104d13214a33", null ],
     [ "Reset", "struct_bounds.html#a0d24919bfc8cd8e4d0ec719fbf28b03f", null ],
     [ "Slab", "struct_bounds.html#a5fb2b7838c7e5b61035ec27fe378507d", null ],
+    [ "Empty", "struct_bounds.html#af6989d119129f4a7070ab08c8732b534", null ],
     [ "Max", "struct_bounds.html#a83bb30ae7f49544989ddd62d5638d006", null ],
     [ "Min", "struct_bounds.html#a844c4a3b99a62ea6c126412fbfe3a5f5", null ]
 ];

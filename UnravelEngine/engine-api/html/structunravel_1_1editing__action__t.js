@@ -1,6 +1,7 @@
 var structunravel_1_1editing__action__t =
 [
     [ "~editing_action_t", "structunravel_1_1editing__action__t.html#a43b137f0357a4ce3c4ddf6c13a91f440", null ],
+    [ "detach", "structunravel_1_1editing__action__t.html#a0a008e10e1840b94417620c703e07d10", null ],
     [ "do_action", "structunravel_1_1editing__action__t.html#ab05b362008dbba8efd0fbaf4a14b95ce", null ],
     [ "draw_in_inspector", "structunravel_1_1editing__action__t.html#aabed41a641e3caa01067efb9f782bf33", null ],
     [ "draw_in_inspector_impl", "structunravel_1_1editing__action__t.html#ac4f8e4bbf49f20a269b03e2173cf4078", null ],
@@ -10,6 +11,7 @@ var structunravel_1_1editing__action__t =
     [ "is_undoable", "structunravel_1_1editing__action__t.html#aee945b3bb8fa082af80efd8c089ecaca", null ],
     [ "is_valid", "structunravel_1_1editing__action__t.html#a4ebccb408e8d634d0eaa97b474042111", null ],
     [ "merge_with", "structunravel_1_1editing__action__t.html#a5b99d2bf6e2e06eb4b9195ccb64e1632", null ],
+    [ "modifies_scene_content", "structunravel_1_1editing__action__t.html#a73aefeb0009b2257f21e30a30e5cae7b", null ],
     [ "undo_action", "structunravel_1_1editing__action__t.html#a851aa5d608b0821dfbd91eea343ce5c6", null ],
     [ "execution_count", "structunravel_1_1editing__action__t.html#a538f710a32ca24ae1dd8d624a4d3d992", null ],
     [ "merge_key", "structunravel_1_1editing__action__t.html#a9acf4e95ebce9245a0db4bc135a82140", null ],

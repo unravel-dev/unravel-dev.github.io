@@ -106,11 +106,11 @@ $(function(){initNavTree('thumbnail__manager_8h.html',''); initResizable(true); 
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="context_8hpp_source.html">context/context.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="frame__buffer_8h_source.html">graphics/frame_buffer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="shader_8h_source.html">graphics/shader.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="texture_8h_source.html">graphics/texture.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__handle_8h_source.html">engine/assets/asset_handle.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="scene_8h_source.html">engine/ecs/scene.h</a>&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
 </div>
 <p><a href="thumbnail__manager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -181,10 +181,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;\</div>
 <div class="line"><span class="keyword">auto</span> thumbnail_manager::get_thumbnail&lt;T&gt;(<span class="keyword">const</span> <a class="code hl_struct" href="structasset__handle.html">asset_handle&lt;T&gt;</a>&amp; asset) -&gt; <a class="code hl_typedef" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a>;</div>
-<div class="ttc" id="aclassgfx_1_1handle__impl_html_aa964511c43cec8dd6220c986732a8c6b"><div class="ttname"><a href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::handle_impl&lt; texture, texture_handle &gt;::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; texture &gt; ptr</div><div class="ttdef"><b>Definition</b> <a href="handle__impl_8h_source.html#l00013">handle_impl.h:13</a></div></div>
-<div class="ttc" id="astructasset__handle_html"><div class="ttname"><a href="structasset__handle.html">asset_handle</a></div><div class="ttdoc">Represents a handle to an asset, providing access and management functions.</div><div class="ttdef"><b>Definition</b> <a href="asset__handle_8h_source.html#l00042">asset_handle.h:43</a></div></div>
+<div class="ttc" id="aclassgfx_1_1handle__impl_html_aa964511c43cec8dd6220c986732a8c6b"><div class="ttname"><a href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::handle_impl&lt; texture, texture_handle &gt;::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; texture &gt; ptr</div><div class="ttdef"><b>Definition</b> <a href="handle__impl_8h_source.html#l00016">handle_impl.h:16</a></div></div>
+<div class="ttc" id="astructasset__handle_html"><div class="ttname"><a href="structasset__handle.html">asset_handle</a></div><div class="ttdoc">Thread-safe handle to an asset.</div><div class="ttdef"><b>Definition</b> <a href="asset__handle_8h_source.html#l00144">asset_handle.h:145</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00135">135</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thumbnail__manager_8h_source.html#l00175">175</a> of file <a class="el" href="thumbnail__manager_8h_source.html">thumbnail_manager.h</a>.</p>
 
 </div>
 </div>

@@ -131,12 +131,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af83f7cccb28b5c364ddb6da91ebc1df9" id="r_af83f7cccb28b5c364ddb6da91ebc1df9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af83f7cccb28b5c364ddb6da91ebc1df9">~inspector</a> ()=default</td></tr>
 <tr class="memdesc:af83f7cccb28b5c364ddb6da91ebc1df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for proper cleanup.  <br /></td></tr>
 <tr class="separator:af83f7cccb28b5c364ddb6da91ebc1df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49e491b48a463774db88587f31f76fbd" id="r_a49e491b48a463774db88587f31f76fbd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49e491b48a463774db88587f31f76fbd">before_inspect</a> (const entt::meta_data &amp;prop)</td></tr>
-<tr class="memdesc:a49e491b48a463774db88587f31f76fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before inspecting a property to set up layout.  <br /></td></tr>
-<tr class="separator:a49e491b48a463774db88587f31f76fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6028fa14adb28ad3d51bc873bf1c89e" id="r_ab6028fa14adb28ad3d51bc873bf1c89e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6028fa14adb28ad3d51bc873bf1c89e">after_inspect</a> (const entt::meta_data &amp;prop)</td></tr>
-<tr class="memdesc:ab6028fa14adb28ad3d51bc873bf1c89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after inspecting a property to clean up layout.  <br /></td></tr>
-<tr class="separator:ab6028fa14adb28ad3d51bc873bf1c89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14bd3cdea2c215123d01cd73cd0998d" id="r_ae14bd3cdea2c215123d01cd73cd0998d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae14bd3cdea2c215123d01cd73cd0998d">before_inspect</a> (const entt::meta_data &amp;prop, const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>)</td></tr>
+<tr class="memdesc:ae14bd3cdea2c215123d01cd73cd0998d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before inspecting a property to set up layout.  <br /></td></tr>
+<tr class="separator:ae14bd3cdea2c215123d01cd73cd0998d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69d717ff798f9cd323ec015995d0c7d" id="r_aa69d717ff798f9cd323ec015995d0c7d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa69d717ff798f9cd323ec015995d0c7d">after_inspect</a> (const entt::meta_data &amp;prop, const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>)</td></tr>
+<tr class="memdesc:aa69d717ff798f9cd323ec015995d0c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after inspecting a property to clean up layout.  <br /></td></tr>
+<tr class="separator:aa69d717ff798f9cd323ec015995d0c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9108167f4cf15f3dd742f8a77c2f620" id="r_af9108167f4cf15f3dd742f8a77c2f620"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9108167f4cf15f3dd742f8a77c2f620">inspect</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, entt::meta_any &amp;var, const <a class="el" href="structunravel_1_1meta__any__proxy.html">meta_any_proxy</a> &amp;var_proxy, const <a class="el" href="structunravel_1_1var__info.html">var_info</a> &amp;info, const entt::meta_custom &amp;custom) -&gt; <a class="el" href="structunravel_1_1inspect__result.html">inspect_result</a>=0</td></tr>
 <tr class="memdesc:af9108167f4cf15f3dd742f8a77c2f620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to render and handle interaction for a variable.  <br /></td></tr>
 <tr class="separator:af9108167f4cf15f3dd742f8a77c2f620"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab683d0fb45aa6614305adeeb675d3f85 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab800b944cafcf43c8407e27d0c785300 inherit pub_methods_structcrtp__meta__type" id="r_ab800b944cafcf43c8407e27d0c785300"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#ab800b944cafcf43c8407e27d0c785300">is</a> () const -&gt; bool</td></tr>
 <tr class="separator:ab800b944cafcf43c8407e27d0c785300 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type" id="r_a85fd8cca6ee7590180c1d6b985292a98"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a85fd8cca6ee7590180c1d6b985292a98">is</a> (const entt::meta_type &amp;<a class="el" href="bullet__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) const -&gt; bool</td></tr>
+<tr class="memitem:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type" id="r_a85fd8cca6ee7590180c1d6b985292a98"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a85fd8cca6ee7590180c1d6b985292a98">is</a> (const entt::meta_type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) const -&gt; bool</td></tr>
 <tr class="separator:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a960687703825bbc6a1b6b452a517b2 inherit pub_methods_structcrtp__meta__type" id="r_a7a960687703825bbc6a1b6b452a517b2"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a7a960687703825bbc6a1b6b452a517b2">as_derived</a> () -&gt; entt::meta_any</td></tr>
 <tr class="separator:a7a960687703825bbc6a1b6b452a517b2 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,7 +173,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Base class for type-specific property inspectors in the editor. </p>
 <p>Inspectors provide custom UI for editing different data types in the inspector panel. Each inspector handles rendering and interaction for a specific type (e.g., floats, vectors, textures). </p>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00240">240</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00309">309</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="affefe2ba783d5edb70234cbd032809f0" name="affefe2ba783d5edb70234cbd032809f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affefe2ba783d5edb70234cbd032809f0">&#9670;&#160;</a></span>attribute_getter</h2>
@@ -189,7 +189,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Function type for retrieving meta attributes by name. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00256">256</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00325">325</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
 
 </div>
 </div>
@@ -222,8 +222,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab6028fa14adb28ad3d51bc873bf1c89e" name="ab6028fa14adb28ad3d51bc873bf1c89e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6028fa14adb28ad3d51bc873bf1c89e">&#9670;&#160;</a></span>after_inspect()</h2>
+<a id="aa69d717ff798f9cd323ec015995d0c7d" name="aa69d717ff798f9cd323ec015995d0c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa69d717ff798f9cd323ec015995d0c7d">&#9670;&#160;</a></span>after_inspect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,8 +234,12 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void unravel::inspector::after_inspect </td>
           <td>(</td>
-          <td class="paramtype">const entt::meta_data &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span></td><td>)</td>
+          <td class="paramtype">const entt::meta_data &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const entt::meta_any &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -249,16 +253,17 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">prop</td><td>Meta property that was inspected </td></tr>
+    <tr><td class="paramname">object</td><td>Object being inspected </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8cpp_source.html#l00245">245</a> of file <a class="el" href="inspector_8cpp_source.html">inspector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector_8cpp_source.html#l00361">361</a> of file <a class="el" href="inspector_8cpp_source.html">inspector.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a49e491b48a463774db88587f31f76fbd" name="a49e491b48a463774db88587f31f76fbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49e491b48a463774db88587f31f76fbd">&#9670;&#160;</a></span>before_inspect()</h2>
+<a id="ae14bd3cdea2c215123d01cd73cd0998d" name="ae14bd3cdea2c215123d01cd73cd0998d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae14bd3cdea2c215123d01cd73cd0998d">&#9670;&#160;</a></span>before_inspect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,8 +274,12 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void unravel::inspector::before_inspect </td>
           <td>(</td>
-          <td class="paramtype">const entt::meta_data &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span></td><td>)</td>
+          <td class="paramtype">const entt::meta_data &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const entt::meta_any &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -284,11 +293,12 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">prop</td><td>Meta property being inspected </td></tr>
+    <tr><td class="paramname">object</td><td>Object being inspected </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8cpp_source.html#l00240">240</a> of file <a class="el" href="inspector_8cpp_source.html">inspector.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector_8cpp_source.html#l00356">356</a> of file <a class="el" href="inspector_8cpp_source.html">inspector.cpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +346,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00249">249</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00318">318</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +430,7 @@ template&lt;typename T &gt; </div>
 
 <p>Layout manager for this inspector's UI. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00292">292</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00363">363</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +456,7 @@ template&lt;typename T &gt; </div>
 
 <p>Whether this inspector's UI section is expanded. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00294">294</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00365">365</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
 
 </div>
 </div>

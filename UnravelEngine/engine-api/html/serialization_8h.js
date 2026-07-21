@@ -1,7 +1,9 @@
 var serialization_8h =
 [
+    [ "serialization::init_data", "structserialization_1_1init__data.html", "structserialization_1_1init__data" ],
     [ "serialization::path_context", "structserialization_1_1path__context.html", "structserialization_1_1path__context" ],
     [ "serialization::path_segment_guard", "structserialization_1_1path__segment__guard.html", "structserialization_1_1path__segment__guard" ],
+    [ "serialization::path_skip_segment_guard", "structserialization_1_1path__skip__segment__guard.html", "structserialization_1_1path__skip__segment__guard" ],
     [ "LOAD", "serialization_8h.html#a1491acebaab5a697b41ac02a2ef422a9", null ],
     [ "LOAD_EXTERN", "serialization_8h.html#a6ed92f2f372980247dba4e1143070e18", null ],
     [ "LOAD_FUNCTION_NAME", "serialization_8h.html#a8e4d5d1465c36997b3298db91d7eff8b", null ],
@@ -24,13 +26,18 @@ var serialization_8h =
     [ "log_callback_t", "serialization_8h.html#a56f69fe3dd2236eb43ac77d7073c50aa", null ],
     [ "get_current_deserialization_path", "serialization_8h.html#a26834bddcd16d57cc02e017d9a40ad28", null ],
     [ "get_path_context", "serialization_8h.html#abe5684f4796e1663de990259aec54d66", null ],
+    [ "init", "serialization_8h.html#abb3205f25d2f831a8d2b2b516e239796", null ],
     [ "is_binary_archive", "serialization_8h.html#aad41de5e5068a6229204d50bd0904c34", null ],
+    [ "is_loading_archive", "serialization_8h.html#ad1a8924bf4deb88bf42cc66ad69ed99c", null ],
     [ "log_warning", "serialization_8h.html#a03b932b1b6cc741591fa769cebd5b54f", null ],
     [ "serialize_check", "serialization_8h.html#a91db57e375de6462c201a947bae228dd", null ],
     [ "set_path_context", "serialization_8h.html#a72a20031ba5a29519750df94eb6a6737", null ],
-    [ "set_warning_logger", "serialization_8h.html#a7cac4f7078c8b6071ed52ccd7b495ed2", null ],
+    [ "try_load", "serialization_8h.html#a620f264c336b745cd936aa614b5d4ed8", null ],
     [ "try_load", "serialization_8h.html#afd00036e970f0719e1d4908daa2852b1", null ],
+    [ "try_save", "serialization_8h.html#a48315786f683590ce6aecfee435805db", null ],
     [ "try_save", "serialization_8h.html#a3e60107928d1cd36240420d80e77fbd6", null ],
+    [ "try_serialize", "serialization_8h.html#aac2c0bbd8f539718fa0573b7f19702c0", null ],
     [ "try_serialize", "serialization_8h.html#a2d5f79664d516bacc6cba79293e6140d", null ],
-    [ "try_serialize_direct", "serialization_8h.html#a68409bae0f5ba01ac15439e46e373fec", null ]
+    [ "try_serialize_direct", "serialization_8h.html#a68409bae0f5ba01ac15439e46e373fec", null ],
+    [ "try_serialize_sequence_container", "serialization_8h.html#a55bef8354e9c10816b70cc68ef1e7be1", null ]
 ];

@@ -102,21 +102,27 @@ $(function(){initNavTree('class_unravel_1_1_core_1_1_assets.html',''); initResiz
   <div class="headertitle"><div class="title">Unravel.Core.Assets Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Loads and resolves assets by key or unique identifier.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afc7d4dcd330b493e74d6bf61ff1c7730" id="r_afc7d4dcd330b493e74d6bf61ff1c7730"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc7d4dcd330b493e74d6bf61ff1c7730">GetAsset&lt; T &gt;</a> (string key)</td></tr>
+<tr class="memdesc:afc7d4dcd330b493e74d6bf61ff1c7730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an asset of type <em>T</em>  by asset key.  <br /></td></tr>
 <tr class="separator:afc7d4dcd330b493e74d6bf61ff1c7730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab353b1d1569875883060a0b27200faf7" id="r_ab353b1d1569875883060a0b27200faf7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_unravel_1_1_core.html#ac76086cff6d2cc4c02a091ce6e88172fab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab353b1d1569875883060a0b27200faf7">GetAsset&lt; T &gt;</a> (Guid uid)</td></tr>
+<tr class="memdesc:ab353b1d1569875883060a0b27200faf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an asset of type <em>T</em>  by unique identifier.  <br /></td></tr>
 <tr class="separator:ab353b1d1569875883060a0b27200faf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09acd260ae0ee8cf06403e37e217e90d" id="r_a09acd260ae0ee8cf06403e37e217e90d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unravel_1_1_core_1_1_material.html">Material</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09acd260ae0ee8cf06403e37e217e90d">GetAsset</a> (string key)</td></tr>
+<tr class="memdesc:a09acd260ae0ee8cf06403e37e217e90d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="class_unravel_1_1_core_1_1_material.html" title="Material asset with editable shading properties.">Material</a> by asset key and populates its properties.  <br /></td></tr>
 <tr class="separator:a09acd260ae0ee8cf06403e37e217e90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32bde2d6004c49dd541156847809cbf7" id="r_a32bde2d6004c49dd541156847809cbf7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_unravel_1_1_core_1_1_material.html">Material</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32bde2d6004c49dd541156847809cbf7">GetAsset</a> (Guid uid)</td></tr>
+<tr class="memdesc:a32bde2d6004c49dd541156847809cbf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a <a class="el" href="class_unravel_1_1_core_1_1_material.html" title="Material asset with editable shading properties.">Material</a> by unique identifier and populates its properties.  <br /></td></tr>
 <tr class="separator:a32bde2d6004c49dd541156847809cbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_assets_8cs_source.html#l00008">8</a> of file <a class="el" href="_assets_8cs_source.html">Assets.cs</a>.</p>
+<div class="textblock"><p>Loads and resolves assets by key or unique identifier. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a32bde2d6004c49dd541156847809cbf7" name="a32bde2d6004c49dd541156847809cbf7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32bde2d6004c49dd541156847809cbf7">&#9670;&#160;</a></span>GetAsset() <span class="overload">[1/2]</span></h2>
@@ -141,7 +147,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_assets_8cs_source.html#l00038">38</a> of file <a class="el" href="_assets_8cs_source.html">Assets.cs</a>.</p>
+<p>Loads a <a class="el" href="class_unravel_1_1_core_1_1_material.html" title="Material asset with editable shading properties.">Material</a> by unique identifier and populates its properties. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>The material unique identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The loaded material.</dd></dl>
 
 </div>
 </div>
@@ -168,7 +181,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_assets_8cs_source.html#l00028">28</a> of file <a class="el" href="_assets_8cs_source.html">Assets.cs</a>.</p>
+<p>Loads a <a class="el" href="class_unravel_1_1_core_1_1_material.html" title="Material asset with editable shading properties.">Material</a> by asset key and populates its properties. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The material asset key.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The loaded material.</dd></dl>
 
 </div>
 </div>
@@ -194,6 +214,21 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Loads an asset of type <em>T</em>  by unique identifier. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The asset type to load.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>The asset unique identifier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new asset handle for the resolved asset.</dd></dl>
 <div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
@@ -203,8 +238,6 @@ Static Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-
-<p class="definition">Definition at line <a class="el" href="_assets_8cs_source.html#l00019">19</a> of file <a class="el" href="_assets_8cs_source.html">Assets.cs</a>.</p>
 
 </div>
 </div>
@@ -230,6 +263,21 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Loads an asset of type <em>T</em>  by asset key. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The asset type to load.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The asset key (protocol path or project key).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new asset handle for the resolved asset.</dd></dl>
 <div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
@@ -240,12 +288,10 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 </div>
 
-<p class="definition">Definition at line <a class="el" href="_assets_8cs_source.html#l00011">11</a> of file <a class="el" href="_assets_8cs_source.html">Assets.cs</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/assets/<a class="el" href="_assets_8cs_source.html">Assets.cs</a></li>
+<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/assets/<a class="el" href="_assets_8cs.html">Assets.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

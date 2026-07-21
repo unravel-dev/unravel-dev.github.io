@@ -100,7 +100,7 @@ $(function(){initNavTree('classunravel_1_1performance__profiler.html',''); initR
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classunravel_1_1performance__profiler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::performance_profiler Class Reference</div></div>
 </div><!--header-->
@@ -111,91 +111,257 @@ $(function(){initNavTree('classunravel_1_1performance__profiler.html',''); initR
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1performance__profiler_1_1per__frame__data.html">per_frame_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-name aggregate timing data with rolling history.  <a href="structunravel_1_1performance__profiler_1_1per__frame__data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1performance__profiler_1_1thread__info.html">thread_info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab88514c21fa8377cc1ea66ba543aa1f2" id="r_ab88514c21fa8377cc1ea66ba543aa1f2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab88514c21fa8377cc1ea66ba543aa1f2">record_data_t</a> = std::map&lt;hpp::string_view, <a class="el" href="structunravel_1_1performance__profiler_1_1per__frame__data.html">per_frame_data</a>&gt;</td></tr>
-<tr class="separator:ab88514c21fa8377cc1ea66ba543aa1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6349565b039dda8859e5c88af27d46" id="r_aaf6349565b039dda8859e5c88af27d46"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf6349565b039dda8859e5c88af27d46">record_data_t</a> = std::map&lt;std::string, <a class="el" href="structunravel_1_1performance__profiler_1_1per__frame__data.html">per_frame_data</a>, std::less&lt;&gt;&gt;</td></tr>
+<tr class="separator:aaf6349565b039dda8859e5c88af27d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa217e314f48b98ce20bdbde18ce27b2c" id="r_aa217e314f48b98ce20bdbde18ce27b2c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa217e314f48b98ce20bdbde18ce27b2c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa217e314f48b98ce20bdbde18ce27b2c">add_record</a> (T &amp;&amp;<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, float time)</td></tr>
-<tr class="memdesc:aa217e314f48b98ce20bdbde18ce27b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add performance record using string literal only.  <br /></td></tr>
-<tr class="separator:aa217e314f48b98ce20bdbde18ce27b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38b1c5f535d8a22a3c74a266b358579" id="r_ac38b1c5f535d8a22a3c74a266b358579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac38b1c5f535d8a22a3c74a266b358579">add_record</a> (hpp::string_view <a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, float time_ms)</td></tr>
+<tr class="memdesc:ac38b1c5f535d8a22a3c74a266b358579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Script / external pre-measured span on the <b>current</b> thread: same as profile_begin_owned + profile_end, then wall/CPU times set to [now - time_ms, now]. Thread must already be registered (e.g. native code or prior ensure_thread_registered).  <br /></td></tr>
+<tr class="separator:ac38b1c5f535d8a22a3c74a266b358579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f7c20b08b87081127e69ee2c0eaaa01" id="r_a2f7c20b08b87081127e69ee2c0eaaa01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f7c20b08b87081127e69ee2c0eaaa01">swap</a> ()</td></tr>
+<tr class="memdesc:a2f7c20b08b87081127e69ee2c0eaaa01"><td class="mdescLeft">&#160;</td><td class="mdescRight">End-of-frame: flip buffers, compute aggregates, advance history.  <br /></td></tr>
 <tr class="separator:a2f7c20b08b87081127e69ee2c0eaaa01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d3f34b798856bc56a583373f0098421" id="r_a5d3f34b798856bc56a583373f0098421"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d3f34b798856bc56a583373f0098421">get_per_frame_data_read</a> () const -&gt; const <a class="el" href="#ab88514c21fa8377cc1ea66ba543aa1f2">record_data_t</a> &amp;</td></tr>
+<tr class="memitem:a5d3f34b798856bc56a583373f0098421" id="r_a5d3f34b798856bc56a583373f0098421"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d3f34b798856bc56a583373f0098421">get_per_frame_data_read</a> () const -&gt; const <a class="el" href="#aaf6349565b039dda8859e5c88af27d46">record_data_t</a> &amp;</td></tr>
+<tr class="memdesc:a5d3f34b798856bc56a583373f0098421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggregate per-name data for the statistics panel.  <br /></td></tr>
 <tr class="separator:a5d3f34b798856bc56a583373f0098421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7efcdccd054ecfc405f0a04f3fc5202" id="r_ae7efcdccd054ecfc405f0a04f3fc5202"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7efcdccd054ecfc405f0a04f3fc5202">get_per_frame_data_write</a> () -&gt; <a class="el" href="#ab88514c21fa8377cc1ea66ba543aa1f2">record_data_t</a> &amp;</td></tr>
-<tr class="separator:ae7efcdccd054ecfc405f0a04f3fc5202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe4cc32f65654d53d8772f68fc5ba5f" id="r_a9fe4cc32f65654d53d8772f68fc5ba5f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fe4cc32f65654d53d8772f68fc5ba5f">register_thread</a> (const std::string &amp;<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>) -&gt; <a class="el" href="structunravel_1_1thread__profile__data.html">thread_profile_data</a> *</td></tr>
+<tr class="memdesc:a9fe4cc32f65654d53d8772f68fc5ba5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the calling thread for timeline profiling.  <br /></td></tr>
+<tr class="separator:a9fe4cc32f65654d53d8772f68fc5ba5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122f056a535a0a9317eff724afb3cc85" id="r_a122f056a535a0a9317eff724afb3cc85"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a122f056a535a0a9317eff724afb3cc85">get_threads</a> () const -&gt; const std::vector&lt; <a class="el" href="structunravel_1_1performance__profiler_1_1thread__info.html">thread_info</a> &gt; &amp;</td></tr>
+<tr class="memdesc:a122f056a535a0a9317eff724afb3cc85"><td class="mdescLeft">&#160;</td><td class="mdescRight">All registered threads and their profiling data.  <br /></td></tr>
+<tr class="separator:a122f056a535a0a9317eff724afb3cc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5dde4ed5fbd236c356f8bbd44b96e6" id="r_a7b5dde4ed5fbd236c356f8bbd44b96e6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b5dde4ed5fbd236c356f8bbd44b96e6">get_frame_start_ns</a> () const -&gt; int64_t</td></tr>
+<tr class="memdesc:a7b5dde4ed5fbd236c356f8bbd44b96e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame boundary timestamps for the last completed frame.  <br /></td></tr>
+<tr class="separator:a7b5dde4ed5fbd236c356f8bbd44b96e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0ecbc3317e23c8ff207958fc31eb56" id="r_a2d0ecbc3317e23c8ff207958fc31eb56"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d0ecbc3317e23c8ff207958fc31eb56">get_frame_end_ns</a> () const -&gt; int64_t</td></tr>
+<tr class="separator:a2d0ecbc3317e23c8ff207958fc31eb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0bb3053f3120708d3ddfd703c4336e" id="r_acc0bb3053f3120708d3ddfd703c4336e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc0bb3053f3120708d3ddfd703c4336e">set_recording_state</a> (<a class="el" href="namespaceunravel.html#a4907c3e63963954dd431235569f845df">recording_state</a> state)</td></tr>
+<tr class="memdesc:acc0bb3053f3120708d3ddfd703c4336e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recording control.  <br /></td></tr>
+<tr class="separator:acc0bb3053f3120708d3ddfd703c4336e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1106d724d561bf5405dbe4c4f90e68a6" id="r_a1106d724d561bf5405dbe4c4f90e68a6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1106d724d561bf5405dbe4c4f90e68a6">get_recording_state</a> () const -&gt; <a class="el" href="namespaceunravel.html#a4907c3e63963954dd431235569f845df">recording_state</a></td></tr>
+<tr class="separator:a1106d724d561bf5405dbe4c4f90e68a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9dd8bbaceaaa119e6c4420a6cf4392" id="r_a8b9dd8bbaceaaa119e6c4420a6cf4392"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b9dd8bbaceaaa119e6c4420a6cf4392">get_frame_count</a> () const -&gt; uint32_t</td></tr>
+<tr class="memdesc:a8b9dd8bbaceaaa119e6c4420a6cf4392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of captured frame snapshots available.  <br /></td></tr>
+<tr class="separator:a8b9dd8bbaceaaa119e6c4420a6cf4392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad440ef913d2a6bf1c1afc4dae44f21c2" id="r_ad440ef913d2a6bf1c1afc4dae44f21c2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad440ef913d2a6bf1c1afc4dae44f21c2">get_frame_snapshot</a> (uint32_t <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>) const -&gt; const <a class="el" href="structunravel_1_1frame__snapshot.html">frame_snapshot</a> *</td></tr>
+<tr class="memdesc:ad440ef913d2a6bf1c1afc4dae44f21c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a captured frame snapshot.  <br /></td></tr>
+<tr class="separator:ad440ef913d2a6bf1c1afc4dae44f21c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8eea72aaf40b35a1ea66c1a7615db6d" id="r_ac8eea72aaf40b35a1ea66c1a7615db6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8eea72aaf40b35a1ea66c1a7615db6d">set_selected_frame</a> (int32_t <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>)</td></tr>
+<tr class="memdesc:ac8eea72aaf40b35a1ea66c1a7615db6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selected frame index for UI inspection (-1 = live/latest).  <br /></td></tr>
+<tr class="separator:ac8eea72aaf40b35a1ea66c1a7615db6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b588dbdede805eaef0ff2a4845ada8" id="r_af6b588dbdede805eaef0ff2a4845ada8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6b588dbdede805eaef0ff2a4845ada8">get_selected_frame</a> () const -&gt; int32_t</td></tr>
+<tr class="separator:af6b588dbdede805eaef0ff2a4845ada8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7a5541f37c769816f94c61e257d177" id="r_afd7a5541f37c769816f94c61e257d177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd7a5541f37c769816f94c61e257d177">clear_history</a> ()</td></tr>
+<tr class="memdesc:afd7a5541f37c769816f94c61e257d177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all captured frame history.  <br /></td></tr>
+<tr class="separator:afd7a5541f37c769816f94c61e257d177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ac2e11e4b3618444105331c1e9ca6c" id="r_a47ac2e11e4b3618444105331c1e9ca6c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47ac2e11e4b3618444105331c1e9ca6c">get_max_frame_history</a> () const -&gt; uint32_t</td></tr>
+<tr class="memdesc:a47ac2e11e4b3618444105331c1e9ca6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current frame-history ring capacity.  <br /></td></tr>
+<tr class="separator:a47ac2e11e4b3618444105331c1e9ca6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2704169516cc0a3a34531561adde46" id="r_a8d2704169516cc0a3a34531561adde46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d2704169516cc0a3a34531561adde46">set_max_frame_history</a> (uint32_t <a class="el" href="particle__system__soa_8cpp.html#a391c992c66c3e5540265a85ec2b9216a">capacity</a>)</td></tr>
+<tr class="memdesc:a8d2704169516cc0a3a34531561adde46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize history capacity, keeping the newest frames when shrinking.  <br /></td></tr>
+<tr class="separator:a8d2704169516cc0a3a34531561adde46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a5a489d742ea72c710cc02a8ffa5dc429" id="r_a5a489d742ea72c710cc02a8ffa5dc429"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a489d742ea72c710cc02a8ffa5dc429">scope_perf_timer</a></td></tr>
-<tr class="separator:a5a489d742ea72c710cc02a8ffa5dc429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:acd0575c41ef5a942617e8d046df48386" id="r_acd0575c41ef5a942617e8d046df48386"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd0575c41ef5a942617e8d046df48386">max_frame_history_limit</a> = 2000</td></tr>
+<tr class="memdesc:acd0575c41ef5a942617e8d046df48386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute upper bound for <a class="el" href="#a8d2704169516cc0a3a34531561adde46">set_max_frame_history</a>.  <br /></td></tr>
+<tr class="separator:acd0575c41ef5a942617e8d046df48386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cb8940d2f05f0d9dcfa19ab6588e03" id="r_a32cb8940d2f05f0d9dcfa19ab6588e03"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32cb8940d2f05f0d9dcfa19ab6588e03">default_frame_history</a> = 256</td></tr>
+<tr class="memdesc:a32cb8940d2f05f0d9dcfa19ab6588e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default ring-buffer capacity (keeps histogram/UI cost bounded).  <br /></td></tr>
+<tr class="separator:a32cb8940d2f05f0d9dcfa19ab6588e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e50783df820e579be7e0c8584b9f14" id="r_a46e50783df820e579be7e0c8584b9f14"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46e50783df820e579be7e0c8584b9f14">min_frame_history</a> = 64</td></tr>
+<tr class="memdesc:a46e50783df820e579be7e0c8584b9f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum allowed capacity.  <br /></td></tr>
+<tr class="separator:a46e50783df820e579be7e0c8584b9f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00021">21</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00240">240</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ab88514c21fa8377cc1ea66ba543aa1f2" name="ab88514c21fa8377cc1ea66ba543aa1f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab88514c21fa8377cc1ea66ba543aa1f2">&#9670;&#160;</a></span>record_data_t</h2>
+<a id="aaf6349565b039dda8859e5c88af27d46" name="aaf6349565b039dda8859e5c88af27d46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6349565b039dda8859e5c88af27d46">&#9670;&#160;</a></span>record_data_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ab88514c21fa8377cc1ea66ba543aa1f2">unravel::performance_profiler::record_data_t</a> = std::map&lt;hpp::string_view, <a class="el" href="structunravel_1_1performance__profiler_1_1per__frame__data.html">per_frame_data</a>&gt;</td>
+          <td class="memname">using <a class="el" href="#aaf6349565b039dda8859e5c88af27d46">unravel::performance_profiler::record_data_t</a> = std::map&lt;std::string, <a class="el" href="structunravel_1_1performance__profiler_1_1per__frame__data.html">per_frame_data</a>, std::less&lt;&gt;&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00045">45</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00288">288</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa217e314f48b98ce20bdbde18ce27b2c" name="aa217e314f48b98ce20bdbde18ce27b2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa217e314f48b98ce20bdbde18ce27b2c">&#9670;&#160;</a></span>add_record()</h2>
+<a id="ac38b1c5f535d8a22a3c74a266b358579" name="ac38b1c5f535d8a22a3c74a266b358579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38b1c5f535d8a22a3c74a266b358579">&#9670;&#160;</a></span>add_record()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::performance_profiler::add_record </td>
+          <td>(</td>
+          <td class="paramtype">hpp::string_view</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>time_ms</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Script / external pre-measured span on the <b>current</b> thread: same as profile_begin_owned + profile_end, then wall/CPU times set to [now - time_ms, now]. Thread must already be registered (e.g. native code or prior ensure_thread_registered). </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00142">142</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afd7a5541f37c769816f94c61e257d177" name="afd7a5541f37c769816f94c61e257d177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7a5541f37c769816f94c61e257d177">&#9670;&#160;</a></span>clear_history()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::performance_profiler::clear_history </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear all captured frame history. </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00423">423</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b9dd8bbaceaaa119e6c4420a6cf4392" name="a8b9dd8bbaceaaa119e6c4420a6cf4392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b9dd8bbaceaaa119e6c4420a6cf4392">&#9670;&#160;</a></span>get_frame_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::performance_profiler::get_frame_count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of captured frame snapshots available. </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00351">351</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2d0ecbc3317e23c8ff207958fc31eb56" name="a2d0ecbc3317e23c8ff207958fc31eb56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0ecbc3317e23c8ff207958fc31eb56">&#9670;&#160;</a></span>get_frame_end_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::performance_profiler::get_frame_end_ns </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; int64_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00324">324</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad440ef913d2a6bf1c1afc4dae44f21c2" name="ad440ef913d2a6bf1c1afc4dae44f21c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad440ef913d2a6bf1c1afc4dae44f21c2">&#9670;&#160;</a></span>get_frame_snapshot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::performance_profiler::get_frame_snapshot </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="structunravel_1_1frame__snapshot.html">frame_snapshot</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access a captured frame snapshot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>0 = oldest captured, <a class="el" href="#a8b9dd8bbaceaaa119e6c4420a6cf4392" title="Number of captured frame snapshots available.">get_frame_count()</a>-1 = newest. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00356">356</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b5dde4ed5fbd236c356f8bbd44b96e6" name="a7b5dde4ed5fbd236c356f8bbd44b96e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5dde4ed5fbd236c356f8bbd44b96e6">&#9670;&#160;</a></span>get_frame_start_ns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::performance_profiler::get_frame_start_ns </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; int64_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frame boundary timestamps for the last completed frame. </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00319">319</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a47ac2e11e4b3618444105331c1e9ca6c" name="a47ac2e11e4b3618444105331c1e9ca6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ac2e11e4b3618444105331c1e9ca6c">&#9670;&#160;</a></span>get_max_frame_history()</h2>
+
+<div class="memitem">
+<div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void unravel::performance_profiler::add_record </td>
+          <td class="memname">auto unravel::performance_profiler::get_max_frame_history </td>
           <td>(</td>
-          <td class="paramtype">T &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>time</em></span>&#160;)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; uint32_t</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Add performance record using string literal only. </p>
-<p>Only accepts string literals to ensure lifetime safety since we store non-owning pointers </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>String literal name for the performance record </td></tr>
-    <tr><td class="paramname">time</td><td>Time value in milliseconds </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Current frame-history ring capacity. </p>
 
-<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00052">52</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00382">382</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -204,54 +370,163 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">auto unravel::performance_profiler::get_per_frame_data_read </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="#ab88514c21fa8377cc1ea66ba543aa1f2">record_data_t</a>&amp;
-    </td>
+          <td> const -&gt; const <a class="el" href="#aaf6349565b039dda8859e5c88af27d46">record_data_t</a>&amp;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00066">66</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
+<p>Aggregate per-name data for the statistics panel. </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00309">309</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae7efcdccd054ecfc405f0a04f3fc5202" name="ae7efcdccd054ecfc405f0a04f3fc5202"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7efcdccd054ecfc405f0a04f3fc5202">&#9670;&#160;</a></span>get_per_frame_data_write()</h2>
+<a id="a1106d724d561bf5405dbe4c4f90e68a6" name="a1106d724d561bf5405dbe4c4f90e68a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1106d724d561bf5405dbe4c4f90e68a6">&#9670;&#160;</a></span>get_recording_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::performance_profiler::get_per_frame_data_write </td>
+          <td class="memname">auto unravel::performance_profiler::get_recording_state </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="#ab88514c21fa8377cc1ea66ba543aa1f2">record_data_t</a>&amp;
-    </td>
+          <td> const -&gt; <a class="el" href="namespaceunravel.html#a4907c3e63963954dd431235569f845df">recording_state</a></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00071">71</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00346">346</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af6b588dbdede805eaef0ff2a4845ada8" name="af6b588dbdede805eaef0ff2a4845ada8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b588dbdede805eaef0ff2a4845ada8">&#9670;&#160;</a></span>get_selected_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::performance_profiler::get_selected_frame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; int32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00377">377</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a122f056a535a0a9317eff724afb3cc85" name="a122f056a535a0a9317eff724afb3cc85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122f056a535a0a9317eff724afb3cc85">&#9670;&#160;</a></span>get_threads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::performance_profiler::get_threads </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;<a class="el" href="structunravel_1_1performance__profiler_1_1thread__info.html">thread_info</a>&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>All registered threads and their profiling data. </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00314">314</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9fe4cc32f65654d53d8772f68fc5ba5f" name="a9fe4cc32f65654d53d8772f68fc5ba5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe4cc32f65654d53d8772f68fc5ba5f">&#9670;&#160;</a></span>register_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::performance_profiler::register_thread </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structunravel_1_1thread__profile__data.html">thread_profile_data</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register the calling thread for timeline profiling. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the thread's profiling data (stable for the thread's lifetime). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00136">136</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8d2704169516cc0a3a34531561adde46" name="a8d2704169516cc0a3a34531561adde46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d2704169516cc0a3a34531561adde46">&#9670;&#160;</a></span>set_max_frame_history()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::performance_profiler::set_max_frame_history </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>capacity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resize history capacity, keeping the newest frames when shrinking. </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00387">387</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acc0bb3053f3120708d3ddfd703c4336e" name="acc0bb3053f3120708d3ddfd703c4336e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc0bb3053f3120708d3ddfd703c4336e">&#9670;&#160;</a></span>set_recording_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::performance_profiler::set_recording_state </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel.html#a4907c3e63963954dd431235569f845df">recording_state</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recording control. </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00335">335</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac8eea72aaf40b35a1ea66c1a7615db6d" name="ac8eea72aaf40b35a1ea66c1a7615db6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8eea72aaf40b35a1ea66c1a7615db6d">&#9670;&#160;</a></span>set_selected_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::performance_profiler::set_selected_frame </td>
+          <td>(</td>
+          <td class="paramtype">int32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selected frame index for UI inspection (-1 = live/latest). </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00372">372</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
 
 </div>
 </div>
@@ -260,9 +535,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void unravel::performance_profiler::swap </td>
@@ -271,20 +543,17 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00060">60</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
+<p>End-of-frame: flip buffers, compute aggregates, advance history. </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8cpp_source.html#l00174">174</a> of file <a class="el" href="profiler_8cpp_source.html">profiler.cpp</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
-<a id="a5a489d742ea72c710cc02a8ffa5dc429" name="a5a489d742ea72c710cc02a8ffa5dc429"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a489d742ea72c710cc02a8ffa5dc429">&#9670;&#160;</a></span>scope_perf_timer</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a32cb8940d2f05f0d9dcfa19ab6588e03" name="a32cb8940d2f05f0d9dcfa19ab6588e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32cb8940d2f05f0d9dcfa19ab6588e03">&#9670;&#160;</a></span>default_frame_history</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,22 +562,77 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classunravel_1_1scope__perf__timer.html">scope_perf_timer</a></td>
+          <td class="memname">uint32_t unravel::performance_profiler::default_frame_history = 256</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00097">97</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
+<p>Default ring-buffer capacity (keeps histogram/UI cost bounded). </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00339">339</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="acd0575c41ef5a942617e8d046df48386" name="acd0575c41ef5a942617e8d046df48386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0575c41ef5a942617e8d046df48386">&#9670;&#160;</a></span>max_frame_history_limit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t unravel::performance_profiler::max_frame_history_limit = 2000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Absolute upper bound for <a class="el" href="#a8d2704169516cc0a3a34531561adde46">set_max_frame_history</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00337">337</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
+
+</div>
+</div>
+<a id="a46e50783df820e579be7e0c8584b9f14" name="a46e50783df820e579be7e0c8584b9f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e50783df820e579be7e0c8584b9f14">&#9670;&#160;</a></span>min_frame_history</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t unravel::performance_profiler::min_frame_history = 64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Minimum allowed capacity. </p>
+
+<p class="definition">Definition at line <a class="el" href="profiler_8h_source.html#l00341">341</a> of file <a class="el" href="profiler_8h_source.html">profiler.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine/engine/profiler/<a class="el" href="profiler_8h_source.html">profiler.h</a></li>
+<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine/engine/profiler/<a class="el" href="profiler_8cpp_source.html">profiler.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

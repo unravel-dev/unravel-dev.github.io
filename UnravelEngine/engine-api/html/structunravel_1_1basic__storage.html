@@ -130,11 +130,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f75297450c314162f7ad4aff3338179" id="r_a7f75297450c314162f7ad4aff3338179"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f75297450c314162f7ad4aff3338179">unload_group</a> (tpp::thread_pool &amp;pool, const std::string &amp;group)=0</td></tr>
 <tr class="memdesc:a7f75297450c314162f7ad4aff3338179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads all assets in a specified group.  <br /></td></tr>
 <tr class="separator:a7f75297450c314162f7ad4aff3338179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbe082ce182ac79bc4b9feb7ef65859" id="r_abcbe082ce182ac79bc4b9feb7ef65859"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcbe082ce182ac79bc4b9feb7ef65859">evict_unused</a> (tpp::thread_pool &amp;pool, const std::string &amp;group, std::chrono::steady_clock::duration max_idle)=0</td></tr>
+<tr class="memdesc:abcbe082ce182ac79bc4b9feb7ef65859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evicts loaded assets not accessed within the given duration. Demotes them back to deferred state so memory is freed.  <br /></td></tr>
+<tr class="separator:abcbe082ce182ac79bc4b9feb7ef65859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d12e018216355b6bf5a0694d888f8a" id="r_a28d12e018216355b6bf5a0694d888f8a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28d12e018216355b6bf5a0694d888f8a">preload_all</a> ()=0</td></tr>
+<tr class="memdesc:a28d12e018216355b6bf5a0694d888f8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers loading on all deferred handles in this storage. Non-blocking: starts background loads but does not wait.  <br /></td></tr>
+<tr class="separator:a28d12e018216355b6bf5a0694d888f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for asset storage. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00322">322</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00427">427</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3ddc4e5cd2ade1cdb549e98f3f897989" name="a3ddc4e5cd2ade1cdb549e98f3f897989"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ddc4e5cd2ade1cdb549e98f3f897989">&#9670;&#160;</a></span>~basic_storage()</h2>
@@ -162,6 +168,80 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="abcbe082ce182ac79bc4b9feb7ef65859" name="abcbe082ce182ac79bc4b9feb7ef65859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbe082ce182ac79bc4b9feb7ef65859">&#9670;&#160;</a></span>evict_unused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void unravel::basic_storage::evict_unused </td>
+          <td>(</td>
+          <td class="paramtype">tpp::thread_pool &amp;</td>          <td class="paramname"><span class="paramname"><em>pool</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>group</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::steady_clock::duration</td>          <td class="paramname"><span class="paramname"><em>max_idle</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evicts loaded assets not accessed within the given duration. Demotes them back to deferred state so memory is freed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pool</td><td>The thread pool. </td></tr>
+    <tr><td class="paramname">max_idle</td><td>Maximum idle duration before eviction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="structunravel_1_1asset__storage.html#a8cabde8365707b78ab71b265efe75895">unravel::asset_storage&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a28d12e018216355b6bf5a0694d888f8a" name="a28d12e018216355b6bf5a0694d888f8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d12e018216355b6bf5a0694d888f8a">&#9670;&#160;</a></span>preload_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void unravel::basic_storage::preload_all </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Triggers loading on all deferred handles in this storage. Non-blocking: starts background loads but does not wait. </p>
+
+<p>Implemented in <a class="el" href="structunravel_1_1asset__storage.html#ac35d95c437775ebf8b087192dbfb89c5">unravel::asset_storage&lt; T &gt;</a>.</p>
+
+</div>
+</div>
 <a id="a0a8ec865a87d89b7f99f3db5264dad68" name="a0a8ec865a87d89b7f99f3db5264dad68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a8ec865a87d89b7f99f3db5264dad68">&#9670;&#160;</a></span>unload_all()</h2>
 

@@ -2,6 +2,7 @@ var class_unravel_1_1_core_1_1_audio_source_component =
 [
     [ "Pause", "class_unravel_1_1_core_1_1_audio_source_component.html#a61a0e60dde16b87ef0debfeaa2cef90d", null ],
     [ "Play", "class_unravel_1_1_core_1_1_audio_source_component.html#a43ecd15edd6dc0c402fb29ed401089f0", null ],
+    [ "PlayClipAtPoint", "class_unravel_1_1_core_1_1_audio_source_component.html#a5544f7cd964231209e81dff169122004", null ],
     [ "Resume", "class_unravel_1_1_core_1_1_audio_source_component.html#af55178544f775eb37319d87454121763", null ],
     [ "Stop", "class_unravel_1_1_core_1_1_audio_source_component.html#a0148a3583e35389a717072e840023068", null ],
     [ "clip", "class_unravel_1_1_core_1_1_audio_source_component.html#a626df98821f676613583fd341fd20671", null ],

@@ -124,17 +124,17 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aadb02ed45f6c330bb443f937c314addd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad87636f4d68df9e02c4b13b7a5dd31f0" id="r_ad87636f4d68df9e02c4b13b7a5dd31f0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad87636f4d68df9e02c4b13b7a5dd31f0">face_count</a> {0}</td></tr>
 <tr class="separator:ad87636f4d68df9e02c4b13b7a5dd31f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba93d91b25a24326eaefa70deb1b04ec" id="r_aba93d91b25a24326eaefa70deb1b04ec"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba93d91b25a24326eaefa70deb1b04ec">node_id</a> {}</td></tr>
-<tr class="separator:aba93d91b25a24326eaefa70deb1b04ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b444a6b905cf39e8adf003a454a5ea" id="r_a92b444a6b905cf39e8adf003a454a5ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmath_1_1bbox.html">math::bbox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92b444a6b905cf39e8adf003a454a5ea">bbox</a> {}</td></tr>
 <tr class="separator:a92b444a6b905cf39e8adf003a454a5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a5607cb8e8fd70e796a60920a6392af" id="r_a8a5607cb8e8fd70e796a60920a6392af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a5607cb8e8fd70e796a60920a6392af">skinned</a> {}</td></tr>
 <tr class="separator:a8a5607cb8e8fd70e796a60920a6392af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed37c43c74bb2a53092efa75c55552cf" id="r_aed37c43c74bb2a53092efa75c55552cf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed37c43c74bb2a53092efa75c55552cf">stable_id</a> {0}</td></tr>
+<tr class="separator:aed37c43c74bb2a53092efa75c55552cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure describing an individual "piece" of the mesh, often grouped by material, but can be any arbitrary collection of triangles. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00316">316</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00329">329</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a92b444a6b905cf39e8adf003a454a5ea" name="a92b444a6b905cf39e8adf003a454a5ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92b444a6b905cf39e8adf003a454a5ea">&#9670;&#160;</a></span>bbox</h2>
@@ -148,7 +148,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00331">331</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00342">342</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -167,7 +167,7 @@ Public Attributes</h2></td></tr>
 <p>&lt; The unique user assigned "data group" that can be used to separate submeshes. </p>
 <p>The beginning vertex for this batch. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00319">319</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00332">332</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00327">327</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00340">340</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -201,23 +201,7 @@ Public Attributes</h2></td></tr>
 
 <p>Number of faces to render in this batch. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00325">325</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
-
-</div>
-</div>
-<a id="aba93d91b25a24326eaefa70deb1b04ec" name="aba93d91b25a24326eaefa70deb1b04ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba93d91b25a24326eaefa70deb1b04ec">&#9670;&#160;</a></span>node_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string unravel::mesh::submesh::node_id {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00329">329</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00338">338</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -232,8 +216,25 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Import-stable identifier (hash of the source mesh name + disambiguation). Survives reimports that reorder submeshes; 0 means "not assigned" and callers should fall back to the submesh array index. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00333">333</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00344">344</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a id="aed37c43c74bb2a53092efa75c55552cf" name="aed37c43c74bb2a53092efa75c55552cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed37c43c74bb2a53092efa75c55552cf">&#9670;&#160;</a></span>stable_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t unravel::mesh::submesh::stable_id {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00349">349</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -251,7 +252,7 @@ Public Attributes</h2></td></tr>
 
 <p>The initial face, from the index buffer, to render in this batch. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00323">323</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00336">336</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -269,7 +270,7 @@ Public Attributes</h2></td></tr>
 
 <p>Number of vertices included in this batch. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00321">321</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00334">334</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>

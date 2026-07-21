@@ -107,17 +107,22 @@ $(function(){initNavTree('ui__system_8cpp.html',''); initResizable(true); });
 <code>#include &quot;<a class="el" href="_rml_ui___file_interface_8h_source.html">../../rmlui/RmlUi_FileInterface.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_rml_ui___render_interface_8h_source.html">../../rmlui/RmlUi_RenderInterface.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ui__document__component_8h_source.html">../components/ui_document_component.h</a>&quot;</code><br />
+<code>#include &quot;entt/entity/fwd.hpp&quot;</code><br />
 <code>#include &quot;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&quot;</code><br />
 <code>#include &quot;glm/ext/scalar_constants.hpp&quot;</code><br />
 <code>#include &quot;glm/gtc/epsilon.hpp&quot;</code><br />
+<code>#include &quot;hpp/small_vector.hpp&quot;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2events_8h_source.html">engine/events.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="play__mode_8h_source.html">engine/play_mode.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="input_8h_source.html">engine/input/input.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="renderer_8h_source.html">engine/rendering/renderer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="camera_8h_source.html">engine/rendering/camera.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="camera__component_8h_source.html">engine/rendering/ecs/components/camera_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;RmlUi/Core/Context.h&gt;</code><br />
 <code>#include &lt;RmlUi/Core/Core.h&gt;</code><br />
+<code>#include &lt;RmlUi/Core/Element.h&gt;</code><br />
 <code>#include &lt;RmlUi/Core/ElementDocument.h&gt;</code><br />
 <code>#include &lt;RmlUi/Core/FileInterface.h&gt;</code><br />
 <code>#include &lt;RmlUi/Core/StreamMemory.h&gt;</code><br />
@@ -127,8 +132,13 @@ $(function(){initNavTree('ui__system_8cpp.html',''); initResizable(true); });
 <code>#include &lt;<a class="el" href="ecs_8h_source.html">engine/ecs/ecs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="profiler_8h_source.html">engine/profiler/profiler.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="utils_8h_source.html">string_utils/utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__extensions_8h_source.html">engine/assets/impl/asset_extensions.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="texture_8h_source.html">graphics/texture.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="graphics_8h_source.html">graphics/graphics.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="ui__system_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">

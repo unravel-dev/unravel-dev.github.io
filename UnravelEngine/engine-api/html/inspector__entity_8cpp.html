@@ -106,6 +106,7 @@ $(function(){initNavTree('inspector__entity_8cpp.html',''); initResizable(true);
 <code>#include &quot;<a class="el" href="inspector_8h_source.html">inspector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="inspectors_8h_source.html">inspectors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="reflection_8h_source.html">reflection/reflection.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="imgui__context__menu__style_8h_source.html">editor/imgui/integration/imgui_context_menu_style.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="editing__manager_8h_source.html">editor/editing/editing_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="entity__panel_8h_source.html">editor/hub/panels/entity_panel.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="imgui__interface_8h_source.html">editor/imgui/imgui_interface.h</a>&gt;</code><br />
@@ -117,6 +118,7 @@ $(function(){initNavTree('inspector__entity_8cpp.html',''); initResizable(true);
 <code>#include &lt;<a class="el" href="script__system_8h_source.html">engine/scripting/ecs/systems/script_system.h</a>&gt;</code><br />
 <code>#include &lt;hpp/type_name.hpp&gt;</code><br />
 <code>#include &lt;hpp/utility.hpp&gt;</code><br />
+<code>#include &lt;hpp/finally.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="utils_8h_source.html">string_utils/utils.h</a>&gt;</code><br />
 <code>#include &lt;imgui/imgui.h&gt;</code><br />
 <code>#include &lt;imgui/imgui_internal.h&gt;</code><br />
@@ -141,7 +143,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00150">150</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00164">164</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
 
 </div>
 </div>
@@ -157,7 +159,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00149">149</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00163">163</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
 
 </div>
 </div>
@@ -173,7 +175,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00152">152</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00166">166</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
 
 </div>
 </div>
@@ -189,7 +191,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00147">147</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00161">161</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +207,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00146">146</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00160">160</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +223,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00148">148</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector__entity_8cpp_source.html#l00162">162</a> of file <a class="el" href="inspector__entity_8cpp_source.html">inspector_entity.cpp</a>.</p>
 
 </div>
 </div>

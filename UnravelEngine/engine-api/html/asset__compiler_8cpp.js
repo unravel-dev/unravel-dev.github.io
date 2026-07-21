@@ -20,5 +20,9 @@ var asset__compiler_8cpp =
     [ "read_importer< animation_clip >", "asset__compiler_8cpp.html#a65ff4bec9e2fa56f4d4295b94e764c13", null ],
     [ "read_importer< audio_clip >", "asset__compiler_8cpp.html#aa234e8de1c838b115d853d78ec40a152", null ],
     [ "read_importer< gfx::texture >", "asset__compiler_8cpp.html#ae42815964c62056306d62ac2dc2808ff", null ],
-    [ "read_importer< mesh >", "asset__compiler_8cpp.html#ad1d0daf58fe786f69dd8f60ad8c5f84c", null ]
+    [ "read_importer< mesh >", "asset__compiler_8cpp.html#ad1d0daf58fe786f69dd8f60ad8c5f84c", null ],
+    [ "fits_max_size", "asset__compiler_8cpp.html#ad734ee10120baec9de74730ac0b1e186", null ],
+    [ "format", "asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd", null ],
+    [ "height", "asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be", null ],
+    [ "width", "asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd", null ]
 ];

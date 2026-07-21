@@ -104,9 +104,11 @@ $(function(){initNavTree('asset__manifest_8h.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&gt;</code><br />
-<code>#include &lt;hpp/sha1.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="file__fingerprint_8h_source.html">filesystem/file_fingerprint.h</a>&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="asset__extensions_8h_source.html">asset_extensions.h</a>&quot;</code><br />
 </div>
 <p><a href="asset__manifest_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -135,8 +137,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:abd4a1de6727070234d587b2d4a588884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load manifest from file.  <br /></td></tr>
 <tr class="separator:abd4a1de6727070234d587b2d4a588884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa344a1c4e78cf8d0886002e6c96d5cd" id="r_aaa344a1c4e78cf8d0886002e6c96d5cd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__compiler.html#aaa344a1c4e78cf8d0886002e6c96d5cd">unravel::asset_compiler::is_source_file_changed</a> (const fs::path &amp;source_path, const <a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a> &amp;manifest) -&gt; bool</td></tr>
-<tr class="memdesc:aaa344a1c4e78cf8d0886002e6c96d5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if source file has changed compared to manifest.  <br /></td></tr>
+<tr class="memdesc:aaa344a1c4e78cf8d0886002e6c96d5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if source file has changed compared to manifest (source-only)  <br /></td></tr>
 <tr class="separator:aaa344a1c4e78cf8d0886002e6c96d5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c219cfe9d8a41783c5c6d07eb0a7abb" id="r_a7c219cfe9d8a41783c5c6d07eb0a7abb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__compiler.html#a7c219cfe9d8a41783c5c6d07eb0a7abb">unravel::asset_compiler::is_source_file_changed</a> (const fs::path &amp;source_path, const <a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a> &amp;manifest, const std::vector&lt; fs::path &gt; &amp;dependency_paths) -&gt; bool</td></tr>
+<tr class="memdesc:a7c219cfe9d8a41783c5c6d07eb0a7abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if source file or any of its dependencies have changed compared to manifest.  <br /></td></tr>
+<tr class="separator:a7c219cfe9d8a41783c5c6d07eb0a7abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4313e8f9625bed0112845cd064a61926" id="r_a4313e8f9625bed0112845cd064a61926"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__compiler.html#a4313e8f9625bed0112845cd064a61926">unravel::asset_compiler::is_compiled_format_changed</a> (const fs::path &amp;source_path, const <a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a> &amp;manifest) -&gt; bool</td></tr>
+<tr class="separator:a4313e8f9625bed0112845cd064a61926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c5843feaa1b0e2916a8b9cf35c74ed" id="r_a62c5843feaa1b0e2916a8b9cf35c74ed"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__compiler.html#a62c5843feaa1b0e2916a8b9cf35c74ed">unravel::asset_compiler::is_fingerprint_algorithm_current</a> (const <a class="el" href="structunravel_1_1asset__compiler_1_1asset__manifest.html">asset_manifest</a> &amp;manifest) -&gt; bool</td></tr>
+<tr class="separator:a62c5843feaa1b0e2916a8b9cf35c74ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -105,6 +105,9 @@ $(function(){initNavTree('struct_bounds.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Bounds Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Axis-aligned bounding box defined by minimum and maximum corners.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Bounds:</div>
 <div class="dyncontent">
@@ -121,10 +124,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1f65e852b0bae1c6fe45efb3224c50c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box by specifying each coordinate.  <br /></td></tr>
 <tr class="separator:a1f65e852b0bae1c6fe45efb3224c50c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d24919bfc8cd8e4d0ec719fbf28b03f" id="r_a0d24919bfc8cd8e4d0ec719fbf28b03f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d24919bfc8cd8e4d0ec719fbf28b03f">Reset</a> ()</td></tr>
-<tr class="memdesc:a0d24919bfc8cd8e4d0ec719fbf28b03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets to an “unpopulated” state—ready for Grow/Encapsulate.  <br /></td></tr>
+<tr class="memdesc:a0d24919bfc8cd8e4d0ec719fbf28b03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets to an "unpopulated" state—ready for Grow/Encapsulate.  <br /></td></tr>
 <tr class="separator:a0d24919bfc8cd8e4d0ec719fbf28b03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa076fee305d4b9c4b30cc90461b6860a" id="r_aa076fee305d4b9c4b30cc90461b6860a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa076fee305d4b9c4b30cc90461b6860a">IsPopulated</a> ()</td></tr>
-<tr class="memdesc:aa076fee305d4b9c4b30cc90461b6860a"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if <a class="el" href="#a0d24919bfc8cd8e4d0ec719fbf28b03f" title="Resets to an “unpopulated” state—ready for Grow/Encapsulate.">Reset()</a> has been called (i.e. not both corners = zero).  <br /></td></tr>
+<tr class="memdesc:aa076fee305d4b9c4b30cc90461b6860a"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if <a class="el" href="#a0d24919bfc8cd8e4d0ec719fbf28b03f" title="Resets to an &quot;unpopulated&quot; state—ready for Grow/Encapsulate.">Reset()</a> has been called (i.e. not both corners = zero).  <br /></td></tr>
 <tr class="separator:aa076fee305d4b9c4b30cc90461b6860a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00b14b6a130bcae92f7838d1eac479c5" id="r_a00b14b6a130bcae92f7838d1eac479c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00b14b6a130bcae92f7838d1eac479c5">IsDegenerate</a> (float epsilon=float.Epsilon)</td></tr>
 <tr class="memdesc:a00b14b6a130bcae92f7838d1eac479c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the box has zero volume (within epsilon).  <br /></td></tr>
@@ -136,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1d4ef3f0bd7e1f1f2a98643c915fe604"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the point is inside [Min,Max].  <br /></td></tr>
 <tr class="separator:a1d4ef3f0bd7e1f1f2a98643c915fe604"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb1872d6fd245c7998ccdcffd5e9c6ef" id="r_acb1872d6fd245c7998ccdcffd5e9c6ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb1872d6fd245c7998ccdcffd5e9c6ef">ContainsPoint</a> (<a class="el" href="struct_vector3.html">Vector3</a> p, <a class="el" href="struct_vector3.html">Vector3</a> tol)</td></tr>
-<tr class="memdesc:acb1872d6fd245c7998ccdcffd5e9c6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains with per‐axis tolerance.  <br /></td></tr>
+<tr class="memdesc:acb1872d6fd245c7998ccdcffd5e9c6ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains with per-axis tolerance.  <br /></td></tr>
 <tr class="separator:acb1872d6fd245c7998ccdcffd5e9c6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac837dfe62d01ede3af4a8ef283ef090e" id="r_ac837dfe62d01ede3af4a8ef283ef090e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac837dfe62d01ede3af4a8ef283ef090e">ContainsPoint</a> (<a class="el" href="struct_vector3.html">Vector3</a> p, float tol)</td></tr>
 <tr class="memdesc:ac837dfe62d01ede3af4a8ef283ef090e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains with uniform tolerance.  <br /></td></tr>
@@ -148,19 +151,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad6ff9c29ed57d6848370d752b58af20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center = (Min + Max) / 2.  <br /></td></tr>
 <tr class="separator:ad6ff9c29ed57d6848370d752b58af20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b2182bbb80148bb0372dfe371b7c164" id="r_a8b2182bbb80148bb0372dfe371b7c164"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b2182bbb80148bb0372dfe371b7c164">GetExtents</a> ()</td></tr>
-<tr class="memdesc:a8b2182bbb80148bb0372dfe371b7c164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extents = half‐dimensions.  <br /></td></tr>
+<tr class="memdesc:a8b2182bbb80148bb0372dfe371b7c164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extents = half-dimensions.  <br /></td></tr>
 <tr class="separator:a8b2182bbb80148bb0372dfe371b7c164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1676fb4c2b3571fa3370c86d2a29ff6d" id="r_a1676fb4c2b3571fa3370c86d2a29ff6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1676fb4c2b3571fa3370c86d2a29ff6d">Inflate</a> (float amount)</td></tr>
 <tr class="memdesc:a1676fb4c2b3571fa3370c86d2a29ff6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow/shrink all sides by a uniform amount.  <br /></td></tr>
 <tr class="separator:a1676fb4c2b3571fa3370c86d2a29ff6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c65fe47e78db2efbf4b282dccf1e8d4" id="r_a1c65fe47e78db2efbf4b282dccf1e8d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c65fe47e78db2efbf4b282dccf1e8d4">Inflate</a> (<a class="el" href="struct_vector3.html">Vector3</a> amount)</td></tr>
-<tr class="memdesc:a1c65fe47e78db2efbf4b282dccf1e8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow/shrink all sides by per‐axis amounts.  <br /></td></tr>
+<tr class="memdesc:a1c65fe47e78db2efbf4b282dccf1e8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow/shrink all sides by per-axis amounts.  <br /></td></tr>
 <tr class="separator:a1c65fe47e78db2efbf4b282dccf1e8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcfbd19b5ece5a3962accd7113c2ed6b" id="r_afcfbd19b5ece5a3962accd7113c2ed6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector3.html">Vector3</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcfbd19b5ece5a3962accd7113c2ed6b">GetCorners</a> ()</td></tr>
 <tr class="memdesc:afcfbd19b5ece5a3962accd7113c2ed6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The eight corners in the same order as your C++ code.  <br /></td></tr>
 <tr class="separator:afcfbd19b5ece5a3962accd7113c2ed6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaed66fc077603a0ce166e547072ba7e3" id="r_aaed66fc077603a0ce166e547072ba7e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaed66fc077603a0ce166e547072ba7e3">Intersect</a> (<a class="el" href="struct_bounds.html">Bounds</a> b)</td></tr>
-<tr class="memdesc:aaed66fc077603a0ce166e547072ba7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">AABB‐AABB overlap test.  <br /></td></tr>
+<tr class="memdesc:aaed66fc077603a0ce166e547072ba7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">AABB-AABB overlap test.  <br /></td></tr>
 <tr class="separator:aaed66fc077603a0ce166e547072ba7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd0d085408ba988fa94921693641222" id="r_a1fd0d085408ba988fa94921693641222"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fd0d085408ba988fa94921693641222">Intersect</a> (<a class="el" href="struct_bounds.html">Bounds</a> b, out bool contained)</td></tr>
 <tr class="memdesc:a1fd0d085408ba988fa94921693641222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlap + full containment test. Returns true if they overlap; sets contained=true if b is entirely inside this.  <br /></td></tr>
@@ -174,27 +177,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fb2b7838c7e5b61035ec27fe378507d" id="r_a5fb2b7838c7e5b61035ec27fe378507d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fb2b7838c7e5b61035ec27fe378507d">Slab</a> (float o, float d, float mn, float mx, ref float t0, ref float t1)</td></tr>
 <tr class="separator:a5fb2b7838c7e5b61035ec27fe378507d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6793dc7e5123407db9a30cf66cdc4de" id="r_af6793dc7e5123407db9a30cf66cdc4de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6793dc7e5123407db9a30cf66cdc4de">Intersect</a> (<a class="el" href="struct_vector3.html">Vector3</a> origin, <a class="el" href="struct_vector3.html">Vector3</a> dir, out float t, bool restrictRange=true)</td></tr>
-<tr class="memdesc:af6793dc7e5123407db9a30cf66cdc4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ray vs AABB (slab method). <br  />
- Returns true if hit; t = entry time in [0,1] if restrictRange.  <br /></td></tr>
+<tr class="memdesc:af6793dc7e5123407db9a30cf66cdc4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ray vs AABB (slab method). Returns true if hit; t = entry time in [0,1] if restrictRange.  <br /></td></tr>
 <tr class="separator:af6793dc7e5123407db9a30cf66cdc4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a647c205306ac3a52659848b535a5735a" id="r_a647c205306ac3a52659848b535a5735a"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a647c205306ac3a52659848b535a5735a">Equals</a> (object obj)</td></tr>
+<tr class="memdesc:a647c205306ac3a52659848b535a5735a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given object is equal to this bounds.  <br /></td></tr>
 <tr class="separator:a647c205306ac3a52659848b535a5735a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a913c01e3dec2099d27b5a58cb41882c7" id="r_a913c01e3dec2099d27b5a58cb41882c7"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a913c01e3dec2099d27b5a58cb41882c7">GetHashCode</a> ()</td></tr>
+<tr class="memdesc:a913c01e3dec2099d27b5a58cb41882c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hash code for this instance.  <br /></td></tr>
 <tr class="separator:a913c01e3dec2099d27b5a58cb41882c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab84cbbc94cb7303430521fa9b7da5e0f" id="r_ab84cbbc94cb7303430521fa9b7da5e0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab84cbbc94cb7303430521fa9b7da5e0f">Equals</a> (<a class="el" href="struct_bounds.html">Bounds</a> other)</td></tr>
+<tr class="memdesc:ab84cbbc94cb7303430521fa9b7da5e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given bounds is equal to this bounds.  <br /></td></tr>
 <tr class="separator:ab84cbbc94cb7303430521fa9b7da5e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2c10d5359e5b84b404bb75cce2e2bb2" id="r_ae2c10d5359e5b84b404bb75cce2e2bb2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_bounds.html">Bounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2c10d5359e5b84b404bb75cce2e2bb2">operator+</a> (<a class="el" href="struct_bounds.html">Bounds</a> b, <a class="el" href="struct_vector3.html">Vector3</a> shift)</td></tr>
+<tr class="memdesc:ae2c10d5359e5b84b404bb75cce2e2bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the bounds by a vector.  <br /></td></tr>
 <tr class="separator:ae2c10d5359e5b84b404bb75cce2e2bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f56c02fbfcf53dc1b9a8acceeb9a6f2" id="r_a2f56c02fbfcf53dc1b9a8acceeb9a6f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_bounds.html">Bounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f56c02fbfcf53dc1b9a8acceeb9a6f2">operator-</a> (<a class="el" href="struct_bounds.html">Bounds</a> b, <a class="el" href="struct_vector3.html">Vector3</a> shift)</td></tr>
+<tr class="memdesc:a2f56c02fbfcf53dc1b9a8acceeb9a6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the bounds by the negative of a vector.  <br /></td></tr>
 <tr class="separator:a2f56c02fbfcf53dc1b9a8acceeb9a6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac952077219d44319d21765f64869dca2" id="r_ac952077219d44319d21765f64869dca2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_bounds.html">Bounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac952077219d44319d21765f64869dca2">operator*</a> (<a class="el" href="struct_bounds.html">Bounds</a> b, float s)</td></tr>
+<tr class="memdesc:ac952077219d44319d21765f64869dca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the bounds by a scalar.  <br /></td></tr>
 <tr class="separator:ac952077219d44319d21765f64869dca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eb1f535ea3ad9d35bfc104d13214a33" id="r_a2eb1f535ea3ad9d35bfc104d13214a33"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eb1f535ea3ad9d35bfc104d13214a33">operator==</a> (<a class="el" href="struct_bounds.html">Bounds</a> a, <a class="el" href="struct_bounds.html">Bounds</a> b)</td></tr>
+<tr class="memdesc:a2eb1f535ea3ad9d35bfc104d13214a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether two bounds are equal.  <br /></td></tr>
 <tr class="separator:a2eb1f535ea3ad9d35bfc104d13214a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a32509ee325531fb14afc73b6f73af2" id="r_a7a32509ee325531fb14afc73b6f73af2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a32509ee325531fb14afc73b6f73af2">operator!=</a> (<a class="el" href="struct_bounds.html">Bounds</a> a, <a class="el" href="struct_bounds.html">Bounds</a> b)</td></tr>
+<tr class="memdesc:a7a32509ee325531fb14afc73b6f73af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether two bounds are not equal.  <br /></td></tr>
 <tr class="separator:a7a32509ee325531fb14afc73b6f73af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -209,11 +219,11 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:af6989d119129f4a7070ab08c8732b534" id="r_af6989d119129f4a7070ab08c8732b534"><td class="memItemLeft" align="right" valign="top">static readonly <a class="el" href="struct_bounds.html">Bounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6989d119129f4a7070ab08c8732b534">Empty</a> = new <a class="el" href="struct_bounds.html">Bounds</a>(<a class="el" href="struct_vector3.html#a999d6a68eed68d56e7f212b5cd22b9dc">Vector3.one</a> * float.MaxValue, <a class="el" href="struct_vector3.html#a999d6a68eed68d56e7f212b5cd22b9dc">Vector3.one</a> * float.MinValue)</td></tr>
+<tr class="memdesc:af6989d119129f4a7070ab08c8732b534"><td class="mdescLeft">&#160;</td><td class="mdescRight">An empty bounds box.  <br /></td></tr>
 <tr class="separator:af6989d119129f4a7070ab08c8732b534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00006">6</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<div class="textblock"><p>Axis-aligned bounding box defined by minimum and maximum corners. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a866c5ebb766f5a0affa1ba79f0421b9b" name="a866c5ebb766f5a0affa1ba79f0421b9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a866c5ebb766f5a0affa1ba79f0421b9b">&#9670;&#160;</a></span>Bounds() <span class="overload">[1/2]</span></h2>
@@ -235,8 +245,13 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a box from two corners. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00016">16</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>The minimum corner.</td></tr>
+    <tr><td class="paramname">max</td><td>The maximum corner.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -280,8 +295,17 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a box by specifying each coordinate. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00023">23</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xMin</td><td>The minimum x coordinate.</td></tr>
+    <tr><td class="paramname">yMin</td><td>The minimum y coordinate.</td></tr>
+    <tr><td class="paramname">zMin</td><td>The minimum z coordinate.</td></tr>
+    <tr><td class="paramname">xMax</td><td>The maximum x coordinate.</td></tr>
+    <tr><td class="paramname">yMax</td><td>The maximum y coordinate.</td></tr>
+    <tr><td class="paramname">zMax</td><td>The maximum z coordinate.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -302,8 +326,12 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Expand to include this point. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00057">57</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>The point to include.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -323,6 +351,13 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>True if the point is inside [Min,Max]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The point to test.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the point is inside the bounds; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -346,6 +381,14 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Contains with uniform tolerance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The point to test.</td></tr>
+    <tr><td class="paramname">tol</td><td>The uniform tolerance value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the point is inside the bounds with tolerance; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -368,7 +411,15 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Contains with per‐axis tolerance. </p>
+<p>Contains with per-axis tolerance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The point to test.</td></tr>
+    <tr><td class="paramname">tol</td><td>The tolerance per axis.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the point is inside the bounds with tolerance; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -387,6 +438,15 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns true if the given bounds is equal to this bounds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The bounds to compare with the current instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the given bounds is equal to this bounds; otherwise, false.</dd></dl>
+
 </div>
 </div>
 <a id="a647c205306ac3a52659848b535a5735a" name="a647c205306ac3a52659848b535a5735a"></a>
@@ -403,6 +463,15 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns true if the given object is equal to this bounds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>The object to compare with the current instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the given object is equal to this bounds; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -422,6 +491,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Center = (Min + Max) / 2. </p>
+<dl class="section return"><dt>Returns</dt><dd>The center point of the box.</dd></dl>
 
 </div>
 </div>
@@ -441,6 +511,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The eight corners in the same order as your C++ code. </p>
+<dl class="section return"><dt>Returns</dt><dd>An array of the eight corner points.</dd></dl>
 
 </div>
 </div>
@@ -460,6 +531,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The size of the box = Max − Min. </p>
+<dl class="section return"><dt>Returns</dt><dd>The dimensions of the box.</dd></dl>
 
 </div>
 </div>
@@ -478,7 +550,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Extents = half‐dimensions. </p>
+<p>Extents = half-dimensions. </p>
+<dl class="section return"><dt>Returns</dt><dd>The extents (half-dimensions) of the box.</dd></dl>
 
 </div>
 </div>
@@ -496,6 +569,9 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the hash code for this instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>A 32-bit signed integer that is the hash code for this instance.</dd></dl>
 
 </div>
 </div>
@@ -515,8 +591,12 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Grow/shrink all sides by a uniform amount. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00093">93</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">amount</td><td>The amount to inflate (positive) or deflate (negative) by.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -535,9 +615,13 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Grow/shrink all sides by per‐axis amounts. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00100">100</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<p>Grow/shrink all sides by per-axis amounts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">amount</td><td>The amount to inflate (positive) or deflate (negative) per axis.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -556,7 +640,14 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>AABB‐AABB overlap test. </p>
+<p>AABB-AABB overlap test. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>The other bounds to test against.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the bounds overlap; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -580,8 +671,14 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overlap + full containment test. Returns true if they overlap; sets contained=true if b is entirely inside this. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00129">129</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>The other bounds to test against.</td></tr>
+    <tr><td class="paramname">contained</td><td>Set to true if b is entirely inside this bounds; otherwise, false.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the bounds overlap; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -605,8 +702,14 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overlap + return the intersection box. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00149">149</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>The other bounds to test against.</td></tr>
+    <tr><td class="paramname">intersection</td><td>The intersection bounds if they overlap; otherwise, default bounds.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the bounds overlap; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -630,8 +733,14 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overlap with a tolerance vector. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00166">166</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>The other bounds to test against.</td></tr>
+    <tr><td class="paramname">tol</td><td>The tolerance vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the bounds overlap with tolerance; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -664,10 +773,17 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Ray vs AABB (slab method). <br  />
- Returns true if hit; t = entry time in [0,1] if restrictRange. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00200">200</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<p>Ray vs AABB (slab method). Returns true if hit; t = entry time in [0,1] if restrictRange. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origin</td><td>The origin of the ray.</td></tr>
+    <tr><td class="paramname">dir</td><td>The direction of the ray.</td></tr>
+    <tr><td class="paramname">t</td><td>The intersection parameter along the ray.</td></tr>
+    <tr><td class="paramname">restrictRange</td><td>If true, restricts t to [0,1].</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the ray intersects the bounds; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -687,6 +803,13 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>True if the box has zero volume (within epsilon). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">epsilon</td><td>The tolerance value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the box has zero volume; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -705,9 +828,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>True if <a class="el" href="#a0d24919bfc8cd8e4d0ec719fbf28b03f" title="Resets to an “unpopulated” state—ready for Grow/Encapsulate.">Reset()</a> has been called (i.e. not both corners = zero). </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00039">39</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<p>True if <a class="el" href="#a0d24919bfc8cd8e4d0ec719fbf28b03f" title="Resets to an &quot;unpopulated&quot; state—ready for Grow/Encapsulate.">Reset()</a> has been called (i.e. not both corners = zero). </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the bounds have been populated; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -738,6 +860,16 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Determines whether two bounds are not equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first bounds.</td></tr>
+    <tr><td class="paramname">b</td><td>The second bounds.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the bounds are not equal; otherwise, false.</dd></dl>
+
 </div>
 </div>
 <a id="ac952077219d44319d21765f64869dca2" name="ac952077219d44319d21765f64869dca2"></a>
@@ -766,6 +898,16 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Scales the bounds by a scalar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>The bounds.</td></tr>
+    <tr><td class="paramname">s</td><td>The scalar value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled bounds.</dd></dl>
 
 </div>
 </div>
@@ -796,6 +938,16 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Translates the bounds by a vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>The bounds.</td></tr>
+    <tr><td class="paramname">shift</td><td>The translation vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The translated bounds.</dd></dl>
+
 </div>
 </div>
 <a id="a2f56c02fbfcf53dc1b9a8acceeb9a6f2" name="a2f56c02fbfcf53dc1b9a8acceeb9a6f2"></a>
@@ -824,6 +976,16 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Translates the bounds by the negative of a vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>The bounds.</td></tr>
+    <tr><td class="paramname">shift</td><td>The translation vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The translated bounds.</dd></dl>
 
 </div>
 </div>
@@ -854,6 +1016,16 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Determines whether two bounds are equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first bounds.</td></tr>
+    <tr><td class="paramname">b</td><td>The second bounds.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the bounds are equal; otherwise, false.</dd></dl>
+
 </div>
 </div>
 <a id="a0d24919bfc8cd8e4d0ec719fbf28b03f" name="a0d24919bfc8cd8e4d0ec719fbf28b03f"></a>
@@ -871,9 +1043,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Resets to an “unpopulated” state—ready for Grow/Encapsulate. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00032">32</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<p>Resets to an "unpopulated" state—ready for Grow/Encapsulate. </p>
 
 </div>
 </div>
@@ -916,8 +1086,6 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00178">178</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -941,7 +1109,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00013">13</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
+<p>An empty bounds box. </p>
 
 </div>
 </div>
@@ -959,8 +1127,6 @@ Static Public Attributes</h2></td></tr>
 
 <p>The maximum corner of the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00011">11</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
-
 </div>
 </div>
 <a id="a844c4a3b99a62ea6c126412fbfe3a5f5" name="a844c4a3b99a62ea6c126412fbfe3a5f5"></a>
@@ -977,12 +1143,10 @@ Static Public Attributes</h2></td></tr>
 
 <p>The minimum corner of the box. </p>
 
-<p class="definition">Definition at line <a class="el" href="_bounds_8cs_source.html#l00009">9</a> of file <a class="el" href="_bounds_8cs_source.html">Bounds.cs</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/math/<a class="el" href="_bounds_8cs_source.html">Bounds.cs</a></li>
+<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/math/<a class="el" href="_bounds_8cs.html">Bounds.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

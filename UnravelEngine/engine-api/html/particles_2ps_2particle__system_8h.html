@@ -122,7 +122,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_emitter_direction.html">EmitterDirection</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_emitter_spawn_location.html">EmitterSpawnLocation</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_simulation_space.html">SimulationSpace</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_texture_mode.html">TextureMode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_render_mode.html">RenderMode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_blend_mode.html">BlendMode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_emitter_uniforms.html">EmitterUniforms</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,10 +158,8 @@ Functions</h2></td></tr>
 <tr class="separator:a90048303f26df54bc7595da43c33be79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5696972fe471ee438527293dba94b3f" id="r_ad5696972fe471ee438527293dba94b3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5696972fe471ee438527293dba94b3f">psDestroyEmitter</a> (<a class="el" href="struct_emitter_handle.html">EmitterHandle</a> _handle)</td></tr>
 <tr class="separator:ad5696972fe471ee438527293dba94b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab766d1fa21711181ff1d3ffbe9392801" id="r_ab766d1fa21711181ff1d3ffbe9392801"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab766d1fa21711181ff1d3ffbe9392801">psRenderEmitter</a> (<a class="el" href="struct_emitter_handle.html">EmitterHandle</a> _handle, uint8_t _view, bgfx::ProgramHandle _program, const float *_mtxView, const math::vec3 &amp;_eye, bgfx::TextureHandle _texture)</td></tr>
-<tr class="separator:ab766d1fa21711181ff1d3ffbe9392801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e3400f85131dba9b2bb3f37040adce2" id="r_a8e3400f85131dba9b2bb3f37040adce2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e3400f85131dba9b2bb3f37040adce2">psRenderEmitterBatch</a> (const <a class="el" href="struct_emitter_handle.html">EmitterHandle</a> *_handles, uint32_t _count, uint8_t _view, bgfx::ProgramHandle _program, const float *_mtxView, const math::vec3 &amp;_eye, bgfx::TextureHandle _texture)</td></tr>
-<tr class="separator:a8e3400f85131dba9b2bb3f37040adce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9ff2f2e4bc4e98a7fa6ec3f972fbf4" id="r_afc9ff2f2e4bc4e98a7fa6ec3f972fbf4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc9ff2f2e4bc4e98a7fa6ec3f972fbf4">psRenderEmitterBatch</a> (const <a class="el" href="struct_emitter_handle.html">EmitterHandle</a> *_handles, uint32_t _count, uint8_t _view, bgfx::ProgramHandle _program, const float *_mtxView, const math::vec3 &amp;_eye, bgfx::TextureHandle _texture, uint64_t _blend_state, bool _sort_by_depth=true)</td></tr>
+<tr class="separator:afc9ff2f2e4bc4e98a7fa6ec3f972fbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aa6edf2708bdfb1d080759b969059a746" name="aa6edf2708bdfb1d080759b969059a746"></a>
@@ -209,7 +215,7 @@ template&lt;typename Ty &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01053">1053</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01570">1570</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -228,7 +234,7 @@ template&lt;typename Ty &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01085">1085</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01602">1602</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,7 +257,7 @@ template&lt;typename Ty &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01070">1070</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01587">1587</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -270,7 +276,7 @@ template&lt;typename Ty &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01075">1075</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01592">1592</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -289,7 +295,7 @@ template&lt;typename Ty &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01080">1080</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01597">1597</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -312,55 +318,12 @@ template&lt;typename Ty &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01041">1041</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01558">1558</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab766d1fa21711181ff1d3ffbe9392801" name="ab766d1fa21711181ff1d3ffbe9392801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab766d1fa21711181ff1d3ffbe9392801">&#9670;&#160;</a></span>psRenderEmitter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void psRenderEmitter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_emitter_handle.html">EmitterHandle</a></td>          <td class="paramname"><span class="paramname"><em>_handle</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>_view</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bgfx::ProgramHandle</td>          <td class="paramname"><span class="paramname"><em>_program</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>_mtxView</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const math::vec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>_eye</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bgfx::TextureHandle</td>          <td class="paramname"><span class="paramname"><em>_texture</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01090">1090</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a8e3400f85131dba9b2bb3f37040adce2" name="a8e3400f85131dba9b2bb3f37040adce2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e3400f85131dba9b2bb3f37040adce2">&#9670;&#160;</a></span>psRenderEmitterBatch()</h2>
+<a id="afc9ff2f2e4bc4e98a7fa6ec3f972fbf4" name="afc9ff2f2e4bc4e98a7fa6ec3f972fbf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc9ff2f2e4bc4e98a7fa6ec3f972fbf4">&#9670;&#160;</a></span>psRenderEmitterBatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,18 +361,23 @@ template&lt;typename Ty &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bgfx::TextureHandle</td>          <td class="paramname"><span class="paramname"><em>_texture</em></span>&#160;)</td>
+          <td class="paramtype">bgfx::TextureHandle</td>          <td class="paramname"><span class="paramname"><em>_texture</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>_blend_state</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>_sort_by_depth</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Render multiple emitters in a single batched draw call (all must use the same texture) This is much more efficient than calling psRenderEmitter multiple times as it:</p><ul>
-<li>Combines all particles into a single instance buffer</li>
-<li>Sorts all particles globally for proper alpha blending</li>
-<li>Uses only one draw call instead of multiple</li>
-</ul>
-<p>Example usage: <a class="el" href="struct_emitter_handle.html">EmitterHandle</a> handles[] = {fire_emitter, smoke_emitter, spark_emitter}; psRenderEmitterBatch(handles, 3, view, program, viewMatrix, cameraPos, fireTexture); </p>
+<p>Submit one homogeneous particle batch: same texture, <a class="el" href="struct_texture_mode.html">TextureMode</a> (mask vs multi-channel), and <a class="el" href="struct_blend_mode.html">BlendMode</a>. <a class="el" href="struct_render_mode.html">RenderMode</a> is per-instance. The pipeline groups emitters by material. When <code>_sort_by_depth</code> is true, instances are sorted back-to-front (sequential for small counts, parallel above a threshold) then gathered into the instance buffer. When false, particles are streamed directly from each emitter's array in emission order (additive / order-independent blends) with no sort-key scratch. May issue multiple submits if the transient instance buffer is smaller than the particle count. </p>
 
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01100">1100</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01607">1607</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -428,7 +396,7 @@ template&lt;typename Ty &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01063">1063</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01580">1580</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -447,7 +415,7 @@ template&lt;typename Ty &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01046">1046</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01563">1563</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -475,7 +443,7 @@ template&lt;typename Ty &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01058">1058</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particles_2ps_2particle__system_8cpp_source.html#l01575">1575</a> of file <a class="el" href="particles_2ps_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>

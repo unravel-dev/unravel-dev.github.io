@@ -150,31 +150,30 @@ $(function(){initNavTree('engine_2meta_2core_2common_2basetypes_8hpp_source.html
 <div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespaceser20.html#aae766ed2417a7d6cca65d8d0b6d18d35">   41</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_define" href="serialization_8h.html#a9ced817ffbdeee0a79e422cd39593e86">SAVE_MINIMAL_FUNCTION_NAME</a>(Archive&amp; ar, <span class="keyword">const</span> hpp::uuid&amp; obj) -&gt; std::string</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> hpp::to_string(obj);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">//try_save(ar, ser20::make_nvp(&quot;data&quot;, hpp::to_string(obj)));</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">if</span>(obj.is_nil())</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;nil&quot;</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> hpp::to_string(obj);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
 </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Archive&gt;</div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespaceser20.html#a050d6c39695aa6e8c5010a9d448d1252">   48</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_define" href="serialization_8h.html#ae2b198a79df66b4035cc23884639ac79">LOAD_MINIMAL_FUNCTION_NAME</a>(Archive&amp; ar, hpp::uuid&amp; obj, <span class="keyword">const</span> std::string&amp; suuid)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">//std::string suuid;</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">//try_load(ar, ser20::make_nvp(&quot;data&quot;, suuid));</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">auto</span> <span class="keywordtype">id</span> = hpp::uuid::from_string(suuid);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    obj = <span class="keywordtype">id</span>.value_or(hpp::uuid{});</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Archive&gt;</div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespaceser20.html#a050d6c39695aa6e8c5010a9d448d1252">   51</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_define" href="serialization_8h.html#ae2b198a79df66b4035cc23884639ac79">LOAD_MINIMAL_FUNCTION_NAME</a>(Archive&amp; ar, hpp::uuid&amp; obj, <span class="keyword">const</span> std::string&amp; suuid)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">auto</span> <span class="keywordtype">id</span> = hpp::uuid::from_string(suuid);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    obj = <span class="keywordtype">id</span>.value_or(hpp::uuid{});</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <span class="comment">// namespace ser20</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>} <span class="comment">// namespace ser20</span></div>
 <div class="ttc" id="acore_2base_2basetypes_8hpp_html"><div class="ttname"><a href="core_2base_2basetypes_8hpp.html">basetypes.hpp</a></div></div>
 <div class="ttc" id="anamespaceser20_html"><div class="ttname"><a href="namespaceser20.html">ser20</a></div><div class="ttdef"><b>Definition</b> <a href="yaml_8hpp_source.html#l00045">yaml.hpp:46</a></div></div>
 <div class="ttc" id="aserialization_8h_html"><div class="ttname"><a href="serialization_8h.html">serialization.h</a></div></div>
-<div class="ttc" id="aserialization_8h_html_a2d5f79664d516bacc6cba79293e6140d"><div class="ttname"><a href="serialization_8h.html#a2d5f79664d516bacc6cba79293e6140d">try_serialize</a></div><div class="ttdeci">auto try_serialize(Archive &amp;ar, ser20::NameValuePair&lt; T &gt; &amp;&amp;t, const hpp::source_location &amp;loc=hpp::source_location::current()) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="serialization_8h_source.html#l00173">serialization.h:173</a></div></div>
-<div class="ttc" id="aserialization_8h_html_a9ced817ffbdeee0a79e422cd39593e86"><div class="ttname"><a href="serialization_8h.html#a9ced817ffbdeee0a79e422cd39593e86">SAVE_MINIMAL_FUNCTION_NAME</a></div><div class="ttdeci">#define SAVE_MINIMAL_FUNCTION_NAME</div><div class="ttdef"><b>Definition</b> <a href="serialization_8h_source.html#l00016">serialization.h:16</a></div></div>
-<div class="ttc" id="aserialization_8h_html_aa389b7a921800b5ff483ba4b482a2123"><div class="ttname"><a href="serialization_8h.html#aa389b7a921800b5ff483ba4b482a2123">SERIALIZE_FUNCTION_NAME</a></div><div class="ttdeci">#define SERIALIZE_FUNCTION_NAME</div><div class="ttdef"><b>Definition</b> <a href="serialization_8h_source.html#l00013">serialization.h:13</a></div></div>
-<div class="ttc" id="aserialization_8h_html_ae2b198a79df66b4035cc23884639ac79"><div class="ttname"><a href="serialization_8h.html#ae2b198a79df66b4035cc23884639ac79">LOAD_MINIMAL_FUNCTION_NAME</a></div><div class="ttdeci">#define LOAD_MINIMAL_FUNCTION_NAME</div><div class="ttdef"><b>Definition</b> <a href="serialization_8h_source.html#l00017">serialization.h:17</a></div></div>
+<div class="ttc" id="aserialization_8h_html_a2d5f79664d516bacc6cba79293e6140d"><div class="ttname"><a href="serialization_8h.html#a2d5f79664d516bacc6cba79293e6140d">try_serialize</a></div><div class="ttdeci">auto try_serialize(Archive &amp;ar, ser20::NameValuePair&lt; T &gt; &amp;&amp;t, const hpp::source_location &amp;loc=hpp::source_location::current()) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="serialization_8h_source.html#l00261">serialization.h:261</a></div></div>
+<div class="ttc" id="aserialization_8h_html_a9ced817ffbdeee0a79e422cd39593e86"><div class="ttname"><a href="serialization_8h.html#a9ced817ffbdeee0a79e422cd39593e86">SAVE_MINIMAL_FUNCTION_NAME</a></div><div class="ttdeci">#define SAVE_MINIMAL_FUNCTION_NAME</div><div class="ttdef"><b>Definition</b> <a href="serialization_8h_source.html#l00018">serialization.h:18</a></div></div>
+<div class="ttc" id="aserialization_8h_html_aa389b7a921800b5ff483ba4b482a2123"><div class="ttname"><a href="serialization_8h.html#aa389b7a921800b5ff483ba4b482a2123">SERIALIZE_FUNCTION_NAME</a></div><div class="ttdeci">#define SERIALIZE_FUNCTION_NAME</div><div class="ttdef"><b>Definition</b> <a href="serialization_8h_source.html#l00015">serialization.h:15</a></div></div>
+<div class="ttc" id="aserialization_8h_html_ae2b198a79df66b4035cc23884639ac79"><div class="ttname"><a href="serialization_8h.html#ae2b198a79df66b4035cc23884639ac79">LOAD_MINIMAL_FUNCTION_NAME</a></div><div class="ttdeci">#define LOAD_MINIMAL_FUNCTION_NAME</div><div class="ttdef"><b>Definition</b> <a href="serialization_8h_source.html#l00019">serialization.h:19</a></div></div>
 <div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdef"><b>Definition</b> <a href="core_2base_2basetypes_8hpp_source.html#l00096">basetypes.hpp:97</a></div></div>
 <div class="ttc" id="astructpoint_html_a396a4d12cee47f82c71ab9914939482f"><div class="ttname"><a href="structpoint.html#a396a4d12cee47f82c71ab9914939482f">point::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition</b> <a href="core_2base_2basetypes_8hpp_source.html#l00109">basetypes.hpp:109</a></div></div>
 <div class="ttc" id="astructpoint_html_ab4a7565674e9964cbfe9c4e848166385"><div class="ttname"><a href="structpoint.html#ab4a7565674e9964cbfe9c4e848166385">point::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition</b> <a href="core_2base_2basetypes_8hpp_source.html#l00110">basetypes.hpp:110</a></div></div>

@@ -103,21 +103,35 @@ $(function(){initNavTree('inspector_8cpp.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="inspector_8h_source.html">inspector.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="imgui__context__menu__style_8h_source.html">editor/imgui/integration/imgui_context_menu_style.h</a>&gt;</code><br />
 <code>#include &lt;imgui/imgui_internal.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="utils_8h_source.html">string_utils/utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="id__component_8h_source.html">engine/ecs/components/id_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="scene_8h_source.html">engine/ecs/scene.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="entity_8hpp_source.html">engine/meta/ecs/entity.hpp</a>&gt;</code><br />
+<code>#include &quot;imgui/imgui.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="inspectors_8h_source.html">inspectors.h</a>&quot;</code><br />
 </div>
 <p><a href="inspector_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_im_gui.html">ImGui</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a7694b7a1b7b609790f69266d5aeee3e2" id="r_a7694b7a1b7b609790f69266d5aeee3e2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_im_gui.html#a7694b7a1b7b609790f69266d5aeee3e2">ImGui::GetTintedStyleColor</a> (ImGuiCol idx, float multiplier=1.0f) -&gt; ImVec4</td></tr>
+<tr class="separator:a7694b7a1b7b609790f69266d5aeee3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd006083820d9a3a6a0fe61ec2454e93" id="r_abd006083820d9a3a6a0fe61ec2454e93"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#abd006083820d9a3a6a0fe61ec2454e93">unravel::make_proxy</a> (entt::meta_any &amp;var, const std::string &amp;<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>={}) -&gt; <a class="el" href="structunravel_1_1meta__any__proxy.html">meta_any_proxy</a></td></tr>
 <tr class="memdesc:abd006083820d9a3a6a0fe61ec2454e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a simple proxy for direct variable access.  <br /></td></tr>
 <tr class="separator:abd006083820d9a3a6a0fe61ec2454e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e34c0b309e45630696ea063e1bf676a" id="r_a1e34c0b309e45630696ea063e1bf676a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a1e34c0b309e45630696ea063e1bf676a">unravel::make_entity_proxy</a> (entt::meta_any &amp;var, const std::string &amp;<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>={}) -&gt; <a class="el" href="structunravel_1_1meta__any__proxy.html">meta_any_proxy</a></td></tr>
+<tr class="memdesc:a1e34c0b309e45630696ea063e1bf676a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like make_proxy, but for entt::handle roots resolved by <a class="el" href="structunravel_1_1id__component.html" title="Component that provides a unique identifier (UUID) for an entity.">id_component</a> UUID each access.  <br /></td></tr>
+<tr class="separator:a1e34c0b309e45630696ea063e1bf676a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a89cedf06238526bb495e5f2317a88" id="r_a33a89cedf06238526bb495e5f2317a88"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a33a89cedf06238526bb495e5f2317a88">unravel::make_property_proxy</a> (const <a class="el" href="structunravel_1_1meta__any__proxy.html">meta_any_proxy</a> &amp;var_proxy, const entt::meta_data &amp;prop) -&gt; <a class="el" href="structunravel_1_1meta__any__proxy.html">meta_any_proxy</a></td></tr>
 <tr class="separator:a33a89cedf06238526bb495e5f2317a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

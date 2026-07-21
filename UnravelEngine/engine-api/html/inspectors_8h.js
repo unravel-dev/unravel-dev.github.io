@@ -2,9 +2,10 @@ var inspectors_8h =
 [
     [ "unravel::inspector_registry", "structunravel_1_1inspector__registry.html", "structunravel_1_1inspector__registry" ],
     [ "unravel::prefab_property_override", "structunravel_1_1prefab__property__override.html", "structunravel_1_1prefab__property__override" ],
+    [ "unravel::inspector_context", "structunravel_1_1inspector__context.html", "structunravel_1_1inspector__context" ],
     [ "unravel::prefab_override_context", "structunravel_1_1prefab__override__context.html", "structunravel_1_1prefab__override__context" ],
-    [ "add_property_action", "inspectors_8h.html#a684eb225e22d20c9a192f311490a81ec", null ],
-    [ "inspect", "inspectors_8h.html#a3772ece59c644152c1ce0fa8fd7b8b5c", null ],
+    [ "add_property_action", "inspectors_8h.html#a2ad1afac9997ee2beb01af69f6ab2db0", null ],
+    [ "inspect", "inspectors_8h.html#a943a49f3216b73b8ab830320021d8c72", null ],
     [ "inspect_array", "inspectors_8h.html#acf40efe54329031a1b33d27c25ec9804", null ],
     [ "inspect_array", "inspectors_8h.html#a9f50feb7a506ce6b87287f2c54130354", null ],
     [ "inspect_associative_container", "inspectors_8h.html#a6edceb72f25783e89cab5440e4440e7a", null ],

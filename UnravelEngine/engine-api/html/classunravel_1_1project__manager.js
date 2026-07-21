@@ -1,5 +1,11 @@
 var classunravel_1_1project__manager =
 [
+    [ "project_compat_report", "structunravel_1_1project__manager_1_1project__compat__report.html", "structunravel_1_1project__manager_1_1project__compat__report" ],
+    [ "project_compat", "classunravel_1_1project__manager.html#aada6ec2feb3c63b9641155a767796b55", [
+      [ "no_info_file", "classunravel_1_1project__manager.html#aada6ec2feb3c63b9641155a767796b55a7d2f2279244dfdd0a7004763b9d634a5", null ],
+      [ "ok", "classunravel_1_1project__manager.html#aada6ec2feb3c63b9641155a767796b55a444bcb3a3fcf8389296c49467f27e1d6", null ],
+      [ "engine_older", "classunravel_1_1project__manager.html#aada6ec2feb3c63b9641155a767796b55a71f5afb8ae71489ff46281747930285e", null ]
+    ] ],
     [ "project_manager", "classunravel_1_1project__manager.html#a9dcf91ebaae9c76c16d6649fdb7ee400", null ],
     [ "~project_manager", "classunravel_1_1project__manager.html#a6d49243a6bcf5d4ae8e62dc8e8f0ca24", null ],
     [ "close_project", "classunravel_1_1project__manager.html#af6ee8399b67bd99e6505058e9444ebd9", null ],
@@ -8,15 +14,23 @@ var classunravel_1_1project__manager =
     [ "get_deploy_settings", "classunravel_1_1project__manager.html#a5476f9d123213b21a272d81205fc50a0", null ],
     [ "get_editor_settings", "classunravel_1_1project__manager.html#aaf54131b8df3710b49da0ad57f25d09c", null ],
     [ "get_name", "classunravel_1_1project__manager.html#af6bf33610b3a481cafb695ebc2e03704", null ],
+    [ "get_project_editor_settings", "classunravel_1_1project__manager.html#a4e12b48a4a01010c09b7697055794e26", null ],
+    [ "get_project_info", "classunravel_1_1project__manager.html#a8370a4d0e310a9ecfd80de184523ab85", null ],
+    [ "get_project_info", "classunravel_1_1project__manager.html#aa8242138a0e650ac4d8461710f702bcc", null ],
     [ "get_settings", "classunravel_1_1project__manager.html#adc434fd82e52853a780fec95f2e71b29", null ],
     [ "has_open_project", "classunravel_1_1project__manager.html#aae3d32cd7f584f3f058de4ff13a04f4a", null ],
     [ "init", "classunravel_1_1project__manager.html#a2b735892eba9241a3bcd268bbd5c836b", null ],
+    [ "inspect_project", "classunravel_1_1project__manager.html#a15b26d2cad97c8b7abe31f1dc35fe6ce", null ],
     [ "load_deploy_settings", "classunravel_1_1project__manager.html#acd08d8223ec929f8dde79539fb806792", null ],
     [ "load_editor_settings", "classunravel_1_1project__manager.html#a24685f6add9a8ac28dbe7d6f5b225612", null ],
+    [ "load_project_editor_settings", "classunravel_1_1project__manager.html#ae52b2bf1029e4b08a9a24c81e0962cd1", null ],
+    [ "load_project_info", "classunravel_1_1project__manager.html#a9c96750e6fb3cabfd2d6da30b566e552", null ],
     [ "load_project_settings", "classunravel_1_1project__manager.html#aa4d5d6645c3c05e6c19ef35bade56a22", null ],
     [ "open_project", "classunravel_1_1project__manager.html#ab46b1bdc414377b9a4b9420f40919979", null ],
     [ "save_deploy_settings", "classunravel_1_1project__manager.html#aa276584e038c84c3d36dddfe1e434bd2", null ],
     [ "save_editor_settings", "classunravel_1_1project__manager.html#a08c1d7cdd662579b286559bf43d5a2f8", null ],
+    [ "save_project_editor_settings", "classunravel_1_1project__manager.html#ae8d3e9a3cf87fa57ee742578b38a3d62", null ],
+    [ "save_project_info", "classunravel_1_1project__manager.html#acd1d59f3378f3efaf2387ec2b9d1b1cb", null ],
     [ "save_project_settings", "classunravel_1_1project__manager.html#ae991ed9dacdb3d28fc2eb007f5cab833", null ],
     [ "set_name", "classunravel_1_1project__manager.html#aabd529f5bd758dbefe0cefa34e54f58d", null ]
 ];

@@ -7,11 +7,14 @@ var searchData=
   ['velocity_4',['velocity',['../namespaceunravel.html#acec4ffb55357d08580b8bf2a1057532faac1a453d0cdc1f19d9479ccfaa8b082c',1,'unravel']]],
   ['velocity_5fchange_5',['velocity_change',['../namespaceunravel.html#affd248520b0507ba13ad6d424101ece6abd557891cfcd239be2d26ba8bb96dc96',1,'unravel']]],
   ['vertical_6',['Vertical',['../structunravel_1_1shadow_1_1_proj_type.html#a9b1e91e9337d9e43161f1a8317ee99a4a5178c9d6007c575887d8227081eefc63',1,'unravel::shadow::ProjType']]],
-  ['vertical_5fmask_7',['vertical_mask',['../namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891ea57e312ef77e77694201152bb86d4d616',1,'unravel']]],
-  ['vertical_5ftext_5fmask_8',['vertical_text_mask',['../namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891ea7fad10ee87e7f2bc082910dbf01578a6',1,'unravel']]],
-  ['very_5fhigh_9',['very_high',['../namespaceunravel.html#a1bffd1866c76016b12fca8eee898d73baaa4cea18ae7516f9a3c28d597055082f',1,'unravel']]],
-  ['volumedown_10',['volumedown',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca6c72ae3125b5dc64e83c7fd75a48dd64',1,'input']]],
-  ['volumeup_11',['volumeup',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca7792d8447b80620d399b18abae3a0b54',1,'input']]],
-  ['vsm_12',['VSM',['../structunravel_1_1shadow_1_1_pack_depth.html#af103fccdf5bc264be6610bfcf38b4135acd8e651fc55db80cba1e35a1c1d006f0',1,'unravel::shadow::PackDepth::VSM'],['../structunravel_1_1shadow_1_1_sm_impl.html#ac3d70dab52a882df67395d0b7733e2a2aaf280ff202d2659a6f1ddf96d5569ab8',1,'unravel::shadow::SmImpl::VSM']]],
-  ['vsm_13',['vsm',['../namespaceunravel.html#af790b5367b6badc34e905f3741bfd909a022f238984fe564364b887c644f9d57c',1,'unravel::vsm'],['../namespaceunravel.html#a5b28574df53fa0b3d46e738923f90a52a022f238984fe564364b887c644f9d57c',1,'unravel::vsm']]]
+  ['vertical_5fbillboard_7',['vertical_billboard',['../namespaceunravel_1_1ps__soa.html#ace677b872e5f6eb03ff6cfe2299a3b7ca56be3071a636198e6ad77987aabccf01',1,'unravel::ps_soa']]],
+  ['vertical_5fmask_8',['vertical_mask',['../namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891ea57e312ef77e77694201152bb86d4d616',1,'unravel']]],
+  ['vertical_5ftext_5fmask_9',['vertical_text_mask',['../namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891ea7fad10ee87e7f2bc082910dbf01578a6',1,'unravel']]],
+  ['verticalbillboard_10',['VerticalBillboard',['../struct_render_mode.html#acd74048063ede8d5297be5a677f01c4da556072394c30e460828636f6db6f2603',1,'RenderMode']]],
+  ['very_5fhigh_11',['very_high',['../namespaceunravel.html#a1bffd1866c76016b12fca8eee898d73baaa4cea18ae7516f9a3c28d597055082f',1,'unravel']]],
+  ['volumedown_12',['volumedown',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca6c72ae3125b5dc64e83c7fd75a48dd64',1,'input']]],
+  ['volumetric_13',['volumetric',['../classunravel_1_1skylight__component.html#aaa37d982c8cbefe4da2e4d69f3f4f67aa73308b64b7f54ef79a2e055b86944f4b',1,'unravel::skylight_component']]],
+  ['volumeup_14',['volumeup',['../namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca7792d8447b80620d399b18abae3a0b54',1,'input']]],
+  ['vsm_15',['VSM',['../structunravel_1_1shadow_1_1_pack_depth.html#af103fccdf5bc264be6610bfcf38b4135acd8e651fc55db80cba1e35a1c1d006f0',1,'unravel::shadow::PackDepth::VSM'],['../structunravel_1_1shadow_1_1_sm_impl.html#ac3d70dab52a882df67395d0b7733e2a2aaf280ff202d2659a6f1ddf96d5569ab8',1,'unravel::shadow::SmImpl::VSM']]],
+  ['vsm_16',['vsm',['../namespaceunravel.html#af790b5367b6badc34e905f3741bfd909a022f238984fe564364b887c644f9d57c',1,'unravel::vsm'],['../namespaceunravel.html#a5b28574df53fa0b3d46e738923f90a52a022f238984fe564364b887c644f9d57c',1,'unravel::vsm']]]
 ];

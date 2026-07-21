@@ -114,10 +114,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4be818a83d7683ec4f1e34c4f58fcd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b0ba7590c9866bc259e3c7c61d7ed2d" id="r_a6b0ba7590c9866bc259e3c7c61d7ed2d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b0ba7590c9866bc259e3c7c61d7ed2d">can_redo</a> () const -&gt; bool</td></tr>
 <tr class="separator:a6b0ba7590c9866bc259e3c7c61d7ed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af690a6cf2b00558269631d719a126457" id="r_af690a6cf2b00558269631d719a126457"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af690a6cf2b00558269631d719a126457">undo</a> ()</td></tr>
-<tr class="separator:af690a6cf2b00558269631d719a126457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bd958dbe446d7908cc4530489875aae" id="r_a0bd958dbe446d7908cc4530489875aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bd958dbe446d7908cc4530489875aae">redo</a> ()</td></tr>
-<tr class="separator:a0bd958dbe446d7908cc4530489875aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d9bf934754b64cddedf3df0676bff0" id="r_a36d9bf934754b64cddedf3df0676bff0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36d9bf934754b64cddedf3df0676bff0">undo</a> () -&gt; std::shared_ptr&lt; <a class="el" href="structunravel_1_1editing__action__t.html">editing_action_t</a> &gt;</td></tr>
+<tr class="separator:a36d9bf934754b64cddedf3df0676bff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f57ad657ece5867f31674d052e25e3d" id="r_a1f57ad657ece5867f31674d052e25e3d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f57ad657ece5867f31674d052e25e3d">redo</a> () -&gt; std::shared_ptr&lt; <a class="el" href="structunravel_1_1editing__action__t.html">editing_action_t</a> &gt;</td></tr>
+<tr class="separator:a1f57ad657ece5867f31674d052e25e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa743bceabf8fef1e0e78439e4196c203" id="r_aa743bceabf8fef1e0e78439e4196c203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa743bceabf8fef1e0e78439e4196c203">clear</a> ()</td></tr>
 <tr class="separator:aa743bceabf8fef1e0e78439e4196c203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -127,6 +127,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae47ff151d2336ba4330fcac094677083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95ad07c0da61e4cb6cd468c04fed7e7d" id="r_a95ad07c0da61e4cb6cd468c04fed7e7d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95ad07c0da61e4cb6cd468c04fed7e7d">current_index</a> {0}</td></tr>
 <tr class="separator:a95ad07c0da61e4cb6cd468c04fed7e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83713e825b0dd115c93392d8fc94df88" id="r_a83713e825b0dd115c93392d8fc94df88"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83713e825b0dd115c93392d8fc94df88">last_action_name</a></td></tr>
+<tr class="separator:a83713e825b0dd115c93392d8fc94df88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae868321aa9948013a04c106f4db1331" id="r_aae868321aa9948013a04c106f4db1331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae868321aa9948013a04c106f4db1331">last_action_elapsed_time</a> {}</td></tr>
+<tr class="separator:aae868321aa9948013a04c106f4db1331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -185,7 +189,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="undo__redo__stack_8cpp_source.html#l00102">102</a> of file <a class="el" href="undo__redo__stack_8cpp_source.html">undo_redo_stack.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="undo__redo__stack_8cpp_source.html#l00110">110</a> of file <a class="el" href="undo__redo__stack_8cpp_source.html">undo_redo_stack.cpp</a>.</p>
 
 </div>
 </div>
@@ -208,36 +212,36 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0bd958dbe446d7908cc4530489875aae" name="a0bd958dbe446d7908cc4530489875aae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bd958dbe446d7908cc4530489875aae">&#9670;&#160;</a></span>redo()</h2>
+<a id="a1f57ad657ece5867f31674d052e25e3d" name="a1f57ad657ece5867f31674d052e25e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f57ad657ece5867f31674d052e25e3d">&#9670;&#160;</a></span>redo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unravel::undo_redo_stack::redo </td>
+          <td class="memname">auto unravel::undo_redo_stack::redo </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> -&gt; std::shared_ptr&lt;<a class="el" href="structunravel_1_1editing__action__t.html">editing_action_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="undo__redo__stack_8cpp_source.html#l00081">81</a> of file <a class="el" href="undo__redo__stack_8cpp_source.html">undo_redo_stack.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="undo__redo__stack_8cpp_source.html#l00085">85</a> of file <a class="el" href="undo__redo__stack_8cpp_source.html">undo_redo_stack.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af690a6cf2b00558269631d719a126457" name="af690a6cf2b00558269631d719a126457"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af690a6cf2b00558269631d719a126457">&#9670;&#160;</a></span>undo()</h2>
+<a id="a36d9bf934754b64cddedf3df0676bff0" name="a36d9bf934754b64cddedf3df0676bff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d9bf934754b64cddedf3df0676bff0">&#9670;&#160;</a></span>undo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unravel::undo_redo_stack::undo </td>
+          <td class="memname">auto unravel::undo_redo_stack::undo </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> -&gt; std::shared_ptr&lt;<a class="el" href="structunravel_1_1editing__action__t.html">editing_action_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -276,6 +280,38 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="undo__redo__stack_8h_source.html#l00013">13</a> of file <a class="el" href="undo__redo__stack_8h_source.html">undo_redo_stack.h</a>.</p>
+
+</div>
+</div>
+<a id="aae868321aa9948013a04c106f4db1331" name="aae868321aa9948013a04c106f4db1331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae868321aa9948013a04c106f4db1331">&#9670;&#160;</a></span>last_action_elapsed_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> unravel::undo_redo_stack::last_action_elapsed_time {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="undo__redo__stack_8h_source.html#l00015">15</a> of file <a class="el" href="undo__redo__stack_8h_source.html">undo_redo_stack.h</a>.</p>
+
+</div>
+</div>
+<a id="a83713e825b0dd115c93392d8fc94df88" name="a83713e825b0dd115c93392d8fc94df88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83713e825b0dd115c93392d8fc94df88">&#9670;&#160;</a></span>last_action_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string unravel::undo_redo_stack::last_action_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="undo__redo__stack_8h_source.html#l00014">14</a> of file <a class="el" href="undo__redo__stack_8h_source.html">undo_redo_stack.h</a>.</p>
 
 </div>
 </div>

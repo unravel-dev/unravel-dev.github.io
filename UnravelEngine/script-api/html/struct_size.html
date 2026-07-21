@@ -104,38 +104,58 @@ $(function(){initNavTree('struct_size.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">Size&lt; T &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a size with width and height components.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9e4ec030b91631e7d1eb9dab668faf6" id="r_aa9e4ec030b91631e7d1eb9dab668faf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9e4ec030b91631e7d1eb9dab668faf6">Size</a> (T width, T height)</td></tr>
+<tr class="memdesc:aa9e4ec030b91631e7d1eb9dab668faf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="struct_size.html" title="Represents a size with width and height components.">Size</a> with the specified width and height.  <br /></td></tr>
 <tr class="separator:aa9e4ec030b91631e7d1eb9dab668faf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38d6c7585a47f03fbd61b33566f2a43d" id="r_a38d6c7585a47f03fbd61b33566f2a43d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38d6c7585a47f03fbd61b33566f2a43d">IsValid</a> ()</td></tr>
+<tr class="memdesc:a38d6c7585a47f03fbd61b33566f2a43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the size is valid (both width and height are not default values).  <br /></td></tr>
 <tr class="separator:a38d6c7585a47f03fbd61b33566f2a43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4674e7ff11701855444579d3c9796b7d" id="r_a4674e7ff11701855444579d3c9796b7d"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4674e7ff11701855444579d3c9796b7d">Equals</a> (object obj)</td></tr>
+<tr class="memdesc:a4674e7ff11701855444579d3c9796b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given object is equal to this size.  <br /></td></tr>
 <tr class="separator:a4674e7ff11701855444579d3c9796b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32f352629783b49ea1dc3df98b5c6a86" id="r_a32f352629783b49ea1dc3df98b5c6a86"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f352629783b49ea1dc3df98b5c6a86">GetHashCode</a> ()</td></tr>
+<tr class="memdesc:a32f352629783b49ea1dc3df98b5c6a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hash code for this instance.  <br /></td></tr>
 <tr class="separator:a32f352629783b49ea1dc3df98b5c6a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a58b0c7070c569cc82726e1524a6f0860" id="r_a58b0c7070c569cc82726e1524a6f0860"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58b0c7070c569cc82726e1524a6f0860">operator==</a> (<a class="el" href="struct_size.html">Size</a>&lt; T &gt; a, <a class="el" href="struct_size.html">Size</a>&lt; T &gt; b)</td></tr>
+<tr class="memdesc:a58b0c7070c569cc82726e1524a6f0860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether two sizes are equal.  <br /></td></tr>
 <tr class="separator:a58b0c7070c569cc82726e1524a6f0860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42029900f76d7b01b02170a967fa5dac" id="r_a42029900f76d7b01b02170a967fa5dac"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42029900f76d7b01b02170a967fa5dac">operator!=</a> (<a class="el" href="struct_size.html">Size</a>&lt; T &gt; a, <a class="el" href="struct_size.html">Size</a>&lt; T &gt; b)</td></tr>
+<tr class="memdesc:a42029900f76d7b01b02170a967fa5dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether two sizes are not equal.  <br /></td></tr>
 <tr class="separator:a42029900f76d7b01b02170a967fa5dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81d18c186a2d50c312691664b9da63fe" id="r_a81d18c186a2d50c312691664b9da63fe"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81d18c186a2d50c312691664b9da63fe">operator&lt;</a> (<a class="el" href="struct_size.html">Size</a>&lt; T &gt; a, <a class="el" href="struct_size.html">Size</a>&lt; T &gt; b)</td></tr>
+<tr class="memdesc:a81d18c186a2d50c312691664b9da63fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the first size is less than the second size.  <br /></td></tr>
 <tr class="separator:a81d18c186a2d50c312691664b9da63fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a587fd84e2c84c7c80b4f15b4029af69c" id="r_a587fd84e2c84c7c80b4f15b4029af69c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a587fd84e2c84c7c80b4f15b4029af69c">operator&gt;</a> (<a class="el" href="struct_size.html">Size</a>&lt; T &gt; a, <a class="el" href="struct_size.html">Size</a>&lt; T &gt; b)</td></tr>
+<tr class="memdesc:a587fd84e2c84c7c80b4f15b4029af69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the first size is greater than the second size.  <br /></td></tr>
 <tr class="separator:a587fd84e2c84c7c80b4f15b4029af69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa4b8cd3f9b041e5870b1a7585ae9f193" id="r_aa4b8cd3f9b041e5870b1a7585ae9f193"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4b8cd3f9b041e5870b1a7585ae9f193">Width</a></td></tr>
+<tr class="memdesc:aa4b8cd3f9b041e5870b1a7585ae9f193"><td class="mdescLeft">&#160;</td><td class="mdescRight">The width component.  <br /></td></tr>
 <tr class="separator:aa4b8cd3f9b041e5870b1a7585ae9f193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4c899390c8a61b81d0e3d6d5413e7a5" id="r_af4c899390c8a61b81d0e3d6d5413e7a5"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4c899390c8a61b81d0e3d6d5413e7a5">Height</a></td></tr>
+<tr class="memdesc:af4c899390c8a61b81d0e3d6d5413e7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height component.  <br /></td></tr>
 <tr class="separator:af4c899390c8a61b81d0e3d6d5413e7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="typeconstraint">
+<div class="textblock"><p>Represents a size with width and height components. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the width and height components, must implement IComparable&lt;T&gt;.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="typeconstraint">
 <dl><dt><b>Type Constraints</b></dt><dd>
 <table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IComparable&lt;T&gt;</em></td><td>&#160;</td></tr>
@@ -143,8 +163,6 @@ Public Attributes</h2></td></tr>
 </dd>
 </dl>
 </div>
-
-<p class="definition">Definition at line <a class="el" href="_constructs_8cs_source.html#l00008">8</a> of file <a class="el" href="_constructs_8cs_source.html">Constructs.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa9e4ec030b91631e7d1eb9dab668faf6" name="aa9e4ec030b91631e7d1eb9dab668faf6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9e4ec030b91631e7d1eb9dab668faf6">&#9670;&#160;</a></span>Size()</h2>
@@ -165,7 +183,14 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_constructs_8cs_source.html#l00014">14</a> of file <a class="el" href="_constructs_8cs_source.html">Constructs.cs</a>.</p>
+<p>Creates a new <a class="el" href="struct_size.html" title="Represents a size with width and height components.">Size</a> with the specified width and height. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>The width.</td></tr>
+    <tr><td class="paramname">height</td><td>The height.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -185,6 +210,15 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns true if the given object is equal to this size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>The object to compare with the current instance.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the given object is equal to this size; otherwise, false.</dd></dl>
+
 </div>
 </div>
 <a id="a32f352629783b49ea1dc3df98b5c6a86" name="a32f352629783b49ea1dc3df98b5c6a86"></a>
@@ -202,6 +236,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the hash code for this instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>A 32-bit signed integer that is the hash code for this instance.</dd></dl>
+
 </div>
 </div>
 <a id="a38d6c7585a47f03fbd61b33566f2a43d" name="a38d6c7585a47f03fbd61b33566f2a43d"></a>
@@ -218,6 +255,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Determines whether the size is valid (both width and height are not default values). </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the size is valid; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -248,6 +288,16 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Determines whether two sizes are not equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first size.</td></tr>
+    <tr><td class="paramname">b</td><td>The second size.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the sizes are not equal; otherwise, false.</dd></dl>
+
 </div>
 </div>
 <a id="a81d18c186a2d50c312691664b9da63fe" name="a81d18c186a2d50c312691664b9da63fe"></a>
@@ -277,7 +327,15 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_constructs_8cs_source.html#l00032">32</a> of file <a class="el" href="_constructs_8cs_source.html">Constructs.cs</a>.</p>
+<p>Determines whether the first size is less than the second size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first size.</td></tr>
+    <tr><td class="paramname">b</td><td>The second size.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a is less than b; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -308,6 +366,16 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Determines whether two sizes are equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first size.</td></tr>
+    <tr><td class="paramname">b</td><td>The second size.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the sizes are equal; otherwise, false.</dd></dl>
+
 </div>
 </div>
 <a id="a587fd84e2c84c7c80b4f15b4029af69c" name="a587fd84e2c84c7c80b4f15b4029af69c"></a>
@@ -337,7 +405,15 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_constructs_8cs_source.html#l00038">38</a> of file <a class="el" href="_constructs_8cs_source.html">Constructs.cs</a>.</p>
+<p>Determines whether the first size is greater than the second size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first size.</td></tr>
+    <tr><td class="paramname">b</td><td>The second size.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a is greater than b; otherwise, false.</dd></dl>
 
 </div>
 </div>
@@ -354,7 +430,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_constructs_8cs_source.html#l00012">12</a> of file <a class="el" href="_constructs_8cs_source.html">Constructs.cs</a>.</p>
+<p>The height component. </p>
 
 </div>
 </div>
@@ -370,12 +446,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_constructs_8cs_source.html#l00011">11</a> of file <a class="el" href="_constructs_8cs_source.html">Constructs.cs</a>.</p>
+<p>The width component. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/math/<a class="el" href="_constructs_8cs_source.html">Constructs.cs</a></li>
+<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/math/<a class="el" href="_constructs_8cs.html">Constructs.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

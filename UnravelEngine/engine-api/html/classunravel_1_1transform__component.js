@@ -1,5 +1,6 @@
 var classunravel_1_1transform__component =
 [
+    [ "dirty_ids", "structunravel_1_1transform__component_1_1dirty__ids.html", null ],
     [ "flags_t", "classunravel_1_1transform__component.html#a998763760907ffcaa5921cef206a3849", null ],
     [ "_clear_relationships", "classunravel_1_1transform__component.html#a65db558653ad2e355490e94406ca22f9", null ],
     [ "get_children", "classunravel_1_1transform__component.html#af51c6e12d77ee473cdab8335074a3189", null ],
@@ -30,6 +31,7 @@ var classunravel_1_1transform__component =
     [ "is_dirty", "classunravel_1_1transform__component.html#a57a4acda8f209468c225d2db398d5e10", null ],
     [ "look_at", "classunravel_1_1transform__component.html#a288c705813846aaea70fe916db07c761", null ],
     [ "look_at", "classunravel_1_1transform__component.html#aa1ca682a58b80ca763cc0cc31ae1e31d", null ],
+    [ "mark_consumers_dirty", "classunravel_1_1transform__component.html#a9dcd62892e3bd310d4c70dd76ebb9159", null ],
     [ "move_by_global", "classunravel_1_1transform__component.html#a5e989c8808916e5483f060ea5cb6a8fb", null ],
     [ "move_by_local", "classunravel_1_1transform__component.html#a9710f89cd31f7c453c9594e7c99c238e", null ],
     [ "reset_position_global", "classunravel_1_1transform__component.html#a1776749af65b4c3ba9eafe1dbe6e5ac7", null ],

@@ -97,6 +97,7 @@ $(function(){initNavTree('classunravel_1_1particle__emitter__component.html','')
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classunravel_1_1particle__emitter__component-members.html">List of all members</a>  </div>
@@ -104,7 +105,7 @@ $(function(){initNavTree('classunravel_1_1particle__emitter__component.html','')
 </div><!--header-->
 <div class="contents">
 
-<p>Component that wraps particle system emitter functionality.  
+<p>Component that wraps the soa particle system emitter.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="particle__emitter__component_8h_source.html">particle_emitter_component.h</a>&gt;</code></p>
@@ -120,40 +121,57 @@ Inheritance diagram for unravel::particle_emitter_component:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a250ec7602bad6767b4879fc3cc379a86" id="r_a250ec7602bad6767b4879fc3cc379a86"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a250ec7602bad6767b4879fc3cc379a86">culling_mode</a> : uint8_t { <a class="el" href="#a250ec7602bad6767b4879fc3cc379a86af4b522558c2433c75fd45f45540212c7">always_simulate</a>
+, <a class="el" href="#a250ec7602bad6767b4879fc3cc379a86a9fb36d0942acb29f74d0ec3c92e220fa">renderer_based</a>
+ }</td></tr>
+<tr class="separator:a250ec7602bad6767b4879fc3cc379a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_structunravel_1_1component__crtp"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_structunravel_1_1component__crtp')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structunravel_1_1component__crtp.html">unravel::component_crtp&lt; particle_emitter_component, owned_component &gt;</a></td></tr>
+<tr class="memitem:ae56fdc9177cb583da8be567eb17b4033 inherit pub_types_structunravel_1_1component__crtp" id="r_ae56fdc9177cb583da8be567eb17b4033"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1component__crtp.html#ae56fdc9177cb583da8be567eb17b4033">base</a></td></tr>
+<tr class="separator:ae56fdc9177cb583da8be567eb17b4033 inherit pub_types_structunravel_1_1component__crtp"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5d00a5f6fcdff4d3cb0afe5bece7d98d" id="r_a5d00a5f6fcdff4d3cb0afe5bece7d98d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d00a5f6fcdff4d3cb0afe5bece7d98d">set_enabled</a> (bool enabled)</td></tr>
-<tr class="memdesc:a5d00a5f6fcdff4d3cb0afe5bece7d98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the emitter is enabled.  <br /></td></tr>
+<tr class="memitem:a5d00a5f6fcdff4d3cb0afe5bece7d98d" id="r_a5d00a5f6fcdff4d3cb0afe5bece7d98d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d00a5f6fcdff4d3cb0afe5bece7d98d">set_enabled</a> (bool <a class="el" href="volume__resolver_8cpp.html#a8740ba80e30dd75e71d09fa1dcf04f3d">enabled</a>)</td></tr>
 <tr class="separator:a5d00a5f6fcdff4d3cb0afe5bece7d98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880b3ffb503d90c3d68057dc24b648e7" id="r_a880b3ffb503d90c3d68057dc24b648e7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a880b3ffb503d90c3d68057dc24b648e7">is_enabled</a> () const -&gt; bool</td></tr>
-<tr class="memdesc:a880b3ffb503d90c3d68057dc24b648e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the emitter is enabled.  <br /></td></tr>
 <tr class="separator:a880b3ffb503d90c3d68057dc24b648e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4c65264369bd152e05f6556868a1f7" id="r_a6b4c65264369bd152e05f6556868a1f7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b4c65264369bd152e05f6556868a1f7">get_emitter_handle</a> () const -&gt; <a class="el" href="struct_emitter_handle.html">EmitterHandle</a></td></tr>
-<tr class="memdesc:a6b4c65264369bd152e05f6556868a1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the emitter handle.  <br /></td></tr>
-<tr class="separator:a6b4c65264369bd152e05f6556868a1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18086c1864e19f0379fe602ddef3e3b1" id="r_a18086c1864e19f0379fe602ddef3e3b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18086c1864e19f0379fe602ddef3e3b1">set_shape</a> (<a class="el" href="struct_emitter_shape.html#aa8daa104ec6c78ecccb70a4d8aebbaf5">EmitterShape::Enum</a> <a class="el" href="namespaceunravel.html#acec4ffb55357d08580b8bf2a1057532fa8c73a98a300905900337f535531dfca6">shape</a>)</td></tr>
-<tr class="memdesc:a18086c1864e19f0379fe602ddef3e3b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the emitter shape.  <br /></td></tr>
-<tr class="separator:a18086c1864e19f0379fe602ddef3e3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a850b8dc24090f7305862a8a966ec3fd4" id="r_a850b8dc24090f7305862a8a966ec3fd4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a850b8dc24090f7305862a8a966ec3fd4">get_shape</a> () const -&gt; <a class="el" href="struct_emitter_shape.html#aa8daa104ec6c78ecccb70a4d8aebbaf5">EmitterShape::Enum</a></td></tr>
-<tr class="memdesc:a850b8dc24090f7305862a8a966ec3fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the emitter shape.  <br /></td></tr>
-<tr class="separator:a850b8dc24090f7305862a8a966ec3fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61e9624be02ef8fc665ed209b09e185f" id="r_a61e9624be02ef8fc665ed209b09e185f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61e9624be02ef8fc665ed209b09e185f">set_direction</a> (<a class="el" href="struct_emitter_direction.html#a77d3f542ad685b272afcc109536a3474">EmitterDirection::Enum</a> direction)</td></tr>
-<tr class="memdesc:a61e9624be02ef8fc665ed209b09e185f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the emitter direction.  <br /></td></tr>
-<tr class="separator:a61e9624be02ef8fc665ed209b09e185f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e6df37730b7d7e0e09d25c9bea21aa" id="r_a91e6df37730b7d7e0e09d25c9bea21aa"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91e6df37730b7d7e0e09d25c9bea21aa">get_direction</a> () const -&gt; <a class="el" href="struct_emitter_direction.html#a77d3f542ad685b272afcc109536a3474">EmitterDirection::Enum</a></td></tr>
-<tr class="memdesc:a91e6df37730b7d7e0e09d25c9bea21aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the emitter direction.  <br /></td></tr>
-<tr class="separator:a91e6df37730b7d7e0e09d25c9bea21aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8e1770e25b88311fb6a188febd41cc" id="r_acf8e1770e25b88311fb6a188febd41cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf8e1770e25b88311fb6a188febd41cc">set_culling_mode</a> (<a class="el" href="#a250ec7602bad6767b4879fc3cc379a86">culling_mode</a> mode)</td></tr>
+<tr class="separator:acf8e1770e25b88311fb6a188febd41cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22285158d4aebcb7d16c349e07b7ce5f" id="r_a22285158d4aebcb7d16c349e07b7ce5f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22285158d4aebcb7d16c349e07b7ce5f">get_culling_mode</a> () const -&gt; <a class="el" href="#a250ec7602bad6767b4879fc3cc379a86">culling_mode</a></td></tr>
+<tr class="separator:a22285158d4aebcb7d16c349e07b7ce5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e3258b510fe3ef3b478f94537a7ce9" id="r_a99e3258b510fe3ef3b478f94537a7ce9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99e3258b510fe3ef3b478f94537a7ce9">set_last_render_frame</a> (uint64_t <a class="el" href="graphics_8cpp.html#a2756e49c974b080f5cfa99ebdc5067fe">frame</a>)</td></tr>
+<tr class="separator:a99e3258b510fe3ef3b478f94537a7ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ccffed815988f8c3f7421c40a292b2" id="r_af0ccffed815988f8c3f7421c40a292b2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0ccffed815988f8c3f7421c40a292b2">get_last_render_frame</a> () const noexcept -&gt; uint64_t</td></tr>
+<tr class="separator:af0ccffed815988f8c3f7421c40a292b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce9a292df4215829c15299b3fc21fdd" id="r_a0ce9a292df4215829c15299b3fc21fdd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ce9a292df4215829c15299b3fc21fdd">is_newly_created</a> () const noexcept -&gt; bool</td></tr>
+<tr class="separator:a0ce9a292df4215829c15299b3fc21fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d5195858e68f127c78aec2deba33f4" id="r_a71d5195858e68f127c78aec2deba33f4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71d5195858e68f127c78aec2deba33f4">was_used_last_frame</a> () const noexcept -&gt; bool</td></tr>
+<tr class="separator:a71d5195858e68f127c78aec2deba33f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ebc4ac92947ff023e7635ce8d665923" id="r_a2ebc4ac92947ff023e7635ce8d665923"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ebc4ac92947ff023e7635ce8d665923">get_emitter_handle</a> () const -&gt; <a class="el" href="structunravel_1_1ps__soa_1_1emitter__handle.html">ps_soa::emitter_handle</a></td></tr>
+<tr class="separator:a2ebc4ac92947ff023e7635ce8d665923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd51bab2f3e43e3223c6f66b5aa173e" id="r_abfd51bab2f3e43e3223c6f66b5aa173e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfd51bab2f3e43e3223c6f66b5aa173e">set_shape</a> (<a class="el" href="namespaceunravel_1_1ps__soa.html#a62711aea68e203000fdf35c3660c5c80">ps_soa::emitter_shape</a> <a class="el" href="namespaceunravel.html#ae6090d5a42ed75f43c1d36c74a863e5da8c73a98a300905900337f535531dfca6">shape</a>)</td></tr>
+<tr class="separator:abfd51bab2f3e43e3223c6f66b5aa173e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7922b42ece3faa693625e63da5c6c5" id="r_a2e7922b42ece3faa693625e63da5c6c5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e7922b42ece3faa693625e63da5c6c5">get_shape</a> () const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a62711aea68e203000fdf35c3660c5c80">ps_soa::emitter_shape</a></td></tr>
+<tr class="separator:a2e7922b42ece3faa693625e63da5c6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62c1f958040a6a8cae6caa7635fd61f" id="r_af62c1f958040a6a8cae6caa7635fd61f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af62c1f958040a6a8cae6caa7635fd61f">set_direction</a> (<a class="el" href="namespaceunravel_1_1ps__soa.html#a269905f7b62ceeccf9f2b2d254e7550d">ps_soa::emitter_direction</a> direction)</td></tr>
+<tr class="separator:af62c1f958040a6a8cae6caa7635fd61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd6ee548964e88cf2ab05f5a4f966ad" id="r_aacd6ee548964e88cf2ab05f5a4f966ad"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacd6ee548964e88cf2ab05f5a4f966ad">get_direction</a> () const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a269905f7b62ceeccf9f2b2d254e7550d">ps_soa::emitter_direction</a></td></tr>
+<tr class="separator:aacd6ee548964e88cf2ab05f5a4f966ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efdf0196c316bb8de9bc578f942224d" id="r_a2efdf0196c316bb8de9bc578f942224d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2efdf0196c316bb8de9bc578f942224d">set_spawn_location</a> (<a class="el" href="namespaceunravel_1_1ps__soa.html#a90f48ae73cf9dc32371cef73578fba61">ps_soa::spawn_location</a> spawn_location)</td></tr>
+<tr class="separator:a2efdf0196c316bb8de9bc578f942224d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5b36ba9befa37ac56ee08838088ef29" id="r_ad5b36ba9befa37ac56ee08838088ef29"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5b36ba9befa37ac56ee08838088ef29">get_spawn_location</a> () const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a90f48ae73cf9dc32371cef73578fba61">ps_soa::spawn_location</a></td></tr>
+<tr class="separator:ad5b36ba9befa37ac56ee08838088ef29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb5b862b5f6526f94174b4aa6c240294" id="r_afb5b862b5f6526f94174b4aa6c240294"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb5b862b5f6526f94174b4aa6c240294">set_max_particles</a> (uint32_t max_particles)</td></tr>
-<tr class="memdesc:afb5b862b5f6526f94174b4aa6c240294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum number of particles.  <br /></td></tr>
 <tr class="separator:afb5b862b5f6526f94174b4aa6c240294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a29ccbbb058fdc53fabdfa9453ac63" id="r_a46a29ccbbb058fdc53fabdfa9453ac63"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46a29ccbbb058fdc53fabdfa9453ac63">get_max_particles</a> () const -&gt; uint32_t</td></tr>
-<tr class="memdesc:a46a29ccbbb058fdc53fabdfa9453ac63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the maximum number of particles.  <br /></td></tr>
 <tr class="separator:a46a29ccbbb058fdc53fabdfa9453ac63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5196466fa97ebaa7d58b5ad2baa8f39" id="r_ab5196466fa97ebaa7d58b5ad2baa8f39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5196466fa97ebaa7d58b5ad2baa8f39">set_emission_lifetime</a> (std::chrono::duration&lt; float &gt; lifetime)</td></tr>
 <tr class="separator:ab5196466fa97ebaa7d58b5ad2baa8f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaaede0db520a5bb5e314b18056bd53c" id="r_adaaede0db520a5bb5e314b18056bd53c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaaede0db520a5bb5e314b18056bd53c">get_emission_lifetime</a> () const -&gt; std::chrono::duration&lt; float &gt;</td></tr>
 <tr class="separator:adaaede0db520a5bb5e314b18056bd53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcfdac4604f6e0d533d8610be2f15c3a" id="r_abcfdac4604f6e0d533d8610be2f15c3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcfdac4604f6e0d533d8610be2f15c3a">set_gravity_scale</a> (float <a class="el" href="hub_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>)</td></tr>
+<tr class="memitem:abcfdac4604f6e0d533d8610be2f15c3a" id="r_abcfdac4604f6e0d533d8610be2f15c3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcfdac4604f6e0d533d8610be2f15c3a">set_gravity_scale</a> (float <a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>)</td></tr>
 <tr class="separator:abcfdac4604f6e0d533d8610be2f15c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae725f5a4c6c9a21517e25750375c7734" id="r_ae725f5a4c6c9a21517e25750375c7734"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae725f5a4c6c9a21517e25750375c7734">get_gravity_scale</a> () const -&gt; float</td></tr>
 <tr class="separator:ae725f5a4c6c9a21517e25750375c7734"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,7 +191,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7eb3add00813e6f290523e353d712fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9282c94bea1fb3eeddfd74bb9af1592" id="r_aa9282c94bea1fb3eeddfd74bb9af1592"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9282c94bea1fb3eeddfd74bb9af1592">get_force_over_lifetime</a> () const -&gt; math::vec3</td></tr>
 <tr class="separator:aa9282c94bea1fb3eeddfd74bb9af1592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81a9c4401cd48fdf741f76ad36f7c281" id="r_a81a9c4401cd48fdf741f76ad36f7c281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81a9c4401cd48fdf741f76ad36f7c281">set_emission_shape_scale</a> (const math::vec3 &amp;<a class="el" href="hub_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>)</td></tr>
+<tr class="memitem:aebe911012ea8adfcac66ccf895a36c8a" id="r_aebe911012ea8adfcac66ccf895a36c8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebe911012ea8adfcac66ccf895a36c8a">set_emission_shape_position</a> (const math::vec3 &amp;<a class="el" href="defaults_8cpp.html#a55bc5b9b40c7f612c8f73e5d3acfab00">position</a>)</td></tr>
+<tr class="separator:aebe911012ea8adfcac66ccf895a36c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15496dd592edd56599e512297c75d748" id="r_a15496dd592edd56599e512297c75d748"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15496dd592edd56599e512297c75d748">get_emission_shape_position</a> () const -&gt; math::vec3</td></tr>
+<tr class="separator:a15496dd592edd56599e512297c75d748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a9c4401cd48fdf741f76ad36f7c281" id="r_a81a9c4401cd48fdf741f76ad36f7c281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81a9c4401cd48fdf741f76ad36f7c281">set_emission_shape_scale</a> (const math::vec3 &amp;<a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>)</td></tr>
 <tr class="separator:a81a9c4401cd48fdf741f76ad36f7c281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a599dd5d289f53e592e80d087a55b94fb" id="r_a599dd5d289f53e592e80d087a55b94fb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a599dd5d289f53e592e80d087a55b94fb">get_emission_shape_scale</a> () const -&gt; math::vec3</td></tr>
 <tr class="separator:a599dd5d289f53e592e80d087a55b94fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,32 +235,60 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af2b3c52cb094ae6a76948a86fb464113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7836cadd5d39b015e961f9ba1fb89dd7" id="r_a7836cadd5d39b015e961f9ba1fb89dd7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7836cadd5d39b015e961f9ba1fb89dd7">get_scale_gradient</a> () const -&gt; const <a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt; <a class="el" href="core_2base_2basetypes_8hpp.html#ad5c2b6bc3fba4cb53cbdb8ced78a95c3">frange_t</a> &gt; &amp;</td></tr>
 <tr class="separator:a7836cadd5d39b015e961f9ba1fb89dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10479c30137f938c6c38eb881363baa4" id="r_a10479c30137f938c6c38eb881363baa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10479c30137f938c6c38eb881363baa4">set_blend_gradient</a> (const <a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt; <a class="el" href="core_2base_2basetypes_8hpp.html#ad5c2b6bc3fba4cb53cbdb8ced78a95c3">frange_t</a> &gt; &amp;gradient)</td></tr>
-<tr class="separator:a10479c30137f938c6c38eb881363baa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf2ec005a890c6c18e9407af878346ce" id="r_acf2ec005a890c6c18e9407af878346ce"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf2ec005a890c6c18e9407af878346ce">get_blend_gradient</a> () const -&gt; const <a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt; <a class="el" href="core_2base_2basetypes_8hpp.html#ad5c2b6bc3fba4cb53cbdb8ced78a95c3">frange_t</a> &gt; &amp;</td></tr>
-<tr class="separator:acf2ec005a890c6c18e9407af878346ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08358c972b9614fbd5ead17afcec5b60" id="r_a08358c972b9614fbd5ead17afcec5b60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08358c972b9614fbd5ead17afcec5b60">set_blend_multiplier</a> (float multiplier)</td></tr>
-<tr class="separator:a08358c972b9614fbd5ead17afcec5b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac46138578d090b0974b96a1017e7ad3" id="r_aac46138578d090b0974b96a1017e7ad3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac46138578d090b0974b96a1017e7ad3">get_blend_multiplier</a> () const -&gt; float</td></tr>
-<tr class="separator:aac46138578d090b0974b96a1017e7ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678c9abec157c78ee3f83122f245c78b" id="r_a678c9abec157c78ee3f83122f245c78b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a678c9abec157c78ee3f83122f245c78b">set_initial_scale_3d</a> (const math::vec3 &amp;<a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>)</td></tr>
+<tr class="separator:a678c9abec157c78ee3f83122f245c78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdbd23d1517a603a06b5d4ca2f3dab1" id="r_a4fdbd23d1517a603a06b5d4ca2f3dab1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fdbd23d1517a603a06b5d4ca2f3dab1">get_initial_scale_3d</a> () const -&gt; math::vec3</td></tr>
+<tr class="separator:a4fdbd23d1517a603a06b5d4ca2f3dab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aefdfde3465237990f909151bfa0a38" id="r_a3aefdfde3465237990f909151bfa0a38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3aefdfde3465237990f909151bfa0a38">set_opacity</a> (float opacity)</td></tr>
+<tr class="separator:a3aefdfde3465237990f909151bfa0a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a9cebfed669066d357e08a435b2a3c" id="r_af1a9cebfed669066d357e08a435b2a3c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1a9cebfed669066d357e08a435b2a3c">get_opacity</a> () const -&gt; float</td></tr>
+<tr class="separator:af1a9cebfed669066d357e08a435b2a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f784e3218f55278442513bfbe3b439" id="r_ac6f784e3218f55278442513bfbe3b439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6f784e3218f55278442513bfbe3b439">set_color_intensity</a> (float intensity)</td></tr>
+<tr class="separator:ac6f784e3218f55278442513bfbe3b439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d41a4d578bd5afe04b767a882d9532" id="r_ab4d41a4d578bd5afe04b767a882d9532"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4d41a4d578bd5afe04b767a882d9532">get_color_intensity</a> () const -&gt; float</td></tr>
+<tr class="separator:ab4d41a4d578bd5afe04b767a882d9532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0c5bca430c8d4fd415762ecb40ce8c1" id="r_ad0c5bca430c8d4fd415762ecb40ce8c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0c5bca430c8d4fd415762ecb40ce8c1">play</a> ()</td></tr>
 <tr class="separator:ad0c5bca430c8d4fd415762ecb40ce8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed483fbb491500279a828b1aedd35d4" id="r_a8ed483fbb491500279a828b1aedd35d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ed483fbb491500279a828b1aedd35d4">play_sub_emitters</a> ()</td></tr>
+<tr class="separator:a8ed483fbb491500279a828b1aedd35d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af67c85013946aa10113180ed86fe77f1" id="r_af67c85013946aa10113180ed86fe77f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af67c85013946aa10113180ed86fe77f1">stop</a> ()</td></tr>
 <tr class="separator:af67c85013946aa10113180ed86fe77f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb1f69481c7b382f4d4d47cb7ad09ce" id="r_a9eb1f69481c7b382f4d4d47cb7ad09ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eb1f69481c7b382f4d4d47cb7ad09ce">stop_sub_emitters</a> ()</td></tr>
+<tr class="separator:a9eb1f69481c7b382f4d4d47cb7ad09ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86695dd29bde2d89da03c69ddaf55f5e" id="r_a86695dd29bde2d89da03c69ddaf55f5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86695dd29bde2d89da03c69ddaf55f5e">stop_and_reset</a> ()</td></tr>
 <tr class="separator:a86695dd29bde2d89da03c69ddaf55f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9b2f285325b44adcabd1af75019596" id="r_aef9b2f285325b44adcabd1af75019596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef9b2f285325b44adcabd1af75019596">stop_and_reset_sub_emitters</a> ()</td></tr>
+<tr class="separator:aef9b2f285325b44adcabd1af75019596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8fa3445afb6e7eb3ec91be17d7ead7" id="r_a5c8fa3445afb6e7eb3ec91be17d7ead7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c8fa3445afb6e7eb3ec91be17d7ead7">pause</a> ()</td></tr>
 <tr class="separator:a5c8fa3445afb6e7eb3ec91be17d7ead7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1096370335fe8c3a549a26cf7c5028" id="r_ade1096370335fe8c3a549a26cf7c5028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade1096370335fe8c3a549a26cf7c5028">pause_sub_emitters</a> ()</td></tr>
+<tr class="separator:ade1096370335fe8c3a549a26cf7c5028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ce9774ae1e9e999bea7594285a6952f" id="r_a9ce9774ae1e9e999bea7594285a6952f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ce9774ae1e9e999bea7594285a6952f">resume</a> ()</td></tr>
 <tr class="separator:a9ce9774ae1e9e999bea7594285a6952f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab894e1eed9c121024b1c2995ec819408" id="r_ab894e1eed9c121024b1c2995ec819408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab894e1eed9c121024b1c2995ec819408">resume_sub_emitters</a> ()</td></tr>
+<tr class="separator:ab894e1eed9c121024b1c2995ec819408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1c5355b6e389c4a7324a84c26e4f0bf" id="r_aa1c5355b6e389c4a7324a84c26e4f0bf"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1c5355b6e389c4a7324a84c26e4f0bf">is_playing</a> () const -&gt; bool</td></tr>
 <tr class="separator:aa1c5355b6e389c4a7324a84c26e4f0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d2b064c58603271c02502504d8d1a81" id="r_a0d2b064c58603271c02502504d8d1a81"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d2b064c58603271c02502504d8d1a81">is_paused</a> () const -&gt; bool</td></tr>
 <tr class="separator:a0d2b064c58603271c02502504d8d1a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ad9ed6f766cac800b5d9d8d572cae8" id="r_ab1ad9ed6f766cac800b5d9d8d572cae8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1ad9ed6f766cac800b5d9d8d572cae8">is_stopped</a> () const -&gt; bool</td></tr>
+<tr class="separator:ab1ad9ed6f766cac800b5d9d8d572cae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b86f738caa11f715ae8b210e977cec5" id="r_a0b86f738caa11f715ae8b210e977cec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b86f738caa11f715ae8b210e977cec5">set_loop</a> (bool loop)</td></tr>
 <tr class="separator:a0b86f738caa11f715ae8b210e977cec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f7c33f422e8c295ab8809a15879f8d9" id="r_a4f7c33f422e8c295ab8809a15879f8d9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f7c33f422e8c295ab8809a15879f8d9">is_loop</a> () const -&gt; bool</td></tr>
 <tr class="separator:a4f7c33f422e8c295ab8809a15879f8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4bcfadbc1172748af11966b19a7717" id="r_a2d4bcfadbc1172748af11966b19a7717"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d4bcfadbc1172748af11966b19a7717">set_start_delay</a> (std::chrono::duration&lt; float &gt; delay)</td></tr>
+<tr class="separator:a2d4bcfadbc1172748af11966b19a7717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36790b17ce506ed92fface454ca5f5d5" id="r_a36790b17ce506ed92fface454ca5f5d5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36790b17ce506ed92fface454ca5f5d5">get_start_delay</a> () const -&gt; std::chrono::duration&lt; float &gt;</td></tr>
+<tr class="separator:a36790b17ce506ed92fface454ca5f5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0757a70e12195c129519bb9a792382e3" id="r_a0757a70e12195c129519bb9a792382e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0757a70e12195c129519bb9a792382e3">set_align_to_direction</a> (bool <a class="el" href="namespaceunravel.html#a5b241d7d7938bb69f6735a0ccd60891e">align</a>)</td></tr>
+<tr class="separator:a0757a70e12195c129519bb9a792382e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8b88fb1d2327063fd374ccd034862d" id="r_a9c8b88fb1d2327063fd374ccd034862d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c8b88fb1d2327063fd374ccd034862d">get_align_to_direction</a> () const -&gt; bool</td></tr>
+<tr class="separator:a9c8b88fb1d2327063fd374ccd034862d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d4ec2adcf16f0f730db1dff5992de5" id="r_ae1d4ec2adcf16f0f730db1dff5992de5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1d4ec2adcf16f0f730db1dff5992de5">set_pivot</a> (const math::vec2 &amp;pivot)</td></tr>
+<tr class="separator:ae1d4ec2adcf16f0f730db1dff5992de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa230cdfc3eed75cf9bb617ae1ad3f3" id="r_a1aa230cdfc3eed75cf9bb617ae1ad3f3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aa230cdfc3eed75cf9bb617ae1ad3f3">get_pivot</a> () const -&gt; math::vec2</td></tr>
+<tr class="separator:a1aa230cdfc3eed75cf9bb617ae1ad3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87e5aa6035252f86d8e6ce21fa1485ff" id="r_a87e5aa6035252f86d8e6ce21fa1485ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87e5aa6035252f86d8e6ce21fa1485ff">set_color_gradient</a> (const <a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt; <a class="el" href="structmath_1_1color.html">math::color</a> &gt; &amp;gradient)</td></tr>
 <tr class="separator:a87e5aa6035252f86d8e6ce21fa1485ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac087e5f6b27912fe3d9eb825a4bcbaae" id="r_ac087e5f6b27912fe3d9eb825a4bcbaae"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac087e5f6b27912fe3d9eb825a4bcbaae">get_color_gradient</a> () const -&gt; const <a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt; <a class="el" href="structmath_1_1color.html">math::color</a> &gt; &amp;</td></tr>
@@ -247,10 +297,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a76722cf07539fdfef8a6830ec22957e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87e9261325797086c81423156eee787" id="r_af87e9261325797086c81423156eee787"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af87e9261325797086c81423156eee787">get_position_easing</a> () const -&gt; bx::Easing::Enum</td></tr>
 <tr class="separator:af87e9261325797086c81423156eee787"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6806c70411fbda2f07dad81e1aa46b1f" id="r_a6806c70411fbda2f07dad81e1aa46b1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6806c70411fbda2f07dad81e1aa46b1f">set_simulation_space</a> (<a class="el" href="struct_simulation_space.html#a514e011c1be1f9cdd5247bac1141364b">SimulationSpace::Enum</a> space)</td></tr>
-<tr class="separator:a6806c70411fbda2f07dad81e1aa46b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a303710a469a29c384ffc734d90146924" id="r_a303710a469a29c384ffc734d90146924"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a303710a469a29c384ffc734d90146924">get_simulation_space</a> () const -&gt; <a class="el" href="struct_simulation_space.html#a514e011c1be1f9cdd5247bac1141364b">SimulationSpace::Enum</a></td></tr>
-<tr class="separator:a303710a469a29c384ffc734d90146924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a914d0d35b9192f5c57fa22fdac5e0f" id="r_a4a914d0d35b9192f5c57fa22fdac5e0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a914d0d35b9192f5c57fa22fdac5e0f">set_simulation_space</a> (<a class="el" href="namespaceunravel_1_1ps__soa.html#a75eae127735b4639252c85d0ca0a238d">ps_soa::simulation_space</a> space)</td></tr>
+<tr class="separator:a4a914d0d35b9192f5c57fa22fdac5e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfecaa5b5d3db2828eaacb61f8d7aeb" id="r_abbfecaa5b5d3db2828eaacb61f8d7aeb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbfecaa5b5d3db2828eaacb61f8d7aeb">get_simulation_space</a> () const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a75eae127735b4639252c85d0ca0a238d">ps_soa::simulation_space</a></td></tr>
+<tr class="separator:abbfecaa5b5d3db2828eaacb61f8d7aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722c7ef9024d351d90cef14d555638e7" id="r_a722c7ef9024d351d90cef14d555638e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a722c7ef9024d351d90cef14d555638e7">set_simulation_backend</a> (<a class="el" href="namespaceunravel_1_1ps__soa.html#a488c92e8889e6e1c1e006a4271134e54">ps_soa::particle_sim_backend</a> backend)</td></tr>
+<tr class="memdesc:a722c7ef9024d351d90cef14d555638e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU vs GPU particle pack/sim path for this emitter (artist-selectable).  <br /></td></tr>
+<tr class="separator:a722c7ef9024d351d90cef14d555638e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac160242a516a62759ceaffc8e16f9c92" id="r_ac160242a516a62759ceaffc8e16f9c92"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac160242a516a62759ceaffc8e16f9c92">get_simulation_backend</a> () const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a488c92e8889e6e1c1e006a4271134e54">ps_soa::particle_sim_backend</a></td></tr>
+<tr class="separator:ac160242a516a62759ceaffc8e16f9c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7941cc5d62b52f823f5b4a3889af019" id="r_af7941cc5d62b52f823f5b4a3889af019"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7941cc5d62b52f823f5b4a3889af019">get_num_particles</a> () const -&gt; uint32_t</td></tr>
 <tr class="separator:af7941cc5d62b52f823f5b4a3889af019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac839dc940a38403034e39172ea765df2" id="r_ac839dc940a38403034e39172ea765df2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac839dc940a38403034e39172ea765df2">get_world_bounds</a> () const -&gt; <a class="el" href="structmath_1_1bbox.html">math::bbox</a></td></tr>
@@ -261,22 +316,42 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a27cd5f913c85d5ce4d3c24d8b6631ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b2d52276afee6e8b933880bff32629" id="r_a01b2d52276afee6e8b933880bff32629"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01b2d52276afee6e8b933880bff32629">get_texture</a> () const -&gt; const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structgfx_1_1texture.html">gfx::texture</a> &gt; &amp;</td></tr>
 <tr class="separator:a01b2d52276afee6e8b933880bff32629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9434567b28e588d83e29f3874089bf68" id="r_a9434567b28e588d83e29f3874089bf68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9434567b28e588d83e29f3874089bf68">set_texture_mode</a> (<a class="el" href="namespaceunravel_1_1ps__soa.html#a0fd2e4840faa4fd7163db33414da9b32">ps_soa::texture_mode</a> mode)</td></tr>
+<tr class="separator:a9434567b28e588d83e29f3874089bf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69488f8cdb1bc2fe836ff34b05d8f6a3" id="r_a69488f8cdb1bc2fe836ff34b05d8f6a3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69488f8cdb1bc2fe836ff34b05d8f6a3">get_texture_mode</a> () const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a0fd2e4840faa4fd7163db33414da9b32">ps_soa::texture_mode</a></td></tr>
+<tr class="separator:a69488f8cdb1bc2fe836ff34b05d8f6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427469d475d30265f92227953e868ef2" id="r_a427469d475d30265f92227953e868ef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a427469d475d30265f92227953e868ef2">set_render_mode</a> (<a class="el" href="namespaceunravel_1_1ps__soa.html#ace677b872e5f6eb03ff6cfe2299a3b7c">ps_soa::render_mode</a> mode)</td></tr>
+<tr class="separator:a427469d475d30265f92227953e868ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30dc25d9ee4558d87357cee8f2a8d40e" id="r_a30dc25d9ee4558d87357cee8f2a8d40e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30dc25d9ee4558d87357cee8f2a8d40e">get_render_mode</a> () const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#ace677b872e5f6eb03ff6cfe2299a3b7c">ps_soa::render_mode</a></td></tr>
+<tr class="separator:a30dc25d9ee4558d87357cee8f2a8d40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c5f7d44414456a797ddf6e0e86ce85" id="r_a83c5f7d44414456a797ddf6e0e86ce85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83c5f7d44414456a797ddf6e0e86ce85">set_blend_mode</a> (<a class="el" href="namespaceunravel_1_1ps__soa.html#a0cc961874bbdf89cdf095e25a409ac1d">ps_soa::blend_mode</a> mode)</td></tr>
+<tr class="separator:a83c5f7d44414456a797ddf6e0e86ce85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3191d10aef9de9469bbf8191b2ce26b5" id="r_a3191d10aef9de9469bbf8191b2ce26b5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3191d10aef9de9469bbf8191b2ce26b5">get_blend_mode</a> () const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a0cc961874bbdf89cdf095e25a409ac1d">ps_soa::blend_mode</a></td></tr>
+<tr class="separator:a3191d10aef9de9469bbf8191b2ce26b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a7953ce739ab300c2c946eba1f573b" id="r_a28a7953ce739ab300c2c946eba1f573b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28a7953ce739ab300c2c946eba1f573b">set_texture_sheet_tiles</a> (math::vec2 tiles)</td></tr>
+<tr class="separator:a28a7953ce739ab300c2c946eba1f573b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b593a3736bcd1f16bbe5455e3aa1cd" id="r_a58b593a3736bcd1f16bbe5455e3aa1cd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58b593a3736bcd1f16bbe5455e3aa1cd">get_texture_sheet_tiles</a> () const -&gt; math::vec2</td></tr>
+<tr class="separator:a58b593a3736bcd1f16bbe5455e3aa1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362ef64f60bf2e971748ed941675b8cc" id="r_a362ef64f60bf2e971748ed941675b8cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a362ef64f60bf2e971748ed941675b8cc">set_texture_sheet_cycles</a> (float cycles)</td></tr>
+<tr class="separator:a362ef64f60bf2e971748ed941675b8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec92eb4ca6f02e28f66920853d54536d" id="r_aec92eb4ca6f02e28f66920853d54536d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec92eb4ca6f02e28f66920853d54536d">get_texture_sheet_cycles</a> () const -&gt; float</td></tr>
+<tr class="separator:aec92eb4ca6f02e28f66920853d54536d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493937bbfdea47d74fccffcd074a2809" id="r_a493937bbfdea47d74fccffcd074a2809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a493937bbfdea47d74fccffcd074a2809">set_texture_sheet_randomize</a> (bool randomize)</td></tr>
+<tr class="separator:a493937bbfdea47d74fccffcd074a2809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3aaa5e285a61b50831afa948ab79b6" id="r_a5a3aaa5e285a61b50831afa948ab79b6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a3aaa5e285a61b50831afa948ab79b6">get_texture_sheet_randomize</a> () const -&gt; bool</td></tr>
+<tr class="separator:a5a3aaa5e285a61b50831afa948ab79b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47dbcb5ead174e8f68d75a7f8ae43e83" id="r_a47dbcb5ead174e8f68d75a7f8ae43e83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47dbcb5ead174e8f68d75a7f8ae43e83">update_emitter</a> (const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;world_transform, <a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> dt)</td></tr>
-<tr class="memdesc:a47dbcb5ead174e8f68d75a7f8ae43e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the emitter with external transform data.  <br /></td></tr>
 <tr class="separator:a47dbcb5ead174e8f68d75a7f8ae43e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2850f14bda05ad278381ce8d65ee47bd" id="r_a2850f14bda05ad278381ce8d65ee47bd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2850f14bda05ad278381ce8d65ee47bd">get_uniforms</a> () const -&gt; const <a class="el" href="struct_emitter_uniforms.html">EmitterUniforms</a> &amp;</td></tr>
-<tr class="memdesc:a2850f14bda05ad278381ce8d65ee47bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the emitter uniforms for direct access.  <br /></td></tr>
-<tr class="separator:a2850f14bda05ad278381ce8d65ee47bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03655ad4595adbd1f78ca822078c5613" id="r_a03655ad4595adbd1f78ca822078c5613"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03655ad4595adbd1f78ca822078c5613">get_desc</a> () const -&gt; const <a class="el" href="structunravel_1_1ps__soa_1_1emitter__desc.html">ps_soa::emitter_desc</a> &amp;</td></tr>
+<tr class="separator:a03655ad4595adbd1f78ca822078c5613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3736c25b1c2b8da2a345123a1a22ee36" id="r_a3736c25b1c2b8da2a345123a1a22ee36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3736c25b1c2b8da2a345123a1a22ee36">recreate_emitter</a> ()</td></tr>
-<tr class="memdesc:a3736c25b1c2b8da2a345123a1a22ee36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreates the emitter with current shape and direction.  <br /></td></tr>
 <tr class="separator:a3736c25b1c2b8da2a345123a1a22ee36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8c663f6a270fa52bbb334037a59636" id="r_a6e8c663f6a270fa52bbb334037a59636"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e8c663f6a270fa52bbb334037a59636">reset_emitter</a> ()</td></tr>
-<tr class="memdesc:a6e8c663f6a270fa52bbb334037a59636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the emitter, clearing all particles and resetting internal state.  <br /></td></tr>
 <tr class="separator:a6e8c663f6a270fa52bbb334037a59636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classunravel_1_1owned__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classunravel_1_1owned__component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classunravel_1_1owned__component.html">unravel::owned_component</a></td></tr>
 <tr class="memitem:a0a7c504d9d2455ab7208b881fd6146da inherit pub_methods_classunravel_1_1owned__component" id="r_a0a7c504d9d2455ab7208b881fd6146da"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1owned__component.html#a0a7c504d9d2455ab7208b881fd6146da">operator=</a> (const <a class="el" href="classunravel_1_1owned__component.html">owned_component</a> &amp;other) -&gt; <a class="el" href="classunravel_1_1owned__component.html">owned_component</a> &amp;=default</td></tr>
 <tr class="separator:a0a7c504d9d2455ab7208b881fd6146da inherit pub_methods_classunravel_1_1owned__component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0c277357fed4d13144932fa1f1936e3 inherit pub_methods_classunravel_1_1owned__component" id="r_ac0c277357fed4d13144932fa1f1936e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1owned__component.html#ac0c277357fed4d13144932fa1f1936e3">set_owner</a> (entt::handle owner)</td></tr>
+<tr class="memitem:ac0c277357fed4d13144932fa1f1936e3 inherit pub_methods_classunravel_1_1owned__component" id="r_ac0c277357fed4d13144932fa1f1936e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1owned__component.html#ac0c277357fed4d13144932fa1f1936e3">set_owner</a> (entt::handle <a class="el" href="version__manager_8cpp.html#a9cda4a5b233a9922811e6143bdfed3c4">owner</a>)</td></tr>
 <tr class="memdesc:ac0c277357fed4d13144932fa1f1936e3 inherit pub_methods_classunravel_1_1owned__component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the owner of the component.  <br /></td></tr>
 <tr class="separator:ac0c277357fed4d13144932fa1f1936e3 inherit pub_methods_classunravel_1_1owned__component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaace07f27ab0539925a223b9ce28be42 inherit pub_methods_classunravel_1_1owned__component" id="r_aaace07f27ab0539925a223b9ce28be42"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1owned__component.html#aaace07f27ab0539925a223b9ce28be42">get_owner</a> () const noexcept -&gt; entt::const_handle</td></tr>
@@ -293,10 +368,8 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9cdf4937325d634bd407d62ddac0f98" id="r_ad9cdf4937325d634bd407d62ddac0f98"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9cdf4937325d634bd407d62ddac0f98">on_create_component</a> (entt::registry &amp;r, entt::entity e)</td></tr>
-<tr class="memdesc:ad9cdf4937325d634bd407d62ddac0f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the component is created.  <br /></td></tr>
 <tr class="separator:ad9cdf4937325d634bd407d62ddac0f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e74a8b2780a9cd2028e7c21eeb25cdc" id="r_a2e74a8b2780a9cd2028e7c21eeb25cdc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e74a8b2780a9cd2028e7c21eeb25cdc">on_destroy_component</a> (entt::registry &amp;r, entt::entity e)</td></tr>
-<tr class="memdesc:a2e74a8b2780a9cd2028e7c21eeb25cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the component is destroyed.  <br /></td></tr>
 <tr class="separator:a2e74a8b2780a9cd2028e7c21eeb25cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classunravel_1_1owned__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classunravel_1_1owned__component')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classunravel_1_1owned__component.html">unravel::owned_component</a></td></tr>
 <tr class="memitem:a4862e642b971be7ea17a0d8726b5f6f7 inherit pub_static_methods_classunravel_1_1owned__component" id="r_a4862e642b971be7ea17a0d8726b5f6f7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -308,9 +381,6 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_structunravel_1_1component__crtp"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_structunravel_1_1component__crtp')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structunravel_1_1component__crtp.html">unravel::component_crtp&lt; particle_emitter_component, owned_component &gt;</a></td></tr>
-<tr class="memitem:ae56fdc9177cb583da8be567eb17b4033 inherit pub_types_structunravel_1_1component__crtp" id="r_ae56fdc9177cb583da8be567eb17b4033"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1component__crtp.html#ae56fdc9177cb583da8be567eb17b4033">base</a></td></tr>
-<tr class="separator:ae56fdc9177cb583da8be567eb17b4033 inherit pub_types_structunravel_1_1component__crtp"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structunravel_1_1basic__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_structunravel_1_1basic__component')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structunravel_1_1basic__component.html">unravel::basic_component</a></td></tr>
 <tr class="memitem:a080e32dbf810d5ec3301f47661e098a1 inherit pub_attribs_structunravel_1_1basic__component" id="r_a080e32dbf810d5ec3301f47661e098a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1basic__component.html#a080e32dbf810d5ec3301f47661e098a1">eto</a> {}</td></tr>
 <tr class="memdesc:a080e32dbf810d5ec3301f47661e098a1 inherit pub_attribs_structunravel_1_1basic__component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable empty type optimizations.  <br /></td></tr>
@@ -321,45 +391,74 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3acf6172065ed6482d352f65271245e5 inherit pub_static_attribs_structunravel_1_1component__crtp"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Component that wraps particle system emitter functionality. </p>
+<div class="textblock"><p>Component that wraps the soa particle system emitter. </p>
 
-<p class="definition">Definition at line <a class="el" href="particle__emitter__component_8h_source.html#l00021">21</a> of file <a class="el" href="particle__emitter__component_8h_source.html">particle_emitter_component.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="acf2ec005a890c6c18e9407af878346ce" name="acf2ec005a890c6c18e9407af878346ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf2ec005a890c6c18e9407af878346ce">&#9670;&#160;</a></span>get_blend_gradient()</h2>
+<p class="definition">Definition at line <a class="el" href="particle__emitter__component_8h_source.html#l00019">19</a> of file <a class="el" href="particle__emitter__component_8h_source.html">particle_emitter_component.h</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a250ec7602bad6767b4879fc3cc379a86" name="a250ec7602bad6767b4879fc3cc379a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a250ec7602bad6767b4879fc3cc379a86">&#9670;&#160;</a></span>culling_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a250ec7602bad6767b4879fc3cc379a86">unravel::particle_emitter_component::culling_mode</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a250ec7602bad6767b4879fc3cc379a86af4b522558c2433c75fd45f45540212c7" name="a250ec7602bad6767b4879fc3cc379a86af4b522558c2433c75fd45f45540212c7"></a>always_simulate&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a250ec7602bad6767b4879fc3cc379a86a9fb36d0942acb29f74d0ec3c92e220fa" name="a250ec7602bad6767b4879fc3cc379a86a9fb36d0942acb29f74d0ec3c92e220fa"></a>renderer_based&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="particle__emitter__component_8h_source.html#l00022">22</a> of file <a class="el" href="particle__emitter__component_8h_source.html">particle_emitter_component.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9c8b88fb1d2327063fd374ccd034862d" name="a9c8b88fb1d2327063fd374ccd034862d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8b88fb1d2327063fd374ccd034862d">&#9670;&#160;</a></span>get_align_to_direction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::particle_emitter_component::get_blend_gradient </td>
+          <td class="memname">auto unravel::particle_emitter_component::get_align_to_direction </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt;<a class="el" href="core_2base_2basetypes_8hpp.html#ad5c2b6bc3fba4cb53cbdb8ced78a95c3">frange_t</a>&gt;&amp;</td>
+          <td> const -&gt; bool</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00281">281</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00456">456</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aac46138578d090b0974b96a1017e7ad3" name="aac46138578d090b0974b96a1017e7ad3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac46138578d090b0974b96a1017e7ad3">&#9670;&#160;</a></span>get_blend_multiplier()</h2>
+<a id="a3191d10aef9de9469bbf8191b2ce26b5" name="a3191d10aef9de9469bbf8191b2ce26b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3191d10aef9de9469bbf8191b2ce26b5">&#9670;&#160;</a></span>get_blend_mode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::particle_emitter_component::get_blend_multiplier </td>
+          <td class="memname">auto unravel::particle_emitter_component::get_blend_mode </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; float</td>
+          <td> const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a0cc961874bbdf89cdf095e25a409ac1d">ps_soa::blend_mode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00291">291</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00553">553</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -378,7 +477,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00206">206</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00217">217</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -397,7 +496,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00216">216</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00227">227</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -416,12 +515,69 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00358">358</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00477">477</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a91e6df37730b7d7e0e09d25c9bea21aa" name="a91e6df37730b7d7e0e09d25c9bea21aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91e6df37730b7d7e0e09d25c9bea21aa">&#9670;&#160;</a></span>get_direction()</h2>
+<a id="ab4d41a4d578bd5afe04b767a882d9532" name="ab4d41a4d578bd5afe04b767a882d9532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d41a4d578bd5afe04b767a882d9532">&#9670;&#160;</a></span>get_color_intensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_color_intensity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00310">310</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a22285158d4aebcb7d16c349e07b7ce5f" name="a22285158d4aebcb7d16c349e07b7ce5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22285158d4aebcb7d16c349e07b7ce5f">&#9670;&#160;</a></span>get_culling_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_culling_mode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="#a250ec7602bad6767b4879fc3cc379a86">culling_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00593">593</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a03655ad4595adbd1f78ca822078c5613" name="a03655ad4595adbd1f78ca822078c5613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03655ad4595adbd1f78ca822078c5613">&#9670;&#160;</a></span>get_desc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_desc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="structunravel_1_1ps__soa_1_1emitter__desc.html">ps_soa::emitter_desc</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00643">643</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aacd6ee548964e88cf2ab05f5a4f966ad" name="aacd6ee548964e88cf2ab05f5a4f966ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacd6ee548964e88cf2ab05f5a4f966ad">&#9670;&#160;</a></span>get_direction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -430,15 +586,12 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">auto unravel::particle_emitter_component::get_direction </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="struct_emitter_direction.html#a77d3f542ad685b272afcc109536a3474">EmitterDirection::Enum</a></td>
+          <td> const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a269905f7b62ceeccf9f2b2d254e7550d">ps_soa::emitter_direction</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the emitter direction. </p>
-<dl class="section return"><dt>Returns</dt><dd>The emitter direction. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00088">88</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00081">81</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +610,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00113">113</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00115">115</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -476,7 +629,26 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00135">135</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00136">136</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a15496dd592edd56599e512297c75d748" name="a15496dd592edd56599e512297c75d748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15496dd592edd56599e512297c75d748">&#9670;&#160;</a></span>get_emission_shape_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_emission_shape_position </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; math::vec3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00176">176</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -495,12 +667,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00175">175</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00186">186</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a6b4c65264369bd152e05f6556868a1f7" name="a6b4c65264369bd152e05f6556868a1f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4c65264369bd152e05f6556868a1f7">&#9670;&#160;</a></span>get_emitter_handle()</h2>
+<a id="a2ebc4ac92947ff023e7635ce8d665923" name="a2ebc4ac92947ff023e7635ce8d665923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebc4ac92947ff023e7635ce8d665923">&#9670;&#160;</a></span>get_emitter_handle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -509,15 +681,12 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">auto unravel::particle_emitter_component::get_emitter_handle </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="struct_emitter_handle.html">EmitterHandle</a></td>
+          <td> const -&gt; <a class="el" href="structunravel_1_1ps__soa_1_1emitter__handle.html">ps_soa::emitter_handle</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the emitter handle. </p>
-<dl class="section return"><dt>Returns</dt><dd>The emitter handle. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00060">60</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00053">53</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -536,7 +705,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00165">165</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00166">166</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -555,7 +724,53 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00123">123</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00125">125</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4fdbd23d1517a603a06b5d4ca2f3dab1" name="a4fdbd23d1517a603a06b5d4ca2f3dab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fdbd23d1517a603a06b5d4ca2f3dab1">&#9670;&#160;</a></span>get_initial_scale_3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_initial_scale_3d </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; math::vec3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00290">290</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af0ccffed815988f8c3f7421c40a292b2" name="af0ccffed815988f8c3f7421c40a292b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ccffed815988f8c3f7421c40a292b2">&#9670;&#160;</a></span>get_last_render_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_last_render_frame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; uint64_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00603">603</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -574,7 +789,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00248">248</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00258">258</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -593,7 +808,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00227">227</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00237">237</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -612,7 +827,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00237">237</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00247">247</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -631,10 +846,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the maximum number of particles. </p>
-<dl class="section return"><dt>Returns</dt><dd>Maximum particles count. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00102">102</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00105">105</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -653,7 +865,45 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00375">375</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00492">492</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af1a9cebfed669066d357e08a435b2a3c" name="af1a9cebfed669066d357e08a435b2a3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a9cebfed669066d357e08a435b2a3c">&#9670;&#160;</a></span>get_opacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_opacity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00300">300</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1aa230cdfc3eed75cf9bb617ae1ad3f3" name="a1aa230cdfc3eed75cf9bb617ae1ad3f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aa230cdfc3eed75cf9bb617ae1ad3f3">&#9670;&#160;</a></span>get_pivot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_pivot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; math::vec2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00466">466</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -672,7 +922,26 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00368">368</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00487">487</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a30dc25d9ee4558d87357cee8f2a8d40e" name="a30dc25d9ee4558d87357cee8f2a8d40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30dc25d9ee4558d87357cee8f2a8d40e">&#9670;&#160;</a></span>get_render_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_render_mode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#ace677b872e5f6eb03ff6cfe2299a3b7c">ps_soa::render_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00543">543</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -691,12 +960,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00270">270</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00280">280</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a850b8dc24090f7305862a8a966ec3fd4" name="a850b8dc24090f7305862a8a966ec3fd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a850b8dc24090f7305862a8a966ec3fd4">&#9670;&#160;</a></span>get_shape()</h2>
+<a id="a2e7922b42ece3faa693625e63da5c6c5" name="a2e7922b42ece3faa693625e63da5c6c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e7922b42ece3faa693625e63da5c6c5">&#9670;&#160;</a></span>get_shape()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -705,20 +974,36 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">auto unravel::particle_emitter_component::get_shape </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="struct_emitter_shape.html#aa8daa104ec6c78ecccb70a4d8aebbaf5">EmitterShape::Enum</a></td>
+          <td> const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a62711aea68e203000fdf35c3660c5c80">ps_soa::emitter_shape</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the emitter shape. </p>
-<dl class="section return"><dt>Returns</dt><dd>The emitter shape. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00074">74</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00067">67</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a303710a469a29c384ffc734d90146924" name="a303710a469a29c384ffc734d90146924"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a303710a469a29c384ffc734d90146924">&#9670;&#160;</a></span>get_simulation_space()</h2>
+<a id="ac160242a516a62759ceaffc8e16f9c92" name="ac160242a516a62759ceaffc8e16f9c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac160242a516a62759ceaffc8e16f9c92">&#9670;&#160;</a></span>get_simulation_backend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_simulation_backend </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a488c92e8889e6e1c1e006a4271134e54">ps_soa::particle_sim_backend</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00692">692</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abbfecaa5b5d3db2828eaacb61f8d7aeb" name="abbfecaa5b5d3db2828eaacb61f8d7aeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbfecaa5b5d3db2828eaacb61f8d7aeb">&#9670;&#160;</a></span>get_simulation_space()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -727,12 +1012,12 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">auto unravel::particle_emitter_component::get_simulation_space </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; <a class="el" href="struct_simulation_space.html#a514e011c1be1f9cdd5247bac1141364b">SimulationSpace::Enum</a></td>
+          <td> const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a75eae127735b4639252c85d0ca0a238d">ps_soa::simulation_space</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00475">475</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00678">678</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -751,7 +1036,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00185">185</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00196">196</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -770,7 +1055,45 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00195">195</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00206">206</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad5b36ba9befa37ac56ee08838088ef29" name="ad5b36ba9befa37ac56ee08838088ef29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5b36ba9befa37ac56ee08838088ef29">&#9670;&#160;</a></span>get_spawn_location()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_spawn_location </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a90f48ae73cf9dc32371cef73578fba61">ps_soa::spawn_location</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00091">91</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a36790b17ce506ed92fface454ca5f5d5" name="a36790b17ce506ed92fface454ca5f5d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36790b17ce506ed92fface454ca5f5d5">&#9670;&#160;</a></span>get_start_delay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_start_delay </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; std::chrono::duration&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00446">446</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -789,7 +1112,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00145">145</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00146">146</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -808,29 +1131,83 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00402">402</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00519">519</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a2850f14bda05ad278381ce8d65ee47bd" name="a2850f14bda05ad278381ce8d65ee47bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2850f14bda05ad278381ce8d65ee47bd">&#9670;&#160;</a></span>get_uniforms()</h2>
+<a id="a69488f8cdb1bc2fe836ff34b05d8f6a3" name="a69488f8cdb1bc2fe836ff34b05d8f6a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69488f8cdb1bc2fe836ff34b05d8f6a3">&#9670;&#160;</a></span>get_texture_mode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::particle_emitter_component::get_uniforms </td>
+          <td class="memname">auto unravel::particle_emitter_component::get_texture_mode </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="struct_emitter_uniforms.html">EmitterUniforms</a>&amp;</td>
+          <td> const -&gt; <a class="el" href="namespaceunravel_1_1ps__soa.html#a0fd2e4840faa4fd7163db33414da9b32">ps_soa::texture_mode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the emitter uniforms for direct access. </p>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the emitter uniforms. </dd></dl>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00533">533</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00436">436</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+</div>
+</div>
+<a id="aec92eb4ca6f02e28f66920853d54536d" name="aec92eb4ca6f02e28f66920853d54536d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec92eb4ca6f02e28f66920853d54536d">&#9670;&#160;</a></span>get_texture_sheet_cycles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_texture_sheet_cycles </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00573">573</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5a3aaa5e285a61b50831afa948ab79b6" name="a5a3aaa5e285a61b50831afa948ab79b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a3aaa5e285a61b50831afa948ab79b6">&#9670;&#160;</a></span>get_texture_sheet_randomize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_texture_sheet_randomize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00583">583</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a58b593a3736bcd1f16bbe5455e3aa1cd" name="a58b593a3736bcd1f16bbe5455e3aa1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b593a3736bcd1f16bbe5455e3aa1cd">&#9670;&#160;</a></span>get_texture_sheet_tiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::get_texture_sheet_tiles </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; math::vec2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00563">563</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -849,7 +1226,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00387">387</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00504">504</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -868,7 +1245,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00155">155</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00156">156</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -887,7 +1264,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00259">259</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00269">269</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -906,7 +1283,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00380">380</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00497">497</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -925,10 +1302,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks if the emitter is enabled. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if enabled, false otherwise. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00055">55</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00048">48</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -947,7 +1321,34 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00347">347</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00435">435</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0ce9a292df4215829c15299b3fc21fdd" name="a0ce9a292df4215829c15299b3fc21fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce9a292df4215829c15299b3fc21fdd">&#9670;&#160;</a></span>is_newly_created()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::is_newly_created </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00608">608</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -966,7 +1367,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00337">337</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00420">420</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -985,7 +1386,26 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00332">332</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00415">415</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab1ad9ed6f766cac800b5d9d8d572cae8" name="ab1ad9ed6f766cac800b5d9d8d572cae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ad9ed6f766cac800b5d9d8d572cae8">&#9670;&#160;</a></span>is_stopped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::is_stopped </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00425">425</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1016,16 +1436,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called when the component is created. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">r</td><td>The registry containing the component. </td></tr>
-    <tr><td class="paramname">e</td><td>The entity associated with the component. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00022">22</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00020">20</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1056,16 +1467,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called when the component is destroyed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">r</td><td>The registry containing the component. </td></tr>
-    <tr><td class="paramname">e</td><td>The entity associated with the component. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00034">34</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00029">29</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1486,26 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00316">316</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00334">334</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ade1096370335fe8c3a549a26cf7c5028" name="ade1096370335fe8c3a549a26cf7c5028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1096370335fe8c3a549a26cf7c5028">&#9670;&#160;</a></span>pause_sub_emitters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::pause_sub_emitters </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00389">389</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1524,26 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00296">296</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00315">315</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8ed483fbb491500279a828b1aedd35d4" name="a8ed483fbb491500279a828b1aedd35d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed483fbb491500279a828b1aedd35d4">&#9670;&#160;</a></span>play_sub_emitters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::play_sub_emitters </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00350">350</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1122,9 +1562,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Recreates the emitter with current shape and direction. </p>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00441">441</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00648">648</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1143,9 +1581,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Resets the emitter, clearing all particles and resetting internal state. </p>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00461">461</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00664">664</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1164,45 +1600,64 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00324">324</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00342">342</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a10479c30137f938c6c38eb881363baa4" name="a10479c30137f938c6c38eb881363baa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10479c30137f938c6c38eb881363baa4">&#9670;&#160;</a></span>set_blend_gradient()</h2>
+<a id="ab894e1eed9c121024b1c2995ec819408" name="ab894e1eed9c121024b1c2995ec819408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab894e1eed9c121024b1c2995ec819408">&#9670;&#160;</a></span>resume_sub_emitters()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unravel::particle_emitter_component::set_blend_gradient </td>
+          <td class="memname">void unravel::particle_emitter_component::resume_sub_emitters </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmath_1_1gradient.html">math::gradient</a>&lt; <a class="el" href="core_2base_2basetypes_8hpp.html#ad5c2b6bc3fba4cb53cbdb8ced78a95c3">frange_t</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>gradient</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00275">275</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00402">402</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a08358c972b9614fbd5ead17afcec5b60" name="a08358c972b9614fbd5ead17afcec5b60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08358c972b9614fbd5ead17afcec5b60">&#9670;&#160;</a></span>set_blend_multiplier()</h2>
+<a id="a0757a70e12195c129519bb9a792382e3" name="a0757a70e12195c129519bb9a792382e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0757a70e12195c129519bb9a792382e3">&#9670;&#160;</a></span>set_align_to_direction()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void unravel::particle_emitter_component::set_blend_multiplier </td>
+          <td class="memname">void unravel::particle_emitter_component::set_align_to_direction </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>multiplier</em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>align</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00286">286</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00451">451</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a83c5f7d44414456a797ddf6e0e86ce85" name="a83c5f7d44414456a797ddf6e0e86ce85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c5f7d44414456a797ddf6e0e86ce85">&#9670;&#160;</a></span>set_blend_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_blend_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel_1_1ps__soa.html#a0cc961874bbdf89cdf095e25a409ac1d">ps_soa::blend_mode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00548">548</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1221,7 +1676,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00200">200</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00211">211</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1240,7 +1695,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00211">211</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00222">222</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1259,12 +1714,50 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00352">352</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00471">471</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a61e9624be02ef8fc665ed209b09e185f" name="a61e9624be02ef8fc665ed209b09e185f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61e9624be02ef8fc665ed209b09e185f">&#9670;&#160;</a></span>set_direction()</h2>
+<a id="ac6f784e3218f55278442513bfbe3b439" name="ac6f784e3218f55278442513bfbe3b439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f784e3218f55278442513bfbe3b439">&#9670;&#160;</a></span>set_color_intensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_color_intensity </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>intensity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00305">305</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acf8e1770e25b88311fb6a188febd41cc" name="acf8e1770e25b88311fb6a188febd41cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8e1770e25b88311fb6a188febd41cc">&#9670;&#160;</a></span>set_culling_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_culling_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a250ec7602bad6767b4879fc3cc379a86">culling_mode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00588">588</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af62c1f958040a6a8cae6caa7635fd61f" name="af62c1f958040a6a8cae6caa7635fd61f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62c1f958040a6a8cae6caa7635fd61f">&#9670;&#160;</a></span>set_direction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1272,21 +1765,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void unravel::particle_emitter_component::set_direction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_emitter_direction.html#a77d3f542ad685b272afcc109536a3474">EmitterDirection::Enum</a></td>          <td class="paramname"><span class="paramname"><em>direction</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel_1_1ps__soa.html#a269905f7b62ceeccf9f2b2d254e7550d">ps_soa::emitter_direction</a></td>          <td class="paramname"><span class="paramname"><em>direction</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the emitter direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">direction</td><td>The emitter direction. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00079">79</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00072">72</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1305,7 +1790,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00108">108</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00110">110</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1809,26 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00128">128</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00130">130</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aebe911012ea8adfcac66ccf895a36c8a" name="aebe911012ea8adfcac66ccf895a36c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebe911012ea8adfcac66ccf895a36c8a">&#9670;&#160;</a></span>set_emission_shape_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_emission_shape_position </td>
+          <td>(</td>
+          <td class="paramtype">const math::vec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00171">171</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1343,7 +1847,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00170">170</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00181">181</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1362,15 +1866,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets whether the emitter is enabled. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enabled</td><td>True if enabled, false otherwise. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00050">50</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00043">43</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1389,7 +1885,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00160">160</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00161">161</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1408,7 +1904,45 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00118">118</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00120">120</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a678c9abec157c78ee3f83122f245c78b" name="a678c9abec157c78ee3f83122f245c78b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a678c9abec157c78ee3f83122f245c78b">&#9670;&#160;</a></span>set_initial_scale_3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_initial_scale_3d </td>
+          <td>(</td>
+          <td class="paramtype">const math::vec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>scale</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00285">285</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a99e3258b510fe3ef3b478f94537a7ce9" name="a99e3258b510fe3ef3b478f94537a7ce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e3258b510fe3ef3b478f94537a7ce9">&#9670;&#160;</a></span>set_last_render_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_last_render_frame </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00598">598</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1427,7 +1961,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00242">242</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00252">252</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1446,7 +1980,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00221">221</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00232">232</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1465,7 +1999,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00232">232</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00242">242</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1484,7 +2018,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00342">342</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00430">430</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1503,15 +2037,45 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the maximum number of particles. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">max_particles</td><td>Maximum particles count. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00096">96</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00093">93</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+</div>
+</div>
+<a id="a3aefdfde3465237990f909151bfa0a38" name="a3aefdfde3465237990f909151bfa0a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aefdfde3465237990f909151bfa0a38">&#9670;&#160;</a></span>set_opacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_opacity </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>opacity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00295">295</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae1d4ec2adcf16f0f730db1dff5992de5" name="ae1d4ec2adcf16f0f730db1dff5992de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1d4ec2adcf16f0f730db1dff5992de5">&#9670;&#160;</a></span>set_pivot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_pivot </td>
+          <td>(</td>
+          <td class="paramtype">const math::vec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>pivot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00461">461</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1530,7 +2094,26 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00363">363</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00482">482</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a427469d475d30265f92227953e868ef2" name="a427469d475d30265f92227953e868ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a427469d475d30265f92227953e868ef2">&#9670;&#160;</a></span>set_render_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_render_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel_1_1ps__soa.html#ace677b872e5f6eb03ff6cfe2299a3b7c">ps_soa::render_mode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00538">538</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1549,12 +2132,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00264">264</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00274">274</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a18086c1864e19f0379fe602ddef3e3b1" name="a18086c1864e19f0379fe602ddef3e3b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18086c1864e19f0379fe602ddef3e3b1">&#9670;&#160;</a></span>set_shape()</h2>
+<a id="abfd51bab2f3e43e3223c6f66b5aa173e" name="abfd51bab2f3e43e3223c6f66b5aa173e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfd51bab2f3e43e3223c6f66b5aa173e">&#9670;&#160;</a></span>set_shape()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1562,26 +2145,39 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void unravel::particle_emitter_component::set_shape </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_emitter_shape.html#aa8daa104ec6c78ecccb70a4d8aebbaf5">EmitterShape::Enum</a></td>          <td class="paramname"><span class="paramname"><em>shape</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel_1_1ps__soa.html#a62711aea68e203000fdf35c3660c5c80">ps_soa::emitter_shape</a></td>          <td class="paramname"><span class="paramname"><em>shape</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the emitter shape. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">shape</td><td>The emitter shape. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00065">65</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00058">58</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a6806c70411fbda2f07dad81e1aa46b1f" name="a6806c70411fbda2f07dad81e1aa46b1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6806c70411fbda2f07dad81e1aa46b1f">&#9670;&#160;</a></span>set_simulation_space()</h2>
+<a id="a722c7ef9024d351d90cef14d555638e7" name="a722c7ef9024d351d90cef14d555638e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722c7ef9024d351d90cef14d555638e7">&#9670;&#160;</a></span>set_simulation_backend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_simulation_backend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel_1_1ps__soa.html#a488c92e8889e6e1c1e006a4271134e54">ps_soa::particle_sim_backend</a></td>          <td class="paramname"><span class="paramname"><em>backend</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CPU vs GPU particle pack/sim path for this emitter (artist-selectable). </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00683">683</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4a914d0d35b9192f5c57fa22fdac5e0f" name="a4a914d0d35b9192f5c57fa22fdac5e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a914d0d35b9192f5c57fa22fdac5e0f">&#9670;&#160;</a></span>set_simulation_space()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1589,13 +2185,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void unravel::particle_emitter_component::set_simulation_space </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_simulation_space.html#a514e011c1be1f9cdd5247bac1141364b">SimulationSpace::Enum</a></td>          <td class="paramname"><span class="paramname"><em>space</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel_1_1ps__soa.html#a75eae127735b4639252c85d0ca0a238d">ps_soa::simulation_space</a></td>          <td class="paramname"><span class="paramname"><em>space</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00469">469</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00672">672</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1614,7 +2210,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00180">180</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00191">191</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1633,7 +2229,45 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00190">190</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00201">201</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2efdf0196c316bb8de9bc578f942224d" name="a2efdf0196c316bb8de9bc578f942224d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2efdf0196c316bb8de9bc578f942224d">&#9670;&#160;</a></span>set_spawn_location()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_spawn_location </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel_1_1ps__soa.html#a90f48ae73cf9dc32371cef73578fba61">ps_soa::spawn_location</a></td>          <td class="paramname"><span class="paramname"><em>spawn_location</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00086">86</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2d4bcfadbc1172748af11966b19a7717" name="a2d4bcfadbc1172748af11966b19a7717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4bcfadbc1172748af11966b19a7717">&#9670;&#160;</a></span>set_start_delay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_start_delay </td>
+          <td>(</td>
+          <td class="paramtype">std::chrono::duration&lt; float &gt;</td>          <td class="paramname"><span class="paramname"><em>delay</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00440">440</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1652,7 +2286,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00140">140</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00141">141</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1671,7 +2305,83 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00397">397</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00514">514</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9434567b28e588d83e29f3874089bf68" name="a9434567b28e588d83e29f3874089bf68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9434567b28e588d83e29f3874089bf68">&#9670;&#160;</a></span>set_texture_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_texture_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel_1_1ps__soa.html#a0fd2e4840faa4fd7163db33414da9b32">ps_soa::texture_mode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00528">528</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a362ef64f60bf2e971748ed941675b8cc" name="a362ef64f60bf2e971748ed941675b8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362ef64f60bf2e971748ed941675b8cc">&#9670;&#160;</a></span>set_texture_sheet_cycles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_texture_sheet_cycles </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>cycles</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00568">568</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a493937bbfdea47d74fccffcd074a2809" name="a493937bbfdea47d74fccffcd074a2809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493937bbfdea47d74fccffcd074a2809">&#9670;&#160;</a></span>set_texture_sheet_randomize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_texture_sheet_randomize </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>randomize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00578">578</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a28a7953ce739ab300c2c946eba1f573b" name="a28a7953ce739ab300c2c946eba1f573b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a7953ce739ab300c2c946eba1f573b">&#9670;&#160;</a></span>set_texture_sheet_tiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::set_texture_sheet_tiles </td>
+          <td>(</td>
+          <td class="paramtype">math::vec2</td>          <td class="paramname"><span class="paramname"><em>tiles</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00558">558</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1690,7 +2400,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00150">150</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00151">151</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1709,7 +2419,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00253">253</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00263">263</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1728,7 +2438,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00302">302</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00321">321</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1747,7 +2457,45 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00308">308</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00327">327</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aef9b2f285325b44adcabd1af75019596" name="aef9b2f285325b44adcabd1af75019596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef9b2f285325b44adcabd1af75019596">&#9670;&#160;</a></span>stop_and_reset_sub_emitters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::stop_and_reset_sub_emitters </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00376">376</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9eb1f69481c7b382f4d4d47cb7ad09ce" name="a9eb1f69481c7b382f4d4d47cb7ad09ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb1f69481c7b382f4d4d47cb7ad09ce">&#9670;&#160;</a></span>stop_sub_emitters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::particle_emitter_component::stop_sub_emitters </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00363">363</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1770,15 +2518,34 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Updates the emitter with external transform data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">world_transform</td><td>The world transform to apply to the emitter. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00621">621</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00412">412</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
+</div>
+</div>
+<a id="a71d5195858e68f127c78aec2deba33f4" name="a71d5195858e68f127c78aec2deba33f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71d5195858e68f127c78aec2deba33f4">&#9670;&#160;</a></span>was_used_last_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::particle_emitter_component::was_used_last_frame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html#l00613">613</a> of file <a class="el" href="rendering_2ecs_2components_2particle__emitter__component_8cpp_source.html">particle_emitter_component.cpp</a>.</p>
 
 </div>
 </div>

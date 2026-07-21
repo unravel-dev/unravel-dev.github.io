@@ -1,5 +1,6 @@
 var structfs_1_1watcher_1_1entry =
 [
+    [ "event_time", "structfs_1_1watcher_1_1entry.html#ac4f82bf4f7ebfb4a085c72e1c9e366e6", null ],
     [ "last_mod_time", "structfs_1_1watcher_1_1entry.html#aacf18666357ed8b53257ff6482be9cda", null ],
     [ "last_path", "structfs_1_1watcher_1_1entry.html#a474a21cede75f4190001d2701d2bac38", null ],
     [ "path", "structfs_1_1watcher_1_1entry.html#ab4b88f34e3d25fb1b58a5227eb1ab452", null ],

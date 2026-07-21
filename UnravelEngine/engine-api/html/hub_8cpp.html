@@ -104,16 +104,23 @@ $(function(){initNavTree('hub_8cpp.html',''); initResizable(true); });
 <div class="textblock"><code>#include &quot;<a class="el" href="hub_8h_source.html">hub.h</a>&quot;</code><br />
 <code>#include &quot;imgui_widgets/utils.h&quot;</code><br />
 <code>#include &lt;<a class="el" href="editor_2editor_2events_8h_source.html">editor/events.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="inspectors_8h_source.html">editor/hub/panels/inspector_panel/inspectors/inspectors.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="panels__defs_8h_source.html">panels/panels_defs.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="editing__manager_8h_source.html">editor/editing/editing_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="project__info_8h_source.html">editor/project/project_info.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="project__manager_8h_source.html">editor/system/project_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="create__scene__modal_8h_source.html">editor/editing/create_scene_modal.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="imgui__notify_8h_source.html">editor/imgui/integration/imgui_notify.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="imgui__messagebox_8h_source.html">editor/imgui/integration/imgui_messagebox.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="icons__material__design__icons_8h_source.html">editor/imgui/integration/fonts/icons/icons_material_design_icons.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2events_8h_source.html">engine/events.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="renderer_8h_source.html">engine/rendering/renderer.h</a>&gt;</code><br />
 <code>#include &lt;hpp/optional.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="version_8h_source.html">version/version.h</a>&gt;</code><br />
 <code>#include &lt;filedialog/filedialog.h&gt;</code><br />
 <code>#include &lt;imgui/imgui.h&gt;</code><br />
 <code>#include &lt;imgui_widgets/markdown.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="icons__material__design__icons_8h_source.html">editor/imgui/integration/fonts/icons/icons_material_design_icons.h</a>&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 </div>
 <p><a href="hub_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -136,7 +143,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hub_8cpp_source.html#l00024">24</a> of file <a class="el" href="hub_8cpp_source.html">hub.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hub_8cpp_source.html#l00030">30</a> of file <a class="el" href="hub_8cpp_source.html">hub.cpp</a>.</p>
 
 </div>
 </div>
@@ -152,7 +159,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hub_8cpp_source.html#l00027">27</a> of file <a class="el" href="hub_8cpp_source.html">hub.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hub_8cpp_source.html#l00033">33</a> of file <a class="el" href="hub_8cpp_source.html">hub.cpp</a>.</p>
 
 </div>
 </div>
@@ -168,7 +175,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hub_8cpp_source.html#l00025">25</a> of file <a class="el" href="hub_8cpp_source.html">hub.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hub_8cpp_source.html#l00031">31</a> of file <a class="el" href="hub_8cpp_source.html">hub.cpp</a>.</p>
 
 </div>
 </div>
@@ -184,7 +191,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hub_8cpp_source.html#l00026">26</a> of file <a class="el" href="hub_8cpp_source.html">hub.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hub_8cpp_source.html#l00032">32</a> of file <a class="el" href="hub_8cpp_source.html">hub.cpp</a>.</p>
 
 </div>
 </div>

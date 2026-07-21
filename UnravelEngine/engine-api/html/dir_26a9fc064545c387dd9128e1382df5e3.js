@@ -11,6 +11,8 @@ var dir_26a9fc064545c387dd9128e1382df5e3 =
     [ "lambda_actions.h", "lambda__actions_8h.html", "lambda__actions_8h" ],
     [ "property_actions.cpp", "property__actions_8cpp.html", null ],
     [ "property_actions.h", "property__actions_8h.html", "property__actions_8h" ],
+    [ "selection_action.cpp", "selection__action_8cpp.html", null ],
+    [ "selection_action.h", "selection__action_8h.html", "selection__action_8h" ],
     [ "transform_actions.cpp", "transform__actions_8cpp.html", null ],
     [ "transform_actions.h", "transform__actions_8h.html", "transform__actions_8h" ],
     [ "undo_redo_stack.cpp", "undo__redo__stack_8cpp.html", null ],

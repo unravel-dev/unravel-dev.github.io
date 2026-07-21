@@ -98,7 +98,8 @@ $(function(){initNavTree('asset__watcher_8h.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">asset_watcher.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -106,6 +107,7 @@ $(function(){initNavTree('asset__watcher_8h.html',''); initResizable(true); });
 <code>#include &lt;<a class="el" href="syncer_8h_source.html">filesystem/syncer.h</a>&gt;</code><br />
 <code>#include &lt;ospp/event.h&gt;</code><br />
 <code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;mutex&gt;</code><br />
 </div>
 <p><a href="asset__watcher_8h_source.html">Go to the source code of this file.</a></p>
@@ -119,6 +121,12 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a32a1fd706da7f56c8a245f3c0b57763b" id="r_a32a1fd706da7f56c8a245f3c0b57763b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a32a1fd706da7f56c8a245f3c0b57763b">unravel::on_wait_progress_t</a> = std::function&lt;void(size_t completed, size_t total, const std::string&amp; current_job)&gt;</td></tr>
+<tr class="memdesc:a32a1fd706da7f56c8a245f3c0b57763b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked after each compilation job completes during a blocking wait.  <br /></td></tr>
+<tr class="separator:a32a1fd706da7f56c8a245f3c0b57763b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

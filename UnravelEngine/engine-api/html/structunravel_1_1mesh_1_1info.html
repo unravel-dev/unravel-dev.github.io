@@ -97,6 +97,7 @@ $(function(){initNavTree('structunravel_1_1mesh_1_1info.html',''); initResizable
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structunravel_1_1mesh_1_1info-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::mesh::info Struct Reference</div></div>
@@ -105,23 +106,32 @@ $(function(){initNavTree('structunravel_1_1mesh_1_1info.html',''); initResizable
 
 <p><code>#include &lt;<a class="el" href="mesh_8h_source.html">mesh.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh_1_1info_1_1lod__info.html">lod_info</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Structure describing LOD level information. Total number of vertices.  <a href="structunravel_1_1mesh_1_1info_1_1lod__info.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aefac5baedf7665ea8c6c3b474405028d" id="r_aefac5baedf7665ea8c6c3b474405028d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefac5baedf7665ea8c6c3b474405028d">vertices</a> = 0</td></tr>
-<tr class="memdesc:aefac5baedf7665ea8c6c3b474405028d"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Total number of vertices.  <br /></td></tr>
+<tr class="memdesc:aefac5baedf7665ea8c6c3b474405028d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of triangles.  <br /></td></tr>
 <tr class="separator:aefac5baedf7665ea8c6c3b474405028d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf965d986e9d7d4a337ab3428043d8ab" id="r_aaf965d986e9d7d4a337ab3428043d8ab"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf965d986e9d7d4a337ab3428043d8ab">primitives</a> = 0</td></tr>
-<tr class="memdesc:aaf965d986e9d7d4a337ab3428043d8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of submeshes.  <br /></td></tr>
-<tr class="separator:aaf965d986e9d7d4a337ab3428043d8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbd5f9fcaa00aba0c64f2013c4fd144" id="r_a4dbd5f9fcaa00aba0c64f2013c4fd144"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dbd5f9fcaa00aba0c64f2013c4fd144">triangles</a> = 0</td></tr>
+<tr class="memdesc:a4dbd5f9fcaa00aba0c64f2013c4fd144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of submeshes.  <br /></td></tr>
+<tr class="separator:a4dbd5f9fcaa00aba0c64f2013c4fd144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5675af41977abc3dae202f10094872cd" id="r_a5675af41977abc3dae202f10094872cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5675af41977abc3dae202f10094872cd">submeshes</a> = 0</td></tr>
 <tr class="memdesc:a5675af41977abc3dae202f10094872cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of data groups(materials).  <br /></td></tr>
 <tr class="separator:a5675af41977abc3dae202f10094872cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53afb2a67148709ac316aa8aa08fcd47" id="r_a53afb2a67148709ac316aa8aa08fcd47"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53afb2a67148709ac316aa8aa08fcd47">data_groups</a> = 0</td></tr>
+<tr class="memdesc:a53afb2a67148709ac316aa8aa08fcd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about each LOD level.  <br /></td></tr>
 <tr class="separator:a53afb2a67148709ac316aa8aa08fcd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824bbfa320d95b0fd84814aca6068de2" id="r_a824bbfa320d95b0fd84814aca6068de2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structunravel_1_1mesh_1_1info_1_1lod__info.html">lod_info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a824bbfa320d95b0fd84814aca6068de2">lods</a></td></tr>
+<tr class="separator:a824bbfa320d95b0fd84814aca6068de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00336">336</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00352">352</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a53afb2a67148709ac316aa8aa08fcd47" name="a53afb2a67148709ac316aa8aa08fcd47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53afb2a67148709ac316aa8aa08fcd47">&#9670;&#160;</a></span>data_groups</h2>
@@ -135,25 +145,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00345">345</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p>Information about each LOD level. </p>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00370">370</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
-<a id="aaf965d986e9d7d4a337ab3428043d8ab" name="aaf965d986e9d7d4a337ab3428043d8ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf965d986e9d7d4a337ab3428043d8ab">&#9670;&#160;</a></span>primitives</h2>
+<a id="a824bbfa320d95b0fd84814aca6068de2" name="a824bbfa320d95b0fd84814aca6068de2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a824bbfa320d95b0fd84814aca6068de2">&#9670;&#160;</a></span>lods</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t unravel::mesh::info::primitives = 0</td>
+          <td class="memname">std::vector&lt;<a class="el" href="structunravel_1_1mesh_1_1info_1_1lod__info.html">lod_info</a>&gt; unravel::mesh::info::lods</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Total number of submeshes. </p>
-
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00341">341</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00372">372</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -171,7 +181,25 @@ Public Attributes</h2></td></tr>
 
 <p>Total number of data groups(materials). </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00343">343</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00368">368</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a id="a4dbd5f9fcaa00aba0c64f2013c4fd144" name="a4dbd5f9fcaa00aba0c64f2013c4fd144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbd5f9fcaa00aba0c64f2013c4fd144">&#9670;&#160;</a></span>triangles</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t unravel::mesh::info::triangles = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Total number of submeshes. </p>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00366">366</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -187,10 +215,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>&lt; Total number of vertices. </p>
-<p>Total number of primitives. </p>
+<p>Total number of triangles. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00339">339</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00364">364</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>

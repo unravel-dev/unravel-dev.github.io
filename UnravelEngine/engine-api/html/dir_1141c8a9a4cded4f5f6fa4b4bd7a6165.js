@@ -24,6 +24,8 @@ var dir_1141c8a9a4cded4f5f6fa4b4bd7a6165 =
     [ "inspector_physics_shape.h", "inspector__physics__shape_8h.html", "inspector__physics__shape_8h" ],
     [ "inspector_prefab_component.cpp", "inspector__prefab__component_8cpp.html", null ],
     [ "inspector_prefab_component.h", "inspector__prefab__component_8h.html", "inspector__prefab__component_8h" ],
+    [ "inspector_reflection_probe.cpp", "inspector__reflection__probe_8cpp.html", null ],
+    [ "inspector_reflection_probe.h", "inspector__reflection__probe_8h.html", "inspector__reflection__probe_8h" ],
     [ "inspector_resolution.cpp", "inspector__resolution_8cpp.html", null ],
     [ "inspector_resolution.h", "inspector__resolution_8h.html", "inspector__resolution_8h" ],
     [ "inspector_script.cpp", "inspector__script_8cpp.html", "inspector__script_8cpp" ],

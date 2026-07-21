@@ -132,17 +132,29 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a765fe4e4d692afbb280afc4008811bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skin data for this mesh.  <br /></td></tr>
 <tr class="separator:a765fe4e4d692afbb280afc4008811bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1e882fc67f28e332707b470240186f9" id="r_ab1e882fc67f28e332707b470240186f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunravel_1_1skin__bind__data.html">skin_bind_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1e882fc67f28e332707b470240186f9">skin_data</a></td></tr>
-<tr class="memdesc:ab1e882fc67f28e332707b470240186f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root node of the armature.  <br /></td></tr>
+<tr class="memdesc:ab1e882fc67f28e332707b470240186f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if skinning was baked into topology (vertex duplication + palette index encoding) during compilation.  <br /></td></tr>
 <tr class="separator:ab1e882fc67f28e332707b470240186f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf2b9136a880d9d5f3c46012138ec14" id="r_abdf2b9136a880d9d5f3c46012138ec14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdf2b9136a880d9d5f3c46012138ec14">skin_is_prepared</a> = false</td></tr>
+<tr class="memdesc:abdf2b9136a880d9d5f3c46012138ec14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bone palette bones per palette/submesh index. Used to restore palettes without running bind_skin.  <br /></td></tr>
+<tr class="separator:abdf2b9136a880d9d5f3c46012138ec14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17eab35ce6bc2c397d1e7ab3a0fea3d" id="r_ad17eab35ce6bc2c397d1e7ab3a0fea3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; uint32_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad17eab35ce6bc2c397d1e7ab3a0fea3d">bone_palette_bones</a></td></tr>
+<tr class="memdesc:ad17eab35ce6bc2c397d1e7ab3a0fea3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root node of the armature.  <br /></td></tr>
+<tr class="separator:ad17eab35ce6bc2c397d1e7ab3a0fea3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2974ffb91034bbbb30cf5d3f587b24da" id="r_a2974ffb91034bbbb30cf5d3f587b24da"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structunravel_1_1mesh_1_1armature__node.html">armature_node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2974ffb91034bbbb30cf5d3f587b24da">root_node</a> = nullptr</td></tr>
 <tr class="separator:a2974ffb91034bbbb30cf5d3f587b24da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bae76364ff5c5e3fe97545188089e20" id="r_a6bae76364ff5c5e3fe97545188089e20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmath_1_1bbox.html">math::bbox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bae76364ff5c5e3fe97545188089e20">bbox</a> {}</td></tr>
+<tr class="memdesc:a6bae76364ff5c5e3fe97545188089e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional LOD levels (LOD 1, 2, 3, ...) with simplified index buffers.  <br /></td></tr>
 <tr class="separator:a6bae76364ff5c5e3fe97545188089e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c47a329d0a71c163b9cdf280460f863" id="r_a5c47a329d0a71c163b9cdf280460f863"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structunravel_1_1mesh_1_1lod__load__data.html">lod_load_data</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c47a329d0a71c163b9cdf280460f863">lods</a></td></tr>
+<tr class="memdesc:a5c47a329d0a71c163b9cdf280460f863"><td class="mdescLeft">&#160;</td><td class="mdescRight">UIDs of default materials generated during import, indexed by data_group_id.  <br /></td></tr>
+<tr class="separator:a5c47a329d0a71c163b9cdf280460f863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc83cb6bb94c56a5a9fce06776201a5" id="r_a0cc83cb6bb94c56a5a9fce06776201a5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; hpp::uuid &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cc83cb6bb94c56a5a9fce06776201a5">default_material_uids</a></td></tr>
+<tr class="separator:a0cc83cb6bb94c56a5a9fce06776201a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Struct used for mesh construction. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00387">387</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00450">450</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a6bae76364ff5c5e3fe97545188089e20" name="a6bae76364ff5c5e3fe97545188089e20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6bae76364ff5c5e3fe97545188089e20">&#9670;&#160;</a></span>bbox</h2>
@@ -156,7 +168,61 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00408">408</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p>Additional LOD levels (LOD 1, 2, 3, ...) with simplified index buffers. </p>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00475">475</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a id="ad17eab35ce6bc2c397d1e7ab3a0fea3d" name="ad17eab35ce6bc2c397d1e7ab3a0fea3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad17eab35ce6bc2c397d1e7ab3a0fea3d">&#9670;&#160;</a></span>bone_palette_bones</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;uint32_t&gt; &gt; unravel::mesh::load_data::bone_palette_bones</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Root node of the armature. </p>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00471">471</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a id="a0cc83cb6bb94c56a5a9fce06776201a5" name="a0cc83cb6bb94c56a5a9fce06776201a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc83cb6bb94c56a5a9fce06776201a5">&#9670;&#160;</a></span>default_material_uids</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;hpp::uuid&gt; unravel::mesh::load_data::default_material_uids</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00481">481</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a id="a5c47a329d0a71c163b9cdf280460f863" name="a5c47a329d0a71c163b9cdf280460f863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c47a329d0a71c163b9cdf280460f863">&#9670;&#160;</a></span>lods</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structunravel_1_1mesh_1_1lod__load__data.html">lod_load_data</a>&gt; unravel::mesh::load_data::lods</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UIDs of default materials generated during import, indexed by data_group_id. </p>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00478">478</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -174,7 +240,7 @@ Public Attributes</h2></td></tr>
 
 <p>Skin data for this mesh. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00402">402</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00465">465</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -190,7 +256,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00406">406</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00473">473</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -206,9 +272,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Root node of the armature. </p>
+<p>True if skinning was baked into topology (vertex duplication + palette index encoding) during compilation. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00404">404</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00467">467</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+
+</div>
+</div>
+<a id="abdf2b9136a880d9d5f3c46012138ec14" name="abdf2b9136a880d9d5f3c46012138ec14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf2b9136a880d9d5f3c46012138ec14">&#9670;&#160;</a></span>skin_is_prepared</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool unravel::mesh::load_data::skin_is_prepared = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bone palette bones per palette/submesh index. Used to restore palettes without running bind_skin. </p>
+
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00469">469</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +310,7 @@ Public Attributes</h2></td></tr>
 
 <p>Total number of materials. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00400">400</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00463">463</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +328,7 @@ Public Attributes</h2></td></tr>
 
 <p>submeshes descriptions </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00398">398</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00461">461</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -262,7 +346,7 @@ Public Attributes</h2></td></tr>
 
 <p>Total number of triangles. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00396">396</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00459">459</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +364,7 @@ Public Attributes</h2></td></tr>
 
 <p>Triangle data buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00394">394</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00457">457</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -298,7 +382,7 @@ Public Attributes</h2></td></tr>
 
 <p>Total number of vertices. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00392">392</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00455">455</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>
@@ -317,7 +401,7 @@ Public Attributes</h2></td></tr>
 <p>&lt; The format of the vertex data. </p>
 <p>Vertex data buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00390">390</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mesh_8h_source.html#l00453">453</a> of file <a class="el" href="mesh_8h_source.html">mesh.h</a>.</p>
 
 </div>
 </div>

@@ -13,7 +13,7 @@ var searchData=
   ['drect_5ft_10',['drect_t',['../core_2base_2basetypes_8hpp.html#a6f010fb88904009ea8fcd3610279be8e',1,'basetypes.hpp']]],
   ['dsize_5ft_11',['dsize_t',['../core_2base_2basetypes_8hpp.html#abe0632c5fc6469ac0529a9a79632fb38',1,'basetypes.hpp']]],
   ['duraiton_5fsecs_5ft_12',['duraiton_secs_t',['../namespaceseq.html#a0e22dcf4a1568cbc0f5e49f2485da354',1,'seq']]],
-  ['duration_5ft_13',['duration_t',['../structunravel_1_1simulation.html#addc4cd806a48431b8a1b329b94aa4bb1',1,'unravel::simulation::duration_t'],['../classunravel_1_1scope__perf__timer.html#ac221d790b35034bbd3138285cb47f6a3',1,'unravel::scope_perf_timer::duration_t'],['../namespaceseq.html#ae3e776063362dc05c2feda3548631fa6',1,'seq::duration_t']]],
+  ['duration_5ft_13',['duration_t',['../structunravel_1_1simulation.html#addc4cd806a48431b8a1b329b94aa4bb1',1,'unravel::simulation::duration_t'],['../namespaceseq.html#ae3e776063362dc05c2feda3548631fa6',1,'seq::duration_t']]],
   ['dynamic_5findex_5fbuffer_5fhandle_14',['dynamic_index_buffer_handle',['../namespacegfx.html#aced2c47a08cb131f13d26070792ba0ce',1,'gfx']]],
   ['dynamic_5fvertex_5fbuffer_5fhandle_15',['dynamic_vertex_buffer_handle',['../namespacegfx.html#a4d40edbd4d6be40fa82fe4d0dbc8e8ab',1,'gfx']]]
 ];

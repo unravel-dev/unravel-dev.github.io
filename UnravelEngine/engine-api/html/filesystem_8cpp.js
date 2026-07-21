@@ -6,7 +6,7 @@ var filesystem_8cpp =
     [ "get_path_protocols", "filesystem_8cpp.html#abf3863bd92202fc955645a41d4f631c7", null ],
     [ "has_known_protocol", "filesystem_8cpp.html#a7338b8f84e0fc3f9ababf13ae78fb236", null ],
     [ "is_any_parent_path", "filesystem_8cpp.html#a9f5d3735c27d6f375c1ff41453298bb9", null ],
-    [ "is_case_insensitive", "filesystem_8cpp.html#a130b4a90f15c19d26a523ee3aef8bd25", null ],
+    [ "is_case_insensitive", "filesystem_8cpp.html#a2021ac688e2fa1be2d53e71283003d1b", null ],
     [ "read_stream", "filesystem_8cpp.html#a6d508a3b97913a55ee8553481fbb29bd", null ],
     [ "read_stream_buffer", "filesystem_8cpp.html#ae4300e30cb13e13208c69d3fdb037c3e", null ],
     [ "read_stream_buffer_str", "filesystem_8cpp.html#a336fde3b0bbedf5332db57d87e1b4f9c", null ],

@@ -6,6 +6,8 @@ var format_8cpp =
     [ "get_best_standard_format", "format_8cpp.html#a536590a6405fd4372b70d5fc828aa557", null ],
     [ "get_default_rt_sampler_flags", "format_8cpp.html#ae8330a94e2c62a8b9babf721a6c9ce33", null ],
     [ "get_format_info", "format_8cpp.html#aa16a1da14080444e8672655b4842b16c", null ],
+    [ "is_compressed_format", "format_8cpp.html#a371b51ba1d0d3fb321f15edfc82c6837", null ],
     [ "is_format_supported", "format_8cpp.html#a1370818b9ff3050c9832bc4d938fa839", null ],
+    [ "normal_map_needs_z_reconstruction", "format_8cpp.html#a4f12a12a5ed33a52348f5c8eea4b0357", null ],
     [ "to_string", "format_8cpp.html#a00f91f24de230ac751049d180838ae87", null ]
 ];

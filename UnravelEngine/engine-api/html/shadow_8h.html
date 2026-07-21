@@ -104,12 +104,14 @@ $(function(){initNavTree('shadow_8h.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">shadow.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;engine/engine_export.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;glm/gtc/type_ptr.hpp&quot;</code><br />
+<code>#include &lt;engine/engine_export.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="ecs_8h_source.html">engine/ecs/ecs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="camera_8h_source.html">engine/rendering/camera.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="light_8h_source.html">engine/rendering/light.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="batch__collector_8h_source.html">engine/rendering/batch_collector.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="model_8h_source.html">engine/rendering/model.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="pipeline_8h_source.html">engine/rendering/pipeline/pipeline.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="context_8hpp_source.html">context/context.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="gpu__program_8h_source.html">engine/rendering/gpu_program.h</a>&gt;</code><br />
@@ -166,6 +168,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1shadow_1_1adaptive__shadow__params.html">unravel::shadow::adaptive_shadow_params</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1shadow_1_1shadow__visibility__data.html">unravel::shadow::shadow_visibility_data</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1shadow_1_1shadowmap__generator.html">unravel::shadow::shadowmap_generator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shadow mapping generator with improved algorithms for high-altitude cameras.  <a href="classunravel_1_1shadow_1_1shadowmap__generator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,8 +188,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2874fe5cdd35210084393fb17d631be1" id="r_a2874fe5cdd35210084393fb17d631be1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1shadow.html#a2874fe5cdd35210084393fb17d631be1">unravel::shadow::shadow_map_models_t</a> = hpp::small_vector&lt;entt::handle&gt;</td></tr>
-<tr class="separator:a2874fe5cdd35210084393fb17d631be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f8e3c3cdd81526a65115682ed78ac4" id="r_a74f8e3c3cdd81526a65115682ed78ac4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1shadow.html#a74f8e3c3cdd81526a65115682ed78ac4">unravel::shadow::shadow_map_models_t</a> = hpp::small_vector&lt;<a class="el" href="structunravel_1_1shadow_1_1shadow__visibility__data.html">shadow_visibility_data</a>&gt;</td></tr>
+<tr class="separator:a74f8e3c3cdd81526a65115682ed78ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a7ba2c489d03760e59b046e56750d2fe0" name="a7ba2c489d03760e59b046e56750d2fe0"></a>
@@ -206,7 +210,7 @@ Typedefs</h2></td></tr>
 <div class="line">    {                                                                                                                  \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00481">481</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00527">527</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>

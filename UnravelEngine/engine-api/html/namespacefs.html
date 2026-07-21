@@ -100,7 +100,9 @@ $(function(){initNavTree('namespacefs.html',''); initResizable(true); });
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">fs Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -109,10 +111,18 @@ $(function(){initNavTree('namespacefs.html',''); initResizable(true); });
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefs_1_1detail.html">detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefs_1_1file__stream__detail.html">file_stream_detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfs_1_1cache.html">cache</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfs_1_1file__istream.html">file_istream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">stdio-backed input stream. Accepts std::ios open flags (e.g. std::ios::binary) when opening a  <a href="classfs_1_1file__istream.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfs_1_1file__ostream.html">file_ostream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">stdio-backed output stream. Accepts std::ios open flags (e.g. std::ios::binary | std::ios::app)  <a href="classfs_1_1file__ostream.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfs_1_1pattern__filter.html">pattern_filter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A filter that combines include and exclude patterns for file/directory filtering.  <a href="classfs_1_1pattern__filter.html#details">More...</a><br /></td></tr>
@@ -122,6 +132,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfs_1_1syncer.html">syncer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfs_1_1watcher.html">watcher</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfs_1_1watcher__fallback.html">watcher_fallback</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfs_1_1watcher__wtr.html">watcher_wtr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfs_1_1wildcard__pattern.html">wildcard_pattern</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wildcard pattern matcher that supports * (match any sequence) and ? (match single character)  <a href="classfs_1_1wildcard__pattern.html#details">More...</a><br /></td></tr>
@@ -138,14 +152,28 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ab2373660e384fd8c515dd5804fa9e13d" id="r_ab2373660e384fd8c515dd5804fa9e13d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2373660e384fd8c515dd5804fa9e13d">byte_array_t</a> = std::vector&lt;std::uint8_t&gt;</td></tr>
 <tr class="separator:ab2373660e384fd8c515dd5804fa9e13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aed584fcbca7597850e34bf14328366e4" id="r_aed584fcbca7597850e34bf14328366e4"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed584fcbca7597850e34bf14328366e4">file_stream_ownership</a> : std::uint8_t { <a class="el" href="#aed584fcbca7597850e34bf14328366e4a5dc4bb19391b04351f49572019c628c0">take_ownership</a>
+, <a class="el" href="#aed584fcbca7597850e34bf14328366e4ad50316d67fd970f764a50d20386ef13d">retain_ownership</a>
+ }</td></tr>
+<tr class="memdesc:aed584fcbca7597850e34bf14328366e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a file stream wrapper should fclose its FILE* on destruction.  <a href="#aed584fcbca7597850e34bf14328366e4">More...</a><br /></td></tr>
+<tr class="separator:aed584fcbca7597850e34bf14328366e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9b8c338b7375a0c1e3833f996db04fcf" id="r_a9b8c338b7375a0c1e3833f996db04fcf"><td class="memTemplParams" colspan="2">template&lt;typename Iterator  = recursive_directory_iterator&gt; </td></tr>
 <tr class="memitem:a9b8c338b7375a0c1e3833f996db04fcf"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9b8c338b7375a0c1e3833f996db04fcf">make_filtered_cache</a> (const fs::path &amp;path, const std::vector&lt; std::string &gt; &amp;includes, const std::vector&lt; std::string &gt; &amp;excludes={}, std::chrono::steady_clock::duration scan_frequency=std::chrono::milliseconds(500)) -&gt; <a class="el" href="classfs_1_1cache.html">cache</a>&lt; Iterator &gt;</td></tr>
 <tr class="memdesc:a9b8c338b7375a0c1e3833f996db04fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to create a directory cache with pattern filtering.  <br /></td></tr>
 <tr class="separator:a9b8c338b7375a0c1e3833f996db04fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130b4a90f15c19d26a523ee3aef8bd25" id="r_a130b4a90f15c19d26a523ee3aef8bd25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a130b4a90f15c19d26a523ee3aef8bd25">is_case_insensitive</a> ()</td></tr>
-<tr class="separator:a130b4a90f15c19d26a523ee3aef8bd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fac3107d9c6ca287b1485123d15a49f" id="r_a3fac3107d9c6ca287b1485123d15a49f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fac3107d9c6ca287b1485123d15a49f">benchmark_directory_reads</a> (const path &amp;directory)</td></tr>
+<tr class="separator:a3fac3107d9c6ca287b1485123d15a49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fc3554e64ae93e4ae07188e6f80a6a" id="r_a04fc3554e64ae93e4ae07188e6f80a6a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04fc3554e64ae93e4ae07188e6f80a6a">hash_file_fingerprint</a> (const path &amp;file_path, bool normalize_text_line_endings) -&gt; std::string</td></tr>
+<tr class="memdesc:a04fc3554e64ae93e4ae07188e6f80a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash a file's contents. Text assets normalize CRLF to LF before hashing.  <br /></td></tr>
+<tr class="separator:a04fc3554e64ae93e4ae07188e6f80a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ddd9527de28faed6aeb5d3e3664846" id="r_a20ddd9527de28faed6aeb5d3e3664846"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20ddd9527de28faed6aeb5d3e3664846">combine_file_fingerprints</a> (const std::string &amp;first_fingerprint, const std::string *additional_fingerprints, size_t additional_count) -&gt; std::string</td></tr>
+<tr class="memdesc:a20ddd9527de28faed6aeb5d3e3664846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combine per-file fingerprints (raw 128-bit digests) into one hex fingerprint.  <br /></td></tr>
+<tr class="separator:a20ddd9527de28faed6aeb5d3e3664846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d508a3b97913a55ee8553481fbb29bd" id="r_a6d508a3b97913a55ee8553481fbb29bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab2373660e384fd8c515dd5804fa9e13d">byte_array_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d508a3b97913a55ee8553481fbb29bd">read_stream</a> (std::istream &amp;stream) -&gt; <a class="el" href="#ab2373660e384fd8c515dd5804fa9e13d">byte_array_t</a></td></tr>
 <tr class="memdesc:a6d508a3b97913a55ee8553481fbb29bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a byte_array_t with the contents of the specified file, be that file in a package or in the main file system.  <br /></td></tr>
 <tr class="separator:a6d508a3b97913a55ee8553481fbb29bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +220,18 @@ Functions</h2></td></tr>
 <tr class="separator:a598534149713902ce9dc01d478f458be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada19acb1dbc64a1dca8eaad7d270b45d" id="r_ada19acb1dbc64a1dca8eaad7d270b45d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada19acb1dbc64a1dca8eaad7d270b45d">to_string</a> (const <a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &amp;e) -&gt; std::string</td></tr>
 <tr class="separator:ada19acb1dbc64a1dca8eaad7d270b45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3315ca5d5c840f9403a9393746b4ccfb" id="r_a3315ca5d5c840f9403a9393746b4ccfb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3315ca5d5c840f9403a9393746b4ccfb">filetime_to_system_clock</a> (fs::file_time_type ft) -&gt; std::chrono::system_clock::time_point</td></tr>
+<tr class="separator:a3315ca5d5c840f9403a9393746b4ccfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a73e130a719eb713be295c7031f94e3f5" id="r_a73e130a719eb713be295c7031f94e3f5"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73e130a719eb713be295c7031f94e3f5">current_source_fingerprint_version</a> = 1</td></tr>
+<tr class="memdesc:a73e130a719eb713be295c7031f94e3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">xxHash3 128-bit fingerprints (hex). Bump when the hashing or dependency-ordering scheme changes.  <br /></td></tr>
+<tr class="separator:a73e130a719eb713be295c7031f94e3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a3b48caa1c67131984e8e88c1d50e4" id="r_a04a3b48caa1c67131984e8e88c1d50e4"><td class="memItemLeft" align="right" valign="top">constexpr std::ios_base::openmode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04a3b48caa1c67131984e8e88c1d50e4">default_file_read_mode</a></td></tr>
+<tr class="separator:a04a3b48caa1c67131984e8e88c1d50e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6753ee292708cb2c13990f93b80f09" id="r_aec6753ee292708cb2c13990f93b80f09"><td class="memItemLeft" align="right" valign="top">constexpr std::ios_base::openmode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec6753ee292708cb2c13990f93b80f09">default_file_write_mode</a></td></tr>
+<tr class="separator:aec6753ee292708cb2c13990f93b80f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ab2373660e384fd8c515dd5804fa9e13d" name="ab2373660e384fd8c515dd5804fa9e13d"></a>
@@ -222,7 +262,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00280">280</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00294">294</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -254,7 +294,38 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00281">281</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00295">295</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aed584fcbca7597850e34bf14328366e4" name="aed584fcbca7597850e34bf14328366e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed584fcbca7597850e34bf14328366e4">&#9670;&#160;</a></span>file_stream_ownership</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#aed584fcbca7597850e34bf14328366e4">fs::file_stream_ownership</a> : std::uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether a file stream wrapper should fclose its FILE* on destruction. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aed584fcbca7597850e34bf14328366e4a5dc4bb19391b04351f49572019c628c0" name="aed584fcbca7597850e34bf14328366e4a5dc4bb19391b04351f49572019c628c0"></a>take_ownership&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aed584fcbca7597850e34bf14328366e4ad50316d67fd970f764a50d20386ef13d" name="aed584fcbca7597850e34bf14328366e4ad50316d67fd970f764a50d20386ef13d"></a>retain_ownership&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="file__stream__common_8h_source.html#l00012">12</a> of file <a class="el" href="file__stream__common_8h_source.html">file_stream_common.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +351,60 @@ Functions</h2></td></tr>
 
 <p>Allows us to map a protocol to a specific directory. A path protocol gives the caller the ability to prepend an identifier to their file name i.e. "engine_data://textures/tex.png" and have it return the relevant mapped path. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00181">181</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00182">182</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3fac3107d9c6ca287b1485123d15a49f" name="a3fac3107d9c6ca287b1485123d15a49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fac3107d9c6ca287b1485123d15a49f">&#9670;&#160;</a></span>benchmark_directory_reads()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fs::benchmark_directory_reads </td>
+          <td>(</td>
+          <td class="paramtype">const path &amp;</td>          <td class="paramname"><span class="paramname"><em>directory</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recursively collects regular files under <code>directory</code> and benchmarks three read backends (FILE*, <a class="el" href="classfs_1_1file__istream.html" title="stdio-backed input stream. Accepts std::ios open flags (e.g. std::ios::binary) when opening a">file_istream</a>, std::ifstream, mapped_file_reader) in two modes:</p><ul>
+<li>chunked: 64 KiB reads with a simple uint64_t byte sum per chunk</li>
+<li>whole file: one read / one mapped scan over the entire file Each backend runs a cold pass (best-effort OS page cache drop beforehand) and a hot pass without cache drops. Results are logged via APPLOG_INFO. </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="file__benchmarks_8cpp_source.html#l00418">418</a> of file <a class="el" href="file__benchmarks_8cpp_source.html">file_benchmarks.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a20ddd9527de28faed6aeb5d3e3664846" name="a20ddd9527de28faed6aeb5d3e3664846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ddd9527de28faed6aeb5d3e3664846">&#9670;&#160;</a></span>combine_file_fingerprints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto fs::combine_file_fingerprints </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>first_fingerprint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string *</td>          <td class="paramname"><span class="paramname"><em>additional_fingerprints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>additional_count</em></span>&#160;) -&gt;  std::string</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Combine per-file fingerprints (raw 128-bit digests) into one hex fingerprint. </p>
+
+<p class="definition">Definition at line <a class="el" href="file__fingerprint_8cpp_source.html#l00211">211</a> of file <a class="el" href="file__fingerprint_8cpp_source.html">file_fingerprint.cpp</a>.</p>
 
 </div>
 </div>
@@ -301,7 +425,7 @@ Functions</h2></td></tr>
 
 <p>Oposite of the resolve_protocol this function tries to convert to protocol path from an absolute one. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00265">265</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00266">266</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -322,7 +446,35 @@ Functions</h2></td></tr>
 
 <p>Given the specified path/filename, resolve the final full filename. This will be based on either the currently specified root path, or one of the 'path protocol' identifiers if it is included in the filename. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00200">200</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00201">201</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3315ca5d5c840f9403a9393746b4ccfb" name="a3315ca5d5c840f9403a9393746b4ccfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3315ca5d5c840f9403a9393746b4ccfb">&#9670;&#160;</a></span>filetime_to_system_clock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto fs::filetime_to_system_clock </td>
+          <td>(</td>
+          <td class="paramtype">fs::file_time_type</td>          <td class="paramname"><span class="paramname"><em>ft</em></span></td><td>)</td>
+          <td> -&gt; std::chrono::system_clock::time_point
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="watcher_8h_source.html#l00106">106</a> of file <a class="el" href="watcher_8h_source.html">watcher.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +495,7 @@ Functions</h2></td></tr>
 
 <p>Returns the registered path protocols. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00194">194</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00195">195</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -364,7 +516,32 @@ Functions</h2></td></tr>
 
 <p>Checks whether the path has a known protocol. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00246">246</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00247">247</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a04fc3554e64ae93e4ae07188e6f80a6a" name="a04fc3554e64ae93e4ae07188e6f80a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04fc3554e64ae93e4ae07188e6f80a6a">&#9670;&#160;</a></span>hash_file_fingerprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto fs::hash_file_fingerprint </td>
+          <td>(</td>
+          <td class="paramtype">const path &amp;</td>          <td class="paramname"><span class="paramname"><em>file_path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>normalize_text_line_endings</em></span>&#160;) -&gt;  std::string</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hash a file's contents. Text assets normalize CRLF to LF before hashing. </p>
+
+<p class="definition">Definition at line <a class="el" href="file__fingerprint_8cpp_source.html#l00201">201</a> of file <a class="el" href="file__fingerprint_8cpp_source.html">file_fingerprint.cpp</a>.</p>
 
 </div>
 </div>
@@ -387,26 +564,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00342">342</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a130b4a90f15c19d26a523ee3aef8bd25" name="a130b4a90f15c19d26a523ee3aef8bd25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a130b4a90f15c19d26a523ee3aef8bd25">&#9670;&#160;</a></span>is_case_insensitive()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool fs::is_case_insensitive </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00125">125</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00345">345</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -454,7 +612,7 @@ template&lt;typename Iterator  = recursive_directory_iterator&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Directory cache with pattern filtering</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00292">292</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cache_8hpp_source.html#l00306">306</a> of file <a class="el" href="cache_8hpp_source.html">cache.hpp</a>.</p>
 
 </div>
 </div>
@@ -536,7 +694,7 @@ template&lt;typename Iterator  = recursive_directory_iterator&gt; </div>
 
 <p>Load a byte_array_t with the contents of the specified file, be that file in a package or in the main file system. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00153">153</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00154">154</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -555,7 +713,7 @@ template&lt;typename Iterator  = recursive_directory_iterator&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00167">167</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00168">168</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -574,7 +732,7 @@ template&lt;typename Iterator  = recursive_directory_iterator&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00174">174</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00175">175</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -593,7 +751,7 @@ template&lt;typename Iterator  = recursive_directory_iterator&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00160">160</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00161">161</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -614,7 +772,7 @@ template&lt;typename Iterator  = recursive_directory_iterator&gt; </div>
 
 <p>another. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00328">328</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00331">331</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -644,7 +802,7 @@ template&lt;typename Iterator  = recursive_directory_iterator&gt; </div>
 
 <p>Replacing any occurences of the specified path sequence with another. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00305">305</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00308">308</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -665,7 +823,7 @@ template&lt;typename Iterator  = recursive_directory_iterator&gt; </div>
 
 <p>Given the specified path/filename, resolve the final full filename. This will be based on either the currently specified root path, or one of the 'path protocol' identifiers if it is included in the filename. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00215">215</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00216">216</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -690,7 +848,7 @@ template&lt;typename Iterator  = recursive_directory_iterator&gt; </div>
 
 <p>another. </p>
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00310">310</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00313">313</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
 
 </div>
 </div>
@@ -709,7 +867,86 @@ template&lt;typename Iterator  = recursive_directory_iterator&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="watcher_8cpp_source.html#l00617">617</a> of file <a class="el" href="watcher_8cpp_source.html">watcher.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="watcher_8cpp_source.html#l00099">99</a> of file <a class="el" href="watcher_8cpp_source.html">watcher.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a73e130a719eb713be295c7031f94e3f5" name="a73e130a719eb713be295c7031f94e3f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e130a719eb713be295c7031f94e3f5">&#9670;&#160;</a></span>current_source_fingerprint_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t fs::current_source_fingerprint_version = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>xxHash3 128-bit fingerprints (hex). Bump when the hashing or dependency-ordering scheme changes. </p>
+
+<p class="definition">Definition at line <a class="el" href="file__fingerprint_8h_source.html#l00011">11</a> of file <a class="el" href="file__fingerprint_8h_source.html">file_fingerprint.h</a>.</p>
+
+</div>
+</div>
+<a id="a04a3b48caa1c67131984e8e88c1d50e4" name="a04a3b48caa1c67131984e8e88c1d50e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a3b48caa1c67131984e8e88c1d50e4">&#9670;&#160;</a></span>default_file_read_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ios_base::openmode fs::default_file_read_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    std::ios_base::in | std::ios_base::binary</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="file__stream__common_8h_source.html#l00018">18</a> of file <a class="el" href="file__stream__common_8h_source.html">file_stream_common.h</a>.</p>
+
+</div>
+</div>
+<a id="aec6753ee292708cb2c13990f93b80f09" name="aec6753ee292708cb2c13990f93b80f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec6753ee292708cb2c13990f93b80f09">&#9670;&#160;</a></span>default_file_write_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ios_base::openmode fs::default_file_write_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    std::ios_base::out | std::ios_base::binary</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="file__stream__common_8h_source.html#l00021">21</a> of file <a class="el" href="file__stream__common_8h_source.html">file_stream_common.h</a>.</p>
 
 </div>
 </div>

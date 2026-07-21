@@ -113,6 +113,8 @@ $(function(){initNavTree('inspector_8h.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1property__layout__group.html">unravel::property_layout_group</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1property__layout.html">unravel::property_layout</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages <a class="el" href="namespace_im_gui.html">ImGui</a> layout for property inspection in the editor.  <a href="classunravel_1_1property__layout.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +153,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abd006083820d9a3a6a0fe61ec2454e93" id="r_abd006083820d9a3a6a0fe61ec2454e93"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#abd006083820d9a3a6a0fe61ec2454e93">unravel::make_proxy</a> (entt::meta_any &amp;var, const std::string &amp;<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>={}) -&gt; <a class="el" href="structunravel_1_1meta__any__proxy.html">meta_any_proxy</a></td></tr>
 <tr class="memdesc:abd006083820d9a3a6a0fe61ec2454e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a simple proxy for direct variable access.  <br /></td></tr>
 <tr class="separator:abd006083820d9a3a6a0fe61ec2454e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e34c0b309e45630696ea063e1bf676a" id="r_a1e34c0b309e45630696ea063e1bf676a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a1e34c0b309e45630696ea063e1bf676a">unravel::make_entity_proxy</a> (entt::meta_any &amp;var, const std::string &amp;<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>={}) -&gt; <a class="el" href="structunravel_1_1meta__any__proxy.html">meta_any_proxy</a></td></tr>
+<tr class="memdesc:a1e34c0b309e45630696ea063e1bf676a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like make_proxy, but for entt::handle roots resolved by <a class="el" href="structunravel_1_1id__component.html" title="Component that provides a unique identifier (UUID) for an entity.">id_component</a> UUID each access.  <br /></td></tr>
+<tr class="separator:a1e34c0b309e45630696ea063e1bf676a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a89cedf06238526bb495e5f2317a88" id="r_a33a89cedf06238526bb495e5f2317a88"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a33a89cedf06238526bb495e5f2317a88">unravel::make_property_proxy</a> (const <a class="el" href="structunravel_1_1meta__any__proxy.html">meta_any_proxy</a> &amp;var_proxy, const entt::meta_data &amp;prop) -&gt; <a class="el" href="structunravel_1_1meta__any__proxy.html">meta_any_proxy</a></td></tr>
 <tr class="separator:a33a89cedf06238526bb495e5f2317a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13b0dcdb7b90583f7ec25e8b9e16ef94" id="r_a13b0dcdb7b90583f7ec25e8b9e16ef94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a13b0dcdb7b90583f7ec25e8b9e16ef94">unravel::REFLECT_INLINE</a> (<a class="el" href="structunravel_1_1inspector.html">inspector</a>)</td></tr>
@@ -187,7 +192,7 @@ Functions</h2></td></tr>
 <div class="line">    }</div>
 <div class="ttc" id="anamespaceentt_html_a70e70ddd929931f82acbfeb7d72f3aec"><div class="ttname"><a href="namespaceentt.html#a70e70ddd929931f82acbfeb7d72f3aec">entt::attribute</a></div><div class="ttdeci">attributes::value_type attribute</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00019">reflection.h:19</a></div></div>
 <div class="ttc" id="anamespaceentt_html_ad0c4d1fdcb6e7abbd3204968cd6ffe30"><div class="ttname"><a href="namespaceentt.html#ad0c4d1fdcb6e7abbd3204968cd6ffe30">entt::attributes</a></div><div class="ttdeci">std::map&lt; std::string, meta_any &gt; attributes</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00018">reflection.h:18</a></div></div>
-<div class="ttc" id="areflection_8h_html_a33bb1ed22f0be3cb8856459558f8d754"><div class="ttname"><a href="reflection_8h.html#a33bb1ed22f0be3cb8856459558f8d754">REFLECT</a></div><div class="ttdeci">#define REFLECT(cls)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00133">reflection.h:133</a></div></div>
+<div class="ttc" id="areflection_8h_html_a33bb1ed22f0be3cb8856459558f8d754"><div class="ttname"><a href="reflection_8h.html#a33bb1ed22f0be3cb8856459558f8d754">REFLECT</a></div><div class="ttdeci">#define REFLECT(cls)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00149">reflection.h:149</a></div></div>
 </div><!-- fragment -->
 <p>Macro to register an inspector with its inspected type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -198,7 +203,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00326">326</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00397">397</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
 
 </div>
 </div>
@@ -229,7 +234,7 @@ Functions</h2></td></tr>
 <div class="line">            .base&lt;inspector&gt;()                                                                                         \</div>
 <div class="line">            .func&lt;&amp;inspector::create_and_register&lt;inspector_type&gt;&gt;(<span class="stringliteral">&quot;create_and_register&quot;</span>_hs);                          \</div>
 <div class="line">    }</div>
-<div class="ttc" id="areflection_8h_html_a74265b8273adc0ee0faf71034155491b"><div class="ttname"><a href="reflection_8h.html#a74265b8273adc0ee0faf71034155491b">REFLECT_INLINE</a></div><div class="ttdeci">#define REFLECT_INLINE(cls)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00128">reflection.h:128</a></div></div>
+<div class="ttc" id="areflection_8h_html_a74265b8273adc0ee0faf71034155491b"><div class="ttname"><a href="reflection_8h.html#a74265b8273adc0ee0faf71034155491b">REFLECT_INLINE</a></div><div class="ttdeci">#define REFLECT_INLINE(cls)</div><div class="ttdef"><b>Definition</b> <a href="reflection_8h_source.html#l00144">reflection.h:144</a></div></div>
 </div><!-- fragment -->
 <p>Macro to register an inspector inline with its inspected type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -240,7 +245,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00310">310</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspector_8h_source.html#l00381">381</a> of file <a class="el" href="inspector_8h_source.html">inspector.h</a>.</p>
 
 </div>
 </div>

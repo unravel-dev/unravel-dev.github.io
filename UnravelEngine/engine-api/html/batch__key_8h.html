@@ -98,14 +98,19 @@ $(function(){initNavTree('batch__key_8h.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">batch_key.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="asset__handle_8h_source.html">engine/assets/asset_handle.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="texture_8h_source.html">graphics/texture.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="material_8h_source.html">material.h</a>&quot;</code><br />
 </div>
 <p><a href="batch__key_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -114,7 +119,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1batch__key.html">unravel::batch_key</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Batch key structure for grouping compatible draw calls.  <a href="structunravel_1_1batch__key.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1shadow__cutout__state.html">unravel::shadow_cutout_state</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-draw state for alpha-cutout shadow batches (texture + clip threshold).  <a href="structunravel_1_1shadow__cutout__state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1shadow__batch__key.html">unravel::shadow_batch_key</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Batch key for shadow depth passes — geometry-first, optional cutout bucket.  <a href="structunravel_1_1shadow__batch__key.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01unravel_1_1batch__key_01_4.html">std::hash&lt; unravel::batch_key &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01unravel_1_1shadow__batch__key_01_4.html">std::hash&lt; unravel::shadow_batch_key &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -124,6 +137,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd.html">std</a></td></tr>
 <tr class="memdesc:namespacestd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash specialization for batch_key to enable use in std::unordered_map. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1d8a4e1b00068de82c7992099dd7d237" id="r_a1d8a4e1b00068de82c7992099dd7d237"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a1d8a4e1b00068de82c7992099dd7d237">unravel::make_shadow_batch_key</a> (const std::shared_ptr&lt; <a class="el" href="classunravel_1_1mesh.html">mesh</a> &gt; &amp;mesh_ptr, uint32_t lod_index, uint32_t submesh_index, const std::shared_ptr&lt; <a class="el" href="classunravel_1_1material.html">material</a> &gt; &amp;material_ptr) -&gt; <a class="el" href="structunravel_1_1shadow__batch__key.html">shadow_batch_key</a></td></tr>
+<tr class="memdesc:a1d8a4e1b00068de82c7992099dd7d237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a shadow batch key from mesh geometry and optional material cutout metadata.  <br /></td></tr>
+<tr class="separator:a1d8a4e1b00068de82c7992099dd7d237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

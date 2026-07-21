@@ -1,6 +1,7 @@
 var structunravel_1_1property__action__t =
 [
     [ "property_action_t", "structunravel_1_1property__action__t.html#a91fccaf292ca16dbd0ed37322b2bedcc", null ],
+    [ "detach", "structunravel_1_1property__action__t.html#abb9bfacadd0f7ffebc3cdcce4032a414", null ],
     [ "do_action", "structunravel_1_1property__action__t.html#aff675ffb64d6fe4b3e5bca9855e358f4", null ],
     [ "draw_in_inspector", "structunravel_1_1property__action__t.html#a6240bfdb37cd126e3615963e4a7e1d74", null ],
     [ "is_mergeable", "structunravel_1_1property__action__t.html#a57658fed62dd8ca583f67a182add84af", null ],

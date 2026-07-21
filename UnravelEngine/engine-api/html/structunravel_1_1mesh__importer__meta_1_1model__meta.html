@@ -118,11 +118,17 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a74c151202eb6543a4a86f68dbcef2a79" id="r_a74c151202eb6543a4a86f68dbcef2a79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74c151202eb6543a4a86f68dbcef2a79">find_degenerates</a> {true}</td></tr>
 <tr class="separator:a74c151202eb6543a4a86f68dbcef2a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcba7fbb9ac64ba7ef3a13e92154727d" id="r_adcba7fbb9ac64ba7ef3a13e92154727d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcba7fbb9ac64ba7ef3a13e92154727d">find_invalid_data</a> {true}</td></tr>
+<tr class="memdesc:adcba7fbb9ac64ba7ef3a13e92154727d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable automatic LOD generation during compilation.  <br /></td></tr>
 <tr class="separator:adcba7fbb9ac64ba7ef3a13e92154727d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac934f6c61e80bfcdacceb01cb347dabd" id="r_ac934f6c61e80bfcdacceb01cb347dabd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac934f6c61e80bfcdacceb01cb347dabd">generate_lods</a> {true}</td></tr>
+<tr class="memdesc:ac934f6c61e80bfcdacceb01cb347dabd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target error for LOD generation (lower = higher quality, higher = more aggressive)  <br /></td></tr>
+<tr class="separator:ac934f6c61e80bfcdacceb01cb347dabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c39df0d5b89c411aa1be935c63da611" id="r_a7c39df0d5b89c411aa1be935c63da611"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c39df0d5b89c411aa1be935c63da611">lod_target_error</a> {0.01f}</td></tr>
+<tr class="separator:a7c39df0d5b89c411aa1be935c63da611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00073">73</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00076">76</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a74c151202eb6543a4a86f68dbcef2a79" name="a74c151202eb6543a4a86f68dbcef2a79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74c151202eb6543a4a86f68dbcef2a79">&#9670;&#160;</a></span>find_degenerates</h2>
@@ -136,7 +142,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00079">79</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00082">82</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -152,7 +158,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00080">80</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p>Enable automatic LOD generation during compilation. </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00083">83</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+
+</div>
+</div>
+<a id="ac934f6c61e80bfcdacceb01cb347dabd" name="ac934f6c61e80bfcdacceb01cb347dabd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac934f6c61e80bfcdacceb01cb347dabd">&#9670;&#160;</a></span>generate_lods</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool unravel::mesh_importer_meta::model_meta::generate_lods {true}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Target error for LOD generation (lower = higher quality, higher = more aggressive) </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00086">86</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -168,7 +194,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00075">75</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00078">78</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+
+</div>
+</div>
+<a id="a7c39df0d5b89c411aa1be935c63da611" name="a7c39df0d5b89c411aa1be935c63da611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c39df0d5b89c411aa1be935c63da611">&#9670;&#160;</a></span>lod_target_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::mesh_importer_meta::model_meta::lod_target_error {0.01f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00088">88</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -184,7 +226,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00077">77</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00080">80</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -200,7 +242,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00078">78</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00081">81</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>
@@ -216,7 +258,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00076">76</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__storage_8h_source.html#l00079">79</a> of file <a class="el" href="asset__storage_8h_source.html">asset_storage.h</a>.</p>
 
 </div>
 </div>

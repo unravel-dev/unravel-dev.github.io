@@ -112,7 +112,7 @@ $(function(){initNavTree('crash_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;exception&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceunravel.html">   20</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceunravel_1_1crash.html">unravel::crash</a></div>
@@ -320,183 +320,188 @@ $(function(){initNavTree('crash_8cpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            {</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                <span class="keywordflow">try</span> { g_interrupt_handler(sig_info); } <span class="keywordflow">catch</span>(...) {}</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            }</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        }</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceunravel_1_1crash.html#a794692b736be7aeaea74ff49178b595ea922ba8a7dcc2e092a994d9c72cabc9e6">signal_type::termination</a>:</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        {</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keywordflow">if</span>(g_termination_handler)</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            {</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                <span class="keywordflow">try</span> { g_termination_handler(sig_info); } <span class="keywordflow">catch</span>(...) {}</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            }</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        }</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceunravel_1_1crash.html#a794692b736be7aeaea74ff49178b595eadcaa9fd4f23aaf0c29f540becf35b46f">signal_type::crash</a>:</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        {</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <span class="keywordflow">if</span>(g_crash_handler)</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            {</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                <span class="comment">// Capture stack trace for crashes</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <a class="code hl_struct" href="structunravel_1_1crash_1_1trace__info.html">trace_info</a> trace = generate_stack_trace();</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                <span class="keywordflow">try</span> { g_crash_handler(sig_info, trace); } <span class="keywordflow">catch</span>(...) {}</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            }</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        }</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    }</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>}</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            <span class="comment">// Reset handling flag for interrupts (they might be handled gracefully)</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            g_handling.store(<span class="keyword">false</span>, std::memory_order_release);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        }</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceunravel_1_1crash.html#a794692b736be7aeaea74ff49178b595ea922ba8a7dcc2e092a994d9c72cabc9e6">signal_type::termination</a>:</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        {</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <span class="keywordflow">if</span>(g_termination_handler)</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            {</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                <span class="keywordflow">try</span> { g_termination_handler(sig_info); } <span class="keywordflow">catch</span>(...) {}</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            <span class="comment">// Reset handling flag for termination (they might be handled gracefully)</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            g_handling.store(<span class="keyword">false</span>, std::memory_order_release);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        }</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceunravel_1_1crash.html#a794692b736be7aeaea74ff49178b595eadcaa9fd4f23aaf0c29f540becf35b46f">signal_type::crash</a>:</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            <span class="keywordflow">if</span>(g_crash_handler)</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                <span class="comment">// Capture stack trace for crashes</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                <a class="code hl_struct" href="structunravel_1_1crash_1_1trace__info.html">trace_info</a> trace = generate_stack_trace();</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                <span class="keywordflow">try</span> { g_crash_handler(sig_info, trace); } <span class="keywordflow">catch</span>(...) {}</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            }</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            std::abort();</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    }</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>}</div>
 </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="foldopen" id="foldopen00240" data-start="{" data-end="}">
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="namespaceunravel_1_1crash.html#ad8114505aa5614c94263fa25f81f39db">  240</a></span>[[noreturn]] <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceunravel_1_1crash.html#ad8114505aa5614c94263fa25f81f39db">terminate_handler</a>()</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>{</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="comment">// Prevent recursive terminate calls</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordflow">if</span>(g_handling.exchange(<span class="keyword">true</span>, std::memory_order_acq_rel))</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    {</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        std::abort();</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    }</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordflow">if</span>(!g_exception_handler)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="foldopen" id="foldopen00245" data-start="{" data-end="}">
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="namespaceunravel_1_1crash.html#ad8114505aa5614c94263fa25f81f39db">  245</a></span>[[noreturn]] <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceunravel_1_1crash.html#ad8114505aa5614c94263fa25f81f39db">terminate_handler</a>()</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>{</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="comment">// Prevent recursive terminate calls</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordflow">if</span>(g_handling.exchange(<span class="keyword">true</span>, std::memory_order_acq_rel))</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    {</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        std::abort();</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="comment">// Prepare exception info</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <a class="code hl_struct" href="structunravel_1_1crash_1_1exception__info.html">exception_info</a> exc_info{</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        .exception_type = <span class="stringliteral">&quot;Unknown&quot;</span>,</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        .exception_message = <span class="stringliteral">&quot;No active exception&quot;</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    };</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="comment">// Prepare trace info</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <a class="code hl_struct" href="structunravel_1_1crash_1_1trace__info.html">trace_info</a> trace{};</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    {</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <span class="keyword">auto</span> ptr = std::current_exception();</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="keywordflow">if</span>(ptr != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        {</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            std::rethrow_exception(ptr);</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        }</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        {</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            exc_info.exception_message = <span class="stringliteral">&quot;Terminate called without an active exception&quot;</span>;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        }</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::exception&amp; e)</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    {</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        <span class="comment">// Standard exception - generate our own trace</span></div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        exc_info.exception_type = demangle_exception_type(e);</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        exc_info.exception_message = <span class="stringliteral">&quot;Terminate called after throwing &quot;</span> + exc_info.exception_type + <span class="stringliteral">&quot; : &quot;</span> + e.what();</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <span class="comment">// Generate stack trace</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        trace = generate_stack_trace();</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    }</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keywordflow">catch</span>(...)</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    {</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <span class="comment">// Unknown exception type</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        exc_info.exception_type = <span class="stringliteral">&quot;Unknown Exception Type&quot;</span>;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        exc_info.exception_message = <span class="stringliteral">&quot;Terminate called after throwing an unknown exception&quot;</span>;</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <span class="comment">// Generate stack trace</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        trace = generate_stack_trace();</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    }</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="comment">// Call the user&#39;s exception handler if available</span></div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordflow">try</span> </div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    { </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        g_exception_handler(exc_info, trace); </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    } </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keywordflow">catch</span>(...) </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    {</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        <span class="comment">// Handler threw - can&#39;t do much about it</span></div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    }</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    std::abort();</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>}</div>
-</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="foldopen" id="foldopen00307" data-start="{" data-end="}">
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="namespaceunravel_1_1crash.html#ab7388194971dbb71afa98a2b96deb5a0">  307</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceunravel_1_1crash.html#ab7388194971dbb71afa98a2b96deb5a0">register_terminate_handler</a>()</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>{</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    std::set_terminate(<a class="code hl_function" href="namespaceunravel_1_1crash.html#ad8114505aa5614c94263fa25f81f39db">terminate_handler</a>);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordflow">if</span>(!g_exception_handler)</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    {</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        std::abort();</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    }</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="comment">// Prepare exception info</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <a class="code hl_struct" href="structunravel_1_1crash_1_1exception__info.html">exception_info</a> exc_info{</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        .exception_type = <span class="stringliteral">&quot;Unknown&quot;</span>,</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        .exception_message = <span class="stringliteral">&quot;No active exception&quot;</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    };</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="comment">// Prepare trace info</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <a class="code hl_struct" href="structunravel_1_1crash_1_1trace__info.html">trace_info</a> trace{};</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keyword">auto</span> ptr = std::current_exception();</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="keywordflow">if</span>(ptr != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        {</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            std::rethrow_exception(ptr);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        {</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            exc_info.exception_message = <span class="stringliteral">&quot;Terminate called without an active exception&quot;</span>;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        }</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    }</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::exception&amp; e)</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    {</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="comment">// Standard exception - generate our own trace</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        exc_info.exception_type = demangle_exception_type(e);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        exc_info.exception_message = <span class="stringliteral">&quot;Terminate called after throwing &quot;</span> + exc_info.exception_type + <span class="stringliteral">&quot; : &quot;</span> + e.what();</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <span class="comment">// Generate stack trace</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        trace = generate_stack_trace();</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    }</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">catch</span>(...)</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    {</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <span class="comment">// Unknown exception type</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        exc_info.exception_type = <span class="stringliteral">&quot;Unknown Exception Type&quot;</span>;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        exc_info.exception_message = <span class="stringliteral">&quot;Terminate called after throwing an unknown exception&quot;</span>;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        <span class="comment">// Generate stack trace</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        trace = generate_stack_trace();</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    }</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="comment">// Call the user&#39;s exception handler if available</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="keywordflow">try</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    { </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        g_exception_handler(exc_info, trace); </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    } </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordflow">catch</span>(...) </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        <span class="comment">// Handler threw - can&#39;t do much about it</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    }</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    std::abort();</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>}</div>
 </div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
-<div class="foldopen" id="foldopen00313" data-start="{" data-end="}">
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="namespaceunravel_1_1crash.html#a3fe5b2580435a2bd56db5a13f3ebcfbc">  313</a></span><span class="keyword">auto</span> <a class="code hl_function" href="namespaceunravel_1_1crash.html#a3fe5b2580435a2bd56db5a13f3ebcfbc">install_handlers</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structunravel_1_1crash_1_1crash__handlers.html">crash_handlers</a>&amp; handlers) -&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>{</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="comment">// Prevent multiple installations</span></div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="keyword">static</span> std::atomic&lt;bool&gt; installed{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    <span class="keywordflow">if</span>(installed.exchange(<span class="keyword">true</span>, std::memory_order_acq_rel))</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    {</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    }</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <a class="code hl_function" href="namespaceunravel_1_1crash.html#a2c90f0142570adc8c68b2f0269980a1b">set_interrupt_handler</a>(handlers.interrupt_handler);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <a class="code hl_function" href="namespaceunravel_1_1crash.html#a98539ca4fed7c1312dd026deb366d720">set_termination_handler</a>(handlers.termination_handler);</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <a class="code hl_function" href="namespaceunravel_1_1crash.html#abb44a47a7663c5ed079337d9dfba1518">set_crash_handler</a>(handlers.crash_handler);</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <a class="code hl_function" href="namespaceunravel_1_1crash.html#af97f2b8be19ab0859615e9678d6b8a4e">set_exception_handler</a>(handlers.exception_handler);</div>
+<div class="foldopen" id="foldopen00312" data-start="{" data-end="}">
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="namespaceunravel_1_1crash.html#ab7388194971dbb71afa98a2b96deb5a0">  312</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceunravel_1_1crash.html#ab7388194971dbb71afa98a2b96deb5a0">register_terminate_handler</a>()</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>{</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    std::set_terminate(<a class="code hl_function" href="namespaceunravel_1_1crash.html#ad8114505aa5614c94263fa25f81f39db">terminate_handler</a>);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>}</div>
+</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="foldopen" id="foldopen00318" data-start="{" data-end="}">
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="namespaceunravel_1_1crash.html#a3fe5b2580435a2bd56db5a13f3ebcfbc">  318</a></span><span class="keyword">auto</span> <a class="code hl_function" href="namespaceunravel_1_1crash.html#a3fe5b2580435a2bd56db5a13f3ebcfbc">install_handlers</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structunravel_1_1crash_1_1crash__handlers.html">crash_handlers</a>&amp; handlers) -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>{</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="comment">// Prevent multiple installations</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keyword">static</span> std::atomic&lt;bool&gt; installed{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="keywordflow">if</span>(installed.exchange(<span class="keyword">true</span>, std::memory_order_acq_rel))</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    {</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    }</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <a class="code hl_function" href="namespaceunravel_1_1crash.html#ab7388194971dbb71afa98a2b96deb5a0">register_terminate_handler</a>();</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="comment">// Install unified signal handlers for all platforms</span></div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="comment">// Crash signals</span></div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    std::signal(SIGABRT, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);   <span class="comment">// Process abort</span></div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    std::signal(SIGILL, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);    <span class="comment">// Illegal instruction</span></div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    std::signal(SIGFPE, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);    <span class="comment">// Floating point exception</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    std::signal(SIGSEGV, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);   <span class="comment">// Segmentation fault</span></div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    </div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="comment">// Interrupt signals</span></div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    std::signal(SIGINT, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);    <span class="comment">// Ctrl+C</span></div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <span class="comment">// Termination signals</span></div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    std::signal(SIGTERM, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);   <span class="comment">// Termination request</span></div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="comment">// Platform-specific signals</span></div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="preprocessor">#ifdef SIGBUS</span></div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    std::signal(SIGBUS, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);    <span class="comment">// Bus error (POSIX)</span></div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="preprocessor">#ifdef SIGQUIT</span></div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    std::signal(SIGQUIT, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);   <span class="comment">// Quit request (POSIX)</span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="preprocessor">#ifdef SIGHUP</span></div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    std::signal(SIGHUP, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);    <span class="comment">// Terminal hangup (POSIX)</span></div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="preprocessor">#ifdef SIGBREAK</span></div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    std::signal(SIGBREAK, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);  <span class="comment">// Ctrl+Break (Windows)</span></div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="preprocessor">#ifdef SIGABRT_COMPAT</span></div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    std::signal(SIGABRT_COMPAT, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);  <span class="comment">// Process abort compat</span></div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="preprocessor">#ifdef SIGKILL</span></div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    std::signal(SIGKILL, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);   <span class="comment">// Kill request (POSIX)</span></div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    <span class="comment">// Ignored signals</span></div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="preprocessor">#ifdef SIGPIPE</span></div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    std::signal(SIGPIPE, SIG_IGN);          <span class="comment">// Broken pipe (don&#39;t crash on this)</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <a class="code hl_function" href="namespaceunravel_1_1crash.html#a2c90f0142570adc8c68b2f0269980a1b">set_interrupt_handler</a>(handlers.interrupt_handler);</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <a class="code hl_function" href="namespaceunravel_1_1crash.html#a98539ca4fed7c1312dd026deb366d720">set_termination_handler</a>(handlers.termination_handler);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <a class="code hl_function" href="namespaceunravel_1_1crash.html#abb44a47a7663c5ed079337d9dfba1518">set_crash_handler</a>(handlers.crash_handler);</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <a class="code hl_function" href="namespaceunravel_1_1crash.html#af97f2b8be19ab0859615e9678d6b8a4e">set_exception_handler</a>(handlers.exception_handler);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <a class="code hl_function" href="namespaceunravel_1_1crash.html#ab7388194971dbb71afa98a2b96deb5a0">register_terminate_handler</a>();</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="comment">// Install unified signal handlers for all platforms</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    <span class="comment">// Crash signals</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    std::signal(SIGABRT, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);   <span class="comment">// Process abort</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    std::signal(SIGILL, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);    <span class="comment">// Illegal instruction</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    std::signal(SIGFPE, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);    <span class="comment">// Floating point exception</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    std::signal(SIGSEGV, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);   <span class="comment">// Segmentation fault</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <span class="comment">// Interrupt signals</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    std::signal(SIGINT, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);    <span class="comment">// Ctrl+C</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <span class="comment">// Termination signals</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    std::signal(SIGTERM, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);   <span class="comment">// Termination request</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="comment">// Platform-specific signals</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="preprocessor">#ifdef SIGBUS</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    std::signal(SIGBUS, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);    <span class="comment">// Bus error (POSIX)</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="preprocessor">#ifdef SIGQUIT</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    std::signal(SIGQUIT, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);   <span class="comment">// Quit request (POSIX)</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="preprocessor">#ifdef SIGHUP</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    std::signal(SIGHUP, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);    <span class="comment">// Terminal hangup (POSIX)</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="preprocessor">#ifdef SIGBREAK</span></div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    std::signal(SIGBREAK, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);  <span class="comment">// Ctrl+Break (Windows)</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="preprocessor">#ifdef SIGABRT_COMPAT</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    std::signal(SIGABRT_COMPAT, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);  <span class="comment">// Process abort compat</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="preprocessor">#ifdef SIGKILL</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    std::signal(SIGKILL, <a class="code hl_function" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">signal_handler</a>);   <span class="comment">// Kill request (POSIX)</span></div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>}</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="comment">// Ignored signals</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="preprocessor">#ifdef SIGPIPE</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    std::signal(SIGPIPE, SIG_IGN);          <span class="comment">// Broken pipe (don&#39;t crash on this)</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>}</div>
 </div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>} <span class="comment">// namespace unravel::crash</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>} <span class="comment">// namespace unravel::crash</span></div>
 </div>
 <div class="ttc" id="aconfig_8hpp_html"><div class="ttname"><a href="config_8hpp.html">config.hpp</a></div></div>
 <div class="ttc" id="acrash_8hpp_html"><div class="ttname"><a href="crash_8hpp.html">crash.hpp</a></div></div>
-<div class="ttc" id="ahub_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00027">hub.cpp:27</a></div></div>
+<div class="ttc" id="ahub_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00033">hub.cpp:33</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html"><div class="ttname"><a href="namespaceunravel_1_1crash.html">unravel::crash</a></div><div class="ttdef"><b>Definition</b> <a href="#l00020">crash.cpp:21</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_a239c0f06bc42a11e1b6b2524795a8dbb"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a239c0f06bc42a11e1b6b2524795a8dbb">unravel::crash::interrupt_handler_t</a></div><div class="ttdeci">void(*)(const signal_info &amp;info) interrupt_handler_t</div><div class="ttdef"><b>Definition</b> <a href="crash_8hpp_source.html#l00046">crash.hpp:46</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_a295652f6c489c1d9c9c979b5b02ef966"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a295652f6c489c1d9c9c979b5b02ef966">unravel::crash::get_signal_name</a></div><div class="ttdeci">auto get_signal_name(int sig) noexcept -&gt; std::string_view</div><div class="ttdef"><b>Definition</b> <a href="#l00086">crash.cpp:86</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_a2c90f0142570adc8c68b2f0269980a1b"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a2c90f0142570adc8c68b2f0269980a1b">unravel::crash::set_interrupt_handler</a></div><div class="ttdeci">auto set_interrupt_handler(interrupt_handler_t handler) -&gt; void</div><div class="ttdef"><b>Definition</b> <a href="#l00066">crash.cpp:66</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_a3c7e5d5b799c6ea230f7c333c6525ac1"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a3c7e5d5b799c6ea230f7c333c6525ac1">unravel::crash::termination_handler_t</a></div><div class="ttdeci">void(*)(const signal_info &amp;info) termination_handler_t</div><div class="ttdef"><b>Definition</b> <a href="crash_8hpp_source.html#l00047">crash.hpp:47</a></div></div>
-<div class="ttc" id="anamespaceunravel_1_1crash_html_a3fe5b2580435a2bd56db5a13f3ebcfbc"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a3fe5b2580435a2bd56db5a13f3ebcfbc">unravel::crash::install_handlers</a></div><div class="ttdeci">auto install_handlers(const crash_handlers &amp;handlers) -&gt; void</div><div class="ttdoc">Install comprehensive crash handlers.</div><div class="ttdef"><b>Definition</b> <a href="#l00313">crash.cpp:313</a></div></div>
+<div class="ttc" id="anamespaceunravel_1_1crash_html_a3fe5b2580435a2bd56db5a13f3ebcfbc"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a3fe5b2580435a2bd56db5a13f3ebcfbc">unravel::crash::install_handlers</a></div><div class="ttdeci">auto install_handlers(const crash_handlers &amp;handlers) -&gt; void</div><div class="ttdoc">Install comprehensive crash handlers.</div><div class="ttdef"><b>Definition</b> <a href="#l00318">crash.cpp:318</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_a4be5943b704da8a53e8cbe7bcc93ad99"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">unravel::crash::signal_handler</a></div><div class="ttdeci">auto signal_handler(int sig) -&gt; void</div><div class="ttdef"><b>Definition</b> <a href="#l00185">crash.cpp:185</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_a6facd66d7b052dec439e2dfc08dde644"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a6facd66d7b052dec439e2dfc08dde644">unravel::crash::get_signal_type</a></div><div class="ttdeci">auto get_signal_type(int sig) noexcept -&gt; signal_type</div><div class="ttdef"><b>Definition</b> <a href="#l00137">crash.cpp:137</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_a794692b736be7aeaea74ff49178b595e"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a794692b736be7aeaea74ff49178b595e">unravel::crash::signal_type</a></div><div class="ttdeci">signal_type</div><div class="ttdef"><b>Definition</b> <a href="#l00135">crash.cpp:135</a></div></div>
@@ -507,9 +512,9 @@ $(function(){initNavTree('crash_8cpp_source.html',''); initResizable(true); });
 <div class="ttc" id="anamespaceunravel_1_1crash_html_a8f319ae7d275cd3b95cfe72dffcb591b"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a8f319ae7d275cd3b95cfe72dffcb591b">unravel::crash::is_crash_signal</a></div><div class="ttdeci">auto is_crash_signal(int sig) noexcept -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l00180">crash.cpp:180</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_a98539ca4fed7c1312dd026deb366d720"><div class="ttname"><a href="namespaceunravel_1_1crash.html#a98539ca4fed7c1312dd026deb366d720">unravel::crash::set_termination_handler</a></div><div class="ttdeci">auto set_termination_handler(termination_handler_t handler) -&gt; void</div><div class="ttdef"><b>Definition</b> <a href="#l00071">crash.cpp:71</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_aa83651b37055f8dfa3bee630240c9542"><div class="ttname"><a href="namespaceunravel_1_1crash.html#aa83651b37055f8dfa3bee630240c9542">unravel::crash::crash_handler_t</a></div><div class="ttdeci">void(*)(const signal_info &amp;info, const trace_info &amp;trace) crash_handler_t</div><div class="ttdef"><b>Definition</b> <a href="crash_8hpp_source.html#l00048">crash.hpp:48</a></div></div>
-<div class="ttc" id="anamespaceunravel_1_1crash_html_ab7388194971dbb71afa98a2b96deb5a0"><div class="ttname"><a href="namespaceunravel_1_1crash.html#ab7388194971dbb71afa98a2b96deb5a0">unravel::crash::register_terminate_handler</a></div><div class="ttdeci">void register_terminate_handler()</div><div class="ttdef"><b>Definition</b> <a href="#l00307">crash.cpp:307</a></div></div>
+<div class="ttc" id="anamespaceunravel_1_1crash_html_ab7388194971dbb71afa98a2b96deb5a0"><div class="ttname"><a href="namespaceunravel_1_1crash.html#ab7388194971dbb71afa98a2b96deb5a0">unravel::crash::register_terminate_handler</a></div><div class="ttdeci">void register_terminate_handler()</div><div class="ttdef"><b>Definition</b> <a href="#l00312">crash.cpp:312</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_abb44a47a7663c5ed079337d9dfba1518"><div class="ttname"><a href="namespaceunravel_1_1crash.html#abb44a47a7663c5ed079337d9dfba1518">unravel::crash::set_crash_handler</a></div><div class="ttdeci">auto set_crash_handler(crash_handler_t handler) -&gt; void</div><div class="ttdef"><b>Definition</b> <a href="#l00076">crash.cpp:76</a></div></div>
-<div class="ttc" id="anamespaceunravel_1_1crash_html_ad8114505aa5614c94263fa25f81f39db"><div class="ttname"><a href="namespaceunravel_1_1crash.html#ad8114505aa5614c94263fa25f81f39db">unravel::crash::terminate_handler</a></div><div class="ttdeci">void terminate_handler()</div><div class="ttdef"><b>Definition</b> <a href="#l00240">crash.cpp:240</a></div></div>
+<div class="ttc" id="anamespaceunravel_1_1crash_html_ad8114505aa5614c94263fa25f81f39db"><div class="ttname"><a href="namespaceunravel_1_1crash.html#ad8114505aa5614c94263fa25f81f39db">unravel::crash::terminate_handler</a></div><div class="ttdeci">void terminate_handler()</div><div class="ttdef"><b>Definition</b> <a href="#l00245">crash.cpp:245</a></div></div>
 <div class="ttc" id="anamespaceunravel_1_1crash_html_af97f2b8be19ab0859615e9678d6b8a4e"><div class="ttname"><a href="namespaceunravel_1_1crash.html#af97f2b8be19ab0859615e9678d6b8a4e">unravel::crash::set_exception_handler</a></div><div class="ttdeci">auto set_exception_handler(exception_handler_t handler) -&gt; void</div><div class="ttdef"><b>Definition</b> <a href="#l00081">crash.cpp:81</a></div></div>
 <div class="ttc" id="astructunravel_1_1crash_1_1crash__handlers_html"><div class="ttname"><a href="structunravel_1_1crash_1_1crash__handlers.html">unravel::crash::crash_handlers</a></div><div class="ttdef"><b>Definition</b> <a href="crash_8hpp_source.html#l00052">crash.hpp:53</a></div></div>
 <div class="ttc" id="astructunravel_1_1crash_1_1exception__info_html"><div class="ttname"><a href="structunravel_1_1crash_1_1exception__info.html">unravel::crash::exception_info</a></div><div class="ttdoc">Exception information structure</div><div class="ttdef"><b>Definition</b> <a href="crash_8hpp_source.html#l00035">crash.hpp:35</a></div></div>

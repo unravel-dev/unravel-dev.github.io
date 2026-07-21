@@ -12,6 +12,8 @@ var searchData=
   ['notify_5fpadding_5fmessage_5fy_9',['NOTIFY_PADDING_MESSAGE_Y',['../imgui__notify_8h.html#a4fb432a810a2fa8924c24e2cbcae4354',1,'imgui_notify.h']]],
   ['notify_5fpadding_5fx_10',['NOTIFY_PADDING_X',['../imgui__notify_8h.html#a1b2b6b93536885e0ab757e3b06100f7a',1,'imgui_notify.h']]],
   ['notify_5fpadding_5fy_11',['NOTIFY_PADDING_Y',['../imgui__notify_8h.html#a9677b849889a666186bc17934035dbc1',1,'imgui_notify.h']]],
-  ['notify_5ftoast_5fflags_12',['NOTIFY_TOAST_FLAGS',['../imgui__notify_8h.html#a9fdf7333e97f8ab093a78880eb8ebffb',1,'imgui_notify.h']]],
-  ['notify_5fuse_5fseparator_13',['NOTIFY_USE_SEPARATOR',['../imgui__notify_8h.html#a6f4575c1416a9ad0378fd68e1938176e',1,'imgui_notify.h']]]
+  ['notify_5frender_5flimit_12',['NOTIFY_RENDER_LIMIT',['../imgui__notify_8h.html#a414832c0fdebe28f7e121cdea17d8554',1,'imgui_notify.h']]],
+  ['notify_5ftoast_5fflags_13',['NOTIFY_TOAST_FLAGS',['../imgui__notify_8h.html#a9fdf7333e97f8ab093a78880eb8ebffb',1,'imgui_notify.h']]],
+  ['notify_5fuse_5fdismiss_5fbutton_14',['NOTIFY_USE_DISMISS_BUTTON',['../imgui__notify_8h.html#ada24a36bf6f4b41bd785bfdbf0870c98',1,'imgui_notify.h']]],
+  ['notify_5fuse_5fseparator_15',['NOTIFY_USE_SEPARATOR',['../imgui__notify_8h.html#a6f4575c1416a9ad0378fd68e1938176e',1,'imgui_notify.h']]]
 ];

@@ -6,6 +6,8 @@ var structunravel_1_1settings =
     [ "input_settings", "structunravel_1_1settings_1_1input__settings.html", "structunravel_1_1settings_1_1input__settings" ],
     [ "layer_settings", "structunravel_1_1settings_1_1layer__settings.html", "structunravel_1_1settings_1_1layer__settings" ],
     [ "resolution_settings", "structunravel_1_1settings_1_1resolution__settings.html", "structunravel_1_1settings_1_1resolution__settings" ],
+    [ "splash_logo_entry", "structunravel_1_1settings_1_1splash__logo__entry.html", "structunravel_1_1settings_1_1splash__logo__entry" ],
+    [ "splash_settings", "structunravel_1_1settings_1_1splash__settings.html", "structunravel_1_1settings_1_1splash__settings" ],
     [ "standalone_settings", "structunravel_1_1settings_1_1standalone__settings.html", "structunravel_1_1settings_1_1standalone__settings" ],
     [ "time_settings", "structunravel_1_1settings_1_1time__settings.html", "structunravel_1_1settings_1_1time__settings" ],
     [ "operator==", "structunravel_1_1settings.html#a5c423be25345196751f7b46a9c7a6f7d", null ],
@@ -15,6 +17,7 @@ var structunravel_1_1settings =
     [ "input", "structunravel_1_1settings.html#a01e336ee5ca20460995aa3ac70b39d26", null ],
     [ "layer", "structunravel_1_1settings.html#acf28a3c675ee92d1c30192dcec1cda5e", null ],
     [ "resolution", "structunravel_1_1settings.html#afc85fd2198e14af1c453b39150c48abf", null ],
+    [ "splash", "structunravel_1_1settings.html#a1343fbe27da7b10cb2ced69afc854117", null ],
     [ "standalone", "structunravel_1_1settings.html#abbeddcc8361734d920f31abb4fea53b0", null ],
     [ "time", "structunravel_1_1settings.html#ac942572ff391e6b1f9a3543114162e1b", null ]
 ];

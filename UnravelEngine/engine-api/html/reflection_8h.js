@@ -9,7 +9,7 @@ var reflection_8h =
     [ "REFLECTION_REGISTRATION", "reflection_8h.html#ad7692b8acdd3bc1a2cd1301ab4574d24", null ],
     [ "attribute", "reflection_8h.html#a70e70ddd929931f82acbfeb7d72f3aec", null ],
     [ "attributes", "reflection_8h.html#ad0c4d1fdcb6e7abbd3204968cd6ffe30", null ],
-    [ "property_predicate_t", "reflection_8h.html#ae7397994dada156c6e1cc1871c419aae", null ],
+    [ "property_predicate_t", "reflection_8h.html#ac8ff6d00291d6a2cf77989e27f387c34", null ],
     [ "as_derived", "reflection_8h.html#a96975805cabc3d6132360cd4a1eed617", null ],
     [ "copy_meta_any", "reflection_8h.html#abdd5c4f20b945596cfb6e0651c9ef66d", null ],
     [ "get_attribute", "reflection_8h.html#aca7547d197439c9d3b3b167bb02f6a99", null ],
@@ -27,7 +27,14 @@ var reflection_8h =
     [ "get_pretty_name", "reflection_8h.html#a6ae0b25f969f71e384d0962371b8cd93", null ],
     [ "get_pretty_name", "reflection_8h.html#a9d879ad2b31060897926da3496c70939", null ],
     [ "get_pretty_name", "reflection_8h.html#a75f7ce5a151e0953769a0a8577e997c8", null ],
+    [ "get_property_hint", "reflection_8h.html#a630cb2f1a1aeb88fa65d5678fbfcb5ed", null ],
     [ "get_reg", "reflection_8h.html#a6f5b5fb6983ff0006e4cdbff3b9370ed", null ],
+    [ "is_property_flattable", "reflection_8h.html#a4b053e9c6d9a9202bbd2b25c08acc72e", null ],
+    [ "is_property_flattable", "reflection_8h.html#ad764bb719c01c1b0dc1748c5bd86e454", null ],
+    [ "is_property_readonly", "reflection_8h.html#a041725ba9aff5d8914f3b13b2e887361", null ],
+    [ "is_property_readonly", "reflection_8h.html#ad35891b8cd61630f8c93710a8bc67ccd", null ],
+    [ "is_property_visible", "reflection_8h.html#a6c8b0a847d3c629c038da553d1a3121c", null ],
+    [ "is_property_visible", "reflection_8h.html#a9d8a7d714e1270ab89a0ae685e361def", null ],
     [ "make_custom", "reflection_8h.html#af53bc79f7cbecca95bb72a1717bbf9a3", null ],
-    [ "property_predicate", "reflection_8h.html#ae67ce55f5eff6289257b54f585bb53c5", null ]
+    [ "property_predicate", "reflection_8h.html#a0dd6c5dc85872b16d67d0a7d3b72b7b6", null ]
 ];

@@ -118,6 +118,7 @@ var namespaceseq =
     [ "lerp", "namespaceseq.html#a932ebf8bbac32fdb1adfd1028ea3b351", null ],
     [ "mix", "namespaceseq.html#a06568e70ea315ff43a5658ab5e691c3c", null ],
     [ "pause", "namespaceseq.html#aedd6681387050d595879f9d38f47af98", null ],
+    [ "queue", "namespaceseq.html#a75099e3ee04bb48875e902f967fd2ff1", null ],
     [ "range_map", "namespaceseq.html#aeb713fa00791df508764a1587f458687", null ],
     [ "repeat", "namespaceseq.html#a95ba98eb0f93ba565272d45b0b73bd3b", null ],
     [ "repeat", "namespaceseq.html#a5428bafe279750187e83a819e98498bd", null ],

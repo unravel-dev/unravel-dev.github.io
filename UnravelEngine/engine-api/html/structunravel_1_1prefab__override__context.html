@@ -118,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d5adc6fe81cc65f8fdfe41c80067e8c" id="r_a1d5adc6fe81cc65f8fdfe41c80067e8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d5adc6fe81cc65f8fdfe41c80067e8c">set_entity_uuid</a> (const hpp::uuid &amp;uuid)</td></tr>
 <tr class="memdesc:a1d5adc6fe81cc65f8fdfe41c80067e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entity UUID for both path contexts.  <br /></td></tr>
 <tr class="separator:a1d5adc6fe81cc65f8fdfe41c80067e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9728e25e71500f30c33b46696e231e68" id="r_a9728e25e71500f30c33b46696e231e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9728e25e71500f30c33b46696e231e68">set_component_type</a> (const std::string &amp;<a class="el" href="bullet__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>, const std::string &amp;pretty_type)</td></tr>
+<tr class="memitem:a9728e25e71500f30c33b46696e231e68" id="r_a9728e25e71500f30c33b46696e231e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9728e25e71500f30c33b46696e231e68">set_component_type</a> (const std::string &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>, const std::string &amp;pretty_type)</td></tr>
 <tr class="memdesc:a9728e25e71500f30c33b46696e231e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the component type for both path contexts.  <br /></td></tr>
 <tr class="separator:a9728e25e71500f30c33b46696e231e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe373af9ec612cf58e06d3614d4e217c" id="r_abe373af9ec612cf58e06d3614d4e217c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe373af9ec612cf58e06d3614d4e217c">push_segment</a> (const std::string &amp;segment, const std::string &amp;pretty_segment)</td></tr>
@@ -136,6 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aac2dc0e5e2b706cca12b9ae20deafad6" id="r_aac2dc0e5e2b706cca12b9ae20deafad6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac2dc0e5e2b706cca12b9ae20deafad6">record_override</a> () -&gt; bool</td></tr>
 <tr class="memdesc:aac2dc0e5e2b706cca12b9ae20deafad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record a property override when a change is detected.  <br /></td></tr>
 <tr class="separator:aac2dc0e5e2b706cca12b9ae20deafad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59cde06b3b94550046f760f30cbd69a" id="r_ab59cde06b3b94550046f760f30cbd69a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab59cde06b3b94550046f760f30cbd69a">reset_override</a> () -&gt; bool</td></tr>
+<tr class="separator:ab59cde06b3b94550046f760f30cbd69a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44966e70f1934464f617a0cca0714584" id="r_a44966e70f1934464f617a0cca0714584"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44966e70f1934464f617a0cca0714584">is_path_overridden</a> () const -&gt; bool</td></tr>
 <tr class="memdesc:a44966e70f1934464f617a0cca0714584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the current property path is already overridden.  <br /></td></tr>
 <tr class="separator:a44966e70f1934464f617a0cca0714584"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,10 +150,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aebe6e562830b67055550e6f5b384e006" id="r_aebe6e562830b67055550e6f5b384e006"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebe6e562830b67055550e6f5b384e006">get_entity_prefab_uuid</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>) -&gt; hpp::uuid</td></tr>
 <tr class="memdesc:aebe6e562830b67055550e6f5b384e006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the prefab UUID of an entity from its <a class="el" href="structunravel_1_1prefab__id__component.html" title="Component that provides a unique identifier (UUID) for a prefab.">prefab_id_component</a>.  <br /></td></tr>
 <tr class="separator:aebe6e562830b67055550e6f5b384e006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac63d79a348a1ca11a371bb9a5aa691de" id="r_ac63d79a348a1ca11a371bb9a5aa691de"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac63d79a348a1ca11a371bb9a5aa691de">mark_transform_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>, bool position, bool rotation, bool <a class="el" href="hub_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>, bool skew)</td></tr>
+<tr class="memitem:ac63d79a348a1ca11a371bb9a5aa691de" id="r_ac63d79a348a1ca11a371bb9a5aa691de"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac63d79a348a1ca11a371bb9a5aa691de">mark_transform_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>, bool <a class="el" href="defaults_8cpp.html#a55bc5b9b40c7f612c8f73e5d3acfab00">position</a>, bool <a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>, bool <a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>, bool skew)</td></tr>
 <tr class="memdesc:ac63d79a348a1ca11a371bb9a5aa691de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks transform properties as changed in prefab override system.  <br /></td></tr>
 <tr class="separator:ac63d79a348a1ca11a371bb9a5aa691de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6572e3c5019c92f21a0ca0dc4839d390" id="r_a6572e3c5019c92f21a0ca0dc4839d390"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6572e3c5019c92f21a0ca0dc4839d390">mark_transform_global_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>, bool position, bool rotation, bool <a class="el" href="hub_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>, bool skew)</td></tr>
+<tr class="memitem:a6572e3c5019c92f21a0ca0dc4839d390" id="r_a6572e3c5019c92f21a0ca0dc4839d390"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6572e3c5019c92f21a0ca0dc4839d390">mark_transform_global_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>, bool <a class="el" href="defaults_8cpp.html#a55bc5b9b40c7f612c8f73e5d3acfab00">position</a>, bool <a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>, bool <a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>, bool skew)</td></tr>
 <tr class="separator:a6572e3c5019c92f21a0ca0dc4839d390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac531d80f34d57a13a3b49a219d9e6b77" id="r_ac531d80f34d57a13a3b49a219d9e6b77"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac531d80f34d57a13a3b49a219d9e6b77">mark_active_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>)</td></tr>
 <tr class="memdesc:ac531d80f34d57a13a3b49a219d9e6b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks entity active state as changed in prefab override system.  <br /></td></tr>
@@ -159,15 +161,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a891e8abccd016a2b10317edf7baa5b61" id="r_a891e8abccd016a2b10317edf7baa5b61"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a891e8abccd016a2b10317edf7baa5b61">mark_text_area_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>)</td></tr>
 <tr class="memdesc:a891e8abccd016a2b10317edf7baa5b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks text area as changed in prefab override system.  <br /></td></tr>
 <tr class="separator:a891e8abccd016a2b10317edf7baa5b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7bd06ac7cec69ca437a96e317b0ce4d" id="r_ab7bd06ac7cec69ca437a96e317b0ce4d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7bd06ac7cec69ca437a96e317b0ce4d">mark_ui_document_size_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>)</td></tr>
+<tr class="separator:ab7bd06ac7cec69ca437a96e317b0ce4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86de73244ef66f6132d239d2da554b38" id="r_a86de73244ef66f6132d239d2da554b38"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86de73244ef66f6132d239d2da554b38">mark_material_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>)</td></tr>
 <tr class="memdesc:a86de73244ef66f6132d239d2da554b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks material as changed in prefab override system.  <br /></td></tr>
 <tr class="separator:a86de73244ef66f6132d239d2da554b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b969e3202b6b32d27e6320d8ccfa45" id="r_a52b969e3202b6b32d27e6320d8ccfa45"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52b969e3202b6b32d27e6320d8ccfa45">mark_property_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>, const entt::meta_type &amp;component_type, const std::string &amp;property_path)</td></tr>
-<tr class="memdesc:a52b969e3202b6b32d27e6320d8ccfa45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks a specific property as changed using component type.  <br /></td></tr>
-<tr class="separator:a52b969e3202b6b32d27e6320d8ccfa45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb49312d3bfc83448474378918cc28d3" id="r_adb49312d3bfc83448474378918cc28d3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb49312d3bfc83448474378918cc28d3">mark_property_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>, const std::string &amp;component_type_name, const std::string &amp;component_pretty_type_name, const std::string &amp;property_path)</td></tr>
-<tr class="memdesc:adb49312d3bfc83448474378918cc28d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks a specific property as changed using component type names.  <br /></td></tr>
-<tr class="separator:adb49312d3bfc83448474378918cc28d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5f7252995c50eb68a5eea45156a3bc" id="r_abf5f7252995c50eb68a5eea45156a3bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf5f7252995c50eb68a5eea45156a3bc">mark_property_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>, const entt::meta_type &amp;component_type, const std::string &amp;property_path, const std::string &amp;property_pretty_path={})</td></tr>
+<tr class="memdesc:abf5f7252995c50eb68a5eea45156a3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks a specific property as changed using component type.  <br /></td></tr>
+<tr class="separator:abf5f7252995c50eb68a5eea45156a3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f308d86b13230bc71095ae6cf56b5f" id="r_af0f308d86b13230bc71095ae6cf56b5f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0f308d86b13230bc71095ae6cf56b5f">mark_property_as_changed</a> (entt::handle <a class="el" href="#a3c63f2787095a894c1fcff6cf1302247">entity</a>, const std::string &amp;component_type_name, const std::string &amp;component_pretty_type_name, const std::string &amp;property_path, const std::string &amp;property_pretty_path={})</td></tr>
+<tr class="memdesc:af0f308d86b13230bc71095ae6cf56b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks a specific property as changed using component type names.  <br /></td></tr>
+<tr class="separator:af0f308d86b13230bc71095ae6cf56b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b4d4d8581f11b9ee2823bbb30ff4ea4" id="r_a1b4d4d8581f11b9ee2823bbb30ff4ea4"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b4d4d8581f11b9ee2823bbb30ff4ea4">exists_in_prefab</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;cache_scene, const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1prefab.html">prefab</a> &gt; &amp;<a class="el" href="structunravel_1_1prefab.html">prefab</a>, hpp::uuid entity_uuid, const std::string &amp;component_type, const std::string &amp;property_path) -&gt; bool</td></tr>
 <tr class="memdesc:a1b4d4d8581f11b9ee2823bbb30ff4ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a property exists in the original prefab.  <br /></td></tr>
 <tr class="separator:a1b4d4d8581f11b9ee2823bbb30ff4ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,7 +210,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Global context for tracking prefab override changes during inspection. </p>
 <p>Manages the state needed to track which properties have been modified in prefab instances, enabling the override system that allows instances to deviate from their prefab templates while maintaining the connection. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00093">93</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00098">98</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4ac3c9565b4fde4cbe170e876eb2a541" name="a4ac3c9565b4fde4cbe170e876eb2a541"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ac3c9565b4fde4cbe170e876eb2a541">&#9670;&#160;</a></span>prefab_override_context()</h2>
@@ -260,7 +264,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successfully initialized for prefab inspection </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00103">103</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00138">138</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -281,7 +285,7 @@ Public Attributes</h2></td></tr>
 
 <p>End prefab inspection context and clean up state. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00138">138</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00173">173</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -340,7 +344,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the property exists in the original prefab </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00439">439</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00526">526</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -383,7 +387,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A handle to the entity with <a class="el" href="structunravel_1_1prefab__component.html" title="Component that holds a reference to a prefab asset and tracks property overrides.">prefab_component</a>, or empty handle if not found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00240">240</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00296">296</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -427,7 +431,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The UUID as a string, or empty string if entity has no <a class="el" href="structunravel_1_1id__component.html" title="Component that provides a unique identifier (UUID) for an entity.">id_component</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00274">274</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00330">330</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -458,7 +462,7 @@ Public Attributes</h2></td></tr>
 <p>Check if the current property path is already overridden. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the current path has an existing override </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00171">171</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00178">178</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +497,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00342">342</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00398">398</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -528,7 +532,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00420">420</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00507">507</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -563,12 +567,12 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00352">352</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00413">413</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a52b969e3202b6b32d27e6320d8ccfa45" name="a52b969e3202b6b32d27e6320d8ccfa45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52b969e3202b6b32d27e6320d8ccfa45">&#9670;&#160;</a></span>mark_property_as_changed() <span class="overload">[1/2]</span></h2>
+<a id="abf5f7252995c50eb68a5eea45156a3bc" name="abf5f7252995c50eb68a5eea45156a3bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5f7252995c50eb68a5eea45156a3bc">&#9670;&#160;</a></span>mark_property_as_changed() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -589,7 +593,12 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>property_path</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>property_path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>property_pretty_path</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -609,12 +618,12 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00357">357</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00418">418</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
-<a id="adb49312d3bfc83448474378918cc28d3" name="adb49312d3bfc83448474378918cc28d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb49312d3bfc83448474378918cc28d3">&#9670;&#160;</a></span>mark_property_as_changed() <span class="overload">[2/2]</span></h2>
+<a id="af0f308d86b13230bc71095ae6cf56b5f" name="af0f308d86b13230bc71095ae6cf56b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f308d86b13230bc71095ae6cf56b5f">&#9670;&#160;</a></span>mark_property_as_changed() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -640,7 +649,12 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>property_path</em></span>&#160;)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>property_path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>property_pretty_path</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -661,7 +675,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00367">367</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00429">429</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -696,7 +710,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00347">347</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00403">403</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -754,7 +768,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00289">289</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00345">345</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -800,7 +814,34 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00314">314</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00370">370</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab7bd06ac7cec69ca437a96e317b0ce4d" name="ab7bd06ac7cec69ca437a96e317b0ce4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7bd06ac7cec69ca437a96e317b0ce4d">&#9670;&#160;</a></span>mark_ui_document_size_as_changed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::prefab_override_context::mark_ui_document_size_as_changed </td>
+          <td>(</td>
+          <td class="paramtype">entt::handle</td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00408">408</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -821,7 +862,7 @@ Public Attributes</h2></td></tr>
 
 <p>Pops the last path segment and removes override styling if needed. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00218">218</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00274">274</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -853,7 +894,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00200">200</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00256">256</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -875,7 +916,26 @@ Public Attributes</h2></td></tr>
 <p>Record a property override when a change is detected. </p>
 <p>Uses the current property path context to determine what was changed. Automatically removes any parent or child overrides to keep only the most specific path. </p><dl class="section return"><dt>Returns</dt><dd>true if override was successfully recorded </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00147">147</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00182">182</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab59cde06b3b94550046f760f30cbd69a" name="ab59cde06b3b94550046f760f30cbd69a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59cde06b3b94550046f760f30cbd69a">&#9670;&#160;</a></span>reset_override()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::prefab_override_context::reset_override </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00214">214</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -907,7 +967,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00189">189</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00245">245</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -934,7 +994,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00179">179</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8cpp_source.html#l00235">235</a> of file <a class="el" href="inspectors_8cpp_source.html">inspectors.cpp</a>.</p>
 
 </div>
 </div>
@@ -953,7 +1013,7 @@ Public Attributes</h2></td></tr>
 
 <p>The specific entity currently being inspected. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00111">111</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00116">116</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
 
 </div>
 </div>
@@ -971,7 +1031,7 @@ Public Attributes</h2></td></tr>
 
 <p>Whether we're currently inspecting a prefab instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00119">119</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00124">124</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
 
 </div>
 </div>
@@ -989,7 +1049,7 @@ Public Attributes</h2></td></tr>
 
 <p>Callback function to check if a specific property path is already overridden. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00101">101</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00106">106</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +1067,7 @@ Public Attributes</h2></td></tr>
 
 <p>Current property path context for serialization paths. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00104">104</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00109">109</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
 
 </div>
 </div>
@@ -1025,7 +1085,7 @@ Public Attributes</h2></td></tr>
 
 <p>The prefab root entity that contains the <a class="el" href="structunravel_1_1prefab__component.html" title="Component that holds a reference to a prefab asset and tracks property overrides.">prefab_component</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00109">109</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00114">114</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1103,7 @@ Public Attributes</h2></td></tr>
 
 <p>Temporary scene for prefab comparison operations. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00114">114</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00119">119</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
 
 </div>
 </div>
@@ -1061,7 +1121,7 @@ Public Attributes</h2></td></tr>
 
 <p>Version tracking for prefab changes. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00116">116</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00121">121</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
 
 </div>
 </div>
@@ -1079,7 +1139,7 @@ Public Attributes</h2></td></tr>
 
 <p>Current property path context for human-readable paths. </p>
 
-<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00106">106</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="inspectors_8h_source.html#l00111">111</a> of file <a class="el" href="inspectors_8h_source.html">inspectors.h</a>.</p>
 
 </div>
 </div>

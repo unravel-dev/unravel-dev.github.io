@@ -102,19 +102,24 @@ $(function(){initNavTree('class_unravel_1_1_core_1_1_g_c_monitor.html',''); init
   <div class="headertitle"><div class="title">Unravel.Core.GCMonitor Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Tracks managed GC activity and optionally logs collection/memory deltas.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4dc0ceb536fbf028e176a3b867bec438" id="r_a4dc0ceb536fbf028e176a3b867bec438"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dc0ceb536fbf028e176a3b867bec438">GCMonitor</a> ()</td></tr>
+<tr class="memdesc:a4dc0ceb536fbf028e176a3b867bec438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a monitor and captures the current GC baseline.  <br /></td></tr>
 <tr class="separator:a4dc0ceb536fbf028e176a3b867bec438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02a9ce4121ca320ebe93c71e688fe4bb" id="r_a02a9ce4121ca320ebe93c71e688fe4bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02a9ce4121ca320ebe93c71e688fe4bb">Reset</a> ()</td></tr>
+<tr class="memdesc:a02a9ce4121ca320ebe93c71e688fe4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the baseline collection counts and managed memory size.  <br /></td></tr>
 <tr class="separator:a02a9ce4121ca320ebe93c71e688fe4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e0cec1d5f8a9e3b64621c9fd2f33af4" id="r_a2e0cec1d5f8a9e3b64621c9fd2f33af4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e0cec1d5f8a9e3b64621c9fd2f33af4">CheckAndLog</a> (string context=&quot;&quot;)</td></tr>
+<tr class="memdesc:a2e0cec1d5f8a9e3b64621c9fd2f33af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares current GC stats to the baseline and logs notable changes.  <br /></td></tr>
 <tr class="separator:a2e0cec1d5f8a9e3b64621c9fd2f33af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_system_8cs_source.html#l00321">321</a> of file <a class="el" href="_system_8cs_source.html">System.cs</a>.</p>
+<div class="textblock"><p>Tracks managed GC activity and optionally logs collection/memory deltas. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4dc0ceb536fbf028e176a3b867bec438" name="a4dc0ceb536fbf028e176a3b867bec438"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4dc0ceb536fbf028e176a3b867bec438">&#9670;&#160;</a></span>GCMonitor()</h2>
@@ -131,7 +136,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_system_8cs_source.html#l00328">328</a> of file <a class="el" href="_system_8cs_source.html">System.cs</a>.</p>
+<p>Creates a monitor and captures the current GC baseline. </p>
 
 </div>
 </div>
@@ -151,7 +156,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_system_8cs_source.html#l00341">341</a> of file <a class="el" href="_system_8cs_source.html">System.cs</a>.</p>
+<p>Compares current GC stats to the baseline and logs notable changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Optional label included in the log message.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -170,12 +181,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_system_8cs_source.html#l00333">333</a> of file <a class="el" href="_system_8cs_source.html">System.cs</a>.</p>
+<p>Resets the baseline collection counts and managed memory size. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/system/<a class="el" href="_system_8cs_source.html">System.cs</a></li>
+<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/system/<a class="el" href="_system_8cs.html">System.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

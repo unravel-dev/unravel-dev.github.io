@@ -3,6 +3,8 @@ var dir_94230907f290c3852feae37814a76243 =
     [ "importers", "dir_f85d632bb084da3e782661f6ce48c19d.html", "dir_f85d632bb084da3e782661f6ce48c19d" ],
     [ "asset_compiler.cpp", "asset__compiler_8cpp.html", "asset__compiler_8cpp" ],
     [ "asset_compiler.h", "asset__compiler_8h.html", "asset__compiler_8h" ],
+    [ "asset_dependencies.cpp", "asset__dependencies_8cpp.html", "asset__dependencies_8cpp" ],
+    [ "asset_dependencies.h", "asset__dependencies_8h.html", "asset__dependencies_8h" ],
     [ "asset_extensions.h", "asset__extensions_8h.html", "asset__extensions_8h" ],
     [ "asset_manifest.cpp", "asset__manifest_8cpp.html", "asset__manifest_8cpp" ],
     [ "asset_manifest.h", "asset__manifest_8h.html", "asset__manifest_8h" ],

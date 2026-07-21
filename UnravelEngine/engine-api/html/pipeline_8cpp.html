@@ -103,6 +103,9 @@ $(function(){initNavTree('pipeline_8cpp.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="pipeline_8h_source.html">pipeline.h</a>&quot;</code><br />
+<code>#include &quot;bx/bx.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="camera_8h_source.html">engine/rendering/camera.h</a>&quot;</code><br />
+<code>#include &quot;glm/ext.hpp&quot;</code><br />
 <code>#include &lt;<a class="el" href="batch__collector_8h_source.html">engine/rendering/batch_collector.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
@@ -110,14 +113,26 @@ $(function(){initNavTree('pipeline_8cpp.html',''); initResizable(true); });
 <code>#include &lt;<a class="el" href="camera__component_8h_source.html">engine/rendering/ecs/components/camera_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="model__component_8h_source.html">engine/rendering/ecs/components/model_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="text__component_8h_source.html">engine/rendering/ecs/components/text_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ui__document__component_8h_source.html">engine/ui/ecs/components/ui_document_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="assao__component_8h_source.html">engine/rendering/ecs/components/assao_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="auto__exposure__component_8h_source.html">engine/rendering/ecs/components/auto_exposure_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="bloom__component_8h_source.html">engine/rendering/ecs/components/bloom_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fxaa__component_8h_source.html">engine/rendering/ecs/components/fxaa_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="taa__component_8h_source.html">engine/rendering/ecs/components/taa_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tonemapping__component_8h_source.html">engine/rendering/ecs/components/tonemapping_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ssr__component_8h_source.html">engine/rendering/ecs/components/ssr_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ssil__component_8h_source.html">engine/rendering/ecs/components/ssil_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="volume__resolver_8h_source.html">engine/rendering/pipeline/volume_resolver.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="particle__emitter__component_8h_source.html">engine/rendering/ecs/components/particle_emitter_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ecs_2systems_2particle__system_8h_source.html">engine/rendering/ecs/systems/particle_system.h</a>&gt;</code><br />
+<code>#include &lt;RmlUi/Core/ElementDocument.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="graphics_8h_source.html">graphics/graphics.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="vertex__decl_8h_source.html">graphics/vertex_decl.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="profiler_8h_source.html">engine/profiler/profiler.h</a>&gt;</code><br />
 <code>#include &lt;poolstl/poolstl.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="concurrentqueue_8h_source.html">concurrency/concurrentqueue.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
 </div>
 <p><a href="pipeline_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -146,7 +161,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00018">18</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pipeline_8cpp_source.html#l00031">31</a> of file <a class="el" href="pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
 
 </div>
 </div>

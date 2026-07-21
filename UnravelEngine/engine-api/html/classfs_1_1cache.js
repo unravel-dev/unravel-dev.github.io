@@ -11,6 +11,7 @@ var classfs_1_1cache =
     [ "~cache", "classfs_1_1cache.html#ab45fc0c7fe9dfa6f3a02befb8174b70a", null ],
     [ "at", "classfs_1_1cache.html#a7b5904f658c49d64639bf48c165c25b5", null ],
     [ "begin", "classfs_1_1cache.html#aa5fb66f33b581625fc88fc15a774043b", null ],
+    [ "clear", "classfs_1_1cache.html#abf7401bc3a300bc15eae150fe1a1016d", null ],
     [ "end", "classfs_1_1cache.html#aaa13e1035f07dc848f274f2a3cee233f", null ],
     [ "get_path", "classfs_1_1cache.html#a488955007e6bd7961636a40f034a3f07", null ],
     [ "operator=", "classfs_1_1cache.html#a168aee4ce0b28448efe9b57d13bc95b1", null ],

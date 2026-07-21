@@ -5,5 +5,7 @@ var dir_3cff47cd947a6589298ae5a66bddb56b =
     [ "pipeline.cpp", "pipeline_8cpp.html", "pipeline_8cpp" ],
     [ "pipeline.h", "pipeline_8h.html", "pipeline_8h" ],
     [ "pipeline_camera.cpp", "pipeline__camera_8cpp.html", null ],
-    [ "pipeline_camera.h", "pipeline__camera_8h.html", "pipeline__camera_8h" ]
+    [ "pipeline_camera.h", "pipeline__camera_8h.html", "pipeline__camera_8h" ],
+    [ "volume_resolver.cpp", "volume__resolver_8cpp.html", "volume__resolver_8cpp" ],
+    [ "volume_resolver.h", "volume__resolver_8h.html", "volume__resolver_8h" ]
 ];

@@ -6,7 +6,7 @@ var structserialization_1_1path__context =
     [ "get_current_path", "structserialization_1_1path__context.html#a334739c9d7fc7ffddc2bd95258db5df2", null ],
     [ "is_recording", "structserialization_1_1path__context.html#aed0ad0782f533788303e44f634e44d3b", null ],
     [ "pop_segment", "structserialization_1_1path__context.html#a94ed10f79d3b390f04a5200fcb68522a", null ],
-    [ "push_segment", "structserialization_1_1path__context.html#a72300007d5edebb342479cee094273fd", null ],
+    [ "push_segment", "structserialization_1_1path__context.html#a3a3b1017263a492efd8face149d3dee2", null ],
     [ "should_serialize_property", "structserialization_1_1path__context.html#a7a91e81a79ed554b15b26d11a9405c2a", null ],
     [ "ignore_next_push", "structserialization_1_1path__context.html#af2c614c1885803e8d7fcb1a545172ad2", null ],
     [ "path_segments", "structserialization_1_1path__context.html#af7f19a2543c4adf079eeaa061ccec6e4", null ],

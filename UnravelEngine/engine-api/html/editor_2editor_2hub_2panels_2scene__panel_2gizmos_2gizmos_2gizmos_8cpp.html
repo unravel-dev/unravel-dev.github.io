@@ -105,8 +105,10 @@ $(function(){initNavTree('editor_2editor_2hub_2panels_2scene__panel_2gizmos_2giz
 <div class="textblock"><code>#include &quot;<a class="el" href="editor_2editor_2hub_2panels_2scene__panel_2gizmos_2gizmos_2gizmos_8h_source.html">gizmos.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gizmo__entity_8h_source.html">gizmo_entity.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gizmo__physics__component_8h_source.html">gizmo_physics_component.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gizmo__character__controller__component_8h_source.html">gizmo_character_controller_component.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="reflection_8h_source.html">reflection/reflection.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="camera_8h_source.html">engine/rendering/camera.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="gizmos__renderer_8h_source.html">../gizmos_renderer.h</a>&quot;</code><br />
 </div>
 <p><a href="editor_2editor_2hub_2panels_2scene__panel_2gizmos_2gizmos_2gizmos_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -117,10 +119,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6d0564109a90d822fc734133609db2db" id="r_a6d0564109a90d822fc734133609db2db"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a6d0564109a90d822fc734133609db2db">unravel::get_gizmo</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const entt::meta_type &amp;<a class="el" href="bullet__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) -&gt; std::shared_ptr&lt; <a class="el" href="structunravel_1_1gizmo.html">gizmo</a> &gt;</td></tr>
+<tr class="memitem:a6d0564109a90d822fc734133609db2db" id="r_a6d0564109a90d822fc734133609db2db"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a6d0564109a90d822fc734133609db2db">unravel::get_gizmo</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const entt::meta_type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) -&gt; std::shared_ptr&lt; <a class="el" href="structunravel_1_1gizmo.html">gizmo</a> &gt;</td></tr>
 <tr class="separator:a6d0564109a90d822fc734133609db2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad56dc58b6b7dab5899fb96a6b3f40240" id="r_ad56dc58b6b7dab5899fb96a6b3f40240"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ad56dc58b6b7dab5899fb96a6b3f40240">unravel::draw_gizmo_var</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, entt::meta_any &amp;var, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="structgfx_1_1dd__raii.html">gfx::dd_raii</a> &amp;dd)</td></tr>
-<tr class="separator:ad56dc58b6b7dab5899fb96a6b3f40240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1157327c0e4ac267170d828cb6dac359" id="r_a1157327c0e4ac267170d828cb6dac359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a1157327c0e4ac267170d828cb6dac359">unravel::draw_gizmo_var</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, entt::meta_any &amp;var, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="structgfx_1_1dd__raii.html">gfx::dd_raii</a> &amp;dd, <a class="el" href="structunravel_1_1dd__2d__raii.html">dd_2d_raii</a> &amp;dd_2d)</td></tr>
+<tr class="separator:a1157327c0e4ac267170d828cb6dac359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cfc8b35c34dd60c7f06dd287a0ffee" id="r_ad7cfc8b35c34dd60c7f06dd287a0ffee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ad7cfc8b35c34dd60c7f06dd287a0ffee">unravel::draw_gizmo_billboard_var</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, entt::meta_any &amp;var, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="structgfx_1_1dd__raii.html">gfx::dd_raii</a> &amp;dd)</td></tr>
 <tr class="separator:ad7cfc8b35c34dd60c7f06dd287a0ffee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

@@ -1,0 +1,25 @@
+var classgfx_1_1eviction__registry =
+[
+    [ "clear_queued_allocations", "classgfx_1_1eviction__registry.html#abfacc780ce85e8e90d649dfa34e95e94", null ],
+    [ "current_budget", "classgfx_1_1eviction__registry.html#a1d7b3f9219c47ec328138c890f0ee314", null ],
+    [ "evict", "classgfx_1_1eviction__registry.html#a70ef08ce5b986c518ce8e508bd94a749", null ],
+    [ "evict_all", "classgfx_1_1eviction__registry.html#ae01ab51a1b415df235dc494e63e907a7", null ],
+    [ "evict_bytes", "classgfx_1_1eviction__registry.html#a5adee843b0c2ea66e8be72bcbcda86ab", null ],
+    [ "evict_default", "classgfx_1_1eviction__registry.html#a47bc3d4a7f5e37c77399e9da0b96399f", null ],
+    [ "get_init_status", "classgfx_1_1eviction__registry.html#ad555ba43ef0e74747746e6020e02f22a", null ],
+    [ "get_stats", "classgfx_1_1eviction__registry.html#a9a3501912343f7e7083d22c138ed73eb", null ],
+    [ "init", "classgfx_1_1eviction__registry.html#a615e4bdaa995bf9e2c02890e44cab692", null ],
+    [ "note_pending_allocation", "classgfx_1_1eviction__registry.html#a5f057f8cd88e861c9f50a06778c6f288", null ],
+    [ "on_frame_advanced", "classgfx_1_1eviction__registry.html#ad8762224697a99645f720bcdf41a1b5a", null ],
+    [ "peek_external_queued_bytes", "classgfx_1_1eviction__registry.html#a830a76fb8aa4ba1bc95959808b6bf879", null ],
+    [ "peek_pending_release_bytes", "classgfx_1_1eviction__registry.html#a9ae239cc817ed14570f03ce28b1d40bc", null ],
+    [ "peek_queued_bytes", "classgfx_1_1eviction__registry.html#a65e26e250f8d314041424b75e1a69e1e", null ],
+    [ "register_evicted_resource", "classgfx_1_1eviction__registry.html#ae1bdbe12453a97ce9e81af2a85bac14b", null ],
+    [ "register_resource", "classgfx_1_1eviction__registry.html#a851e1c821128af1edf5b1ea5329562bb", null ],
+    [ "restore_all", "classgfx_1_1eviction__registry.html#abe06dc7c6a14871898442e26456eda02", null ],
+    [ "restore_resource", "classgfx_1_1eviction__registry.html#aabc3d9cd60494f9736e245d879032653", null ],
+    [ "set_budget", "classgfx_1_1eviction__registry.html#a63e1698ee497c1d9b7b54c2024329b1f", null ],
+    [ "shutdown", "classgfx_1_1eviction__registry.html#a7ffe08a9e89ab251d646a745ee86bbd5", null ],
+    [ "snapshot_default_config", "classgfx_1_1eviction__registry.html#aac107dfe5ac7e9f77e4761078e6577b0", null ],
+    [ "unregister_resource", "classgfx_1_1eviction__registry.html#a48045b0aead193189b5fdc6f40c652bd", null ]
+];

@@ -98,14 +98,18 @@ $(function(){initNavTree('atmospheric__pass__perez_8cpp.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">atmospheric_pass_perez.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="default__textures_8h_source.html">engine/rendering/default_textures.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="perez__luminance_8h_source.html">engine/rendering/perez_luminance.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="render__pass_8h_source.html">graphics/render_pass.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="texture_8h_source.html">graphics/texture.h</a>&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 </div>
 <p><a href="atmospheric__pass__perez_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -120,6 +124,14 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a57175db5cb9219076710e2d09387a69c" id="r_a57175db5cb9219076710e2d09387a69c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57175db5cb9219076710e2d09387a69c">ANONYMOUS</a>&#160;&#160;&#160;anonymous</td></tr>
 <tr class="separator:a57175db5cb9219076710e2d09387a69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8c4de13299107db6f8c05ae4bfc40d83" id="r_a8c4de13299107db6f8c05ae4bfc40d83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a8c4de13299107db6f8c05ae4bfc40d83">unravel::compute_perez_luminance</a> (const math::vec3 &amp;light_direction, math::vec3 &amp;out_sky_luminance_rgb, math::vec3 &amp;out_sun_luminance_rgb)</td></tr>
+<tr class="memdesc:a8c4de13299107db6f8c05ae4bfc40d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes Perez sky and sun luminance from light direction (time-of-day). Uses the same tables as the atmospheric pass for consistency.  <br /></td></tr>
+<tr class="separator:a8c4de13299107db6f8c05ae4bfc40d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3c74783a5fcf93248882cca30a795b" id="r_adf3c74783a5fcf93248882cca30a795b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#adf3c74783a5fcf93248882cca30a795b">unravel::compute_irradiance_perez_params</a> (const math::vec3 &amp;light_direction, float turbidity, <a class="el" href="structunravel_1_1irradiance__perez__params.html">irradiance_perez_params</a> &amp;out)</td></tr>
+<tr class="separator:adf3c74783a5fcf93248882cca30a795b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a57175db5cb9219076710e2d09387a69c" name="a57175db5cb9219076710e2d09387a69c"></a>
@@ -134,7 +146,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8cpp_source.html#l00012">12</a> of file <a class="el" href="atmospheric__pass__perez_8cpp_source.html">atmospheric_pass_perez.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8cpp_source.html#l00015">15</a> of file <a class="el" href="atmospheric__pass__perez_8cpp_source.html">atmospheric_pass_perez.cpp</a>.</p>
 
 </div>
 </div>

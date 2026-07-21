@@ -38,8 +38,9 @@ var namespace_im_box =
       [ "DontSave", "namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01ac1b9fa9c8db83eef359e7d8d940af6b8", null ],
       [ "CancelDelete", "namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01a2531bd84a14a9d105604e3f5c181db64", null ]
     ] ],
+    [ "IsConfirmation", "namespace_im_box.html#aadf99dd78bdf545089f0f562bc26995e", null ],
     [ "RenderMessageBoxes", "namespace_im_box.html#afab6d46549ed3ff696bfd7538b29711a", null ],
-    [ "ShowConfirmation", "namespace_im_box.html#aed473497bfb6da5452817de53472e88c", null ],
+    [ "ShowConfirmation", "namespace_im_box.html#a3fe9dc641dfb8d7199289ec5a00d9a49", null ],
     [ "ShowDeleteConfirmation", "namespace_im_box.html#a1ed6515dbb4df2f757bcf986b744739f", null ],
     [ "ShowError", "namespace_im_box.html#aee659262eac9f4bc53e3ec3510ef80c0", null ],
     [ "ShowInfo", "namespace_im_box.html#a38c4d5c88c9b15317e29d94c3a7e89d6", null ],

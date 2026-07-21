@@ -9,5 +9,8 @@ var searchData=
   ['on_5fentry_5fmodified_5ft_6',['on_entry_modified_t',['../classfs_1_1syncer.html#a6b22befcf7a1dfb5c8f06f137889e795',1,'fs::syncer']]],
   ['on_5fentry_5fremoved_5ft_7',['on_entry_removed_t',['../classfs_1_1syncer.html#ad618f3b65aab1a79fd0da595f34109b7',1,'fs::syncer']]],
   ['on_5fentry_5frenamed_5ft_8',['on_entry_renamed_t',['../classfs_1_1syncer.html#aa2b7a251d99fb8bd8f46c9bd779148a4',1,'fs::syncer']]],
-  ['on_5frename_5ft_9',['on_rename_t',['../structunravel_1_1content__browser__item.html#ae467d0e12a15a5b4a018645ebf27d3a8',1,'unravel::content_browser_item']]]
+  ['on_5ffail_5ffn_9',['on_fail_fn',['../structunravel_1_1loading__screen.html#ad92c9af346ea80382bb03c44fcd3ced2',1,'unravel::loading_screen']]],
+  ['on_5frename_5ft_10',['on_rename_t',['../structunravel_1_1content__browser__item.html#ae467d0e12a15a5b4a018645ebf27d3a8',1,'unravel::content_browser_item']]],
+  ['on_5fsync_5fprogress_5ft_11',['on_sync_progress_t',['../classfs_1_1syncer.html#aed2ece2252f3472fe22f23ba5f2d6463',1,'fs::syncer']]],
+  ['on_5fwait_5fprogress_5ft_12',['on_wait_progress_t',['../namespaceunravel.html#a32a1fd706da7f56c8a245f3c0b57763b',1,'unravel']]]
 ];

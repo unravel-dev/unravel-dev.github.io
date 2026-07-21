@@ -103,57 +103,66 @@ $(function(){initNavTree('class_unravel_1_1_core_1_1_native_object.html',''); in
   <div class="headertitle"><div class="title">Unravel.Core.NativeObject Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for managed wrappers around native engine objects. Equality accounts for validity; invalid instances are never equal.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Unravel.Core.NativeObject:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_unravel_1_1_core_1_1_native_object.png" usemap="#Unravel.Core.NativeObject_map" alt=""/>
   <map id="Unravel.Core.NativeObject_map" name="Unravel.Core.NativeObject_map">
-<area href="class_unravel_1_1_core_1_1_component.html" title="Represents a base class for all components in the entity-component system." alt="Unravel.Core.Component" shape="rect" coords="0,112,245,136"/>
-<area href="class_unravel_1_1_core_1_1_u_i_document.html" title="Represents a wrapper around a native RmlUi document with managed lifetime. The C++ side owns the life..." alt="Unravel.Core.UIDocument" shape="rect" coords="255,112,500,136"/>
-<area href="class_unravel_1_1_core_1_1_u_i_element.html" title="Represents a wrapper around a native RmlUi element with managed lifetime. The C++ side owns the lifet..." alt="Unravel.Core.UIElement" shape="rect" coords="510,112,755,136"/>
-<area href="class_unravel_1_1_core_1_1_animation_component.html" title="Provides functionality to manage and blend animation clips on an entity." alt="Unravel.Core.AnimationComponent" shape="rect" coords="255,168,500,192"/>
-<area href="class_unravel_1_1_core_1_1_audio_listener_component.html" alt="Unravel.Core.AudioListenerComponent" shape="rect" coords="255,224,500,248"/>
-<area href="class_unravel_1_1_core_1_1_audio_source_component.html" title="Represents an audio source component that can play, pause, and control audio playback in a scene." alt="Unravel.Core.AudioSourceComponent" shape="rect" coords="255,280,500,304"/>
-<area href="class_unravel_1_1_core_1_1_bone_component.html" title="Represents a component identifying a bone." alt="Unravel.Core.BoneComponent" shape="rect" coords="255,336,500,360"/>
-<area href="class_unravel_1_1_core_1_1_camera_component.html" title="Represents a camera component that allows interaction with the camera, such as converting screen spac..." alt="Unravel.Core.CameraComponent" shape="rect" coords="255,392,500,416"/>
-<area href="class_unravel_1_1_core_1_1_id_component.html" alt="Unravel.Core.IdComponent" shape="rect" coords="255,448,500,472"/>
-<area href="class_unravel_1_1_core_1_1_light_component.html" alt="Unravel.Core.LightComponent" shape="rect" coords="255,504,500,528"/>
-<area href="class_unravel_1_1_core_1_1_model_component.html" title="Represents a component that provides model rendering capabilities for an entity." alt="Unravel.Core.ModelComponent" shape="rect" coords="255,560,500,584"/>
-<area href="class_unravel_1_1_core_1_1_particle_emitter_component.html" title="Represents a component that provides particle emission capabilities for an entity." alt="Unravel.Core.ParticleEmitterComponent" shape="rect" coords="255,616,500,640"/>
-<area href="class_unravel_1_1_core_1_1_physics_component.html" title="Provides physics functionality for an entity." alt="Unravel.Core.PhysicsComponent" shape="rect" coords="255,672,500,696"/>
-<area href="class_unravel_1_1_core_1_1_reflection_probe_component.html" alt="Unravel.Core.ReflectionProbeComponent" shape="rect" coords="255,728,500,752"/>
-<area href="class_unravel_1_1_core_1_1_script_component.html" title="Represents a script component that provides lifecycle hooks and event handling for an entity." alt="Unravel.Core.ScriptComponent" shape="rect" coords="255,784,500,808"/>
-<area href="class_unravel_1_1_core_1_1_text_component.html" title="Mirrors ace::text_component, letting scripts manage text rendering via properties." alt="Unravel.Core.TextComponent" shape="rect" coords="255,840,500,864"/>
-<area href="class_unravel_1_1_core_1_1_transform_component.html" title="Represents a component that defines the position, rotation, scale, and other transformations of an en..." alt="Unravel.Core.TransformComponent" shape="rect" coords="255,896,500,920"/>
-<area href="class_unravel_1_1_core_1_1_u_i_document_component.html" title="Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces...." alt="Unravel.Core.UIDocumentComponent" shape="rect" coords="255,952,500,976"/>
+<area href="class_unravel_1_1_core_1_1_component.html" title="Represents a base class for all components in the entity-component system." alt="Unravel.Core.Component" shape="rect" coords="0,112,268,136"/>
+<area href="class_unravel_1_1_core_1_1_u_i_document.html" title="Represents a wrapper around a native RmlUi document with managed lifetime. The C++ side owns the life..." alt="Unravel.Core.UIDocument" shape="rect" coords="278,112,546,136"/>
+<area href="class_unravel_1_1_core_1_1_u_i_element.html" title="Represents a wrapper around a native RmlUi element with managed lifetime. The C++ side owns the lifet..." alt="Unravel.Core.UIElement" shape="rect" coords="556,112,824,136"/>
+<area href="class_unravel_1_1_core_1_1_animation_component.html" title="Provides functionality to manage and blend animation clips on an entity." alt="Unravel.Core.AnimationComponent" shape="rect" coords="278,168,546,192"/>
+<area href="class_unravel_1_1_core_1_1_audio_listener_component.html" title="Marks an entity as the audio listener used for spatialized sound." alt="Unravel.Core.AudioListenerComponent" shape="rect" coords="278,224,546,248"/>
+<area href="class_unravel_1_1_core_1_1_audio_source_component.html" title="Represents an audio source component that can play, pause, and control audio playback in a scene." alt="Unravel.Core.AudioSourceComponent" shape="rect" coords="278,280,546,304"/>
+<area href="class_unravel_1_1_core_1_1_bone_component.html" title="Represents a component identifying a bone." alt="Unravel.Core.BoneComponent" shape="rect" coords="278,336,546,360"/>
+<area href="class_unravel_1_1_core_1_1_camera_component.html" title="Represents a camera component that allows interaction with the camera, such as converting screen spac..." alt="Unravel.Core.CameraComponent" shape="rect" coords="278,392,546,416"/>
+<area href="class_unravel_1_1_core_1_1_character_controller_component.html" title="Provides character controller physics functionality for an entity. Uses a capsule shape internally wi..." alt="Unravel.Core.CharacterControllerComponent" shape="rect" coords="278,448,546,472"/>
+<area href="class_unravel_1_1_core_1_1_id_component.html" title="Holds the entity&#39;s unique identifier used by the runtime and serialization." alt="Unravel.Core.IdComponent" shape="rect" coords="278,504,546,528"/>
+<area href="class_unravel_1_1_core_1_1_light_component.html" title="Light source component attached to an entity." alt="Unravel.Core.LightComponent" shape="rect" coords="278,560,546,584"/>
+<area href="class_unravel_1_1_core_1_1_model_component.html" title="Represents a component that provides model rendering capabilities for an entity." alt="Unravel.Core.ModelComponent" shape="rect" coords="278,616,546,640"/>
+<area href="class_unravel_1_1_core_1_1_particle_emitter_component.html" title="Represents a component that provides particle emission capabilities for an entity." alt="Unravel.Core.ParticleEmitterComponent" shape="rect" coords="278,672,546,696"/>
+<area href="class_unravel_1_1_core_1_1_physics_component.html" title="Provides physics functionality for an entity." alt="Unravel.Core.PhysicsComponent" shape="rect" coords="278,728,546,752"/>
+<area href="class_unravel_1_1_core_1_1_reflection_probe_component.html" title="Captures and provides reflection probe data for an entity." alt="Unravel.Core.ReflectionProbeComponent" shape="rect" coords="278,784,546,808"/>
+<area href="class_unravel_1_1_core_1_1_script_component.html" title="Represents a script component that provides lifecycle hooks and event handling for an entity." alt="Unravel.Core.ScriptComponent" shape="rect" coords="278,840,546,864"/>
+<area href="class_unravel_1_1_core_1_1_text_component.html" title="Mirrors ace::text_component, letting scripts manage text rendering via properties." alt="Unravel.Core.TextComponent" shape="rect" coords="278,896,546,920"/>
+<area href="class_unravel_1_1_core_1_1_transform_component.html" title="Represents a component that defines the position, rotation, scale, and other transformations of an en..." alt="Unravel.Core.TransformComponent" shape="rect" coords="278,952,546,976"/>
+<area href="class_unravel_1_1_core_1_1_u_i_document_component.html" title="Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces...." alt="Unravel.Core.UIDocumentComponent" shape="rect" coords="278,1008,546,1032"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afa69d537f10526f613f486702a9c09a3" id="r_afa69d537f10526f613f486702a9c09a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa69d537f10526f613f486702a9c09a3">IsValid</a> ()</td></tr>
+<tr class="memdesc:afa69d537f10526f613f486702a9c09a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this object still refers to a valid native instance.  <br /></td></tr>
 <tr class="separator:afa69d537f10526f613f486702a9c09a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17f43bfd26f24f6cf07a40fbcb101247" id="r_a17f43bfd26f24f6cf07a40fbcb101247"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17f43bfd26f24f6cf07a40fbcb101247">Equals</a> (<a class="el" href="class_unravel_1_1_core_1_1_native_object.html">NativeObject</a> other)</td></tr>
+<tr class="memdesc:a17f43bfd26f24f6cf07a40fbcb101247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether this instance is equal to another <a class="el" href="class_unravel_1_1_core_1_1_native_object.html" title="Base class for managed wrappers around native engine objects. Equality accounts for validity; invalid...">NativeObject</a>.  <br /></td></tr>
 <tr class="separator:a17f43bfd26f24f6cf07a40fbcb101247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4069d85ca5d85d4888a45cde55a1a28" id="r_af4069d85ca5d85d4888a45cde55a1a28"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4069d85ca5d85d4888a45cde55a1a28">Equals</a> (object obj)</td></tr>
+<tr class="memdesc:af4069d85ca5d85d4888a45cde55a1a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether this instance is equal to the specified object.  <br /></td></tr>
 <tr class="separator:af4069d85ca5d85d4888a45cde55a1a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c842528c79a3f124a40771bb71cbe2" id="r_a57c842528c79a3f124a40771bb71cbe2"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57c842528c79a3f124a40771bb71cbe2">GetHashCode</a> ()</td></tr>
+<tr class="memdesc:a57c842528c79a3f124a40771bb71cbe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a hash code for this instance.  <br /></td></tr>
 <tr class="separator:a57c842528c79a3f124a40771bb71cbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af905937aef5c9a118a59e155c7cf8917" id="r_af905937aef5c9a118a59e155c7cf8917"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af905937aef5c9a118a59e155c7cf8917">operator==</a> (<a class="el" href="class_unravel_1_1_core_1_1_native_object.html">NativeObject</a> left, <a class="el" href="class_unravel_1_1_core_1_1_native_object.html">NativeObject</a> right)</td></tr>
+<tr class="memdesc:af905937aef5c9a118a59e155c7cf8917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two <a class="el" href="class_unravel_1_1_core_1_1_native_object.html" title="Base class for managed wrappers around native engine objects. Equality accounts for validity; invalid...">NativeObject</a> instances for equality.  <br /></td></tr>
 <tr class="separator:af905937aef5c9a118a59e155c7cf8917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7934295ba69cc0203dcf5e50e45e6c43" id="r_a7934295ba69cc0203dcf5e50e45e6c43"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7934295ba69cc0203dcf5e50e45e6c43">operator!=</a> (<a class="el" href="class_unravel_1_1_core_1_1_native_object.html">NativeObject</a> left, <a class="el" href="class_unravel_1_1_core_1_1_native_object.html">NativeObject</a> right)</td></tr>
+<tr class="memdesc:a7934295ba69cc0203dcf5e50e45e6c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two <a class="el" href="class_unravel_1_1_core_1_1_native_object.html" title="Base class for managed wrappers around native engine objects. Equality accounts for validity; invalid...">NativeObject</a> instances for inequality.  <br /></td></tr>
 <tr class="separator:a7934295ba69cc0203dcf5e50e45e6c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf9264dd9277387e12d8a61a80443212" id="r_adf9264dd9277387e12d8a61a80443212"><td class="memItemLeft" align="right" valign="top">static implicit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf9264dd9277387e12d8a61a80443212">operator bool</a> (<a class="el" href="class_unravel_1_1_core_1_1_native_object.html">NativeObject</a> obj)</td></tr>
 <tr class="memdesc:adf9264dd9277387e12d8a61a80443212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion to bool for null checking. Returns true if the object is valid.  <br /></td></tr>
 <tr class="separator:adf9264dd9277387e12d8a61a80443212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_object_8cs_source.html#l00006">6</a> of file <a class="el" href="_object_8cs_source.html">Object.cs</a>.</p>
+<div class="textblock"><p>Base class for managed wrappers around native engine objects. Equality accounts for validity; invalid instances are never equal. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a17f43bfd26f24f6cf07a40fbcb101247" name="a17f43bfd26f24f6cf07a40fbcb101247"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17f43bfd26f24f6cf07a40fbcb101247">&#9670;&#160;</a></span>Equals() <span class="overload">[1/2]</span></h2>
@@ -170,7 +179,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_8cs_source.html#l00011">11</a> of file <a class="el" href="_object_8cs_source.html">Object.cs</a>.</p>
+<p>Determines whether this instance is equal to another <a class="el" href="class_unravel_1_1_core_1_1_native_object.html" title="Base class for managed wrappers around native engine objects. Equality accounts for validity; invalid...">NativeObject</a>. </p>
 
 </div>
 </div>
@@ -189,7 +198,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_8cs_source.html#l00034">34</a> of file <a class="el" href="_object_8cs_source.html">Object.cs</a>.</p>
+<p>Determines whether this instance is equal to the specified object. </p>
 
 </div>
 </div>
@@ -208,7 +217,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_8cs_source.html#l00040">40</a> of file <a class="el" href="_object_8cs_source.html">Object.cs</a>.</p>
+<p>Returns a hash code for this instance. </p>
 
 </div>
 </div>
@@ -234,6 +243,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns whether this object still refers to a valid native instance. </p>
 
 </div>
 </div>
@@ -269,8 +280,6 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the entity is valid; otherwise, <code>false</code>.</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_object_8cs_source.html#l00085">85</a> of file <a class="el" href="_object_8cs_source.html">Object.cs</a>.</p>
-
 </div>
 </div>
 <a id="a7934295ba69cc0203dcf5e50e45e6c43" name="a7934295ba69cc0203dcf5e50e45e6c43"></a>
@@ -300,7 +309,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_8cs_source.html#l00075">75</a> of file <a class="el" href="_object_8cs_source.html">Object.cs</a>.</p>
+<p>Compares two <a class="el" href="class_unravel_1_1_core_1_1_native_object.html" title="Base class for managed wrappers around native engine objects. Equality accounts for validity; invalid...">NativeObject</a> instances for inequality. </p>
 
 </div>
 </div>
@@ -331,12 +340,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_object_8cs_source.html#l00060">60</a> of file <a class="el" href="_object_8cs_source.html">Object.cs</a>.</p>
+<p>Compares two <a class="el" href="class_unravel_1_1_core_1_1_native_object.html" title="Base class for managed wrappers around native engine objects. Equality accounts for validity; invalid...">NativeObject</a> instances for equality. </p>
+<p>Expensive: calls <a class="el" href="#afa69d537f10526f613f486702a9c09a3" title="Returns whether this object still refers to a valid native instance.">IsValid</a>, which may involve native calls. For performance-critical null checks, prefer object.ReferenceEquals. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/system/<a class="el" href="_object_8cs_source.html">Object.cs</a></li>
+<li>C:/Workspace/github/UnravelEngine/UnravelEngine/engine_data/data/scripts/system/<a class="el" href="_object_8cs.html">Object.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

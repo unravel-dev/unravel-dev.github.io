@@ -10,10 +10,12 @@ var classunravel_1_1animation__component =
     [ "get_culling_mode", "classunravel_1_1animation__component.html#a47847a8cb94468e6264698fd8b8b0fe5", null ],
     [ "get_player", "classunravel_1_1animation__component.html#a618a09d206bf78efde37e0a307100aef", null ],
     [ "get_player", "classunravel_1_1animation__component.html#a3f05bb0c642bdc654ee1eae1d7d87355", null ],
+    [ "get_retargeting_mode", "classunravel_1_1animation__component.html#acc503e716d56384df6c2e9bb46f9b9ae", null ],
     [ "get_speed", "classunravel_1_1animation__component.html#a615302ccb701636b28edc5e42ad811b7", null ],
     [ "set_animation", "classunravel_1_1animation__component.html#ad941fb4e94d56d07dca9065237c46080", null ],
     [ "set_apply_root_motion", "classunravel_1_1animation__component.html#a1efa711abd3487d09490f998b8215151", null ],
     [ "set_autoplay", "classunravel_1_1animation__component.html#aed97c90711bd6e152dbbde91754df576", null ],
     [ "set_culling_mode", "classunravel_1_1animation__component.html#a124a57a535312ec666326bfdfbfdad70", null ],
+    [ "set_retargeting_mode", "classunravel_1_1animation__component.html#a87dc7e4448e286e6d5ffafc2f978fe3d", null ],
     [ "set_speed", "classunravel_1_1animation__component.html#a74a019e7cfd95ebfe8d95422024190bf", null ]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['entry_0',['entry',['../namespaceentry.html',1,'']]],
-  ['entt_1',['entt',['../namespaceentt.html',1,'']]],
-  ['ex_2',['ex',['../namespaceex.html',1,'']]]
+  ['dotnetpp_5fbackend_0',['dotnetpp_backend',['../namespacedotnetpp__backend.html',1,'']]],
+  ['dotnetpp_5fbackend_3a_3amanaged_5finterface_1',['managed_interface',['../namespacedotnetpp__backend_1_1managed__interface.html',1,'dotnetpp_backend']]]
 ];

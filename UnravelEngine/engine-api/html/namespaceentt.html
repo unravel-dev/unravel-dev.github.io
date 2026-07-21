@@ -97,20 +97,27 @@ $(function(){initNavTree('namespaceentt.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">entt Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1uhandle.html">uhandle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ad0c4d1fdcb6e7abbd3204968cd6ffe30" id="r_ad0c4d1fdcb6e7abbd3204968cd6ffe30"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0c4d1fdcb6e7abbd3204968cd6ffe30">attributes</a> = std::map&lt;std::string, meta_any&gt;</td></tr>
 <tr class="separator:ad0c4d1fdcb6e7abbd3204968cd6ffe30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e70ddd929931f82acbfeb7d72f3aec" id="r_a70e70ddd929931f82acbfeb7d72f3aec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70e70ddd929931f82acbfeb7d72f3aec">attribute</a> = attributes::value_type</td></tr>
 <tr class="separator:a70e70ddd929931f82acbfeb7d72f3aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7397994dada156c6e1cc1871c419aae" id="r_ae7397994dada156c6e1cc1871c419aae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7397994dada156c6e1cc1871c419aae">property_predicate_t</a> = std::function&lt;bool(const meta_any&amp;)&gt;</td></tr>
-<tr class="separator:ae7397994dada156c6e1cc1871c419aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ff6d00291d6a2cf77989e27f387c34" id="r_ac8ff6d00291d6a2cf77989e27f387c34"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac8ff6d00291d6a2cf77989e27f387c34"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac8ff6d00291d6a2cf77989e27f387c34">property_predicate_t</a> = std::function&lt;T(const meta_any&amp;)&gt;</td></tr>
+<tr class="separator:ac8ff6d00291d6a2cf77989e27f387c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -140,8 +147,20 @@ Functions</h2></td></tr>
 <tr class="separator:a67fe5d0c5be511e15bb602f64461f68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d879ad2b31060897926da3496c70939" id="r_a9d879ad2b31060897926da3496c70939"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d879ad2b31060897926da3496c70939">get_pretty_name</a> (const meta_data &amp;prop) -&gt; std::string</td></tr>
 <tr class="separator:a9d879ad2b31060897926da3496c70939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae67ce55f5eff6289257b54f585bb53c5" id="r_ae67ce55f5eff6289257b54f585bb53c5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae67ce55f5eff6289257b54f585bb53c5">property_predicate</a> (<a class="el" href="#ae7397994dada156c6e1cc1871c419aae">property_predicate_t</a> predicate) -&gt; <a class="el" href="#ae7397994dada156c6e1cc1871c419aae">property_predicate_t</a></td></tr>
-<tr class="separator:ae67ce55f5eff6289257b54f585bb53c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8a7d714e1270ab89a0ae685e361def" id="r_a9d8a7d714e1270ab89a0ae685e361def"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d8a7d714e1270ab89a0ae685e361def">is_property_visible</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_data &amp;prop) -&gt; bool</td></tr>
+<tr class="separator:a9d8a7d714e1270ab89a0ae685e361def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35891b8cd61630f8c93710a8bc67ccd" id="r_ad35891b8cd61630f8c93710a8bc67ccd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad35891b8cd61630f8c93710a8bc67ccd">is_property_readonly</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_data &amp;prop) -&gt; bool</td></tr>
+<tr class="separator:ad35891b8cd61630f8c93710a8bc67ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad764bb719c01c1b0dc1748c5bd86e454" id="r_ad764bb719c01c1b0dc1748c5bd86e454"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad764bb719c01c1b0dc1748c5bd86e454">is_property_flattable</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_data &amp;prop) -&gt; bool</td></tr>
+<tr class="separator:ad764bb719c01c1b0dc1748c5bd86e454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8b0a847d3c629c038da553d1a3121c" id="r_a6c8b0a847d3c629c038da553d1a3121c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c8b0a847d3c629c038da553d1a3121c">is_property_visible</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_custom &amp;custom) -&gt; bool</td></tr>
+<tr class="separator:a6c8b0a847d3c629c038da553d1a3121c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041725ba9aff5d8914f3b13b2e887361" id="r_a041725ba9aff5d8914f3b13b2e887361"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a041725ba9aff5d8914f3b13b2e887361">is_property_readonly</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_custom &amp;custom) -&gt; bool</td></tr>
+<tr class="separator:a041725ba9aff5d8914f3b13b2e887361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b053e9c6d9a9202bbd2b25c08acc72e" id="r_a4b053e9c6d9a9202bbd2b25c08acc72e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b053e9c6d9a9202bbd2b25c08acc72e">is_property_flattable</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_custom &amp;custom) -&gt; bool</td></tr>
+<tr class="separator:a4b053e9c6d9a9202bbd2b25c08acc72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630cb2f1a1aeb88fa65d5678fbfcb5ed" id="r_a630cb2f1a1aeb88fa65d5678fbfcb5ed"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630cb2f1a1aeb88fa65d5678fbfcb5ed">get_property_hint</a> (const entt::meta_any &amp;<a class="el" href="bullet__backend_8cpp.html#a57ccf961c8e1f72949e9aabcfeb804e8">object</a>, const entt::meta_data &amp;prop) -&gt; std::string</td></tr>
+<tr class="separator:a630cb2f1a1aeb88fa65d5678fbfcb5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa01f529cc240a9b2161e7239e1fe0612" id="r_aa01f529cc240a9b2161e7239e1fe0612"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa01f529cc240a9b2161e7239e1fe0612"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa01f529cc240a9b2161e7239e1fe0612">get_attribute_as</a> (const meta_custom &amp;custom, const char *<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>) -&gt; T</td></tr>
 <tr class="separator:aa01f529cc240a9b2161e7239e1fe0612"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,9 +173,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a23c2f116094a4b4a788909dc2be7dae0" id="r_a23c2f116094a4b4a788909dc2be7dae0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a23c2f116094a4b4a788909dc2be7dae0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a23c2f116094a4b4a788909dc2be7dae0">get_attribute_as</a> (const meta_data &amp;prop, const char *<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>) -&gt; T</td></tr>
 <tr class="separator:a23c2f116094a4b4a788909dc2be7dae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd6c5dc85872b16d67d0a7d3b72b7b6" id="r_a0dd6c5dc85872b16d67d0a7d3b72b7b6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0dd6c5dc85872b16d67d0a7d3b72b7b6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0dd6c5dc85872b16d67d0a7d3b72b7b6">property_predicate</a> (<a class="el" href="#ac8ff6d00291d6a2cf77989e27f387c34">property_predicate_t</a>&lt; T &gt; predicate) -&gt; <a class="el" href="#ac8ff6d00291d6a2cf77989e27f387c34">property_predicate_t</a>&lt; T &gt;</td></tr>
+<tr class="separator:a0dd6c5dc85872b16d67d0a7d3b72b7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af53bc79f7cbecca95bb72a1717bbf9a3" id="r_af53bc79f7cbecca95bb72a1717bbf9a3"><td class="memTemplParams" colspan="2">template&lt;typename Value , typename... Args&gt; </td></tr>
 <tr class="memitem:af53bc79f7cbecca95bb72a1717bbf9a3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af53bc79f7cbecca95bb72a1717bbf9a3">make_custom</a> (Args &amp;&amp;...args) -&gt; entt::meta_custom</td></tr>
 <tr class="separator:af53bc79f7cbecca95bb72a1717bbf9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fda8f1d04f76377cfb42b266081a2b" id="r_a68fda8f1d04f76377cfb42b266081a2b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68fda8f1d04f76377cfb42b266081a2b">make_uhandle</a> (entt::handle <a class="el" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a>) -&gt; <a class="el" href="structentt_1_1uhandle.html">uhandle</a></td></tr>
+<tr class="separator:a68fda8f1d04f76377cfb42b266081a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a70e70ddd929931f82acbfeb7d72f3aec" name="a70e70ddd929931f82acbfeb7d72f3aec"></a>
@@ -191,19 +215,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae7397994dada156c6e1cc1871c419aae" name="ae7397994dada156c6e1cc1871c419aae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7397994dada156c6e1cc1871c419aae">&#9670;&#160;</a></span>property_predicate_t</h2>
+<a id="ac8ff6d00291d6a2cf77989e27f387c34" name="ac8ff6d00291d6a2cf77989e27f387c34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ff6d00291d6a2cf77989e27f387c34">&#9670;&#160;</a></span>property_predicate_t</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ae7397994dada156c6e1cc1871c419aae">entt::property_predicate_t</a> = std::function&lt;bool(const meta_any&amp;)&gt;</td>
+          <td class="memname">using <a class="el" href="#ac8ff6d00291d6a2cf77989e27f387c34">entt::property_predicate_t</a> = std::function&lt;T(const meta_any&amp;)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00085">85</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00086">86</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
 
 </div>
 </div>
@@ -579,6 +605,167 @@ template&lt;&gt; </div>
 
 </div>
 </div>
+<a id="a630cb2f1a1aeb88fa65d5678fbfcb5ed" name="a630cb2f1a1aeb88fa65d5678fbfcb5ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630cb2f1a1aeb88fa65d5678fbfcb5ed">&#9670;&#160;</a></span>get_property_hint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto entt::get_property_hint </td>
+          <td>(</td>
+          <td class="paramtype">const entt::meta_any &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const entt::meta_data &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;) -&gt;  std::string</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="reflection_8cpp_source.html#l00220">220</a> of file <a class="el" href="reflection_8cpp_source.html">reflection.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4b053e9c6d9a9202bbd2b25c08acc72e" name="a4b053e9c6d9a9202bbd2b25c08acc72e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b053e9c6d9a9202bbd2b25c08acc72e">&#9670;&#160;</a></span>is_property_flattable() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto entt::is_property_flattable </td>
+          <td>(</td>
+          <td class="paramtype">const entt::meta_any &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const entt::meta_custom &amp;</td>          <td class="paramname"><span class="paramname"><em>custom</em></span>&#160;) -&gt;  bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="reflection_8cpp_source.html#l00208">208</a> of file <a class="el" href="reflection_8cpp_source.html">reflection.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad764bb719c01c1b0dc1748c5bd86e454" name="ad764bb719c01c1b0dc1748c5bd86e454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad764bb719c01c1b0dc1748c5bd86e454">&#9670;&#160;</a></span>is_property_flattable() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto entt::is_property_flattable </td>
+          <td>(</td>
+          <td class="paramtype">const entt::meta_any &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const entt::meta_data &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;) -&gt;  bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="reflection_8cpp_source.html#l00178">178</a> of file <a class="el" href="reflection_8cpp_source.html">reflection.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a041725ba9aff5d8914f3b13b2e887361" name="a041725ba9aff5d8914f3b13b2e887361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041725ba9aff5d8914f3b13b2e887361">&#9670;&#160;</a></span>is_property_readonly() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto entt::is_property_readonly </td>
+          <td>(</td>
+          <td class="paramtype">const entt::meta_any &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const entt::meta_custom &amp;</td>          <td class="paramname"><span class="paramname"><em>custom</em></span>&#160;) -&gt;  bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="reflection_8cpp_source.html#l00196">196</a> of file <a class="el" href="reflection_8cpp_source.html">reflection.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad35891b8cd61630f8c93710a8bc67ccd" name="ad35891b8cd61630f8c93710a8bc67ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad35891b8cd61630f8c93710a8bc67ccd">&#9670;&#160;</a></span>is_property_readonly() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto entt::is_property_readonly </td>
+          <td>(</td>
+          <td class="paramtype">const entt::meta_any &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const entt::meta_data &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;) -&gt;  bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="reflection_8cpp_source.html#l00173">173</a> of file <a class="el" href="reflection_8cpp_source.html">reflection.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6c8b0a847d3c629c038da553d1a3121c" name="a6c8b0a847d3c629c038da553d1a3121c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c8b0a847d3c629c038da553d1a3121c">&#9670;&#160;</a></span>is_property_visible() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto entt::is_property_visible </td>
+          <td>(</td>
+          <td class="paramtype">const entt::meta_any &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const entt::meta_custom &amp;</td>          <td class="paramname"><span class="paramname"><em>custom</em></span>&#160;) -&gt;  bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="reflection_8cpp_source.html#l00184">184</a> of file <a class="el" href="reflection_8cpp_source.html">reflection.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9d8a7d714e1270ab89a0ae685e361def" name="a9d8a7d714e1270ab89a0ae685e361def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8a7d714e1270ab89a0ae685e361def">&#9670;&#160;</a></span>is_property_visible() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto entt::is_property_visible </td>
+          <td>(</td>
+          <td class="paramtype">const entt::meta_any &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const entt::meta_data &amp;</td>          <td class="paramname"><span class="paramname"><em>prop</em></span>&#160;) -&gt;  bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="reflection_8cpp_source.html#l00168">168</a> of file <a class="el" href="reflection_8cpp_source.html">reflection.cpp</a>.</p>
+
+</div>
+</div>
 <a id="af53bc79f7cbecca95bb72a1717bbf9a3" name="af53bc79f7cbecca95bb72a1717bbf9a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af53bc79f7cbecca95bb72a1717bbf9a3">&#9670;&#160;</a></span>make_custom()</h2>
 
@@ -597,26 +784,57 @@ template&lt;typename Value , typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00091">91</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00097">97</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
 
 </div>
 </div>
-<a id="ae67ce55f5eff6289257b54f585bb53c5" name="ae67ce55f5eff6289257b54f585bb53c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae67ce55f5eff6289257b54f585bb53c5">&#9670;&#160;</a></span>property_predicate()</h2>
+<a id="a68fda8f1d04f76377cfb42b266081a2b" name="a68fda8f1d04f76377cfb42b266081a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68fda8f1d04f76377cfb42b266081a2b">&#9670;&#160;</a></span>make_uhandle()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">REFLECTION_EXPORT auto entt::property_predicate </td>
+          <td class="memname">auto entt::make_uhandle </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#ae7397994dada156c6e1cc1871c419aae">property_predicate_t</a></td>          <td class="paramname"><span class="paramname"><em>predicate</em></span></td><td>)</td>
-          <td> -&gt;  <a class="el" href="#ae7397994dada156c6e1cc1871c419aae">property_predicate_t</a></td>
+          <td class="paramtype">entt::handle</td>          <td class="paramname"><span class="paramname"><em>handle</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structentt_1_1uhandle.html">uhandle</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00229">229</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+
+</div>
+</div>
+<a id="a0dd6c5dc85872b16d67d0a7d3b72b7b6" name="a0dd6c5dc85872b16d67d0a7d3b72b7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dd6c5dc85872b16d67d0a7d3b72b7b6">&#9670;&#160;</a></span>property_predicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto entt::property_predicate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ac8ff6d00291d6a2cf77989e27f387c34">property_predicate_t</a>&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>predicate</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="#ac8ff6d00291d6a2cf77989e27f387c34">property_predicate_t</a>&lt;T&gt;
+</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="reflection_8cpp_source.html#l00167">167</a> of file <a class="el" href="reflection_8cpp_source.html">reflection.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="reflection_8h_source.html#l00089">89</a> of file <a class="el" href="reflection_8h_source.html">reflection.h</a>.</p>
 
 </div>
 </div>

@@ -7,7 +7,7 @@ var structunravel_1_1entity__set__tag__action__t =
     [ "is_valid", "structunravel_1_1entity__set__tag__action__t.html#a87639645c49fad4bb8b513720841d49d", null ],
     [ "merge_with", "structunravel_1_1entity__set__tag__action__t.html#a2944fdc2cf5309c06a26364124fc57fa", null ],
     [ "undo_action", "structunravel_1_1entity__set__tag__action__t.html#ae25ccd61d637716f7635845d685e5fed", null ],
-    [ "entity", "structunravel_1_1entity__set__tag__action__t.html#a4bc2f48cf2067d9a858aee3c688d0b53", null ],
+    [ "entity", "structunravel_1_1entity__set__tag__action__t.html#a07411f797fbebd105eae5af4f627938e", null ],
     [ "new_tag", "structunravel_1_1entity__set__tag__action__t.html#a4c3c8472a988b33dcd16be9ab3759195", null ],
     [ "old_tag", "structunravel_1_1entity__set__tag__action__t.html#a7419a50ed0742ef9a880f29af262ca12", null ]
 ];

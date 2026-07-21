@@ -108,19 +108,37 @@ $(function(){initNavTree('model_8h.html',''); initResizable(true); });
 <code>#include &quot;<a class="el" href="gpu__program_8h_source.html">gpu_program.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="material_8h_source.html">material.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mesh_8h_source.html">mesh.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="render__proxy_8h_source.html">render_proxy.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>&quot;</code><br />
+<code>#include &lt;hpp/small_vector.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="graphics_8h_source.html">graphics/graphics.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="registration_8h_source.html">reflection/registration.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="serialization_8h_source.html">serialization/serialization.h</a>&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="model_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1lod__data.html">unravel::lod_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains level of detail (LOD) data for an entity per view. Uses distance-based hysteresis for stable LOD selection combined with time-based dithered transitions.  <a href="structunravel_1_1lod__data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1per__camera__lod__state.html">unravel::per_camera_lod_state</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracks LOD state and last access frame for a specific view (camera).  <a href="structunravel_1_1per__camera__lod__state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1submesh__pose__mat4.html">unravel::submesh_pose_mat4</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1submesh__pose__mat4_1_1transform__index.html">unravel::submesh_pose_mat4::transform_index</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps submesh index to a list of transform indices. Key: submesh_index, Value: list of indices into the transforms array.  <a href="structunravel_1_1submesh__pose__mat4_1_1transform__index.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1pose__mat4.html">unravel::pose_mat4</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1pose__transform.html">unravel::pose_transform</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1model__submit__extras.html">unravel::model_submit_extras</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional retained render data consumed by the model submit paths.  <a href="structunravel_1_1model__submit__extras.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1model.html">unravel::model</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure describing a LOD group (set of meshes), LOD transitions, and their materials.  <a href="classunravel_1_1model.html#details">More...</a><br /></td></tr>
@@ -130,6 +148,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1model_1_1submit__callbacks_1_1params.html">unravel::model::submit_callbacks::params</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters for the submit callbacks.  <a href="structunravel_1_1model_1_1submit__callbacks_1_1params.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1model_1_1submit__vertex__pulling__callbacks.html">unravel::model::submit_vertex_pulling_callbacks</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callbacks for submitting the model using vertex-pulling rendering.  <a href="structunravel_1_1model_1_1submit__vertex__pulling__callbacks.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1model_1_1submit__vertex__pulling__callbacks_1_1params.html">unravel::model::submit_vertex_pulling_callbacks::params</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-invocation information for a vertex-pulling submesh submit.  <a href="structunravel_1_1model_1_1submit__vertex__pulling__callbacks_1_1params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>

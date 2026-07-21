@@ -1,7 +1,11 @@
 var version_8h =
 [
-    [ "get_full", "version_8h.html#a33ad3abd2e2138e59c7a5e376aacd026", null ],
-    [ "get_major", "version_8h.html#a40a6c30ca3a59545b38d8845d509085a", null ],
-    [ "get_minor", "version_8h.html#a0983c05d8948721ad41e2b6325da5544", null ],
-    [ "get_patch", "version_8h.html#aa991b373af2a25d05d1308511771afe3", null ]
+    [ "version::engine_version", "structversion_1_1engine__version.html", "structversion_1_1engine__version" ],
+    [ "compare", "version_8h.html#a891993a614755ffb0f0ac0c4bc4eec60", null ],
+    [ "get_current", "version_8h.html#a8b42d22ed7d3faf55eff6518e26027d8", null ],
+    [ "get_full", "version_8h.html#a433be4ff531fc29db32f7381b470dfb4", null ],
+    [ "get_major", "version_8h.html#aceef9c1d98b8d5aebe78881c57939336", null ],
+    [ "get_minor", "version_8h.html#a902545df8d74e1c02d12c539e398930e", null ],
+    [ "get_patch", "version_8h.html#a5516d5598b1c87f5d07ca578119a37d6", null ],
+    [ "parse", "version_8h.html#a067001069df577e9413911bdfd99385a", null ]
 ];

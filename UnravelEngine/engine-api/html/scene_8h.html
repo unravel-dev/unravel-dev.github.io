@@ -99,28 +99,38 @@ $(function(){initNavTree('scene_8h.html',''); initResizable(true); });
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">scene.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;engine/engine_export.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="uuid_8h_source.html">uuid/uuid.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="prefab_8h_source.html">prefab.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="context_8hpp_source.html">context/context.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__handle_8h_source.html">engine/assets/asset_handle.h</a>&gt;</code><br />
 <code>#include &lt;entt/entt.hpp&gt;</code><br />
+<code>#include &lt;entt/signal/sigh.hpp&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 </div>
 <p><a href="scene_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1on__load__bus.html">unravel::on_load_bus&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1scene.html">unravel::scene</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a scene in the ACE framework, managing entities and their relationships.  <a href="structunravel_1_1scene.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structentt_1_1uhandle.html">entt::uhandle</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html">entt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -129,6 +139,29 @@ Macros</h2></td></tr>
 <tr class="separator:ae0cd0644517cd3e5acd247898f0d1ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ad0626b8090c1aa84b0c302a9ee79e6" id="r_a3ad0626b8090c1aa84b0c302a9ee79e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ad0626b8090c1aa84b0c302a9ee79e6">TAG_COMPONENT</a>(<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
 <tr class="separator:a3ad0626b8090c1aa84b0c302a9ee79e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aadb8b13318242a9c8bb06724debdbe07" id="r_aadb8b13318242a9c8bb06724debdbe07"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aadb8b13318242a9c8bb06724debdbe07"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aadb8b13318242a9c8bb06724debdbe07">unravel::on_load</a> (entt::registry &amp;reg) -&gt; typename <a class="el" href="structunravel_1_1on__load__bus.html">on_load_bus</a>&lt; T &gt;::sink_t</td></tr>
+<tr class="separator:aadb8b13318242a9c8bb06724debdbe07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99134b307607e8d16786d6f950a7472" id="r_aa99134b307607e8d16786d6f950a7472"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aa99134b307607e8d16786d6f950a7472"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aa99134b307607e8d16786d6f950a7472">unravel::on_construct</a> (entt::registry &amp;reg) -&gt; decltype(auto)</td></tr>
+<tr class="separator:aa99134b307607e8d16786d6f950a7472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea01a23ca96a326d3fcb6b5a58ff68e" id="r_a7ea01a23ca96a326d3fcb6b5a58ff68e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7ea01a23ca96a326d3fcb6b5a58ff68e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a7ea01a23ca96a326d3fcb6b5a58ff68e">unravel::on_update</a> (entt::registry &amp;reg) -&gt; decltype(auto)</td></tr>
+<tr class="separator:a7ea01a23ca96a326d3fcb6b5a58ff68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416005908f4cb034b5d67c7be97cf29d" id="r_a416005908f4cb034b5d67c7be97cf29d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a416005908f4cb034b5d67c7be97cf29d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a416005908f4cb034b5d67c7be97cf29d">unravel::on_destroy</a> (entt::registry &amp;reg) -&gt; decltype(auto)</td></tr>
+<tr class="separator:a416005908f4cb034b5d67c7be97cf29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae380262f43dd40c702d5d564ee26936a" id="r_ae380262f43dd40c702d5d564ee26936a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ae380262f43dd40c702d5d564ee26936a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ae380262f43dd40c702d5d564ee26936a">unravel::emit_on_load</a> (entt::registry &amp;reg, entt::entity e)</td></tr>
+<tr class="separator:ae380262f43dd40c702d5d564ee26936a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c715aac791211c251e54639302e7db" id="r_ac8c715aac791211c251e54639302e7db"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ac8c715aac791211c251e54639302e7db">unravel::find_entity_by_uuid</a> (entt::registry &amp;registry, const hpp::uuid &amp;target_uuid) -&gt; entt::handle</td></tr>
+<tr class="memdesc:ac8c715aac791211c251e54639302e7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an entity by <a class="el" href="structunravel_1_1id__component.html" title="Component that provides a unique identifier (UUID) for an entity.">id_component</a> UUID in a registry (no scene wrapper required).  <br /></td></tr>
+<tr class="separator:ac8c715aac791211c251e54639302e7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fda8f1d04f76377cfb42b266081a2b" id="r_a68fda8f1d04f76377cfb42b266081a2b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceentt.html#a68fda8f1d04f76377cfb42b266081a2b">entt::make_uhandle</a> (entt::handle <a class="el" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">handle</a>) -&gt; <a class="el" href="structentt_1_1uhandle.html">uhandle</a></td></tr>
+<tr class="separator:a68fda8f1d04f76377cfb42b266081a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ae0cd0644517cd3e5acd247898f0d1ac1" name="ae0cd0644517cd3e5acd247898f0d1ac1"></a>
@@ -147,7 +180,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">entt::tag&lt;name##_hs&gt;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00015">15</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00064">64</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -167,7 +200,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">entt::tag&lt;name##_hs&gt;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00123">123</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scene_8h_source.html#l00194">194</a> of file <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
