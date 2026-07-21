@@ -441,8 +441,8 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | Unravel Engine Scripting API",
-    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "Welcome to the Unravel Scripting API | Unravel Engine Scripting API",
+    "summary": "Welcome to the Unravel Scripting API This is the C# reference for gameplay scripts. Use Docs for guides and API for types and members."
   },
   "markdown/getting-started.html": {
     "href": "markdown/getting-started.html",
