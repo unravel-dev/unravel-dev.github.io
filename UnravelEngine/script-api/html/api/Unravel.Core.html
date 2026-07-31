@@ -120,6 +120,11 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Audio.html">Audio</a></dt>
+      <dd><p>Global audio mixer controls (master + per-bus gains) and voice-limit info.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.AudioClip.html">AudioClip</a></dt>
       <dd><p>Audio clip asset handle.</p>
 </dd>
@@ -155,12 +160,12 @@ referencing the engine. On Mono it is ignored.</p>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.BoneComponent.html">BoneComponent</a></dt>
-      <dd><p>Represents a component identifying a bone.</p>
+      <dd><p>Identifies a bone node in a skinned model armature.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.CameraComponent.html">CameraComponent</a></dt>
-      <dd><p>Represents a camera component that allows interaction with the camera, such as converting screen space positions to rays in 3D space.</p>
+      <dd><p>Camera component for viewport projection and screen-space queries.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -177,6 +182,12 @@ Uses a capsule shape internally with sweep-based movement.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.Component.html">Component</a></dt>
       <dd><p>Represents a base class for all components in the entity-component system.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.EntityPool.html">EntityPool</a></dt>
+      <dd><p>Reuses prefab instances via SetActive instead of Instantiate/Destroy each time.
+Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -334,6 +345,11 @@ Equality accounts for validity; invalid instances are never equal.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.SkylightComponent.html">SkylightComponent</a></dt>
+      <dd><p>Environment / sky light component.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.StepAttribute.html">StepAttribute</a></dt>
       <dd><p>Specifies a step increment for a numeric field in a class or struct.</p>
 </dd>
@@ -341,6 +357,11 @@ Equality accounts for validity; invalid instances are never equal.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.StyleSheet.html">StyleSheet</a></dt>
       <dd><p>UI stylesheet asset handle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.SubmeshComponent.html">SubmeshComponent</a></dt>
+      <dd><p>Per-node submesh render settings authored on armature node entities.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -390,20 +411,22 @@ This is for text inputs, dropdowns, and other elements that provide string value
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UIDocument.html">UIDocument</a></dt>
-      <dd><p>Represents a wrapper around a native RmlUi document with managed lifetime.
-The C++ side owns the lifetime and will invalidate this wrapper when the document is destroyed.</p>
+      <dd><p>Managed wrapper around a native RmlUi document (<code>Rml::ElementDocument</code>).
+Each <a class="xref" href="Unravel.Core.UIDocumentComponent.html">UIDocumentComponent</a> owns its own RmlUi context and document.
+Wrappers are cached by native pointer so repeated queries return the same instance.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UIDocumentComponent.html">UIDocumentComponent</a></dt>
       <dd><p>Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces.
-Each component instance holds its own document while sharing the global UI context.</p>
+Each component owns its own RmlUi context and document (context-per-document).</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
-      <dd><p>Represents a wrapper around a native RmlUi element with managed lifetime.
-The C++ side owns the lifetime and will invalidate this wrapper when the element is destroyed.</p>
+      <dd><p>Managed wrapper around a native RmlUi element (<code>Rml::Element</code>).
+Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_GetElementById_System_String_">GetElementById(string)</a> /
+<a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_QuerySelector_System_String_">QuerySelector(string)</a> so wrappers are cached by native pointer.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -414,7 +437,8 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UIEventManager.html">UIEventManager</a></dt>
       <dd><p>Global UI event manager that handles all UI event dispatching.
-Similar to ScriptComponentManager but for UI events.</p>
+Subscriptions are keyed by native element pointer so multiple managed wrappers
+for the same element share one subscription set.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -444,6 +468,11 @@ This is separate from key events to handle composed text input properly.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.VisualTree.html">VisualTree</a></dt>
       <dd><p>UI visual-tree (RML/layout) asset handle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.VolumeComponent.html">VolumeComponent</a></dt>
+      <dd><p>Spatial volume that applies post-processing effects from sibling components.</p>
 </dd>
     </dl>
     <h3 id="structs">
@@ -504,6 +533,16 @@ Enums
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.AudioBus.html">AudioBus</a></dt>
+      <dd><p>Mixer bus for routing audio sources. Master gain is applied on top of these.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.CloudMode.html">CloudMode</a></dt>
+      <dd><p>Cloud rendering mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.EmitterDirection.html">EmitterDirection</a></dt>
       <dd><p>Emitter direction enumeration that matches the C++ EmitterDirection::Enum</p>
 </dd>
@@ -524,8 +563,18 @@ Enums
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.IrradianceQuality.html">IrradianceQuality</a></dt>
+      <dd><p>Indirect diffuse irradiance quality.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.KeyCode.html">KeyCode</a></dt>
       <dd><p>Identifies a keyboard key for <a class="xref" href="Unravel.Core.Input.html">Input</a> queries.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.LightType.html">LightType</a></dt>
+      <dd><p>Type of light source.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -536,6 +585,41 @@ Enums
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.ParticleSimBackend.html">ParticleSimBackend</a></dt>
       <dd><p>Particle simulation/pack backend. Matches C++ ps_soa::particle_sim_backend.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ProbeResolution.html">ProbeResolution</a></dt>
+      <dd><p>Cubemap face resolution for reflection probes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ProbeType.html">ProbeType</a></dt>
+      <dd><p>Reflection probe shape type.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ProbeUpdateMode.html">ProbeUpdateMode</a></dt>
+      <dd><p>When the probe refreshes its cubemap.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ProjectionMode.html">ProjectionMode</a></dt>
+      <dd><p>Camera projection mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ReflectMethod.html">ReflectMethod</a></dt>
+      <dd><p>Reflection probe capture method.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.RigidbodyType.html">RigidbodyType</a></dt>
+      <dd><p>Simulation role of a rigid body.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.SkyMode.html">SkyMode</a></dt>
+      <dd><p>Sky rendering mode for <a class="xref" href="Unravel.Core.SkylightComponent.html">SkylightComponent</a>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -551,6 +635,11 @@ Enums
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.TextStyleFlags.html">TextStyleFlags</a></dt>
       <dd><p>Text style flags for decorations and effects, matching gfx::text_style_flags.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.VolumeMode.html">VolumeMode</a></dt>
+      <dd><p>Spatial volume mode for post-process blending.</p>
 </dd>
     </dl>
     <h3 id="delegates">

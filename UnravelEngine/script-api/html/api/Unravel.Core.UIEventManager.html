@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UIEventManager | Unravel Engine Scripting API ">
       
-      <meta name="description" content="Global UI event manager that handles all UI event dispatching. Similar to ScriptComponentManager but for UI events.">
+      <meta name="description" content="Global UI event manager that handles all UI event dispatching. Subscriptions are keyed by native element pointer so multiple managed wrappers for the same element share one subscription set.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_UIEventManager" data-uid="Unravel.Core.UIEventManager" class="text-break">
-Class UIEventManager  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L89"><i class="bi bi-code-slash"></i></a>
+Class UIEventManager  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,7 +98,8 @@ Class UIEventManager  <a class="header-action link-secondary" title="View source
   </div>
 
   <div class="markdown summary"><p>Global UI event manager that handles all UI event dispatching.
-Similar to ScriptComponentManager but for UI events.</p>
+Subscriptions are keyed by native element pointer so multiple managed wrappers
+for the same element share one subscription set.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -154,43 +155,11 @@ Similar to ScriptComponentManager but for UI events.</p>
 </h2>
 
 
-  <a id="Unravel_Core_UIEventManager_DispatchEvent_" data-uid="Unravel.Core.UIEventManager.DispatchEvent*"></a>
-
-  <h3 id="Unravel_Core_UIEventManager_DispatchEvent_Unravel_Core_UIEventBase_" data-uid="Unravel.Core.UIEventManager.DispatchEvent(Unravel.Core.UIEventBase)">
-  DispatchEvent(UIEventBase)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Dispatch a UI event. This is called from C++ when an event occurs.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void DispatchEvent(UIEventBase ev)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>ev</code> <a class="xref" href="Unravel.Core.UIEventBase.html">UIEventBase</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="Unravel_Core_UIEventManager_GetSubscriptionCount_" data-uid="Unravel.Core.UIEventManager.GetSubscriptionCount*"></a>
 
   <h3 id="Unravel_Core_UIEventManager_GetSubscriptionCount" data-uid="Unravel.Core.UIEventManager.GetSubscriptionCount">
   GetSubscriptionCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L452"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get the number of active subscriptions (for debugging/monitoring).</p>
@@ -205,7 +174,8 @@ Similar to ScriptComponentManager but for UI events.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Total number of registered callbacks.</p>
+</dd>
   </dl>
 
 
@@ -222,7 +192,7 @@ Similar to ScriptComponentManager but for UI events.</p>
 
   <h3 id="Unravel_Core_UIEventManager_GetSubscriptionInfo" data-uid="Unravel.Core.UIEventManager.GetSubscriptionInfo">
   GetSubscriptionInfo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L479"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Get subscription info for debugging.</p>
@@ -237,7 +207,8 @@ Similar to ScriptComponentManager but for UI events.</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>Human-readable subscription summary.</p>
+</dd>
   </dl>
 
 
@@ -254,10 +225,10 @@ Similar to ScriptComponentManager but for UI events.</p>
 
   <h3 id="Unravel_Core_UIEventManager_Subscribe_Unravel_Core_UIElement_System_String_Unravel_Core_UIEventCallback_" data-uid="Unravel.Core.UIEventManager.Subscribe(Unravel.Core.UIElement,System.String,Unravel.Core.UIEventCallback)">
   Subscribe(UIElement, string, UIEventCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Subscribe to a UI event. This is called by UIElement.AddEventListener.</p>
+  <div class="markdown level1 summary"><p>Subscribe to a UI event. This is called by UIElement.RegisterCallback.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -268,13 +239,13 @@ Similar to ScriptComponentManager but for UI events.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>elementWrapper</code> <a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
-    <dd><p>The UIElement instance</p>
+    <dd><p>The UIElement instance.</p>
 </dd>
     <dt><code>eventType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The type of event (e.g., &quot;click&quot;)</p>
+    <dd><p>The type of event (e.g., &quot;click&quot;).</p>
 </dd>
     <dt><code>callback</code> <a class="xref" href="Unravel.Core.UIEventCallback.html">UIEventCallback</a></dt>
-    <dd><p>The callback to invoke</p>
+    <dd><p>The callback to invoke.</p>
 </dd>
   </dl>
 
@@ -293,10 +264,10 @@ Similar to ScriptComponentManager but for UI events.</p>
 
   <h3 id="Unravel_Core_UIEventManager_Subscribe__1_Unravel_Core_UIElement_System_String_System_Action___0__" data-uid="Unravel.Core.UIEventManager.Subscribe``1(Unravel.Core.UIElement,System.String,System.Action{``0})">
   Subscribe&lt;T&gt;(UIElement, string, Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L398"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Subscribe to a typed UI event with compile-time type safety and zero runtime casting.</p>
+  <div class="markdown level1 summary"><p>Subscribe to a typed UI event with compile-time type safety.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -307,18 +278,22 @@ Similar to ScriptComponentManager but for UI events.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>elementWrapper</code> <a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
-    <dd></dd>
+    <dd><p>The UIElement instance.</p>
+</dd>
     <dt><code>eventType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The type of event to listen for.</p>
+</dd>
     <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The callback to invoke.</p>
+</dd>
   </dl>
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Event type (must derive from <a class="xref" href="Unravel.Core.UIEventBase.html">UIEventBase</a>).</p>
+</dd>
   </dl>
 
 
@@ -334,7 +309,7 @@ Similar to ScriptComponentManager but for UI events.</p>
 
   <h3 id="Unravel_Core_UIEventManager_Unsubscribe_Unravel_Core_UIElement_System_String_Unravel_Core_UIEventCallback_" data-uid="Unravel.Core.UIEventManager.Unsubscribe(Unravel.Core.UIElement,System.String,Unravel.Core.UIEventCallback)">
   Unsubscribe(UIElement, string, UIEventCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unsubscribe from a UI event.</p>
@@ -348,20 +323,20 @@ Similar to ScriptComponentManager but for UI events.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>elementWrapper</code> <a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
-    <dd><p>The UIElement instance</p>
+    <dd><p>The UIElement instance.</p>
 </dd>
     <dt><code>eventType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The type of event</p>
+    <dd><p>The type of event.</p>
 </dd>
     <dt><code>callback</code> <a class="xref" href="Unravel.Core.UIEventCallback.html">UIEventCallback</a></dt>
-    <dd><p>The callback to remove</p>
+    <dd><p>The callback to remove.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if the callback was found and removed</p>
+    <dd><p>True if the callback was found and removed.</p>
 </dd>
   </dl>
 
@@ -379,11 +354,10 @@ Similar to ScriptComponentManager but for UI events.</p>
 
   <h3 id="Unravel_Core_UIEventManager_UnsubscribeAll_Unravel_Core_UIElement_" data-uid="Unravel.Core.UIEventManager.UnsubscribeAll(Unravel.Core.UIElement)">
   UnsubscribeAll(UIElement)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Unsubscribe all callbacks from a specific UIElement.
-This removes the element from both base and typed subscription dictionaries.</p>
+  <div class="markdown level1 summary"><p>Unsubscribe all callbacks from a specific UIElement.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -394,16 +368,87 @@ This removes the element from both base and typed subscription dictionaries.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>elementWrapper</code> <a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
-    <dd><p>The UIElement to unsubscribe from</p>
+    <dd><p>The UIElement to unsubscribe from.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>True if any subscriptions were removed (or will be removed if deferred)</p>
+    <dd><p>True if any subscriptions were removed (or will be removed if deferred).</p>
 </dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIEventManager_UnsubscribeAllForOwner_" data-uid="Unravel.Core.UIEventManager.UnsubscribeAllForOwner*"></a>
+
+  <h3 id="Unravel_Core_UIEventManager_UnsubscribeAllForOwner_Unravel_Core_Entity_" data-uid="Unravel.Core.UIEventManager.UnsubscribeAllForOwner(Unravel.Core.Entity)">
+  UnsubscribeAllForOwner(Entity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all UI event subscriptions for wrappers owned by the given entity.
+Called automatically when a <a class="xref" href="Unravel.Core.ScriptComponent.html">ScriptComponent</a> is destroyed so
+callbacks cannot pin destroyed script instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnsubscribeAllForOwner(Entity owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="Unravel.Core.Entity.html">Entity</a></dt>
+    <dd><p>Entity whose UI element subscriptions should be cleared.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIEventManager_UnsubscribeAllForOwner_" data-uid="Unravel.Core.UIEventManager.UnsubscribeAllForOwner*"></a>
+
+  <h3 id="Unravel_Core_UIEventManager_UnsubscribeAllForOwner_Unravel_Core_Entity_System_Boolean_" data-uid="Unravel.Core.UIEventManager.UnsubscribeAllForOwner(Unravel.Core.Entity,System.Boolean)">
+  UnsubscribeAllForOwner(Entity, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all UI event subscriptions for wrappers owned by the given entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnsubscribeAllForOwner(Entity owner, bool invalidateWrappers)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="Unravel.Core.Entity.html">Entity</a></dt>
+    <dd><p>Entity whose UI element subscriptions should be cleared.</p>
+</dd>
+    <dt><code>invalidateWrappers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When true, also invalidates cached element/document wrappers (use on document Close).</p>
+</dd>
+  </dl>
+
 
 
 
@@ -419,7 +464,7 @@ This removes the element from both base and typed subscription dictionaries.</p>
 
   <h3 id="Unravel_Core_UIEventManager_Unsubscribe__1_Unravel_Core_UIElement_System_String_System_Action___0__" data-uid="Unravel.Core.UIEventManager.Unsubscribe``1(Unravel.Core.UIElement,System.String,System.Action{``0})">
   Unsubscribe&lt;T&gt;(UIElement, string, Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L427"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unsubscribe from a typed UI event.</p>
@@ -433,23 +478,28 @@ This removes the element from both base and typed subscription dictionaries.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>elementWrapper</code> <a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
-    <dd></dd>
+    <dd><p>The UIElement instance.</p>
+</dd>
     <dt><code>eventType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>The type of event.</p>
+</dd>
     <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
-    <dd></dd>
+    <dd><p>The callback to remove.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>True if the callback was found and removed.</p>
+</dd>
   </dl>
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>T</code></dt>
-    <dd></dd>
+    <dd><p>Event type (must derive from <a class="xref" href="Unravel.Core.UIEventBase.html">UIEventBase</a>).</p>
+</dd>
   </dl>
 
 
@@ -465,7 +515,7 @@ This removes the element from both base and typed subscription dictionaries.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L89" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIEventManager.cs/#L90" class="edit-link">Edit this page</a>
         </div>
 
 

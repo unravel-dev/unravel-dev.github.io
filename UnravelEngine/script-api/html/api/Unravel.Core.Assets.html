@@ -157,7 +157,7 @@ Class Assets  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Unravel_Core_Assets_GetAsset_System_Guid_" data-uid="Unravel.Core.Assets.GetAsset(System.Guid)">
   GetAsset(Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads a <a class="xref" href="Unravel.Core.Material.html">Material</a> by unique identifier and populates its properties.</p>
@@ -196,7 +196,7 @@ Class Assets  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Unravel_Core_Assets_GetAsset_System_String_" data-uid="Unravel.Core.Assets.GetAsset(System.String)">
   GetAsset(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads a <a class="xref" href="Unravel.Core.Material.html">Material</a> by asset key and populates its properties.</p>
@@ -210,7 +210,7 @@ Class Assets  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The material asset key.</p>
+    <dd><p>The material asset key (extension optional).</p>
 </dd>
   </dl>
 
@@ -235,7 +235,7 @@ Class Assets  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Unravel_Core_Assets_GetAsset__1_System_Guid_" data-uid="Unravel.Core.Assets.GetAsset``1(System.Guid)">
   GetAsset&lt;T&gt;(Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads an asset of type <code class="typeparamref">T</code> by unique identifier.</p>
@@ -280,7 +280,7 @@ Class Assets  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Unravel_Core_Assets_GetAsset__1_System_String_" data-uid="Unravel.Core.Assets.GetAsset``1(System.String)">
   GetAsset&lt;T&gt;(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Loads an asset of type <code class="typeparamref">T</code> by asset key.</p>
@@ -294,7 +294,8 @@ Class Assets  <a class="header-action link-secondary" title="View source" href="
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The asset key (protocol path or project key).</p>
+    <dd><p>The asset key (protocol path or project key). The type-specific extension
+may be omitted (e.g. <code>app:/data/key</code> for a <code>.spfb</code> scene).</p>
 </dd>
   </dl>
 

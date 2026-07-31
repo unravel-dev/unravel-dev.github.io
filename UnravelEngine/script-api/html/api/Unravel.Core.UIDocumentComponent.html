@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UIDocumentComponent | Unravel Engine Scripting API ">
       
-      <meta name="description" content="Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces. Each component instance holds its own document while sharing the global UI context.">
+      <meta name="description" content="Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces. Each component owns its own RmlUi context and document (context-per-document).">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -98,7 +98,7 @@ Class UIDocumentComponent  <a class="header-action link-secondary" title="View s
   </div>
 
   <div class="markdown summary"><p>Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces.
-Each component instance holds its own document while sharing the global UI context.</p>
+Each component owns its own RmlUi context and document (context-per-document).</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -314,10 +314,11 @@ Each component instance holds its own document while sharing the global UI conte
 
   <h3 id="Unravel_Core_UIDocumentComponent_Close" data-uid="Unravel.Core.UIDocumentComponent.Close">
   Close()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Closes the UI document, unloading it from memory.
+Invalidates cached wrappers and clears UI event subscriptions for this entity.
 The document will need to be reloaded before it can be used again.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -342,11 +343,11 @@ The document will need to be reloaded before it can be used again.</p>
 
   <h3 id="Unravel_Core_UIDocumentComponent_GetDocument" data-uid="Unravel.Core.UIDocumentComponent.GetDocument">
   GetDocument()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets a wrapper object for this UI document that can be cached and used for direct access.
-The wrapper will be automatically invalidated when the document is destroyed.</p>
+  <div class="markdown level1 summary"><p>Gets a cached wrapper for this UI document for direct access.
+Repeated calls return the same instance while the native document remains valid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 

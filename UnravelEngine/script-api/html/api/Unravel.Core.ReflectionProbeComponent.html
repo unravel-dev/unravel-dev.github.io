@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_ReflectionProbeComponent" data-uid="Unravel.Core.ReflectionProbeComponent" class="text-break">
-Class ReflectionProbeComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class ReflectionProbeComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -169,11 +169,404 @@ Class ReflectionProbeComponent  <a class="header-action link-secondary" title="V
 
 
 
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_boxExtents_" data-uid="Unravel.Core.ReflectionProbeComponent.boxExtents*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_boxExtents" data-uid="Unravel.Core.ReflectionProbeComponent.boxExtents">
+  boxExtents
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Box projection extents when <a class="xref" href="Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_type">type</a> is <a class="xref" href="Unravel.Core.ProbeType.html#Unravel_Core_ProbeType_Box">Box</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 boxExtents { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_captureShadows_" data-uid="Unravel.Core.ReflectionProbeComponent.captureShadows*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_captureShadows" data-uid="Unravel.Core.ReflectionProbeComponent.captureShadows">
+  captureShadows
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether shadow maps are rendered during cubemap capture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool captureShadows { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_captureSky_" data-uid="Unravel.Core.ReflectionProbeComponent.captureSky*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_captureSky" data-uid="Unravel.Core.ReflectionProbeComponent.captureSky">
+  captureSky
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the atmospheric sky is included during cubemap capture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool captureSky { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_intensity_" data-uid="Unravel.Core.ReflectionProbeComponent.intensity*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_intensity" data-uid="Unravel.Core.ReflectionProbeComponent.intensity">
+  intensity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reflection intensity multiplier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float intensity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_isDirty_" data-uid="Unravel.Core.ReflectionProbeComponent.isDirty*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_isDirty" data-uid="Unravel.Core.ReflectionProbeComponent.isDirty">
+  isDirty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>True when the probe has pending or in-flight cubemap generation work.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isDirty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_method_" data-uid="Unravel.Core.ReflectionProbeComponent.method*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_method" data-uid="Unravel.Core.ReflectionProbeComponent.method">
+  method
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Capture method used when baking the cubemap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReflectMethod method { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.ReflectMethod.html">ReflectMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_resolution_" data-uid="Unravel.Core.ReflectionProbeComponent.resolution*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_resolution" data-uid="Unravel.Core.ReflectionProbeComponent.resolution">
+  resolution
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Cubemap face resolution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProbeResolution resolution { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.ProbeResolution.html">ProbeResolution</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_sphereRange_" data-uid="Unravel.Core.ReflectionProbeComponent.sphereRange*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_sphereRange" data-uid="Unravel.Core.ReflectionProbeComponent.sphereRange">
+  sphereRange
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sphere projection range when <a class="xref" href="Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_type">type</a> is <a class="xref" href="Unravel.Core.ProbeType.html#Unravel_Core_ProbeType_Sphere">Sphere</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float sphereRange { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_type_" data-uid="Unravel.Core.ReflectionProbeComponent.type*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_type" data-uid="Unravel.Core.ReflectionProbeComponent.type">
+  type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Probe projection shape (box or sphere).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProbeType type { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.ProbeType.html">ProbeType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_updateInterval_" data-uid="Unravel.Core.ReflectionProbeComponent.updateInterval*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_updateInterval" data-uid="Unravel.Core.ReflectionProbeComponent.updateInterval">
+  updateInterval
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Realtime refresh interval in seconds. Zero means every available frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float updateInterval { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_updateMode_" data-uid="Unravel.Core.ReflectionProbeComponent.updateMode*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_updateMode" data-uid="Unravel.Core.ReflectionProbeComponent.updateMode">
+  updateMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Policy controlling when the cubemap is refreshed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProbeUpdateMode updateMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.ProbeUpdateMode.html">ProbeUpdateMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Unravel_Core_ReflectionProbeComponent_MarkDirty_" data-uid="Unravel.Core.ReflectionProbeComponent.MarkDirty*"></a>
+
+  <h3 id="Unravel_Core_ReflectionProbeComponent_MarkDirty_System_Boolean_" data-uid="Unravel.Core.ReflectionProbeComponent.MarkDirty(System.Boolean)">
+  MarkDirty(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Requests a cubemap rebuild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkDirty(bool forceFullFirstFrame = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>forceFullFirstFrame</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <code>true</code>, all six faces bake in a single frame instead of being time-sliced.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ReflectionProbeComponent.cs/#L65" class="edit-link">Edit this page</a>
         </div>
 
 

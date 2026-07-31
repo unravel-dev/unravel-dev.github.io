@@ -96,6 +96,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Audio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Audio.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Audio",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Audio.yml\" sourcestartlinenumber=\"1\">Global audio mixer controls (master + per-bus gains) and voice-limit info.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.AudioBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.AudioBus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.AudioBus",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.AudioBus.yml\" sourcestartlinenumber=\"1\">Mixer bus for routing audio sources. Master gain is applied on top of these.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.AudioClip.yml",
       "output": {
         ".html": {
@@ -162,7 +190,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.BoneComponent",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.BoneComponent.yml\" sourcestartlinenumber=\"1\">Represents a component identifying a bone.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.BoneComponent.yml\" sourcestartlinenumber=\"1\">Identifies a bone node in a skinned model armature.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -176,7 +204,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.CameraComponent",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.CameraComponent.yml\" sourcestartlinenumber=\"1\">Represents a camera component that allows interaction with the camera, such as converting screen space positions to rays in 3D space.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.CameraComponent.yml\" sourcestartlinenumber=\"1\">Camera component for viewport projection and screen-space queries.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -191,6 +219,20 @@
       "IsMRef": true,
       "Title": "Unravel.Core.CharacterControllerComponent",
       "Summary": "<p sourcefile=\"api/Unravel.Core.CharacterControllerComponent.yml\" sourcestartlinenumber=\"1\">Provides character controller physics functionality for an entity.\nUses a capsule shape internally with sweep-based movement.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.CloudMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.CloudMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.CloudMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.CloudMode.yml\" sourcestartlinenumber=\"1\">Cloud rendering mode.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -275,6 +317,20 @@
       "IsMRef": true,
       "Title": "Unravel.Core.Entity",
       "Summary": "<p sourcefile=\"api/Unravel.Core.Entity.yml\" sourcestartlinenumber=\"1\">Represents an entity within a scene. Provides methods to manage components and query entity properties.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.EntityPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.EntityPool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.EntityPool",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.EntityPool.yml\" sourcestartlinenumber=\"1\">Reuses prefab instances via SetActive instead of Instantiate/Destroy each time.\nSuitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -446,6 +502,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.IrradianceQuality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.IrradianceQuality.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.IrradianceQuality",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.IrradianceQuality.yml\" sourcestartlinenumber=\"1\">Indirect diffuse irradiance quality.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.KeyCode.yml",
       "output": {
         ".html": {
@@ -485,6 +555,20 @@
       "IsMRef": true,
       "Title": "Unravel.Core.LightComponent",
       "Summary": "<p sourcefile=\"api/Unravel.Core.LightComponent.yml\" sourcestartlinenumber=\"1\">Light source component attached to an entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.LightType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.LightType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.LightType",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.LightType.yml\" sourcestartlinenumber=\"1\">Type of light source.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -698,6 +782,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ProbeResolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ProbeResolution.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ProbeResolution",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ProbeResolution.yml\" sourcestartlinenumber=\"1\">Cubemap face resolution for reflection probes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ProbeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ProbeType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ProbeType",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ProbeType.yml\" sourcestartlinenumber=\"1\">Reflection probe shape type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ProbeUpdateMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ProbeUpdateMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ProbeUpdateMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ProbeUpdateMode.yml\" sourcestartlinenumber=\"1\">When the probe refreshes its cubemap.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.Profiler.yml",
       "output": {
         ".html": {
@@ -723,6 +849,20 @@
       "IsMRef": true,
       "Title": "Unravel.Core.ProfilerScope",
       "Summary": "<p sourcefile=\"api/Unravel.Core.ProfilerScope.yml\" sourcestartlinenumber=\"1\">Scoped profiler that measures execution time and automatically records it when disposed.\nUse with 'using' statement for automatic scope-based profiling.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ProjectionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ProjectionMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ProjectionMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ProjectionMode.yml\" sourcestartlinenumber=\"1\">Camera projection mode.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -768,6 +908,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ReflectMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ReflectMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ReflectMethod",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ReflectMethod.yml\" sourcestartlinenumber=\"1\">Reflection probe capture method.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.ReflectionProbeComponent.yml",
       "output": {
         ".html": {
@@ -779,6 +933,20 @@
       "IsMRef": true,
       "Title": "Unravel.Core.ReflectionProbeComponent",
       "Summary": "<p sourcefile=\"api/Unravel.Core.ReflectionProbeComponent.yml\" sourcestartlinenumber=\"1\">Captures and provides reflection probe data for an entity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.RigidbodyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.RigidbodyType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.RigidbodyType",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.RigidbodyType.yml\" sourcestartlinenumber=\"1\">Simulation role of a rigid body.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -838,6 +1006,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.SkyMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.SkyMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.SkyMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.SkyMode.yml\" sourcestartlinenumber=\"1\">Sky rendering mode for <xref href=\"Unravel.Core.SkylightComponent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.SkylightComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.SkylightComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.SkylightComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.SkylightComponent.yml\" sourcestartlinenumber=\"1\">Environment / sky light component.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.StepAttribute.yml",
       "output": {
         ".html": {
@@ -863,6 +1059,20 @@
       "IsMRef": true,
       "Title": "Unravel.Core.StyleSheet",
       "Summary": "<p sourcefile=\"api/Unravel.Core.StyleSheet.yml\" sourcestartlinenumber=\"1\">UI stylesheet asset handle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.SubmeshComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.SubmeshComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.SubmeshComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.SubmeshComponent.yml\" sourcestartlinenumber=\"1\">Per-node submesh render settings authored on armature node entities.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1044,7 +1254,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.UIDocument",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.UIDocument.yml\" sourcestartlinenumber=\"1\">Represents a wrapper around a native RmlUi document with managed lifetime.\nThe C++ side owns the lifetime and will invalidate this wrapper when the document is destroyed.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIDocument.yml\" sourcestartlinenumber=\"1\">Managed wrapper around a native RmlUi document (<code>Rml::ElementDocument</code>).\nEach <xref href=\"Unravel.Core.UIDocumentComponent\" data-throw-if-not-resolved=\"false\"></xref> owns its own RmlUi context and document.\nWrappers are cached by native pointer so repeated queries return the same instance.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1058,7 +1268,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.UIDocumentComponent",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.UIDocumentComponent.yml\" sourcestartlinenumber=\"1\">Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces.\nEach component instance holds its own document while sharing the global UI context.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIDocumentComponent.yml\" sourcestartlinenumber=\"1\">Component that manages an RmlUi document for rendering HTML/CSS-based user interfaces.\nEach component owns its own RmlUi context and document (context-per-document).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1072,7 +1282,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.UIElement",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.UIElement.yml\" sourcestartlinenumber=\"1\">Represents a wrapper around a native RmlUi element with managed lifetime.\nThe C++ side owns the lifetime and will invalidate this wrapper when the element is destroyed.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIElement.yml\" sourcestartlinenumber=\"1\">Managed wrapper around a native RmlUi element (<code>Rml::Element</code>).\nPrefer obtaining instances via <xref href=\"Unravel.Core.UIDocument.GetElementById(System.String)\" data-throw-if-not-resolved=\"false\"></xref> /\n<xref href=\"Unravel.Core.UIDocument.QuerySelector(System.String)\" data-throw-if-not-resolved=\"false\"></xref> so wrappers are cached by native pointer.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1114,7 +1324,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.UIEventManager",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.UIEventManager.yml\" sourcestartlinenumber=\"1\">Global UI event manager that handles all UI event dispatching.\nSimilar to ScriptComponentManager but for UI events.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIEventManager.yml\" sourcestartlinenumber=\"1\">Global UI event manager that handles all UI event dispatching.\nSubscriptions are keyed by native element pointer so multiple managed wrappers\nfor the same element share one subscription set.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1199,6 +1409,34 @@
       "IsMRef": true,
       "Title": "Unravel.Core.VisualTree",
       "Summary": "<p sourcefile=\"api/Unravel.Core.VisualTree.yml\" sourcestartlinenumber=\"1\">UI visual-tree (RML/layout) asset handle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.VolumeComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.VolumeComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.VolumeComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.VolumeComponent.yml\" sourcestartlinenumber=\"1\">Spatial volume that applies post-processing effects from sibling components.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.VolumeMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.VolumeMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.VolumeMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.VolumeMode.yml\" sourcestartlinenumber=\"1\">Spatial volume mode for post-process blending.</p>\n"
     },
     {
       "type": "ManagedReference",

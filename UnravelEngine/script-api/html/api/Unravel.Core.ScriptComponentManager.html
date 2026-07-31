@@ -162,10 +162,11 @@ Class ScriptComponentManager  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Unravel_Core_ScriptComponentManager__ctor_System_Collections_Generic_Dictionary_System_Type_System_Int32__" data-uid="Unravel.Core.ScriptComponentManager.#ctor(System.Collections.Generic.Dictionary{System.Type,System.Int32})">
   ScriptComponentManager(Dictionary&lt;Type, int&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a manager, optionally seeding per-type update priorities.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,7 +176,8 @@ Class ScriptComponentManager  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>typePriorityMap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
-    <dd></dd>
+    <dd><p>Optional map of script type to update priority.</p>
+</dd>
   </dl>
 
 
@@ -197,7 +199,7 @@ Class ScriptComponentManager  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Unravel_Core_ScriptComponentManager_Add_Unravel_Core_ScriptComponent_" data-uid="Unravel.Core.ScriptComponentManager.Add(Unravel.Core.ScriptComponent)">
   Add(ScriptComponent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Add a ScriptComponent.
@@ -213,7 +215,8 @@ Otherwise, we insert it directly into the appropriate type bucket.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>comp</code> <a class="xref" href="Unravel.Core.ScriptComponent.html">ScriptComponent</a></dt>
-    <dd></dd>
+    <dd><p>Script component instance to register for updates.</p>
+</dd>
   </dl>
 
 
@@ -231,7 +234,7 @@ Otherwise, we insert it directly into the appropriate type bucket.</p>
 
   <h3 id="Unravel_Core_ScriptComponentManager_Clear" data-uid="Unravel.Core.ScriptComponentManager.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L207"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears everything.</p>
@@ -258,10 +261,11 @@ Otherwise, we insert it directly into the appropriate type bucket.</p>
 
   <h3 id="Unravel_Core_ScriptComponentManager_InvokeFixedUpdate" data-uid="Unravel.Core.ScriptComponentManager.InvokeFixedUpdate">
   InvokeFixedUpdate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L226"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes <a class="xref" href="Unravel.Core.ScriptComponent.html#Unravel_Core_ScriptComponent_OnFixedUpdate">OnFixedUpdate()</a> for registered components in priority order.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -284,10 +288,11 @@ Otherwise, we insert it directly into the appropriate type bucket.</p>
 
   <h3 id="Unravel_Core_ScriptComponentManager_InvokeLateUpdate" data-uid="Unravel.Core.ScriptComponentManager.InvokeLateUpdate">
   InvokeLateUpdate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes <a class="xref" href="Unravel.Core.ScriptComponent.html#Unravel_Core_ScriptComponent_OnLateUpdate">OnLateUpdate()</a> for registered components in priority order.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -310,10 +315,11 @@ Otherwise, we insert it directly into the appropriate type bucket.</p>
 
   <h3 id="Unravel_Core_ScriptComponentManager_InvokeUpdate" data-uid="Unravel.Core.ScriptComponentManager.InvokeUpdate">
   InvokeUpdate()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L221"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invokes <a class="xref" href="Unravel.Core.ScriptComponent.html#Unravel_Core_ScriptComponent_OnUpdate">OnUpdate()</a> for registered components in priority order.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -336,7 +342,7 @@ Otherwise, we insert it directly into the appropriate type bucket.</p>
 
   <h3 id="Unravel_Core_ScriptComponentManager_Remove_Unravel_Core_ScriptComponent_" data-uid="Unravel.Core.ScriptComponentManager.Remove(Unravel.Core.ScriptComponent)">
   Remove(ScriptComponent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Remove a ScriptComponent.
@@ -352,7 +358,8 @@ If we are invoking, defer the operation and collapse with existing operations.</
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>comp</code> <a class="xref" href="Unravel.Core.ScriptComponent.html">ScriptComponent</a></dt>
-    <dd></dd>
+    <dd><p>Script component instance to unregister.</p>
+</dd>
   </dl>
 
 
@@ -370,7 +377,7 @@ If we are invoking, defer the operation and collapse with existing operations.</
 
   <h3 id="Unravel_Core_ScriptComponentManager_SetTypePriority_System_Type_System_Int32_" data-uid="Unravel.Core.ScriptComponentManager.SetTypePriority(System.Type,System.Int32)">
   SetTypePriority(Type, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets or updates the priority for a given type.

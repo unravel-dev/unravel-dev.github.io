@@ -177,7 +177,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_Speed" data-uid="Unravel.Core.AnimationComponent.Speed">
   Speed
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The speed of the animation. 1.0 is normal speed, 2.0 is double speed, 0.5 is half speed.</p>
@@ -205,6 +205,166 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Unravel_Core_AnimationComponent_animation_" data-uid="Unravel.Core.AnimationComponent.animation*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_animation" data-uid="Unravel.Core.AnimationComponent.animation">
+  animation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default animation clip assigned to this component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationClip animation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.AnimationClip.html">AnimationClip</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_applyRootMotion_" data-uid="Unravel.Core.AnimationComponent.applyRootMotion*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_applyRootMotion" data-uid="Unravel.Core.AnimationComponent.applyRootMotion">
+  applyRootMotion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether root motion from the clip is applied to the transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool applyRootMotion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_autoplay_" data-uid="Unravel.Core.AnimationComponent.autoplay*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_autoplay" data-uid="Unravel.Core.AnimationComponent.autoplay">
+  autoplay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the animation autoplays when the entity starts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool autoplay { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_isPaused_" data-uid="Unravel.Core.AnimationComponent.isPaused*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_isPaused" data-uid="Unravel.Core.AnimationComponent.isPaused">
+  isPaused
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the animation player is currently paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isPaused { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_isPlaying_" data-uid="Unravel.Core.AnimationComponent.isPlaying*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_isPlaying" data-uid="Unravel.Core.AnimationComponent.isPlaying">
+  isPlaying
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the animation player is currently playing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isPlaying { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -213,7 +373,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_Blend_Unravel_Core_AnimationClip_System_Single_System_Boolean_System_Boolean_" data-uid="Unravel.Core.AnimationComponent.Blend(Unravel.Core.AnimationClip,System.Single,System.Boolean,System.Boolean)">
   Blend(AnimationClip, float, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Blends the specified animation clip into the default layer.</p>
@@ -230,13 +390,13 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
     <dd><p>The animation clip to blend in.</p>
 </dd>
     <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p>The duration of the blend transition, in seconds.</p>
+    <dd><p>Blend transition duration in seconds.</p>
 </dd>
     <dt><code>loop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Whether the animation should loop after playing.</p>
+    <dd><p>Whether the clip should loop after playing.</p>
 </dd>
     <dt><code>phaseSync</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Whether to synchronize the phase of the new clip with the current animation.</p>
+    <dd><p>Whether to synchronize phase with the current animation.</p>
 </dd>
   </dl>
 
@@ -255,7 +415,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_BlendLayer_System_Int32_Unravel_Core_AnimationClip_System_Single_System_Boolean_System_Boolean_" data-uid="Unravel.Core.AnimationComponent.BlendLayer(System.Int32,Unravel.Core.AnimationClip,System.Single,System.Boolean,System.Boolean)">
   BlendLayer(int, AnimationClip, float, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Blends the specified animation clip into the given layer.</p>
@@ -269,19 +429,19 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The animation layer index to blend into.</p>
+    <dd><p>Animation layer index to blend into.</p>
 </dd>
     <dt><code>clip</code> <a class="xref" href="Unravel.Core.AnimationClip.html">AnimationClip</a></dt>
     <dd><p>The animation clip to blend in.</p>
 </dd>
     <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p>The duration of the blend transition, in seconds.</p>
+    <dd><p>Blend transition duration in seconds.</p>
 </dd>
     <dt><code>loop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Whether the animation should loop after playing.</p>
+    <dd><p>Whether the clip should loop after playing.</p>
 </dd>
     <dt><code>phaseSync</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>Whether to synchronize the phase of the new clip with the current animation.</p>
+    <dd><p>Whether to synchronize phase with the current animation.</p>
 </dd>
   </dl>
 
@@ -300,7 +460,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_Pause" data-uid="Unravel.Core.AnimationComponent.Pause">
   Pause()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Pauses the currently playing animation on the entity.</p>
@@ -327,7 +487,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_Play" data-uid="Unravel.Core.AnimationComponent.Play">
   Play()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Starts playing the currently blended animation on the entity.</p>
@@ -354,7 +514,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_Resume" data-uid="Unravel.Core.AnimationComponent.Resume">
   Resume()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Resumes the currently paused animation on the entity.</p>
@@ -381,7 +541,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_Stop" data-uid="Unravel.Core.AnimationComponent.Stop">
   Stop()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stops the currently playing animation on the entity.</p>

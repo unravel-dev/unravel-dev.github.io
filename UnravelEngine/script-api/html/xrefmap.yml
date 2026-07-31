@@ -232,6 +232,71 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.AnimationComponent.Stop
   nameWithType: AnimationComponent.Stop
+- uid: Unravel.Core.AnimationComponent.animation
+  name: animation
+  href: api/Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_animation
+  commentId: P:Unravel.Core.AnimationComponent.animation
+  fullName: Unravel.Core.AnimationComponent.animation
+  nameWithType: AnimationComponent.animation
+- uid: Unravel.Core.AnimationComponent.animation*
+  name: animation
+  href: api/Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_animation_
+  commentId: Overload:Unravel.Core.AnimationComponent.animation
+  isSpec: "True"
+  fullName: Unravel.Core.AnimationComponent.animation
+  nameWithType: AnimationComponent.animation
+- uid: Unravel.Core.AnimationComponent.applyRootMotion
+  name: applyRootMotion
+  href: api/Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_applyRootMotion
+  commentId: P:Unravel.Core.AnimationComponent.applyRootMotion
+  fullName: Unravel.Core.AnimationComponent.applyRootMotion
+  nameWithType: AnimationComponent.applyRootMotion
+- uid: Unravel.Core.AnimationComponent.applyRootMotion*
+  name: applyRootMotion
+  href: api/Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_applyRootMotion_
+  commentId: Overload:Unravel.Core.AnimationComponent.applyRootMotion
+  isSpec: "True"
+  fullName: Unravel.Core.AnimationComponent.applyRootMotion
+  nameWithType: AnimationComponent.applyRootMotion
+- uid: Unravel.Core.AnimationComponent.autoplay
+  name: autoplay
+  href: api/Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_autoplay
+  commentId: P:Unravel.Core.AnimationComponent.autoplay
+  fullName: Unravel.Core.AnimationComponent.autoplay
+  nameWithType: AnimationComponent.autoplay
+- uid: Unravel.Core.AnimationComponent.autoplay*
+  name: autoplay
+  href: api/Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_autoplay_
+  commentId: Overload:Unravel.Core.AnimationComponent.autoplay
+  isSpec: "True"
+  fullName: Unravel.Core.AnimationComponent.autoplay
+  nameWithType: AnimationComponent.autoplay
+- uid: Unravel.Core.AnimationComponent.isPaused
+  name: isPaused
+  href: api/Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_isPaused
+  commentId: P:Unravel.Core.AnimationComponent.isPaused
+  fullName: Unravel.Core.AnimationComponent.isPaused
+  nameWithType: AnimationComponent.isPaused
+- uid: Unravel.Core.AnimationComponent.isPaused*
+  name: isPaused
+  href: api/Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_isPaused_
+  commentId: Overload:Unravel.Core.AnimationComponent.isPaused
+  isSpec: "True"
+  fullName: Unravel.Core.AnimationComponent.isPaused
+  nameWithType: AnimationComponent.isPaused
+- uid: Unravel.Core.AnimationComponent.isPlaying
+  name: isPlaying
+  href: api/Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_isPlaying
+  commentId: P:Unravel.Core.AnimationComponent.isPlaying
+  fullName: Unravel.Core.AnimationComponent.isPlaying
+  nameWithType: AnimationComponent.isPlaying
+- uid: Unravel.Core.AnimationComponent.isPlaying*
+  name: isPlaying
+  href: api/Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_isPlaying_
+  commentId: Overload:Unravel.Core.AnimationComponent.isPlaying
+  isSpec: "True"
+  fullName: Unravel.Core.AnimationComponent.isPlaying
+  nameWithType: AnimationComponent.isPlaying
 - uid: Unravel.Core.Application
   name: Application
   href: api/Unravel.Core.Application.html
@@ -405,6 +470,91 @@ references:
   fullName.vb: Unravel.Core.Assets.GetAsset(Of T)(String)
   nameWithType: Assets.GetAsset<T>(string)
   nameWithType.vb: Assets.GetAsset(Of T)(String)
+- uid: Unravel.Core.Audio
+  name: Audio
+  href: api/Unravel.Core.Audio.html
+  commentId: T:Unravel.Core.Audio
+  fullName: Unravel.Core.Audio
+  nameWithType: Audio
+- uid: Unravel.Core.Audio.GetBusVolume(Unravel.Core.AudioBus)
+  name: GetBusVolume(AudioBus)
+  href: api/Unravel.Core.Audio.html#Unravel_Core_Audio_GetBusVolume_Unravel_Core_AudioBus_
+  commentId: M:Unravel.Core.Audio.GetBusVolume(Unravel.Core.AudioBus)
+  fullName: Unravel.Core.Audio.GetBusVolume(Unravel.Core.AudioBus)
+  nameWithType: Audio.GetBusVolume(AudioBus)
+- uid: Unravel.Core.Audio.GetBusVolume*
+  name: GetBusVolume
+  href: api/Unravel.Core.Audio.html#Unravel_Core_Audio_GetBusVolume_
+  commentId: Overload:Unravel.Core.Audio.GetBusVolume
+  isSpec: "True"
+  fullName: Unravel.Core.Audio.GetBusVolume
+  nameWithType: Audio.GetBusVolume
+- uid: Unravel.Core.Audio.SetBusVolume(Unravel.Core.AudioBus,System.Single)
+  name: SetBusVolume(AudioBus, float)
+  href: api/Unravel.Core.Audio.html#Unravel_Core_Audio_SetBusVolume_Unravel_Core_AudioBus_System_Single_
+  commentId: M:Unravel.Core.Audio.SetBusVolume(Unravel.Core.AudioBus,System.Single)
+  name.vb: SetBusVolume(AudioBus, Single)
+  fullName: Unravel.Core.Audio.SetBusVolume(Unravel.Core.AudioBus, float)
+  fullName.vb: Unravel.Core.Audio.SetBusVolume(Unravel.Core.AudioBus, Single)
+  nameWithType: Audio.SetBusVolume(AudioBus, float)
+  nameWithType.vb: Audio.SetBusVolume(AudioBus, Single)
+- uid: Unravel.Core.Audio.SetBusVolume*
+  name: SetBusVolume
+  href: api/Unravel.Core.Audio.html#Unravel_Core_Audio_SetBusVolume_
+  commentId: Overload:Unravel.Core.Audio.SetBusVolume
+  isSpec: "True"
+  fullName: Unravel.Core.Audio.SetBusVolume
+  nameWithType: Audio.SetBusVolume
+- uid: Unravel.Core.Audio.masterVolume
+  name: masterVolume
+  href: api/Unravel.Core.Audio.html#Unravel_Core_Audio_masterVolume
+  commentId: P:Unravel.Core.Audio.masterVolume
+  fullName: Unravel.Core.Audio.masterVolume
+  nameWithType: Audio.masterVolume
+- uid: Unravel.Core.Audio.masterVolume*
+  name: masterVolume
+  href: api/Unravel.Core.Audio.html#Unravel_Core_Audio_masterVolume_
+  commentId: Overload:Unravel.Core.Audio.masterVolume
+  isSpec: "True"
+  fullName: Unravel.Core.Audio.masterVolume
+  nameWithType: Audio.masterVolume
+- uid: Unravel.Core.Audio.maxVoices
+  name: maxVoices
+  href: api/Unravel.Core.Audio.html#Unravel_Core_Audio_maxVoices
+  commentId: P:Unravel.Core.Audio.maxVoices
+  fullName: Unravel.Core.Audio.maxVoices
+  nameWithType: Audio.maxVoices
+- uid: Unravel.Core.Audio.maxVoices*
+  name: maxVoices
+  href: api/Unravel.Core.Audio.html#Unravel_Core_Audio_maxVoices_
+  commentId: Overload:Unravel.Core.Audio.maxVoices
+  isSpec: "True"
+  fullName: Unravel.Core.Audio.maxVoices
+  nameWithType: Audio.maxVoices
+- uid: Unravel.Core.AudioBus
+  name: AudioBus
+  href: api/Unravel.Core.AudioBus.html
+  commentId: T:Unravel.Core.AudioBus
+  fullName: Unravel.Core.AudioBus
+  nameWithType: AudioBus
+- uid: Unravel.Core.AudioBus.Music
+  name: Music
+  href: api/Unravel.Core.AudioBus.html#Unravel_Core_AudioBus_Music
+  commentId: F:Unravel.Core.AudioBus.Music
+  fullName: Unravel.Core.AudioBus.Music
+  nameWithType: AudioBus.Music
+- uid: Unravel.Core.AudioBus.Sfx
+  name: Sfx
+  href: api/Unravel.Core.AudioBus.html#Unravel_Core_AudioBus_Sfx
+  commentId: F:Unravel.Core.AudioBus.Sfx
+  fullName: Unravel.Core.AudioBus.Sfx
+  nameWithType: AudioBus.Sfx
+- uid: Unravel.Core.AudioBus.Ui
+  name: Ui
+  href: api/Unravel.Core.AudioBus.html#Unravel_Core_AudioBus_Ui
+  commentId: F:Unravel.Core.AudioBus.Ui
+  fullName: Unravel.Core.AudioBus.Ui
+  nameWithType: AudioBus.Ui
 - uid: Unravel.Core.AudioClip
   name: AudioClip
   href: api/Unravel.Core.AudioClip.html
@@ -462,15 +612,31 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.AudioSourceComponent.Play
   nameWithType: AudioSourceComponent.Play
-- uid: Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip,Vector3,System.Single)
-  name: PlayClipAtPoint(AudioClip, Vector3, float)
-  href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_PlayClipAtPoint_Unravel_Core_AudioClip_Vector3_System_Single_
-  commentId: M:Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip,Vector3,System.Single)
-  name.vb: PlayClipAtPoint(AudioClip, Vector3, Single)
-  fullName: Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip, Vector3, float)
-  fullName.vb: Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip, Vector3, Single)
-  nameWithType: AudioSourceComponent.PlayClipAtPoint(AudioClip, Vector3, float)
-  nameWithType.vb: AudioSourceComponent.PlayClipAtPoint(AudioClip, Vector3, Single)
+- uid: Unravel.Core.AudioSourceComponent.PlayClip(Unravel.Core.AudioClip,System.Single,Unravel.Core.AudioBus)
+  name: PlayClip(AudioClip, float, AudioBus)
+  href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_PlayClip_Unravel_Core_AudioClip_System_Single_Unravel_Core_AudioBus_
+  commentId: M:Unravel.Core.AudioSourceComponent.PlayClip(Unravel.Core.AudioClip,System.Single,Unravel.Core.AudioBus)
+  name.vb: PlayClip(AudioClip, Single, AudioBus)
+  fullName: Unravel.Core.AudioSourceComponent.PlayClip(Unravel.Core.AudioClip, float, Unravel.Core.AudioBus)
+  fullName.vb: Unravel.Core.AudioSourceComponent.PlayClip(Unravel.Core.AudioClip, Single, Unravel.Core.AudioBus)
+  nameWithType: AudioSourceComponent.PlayClip(AudioClip, float, AudioBus)
+  nameWithType.vb: AudioSourceComponent.PlayClip(AudioClip, Single, AudioBus)
+- uid: Unravel.Core.AudioSourceComponent.PlayClip*
+  name: PlayClip
+  href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_PlayClip_
+  commentId: Overload:Unravel.Core.AudioSourceComponent.PlayClip
+  isSpec: "True"
+  fullName: Unravel.Core.AudioSourceComponent.PlayClip
+  nameWithType: AudioSourceComponent.PlayClip
+- uid: Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip,Vector3,System.Single,Unravel.Core.AudioBus)
+  name: PlayClipAtPoint(AudioClip, Vector3, float, AudioBus)
+  href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_PlayClipAtPoint_Unravel_Core_AudioClip_Vector3_System_Single_Unravel_Core_AudioBus_
+  commentId: M:Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip,Vector3,System.Single,Unravel.Core.AudioBus)
+  name.vb: PlayClipAtPoint(AudioClip, Vector3, Single, AudioBus)
+  fullName: Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip, Vector3, float, Unravel.Core.AudioBus)
+  fullName.vb: Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip, Vector3, Single, Unravel.Core.AudioBus)
+  nameWithType: AudioSourceComponent.PlayClipAtPoint(AudioClip, Vector3, float, AudioBus)
+  nameWithType.vb: AudioSourceComponent.PlayClipAtPoint(AudioClip, Vector3, Single, AudioBus)
 - uid: Unravel.Core.AudioSourceComponent.PlayClipAtPoint*
   name: PlayClipAtPoint
   href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_PlayClipAtPoint_
@@ -504,6 +670,19 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.AudioSourceComponent.Stop
   nameWithType: AudioSourceComponent.Stop
+- uid: Unravel.Core.AudioSourceComponent.bus
+  name: bus
+  href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_bus
+  commentId: P:Unravel.Core.AudioSourceComponent.bus
+  fullName: Unravel.Core.AudioSourceComponent.bus
+  nameWithType: AudioSourceComponent.bus
+- uid: Unravel.Core.AudioSourceComponent.bus*
+  name: bus
+  href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_bus_
+  commentId: Overload:Unravel.Core.AudioSourceComponent.bus
+  isSpec: "True"
+  fullName: Unravel.Core.AudioSourceComponent.bus
+  nameWithType: AudioSourceComponent.bus
 - uid: Unravel.Core.AudioSourceComponent.clip
   name: clip
   href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_clip
@@ -608,6 +787,32 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.AudioSourceComponent.pitch
   nameWithType: AudioSourceComponent.pitch
+- uid: Unravel.Core.AudioSourceComponent.priority
+  name: priority
+  href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_priority
+  commentId: P:Unravel.Core.AudioSourceComponent.priority
+  fullName: Unravel.Core.AudioSourceComponent.priority
+  nameWithType: AudioSourceComponent.priority
+- uid: Unravel.Core.AudioSourceComponent.priority*
+  name: priority
+  href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_priority_
+  commentId: Overload:Unravel.Core.AudioSourceComponent.priority
+  isSpec: "True"
+  fullName: Unravel.Core.AudioSourceComponent.priority
+  nameWithType: AudioSourceComponent.priority
+- uid: Unravel.Core.AudioSourceComponent.spatial
+  name: spatial
+  href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_spatial
+  commentId: P:Unravel.Core.AudioSourceComponent.spatial
+  fullName: Unravel.Core.AudioSourceComponent.spatial
+  nameWithType: AudioSourceComponent.spatial
+- uid: Unravel.Core.AudioSourceComponent.spatial*
+  name: spatial
+  href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_spatial_
+  commentId: Overload:Unravel.Core.AudioSourceComponent.spatial
+  isSpec: "True"
+  fullName: Unravel.Core.AudioSourceComponent.spatial
+  nameWithType: AudioSourceComponent.spatial
 - uid: Unravel.Core.AudioSourceComponent.time
   name: time
   href: api/Unravel.Core.AudioSourceComponent.html#Unravel_Core_AudioSourceComponent_time
@@ -659,6 +864,19 @@ references:
   commentId: T:Unravel.Core.BoneComponent
   fullName: Unravel.Core.BoneComponent
   nameWithType: BoneComponent
+- uid: Unravel.Core.BoneComponent.boneIndex
+  name: boneIndex
+  href: api/Unravel.Core.BoneComponent.html#Unravel_Core_BoneComponent_boneIndex
+  commentId: P:Unravel.Core.BoneComponent.boneIndex
+  fullName: Unravel.Core.BoneComponent.boneIndex
+  nameWithType: BoneComponent.boneIndex
+- uid: Unravel.Core.BoneComponent.boneIndex*
+  name: boneIndex
+  href: api/Unravel.Core.BoneComponent.html#Unravel_Core_BoneComponent_boneIndex_
+  commentId: Overload:Unravel.Core.BoneComponent.boneIndex
+  isSpec: "True"
+  fullName: Unravel.Core.BoneComponent.boneIndex
+  nameWithType: BoneComponent.boneIndex
 - uid: Unravel.Core.CameraComponent
   name: CameraComponent
   href: api/Unravel.Core.CameraComponent.html
@@ -700,6 +918,97 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.CameraComponent.ScreenPointToWorld
   nameWithType: CameraComponent.ScreenPointToWorld
+- uid: Unravel.Core.CameraComponent.cullingMask
+  name: cullingMask
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_cullingMask
+  commentId: P:Unravel.Core.CameraComponent.cullingMask
+  fullName: Unravel.Core.CameraComponent.cullingMask
+  nameWithType: CameraComponent.cullingMask
+- uid: Unravel.Core.CameraComponent.cullingMask*
+  name: cullingMask
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_cullingMask_
+  commentId: Overload:Unravel.Core.CameraComponent.cullingMask
+  isSpec: "True"
+  fullName: Unravel.Core.CameraComponent.cullingMask
+  nameWithType: CameraComponent.cullingMask
+- uid: Unravel.Core.CameraComponent.excludeMask
+  name: excludeMask
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_excludeMask
+  commentId: P:Unravel.Core.CameraComponent.excludeMask
+  fullName: Unravel.Core.CameraComponent.excludeMask
+  nameWithType: CameraComponent.excludeMask
+- uid: Unravel.Core.CameraComponent.excludeMask*
+  name: excludeMask
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_excludeMask_
+  commentId: Overload:Unravel.Core.CameraComponent.excludeMask
+  isSpec: "True"
+  fullName: Unravel.Core.CameraComponent.excludeMask
+  nameWithType: CameraComponent.excludeMask
+- uid: Unravel.Core.CameraComponent.farClipPlane
+  name: farClipPlane
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_farClipPlane
+  commentId: P:Unravel.Core.CameraComponent.farClipPlane
+  fullName: Unravel.Core.CameraComponent.farClipPlane
+  nameWithType: CameraComponent.farClipPlane
+- uid: Unravel.Core.CameraComponent.farClipPlane*
+  name: farClipPlane
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_farClipPlane_
+  commentId: Overload:Unravel.Core.CameraComponent.farClipPlane
+  isSpec: "True"
+  fullName: Unravel.Core.CameraComponent.farClipPlane
+  nameWithType: CameraComponent.farClipPlane
+- uid: Unravel.Core.CameraComponent.fov
+  name: fov
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_fov
+  commentId: P:Unravel.Core.CameraComponent.fov
+  fullName: Unravel.Core.CameraComponent.fov
+  nameWithType: CameraComponent.fov
+- uid: Unravel.Core.CameraComponent.fov*
+  name: fov
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_fov_
+  commentId: Overload:Unravel.Core.CameraComponent.fov
+  isSpec: "True"
+  fullName: Unravel.Core.CameraComponent.fov
+  nameWithType: CameraComponent.fov
+- uid: Unravel.Core.CameraComponent.nearClipPlane
+  name: nearClipPlane
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_nearClipPlane
+  commentId: P:Unravel.Core.CameraComponent.nearClipPlane
+  fullName: Unravel.Core.CameraComponent.nearClipPlane
+  nameWithType: CameraComponent.nearClipPlane
+- uid: Unravel.Core.CameraComponent.nearClipPlane*
+  name: nearClipPlane
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_nearClipPlane_
+  commentId: Overload:Unravel.Core.CameraComponent.nearClipPlane
+  isSpec: "True"
+  fullName: Unravel.Core.CameraComponent.nearClipPlane
+  nameWithType: CameraComponent.nearClipPlane
+- uid: Unravel.Core.CameraComponent.orthographicSize
+  name: orthographicSize
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_orthographicSize
+  commentId: P:Unravel.Core.CameraComponent.orthographicSize
+  fullName: Unravel.Core.CameraComponent.orthographicSize
+  nameWithType: CameraComponent.orthographicSize
+- uid: Unravel.Core.CameraComponent.orthographicSize*
+  name: orthographicSize
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_orthographicSize_
+  commentId: Overload:Unravel.Core.CameraComponent.orthographicSize
+  isSpec: "True"
+  fullName: Unravel.Core.CameraComponent.orthographicSize
+  nameWithType: CameraComponent.orthographicSize
+- uid: Unravel.Core.CameraComponent.projectionMode
+  name: projectionMode
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_projectionMode
+  commentId: P:Unravel.Core.CameraComponent.projectionMode
+  fullName: Unravel.Core.CameraComponent.projectionMode
+  nameWithType: CameraComponent.projectionMode
+- uid: Unravel.Core.CameraComponent.projectionMode*
+  name: projectionMode
+  href: api/Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_projectionMode_
+  commentId: Overload:Unravel.Core.CameraComponent.projectionMode
+  isSpec: "True"
+  fullName: Unravel.Core.CameraComponent.projectionMode
+  nameWithType: CameraComponent.projectionMode
 - uid: Unravel.Core.CharacterControllerComponent
   name: CharacterControllerComponent
   href: api/Unravel.Core.CharacterControllerComponent.html
@@ -975,6 +1284,30 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.CharacterControllerComponent.velocity
   nameWithType: CharacterControllerComponent.velocity
+- uid: Unravel.Core.CloudMode
+  name: CloudMode
+  href: api/Unravel.Core.CloudMode.html
+  commentId: T:Unravel.Core.CloudMode
+  fullName: Unravel.Core.CloudMode
+  nameWithType: CloudMode
+- uid: Unravel.Core.CloudMode.Flat
+  name: Flat
+  href: api/Unravel.Core.CloudMode.html#Unravel_Core_CloudMode_Flat
+  commentId: F:Unravel.Core.CloudMode.Flat
+  fullName: Unravel.Core.CloudMode.Flat
+  nameWithType: CloudMode.Flat
+- uid: Unravel.Core.CloudMode.None
+  name: None
+  href: api/Unravel.Core.CloudMode.html#Unravel_Core_CloudMode_None
+  commentId: F:Unravel.Core.CloudMode.None
+  fullName: Unravel.Core.CloudMode.None
+  nameWithType: CloudMode.None
+- uid: Unravel.Core.CloudMode.Volumetric
+  name: Volumetric
+  href: api/Unravel.Core.CloudMode.html#Unravel_Core_CloudMode_Volumetric
+  commentId: F:Unravel.Core.CloudMode.Volumetric
+  fullName: Unravel.Core.CloudMode.Volumetric
+  nameWithType: CloudMode.Volumetric
 - uid: Unravel.Core.Collision
   name: Collision
   href: api/Unravel.Core.Collision.html
@@ -1632,6 +1965,124 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.Entity.transform
   nameWithType: Entity.transform
+- uid: Unravel.Core.EntityPool
+  name: EntityPool
+  href: api/Unravel.Core.EntityPool.html
+  commentId: T:Unravel.Core.EntityPool
+  fullName: Unravel.Core.EntityPool
+  nameWithType: EntityPool
+- uid: Unravel.Core.EntityPool.#ctor(Unravel.Core.Prefab,System.Int32)
+  name: EntityPool(Prefab, int)
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool__ctor_Unravel_Core_Prefab_System_Int32_
+  commentId: M:Unravel.Core.EntityPool.#ctor(Unravel.Core.Prefab,System.Int32)
+  name.vb: New(Prefab, Integer)
+  fullName: Unravel.Core.EntityPool.EntityPool(Unravel.Core.Prefab, int)
+  fullName.vb: Unravel.Core.EntityPool.New(Unravel.Core.Prefab, Integer)
+  nameWithType: EntityPool.EntityPool(Prefab, int)
+  nameWithType.vb: EntityPool.New(Prefab, Integer)
+- uid: Unravel.Core.EntityPool.#ctor*
+  name: EntityPool
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool__ctor_
+  commentId: Overload:Unravel.Core.EntityPool.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Unravel.Core.EntityPool.EntityPool
+  fullName.vb: Unravel.Core.EntityPool.New
+  nameWithType: EntityPool.EntityPool
+  nameWithType.vb: EntityPool.New
+- uid: Unravel.Core.EntityPool.Acquire
+  name: Acquire()
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_Acquire
+  commentId: M:Unravel.Core.EntityPool.Acquire
+  fullName: Unravel.Core.EntityPool.Acquire()
+  nameWithType: EntityPool.Acquire()
+- uid: Unravel.Core.EntityPool.Acquire(Unravel.Core.Entity)
+  name: Acquire(Entity)
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_Acquire_Unravel_Core_Entity_
+  commentId: M:Unravel.Core.EntityPool.Acquire(Unravel.Core.Entity)
+  fullName: Unravel.Core.EntityPool.Acquire(Unravel.Core.Entity)
+  nameWithType: EntityPool.Acquire(Entity)
+- uid: Unravel.Core.EntityPool.Acquire(Vector3,Quaternion)
+  name: Acquire(Vector3, Quaternion)
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_Acquire_Vector3_Quaternion_
+  commentId: M:Unravel.Core.EntityPool.Acquire(Vector3,Quaternion)
+  fullName: Unravel.Core.EntityPool.Acquire(Vector3, Quaternion)
+  nameWithType: EntityPool.Acquire(Vector3, Quaternion)
+- uid: Unravel.Core.EntityPool.Acquire*
+  name: Acquire
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_Acquire_
+  commentId: Overload:Unravel.Core.EntityPool.Acquire
+  isSpec: "True"
+  fullName: Unravel.Core.EntityPool.Acquire
+  nameWithType: EntityPool.Acquire
+- uid: Unravel.Core.EntityPool.Clear
+  name: Clear()
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_Clear
+  commentId: M:Unravel.Core.EntityPool.Clear
+  fullName: Unravel.Core.EntityPool.Clear()
+  nameWithType: EntityPool.Clear()
+- uid: Unravel.Core.EntityPool.Clear*
+  name: Clear
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_Clear_
+  commentId: Overload:Unravel.Core.EntityPool.Clear
+  isSpec: "True"
+  fullName: Unravel.Core.EntityPool.Clear
+  nameWithType: EntityPool.Clear
+- uid: Unravel.Core.EntityPool.InactiveCount
+  name: InactiveCount
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_InactiveCount
+  commentId: P:Unravel.Core.EntityPool.InactiveCount
+  fullName: Unravel.Core.EntityPool.InactiveCount
+  nameWithType: EntityPool.InactiveCount
+- uid: Unravel.Core.EntityPool.InactiveCount*
+  name: InactiveCount
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_InactiveCount_
+  commentId: Overload:Unravel.Core.EntityPool.InactiveCount
+  isSpec: "True"
+  fullName: Unravel.Core.EntityPool.InactiveCount
+  nameWithType: EntityPool.InactiveCount
+- uid: Unravel.Core.EntityPool.Prewarm(System.Int32)
+  name: Prewarm(int)
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_Prewarm_System_Int32_
+  commentId: M:Unravel.Core.EntityPool.Prewarm(System.Int32)
+  name.vb: Prewarm(Integer)
+  fullName: Unravel.Core.EntityPool.Prewarm(int)
+  fullName.vb: Unravel.Core.EntityPool.Prewarm(Integer)
+  nameWithType: EntityPool.Prewarm(int)
+  nameWithType.vb: EntityPool.Prewarm(Integer)
+- uid: Unravel.Core.EntityPool.Prewarm*
+  name: Prewarm
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_Prewarm_
+  commentId: Overload:Unravel.Core.EntityPool.Prewarm
+  isSpec: "True"
+  fullName: Unravel.Core.EntityPool.Prewarm
+  nameWithType: EntityPool.Prewarm
+- uid: Unravel.Core.EntityPool.Release(Unravel.Core.Entity)
+  name: Release(Entity)
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_Release_Unravel_Core_Entity_
+  commentId: M:Unravel.Core.EntityPool.Release(Unravel.Core.Entity)
+  fullName: Unravel.Core.EntityPool.Release(Unravel.Core.Entity)
+  nameWithType: EntityPool.Release(Entity)
+- uid: Unravel.Core.EntityPool.Release*
+  name: Release
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_Release_
+  commentId: Overload:Unravel.Core.EntityPool.Release
+  isSpec: "True"
+  fullName: Unravel.Core.EntityPool.Release
+  nameWithType: EntityPool.Release
+- uid: Unravel.Core.EntityPool.TotalCount
+  name: TotalCount
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_TotalCount
+  commentId: P:Unravel.Core.EntityPool.TotalCount
+  fullName: Unravel.Core.EntityPool.TotalCount
+  nameWithType: EntityPool.TotalCount
+- uid: Unravel.Core.EntityPool.TotalCount*
+  name: TotalCount
+  href: api/Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_TotalCount_
+  commentId: Overload:Unravel.Core.EntityPool.TotalCount
+  isSpec: "True"
+  fullName: Unravel.Core.EntityPool.TotalCount
+  nameWithType: EntityPool.TotalCount
 - uid: Unravel.Core.EventPhase
   name: EventPhase
   href: api/Unravel.Core.EventPhase.html
@@ -2107,6 +2558,24 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.Input.mousePosition
   nameWithType: Input.mousePosition
+- uid: Unravel.Core.IrradianceQuality
+  name: IrradianceQuality
+  href: api/Unravel.Core.IrradianceQuality.html
+  commentId: T:Unravel.Core.IrradianceQuality
+  fullName: Unravel.Core.IrradianceQuality
+  nameWithType: IrradianceQuality
+- uid: Unravel.Core.IrradianceQuality.Directional
+  name: Directional
+  href: api/Unravel.Core.IrradianceQuality.html#Unravel_Core_IrradianceQuality_Directional
+  commentId: F:Unravel.Core.IrradianceQuality.Directional
+  fullName: Unravel.Core.IrradianceQuality.Directional
+  nameWithType: IrradianceQuality.Directional
+- uid: Unravel.Core.IrradianceQuality.Flat
+  name: Flat
+  href: api/Unravel.Core.IrradianceQuality.html#Unravel_Core_IrradianceQuality_Flat
+  commentId: F:Unravel.Core.IrradianceQuality.Flat
+  fullName: Unravel.Core.IrradianceQuality.Flat
+  nameWithType: IrradianceQuality.Flat
 - uid: Unravel.Core.KeyCode
   name: KeyCode
   href: api/Unravel.Core.KeyCode.html
@@ -3721,6 +4190,19 @@ references:
   commentId: T:Unravel.Core.LightComponent
   fullName: Unravel.Core.LightComponent
   nameWithType: LightComponent
+- uid: Unravel.Core.LightComponent.castsShadows
+  name: castsShadows
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_castsShadows
+  commentId: P:Unravel.Core.LightComponent.castsShadows
+  fullName: Unravel.Core.LightComponent.castsShadows
+  nameWithType: LightComponent.castsShadows
+- uid: Unravel.Core.LightComponent.castsShadows*
+  name: castsShadows
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_castsShadows_
+  commentId: Overload:Unravel.Core.LightComponent.castsShadows
+  isSpec: "True"
+  fullName: Unravel.Core.LightComponent.castsShadows
+  nameWithType: LightComponent.castsShadows
 - uid: Unravel.Core.LightComponent.color
   name: color
   href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_color
@@ -3734,6 +4216,108 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.LightComponent.color
   nameWithType: LightComponent.color
+- uid: Unravel.Core.LightComponent.intensity
+  name: intensity
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_intensity
+  commentId: P:Unravel.Core.LightComponent.intensity
+  fullName: Unravel.Core.LightComponent.intensity
+  nameWithType: LightComponent.intensity
+- uid: Unravel.Core.LightComponent.intensity*
+  name: intensity
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_intensity_
+  commentId: Overload:Unravel.Core.LightComponent.intensity
+  isSpec: "True"
+  fullName: Unravel.Core.LightComponent.intensity
+  nameWithType: LightComponent.intensity
+- uid: Unravel.Core.LightComponent.pointExponentFalloff
+  name: pointExponentFalloff
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_pointExponentFalloff
+  commentId: P:Unravel.Core.LightComponent.pointExponentFalloff
+  fullName: Unravel.Core.LightComponent.pointExponentFalloff
+  nameWithType: LightComponent.pointExponentFalloff
+- uid: Unravel.Core.LightComponent.pointExponentFalloff*
+  name: pointExponentFalloff
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_pointExponentFalloff_
+  commentId: Overload:Unravel.Core.LightComponent.pointExponentFalloff
+  isSpec: "True"
+  fullName: Unravel.Core.LightComponent.pointExponentFalloff
+  nameWithType: LightComponent.pointExponentFalloff
+- uid: Unravel.Core.LightComponent.range
+  name: range
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_range
+  commentId: P:Unravel.Core.LightComponent.range
+  fullName: Unravel.Core.LightComponent.range
+  nameWithType: LightComponent.range
+- uid: Unravel.Core.LightComponent.range*
+  name: range
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_range_
+  commentId: Overload:Unravel.Core.LightComponent.range
+  isSpec: "True"
+  fullName: Unravel.Core.LightComponent.range
+  nameWithType: LightComponent.range
+- uid: Unravel.Core.LightComponent.spotInnerAngle
+  name: spotInnerAngle
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_spotInnerAngle
+  commentId: P:Unravel.Core.LightComponent.spotInnerAngle
+  fullName: Unravel.Core.LightComponent.spotInnerAngle
+  nameWithType: LightComponent.spotInnerAngle
+- uid: Unravel.Core.LightComponent.spotInnerAngle*
+  name: spotInnerAngle
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_spotInnerAngle_
+  commentId: Overload:Unravel.Core.LightComponent.spotInnerAngle
+  isSpec: "True"
+  fullName: Unravel.Core.LightComponent.spotInnerAngle
+  nameWithType: LightComponent.spotInnerAngle
+- uid: Unravel.Core.LightComponent.spotOuterAngle
+  name: spotOuterAngle
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_spotOuterAngle
+  commentId: P:Unravel.Core.LightComponent.spotOuterAngle
+  fullName: Unravel.Core.LightComponent.spotOuterAngle
+  nameWithType: LightComponent.spotOuterAngle
+- uid: Unravel.Core.LightComponent.spotOuterAngle*
+  name: spotOuterAngle
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_spotOuterAngle_
+  commentId: Overload:Unravel.Core.LightComponent.spotOuterAngle
+  isSpec: "True"
+  fullName: Unravel.Core.LightComponent.spotOuterAngle
+  nameWithType: LightComponent.spotOuterAngle
+- uid: Unravel.Core.LightComponent.type
+  name: type
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_type
+  commentId: P:Unravel.Core.LightComponent.type
+  fullName: Unravel.Core.LightComponent.type
+  nameWithType: LightComponent.type
+- uid: Unravel.Core.LightComponent.type*
+  name: type
+  href: api/Unravel.Core.LightComponent.html#Unravel_Core_LightComponent_type_
+  commentId: Overload:Unravel.Core.LightComponent.type
+  isSpec: "True"
+  fullName: Unravel.Core.LightComponent.type
+  nameWithType: LightComponent.type
+- uid: Unravel.Core.LightType
+  name: LightType
+  href: api/Unravel.Core.LightType.html
+  commentId: T:Unravel.Core.LightType
+  fullName: Unravel.Core.LightType
+  nameWithType: LightType
+- uid: Unravel.Core.LightType.Directional
+  name: Directional
+  href: api/Unravel.Core.LightType.html#Unravel_Core_LightType_Directional
+  commentId: F:Unravel.Core.LightType.Directional
+  fullName: Unravel.Core.LightType.Directional
+  nameWithType: LightType.Directional
+- uid: Unravel.Core.LightType.Point
+  name: Point
+  href: api/Unravel.Core.LightType.html#Unravel_Core_LightType_Point
+  commentId: F:Unravel.Core.LightType.Point
+  fullName: Unravel.Core.LightType.Point
+  nameWithType: LightType.Point
+- uid: Unravel.Core.LightType.Spot
+  name: Spot
+  href: api/Unravel.Core.LightType.html#Unravel_Core_LightType_Spot
+  commentId: F:Unravel.Core.LightType.Spot
+  fullName: Unravel.Core.LightType.Spot
+  nameWithType: LightType.Spot
 - uid: Unravel.Core.Log
   name: Log
   href: api/Unravel.Core.Log.html
@@ -4143,6 +4727,19 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.ModelComponent.SetSharedMaterial
   nameWithType: ModelComponent.SetSharedMaterial
+- uid: Unravel.Core.ModelComponent.castsShadow
+  name: castsShadow
+  href: api/Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_castsShadow
+  commentId: P:Unravel.Core.ModelComponent.castsShadow
+  fullName: Unravel.Core.ModelComponent.castsShadow
+  nameWithType: ModelComponent.castsShadow
+- uid: Unravel.Core.ModelComponent.castsShadow*
+  name: castsShadow
+  href: api/Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_castsShadow_
+  commentId: Overload:Unravel.Core.ModelComponent.castsShadow
+  isSpec: "True"
+  fullName: Unravel.Core.ModelComponent.castsShadow
+  nameWithType: ModelComponent.castsShadow
 - uid: Unravel.Core.ModelComponent.enabled
   name: enabled
   href: api/Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_enabled
@@ -4156,6 +4753,45 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.ModelComponent.enabled
   nameWithType: ModelComponent.enabled
+- uid: Unravel.Core.ModelComponent.isStatic
+  name: isStatic
+  href: api/Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_isStatic
+  commentId: P:Unravel.Core.ModelComponent.isStatic
+  fullName: Unravel.Core.ModelComponent.isStatic
+  nameWithType: ModelComponent.isStatic
+- uid: Unravel.Core.ModelComponent.isStatic*
+  name: isStatic
+  href: api/Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_isStatic_
+  commentId: Overload:Unravel.Core.ModelComponent.isStatic
+  isSpec: "True"
+  fullName: Unravel.Core.ModelComponent.isStatic
+  nameWithType: ModelComponent.isStatic
+- uid: Unravel.Core.ModelComponent.lodSelectionBias
+  name: lodSelectionBias
+  href: api/Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_lodSelectionBias
+  commentId: P:Unravel.Core.ModelComponent.lodSelectionBias
+  fullName: Unravel.Core.ModelComponent.lodSelectionBias
+  nameWithType: ModelComponent.lodSelectionBias
+- uid: Unravel.Core.ModelComponent.lodSelectionBias*
+  name: lodSelectionBias
+  href: api/Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_lodSelectionBias_
+  commentId: Overload:Unravel.Core.ModelComponent.lodSelectionBias
+  isSpec: "True"
+  fullName: Unravel.Core.ModelComponent.lodSelectionBias
+  nameWithType: ModelComponent.lodSelectionBias
+- uid: Unravel.Core.ModelComponent.mesh
+  name: mesh
+  href: api/Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_mesh
+  commentId: P:Unravel.Core.ModelComponent.mesh
+  fullName: Unravel.Core.ModelComponent.mesh
+  nameWithType: ModelComponent.mesh
+- uid: Unravel.Core.ModelComponent.mesh*
+  name: mesh
+  href: api/Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_mesh_
+  commentId: Overload:Unravel.Core.ModelComponent.mesh
+  isSpec: "True"
+  fullName: Unravel.Core.ModelComponent.mesh
+  nameWithType: ModelComponent.mesh
 - uid: Unravel.Core.MouseButton
   name: MouseButton
   href: api/Unravel.Core.MouseButton.html
@@ -4920,6 +5556,19 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.PhysicsComponent.angularVelocity
   nameWithType: PhysicsComponent.angularVelocity
+- uid: Unravel.Core.PhysicsComponent.bodyType
+  name: bodyType
+  href: api/Unravel.Core.PhysicsComponent.html#Unravel_Core_PhysicsComponent_bodyType
+  commentId: P:Unravel.Core.PhysicsComponent.bodyType
+  fullName: Unravel.Core.PhysicsComponent.bodyType
+  nameWithType: PhysicsComponent.bodyType
+- uid: Unravel.Core.PhysicsComponent.bodyType*
+  name: bodyType
+  href: api/Unravel.Core.PhysicsComponent.html#Unravel_Core_PhysicsComponent_bodyType_
+  commentId: Overload:Unravel.Core.PhysicsComponent.bodyType
+  isSpec: "True"
+  fullName: Unravel.Core.PhysicsComponent.bodyType
+  nameWithType: PhysicsComponent.bodyType
 - uid: Unravel.Core.PhysicsComponent.collisionLayers
   name: collisionLayers
   href: api/Unravel.Core.PhysicsComponent.html#Unravel_Core_PhysicsComponent_collisionLayers
@@ -4959,19 +5608,6 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.PhysicsComponent.includeLayers
   nameWithType: PhysicsComponent.includeLayers
-- uid: Unravel.Core.PhysicsComponent.isKinematic
-  name: isKinematic
-  href: api/Unravel.Core.PhysicsComponent.html#Unravel_Core_PhysicsComponent_isKinematic
-  commentId: P:Unravel.Core.PhysicsComponent.isKinematic
-  fullName: Unravel.Core.PhysicsComponent.isKinematic
-  nameWithType: PhysicsComponent.isKinematic
-- uid: Unravel.Core.PhysicsComponent.isKinematic*
-  name: isKinematic
-  href: api/Unravel.Core.PhysicsComponent.html#Unravel_Core_PhysicsComponent_isKinematic_
-  commentId: Overload:Unravel.Core.PhysicsComponent.isKinematic
-  isSpec: "True"
-  fullName: Unravel.Core.PhysicsComponent.isKinematic
-  nameWithType: PhysicsComponent.isKinematic
 - uid: Unravel.Core.PhysicsComponent.isSensor
   name: isSensor
   href: api/Unravel.Core.PhysicsComponent.html#Unravel_Core_PhysicsComponent_isSensor
@@ -5036,6 +5672,96 @@ references:
   commentId: T:Unravel.Core.Prefab
   fullName: Unravel.Core.Prefab
   nameWithType: Prefab
+- uid: Unravel.Core.ProbeResolution
+  name: ProbeResolution
+  href: api/Unravel.Core.ProbeResolution.html
+  commentId: T:Unravel.Core.ProbeResolution
+  fullName: Unravel.Core.ProbeResolution
+  nameWithType: ProbeResolution
+- uid: Unravel.Core.ProbeResolution.Res1024
+  name: Res1024
+  href: api/Unravel.Core.ProbeResolution.html#Unravel_Core_ProbeResolution_Res1024
+  commentId: F:Unravel.Core.ProbeResolution.Res1024
+  fullName: Unravel.Core.ProbeResolution.Res1024
+  nameWithType: ProbeResolution.Res1024
+- uid: Unravel.Core.ProbeResolution.Res128
+  name: Res128
+  href: api/Unravel.Core.ProbeResolution.html#Unravel_Core_ProbeResolution_Res128
+  commentId: F:Unravel.Core.ProbeResolution.Res128
+  fullName: Unravel.Core.ProbeResolution.Res128
+  nameWithType: ProbeResolution.Res128
+- uid: Unravel.Core.ProbeResolution.Res16
+  name: Res16
+  href: api/Unravel.Core.ProbeResolution.html#Unravel_Core_ProbeResolution_Res16
+  commentId: F:Unravel.Core.ProbeResolution.Res16
+  fullName: Unravel.Core.ProbeResolution.Res16
+  nameWithType: ProbeResolution.Res16
+- uid: Unravel.Core.ProbeResolution.Res256
+  name: Res256
+  href: api/Unravel.Core.ProbeResolution.html#Unravel_Core_ProbeResolution_Res256
+  commentId: F:Unravel.Core.ProbeResolution.Res256
+  fullName: Unravel.Core.ProbeResolution.Res256
+  nameWithType: ProbeResolution.Res256
+- uid: Unravel.Core.ProbeResolution.Res32
+  name: Res32
+  href: api/Unravel.Core.ProbeResolution.html#Unravel_Core_ProbeResolution_Res32
+  commentId: F:Unravel.Core.ProbeResolution.Res32
+  fullName: Unravel.Core.ProbeResolution.Res32
+  nameWithType: ProbeResolution.Res32
+- uid: Unravel.Core.ProbeResolution.Res512
+  name: Res512
+  href: api/Unravel.Core.ProbeResolution.html#Unravel_Core_ProbeResolution_Res512
+  commentId: F:Unravel.Core.ProbeResolution.Res512
+  fullName: Unravel.Core.ProbeResolution.Res512
+  nameWithType: ProbeResolution.Res512
+- uid: Unravel.Core.ProbeResolution.Res64
+  name: Res64
+  href: api/Unravel.Core.ProbeResolution.html#Unravel_Core_ProbeResolution_Res64
+  commentId: F:Unravel.Core.ProbeResolution.Res64
+  fullName: Unravel.Core.ProbeResolution.Res64
+  nameWithType: ProbeResolution.Res64
+- uid: Unravel.Core.ProbeType
+  name: ProbeType
+  href: api/Unravel.Core.ProbeType.html
+  commentId: T:Unravel.Core.ProbeType
+  fullName: Unravel.Core.ProbeType
+  nameWithType: ProbeType
+- uid: Unravel.Core.ProbeType.Box
+  name: Box
+  href: api/Unravel.Core.ProbeType.html#Unravel_Core_ProbeType_Box
+  commentId: F:Unravel.Core.ProbeType.Box
+  fullName: Unravel.Core.ProbeType.Box
+  nameWithType: ProbeType.Box
+- uid: Unravel.Core.ProbeType.Sphere
+  name: Sphere
+  href: api/Unravel.Core.ProbeType.html#Unravel_Core_ProbeType_Sphere
+  commentId: F:Unravel.Core.ProbeType.Sphere
+  fullName: Unravel.Core.ProbeType.Sphere
+  nameWithType: ProbeType.Sphere
+- uid: Unravel.Core.ProbeUpdateMode
+  name: ProbeUpdateMode
+  href: api/Unravel.Core.ProbeUpdateMode.html
+  commentId: T:Unravel.Core.ProbeUpdateMode
+  fullName: Unravel.Core.ProbeUpdateMode
+  nameWithType: ProbeUpdateMode
+- uid: Unravel.Core.ProbeUpdateMode.OnDemand
+  name: OnDemand
+  href: api/Unravel.Core.ProbeUpdateMode.html#Unravel_Core_ProbeUpdateMode_OnDemand
+  commentId: F:Unravel.Core.ProbeUpdateMode.OnDemand
+  fullName: Unravel.Core.ProbeUpdateMode.OnDemand
+  nameWithType: ProbeUpdateMode.OnDemand
+- uid: Unravel.Core.ProbeUpdateMode.Once
+  name: Once
+  href: api/Unravel.Core.ProbeUpdateMode.html#Unravel_Core_ProbeUpdateMode_Once
+  commentId: F:Unravel.Core.ProbeUpdateMode.Once
+  fullName: Unravel.Core.ProbeUpdateMode.Once
+  nameWithType: ProbeUpdateMode.Once
+- uid: Unravel.Core.ProbeUpdateMode.Realtime
+  name: Realtime
+  href: api/Unravel.Core.ProbeUpdateMode.html#Unravel_Core_ProbeUpdateMode_Realtime
+  commentId: F:Unravel.Core.ProbeUpdateMode.Realtime
+  fullName: Unravel.Core.ProbeUpdateMode.Realtime
+  nameWithType: ProbeUpdateMode.Realtime
 - uid: Unravel.Core.Profiler
   name: Profiler
   href: api/Unravel.Core.Profiler.html
@@ -5112,6 +5838,24 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.ProfilerScope.Dispose
   nameWithType: ProfilerScope.Dispose
+- uid: Unravel.Core.ProjectionMode
+  name: ProjectionMode
+  href: api/Unravel.Core.ProjectionMode.html
+  commentId: T:Unravel.Core.ProjectionMode
+  fullName: Unravel.Core.ProjectionMode
+  nameWithType: ProjectionMode
+- uid: Unravel.Core.ProjectionMode.Orthographic
+  name: Orthographic
+  href: api/Unravel.Core.ProjectionMode.html#Unravel_Core_ProjectionMode_Orthographic
+  commentId: F:Unravel.Core.ProjectionMode.Orthographic
+  fullName: Unravel.Core.ProjectionMode.Orthographic
+  nameWithType: ProjectionMode.Orthographic
+- uid: Unravel.Core.ProjectionMode.Perspective
+  name: Perspective
+  href: api/Unravel.Core.ProjectionMode.html#Unravel_Core_ProjectionMode_Perspective
+  commentId: F:Unravel.Core.ProjectionMode.Perspective
+  fullName: Unravel.Core.ProjectionMode.Perspective
+  nameWithType: ProjectionMode.Perspective
 - uid: Unravel.Core.RangeAttribute
   name: RangeAttribute
   href: api/Unravel.Core.RangeAttribute.html
@@ -5259,12 +6003,213 @@ references:
   commentId: F:Unravel.Core.RaycastHit.point
   fullName: Unravel.Core.RaycastHit.point
   nameWithType: RaycastHit.point
+- uid: Unravel.Core.ReflectMethod
+  name: ReflectMethod
+  href: api/Unravel.Core.ReflectMethod.html
+  commentId: T:Unravel.Core.ReflectMethod
+  fullName: Unravel.Core.ReflectMethod
+  nameWithType: ReflectMethod
+- uid: Unravel.Core.ReflectMethod.Environment
+  name: Environment
+  href: api/Unravel.Core.ReflectMethod.html#Unravel_Core_ReflectMethod_Environment
+  commentId: F:Unravel.Core.ReflectMethod.Environment
+  fullName: Unravel.Core.ReflectMethod.Environment
+  nameWithType: ReflectMethod.Environment
+- uid: Unravel.Core.ReflectMethod.StaticOnly
+  name: StaticOnly
+  href: api/Unravel.Core.ReflectMethod.html#Unravel_Core_ReflectMethod_StaticOnly
+  commentId: F:Unravel.Core.ReflectMethod.StaticOnly
+  fullName: Unravel.Core.ReflectMethod.StaticOnly
+  nameWithType: ReflectMethod.StaticOnly
 - uid: Unravel.Core.ReflectionProbeComponent
   name: ReflectionProbeComponent
   href: api/Unravel.Core.ReflectionProbeComponent.html
   commentId: T:Unravel.Core.ReflectionProbeComponent
   fullName: Unravel.Core.ReflectionProbeComponent
   nameWithType: ReflectionProbeComponent
+- uid: Unravel.Core.ReflectionProbeComponent.MarkDirty(System.Boolean)
+  name: MarkDirty(bool)
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_MarkDirty_System_Boolean_
+  commentId: M:Unravel.Core.ReflectionProbeComponent.MarkDirty(System.Boolean)
+  name.vb: MarkDirty(Boolean)
+  fullName: Unravel.Core.ReflectionProbeComponent.MarkDirty(bool)
+  fullName.vb: Unravel.Core.ReflectionProbeComponent.MarkDirty(Boolean)
+  nameWithType: ReflectionProbeComponent.MarkDirty(bool)
+  nameWithType.vb: ReflectionProbeComponent.MarkDirty(Boolean)
+- uid: Unravel.Core.ReflectionProbeComponent.MarkDirty*
+  name: MarkDirty
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_MarkDirty_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.MarkDirty
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.MarkDirty
+  nameWithType: ReflectionProbeComponent.MarkDirty
+- uid: Unravel.Core.ReflectionProbeComponent.boxExtents
+  name: boxExtents
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_boxExtents
+  commentId: P:Unravel.Core.ReflectionProbeComponent.boxExtents
+  fullName: Unravel.Core.ReflectionProbeComponent.boxExtents
+  nameWithType: ReflectionProbeComponent.boxExtents
+- uid: Unravel.Core.ReflectionProbeComponent.boxExtents*
+  name: boxExtents
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_boxExtents_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.boxExtents
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.boxExtents
+  nameWithType: ReflectionProbeComponent.boxExtents
+- uid: Unravel.Core.ReflectionProbeComponent.captureShadows
+  name: captureShadows
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_captureShadows
+  commentId: P:Unravel.Core.ReflectionProbeComponent.captureShadows
+  fullName: Unravel.Core.ReflectionProbeComponent.captureShadows
+  nameWithType: ReflectionProbeComponent.captureShadows
+- uid: Unravel.Core.ReflectionProbeComponent.captureShadows*
+  name: captureShadows
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_captureShadows_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.captureShadows
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.captureShadows
+  nameWithType: ReflectionProbeComponent.captureShadows
+- uid: Unravel.Core.ReflectionProbeComponent.captureSky
+  name: captureSky
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_captureSky
+  commentId: P:Unravel.Core.ReflectionProbeComponent.captureSky
+  fullName: Unravel.Core.ReflectionProbeComponent.captureSky
+  nameWithType: ReflectionProbeComponent.captureSky
+- uid: Unravel.Core.ReflectionProbeComponent.captureSky*
+  name: captureSky
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_captureSky_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.captureSky
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.captureSky
+  nameWithType: ReflectionProbeComponent.captureSky
+- uid: Unravel.Core.ReflectionProbeComponent.intensity
+  name: intensity
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_intensity
+  commentId: P:Unravel.Core.ReflectionProbeComponent.intensity
+  fullName: Unravel.Core.ReflectionProbeComponent.intensity
+  nameWithType: ReflectionProbeComponent.intensity
+- uid: Unravel.Core.ReflectionProbeComponent.intensity*
+  name: intensity
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_intensity_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.intensity
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.intensity
+  nameWithType: ReflectionProbeComponent.intensity
+- uid: Unravel.Core.ReflectionProbeComponent.isDirty
+  name: isDirty
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_isDirty
+  commentId: P:Unravel.Core.ReflectionProbeComponent.isDirty
+  fullName: Unravel.Core.ReflectionProbeComponent.isDirty
+  nameWithType: ReflectionProbeComponent.isDirty
+- uid: Unravel.Core.ReflectionProbeComponent.isDirty*
+  name: isDirty
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_isDirty_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.isDirty
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.isDirty
+  nameWithType: ReflectionProbeComponent.isDirty
+- uid: Unravel.Core.ReflectionProbeComponent.method
+  name: method
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_method
+  commentId: P:Unravel.Core.ReflectionProbeComponent.method
+  fullName: Unravel.Core.ReflectionProbeComponent.method
+  nameWithType: ReflectionProbeComponent.method
+- uid: Unravel.Core.ReflectionProbeComponent.method*
+  name: method
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_method_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.method
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.method
+  nameWithType: ReflectionProbeComponent.method
+- uid: Unravel.Core.ReflectionProbeComponent.resolution
+  name: resolution
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_resolution
+  commentId: P:Unravel.Core.ReflectionProbeComponent.resolution
+  fullName: Unravel.Core.ReflectionProbeComponent.resolution
+  nameWithType: ReflectionProbeComponent.resolution
+- uid: Unravel.Core.ReflectionProbeComponent.resolution*
+  name: resolution
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_resolution_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.resolution
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.resolution
+  nameWithType: ReflectionProbeComponent.resolution
+- uid: Unravel.Core.ReflectionProbeComponent.sphereRange
+  name: sphereRange
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_sphereRange
+  commentId: P:Unravel.Core.ReflectionProbeComponent.sphereRange
+  fullName: Unravel.Core.ReflectionProbeComponent.sphereRange
+  nameWithType: ReflectionProbeComponent.sphereRange
+- uid: Unravel.Core.ReflectionProbeComponent.sphereRange*
+  name: sphereRange
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_sphereRange_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.sphereRange
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.sphereRange
+  nameWithType: ReflectionProbeComponent.sphereRange
+- uid: Unravel.Core.ReflectionProbeComponent.type
+  name: type
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_type
+  commentId: P:Unravel.Core.ReflectionProbeComponent.type
+  fullName: Unravel.Core.ReflectionProbeComponent.type
+  nameWithType: ReflectionProbeComponent.type
+- uid: Unravel.Core.ReflectionProbeComponent.type*
+  name: type
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_type_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.type
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.type
+  nameWithType: ReflectionProbeComponent.type
+- uid: Unravel.Core.ReflectionProbeComponent.updateInterval
+  name: updateInterval
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_updateInterval
+  commentId: P:Unravel.Core.ReflectionProbeComponent.updateInterval
+  fullName: Unravel.Core.ReflectionProbeComponent.updateInterval
+  nameWithType: ReflectionProbeComponent.updateInterval
+- uid: Unravel.Core.ReflectionProbeComponent.updateInterval*
+  name: updateInterval
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_updateInterval_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.updateInterval
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.updateInterval
+  nameWithType: ReflectionProbeComponent.updateInterval
+- uid: Unravel.Core.ReflectionProbeComponent.updateMode
+  name: updateMode
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_updateMode
+  commentId: P:Unravel.Core.ReflectionProbeComponent.updateMode
+  fullName: Unravel.Core.ReflectionProbeComponent.updateMode
+  nameWithType: ReflectionProbeComponent.updateMode
+- uid: Unravel.Core.ReflectionProbeComponent.updateMode*
+  name: updateMode
+  href: api/Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_updateMode_
+  commentId: Overload:Unravel.Core.ReflectionProbeComponent.updateMode
+  isSpec: "True"
+  fullName: Unravel.Core.ReflectionProbeComponent.updateMode
+  nameWithType: ReflectionProbeComponent.updateMode
+- uid: Unravel.Core.RigidbodyType
+  name: RigidbodyType
+  href: api/Unravel.Core.RigidbodyType.html
+  commentId: T:Unravel.Core.RigidbodyType
+  fullName: Unravel.Core.RigidbodyType
+  nameWithType: RigidbodyType
+- uid: Unravel.Core.RigidbodyType.Dynamic
+  name: Dynamic
+  href: api/Unravel.Core.RigidbodyType.html#Unravel_Core_RigidbodyType_Dynamic
+  commentId: F:Unravel.Core.RigidbodyType.Dynamic
+  fullName: Unravel.Core.RigidbodyType.Dynamic
+  nameWithType: RigidbodyType.Dynamic
+- uid: Unravel.Core.RigidbodyType.Kinematic
+  name: Kinematic
+  href: api/Unravel.Core.RigidbodyType.html#Unravel_Core_RigidbodyType_Kinematic
+  commentId: F:Unravel.Core.RigidbodyType.Kinematic
+  fullName: Unravel.Core.RigidbodyType.Kinematic
+  nameWithType: RigidbodyType.Kinematic
+- uid: Unravel.Core.RigidbodyType.Static
+  name: Static
+  href: api/Unravel.Core.RigidbodyType.html#Unravel_Core_RigidbodyType_Static
+  commentId: F:Unravel.Core.RigidbodyType.Static
+  fullName: Unravel.Core.RigidbodyType.Static
+  nameWithType: RigidbodyType.Static
 - uid: Unravel.Core.Scene
   name: Scene
   href: api/Unravel.Core.Scene.html
@@ -5890,6 +6835,153 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.ScriptSourceFileAttribute.Path
   nameWithType: ScriptSourceFileAttribute.Path
+- uid: Unravel.Core.SkyMode
+  name: SkyMode
+  href: api/Unravel.Core.SkyMode.html
+  commentId: T:Unravel.Core.SkyMode
+  fullName: Unravel.Core.SkyMode
+  nameWithType: SkyMode
+- uid: Unravel.Core.SkyMode.Perez
+  name: Perez
+  href: api/Unravel.Core.SkyMode.html#Unravel_Core_SkyMode_Perez
+  commentId: F:Unravel.Core.SkyMode.Perez
+  fullName: Unravel.Core.SkyMode.Perez
+  nameWithType: SkyMode.Perez
+- uid: Unravel.Core.SkyMode.Reserved0
+  name: Reserved0
+  href: api/Unravel.Core.SkyMode.html#Unravel_Core_SkyMode_Reserved0
+  commentId: F:Unravel.Core.SkyMode.Reserved0
+  fullName: Unravel.Core.SkyMode.Reserved0
+  nameWithType: SkyMode.Reserved0
+- uid: Unravel.Core.SkyMode.Skybox
+  name: Skybox
+  href: api/Unravel.Core.SkyMode.html#Unravel_Core_SkyMode_Skybox
+  commentId: F:Unravel.Core.SkyMode.Skybox
+  fullName: Unravel.Core.SkyMode.Skybox
+  nameWithType: SkyMode.Skybox
+- uid: Unravel.Core.SkylightComponent
+  name: SkylightComponent
+  href: api/Unravel.Core.SkylightComponent.html
+  commentId: T:Unravel.Core.SkylightComponent
+  fullName: Unravel.Core.SkylightComponent
+  nameWithType: SkylightComponent
+- uid: Unravel.Core.SkylightComponent.cloudCoverage
+  name: cloudCoverage
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_cloudCoverage
+  commentId: P:Unravel.Core.SkylightComponent.cloudCoverage
+  fullName: Unravel.Core.SkylightComponent.cloudCoverage
+  nameWithType: SkylightComponent.cloudCoverage
+- uid: Unravel.Core.SkylightComponent.cloudCoverage*
+  name: cloudCoverage
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_cloudCoverage_
+  commentId: Overload:Unravel.Core.SkylightComponent.cloudCoverage
+  isSpec: "True"
+  fullName: Unravel.Core.SkylightComponent.cloudCoverage
+  nameWithType: SkylightComponent.cloudCoverage
+- uid: Unravel.Core.SkylightComponent.cloudMode
+  name: cloudMode
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_cloudMode
+  commentId: P:Unravel.Core.SkylightComponent.cloudMode
+  fullName: Unravel.Core.SkylightComponent.cloudMode
+  nameWithType: SkylightComponent.cloudMode
+- uid: Unravel.Core.SkylightComponent.cloudMode*
+  name: cloudMode
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_cloudMode_
+  commentId: Overload:Unravel.Core.SkylightComponent.cloudMode
+  isSpec: "True"
+  fullName: Unravel.Core.SkylightComponent.cloudMode
+  nameWithType: SkylightComponent.cloudMode
+- uid: Unravel.Core.SkylightComponent.cubemap
+  name: cubemap
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_cubemap
+  commentId: P:Unravel.Core.SkylightComponent.cubemap
+  fullName: Unravel.Core.SkylightComponent.cubemap
+  nameWithType: SkylightComponent.cubemap
+- uid: Unravel.Core.SkylightComponent.cubemap*
+  name: cubemap
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_cubemap_
+  commentId: Overload:Unravel.Core.SkylightComponent.cubemap
+  isSpec: "True"
+  fullName: Unravel.Core.SkylightComponent.cubemap
+  nameWithType: SkylightComponent.cubemap
+- uid: Unravel.Core.SkylightComponent.irradianceIntensity
+  name: irradianceIntensity
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_irradianceIntensity
+  commentId: P:Unravel.Core.SkylightComponent.irradianceIntensity
+  fullName: Unravel.Core.SkylightComponent.irradianceIntensity
+  nameWithType: SkylightComponent.irradianceIntensity
+- uid: Unravel.Core.SkylightComponent.irradianceIntensity*
+  name: irradianceIntensity
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_irradianceIntensity_
+  commentId: Overload:Unravel.Core.SkylightComponent.irradianceIntensity
+  isSpec: "True"
+  fullName: Unravel.Core.SkylightComponent.irradianceIntensity
+  nameWithType: SkylightComponent.irradianceIntensity
+- uid: Unravel.Core.SkylightComponent.irradianceQuality
+  name: irradianceQuality
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_irradianceQuality
+  commentId: P:Unravel.Core.SkylightComponent.irradianceQuality
+  fullName: Unravel.Core.SkylightComponent.irradianceQuality
+  nameWithType: SkylightComponent.irradianceQuality
+- uid: Unravel.Core.SkylightComponent.irradianceQuality*
+  name: irradianceQuality
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_irradianceQuality_
+  commentId: Overload:Unravel.Core.SkylightComponent.irradianceQuality
+  isSpec: "True"
+  fullName: Unravel.Core.SkylightComponent.irradianceQuality
+  nameWithType: SkylightComponent.irradianceQuality
+- uid: Unravel.Core.SkylightComponent.irradianceUseSky
+  name: irradianceUseSky
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_irradianceUseSky
+  commentId: P:Unravel.Core.SkylightComponent.irradianceUseSky
+  fullName: Unravel.Core.SkylightComponent.irradianceUseSky
+  nameWithType: SkylightComponent.irradianceUseSky
+- uid: Unravel.Core.SkylightComponent.irradianceUseSky*
+  name: irradianceUseSky
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_irradianceUseSky_
+  commentId: Overload:Unravel.Core.SkylightComponent.irradianceUseSky
+  isSpec: "True"
+  fullName: Unravel.Core.SkylightComponent.irradianceUseSky
+  nameWithType: SkylightComponent.irradianceUseSky
+- uid: Unravel.Core.SkylightComponent.mode
+  name: mode
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_mode
+  commentId: P:Unravel.Core.SkylightComponent.mode
+  fullName: Unravel.Core.SkylightComponent.mode
+  nameWithType: SkylightComponent.mode
+- uid: Unravel.Core.SkylightComponent.mode*
+  name: mode
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_mode_
+  commentId: Overload:Unravel.Core.SkylightComponent.mode
+  isSpec: "True"
+  fullName: Unravel.Core.SkylightComponent.mode
+  nameWithType: SkylightComponent.mode
+- uid: Unravel.Core.SkylightComponent.skyBrightness
+  name: skyBrightness
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_skyBrightness
+  commentId: P:Unravel.Core.SkylightComponent.skyBrightness
+  fullName: Unravel.Core.SkylightComponent.skyBrightness
+  nameWithType: SkylightComponent.skyBrightness
+- uid: Unravel.Core.SkylightComponent.skyBrightness*
+  name: skyBrightness
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_skyBrightness_
+  commentId: Overload:Unravel.Core.SkylightComponent.skyBrightness
+  isSpec: "True"
+  fullName: Unravel.Core.SkylightComponent.skyBrightness
+  nameWithType: SkylightComponent.skyBrightness
+- uid: Unravel.Core.SkylightComponent.turbidity
+  name: turbidity
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_turbidity
+  commentId: P:Unravel.Core.SkylightComponent.turbidity
+  fullName: Unravel.Core.SkylightComponent.turbidity
+  nameWithType: SkylightComponent.turbidity
+- uid: Unravel.Core.SkylightComponent.turbidity*
+  name: turbidity
+  href: api/Unravel.Core.SkylightComponent.html#Unravel_Core_SkylightComponent_turbidity_
+  commentId: Overload:Unravel.Core.SkylightComponent.turbidity
+  isSpec: "True"
+  fullName: Unravel.Core.SkylightComponent.turbidity
+  nameWithType: SkylightComponent.turbidity
 - uid: Unravel.Core.StepAttribute
   name: StepAttribute
   href: api/Unravel.Core.StepAttribute.html
@@ -5927,6 +7019,153 @@ references:
   commentId: T:Unravel.Core.StyleSheet
   fullName: Unravel.Core.StyleSheet
   nameWithType: StyleSheet
+- uid: Unravel.Core.SubmeshComponent
+  name: SubmeshComponent
+  href: api/Unravel.Core.SubmeshComponent.html
+  commentId: T:Unravel.Core.SubmeshComponent
+  fullName: Unravel.Core.SubmeshComponent
+  nameWithType: SubmeshComponent
+- uid: Unravel.Core.SubmeshComponent.GetCastsShadow(System.Int32)
+  name: GetCastsShadow(int)
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_GetCastsShadow_System_Int32_
+  commentId: M:Unravel.Core.SubmeshComponent.GetCastsShadow(System.Int32)
+  name.vb: GetCastsShadow(Integer)
+  fullName: Unravel.Core.SubmeshComponent.GetCastsShadow(int)
+  fullName.vb: Unravel.Core.SubmeshComponent.GetCastsShadow(Integer)
+  nameWithType: SubmeshComponent.GetCastsShadow(int)
+  nameWithType.vb: SubmeshComponent.GetCastsShadow(Integer)
+- uid: Unravel.Core.SubmeshComponent.GetCastsShadow*
+  name: GetCastsShadow
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_GetCastsShadow_
+  commentId: Overload:Unravel.Core.SubmeshComponent.GetCastsShadow
+  isSpec: "True"
+  fullName: Unravel.Core.SubmeshComponent.GetCastsShadow
+  nameWithType: SubmeshComponent.GetCastsShadow
+- uid: Unravel.Core.SubmeshComponent.GetEnabled(System.Int32)
+  name: GetEnabled(int)
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_GetEnabled_System_Int32_
+  commentId: M:Unravel.Core.SubmeshComponent.GetEnabled(System.Int32)
+  name.vb: GetEnabled(Integer)
+  fullName: Unravel.Core.SubmeshComponent.GetEnabled(int)
+  fullName.vb: Unravel.Core.SubmeshComponent.GetEnabled(Integer)
+  nameWithType: SubmeshComponent.GetEnabled(int)
+  nameWithType.vb: SubmeshComponent.GetEnabled(Integer)
+- uid: Unravel.Core.SubmeshComponent.GetEnabled*
+  name: GetEnabled
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_GetEnabled_
+  commentId: Overload:Unravel.Core.SubmeshComponent.GetEnabled
+  isSpec: "True"
+  fullName: Unravel.Core.SubmeshComponent.GetEnabled
+  nameWithType: SubmeshComponent.GetEnabled
+- uid: Unravel.Core.SubmeshComponent.GetMaterialOverrideUid(System.Int32)
+  name: GetMaterialOverrideUid(int)
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_GetMaterialOverrideUid_System_Int32_
+  commentId: M:Unravel.Core.SubmeshComponent.GetMaterialOverrideUid(System.Int32)
+  name.vb: GetMaterialOverrideUid(Integer)
+  fullName: Unravel.Core.SubmeshComponent.GetMaterialOverrideUid(int)
+  fullName.vb: Unravel.Core.SubmeshComponent.GetMaterialOverrideUid(Integer)
+  nameWithType: SubmeshComponent.GetMaterialOverrideUid(int)
+  nameWithType.vb: SubmeshComponent.GetMaterialOverrideUid(Integer)
+- uid: Unravel.Core.SubmeshComponent.GetMaterialOverrideUid*
+  name: GetMaterialOverrideUid
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_GetMaterialOverrideUid_
+  commentId: Overload:Unravel.Core.SubmeshComponent.GetMaterialOverrideUid
+  isSpec: "True"
+  fullName: Unravel.Core.SubmeshComponent.GetMaterialOverrideUid
+  nameWithType: SubmeshComponent.GetMaterialOverrideUid
+- uid: Unravel.Core.SubmeshComponent.GetStableId(System.Int32)
+  name: GetStableId(int)
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_GetStableId_System_Int32_
+  commentId: M:Unravel.Core.SubmeshComponent.GetStableId(System.Int32)
+  name.vb: GetStableId(Integer)
+  fullName: Unravel.Core.SubmeshComponent.GetStableId(int)
+  fullName.vb: Unravel.Core.SubmeshComponent.GetStableId(Integer)
+  nameWithType: SubmeshComponent.GetStableId(int)
+  nameWithType.vb: SubmeshComponent.GetStableId(Integer)
+- uid: Unravel.Core.SubmeshComponent.GetStableId*
+  name: GetStableId
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_GetStableId_
+  commentId: Overload:Unravel.Core.SubmeshComponent.GetStableId
+  isSpec: "True"
+  fullName: Unravel.Core.SubmeshComponent.GetStableId
+  nameWithType: SubmeshComponent.GetStableId
+- uid: Unravel.Core.SubmeshComponent.GetSubmeshIndex(System.Int32)
+  name: GetSubmeshIndex(int)
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_GetSubmeshIndex_System_Int32_
+  commentId: M:Unravel.Core.SubmeshComponent.GetSubmeshIndex(System.Int32)
+  name.vb: GetSubmeshIndex(Integer)
+  fullName: Unravel.Core.SubmeshComponent.GetSubmeshIndex(int)
+  fullName.vb: Unravel.Core.SubmeshComponent.GetSubmeshIndex(Integer)
+  nameWithType: SubmeshComponent.GetSubmeshIndex(int)
+  nameWithType.vb: SubmeshComponent.GetSubmeshIndex(Integer)
+- uid: Unravel.Core.SubmeshComponent.GetSubmeshIndex*
+  name: GetSubmeshIndex
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_GetSubmeshIndex_
+  commentId: Overload:Unravel.Core.SubmeshComponent.GetSubmeshIndex
+  isSpec: "True"
+  fullName: Unravel.Core.SubmeshComponent.GetSubmeshIndex
+  nameWithType: SubmeshComponent.GetSubmeshIndex
+- uid: Unravel.Core.SubmeshComponent.SetCastsShadow(System.Int32,System.Boolean)
+  name: SetCastsShadow(int, bool)
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_SetCastsShadow_System_Int32_System_Boolean_
+  commentId: M:Unravel.Core.SubmeshComponent.SetCastsShadow(System.Int32,System.Boolean)
+  name.vb: SetCastsShadow(Integer, Boolean)
+  fullName: Unravel.Core.SubmeshComponent.SetCastsShadow(int, bool)
+  fullName.vb: Unravel.Core.SubmeshComponent.SetCastsShadow(Integer, Boolean)
+  nameWithType: SubmeshComponent.SetCastsShadow(int, bool)
+  nameWithType.vb: SubmeshComponent.SetCastsShadow(Integer, Boolean)
+- uid: Unravel.Core.SubmeshComponent.SetCastsShadow*
+  name: SetCastsShadow
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_SetCastsShadow_
+  commentId: Overload:Unravel.Core.SubmeshComponent.SetCastsShadow
+  isSpec: "True"
+  fullName: Unravel.Core.SubmeshComponent.SetCastsShadow
+  nameWithType: SubmeshComponent.SetCastsShadow
+- uid: Unravel.Core.SubmeshComponent.SetEnabled(System.Int32,System.Boolean)
+  name: SetEnabled(int, bool)
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_SetEnabled_System_Int32_System_Boolean_
+  commentId: M:Unravel.Core.SubmeshComponent.SetEnabled(System.Int32,System.Boolean)
+  name.vb: SetEnabled(Integer, Boolean)
+  fullName: Unravel.Core.SubmeshComponent.SetEnabled(int, bool)
+  fullName.vb: Unravel.Core.SubmeshComponent.SetEnabled(Integer, Boolean)
+  nameWithType: SubmeshComponent.SetEnabled(int, bool)
+  nameWithType.vb: SubmeshComponent.SetEnabled(Integer, Boolean)
+- uid: Unravel.Core.SubmeshComponent.SetEnabled*
+  name: SetEnabled
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_SetEnabled_
+  commentId: Overload:Unravel.Core.SubmeshComponent.SetEnabled
+  isSpec: "True"
+  fullName: Unravel.Core.SubmeshComponent.SetEnabled
+  nameWithType: SubmeshComponent.SetEnabled
+- uid: Unravel.Core.SubmeshComponent.SetMaterialOverride(System.Int32,Unravel.Core.Material)
+  name: SetMaterialOverride(int, Material)
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_SetMaterialOverride_System_Int32_Unravel_Core_Material_
+  commentId: M:Unravel.Core.SubmeshComponent.SetMaterialOverride(System.Int32,Unravel.Core.Material)
+  name.vb: SetMaterialOverride(Integer, Material)
+  fullName: Unravel.Core.SubmeshComponent.SetMaterialOverride(int, Unravel.Core.Material)
+  fullName.vb: Unravel.Core.SubmeshComponent.SetMaterialOverride(Integer, Unravel.Core.Material)
+  nameWithType: SubmeshComponent.SetMaterialOverride(int, Material)
+  nameWithType.vb: SubmeshComponent.SetMaterialOverride(Integer, Material)
+- uid: Unravel.Core.SubmeshComponent.SetMaterialOverride*
+  name: SetMaterialOverride
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_SetMaterialOverride_
+  commentId: Overload:Unravel.Core.SubmeshComponent.SetMaterialOverride
+  isSpec: "True"
+  fullName: Unravel.Core.SubmeshComponent.SetMaterialOverride
+  nameWithType: SubmeshComponent.SetMaterialOverride
+- uid: Unravel.Core.SubmeshComponent.entryCount
+  name: entryCount
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_entryCount
+  commentId: P:Unravel.Core.SubmeshComponent.entryCount
+  fullName: Unravel.Core.SubmeshComponent.entryCount
+  nameWithType: SubmeshComponent.entryCount
+- uid: Unravel.Core.SubmeshComponent.entryCount*
+  name: entryCount
+  href: api/Unravel.Core.SubmeshComponent.html#Unravel_Core_SubmeshComponent_entryCount_
+  commentId: Overload:Unravel.Core.SubmeshComponent.entryCount
+  isSpec: "True"
+  fullName: Unravel.Core.SubmeshComponent.entryCount
+  nameWithType: SubmeshComponent.entryCount
 - uid: Unravel.Core.SystemManager
   name: SystemManager
   href: api/Unravel.Core.SystemManager.html
@@ -7708,18 +8947,6 @@ references:
   commentId: T:Unravel.Core.UIEventManager
   fullName: Unravel.Core.UIEventManager
   nameWithType: UIEventManager
-- uid: Unravel.Core.UIEventManager.DispatchEvent(Unravel.Core.UIEventBase)
-  name: DispatchEvent(UIEventBase)
-  href: api/Unravel.Core.UIEventManager.html#Unravel_Core_UIEventManager_DispatchEvent_Unravel_Core_UIEventBase_
-  commentId: M:Unravel.Core.UIEventManager.DispatchEvent(Unravel.Core.UIEventBase)
-  fullName: Unravel.Core.UIEventManager.DispatchEvent(Unravel.Core.UIEventBase)
-  nameWithType: UIEventManager.DispatchEvent(UIEventBase)
-- uid: Unravel.Core.UIEventManager.DispatchEvent*
-  name: DispatchEvent
-  href: api/Unravel.Core.UIEventManager.html#Unravel_Core_UIEventManager_DispatchEvent_
-  commentId: Overload:Unravel.Core.UIEventManager.DispatchEvent
-  fullName: Unravel.Core.UIEventManager.DispatchEvent
-  nameWithType: UIEventManager.DispatchEvent
 - uid: Unravel.Core.UIEventManager.GetSubscriptionCount
   name: GetSubscriptionCount()
   href: api/Unravel.Core.UIEventManager.html#Unravel_Core_UIEventManager_GetSubscriptionCount
@@ -7800,6 +9027,28 @@ references:
   isSpec: "True"
   fullName: Unravel.Core.UIEventManager.UnsubscribeAll
   nameWithType: UIEventManager.UnsubscribeAll
+- uid: Unravel.Core.UIEventManager.UnsubscribeAllForOwner(Unravel.Core.Entity)
+  name: UnsubscribeAllForOwner(Entity)
+  href: api/Unravel.Core.UIEventManager.html#Unravel_Core_UIEventManager_UnsubscribeAllForOwner_Unravel_Core_Entity_
+  commentId: M:Unravel.Core.UIEventManager.UnsubscribeAllForOwner(Unravel.Core.Entity)
+  fullName: Unravel.Core.UIEventManager.UnsubscribeAllForOwner(Unravel.Core.Entity)
+  nameWithType: UIEventManager.UnsubscribeAllForOwner(Entity)
+- uid: Unravel.Core.UIEventManager.UnsubscribeAllForOwner(Unravel.Core.Entity,System.Boolean)
+  name: UnsubscribeAllForOwner(Entity, bool)
+  href: api/Unravel.Core.UIEventManager.html#Unravel_Core_UIEventManager_UnsubscribeAllForOwner_Unravel_Core_Entity_System_Boolean_
+  commentId: M:Unravel.Core.UIEventManager.UnsubscribeAllForOwner(Unravel.Core.Entity,System.Boolean)
+  name.vb: UnsubscribeAllForOwner(Entity, Boolean)
+  fullName: Unravel.Core.UIEventManager.UnsubscribeAllForOwner(Unravel.Core.Entity, bool)
+  fullName.vb: Unravel.Core.UIEventManager.UnsubscribeAllForOwner(Unravel.Core.Entity, Boolean)
+  nameWithType: UIEventManager.UnsubscribeAllForOwner(Entity, bool)
+  nameWithType.vb: UIEventManager.UnsubscribeAllForOwner(Entity, Boolean)
+- uid: Unravel.Core.UIEventManager.UnsubscribeAllForOwner*
+  name: UnsubscribeAllForOwner
+  href: api/Unravel.Core.UIEventManager.html#Unravel_Core_UIEventManager_UnsubscribeAllForOwner_
+  commentId: Overload:Unravel.Core.UIEventManager.UnsubscribeAllForOwner
+  isSpec: "True"
+  fullName: Unravel.Core.UIEventManager.UnsubscribeAllForOwner
+  nameWithType: UIEventManager.UnsubscribeAllForOwner
 - uid: Unravel.Core.UIEventManager.Unsubscribe``1(Unravel.Core.UIElement,System.String,System.Action{``0})
   name: Unsubscribe<T>(UIElement, string, Action<T>)
   href: api/Unravel.Core.UIEventManager.html#Unravel_Core_UIEventManager_Unsubscribe__1_Unravel_Core_UIElement_System_String_System_Action___0__
@@ -8033,6 +9282,95 @@ references:
   commentId: T:Unravel.Core.VisualTree
   fullName: Unravel.Core.VisualTree
   nameWithType: VisualTree
+- uid: Unravel.Core.VolumeComponent
+  name: VolumeComponent
+  href: api/Unravel.Core.VolumeComponent.html
+  commentId: T:Unravel.Core.VolumeComponent
+  fullName: Unravel.Core.VolumeComponent
+  nameWithType: VolumeComponent
+- uid: Unravel.Core.VolumeComponent.blendDistance
+  name: blendDistance
+  href: api/Unravel.Core.VolumeComponent.html#Unravel_Core_VolumeComponent_blendDistance
+  commentId: P:Unravel.Core.VolumeComponent.blendDistance
+  fullName: Unravel.Core.VolumeComponent.blendDistance
+  nameWithType: VolumeComponent.blendDistance
+- uid: Unravel.Core.VolumeComponent.blendDistance*
+  name: blendDistance
+  href: api/Unravel.Core.VolumeComponent.html#Unravel_Core_VolumeComponent_blendDistance_
+  commentId: Overload:Unravel.Core.VolumeComponent.blendDistance
+  isSpec: "True"
+  fullName: Unravel.Core.VolumeComponent.blendDistance
+  nameWithType: VolumeComponent.blendDistance
+- uid: Unravel.Core.VolumeComponent.extents
+  name: extents
+  href: api/Unravel.Core.VolumeComponent.html#Unravel_Core_VolumeComponent_extents
+  commentId: P:Unravel.Core.VolumeComponent.extents
+  fullName: Unravel.Core.VolumeComponent.extents
+  nameWithType: VolumeComponent.extents
+- uid: Unravel.Core.VolumeComponent.extents*
+  name: extents
+  href: api/Unravel.Core.VolumeComponent.html#Unravel_Core_VolumeComponent_extents_
+  commentId: Overload:Unravel.Core.VolumeComponent.extents
+  isSpec: "True"
+  fullName: Unravel.Core.VolumeComponent.extents
+  nameWithType: VolumeComponent.extents
+- uid: Unravel.Core.VolumeComponent.mode
+  name: mode
+  href: api/Unravel.Core.VolumeComponent.html#Unravel_Core_VolumeComponent_mode
+  commentId: P:Unravel.Core.VolumeComponent.mode
+  fullName: Unravel.Core.VolumeComponent.mode
+  nameWithType: VolumeComponent.mode
+- uid: Unravel.Core.VolumeComponent.mode*
+  name: mode
+  href: api/Unravel.Core.VolumeComponent.html#Unravel_Core_VolumeComponent_mode_
+  commentId: Overload:Unravel.Core.VolumeComponent.mode
+  isSpec: "True"
+  fullName: Unravel.Core.VolumeComponent.mode
+  nameWithType: VolumeComponent.mode
+- uid: Unravel.Core.VolumeComponent.priority
+  name: priority
+  href: api/Unravel.Core.VolumeComponent.html#Unravel_Core_VolumeComponent_priority
+  commentId: P:Unravel.Core.VolumeComponent.priority
+  fullName: Unravel.Core.VolumeComponent.priority
+  nameWithType: VolumeComponent.priority
+- uid: Unravel.Core.VolumeComponent.priority*
+  name: priority
+  href: api/Unravel.Core.VolumeComponent.html#Unravel_Core_VolumeComponent_priority_
+  commentId: Overload:Unravel.Core.VolumeComponent.priority
+  isSpec: "True"
+  fullName: Unravel.Core.VolumeComponent.priority
+  nameWithType: VolumeComponent.priority
+- uid: Unravel.Core.VolumeComponent.weight
+  name: weight
+  href: api/Unravel.Core.VolumeComponent.html#Unravel_Core_VolumeComponent_weight
+  commentId: P:Unravel.Core.VolumeComponent.weight
+  fullName: Unravel.Core.VolumeComponent.weight
+  nameWithType: VolumeComponent.weight
+- uid: Unravel.Core.VolumeComponent.weight*
+  name: weight
+  href: api/Unravel.Core.VolumeComponent.html#Unravel_Core_VolumeComponent_weight_
+  commentId: Overload:Unravel.Core.VolumeComponent.weight
+  isSpec: "True"
+  fullName: Unravel.Core.VolumeComponent.weight
+  nameWithType: VolumeComponent.weight
+- uid: Unravel.Core.VolumeMode
+  name: VolumeMode
+  href: api/Unravel.Core.VolumeMode.html
+  commentId: T:Unravel.Core.VolumeMode
+  fullName: Unravel.Core.VolumeMode
+  nameWithType: VolumeMode
+- uid: Unravel.Core.VolumeMode.Global
+  name: Global
+  href: api/Unravel.Core.VolumeMode.html#Unravel_Core_VolumeMode_Global
+  commentId: F:Unravel.Core.VolumeMode.Global
+  fullName: Unravel.Core.VolumeMode.Global
+  nameWithType: VolumeMode.Global
+- uid: Unravel.Core.VolumeMode.Local
+  name: Local
+  href: api/Unravel.Core.VolumeMode.html#Unravel_Core_VolumeMode_Local
+  commentId: F:Unravel.Core.VolumeMode.Local
+  fullName: Unravel.Core.VolumeMode.Local
+  nameWithType: VolumeMode.Local
 - uid: Unravel.Samples
   name: Unravel.Samples
   href: api/Unravel.Samples.html

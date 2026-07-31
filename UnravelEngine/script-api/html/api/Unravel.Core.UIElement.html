@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UIElement | Unravel Engine Scripting API ">
       
-      <meta name="description" content="Represents a wrapper around a native RmlUi element with managed lifetime. The C++ side owns the lifetime and will invalidate this wrapper when the element is destroyed.">
+      <meta name="description" content="Managed wrapper around a native RmlUi element (Rml::Element). Prefer obtaining instances via  /  so wrappers are cached by native pointer.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_UIElement" data-uid="Unravel.Core.UIElement" class="text-break">
-Class UIElement  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Class UIElement  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,8 +97,9 @@ Class UIElement  <a class="header-action link-secondary" title="View source" hre
   
   </div>
 
-  <div class="markdown summary"><p>Represents a wrapper around a native RmlUi element with managed lifetime.
-The C++ side owns the lifetime and will invalidate this wrapper when the element is destroyed.</p>
+  <div class="markdown summary"><p>Managed wrapper around a native RmlUi element (<code>Rml::Element</code>).
+Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_GetElementById_System_String_">GetElementById(string)</a> /
+<a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_QuerySelector_System_String_">QuerySelector(string)</a> so wrappers are cached by native pointer.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -165,7 +166,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_ElementId" data-uid="Unravel.Core.UIElement.ElementId">
   ElementId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the element ID.</p>
@@ -197,7 +198,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_InnerRml" data-uid="Unravel.Core.UIElement.InnerRml">
   InnerRml
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the inner RML content of the element.</p>
@@ -229,7 +230,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_IsVisible" data-uid="Unravel.Core.UIElement.IsVisible">
   IsVisible
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets whether the element is visible.</p>
@@ -261,7 +262,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_Owner" data-uid="Unravel.Core.UIElement.Owner">
   Owner
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L29"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the entity that owns this UI element.</p>
@@ -297,7 +298,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_Blur" data-uid="Unravel.Core.UIElement.Blur">
   Blur()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes focus from this element.</p>
@@ -324,7 +325,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_Click" data-uid="Unravel.Core.UIElement.Click">
   Click()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Simulates a click on this element.</p>
@@ -351,7 +352,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_Focus" data-uid="Unravel.Core.UIElement.Focus">
   Focus()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gives focus to this element.</p>
@@ -378,7 +379,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_GetAttribute_System_String_" data-uid="Unravel.Core.UIElement.GetAttribute(System.String)">
   GetAttribute(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the value of an attribute.</p>
@@ -417,7 +418,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_HasAttribute_System_String_" data-uid="Unravel.Core.UIElement.HasAttribute(System.String)">
   HasAttribute(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the element has a specific attribute.</p>
@@ -456,7 +457,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_IsClassSet_System_String_" data-uid="Unravel.Core.UIElement.IsClassSet(System.String)">
   IsClassSet(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the element has a specific CSS class.</p>
@@ -495,7 +496,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_IsValid" data-uid="Unravel.Core.UIElement.IsValid">
   IsValid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets whether this wrapper still points to a valid native element.</p>
@@ -527,7 +528,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_RegisterCallback_System_String_Unravel_Core_UIEventCallback_" data-uid="Unravel.Core.UIElement.RegisterCallback(System.String,Unravel.Core.UIEventCallback)">
   RegisterCallback(string, UIEventCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an event listener to this element.</p>
@@ -563,7 +564,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_RegisterCallback__1_System_String_System_Action___0__" data-uid="Unravel.Core.UIElement.RegisterCallback``1(System.String,System.Action{``0})">
   RegisterCallback&lt;T&gt;(string, Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Registers a typed event callback with compile-time type safety and zero runtime casting.</p>
@@ -605,7 +606,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_RemoveAttribute_System_String_" data-uid="Unravel.Core.UIElement.RemoveAttribute(System.String)">
   RemoveAttribute(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes an attribute from the element.</p>
@@ -638,7 +639,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_ScrollIntoView_System_Boolean_" data-uid="Unravel.Core.UIElement.ScrollIntoView(System.Boolean)">
   ScrollIntoView(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Scrolls the element into view.</p>
@@ -671,7 +672,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_SetAttribute_System_String_System_String_" data-uid="Unravel.Core.UIElement.SetAttribute(System.String,System.String)">
   SetAttribute(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the value of an attribute.</p>
@@ -707,7 +708,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_SetClass_System_String_System_Boolean_" data-uid="Unravel.Core.UIElement.SetClass(System.String,System.Boolean)">
   SetClass(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets or removes a CSS class on the element.</p>
@@ -743,7 +744,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_SyncTransformToEntity_Unravel_Core_Entity_" data-uid="Unravel.Core.UIElement.SyncTransformToEntity(Unravel.Core.Entity)">
   SyncTransformToEntity(Entity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Synchronizes this element's transform to follow the given entity.</p>
@@ -776,7 +777,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_ToString" data-uid="Unravel.Core.UIElement.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L255"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string representation of this UI element wrapper.</p>
@@ -808,7 +809,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_UnregisterCallback_System_String_Unravel_Core_UIEventCallback_" data-uid="Unravel.Core.UIElement.UnregisterCallback(System.String,Unravel.Core.UIEventCallback)">
   UnregisterCallback(string, UIEventCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes an event listener from this element.</p>
@@ -850,7 +851,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_UnregisterCallback__1_System_String_System_Action___0__" data-uid="Unravel.Core.UIElement.UnregisterCallback``1(System.String,System.Action{``0})">
   UnregisterCallback&lt;T&gt;(string, Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unregisters a typed event callback.</p>
@@ -898,7 +899,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the element
 
   <h3 id="Unravel_Core_UIElement_UnsubscribeAll" data-uid="Unravel.Core.UIElement.UnsubscribeAll">
   UnsubscribeAll()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unsubscribe all callbacks from this UIElement.
@@ -932,7 +933,7 @@ This removes all event listeners (both legacy and typed) from this element.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

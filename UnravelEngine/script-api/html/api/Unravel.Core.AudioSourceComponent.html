@@ -173,6 +173,38 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
 </h2>
 
 
+  <a id="Unravel_Core_AudioSourceComponent_bus_" data-uid="Unravel.Core.AudioSourceComponent.bus*"></a>
+
+  <h3 id="Unravel_Core_AudioSourceComponent_bus" data-uid="Unravel.Core.AudioSourceComponent.bus">
+  bus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the mixer bus this source routes through.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioBus bus { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.AudioBus.html">AudioBus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_AudioSourceComponent_clip_" data-uid="Unravel.Core.AudioSourceComponent.clip*"></a>
 
   <h3 id="Unravel_Core_AudioSourceComponent_clip" data-uid="Unravel.Core.AudioSourceComponent.clip">
@@ -210,7 +242,7 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
 
   <h3 id="Unravel_Core_AudioSourceComponent_isPaused" data-uid="Unravel.Core.AudioSourceComponent.isPaused">
   isPaused
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value indicating whether the audio source is currently paused.</p>
@@ -243,7 +275,7 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
 
   <h3 id="Unravel_Core_AudioSourceComponent_isPlaying" data-uid="Unravel.Core.AudioSourceComponent.isPlaying">
   isPlaying
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a value indicating whether the audio source is currently playing.</p>
@@ -437,11 +469,76 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
 
 
 
+  <a id="Unravel_Core_AudioSourceComponent_priority_" data-uid="Unravel.Core.AudioSourceComponent.priority*"></a>
+
+  <h3 id="Unravel_Core_AudioSourceComponent_priority" data-uid="Unravel.Core.AudioSourceComponent.priority">
+  priority
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets voice-steal priority. Higher values are kept when the voice cap is hit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int priority { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AudioSourceComponent_spatial_" data-uid="Unravel.Core.AudioSourceComponent.spatial*"></a>
+
+  <h3 id="Unravel_Core_AudioSourceComponent_spatial" data-uid="Unravel.Core.AudioSourceComponent.spatial">
+  spatial
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets whether the source is spatial (3D world). When false, playback is
+listener-relative (2D / UI / music) and does not distance-attenuate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool spatial { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_AudioSourceComponent_time_" data-uid="Unravel.Core.AudioSourceComponent.time*"></a>
 
   <h3 id="Unravel_Core_AudioSourceComponent_time" data-uid="Unravel.Core.AudioSourceComponent.time">
   time
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the current playback time of the audio source.</p>
@@ -544,7 +641,7 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
 
   <h3 id="Unravel_Core_AudioSourceComponent_Pause" data-uid="Unravel.Core.AudioSourceComponent.Pause">
   Pause()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Pauses playback of the audio source.</p>
@@ -571,7 +668,7 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
 
   <h3 id="Unravel_Core_AudioSourceComponent_Play" data-uid="Unravel.Core.AudioSourceComponent.Play">
   Play()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Starts playing the audio source from the beginning.</p>
@@ -594,11 +691,54 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
 
 
 
+  <a id="Unravel_Core_AudioSourceComponent_PlayClip_" data-uid="Unravel.Core.AudioSourceComponent.PlayClip*"></a>
+
+  <h3 id="Unravel_Core_AudioSourceComponent_PlayClip_Unravel_Core_AudioClip_System_Single_Unravel_Core_AudioBus_" data-uid="Unravel.Core.AudioSourceComponent.PlayClip(Unravel.Core.AudioClip,System.Single,Unravel.Core.AudioBus)">
+  PlayClip(AudioClip, float, AudioBus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays a one-shot audio clip as a 2D audio source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioSourceComponent PlayClip(AudioClip clip, float volume = 1, AudioBus bus = AudioBus.Sfx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clip</code> <a class="xref" href="Unravel.Core.AudioClip.html">AudioClip</a></dt>
+    <dd><p>The audio clip to play.</p>
+</dd>
+    <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The volume at which the audio will be played. Default is 1.0.</p>
+</dd>
+    <dt><code>bus</code> <a class="xref" href="Unravel.Core.AudioBus.html">AudioBus</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.AudioSourceComponent.html">AudioSourceComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_AudioSourceComponent_PlayClipAtPoint_" data-uid="Unravel.Core.AudioSourceComponent.PlayClipAtPoint*"></a>
 
-  <h3 id="Unravel_Core_AudioSourceComponent_PlayClipAtPoint_Unravel_Core_AudioClip_Vector3_System_Single_" data-uid="Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip,Vector3,System.Single)">
-  PlayClipAtPoint(AudioClip, Vector3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Unravel_Core_AudioSourceComponent_PlayClipAtPoint_Unravel_Core_AudioClip_Vector3_System_Single_Unravel_Core_AudioBus_" data-uid="Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip,Vector3,System.Single,Unravel.Core.AudioBus)">
+  PlayClipAtPoint(AudioClip, Vector3, float, AudioBus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L260"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Plays a one-shot audio clip at the specified position with a specified volume.</p>
@@ -606,7 +746,7 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static AudioSourceComponent PlayClipAtPoint(AudioClip clip, Vector3 position, float volume = 1)</code></pre>
+    <pre><code class="lang-csharp hljs">public static AudioSourceComponent PlayClipAtPoint(AudioClip clip, Vector3 position, float volume = 1, AudioBus bus = AudioBus.Sfx)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -620,6 +760,8 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
     <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd><p>The volume at which the audio will be played. Default is 1.0.</p>
 </dd>
+    <dt><code>bus</code> <a class="xref" href="Unravel.Core.AudioBus.html">AudioBus</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -642,7 +784,7 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
 
   <h3 id="Unravel_Core_AudioSourceComponent_Resume" data-uid="Unravel.Core.AudioSourceComponent.Resume">
   Resume()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Resumes playback of the audio source.</p>
@@ -669,7 +811,7 @@ Class AudioSourceComponent  <a class="header-action link-secondary" title="View 
 
   <h3 id="Unravel_Core_AudioSourceComponent_Stop" data-uid="Unravel.Core.AudioSourceComponent.Stop">
   Stop()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stops playback of the audio source.</p>

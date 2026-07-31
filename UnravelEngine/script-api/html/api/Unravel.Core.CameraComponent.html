@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class CameraComponent | Unravel Engine Scripting API ">
       
-      <meta name="description" content="Represents a camera component that allows interaction with the camera, such as converting screen space positions to rays in 3D space.">
+      <meta name="description" content="Camera component for viewport projection and screen-space queries.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_CameraComponent" data-uid="Unravel.Core.CameraComponent" class="text-break">
-Class CameraComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class CameraComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
   
   </div>
 
-  <div class="markdown summary"><p>Represents a camera component that allows interaction with the camera, such as converting screen space positions to rays in 3D space.</p>
+  <div class="markdown summary"><p>Camera component for viewport projection and screen-space queries.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -169,6 +169,234 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Unravel_Core_CameraComponent_cullingMask_" data-uid="Unravel.Core.CameraComponent.cullingMask*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_cullingMask" data-uid="Unravel.Core.CameraComponent.cullingMask">
+  cullingMask
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Layers included when this camera renders.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask cullingMask { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CameraComponent_excludeMask_" data-uid="Unravel.Core.CameraComponent.excludeMask*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_excludeMask" data-uid="Unravel.Core.CameraComponent.excludeMask">
+  excludeMask
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Layers excluded when this camera renders.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask excludeMask { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.LayerMask.html">LayerMask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CameraComponent_farClipPlane_" data-uid="Unravel.Core.CameraComponent.farClipPlane*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_farClipPlane" data-uid="Unravel.Core.CameraComponent.farClipPlane">
+  farClipPlane
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Far clipping plane distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float farClipPlane { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CameraComponent_fov_" data-uid="Unravel.Core.CameraComponent.fov*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_fov" data-uid="Unravel.Core.CameraComponent.fov">
+  fov
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Vertical field of view in degrees (perspective mode).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fov { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CameraComponent_nearClipPlane_" data-uid="Unravel.Core.CameraComponent.nearClipPlane*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_nearClipPlane" data-uid="Unravel.Core.CameraComponent.nearClipPlane">
+  nearClipPlane
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Near clipping plane distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float nearClipPlane { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CameraComponent_orthographicSize_" data-uid="Unravel.Core.CameraComponent.orthographicSize*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_orthographicSize" data-uid="Unravel.Core.CameraComponent.orthographicSize">
+  orthographicSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Orthographic size (orthographic mode).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float orthographicSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CameraComponent_projectionMode_" data-uid="Unravel.Core.CameraComponent.projectionMode*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_projectionMode" data-uid="Unravel.Core.CameraComponent.projectionMode">
+  projectionMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Projection mode (perspective or orthographic).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProjectionMode projectionMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.ProjectionMode.html">ProjectionMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -177,7 +405,7 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Unravel_Core_CameraComponent_ScreenPointToRay_Vector2_Unravel_Core_Ray__" data-uid="Unravel.Core.CameraComponent.ScreenPointToRay(Vector2,Unravel.Core.Ray@)">
   ScreenPointToRay(Vector2, out Ray)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts a position in screen space to a ray in 3D space.</p>
@@ -219,7 +447,7 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Unravel_Core_CameraComponent_ScreenPointToWorld_Vector2_" data-uid="Unravel.Core.CameraComponent.ScreenPointToWorld(Vector2)">
   ScreenPointToWorld(Vector2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts a 2D screen-space position to a world-space point on the camera's near plane.</p>
@@ -258,7 +486,7 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Unravel_Core_CameraComponent_ScreenPointToWorld_Vector3_" data-uid="Unravel.Core.CameraComponent.ScreenPointToWorld(Vector3)">
   ScreenPointToWorld(Vector3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts a screen-space position with depth (z) to a world-space point.</p>
@@ -297,7 +525,7 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L20" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UIDocument | Unravel Engine Scripting API ">
       
-      <meta name="description" content="Represents a wrapper around a native RmlUi document with managed lifetime. The C++ side owns the lifetime and will invalidate this wrapper when the document is destroyed.">
+      <meta name="description" content="Managed wrapper around a native RmlUi document (Rml::ElementDocument). Each  owns its own RmlUi context and document. Wrappers are cached by native pointer so repeated queries return the same instance.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_UIDocument" data-uid="Unravel.Core.UIDocument" class="text-break">
-Class UIDocument  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class UIDocument  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,8 +97,9 @@ Class UIDocument  <a class="header-action link-secondary" title="View source" hr
   
   </div>
 
-  <div class="markdown summary"><p>Represents a wrapper around a native RmlUi document with managed lifetime.
-The C++ side owns the lifetime and will invalidate this wrapper when the document is destroyed.</p>
+  <div class="markdown summary"><p>Managed wrapper around a native RmlUi document (<code>Rml::ElementDocument</code>).
+Each <a class="xref" href="Unravel.Core.UIDocumentComponent.html">UIDocumentComponent</a> owns its own RmlUi context and document.
+Wrappers are cached by native pointer so repeated queries return the same instance.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -165,7 +166,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the documen
 
   <h3 id="Unravel_Core_UIDocument_IsVisible" data-uid="Unravel.Core.UIDocument.IsVisible">
   IsVisible
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets whether the document is currently visible.</p>
@@ -197,7 +198,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the documen
 
   <h3 id="Unravel_Core_UIDocument_Owner" data-uid="Unravel.Core.UIDocument.Owner">
   Owner
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the entity that owns this UI document.</p>
@@ -229,7 +230,7 @@ The C++ side owns the lifetime and will invalidate this wrapper when the documen
 
   <h3 id="Unravel_Core_UIDocument_Title" data-uid="Unravel.Core.UIDocument.Title">
   Title
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the title of the document.</p>
@@ -265,11 +266,11 @@ The C++ side owns the lifetime and will invalidate this wrapper when the documen
 
   <h3 id="Unravel_Core_UIDocument_Close" data-uid="Unravel.Core.UIDocument.Close">
   Close()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Closes the document and removes it from the context.
-After calling this, the wrapper will become invalid.</p>
+Invalidates this wrapper, clears related element wrappers, and drops event subscriptions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -293,7 +294,7 @@ After calling this, the wrapper will become invalid.</p>
 
   <h3 id="Unravel_Core_UIDocument_GetElementById_System_String_" data-uid="Unravel.Core.UIDocument.GetElementById(System.String)">
   GetElementById(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets an element wrapper by its ID.</p>
@@ -332,7 +333,7 @@ After calling this, the wrapper will become invalid.</p>
 
   <h3 id="Unravel_Core_UIDocument_Hide" data-uid="Unravel.Core.UIDocument.Hide">
   Hide()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Hides the document.</p>
@@ -359,7 +360,7 @@ After calling this, the wrapper will become invalid.</p>
 
   <h3 id="Unravel_Core_UIDocument_IsValid" data-uid="Unravel.Core.UIDocument.IsValid">
   IsValid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets whether this wrapper still points to a valid native document.</p>
@@ -391,7 +392,7 @@ After calling this, the wrapper will become invalid.</p>
 
   <h3 id="Unravel_Core_UIDocument_QuerySelector_System_String_" data-uid="Unravel.Core.UIDocument.QuerySelector(System.String)">
   QuerySelector(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the first element that matches the specified CSS selector.</p>
@@ -430,7 +431,7 @@ After calling this, the wrapper will become invalid.</p>
 
   <h3 id="Unravel_Core_UIDocument_Show" data-uid="Unravel.Core.UIDocument.Show">
   Show()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Shows the document.</p>
@@ -457,7 +458,7 @@ After calling this, the wrapper will become invalid.</p>
 
   <h3 id="Unravel_Core_UIDocument_ToString" data-uid="Unravel.Core.UIDocument.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string representation of this UI document wrapper.</p>
@@ -489,7 +490,7 @@ After calling this, the wrapper will become invalid.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 

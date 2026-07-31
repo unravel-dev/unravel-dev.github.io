@@ -695,7 +695,7 @@ to this magnitude each simulation step. Default is 55 (skydiver terminal velocit
 
   <h3 id="Unravel_Core_CharacterControllerComponent_ApplyImpulse_Vector3_" data-uid="Unravel.Core.CharacterControllerComponent.ApplyImpulse(Vector3)">
   ApplyImpulse(Vector3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Applies an impulse to the character controller.</p>
@@ -728,7 +728,7 @@ to this magnitude each simulation step. Default is 55 (skydiver terminal velocit
 
   <h3 id="Unravel_Core_CharacterControllerComponent_Jump_System_Single_" data-uid="Unravel.Core.CharacterControllerComponent.Jump(System.Single)">
   Jump(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Makes the character jump straight up with the given initial speed (m/s).</p>
@@ -761,7 +761,7 @@ to this magnitude each simulation step. Default is 55 (skydiver terminal velocit
 
   <h3 id="Unravel_Core_CharacterControllerComponent_Jump_Vector3_" data-uid="Unravel.Core.CharacterControllerComponent.Jump(Vector3)">
   Jump(Vector3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Makes the character jump with an arbitrary world-space velocity. The vector's
@@ -795,10 +795,13 @@ magnitude is the jump speed and its direction is the jump axis.</p>
 
   <h3 id="Unravel_Core_CharacterControllerComponent_Move_Vector3_" data-uid="Unravel.Core.CharacterControllerComponent.Move(Vector3)">
   Move(Vector3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Moves the character by a displacement vector. The movement is constrained by collisions.</p>
+  <div class="markdown level1 summary"><p>Moves the character by a displacement vector. The movement is constrained by collisions.
+Displacement is applied once on the next physics step, not repeated
+across fixed-step catch-up. Prefer Move(velocity * Time.deltaTime) from OnUpdate,
+or Move(velocity * Time.fixedDeltaTime) from OnFixedUpdate.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -828,7 +831,7 @@ magnitude is the jump speed and its direction is the jump axis.</p>
 
   <h3 id="Unravel_Core_CharacterControllerComponent_Warp_Vector3_" data-uid="Unravel.Core.CharacterControllerComponent.Warp(Vector3)">
   Warp(Vector3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CharacterControllerComponent.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Teleports the character to a new position instantly, bypassing collision detection.</p>
