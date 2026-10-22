@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Audio | Unravel Engine Scripting API ">
       
-      <meta name="description" content="Global audio mixer controls (master + per-bus gains) and voice-limit info.">
+      <meta name="description" content="Global audio mixer controls (master + per-bus gains), fire-and-forget sounds and voice-limit info.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_Audio" data-uid="Unravel.Core.Audio" class="text-break">
-Class Audio  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L8"><i class="bi bi-code-slash"></i></a>
+Class Audio  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class Audio  <a class="header-action link-secondary" title="View source" href="h
   
   </div>
 
-  <div class="markdown summary"><p>Global audio mixer controls (master + per-bus gains) and voice-limit info.</p>
+  <div class="markdown summary"><p>Global audio mixer controls (master + per-bus gains), fire-and-forget sounds and voice-limit info.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -157,7 +157,7 @@ Class Audio  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Audio_masterVolume" data-uid="Unravel.Core.Audio.masterVolume">
   masterVolume
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the master mixer gain applied to every source.</p>
@@ -189,7 +189,7 @@ Class Audio  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Audio_maxVoices" data-uid="Unravel.Core.Audio.maxVoices">
   maxVoices
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Soft cap on concurrent OpenAL voices before stealing begins.</p>
@@ -221,11 +221,48 @@ Class Audio  <a class="header-action link-secondary" title="View source" href="h
 </h2>
 
 
+  <a id="Unravel_Core_Audio_FadeBusVolume_" data-uid="Unravel.Core.Audio.FadeBusVolume*"></a>
+
+  <h3 id="Unravel_Core_Audio_FadeBusVolume_Unravel_Core_AudioBus_System_Single_System_Single_" data-uid="Unravel.Core.Audio.FadeBusVolume(Unravel.Core.AudioBus,System.Single,System.Single)">
+  FadeBusVolume(AudioBus, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ramps a bus gain to @p target over @p seconds of unscaled time (it keeps going while
+Time.timeScale is 0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FadeBusVolume(AudioBus bus, float target, float seconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bus</code> <a class="xref" href="Unravel.Core.AudioBus.html">AudioBus</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_Audio_GetBusVolume_" data-uid="Unravel.Core.Audio.GetBusVolume*"></a>
 
   <h3 id="Unravel_Core_Audio_GetBusVolume_Unravel_Core_AudioBus_" data-uid="Unravel.Core.Audio.GetBusVolume(Unravel.Core.AudioBus)">
   GetBusVolume(AudioBus)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the gain for a mixer bus.</p>
@@ -258,14 +295,121 @@ Class Audio  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="Unravel_Core_Audio_PlayOneShot_" data-uid="Unravel.Core.Audio.PlayOneShot*"></a>
+
+  <h3 id="Unravel_Core_Audio_PlayOneShot_Unravel_Core_AudioClip_System_Single_System_Single_Unravel_Core_AudioBus_System_Int32_" data-uid="Unravel.Core.Audio.PlayOneShot(Unravel.Core.AudioClip,System.Single,System.Single,Unravel.Core.AudioBus,System.Int32)">
+  PlayOneShot(AudioClip, float, float, AudioBus, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays @p clip once in 2D, without an entity. The voice counts toward <a class="xref" href="Unravel.Core.Audio.html#Unravel_Core_Audio_maxVoices">maxVoices</a>
+and ends with the play session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioVoice PlayOneShot(AudioClip clip, float volume = 1, float pitch = 1, AudioBus bus = AudioBus.Sfx, int priority = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clip</code> <a class="xref" href="Unravel.Core.AudioClip.html">AudioClip</a></dt>
+    <dd><p>The clip to play.</p>
+</dd>
+    <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Gain before the bus and master gains, 0..1.</p>
+</dd>
+    <dt><code>pitch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Playback rate (1 = original pitch).</p>
+</dd>
+    <dt><code>bus</code> <a class="xref" href="Unravel.Core.AudioBus.html">AudioBus</a></dt>
+    <dd><p>Mixer bus.</p>
+</dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Voice-steal priority: at the voice cap, higher values are kept. A one-shot
+goes before an audio source of the same priority.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.AudioVoice.html">AudioVoice</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_Audio_PlayOneShot_" data-uid="Unravel.Core.Audio.PlayOneShot*"></a>
+
+  <h3 id="Unravel_Core_Audio_PlayOneShot_Unravel_Core_AudioClip_Vector3_System_Single_System_Single_Unravel_Core_AudioBus_System_Int32_" data-uid="Unravel.Core.Audio.PlayOneShot(Unravel.Core.AudioClip,Vector3,System.Single,System.Single,Unravel.Core.AudioBus,System.Int32)">
+  PlayOneShot(AudioClip, Vector3, float, float, AudioBus, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays @p clip once at a world position (3D), without an entity. It is heard from 1 m (full
+volume) to 20 m (silent); <a class="xref" href="Unravel.Core.AudioVoice.html#Unravel_Core_AudioVoice_SetDistance_System_Single_System_Single_">SetDistance(float, float)</a> changes the range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AudioVoice PlayOneShot(AudioClip clip, Vector3 position, float volume = 1, float pitch = 1, AudioBus bus = AudioBus.Sfx, int priority = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clip</code> <a class="xref" href="Unravel.Core.AudioClip.html">AudioClip</a></dt>
+    <dd><p>The clip to play.</p>
+</dd>
+    <dt><code>position</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>World position of the sound.</p>
+</dd>
+    <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Gain before the bus and master gains, 0..1.</p>
+</dd>
+    <dt><code>pitch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Playback rate (1 = original pitch).</p>
+</dd>
+    <dt><code>bus</code> <a class="xref" href="Unravel.Core.AudioBus.html">AudioBus</a></dt>
+    <dd><p>Mixer bus.</p>
+</dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Voice-steal priority: at the voice cap, higher values are kept. A one-shot
+goes before an audio source of the same priority.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.AudioVoice.html">AudioVoice</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_Audio_SetBusVolume_" data-uid="Unravel.Core.Audio.SetBusVolume*"></a>
 
   <h3 id="Unravel_Core_Audio_SetBusVolume_Unravel_Core_AudioBus_System_Single_" data-uid="Unravel.Core.Audio.SetBusVolume(Unravel.Core.AudioBus,System.Single)">
   SetBusVolume(AudioBus, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets the gain for a mixer bus.</p>
+  <div class="markdown level1 summary"><p>Sets the gain for a mixer bus; ends a running fade of that bus.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -292,11 +436,49 @@ Class Audio  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="Unravel_Core_Audio_SetClipLimit_" data-uid="Unravel.Core.Audio.SetClipLimit*"></a>
+
+  <h3 id="Unravel_Core_Audio_SetClipLimit_Unravel_Core_AudioClip_System_Int32_System_Single_" data-uid="Unravel.Core.Audio.SetClipLimit(Unravel.Core.AudioClip,System.Int32,System.Single)">
+  SetClipLimit(AudioClip, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Limits how often @p clip plays as a one-shot: at most @p maxVoices at once (the oldest
+stops for a new one; 0 = no limit), and none within @p minInterval seconds of the last
+one. Limits end with the play session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetClipLimit(AudioClip clip, int maxVoices, float minInterval = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clip</code> <a class="xref" href="Unravel.Core.AudioClip.html">AudioClip</a></dt>
+    <dd></dd>
+    <dt><code>maxVoices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>minInterval</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/audio/Audio.cs/#L84" class="edit-link">Edit this page</a>
         </div>
 
 

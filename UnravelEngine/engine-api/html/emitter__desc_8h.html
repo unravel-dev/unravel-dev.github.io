@@ -98,31 +98,42 @@ $(function(){initNavTree('emitter__desc_8h.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">emitter_desc.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="particle__types_8h_source.html">particle_types.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&gt;</code><br />
 <code>#include &lt;bx/easing.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="bbox_8h_source.html">math/bbox.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="gradient_8h_source.html">math/gradient.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="emitter__desc_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ps__soa_1_1emission__mesh.html">unravel::ps_soa::emission_mesh</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a mesh shape spawns on, in the mesh's space (its node transforms applied): the vertices, the triangles and their running area, which picks a triangle by its share of the surface.  <a href="structunravel_1_1ps__soa_1_1emission__mesh.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ps__soa_1_1emitter__burst.html">unravel::ps_soa::emitter_burst</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A burst of particles at set times of the emission cycle.  <a href="structunravel_1_1ps__soa_1_1emitter__burst.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ps__soa_1_1emitter__emission__desc.html">unravel::ps_soa::emitter_emission_desc</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emission rate, shape, and lifetime cycle authoring.  <a href="structunravel_1_1ps__soa_1_1emitter__emission__desc.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emission rate, shape, cycle and randomness authoring.  <a href="structunravel_1_1ps__soa_1_1emitter__emission__desc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ps__soa_1_1emitter__motion__desc.html">unravel::ps_soa::emitter_motion_desc</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motion / forces / trajectory authoring.  <a href="structunravel_1_1ps__soa_1_1emitter__motion__desc.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motion authoring: physical launch speed, gravity, constant force and drag, evaluated in closed form at any age.  <a href="structunravel_1_1ps__soa_1_1emitter__motion__desc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ps__soa_1_1emitter__appearance__desc.html">unravel::ps_soa::emitter_appearance_desc</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color / scale / speed-based appearance authoring.  <a href="structunravel_1_1ps__soa_1_1emitter__appearance__desc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ps__soa_1_1emitter__render__desc.html">unravel::ps_soa::emitter_render_desc</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render / texture-sheet authoring (constant per emitter).  <a href="structunravel_1_1ps__soa_1_1emitter__render__desc.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render / texture-sheet / ordering / culling authoring (constant per emitter).  <a href="structunravel_1_1ps__soa_1_1emitter__render__desc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ps__soa_1_1emitter__playback__desc.html">unravel::ps_soa::emitter_playback_desc</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playback gates (playing / paused).  <a href="structunravel_1_1ps__soa_1_1emitter__playback__desc.html#details">More...</a><br /></td></tr>
@@ -137,6 +148,34 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html">unravel::ps_soa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8cc53049da175311cb1eab1a470471f9" id="r_a8cc53049da175311cb1eab1a470471f9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#a8cc53049da175311cb1eab1a470471f9">unravel::ps_soa::is_constant_curve</a> (const <a class="el" href="namespacemath.html#a7f39174bd3ae0127db9df06cb66f43b9">math::gradient</a>&lt; float &gt; &amp;curve, float <a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">value</a>) -&gt; bool</td></tr>
+<tr class="memdesc:a8cc53049da175311cb1eab1a470471f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <code>curve</code> holds <code>value</code> everywhere.  <br /></td></tr>
+<tr class="separator:a8cc53049da175311cb1eab1a470471f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5d82f5c66771115b8f3a7feed40468" id="r_a4e5d82f5c66771115b8f3a7feed40468"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#a4e5d82f5c66771115b8f3a7feed40468">unravel::ps_soa::is_unit_curve</a> (const <a class="el" href="namespacemath.html#a7f39174bd3ae0127db9df06cb66f43b9">math::gradient</a>&lt; float &gt; &amp;curve) -&gt; bool</td></tr>
+<tr class="memdesc:a4e5d82f5c66771115b8f3a7feed40468"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <code>curve</code> holds 1 everywhere (the speed curve's neutral value).  <br /></td></tr>
+<tr class="separator:a4e5d82f5c66771115b8f3a7feed40468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd3bfdf23eadeca7724858c202d845d" id="r_aefd3bfdf23eadeca7724858c202d845d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#aefd3bfdf23eadeca7724858c202d845d">unravel::ps_soa::is_unit_curve</a> (const <a class="el" href="namespacemath.html#a7f39174bd3ae0127db9df06cb66f43b9">math::gradient</a>&lt; math::vec3 &gt; &amp;curve) -&gt; bool</td></tr>
+<tr class="memdesc:aefd3bfdf23eadeca7724858c202d845d"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when every channel of <code>curve</code> holds 1 everywhere.  <br /></td></tr>
+<tr class="separator:aefd3bfdf23eadeca7724858c202d845d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2635c8fbbcab9a5a836435b60625c5c" id="r_ac2635c8fbbcab9a5a836435b60625c5c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#ac2635c8fbbcab9a5a836435b60625c5c">unravel::ps_soa::make_flat_curve</a> (float <a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">value</a>) -&gt; <a class="el" href="namespacemath.html#a7f39174bd3ae0127db9df06cb66f43b9">math::gradient</a>&lt; float &gt;</td></tr>
+<tr class="memdesc:ac2635c8fbbcab9a5a836435b60625c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A curve that holds <code>value</code> throughout, baked.  <br /></td></tr>
+<tr class="separator:ac2635c8fbbcab9a5a836435b60625c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218726a47a9e1e1163a1a10fd245d546" id="r_a218726a47a9e1e1163a1a10fd245d546"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#a218726a47a9e1e1163a1a10fd245d546">unravel::ps_soa::make_unit_axes_curve</a> () -&gt; <a class="el" href="namespacemath.html#a7f39174bd3ae0127db9df06cb66f43b9">math::gradient</a>&lt; math::vec3 &gt;</td></tr>
+<tr class="memdesc:a218726a47a9e1e1163a1a10fd245d546"><td class="mdescLeft">&#160;</td><td class="mdescRight">A curve that holds (1, 1, 1) throughout, baked.  <br /></td></tr>
+<tr class="separator:a218726a47a9e1e1163a1a10fd245d546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9f4ad55c9a3f697b5395245283e21d0a" id="r_a9f4ad55c9a3f697b5395245283e21d0a"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#a9f4ad55c9a3f697b5395245283e21d0a">unravel::ps_soa::curve_bake_resolution</a> = 256</td></tr>
+<tr class="separator:a9f4ad55c9a3f697b5395245283e21d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5381fd2b48492902211bb543e39c22" id="r_acb5381fd2b48492902211bb543e39c22"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#acb5381fd2b48492902211bb543e39c22">unravel::ps_soa::lifetime_by_emitter_speed_bake_resolution</a> = 1024</td></tr>
+<tr class="memdesc:acb5381fd2b48492902211bb543e39c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lifetime curve is read against a speed rather than a 0..1 lifetime, so it is baked finer.  <br /></td></tr>
+<tr class="separator:acb5381fd2b48492902211bb543e39c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab77dc4b8ef75528741c0466e4d5cc9ae" id="r_ab77dc4b8ef75528741c0466e4d5cc9ae"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#ab77dc4b8ef75528741c0466e4d5cc9ae">unravel::ps_soa::max_particle_lifetime</a> = 3600.0f</td></tr>
+<tr class="separator:ab77dc4b8ef75528741c0466e4d5cc9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

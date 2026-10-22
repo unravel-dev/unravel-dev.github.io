@@ -97,7 +97,6 @@ $(function(){initNavTree('classunravel_1_1transform__component.html',''); initRe
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -122,12 +121,6 @@ Inheritance diagram for unravel::transform_component:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1transform__component_1_1dirty__ids.html">dirty_ids</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved consumer slots for the indexed dirty flags (see is_dirty(id)/set_dirty(id, ...)).  <a href="structunravel_1_1transform__component_1_1dirty__ids.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a998763760907ffcaa5921cef206a3849" id="r_a998763760907ffcaa5921cef206a3849"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a998763760907ffcaa5921cef206a3849">flags_t</a> = std::bitset&lt;8&gt;</td></tr>
@@ -141,6 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5aa5b1bdab314c7acfcf066a9273d0a2" id="r_a5aa5b1bdab314c7acfcf066a9273d0a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5aa5b1bdab314c7acfcf066a9273d0a2">resolve_transform_global</a> () noexcept</td></tr>
 <tr class="memdesc:a5aa5b1bdab314c7acfcf066a9273d0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRANSFORMS.  <br /></td></tr>
 <tr class="separator:a5aa5b1bdab314c7acfcf066a9273d0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7991dd09484cf94b8ffc473b8f9f3dbb" id="r_a7991dd09484cf94b8ffc473b8f9f3dbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7991dd09484cf94b8ffc473b8f9f3dbb">resolve_shared_ancestors</a> () noexcept</td></tr>
+<tr class="memdesc:a7991dd09484cf94b8ffc473b8f9f3dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves the global transform and its matrix now when the entity has a parent.  <br /></td></tr>
+<tr class="separator:a7991dd09484cf94b8ffc473b8f9f3dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae086cf182670c228f6731466f6c85ebe" id="r_ae086cf182670c228f6731466f6c85ebe"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae086cf182670c228f6731466f6c85ebe">get_transform_global</a> () const noexcept -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
 <tr class="memdesc:ae086cf182670c228f6731466f6c85ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the global transform.  <br /></td></tr>
 <tr class="separator:ae086cf182670c228f6731466f6c85ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +154,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2f22cf197647d9481e3e677a64579102" id="r_a2f22cf197647d9481e3e677a64579102"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f22cf197647d9481e3e677a64579102">get_position_global</a> () const noexcept -&gt; const math::vec3 &amp;</td></tr>
 <tr class="memdesc:a2f22cf197647d9481e3e677a64579102"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRANSLATION.  <br /></td></tr>
 <tr class="separator:a2f22cf197647d9481e3e677a64579102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9d701cfb36ec129b204c4b6ba989ab9" id="r_ac9d701cfb36ec129b204c4b6ba989ab9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9d701cfb36ec129b204c4b6ba989ab9">set_position_global</a> (const math::vec3 &amp;<a class="el" href="defaults_8cpp.html#a55bc5b9b40c7f612c8f73e5d3acfab00">position</a>) noexcept</td></tr>
+<tr class="memitem:ac9d701cfb36ec129b204c4b6ba989ab9" id="r_ac9d701cfb36ec129b204c4b6ba989ab9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9d701cfb36ec129b204c4b6ba989ab9">set_position_global</a> (const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ac66edcab862b65e1d49ce97f9c74690c">position</a>) noexcept</td></tr>
 <tr class="memdesc:ac9d701cfb36ec129b204c4b6ba989ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global position.  <br /></td></tr>
 <tr class="separator:ac9d701cfb36ec129b204c4b6ba989ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e989c8808916e5483f060ea5cb6a8fb" id="r_a5e989c8808916e5483f060ea5cb6a8fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e989c8808916e5483f060ea5cb6a8fb">move_by_global</a> (const math::vec3 &amp;amount) noexcept</td></tr>
@@ -170,7 +166,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a214bbcf4ef1af920d960c9ec1a360fb9" id="r_a214bbcf4ef1af920d960c9ec1a360fb9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a214bbcf4ef1af920d960c9ec1a360fb9">get_position_local</a> () const noexcept -&gt; const math::vec3 &amp;</td></tr>
 <tr class="memdesc:a214bbcf4ef1af920d960c9ec1a360fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the local position.  <br /></td></tr>
 <tr class="separator:a214bbcf4ef1af920d960c9ec1a360fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2866f4ebfd148d1751258738336ab424" id="r_a2866f4ebfd148d1751258738336ab424"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2866f4ebfd148d1751258738336ab424">set_position_local</a> (const math::vec3 &amp;<a class="el" href="defaults_8cpp.html#a55bc5b9b40c7f612c8f73e5d3acfab00">position</a>) noexcept</td></tr>
+<tr class="memitem:a2866f4ebfd148d1751258738336ab424" id="r_a2866f4ebfd148d1751258738336ab424"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2866f4ebfd148d1751258738336ab424">set_position_local</a> (const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ac66edcab862b65e1d49ce97f9c74690c">position</a>) noexcept</td></tr>
 <tr class="memdesc:a2866f4ebfd148d1751258738336ab424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the local position.  <br /></td></tr>
 <tr class="separator:a2866f4ebfd148d1751258738336ab424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9710f89cd31f7c453c9594e7c99c238e" id="r_a9710f89cd31f7c453c9594e7c99c238e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9710f89cd31f7c453c9594e7c99c238e">move_by_local</a> (const math::vec3 &amp;amount) noexcept</td></tr>
@@ -179,15 +175,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8771342b18579dc1a03bc82e8a97d0e1" id="r_a8771342b18579dc1a03bc82e8a97d0e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8771342b18579dc1a03bc82e8a97d0e1">reset_position_local</a> () noexcept</td></tr>
 <tr class="memdesc:a8771342b18579dc1a03bc82e8a97d0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the local position to the origin.  <br /></td></tr>
 <tr class="separator:a8771342b18579dc1a03bc82e8a97d0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317a5e7ac9777d3e8e518800e4f94a61" id="r_a317a5e7ac9777d3e8e518800e4f94a61"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a317a5e7ac9777d3e8e518800e4f94a61">set_position_and_rotation_global</a> (const math::vec3 &amp;<a class="el" href="defaults_8cpp.html#a55bc5b9b40c7f612c8f73e5d3acfab00">position</a>, const math::quat &amp;<a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>, float epsilon) noexcept -&gt; bool</td></tr>
+<tr class="memitem:a317a5e7ac9777d3e8e518800e4f94a61" id="r_a317a5e7ac9777d3e8e518800e4f94a61"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a317a5e7ac9777d3e8e518800e4f94a61">set_position_and_rotation_global</a> (const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ac66edcab862b65e1d49ce97f9c74690c">position</a>, const math::quat &amp;<a class="el" href="box3d__backend_8cpp.html#a73bb14dfef041bf57255ba816f59983b">rotation</a>, float epsilon) noexcept -&gt; bool</td></tr>
 <tr class="separator:a317a5e7ac9777d3e8e518800e4f94a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9606344f38f136f5874645a6c683facd" id="r_a9606344f38f136f5874645a6c683facd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9606344f38f136f5874645a6c683facd">get_rotation_global</a> () const noexcept -&gt; const math::quat &amp;</td></tr>
 <tr class="memdesc:a9606344f38f136f5874645a6c683facd"><td class="mdescLeft">&#160;</td><td class="mdescRight">ROTATION.  <br /></td></tr>
 <tr class="separator:a9606344f38f136f5874645a6c683facd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55799de6de1a5dedf9c44cffcb2e0aa1" id="r_a55799de6de1a5dedf9c44cffcb2e0aa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55799de6de1a5dedf9c44cffcb2e0aa1">set_rotation_global</a> (const math::quat &amp;<a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>) noexcept</td></tr>
+<tr class="memitem:a55799de6de1a5dedf9c44cffcb2e0aa1" id="r_a55799de6de1a5dedf9c44cffcb2e0aa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55799de6de1a5dedf9c44cffcb2e0aa1">set_rotation_global</a> (const math::quat &amp;<a class="el" href="box3d__backend_8cpp.html#a73bb14dfef041bf57255ba816f59983b">rotation</a>) noexcept</td></tr>
 <tr class="memdesc:a55799de6de1a5dedf9c44cffcb2e0aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global rotation.  <br /></td></tr>
 <tr class="separator:a55799de6de1a5dedf9c44cffcb2e0aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af09605410a673e05c452ea491b856ef6" id="r_af09605410a673e05c452ea491b856ef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af09605410a673e05c452ea491b856ef6">rotate_by_global</a> (const math::quat &amp;<a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>) noexcept</td></tr>
+<tr class="memitem:af09605410a673e05c452ea491b856ef6" id="r_af09605410a673e05c452ea491b856ef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af09605410a673e05c452ea491b856ef6">rotate_by_global</a> (const math::quat &amp;<a class="el" href="box3d__backend_8cpp.html#a73bb14dfef041bf57255ba816f59983b">rotation</a>) noexcept</td></tr>
 <tr class="memdesc:af09605410a673e05c452ea491b856ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the component by a specified amount globally.  <br /></td></tr>
 <tr class="separator:af09605410a673e05c452ea491b856ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92dc173861a310c2bd1ce93854015fac" id="r_a92dc173861a310c2bd1ce93854015fac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92dc173861a310c2bd1ce93854015fac">reset_rotation_global</a> () noexcept</td></tr>
@@ -196,10 +192,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1723d480c44e31c1e2d8c52a25c563a6" id="r_a1723d480c44e31c1e2d8c52a25c563a6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1723d480c44e31c1e2d8c52a25c563a6">get_rotation_local</a> () const noexcept -&gt; const math::quat &amp;</td></tr>
 <tr class="memdesc:a1723d480c44e31c1e2d8c52a25c563a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the local rotation.  <br /></td></tr>
 <tr class="separator:a1723d480c44e31c1e2d8c52a25c563a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed2ae703d72bd46cc8b69faa53af0a6d" id="r_aed2ae703d72bd46cc8b69faa53af0a6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed2ae703d72bd46cc8b69faa53af0a6d">set_rotation_local</a> (const math::quat &amp;<a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>) noexcept</td></tr>
+<tr class="memitem:aed2ae703d72bd46cc8b69faa53af0a6d" id="r_aed2ae703d72bd46cc8b69faa53af0a6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed2ae703d72bd46cc8b69faa53af0a6d">set_rotation_local</a> (const math::quat &amp;<a class="el" href="box3d__backend_8cpp.html#a73bb14dfef041bf57255ba816f59983b">rotation</a>) noexcept</td></tr>
 <tr class="memdesc:aed2ae703d72bd46cc8b69faa53af0a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the local rotation.  <br /></td></tr>
 <tr class="separator:aed2ae703d72bd46cc8b69faa53af0a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae158d7564bdf6449b6dfba307533c686" id="r_ae158d7564bdf6449b6dfba307533c686"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae158d7564bdf6449b6dfba307533c686">rotate_by_local</a> (const math::quat &amp;<a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>) noexcept</td></tr>
+<tr class="memitem:ae158d7564bdf6449b6dfba307533c686" id="r_ae158d7564bdf6449b6dfba307533c686"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae158d7564bdf6449b6dfba307533c686">rotate_by_local</a> (const math::quat &amp;<a class="el" href="box3d__backend_8cpp.html#a73bb14dfef041bf57255ba816f59983b">rotation</a>) noexcept</td></tr>
 <tr class="memdesc:ae158d7564bdf6449b6dfba307533c686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the component by a specified amount locally.  <br /></td></tr>
 <tr class="separator:ae158d7564bdf6449b6dfba307533c686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8388e51fc32bd316b40177f4a7b88e25" id="r_a8388e51fc32bd316b40177f4a7b88e25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8388e51fc32bd316b40177f4a7b88e25">reset_rotation_local</a> () noexcept</td></tr>
@@ -208,40 +204,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a331b1348bf76432e5675bc462e3a92ea" id="r_a331b1348bf76432e5675bc462e3a92ea"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a331b1348bf76432e5675bc462e3a92ea">get_rotation_euler_global</a> () const noexcept -&gt; math::vec3</td></tr>
 <tr class="memdesc:a331b1348bf76432e5675bc462e3a92ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the global rotation in Euler angles.  <br /></td></tr>
 <tr class="separator:a331b1348bf76432e5675bc462e3a92ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434e151f7967dec06829d2b9d600b06a" id="r_a434e151f7967dec06829d2b9d600b06a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a434e151f7967dec06829d2b9d600b06a">set_rotation_euler_global</a> (math::vec3 <a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>) noexcept</td></tr>
+<tr class="memitem:a434e151f7967dec06829d2b9d600b06a" id="r_a434e151f7967dec06829d2b9d600b06a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a434e151f7967dec06829d2b9d600b06a">set_rotation_euler_global</a> (math::vec3 <a class="el" href="box3d__backend_8cpp.html#a73bb14dfef041bf57255ba816f59983b">rotation</a>) noexcept</td></tr>
 <tr class="memdesc:a434e151f7967dec06829d2b9d600b06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global rotation in Euler angles.  <br /></td></tr>
 <tr class="separator:a434e151f7967dec06829d2b9d600b06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34c5abd031f9d8aca5f65702bf935591" id="r_a34c5abd031f9d8aca5f65702bf935591"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34c5abd031f9d8aca5f65702bf935591">rotate_by_euler_global</a> (math::vec3 <a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>) noexcept</td></tr>
+<tr class="memitem:a34c5abd031f9d8aca5f65702bf935591" id="r_a34c5abd031f9d8aca5f65702bf935591"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34c5abd031f9d8aca5f65702bf935591">rotate_by_euler_global</a> (math::vec3 <a class="el" href="box3d__backend_8cpp.html#a73bb14dfef041bf57255ba816f59983b">rotation</a>) noexcept</td></tr>
 <tr class="memdesc:a34c5abd031f9d8aca5f65702bf935591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the component by a specified amount in Euler angles globally.  <br /></td></tr>
 <tr class="separator:a34c5abd031f9d8aca5f65702bf935591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a434cf4fce43a2997c6fd0a5f32be49b4" id="r_a434cf4fce43a2997c6fd0a5f32be49b4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a434cf4fce43a2997c6fd0a5f32be49b4">get_rotation_euler_local</a> () const noexcept -&gt; math::vec3</td></tr>
 <tr class="memdesc:a434cf4fce43a2997c6fd0a5f32be49b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the local rotation in Euler angles.  <br /></td></tr>
 <tr class="separator:a434cf4fce43a2997c6fd0a5f32be49b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c5b91a0348c2ed90020ac81fe4a453" id="r_ab1c5b91a0348c2ed90020ac81fe4a453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1c5b91a0348c2ed90020ac81fe4a453">set_rotation_euler_local</a> (math::vec3 <a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>) noexcept</td></tr>
+<tr class="memitem:ab1c5b91a0348c2ed90020ac81fe4a453" id="r_ab1c5b91a0348c2ed90020ac81fe4a453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1c5b91a0348c2ed90020ac81fe4a453">set_rotation_euler_local</a> (math::vec3 <a class="el" href="box3d__backend_8cpp.html#a73bb14dfef041bf57255ba816f59983b">rotation</a>) noexcept</td></tr>
 <tr class="memdesc:ab1c5b91a0348c2ed90020ac81fe4a453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the local rotation in Euler angles.  <br /></td></tr>
 <tr class="separator:ab1c5b91a0348c2ed90020ac81fe4a453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c9f6faef1cb69cbe71afd754ff2335" id="r_a83c9f6faef1cb69cbe71afd754ff2335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83c9f6faef1cb69cbe71afd754ff2335">rotate_by_euler_local</a> (math::vec3 <a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>) noexcept</td></tr>
+<tr class="memitem:a83c9f6faef1cb69cbe71afd754ff2335" id="r_a83c9f6faef1cb69cbe71afd754ff2335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83c9f6faef1cb69cbe71afd754ff2335">rotate_by_euler_local</a> (math::vec3 <a class="el" href="box3d__backend_8cpp.html#a73bb14dfef041bf57255ba816f59983b">rotation</a>) noexcept</td></tr>
 <tr class="memdesc:a83c9f6faef1cb69cbe71afd754ff2335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the component by a specified amount in Euler angles locally.  <br /></td></tr>
 <tr class="separator:a83c9f6faef1cb69cbe71afd754ff2335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cdc5dc4aac99ed505dd94e9e3dbfd4c" id="r_a3cdc5dc4aac99ed505dd94e9e3dbfd4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cdc5dc4aac99ed505dd94e9e3dbfd4c">rotate_axis_global</a> (float degrees, const math::vec3 &amp;axis) noexcept</td></tr>
+<tr class="memitem:a3cdc5dc4aac99ed505dd94e9e3dbfd4c" id="r_a3cdc5dc4aac99ed505dd94e9e3dbfd4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cdc5dc4aac99ed505dd94e9e3dbfd4c">rotate_axis_global</a> (float degrees, const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#a2cb2e9017f2f0fa6b0bc0451f9fe2bf0">axis</a>) noexcept</td></tr>
 <tr class="memdesc:a3cdc5dc4aac99ed505dd94e9e3dbfd4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the component around a specified axis globally.  <br /></td></tr>
 <tr class="separator:a3cdc5dc4aac99ed505dd94e9e3dbfd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04b77817948b432d7a29cb01ad416ed9" id="r_a04b77817948b432d7a29cb01ad416ed9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04b77817948b432d7a29cb01ad416ed9">rotate_around_global</a> (const math::vec3 &amp;<a class="el" href="structpoint.html">point</a>, const math::vec3 &amp;axis, float degrees)</td></tr>
+<tr class="memitem:a04b77817948b432d7a29cb01ad416ed9" id="r_a04b77817948b432d7a29cb01ad416ed9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04b77817948b432d7a29cb01ad416ed9">rotate_around_global</a> (const math::vec3 &amp;<a class="el" href="structpoint.html">point</a>, const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#a2cb2e9017f2f0fa6b0bc0451f9fe2bf0">axis</a>, float degrees)</td></tr>
 <tr class="separator:a04b77817948b432d7a29cb01ad416ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a345733b2c8777fbf3d84e99b96e487fd" id="r_a345733b2c8777fbf3d84e99b96e487fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a345733b2c8777fbf3d84e99b96e487fd">rotate_around_global</a> (const math::vec3 &amp;<a class="el" href="structpoint.html">point</a>, const math::quat &amp;<a class="el" href="particle__system__soa_8cpp.html#ad28535a3ce932b97e2b3a9d8cfc86525">rotation</a>)</td></tr>
+<tr class="memitem:a345733b2c8777fbf3d84e99b96e487fd" id="r_a345733b2c8777fbf3d84e99b96e487fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a345733b2c8777fbf3d84e99b96e487fd">rotate_around_global</a> (const math::vec3 &amp;<a class="el" href="structpoint.html">point</a>, const math::quat &amp;<a class="el" href="box3d__backend_8cpp.html#a73bb14dfef041bf57255ba816f59983b">rotation</a>)</td></tr>
 <tr class="separator:a345733b2c8777fbf3d84e99b96e487fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a288c705813846aaea70fe916db07c761" id="r_a288c705813846aaea70fe916db07c761"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a288c705813846aaea70fe916db07c761">look_at</a> (const math::vec3 &amp;<a class="el" href="structpoint.html">point</a>) noexcept</td></tr>
 <tr class="memdesc:a288c705813846aaea70fe916db07c761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orients the component to look at a specified point.  <br /></td></tr>
 <tr class="separator:a288c705813846aaea70fe916db07c761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1ca682a58b80ca763cc0cc31ae1e31d" id="r_aa1ca682a58b80ca763cc0cc31ae1e31d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1ca682a58b80ca763cc0cc31ae1e31d">look_at</a> (const math::vec3 &amp;<a class="el" href="structpoint.html">point</a>, const math::vec3 &amp;up) noexcept</td></tr>
+<tr class="memitem:aa1ca682a58b80ca763cc0cc31ae1e31d" id="r_aa1ca682a58b80ca763cc0cc31ae1e31d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1ca682a58b80ca763cc0cc31ae1e31d">look_at</a> (const math::vec3 &amp;<a class="el" href="structpoint.html">point</a>, const math::vec3 &amp;<a class="el" href="animation__humanoid_8cpp.html#a4a85f8dbb02910ee8123a13858048b69">up</a>) noexcept</td></tr>
 <tr class="separator:aa1ca682a58b80ca763cc0cc31ae1e31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae142a6f3f27ab73edfc1dd94df7f7d17" id="r_ae142a6f3f27ab73edfc1dd94df7f7d17"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae142a6f3f27ab73edfc1dd94df7f7d17">get_scale_global</a> () const noexcept -&gt; const math::vec3 &amp;</td></tr>
 <tr class="memdesc:ae142a6f3f27ab73edfc1dd94df7f7d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">SCALE.  <br /></td></tr>
 <tr class="separator:ae142a6f3f27ab73edfc1dd94df7f7d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa31f4e4f1afeafb4d236153408d35bea" id="r_aa31f4e4f1afeafb4d236153408d35bea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa31f4e4f1afeafb4d236153408d35bea">set_scale_global</a> (const math::vec3 &amp;<a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>) noexcept</td></tr>
+<tr class="memitem:aa31f4e4f1afeafb4d236153408d35bea" id="r_aa31f4e4f1afeafb4d236153408d35bea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa31f4e4f1afeafb4d236153408d35bea">set_scale_global</a> (const math::vec3 &amp;<a class="el" href="box3d__backend_8cpp.html#adaf99ab2284d3db188e5c636779d27fb">scale</a>) noexcept</td></tr>
 <tr class="memdesc:aa31f4e4f1afeafb4d236153408d35bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global scale.  <br /></td></tr>
 <tr class="separator:aa31f4e4f1afeafb4d236153408d35bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23761fc6362490e7191043db4113c212" id="r_a23761fc6362490e7191043db4113c212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23761fc6362490e7191043db4113c212">scale_by_global</a> (const math::vec3 &amp;<a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>) noexcept</td></tr>
+<tr class="memitem:a23761fc6362490e7191043db4113c212" id="r_a23761fc6362490e7191043db4113c212"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23761fc6362490e7191043db4113c212">scale_by_global</a> (const math::vec3 &amp;<a class="el" href="box3d__backend_8cpp.html#adaf99ab2284d3db188e5c636779d27fb">scale</a>) noexcept</td></tr>
 <tr class="memdesc:a23761fc6362490e7191043db4113c212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the component by a specified amount globally.  <br /></td></tr>
 <tr class="separator:a23761fc6362490e7191043db4113c212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27455744c8f3e486f670fd7efc693bcd" id="r_a27455744c8f3e486f670fd7efc693bcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27455744c8f3e486f670fd7efc693bcd">reset_scale_global</a> () noexcept</td></tr>
@@ -250,10 +246,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0acee8ba4a2327fc603cda3310d2386f" id="r_a0acee8ba4a2327fc603cda3310d2386f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0acee8ba4a2327fc603cda3310d2386f">get_scale_local</a> () const noexcept -&gt; const math::vec3 &amp;</td></tr>
 <tr class="memdesc:a0acee8ba4a2327fc603cda3310d2386f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the local scale.  <br /></td></tr>
 <tr class="separator:a0acee8ba4a2327fc603cda3310d2386f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf17671469a2885b1da4e350df2528d6" id="r_adf17671469a2885b1da4e350df2528d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf17671469a2885b1da4e350df2528d6">set_scale_local</a> (const math::vec3 &amp;<a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>) noexcept</td></tr>
+<tr class="memitem:adf17671469a2885b1da4e350df2528d6" id="r_adf17671469a2885b1da4e350df2528d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf17671469a2885b1da4e350df2528d6">set_scale_local</a> (const math::vec3 &amp;<a class="el" href="box3d__backend_8cpp.html#adaf99ab2284d3db188e5c636779d27fb">scale</a>) noexcept</td></tr>
 <tr class="memdesc:adf17671469a2885b1da4e350df2528d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the local scale.  <br /></td></tr>
 <tr class="separator:adf17671469a2885b1da4e350df2528d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a6bf1ea4ab4f57c68c07e4d2a78d820" id="r_a5a6bf1ea4ab4f57c68c07e4d2a78d820"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a6bf1ea4ab4f57c68c07e4d2a78d820">scale_by_local</a> (const math::vec3 &amp;<a class="el" href="particle__system__soa_8cpp.html#ad172d714065755a3dbb38637f6d0b4aa">scale</a>) noexcept</td></tr>
+<tr class="memitem:a5a6bf1ea4ab4f57c68c07e4d2a78d820" id="r_a5a6bf1ea4ab4f57c68c07e4d2a78d820"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a6bf1ea4ab4f57c68c07e4d2a78d820">scale_by_local</a> (const math::vec3 &amp;<a class="el" href="box3d__backend_8cpp.html#adaf99ab2284d3db188e5c636779d27fb">scale</a>) noexcept</td></tr>
 <tr class="memdesc:a5a6bf1ea4ab4f57c68c07e4d2a78d820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the component by a specified amount locally.  <br /></td></tr>
 <tr class="separator:a5a6bf1ea4ab4f57c68c07e4d2a78d820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b5c758da8c431f312ea5e6648197b44" id="r_a1b5c758da8c431f312ea5e6648197b44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b5c758da8c431f312ea5e6648197b44">reset_scale_local</a> () noexcept</td></tr>
@@ -307,13 +303,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed7c6a4e4940d04b5b5850dcb4d4385b" id="r_aed7c6a4e4940d04b5b5850dcb4d4385b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed7c6a4e4940d04b5b5850dcb4d4385b">get_parent</a> () const noexcept -&gt; entt::handle</td></tr>
 <tr class="memdesc:aed7c6a4e4940d04b5b5850dcb4d4385b"><td class="mdescLeft">&#160;</td><td class="mdescRight">RELATIONSHIP.  <br /></td></tr>
 <tr class="separator:aed7c6a4e4940d04b5b5850dcb4d4385b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cb58bc94ccc930bdb4f289e4cdb07f8" id="r_a6cb58bc94ccc930bdb4f289e4cdb07f8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cb58bc94ccc930bdb4f289e4cdb07f8">set_parent</a> (const entt::handle &amp;parent, bool global_stays=true) -&gt; bool</td></tr>
+<tr class="memitem:a6cb58bc94ccc930bdb4f289e4cdb07f8" id="r_a6cb58bc94ccc930bdb4f289e4cdb07f8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cb58bc94ccc930bdb4f289e4cdb07f8">set_parent</a> (const entt::handle &amp;<a class="el" href="mcp__tools__create_8cpp.html#ad4503be4473dd28e9ebea32ef9749384">parent</a>, bool global_stays=true) -&gt; bool</td></tr>
 <tr class="memdesc:a6cb58bc94ccc930bdb4f289e4cdb07f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parent entity.  <br /></td></tr>
 <tr class="separator:a6cb58bc94ccc930bdb4f289e4cdb07f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51c6e12d77ee473cdab8335074a3189" id="r_af51c6e12d77ee473cdab8335074a3189"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af51c6e12d77ee473cdab8335074a3189">get_children</a> () const noexcept -&gt; const std::vector&lt; entt::handle &gt; &amp;</td></tr>
 <tr class="memdesc:af51c6e12d77ee473cdab8335074a3189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the child entities.  <br /></td></tr>
 <tr class="separator:af51c6e12d77ee473cdab8335074a3189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bf33ac402658f4e47b769fa32464727" id="r_a8bf33ac402658f4e47b769fa32464727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bf33ac402658f4e47b769fa32464727">set_children</a> (const std::vector&lt; entt::handle &gt; &amp;<a class="el" href="gpu__frame__stats__widgets_8cpp.html#aedb9189f157362bd3e1e967b0e4479be">children</a>)</td></tr>
+<tr class="memitem:a8bf33ac402658f4e47b769fa32464727" id="r_a8bf33ac402658f4e47b769fa32464727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bf33ac402658f4e47b769fa32464727">set_children</a> (const std::vector&lt; entt::handle &gt; &amp;<a class="el" href="animation__humanoid_8cpp.html#a1f787eaafbc5b1613e97d3d4a9baaf33">children</a>)</td></tr>
 <tr class="memdesc:a8bf33ac402658f4e47b769fa32464727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the child entities.  <br /></td></tr>
 <tr class="separator:a8bf33ac402658f4e47b769fa32464727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a651d1fc2766bc270bde35cd8614351af" id="r_a651d1fc2766bc270bde35cd8614351af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a651d1fc2766bc270bde35cd8614351af">sort_children</a> () noexcept</td></tr>
@@ -333,10 +329,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a09b7196581b3749c7ab3c22740f82a29" id="r_a09b7196581b3749c7ab3c22740f82a29"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09b7196581b3749c7ab3c22740f82a29">is_dirty</a> () const noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a09b7196581b3749c7ab3c22740f82a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the component is dirty.  <br /></td></tr>
 <tr class="separator:a09b7196581b3749c7ab3c22740f82a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6c5caaa3a716cac3f281d60d8d72881" id="r_ad6c5caaa3a716cac3f281d60d8d72881"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6c5caaa3a716cac3f281d60d8d72881">set_dirty</a> (uint8_t <a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>, bool dirty) noexcept</td></tr>
+<tr class="memitem:ad6c5caaa3a716cac3f281d60d8d72881" id="r_ad6c5caaa3a716cac3f281d60d8d72881"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6c5caaa3a716cac3f281d60d8d72881">set_dirty</a> (uint8_t <a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>, bool dirty) noexcept</td></tr>
 <tr class="memdesc:ad6c5caaa3a716cac3f281d60d8d72881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the dirty flag for a specific index.  <br /></td></tr>
 <tr class="separator:ad6c5caaa3a716cac3f281d60d8d72881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57a4acda8f209468c225d2db398d5e10" id="r_a57a4acda8f209468c225d2db398d5e10"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57a4acda8f209468c225d2db398d5e10">is_dirty</a> (uint8_t <a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) const noexcept -&gt; bool</td></tr>
+<tr class="memitem:a57a4acda8f209468c225d2db398d5e10" id="r_a57a4acda8f209468c225d2db398d5e10"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57a4acda8f209468c225d2db398d5e10">is_dirty</a> (uint8_t <a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>) const noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a57a4acda8f209468c225d2db398d5e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the component is dirty for a specific index.  <br /></td></tr>
 <tr class="separator:a57a4acda8f209468c225d2db398d5e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dcd62892e3bd310d4c70dd76ebb9159" id="r_a9dcd62892e3bd310d4c70dd76ebb9159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dcd62892e3bd310d4c70dd76ebb9159">mark_consumers_dirty</a> () noexcept</td></tr>
@@ -374,7 +370,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a666274b0c911acca9724beaf4f5cc94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4a230aec17719fdbc1b9d9cba43e653" id="r_af4a230aec17719fdbc1b9d9cba43e653"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4a230aec17719fdbc1b9d9cba43e653">get_top_level_entities</a> (const std::vector&lt; entt::handle * &gt; &amp;list) -&gt; std::vector&lt; entt::handle &gt;</td></tr>
 <tr class="separator:af4a230aec17719fdbc1b9d9cba43e653"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1abf81a23a381a5fed7544624aebf5da" id="r_a1abf81a23a381a5fed7544624aebf5da"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1abf81a23a381a5fed7544624aebf5da">is_parent_of</a> (entt::handle parent_to_test, entt::handle child) -&gt; bool</td></tr>
+<tr class="memitem:a1abf81a23a381a5fed7544624aebf5da" id="r_a1abf81a23a381a5fed7544624aebf5da"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1abf81a23a381a5fed7544624aebf5da">is_parent_of</a> (entt::handle parent_to_test, entt::handle <a class="el" href="native__scene_8cpp.html#a269cc96e127de536696db1a8c5f9303c">child</a>) -&gt; bool</td></tr>
 <tr class="separator:a1abf81a23a381a5fed7544624aebf5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classunravel_1_1owned__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classunravel_1_1owned__component')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classunravel_1_1owned__component.html">unravel::owned_component</a></td></tr>
 <tr class="memitem:a4862e642b971be7ea17a0d8726b5f6f7 inherit pub_static_methods_classunravel_1_1owned__component" id="r_a4862e642b971be7ea17a0d8726b5f6f7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -434,7 +430,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Clears the relationships of the component. </p>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00625">625</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00662">662</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -464,7 +460,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the child entities. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the vector of child entity handles. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00784">784</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00838">838</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -494,7 +490,7 @@ Additional Inherited Members</h2></td></tr>
 <p>RELATIONSHIP. </p>
 <p>Gets the parent entity. </p><dl class="section return"><dt>Returns</dt><dd>A handle to the parent entity. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00698">698</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00735">735</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -524,7 +520,7 @@ Additional Inherited Members</h2></td></tr>
 <p>PERSPECTIVE. </p>
 <p>Gets the global perspective. </p><dl class="section return"><dt>Returns</dt><dd>A constant reference to the global perspective. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00553">553</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00590">590</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +550,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the local perspective. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the local perspective. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00500">500</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00537">537</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -584,7 +580,7 @@ Additional Inherited Members</h2></td></tr>
 <p>TRANSLATION. </p>
 <p>Gets the global position. </p><dl class="section return"><dt>Returns</dt><dd>A constant reference to the global position. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00268">268</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00303">303</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -614,7 +610,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the local position. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the local position. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00297">297</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00332">332</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -644,7 +640,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the global rotation in Euler angles. </p>
 <dl class="section return"><dt>Returns</dt><dd>The global rotation in Euler angles. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00403">403</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00438">438</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -674,7 +670,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the local rotation in Euler angles. </p>
 <dl class="section return"><dt>Returns</dt><dd>The local rotation in Euler angles. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00421">421</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00458">458</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -704,7 +700,7 @@ Additional Inherited Members</h2></td></tr>
 <p>ROTATION. </p>
 <p>Gets the global rotation. </p><dl class="section return"><dt>Returns</dt><dd>A constant reference to the global rotation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00348">348</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00383">383</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -734,7 +730,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the local rotation. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the local rotation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00380">380</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00415">415</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -764,7 +760,7 @@ Additional Inherited Members</h2></td></tr>
 <p>SCALE. </p>
 <p>Gets the global scale. </p><dl class="section return"><dt>Returns</dt><dd>A constant reference to the global scale. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00535">535</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00572">572</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +791,7 @@ Additional Inherited Members</h2></td></tr>
 <p>SCALE.</p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the local scale. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00485">485</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00522">522</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -825,7 +821,7 @@ Additional Inherited Members</h2></td></tr>
 <p>SKEW. </p>
 <p>Gets the global skew. </p><dl class="section return"><dt>Returns</dt><dd>A constant reference to the global skew. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00548">548</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00585">585</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -855,7 +851,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the local skew. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the local skew. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00495">495</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00532">532</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -882,7 +878,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00106">106</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00133">133</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -909,7 +905,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00150">150</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00177">177</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -939,7 +935,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the global transform. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the global transform. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00243">243</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00278">278</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -970,7 +966,7 @@ Additional Inherited Members</h2></td></tr>
 <p>TRANSFORMS.</p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the local transform. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00215">215</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00242">242</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +996,7 @@ Additional Inherited Members</h2></td></tr>
 <p>BASIS. </p>
 <p>Gets the global X-axis. </p><dl class="section return"><dt>Returns</dt><dd>The global X-axis. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00520">520</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00557">557</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1026,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the local X-axis. </p>
 <dl class="section return"><dt>Returns</dt><dd>The local X-axis. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00505">505</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00542">542</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1060,7 +1056,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the global Y-axis. </p>
 <dl class="section return"><dt>Returns</dt><dd>The global Y-axis. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00525">525</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00562">562</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1090,7 +1086,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the local Y-axis. </p>
 <dl class="section return"><dt>Returns</dt><dd>The local Y-axis. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00510">510</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00547">547</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1116,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the global Z-axis. </p>
 <dl class="section return"><dt>Returns</dt><dd>The global Z-axis. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00530">530</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00567">567</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1150,7 +1146,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the local Z-axis. </p>
 <dl class="section return"><dt>Returns</dt><dd>The local Z-axis. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00515">515</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00552">552</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1176,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Checks if the component is active. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the component is active, otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00742">742</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00796">796</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1203,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00747">747</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00801">801</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1233,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Checks if the component is dirty. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the component is dirty, otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00759">759</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00813">813</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1273,7 +1269,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the component is dirty for the specified index, otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00769">769</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00823">823</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1304,7 +1300,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00101">101</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00128">128</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1339,7 +1335,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00467">467</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00506">506</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1370,7 +1366,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00472">472</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00511">511</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1399,7 +1395,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets every consumer dirty bit, forcing all indexed consumers (physics sync, model pose refresh, ...) to re-consume this transform even if it did not change. Used by tooling (e.g. inspector edits) to wake consumers of derived data. </p>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00779">779</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00833">833</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1434,7 +1430,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00286">286</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00321">321</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1469,7 +1465,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00307">307</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00342">342</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1501,7 +1497,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Called when the component is created. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Indexed dirty flags: every transform (or hierarchy flags) change sets ALL consumer bits, and each consumer clears only its own after reading the new value. The slots are <a class="el" href="structunravel_1_1dirty__ids.html" title="Consumer slots for the indexed dirty flags a component carries (is_dirty(id) / set_dirty(id,...">unravel::dirty_ids</a>, shared with the other components that carry such flags. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">r</td><td>The registry containing the component. </td></tr>
     <tr><td class="paramname">e</td><td>The entity associated with the component. </td></tr>
@@ -1578,7 +1574,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Resets the global position to the origin. </p>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00292">292</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00327">327</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1607,7 +1603,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Resets the local position to the origin. </p>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00312">312</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00347">347</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1636,7 +1632,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Resets the global rotation to the default orientation. </p>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00375">375</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00410">410</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1661,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Resets the local rotation to the default orientation. </p>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00398">398</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00433">433</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1694,7 +1690,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Resets the global scale to the default value. </p>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00615">615</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00652">652</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1723,7 +1719,37 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Resets the local scale to the default value. </p>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00620">620</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00657">657</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7991dd09484cf94b8ffc473b8f9f3dbb" name="a7991dd09484cf94b8ffc473b8f9f3dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7991dd09484cf94b8ffc473b8f9f3dbb">&#9670;&#160;</a></span>resolve_shared_ancestors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::transform_component::resolve_shared_ancestors </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resolves the global transform and its matrix now when the entity has a parent. </p>
+<p>Global transforms resolve lazily on first read, which is not thread safe. Call this on one thread before a parallel pass whose tasks read the global transforms of entities that may share an ancestor (a sword in a character's hand, emitters under one moving parent): the tasks then only read the shared ancestors instead of resolving them at the same time. </p>
+
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00270">270</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1752,7 +1778,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>TRANSFORMS. </p>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00225">225</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00252">252</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1775,7 +1801,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00459">459</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00498">498</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1803,7 +1829,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00447">447</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00486">486</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1843,7 +1869,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00439">439</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00478">478</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1878,7 +1904,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00413">413</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00450">450</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1913,7 +1939,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00431">431</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00470">470</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1948,7 +1974,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00367">367</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00402">402</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1983,7 +2009,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00390">390</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00425">425</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2018,7 +2044,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00540">540</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00577">577</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2053,7 +2079,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00490">490</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00527">527</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2088,7 +2114,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00752">752</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00806">806</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2115,7 +2141,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00789">789</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00843">843</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2150,7 +2176,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00764">764</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00818">818</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2190,7 +2216,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00774">774</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00828">828</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2223,7 +2249,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the parent was set successfully, otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00631">631</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00668">668</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2258,7 +2284,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00596">596</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00633">633</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2293,7 +2319,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00610">610</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00647">647</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2329,7 +2355,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00317">317</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00352">352</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2364,7 +2390,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00273">273</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00308">308</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2399,7 +2425,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00302">302</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00337">337</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2434,7 +2460,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00408">408</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00443">443</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2469,7 +2495,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00426">426</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00463">463</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2504,7 +2530,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00353">353</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00388">388</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2539,7 +2565,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00385">385</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00420">420</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2574,7 +2600,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00558">558</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00595">595</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2609,7 +2635,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00572">572</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00609">609</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2644,7 +2670,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00577">577</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00614">614</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2679,7 +2705,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00591">591</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00628">628</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2714,7 +2740,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00248">248</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00283">283</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2745,7 +2771,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00253">253</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00288">288</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2780,7 +2806,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00220">220</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00247">247</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -2843,7 +2869,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The point in local space. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00737">737</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ecs_2components_2transform__component_8cpp_source.html#l00791">791</a> of file <a class="el" href="ecs_2components_2transform__component_8cpp_source.html">transform_component.cpp</a>.</p>
 
 </div>
 </div>

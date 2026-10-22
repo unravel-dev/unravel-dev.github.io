@@ -301,11 +301,45 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Unravel_Core_AnimationComponent_controller_" data-uid="Unravel.Core.AnimationComponent.controller*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_controller" data-uid="Unravel.Core.AnimationComponent.controller">
+  controller
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>State machine played by this component. While one is assigned it drives the animation
+(the single <a class="xref" href="Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_animation">animation</a> clip is ignored); steer it with parameters
+(<a class="xref" href="Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_SetFloat_System_String_System_Single_">SetFloat(string, float)</a>, <a class="xref" href="Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_SetBool_System_String_System_Boolean_">SetBool(string, bool)</a>, <a class="xref" href="Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_SetTrigger_System_String_">SetTrigger(string)</a>...).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationController controller { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.AnimationController.html">AnimationController</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_AnimationComponent_isPaused_" data-uid="Unravel.Core.AnimationComponent.isPaused*"></a>
 
   <h3 id="Unravel_Core_AnimationComponent_isPaused" data-uid="Unravel.Core.AnimationComponent.isPaused">
   isPaused
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Whether the animation player is currently paused.</p>
@@ -337,7 +371,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_isPlaying" data-uid="Unravel.Core.AnimationComponent.isPlaying">
   isPlaying
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Whether the animation player is currently playing.</p>
@@ -365,6 +399,38 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Unravel_Core_AnimationComponent_layerCount_" data-uid="Unravel.Core.AnimationComponent.layerCount*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_layerCount" data-uid="Unravel.Core.AnimationComponent.layerCount">
+  layerCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of layers of the assigned controller (0 without one).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int layerCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -373,7 +439,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_Blend_Unravel_Core_AnimationClip_System_Single_System_Boolean_System_Boolean_" data-uid="Unravel.Core.AnimationComponent.Blend(Unravel.Core.AnimationClip,System.Single,System.Boolean,System.Boolean)">
   Blend(AnimationClip, float, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Blends the specified animation clip into the default layer.</p>
@@ -415,7 +481,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_BlendLayer_System_Int32_Unravel_Core_AnimationClip_System_Single_System_Boolean_System_Boolean_" data-uid="Unravel.Core.AnimationComponent.BlendLayer(System.Int32,Unravel.Core.AnimationClip,System.Single,System.Boolean,System.Boolean)">
   BlendLayer(int, AnimationClip, float, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Blends the specified animation clip into the given layer.</p>
@@ -456,11 +522,662 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Unravel_Core_AnimationComponent_CrossFade_" data-uid="Unravel.Core.AnimationComponent.CrossFade*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_CrossFade_System_String_System_Single_System_Int32_System_Single_" data-uid="Unravel.Core.AnimationComponent.CrossFade(System.String,System.Single,System.Int32,System.Single)">
+  CrossFade(string, float, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Crossfades a controller layer to a state now, whatever its transitions say.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CrossFade(string state, float seconds, int layer = 0, float normalizedTime = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>State name.</p>
+</dd>
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Crossfade duration.</p>
+</dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Controller layer index.</p>
+</dd>
+    <dt><code>normalizedTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Where in its cycle the state starts, 0..1.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>False when the layer has no such state.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetBool_" data-uid="Unravel.Core.AnimationComponent.GetBool*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetBool_System_String_" data-uid="Unravel.Core.AnimationComponent.GetBool(System.String)">
+  GetBool(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Value of a bool (or trigger) parameter of the controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBool(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetCurrentStateName_" data-uid="Unravel.Core.AnimationComponent.GetCurrentStateName*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetCurrentStateName_System_Int32_" data-uid="Unravel.Core.AnimationComponent.GetCurrentStateName(System.Int32)">
+  GetCurrentStateName(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the state a controller layer plays - during a transition, the state being left.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCurrentStateName(int layer = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetCurve_" data-uid="Unravel.Core.AnimationComponent.GetCurve*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetCurve_System_String_" data-uid="Unravel.Core.AnimationComponent.GetCurve(System.String)">
+  GetCurve(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Blended value of a curve authored on the playing clips (clip inspector, Curves tab), or
+0 when none of them has it. Curves blend with the pose: a curve fades in and out across
+crossfades and layer weights.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetCurve(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Curve name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetFloat_" data-uid="Unravel.Core.AnimationComponent.GetFloat*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetFloat_System_String_" data-uid="Unravel.Core.AnimationComponent.GetFloat(System.String)">
+  GetFloat(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Value of a float (or int) parameter of the controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloat(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetInt_" data-uid="Unravel.Core.AnimationComponent.GetInt*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetInt_System_String_" data-uid="Unravel.Core.AnimationComponent.GetInt(System.String)">
+  GetInt(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Value of an int (or float, rounded) parameter of the controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInt(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetLayerIndex_" data-uid="Unravel.Core.AnimationComponent.GetLayerIndex*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetLayerIndex_System_String_" data-uid="Unravel.Core.AnimationComponent.GetLayerIndex(System.String)">
+  GetLayerIndex(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Index of a controller layer by name, or -1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLayerIndex(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetLayerWeight_" data-uid="Unravel.Core.AnimationComponent.GetLayerWeight*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetLayerWeight_System_Int32_" data-uid="Unravel.Core.AnimationComponent.GetLayerWeight(System.Int32)">
+  GetLayerWeight(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Weight of a layer (the base layer is always 1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetLayerWeight(int layer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Animation layer index.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetNextStateName_" data-uid="Unravel.Core.AnimationComponent.GetNextStateName*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetNextStateName_System_Int32_" data-uid="Unravel.Core.AnimationComponent.GetNextStateName(System.Int32)">
+  GetNextStateName(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Destination of the layer's running transition, or an empty string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetNextStateName(int layer = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetNextStateTime_" data-uid="Unravel.Core.AnimationComponent.GetNextStateTime*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetNextStateTime_System_Int32_" data-uid="Unravel.Core.AnimationComponent.GetNextStateTime(System.Int32)">
+  GetNextStateTime(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normalized time of the destination of the layer's running transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetNextStateTime(int layer = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetStateTime_" data-uid="Unravel.Core.AnimationComponent.GetStateTime*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetStateTime_System_Int32_" data-uid="Unravel.Core.AnimationComponent.GetStateTime(System.Int32)">
+  GetStateTime(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normalized time of the state a controller layer plays: the fraction is the position in
+the cycle, the integer part counts completed loops.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetStateTime(int layer = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_GetTransitionProgress_" data-uid="Unravel.Core.AnimationComponent.GetTransitionProgress*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_GetTransitionProgress_System_Int32_" data-uid="Unravel.Core.AnimationComponent.GetTransitionProgress(System.Int32)">
+  GetTransitionProgress(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Progress (0..1) of the layer's running transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetTransitionProgress(int layer = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_HasCurve_" data-uid="Unravel.Core.AnimationComponent.HasCurve*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_HasCurve_System_String_" data-uid="Unravel.Core.AnimationComponent.HasCurve(System.String)">
+  HasCurve(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether any playing clip has the named curve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasCurve(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Curve name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_IsInState_" data-uid="Unravel.Core.AnimationComponent.IsInState*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_IsInState_System_String_System_Int32_" data-uid="Unravel.Core.AnimationComponent.IsInState(System.String,System.Int32)">
+  IsInState(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether a controller layer plays the named state (the source, during a transition).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInState(string state, int layer = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_IsInTag_" data-uid="Unravel.Core.AnimationComponent.IsInTag*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_IsInTag_System_String_System_Int32_" data-uid="Unravel.Core.AnimationComponent.IsInTag(System.String,System.Int32)">
+  IsInTag(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the state a controller layer plays carries the tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInTag(string tag, int layer = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_IsInTransition_" data-uid="Unravel.Core.AnimationComponent.IsInTransition*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_IsInTransition_System_Int32_" data-uid="Unravel.Core.AnimationComponent.IsInTransition(System.Int32)">
+  IsInTransition(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether a controller layer is crossfading between two states.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInTransition(int layer = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_IsLayerAdditive_" data-uid="Unravel.Core.AnimationComponent.IsLayerAdditive*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_IsLayerAdditive_System_Int32_" data-uid="Unravel.Core.AnimationComponent.IsLayerAdditive(System.Int32)">
+  IsLayerAdditive(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether a layer is additive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLayerAdditive(int layer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Animation layer index.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_AnimationComponent_Pause_" data-uid="Unravel.Core.AnimationComponent.Pause*"></a>
 
   <h3 id="Unravel_Core_AnimationComponent_Pause" data-uid="Unravel.Core.AnimationComponent.Pause">
   Pause()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Pauses the currently playing animation on the entity.</p>
@@ -487,7 +1204,7 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
   <h3 id="Unravel_Core_AnimationComponent_Play" data-uid="Unravel.Core.AnimationComponent.Play">
   Play()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Starts playing the currently blended animation on the entity.</p>
@@ -510,11 +1227,90 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Unravel_Core_AnimationComponent_PlayState_" data-uid="Unravel.Core.AnimationComponent.PlayState*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_PlayState_System_String_System_Int32_System_Single_" data-uid="Unravel.Core.AnimationComponent.PlayState(System.String,System.Int32,System.Single)">
+  PlayState(string, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Jumps a controller layer to a state now, at a normalized time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PlayState(string state, int layer = 0, float normalizedTime = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>normalizedTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>False when the layer has no such state.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_ResetTrigger_" data-uid="Unravel.Core.AnimationComponent.ResetTrigger*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_ResetTrigger_System_String_" data-uid="Unravel.Core.AnimationComponent.ResetTrigger(System.String)">
+  ResetTrigger(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears a trigger that no transition consumed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ResetTrigger(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_AnimationComponent_Resume_" data-uid="Unravel.Core.AnimationComponent.Resume*"></a>
 
   <h3 id="Unravel_Core_AnimationComponent_Resume" data-uid="Unravel.Core.AnimationComponent.Resume">
   Resume()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L296"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Resumes the currently paused animation on the entity.</p>
@@ -537,11 +1333,244 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Unravel_Core_AnimationComponent_SetBool_" data-uid="Unravel.Core.AnimationComponent.SetBool*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_SetBool_System_String_System_Boolean_" data-uid="Unravel.Core.AnimationComponent.SetBool(System.String,System.Boolean)">
+  SetBool(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a bool parameter of the controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetBool(string name, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>False when the controller has no such parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_SetFloat_" data-uid="Unravel.Core.AnimationComponent.SetFloat*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_SetFloat_System_String_System_Single_" data-uid="Unravel.Core.AnimationComponent.SetFloat(System.String,System.Single)">
+  SetFloat(string, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a float parameter of the controller. Int parameters take the rounded value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetFloat(string name, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>False when the controller has no such parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_SetInt_" data-uid="Unravel.Core.AnimationComponent.SetInt*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_SetInt_System_String_System_Int32_" data-uid="Unravel.Core.AnimationComponent.SetInt(System.String,System.Int32)">
+  SetInt(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets an int parameter of the controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetInt(string name, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>False when the controller has no such parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_SetLayerAdditive_" data-uid="Unravel.Core.AnimationComponent.SetLayerAdditive*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_SetLayerAdditive_System_Int32_System_Boolean_" data-uid="Unravel.Core.AnimationComponent.SetLayerAdditive(System.Int32,System.Boolean)">
+  SetLayerAdditive(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Makes a layer above the base layer additive (its change from its clips' first frame is
+added on top) or override (its pose replaces the pose below, the default).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerAdditive(int layer, bool additive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Animation layer index, 1 or higher.</p>
+</dd>
+    <dt><code>additive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True for additive, false for override.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_SetLayerWeight_" data-uid="Unravel.Core.AnimationComponent.SetLayerWeight*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_SetLayerWeight_System_Int32_System_Single_" data-uid="Unravel.Core.AnimationComponent.SetLayerWeight(System.Int32,System.Single)">
+  SetLayerWeight(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the weight (0..1) of a layer above the base layer: how much of the layer's pose
+replaces (or, for an additive layer, adds to) the layers below it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayerWeight(int layer, float weight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Animation layer index.</p>
+</dd>
+    <dt><code>weight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Layer weight, 0..1.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_SetTrigger_" data-uid="Unravel.Core.AnimationComponent.SetTrigger*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_SetTrigger_System_String_" data-uid="Unravel.Core.AnimationComponent.SetTrigger(System.String)">
+  SetTrigger(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a trigger: it stays set until a transition that tests it fires (which clears it) or
+<a class="xref" href="Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_ResetTrigger_System_String_">ResetTrigger(string)</a> is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetTrigger(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>False when the controller has no such parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_AnimationComponent_Stop_" data-uid="Unravel.Core.AnimationComponent.Stop*"></a>
 
   <h3 id="Unravel_Core_AnimationComponent_Stop" data-uid="Unravel.Core.AnimationComponent.Stop">
   Stop()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L304"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stops the currently playing animation on the entity.</p>
@@ -552,6 +1581,44 @@ Class AnimationComponent  <a class="header-action link-secondary" title="View so
     <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
   </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_AnimationComponent_StopLayer_" data-uid="Unravel.Core.AnimationComponent.StopLayer*"></a>
+
+  <h3 id="Unravel_Core_AnimationComponent_StopLayer_System_Int32_System_Single_" data-uid="Unravel.Core.AnimationComponent.StopLayer(System.Int32,System.Single)">
+  StopLayer(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AnimationComponent.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fades a layer above the base layer out over <code class="paramref">seconds</code>, then clears it.
+The base layer stops at once. A layer the controller drives stays stopped until
+CrossFade or PlayState starts a state on it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopLayer(int layer, float seconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Animation layer index.</p>
+</dd>
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Fade duration in seconds.</p>
+</dd>
+  </dl>
 
 
 

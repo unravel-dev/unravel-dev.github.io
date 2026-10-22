@@ -111,7 +111,7 @@ $(function(){initNavTree('class_im_box_1_1_msg_box_manager.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a34579312e009740e60420e007e99d1b5" id="r_a34579312e009740e60420e007e99d1b5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34579312e009740e60420e007e99d1b5">ShowMessageBox</a> (const std::string &amp;<a class="el" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a>, const std::string &amp;message, int buttons=<a class="el" href="namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01a51e4ae0c1b9d5e031595153a6d333952">ModalResult::Ok</a>, const <a class="el" href="struct_im_box_1_1_msg_box_config.html">MsgBoxConfig</a> &amp;config=<a class="el" href="struct_im_box_1_1_msg_box_config.html">MsgBoxConfig</a>{}, std::function&lt; void(<a class="el" href="namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01">ModalResult</a>)&gt; callback=nullptr) -&gt; std::shared_ptr&lt; <a class="el" href="class_im_box_1_1_msg_box.html">MsgBox</a> &gt;</td></tr>
+<tr class="memitem:a34579312e009740e60420e007e99d1b5" id="r_a34579312e009740e60420e007e99d1b5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34579312e009740e60420e007e99d1b5">ShowMessageBox</a> (const std::string &amp;<a class="el" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a>, const std::string &amp;<a class="el" href="inspector__entity_8cpp.html#a36bd74109f547f7f8198faf5a12d2879">message</a>, int buttons=<a class="el" href="namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01a51e4ae0c1b9d5e031595153a6d333952">ModalResult::Ok</a>, const <a class="el" href="struct_im_box_1_1_msg_box_config.html">MsgBoxConfig</a> &amp;config=<a class="el" href="struct_im_box_1_1_msg_box_config.html">MsgBoxConfig</a>{}, std::function&lt; void(<a class="el" href="namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01">ModalResult</a>)&gt; callback=nullptr) -&gt; std::shared_ptr&lt; <a class="el" href="class_im_box_1_1_msg_box.html">MsgBox</a> &gt;</td></tr>
 <tr class="memdesc:a34579312e009740e60420e007e99d1b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and show a message box.  <br /></td></tr>
 <tr class="separator:a34579312e009740e60420e007e99d1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b513ae9d9283f32a5a37cc995527a0" id="r_a01b513ae9d9283f32a5a37cc995527a0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01b513ae9d9283f32a5a37cc995527a0">RenderAll</a> () -&gt; void</td></tr>
@@ -123,6 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b26452aed641fb3c5b8e204a70f96bc" id="r_a5b26452aed641fb3c5b8e204a70f96bc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b26452aed641fb3c5b8e204a70f96bc">GetActiveCount</a> () const -&gt; size_t</td></tr>
 <tr class="memdesc:a5b26452aed641fb3c5b8e204a70f96bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get count of active message boxes.  <br /></td></tr>
 <tr class="separator:a5b26452aed641fb3c5b8e204a70f96bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3708fc4a59ca4c3c89febb491fb5e518" id="r_a3708fc4a59ca4c3c89febb491fb5e518"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3708fc4a59ca4c3c89febb491fb5e518">GetActiveBoxes</a> () const -&gt; const std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_im_box_1_1_msg_box.html">MsgBox</a> &gt; &gt; &amp;</td></tr>
+<tr class="memdesc:a3708fc4a59ca4c3c89febb491fb5e518"><td class="mdescLeft">&#160;</td><td class="mdescRight">The boxes shown or closing, oldest first.  <br /></td></tr>
+<tr class="separator:a3708fc4a59ca4c3c89febb491fb5e518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -133,7 +136,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Message box manager for handling multiple popups. </p>
 
-<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00134">134</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00154">154</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab51d21d6d5d0bc2f13d638b5b2ab9561" name="ab51d21d6d5d0bc2f13d638b5b2ab9561"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab51d21d6d5d0bc2f13d638b5b2ab9561">&#9670;&#160;</a></span>CloseAll()</h2>
@@ -152,7 +155,36 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Close all message boxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00414">414</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00442">442</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3708fc4a59ca4c3c89febb491fb5e518" name="a3708fc4a59ca4c3c89febb491fb5e518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3708fc4a59ca4c3c89febb491fb5e518">&#9670;&#160;</a></span>GetActiveBoxes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ImBox::MsgBoxManager::GetActiveBoxes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;std::shared_ptr&lt;<a class="el" href="class_im_box_1_1_msg_box.html">MsgBox</a>&gt;&gt;&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The boxes shown or closing, oldest first. </p>
+
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00178">178</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
 
 </div>
 </div>
@@ -181,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Get count of active message boxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00155">155</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00175">175</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
 
 </div>
 </div>
@@ -210,7 +242,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Get the singleton instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00383">383</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00411">411</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
 
 </div>
 </div>
@@ -231,7 +263,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Render all active message boxes. </p>
 
-<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00402">402</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00430">430</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
 
 </div>
 </div>
@@ -271,7 +303,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Create and show a message box. </p>
 
-<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00389">389</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00417">417</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
 
 </div>
 </div>

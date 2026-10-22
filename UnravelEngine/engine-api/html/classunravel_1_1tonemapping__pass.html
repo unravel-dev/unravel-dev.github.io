@@ -98,6 +98,7 @@ $(function(){initNavTree('classunravel_1_1tonemapping__pass.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classunravel_1_1tonemapping__pass-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::tonemapping_pass Class Reference</div></div>
@@ -113,19 +114,44 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1tonemapping__pass_1_1settings.html">settings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ad03728289ab27b012f5cc816f717925f" id="r_ad03728289ab27b012f5cc816f717925f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad03728289ab27b012f5cc816f717925f">local_exposure_params</a> = <a class="el" href="structunravel_1_1local__exposure__params.html">unravel::local_exposure_params</a></td></tr>
+<tr class="memdesc:ad03728289ab27b012f5cc816f717925f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The per-pixel local exposure lookups and shape (<a class="el" href="local__exposure__binding_8h.html">local_exposure_binding.h</a>).  <br /></td></tr>
+<tr class="separator:ad03728289ab27b012f5cc816f717925f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad54b6550466dddddf10902699b181532" id="r_ad54b6550466dddddf10902699b181532"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad54b6550466dddddf10902699b181532">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:ad54b6550466dddddf10902699b181532" id="r_ad54b6550466dddddf10902699b181532"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad54b6550466dddddf10902699b181532">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="separator:ad54b6550466dddddf10902699b181532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d8a6887da1b663af4e773b7f4a4303c" id="r_a5d8a6887da1b663af4e773b7f4a4303c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d8a6887da1b663af4e773b7f4a4303c">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1tonemapping__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
+<tr class="memitem:a5d8a6887da1b663af4e773b7f4a4303c" id="r_a5d8a6887da1b663af4e773b7f4a4303c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d8a6887da1b663af4e773b7f4a4303c">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1tonemapping__pass_1_1run__params.html">run_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
 <tr class="separator:a5d8a6887da1b663af4e773b7f4a4303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d80d02b6cde64ab083c361d917c1634" id="r_a0d80d02b6cde64ab083c361d917c1634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d80d02b6cde64ab083c361d917c1634">release_resources</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview)</td></tr>
 <tr class="separator:a0d80d02b6cde64ab083c361d917c1634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="tonemapping__pass_8h_source.html#l00030">30</a> of file <a class="el" href="tonemapping__pass_8h_source.html">tonemapping_pass.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="tonemapping__pass_8h_source.html#l00036">36</a> of file <a class="el" href="tonemapping__pass_8h_source.html">tonemapping_pass.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ad03728289ab27b012f5cc816f717925f" name="ad03728289ab27b012f5cc816f717925f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03728289ab27b012f5cc816f717925f">&#9670;&#160;</a></span>local_exposure_params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ad03728289ab27b012f5cc816f717925f">unravel::tonemapping_pass::local_exposure_params</a> = <a class="el" href="structunravel_1_1local__exposure__params.html">unravel::local_exposure_params</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The per-pixel local exposure lookups and shape (<a class="el" href="local__exposure__binding_8h.html">local_exposure_binding.h</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="tonemapping__pass_8h_source.html#l00087">87</a> of file <a class="el" href="tonemapping__pass_8h_source.html">tonemapping_pass.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad54b6550466dddddf10902699b181532" name="ad54b6550466dddddf10902699b181532"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad54b6550466dddddf10902699b181532">&#9670;&#160;</a></span>init()</h2>
 
@@ -141,7 +167,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tonemapping__pass_8cpp_source.html#l00010">10</a> of file <a class="el" href="tonemapping__pass_8cpp_source.html">tonemapping_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tonemapping__pass_8cpp_source.html#l00044">44</a> of file <a class="el" href="tonemapping__pass_8cpp_source.html">tonemapping_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -160,7 +186,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tonemapping__pass_8cpp_source.html#l00141">141</a> of file <a class="el" href="tonemapping__pass_8cpp_source.html">tonemapping_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tonemapping__pass_8cpp_source.html#l00158">158</a> of file <a class="el" href="tonemapping__pass_8cpp_source.html">tonemapping_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -183,7 +209,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tonemapping__pass_8cpp_source.html#l00056">56</a> of file <a class="el" href="tonemapping__pass_8cpp_source.html">tonemapping_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tonemapping__pass_8cpp_source.html#l00079">79</a> of file <a class="el" href="tonemapping__pass_8cpp_source.html">tonemapping_pass.cpp</a>.</p>
 
 </div>
 </div>

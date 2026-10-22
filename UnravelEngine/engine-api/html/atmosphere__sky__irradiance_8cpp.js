@@ -1,0 +1,28 @@
+var atmosphere__sky__irradiance_8cpp =
+[
+    [ "unravel::atmosphere_sky_detail::medium_sample", "structunravel_1_1atmosphere__sky__detail_1_1medium__sample.html", "structunravel_1_1atmosphere__sky__detail_1_1medium__sample" ],
+    [ "unravel::atmosphere_sky_detail::sky_model", "classunravel_1_1atmosphere__sky__detail_1_1sky__model.html", "classunravel_1_1atmosphere__sky__detail_1_1sky__model" ],
+    [ "compute_atmosphere_sky_to_sun_ratio", "atmosphere__sky__irradiance_8cpp.html#a06f7fbf76ea5fe3792f5cae069b132ed", null ],
+    [ "exp3", "atmosphere__sky__irradiance_8cpp.html#ac78a872cc65992796b09dcb7485188c8", null ],
+    [ "get_sky_model", "atmosphere__sky__irradiance_8cpp.html#a2a5689dadcf8d21fa03e2d98deeec2cd", null ],
+    [ "hits_ground", "atmosphere__sky__irradiance_8cpp.html#af0017990a75b9e256c18dff793ce2bd7", null ],
+    [ "intersect_sphere", "atmosphere__sky__irradiance_8cpp.html#a1a91b4edb94636a5f67a8855bd727785", null ],
+    [ "luminance_weights", "atmosphere__sky__irradiance_8cpp.html#af6d49e27fe427262109d3efa9a90ee10", null ],
+    [ "sample_medium", "atmosphere__sky__irradiance_8cpp.html#a9d8cda331a70b70feb606df55007fa9c", null ],
+    [ "ground_albedo", "atmosphere__sky__irradiance_8cpp.html#aad2110997a16956d170135b00ec6cfc2", null ],
+    [ "irradiance_azimuth_steps", "atmosphere__sky__irradiance_8cpp.html#a484a7fe9fbf5ffed59d1861a6baff627", null ],
+    [ "irradiance_ray_steps", "atmosphere__sky__irradiance_8cpp.html#afde3e0b414d7eff4c8ede7dfb9195142", null ],
+    [ "irradiance_zenith_steps", "atmosphere__sky__irradiance_8cpp.html#aefe4103436b70a71ad2d2031eff29176", null ],
+    [ "mie_anisotropy", "atmosphere__sky__irradiance_8cpp.html#ae6fb2eff247875c36d4c375d4abbadcd", null ],
+    [ "mie_scattering", "atmosphere__sky__irradiance_8cpp.html#a26b1ad54a5f53b1c3734de81c4be92cc", null ],
+    [ "multi_scattering_cosines", "atmosphere__sky__irradiance_8cpp.html#a72e82bbb93475ab8aaca2bfc5760767a", null ],
+    [ "multi_scattering_directions", "atmosphere__sky__irradiance_8cpp.html#af1593475fb8c1934c9d708071ff47e2a", null ],
+    [ "multi_scattering_heights", "atmosphere__sky__irradiance_8cpp.html#ae7ce4ba12eb4d3eda780754b145cc27a", null ],
+    [ "multi_scattering_steps", "atmosphere__sky__irradiance_8cpp.html#a6ad67ec7ceabdcbb4e85563aec126aa3", null ],
+    [ "observer_altitude_km", "atmosphere__sky__irradiance_8cpp.html#a9b83d5049f66554ee9ed074ca54e454d", null ],
+    [ "pi", "atmosphere__sky__irradiance_8cpp.html#a5c4f5b83c3faddf58cd7bc1e7d91c520", null ],
+    [ "ratio_entries", "atmosphere__sky__irradiance_8cpp.html#ad70aa7bad861750b4788984db543995d", null ],
+    [ "sky_irradiance_calibration", "atmosphere__sky__irradiance_8cpp.html#a5607b23f88198f71e90c2f1033ac7f53", null ],
+    [ "transmittance_cosines", "atmosphere__sky__irradiance_8cpp.html#ac7e03c2da5c2c817e1182da730eb058c", null ],
+    [ "transmittance_heights", "atmosphere__sky__irradiance_8cpp.html#abf13f58017f58b30c9fb5f73e70feb1f", null ]
+];

@@ -1,5 +1,6 @@
 var dir_3de505e2b938a09d79ebe2e79ae1ca2f =
 [
+    [ "gi", "dir_86e36f184d4c7a7f4eb386dd3ec5b6a7.html", "dir_86e36f184d4c7a7f4eb386dd3ec5b6a7" ],
     [ "camera.cpp", "meta_2rendering_2camera_8cpp.html", "meta_2rendering_2camera_8cpp" ],
     [ "camera.hpp", "camera_8hpp.html", "camera_8hpp" ],
     [ "font.cpp", "meta_2rendering_2font_8cpp.html", "meta_2rendering_2font_8cpp" ],

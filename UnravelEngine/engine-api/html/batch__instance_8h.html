@@ -116,6 +116,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1instance__vertex__data.html">unravel::instance_vertex_data</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPU-friendly vertex data for instancing.  <a href="structunravel_1_1instance__vertex__data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1velocity__instance__vertex__data.html">unravel::velocity_instance_vertex_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPU instance data for the velocity pass's instanced movers submit: the same world matrix layout the G-buffer instanced path uses (LOD packed in [3][3], consumed as i_data0..3) followed by the previous-frame world matrix (i_data4..7). 128-byte stride; packed only for mover instances, so static batches never pay for it.  <a href="structunravel_1_1velocity__instance__vertex__data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1batch__instance__collection.html">unravel::batch_instance_collection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of batch instances with utilities.  <a href="classunravel_1_1batch__instance__collection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

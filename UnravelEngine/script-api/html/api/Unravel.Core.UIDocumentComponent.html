@@ -207,14 +207,47 @@ Each component owns its own RmlUi context and document (context-per-document).</
 
 
 
+  <a id="Unravel_Core_UIDocumentComponent_document_" data-uid="Unravel.Core.UIDocumentComponent.document*"></a>
+
+  <h3 id="Unravel_Core_UIDocumentComponent_document" data-uid="Unravel.Core.UIDocumentComponent.document">
+  document
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The loaded document, or null while none is loaded (or after <a class="xref" href="Unravel.Core.UIDocumentComponent.html#Unravel_Core_UIDocumentComponent_Close">Close()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIDocument document { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIDocument.html">UIDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIDocumentComponent_enabled_" data-uid="Unravel.Core.UIDocumentComponent.enabled*"></a>
 
   <h3 id="Unravel_Core_UIDocumentComponent_enabled" data-uid="Unravel.Core.UIDocumentComponent.enabled">
   enabled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the UI document is currently enabled.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the UI document is currently enabled.
+Same as <a class="xref" href="Unravel.Core.UIDocumentComponent.html#Unravel_Core_UIDocumentComponent_visible">visible</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -277,7 +310,7 @@ Each component owns its own RmlUi context and document (context-per-document).</
 
   <h3 id="Unravel_Core_UIDocumentComponent_title" data-uid="Unravel.Core.UIDocumentComponent.title">
   title
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the title of the UI document.</p>
@@ -306,6 +339,39 @@ Each component owns its own RmlUi context and document (context-per-document).</
 
 
 
+  <a id="Unravel_Core_UIDocumentComponent_visible_" data-uid="Unravel.Core.UIDocumentComponent.visible*"></a>
+
+  <h3 id="Unravel_Core_UIDocumentComponent_visible" data-uid="Unravel.Core.UIDocumentComponent.visible">
+  visible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets whether the document is shown. A hidden document keeps its state, its
+elements and its event subscriptions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool visible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -314,12 +380,11 @@ Each component owns its own RmlUi context and document (context-per-document).</
 
   <h3 id="Unravel_Core_UIDocumentComponent_Close" data-uid="Unravel.Core.UIDocumentComponent.Close">
   Close()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Closes the UI document, unloading it from memory.
-Invalidates cached wrappers and clears UI event subscriptions for this entity.
-The document will need to be reloaded before it can be used again.</p>
+  <div class="markdown level1 summary"><p>Closes the UI document: it disappears at once and stays closed until <a class="xref" href="Unravel.Core.UIDocumentComponent.html#Unravel_Core_UIDocumentComponent_Reload">Reload()</a>.
+Invalidates cached wrappers and clears UI event subscriptions for this entity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -343,7 +408,7 @@ The document will need to be reloaded before it can be used again.</p>
 
   <h3 id="Unravel_Core_UIDocumentComponent_GetDocument" data-uid="Unravel.Core.UIDocumentComponent.GetDocument">
   GetDocument()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a cached wrapper for this UI document for direct access.
@@ -366,6 +431,117 @@ Repeated calls return the same instance while the native document remains valid.
 
 
 
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDocumentComponent_GetModel_" data-uid="Unravel.Core.UIDocumentComponent.GetModel*"></a>
+
+  <h3 id="Unravel_Core_UIDocumentComponent_GetModel_System_String_" data-uid="Unravel.Core.UIDocumentComponent.GetModel(System.String)">
+  GetModel(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The data model the document declares with <code>data-model=&quot;name&quot;</code>. It exists before the
+document loads and lives across reloads, so bind it once (in OnCreate or OnStart).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIDataModel GetModel(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The model name in the markup.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIDataModel.html">UIDataModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDocumentComponent_Reload_" data-uid="Unravel.Core.UIDocumentComponent.Reload*"></a>
+
+  <h3 id="Unravel_Core_UIDocumentComponent_Reload" data-uid="Unravel.Core.UIDocumentComponent.Reload">
+  Reload()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the document again from its asset, now: a fresh document in its initial state.
+Also opens a closed document. Wrappers and subscriptions of the old document end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Reload()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the document loaded.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Unravel_Core_UIDocumentComponent_documentLoaded" data-uid="Unravel.Core.UIDocumentComponent.documentLoaded">
+  documentLoaded
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/UIDocumentComponent.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Raised at the start of a frame after a document is loaded: for the current document
+right after subscribing, then after every reload (<a class="xref" href="Unravel.Core.UIDocumentComponent.html#Unravel_Core_UIDocumentComponent_Reload">Reload()</a>, an edit of the
+document asset). Element references from an earlier document are invalid by then;
+fetch them again here. Ends with the subscribing script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;UIDocument&gt; documentLoaded</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Unravel.Core.UIDocument.html">UIDocument</a>&gt;</dt>
+    <dd></dd>
+  </dl>
 
 
 

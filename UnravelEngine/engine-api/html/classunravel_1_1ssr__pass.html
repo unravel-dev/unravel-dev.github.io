@@ -109,7 +109,7 @@ $(function(){initNavTree('classunravel_1_1ssr__pass.html',''); initResizable(tru
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings.html">fidelityfx_ssr_settings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FidelityFX SSR settings.  <a href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hi-Z traced SSR settings.  <a href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,28 +119,27 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4d5cdc6b920d7598ba9033b1a19c8056" id="r_a4d5cdc6b920d7598ba9033b1a19c8056"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d5cdc6b920d7598ba9033b1a19c8056">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a4d5cdc6b920d7598ba9033b1a19c8056" id="r_a4d5cdc6b920d7598ba9033b1a19c8056"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d5cdc6b920d7598ba9033b1a19c8056">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="memdesc:a4d5cdc6b920d7598ba9033b1a19c8056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called once (after bgfx::init() and after <code><a class="el" href="classunravel_1_1asset__manager.html" title="Manages assets, including loading, unloading, and storage.">asset_manager</a></code> is registered in context).  <br /></td></tr>
 <tr class="separator:a4d5cdc6b920d7598ba9033b1a19c8056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5008d470d64eff64c0c932195d158a6a" id="r_a5008d470d64eff64c0c932195d158a6a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5008d470d64eff64c0c932195d158a6a">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
+<tr class="memitem:a5008d470d64eff64c0c932195d158a6a" id="r_a5008d470d64eff64c0c932195d158a6a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5008d470d64eff64c0c932195d158a6a">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
 <tr class="memdesc:a5008d470d64eff64c0c932195d158a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the SSR pass. Returns the actual output framebuffer.  <br /></td></tr>
 <tr class="separator:a5008d470d64eff64c0c932195d158a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afec7510081a9b23a54b7ed15c99ad0ba" id="r_afec7510081a9b23a54b7ed15c99ad0ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afec7510081a9b23a54b7ed15c99ad0ba">release_resources</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview)</td></tr>
 <tr class="memdesc:afec7510081a9b23a54b7ed15c99ad0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases all GPU resources owned by this pass from the render_view.  <br /></td></tr>
 <tr class="separator:afec7510081a9b23a54b7ed15c99ad0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21302f60a8b5a3c830d2269870863848" id="r_a21302f60a8b5a3c830d2269870863848"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21302f60a8b5a3c830d2269870863848">run_fidelityfx</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
-<tr class="memdesc:a21302f60a8b5a3c830d2269870863848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the FidelityFX SSR pass. Returns the actual output framebuffer.  <br /></td></tr>
+<tr class="memitem:a21302f60a8b5a3c830d2269870863848" id="r_a21302f60a8b5a3c830d2269870863848"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21302f60a8b5a3c830d2269870863848">run_fidelityfx</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
+<tr class="memdesc:a21302f60a8b5a3c830d2269870863848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the Hi-Z traced SSR pass. Returns the actual output framebuffer.  <br /></td></tr>
 <tr class="separator:a21302f60a8b5a3c830d2269870863848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2544fd8351467fdacb0cf2021537ba50" id="r_a2544fd8351467fdacb0cf2021537ba50"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2544fd8351467fdacb0cf2021537ba50">run_fidelityfx_three_pass</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
+<tr class="memitem:a2544fd8351467fdacb0cf2021537ba50" id="r_a2544fd8351467fdacb0cf2021537ba50"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2544fd8351467fdacb0cf2021537ba50">run_fidelityfx_three_pass</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
 <tr class="memdesc:a2544fd8351467fdacb0cf2021537ba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the three-pass SSR pipeline (trace, temporal resolve, composite)  <br /></td></tr>
 <tr class="separator:a2544fd8351467fdacb0cf2021537ba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0400a6843dff84346126f18d563ad877" id="r_a0400a6843dff84346126f18d563ad877"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0400a6843dff84346126f18d563ad877">run_ssr_trace</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
+<tr class="memitem:a0400a6843dff84346126f18d563ad877" id="r_a0400a6843dff84346126f18d563ad877"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0400a6843dff84346126f18d563ad877">run_ssr_trace</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
 <tr class="memdesc:a0400a6843dff84346126f18d563ad877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the SSR trace pass only. Returns SSR current frame buffer.  <br /></td></tr>
 <tr class="separator:a0400a6843dff84346126f18d563ad877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb4edca5dee25f27b5cd94a7b393b4e7" id="r_adb4edca5dee25f27b5cd94a7b393b4e7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb4edca5dee25f27b5cd94a7b393b4e7">run_temporal_resolve</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;ssr_curr, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;g_buffer, const <a class="el" href="classunravel_1_1camera.html">camera</a> *cam, const <a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings.html">fidelityfx_ssr_settings</a> &amp;<a class="el" href="structunravel_1_1settings.html">settings</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
-<tr class="memdesc:adb4edca5dee25f27b5cd94a7b393b4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the temporal resolve pass. Returns updated SSR history buffer.  <br /></td></tr>
-<tr class="separator:adb4edca5dee25f27b5cd94a7b393b4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b5af75d43eae93543dcee13eb9a0aa1" id="r_a2b5af75d43eae93543dcee13eb9a0aa1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b5af75d43eae93543dcee13eb9a0aa1">run_composite</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;ssr_history, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;ssr_curr, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;probe_buffer, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;g_buffer, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;output) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
+<tr class="memitem:a0cd6888bd8bd25054b3b6eb4da74294f" id="r_a0cd6888bd8bd25054b3b6eb4da74294f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cd6888bd8bd25054b3b6eb4da74294f">run_temporal_resolve</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;ssr_curr, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> &amp;curr_hit_t, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;g_buffer, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> &amp;<a class="el" href="namespaceunravel.html#acec4ffb55357d08580b8bf2a1057532faac1a453d0cdc1f19d9479ccfaa8b082c">velocity</a>, bool velocity_movers_recent, const <a class="el" href="classunravel_1_1camera.html">camera</a> *cam, const <a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings.html">fidelityfx_ssr_settings</a> &amp;<a class="el" href="structunravel_1_1settings.html">settings</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
+<tr class="separator:a0cd6888bd8bd25054b3b6eb4da74294f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5af75d43eae93543dcee13eb9a0aa1" id="r_a2b5af75d43eae93543dcee13eb9a0aa1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b5af75d43eae93543dcee13eb9a0aa1">run_composite</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;ssr_history, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;ssr_curr, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;probe_buffer, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;g_buffer, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;<a class="el" href="deploy__pipeline_8cpp.html#a17465b91dc92f2a7d820bf1fc7441ac0">output</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
 <tr class="memdesc:a2b5af75d43eae93543dcee13eb9a0aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the composite pass. Returns final blended output.  <br /></td></tr>
 <tr class="separator:a2b5af75d43eae93543dcee13eb9a0aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea062aaa256d5cd07f496a47eb7c5a0" id="r_a0ea062aaa256d5cd07f496a47eb7c5a0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ea062aaa256d5cd07f496a47eb7c5a0">generate_blurred_color_buffer</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> &amp;input_color, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;g_buffer, const <a class="el" href="structunravel_1_1ssr__pass_1_1fidelityfx__ssr__settings.html">fidelityfx_ssr_settings</a> &amp;<a class="el" href="structunravel_1_1settings.html">settings</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
@@ -152,7 +151,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00015">15</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8h_source.html#l00016">16</a> of file <a class="el" href="ssr__pass_8h_source.html">ssr_pass.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0ea062aaa256d5cd07f496a47eb7c5a0" name="a0ea062aaa256d5cd07f496a47eb7c5a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ea062aaa256d5cd07f496a47eb7c5a0">&#9670;&#160;</a></span>generate_blurred_color_buffer()</h2>
@@ -185,7 +184,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Generates blurred color buffer with mip chain for cone tracing. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00204">204</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00183">183</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -227,7 +226,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Releases all GPU resources owned by this pass from the render_view. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00656">656</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00673">673</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -252,7 +251,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes the SSR pass. Returns the actual output framebuffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00185">185</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00162">162</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -297,7 +296,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes the composite pass. Returns final blended output. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00610">610</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00622">622</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -320,9 +319,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Executes the FidelityFX SSR pass. Returns the actual output framebuffer. </p>
+<p>Executes the Hi-Z traced SSR pass. Returns the actual output framebuffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00197">197</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00176">176</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -347,7 +346,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes the three-pass SSR pipeline (trace, temporal resolve, composite) </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00372">372</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00336">336</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -382,7 +381,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes spatial denoise on SSR result before temporal resolve. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00315">315</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00279">279</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -407,12 +406,12 @@ Public Member Functions</h2></td></tr>
 
 <p>Executes the SSR trace pass only. Returns SSR current frame buffer. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00413">413</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00385">385</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>
-<a id="adb4edca5dee25f27b5cd94a7b393b4e7" name="adb4edca5dee25f27b5cd94a7b393b4e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb4edca5dee25f27b5cd94a7b393b4e7">&#9670;&#160;</a></span>run_temporal_resolve()</h2>
+<a id="a0cd6888bd8bd25054b3b6eb4da74294f" name="a0cd6888bd8bd25054b3b6eb4da74294f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd6888bd8bd25054b3b6eb4da74294f">&#9670;&#160;</a></span>run_temporal_resolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -430,7 +429,22 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>curr_hit_t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>g_buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>velocity_movers_recent</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -444,10 +458,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Executes the temporal resolve pass. Returns updated SSR history buffer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">velocity</td><td>This frame's velocity buffer; null = legacy matrix reprojection. </td></tr>
+    <tr><td class="paramname">curr_hit_t</td><td>The trace's mean hit-distance target (SSR_CURR attachment 1) - always the TRACE's own output, even when the colour input was spatially denoised: hit distance carries validation data, not an image to filter. </td></tr>
+    <tr><td class="paramname">velocity_movers_recent</td><td>The content-lag window cap (see <a class="el" href="structunravel_1_1ssr__pass_1_1run__params.html">run_params</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Executes the temporal resolve pass. Returns updated SSR history buffer. </p>
-
-<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00518">518</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssr__pass_8cpp_source.html#l00494">494</a> of file <a class="el" href="ssr__pass_8cpp_source.html">ssr_pass.cpp</a>.</p>
 
 </div>
 </div>

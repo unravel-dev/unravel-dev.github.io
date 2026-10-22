@@ -97,80 +97,49 @@ $(function(){initNavTree('classfs_1_1watcher__fallback_1_1directory__listener.ht
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classfs_1_1watcher__fallback_1_1directory__listener-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fs::watcher_fallback::directory_listener Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Scans one watched root and decides when.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfs_1_1watcher__fallback_1_1directory__listener_1_1observed__changes.html">observed_changes</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a15578622c73a5e9083416d8896a8fe4b" id="r_a15578622c73a5e9083416d8896a8fe4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15578622c73a5e9083416d8896a8fe4b">directory_listener</a> (const fs::path &amp;path, bool recursive, watcher::clock_t::duration poll_interval)</td></tr>
-<tr class="separator:a15578622c73a5e9083416d8896a8fe4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0fabbca93225a5e2701a2a7748c3fe" id="r_abe0fabbca93225a5e2701a2a7748c3fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe0fabbca93225a5e2701a2a7748c3fe">directory_listener</a> (const fs::path &amp;<a class="el" href="rig__system_8cpp.html#a255c1e78c1e79509170e16c3c7e032ff">root</a>, bool recursive, clock_type::duration poll_interval, std::function&lt; void()&gt; wake)</td></tr>
+<tr class="separator:abe0fabbca93225a5e2701a2a7748c3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50624a3bd5f5f4266ed0097c43a69b25" id="r_a50624a3bd5f5f4266ed0097c43a69b25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50624a3bd5f5f4266ed0097c43a69b25">~directory_listener</a> ()</td></tr>
+<tr class="separator:a50624a3bd5f5f4266ed0097c43a69b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3760dd56c42c6da36df9d5a356558caa" id="r_a3760dd56c42c6da36df9d5a356558caa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3760dd56c42c6da36df9d5a356558caa">directory_listener</a> (const <a class="el" href="classfs_1_1watcher__fallback_1_1directory__listener.html">directory_listener</a> &amp;)=delete</td></tr>
+<tr class="separator:a3760dd56c42c6da36df9d5a356558caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5bc512e71dcc7b10c0a7bbe84e92084" id="r_ab5bc512e71dcc7b10c0a7bbe84e92084"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5bc512e71dcc7b10c0a7bbe84e92084">operator=</a> (const <a class="el" href="classfs_1_1watcher__fallback_1_1directory__listener.html">directory_listener</a> &amp;) -&gt; <a class="el" href="classfs_1_1watcher__fallback_1_1directory__listener.html">directory_listener</a> &amp;=delete</td></tr>
+<tr class="separator:ab5bc512e71dcc7b10c0a7bbe84e92084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b706f53e0a8a31acd26f251714e24db" id="r_a0b706f53e0a8a31acd26f251714e24db"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b706f53e0a8a31acd26f251714e24db">get_path</a> () const -&gt; const fs::path &amp;</td></tr>
+<tr class="separator:a0b706f53e0a8a31acd26f251714e24db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e329eabd5c6f2e17d9916d2ac99ae16" id="r_a4e329eabd5c6f2e17d9916d2ac99ae16"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e329eabd5c6f2e17d9916d2ac99ae16">is_recursive</a> () const -&gt; bool</td></tr>
+<tr class="separator:a4e329eabd5c6f2e17d9916d2ac99ae16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c90c42182b80c389a85cfd0ad9e7404" id="r_a0c90c42182b80c389a85cfd0ad9e7404"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c90c42182b80c389a85cfd0ad9e7404">pause</a> ()</td></tr>
 <tr class="separator:a0c90c42182b80c389a85cfd0ad9e7404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79e37c4c1b12f2f0339c55e10674acdd" id="r_a79e37c4c1b12f2f0339c55e10674acdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79e37c4c1b12f2f0339c55e10674acdd">resume</a> ()</td></tr>
 <tr class="separator:a79e37c4c1b12f2f0339c55e10674acdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8769eb0aec0f0e9f5b35a9856ed20a20" id="r_a8769eb0aec0f0e9f5b35a9856ed20a20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8769eb0aec0f0e9f5b35a9856ed20a20">request_immediate_poll</a> ()</td></tr>
-<tr class="separator:a8769eb0aec0f0e9f5b35a9856ed20a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af225ea13629575e1e499e9ec039bc32b" id="r_af225ea13629575e1e499e9ec039bc32b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af225ea13629575e1e499e9ec039bc32b">watch</a> ()</td></tr>
-<tr class="separator:af225ea13629575e1e499e9ec039bc32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa022e48b8656c22c864594261ec8067e" id="r_aa022e48b8656c22c864594261ec8067e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa022e48b8656c22c864594261ec8067e">poll_entry</a> (const fs::directory_entry &amp;entry, <a class="el" href="structfs_1_1watcher__fallback_1_1directory__listener_1_1observed__changes.html">observed_changes</a> &amp;changes)</td></tr>
-<tr class="separator:aa022e48b8656c22c864594261ec8067e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b706f53e0a8a31acd26f251714e24db" id="r_a0b706f53e0a8a31acd26f251714e24db"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b706f53e0a8a31acd26f251714e24db">get_path</a> () const -&gt; const fs::path &amp;</td></tr>
-<tr class="separator:a0b706f53e0a8a31acd26f251714e24db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0e5de01cb5a8b3537ea75b13e739721" id="r_aa0e5de01cb5a8b3537ea75b13e739721"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0e5de01cb5a8b3537ea75b13e739721">get_recursive</a> () const -&gt; bool</td></tr>
-<tr class="separator:aa0e5de01cb5a8b3537ea75b13e739721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a539bb2f17b2ecba68fcc1ce1b0d7d293" id="r_a539bb2f17b2ecba68fcc1ce1b0d7d293"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a539bb2f17b2ecba68fcc1ce1b0d7d293">get_original_path</a> (const fs::path &amp;old_path, const fs::path &amp;renamed_path, const fs::path &amp;new_path) -&gt; fs::path</td></tr>
-<tr class="separator:a539bb2f17b2ecba68fcc1ce1b0d7d293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2db59c47e1b1870943bf655db3f933d" id="r_ad2db59c47e1b1870943bf655db3f933d"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2db59c47e1b1870943bf655db3f933d">check_if_same_extension</a> (const fs::path &amp;p1, const fs::path &amp;p2) -&gt; bool</td></tr>
-<tr class="separator:ad2db59c47e1b1870943bf655db3f933d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac43050c19f114d32cc4621a589d36bb5" id="r_ac43050c19f114d32cc4621a589d36bb5"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac43050c19f114d32cc4621a589d36bb5">check_if_parent_dir_was_renamed</a> (const std::vector&lt; size_t &gt; &amp;renamed_dirs, const std::vector&lt; <a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &gt; &amp;<a class="el" href="gpu__frame__stats__widgets_8cpp.html#ad84b1cc98c280ddccebf713159edb5c1">entries</a>, <a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &amp;e) -&gt; bool</td></tr>
-<tr class="separator:ac43050c19f114d32cc4621a589d36bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27821f2512b6c7932576f10b41f0abfb" id="r_a27821f2512b6c7932576f10b41f0abfb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27821f2512b6c7932576f10b41f0abfb">remove_missing_candidate</a> (const std::string &amp;key, uintmax_t <a class="el" href="structsize.html">size</a>, std::unordered_map&lt; uintmax_t, std::vector&lt; std::string &gt; &gt; &amp;missing_by_size)</td></tr>
-<tr class="separator:a27821f2512b6c7932576f10b41f0abfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a505c4adda6e28b0058b2380cb9adc04d" id="r_a505c4adda6e28b0058b2380cb9adc04d"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
-<tr class="memitem:a505c4adda6e28b0058b2380cb9adc04d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a505c4adda6e28b0058b2380cb9adc04d">collect_missing_entries</a> (const Container &amp;old_entries, const std::unordered_set&lt; std::string &gt; &amp;seen_keys, std::unordered_map&lt; uintmax_t, std::vector&lt; std::string &gt; &gt; &amp;missing_by_size)</td></tr>
-<tr class="separator:a505c4adda6e28b0058b2380cb9adc04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2537213cdd2738ec1066471ed6825a5b" id="r_a2537213cdd2738ec1066471ed6825a5b"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
-<tr class="memitem:a2537213cdd2738ec1066471ed6825a5b"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2537213cdd2738ec1066471ed6825a5b">try_match_rename</a> (<a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &amp;e, Container &amp;old_entries, std::unordered_map&lt; uintmax_t, std::vector&lt; std::string &gt; &gt; &amp;missing_by_size) -&gt; bool</td></tr>
-<tr class="separator:a2537213cdd2738ec1066471ed6825a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a005c7cb9381cea30d190360b02bf5f40" id="r_a005c7cb9381cea30d190360b02bf5f40"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
-<tr class="memitem:a005c7cb9381cea30d190360b02bf5f40"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a005c7cb9381cea30d190360b02bf5f40">emit_remaining_removed</a> (std::vector&lt; <a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &gt; &amp;<a class="el" href="gpu__frame__stats__widgets_8cpp.html#ad84b1cc98c280ddccebf713159edb5c1">entries</a>, Container &amp;old_entries, std::unordered_map&lt; uintmax_t, std::vector&lt; std::string &gt; &gt; &amp;missing_by_size)</td></tr>
-<tr class="separator:a005c7cb9381cea30d190360b02bf5f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a860d28363d5ae3336fa49e2479b1e432" id="r_a860d28363d5ae3336fa49e2479b1e432"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
-<tr class="memitem:a860d28363d5ae3336fa49e2479b1e432"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a860d28363d5ae3336fa49e2479b1e432">process_modifications</a> (Container &amp;old_entries, <a class="el" href="structfs_1_1watcher__fallback_1_1directory__listener_1_1observed__changes.html">observed_changes</a> &amp;changes, const std::unordered_set&lt; std::string &gt; &amp;seen_keys, const fs::path &amp;listener_root)</td></tr>
-<tr class="separator:a860d28363d5ae3336fa49e2479b1e432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a8e2653ce91f1ea1b2b8a4de5d7d9db58" id="r_a8e2653ce91f1ea1b2b8a4de5d7d9db58"><td class="memItemLeft" align="right" valign="top">hpp::event&lt; void(const std::vector&lt; <a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &gt; &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e2653ce91f1ea1b2b8a4de5d7d9db58">on_changes</a></td></tr>
-<tr class="memdesc:a8e2653ce91f1ea1b2b8a4de5d7d9db58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event that emits changes to all connected impls.  <br /></td></tr>
-<tr class="separator:a8e2653ce91f1ea1b2b8a4de5d7d9db58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:afdb91273d4b8d368eafe048c6b0d5ba0" id="r_afdb91273d4b8d368eafe048c6b0d5ba0"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdb91273d4b8d368eafe048c6b0d5ba0">watcher_fallback</a></td></tr>
-<tr class="separator:afdb91273d4b8d368eafe048c6b0d5ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590d59434b8441510e9c311d76ae625f" id="r_a590d59434b8441510e9c311d76ae625f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a590d59434b8441510e9c311d76ae625f">request_immediate_scan</a> ()</td></tr>
+<tr class="separator:a590d59434b8441510e9c311d76ae625f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3d55f09c08af6ce2b391415508a70a" id="r_a5c3d55f09c08af6ce2b391415508a70a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c3d55f09c08af6ce2b391415508a70a">get_due_time</a> (time_point now) -&gt; time_point</td></tr>
+<tr class="separator:a5c3d55f09c08af6ce2b391415508a70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebaed19b6b0d12cdba288be6282a9b0" id="r_a3ebaed19b6b0d12cdba288be6282a9b0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ebaed19b6b0d12cdba288be6282a9b0">poll</a> (time_point now) -&gt; std::vector&lt; <a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &gt;</td></tr>
+<tr class="memdesc:a3ebaed19b6b0d12cdba288be6282a9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans and returns what to report; empty while paused or when the scan was thrown away.  <br /></td></tr>
+<tr class="separator:a3ebaed19b6b0d12cdba288be6282a9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00029">29</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+<div class="textblock"><p>Scans one watched root and decides when. </p>
+<p>A scan runs SETTLE_DELAY after the OS last reported a change, at the latest one poll interval after the first unscanned one, when a held entry is due, and otherwise once per poll interval. A change reported while a scan runs leaves the listener waiting for another scan; the result is still reported, as the holds of change_tracker pair a rename the scan saw only half of. That matters because a listing refreshes stale folder timestamps, which NTFS reports as a change. A walk that stopped on an error is thrown away and repeated once the tree is quiet, unless the listener has waited a whole poll interval already. Everything except the atomics is touched by the polling thread only, after construction. </p>
+
+<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00706">706</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a15578622c73a5e9083416d8896a8fe4b" name="a15578622c73a5e9083416d8896a8fe4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15578622c73a5e9083416d8896a8fe4b">&#9670;&#160;</a></span>directory_listener()</h2>
+<a id="abe0fabbca93225a5e2701a2a7748c3fe" name="abe0fabbca93225a5e2701a2a7748c3fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe0fabbca93225a5e2701a2a7748c3fe">&#9670;&#160;</a></span>directory_listener() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +150,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">fs::watcher_fallback::directory_listener::directory_listener </td>
           <td>(</td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -191,7 +160,12 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">watcher::clock_t::duration</td>          <td class="paramname"><span class="paramname"><em>poll_interval</em></span>&#160;)</td>
+          <td class="paramtype">clock_type::duration</td>          <td class="paramname"><span class="paramname"><em>poll_interval</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;</td>          <td class="paramname"><span class="paramname"><em>wake</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -201,13 +175,65 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00092">92</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00709">709</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a50624a3bd5f5f4266ed0097c43a69b25" name="a50624a3bd5f5f4266ed0097c43a69b25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50624a3bd5f5f4266ed0097c43a69b25">&#9670;&#160;</a></span>~directory_listener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">fs::watcher_fallback::directory_listener::~directory_listener </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00725">725</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3760dd56c42c6da36df9d5a356558caa" name="a3760dd56c42c6da36df9d5a356558caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3760dd56c42c6da36df9d5a356558caa">&#9670;&#160;</a></span>directory_listener() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">fs::watcher_fallback::directory_listener::directory_listener </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfs_1_1watcher__fallback_1_1directory__listener.html">directory_listener</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac43050c19f114d32cc4621a589d36bb5" name="ac43050c19f114d32cc4621a589d36bb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac43050c19f114d32cc4621a589d36bb5">&#9670;&#160;</a></span>check_if_parent_dir_was_renamed()</h2>
+<a id="a5c3d55f09c08af6ce2b391415508a70a" name="a5c3d55f09c08af6ce2b391415508a70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3d55f09c08af6ce2b391415508a70a">&#9670;&#160;</a></span>get_due_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,175 +242,21 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static auto fs::watcher_fallback::directory_listener::check_if_parent_dir_was_renamed </td>
+          <td class="memname">auto fs::watcher_fallback::directory_listener::get_due_time </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>renamed_dirs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>entries</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>e</em></span>&#160;) -&gt; bool
+          <td class="paramtype">time_point</td>          <td class="paramname"><span class="paramname"><em>now</em></span></td><td>)</td>
+          <td> -&gt; time_point
     </td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00223">223</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ad2db59c47e1b1870943bf655db3f933d" name="ad2db59c47e1b1870943bf655db3f933d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2db59c47e1b1870943bf655db3f933d">&#9670;&#160;</a></span>check_if_same_extension()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto fs::watcher_fallback::directory_listener::check_if_same_extension </td>
-          <td>(</td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>p1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>p2</em></span>&#160;) -&gt; bool
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00206">206</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a505c4adda6e28b0058b2380cb9adc04d" name="a505c4adda6e28b0058b2380cb9adc04d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a505c4adda6e28b0058b2380cb9adc04d">&#9670;&#160;</a></span>collect_missing_entries()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void fs::watcher_fallback::directory_listener::collect_missing_entries </td>
-          <td>(</td>
-          <td class="paramtype">const Container &amp;</td>          <td class="paramname"><span class="paramname"><em>old_entries</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::unordered_set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>seen_keys</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::unordered_map&lt; uintmax_t, std::vector&lt; std::string &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>missing_by_size</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00270">270</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a005c7cb9381cea30d190360b02bf5f40" name="a005c7cb9381cea30d190360b02bf5f40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a005c7cb9381cea30d190360b02bf5f40">&#9670;&#160;</a></span>emit_remaining_removed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void fs::watcher_fallback::directory_listener::emit_remaining_removed </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>entries</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Container &amp;</td>          <td class="paramname"><span class="paramname"><em>old_entries</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::unordered_map&lt; uintmax_t, std::vector&lt; std::string &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>missing_by_size</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00334">334</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a539bb2f17b2ecba68fcc1ce1b0d7d293" name="a539bb2f17b2ecba68fcc1ce1b0d7d293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a539bb2f17b2ecba68fcc1ce1b0d7d293">&#9670;&#160;</a></span>get_original_path()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto fs::watcher_fallback::directory_listener::get_original_path </td>
-          <td>(</td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>old_path</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>renamed_path</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>new_path</em></span>&#160;) -&gt; fs::path
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00199">199</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00758">758</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
 
 </div>
 </div>
@@ -412,12 +284,12 @@ template&lt;typename Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00460">460</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00733">733</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aa0e5de01cb5a8b3537ea75b13e739721" name="aa0e5de01cb5a8b3537ea75b13e739721"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0e5de01cb5a8b3537ea75b13e739721">&#9670;&#160;</a></span>get_recursive()</h2>
+<a id="a4e329eabd5c6f2e17d9916d2ac99ae16" name="a4e329eabd5c6f2e17d9916d2ac99ae16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e329eabd5c6f2e17d9916d2ac99ae16">&#9670;&#160;</a></span>is_recursive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,7 +298,7 @@ template&lt;typename Container &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto fs::watcher_fallback::directory_listener::get_recursive </td>
+          <td class="memname">auto fs::watcher_fallback::directory_listener::is_recursive </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const -&gt; bool
@@ -440,7 +312,32 @@ template&lt;typename Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00465">465</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00738">738</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab5bc512e71dcc7b10c0a7bbe84e92084" name="ab5bc512e71dcc7b10c0a7bbe84e92084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5bc512e71dcc7b10c0a7bbe84e92084">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto fs::watcher_fallback::directory_listener::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfs_1_1watcher__fallback_1_1directory__listener.html">directory_listener</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt;  <a class="el" href="classfs_1_1watcher__fallback_1_1directory__listener.html">directory_listener</a> &amp;=delete</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -467,12 +364,12 @@ template&lt;typename Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00119">119</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00743">743</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aa022e48b8656c22c864594261ec8067e" name="aa022e48b8656c22c864594261ec8067e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa022e48b8656c22c864594261ec8067e">&#9670;&#160;</a></span>poll_entry()</h2>
+<a id="a3ebaed19b6b0d12cdba288be6282a9b0" name="a3ebaed19b6b0d12cdba288be6282a9b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ebaed19b6b0d12cdba288be6282a9b0">&#9670;&#160;</a></span>poll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,14 +378,11 @@ template&lt;typename Container &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void fs::watcher_fallback::directory_listener::poll_entry </td>
+          <td class="memname">auto fs::watcher_fallback::directory_listener::poll </td>
           <td>(</td>
-          <td class="paramtype">const fs::directory_entry &amp;</td>          <td class="paramname"><span class="paramname"><em>entry</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structfs_1_1watcher__fallback_1_1directory__listener_1_1observed__changes.html">observed_changes</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>changes</em></span>&#160;)</td>
+          <td class="paramtype">time_point</td>          <td class="paramname"><span class="paramname"><em>now</em></span></td><td>)</td>
+          <td> -&gt; std::vector&lt;<a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a>&gt;
+    </td>
         </tr>
       </table>
   </td>
@@ -498,55 +392,14 @@ template&lt;typename Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00403">403</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+<p>Scans and returns what to report; empty while paused or when the scan was thrown away. </p>
+
+<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00781">781</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a860d28363d5ae3336fa49e2479b1e432" name="a860d28363d5ae3336fa49e2479b1e432"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a860d28363d5ae3336fa49e2479b1e432">&#9670;&#160;</a></span>process_modifications()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void fs::watcher_fallback::directory_listener::process_modifications </td>
-          <td>(</td>
-          <td class="paramtype">Container &amp;</td>          <td class="paramname"><span class="paramname"><em>old_entries</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structfs_1_1watcher__fallback_1_1directory__listener_1_1observed__changes.html">observed_changes</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>changes</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::unordered_set&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>seen_keys</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>listener_root</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00357">357</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a27821f2512b6c7932576f10b41f0abfb" name="a27821f2512b6c7932576f10b41f0abfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27821f2512b6c7932576f10b41f0abfb">&#9670;&#160;</a></span>remove_missing_candidate()</h2>
+<a id="a590d59434b8441510e9c311d76ae625f" name="a590d59434b8441510e9c311d76ae625f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590d59434b8441510e9c311d76ae625f">&#9670;&#160;</a></span>request_immediate_scan()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,43 +408,7 @@ template&lt;typename Container &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void fs::watcher_fallback::directory_listener::remove_missing_candidate </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uintmax_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::unordered_map&lt; uintmax_t, std::vector&lt; std::string &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>missing_by_size</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00243">243</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a8769eb0aec0f0e9f5b35a9856ed20a20" name="a8769eb0aec0f0e9f5b35a9856ed20a20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8769eb0aec0f0e9f5b35a9856ed20a20">&#9670;&#160;</a></span>request_immediate_poll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fs::watcher_fallback::directory_listener::request_immediate_poll </td>
+          <td class="memname">void fs::watcher_fallback::directory_listener::request_immediate_scan </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -604,7 +421,7 @@ template&lt;typename Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00129">129</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00753">753</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
 
 </div>
 </div>
@@ -631,117 +448,7 @@ template&lt;typename Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00124">124</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a2537213cdd2738ec1066471ed6825a5b" name="a2537213cdd2738ec1066471ed6825a5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2537213cdd2738ec1066471ed6825a5b">&#9670;&#160;</a></span>try_match_rename()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto fs::watcher_fallback::directory_listener::try_match_rename </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>e</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Container &amp;</td>          <td class="paramname"><span class="paramname"><em>old_entries</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::unordered_map&lt; uintmax_t, std::vector&lt; std::string &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>missing_by_size</em></span>&#160;) -&gt; bool
-    </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00284">284</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
-
-</div>
-</div>
-<a id="af225ea13629575e1e499e9ec039bc32b" name="af225ea13629575e1e499e9ec039bc32b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af225ea13629575e1e499e9ec039bc32b">&#9670;&#160;</a></span>watch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fs::watcher_fallback::directory_listener::watch </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00142">142</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
-<a id="afdb91273d4b8d368eafe048c6b0d5ba0" name="afdb91273d4b8d368eafe048c6b0d5ba0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdb91273d4b8d368eafe048c6b0d5ba0">&#9670;&#160;</a></span>watcher_fallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classfs_1_1watcher__fallback.html">watcher_fallback</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00471">471</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8e2653ce91f1ea1b2b8a4de5d7d9db58" name="a8e2653ce91f1ea1b2b8a4de5d7d9db58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e2653ce91f1ea1b2b8a4de5d7d9db58">&#9670;&#160;</a></span>on_changes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">hpp::event&lt;void(const std::vector&lt;<a class="el" href="structfs_1_1watcher_1_1entry.html">watcher::entry</a>&gt;&amp;)&gt; fs::watcher_fallback::directory_listener::on_changes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Event that emits changes to all connected impls. </p>
-
-<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00458">458</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="watcher__fallback_8cpp_source.html#l00748">748</a> of file <a class="el" href="watcher__fallback_8cpp_source.html">watcher_fallback.cpp</a>.</p>
 
 </div>
 </div>

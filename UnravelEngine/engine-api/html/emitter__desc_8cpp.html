@@ -97,12 +97,14 @@ $(function(){initNavTree('emitter__desc_8cpp.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">emitter_desc.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="emitter__desc_8h_source.html">emitter_desc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="emitter__runtime_8h_source.html">emitter_runtime.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 </div>
 <p><a href="emitter__desc_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -112,6 +114,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html">unravel::ps_soa</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8cc53049da175311cb1eab1a470471f9" id="r_a8cc53049da175311cb1eab1a470471f9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#a8cc53049da175311cb1eab1a470471f9">unravel::ps_soa::is_constant_curve</a> (const <a class="el" href="namespacemath.html#a7f39174bd3ae0127db9df06cb66f43b9">math::gradient</a>&lt; float &gt; &amp;curve, float <a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">value</a>) -&gt; bool</td></tr>
+<tr class="memdesc:a8cc53049da175311cb1eab1a470471f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <code>curve</code> holds <code>value</code> everywhere.  <br /></td></tr>
+<tr class="separator:a8cc53049da175311cb1eab1a470471f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5d82f5c66771115b8f3a7feed40468" id="r_a4e5d82f5c66771115b8f3a7feed40468"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#a4e5d82f5c66771115b8f3a7feed40468">unravel::ps_soa::is_unit_curve</a> (const <a class="el" href="namespacemath.html#a7f39174bd3ae0127db9df06cb66f43b9">math::gradient</a>&lt; float &gt; &amp;curve) -&gt; bool</td></tr>
+<tr class="memdesc:a4e5d82f5c66771115b8f3a7feed40468"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <code>curve</code> holds 1 everywhere (the speed curve's neutral value).  <br /></td></tr>
+<tr class="separator:a4e5d82f5c66771115b8f3a7feed40468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd3bfdf23eadeca7724858c202d845d" id="r_aefd3bfdf23eadeca7724858c202d845d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#aefd3bfdf23eadeca7724858c202d845d">unravel::ps_soa::is_unit_curve</a> (const <a class="el" href="namespacemath.html#a7f39174bd3ae0127db9df06cb66f43b9">math::gradient</a>&lt; math::vec3 &gt; &amp;curve) -&gt; bool</td></tr>
+<tr class="memdesc:aefd3bfdf23eadeca7724858c202d845d"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when every channel of <code>curve</code> holds 1 everywhere.  <br /></td></tr>
+<tr class="separator:aefd3bfdf23eadeca7724858c202d845d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2635c8fbbcab9a5a836435b60625c5c" id="r_ac2635c8fbbcab9a5a836435b60625c5c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#ac2635c8fbbcab9a5a836435b60625c5c">unravel::ps_soa::make_flat_curve</a> (float <a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">value</a>) -&gt; <a class="el" href="namespacemath.html#a7f39174bd3ae0127db9df06cb66f43b9">math::gradient</a>&lt; float &gt;</td></tr>
+<tr class="memdesc:ac2635c8fbbcab9a5a836435b60625c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A curve that holds <code>value</code> throughout, baked.  <br /></td></tr>
+<tr class="separator:ac2635c8fbbcab9a5a836435b60625c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218726a47a9e1e1163a1a10fd245d546" id="r_a218726a47a9e1e1163a1a10fd245d546"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1ps__soa.html#a218726a47a9e1e1163a1a10fd245d546">unravel::ps_soa::make_unit_axes_curve</a> () -&gt; <a class="el" href="namespacemath.html#a7f39174bd3ae0127db9df06cb66f43b9">math::gradient</a>&lt; math::vec3 &gt;</td></tr>
+<tr class="memdesc:a218726a47a9e1e1163a1a10fd245d546"><td class="mdescLeft">&#160;</td><td class="mdescRight">A curve that holds (1, 1, 1) throughout, baked.  <br /></td></tr>
+<tr class="separator:a218726a47a9e1e1163a1a10fd245d546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

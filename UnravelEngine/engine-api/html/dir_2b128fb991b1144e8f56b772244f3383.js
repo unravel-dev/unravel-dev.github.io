@@ -1,5 +1,7 @@
 var dir_2b128fb991b1144e8f56b772244f3383 =
 [
+    [ "os_cursor.cpp", "os__cursor_8cpp.html", null ],
+    [ "os_cursor.hpp", "os__cursor_8hpp.html", "os__cursor_8hpp" ],
     [ "os_gamepad.cpp", "os__gamepad_8cpp.html", null ],
     [ "os_gamepad.hpp", "os__gamepad_8hpp.html", "os__gamepad_8hpp" ],
     [ "os_input_manager.cpp", "os__input__manager_8cpp.html", null ],
@@ -9,5 +11,7 @@ var dir_2b128fb991b1144e8f56b772244f3383 =
     [ "os_keyboard.cpp", "os__keyboard_8cpp.html", null ],
     [ "os_keyboard.hpp", "os__keyboard_8hpp.html", "os__keyboard_8hpp" ],
     [ "os_mouse.cpp", "os__mouse_8cpp.html", null ],
-    [ "os_mouse.hpp", "os__mouse_8hpp.html", "os__mouse_8hpp" ]
+    [ "os_mouse.hpp", "os__mouse_8hpp.html", "os__mouse_8hpp" ],
+    [ "os_touches.cpp", "os__touches_8cpp.html", null ],
+    [ "os_touches.hpp", "os__touches_8hpp.html", "os__touches_8hpp" ]
 ];

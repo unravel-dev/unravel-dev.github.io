@@ -98,11 +98,16 @@ $(function(){initNavTree('animation_8h.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">animation.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;engine/engine_export.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="animation__humanoid_8h_source.html">engine/animation/animation_humanoid.h</a>&gt;</code><br />
+<code>#include &lt;entt/core/hashed_string.hpp&gt;</code><br />
+<code>#include &lt;hpp/string_view.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="curve_8h_source.html">math/curve.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -120,6 +125,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1root__motion__params.html">unravel::root_motion_params</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__event.html">unravel::animation_event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A named marker on a clip's timeline, reported to scripts when playback crosses it.  <a href="structunravel_1_1animation__event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__curve.html">unravel::animation_curve</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A named float track on a clip's timeline, sampled and blended with the pose.  <a href="structunravel_1_1animation__curve.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__clip.html">unravel::animation_clip</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct representing an animation.  <a href="structunravel_1_1animation__clip.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +139,18 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab228a263cce7aa5c3f69a36317721952" id="r_ab228a263cce7aa5c3f69a36317721952"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ab228a263cce7aa5c3f69a36317721952">unravel::get_name_without_namespace</a> (hpp::string_view <a class="el" href="android__icon_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) -&gt; hpp::string_view</td></tr>
+<tr class="memdesc:ab228a263cce7aa5c3f69a36317721952"><td class="mdescLeft">&#160;</td><td class="mdescRight">A node name without its namespace: the part after the last ':'. Files of one rig family prefix the same bones differently ("mixamorig:Hips", "mixamorig1:Hips").  <br /></td></tr>
+<tr class="separator:ab228a263cce7aa5c3f69a36317721952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49327c75db0b06c4af9dcea36e1c1588" id="r_a49327c75db0b06c4af9dcea36e1c1588"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a49327c75db0b06c4af9dcea36e1c1588">unravel::get_animation_curve_id</a> (hpp::string_view <a class="el" href="android__icon_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) -&gt; uint32_t</td></tr>
+<tr class="memdesc:a49327c75db0b06c4af9dcea36e1c1588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stable identifier of a curve name, used to blend and look up curve values without strings.  <br /></td></tr>
+<tr class="separator:a49327c75db0b06c4af9dcea36e1c1588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98dda1c6c76f7454bcd5bd1642f6572" id="r_af98dda1c6c76f7454bcd5bd1642f6572"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#af98dda1c6c76f7454bcd5bd1642f6572">unravel::resolve_rest_transforms</a> (<a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &amp;<a class="el" href="namespaceunravel.html#a8dd2c638eb13e83a86c9b6d1e4359930af6d8b886335927d46fad323c60335d09">clip</a>)</td></tr>
+<tr class="memdesc:af98dda1c6c76f7454bcd5bd1642f6572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the lazily computed parts of a clip's rest transforms.  <br /></td></tr>
+<tr class="separator:af98dda1c6c76f7454bcd5bd1642f6572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

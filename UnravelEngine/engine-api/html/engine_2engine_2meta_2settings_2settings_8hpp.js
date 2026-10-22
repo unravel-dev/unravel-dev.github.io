@@ -1,5 +1,7 @@
 var engine_2engine_2meta_2settings_2settings_8hpp =
 [
+    [ "load_asset_sections_from_file", "engine_2engine_2meta_2settings_2settings_8hpp.html#a3f6f32286d2d1baa8f63c6647291c83f", null ],
+    [ "load_boot_sections_from_file", "engine_2engine_2meta_2settings_2settings_8hpp.html#a60398a28ee171d4255bbb10175979bc0", null ],
     [ "LOAD_EXTERN", "engine_2engine_2meta_2settings_2settings_8hpp.html#ab6298fa48d38f8d4278254e424fbc199", null ],
     [ "load_from_file", "engine_2engine_2meta_2settings_2settings_8hpp.html#a70c4c7be2764aab29a451ebc17679e24", null ],
     [ "load_from_file_bin", "engine_2engine_2meta_2settings_2settings_8hpp.html#a3cd8b0550018b890949453f3e928c350", null ],

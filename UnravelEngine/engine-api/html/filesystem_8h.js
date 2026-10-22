@@ -6,10 +6,14 @@ var filesystem_8h =
     [ "protocols_t", "filesystem_8h.html#a4676ca1910a45fd6803da5a148eb5c73", null ],
     [ "add_path_protocol", "filesystem_8h.html#a10a48bd8c31bfa0f19f894a2286b69fb", null ],
     [ "convert_to_protocol", "filesystem_8h.html#aff2aaffb73f807254f4008c5cc04f843", null ],
+    [ "convert_to_protocol_lexically", "filesystem_8h.html#a23f8e90c021484a8c129fecd3921d5bc", null ],
     [ "extract_protocol", "filesystem_8h.html#a24bda04c279388759b81acece92f9ec2", null ],
+    [ "from_utf8_string", "filesystem_8h.html#af994213f92660bca085cd5740da4e7ed", null ],
     [ "get_path_protocols", "filesystem_8h.html#abf3863bd92202fc955645a41d4f631c7", null ],
     [ "has_known_protocol", "filesystem_8h.html#a7338b8f84e0fc3f9ababf13ae78fb236", null ],
     [ "is_any_parent_path", "filesystem_8h.html#a9f5d3735c27d6f375c1ff41453298bb9", null ],
+    [ "make_path_key", "filesystem_8h.html#a4850bb5e41b7b9312a4caabdca3037e5", null ],
+    [ "make_relative_if_inside", "filesystem_8h.html#a1a72e72bac98fe3661b274d039647f7a", null ],
     [ "read_stream", "filesystem_8h.html#a6d508a3b97913a55ee8553481fbb29bd", null ],
     [ "read_stream_buffer", "filesystem_8h.html#ae4300e30cb13e13208c69d3fdb037c3e", null ],
     [ "read_stream_buffer_str", "filesystem_8h.html#a336fde3b0bbedf5332db57d87e1b4f9c", null ],
@@ -17,5 +21,7 @@ var filesystem_8h =
     [ "reduce_trailing_extensions", "filesystem_8h.html#a65fd4f863e4dcaf989fcfbdef56fa440", null ],
     [ "replace", "filesystem_8h.html#a9299d6ff5f2945623fa552805a3ca911", null ],
     [ "resolve_protocol", "filesystem_8h.html#a7222224ea5c4cf0a32a373419b90d539", null ],
-    [ "split_until", "filesystem_8h.html#ae340f1b0ff1629ffa84d526dba5aa1a9", null ]
+    [ "resolve_relative_to", "filesystem_8h.html#a5dad60b7e01e1d9b6197ac299a0a5ff6", null ],
+    [ "split_until", "filesystem_8h.html#ae340f1b0ff1629ffa84d526dba5aa1a9", null ],
+    [ "to_utf8_string", "filesystem_8h.html#a0c0170d87a6497772b1af5253a6f89e3", null ]
 ];

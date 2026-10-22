@@ -99,15 +99,22 @@ $(function(){initNavTree('classunravel_1_1auto__exposure__pass.html',''); initRe
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classunravel_1_1auto__exposure__pass-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::auto_exposure_pass Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
+<p>Histogram auto exposure with temporal eye adaptation and local exposure.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1auto__exposure__pass_1_1local__exposure__view.html">local_exposure_view</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local exposure chain's two lookups for the tonemapper, or nulls when local exposure is off for this view (<a class="el" href="structunravel_1_1auto__exposure__pass_1_1settings.html#aee2bd4780da52139706a0ce638f02834">settings::is_local_exposure_enabled</a>).  <a href="structunravel_1_1auto__exposure__pass_1_1local__exposure__view.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1auto__exposure__pass_1_1run__params.html">run_params</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1auto__exposure__pass_1_1settings.html">settings</a></td></tr>
@@ -119,21 +126,67 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac20b92b9eaa4922000aa1aee88403e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d602f6f1badca2ad1767cdd7910858" id="r_af0d602f6f1badca2ad1767cdd7910858"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0d602f6f1badca2ad1767cdd7910858">~auto_exposure_pass</a> ()</td></tr>
 <tr class="separator:af0d602f6f1badca2ad1767cdd7910858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d3fab2f910e9d7972b7efc672e688a" id="r_a27d3fab2f910e9d7972b7efc672e688a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27d3fab2f910e9d7972b7efc672e688a">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a27d3fab2f910e9d7972b7efc672e688a" id="r_a27d3fab2f910e9d7972b7efc672e688a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27d3fab2f910e9d7972b7efc672e688a">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="separator:a27d3fab2f910e9d7972b7efc672e688a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01486b129e6620d0402fac40c5b200e5" id="r_a01486b129e6620d0402fac40c5b200e5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01486b129e6620d0402fac40c5b200e5">shutdown</a> () -&gt; int32_t</td></tr>
 <tr class="separator:a01486b129e6620d0402fac40c5b200e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a731640e6503131d92a789ecdd559cbf2" id="r_a731640e6503131d92a789ecdd559cbf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a731640e6503131d92a789ecdd559cbf2">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1auto__exposure__pass_1_1run__params.html">run_params</a> &amp;params)</td></tr>
-<tr class="memdesc:a731640e6503131d92a789ecdd559cbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs histogram + temporal average to produce a 1x1 adapted exposure texture.  <br /></td></tr>
+<tr class="memitem:a731640e6503131d92a789ecdd559cbf2" id="r_a731640e6503131d92a789ecdd559cbf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a731640e6503131d92a789ecdd559cbf2">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1auto__exposure__pass_1_1run__params.html">run_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>)</td></tr>
+<tr class="memdesc:a731640e6503131d92a789ecdd559cbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs histogram + temporal average to update AUTO_EXPOSURE and the instrument textures.  <br /></td></tr>
 <tr class="separator:a731640e6503131d92a789ecdd559cbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e20d26f96b0f97c9a5961124d914b63" id="r_a9e20d26f96b0f97c9a5961124d914b63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e20d26f96b0f97c9a5961124d914b63">update_gpu_pre_exposure</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> &amp;environment_sh, float manual_exposure, bool is_auto_exposure_active)</td></tr>
+<tr class="memdesc:a9e20d26f96b0f97c9a5961124d914b63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes this frame's GPU share of the pre-exposure for <code>rview</code> into texel <a class="el" href="structunravel_1_1pre__exposure__state.html#a1868786a100c2fd2407ef5aa992480e2">pre_exposure_state::gpu_texel</a> of the view's environment SH <code>environment_sh</code> (pre_exposure.sh, cs_pre_exposure.sc), before any pass of the frame writes or reads scene lighting.  <br /></td></tr>
+<tr class="separator:a9e20d26f96b0f97c9a5961124d914b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af191f88696d85983981e41064a970a4a" id="r_af191f88696d85983981e41064a970a4a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af191f88696d85983981e41064a970a4a">get_exposure_texture</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview) const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
+<tr class="memdesc:af191f88696d85983981e41064a970a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the AUTO_EXPOSURE texture (1x1 RGBA32F, layout in the class comment).  <br /></td></tr>
 <tr class="separator:af191f88696d85983981e41064a970a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d554ff153b4deb1f9374951a7029216" id="r_a8d554ff153b4deb1f9374951a7029216"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d554ff153b4deb1f9374951a7029216">get_history_texture</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview) const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
+<tr class="separator:a8d554ff153b4deb1f9374951a7029216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464e3bd2c4241147628036748701bd8a" id="r_a464e3bd2c4241147628036748701bd8a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a464e3bd2c4241147628036748701bd8a">get_histogram_texture</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview) const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
+<tr class="separator:a464e3bd2c4241147628036748701bd8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea485d4fda7b790617991185a5eb1835" id="r_aea485d4fda7b790617991185a5eb1835"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea485d4fda7b790617991185a5eb1835">get_history_index</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview) const -&gt; std::uint32_t</td></tr>
+<tr class="separator:aea485d4fda7b790617991185a5eb1835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f31386f26594ccecd83e050b5ed3b5" id="r_a32f31386f26594ccecd83e050b5ed3b5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f31386f26594ccecd83e050b5ed3b5">get_local_exposure_view</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview) const -&gt; <a class="el" href="structunravel_1_1auto__exposure__pass_1_1local__exposure__view.html">local_exposure_view</a></td></tr>
+<tr class="separator:a32f31386f26594ccecd83e050b5ed3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeea7396ee77dc10b2f900fb8b1857bd8" id="r_aeea7396ee77dc10b2f900fb8b1857bd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeea7396ee77dc10b2f900fb8b1857bd8">release_resources</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview)</td></tr>
 <tr class="separator:aeea7396ee77dc10b2f900fb8b1857bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:acf13278c0d078e5a6771fe367c327d68" id="r_acf13278c0d078e5a6771fe367c327d68"><td class="memItemLeft" align="right" valign="top">static constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf13278c0d078e5a6771fe367c327d68">settings_version</a> = 3</td></tr>
+<tr class="separator:acf13278c0d078e5a6771fe367c327d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8fe2343d61cf120fd01da9551ccdbde" id="r_ae8fe2343d61cf120fd01da9551ccdbde"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8fe2343d61cf120fd01da9551ccdbde">compensation_curve_min_ev</a> = -10.0f</td></tr>
+<tr class="separator:ae8fe2343d61cf120fd01da9551ccdbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bbcb7b49a9664a090fdc8a17c0ced1" id="r_a53bbcb7b49a9664a090fdc8a17c0ced1"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53bbcb7b49a9664a090fdc8a17c0ced1">compensation_curve_max_ev</a> = 20.0f</td></tr>
+<tr class="separator:a53bbcb7b49a9664a090fdc8a17c0ced1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4698a68dc642f6f8fbf1b8b16fd0ac6e" id="r_a4698a68dc642f6f8fbf1b8b16fd0ac6e"><td class="memItemLeft" align="right" valign="top">static constexpr std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4698a68dc642f6f8fbf1b8b16fd0ac6e">compensation_curve_samples</a> = 64</td></tr>
+<tr class="separator:a4698a68dc642f6f8fbf1b8b16fd0ac6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965e35a6ae434959e60315f297f1f49b" id="r_a965e35a6ae434959e60315f297f1f49b"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a965e35a6ae434959e60315f297f1f49b">camera_cut_distance</a> = 100.0f</td></tr>
+<tr class="separator:a965e35a6ae434959e60315f297f1f49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71741e18f07af88f7ffab1c32da0dc88" id="r_a71741e18f07af88f7ffab1c32da0dc88"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71741e18f07af88f7ffab1c32da0dc88">camera_cut_degrees</a> = 75.0f</td></tr>
+<tr class="separator:a71741e18f07af88f7ffab1c32da0dc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a2210764c4bfbbec530033eeb820db" id="r_a11a2210764c4bfbbec530033eeb820db"><td class="memItemLeft" align="right" valign="top">static constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11a2210764c4bfbbec530033eeb820db">local_exposure_slices</a> = 32</td></tr>
+<tr class="separator:a11a2210764c4bfbbec530033eeb820db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6438bf4b7b8f91621809b018bc246603" id="r_a6438bf4b7b8f91621809b018bc246603"><td class="memItemLeft" align="right" valign="top">static constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6438bf4b7b8f91621809b018bc246603">local_exposure_tile_cells</a> = 32</td></tr>
+<tr class="separator:a6438bf4b7b8f91621809b018bc246603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ddd708a7db79de41af7f7047a3a4fe" id="r_a10ddd708a7db79de41af7f7047a3a4fe"><td class="memItemLeft" align="right" valign="top">static constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10ddd708a7db79de41af7f7047a3a4fe">local_exposure_blur_cells</a> = 8</td></tr>
+<tr class="separator:a10ddd708a7db79de41af7f7047a3a4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b7dec2ff55a4d6f9719409924428aa" id="r_ae0b7dec2ff55a4d6f9719409924428aa"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0b7dec2ff55a4d6f9719409924428aa">min_log_lum</a> = -10.0f</td></tr>
+<tr class="memdesc:ae0b7dec2ff55a4d6f9719409924428aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">log2 luminance range covered by the histogram.  <br /></td></tr>
+<tr class="separator:ae0b7dec2ff55a4d6f9719409924428aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50fb381c644eff90398a8e41baccd7f" id="r_aa50fb381c644eff90398a8e41baccd7f"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa50fb381c644eff90398a8e41baccd7f">max_log_lum</a> = 20.0f</td></tr>
+<tr class="separator:aa50fb381c644eff90398a8e41baccd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d29b17139d7773838bb66505e1c3533" id="r_a0d29b17139d7773838bb66505e1c3533"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d29b17139d7773838bb66505e1c3533">histogram_bins</a> = 256</td></tr>
+<tr class="separator:a0d29b17139d7773838bb66505e1c3533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01716890e209cd624c8758f3d99ba6ec" id="r_a01716890e209cd624c8758f3d99ba6ec"><td class="memItemLeft" align="right" valign="top">static constexpr std::uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01716890e209cd624c8758f3d99ba6ec">history_length</a> = 256</td></tr>
+<tr class="memdesc:a01716890e209cd624c8758f3d99ba6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frames kept in the exposure history ring.  <br /></td></tr>
+<tr class="separator:a01716890e209cd624c8758f3d99ba6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00022">22</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+<div class="textblock"><p>Histogram auto exposure with temporal eye adaptation and local exposure. </p>
+<p>A compute pass meters a luminance histogram of the post-TAA HDR image, a second one trims it to a percentile band, takes the log-average and adapts the exposure toward 0.18 * 2^bias / average (linear in stops, exponential near the target), where the bias is the compensation plus the compensation curve at the metered EV100. The result is a 1x1 RGBA32F texture, AUTO_EXPOSURE: r = adapted exposure, g = target exposure, b = applied bias in stops, a = average local exposure.</p>
+<p>The adapted exposure never reaches the CPU: update_gpu_pre_exposure turns the last frame's into the GPU's share of the pipeline's pre-exposure (<a class="el" href="pre__exposure_8h.html">pre_exposure.h</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00038">38</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac20b92b9eaa4922000aa1aee88403e42" name="ac20b92b9eaa4922000aa1aee88403e42"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac20b92b9eaa4922000aa1aee88403e42">&#9670;&#160;</a></span>auto_exposure_pass()</h2>
@@ -183,7 +236,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00026">26</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00042">42</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
 
 </div>
 </div>
@@ -202,9 +255,89 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the current adapted exposure value's texture (1x1 R32F). Usable by the tonemapping pass to read the exposure. </p>
 
-<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00083">83</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+<p>Returns the AUTO_EXPOSURE texture (1x1 RGBA32F, layout in the class comment). </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00189">189</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a464e3bd2c4241147628036748701bd8a" name="a464e3bd2c4241147628036748701bd8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464e3bd2c4241147628036748701bd8a">&#9670;&#160;</a></span>get_histogram_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::auto_exposure_pass::get_histogram_texture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the last histogram (histogram_bins x 1 R32F): each bin's share of the metered weight; bin 0 (black) is always 0. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00199">199</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aea485d4fda7b790617991185a5eb1835" name="aea485d4fda7b790617991185a5eb1835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea485d4fda7b790617991185a5eb1835">&#9670;&#160;</a></span>get_history_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::auto_exposure_pass::get_history_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span></td><td>)</td>
+          <td> const -&gt; std::uint32_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The ring slot the NEXT frame writes - which is also where the oldest kept frame sits, so a reader walks the history in time order from it (the exposure debug view). </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00204">204</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8d554ff153b4deb1f9374951a7029216" name="a8d554ff153b4deb1f9374951a7029216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d554ff153b4deb1f9374951a7029216">&#9670;&#160;</a></span>get_history_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::auto_exposure_pass::get_history_texture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the exposure history ring (history_length x 1 RGBA32F): per frame log2 adapted exposure, log2 target exposure, metered log2 luminance, applied bias. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00194">194</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a32f31386f26594ccecd83e050b5ed3b5" name="a32f31386f26594ccecd83e050b5ed3b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f31386f26594ccecd83e050b5ed3b5">&#9670;&#160;</a></span>get_local_exposure_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::auto_exposure_pass::get_local_exposure_view </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="structunravel_1_1auto__exposure__pass_1_1local__exposure__view.html">local_exposure_view</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00210">210</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -223,7 +356,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00011">11</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00096">96</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -242,7 +375,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00173">173</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00579">579</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -265,9 +398,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Runs histogram + temporal average to produce a 1x1 adapted exposure texture. </p>
+<p>Runs histogram + temporal average to update AUTO_EXPOSURE and the instrument textures. </p>
 
-<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00163">163</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00543">543</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -286,7 +419,366 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00037">37</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00148">148</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9e20d26f96b0f97c9a5961124d914b63" name="a9e20d26f96b0f97c9a5961124d914b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e20d26f96b0f97c9a5961124d914b63">&#9670;&#160;</a></span>update_gpu_pre_exposure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::auto_exposure_pass::update_gpu_pre_exposure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>environment_sh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>manual_exposure</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_auto_exposure_active</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes this frame's GPU share of the pre-exposure for <code>rview</code> into texel <a class="el" href="structunravel_1_1pre__exposure__state.html#a1868786a100c2fd2407ef5aa992480e2">pre_exposure_state::gpu_texel</a> of the view's environment SH <code>environment_sh</code> (pre_exposure.sh, cs_pre_exposure.sc), before any pass of the frame writes or reads scene lighting. </p>
+<p>The share follows the adapted exposure the last frame left in AUTO_EXPOSURE while <code>is_auto_exposure_active</code>, and is 1 otherwise; <code>manual_exposure</code> is the CPU's share, which the whole pre-exposure is clamped with. Writes nothing until the program has loaded. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00556">556</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a71741e18f07af88f7ffab1c32da0dc88" name="a71741e18f07af88f7ffab1c32da0dc88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71741e18f07af88f7ffab1c32da0dc88">&#9670;&#160;</a></span>camera_cut_degrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::auto_exposure_pass::camera_cut_degrees = 75.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00063">63</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="a965e35a6ae434959e60315f297f1f49b" name="a965e35a6ae434959e60315f297f1f49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a965e35a6ae434959e60315f297f1f49b">&#9670;&#160;</a></span>camera_cut_distance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::auto_exposure_pass::camera_cut_distance = 100.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A camera move longer than this, or a turn wider than camera_cut_degrees about any of its axes, in one frame is a cut: the exposure snaps to its target instead of adapting. The pipeline's GI gather and reflections start their histories over on a cut too. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00062">62</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="a53bbcb7b49a9664a090fdc8a17c0ced1" name="a53bbcb7b49a9664a090fdc8a17c0ced1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53bbcb7b49a9664a090fdc8a17c0ced1">&#9670;&#160;</a></span>compensation_curve_max_ev</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::auto_exposure_pass::compensation_curve_max_ev = 20.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00056">56</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="ae8fe2343d61cf120fd01da9551ccdbde" name="ae8fe2343d61cf120fd01da9551ccdbde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8fe2343d61cf120fd01da9551ccdbde">&#9670;&#160;</a></span>compensation_curve_min_ev</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::auto_exposure_pass::compensation_curve_min_ev = -10.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The compensation curve is baked into a LUT of compensation_curve_samples samples over this EV100 range. Metered values outside the range read the end samples. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00055">55</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="a4698a68dc642f6f8fbf1b8b16fd0ac6e" name="a4698a68dc642f6f8fbf1b8b16fd0ac6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4698a68dc642f6f8fbf1b8b16fd0ac6e">&#9670;&#160;</a></span>compensation_curve_samples</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint16_t unravel::auto_exposure_pass::compensation_curve_samples = 64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00057">57</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="a0d29b17139d7773838bb66505e1c3533" name="a0d29b17139d7773838bb66505e1c3533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d29b17139d7773838bb66505e1c3533">&#9670;&#160;</a></span>histogram_bins</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unravel::auto_exposure_pass::histogram_bins = 256</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00220">220</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="a01716890e209cd624c8758f3d99ba6ec" name="a01716890e209cd624c8758f3d99ba6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01716890e209cd624c8758f3d99ba6ec">&#9670;&#160;</a></span>history_length</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint16_t unravel::auto_exposure_pass::history_length = 256</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Frames kept in the exposure history ring. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00222">222</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="a10ddd708a7db79de41af7f7047a3a4fe" name="a10ddd708a7db79de41af7f7047a3a4fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ddd708a7db79de41af7f7047a3a4fe">&#9670;&#160;</a></span>local_exposure_blur_cells</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t unravel::auto_exposure_pass::local_exposure_blur_cells = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metering cells per blurred log luminance texel edge: 32 view pixels, so the blur runs at 1/32 of the view resolution. Mirrors LOCAL_EXPOSURE_BLUR_CELLS in cs_local_exposure_downsample.sc. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00213">213</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="a11a2210764c4bfbbec530033eeb820db" name="a11a2210764c4bfbbec530033eeb820db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a2210764c4bfbbec530033eeb820db">&#9670;&#160;</a></span>local_exposure_slices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t unravel::auto_exposure_pass::local_exposure_slices = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Luminance slices per bilateral-grid column. Mirrors LOCAL_EXPOSURE_SLICES in cs_local_exposure_grid.sc. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00206">206</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="a6438bf4b7b8f91621809b018bc246603" name="a6438bf4b7b8f91621809b018bc246603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6438bf4b7b8f91621809b018bc246603">&#9670;&#160;</a></span>local_exposure_tile_cells</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t unravel::auto_exposure_pass::local_exposure_tile_cells = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metering cells per bilateral-grid tile edge (128 view pixels). Mirrors LOCAL_EXPOSURE_TILE_CELLS there. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00209">209</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="aa50fb381c644eff90398a8e41baccd7f" name="aa50fb381c644eff90398a8e41baccd7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa50fb381c644eff90398a8e41baccd7f">&#9670;&#160;</a></span>max_log_lum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::auto_exposure_pass::max_log_lum = 20.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00219">219</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="ae0b7dec2ff55a4d6f9719409924428aa" name="ae0b7dec2ff55a4d6f9719409924428aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b7dec2ff55a4d6f9719409924428aa">&#9670;&#160;</a></span>min_log_lum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float unravel::auto_exposure_pass::min_log_lum = -10.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>log2 luminance range covered by the histogram. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00218">218</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
+
+</div>
+</div>
+<a id="acf13278c0d078e5a6771fe367c327d68" name="acf13278c0d078e5a6771fe367c327d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf13278c0d078e5a6771fe367c327d68">&#9670;&#160;</a></span>settings_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t unravel::auto_exposure_pass::settings_version = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Serialized with the settings. Data saved without it, or with an older value, is ignored on load and the settings keep their defaults: version 3 is the current default set with full adaptation and the compensation curve, and values tuned for an earlier model do not carry over. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8h_source.html#l00051">51</a> of file <a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>.</p>
 
 </div>
 </div>

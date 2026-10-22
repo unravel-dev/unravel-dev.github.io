@@ -1,12 +1,31 @@
 var classunravel_1_1auto__exposure__pass =
 [
+    [ "local_exposure_view", "structunravel_1_1auto__exposure__pass_1_1local__exposure__view.html", "structunravel_1_1auto__exposure__pass_1_1local__exposure__view" ],
     [ "run_params", "structunravel_1_1auto__exposure__pass_1_1run__params.html", "structunravel_1_1auto__exposure__pass_1_1run__params" ],
     [ "settings", "structunravel_1_1auto__exposure__pass_1_1settings.html", "structunravel_1_1auto__exposure__pass_1_1settings" ],
     [ "auto_exposure_pass", "classunravel_1_1auto__exposure__pass.html#ac20b92b9eaa4922000aa1aee88403e42", null ],
     [ "~auto_exposure_pass", "classunravel_1_1auto__exposure__pass.html#af0d602f6f1badca2ad1767cdd7910858", null ],
     [ "get_exposure_texture", "classunravel_1_1auto__exposure__pass.html#af191f88696d85983981e41064a970a4a", null ],
+    [ "get_histogram_texture", "classunravel_1_1auto__exposure__pass.html#a464e3bd2c4241147628036748701bd8a", null ],
+    [ "get_history_index", "classunravel_1_1auto__exposure__pass.html#aea485d4fda7b790617991185a5eb1835", null ],
+    [ "get_history_texture", "classunravel_1_1auto__exposure__pass.html#a8d554ff153b4deb1f9374951a7029216", null ],
+    [ "get_local_exposure_view", "classunravel_1_1auto__exposure__pass.html#a32f31386f26594ccecd83e050b5ed3b5", null ],
     [ "init", "classunravel_1_1auto__exposure__pass.html#a27d3fab2f910e9d7972b7efc672e688a", null ],
     [ "release_resources", "classunravel_1_1auto__exposure__pass.html#aeea7396ee77dc10b2f900fb8b1857bd8", null ],
     [ "run", "classunravel_1_1auto__exposure__pass.html#a731640e6503131d92a789ecdd559cbf2", null ],
-    [ "shutdown", "classunravel_1_1auto__exposure__pass.html#a01486b129e6620d0402fac40c5b200e5", null ]
+    [ "shutdown", "classunravel_1_1auto__exposure__pass.html#a01486b129e6620d0402fac40c5b200e5", null ],
+    [ "update_gpu_pre_exposure", "classunravel_1_1auto__exposure__pass.html#a9e20d26f96b0f97c9a5961124d914b63", null ],
+    [ "camera_cut_degrees", "classunravel_1_1auto__exposure__pass.html#a71741e18f07af88f7ffab1c32da0dc88", null ],
+    [ "camera_cut_distance", "classunravel_1_1auto__exposure__pass.html#a965e35a6ae434959e60315f297f1f49b", null ],
+    [ "compensation_curve_max_ev", "classunravel_1_1auto__exposure__pass.html#a53bbcb7b49a9664a090fdc8a17c0ced1", null ],
+    [ "compensation_curve_min_ev", "classunravel_1_1auto__exposure__pass.html#ae8fe2343d61cf120fd01da9551ccdbde", null ],
+    [ "compensation_curve_samples", "classunravel_1_1auto__exposure__pass.html#a4698a68dc642f6f8fbf1b8b16fd0ac6e", null ],
+    [ "histogram_bins", "classunravel_1_1auto__exposure__pass.html#a0d29b17139d7773838bb66505e1c3533", null ],
+    [ "history_length", "classunravel_1_1auto__exposure__pass.html#a01716890e209cd624c8758f3d99ba6ec", null ],
+    [ "local_exposure_blur_cells", "classunravel_1_1auto__exposure__pass.html#a10ddd708a7db79de41af7f7047a3a4fe", null ],
+    [ "local_exposure_slices", "classunravel_1_1auto__exposure__pass.html#a11a2210764c4bfbbec530033eeb820db", null ],
+    [ "local_exposure_tile_cells", "classunravel_1_1auto__exposure__pass.html#a6438bf4b7b8f91621809b018bc246603", null ],
+    [ "max_log_lum", "classunravel_1_1auto__exposure__pass.html#aa50fb381c644eff90398a8e41baccd7f", null ],
+    [ "min_log_lum", "classunravel_1_1auto__exposure__pass.html#ae0b7dec2ff55a4d6f9719409924428aa", null ],
+    [ "settings_version", "classunravel_1_1auto__exposure__pass.html#acf13278c0d078e5a6771fe367c327d68", null ]
 ];

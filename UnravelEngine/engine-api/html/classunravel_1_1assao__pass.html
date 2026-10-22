@@ -119,14 +119,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9fbb3c9b47d82d7262abd2d8294c55fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae39d478fb9868ce2d550f5ea029db6c8" id="r_ae39d478fb9868ce2d550f5ea029db6c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae39d478fb9868ce2d550f5ea029db6c8">~assao_pass</a> ()</td></tr>
 <tr class="separator:ae39d478fb9868ce2d550f5ea029db6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a786e15b7bf50e37bc1d6d4fc60d8e" id="r_a03a786e15b7bf50e37bc1d6d4fc60d8e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03a786e15b7bf50e37bc1d6d4fc60d8e">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a03a786e15b7bf50e37bc1d6d4fc60d8e" id="r_a03a786e15b7bf50e37bc1d6d4fc60d8e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03a786e15b7bf50e37bc1d6d4fc60d8e">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="separator:a03a786e15b7bf50e37bc1d6d4fc60d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08935982dcff43070155fc514562e08c" id="r_a08935982dcff43070155fc514562e08c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08935982dcff43070155fc514562e08c">run</a> (const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;<a class="el" href="classunravel_1_1camera.html">camera</a>, <a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1assao__pass_1_1run__params.html">run_params</a> &amp;params)</td></tr>
+<tr class="memitem:a08935982dcff43070155fc514562e08c" id="r_a08935982dcff43070155fc514562e08c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08935982dcff43070155fc514562e08c">run</a> (const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;<a class="el" href="classunravel_1_1camera.html">camera</a>, <a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1assao__pass_1_1run__params.html">run_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>)</td></tr>
 <tr class="separator:a08935982dcff43070155fc514562e08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9559808eb8847f6592f461875ebf4a99" id="r_a9559808eb8847f6592f461875ebf4a99"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9559808eb8847f6592f461875ebf4a99">shutdown</a> () -&gt; int32_t</td></tr>
 <tr class="separator:a9559808eb8847f6592f461875ebf4a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5f723956ae49916839865e0a77d615" id="r_a6e5f723956ae49916839865e0a77d615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e5f723956ae49916839865e0a77d615">release_resources</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview)</td></tr>
 <tr class="separator:a6e5f723956ae49916839865e0a77d615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51dfd8b423fce41a4ef467de00cb70ac" id="r_a51dfd8b423fce41a4ef467de00cb70ac"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51dfd8b423fce41a4ef467de00cb70ac">get_ao_texture</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview) const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
+<tr class="separator:a51dfd8b423fce41a4ef467de00cb70ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -180,11 +182,31 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="assao__pass_8h_source.html#l00137">137</a> of file <a class="el" href="assao__pass_8h_source.html">assao_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assao__pass_8h_source.html#l00136">136</a> of file <a class="el" href="assao__pass_8h_source.html">assao_pass.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a51dfd8b423fce41a4ef467de00cb70ac" name="a51dfd8b423fce41a4ef467de00cb70ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51dfd8b423fce41a4ef467de00cb70ac">&#9670;&#160;</a></span>get_ao_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::assao_pass::get_ao_texture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rview</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The full-resolution AO this view's last run produced (RGBA8, the visibility in every channel), or null when the pass is not running. The lighting reads it as the screen-space AO when GTAO is off. </p>
+
+<p class="definition">Definition at line <a class="el" href="assao__pass_8cpp_source.html#l00482">482</a> of file <a class="el" href="assao__pass_8cpp_source.html">assao_pass.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a03a786e15b7bf50e37bc1d6d4fc60d8e" name="a03a786e15b7bf50e37bc1d6d4fc60d8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03a786e15b7bf50e37bc1d6d4fc60d8e">&#9670;&#160;</a></span>init()</h2>
 
@@ -219,7 +241,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="assao__pass_8cpp_source.html#l00767">767</a> of file <a class="el" href="assao__pass_8cpp_source.html">assao_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assao__pass_8cpp_source.html#l00700">700</a> of file <a class="el" href="assao__pass_8cpp_source.html">assao_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +269,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="assao__pass_8cpp_source.html#l00108">108</a> of file <a class="el" href="assao__pass_8cpp_source.html">assao_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assao__pass_8cpp_source.html#l00107">107</a> of file <a class="el" href="assao__pass_8cpp_source.html">assao_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -266,7 +288,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="assao__pass_8cpp_source.html#l00492">492</a> of file <a class="el" href="assao__pass_8cpp_source.html">assao_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="assao__pass_8cpp_source.html#l00487">487</a> of file <a class="el" href="assao__pass_8cpp_source.html">assao_pass.cpp</a>.</p>
 
 </div>
 </div>

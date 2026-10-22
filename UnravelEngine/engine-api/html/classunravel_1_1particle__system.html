@@ -106,7 +106,7 @@ $(function(){initNavTree('classunravel_1_1particle__system.html',''); initResiza
 <p>System that manages and updates particle emitters in the ECS.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="ecs_2systems_2particle__system_8h_source.html">particle_system.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="particle__system_8h_source.html">particle_system.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -122,20 +122,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad72788ea23766304f5300b0df50168da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfb8a35a639a03e2dd32f84e2795899b" id="r_acfb8a35a639a03e2dd32f84e2795899b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfb8a35a639a03e2dd32f84e2795899b">operator=</a> (<a class="el" href="classunravel_1_1particle__system.html">particle_system</a> &amp;&amp;) -&gt; <a class="el" href="classunravel_1_1particle__system.html">particle_system</a> &amp;=delete</td></tr>
 <tr class="separator:acfb8a35a639a03e2dd32f84e2795899b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750e0831ea574fce340ffa6f90fd7288" id="r_a750e0831ea574fce340ffa6f90fd7288"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a750e0831ea574fce340ffa6f90fd7288">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a750e0831ea574fce340ffa6f90fd7288" id="r_a750e0831ea574fce340ffa6f90fd7288"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a750e0831ea574fce340ffa6f90fd7288">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="memdesc:a750e0831ea574fce340ffa6f90fd7288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the particle system.  <br /></td></tr>
 <tr class="separator:a750e0831ea574fce340ffa6f90fd7288"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b6155c86daf25993939c9ffbfb8109" id="r_a51b6155c86daf25993939c9ffbfb8109"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51b6155c86daf25993939c9ffbfb8109">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a51b6155c86daf25993939c9ffbfb8109" id="r_a51b6155c86daf25993939c9ffbfb8109"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51b6155c86daf25993939c9ffbfb8109">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="memdesc:a51b6155c86daf25993939c9ffbfb8109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes the particle system.  <br /></td></tr>
 <tr class="separator:a51b6155c86daf25993939c9ffbfb8109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5284d5706b8480b70c662063f7c08dc" id="r_ad5284d5706b8480b70c662063f7c08dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5284d5706b8480b70c662063f7c08dc">on_frame_before_render</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn, <a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> dt)</td></tr>
+<tr class="memitem:ad5284d5706b8480b70c662063f7c08dc" id="r_ad5284d5706b8480b70c662063f7c08dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5284d5706b8480b70c662063f7c08dc">on_frame_before_render</a> (<a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn, <a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> <a class="el" href="rig__system_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>)</td></tr>
 <tr class="memdesc:ad5284d5706b8480b70c662063f7c08dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates all particle emitters in the scene.  <br /></td></tr>
 <tr class="separator:ad5284d5706b8480b70c662063f7c08dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>System that manages and updates particle emitters in the ECS. </p>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2systems_2particle__system_8h_source.html#l00017">17</a> of file <a class="el" href="ecs_2systems_2particle__system_8h_source.html">particle_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particle__system_8h_source.html#l00017">17</a> of file <a class="el" href="particle__system_8h_source.html">particle_system.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6e7e304e9546cbb788ee5dd0e6e0b12a" name="a6e7e304e9546cbb788ee5dd0e6e0b12a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e7e304e9546cbb788ee5dd0e6e0b12a">&#9670;&#160;</a></span>particle_system() <span class="overload">[1/3]</span></h2>
@@ -262,7 +262,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if deinitialization was successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2systems_2particle__system_8cpp_source.html#l00032">32</a> of file <a class="el" href="ecs_2systems_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particle__system_8cpp_source.html#l00031">31</a> of file <a class="el" href="particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if initialization was successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2systems_2particle__system_8cpp_source.html#l00018">18</a> of file <a class="el" href="ecs_2systems_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particle__system_8cpp_source.html#l00017">17</a> of file <a class="el" href="particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -322,7 +322,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ecs_2systems_2particle__system_8cpp_source.html#l00045">45</a> of file <a class="el" href="ecs_2systems_2particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="particle__system_8cpp_source.html#l00044">44</a> of file <a class="el" href="particle__system_8cpp_source.html">particle_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -377,8 +377,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>engine/engine/rendering/ecs/systems/<a class="el" href="ecs_2systems_2particle__system_8h_source.html">particle_system.h</a></li>
-<li>engine/engine/rendering/ecs/systems/<a class="el" href="ecs_2systems_2particle__system_8cpp_source.html">particle_system.cpp</a></li>
+<li>engine/engine/rendering/ecs/systems/<a class="el" href="particle__system_8h_source.html">particle_system.h</a></li>
+<li>engine/engine/rendering/ecs/systems/<a class="el" href="particle__system_8cpp_source.html">particle_system.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

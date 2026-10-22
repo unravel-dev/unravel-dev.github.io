@@ -108,13 +108,14 @@ $(function(){initNavTree('classunravel_1_1mcp__manager.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a33ead8d22441da4e12aaf7719dff20e7" id="r_a33ead8d22441da4e12aaf7719dff20e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33ead8d22441da4e12aaf7719dff20e7">mcp_manager</a> ()</td></tr>
-<tr class="separator:a33ead8d22441da4e12aaf7719dff20e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a5ce2ee1fbdfa67fd31e49184d5bb0" id="r_a94a5ce2ee1fbdfa67fd31e49184d5bb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94a5ce2ee1fbdfa67fd31e49184d5bb0">mcp_manager</a> (<a class="el" href="classcmd__line_1_1parser.html">cmd_line::parser</a> &amp;parser)</td></tr>
+<tr class="separator:a94a5ce2ee1fbdfa67fd31e49184d5bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a264b3db53b6efc0490fb20edf7978367" id="r_a264b3db53b6efc0490fb20edf7978367"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a264b3db53b6efc0490fb20edf7978367">~mcp_manager</a> ()</td></tr>
 <tr class="separator:a264b3db53b6efc0490fb20edf7978367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea57ab9db74fb087a2e262818a1ba791" id="r_aea57ab9db74fb087a2e262818a1ba791"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea57ab9db74fb087a2e262818a1ba791">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
-<tr class="separator:aea57ab9db74fb087a2e262818a1ba791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4b841da14d8a483bc468ff68f146197" id="r_ad4b841da14d8a483bc468ff68f146197"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4b841da14d8a483bc468ff68f146197">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a972d98a67041c889fa5aa4fc6dd24717" id="r_a972d98a67041c889fa5aa4fc6dd24717"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a972d98a67041c889fa5aa4fc6dd24717">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, const <a class="el" href="classcmd__line_1_1parser.html">cmd_line::parser</a> &amp;parser) -&gt; bool</td></tr>
+<tr class="memdesc:a972d98a67041c889fa5aa4fc6dd24717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the tools and starts the server when enabled; &ndash;mcp-port overrides the port when in 1..k_max_port.  <br /></td></tr>
+<tr class="separator:a972d98a67041c889fa5aa4fc6dd24717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b841da14d8a483bc468ff68f146197" id="r_ad4b841da14d8a483bc468ff68f146197"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4b841da14d8a483bc468ff68f146197">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="separator:ad4b841da14d8a483bc468ff68f146197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10cd0534d8e6a08d12c8140a4ed56de5" id="r_a10cd0534d8e6a08d12c8140a4ed56de5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10cd0534d8e6a08d12c8140a4ed56de5">start</a> ()</td></tr>
 <tr class="separator:a10cd0534d8e6a08d12c8140a4ed56de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,19 +135,39 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2df2fc774974c577b70695a01ef4b5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcd91803d666dfeb755fa2a7751b88e8" id="r_adcd91803d666dfeb755fa2a7751b88e8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcd91803d666dfeb755fa2a7751b88e8">get_tool_count</a> () const -&gt; size_t</td></tr>
 <tr class="separator:adcd91803d666dfeb755fa2a7751b88e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112cf0a9ffc675b8cd7297951162b7fa" id="r_a112cf0a9ffc675b8cd7297951162b7fa"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a112cf0a9ffc675b8cd7297951162b7fa">get_visible_tool_count</a> () const -&gt; size_t</td></tr>
+<tr class="memdesc:a112cf0a9ffc675b8cd7297951162b7fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools the active profile exposes; what a client actually sees in tools/list.  <br /></td></tr>
+<tr class="separator:a112cf0a9ffc675b8cd7297951162b7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54a10b7255ba719a3c5135fc9dc812b" id="r_aa54a10b7255ba719a3c5135fc9dc812b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa54a10b7255ba719a3c5135fc9dc812b">get_profile</a> () const -&gt; <a class="el" href="namespaceunravel_1_1mcp.html#a546a71e0a8f3601f7bcb42121349c14e">mcp::mcp_profile</a></td></tr>
+<tr class="separator:aa54a10b7255ba719a3c5135fc9dc812b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393e9f6f19976d29e0857e8ca9298c42" id="r_a393e9f6f19976d29e0857e8ca9298c42"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a393e9f6f19976d29e0857e8ca9298c42">get_profile_name</a> () const -&gt; const char *</td></tr>
+<tr class="separator:a393e9f6f19976d29e0857e8ca9298c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bb3440c8b34c6febb758125d0b487ee" id="r_a0bb3440c8b34c6febb758125d0b487ee"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bb3440c8b34c6febb758125d0b487ee">get_request_count</a> () const -&gt; uint64_t</td></tr>
 <tr class="separator:a0bb3440c8b34c6febb758125d0b487ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2beb02d5e50275cc1e658fe332355262" id="r_a2beb02d5e50275cc1e658fe332355262"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2beb02d5e50275cc1e658fe332355262">get_tool_call_count</a> () const -&gt; uint64_t</td></tr>
 <tr class="separator:a2beb02d5e50275cc1e658fe332355262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f6ce5b3495711cb55efa17157aef0c" id="r_a24f6ce5b3495711cb55efa17157aef0c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24f6ce5b3495711cb55efa17157aef0c">get_error_count</a> () const -&gt; uint64_t</td></tr>
 <tr class="separator:a24f6ce5b3495711cb55efa17157aef0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2c10ca7cc4a0ac6bd8526e941bc74a" id="r_ace2c10ca7cc4a0ac6bd8526e941bc74a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace2c10ca7cc4a0ac6bd8526e941bc74a">get_active_call_count</a> () const -&gt; int</td></tr>
+<tr class="memdesc:ace2c10ca7cc4a0ac6bd8526e941bc74a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tool calls running right now.  <br /></td></tr>
+<tr class="separator:ace2c10ca7cc4a0ac6bd8526e941bc74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0577fe7a92d46d9e5b42d24d5e828cc6" id="r_a0577fe7a92d46d9e5b42d24d5e828cc6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0577fe7a92d46d9e5b42d24d5e828cc6">get_last_request_time</a> () const -&gt; hpp::optional&lt; std::chrono::steady_clock::time_point &gt;</td></tr>
+<tr class="memdesc:a0577fe7a92d46d9e5b42d24d5e828cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the last request arrived; nothing before the first one.  <br /></td></tr>
+<tr class="separator:a0577fe7a92d46d9e5b42d24d5e828cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8caa1e6d271f061f0bd6218a9488a5" id="r_afc8caa1e6d271f061f0bd6218a9488a5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc8caa1e6d271f061f0bd6218a9488a5">get_last_tool_name</a> () const -&gt; std::string</td></tr>
+<tr class="memdesc:afc8caa1e6d271f061f0bd6218a9488a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tool called last, running or finished; empty before the first call.  <br /></td></tr>
+<tr class="separator:afc8caa1e6d271f061f0bd6218a9488a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a5c2252231ffbc3aa958975dda7a86" id="r_aa0a5c2252231ffbc3aa958975dda7a86"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0a5c2252231ffbc3aa958975dda7a86">has_listen_failed</a> () const -&gt; bool</td></tr>
+<tr class="memdesc:aa0a5c2252231ffbc3aa958975dda7a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last start could not listen on the port (another editor holds it, say).  <br /></td></tr>
+<tr class="separator:aa0a5c2252231ffbc3aa958975dda7a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35244c0d4697ca55b3b0fc3c6ed807d8" id="r_a35244c0d4697ca55b3b0fc3c6ed807d8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35244c0d4697ca55b3b0fc3c6ed807d8">snapshot_activity</a> () const -&gt; std::vector&lt; <a class="el" href="structunravel_1_1mcp__activity__entry.html">mcp_activity_entry</a> &gt;</td></tr>
 <tr class="separator:a35244c0d4697ca55b3b0fc3c6ed807d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfe036f966c504cc669d86c94b8afca3" id="r_acfe036f966c504cc669d86c94b8afca3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfe036f966c504cc669d86c94b8afca3">clear_activity</a> ()</td></tr>
 <tr class="separator:acfe036f966c504cc669d86c94b8afca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac33cdddb92cf1b024dabd72aae01f085" id="r_ac33cdddb92cf1b024dabd72aae01f085"><td class="memTemplParams" colspan="2">template&lt;typename Fn &gt; </td></tr>
-<tr class="memitem:ac33cdddb92cf1b024dabd72aae01f085"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac33cdddb92cf1b024dabd72aae01f085">invoke_on_main</a> (Fn &amp;&amp;fn, std::chrono::milliseconds timeout=std::chrono::milliseconds(5000)) -&gt; std::optional&lt; std::invoke_result_t&lt; std::decay_t&lt; Fn &gt; &gt; &gt;</td></tr>
-<tr class="separator:ac33cdddb92cf1b024dabd72aae01f085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361365a94bb0d9055f6f75ec341d5cce" id="r_a361365a94bb0d9055f6f75ec341d5cce"><td class="memTemplParams" colspan="2">template&lt;typename Fn &gt; </td></tr>
+<tr class="memitem:a361365a94bb0d9055f6f75ec341d5cce"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a361365a94bb0d9055f6f75ec341d5cce">invoke_on_main</a> (Fn &amp;&amp;fn, std::chrono::milliseconds timeout=std::chrono::milliseconds(5000), std::string *failure=nullptr) -&gt; hpp::optional&lt; std::invoke_result_t&lt; std::decay_t&lt; Fn &gt; &gt; &gt;</td></tr>
+<tr class="memdesc:a361365a94bb0d9055f6f75ec341d5cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs <code>fn</code> on the editor main thread and waits for it. Safe from MCP HTTP workers.  <br /></td></tr>
+<tr class="separator:a361365a94bb0d9055f6f75ec341d5cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -154,15 +175,17 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a17f892f1f003b35e15167a4cd147a433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26e10259de46d2e6955574030ca29ad4" id="r_a26e10259de46d2e6955574030ca29ad4"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26e10259de46d2e6955574030ca29ad4">k_default_port</a> = 27182</td></tr>
 <tr class="separator:a26e10259de46d2e6955574030ca29ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92914b42f734d41d96124b7fe0b9906" id="r_af92914b42f734d41d96124b7fe0b9906"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af92914b42f734d41d96124b7fe0b9906">k_max_port</a> = 65535</td></tr>
+<tr class="separator:af92914b42f734d41d96124b7fe0b9906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c13a42300464f1fbaec66a131958ec3" id="r_a7c13a42300464f1fbaec66a131958ec3"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c13a42300464f1fbaec66a131958ec3">k_max_activity_entries</a> = 256</td></tr>
 <tr class="separator:a7c13a42300464f1fbaec66a131958ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00039">39</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00040">40</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a33ead8d22441da4e12aaf7719dff20e7" name="a33ead8d22441da4e12aaf7719dff20e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33ead8d22441da4e12aaf7719dff20e7">&#9670;&#160;</a></span>mcp_manager()</h2>
+<a id="a94a5ce2ee1fbdfa67fd31e49184d5bb0" name="a94a5ce2ee1fbdfa67fd31e49184d5bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a5ce2ee1fbdfa67fd31e49184d5bb0">&#9670;&#160;</a></span>mcp_manager()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,16 +196,19 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">unravel::mcp_manager::mcp_manager </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classcmd__line_1_1parser.html">cmd_line::parser</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parser</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Registers &ndash;mcp-port (editors running side by side - other sessions, agents - need a port each) and &ndash;mcp-profile (which tool surface clients see). </p>
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00181">181</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -201,7 +227,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00017">17</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00191">191</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +247,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00187">187</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00455">455</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -240,7 +266,28 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00054">54</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00272">272</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace2c10ca7cc4a0ac6bd8526e941bc74a" name="ace2c10ca7cc4a0ac6bd8526e941bc74a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2c10ca7cc4a0ac6bd8526e941bc74a">&#9670;&#160;</a></span>get_active_call_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mcp_manager::get_active_call_count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tool calls running right now. </p>
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00423">423</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -259,7 +306,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00151">151</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00378">378</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +325,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00176">176</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00418">418</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -297,7 +344,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00156">156</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00383">383</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -316,7 +363,49 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00141">141</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00368">368</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0577fe7a92d46d9e5b42d24d5e828cc6" name="a0577fe7a92d46d9e5b42d24d5e828cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0577fe7a92d46d9e5b42d24d5e828cc6">&#9670;&#160;</a></span>get_last_request_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mcp_manager::get_last_request_time </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; hpp::optional&lt;std::chrono::steady_clock::time_point&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When the last request arrived; nothing before the first one. </p>
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00428">428</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afc8caa1e6d271f061f0bd6218a9488a5" name="afc8caa1e6d271f061f0bd6218a9488a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8caa1e6d271f061f0bd6218a9488a5">&#9670;&#160;</a></span>get_last_tool_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mcp_manager::get_last_tool_name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; std::string</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The tool called last, running or finished; empty before the first call. </p>
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00438">438</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -335,7 +424,45 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00146">146</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00373">373</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa54a10b7255ba719a3c5135fc9dc812b" name="aa54a10b7255ba719a3c5135fc9dc812b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54a10b7255ba719a3c5135fc9dc812b">&#9670;&#160;</a></span>get_profile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mcp_manager::get_profile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespaceunravel_1_1mcp.html#a546a71e0a8f3601f7bcb42121349c14e">mcp::mcp_profile</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00398">398</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a393e9f6f19976d29e0857e8ca9298c42" name="a393e9f6f19976d29e0857e8ca9298c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a393e9f6f19976d29e0857e8ca9298c42">&#9670;&#160;</a></span>get_profile_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mcp_manager::get_profile_name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const char*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00403">403</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -354,7 +481,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00166">166</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00408">408</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +500,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00171">171</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00413">413</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -392,12 +519,54 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00161">161</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00388">388</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aea57ab9db74fb087a2e262818a1ba791" name="aea57ab9db74fb087a2e262818a1ba791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea57ab9db74fb087a2e262818a1ba791">&#9670;&#160;</a></span>init()</h2>
+<a id="a112cf0a9ffc675b8cd7297951162b7fa" name="a112cf0a9ffc675b8cd7297951162b7fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112cf0a9ffc675b8cd7297951162b7fa">&#9670;&#160;</a></span>get_visible_tool_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mcp_manager::get_visible_tool_count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tools the active profile exposes; what a client actually sees in tools/list. </p>
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00393">393</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa0a5c2252231ffbc3aa958975dda7a86" name="aa0a5c2252231ffbc3aa958975dda7a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a5c2252231ffbc3aa958975dda7a86">&#9670;&#160;</a></span>has_listen_failed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::mcp_manager::has_listen_failed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The last start could not listen on the port (another editor holds it, say). </p>
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00444">444</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a972d98a67041c889fa5aa4fc6dd24717" name="a972d98a67041c889fa5aa4fc6dd24717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972d98a67041c889fa5aa4fc6dd24717">&#9670;&#160;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,18 +574,24 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">auto unravel::mcp_manager::init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span></td><td>)</td>
-          <td> -&gt; bool</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcmd__line_1_1parser.html">cmd_line::parser</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>parser</em></span>&#160;) -&gt; bool</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00031">31</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p>Registers the tools and starts the server when enabled; &ndash;mcp-port overrides the port when in 1..k_max_port. </p>
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00207">207</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ac33cdddb92cf1b024dabd72aae01f085" name="ac33cdddb92cf1b024dabd72aae01f085"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac33cdddb92cf1b024dabd72aae01f085">&#9670;&#160;</a></span>invoke_on_main()</h2>
+<a id="a361365a94bb0d9055f6f75ec341d5cce" name="a361365a94bb0d9055f6f75ec341d5cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361365a94bb0d9055f6f75ec341d5cce">&#9670;&#160;</a></span>invoke_on_main()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -434,7 +609,12 @@ template&lt;typename Fn &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::chrono::milliseconds</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::chrono::milliseconds(5000)</span>&#160;) -&gt; std::optional&lt;std::invoke_result_t&lt;std::decay_t&lt;Fn&gt;&gt;&gt;
+          <td class="paramtype">std::chrono::milliseconds</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::chrono::milliseconds(5000)</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *</td>          <td class="paramname"><span class="paramname"><em>failure</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; hpp::optional&lt;std::invoke_result_t&lt;std::decay_t&lt;Fn&gt;&gt;&gt;
     </td>
         </tr>
       </table>
@@ -444,9 +624,18 @@ template&lt;typename Fn &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Run <code>fn</code> on the editor main thread and wait. Safe from MCP HTTP workers. <code>fn</code> must return a value (use bool for success/fail). Returns nullopt on timeout / exception. </p>
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00071">71</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
+<p>Runs <code>fn</code> on the editor main thread and waits for it. Safe from MCP HTTP workers. </p>
+<p><code>fn</code> runs from the main thread's task processing at the frame start (tpp::async_on_process), never from a wait in the middle of a frame. A call either runs or does not: when <code>timeout</code> passes before the main thread picks <code>fn</code> up, <code>fn</code> is abandoned and never runs; once it has started, the caller waits for it to finish however long it takes. So <code>fn</code> may capture the caller's locals by reference, and a timeout always means "nothing happened".</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">failure</td><td>When set, receives why the result is empty: the timeout or the exception text. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>fn</code>'s result, or nullopt when it timed out before starting or threw. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00098">98</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
 
 </div>
 </div>
@@ -465,7 +654,7 @@ template&lt;typename Fn &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00136">136</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00363">363</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -484,7 +673,7 @@ template&lt;typename Fn &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00131">131</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00358">358</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -503,7 +692,7 @@ template&lt;typename Fn &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00181">181</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00449">449</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -522,7 +711,7 @@ template&lt;typename Fn &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00061">61</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00279">279</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -541,7 +730,7 @@ template&lt;typename Fn &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00110">110</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8cpp_source.html#l00337">337</a> of file <a class="el" href="mcp__manager_8cpp_source.html">mcp_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -566,7 +755,7 @@ template&lt;typename Fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00043">43</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00044">44</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
 
 </div>
 </div>
@@ -590,7 +779,7 @@ template&lt;typename Fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00042">42</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00043">43</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
 
 </div>
 </div>
@@ -614,7 +803,31 @@ template&lt;typename Fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00044">44</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00046">46</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
+
+</div>
+</div>
+<a id="af92914b42f734d41d96124b7fe0b9906" name="af92914b42f734d41d96124b7fe0b9906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92914b42f734d41d96124b7fe0b9906">&#9670;&#160;</a></span>k_max_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unravel::mcp_manager::k_max_port = 65535</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mcp__manager_8h_source.html#l00045">45</a> of file <a class="el" href="mcp__manager_8h_source.html">mcp_manager.h</a>.</p>
 
 </div>
 </div>

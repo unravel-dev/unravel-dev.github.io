@@ -105,36 +105,62 @@ $(function(){initNavTree('editor__actions_8cpp.html',''); initResizable(true); }
 <code>#include &quot;<a class="el" href="entity__inspect_8h_source.html">entity_inspect.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="script_8h_source.html">engine/scripting/script.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ui__tree_8h_source.html">engine/ui/ui_tree.h</a>&quot;</code><br />
+<code>#include &quot;threadpp/thread.h&quot;</code><br />
+<code>#include &lt;<a class="el" href="asset__watcher_8h_source.html">editor/assets/asset_watcher.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="deploy__pipeline_8h_source.html">editor/deploy/deploy_pipeline.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="prefab__bake_8h_source.html">editor/editing/prefab_bake.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="entity__actions_8h_source.html">editor/editing/actions/entity_actions.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animation__preview_8h_source.html">editor/editing/animation_preview.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="create__scene__modal_8h_source.html">editor/editing/create_scene_modal.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="editing__manager_8h_source.html">editor/editing/editing_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hub_8h_source.html">editor/hub/hub.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animation__panel_8h_source.html">editor/hub/panels/animation_panel/animation_panel.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="console__log__panel_8h_source.html">editor/hub/panels/console_log_panel/console_log_panel.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="inspectors_8h_source.html">editor/hub/panels/inspector_panel/inspectors/inspectors.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="imgui__messagebox_8h_source.html">editor/imgui/integration/imgui_messagebox.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="imgui__notify_8h_source.html">editor/imgui/integration/imgui_notify.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="project__manager_8h_source.html">editor/system/project_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="project__thumbnail_8h_source.html">editor/system/project_thumbnail.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__dependency__graph_8h_source.html">engine/assets/asset_dependency_graph.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__extensions_8h_source.html">engine/assets/impl/asset_extensions.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__reader_8h_source.html">engine/assets/impl/asset_reader.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__writer_8h_source.html">engine/assets/impl/asset_writer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="defaults_8h_source.html">engine/defaults/defaults.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ecs_8h_source.html">engine/ecs/ecs.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="prefab__component_8h_source.html">engine/ecs/components/prefab_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="prefab_8h_source.html">engine/ecs/prefab.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2events_8h_source.html">engine/events.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="play__mode_8h_source.html">engine/play_mode.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__database_8hpp_source.html">engine/meta/assets/asset_database.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__importer__meta_8hpp_source.html">engine/meta/assets/asset_importer_meta.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="entity_8hpp_source.html">engine/meta/ecs/entity.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="material_8h_source.html">engine/rendering/material.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mesh_8h_source.html">engine/rendering/mesh.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="font_8h_source.html">engine/rendering/font.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animation_8h_source.html">engine/animation/animation.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="audio__clip_8h_source.html">engine/audio/audio_clip.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="physics__material_8h_source.html">engine/physics/physics_material.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animation__controller_8h_source.html">engine/animation/animation_controller.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="style__sheet_8h_source.html">engine/ui/style_sheet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script__system_8h_source.html">engine/scripting/ecs/systems/script_system.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="reflection__probe__system_8h_source.html">engine/rendering/ecs/systems/reflection_probe_system.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="model__component_8h_source.html">engine/rendering/ecs/components/model_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="reflection__probe__component_8h_source.html">engine/rendering/ecs/components/reflection_probe_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="renderer_8h_source.html">engine/rendering/renderer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="scene_8h_source.html">engine/ecs/scene.h</a>&gt;</code><br />
 <code>#include &lt;filedialog/filedialog.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="watcher_8h_source.html">filesystem/watcher.h</a>&gt;</code><br />
-<code>#include &lt;filesystem&gt;</code><br />
 <code>#include &lt;<a class="el" href="subprocess_8hpp_source.html">subprocess/subprocess.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="config_8hpp_source.html">base/platform/config.hpp</a>&gt;</code><br />
+<code>#include &lt;hpp/string_view.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="utils_8h_source.html">string_utils/utils.h</a>&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
 </div>
 <p><a href="editor__actions_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">

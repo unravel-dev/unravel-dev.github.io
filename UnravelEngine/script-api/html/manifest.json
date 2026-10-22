@@ -54,6 +54,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.AnimationController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.AnimationController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.AnimationController",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.AnimationController.yml\" sourcestartlinenumber=\"1\">Animation controller asset handle: a state machine of animation states, transitions and\nparameters. Assign it to <xref href=\"Unravel.Core.AnimationComponent.controller\" data-throw-if-not-resolved=\"false\"></xref> and drive it with\n<xref href=\"Unravel.Core.AnimationComponent.SetFloat(System.String%2cSystem.Single)\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"Unravel.Core.AnimationComponent.SetTrigger(System.String)\" data-throw-if-not-resolved=\"false\"></xref> and friends.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.AnimationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.AnimationEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.AnimationEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.AnimationEvent.yml\" sourcestartlinenumber=\"1\">A marker on an animation clip's timeline that playback crossed this frame.</p>\n<p sourcefile=\"api/Unravel.Core.AnimationEvent.yml\" sourcestartlinenumber=\"3\">Events are authored per clip (clip inspector, Events tab) and delivered to the scripts on the\nentity that has the <xref href=\"Unravel.Core.AnimationComponent\" data-throw-if-not-resolved=\"false\"></xref> - or, when that entity has no scripts, on\nits nearest ancestor with scripts. Every script receives\n<xref href=\"Unravel.Core.ScriptComponent.OnAnimationEvent(Unravel.Core.AnimationEvent)\" data-throw-if-not-resolved=\"false\"></xref>, and a public method named exactly like the\nevent is called as well, taking nothing, an <xref href=\"Unravel.Core.AnimationEvent\" data-throw-if-not-resolved=\"false\"></xref>, or the event's\nstring, float or int parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.Application.yml",
       "output": {
         ".html": {
@@ -106,7 +134,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.Audio",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.Audio.yml\" sourcestartlinenumber=\"1\">Global audio mixer controls (master + per-bus gains) and voice-limit info.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Audio.yml\" sourcestartlinenumber=\"1\">Global audio mixer controls (master + per-bus gains), fire-and-forget sounds and voice-limit info.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -166,6 +194,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.AudioVoice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.AudioVoice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.AudioVoice",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.AudioVoice.yml\" sourcestartlinenumber=\"1\">A sound started by <xref href=\"Unravel.Core.Audio.PlayOneShot(Unravel.Core.AudioClip%2cSystem.Single%2cSystem.Single%2cUnravel.Core.AudioBus%2cSystem.Int32)\" data-throw-if-not-resolved=\"false\"></xref>. Every\ncall on a voice that finished, was stolen or never started does nothing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.AutoStaticsCleanupAttribute.yml",
       "output": {
         ".html": {
@@ -205,6 +247,34 @@
       "IsMRef": true,
       "Title": "Unravel.Core.CameraComponent",
       "Summary": "<p sourcefile=\"api/Unravel.Core.CameraComponent.yml\" sourcestartlinenumber=\"1\">Camera component for viewport projection and screen-space queries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ChainIKComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ChainIKComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ChainIKComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ChainIKComponent.yml\" sourcestartlinenumber=\"1\">Iterative IK over any number of bones ending at the bone it sits on (tails, tentacles,\nspines, robot arms).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ChainIKSolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ChainIKSolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ChainIKSolver",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ChainIKSolver.yml\" sourcestartlinenumber=\"1\">How a chain IK solves.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -264,6 +334,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ContactEndReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ContactEndReason.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ContactEndReason",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ContactEndReason.yml\" sourcestartlinenumber=\"1\">Why a contact or sensor overlap ended.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ContactEventFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ContactEventFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ContactEventFlags",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ContactEventFlags.yml\" sourcestartlinenumber=\"1\">Per-body opt-in for contact bookkeeping.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.ContactPoint.yml",
       "output": {
         ".html": {
@@ -275,6 +373,62 @@
       "IsMRef": true,
       "Title": "Unravel.Core.ContactPoint",
       "Summary": "<p sourcefile=\"api/Unravel.Core.ContactPoint.yml\" sourcestartlinenumber=\"1\">Represents a contact point where a collision occurs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Coroutine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Coroutine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Coroutine",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Coroutine.yml\" sourcestartlinenumber=\"1\">A coroutine started with <xref href=\"Unravel.Core.ScriptComponent.StartCoroutine(System.Collections.IEnumerator)\" data-throw-if-not-resolved=\"false\"></xref>. Yield it from another\ncoroutine to wait until it finishes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Cursor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Cursor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Cursor",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Cursor.yml\" sourcestartlinenumber=\"1\">The mouse cursor: lock it for mouse look, keep it inside the game view, or hide it.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.CursorLockMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.CursorLockMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.CursorLockMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.CursorLockMode.yml\" sourcestartlinenumber=\"1\">How the cursor is held while the game has input.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.EmitParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.EmitParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.EmitParams",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.EmitParams.yml\" sourcestartlinenumber=\"1\">Overrides for the particles of one <xref href=\"Unravel.Core.ParticleEmitterComponent.Emit(System.Int32%2cUnravel.Core.EmitParams)\" data-throw-if-not-resolved=\"false\"></xref>\nburst. Only the fields that were set apply; the others come from the emitter.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -390,6 +544,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.FootIKComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.FootIKComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.FootIKComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.FootIKComponent.yml\" sourcestartlinenumber=\"1\">Plants a character feet on uneven ground: probes the ground under each foot, lowers the\npelvis to the lowest planted foot, solves each leg with two-bone IK and tilts the feet onto\nthe slope. Sits on the character root; the probes need physics, so it acts in play mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.ForceMode.yml",
       "output": {
         ".html": {
@@ -470,7 +638,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.IK",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.IK.yml\" sourcestartlinenumber=\"1\">Inverse-kinematics helpers for skeletal chains.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.IK.yml\" sourcestartlinenumber=\"1\">Inverse-kinematics helpers for skeletal chains.</p>\n<p sourcefile=\"api/Unravel.Core.IK.yml\" sourcestartlinenumber=\"3\">Call these from <code>OnUpdate</code>. Scripts run after the animation system\nhas evaluated the pose and before skinning, so bone writes made there are\nwhat gets rendered. Writing bones from <code>OnFixedUpdate</code> does not work -\nanimation will overwrite them later in the frame.</p>\n<p sourcefile=\"api/Unravel.Core.IK.yml\" sourcestartlinenumber=\"8\">Every method returns <code>true</code> when a pose was written. A <code>false</code>\nmeans the chain was too short, the goal was not finite, or the weight was\nzero - not that the target was out of reach (an unreachable target still\nproduces a valid stretched pose).</p>\n<p sourcefile=\"api/Unravel.Core.IK.yml\" sourcestartlinenumber=\"13\">The position solvers only orient the bones that drive the chain, never the\nend effector itself, so a solved foot keeps the orientation animation gave\nit. Follow a position solve with <xref href=\"Unravel.Core.IK.SetIKRotation(Unravel.Core.Entity%2cQuaternion%2cSystem.Single)\" data-throw-if-not-resolved=\"false\"></xref> to pin a foot\nto a slope or keep an aimed hand level.</p>\n<p sourcefile=\"api/Unravel.Core.IK.yml\" sourcestartlinenumber=\"18\">Poles must come from a reference the solve does not move - the character\nroot, or a dedicated hint entity. A pole derived from the end effector's\nown transform closes a feedback loop: the solve rotates the effector, the\npole follows it, the chain chases the pole, and the limb spins.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.IPoolable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.IPoolable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.IPoolable",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.IPoolable.yml\" sourcestartlinenumber=\"1\">Implemented by a script on a pooled entity's root to reset itself when the pool hands the\nentity out and to clean up when it comes back.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -586,6 +768,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.LookAtIKComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.LookAtIKComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.LookAtIKComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.LookAtIKComponent.yml\" sourcestartlinenumber=\"1\">Turns a chain of bones (head, neck, chest) toward a target, the lower bones taking a\nsmaller share and the tip finishing the aim, each limited to a cone around its animated\nfacing. Smoothed, and faded out when the target goes behind the character.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.Material.yml",
       "output": {
         ".html": {
@@ -596,7 +792,35 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.Material",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.Material.yml\" sourcestartlinenumber=\"1\">Material asset with editable shading properties.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Material.yml\" sourcestartlinenumber=\"1\">Material with editable shading properties.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.MaterialAlphaMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.MaterialAlphaMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.MaterialAlphaMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.MaterialAlphaMode.yml\" sourcestartlinenumber=\"1\">How a material treats alpha.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.MaterialCullMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.MaterialCullMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.MaterialCullMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.MaterialCullMode.yml\" sourcestartlinenumber=\"1\">Which triangle faces a material hides.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -611,6 +835,20 @@
       "IsMRef": true,
       "Title": "Unravel.Core.MaterialProperties",
       "Summary": "<p sourcefile=\"api/Unravel.Core.MaterialProperties.yml\" sourcestartlinenumber=\"1\">Blittable material property block exchanged with native code.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.MaterialProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.MaterialProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.MaterialProperty",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.MaterialProperty.yml\" sourcestartlinenumber=\"1\">A material field read or written on its own through a renderer, for example\n<xref href=\"Unravel.Core.ModelComponent.SetFloat(Unravel.Core.MaterialProperty%2cSystem.Single%2cSystem.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>. Each field belongs to one setter family.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -698,6 +936,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleBlendMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleBlendMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleBlendMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleBlendMode.yml\" sourcestartlinenumber=\"1\">How particles blend over the scene. Matches C++ ps_soa::blend_mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleBoundsMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleBoundsMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleBoundsMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleBoundsMode.yml\" sourcestartlinenumber=\"1\">How an emitter's culling bounds are found. Matches C++ ps_soa::bounds_mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleBurst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleBurst.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleBurst",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleBurst.yml\" sourcestartlinenumber=\"1\">A burst of particles at set times of the emission cycle. Matches C++ ps_soa::emitter_burst.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleCollisionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleCollisionMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleCollisionMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleCollisionMode.yml\" sourcestartlinenumber=\"1\">What a particle does where its path first crosses a collision plane. Matches C++ ps_soa::collision_mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleCullingMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleCullingMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleCullingMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleCullingMode.yml\" sourcestartlinenumber=\"1\">Whether an emitter keeps simulating while no camera sees it. Matches C++ particle_emitter_component::culling_mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleEasing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleEasing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleEasing",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleEasing.yml\" sourcestartlinenumber=\"1\">Easing of particle positions over their lifetime. The values match the engine's easing table.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.ParticleEmitterComponent.yml",
       "output": {
         ".html": {
@@ -712,17 +1034,185 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Unravel.Core.ParticleSimBackend.yml",
+      "source_relative_path": "api/Unravel.Core.ParticleEventType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Unravel.Core.ParticleSimBackend.html"
+          "relative_path": "api/Unravel.Core.ParticleEventType.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Unravel.Core.ParticleSimBackend",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleSimBackend.yml\" sourcestartlinenumber=\"1\">Particle simulation/pack backend. Matches C++ ps_soa::particle_sim_backend.</p>\n"
+      "Title": "Unravel.Core.ParticleEventType",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleEventType.yml\" sourcestartlinenumber=\"1\">What fires a sub-emitter. Matches C++ ps_soa::particle_event_type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleLighting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleLighting.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleLighting",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleLighting.yml\" sourcestartlinenumber=\"1\">How particles are lit. Matches C++ ps_soa::particle_lighting.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleMeshSpawnMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleMeshSpawnMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleMeshSpawnMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleMeshSpawnMode.yml\" sourcestartlinenumber=\"1\">Where a mesh shape spawns. Matches C++ ps_soa::mesh_spawn_mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticlePrimitive.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticlePrimitive.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticlePrimitive",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticlePrimitive.yml\" sourcestartlinenumber=\"1\">Geometry each particle draws. Matches C++ ps_soa::particle_primitive.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleRenderMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleRenderMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleRenderMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleRenderMode.yml\" sourcestartlinenumber=\"1\">How particle quads face the camera. Matches C++ ps_soa::render_mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleRibbonFacing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleRibbonFacing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleRibbonFacing",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleRibbonFacing.yml\" sourcestartlinenumber=\"1\">Which way a ribbon's width runs. Matches C++ ps_soa::ribbon_facing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleRibbonTextureMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleRibbonTextureMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleRibbonTextureMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleRibbonTextureMode.yml\" sourcestartlinenumber=\"1\">How a ribbon's texture runs along it. Matches C++ ps_soa::ribbon_texture_mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleSimulationSpace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleSimulationSpace.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleSimulationSpace",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleSimulationSpace.yml\" sourcestartlinenumber=\"1\">Space particles live in. Matches C++ ps_soa::simulation_space.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleSortBackend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleSortBackend.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleSortBackend",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleSortBackend.yml\" sourcestartlinenumber=\"1\">Where an emitter's particles are culled and sorted. Matches C++ ps_soa::particle_sort_backend.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleSortMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleSortMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleSortMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleSortMode.yml\" sourcestartlinenumber=\"1\">Order an emitter's own particles draw in. Matches C++ ps_soa::sort_mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleSpawnLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleSpawnLocation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleSpawnLocation",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleSpawnLocation.yml\" sourcestartlinenumber=\"1\">Where in the emission shape particles spawn. Matches C++ ps_soa::spawn_location.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleSubEmitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleSubEmitter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleSubEmitter",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleSubEmitter.yml\" sourcestartlinenumber=\"1\">A burst another emitter fires where this emitter's particles are born, die or collide.\nMatches C++ particle_sub_emitter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.ParticleTextureMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.ParticleTextureMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.ParticleTextureMode",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.ParticleTextureMode.yml\" sourcestartlinenumber=\"1\">How the particle texture is read. Matches C++ ps_soa::texture_mode.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -964,6 +1454,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Screen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Screen.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Screen",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Screen.yml\" sourcestartlinenumber=\"1\">Size of the view the game is shown in: the window in the player, the Game panel's\nresolution in the editor. Same pixel space as <xref href=\"Unravel.Core.Input.mousePosition\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.ScriptComponent.yml",
       "output": {
         ".html": {
@@ -1031,6 +1535,20 @@
       "IsMRef": true,
       "Title": "Unravel.Core.SkylightComponent",
       "Summary": "<p sourcefile=\"api/Unravel.Core.SkylightComponent.yml\" sourcestartlinenumber=\"1\">Environment / sky light component.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.SpringBoneComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.SpringBoneComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.SpringBoneComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.SpringBoneComponent.yml\" sourcestartlinenumber=\"1\">Secondary motion for a chain of bones hanging from the bone it sits on (tails, ears,\nponytails, cloth strips): every joint is a damped particle pulled back to its animated\ndirection, pushed by gravity and kept out of colliders, simulated at a fixed rate.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1202,6 +1720,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.Touch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.Touch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.Touch",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.Touch.yml\" sourcestartlinenumber=\"1\">A finger on the touch screen. See <xref href=\"Unravel.Core.Input.touchCount\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Unravel.Core.Input.GetTouch(System.Int32)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.TouchPhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.TouchPhase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.TouchPhase",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.TouchPhase.yml\" sourcestartlinenumber=\"1\">Where a finger is in its life on the touch screen, as one frame sees it.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.TransformComponent.yml",
       "output": {
         ".html": {
@@ -1230,6 +1776,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.TwoBoneIKComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.TwoBoneIKComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.TwoBoneIKComponent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.TwoBoneIKComponent.yml\" sourcestartlinenumber=\"1\">Analytical two-bone IK on the bone it sits on (a hand or a foot): the bone reaches its\ntarget, bending its parent (elbow, knee) toward the pole. Runs after scripts, before\nskinning, on top of the animated pose, and leaves the animated pose untouched.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIAnimation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIAnimation",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIAnimation.yml\" sourcestartlinenumber=\"1\">A running property animation started with <xref href=\"Unravel.Core.UIElement.Animate(System.String%2cSystem.String%2cSystem.Single%2cUnravel.Core.UIEasing%2cSystem.Int32%2cSystem.Boolean%2cSystem.Single)\" data-throw-if-not-resolved=\"false\"></xref>.\nThe animated value stays on the element as an inline style when it finishes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIAnimationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIAnimationEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIAnimationEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIAnimationEvent.yml\" sourcestartlinenumber=\"1\">An &quot;animationend&quot; or &quot;transitionend&quot;: an animation of one property finished. A keyframe\nanimation of several properties sends one event per property.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIButton",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIButton.yml\" sourcestartlinenumber=\"1\">A &lt;button&gt;, or an &lt;input&gt; of type submit or button. React with\n<xref href=\"Unravel.Core.UIElement.clicked\" data-throw-if-not-resolved=\"false\"></xref>; disable with <xref href=\"Unravel.Core.UIElement.disabled\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.UIChangeEvent.yml",
       "output": {
         ".html": {
@@ -1244,6 +1846,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIClickEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIClickEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIClickEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIClickEvent.yml\" sourcestartlinenumber=\"1\">A &quot;click&quot; or &quot;dblclick&quot;: pointer data plus the click count.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIDataModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIDataModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIDataModel",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIDataModel.yml\" sourcestartlinenumber=\"1\">A data model of a UI document: the values and events its markup binds to. The document\ndeclares it with <code>data-model=&quot;name&quot;</code> on an element; inside that element\n<code>{{ credit }}</code>, <code>data-if</code>, <code>data-for</code>, <code>data-class-<em sourcefile=\"api/Unravel.Core.UIDataModel.yml\" sourcestartlinenumber=\"3\"></em></code>, <code>data-style-</code>,\n<code>data-attr-<em sourcefile=\"api/Unravel.Core.UIDataModel.yml\" sourcestartlinenumber=\"4\"></em></code>, <code>data-value</code>, <code>data-checked</code> and <code>data-event-</code> read the model.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.UIDocument.yml",
       "output": {
         ".html": {
@@ -1254,7 +1884,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.UIDocument",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.UIDocument.yml\" sourcestartlinenumber=\"1\">Managed wrapper around a native RmlUi document (<code>Rml::ElementDocument</code>).\nEach <xref href=\"Unravel.Core.UIDocumentComponent\" data-throw-if-not-resolved=\"false\"></xref> owns its own RmlUi context and document.\nWrappers are cached by native pointer so repeated queries return the same instance.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIDocument.yml\" sourcestartlinenumber=\"1\">Managed wrapper around a native RmlUi document (<code>Rml::ElementDocument</code>).\nEach <xref href=\"Unravel.Core.UIDocumentComponent\" data-throw-if-not-resolved=\"false\"></xref> owns its own RmlUi context and document.\nWrappers are cached by document, so repeated queries return the same instance. A wrapper is\nvalid while its document is the component's open document: after <xref href=\"Unravel.Core.UIDocument.Close\" data-throw-if-not-resolved=\"false\"></xref> or a\nreload it reports <xref href=\"Unravel.Core.UIDocument.IsValid\" data-throw-if-not-resolved=\"false\"></xref> false and its calls do nothing.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1272,6 +1902,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIDragEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIDragEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIDragEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIDragEvent.yml\" sourcestartlinenumber=\"1\">A drag event: &quot;dragstart&quot;, &quot;drag&quot; and &quot;dragend&quot; on the dragged element (give it the RCSS\n'drag: drag' or 'drag: clone'), &quot;dragover&quot;, &quot;dragmove&quot;, &quot;dragout&quot; and &quot;dragdrop&quot; on the\nelements it passes over or is dropped on.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIEasing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIEasing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIEasing",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIEasing.yml\" sourcestartlinenumber=\"1\">Easing curves for <xref href=\"Unravel.Core.UIElement.Animate(System.String%2cSystem.String%2cSystem.Single%2cUnravel.Core.UIEasing%2cSystem.Int32%2cSystem.Boolean%2cSystem.Single)\" data-throw-if-not-resolved=\"false\"></xref>. In eases out of the start, Out into the\nend, InOut both.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.UIElement.yml",
       "output": {
         ".html": {
@@ -1282,7 +1940,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.UIElement",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.UIElement.yml\" sourcestartlinenumber=\"1\">Managed wrapper around a native RmlUi element (<code>Rml::Element</code>).\nPrefer obtaining instances via <xref href=\"Unravel.Core.UIDocument.GetElementById(System.String)\" data-throw-if-not-resolved=\"false\"></xref> /\n<xref href=\"Unravel.Core.UIDocument.QuerySelector(System.String)\" data-throw-if-not-resolved=\"false\"></xref> so wrappers are cached by native pointer.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIElement.yml\" sourcestartlinenumber=\"1\">Managed wrapper around a native RmlUi element (<code>Rml::Element</code>).\nObtain instances via <xref href=\"Unravel.Core.UIDocument.GetElementById(System.String)\" data-throw-if-not-resolved=\"false\"></xref> /\n<xref href=\"Unravel.Core.UIDocument.QuerySelector(System.String)\" data-throw-if-not-resolved=\"false\"></xref>; each element has one wrapper.\nA wrapper outliving its element (after an <xref href=\"Unravel.Core.UIElement.InnerRml\" data-throw-if-not-resolved=\"false\"></xref> rebuild of an ancestor, or\na document close or reload) is safe: it reports <xref href=\"Unravel.Core.UIElement.IsValid\" data-throw-if-not-resolved=\"false\"></xref> false, its setters do\nnothing and its getters return defaults. Fetch the element again from the document.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1296,7 +1954,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.UIEventBase",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.UIEventBase.yml\" sourcestartlinenumber=\"1\">Base type for UI events dispatched through <xref href=\"Unravel.Core.UIEventManager\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIEventBase.yml\" sourcestartlinenumber=\"1\">Base type for UI events dispatched through <xref href=\"Unravel.Core.UIEventManager\" data-throw-if-not-resolved=\"false\"></xref>.\nEvent objects are reused: read what you need inside the callback and do not keep the event.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1324,7 +1982,35 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Unravel.Core.UIEventManager",
-      "Summary": "<p sourcefile=\"api/Unravel.Core.UIEventManager.yml\" sourcestartlinenumber=\"1\">Global UI event manager that handles all UI event dispatching.\nSubscriptions are keyed by native element pointer so multiple managed wrappers\nfor the same element share one subscription set.</p>\n"
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIEventManager.yml\" sourcestartlinenumber=\"1\">Global UI event manager that handles all UI event dispatching.\nSubscriptions are kept per element handle, so every wrapper of one element shares them.\nA subscription ends when its element is destroyed or when the script that made it is\ndestroyed: the script the callback belongs to, else the script that was running.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIFocusEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIFocusEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIFocusEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIFocusEvent.yml\" sourcestartlinenumber=\"1\">A &quot;focus&quot; or &quot;blur&quot;: an element gained or lost keyboard focus. These events do not bubble;\nsubscribe on the element itself.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIInput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIInput",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIInput.yml\" sourcestartlinenumber=\"1\">A text field: an &lt;input&gt; (text, password...) or a &lt;textarea&gt;. Its text is\n<xref href=\"Unravel.Core.UIElement.value\" data-throw-if-not-resolved=\"false\"></xref>; &quot;change&quot; fires while the user types.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1356,6 +2042,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIProgress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIProgress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIProgress",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIProgress.yml\" sourcestartlinenumber=\"1\">A &lt;progress&gt; bar. <xref href=\"Unravel.Core.UIProgress.value\" data-throw-if-not-resolved=\"false\"></xref> runs from 0 to <xref href=\"Unravel.Core.UIProgress.max\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIScrollEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIScrollEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIScrollEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIScrollEvent.yml\" sourcestartlinenumber=\"1\">A &quot;scroll&quot;: the element's content scrolled. Read the new position from\n<xref href=\"Unravel.Core.UIElement.scrollTop\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Unravel.Core.UIElement.scrollLeft\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"Unravel.Core.UIEventBase.target\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UISelect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UISelect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UISelect",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UISelect.yml\" sourcestartlinenumber=\"1\">A &lt;select&gt; drop-down. The selected option's value is the base class\n<xref href=\"Unravel.Core.UIElement.value\" data-throw-if-not-resolved=\"false\"></xref>. Adding and removing options never sends &quot;change&quot;, even\nwhen it moves the selection.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UISlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UISlider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UISlider",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UISlider.yml\" sourcestartlinenumber=\"1\">An &lt;input type=&quot;range&quot;&gt;. <xref href=\"Unravel.Core.UISlider.value\" data-throw-if-not-resolved=\"false\"></xref> is the number; the base class\n<xref href=\"Unravel.Core.UIElement.value\" data-throw-if-not-resolved=\"false\"></xref> is the same value as text.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.UISliderEvent.yml",
       "output": {
         ".html": {
@@ -1370,6 +2112,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIStyle",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIStyle.yml\" sourcestartlinenumber=\"1\">The inline style of an element (<xref href=\"Unravel.Core.UIElement.style\" data-throw-if-not-resolved=\"false\"></xref>). Values are RCSS text:\n<code>el.style[&quot;opacity&quot;] = &quot;0.5&quot;</code>; setting null removes the inline value, so the stylesheet\napplies again. The numeric shortcuts write without formatting text, for per-frame changes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UISubmitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UISubmitEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UISubmitEvent",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UISubmitEvent.yml\" sourcestartlinenumber=\"1\">A &quot;submit&quot; from a form: the values of its named controls.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UISubscription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UISubscription.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UISubscription",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UISubscription.yml\" sourcestartlinenumber=\"1\">A UI event subscription made with <xref href=\"Unravel.Core.UIElement.On%60%601(System.String%2cSystem.Action%7b%60%600%7d%2cUnravel.Core.EventPhase)\" data-throw-if-not-resolved=\"false\"></xref> or\n<xref href=\"Unravel.Core.UIElement.Once%60%601(System.String%2cSystem.Action%7b%60%600%7d)\" data-throw-if-not-resolved=\"false\"></xref>. Dispose it to unsubscribe, which also works\nfor lambdas. It also ends by itself when its element is destroyed or its script is destroyed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UITabSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UITabSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UITabSet",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UITabSet.yml\" sourcestartlinenumber=\"1\">A &lt;tabset&gt; of &lt;tab&gt; headers and &lt;panel&gt; pages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.UITextInputEvent.yml",
       "output": {
         ".html": {
@@ -1381,6 +2179,20 @@
       "IsMRef": true,
       "Title": "Unravel.Core.UITextInputEvent",
       "Summary": "<p sourcefile=\"api/Unravel.Core.UITextInputEvent.yml\" sourcestartlinenumber=\"1\">Represents a text input UI event for handling text entry.\nThis is separate from key events to handle composed text input properly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.UIToggle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.UIToggle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.UIToggle",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.UIToggle.yml\" sourcestartlinenumber=\"1\">An &lt;input type=&quot;checkbox&quot;&gt; or &lt;input type=&quot;radio&quot;&gt;. Its state is the 'checked'\nattribute; the base class <xref href=\"Unravel.Core.UIElement.value\" data-throw-if-not-resolved=\"false\"></xref> is the value it submits.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1440,6 +2252,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.WaitForFrames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.WaitForFrames.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.WaitForFrames",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.WaitForFrames.yml\" sourcestartlinenumber=\"1\">Resumes the coroutine after the given number of frames.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.WaitForSeconds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.WaitForSeconds.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.WaitForSeconds",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.WaitForSeconds.yml\" sourcestartlinenumber=\"1\">Resumes the coroutine after the given number of seconds of game time (scaled by\n<xref href=\"Unravel.Core.Time.timeScale\" data-throw-if-not-resolved=\"false\"></xref>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.WaitForSecondsRealtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.WaitForSecondsRealtime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.WaitForSecondsRealtime",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.WaitForSecondsRealtime.yml\" sourcestartlinenumber=\"1\">Resumes the coroutine after the given number of real seconds, whatever the time scale.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.WaitUntil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.WaitUntil.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.WaitUntil",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.WaitUntil.yml\" sourcestartlinenumber=\"1\">Resumes the coroutine in the first frame the condition is true (checked once per frame).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.WaitWhile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.WaitWhile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.WaitWhile",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.WaitWhile.yml\" sourcestartlinenumber=\"1\">Resumes the coroutine in the first frame the condition is false (checked once per frame).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Core.YieldInstruction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Core.YieldInstruction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Core.YieldInstruction",
+      "Summary": "<p sourcefile=\"api/Unravel.Core.YieldInstruction.yml\" sourcestartlinenumber=\"1\">Base of the wait objects a coroutine can yield. They only describe the wait, so one\ninstance can be cached and yielded many times.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Unravel.Core.yml",
       "output": {
         ".html": {
@@ -1451,6 +2347,48 @@
       "IsMRef": true,
       "Title": "Unravel.Core",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Samples.SampleHudController.HudState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Samples.SampleHudController.HudState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Samples.SampleHudController.HudState",
+      "Summary": "<p sourcefile=\"api/Unravel.Samples.SampleHudController.HudState.yml\" sourcestartlinenumber=\"1\">The data model &quot;sample_hud&quot;.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Samples.SampleHudController.InventoryItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Samples.SampleHudController.InventoryItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Samples.SampleHudController.InventoryItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Unravel.Samples.SampleHudController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Unravel.Samples.SampleHudController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Unravel.Samples.SampleHudController",
+      "Summary": "<p sourcefile=\"api/Unravel.Samples.SampleHudController.yml\" sourcestartlinenumber=\"1\">Drives engine:/data/ui/sample_hud.rhtml through a data model: put it on an entity with a UI\nDocument of that asset. The markup reads the HudState fields ({{ score }}, data-for over the\ninventory, data-value on the controls) and calls its public methods (data-event-click); the\nscript only changes values and marks them dirty.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1499,6 +2437,16 @@
       "output": {
         ".html": {
           "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "markdown/animation-retargeting.md",
+      "output": {
+        ".html": {
+          "relative_path": "markdown/animation-retargeting.html"
         }
       },
       "version": ""

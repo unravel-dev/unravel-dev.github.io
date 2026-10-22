@@ -1,6 +1,10 @@
 var bgfx__utils_8cpp =
 [
+    [ "applyContainerSrgbFlag", "bgfx__utils_8cpp.html#a77ac9c74746aac3bd0e0e5fc72e5155b", null ],
     [ "calcTangents", "bgfx__utils_8cpp.html#a491508725b1014fb0c4191ba597e2592", null ],
+    [ "containerCarriesSrgbTag", "bgfx__utils_8cpp.html#a1d6ccdd5224cb1d276a8a57fe1519adb", null ],
+    [ "deliverLandedReadbacks", "bgfx__utils_8cpp.html#acc472108c3ed0a6a64c14c6a273aaaf8", null ],
+    [ "finishReadbacks", "bgfx__utils_8cpp.html#a4685a36e8e0aa212084a5085699ca634", null ],
     [ "imageFlipTangentSpaceNormalY", "bgfx__utils_8cpp.html#a8c61b9c0c402b92836cacc469646337f", null ],
     [ "imageLoad", "bgfx__utils_8cpp.html#a99d60986a05230116eaa3c083c2c7e58", null ],
     [ "imageLoad", "bgfx__utils_8cpp.html#a57212499d5d8d453cd2445f0a75e18ca", null ],
@@ -8,7 +12,7 @@ var bgfx__utils_8cpp =
     [ "imageParseInfo", "bgfx__utils_8cpp.html#a47e7b088fe9f722a93bf579c7588c10d", null ],
     [ "imagePrepareNormalMapBakePng", "bgfx__utils_8cpp.html#ab890e26cdc87996dff44716222cf7c76", null ],
     [ "imageReleaseCb", "bgfx__utils_8cpp.html#a92a3ac6e890b77e760e3b0b29f136d51", null ],
-    [ "imageSave", "bgfx__utils_8cpp.html#a8c52c2b842ca50b4dcb761efd7f6a92b", null ],
+    [ "imageSave", "bgfx__utils_8cpp.html#ab462fa6acbe03eae23d3486596e95e77", null ],
     [ "load", "bgfx__utils_8cpp.html#a8d00106b71ad519409149bbff31df7ee", null ],
     [ "load", "bgfx__utils_8cpp.html#accb2dd70424d466ef9ef7b66f823d1cc", null ],
     [ "loadMem", "bgfx__utils_8cpp.html#a22d388b35bf3109535e14f7094ae390c", null ],
@@ -22,6 +26,8 @@ var bgfx__utils_8cpp =
     [ "loadTexture", "bgfx__utils_8cpp.html#adf6e2c353f9907f64bbf45b69f7ae210", null ],
     [ "loadTexture", "bgfx__utils_8cpp.html#afba2cf652ad544207f412f1dee65b702", null ],
     [ "loadTextureFromContainer", "bgfx__utils_8cpp.html#a2cc7942e303413ee6c79736f5bc6f5b5", null ],
+    [ "readEtc1AsEtc2", "bgfx__utils_8cpp.html#a3e0b2083a878d8792da80f055ecd18fb", null ],
+    [ "readTexture", "bgfx__utils_8cpp.html#abe6d6261f16ac76f00b9df562d421649", null ],
     [ "saveToFile", "bgfx__utils_8cpp.html#aec1bdd65d683731b797048bde6d080c4", null ],
     [ "unload", "bgfx__utils_8cpp.html#ac7e73b30345a101c4b692eedac03de47", null ]
 ];

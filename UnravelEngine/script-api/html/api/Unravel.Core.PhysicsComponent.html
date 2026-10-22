@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_PhysicsComponent" data-uid="Unravel.Core.PhysicsComponent" class="text-break">
-Class PhysicsComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Class PhysicsComponent  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -177,7 +177,7 @@ Class PhysicsComponent  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Unravel_Core_PhysicsComponent_angularVelocity" data-uid="Unravel.Core.PhysicsComponent.angularVelocity">
   angularVelocity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The angular velocity vector of the rigidbody measured in radians per second.
@@ -214,7 +214,7 @@ is not allowed and will have no effect.</p>
 
   <h3 id="Unravel_Core_PhysicsComponent_bodyType" data-uid="Unravel.Core.PhysicsComponent.bodyType">
   bodyType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Simulation role: Static (teleport + AABB), Kinematic (ECS-driven, pushes dynamics), or Dynamic.</p>
@@ -242,11 +242,76 @@ is not allowed and will have no effect.</p>
 
 
 
+  <a id="Unravel_Core_PhysicsComponent_collisionEventsEnabled_" data-uid="Unravel.Core.PhysicsComponent.collisionEventsEnabled*"></a>
+
+  <h3 id="Unravel_Core_PhysicsComponent_collisionEventsEnabled" data-uid="Unravel.Core.PhysicsComponent.collisionEventsEnabled">
+  collisionEventsEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether solid contacts involving this body are tracked and reported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool collisionEventsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_PhysicsComponent_collisionExitOnDestroy_" data-uid="Unravel.Core.PhysicsComponent.collisionExitOnDestroy*"></a>
+
+  <h3 id="Unravel_Core_PhysicsComponent_collisionExitOnDestroy" data-uid="Unravel.Core.PhysicsComponent.collisionExitOnDestroy">
+  collisionExitOnDestroy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether destroying or deactivating this body while it is touching something still
+delivers <a class="xref" href="Unravel.Core.ScriptComponent.html#Unravel_Core_ScriptComponent_OnCollisionExit_Unravel_Core_Collision_">OnCollisionExit(Collision)</a>. Off by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool collisionExitOnDestroy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_PhysicsComponent_collisionLayers_" data-uid="Unravel.Core.PhysicsComponent.collisionLayers*"></a>
 
   <h3 id="Unravel_Core_PhysicsComponent_collisionLayers" data-uid="Unravel.Core.PhysicsComponent.collisionLayers">
   collisionLayers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Effective collision layer mask after applying include and exclude filters.</p>
@@ -274,11 +339,44 @@ is not allowed and will have no effect.</p>
 
 
 
+  <a id="Unravel_Core_PhysicsComponent_contactEventFlags_" data-uid="Unravel.Core.PhysicsComponent.contactEventFlags*"></a>
+
+  <h3 id="Unravel_Core_PhysicsComponent_contactEventFlags" data-uid="Unravel.Core.PhysicsComponent.contactEventFlags">
+  contactEventFlags
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Which contact events this body takes part in, and whether removing it while still
+overlapping synthesizes an exit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactEventFlags contactEventFlags { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.ContactEventFlags.html">ContactEventFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_PhysicsComponent_excludeLayers_" data-uid="Unravel.Core.PhysicsComponent.excludeLayers*"></a>
 
   <h3 id="Unravel_Core_PhysicsComponent_excludeLayers" data-uid="Unravel.Core.PhysicsComponent.excludeLayers">
   excludeLayers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Layers that this body should ignore (exclude filter).</p>
@@ -310,7 +408,7 @@ is not allowed and will have no effect.</p>
 
   <h3 id="Unravel_Core_PhysicsComponent_includeLayers" data-uid="Unravel.Core.PhysicsComponent.includeLayers">
   includeLayers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Layers that this body should collide with (include filter).</p>
@@ -342,7 +440,7 @@ is not allowed and will have no effect.</p>
 
   <h3 id="Unravel_Core_PhysicsComponent_isSensor" data-uid="Unravel.Core.PhysicsComponent.isSensor">
   isSensor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Whether this physics component is a sensor (triggers collision events but doesn't generate physical responses).</p>
@@ -374,7 +472,7 @@ is not allowed and will have no effect.</p>
 
   <h3 id="Unravel_Core_PhysicsComponent_mass" data-uid="Unravel.Core.PhysicsComponent.mass">
   mass
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The mass of the rigidbody. Mass determines how much force is needed to move the object.</p>
@@ -402,11 +500,76 @@ is not allowed and will have no effect.</p>
 
 
 
+  <a id="Unravel_Core_PhysicsComponent_sensorEventsEnabled_" data-uid="Unravel.Core.PhysicsComponent.sensorEventsEnabled*"></a>
+
+  <h3 id="Unravel_Core_PhysicsComponent_sensorEventsEnabled" data-uid="Unravel.Core.PhysicsComponent.sensorEventsEnabled">
+  sensorEventsEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether sensor overlaps involving this body are tracked and reported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool sensorEventsEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_PhysicsComponent_sensorExitOnDestroy_" data-uid="Unravel.Core.PhysicsComponent.sensorExitOnDestroy*"></a>
+
+  <h3 id="Unravel_Core_PhysicsComponent_sensorExitOnDestroy" data-uid="Unravel.Core.PhysicsComponent.sensorExitOnDestroy">
+  sensorExitOnDestroy
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether destroying or deactivating this body while it overlaps a sensor still delivers
+<a class="xref" href="Unravel.Core.ScriptComponent.html#Unravel_Core_ScriptComponent_OnSensorExit_Unravel_Core_Collision_">OnSensorExit(Collision)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool sensorExitOnDestroy { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_PhysicsComponent_useGravity_" data-uid="Unravel.Core.PhysicsComponent.useGravity*"></a>
 
   <h3 id="Unravel_Core_PhysicsComponent_useGravity" data-uid="Unravel.Core.PhysicsComponent.useGravity">
   useGravity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Whether this physics component uses gravity.</p>
@@ -438,7 +601,7 @@ is not allowed and will have no effect.</p>
 
   <h3 id="Unravel_Core_PhysicsComponent_velocity" data-uid="Unravel.Core.PhysicsComponent.velocity">
   velocity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The velocity vector of the rigidbody. It represents the rate of change of Rigidbody position.
@@ -479,7 +642,7 @@ position.</p>
 
   <h3 id="Unravel_Core_PhysicsComponent_ApplyExplosionForce_System_Single_Vector3_System_Single_System_Single_Unravel_Core_ForceMode_" data-uid="Unravel.Core.PhysicsComponent.ApplyExplosionForce(System.Single,Vector3,System.Single,System.Single,Unravel.Core.ForceMode)">
   ApplyExplosionForce(float, Vector3, float, float, ForceMode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L245"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Applies an explosion force to the entity.</p>
@@ -524,10 +687,11 @@ position.</p>
 
   <h3 id="Unravel_Core_PhysicsComponent_ApplyForce_Vector3_Unravel_Core_ForceMode_" data-uid="Unravel.Core.PhysicsComponent.ApplyForce(Vector3,Unravel.Core.ForceMode)">
   ApplyForce(Vector3, ForceMode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Applies a force to the entity.</p>
+  <div class="markdown level1 summary"><p>Applies a force to the entity. Only a Dynamic body responds: Static and Kinematic bodies
+ignore forces, a Kinematic body is moved through its transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -560,10 +724,10 @@ position.</p>
 
   <h3 id="Unravel_Core_PhysicsComponent_ApplyTorque_Vector3_Unravel_Core_ForceMode_" data-uid="Unravel.Core.PhysicsComponent.ApplyTorque(Vector3,Unravel.Core.ForceMode)">
   ApplyTorque(Vector3, ForceMode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L266"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Applies a torque to the entity.</p>
+  <div class="markdown level1 summary"><p>Applies a torque to the entity. Only a Dynamic body responds, see ApplyForce.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -596,7 +760,7 @@ position.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/PhysicsComponent.cs/#L34" class="edit-link">Edit this page</a>
         </div>
 
 

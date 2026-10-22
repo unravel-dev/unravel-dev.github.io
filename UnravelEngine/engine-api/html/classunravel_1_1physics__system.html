@@ -97,7 +97,6 @@ $(function(){initNavTree('classunravel_1_1physics__system.html',''); initResizab
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classunravel_1_1physics__system-members.html">List of all members</a>  </div>
@@ -105,94 +104,71 @@ $(function(){initNavTree('classunravel_1_1physics__system.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 
-<p>Manages the physics operations using the specified backend.  
+<p>Owns fixed-step simulation and dispatches work to the compile-time physics backend.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="physics__system_8h_source.html">physics_system.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a70ee939c5622ee653036c7d5be3bfb43" id="r_a70ee939c5622ee653036c7d5be3bfb43"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70ee939c5622ee653036c7d5be3bfb43">backend_type</a> = <a class="el" href="structunravel_1_1bullet__backend.html">bullet_backend</a></td></tr>
-<tr class="memdesc:a70ee939c5622ee653036c7d5be3bfb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">The backend type used for physics operations.  <br /></td></tr>
-<tr class="separator:a70ee939c5622ee653036c7d5be3bfb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab39a22bd73e61261d351f71d45b78151" id="r_ab39a22bd73e61261d351f71d45b78151"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab39a22bd73e61261d351f71d45b78151">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:ab39a22bd73e61261d351f71d45b78151" id="r_ab39a22bd73e61261d351f71d45b78151"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab39a22bd73e61261d351f71d45b78151">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="memdesc:ab39a22bd73e61261d351f71d45b78151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the physics system with the given context.  <br /></td></tr>
 <tr class="separator:ab39a22bd73e61261d351f71d45b78151"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17534bcd9ba99c9bb7c48a686931562c" id="r_a17534bcd9ba99c9bb7c48a686931562c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17534bcd9ba99c9bb7c48a686931562c">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a17534bcd9ba99c9bb7c48a686931562c" id="r_a17534bcd9ba99c9bb7c48a686931562c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17534bcd9ba99c9bb7c48a686931562c">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="memdesc:a17534bcd9ba99c9bb7c48a686931562c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes the physics system with the given context.  <br /></td></tr>
 <tr class="separator:a17534bcd9ba99c9bb7c48a686931562c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0052139d16b5ce76c21abc2f40fb6701" id="r_a0052139d16b5ce76c21abc2f40fb6701"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0052139d16b5ce76c21abc2f40fb6701">ray_cast</a> (const math::vec3 &amp;origin, const math::vec3 &amp;direction, float max_distance, int <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>, bool <a class="el" href="bullet__backend_8cpp.html#a7b9ace833d559eb75f9a3f79d0acc959">query_sensors</a>) const -&gt; hpp::optional&lt; <a class="el" href="structunravel_1_1raycast__hit.html">raycast_hit</a> &gt;</td></tr>
+<tr class="memitem:a0052139d16b5ce76c21abc2f40fb6701" id="r_a0052139d16b5ce76c21abc2f40fb6701"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0052139d16b5ce76c21abc2f40fb6701">ray_cast</a> (const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ae53cb71996f6722f94e4a6bab413266f">origin</a>, const math::vec3 &amp;<a class="el" href="namespaceunravel.html#ad4267312d1a92ab59f31646571f0cc39aef72c37be9d1b9e6e5bbd6ef09448abe">direction</a>, float max_distance, int <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>, bool <a class="el" href="box3d__backend_8cpp.html#a7b9ace833d559eb75f9a3f79d0acc959">query_sensors</a>) const -&gt; hpp::optional&lt; <a class="el" href="structunravel_1_1raycast__hit.html">raycast_hit</a> &gt;</td></tr>
 <tr class="separator:a0052139d16b5ce76c21abc2f40fb6701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6848976bff254bd132e5599a38b99d3d" id="r_a6848976bff254bd132e5599a38b99d3d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6848976bff254bd132e5599a38b99d3d">ray_cast_all</a> (const math::vec3 &amp;origin, const math::vec3 &amp;direction, float max_distance, int <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>, bool <a class="el" href="bullet__backend_8cpp.html#a7b9ace833d559eb75f9a3f79d0acc959">query_sensors</a>) const -&gt; <a class="el" href="namespaceunravel.html#a8d33ed1f24d35134901fd1ae8fc1beca">physics_vector</a>&lt; <a class="el" href="structunravel_1_1raycast__hit.html">raycast_hit</a> &gt;</td></tr>
+<tr class="memitem:a6848976bff254bd132e5599a38b99d3d" id="r_a6848976bff254bd132e5599a38b99d3d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6848976bff254bd132e5599a38b99d3d">ray_cast_all</a> (const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ae53cb71996f6722f94e4a6bab413266f">origin</a>, const math::vec3 &amp;<a class="el" href="namespaceunravel.html#ad4267312d1a92ab59f31646571f0cc39aef72c37be9d1b9e6e5bbd6ef09448abe">direction</a>, float max_distance, int <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>, bool <a class="el" href="box3d__backend_8cpp.html#a7b9ace833d559eb75f9a3f79d0acc959">query_sensors</a>) const -&gt; <a class="el" href="namespaceunravel.html#a8d33ed1f24d35134901fd1ae8fc1beca">physics_vector</a>&lt; <a class="el" href="structunravel_1_1raycast__hit.html">raycast_hit</a> &gt;</td></tr>
 <tr class="separator:a6848976bff254bd132e5599a38b99d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6765a63b11417e8234803ae26371a8e" id="r_ae6765a63b11417e8234803ae26371a8e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6765a63b11417e8234803ae26371a8e">sphere_cast</a> (const math::vec3 &amp;origin, const math::vec3 &amp;direction, float radius, float max_distance, int <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>, bool <a class="el" href="bullet__backend_8cpp.html#a7b9ace833d559eb75f9a3f79d0acc959">query_sensors</a>) const -&gt; hpp::optional&lt; <a class="el" href="structunravel_1_1raycast__hit.html">raycast_hit</a> &gt;</td></tr>
+<tr class="memitem:ae6765a63b11417e8234803ae26371a8e" id="r_ae6765a63b11417e8234803ae26371a8e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6765a63b11417e8234803ae26371a8e">sphere_cast</a> (const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ae53cb71996f6722f94e4a6bab413266f">origin</a>, const math::vec3 &amp;<a class="el" href="namespaceunravel.html#ad4267312d1a92ab59f31646571f0cc39aef72c37be9d1b9e6e5bbd6ef09448abe">direction</a>, float <a class="el" href="box3d__backend_8cpp.html#a5050a760c11da521cd4aee6336f6529f">radius</a>, float max_distance, int <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>, bool <a class="el" href="box3d__backend_8cpp.html#a7b9ace833d559eb75f9a3f79d0acc959">query_sensors</a>) const -&gt; hpp::optional&lt; <a class="el" href="structunravel_1_1raycast__hit.html">raycast_hit</a> &gt;</td></tr>
 <tr class="separator:ae6765a63b11417e8234803ae26371a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0613f08881cc79ec87da2fedc70667d8" id="r_a0613f08881cc79ec87da2fedc70667d8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0613f08881cc79ec87da2fedc70667d8">sphere_cast_all</a> (const math::vec3 &amp;origin, const math::vec3 &amp;direction, float radius, float max_distance, int <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>, bool <a class="el" href="bullet__backend_8cpp.html#a7b9ace833d559eb75f9a3f79d0acc959">query_sensors</a>) const -&gt; <a class="el" href="namespaceunravel.html#a8d33ed1f24d35134901fd1ae8fc1beca">physics_vector</a>&lt; <a class="el" href="structunravel_1_1raycast__hit.html">raycast_hit</a> &gt;</td></tr>
+<tr class="memitem:a0613f08881cc79ec87da2fedc70667d8" id="r_a0613f08881cc79ec87da2fedc70667d8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0613f08881cc79ec87da2fedc70667d8">sphere_cast_all</a> (const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ae53cb71996f6722f94e4a6bab413266f">origin</a>, const math::vec3 &amp;<a class="el" href="namespaceunravel.html#ad4267312d1a92ab59f31646571f0cc39aef72c37be9d1b9e6e5bbd6ef09448abe">direction</a>, float <a class="el" href="box3d__backend_8cpp.html#a5050a760c11da521cd4aee6336f6529f">radius</a>, float max_distance, int <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>, bool <a class="el" href="box3d__backend_8cpp.html#a7b9ace833d559eb75f9a3f79d0acc959">query_sensors</a>) const -&gt; <a class="el" href="namespaceunravel.html#a8d33ed1f24d35134901fd1ae8fc1beca">physics_vector</a>&lt; <a class="el" href="structunravel_1_1raycast__hit.html">raycast_hit</a> &gt;</td></tr>
 <tr class="separator:a0613f08881cc79ec87da2fedc70667d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f948d33d939f80889a532cb6d8ba12d" id="r_a5f948d33d939f80889a532cb6d8ba12d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f948d33d939f80889a532cb6d8ba12d">sphere_overlap</a> (const math::vec3 &amp;origin, float radius, int <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>, bool <a class="el" href="bullet__backend_8cpp.html#a7b9ace833d559eb75f9a3f79d0acc959">query_sensors</a>) const -&gt; <a class="el" href="namespaceunravel.html#a8d33ed1f24d35134901fd1ae8fc1beca">physics_vector</a>&lt; entt::entity &gt;</td></tr>
+<tr class="memitem:a5f948d33d939f80889a532cb6d8ba12d" id="r_a5f948d33d939f80889a532cb6d8ba12d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f948d33d939f80889a532cb6d8ba12d">sphere_overlap</a> (const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ae53cb71996f6722f94e4a6bab413266f">origin</a>, float <a class="el" href="box3d__backend_8cpp.html#a5050a760c11da521cd4aee6336f6529f">radius</a>, int <a class="el" href="structunravel_1_1layer__mask.html">layer_mask</a>, bool <a class="el" href="box3d__backend_8cpp.html#a7b9ace833d559eb75f9a3f79d0acc959">query_sensors</a>) const -&gt; <a class="el" href="namespaceunravel.html#a8d33ed1f24d35134901fd1ae8fc1beca">physics_vector</a>&lt; entt::entity &gt;</td></tr>
 <tr class="separator:a5f948d33d939f80889a532cb6d8ba12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd2e2a50f22c7bf5bfa16dcf696a51b" id="r_adbd2e2a50f22c7bf5bfa16dcf696a51b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbd2e2a50f22c7bf5bfa16dcf696a51b">draw_system_gizmos</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="structgfx_1_1dd__raii.html">gfx::dd_raii</a> &amp;dd)</td></tr>
+<tr class="memdesc:adbd2e2a50f22c7bf5bfa16dcf696a51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws backend physics debug gizmos for the active world.  <br /></td></tr>
+<tr class="separator:adbd2e2a50f22c7bf5bfa16dcf696a51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcddc19db454bf84412de16e64bfa42c" id="r_adcddc19db454bf84412de16e64bfa42c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcddc19db454bf84412de16e64bfa42c">get_backend</a> () -&gt; <a class="el" href="classunravel_1_1physics__backend.html">physics_backend</a> *</td></tr>
+<tr class="separator:adcddc19db454bf84412de16e64bfa42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8e9ad17044159f7728ce741ec55cc3" id="r_a4d8e9ad17044159f7728ce741ec55cc3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d8e9ad17044159f7728ce741ec55cc3">get_backend</a> () const -&gt; const <a class="el" href="classunravel_1_1physics__backend.html">physics_backend</a> *</td></tr>
+<tr class="separator:a4d8e9ad17044159f7728ce741ec55cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abeb7707f9d566cdba5af8d21fe6635b3" id="r_abeb7707f9d566cdba5af8d21fe6635b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abeb7707f9d566cdba5af8d21fe6635b3">on_create_component</a> (entt::registry &amp;r, entt::entity e)</td></tr>
-<tr class="memdesc:abeb7707f9d566cdba5af8d21fe6635b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a physics component is created.  <br /></td></tr>
 <tr class="separator:abeb7707f9d566cdba5af8d21fe6635b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0126826b7c202ca99c4c478dfe6d11f3" id="r_a0126826b7c202ca99c4c478dfe6d11f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0126826b7c202ca99c4c478dfe6d11f3">on_destroy_component</a> (entt::registry &amp;r, entt::entity e)</td></tr>
-<tr class="memdesc:a0126826b7c202ca99c4c478dfe6d11f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a physics component is destroyed.  <br /></td></tr>
 <tr class="separator:a0126826b7c202ca99c4c478dfe6d11f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af504978c7c63c817b311ab32fc2b59aa" id="r_af504978c7c63c817b311ab32fc2b59aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af504978c7c63c817b311ab32fc2b59aa">apply_explosion_force</a> (<a class="el" href="classunravel_1_1physics__component.html">physics_component</a> &amp;comp, float explosion_force, const math::vec3 &amp;explosion_position, float explosion_radius, float upwards_modifier, <a class="el" href="namespaceunravel.html#affd248520b0507ba13ad6d424101ece6">force_mode</a> mode)</td></tr>
 <tr class="separator:af504978c7c63c817b311ab32fc2b59aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0154c7a652d828b00fc6b1b60a3ccd7a" id="r_a0154c7a652d828b00fc6b1b60a3ccd7a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0154c7a652d828b00fc6b1b60a3ccd7a">apply_force</a> (<a class="el" href="classunravel_1_1physics__component.html">physics_component</a> &amp;comp, const math::vec3 &amp;<a class="el" href="namespaceunravel.html#affd248520b0507ba13ad6d424101ece6aae254d63f2381cc183c11594873793e0">force</a>, <a class="el" href="namespaceunravel.html#affd248520b0507ba13ad6d424101ece6">force_mode</a> mode)</td></tr>
 <tr class="separator:a0154c7a652d828b00fc6b1b60a3ccd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a034408e825ec142936ed6923ddb264a5" id="r_a034408e825ec142936ed6923ddb264a5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a034408e825ec142936ed6923ddb264a5">apply_torque</a> (<a class="el" href="classunravel_1_1physics__component.html">physics_component</a> &amp;comp, const math::vec3 &amp;torque, <a class="el" href="namespaceunravel.html#affd248520b0507ba13ad6d424101ece6">force_mode</a> mode)</td></tr>
-<tr class="memdesc:a034408e825ec142936ed6923ddb264a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a torque to the specified physics component.  <br /></td></tr>
 <tr class="separator:a034408e825ec142936ed6923ddb264a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c4efb90702255880fbe427a98aabb99" id="r_a0c4efb90702255880fbe427a98aabb99"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c4efb90702255880fbe427a98aabb99">clear_kinematic_velocities</a> (<a class="el" href="classunravel_1_1physics__component.html">physics_component</a> &amp;comp)</td></tr>
-<tr class="memdesc:a0c4efb90702255880fbe427a98aabb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears kinematic velocities for the specified physics component.  <br /></td></tr>
 <tr class="separator:a0c4efb90702255880fbe427a98aabb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd76d102a8ff45f323bf0d8da704dfb1" id="r_acd76d102a8ff45f323bf0d8da704dfb1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd76d102a8ff45f323bf0d8da704dfb1">on_create_cc_component</a> (entt::registry &amp;r, entt::entity e)</td></tr>
 <tr class="separator:acd76d102a8ff45f323bf0d8da704dfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae79b6512c8a939717c34c40b62c6f110" id="r_ae79b6512c8a939717c34c40b62c6f110"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae79b6512c8a939717c34c40b62c6f110">on_destroy_cc_component</a> (entt::registry &amp;r, entt::entity e)</td></tr>
 <tr class="separator:ae79b6512c8a939717c34c40b62c6f110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a959c8a20a78620fccdc1e7ed012a9206" id="r_a959c8a20a78620fccdc1e7ed012a9206"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a959c8a20a78620fccdc1e7ed012a9206">move_character</a> (<a class="el" href="classunravel_1_1character__controller__component.html">character_controller_component</a> &amp;comp, const math::vec3 &amp;displacement)</td></tr>
-<tr class="memdesc:a959c8a20a78620fccdc1e7ed012a9206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves a character controller by a displacement.  <br /></td></tr>
 <tr class="separator:a959c8a20a78620fccdc1e7ed012a9206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f384478b56d22a1f780f491de482f96" id="r_a1f384478b56d22a1f780f491de482f96"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f384478b56d22a1f780f491de482f96">jump_character</a> (<a class="el" href="classunravel_1_1character__controller__component.html">character_controller_component</a> &amp;comp, const math::vec3 &amp;direction)</td></tr>
+<tr class="memitem:a1f384478b56d22a1f780f491de482f96" id="r_a1f384478b56d22a1f780f491de482f96"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f384478b56d22a1f780f491de482f96">jump_character</a> (<a class="el" href="classunravel_1_1character__controller__component.html">character_controller_component</a> &amp;comp, const math::vec3 &amp;<a class="el" href="namespaceunravel.html#ad4267312d1a92ab59f31646571f0cc39aef72c37be9d1b9e6e5bbd6ef09448abe">direction</a>)</td></tr>
 <tr class="separator:a1f384478b56d22a1f780f491de482f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc95aa729c05b6b337414bc079e1513" id="r_a7bc95aa729c05b6b337414bc079e1513"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bc95aa729c05b6b337414bc079e1513">apply_impulse_character</a> (<a class="el" href="classunravel_1_1character__controller__component.html">character_controller_component</a> &amp;comp, const math::vec3 &amp;<a class="el" href="namespaceunravel.html#affd248520b0507ba13ad6d424101ece6a9090cf2efa28334b14a853251679809f">impulse</a>)</td></tr>
 <tr class="separator:a7bc95aa729c05b6b337414bc079e1513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ea238d1e7edf4b0df7a58842a47712" id="r_a32ea238d1e7edf4b0df7a58842a47712"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32ea238d1e7edf4b0df7a58842a47712">warp_character</a> (<a class="el" href="classunravel_1_1character__controller__component.html">character_controller_component</a> &amp;comp, const math::vec3 &amp;<a class="el" href="defaults_8cpp.html#a55bc5b9b40c7f612c8f73e5d3acfab00">position</a>)</td></tr>
+<tr class="memitem:a32ea238d1e7edf4b0df7a58842a47712" id="r_a32ea238d1e7edf4b0df7a58842a47712"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32ea238d1e7edf4b0df7a58842a47712">warp_character</a> (<a class="el" href="classunravel_1_1character__controller__component.html">character_controller_component</a> &amp;comp, const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ac66edcab862b65e1d49ce97f9c74690c">position</a>)</td></tr>
 <tr class="separator:a32ea238d1e7edf4b0df7a58842a47712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2716fc9375f4ed505d85974cf5f9fb4" id="r_ac2716fc9375f4ed505d85974cf5f9fb4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2716fc9375f4ed505d85974cf5f9fb4">set_character_linear_velocity</a> (<a class="el" href="classunravel_1_1character__controller__component.html">character_controller_component</a> &amp;comp, const math::vec3 &amp;<a class="el" href="namespaceunravel.html#acec4ffb55357d08580b8bf2a1057532faac1a453d0cdc1f19d9479ccfaa8b082c">velocity</a>)</td></tr>
 <tr class="separator:ac2716fc9375f4ed505d85974cf5f9fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages the physics operations using the specified backend. </p>
+<div class="textblock"><p>Owns fixed-step simulation and dispatches work to the compile-time physics backend. </p>
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8h_source.html#l00014">14</a> of file <a class="el" href="physics__system_8h_source.html">physics_system.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a70ee939c5622ee653036c7d5be3bfb43" name="a70ee939c5622ee653036c7d5be3bfb43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70ee939c5622ee653036c7d5be3bfb43">&#9670;&#160;</a></span>backend_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="#a70ee939c5622ee653036c7d5be3bfb43">unravel::physics_system::backend_type</a> = <a class="el" href="structunravel_1_1bullet__backend.html">bullet_backend</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The backend type used for physics operations. </p>
-
-<p class="definition">Definition at line <a class="el" href="physics__system_8h_source.html#l00017">17</a> of file <a class="el" href="physics__system_8h_source.html">physics_system.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="physics__system_8h_source.html#l00019">19</a> of file <a class="el" href="physics__system_8h_source.html">physics_system.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af504978c7c63c817b311ab32fc2b59aa" name="af504978c7c63c817b311ab32fc2b59aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af504978c7c63c817b311ab32fc2b59aa">&#9670;&#160;</a></span>apply_explosion_force()</h2>
 
@@ -240,7 +216,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00112">112</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00188">188</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +252,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00127">127</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00207">207</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -307,7 +283,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00164">164</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00278">278</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -343,16 +319,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Applies a torque to the specified physics component. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">comp</td><td>The physics component. </td></tr>
-    <tr><td class="paramname">torque</td><td>The torque vector. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00132">132</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00216">216</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -379,15 +346,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Clears kinematic velocities for the specified physics component. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">comp</td><td>The physics component. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00137">137</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00225">225</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -415,7 +374,75 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if deinitialization was successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00046">46</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00077">77</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adbd2e2a50f22c7bf5bfa16dcf696a51b" name="adbd2e2a50f22c7bf5bfa16dcf696a51b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd2e2a50f22c7bf5bfa16dcf696a51b">&#9670;&#160;</a></span>draw_system_gizmos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::physics_system::draw_system_gizmos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cam</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgfx_1_1dd__raii.html">gfx::dd_raii</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dd</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws backend physics debug gizmos for the active world. </p>
+
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00369">369</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adcddc19db454bf84412de16e64bfa42c" name="adcddc19db454bf84412de16e64bfa42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcddc19db454bf84412de16e64bfa42c">&#9670;&#160;</a></span>get_backend() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::physics_system::get_backend </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="classunravel_1_1physics__backend.html">physics_backend</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00377">377</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4d8e9ad17044159f7728ce741ec55cc3" name="a4d8e9ad17044159f7728ce741ec55cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8e9ad17044159f7728ce741ec55cc3">&#9670;&#160;</a></span>get_backend() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::physics_system::get_backend </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="classunravel_1_1physics__backend.html">physics_backend</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00382">382</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -443,7 +470,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if initialization was successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00028">28</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00043">43</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -474,7 +501,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00159">159</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00269">269</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -505,17 +532,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Moves a character controller by a displacement. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">comp</td><td>The character controller component. </td></tr>
-    <tr><td class="paramname">displacement</td><td>The displacement vector. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Collision flags from the movement. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00154">154</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00260">260</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -546,7 +563,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00142">142</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00234">234</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -576,15 +593,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Called when a physics component is created. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">r</td><td>The registry containing the component. </td></tr>
-    <tr><td class="paramname">e</td><td>The entity associated with the component. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00017">17</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
@@ -617,7 +625,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00148">148</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00247">247</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -648,16 +656,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called when a physics component is destroyed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">r</td><td>The registry containing the component. </td></tr>
-    <tr><td class="paramname">e</td><td>The entity associated with the component. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00022">22</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00030">30</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -695,7 +694,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00179">179</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00305">305</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -733,7 +732,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00188">188</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00318">318</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -764,7 +763,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00174">174</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00296">296</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -807,7 +806,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00197">197</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00331">331</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -850,7 +849,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00207">207</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00345">345</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -883,7 +882,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00217">217</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00359">359</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>
@@ -914,7 +913,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00169">169</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="physics__system_8cpp_source.html#l00287">287</a> of file <a class="el" href="physics__system_8cpp_source.html">physics_system.cpp</a>.</p>
 
 </div>
 </div>

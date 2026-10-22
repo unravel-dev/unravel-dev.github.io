@@ -166,8 +166,8 @@ $(function(){initNavTree('any__generator_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">virtual</span> ~base() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">virtual</span> std::unique_ptr&lt;base&gt; clone() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">virtual</span> T generate() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> done() const noexcept = 0;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        virtual <span class="keywordtype">void</span> next() = 0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="footer__panel_8cpp.html#aadee99df979f447195f6e9c7103077fa">done</a>() const noexcept = 0;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        virtual <span class="keywordtype">void</span> <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#aecb4d4b187a80f849ed46f7eed1bb57d">next</a>() = 0;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    };</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    template&lt;typename <a class="code hl_namespace" href="namespacegenerator.html">generator</a>&gt;</div>
@@ -188,12 +188,12 @@ $(function(){initNavTree('any__generator_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">return</span> generator_.generate();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">bool</span> done() const noexcept<span class="keyword"> override</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="footer__panel_8cpp.html#aadee99df979f447195f6e9c7103077fa">done</a>() const noexcept<span class="keyword"> override</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">        </span>{</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">return</span> generator_.done();</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespaceutf8.html#a789b0afb32654dab874e5f7cee49c0a2">next</a>()<span class="keyword"> override</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordtype">void</span> <a class="code hl_variable" href="gpu__frame__stats__widgets_8cpp.html#aecb4d4b187a80f849ed46f7eed1bb57d">next</a>()<span class="keyword"> override</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">        </span>{</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            generator_.next();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
@@ -218,9 +218,10 @@ $(function(){initNavTree('any__generator_8hpp_source.html',''); initResizable(tr
 <div class="ttc" id="aclassgenerator_1_1any__generator_html_acde26668881ba5f0047f8ed82323dcd9"><div class="ttname"><a href="classgenerator_1_1any__generator.html#acde26668881ba5f0047f8ed82323dcd9">generator::any_generator::generate</a></div><div class="ttdeci">T generate() const</div><div class="ttdef"><b>Definition</b> <a href="#l00034">any_generator.hpp:34</a></div></div>
 <div class="ttc" id="aclassgenerator_1_1any__generator_html_ae12f5477e12b14226f110db95b759de8"><div class="ttname"><a href="classgenerator_1_1any__generator.html#ae12f5477e12b14226f110db95b759de8">generator::any_generator::operator=</a></div><div class="ttdeci">any_generator &amp; operator=(const any_generator &amp;that)</div><div class="ttdef"><b>Definition</b> <a href="#l00026">any_generator.hpp:26</a></div></div>
 <div class="ttc" id="aclassgenerator_1_1any__generator_html_afd1c54673279696790708ac9f9b702ea"><div class="ttname"><a href="classgenerator_1_1any__generator.html#afd1c54673279696790708ac9f9b702ea">generator::any_generator::any_generator</a></div><div class="ttdeci">any_generator(any_generator &amp;&amp;)=default</div></div>
+<div class="ttc" id="afooter__panel_8cpp_html_aadee99df979f447195f6e9c7103077fa"><div class="ttname"><a href="footer__panel_8cpp.html#aadee99df979f447195f6e9c7103077fa">done</a></div><div class="ttdeci">size_t done</div><div class="ttdef"><b>Definition</b> <a href="footer__panel_8cpp_source.html#l00051">footer_panel.cpp:51</a></div></div>
+<div class="ttc" id="agpu__frame__stats__widgets_8cpp_html_aecb4d4b187a80f849ed46f7eed1bb57d"><div class="ttname"><a href="gpu__frame__stats__widgets_8cpp.html#aecb4d4b187a80f849ed46f7eed1bb57d">next</a></div><div class="ttdeci">size_t next</div><div class="ttdef"><b>Definition</b> <a href="gpu__frame__stats__widgets_8cpp_source.html#l00165">gpu_frame_stats_widgets.cpp:165</a></div></div>
 <div class="ttc" id="anamespacegenerator_html"><div class="ttname"><a href="namespacegenerator.html">generator</a></div><div class="ttdef"><b>Definition</b> <a href="#l00006">any_generator.hpp:7</a></div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">Hash specialization for batch_key to enable use in std::unordered_map.</div><div class="ttdef"><b>Definition</b> <a href="render__view__keys_8h_source.html#l00036">render_view_keys.h:37</a></div></div>
-<div class="ttc" id="anamespaceutf8_html_a789b0afb32654dab874e5f7cee49c0a2"><div class="ttname"><a href="namespaceutf8.html#a789b0afb32654dab874e5f7cee49c0a2">utf8::next</a></div><div class="ttdeci">utfchar32_t next(octet_iterator &amp;it, octet_iterator end)</div><div class="ttdef"><b>Definition</b> <a href="checked_8h_source.html#l00151">checked.h:151</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">Hash specialization for batch_key to enable use in std::unordered_map.</div><div class="ttdef"><b>Definition</b> <a href="batch__key_8h_source.html#l00154">batch_key.h:155</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

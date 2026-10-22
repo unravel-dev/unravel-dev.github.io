@@ -114,12 +114,20 @@ $(function(){initNavTree('bgfx__utils_8cpp.html',''); initResizable(true); });
 <code>#include &lt;bx/readerwriter.h&gt;</code><br />
 <code>#include &lt;bx/string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="bgfx__utils_8h_source.html">bgfx_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="graphics_8h_source.html">../graphics.h</a>&quot;</code><br />
 <code>#include &lt;bimg/bimg.h&gt;</code><br />
 <code>#include &lt;bimg/decode.h&gt;</code><br />
 <code>#include &lt;bx/bx.h&gt;</code><br />
 <code>#include &lt;bx/file.h&gt;</code><br />
 <code>#include &lt;bx/sort.h&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="pack_8h_source.html">filesystem/pack.h</a>&gt;</code><br />
+<code>#include &lt;hpp/optional.hpp&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="bgfx__utils_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -152,6 +160,12 @@ Functions</h2></td></tr>
 <tr class="separator:a4d9994a36806a2172eba60f05338ba8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92a3ac6e890b77e760e3b0b29f136d51" id="r_a92a3ac6e890b77e760e3b0b29f136d51"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92a3ac6e890b77e760e3b0b29f136d51">imageReleaseCb</a> (void *_ptr, void *_userData)</td></tr>
 <tr class="separator:a92a3ac6e890b77e760e3b0b29f136d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0b2083a878d8792da80f055ecd18fb" id="r_a3e0b2083a878d8792da80f055ecd18fb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e0b2083a878d8792da80f055ecd18fb">readEtc1AsEtc2</a> (bimg::ImageContainer &amp;imageContainer)</td></tr>
+<tr class="separator:a3e0b2083a878d8792da80f055ecd18fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6ccdd5224cb1d276a8a57fe1519adb" id="r_a1d6ccdd5224cb1d276a8a57fe1519adb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d6ccdd5224cb1d276a8a57fe1519adb">containerCarriesSrgbTag</a> (const bimg::ImageContainer *imageContainer)</td></tr>
+<tr class="separator:a1d6ccdd5224cb1d276a8a57fe1519adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ac9c74746aac3bd0e0e5fc72e5155b" id="r_a77ac9c74746aac3bd0e0e5fc72e5155b"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77ac9c74746aac3bd0e0e5fc72e5155b">applyContainerSrgbFlag</a> (const bimg::ImageContainer *imageContainer, uint64_t _flags)</td></tr>
+<tr class="separator:a77ac9c74746aac3bd0e0e5fc72e5155b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cc7942e303413ee6c79736f5bc6f5b5" id="r_a2cc7942e303413ee6c79736f5bc6f5b5"><td class="memItemLeft" align="right" valign="top">static bgfx::TextureHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cc7942e303413ee6c79736f5bc6f5b5">loadTextureFromContainer</a> (bimg::ImageContainer *imageContainer, uint64_t _flags, bgfx::TextureInfo *_info, const <a class="el" href="bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6">TexturePreCreateFn</a> &amp;_preCreate=nullptr)</td></tr>
 <tr class="separator:a2cc7942e303413ee6c79736f5bc6f5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c61b9c0c402b92836cacc469646337f" id="r_a8c61b9c0c402b92836cacc469646337f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c61b9c0c402b92836cacc469646337f">imageFlipTangentSpaceNormalY</a> (bimg::ImageContainer *&amp;_image)</td></tr>
@@ -176,12 +190,49 @@ Functions</h2></td></tr>
 <tr class="separator:aebf028977d2f18a3c7d6e0d107b5cda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a491508725b1014fb0c4191ba597e2592" id="r_a491508725b1014fb0c4191ba597e2592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a491508725b1014fb0c4191ba597e2592">calcTangents</a> (void *_vertices, uint16_t _numVertices, bgfx::VertexLayout _layout, const uint16_t *_indices, uint32_t _numIndices)</td></tr>
 <tr class="separator:a491508725b1014fb0c4191ba597e2592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec1bdd65d683731b797048bde6d080c4" id="r_aec1bdd65d683731b797048bde6d080c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec1bdd65d683731b797048bde6d080c4">saveToFile</a> (bgfx::ViewId viewId, const bx::FilePath &amp;_filePath, bgfx::FrameBufferHandle fbo, uint32_t <a class="el" href="asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd">width</a>, uint32_t <a class="el" href="asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be">height</a>)</td></tr>
+<tr class="memitem:abe6d6261f16ac76f00b9df562d421649" id="r_abe6d6261f16ac76f00b9df562d421649"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe6d6261f16ac76f00b9df562d421649">readTexture</a> (bgfx::ViewId viewId, bgfx::TextureHandle _texture, uint32_t <a class="el" href="core__runtime__bindings_8cpp.html#ae426f00e82704fa09578f5446e22d915">width</a>, uint32_t <a class="el" href="mesh__sdf__baker_8cpp.html#a48083b65ac9a863566dc3e3fff09a5b4">height</a>, <a class="el" href="bgfx__utils_8h.html#a5e71cc2a54c40afe87ad5cfc9fc6dd31">ReadbackFn</a> _onLanded)</td></tr>
+<tr class="separator:abe6d6261f16ac76f00b9df562d421649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1bdd65d683731b797048bde6d080c4" id="r_aec1bdd65d683731b797048bde6d080c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec1bdd65d683731b797048bde6d080c4">saveToFile</a> (bgfx::ViewId viewId, const bx::FilePath &amp;_filePath, bgfx::FrameBufferHandle fbo, uint32_t <a class="el" href="core__runtime__bindings_8cpp.html#ae426f00e82704fa09578f5446e22d915">width</a>, uint32_t <a class="el" href="mesh__sdf__baker_8cpp.html#a48083b65ac9a863566dc3e3fff09a5b4">height</a>)</td></tr>
 <tr class="separator:aec1bdd65d683731b797048bde6d080c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c52c2b842ca50b4dcb761efd7f6a92b" id="r_a8c52c2b842ca50b4dcb761efd7f6a92b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c52c2b842ca50b4dcb761efd7f6a92b">imageSave</a> (const char *saveAs, bimg::ImageContainer *image)</td></tr>
-<tr class="separator:a8c52c2b842ca50b4dcb761efd7f6a92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc472108c3ed0a6a64c14c6a273aaaf8" id="r_acc472108c3ed0a6a64c14c6a273aaaf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc472108c3ed0a6a64c14c6a273aaaf8">deliverLandedReadbacks</a> (uint32_t _renderFrame)</td></tr>
+<tr class="separator:acc472108c3ed0a6a64c14c6a273aaaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4685a36e8e0aa212084a5085699ca634" id="r_a4685a36e8e0aa212084a5085699ca634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4685a36e8e0aa212084a5085699ca634">finishReadbacks</a> ()</td></tr>
+<tr class="separator:a4685a36e8e0aa212084a5085699ca634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab462fa6acbe03eae23d3486596e95e77" id="r_ab462fa6acbe03eae23d3486596e95e77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab462fa6acbe03eae23d3486596e95e77">imageSave</a> (const char *saveAs, bimg::ImageContainer *<a class="el" href="pack_8cpp.html#aa006668ca8ea95c982f0df9bb7fc541f">image</a>, const char *<a class="el" href="mcp__meta__properties_8cpp.html#aa289246162cbb61b2ac3a04420a48e32">format_hint</a>)</td></tr>
+<tr class="separator:ab462fa6acbe03eae23d3486596e95e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a77ac9c74746aac3bd0e0e5fc72e5155b" name="a77ac9c74746aac3bd0e0e5fc72e5155b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ac9c74746aac3bd0e0e5fc72e5155b">&#9670;&#160;</a></span>applyContainerSrgbFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint64_t applyContainerSrgbFlag </td>
+          <td>(</td>
+          <td class="paramtype">const bimg::ImageContainer *</td>          <td class="paramname"><span class="paramname"><em>imageContainer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>_flags</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00312">312</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a491508725b1014fb0c4191ba597e2592" name="a491508725b1014fb0c4191ba597e2592"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a491508725b1014fb0c4191ba597e2592">&#9670;&#160;</a></span>calcTangents()</h2>
 
@@ -216,7 +267,74 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00628">628</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00777">777</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d6ccdd5224cb1d276a8a57fe1519adb" name="a1d6ccdd5224cb1d276a8a57fe1519adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6ccdd5224cb1d276a8a57fe1519adb">&#9670;&#160;</a></span>containerCarriesSrgbTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool containerCarriesSrgbTag </td>
+          <td>(</td>
+          <td class="paramtype">const bimg::ImageContainer *</td>          <td class="paramname"><span class="paramname"><em>imageContainer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00304">304</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acc472108c3ed0a6a64c14c6a273aaaf8" name="acc472108c3ed0a6a64c14c6a273aaaf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc472108c3ed0a6a64c14c6a273aaaf8">&#9670;&#160;</a></span>deliverLandedReadbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deliverLandedReadbacks </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>_renderFrame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Hands the readbacks that have landed by <code>_renderFrame</code> to their callbacks and releases their readback textures. Called by <a class="el" href="namespacegfx.html#a7142efcc992b2e99f33592db646e7006">gfx::frame()</a> after every bgfx::frame(). </p>
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00965">965</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4685a36e8e0aa212084a5085699ca634" name="a4685a36e8e0aa212084a5085699ca634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4685a36e8e0aa212084a5085699ca634">&#9670;&#160;</a></span>finishReadbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void finishReadbacks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Advances bgfx frames until every pending readback has landed, then delivers them. Called by <a class="el" href="namespacegfx.html#a527b432e8ab882cda3c0bb10e340cca1">gfx::shutdown()</a> before bgfx shuts down, so no copy is left targeting freed memory. </p>
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00992">992</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -236,7 +354,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Flip tangent-space normal map Y (tangent-space +Y / green channel via bimg unpack/pack). Preserves the container format for uncompressed sources. Compressed inputs are decoded to RGBA8 and left as RGBA8 (no lossy re-encode back to BC). </p>
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00439">439</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00571">571</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -259,7 +377,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00588">588</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00726">726</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -287,7 +405,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00583">583</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00715">715</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -317,7 +435,7 @@ Functions</h2></td></tr>
 
 <p>Parse image metadata without decoding pixel data. </p>
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00613">613</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00761">761</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -350,7 +468,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00603">603</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00749">749</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -371,7 +489,7 @@ Functions</h2></td></tr>
 
 <p>Prepare a flipped normal map for PNG bake export (RGBA8, opaque alpha when unused). </p>
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00467">467</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00599">599</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -402,12 +520,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00217">217</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00283">283</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a8c52c2b842ca50b4dcb761efd7f6a92b" name="a8c52c2b842ca50b4dcb761efd7f6a92b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c52c2b842ca50b4dcb761efd7f6a92b">&#9670;&#160;</a></span>imageSave()</h2>
+<a id="ab462fa6acbe03eae23d3486596e95e77" name="ab462fa6acbe03eae23d3486596e95e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab462fa6acbe03eae23d3486596e95e77">&#9670;&#160;</a></span>imageSave()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,12 +538,18 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bimg::ImageContainer *</td>          <td class="paramname"><span class="paramname"><em>image</em></span>&#160;)</td>
+          <td class="paramtype">bimg::ImageContainer *</td>          <td class="paramname"><span class="paramname"><em>image</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>format_hint</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Write <code>image</code> to <code>saveAs</code>. Format is detected from <code>format_hint</code> when non-null (e.g. the final ".dds" destination path while writing a ".temp" file); otherwise from <code>saveAs</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00789">789</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l01001">1001</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -458,7 +582,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00076">76</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00134">134</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -481,7 +605,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00103">103</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00161">161</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -522,7 +646,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00130">130</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00188">188</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -553,7 +677,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00114">114</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00172">172</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -581,7 +705,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00199">199</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00265">265</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -604,7 +728,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00211">211</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00277">277</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -635,7 +759,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00150">150</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00208">208</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -654,7 +778,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00191">191</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00252">252</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -673,7 +797,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00185">185</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00246">246</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -726,7 +850,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00536">536</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00668">668</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -774,7 +898,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00571">571</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00703">703</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -833,7 +957,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Load a texture from memory (DDS, KTX, PNG, etc.). <em>_name</em> is optional debug label. <em>_preCreate</em> is invoked after the image header has been parsed, right before the GPU texture is created. </p>
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00491">491</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00623">623</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -874,7 +998,73 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00224">224</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00353">353</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3e0b2083a878d8792da80f055ecd18fb" name="a3e0b2083a878d8792da80f055ecd18fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0b2083a878d8792da80f055ecd18fb">&#9670;&#160;</a></span>readEtc1AsEtc2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void readEtc1AsEtc2 </td>
+          <td>(</td>
+          <td class="paramtype">bimg::ImageContainer &amp;</td>          <td class="paramname"><span class="paramname"><em>imageContainer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00293">293</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abe6d6261f16ac76f00b9df562d421649" name="abe6d6261f16ac76f00b9df562d421649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6d6261f16ac76f00b9df562d421649">&#9670;&#160;</a></span>readTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool readTexture </td>
+          <td>(</td>
+          <td class="paramtype">bgfx::ViewId</td>          <td class="paramname"><span class="paramname"><em>viewId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bgfx::TextureHandle</td>          <td class="paramname"><span class="paramname"><em>_texture</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bgfx__utils_8h.html#a5e71cc2a54c40afe87ad5cfc9fc6dd31">ReadbackFn</a></td>          <td class="paramname"><span class="paramname"><em>_onLanded</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads mip 0 of <code>_texture</code> (non-MSAA RGBA8, <code>width</code> x <code>height</code>) back to the CPU. The pixels come back through a GPU readback that lands a couple of frames later, so this only issues the copy in <code>viewId</code> (which must run after the texture is final); <a class="el" href="namespacegfx.html#a7142efcc992b2e99f33592db646e7006">gfx::frame()</a> hands them to <code>_onLanded</code> once they are there. Returns false when the copy could not be issued. </p>
+
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00923">923</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -911,8 +1101,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Saves the first color attachment of <code>fbo</code> (non-MSAA RGBA8, <code>width</code> x <code>height</code>) as a PNG at <code>_filePath</code> through readTexture: <a class="el" href="namespacegfx.html#a7142efcc992b2e99f33592db646e7006">gfx::frame()</a> writes the file once the readback has landed. Returns false when the copy could not be issued. Window framebuffers have no attachment; use bgfx::requestScreenShot for those. </p>
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00729">729</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00953">953</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -931,7 +1122,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00109">109</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bgfx__utils_8cpp_source.html#l00167">167</a> of file <a class="el" href="bgfx__utils_8cpp_source.html">bgfx_utils.cpp</a>.</p>
 
 </div>
 </div>

@@ -1,6 +1,7 @@
 var classfs_1_1watcher =
 [
     [ "entry", "structfs_1_1watcher_1_1entry.html", "structfs_1_1watcher_1_1entry" ],
+    [ "scoped_pause", "classfs_1_1watcher_1_1scoped__pause.html", "classfs_1_1watcher_1_1scoped__pause" ],
     [ "clock_t", "classfs_1_1watcher.html#ab0c82f2bc929b6e899a0b7b36064c179", null ],
     [ "notify_callback", "classfs_1_1watcher.html#a4fab8ecf8112f60338ea6a65f81e390f", null ],
     [ "entry_status", "classfs_1_1watcher.html#afb060fa6b955c9eb2e5edd5ed04f5284", [
@@ -15,5 +16,6 @@ var classfs_1_1watcher =
     [ "touch", "classfs_1_1watcher.html#a7c0eef46ad9e454af50ce9765de7f9b4", null ],
     [ "unwatch", "classfs_1_1watcher.html#a24d96e9e9726580b034a29666f467a81", null ],
     [ "unwatch_all", "classfs_1_1watcher.html#a6ef6211b3e60da6067da53925f1df09f", null ],
-    [ "watch", "classfs_1_1watcher.html#ab19f649fbf29019d118279a90db7b70b", null ]
+    [ "watch", "classfs_1_1watcher.html#ab19f649fbf29019d118279a90db7b70b", null ],
+    [ "with_paused", "classfs_1_1watcher.html#aa7dc783083575b88f7992c81fc735f41", null ]
 ];

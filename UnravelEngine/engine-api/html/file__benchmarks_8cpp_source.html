@@ -143,7 +143,7 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">struct </span>backend_timing</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    read_backend backend = read_backend::file_stdio;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    read_backend <a class="code hl_enumeration" href="namespaceraytracing.html#a75f965d37309ea2c44b9c0237935ca32">backend</a> = read_backend::file_stdio;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">double</span> cold_seconds = 0.0;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">double</span> hot_seconds = 0.0;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    std::uint64_t cold_checksum = 0;</div>
@@ -151,9 +151,9 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">size_t</span> bytes_read = 0;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">auto</span> backend_name(read_backend backend) -&gt; <span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">auto</span> backend_name(read_backend <a class="code hl_variable" href="pipeline_8cpp.html#a0a297ad4966954c332df2c546791427d">backend</a>) -&gt; <span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">switch</span>(backend)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">switch</span>(<a class="code hl_variable" href="pipeline_8cpp.html#a0a297ad4966954c332df2c546791427d">backend</a>)</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">case</span> read_backend::file_stdio:</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;FILE*&quot;</span>;</div>
@@ -179,7 +179,7 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">auto</span> add_chunk_checksum(std::uint64_t checksum, <span class="keyword">const</span> std::uint8_t* data, <span class="keywordtype">size_t</span> <a class="code hl_struct" href="structsize.html">size</a>) -&gt; std::uint64_t</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>{</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741">i</a> &lt; <a class="code hl_variable" href="volume__resolver_8cpp.html#aa6ea9b07932df851a61fa72bd01761fe">size</a>; ++<a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741">i</a>)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741">i</a> &lt; <a class="code hl_variable" href="animation__humanoid_8cpp.html#a762f2ce2b0754f8b6b51e92ab4834b33">size</a>; ++<a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741">i</a>)</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    {</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        checksum += <span class="keyword">static_cast&lt;</span>std::uint64_t<span class="keyword">&gt;</span>(data[<a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741">i</a>]);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
@@ -191,7 +191,7 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> add_chunk_checksum(checksum, <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>std::uint8_t*<span class="keyword">&gt;</span>(data), <a class="code hl_struct" href="structsize.html">size</a>);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">auto</span> collect_regular_files(<span class="keyword">const</span> path&amp; directory) -&gt; std::vector&lt;path&gt;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">auto</span> collect_regular_files(<span class="keyword">const</span> <a class="code hl_variable" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>&amp; directory) -&gt; std::vector&lt;path&gt;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>{</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    std::vector&lt;path&gt; files;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    std::error_code ec;</div>
@@ -214,7 +214,7 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">return</span> files;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">auto</span> file_byte_size(<span class="keyword">const</span> path&amp; file_path) -&gt; <span class="keywordtype">size_t</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">auto</span> file_byte_size(<span class="keyword">const</span> <a class="code hl_variable" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>&amp; file_path) -&gt; <span class="keywordtype">size_t</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>{</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    std::error_code ec;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_struct" href="structsize.html">size</a> = fs::file_size(file_path, ec);</div>
@@ -222,17 +222,17 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    {</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="volume__resolver_8cpp.html#aa6ea9b07932df851a61fa72bd01761fe">size</a>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="animation__humanoid_8cpp.html#a762f2ce2b0754f8b6b51e92ab4834b33">size</a>);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">auto</span> total_bytes_for_files(<span class="keyword">const</span> std::vector&lt;path&gt;&amp; files) -&gt; <span class="keywordtype">size_t</span></div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">size_t</span> total = 0;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">size_t</span> <a class="code hl_variable" href="footer__panel_8cpp.html#a3fab45bb4d7cd7e889bdf00080096e8e">total</a> = 0;</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; file_path : files)</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        total += file_byte_size(file_path);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <a class="code hl_variable" href="footer__panel_8cpp.html#a3fab45bb4d7cd7e889bdf00080096e8e">total</a> += file_byte_size(file_path);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> total;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="footer__panel_8cpp.html#a3fab45bb4d7cd7e889bdf00080096e8e">total</a>;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">auto</span> format_bytes_summary(<span class="keywordtype">size_t</span> <a class="code hl_variable" href="eviction_8cpp.html#a3a00ca04c0ed87681f126e891122e276">bytes</a>) -&gt; std::string</div>
@@ -293,47 +293,47 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>}</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="keyword">auto</span> checksum_file_stdio_chunked(<span class="keyword">const</span> path&amp; file_path) -&gt; std::uint64_t</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="keyword">auto</span> checksum_file_stdio_chunked(<span class="keyword">const</span> <a class="code hl_variable" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>&amp; file_path) -&gt; std::uint64_t</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>{</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    std::uint64_t checksum = 0;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    FILE* file = std::fopen(file_path.string().c_str(), <span class="stringliteral">&quot;rb&quot;</span>);</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordflow">if</span>(file == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    FILE* <a class="code hl_variable" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a> = std::fopen(file_path.string().c_str(), <span class="stringliteral">&quot;rb&quot;</span>);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a> == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    {</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keywordflow">return</span> checksum;</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    }</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    std::array&lt;char, read_chunk_size&gt; buffer{};</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    std::array&lt;char, read_chunk_size&gt; <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>{};</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordtype">size_t</span> bytes_read = 0;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">while</span>((bytes_read = std::fread(buffer.data(), 1, buffer.size(), file)) &gt; 0)</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">while</span>((bytes_read = std::fread(<a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), 1, <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.size(), <a class="code hl_variable" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a>)) &gt; 0)</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        checksum = add_chunk_checksum(checksum, buffer.data(), bytes_read);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        checksum = add_chunk_checksum(checksum, <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), bytes_read);</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    std::fclose(file);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    std::fclose(<a class="code hl_variable" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a>);</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordflow">return</span> checksum;</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>}</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="keyword">auto</span> checksum_file_stdio_whole(<span class="keyword">const</span> path&amp; file_path) -&gt; std::uint64_t</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="keyword">auto</span> checksum_file_stdio_whole(<span class="keyword">const</span> <a class="code hl_variable" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>&amp; file_path) -&gt; std::uint64_t</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>{</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> file_size = file_byte_size(file_path);</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordflow">if</span>(file_size == 0)</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    {</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    }</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    FILE* file = std::fopen(file_path.string().c_str(), <span class="stringliteral">&quot;rb&quot;</span>);</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">if</span>(file == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    FILE* <a class="code hl_variable" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a> = std::fopen(file_path.string().c_str(), <span class="stringliteral">&quot;rb&quot;</span>);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a> == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    {</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    }</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    std::vector&lt;char&gt; buffer(file_size);</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> bytes_read = std::fread(buffer.data(), 1, file_size, file);</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    std::fclose(file);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    std::vector&lt;char&gt; <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>(file_size);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> bytes_read = std::fread(<a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), 1, file_size, <a class="code hl_variable" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a>);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    std::fclose(<a class="code hl_variable" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a>);</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keywordflow">if</span>(bytes_read == 0)</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    {</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    }</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">return</span> add_chunk_checksum(0, buffer.data(), bytes_read);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">return</span> add_chunk_checksum(0, <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), bytes_read);</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>}</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="keyword">auto</span> checksum_file_istream_chunked(<span class="keyword">const</span> path&amp; file_path) -&gt; std::uint64_t</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="keyword">auto</span> checksum_file_istream_chunked(<span class="keyword">const</span> <a class="code hl_variable" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>&amp; file_path) -&gt; std::uint64_t</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>{</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    std::uint64_t checksum = 0;</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    file_istream stream(file_path, <a class="code hl_variable" href="namespacefs.html#a04a3b48caa1c67131984e8e88c1d50e4">default_file_read_mode</a>);</div>
@@ -341,21 +341,21 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    {</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="keywordflow">return</span> checksum;</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    }</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    std::array&lt;char, read_chunk_size&gt; buffer{};</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    std::array&lt;char, read_chunk_size&gt; <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>{};</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordflow">while</span>(stream)</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    {</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        stream.read(buffer.data(), <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>(buffer.size()));</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        stream.read(<a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>(<a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.size()));</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keyword">const</span> <span class="keyword">auto</span> bytes_read = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(stream.gcount());</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <span class="keywordflow">if</span>(bytes_read == 0)</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        {</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        }</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        checksum = add_chunk_checksum(checksum, buffer.data(), bytes_read);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        checksum = add_chunk_checksum(checksum, <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), bytes_read);</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    }</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keywordflow">return</span> checksum;</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>}</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="keyword">auto</span> checksum_file_istream_whole(<span class="keyword">const</span> path&amp; file_path) -&gt; std::uint64_t</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="keyword">auto</span> checksum_file_istream_whole(<span class="keyword">const</span> <a class="code hl_variable" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>&amp; file_path) -&gt; std::uint64_t</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>{</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> file_size = file_byte_size(file_path);</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keywordflow">if</span>(file_size == 0)</div>
@@ -367,17 +367,17 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    {</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    }</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    std::vector&lt;char&gt; buffer(file_size);</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    stream.read(buffer.data(), <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>(file_size));</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    std::vector&lt;char&gt; <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>(file_size);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    stream.read(<a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>(file_size));</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keyword">const</span> <span class="keyword">auto</span> bytes_read = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(stream.gcount());</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordflow">if</span>(bytes_read == 0)</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    {</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    }</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordflow">return</span> add_chunk_checksum(0, buffer.data(), bytes_read);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordflow">return</span> add_chunk_checksum(0, <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), bytes_read);</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>}</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="keyword">auto</span> checksum_file_fstream_chunked(<span class="keyword">const</span> path&amp; file_path) -&gt; std::uint64_t</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="keyword">auto</span> checksum_file_fstream_chunked(<span class="keyword">const</span> <a class="code hl_variable" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>&amp; file_path) -&gt; std::uint64_t</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>{</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    std::uint64_t checksum = 0;</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    std::ifstream stream(file_path, std::ios::binary);</div>
@@ -385,21 +385,21 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    {</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <span class="keywordflow">return</span> checksum;</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    }</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    std::array&lt;char, read_chunk_size&gt; buffer{};</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    std::array&lt;char, read_chunk_size&gt; <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>{};</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">while</span>(stream)</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    {</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        stream.read(buffer.data(), <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>(buffer.size()));</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        stream.read(<a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>(<a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.size()));</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <span class="keyword">const</span> <span class="keyword">auto</span> bytes_read = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(stream.gcount());</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordflow">if</span>(bytes_read == 0)</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        {</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        }</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        checksum = add_chunk_checksum(checksum, buffer.data(), bytes_read);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        checksum = add_chunk_checksum(checksum, <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), bytes_read);</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    }</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keywordflow">return</span> checksum;</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>}</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="keyword">auto</span> checksum_file_fstream_whole(<span class="keyword">const</span> path&amp; file_path) -&gt; std::uint64_t</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="keyword">auto</span> checksum_file_fstream_whole(<span class="keyword">const</span> <a class="code hl_variable" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>&amp; file_path) -&gt; std::uint64_t</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>{</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> file_size = file_byte_size(file_path);</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordflow">if</span>(file_size == 0)</div>
@@ -411,19 +411,19 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    {</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    }</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    std::vector&lt;char&gt; buffer(file_size);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    stream.read(buffer.data(), <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>(file_size));</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    std::vector&lt;char&gt; <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>(file_size);</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    stream.read(<a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>(file_size));</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="keyword">const</span> <span class="keyword">auto</span> bytes_read = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(stream.gcount());</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="keywordflow">if</span>(bytes_read == 0)</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    {</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    }</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">return</span> add_chunk_checksum(0, buffer.data(), bytes_read);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">return</span> add_chunk_checksum(0, <a class="code hl_variable" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>.data(), bytes_read);</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>}</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="keyword">auto</span> checksum_file(read_backend backend, read_mode mode, <span class="keyword">const</span> path&amp; file_path) -&gt; std::uint64_t</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="keyword">auto</span> checksum_file(read_backend <a class="code hl_variable" href="pipeline_8cpp.html#a0a297ad4966954c332df2c546791427d">backend</a>, read_mode mode, <span class="keyword">const</span> <a class="code hl_variable" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>&amp; file_path) -&gt; std::uint64_t</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>{</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">switch</span>(backend)</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">switch</span>(<a class="code hl_variable" href="pipeline_8cpp.html#a0a297ad4966954c332df2c546791427d">backend</a>)</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    {</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="keywordflow">case</span> read_backend::file_stdio:</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca15d61712450a686a7f365adf4fef581f">mode</a> == read_mode::whole_file ? checksum_file_stdio_whole(file_path)</div>
@@ -438,17 +438,17 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>}</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="keyword">auto</span> checksum_files(read_backend backend, read_mode mode, <span class="keyword">const</span> std::vector&lt;path&gt;&amp; files) -&gt; std::uint64_t</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="keyword">auto</span> checksum_files(read_backend <a class="code hl_variable" href="pipeline_8cpp.html#a0a297ad4966954c332df2c546791427d">backend</a>, read_mode mode, <span class="keyword">const</span> std::vector&lt;path&gt;&amp; files) -&gt; std::uint64_t</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>{</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    std::uint64_t checksum = 0;</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; file_path : files)</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    {</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        checksum += checksum_file(backend, mode, file_path);</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        checksum += checksum_file(<a class="code hl_variable" href="pipeline_8cpp.html#a0a297ad4966954c332df2c546791427d">backend</a>, mode, file_path);</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    }</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <span class="keywordflow">return</span> checksum;</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>}</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="keyword">auto</span> run_backend_pass(read_backend backend,</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="keyword">auto</span> run_backend_pass(read_backend <a class="code hl_variable" href="pipeline_8cpp.html#a0a297ad4966954c332df2c546791427d">backend</a>,</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                      read_mode mode,</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                      <span class="keyword">const</span> std::vector&lt;path&gt;&amp; files,</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                      <span class="keywordtype">bool</span> drop_cache_first) -&gt; std::pair&lt;double, std::uint64_t&gt;</div>
@@ -459,14 +459,14 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        <span class="keywordflow">if</span>(!dropped)</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        {</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>            <a class="code hl_define" href="logging_8h.html#a13d7a1151898cea1dc311365ee8487ba">APPLOG_WARNING</a>(<span class="stringliteral">&quot;benchmark_directory_reads: page cache drop failed for {} / {} (cold timing may be warm)&quot;</span>,</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                           backend_name(backend),</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                           backend_name(<a class="code hl_variable" href="pipeline_8cpp.html#a0a297ad4966954c332df2c546791427d">backend</a>),</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                           read_mode_name(mode));</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        }</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    }</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespaceseq.html#ad9e7ddd7d7e35660206442ab98559206">clock_t</a> = std::chrono::steady_clock;</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_variable" href="particle__system__soa_8cpp.html#ae75a27452d70f690358879324179bb99">start</a> = clock_t::now();</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="keyword">const</span> std::uint64_t checksum = checksum_files(backend, mode, files);</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> seconds = std::chrono::duration&lt;double&gt;(clock_t::now() - <a class="code hl_variable" href="particle__system__soa_8cpp.html#ae75a27452d70f690358879324179bb99">start</a>).count();</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceseq.html#a2fcae4d10beaafdec7e81367077bb9cd">start</a> = clock_t::now();</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="keyword">const</span> std::uint64_t checksum = checksum_files(<a class="code hl_variable" href="pipeline_8cpp.html#a0a297ad4966954c332df2c546791427d">backend</a>, mode, files);</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> seconds = std::chrono::duration&lt;double&gt;(clock_t::now() - start).count();</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="keywordflow">return</span> {seconds, checksum};</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>}</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
@@ -517,7 +517,7 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>} <span class="comment">// namespace</span></div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
 <div class="foldopen" id="foldopen00418" data-start="{" data-end="}">
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="namespacefs.html#a3fac3107d9c6ca287b1485123d15a49f">  418</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacefs.html#a3fac3107d9c6ca287b1485123d15a49f">benchmark_directory_reads</a>(<span class="keyword">const</span> path&amp; directory)</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="namespacefs.html#a3fac3107d9c6ca287b1485123d15a49f">  418</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacefs.html#a3fac3107d9c6ca287b1485123d15a49f">benchmark_directory_reads</a>(<span class="keyword">const</span> <a class="code hl_variable" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>&amp; directory)</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>{</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    <span class="keyword">const</span> <span class="keyword">auto</span> files = collect_regular_files(directory);</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    <span class="keywordflow">if</span>(files.empty())</div>
@@ -536,24 +536,30 @@ $(function(){initNavTree('file__benchmarks_8cpp_source.html',''); initResizable(
 </div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>} <span class="comment">// namespace fs</span></div>
+<div class="ttc" id="aanimation__controller__inspectors_8cpp_html_ab3d71a3630661054e58116e2249c2e9e"><div class="ttname"><a href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a></div><div class="ttdeci">std::string buffer</div><div class="ttdef"><b>Definition</b> <a href="animation__controller__inspectors_8cpp_source.html#l00032">animation_controller_inspectors.cpp:32</a></div></div>
+<div class="ttc" id="aanimation__humanoid_8cpp_html_a762f2ce2b0754f8b6b51e92ab4834b33"><div class="ttname"><a href="animation__humanoid_8cpp.html#a762f2ce2b0754f8b6b51e92ab4834b33">size</a></div><div class="ttdeci">std::vector&lt; int &gt; size</div><div class="ttdoc">Bones in the subtree, and joints on its longest chain (the bone itself included).</div><div class="ttdef"><b>Definition</b> <a href="animation__humanoid_8cpp_source.html#l00085">animation_humanoid.cpp:85</a></div></div>
 <div class="ttc" id="aconfig_8hpp_html"><div class="ttname"><a href="config_8hpp.html">config.hpp</a></div></div>
-<div class="ttc" id="aeviction_8cpp_html_a3a00ca04c0ed87681f126e891122e276"><div class="ttname"><a href="eviction_8cpp.html#a3a00ca04c0ed87681f126e891122e276">bytes</a></div><div class="ttdeci">std::uint64_t bytes</div><div class="ttdef"><b>Definition</b> <a href="eviction_8cpp_source.html#l00823">eviction.cpp:823</a></div></div>
+<div class="ttc" id="aeviction_8cpp_html_a3a00ca04c0ed87681f126e891122e276"><div class="ttname"><a href="eviction_8cpp.html#a3a00ca04c0ed87681f126e891122e276">bytes</a></div><div class="ttdeci">std::uint64_t bytes</div><div class="ttdef"><b>Definition</b> <a href="eviction_8cpp_source.html#l00828">eviction.cpp:828</a></div></div>
 <div class="ttc" id="afile__benchmarks_8h_html"><div class="ttname"><a href="file__benchmarks_8h.html">file_benchmarks.h</a></div></div>
 <div class="ttc" id="afile__istream_8h_html"><div class="ttname"><a href="file__istream_8h.html">file_istream.h</a></div></div>
+<div class="ttc" id="afooter__panel_8cpp_html_a3fab45bb4d7cd7e889bdf00080096e8e"><div class="ttname"><a href="footer__panel_8cpp.html#a3fab45bb4d7cd7e889bdf00080096e8e">total</a></div><div class="ttdeci">size_t total</div><div class="ttdef"><b>Definition</b> <a href="footer__panel_8cpp_source.html#l00052">footer_panel.cpp:52</a></div></div>
 <div class="ttc" id="alogging_8h_html"><div class="ttname"><a href="logging_8h.html">logging.h</a></div></div>
 <div class="ttc" id="alogging_8h_html_a13d7a1151898cea1dc311365ee8487ba"><div class="ttname"><a href="logging_8h.html#a13d7a1151898cea1dc311365ee8487ba">APPLOG_WARNING</a></div><div class="ttdeci">#define APPLOG_WARNING(...)</div><div class="ttdef"><b>Definition</b> <a href="logging_8h_source.html#l00019">logging.h:19</a></div></div>
 <div class="ttc" id="alogging_8h_html_a49234d97fe2b24d7f7d4b5784a06d461"><div class="ttname"><a href="logging_8h.html#a49234d97fe2b24d7f7d4b5784a06d461">APPLOG_INFO</a></div><div class="ttdeci">#define APPLOG_INFO(...)</div><div class="ttdef"><b>Definition</b> <a href="logging_8h_source.html#l00018">logging.h:18</a></div></div>
-<div class="ttc" id="anamespaceentry_html"><div class="ttname"><a href="namespaceentry.html">entry</a></div><div class="ttdef"><b>Definition</b> <a href="bgfx__utils_8cpp_source.html#l00032">bgfx_utils.cpp:33</a></div></div>
+<div class="ttc" id="amcp__tools__prefab__instances_8cpp_html_a0f7e62e6c0f782d0ec179f902a799bd0"><div class="ttname"><a href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a></div><div class="ttdeci">fs::path file</div><div class="ttdef"><b>Definition</b> <a href="mcp__tools__prefab__instances_8cpp_source.html#l00393">mcp_tools_prefab_instances.cpp:393</a></div></div>
+<div class="ttc" id="amesh__import__dependencies_8cpp_html_acf59817b7053ce33c8d96406e1ca31b7"><div class="ttname"><a href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a></div><div class="ttdeci">fs::path path</div><div class="ttdef"><b>Definition</b> <a href="mesh__import__dependencies_8cpp_source.html#l00044">mesh_import_dependencies.cpp:44</a></div></div>
+<div class="ttc" id="anamespaceentry_html"><div class="ttname"><a href="namespaceentry.html">entry</a></div><div class="ttdef"><b>Definition</b> <a href="bgfx__utils_8cpp_source.html#l00043">bgfx_utils.cpp:44</a></div></div>
 <div class="ttc" id="anamespacefs_html"><div class="ttname"><a href="namespacefs.html">fs</a></div><div class="ttdef"><b>Definition</b> <a href="cache_8hpp_source.html#l00010">cache.hpp:11</a></div></div>
 <div class="ttc" id="anamespacefs_html_a04a3b48caa1c67131984e8e88c1d50e4"><div class="ttname"><a href="namespacefs.html#a04a3b48caa1c67131984e8e88c1d50e4">fs::default_file_read_mode</a></div><div class="ttdeci">constexpr std::ios_base::openmode default_file_read_mode</div><div class="ttdef"><b>Definition</b> <a href="file__stream__common_8h_source.html#l00018">file_stream_common.h:18</a></div></div>
 <div class="ttc" id="anamespacefs_html_a3fac3107d9c6ca287b1485123d15a49f"><div class="ttname"><a href="namespacefs.html#a3fac3107d9c6ca287b1485123d15a49f">fs::benchmark_directory_reads</a></div><div class="ttdeci">void benchmark_directory_reads(const path &amp;directory)</div><div class="ttdef"><b>Definition</b> <a href="#l00418">file_benchmarks.cpp:418</a></div></div>
 <div class="ttc" id="anamespaceinput_html_ab9139595ac6ca03adefcdfd7463eeecca15d61712450a686a7f365adf4fef581f"><div class="ttname"><a href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca15d61712450a686a7f365adf4fef581f">input::key_code::mode</a></div><div class="ttdeci">@ mode</div></div>
 <div class="ttc" id="anamespaceinput_html_ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741"><div class="ttname"><a href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeecca865c0c0b4ab0e063e5caa3387c1a8741">input::key_code::i</a></div><div class="ttdeci">@ i</div></div>
+<div class="ttc" id="anamespaceraytracing_html_a75f965d37309ea2c44b9c0237935ca32"><div class="ttname"><a href="namespaceraytracing.html#a75f965d37309ea2c44b9c0237935ca32">raytracing::backend</a></div><div class="ttdeci">backend</div><div class="ttdoc">The ray tracer behind a triangle_scene.</div><div class="ttdef"><b>Definition</b> <a href="backend_8h_source.html#l00016">backend.h:17</a></div></div>
+<div class="ttc" id="anamespaceseq_html_a2fcae4d10beaafdec7e81367077bb9cd"><div class="ttname"><a href="namespaceseq.html#a2fcae4d10beaafdec7e81367077bb9cd">seq::start</a></div><div class="ttdeci">auto start(seq_action action, const seq_scope_policy &amp;scope_policy, hpp::source_location location) -&gt; seq_id_t</div><div class="ttdoc">Starts a new action.</div><div class="ttdef"><b>Definition</b> <a href="seq_8cpp_source.html#l00008">seq.cpp:8</a></div></div>
 <div class="ttc" id="anamespaceseq_html_ad9e7ddd7d7e35660206442ab98559206"><div class="ttname"><a href="namespaceseq.html#ad9e7ddd7d7e35660206442ab98559206">seq::clock_t</a></div><div class="ttdeci">std::chrono::steady_clock clock_t</div><div class="ttdoc">Alias for the steady clock used for timing actions.</div><div class="ttdef"><b>Definition</b> <a href="seq__common_8h_source.html#l00023">seq_common.h:23</a></div></div>
-<div class="ttc" id="aparticle__system__soa_8cpp_html_ae75a27452d70f690358879324179bb99"><div class="ttname"><a href="particle__system__soa_8cpp.html#ae75a27452d70f690358879324179bb99">start</a></div><div class="ttdeci">std::vector&lt; math::vec3 &gt; start</div><div class="ttdef"><b>Definition</b> <a href="particle__system__soa_8cpp_source.html#l00366">particle_system_soa.cpp:366</a></div></div>
+<div class="ttc" id="apipeline_8cpp_html_a0a297ad4966954c332df2c546791427d"><div class="ttname"><a href="pipeline_8cpp.html#a0a297ad4966954c332df2c546791427d">backend</a></div><div class="ttdeci">ps_soa::particle_sort_backend backend</div><div class="ttdef"><b>Definition</b> <a href="pipeline_8cpp_source.html#l00373">pipeline.cpp:373</a></div></div>
 <div class="ttc" id="astructsize_html"><div class="ttname"><a href="structsize.html">size</a></div><div class="ttdef"><b>Definition</b> <a href="core_2base_2basetypes_8hpp_source.html#l00042">basetypes.hpp:43</a></div></div>
 <div class="ttc" id="aversion__manager_8cpp_html_a9f7d94df8d0a73f04a003fe5032ba32d"><div class="ttname"><a href="version__manager_8cpp.html#a9f7d94df8d0a73f04a003fe5032ba32d">token</a></div><div class="ttdeci">std::string token</div><div class="ttdef"><b>Definition</b> <a href="version__manager_8cpp_source.html#l00259">version_manager.cpp:259</a></div></div>
-<div class="ttc" id="avolume__resolver_8cpp_html_aa6ea9b07932df851a61fa72bd01761fe"><div class="ttname"><a href="volume__resolver_8cpp.html#aa6ea9b07932df851a61fa72bd01761fe">size</a></div><div class="ttdeci">float size</div><div class="ttdef"><b>Definition</b> <a href="volume__resolver_8cpp_source.html#l00031">volume_resolver.cpp:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

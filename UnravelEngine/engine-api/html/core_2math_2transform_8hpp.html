@@ -101,7 +101,8 @@ $(function(){initNavTree('core_2math_2transform_8hpp.html',''); initResizable(tr
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">transform.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -129,8 +130,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af635713adb2e624cd6d53b69f82ced70" id="r_af635713adb2e624cd6d53b69f82ced70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af635713adb2e624cd6d53b69f82ced70">TRANSFORM_INLINE</a></td></tr>
+<tr class="memitem:af635713adb2e624cd6d53b69f82ced70" id="r_af635713adb2e624cd6d53b69f82ced70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af635713adb2e624cd6d53b69f82ced70">TRANSFORM_INLINE</a>&#160;&#160;&#160;inline</td></tr>
 <tr class="separator:af635713adb2e624cd6d53b69f82ced70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28092960d4e9aadca826bc794a56c94" id="r_ad28092960d4e9aadca826bc794a56c94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad28092960d4e9aadca826bc794a56c94">TRANSFORM_NOINLINE</a>&#160;&#160;&#160;__attribute__((noinline))</td></tr>
+<tr class="separator:ad28092960d4e9aadca826bc794a56c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -146,14 +149,23 @@ Functions</h2></td></tr>
 <tr class="memitem:ae33df94beed6b358ad5fb11eda34ea4c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemath.html#ae33df94beed6b358ad5fb11eda34ea4c">math::transpose</a> (<a class="el" href="classmath_1_1transform__t.html">transform_t</a>&lt; T, Q &gt; const &amp;t) noexcept -&gt; <a class="el" href="classmath_1_1transform__t.html">transform_t</a>&lt; T, Q &gt;</td></tr>
 <tr class="separator:ae33df94beed6b358ad5fb11eda34ea4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abba84b504727e287f2b17323c0377e2b" id="r_abba84b504727e287f2b17323c0377e2b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abba84b504727e287f2b17323c0377e2b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#af635713adb2e624cd6d53b69f82ced70">TRANSFORM_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemath.html#abba84b504727e287f2b17323c0377e2b">math::to_string</a> (const T &amp;<a class="el" href="particle__system__soa_8cpp.html#a48d9522e58fa05906c6dba23e5745a72">v</a>) -&gt; std::string</td></tr>
+<tr class="memitem:abba84b504727e287f2b17323c0377e2b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#af635713adb2e624cd6d53b69f82ced70">TRANSFORM_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemath.html#abba84b504727e287f2b17323c0377e2b">math::to_string</a> (const T &amp;<a class="el" href="particle__gpu_8cpp.html#a48d9522e58fa05906c6dba23e5745a72">v</a>) -&gt; std::string</td></tr>
 <tr class="separator:abba84b504727e287f2b17323c0377e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e9e53bf963f97b2147225e595a8d54a" id="r_a0e9e53bf963f97b2147225e595a8d54a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceglm.html#a0e9e53bf963f97b2147225e595a8d54a">glm::look_rotation</a> (const glm::vec3 &amp;forward, const glm::vec3 &amp;upwards) -&gt; glm::quat</td></tr>
 <tr class="separator:a0e9e53bf963f97b2147225e595a8d54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdeb7a7136e9a49a16eb047dd795f2f6" id="r_acdeb7a7136e9a49a16eb047dd795f2f6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceglm.html#acdeb7a7136e9a49a16eb047dd795f2f6">glm::from_to_rotation</a> (const glm::vec3 &amp;from, const glm::vec3 &amp;to) -&gt; glm::quat</td></tr>
+<tr class="memitem:acdeb7a7136e9a49a16eb047dd795f2f6" id="r_acdeb7a7136e9a49a16eb047dd795f2f6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceglm.html#acdeb7a7136e9a49a16eb047dd795f2f6">glm::from_to_rotation</a> (const glm::vec3 &amp;<a class="el" href="animation__humanoid_8cpp.html#aba26cac8332e83f0a9a5d7b91d9b5a59">from</a>, const glm::vec3 &amp;<a class="el" href="animation__humanoid_8cpp.html#ac7f85e8e25d617b525e84d2af422042b">to</a>) -&gt; glm::quat</td></tr>
 <tr class="separator:acdeb7a7136e9a49a16eb047dd795f2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe120b289bac52573bc6c7885f9f6aec" id="r_abe120b289bac52573bc6c7885f9f6aec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceglm.html#abe120b289bac52573bc6c7885f9f6aec">glm::set_position_relative</a> (glm::mat4 &amp;matrix, const glm::vec3 &amp;camera_position)</td></tr>
 <tr class="separator:abe120b289bac52573bc6c7885f9f6aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a37dea415ec3e1d4ed87021964defbcbe" id="r_a37dea415ec3e1d4ed87021964defbcbe"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a37dea415ec3e1d4ed87021964defbcbe"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemath.html#a37dea415ec3e1d4ed87021964defbcbe">math::k_skew_zero_tolerance</a> = static_cast&lt;T&gt;(1e-5)</td></tr>
+<tr class="separator:a37dea415ec3e1d4ed87021964defbcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3154691ab7bd53f930e883a3684611af" id="r_a3154691ab7bd53f930e883a3684611af"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3154691ab7bd53f930e883a3684611af"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemath.html#a3154691ab7bd53f930e883a3684611af">math::k_scale_uniform_tolerance</a> = static_cast&lt;T&gt;(1e-5)</td></tr>
+<tr class="separator:a3154691ab7bd53f930e883a3684611af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="af635713adb2e624cd6d53b69f82ced70" name="af635713adb2e624cd6d53b69f82ced70"></a>
@@ -163,12 +175,28 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TRANSFORM_INLINE</td>
+          <td class="memname">#define TRANSFORM_INLINE&#160;&#160;&#160;inline</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="core_2math_2transform_8hpp_source.html#l00017">17</a> of file <a class="el" href="core_2math_2transform_8hpp_source.html">transform.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="core_2math_2transform_8hpp_source.html#l00021">21</a> of file <a class="el" href="core_2math_2transform_8hpp_source.html">transform.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad28092960d4e9aadca826bc794a56c94" name="ad28092960d4e9aadca826bc794a56c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad28092960d4e9aadca826bc794a56c94">&#9670;&#160;</a></span>TRANSFORM_NOINLINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRANSFORM_NOINLINE&#160;&#160;&#160;__attribute__((noinline))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="core_2math_2transform_8hpp_source.html#l00031">31</a> of file <a class="el" href="core_2math_2transform_8hpp_source.html">transform.hpp</a>.</p>
 
 </div>
 </div>

@@ -185,6 +185,40 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="Unravel_Core_Input_touchCount_" data-uid="Unravel.Core.Input.touchCount*"></a>
+
+  <h3 id="Unravel_Core_Input_touchCount" data-uid="Unravel.Core.Input.touchCount">
+  touchCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of fingers on the touch screen this frame, the ones that left it this frame
+included. A touch also moves and presses the mouse, so mouse input keeps working on a touch
+screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int touchCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -193,7 +227,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_GetAnalogValue_System_String_" data-uid="Unravel.Core.Input.GetAnalogValue(System.String)">
   GetAnalogValue(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the analog value associated with the specified input action.</p>
@@ -232,7 +266,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_GetAxis_System_String_" data-uid="Unravel.Core.Input.GetAxis(System.String)">
   GetAxis(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the analog value of an input axis.</p>
@@ -271,7 +305,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_GetDigitalValue_System_String_" data-uid="Unravel.Core.Input.GetDigitalValue(System.String)">
   GetDigitalValue(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the digital (boolean) value associated with the specified input action.</p>
@@ -306,11 +340,50 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
 
 
+  <a id="Unravel_Core_Input_GetTouch_" data-uid="Unravel.Core.Input.GetTouch*"></a>
+
+  <h3 id="Unravel_Core_Input_GetTouch_System_Int32_" data-uid="Unravel.Core.Input.GetTouch(System.Int32)">
+  GetTouch(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a finger on the touch screen, in the order the fingers touched it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Touch GetTouch(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>From 0 to <a class="xref" href="Unravel.Core.Input.html#Unravel_Core_Input_touchCount">touchCount</a> - 1.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.Touch.html">Touch</a></dt>
+    <dd><p>The finger at the index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_Input_IsDown_" data-uid="Unravel.Core.Input.IsDown*"></a>
 
   <h3 id="Unravel_Core_Input_IsDown_System_String_" data-uid="Unravel.Core.Input.IsDown(System.String)">
   IsDown(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the specified action's button is currently being held down.</p>
@@ -349,7 +422,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_IsDown_Unravel_Core_KeyCode_" data-uid="Unravel.Core.Input.IsDown(Unravel.Core.KeyCode)">
   IsDown(KeyCode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the specified key is currently being held down.</p>
@@ -388,7 +461,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_IsDown_Unravel_Core_MouseButton_" data-uid="Unravel.Core.Input.IsDown(Unravel.Core.MouseButton)">
   IsDown(MouseButton)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the specified mouse button is currently being held down.</p>
@@ -427,7 +500,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_IsPressed_System_String_" data-uid="Unravel.Core.Input.IsPressed(System.String)">
   IsPressed(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the specified action's button was pressed during the current frame.</p>
@@ -466,7 +539,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_IsPressed_Unravel_Core_KeyCode_" data-uid="Unravel.Core.Input.IsPressed(Unravel.Core.KeyCode)">
   IsPressed(KeyCode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the specified key was pressed during the current frame.</p>
@@ -505,7 +578,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_IsPressed_Unravel_Core_MouseButton_" data-uid="Unravel.Core.Input.IsPressed(Unravel.Core.MouseButton)">
   IsPressed(MouseButton)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the specified mouse button was pressed during the current frame.</p>
@@ -544,7 +617,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_IsReleased_System_String_" data-uid="Unravel.Core.Input.IsReleased(System.String)">
   IsReleased(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the specified action's button was released during the current frame.</p>
@@ -583,7 +656,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_IsReleased_Unravel_Core_KeyCode_" data-uid="Unravel.Core.Input.IsReleased(Unravel.Core.KeyCode)">
   IsReleased(KeyCode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the specified key was released during the current frame.</p>
@@ -622,7 +695,7 @@ Class Input  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Unravel_Core_Input_IsReleased_Unravel_Core_MouseButton_" data-uid="Unravel.Core.Input.IsReleased(Unravel.Core.MouseButton)">
   IsReleased(MouseButton)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/input/Input.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the specified mouse button was released during the current frame.</p>

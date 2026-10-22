@@ -105,21 +105,41 @@ $(function(){initNavTree('audio__clip_8h_source.html',''); initResizable(true); 
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;audiopp/sound.h&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;audiopp/sound_data.h&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceunravel.html">unravel</a></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structunravel_1_1audio__clip.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structunravel_1_1audio__clip.html">audio_clip</a> : <span class="keyword">public</span> audio::sound</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structunravel_1_1audio__clip.html#a74fe483b8e2f6c6d3f5e6b7a949c27ac">   17</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structunravel_1_1audio__clip.html#a74fe483b8e2f6c6d3f5e6b7a949c27ac">base_type</a> = audio::sound;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">using </span>base_type::base_type;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceunravel.html">unravel</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structunravel_1_1audio__clip.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structunravel_1_1audio__clip.html">audio_clip</a> : <span class="keyword">public</span> audio::sound</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structunravel_1_1audio__clip.html#a74fe483b8e2f6c6d3f5e6b7a949c27ac">   21</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structunravel_1_1audio__clip.html#a74fe483b8e2f6c6d3f5e6b7a949c27ac">base_type</a> = audio::sound;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">using </span>base_type::base_type;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <span class="comment">// namespace unravel</span></div>
-<div class="ttc" id="anamespaceunravel_html"><div class="ttname"><a href="namespaceunravel.html">unravel</a></div><div class="ttdef"><b>Definition</b> <a href="crash_8cpp_source.html#l00020">crash.cpp:21</a></div></div>
-<div class="ttc" id="astructunravel_1_1audio__clip_html"><div class="ttname"><a href="structunravel_1_1audio__clip.html">unravel::audio_clip</a></div><div class="ttdoc">Struct representing an audio clip.</div><div class="ttdef"><b>Definition</b> <a href="#l00015">audio_clip.h:16</a></div></div>
-<div class="ttc" id="astructunravel_1_1audio__clip_html_a74fe483b8e2f6c6d3f5e6b7a949c27ac"><div class="ttname"><a href="structunravel_1_1audio__clip.html#a74fe483b8e2f6c6d3f5e6b7a949c27ac">unravel::audio_clip::base_type</a></div><div class="ttdeci">audio::sound base_type</div><div class="ttdef"><b>Definition</b> <a href="#l00017">audio_clip.h:17</a></div></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structunravel_1_1encoded__sound.html">   31</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structunravel_1_1encoded__sound.html">encoded_sound</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structunravel_1_1encoded__sound.html#a2ec0265862d13de0efd641cec281cf3e">   34</a></span>    std::string <a class="code hl_variable" href="structunravel_1_1encoded__sound.html#a2ec0265862d13de0efd641cec281cf3e">codec</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structunravel_1_1encoded__sound.html#ae8d915d27b00bc544ac6e34b2d13c35a">   36</a></span>    std::vector&lt;std::uint8_t&gt; <a class="code hl_variable" href="structunravel_1_1encoded__sound.html#ae8d915d27b00bc544ac6e34b2d13c35a">bytes</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structunravel_1_1encoded__sound.html#a673aa5d9ea144b83de8f626f68a1483b">   38</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structunravel_1_1encoded__sound.html#a673aa5d9ea144b83de8f626f68a1483b">force_to_mono</a>{};</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>ENGINE_EXPORT <span class="keyword">auto</span> <a class="code hl_function" href="namespaceunravel.html#a7539ae9c30b9a4e65a989e7aae688382">decode_sound</a>(<span class="keyword">const</span> encoded_sound&amp; encoded, audio::sound_data&amp; result, std::string&amp; err) -&gt; bool;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <span class="comment">// namespace unravel</span></div>
+<div class="ttc" id="anamespaceunravel_html"><div class="ttname"><a href="namespaceunravel.html">unravel</a></div><div class="ttdef"><b>Definition</b> <a href="crash_8cpp_source.html#l00037">crash.cpp:38</a></div></div>
+<div class="ttc" id="anamespaceunravel_html_a7539ae9c30b9a4e65a989e7aae688382"><div class="ttname"><a href="namespaceunravel.html#a7539ae9c30b9a4e65a989e7aae688382">unravel::decode_sound</a></div><div class="ttdeci">auto decode_sound(const encoded_sound &amp;encoded, audio::sound_data &amp;result, std::string &amp;err) -&gt; bool</div><div class="ttdoc">Decodes a compiled clip to PCM, applying its import settings.</div><div class="ttdef"><b>Definition</b> <a href="audio_2audio__clip_8cpp_source.html#l00033">audio_clip.cpp:33</a></div></div>
+<div class="ttc" id="astructunravel_1_1audio__clip_html"><div class="ttname"><a href="structunravel_1_1audio__clip.html">unravel::audio_clip</a></div><div class="ttdoc">Struct representing an audio clip.</div><div class="ttdef"><b>Definition</b> <a href="#l00019">audio_clip.h:20</a></div></div>
+<div class="ttc" id="astructunravel_1_1audio__clip_html_a74fe483b8e2f6c6d3f5e6b7a949c27ac"><div class="ttname"><a href="structunravel_1_1audio__clip.html#a74fe483b8e2f6c6d3f5e6b7a949c27ac">unravel::audio_clip::base_type</a></div><div class="ttdeci">audio::sound base_type</div><div class="ttdef"><b>Definition</b> <a href="#l00021">audio_clip.h:21</a></div></div>
+<div class="ttc" id="astructunravel_1_1encoded__sound_html"><div class="ttname"><a href="structunravel_1_1encoded__sound.html">unravel::encoded_sound</a></div><div class="ttdoc">The compiled form of an audio clip: the source file's bytes in their own codec.</div><div class="ttdef"><b>Definition</b> <a href="#l00031">audio_clip.h:32</a></div></div>
+<div class="ttc" id="astructunravel_1_1encoded__sound_html_a2ec0265862d13de0efd641cec281cf3e"><div class="ttname"><a href="structunravel_1_1encoded__sound.html#a2ec0265862d13de0efd641cec281cf3e">unravel::encoded_sound::codec</a></div><div class="ttdeci">std::string codec</div><div class="ttdoc">The codec, named by the source file's extension without the dot: &quot;ogg&quot;, &quot;mp3&quot;, &quot;wav&quot;,...</div><div class="ttdef"><b>Definition</b> <a href="#l00034">audio_clip.h:34</a></div></div>
+<div class="ttc" id="astructunravel_1_1encoded__sound_html_a673aa5d9ea144b83de8f626f68a1483b"><div class="ttname"><a href="structunravel_1_1encoded__sound.html#a673aa5d9ea144b83de8f626f68a1483b">unravel::encoded_sound::force_to_mono</a></div><div class="ttdeci">bool force_to_mono</div><div class="ttdoc">Mix the decoded channels down to one.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">audio_clip.h:38</a></div></div>
+<div class="ttc" id="astructunravel_1_1encoded__sound_html_ae8d915d27b00bc544ac6e34b2d13c35a"><div class="ttname"><a href="structunravel_1_1encoded__sound.html#ae8d915d27b00bc544ac6e34b2d13c35a">unravel::encoded_sound::bytes</a></div><div class="ttdeci">std::vector&lt; std::uint8_t &gt; bytes</div><div class="ttdoc">The source file's contents.</div><div class="ttdef"><b>Definition</b> <a href="#l00036">audio_clip.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

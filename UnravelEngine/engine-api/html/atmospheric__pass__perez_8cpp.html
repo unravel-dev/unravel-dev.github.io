@@ -105,10 +105,13 @@ $(function(){initNavTree('atmospheric__pass__perez_8cpp.html',''); initResizable
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="atmospheric__pass__perez_8h_source.html">atmospheric_pass_perez.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="atmosphere__sky__irradiance_8h_source.html">engine/rendering/atmosphere_sky_irradiance.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="default__textures_8h_source.html">engine/rendering/default_textures.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="perez__luminance_8h_source.html">engine/rendering/perez_luminance.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="render__pass_8h_source.html">graphics/render_pass.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="texture_8h_source.html">graphics/texture.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 </div>
 <p><a href="atmospheric__pass__perez_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -127,11 +130,21 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ae72bffaa121e315d258a0152cd6049bf" id="r_ae72bffaa121e315d258a0152cd6049bf"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ae72bffaa121e315d258a0152cd6049bf">unravel::compute_perez_exposition</a> (float sun_altitude) -&gt; float</td></tr>
+<tr class="memdesc:ae72bffaa121e315d258a0152cd6049bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The one conversion from Perez luminance to engine units, including the altitude-dependent horizon dimming. Both the sky dome and the irradiance bake use this.  <br /></td></tr>
+<tr class="separator:ae72bffaa121e315d258a0152cd6049bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8f05b64e38f00ed6c1de85346ed4e6" id="r_ada8f05b64e38f00ed6c1de85346ed4e6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ada8f05b64e38f00ed6c1de85346ed4e6">unravel::compute_perez_sun_weight</a> (float sun_altitude) -&gt; float</td></tr>
+<tr class="memdesc:ada8f05b64e38f00ed6c1de85346ed4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The day/night ramp of the sky ambient: 0 at the horizon, 1 from about 20 degrees of elevation (smoothstep over perez_sun_weight_altitude).  <br /></td></tr>
+<tr class="separator:ada8f05b64e38f00ed6c1de85346ed4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4389bd10ab841a0224aa872407c6ba" id="r_a4e4389bd10ab841a0224aa872407c6ba"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a4e4389bd10ab841a0224aa872407c6ba">unravel::compute_perez_horizontal_irradiance</a> (const <a class="el" href="structunravel_1_1irradiance__perez__params.html">irradiance_perez_params</a> &amp;perez) -&gt; float</td></tr>
+<tr class="memdesc:a4e4389bd10ab841a0224aa872407c6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The horizontal irradiance the irradiance SH bake produces from this sky at unit exposition: a CPU transcription of cs_irradiance_sh.sc mode 1 (the same 64 Hammersley hemisphere samples, the same Perez chain, the SH bands the bake stores, read back at the zenith through eval_irradiance_sh's cosine lobe). Clear sky only - the bake's cloud coverage blend darkens it further, as an overcast sky should. Keep in step with the shader.  <br /></td></tr>
+<tr class="separator:a4e4389bd10ab841a0224aa872407c6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c4de13299107db6f8c05ae4bfc40d83" id="r_a8c4de13299107db6f8c05ae4bfc40d83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a8c4de13299107db6f8c05ae4bfc40d83">unravel::compute_perez_luminance</a> (const math::vec3 &amp;light_direction, math::vec3 &amp;out_sky_luminance_rgb, math::vec3 &amp;out_sun_luminance_rgb)</td></tr>
 <tr class="memdesc:a8c4de13299107db6f8c05ae4bfc40d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes Perez sky and sun luminance from light direction (time-of-day). Uses the same tables as the atmospheric pass for consistency.  <br /></td></tr>
 <tr class="separator:a8c4de13299107db6f8c05ae4bfc40d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf3c74783a5fcf93248882cca30a795b" id="r_adf3c74783a5fcf93248882cca30a795b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#adf3c74783a5fcf93248882cca30a795b">unravel::compute_irradiance_perez_params</a> (const math::vec3 &amp;light_direction, float turbidity, <a class="el" href="structunravel_1_1irradiance__perez__params.html">irradiance_perez_params</a> &amp;out)</td></tr>
-<tr class="separator:adf3c74783a5fcf93248882cca30a795b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f0a8cb6b3058cc7114be758513d16c" id="r_a99f0a8cb6b3058cc7114be758513d16c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a99f0a8cb6b3058cc7114be758513d16c">unravel::compute_irradiance_perez_params</a> (const math::vec3 &amp;light_direction, float turbidity, float sun_intensity, <a class="el" href="structunravel_1_1irradiance__perez__params.html">irradiance_perez_params</a> &amp;out)</td></tr>
+<tr class="memdesc:a99f0a8cb6b3058cc7114be758513d16c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the Perez parameters for the SH bake and the sky dome.  <br /></td></tr>
+<tr class="separator:a99f0a8cb6b3058cc7114be758513d16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a57175db5cb9219076710e2d09387a69c" name="a57175db5cb9219076710e2d09387a69c"></a>
@@ -146,7 +159,68 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8cpp_source.html#l00015">15</a> of file <a class="el" href="atmospheric__pass__perez_8cpp_source.html">atmospheric_pass_perez.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8cpp_source.html#l00018">18</a> of file <a class="el" href="atmospheric__pass__perez_8cpp_source.html">atmospheric_pass_perez.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ae3e00071db1070451c10872b09360cad" name="ae3e00071db1070451c10872b09360cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e00071db1070451c10872b09360cad">&#9670;&#160;</a></span>frame_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t frame_count {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accumulated frames of the current history; its low bit selects the half this frame writes. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8cpp_source.html#l00286">286</a> of file <a class="el" href="atmospheric__pass__perez_8cpp_source.html">atmospheric_pass_perez.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab40fcf20bce6e2d0e059cc00e03330fa" name="ab40fcf20bce6e2d0e059cc00e03330fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab40fcf20bce6e2d0e059cc00e03330fa">&#9670;&#160;</a></span>prev_wind_offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float prev_wind_offset[2] {0.0f, 0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Last frame's wrapped wind offset, which the history reprojection differences against this frame's. </p>
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8cpp_source.html#l00288">288</a> of file <a class="el" href="atmospheric__pass__perez_8cpp_source.html">atmospheric_pass_perez.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af5ff6022fcaaecd6cb34e23d4a6c918e" name="af5ff6022fcaaecd6cb34e23d4a6c918e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ff6022fcaaecd6cb34e23d4a6c918e">&#9670;&#160;</a></span>view_key</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* view_key = &quot;CLOUD_VIEW_STATE&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="atmospheric__pass__perez_8cpp_source.html#l00283">283</a> of file <a class="el" href="atmospheric__pass__perez_8cpp_source.html">atmospheric_pass_perez.cpp</a>.</p>
 
 </div>
 </div>

@@ -1,7 +1,6 @@
 var classunravel_1_1batch__collector__t =
 [
     [ "batch_list_t", "classunravel_1_1batch__collector__t.html#a21964a14fb13f01f895ebd238696f5d3", null ],
-    [ "batch_map_t", "classunravel_1_1batch__collector__t.html#aa9fab94e95ab3316ee35e2785e9ce0db", null ],
     [ "batch_collector_t", "classunravel_1_1batch__collector__t.html#a96e3b0794e0e6df6acd289c3060fb1fa", null ],
     [ "~batch_collector_t", "classunravel_1_1batch__collector__t.html#a13e05025cd52a8a420e31bf9609a91c2", null ],
     [ "batch_collector_t", "classunravel_1_1batch__collector__t.html#a7beaf3483354287e462ac27aed5a8bed", null ],

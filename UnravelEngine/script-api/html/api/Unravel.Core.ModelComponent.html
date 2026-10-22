@@ -338,11 +338,48 @@ Class ModelComponent  <a class="header-action link-secondary" title="View source
 </h2>
 
 
+  <a id="Unravel_Core_ModelComponent_GetAlphaMode_" data-uid="Unravel.Core.ModelComponent.GetAlphaMode*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_GetAlphaMode_System_UInt32_" data-uid="Unravel.Core.ModelComponent.GetAlphaMode(System.UInt32)">
+  GetAlphaMode(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets how the material the slot renders with treats alpha.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MaterialAlphaMode GetAlphaMode(uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.MaterialAlphaMode.html">MaterialAlphaMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_ModelComponent_GetColor_" data-uid="Unravel.Core.ModelComponent.GetColor*"></a>
 
   <h3 id="Unravel_Core_ModelComponent_GetColor" data-uid="Unravel.Core.ModelComponent.GetColor">
   GetColor()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L363"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the first material instance color for the model.</p>
@@ -375,7 +412,7 @@ Class ModelComponent  <a class="header-action link-secondary" title="View source
 
   <h3 id="Unravel_Core_ModelComponent_GetColor_System_UInt32_" data-uid="Unravel.Core.ModelComponent.GetColor(System.UInt32)">
   GetColor(uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L374"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the material instance color for the model at the specified index.</p>
@@ -397,6 +434,125 @@ Class ModelComponent  <a class="header-action link-secondary" title="View source
     <dt><a class="xref" href="Color.html">Color</a></dt>
     <dd><p>The <a class="xref" href="Color.html">Color</a> assigned to the specified index, or <code>white</code> if no material is assigned.</p>
 </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ModelComponent_GetColor_" data-uid="Unravel.Core.ModelComponent.GetColor*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_GetColor_Unravel_Core_MaterialProperty_System_UInt32_" data-uid="Unravel.Core.ModelComponent.GetColor(Unravel.Core.MaterialProperty,System.UInt32)">
+  GetColor(MaterialProperty, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets one color field of the material the slot renders with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color GetColor(MaterialProperty property, uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="Unravel.Core.MaterialProperty.html">MaterialProperty</a></dt>
+    <dd><p>BaseColor, EmissiveColor or SubsurfaceColor.</p>
+</dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The material slot.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Color.html">Color</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ModelComponent_GetCullMode_" data-uid="Unravel.Core.ModelComponent.GetCullMode*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_GetCullMode_System_UInt32_" data-uid="Unravel.Core.ModelComponent.GetCullMode(System.UInt32)">
+  GetCullMode(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets which faces the material the slot renders with hides.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MaterialCullMode GetCullMode(uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.MaterialCullMode.html">MaterialCullMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ModelComponent_GetFloat_" data-uid="Unravel.Core.ModelComponent.GetFloat*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_GetFloat_Unravel_Core_MaterialProperty_System_UInt32_" data-uid="Unravel.Core.ModelComponent.GetFloat(Unravel.Core.MaterialProperty,System.UInt32)">
+  GetFloat(MaterialProperty, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets one float field of the material the slot renders with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloat(MaterialProperty property, uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="Unravel.Core.MaterialProperty.html">MaterialProperty</a></dt>
+    <dd><p>EmissiveIntensity, Roughness, Metalness, Bumpiness or AlphaCutoff.</p>
+</dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The material slot.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -551,11 +707,126 @@ Class ModelComponent  <a class="header-action link-secondary" title="View source
 
 
 
+  <a id="Unravel_Core_ModelComponent_GetTexture_" data-uid="Unravel.Core.ModelComponent.GetTexture*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_GetTexture_Unravel_Core_MaterialProperty_System_UInt32_" data-uid="Unravel.Core.ModelComponent.GetTexture(Unravel.Core.MaterialProperty,System.UInt32)">
+  GetTexture(MaterialProperty, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a texture of the material the slot renders with, or null when it has none.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture GetTexture(MaterialProperty property, uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="Unravel.Core.MaterialProperty.html">MaterialProperty</a></dt>
+    <dd><p>ColorMap, NormalMap, RoughnessMap, MetalnessMap, EmissiveMap or AoMap.</p>
+</dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The material slot.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.Texture.html">Texture</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ModelComponent_GetVector_" data-uid="Unravel.Core.ModelComponent.GetVector*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_GetVector_Unravel_Core_MaterialProperty_System_UInt32_" data-uid="Unravel.Core.ModelComponent.GetVector(Unravel.Core.MaterialProperty,System.UInt32)">
+  GetVector(MaterialProperty, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a vector field of the material the slot renders with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetVector(MaterialProperty property, uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="Unravel.Core.MaterialProperty.html">MaterialProperty</a></dt>
+    <dd><p>Tiling.</p>
+</dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The material slot.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ModelComponent_ResetMaterial_" data-uid="Unravel.Core.ModelComponent.ResetMaterial*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_ResetMaterial_System_UInt32_" data-uid="Unravel.Core.ModelComponent.ResetMaterial(System.UInt32)">
+  ResetMaterial(uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the material instance of one slot so it uses its shared material again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetMaterial(uint slot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The material slot.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_ModelComponent_ResetMaterials_" data-uid="Unravel.Core.ModelComponent.ResetMaterials*"></a>
 
   <h3 id="Unravel_Core_ModelComponent_ResetMaterials" data-uid="Unravel.Core.ModelComponent.ResetMaterials">
   ResetMaterials()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L317"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears all material instances so the model uses its shared materials again.</p>
@@ -578,11 +849,45 @@ Class ModelComponent  <a class="header-action link-secondary" title="View source
 
 
 
+  <a id="Unravel_Core_ModelComponent_SetAlphaMode_" data-uid="Unravel.Core.ModelComponent.SetAlphaMode*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_SetAlphaMode_Unravel_Core_MaterialAlphaMode_System_UInt32_" data-uid="Unravel.Core.ModelComponent.SetAlphaMode(Unravel.Core.MaterialAlphaMode,System.UInt32)">
+  SetAlphaMode(MaterialAlphaMode, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets how the slot's material treats alpha (see <a class="xref" href="Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_SetFloat_Unravel_Core_MaterialProperty_System_Single_System_UInt32_">SetFloat(MaterialProperty, float, uint)</a> for the copy).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAlphaMode(MaterialAlphaMode mode, uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="Unravel.Core.MaterialAlphaMode.html">MaterialAlphaMode</a></dt>
+    <dd></dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_ModelComponent_SetColor_" data-uid="Unravel.Core.ModelComponent.SetColor*"></a>
 
   <h3 id="Unravel_Core_ModelComponent_SetColor_Color_" data-uid="Unravel.Core.ModelComponent.SetColor(Color)">
   SetColor(Color)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the first material instance color for the model.</p>
@@ -615,7 +920,7 @@ Class ModelComponent  <a class="header-action link-secondary" title="View source
 
   <h3 id="Unravel_Core_ModelComponent_SetColor_Color_System_UInt32_" data-uid="Unravel.Core.ModelComponent.SetColor(Color,System.UInt32)">
   SetColor(Color, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the material instance color at the specified index for the model.</p>
@@ -643,6 +948,123 @@ Class ModelComponent  <a class="header-action link-secondary" title="View source
 
 
 
+  <h4 class="section" id="Unravel_Core_ModelComponent_SetColor_Color_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Does nothing for a slot without a PBR material.</p>
+</div>
+
+
+
+
+  <a id="Unravel_Core_ModelComponent_SetColor_" data-uid="Unravel.Core.ModelComponent.SetColor*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_SetColor_Unravel_Core_MaterialProperty_Color_System_UInt32_" data-uid="Unravel.Core.ModelComponent.SetColor(Unravel.Core.MaterialProperty,Color,System.UInt32)">
+  SetColor(MaterialProperty, Color, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets one color field of the slot's material (see <a class="xref" href="Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_SetFloat_Unravel_Core_MaterialProperty_System_Single_System_UInt32_">SetFloat(MaterialProperty, float, uint)</a> for the copy).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(MaterialProperty property, Color value, uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="Unravel.Core.MaterialProperty.html">MaterialProperty</a></dt>
+    <dd><p>BaseColor, EmissiveColor or SubsurfaceColor.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="Color.html">Color</a></dt>
+    <dd><p>The new color.</p>
+</dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The material slot.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ModelComponent_SetCullMode_" data-uid="Unravel.Core.ModelComponent.SetCullMode*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_SetCullMode_Unravel_Core_MaterialCullMode_System_UInt32_" data-uid="Unravel.Core.ModelComponent.SetCullMode(Unravel.Core.MaterialCullMode,System.UInt32)">
+  SetCullMode(MaterialCullMode, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets which faces the slot's material hides; None draws both sides (see
+<a class="xref" href="Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_SetFloat_Unravel_Core_MaterialProperty_System_Single_System_UInt32_">SetFloat(MaterialProperty, float, uint)</a> for the copy).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCullMode(MaterialCullMode mode, uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="Unravel.Core.MaterialCullMode.html">MaterialCullMode</a></dt>
+    <dd></dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ModelComponent_SetFloat_" data-uid="Unravel.Core.ModelComponent.SetFloat*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_SetFloat_Unravel_Core_MaterialProperty_System_Single_System_UInt32_" data-uid="Unravel.Core.ModelComponent.SetFloat(Unravel.Core.MaterialProperty,System.Single,System.UInt32)">
+  SetFloat(MaterialProperty, float, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets one float field of the slot's material. The first write to a slot gives this
+renderer its own copy of the shared material; later writes change only that copy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloat(MaterialProperty property, float value, uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="Unravel.Core.MaterialProperty.html">MaterialProperty</a></dt>
+    <dd><p>EmissiveIntensity, Roughness, Metalness, Bumpiness or AlphaCutoff.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The new value.</p>
+</dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The material slot.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
 
 
 
@@ -651,7 +1073,7 @@ Class ModelComponent  <a class="header-action link-secondary" title="View source
 
   <h3 id="Unravel_Core_ModelComponent_SetMaterial_Unravel_Core_Material_System_UInt32_" data-uid="Unravel.Core.ModelComponent.SetMaterial(Unravel.Core.Material,System.UInt32)">
   SetMaterial(Material, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the material instance at the specified index for the model.</p>
@@ -687,10 +1109,10 @@ Class ModelComponent  <a class="header-action link-secondary" title="View source
 
   <h3 id="Unravel_Core_ModelComponent_SetSharedMaterial_Unravel_Core_Material_System_UInt32_" data-uid="Unravel.Core.ModelComponent.SetSharedMaterial(Unravel.Core.Material,System.UInt32)">
   SetSharedMaterial(Material, uint)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets the material at the specified index for the model.</p>
+  <div class="markdown level1 summary"><p>Sets the shared material asset at the specified index for the model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -705,6 +1127,90 @@ Class ModelComponent  <a class="header-action link-secondary" title="View source
 </dd>
     <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
     <dd><p>The index of the material to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Unravel_Core_ModelComponent_SetSharedMaterial_Unravel_Core_Material_System_UInt32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Only asset-backed materials can occupy a shared slot. A material with an empty
+<a class="xref" href="Unravel.Core.Asset-1.html#Unravel_Core_Asset_1_uid">uid</a>, such as one returned by <a class="xref" href="Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_GetMaterial_System_UInt32_">GetMaterial(uint)</a> or built
+with <a class="xref" href="Unravel.Core.Material.html#Unravel_Core_Material__ctor_Unravel_Core_Material_">Material(Material)</a>, is applied as this renderer's material instance
+instead of clearing the slot.</p>
+</div>
+
+
+
+
+  <a id="Unravel_Core_ModelComponent_SetTexture_" data-uid="Unravel.Core.ModelComponent.SetTexture*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_SetTexture_Unravel_Core_MaterialProperty_Unravel_Core_Texture_System_UInt32_" data-uid="Unravel.Core.ModelComponent.SetTexture(Unravel.Core.MaterialProperty,Unravel.Core.Texture,System.UInt32)">
+  SetTexture(MaterialProperty, Texture, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a texture of the slot's material (see <a class="xref" href="Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_SetFloat_Unravel_Core_MaterialProperty_System_Single_System_UInt32_">SetFloat(MaterialProperty, float, uint)</a> for the copy).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTexture(MaterialProperty property, Texture texture, uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="Unravel.Core.MaterialProperty.html">MaterialProperty</a></dt>
+    <dd><p>ColorMap, NormalMap, RoughnessMap, MetalnessMap, EmissiveMap or AoMap.</p>
+</dd>
+    <dt><code>texture</code> <a class="xref" href="Unravel.Core.Texture.html">Texture</a></dt>
+    <dd><p>The texture, or null for the engine's default map.</p>
+</dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The material slot.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_ModelComponent_SetVector_" data-uid="Unravel.Core.ModelComponent.SetVector*"></a>
+
+  <h3 id="Unravel_Core_ModelComponent_SetVector_Unravel_Core_MaterialProperty_Vector2_System_UInt32_" data-uid="Unravel.Core.ModelComponent.SetVector(Unravel.Core.MaterialProperty,Vector2,System.UInt32)">
+  SetVector(MaterialProperty, Vector2, uint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/ModelComponent.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a vector field of the slot's material (see <a class="xref" href="Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_SetFloat_Unravel_Core_MaterialProperty_System_Single_System_UInt32_">SetFloat(MaterialProperty, float, uint)</a> for the copy).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVector(MaterialProperty property, Vector2 value, uint slot = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="Unravel.Core.MaterialProperty.html">MaterialProperty</a></dt>
+    <dd><p>Tiling.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="Vector2.html">Vector2</a></dt>
+    <dd><p>The new value.</p>
+</dd>
+    <dt><code>slot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The material slot.</p>
 </dd>
   </dl>
 

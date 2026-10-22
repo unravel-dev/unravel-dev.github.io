@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_SystemManager" data-uid="Unravel.Core.SystemManager" class="text-break">
-Class SystemManager  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L682"><i class="bi bi-code-slash"></i></a>
+Class SystemManager  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L708"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -156,7 +156,7 @@ Class SystemManager  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Unravel_Core_SystemManager_ScriptManager" data-uid="Unravel.Core.SystemManager.ScriptManager">
   ScriptManager
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L688"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L714"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Global manager that invokes script component update callbacks.</p>
@@ -188,11 +188,45 @@ Class SystemManager  <a class="header-action link-secondary" title="View source"
 </h2>
 
 
+  <a id="Unravel_Core_SystemManager_internal_n2m_begin_frame_" data-uid="Unravel.Core.SystemManager.internal_n2m_begin_frame*"></a>
+
+  <h3 id="Unravel_Core_SystemManager_internal_n2m_begin_frame_Unravel_Core_UpdateInfo_" data-uid="Unravel.Core.SystemManager.internal_n2m_begin_frame(Unravel.Core.UpdateInfo)">
+  internal_n2m_begin_frame(UpdateInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L752"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Native-to-managed frame begin: sets <a class="xref" href="Unravel.Core.Time.html">Time</a> before scripts are created or
+started this frame, so OnCreate and OnStart read the current frame's values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void internal_n2m_begin_frame(UpdateInfo info)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>info</code> <a class="xref" href="Unravel.Core.UpdateInfo.html">UpdateInfo</a></dt>
+    <dd><p>Per-frame timing values from the engine.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_SystemManager_internal_n2m_fixed_update_" data-uid="Unravel.Core.SystemManager.internal_n2m_fixed_update*"></a>
 
   <h3 id="Unravel_Core_SystemManager_internal_n2m_fixed_update_Unravel_Core_FixedUpdateInfo_" data-uid="Unravel.Core.SystemManager.internal_n2m_fixed_update(Unravel.Core.FixedUpdateInfo)">
   internal_n2m_fixed_update(FixedUpdateInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L722"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L771"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Native-to-managed fixed update entry point. Updates fixed delta time and dispatches OnFixedUpdate.</p>
@@ -225,7 +259,7 @@ Class SystemManager  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Unravel_Core_SystemManager_internal_n2m_late_update" data-uid="Unravel.Core.SystemManager.internal_n2m_late_update">
   internal_n2m_late_update()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L732"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L781"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Native-to-managed late update entry point. Dispatches OnLateUpdate.</p>
@@ -252,7 +286,7 @@ Class SystemManager  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Unravel_Core_SystemManager_internal_n2m_update_Unravel_Core_UpdateInfo_" data-uid="Unravel.Core.SystemManager.internal_n2m_update(Unravel.Core.UpdateInfo)">
   internal_n2m_update(UpdateInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L706"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L732"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Native-to-managed frame update entry point. Updates <a class="xref" href="Unravel.Core.Time.html">Time</a> and dispatches OnUpdate.</p>
@@ -285,7 +319,7 @@ Class SystemManager  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L682" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L708" class="edit-link">Edit this page</a>
         </div>
 
 

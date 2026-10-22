@@ -104,9 +104,15 @@ $(function(){initNavTree('auto__exposure__pass_8cpp.html',''); initResizable(tru
 <div class="textblock"><code>#include &quot;<a class="el" href="auto__exposure__pass_8h_source.html">auto_exposure_pass.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="profiler_8h_source.html">engine/profiler/profiler.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="default__textures_8h_source.html">engine/rendering/default_textures.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="render__pass_8h_source.html">graphics/render_pass.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="texture_8h_source.html">graphics/texture.h</a>&gt;</code><br />
+<code>#include &lt;bx/math.h&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="auto__exposure__pass_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -115,6 +121,67 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa1f9e00e53bc55451c1d31d34c66c877" name="aa1f9e00e53bc55451c1d31d34c66c877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f9e00e53bc55451c1d31d34c66c877">&#9670;&#160;</a></span>force_snap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool force_snap {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forces the next clean average dispatch to converge straight to the target exposure. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00024">24</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a40f33c3049342bf43c7164c3757b5227" name="a40f33c3049342bf43c7164c3757b5227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f33c3049342bf43c7164c3757b5227">&#9670;&#160;</a></span>history_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t history_index {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Next texel of the exposure history ring. </p>
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00026">26</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af5ff6022fcaaecd6cb34e23d4a6c918e" name="af5ff6022fcaaecd6cb34e23d4a6c918e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ff6022fcaaecd6cb34e23d4a6c918e">&#9670;&#160;</a></span>view_key</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* view_key = &quot;AUTO_EXPOSURE_METERING_STATE&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="auto__exposure__pass_8cpp_source.html#l00021">21</a> of file <a class="el" href="auto__exposure__pass_8cpp_source.html">auto_exposure_pass.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

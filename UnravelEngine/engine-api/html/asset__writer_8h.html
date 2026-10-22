@@ -106,7 +106,6 @@ $(function(){initNavTree('asset__writer_8h.html',''); initResizable(true); });
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&gt;</code><br />
-<code>#include &lt;filesystem&gt;</code><br />
 <code>#include &lt;<a class="el" href="utils_8h_source.html">string_utils/utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__extensions_8h_source.html">engine/assets/impl/asset_extensions.h</a>&gt;</code><br />
 </div>
@@ -131,14 +130,17 @@ Functions</h2></td></tr>
 <tr class="separator:af1abd5cde17c8475673b86ee6f40eb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5be8f2bbf96f4eab6308936a7aa1d26f" id="r_a5be8f2bbf96f4eab6308936a7aa1d26f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#a5be8f2bbf96f4eab6308936a7aa1d26f">unravel::asset_writer::cleanup_stale_temp_files</a> (const fs::path &amp;dir, bool recursive, std::chrono::seconds min_age) noexcept -&gt; std::size_t</td></tr>
 <tr class="separator:a5be8f2bbf96f4eab6308936a7aa1d26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3258c3e3bc67679e13d381ce6ac9d31b" id="r_a3258c3e3bc67679e13d381ce6ac9d31b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#a3258c3e3bc67679e13d381ce6ac9d31b">unravel::asset_writer::resolve_meta_file_for_key</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>) -&gt; fs::path</td></tr>
+<tr class="memdesc:a3258c3e3bc67679e13d381ce6ac9d31b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The absolute path of the .meta file of the asset <code>key</code> names (its import settings).  <br /></td></tr>
+<tr class="separator:a3258c3e3bc67679e13d381ce6ac9d31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a96cadef0d8476ae4981c7a3eef0a0" id="r_ad8a96cadef0d8476ae4981c7a3eef0a0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad8a96cadef0d8476ae4981c7a3eef0a0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#ad8a96cadef0d8476ae4981c7a3eef0a0">unravel::asset_writer::resolve_meta_file</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &amp;asset) -&gt; fs::path</td></tr>
 <tr class="separator:ad8a96cadef0d8476ae4981c7a3eef0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36a80521ed942611e957a3ecf83d34b0" id="r_a36a80521ed942611e957a3ecf83d34b0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a36a80521ed942611e957a3ecf83d34b0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#a36a80521ed942611e957a3ecf83d34b0">unravel::asset_writer::atomic_save_to_file</a> (const fs::path &amp;key, const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &amp;obj) -&gt; bool</td></tr>
+<tr class="memitem:a36a80521ed942611e957a3ecf83d34b0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#a36a80521ed942611e957a3ecf83d34b0">unravel::asset_writer::atomic_save_to_file</a> (const fs::path &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &amp;obj) -&gt; bool</td></tr>
 <tr class="separator:a36a80521ed942611e957a3ecf83d34b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad52b30e7fec41bf7a56880b4dbf805c7" id="r_ad52b30e7fec41bf7a56880b4dbf805c7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad52b30e7fec41bf7a56880b4dbf805c7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#ad52b30e7fec41bf7a56880b4dbf805c7">unravel::asset_writer::atomic_save_to_file</a> (const fs::path &amp;key, const T &amp;obj) -&gt; bool</td></tr>
+<tr class="memitem:ad52b30e7fec41bf7a56880b4dbf805c7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#ad52b30e7fec41bf7a56880b4dbf805c7">unravel::asset_writer::atomic_save_to_file</a> (const fs::path &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, const T &amp;obj) -&gt; bool</td></tr>
 <tr class="separator:ad52b30e7fec41bf7a56880b4dbf805c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

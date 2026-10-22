@@ -114,150 +114,125 @@ $(function(){initNavTree('editor__settings__panel_8cpp_source.html',''); initRes
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">void</span> draw_external_tools_settings(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; ctx)</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">auto</span>&amp; pm = ctx.<a class="code hl_function" href="structrtti_1_1context.html#a48a2cf947b821fca02c142708226f44f">get_cached</a>&lt;project_manager&gt;();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">auto</span>&amp; settings = pm.get_editor_settings();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    ImGui::PushItemWidth(150.0f);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="namespaceunravel.html#a943a49f3216b73b8ab830320021d8c72">inspect</a>(ctx, settings.external_tools).edit_finished)</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        pm.save_project_settings(ctx);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ImGui::PopItemWidth();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> draw_debugger_settings(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; ctx)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">auto</span>&amp; pm = ctx.<a class="code hl_function" href="structrtti_1_1context.html#a48a2cf947b821fca02c142708226f44f">get_cached</a>&lt;project_manager&gt;();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">auto</span>&amp; settings = pm.get_editor_settings();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    ImGui::PushItemWidth(150.0f);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="namespaceunravel.html#a943a49f3216b73b8ab830320021d8c72">inspect</a>(ctx, settings.debugger).edit_finished)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        pm.save_project_settings(ctx);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    ImGui::TextColored(ImVec4(1.0f, 1.0f, 0.0f, 1.0f), <span class="stringliteral">&quot;%s&quot;</span>, <span class="stringliteral">&quot;Requires an editor restart to apply changes.&quot;</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">constexpr</span> ImU32 EDITOR_SETTINGS_NOTE_COLOR = IM_COL32(255, 190, 60, 255);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Settings&gt;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">auto</span> inspect_and_save(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; <a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, Settings&amp; settings) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">if</span>(!<a class="code hl_function" href="namespaceunravel.html#a943a49f3216b73b8ab830320021d8c72">inspect</a>(<a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, settings).edit_finished)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>.<a class="code hl_function" href="structrtti_1_1context.html#a48a2cf947b821fca02c142708226f44f">get_cached</a>&lt;project_manager&gt;().save_editor_settings();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">void</span> draw_external_tools_settings(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; <a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    inspect_and_save(<a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, <a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>.<a class="code hl_function" href="structrtti_1_1context.html#a48a2cf947b821fca02c142708226f44f">get_cached</a>&lt;project_manager&gt;().get_editor_settings().external_tools);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> draw_debugger_settings(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; <a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    inspect_and_save(<a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, <a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>.<a class="code hl_function" href="structrtti_1_1context.html#a48a2cf947b821fca02c142708226f44f">get_cached</a>&lt;project_manager&gt;().get_editor_settings().debugger);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    ImGui::Spacing();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    ImGui::PushStyleColor(ImGuiCol_Text, EDITOR_SETTINGS_NOTE_COLOR);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    ImGui::TextWrapped(<span class="stringliteral">&quot;%s&quot;</span>, <a class="code hl_define" href="icons__material__design__icons_8h.html#ad0295d0b5c598d5e287f7e7b2c7a7d77">ICON_MDI_ALERT_OUTLINE</a> <span class="stringliteral">&quot; Changes apply after the editor restarts.&quot;</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    ImGui::PopStyleColor();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ImGui::PopItemWidth();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">void</span> draw_scripting_settings(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; ctx)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">auto</span>&amp; pm = ctx.<a class="code hl_function" href="structrtti_1_1context.html#a48a2cf947b821fca02c142708226f44f">get_cached</a>&lt;project_manager&gt;();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">auto</span>&amp; settings = pm.get_editor_settings();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    ImGui::PushItemWidth(150.0f);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> draw_scripting_settings(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; <a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">auto</span>&amp; settings = <a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>.<a class="code hl_function" href="structrtti_1_1context.html#a48a2cf947b821fca02c142708226f44f">get_cached</a>&lt;project_manager&gt;().get_editor_settings();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="namespaceunravel.html#a943a49f3216b73b8ab830320021d8c72">inspect</a>(<a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, settings.scripting).edit_finished)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        settings.scripting.reload_app_domain = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>.<a class="code hl_function" href="structrtti_1_1context.html#a48a2cf947b821fca02c142708226f44f">get_cached</a>&lt;project_manager&gt;().save_editor_settings();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="namespaceunravel.html#a943a49f3216b73b8ab830320021d8c72">inspect</a>(ctx, settings.scripting).edit_finished)</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        settings.scripting.reload_app_domain = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        pm.save_editor_settings();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    ImGui::PopItemWidth();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>} <span class="comment">// namespace</span></div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classunravel_1_1editor__settings__panel.html#a1d38a3e374f7f83d76c4d162429422cc">   64</a></span><a class="code hl_function" href="classunravel_1_1editor__settings__panel.html#a1d38a3e374f7f83d76c4d162429422cc">editor_settings_panel::editor_settings_panel</a>(<a class="code hl_class" href="classunravel_1_1imgui__panels.html">imgui_panels</a>* parent) : <a class="code hl_variable" href="mesh__importer_8cpp.html#a21bf4cdd2f580ec3fb94d6dd87da483d">parent_</a>(parent)</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">auto</span> make_editor_settings_categories() -&gt; std::vector&lt;settings_category&gt;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        {<span class="stringliteral">&quot;External Tools&quot;</span>,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>         <a class="code hl_define" href="icons__material__design__icons_8h.html#aaadb6daa869fb93a661c5f82c22edbf4">ICON_MDI_WRENCH_OUTLINE</a>,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>         <span class="stringliteral">&quot;The code editor scripts open in.&quot;</span>,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>         <span class="stringliteral">&quot;vscode visual studio code editor ide executable path&quot;</span>,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>         &amp;draw_external_tools_settings},</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        {<span class="stringliteral">&quot;Scripting&quot;</span>,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>         <a class="code hl_define" href="icons__material__design__icons_8h.html#af9c867cdef394d3b267a464ac5dfda5c">ICON_MDI_CODE_BRACES</a>,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>         <span class="stringliteral">&quot;What reloads when scripts compile and play mode changes.&quot;</span>,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>         <span class="stringliteral">&quot;reload domain app engine compile play mode&quot;</span>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>         &amp;draw_scripting_settings},</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#if DOTNETPP_BACKEND_MONO</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        {<span class="stringliteral">&quot;Debugger&quot;</span>,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>         <a class="code hl_define" href="icons__material__design__icons_8h.html#a7a2ae0ba3936dc719880df076bf6e8bf">ICON_MDI_BUG_OUTLINE</a>,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>         <span class="stringliteral">&quot;Where a script debugger connects.&quot;</span>,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>         <span class="stringliteral">&quot;debug ip port log level attach&quot;</span>,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>         &amp;draw_debugger_settings},</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    };</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>} <span class="comment">// namespace</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classunravel_1_1editor__settings__panel.html#a1d38a3e374f7f83d76c4d162429422cc">   79</a></span><a class="code hl_function" href="classunravel_1_1editor__settings__panel.html#a1d38a3e374f7f83d76c4d162429422cc">editor_settings_panel::editor_settings_panel</a>(<a class="code hl_class" href="classunravel_1_1imgui__panels.html">imgui_panels</a>* <a class="code hl_variable" href="mcp__tools__create_8cpp.html#ad4503be4473dd28e9ebea32ef9749384">parent</a>)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    : <a class="code hl_variable" href="mesh__import__texture__jobs_8cpp.html#a21bf4cdd2f580ec3fb94d6dd87da483d">parent_</a>(<a class="code hl_variable" href="mcp__tools__create_8cpp.html#ad4503be4473dd28e9ebea32ef9749384">parent</a>)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    , view_(make_editor_settings_categories())</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classunravel_1_1editor__settings__panel.html#a7579e44580ab29a576becac534f2becb">   68</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1editor__settings__panel.html#a7579e44580ab29a576becac534f2becb">editor_settings_panel::show</a>(<span class="keywordtype">bool</span> s)</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    show_request_ = s;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classunravel_1_1editor__settings__panel.html#a7579e44580ab29a576becac534f2becb">   85</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1editor__settings__panel.html#a7579e44580ab29a576becac534f2becb">editor_settings_panel::show</a>(<span class="keywordtype">bool</span> s)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    show_request_ = s;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classunravel_1_1editor__settings__panel.html#afae51f2b1928459f5ff77e96d271249c">   73</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1editor__settings__panel.html#afae51f2b1928459f5ff77e96d271249c">editor_settings_panel::on_frame_ui_render</a>(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; ctx, <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">if</span>(show_request_)</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        ImGui::OpenPopup(<a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        show_request_ = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    ImGui::SetNextWindowSize(ImGui::GetMainViewport()-&gt;Size * 0.5f);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classunravel_1_1editor__settings__panel.html#a7579e44580ab29a576becac534f2becb">show</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span>(ImGui::BeginPopupModal(<a class="code hl_variable" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, &amp;<a class="code hl_function" href="classunravel_1_1editor__settings__panel.html#a7579e44580ab29a576becac534f2becb">show</a>))</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="comment">// ImGui::WindowTimeBlock block(ImGui::GetFont(ImGui::Font::Mono));</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        draw_ui(ctx);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        ImGui::EndPopup();</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classunravel_1_1editor__settings__panel.html#afae51f2b1928459f5ff77e96d271249c">   90</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1editor__settings__panel.html#afae51f2b1928459f5ff77e96d271249c">editor_settings_panel::on_frame_ui_render</a>(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; <a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="android__icon_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">if</span>(show_request_)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        ImGui::OpenPopup(<a class="code hl_variable" href="android__icon_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        show_request_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    ImGui::SetNextWindowSize(ImGui::GetMainViewport()-&gt;Size * 0.5f);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classunravel_1_1editor__settings__panel.html#a7579e44580ab29a576becac534f2becb">show</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">if</span>(ImGui::BeginPopupModal(<a class="code hl_variable" href="android__icon_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, &amp;<a class="code hl_function" href="classunravel_1_1editor__settings__panel.html#a7579e44580ab29a576becac534f2becb">show</a>))</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        view_.<a class="code hl_function" href="classunravel_1_1settings__view.html#a1e5d8aacd4d786d7d3dbf1cbc5502834">draw</a>(<a class="code hl_variable" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        ImGui::EndPopup();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
 </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">void</span> editor_settings_panel::draw_ui(<a class="code hl_struct" href="structrtti_1_1context.html">rtti::context</a>&amp; ctx)</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>{</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">auto</span> avail = ImGui::GetContentRegionAvail();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span>(avail.x &lt; 1.0f || avail.y &lt; 1.0f)</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">static</span> std::vector&lt;setting_entry&gt; categories{</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        {<span class="stringliteral">&quot;External Tools&quot;</span>, &amp;draw_external_tools_settings},</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        {<span class="stringliteral">&quot;Scripting&quot;</span>, &amp;draw_scripting_settings},</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#if DOTNETPP_BACKEND_MONO</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        {<span class="stringliteral">&quot;Debugger&quot;</span>, &amp;draw_debugger_settings},</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    };</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">// Child A: the categories list</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// We fix the width of this child, so the right child uses the remaining space.</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    ImGui::BeginChild(<span class="stringliteral">&quot;##LeftSidebar&quot;</span>, avail * ImVec2(0.15f, 1.0f), ImGuiChildFlags_Borders | ImGuiChildFlags_ResizeX);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="comment">// Display categories</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; category : categories)</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="comment">// &#39;Selectable&#39; returns true if clicked</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">if</span>(ImGui::Selectable(category.id.c_str(), (selected_entry_.id == category.id)))</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                selected_entry_ = category;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    ImGui::EndChild();</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="comment">// On the same line:</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    ImGui::SameLine();</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="comment">// Child B: show settings for the selected category</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    ImGui::BeginChild(<span class="stringliteral">&quot;##RightContent&quot;</span>);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordflow">if</span>(selected_entry_.callback)</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            selected_entry_.callback(ctx);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    ImGui::EndChild();</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>} <span class="comment">// namespace unravel</span></div>
-<div class="ttc" id="aclassunravel_1_1editor__settings__panel_html_a1d38a3e374f7f83d76c4d162429422cc"><div class="ttname"><a href="classunravel_1_1editor__settings__panel.html#a1d38a3e374f7f83d76c4d162429422cc">unravel::editor_settings_panel::editor_settings_panel</a></div><div class="ttdeci">editor_settings_panel(imgui_panels *parent)</div><div class="ttdef"><b>Definition</b> <a href="#l00064">editor_settings_panel.cpp:64</a></div></div>
-<div class="ttc" id="aclassunravel_1_1editor__settings__panel_html_a7579e44580ab29a576becac534f2becb"><div class="ttname"><a href="classunravel_1_1editor__settings__panel.html#a7579e44580ab29a576becac534f2becb">unravel::editor_settings_panel::show</a></div><div class="ttdeci">void show(bool s)</div><div class="ttdef"><b>Definition</b> <a href="#l00068">editor_settings_panel.cpp:68</a></div></div>
-<div class="ttc" id="aclassunravel_1_1editor__settings__panel_html_afae51f2b1928459f5ff77e96d271249c"><div class="ttname"><a href="classunravel_1_1editor__settings__panel.html#afae51f2b1928459f5ff77e96d271249c">unravel::editor_settings_panel::on_frame_ui_render</a></div><div class="ttdeci">void on_frame_ui_render(rtti::context &amp;ctx, const char *name)</div><div class="ttdef"><b>Definition</b> <a href="#l00073">editor_settings_panel.cpp:73</a></div></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>} <span class="comment">// namespace unravel</span></div>
+<div class="ttc" id="aandroid__icon_8cpp_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="android__icon_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> <a href="android__icon_8cpp_source.html#l00023">android_icon.cpp:23</a></div></div>
+<div class="ttc" id="aclassunravel_1_1editor__settings__panel_html_a1d38a3e374f7f83d76c4d162429422cc"><div class="ttname"><a href="classunravel_1_1editor__settings__panel.html#a1d38a3e374f7f83d76c4d162429422cc">unravel::editor_settings_panel::editor_settings_panel</a></div><div class="ttdeci">editor_settings_panel(imgui_panels *parent)</div><div class="ttdef"><b>Definition</b> <a href="#l00079">editor_settings_panel.cpp:79</a></div></div>
+<div class="ttc" id="aclassunravel_1_1editor__settings__panel_html_a7579e44580ab29a576becac534f2becb"><div class="ttname"><a href="classunravel_1_1editor__settings__panel.html#a7579e44580ab29a576becac534f2becb">unravel::editor_settings_panel::show</a></div><div class="ttdeci">void show(bool s)</div><div class="ttdef"><b>Definition</b> <a href="#l00085">editor_settings_panel.cpp:85</a></div></div>
+<div class="ttc" id="aclassunravel_1_1editor__settings__panel_html_afae51f2b1928459f5ff77e96d271249c"><div class="ttname"><a href="classunravel_1_1editor__settings__panel.html#afae51f2b1928459f5ff77e96d271249c">unravel::editor_settings_panel::on_frame_ui_render</a></div><div class="ttdeci">void on_frame_ui_render(rtti::context &amp;ctx, const char *name)</div><div class="ttdef"><b>Definition</b> <a href="#l00090">editor_settings_panel.cpp:90</a></div></div>
 <div class="ttc" id="aclassunravel_1_1imgui__panels_html"><div class="ttname"><a href="classunravel_1_1imgui__panels.html">unravel::imgui_panels</a></div><div class="ttdef"><b>Definition</b> <a href="panel_8h_source.html#l00031">panel.h:32</a></div></div>
+<div class="ttc" id="aclassunravel_1_1settings__view_html_a1e5d8aacd4d786d7d3dbf1cbc5502834"><div class="ttname"><a href="classunravel_1_1settings__view.html#a1e5d8aacd4d786d7d3dbf1cbc5502834">unravel::settings_view::draw</a></div><div class="ttdeci">void draw(rtti::context &amp;ctx)</div><div class="ttdef"><b>Definition</b> <a href="settings__view_8cpp_source.html#l00105">settings_view.cpp:105</a></div></div>
 <div class="ttc" id="aeditor__settings__panel_8h_html"><div class="ttname"><a href="editor__settings__panel_8h.html">editor_settings_panel.h</a></div></div>
-<div class="ttc" id="ahub_8cpp_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition</b> <a href="hub_8cpp_source.html#l00033">hub.cpp:33</a></div></div>
+<div class="ttc" id="ahierarchy__panel_8cpp_html_a80beb77f5f68b1854cfac64336ed7451"><div class="ttname"><a href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a></div><div class="ttdeci">rtti::context &amp; ctx</div><div class="ttdef"><b>Definition</b> <a href="hierarchy__panel_8cpp_source.html#l00816">hierarchy_panel.cpp:816</a></div></div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_a7a2ae0ba3936dc719880df076bf6e8bf"><div class="ttname"><a href="icons__material__design__icons_8h.html#a7a2ae0ba3936dc719880df076bf6e8bf">ICON_MDI_BUG_OUTLINE</a></div><div class="ttdeci">#define ICON_MDI_BUG_OUTLINE</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00871">icons_material_design_icons.h:871</a></div></div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_aaadb6daa869fb93a661c5f82c22edbf4"><div class="ttname"><a href="icons__material__design__icons_8h.html#aaadb6daa869fb93a661c5f82c22edbf4">ICON_MDI_WRENCH_OUTLINE</a></div><div class="ttdeci">#define ICON_MDI_WRENCH_OUTLINE</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l05121">icons_material_design_icons.h:5121</a></div></div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_ad0295d0b5c598d5e287f7e7b2c7a7d77"><div class="ttname"><a href="icons__material__design__icons_8h.html#ad0295d0b5c598d5e287f7e7b2c7a7d77">ICON_MDI_ALERT_OUTLINE</a></div><div class="ttdeci">#define ICON_MDI_ALERT_OUTLINE</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l00144">icons_material_design_icons.h:144</a></div></div>
+<div class="ttc" id="aicons__material__design__icons_8h_html_af9c867cdef394d3b267a464ac5dfda5c"><div class="ttname"><a href="icons__material__design__icons_8h.html#af9c867cdef394d3b267a464ac5dfda5c">ICON_MDI_CODE_BRACES</a></div><div class="ttdeci">#define ICON_MDI_CODE_BRACES</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l01379">icons_material_design_icons.h:1379</a></div></div>
 <div class="ttc" id="ainput_8h_html"><div class="ttname"><a href="input_8h.html">input.h</a></div></div>
 <div class="ttc" id="ainspectors_8h_html"><div class="ttname"><a href="inspectors_8h.html">inspectors.h</a></div></div>
-<div class="ttc" id="amesh__importer_8cpp_html_a21bf4cdd2f580ec3fb94d6dd87da483d"><div class="ttname"><a href="mesh__importer_8cpp.html#a21bf4cdd2f580ec3fb94d6dd87da483d">parent_</a></div><div class="ttdeci">std::vector&lt; size_t &gt; parent_</div><div class="ttdef"><b>Definition</b> <a href="mesh__importer_8cpp_source.html#l02886">mesh_importer.cpp:2886</a></div></div>
-<div class="ttc" id="anamespaceunravel_html"><div class="ttname"><a href="namespaceunravel.html">unravel</a></div><div class="ttdef"><b>Definition</b> <a href="crash_8cpp_source.html#l00020">crash.cpp:21</a></div></div>
-<div class="ttc" id="anamespaceunravel_html_a943a49f3216b73b8ab830320021d8c72"><div class="ttname"><a href="namespaceunravel.html#a943a49f3216b73b8ab830320021d8c72">unravel::inspect</a></div><div class="ttdeci">auto inspect(rtti::context &amp;ctx, T &amp;obj, const std::string &amp;name={}) -&gt; inspect_result</div><div class="ttdoc">Convenience template function for inspecting objects of known type.</div><div class="ttdef"><b>Definition</b> <a href="inspectors_8h_source.html#l00402">inspectors.h:402</a></div></div>
+<div class="ttc" id="amcp__tools__create_8cpp_html_ad4503be4473dd28e9ebea32ef9749384"><div class="ttname"><a href="mcp__tools__create_8cpp.html#ad4503be4473dd28e9ebea32ef9749384">parent</a></div><div class="ttdeci">entt::handle parent</div><div class="ttdef"><b>Definition</b> <a href="mcp__tools__create_8cpp_source.html#l00035">mcp_tools_create.cpp:35</a></div></div>
+<div class="ttc" id="amesh__import__texture__jobs_8cpp_html_a21bf4cdd2f580ec3fb94d6dd87da483d"><div class="ttname"><a href="mesh__import__texture__jobs_8cpp.html#a21bf4cdd2f580ec3fb94d6dd87da483d">parent_</a></div><div class="ttdeci">std::vector&lt; size_t &gt; parent_</div><div class="ttdef"><b>Definition</b> <a href="mesh__import__texture__jobs_8cpp_source.html#l00132">mesh_import_texture_jobs.cpp:132</a></div></div>
+<div class="ttc" id="anamespaceunravel_html"><div class="ttname"><a href="namespaceunravel.html">unravel</a></div><div class="ttdef"><b>Definition</b> <a href="crash_8cpp_source.html#l00037">crash.cpp:38</a></div></div>
+<div class="ttc" id="anamespaceunravel_html_a943a49f3216b73b8ab830320021d8c72"><div class="ttname"><a href="namespaceunravel.html#a943a49f3216b73b8ab830320021d8c72">unravel::inspect</a></div><div class="ttdeci">auto inspect(rtti::context &amp;ctx, T &amp;obj, const std::string &amp;name={}) -&gt; inspect_result</div><div class="ttdoc">Convenience template function for inspecting objects of known type.</div><div class="ttdef"><b>Definition</b> <a href="inspectors_8h_source.html#l00561">inspectors.h:561</a></div></div>
 <div class="ttc" id="apanel_8h_html"><div class="ttname"><a href="panel_8h.html">panel.h</a></div></div>
 <div class="ttc" id="aproject__manager_8h_html"><div class="ttname"><a href="project__manager_8h.html">project_manager.h</a></div></div>
-<div class="ttc" id="astructrtti_1_1context_html"><div class="ttname"><a href="structrtti_1_1context.html">rtti::context</a></div><div class="ttdef"><b>Definition</b> <a href="context_8hpp_source.html#l00013">context.hpp:14</a></div></div>
-<div class="ttc" id="astructrtti_1_1context_html_a48a2cf947b821fca02c142708226f44f"><div class="ttname"><a href="structrtti_1_1context.html#a48a2cf947b821fca02c142708226f44f">rtti::context::get_cached</a></div><div class="ttdeci">auto get_cached() -&gt; T &amp;</div><div class="ttdef"><b>Definition</b> <a href="context_8hpp_source.html#l00049">context.hpp:49</a></div></div>
+<div class="ttc" id="astructrtti_1_1context_html"><div class="ttname"><a href="structrtti_1_1context.html">rtti::context</a></div><div class="ttdef"><b>Definition</b> <a href="context_8hpp_source.html#l00016">context.hpp:17</a></div></div>
+<div class="ttc" id="astructrtti_1_1context_html_a48a2cf947b821fca02c142708226f44f"><div class="ttname"><a href="structrtti_1_1context.html#a48a2cf947b821fca02c142708226f44f">rtti::context::get_cached</a></div><div class="ttdeci">auto get_cached() -&gt; T &amp;</div><div class="ttdef"><b>Definition</b> <a href="context_8hpp_source.html#l00052">context.hpp:52</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

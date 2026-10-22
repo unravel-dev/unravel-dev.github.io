@@ -104,6 +104,9 @@ $(function(){initNavTree('classunravel_1_1_rml_ui___file_interface.html',''); in
 </div><!--header-->
 <div class="contents">
 
+<p>RmlUi's documents, style sheets and fonts, read from the mounted packs first, then from disk.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_rml_ui___file_interface_8h_source.html">RmlUi_FileInterface.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for unravel::RmlUi_FileInterface:</div>
@@ -114,25 +117,28 @@ Inheritance diagram for unravel::RmlUi_FileInterface:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a55d6888f91bd324673c3646a1b38cb5b" id="r_a55d6888f91bd324673c3646a1b38cb5b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55d6888f91bd324673c3646a1b38cb5b">Open</a> (const Rml::String &amp;url) -&gt; Rml::FileHandle override</td></tr>
+<tr class="memitem:a55d6888f91bd324673c3646a1b38cb5b" id="r_a55d6888f91bd324673c3646a1b38cb5b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55d6888f91bd324673c3646a1b38cb5b">Open</a> (const Rml::String &amp;<a class="el" href="about__window_8cpp.html#aec657bef26e5ff27b9442563a591d9ec">url</a>) -&gt; Rml::FileHandle override</td></tr>
 <tr class="separator:a55d6888f91bd324673c3646a1b38cb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dca0a1aa4b3b87d4f65b94f84fe5966" id="r_a1dca0a1aa4b3b87d4f65b94f84fe5966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dca0a1aa4b3b87d4f65b94f84fe5966">Close</a> (Rml::FileHandle file) override</td></tr>
+<tr class="memitem:a1dca0a1aa4b3b87d4f65b94f84fe5966" id="r_a1dca0a1aa4b3b87d4f65b94f84fe5966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dca0a1aa4b3b87d4f65b94f84fe5966">Close</a> (Rml::FileHandle <a class="el" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a>) override</td></tr>
 <tr class="separator:a1dca0a1aa4b3b87d4f65b94f84fe5966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a8d2cd4ee85d1381267027900043d67" id="r_a3a8d2cd4ee85d1381267027900043d67"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a8d2cd4ee85d1381267027900043d67">Read</a> (void *buffer, size_t <a class="el" href="structsize.html">size</a>, Rml::FileHandle file) -&gt; size_t override</td></tr>
+<tr class="memitem:a3a8d2cd4ee85d1381267027900043d67" id="r_a3a8d2cd4ee85d1381267027900043d67"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a8d2cd4ee85d1381267027900043d67">Read</a> (void *<a class="el" href="animation__controller__inspectors_8cpp.html#ab3d71a3630661054e58116e2249c2e9e">buffer</a>, size_t <a class="el" href="structsize.html">size</a>, Rml::FileHandle <a class="el" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a>) -&gt; size_t override</td></tr>
 <tr class="separator:a3a8d2cd4ee85d1381267027900043d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab57fdf83db7a9f0f190c2b3965288447" id="r_ab57fdf83db7a9f0f190c2b3965288447"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab57fdf83db7a9f0f190c2b3965288447">Seek</a> (Rml::FileHandle file, long offset, int origin) -&gt; bool override</td></tr>
+<tr class="memitem:ab57fdf83db7a9f0f190c2b3965288447" id="r_ab57fdf83db7a9f0f190c2b3965288447"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab57fdf83db7a9f0f190c2b3965288447">Seek</a> (Rml::FileHandle <a class="el" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a>, long <a class="el" href="rendering_2gi_2gi__mesh__cards_8cpp.html#aeb8943c0be28daa17fc41b7357cfb006">offset</a>, int <a class="el" href="native__scene_8cpp.html#ae53cb71996f6722f94e4a6bab413266f">origin</a>) -&gt; bool override</td></tr>
 <tr class="separator:ab57fdf83db7a9f0f190c2b3965288447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3800105de449a8007f64827cc3943cd" id="r_ab3800105de449a8007f64827cc3943cd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3800105de449a8007f64827cc3943cd">Tell</a> (Rml::FileHandle file) -&gt; size_t override</td></tr>
+<tr class="memitem:ab3800105de449a8007f64827cc3943cd" id="r_ab3800105de449a8007f64827cc3943cd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3800105de449a8007f64827cc3943cd">Tell</a> (Rml::FileHandle <a class="el" href="mcp__tools__prefab__instances_8cpp.html#a0f7e62e6c0f782d0ec179f902a799bd0">file</a>) -&gt; size_t override</td></tr>
 <tr class="separator:ab3800105de449a8007f64827cc3943cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e5f6c9f3733c400b4fd495d550f60fa" id="r_a1e5f6c9f3733c400b4fd495d550f60fa"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e5f6c9f3733c400b4fd495d550f60fa">ResolveUrl</a> (const Rml::String &amp;url) -&gt; Rml::String</td></tr>
+<tr class="memitem:a1e5f6c9f3733c400b4fd495d550f60fa" id="r_a1e5f6c9f3733c400b4fd495d550f60fa"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e5f6c9f3733c400b4fd495d550f60fa">ResolveUrl</a> (const Rml::String &amp;<a class="el" href="about__window_8cpp.html#aec657bef26e5ff27b9442563a591d9ec">url</a>) -&gt; Rml::String</td></tr>
 <tr class="separator:a1e5f6c9f3733c400b4fd495d550f60fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8e058fc77b32c098c7d7c92e5bf655" id="r_adb8e058fc77b32c098c7d7c92e5bf655"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb8e058fc77b32c098c7d7c92e5bf655">ResolveAssetKey</a> (const Rml::String &amp;<a class="el" href="about__window_8cpp.html#aec657bef26e5ff27b9442563a591d9ec">url</a>) -&gt; Rml::String</td></tr>
+<tr class="separator:adb8e058fc77b32c098c7d7c92e5bf655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8h_source.html#l00011">11</a> of file <a class="el" href="_rml_ui___file_interface_8h_source.html">RmlUi_FileInterface.h</a>.</p>
+<div class="textblock"><p>RmlUi's documents, style sheets and fonts, read from the mounted packs first, then from disk. </p>
+
+<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8h_source.html#l00014">14</a> of file <a class="el" href="_rml_ui___file_interface_8h_source.html">RmlUi_FileInterface.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1dca0a1aa4b3b87d4f65b94f84fe5966" name="a1dca0a1aa4b3b87d4f65b94f84fe5966"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dca0a1aa4b3b87d4f65b94f84fe5966">&#9670;&#160;</a></span>Close()</h2>
@@ -157,7 +163,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00045">45</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00054">54</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -184,7 +190,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00035">35</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00048">48</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +226,35 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00055">55</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00062">62</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb8e058fc77b32c098c7d7c92e5bf655" name="adb8e058fc77b32c098c7d7c92e5bf655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8e058fc77b32c098c7d7c92e5bf655">&#9670;&#160;</a></span>ResolveAssetKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::RmlUi_FileInterface::ResolveAssetKey </td>
+          <td>(</td>
+          <td class="paramtype">const Rml::String &amp;</td>          <td class="paramname"><span class="paramname"><em>url</em></span></td><td>)</td>
+          <td> -&gt; Rml::String</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><code>url</code> as an asset key: the protocol path of a file under a protocol root, or <code>url</code> unchanged. RmlUi joins a relative source onto its document's file path. </p>
+
+<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00038">38</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -247,7 +281,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00023">23</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00026">26</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -283,7 +317,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00060">60</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00076">76</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
 
 </div>
 </div>
@@ -310,7 +344,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00065">65</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rml_ui___file_interface_8cpp_source.html#l00089">89</a> of file <a class="el" href="_rml_ui___file_interface_8cpp_source.html">RmlUi_FileInterface.cpp</a>.</p>
 
 </div>
 </div>

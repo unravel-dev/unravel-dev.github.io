@@ -99,6 +99,7 @@ $(function(){initNavTree('classunravel_1_1blend__space__def.html',''); initResiz
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classunravel_1_1blend__space__def-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::blend_space_def Class Reference</div></div>
 </div><!--header-->
@@ -115,16 +116,28 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a226b04bd291b61dc53f9d2ad15e0a349" id="r_a226b04bd291b61dc53f9d2ad15e0a349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a226b04bd291b61dc53f9d2ad15e0a349">add_clip</a> (const <a class="el" href="#abfca44b2c346ba2ef7f49d08ee19d05c">parameters_t</a> &amp;params, const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &gt; &amp;clip)</td></tr>
+<tr class="memitem:a226b04bd291b61dc53f9d2ad15e0a349" id="r_a226b04bd291b61dc53f9d2ad15e0a349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a226b04bd291b61dc53f9d2ad15e0a349">add_clip</a> (const <a class="el" href="#abfca44b2c346ba2ef7f49d08ee19d05c">parameters_t</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>, const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &gt; &amp;<a class="el" href="namespaceunravel.html#a8dd2c638eb13e83a86c9b6d1e4359930af6d8b886335927d46fad323c60335d09">clip</a>)</td></tr>
 <tr class="separator:a226b04bd291b61dc53f9d2ad15e0a349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26c1c41f384f2044843beb46662d024e" id="r_a26c1c41f384f2044843beb46662d024e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26c1c41f384f2044843beb46662d024e">compute_blend</a> (const <a class="el" href="#abfca44b2c346ba2ef7f49d08ee19d05c">parameters_t</a> &amp;current_params, std::vector&lt; std::pair&lt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &gt;, float &gt; &gt; &amp;out_clips) const</td></tr>
-<tr class="separator:a26c1c41f384f2044843beb46662d024e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2efe06b2d2d271ff8092576e979898" id="r_a3a2efe06b2d2d271ff8092576e979898"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a2efe06b2d2d271ff8092576e979898">compute_blend</a> (const <a class="el" href="#abfca44b2c346ba2ef7f49d08ee19d05c">parameters_t</a> &amp;current_params, std::vector&lt; <a class="el" href="structunravel_1_1blend__space__weight.html">blend_space_weight</a> &gt; &amp;out_clips) const</td></tr>
+<tr class="separator:a3a2efe06b2d2d271ff8092576e979898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af45ddcf9e934bb563c257c40760a47c4" id="r_af45ddcf9e934bb563c257c40760a47c4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af45ddcf9e934bb563c257c40760a47c4">get_parameter_count</a> () const -&gt; size_t</td></tr>
 <tr class="separator:af45ddcf9e934bb563c257c40760a47c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a762a1c2ce81b15ffef8cf383f35339c4" id="r_a762a1c2ce81b15ffef8cf383f35339c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a762a1c2ce81b15ffef8cf383f35339c4">set_2d_mode</a> (<a class="el" href="namespaceunravel.html#a6f0c69ff05d235b943aa3594f30db6db">blend_space_2d_mode</a> mode)</td></tr>
+<tr class="separator:a762a1c2ce81b15ffef8cf383f35339c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0ce044e3551b2396661b45fc331057" id="r_a0f0ce044e3551b2396661b45fc331057"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f0ce044e3551b2396661b45fc331057">get_2d_mode</a> () const -&gt; <a class="el" href="namespaceunravel.html#a6f0c69ff05d235b943aa3594f30db6db">blend_space_2d_mode</a></td></tr>
+<tr class="separator:a0f0ce044e3551b2396661b45fc331057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b27687f22d95ac9374dbbb7bfd1df1e" id="r_a0b27687f22d95ac9374dbbb7bfd1df1e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b27687f22d95ac9374dbbb7bfd1df1e">get_points</a> () const -&gt; const std::vector&lt; <a class="el" href="structunravel_1_1blend__space__point.html">blend_space_point</a> &gt; &amp;</td></tr>
+<tr class="separator:a0b27687f22d95ac9374dbbb7bfd1df1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:abe3222ee3253813dbf04da96588cab5c" id="r_abe3222ee3253813dbf04da96588cab5c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe3222ee3253813dbf04da96588cab5c">operator==</a> (const <a class="el" href="classunravel_1_1blend__space__def.html">blend_space_def</a> &amp;, const <a class="el" href="classunravel_1_1blend__space__def.html">blend_space_def</a> &amp;) -&gt; bool=default</td></tr>
+<tr class="memdesc:abe3222ee3253813dbf04da96588cab5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same points (parameters and clips) and the same 2D mode.  <br /></td></tr>
+<tr class="separator:abe3222ee3253813dbf04da96588cab5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="animation__blend__space_8h_source.html#l00029">29</a> of file <a class="el" href="animation__blend__space_8h_source.html">animation_blend_space.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__blend__space_8h_source.html#l00101">101</a> of file <a class="el" href="animation__blend__space_8h_source.html">animation_blend_space.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5006d4706750bde2eb5c1c561dadb49b" name="a5006d4706750bde2eb5c1c561dadb49b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5006d4706750bde2eb5c1c561dadb49b">&#9670;&#160;</a></span>parameter_t</h2>
@@ -138,7 +151,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animation__blend__space_8h_source.html#l00032">32</a> of file <a class="el" href="animation__blend__space_8h_source.html">animation_blend_space.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__blend__space_8h_source.html#l00107">107</a> of file <a class="el" href="animation__blend__space_8h_source.html">animation_blend_space.h</a>.</p>
 
 </div>
 </div>
@@ -154,7 +167,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animation__blend__space_8h_source.html#l00033">33</a> of file <a class="el" href="animation__blend__space_8h_source.html">animation_blend_space.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__blend__space_8h_source.html#l00108">108</a> of file <a class="el" href="animation__blend__space_8h_source.html">animation_blend_space.h</a>.</p>
 
 </div>
 </div>
@@ -178,12 +191,12 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animation__blend__space_8cpp_source.html#l00347">347</a> of file <a class="el" href="animation__blend__space_8cpp_source.html">animation_blend_space.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__blend__space_8cpp_source.html#l00502">502</a> of file <a class="el" href="animation__blend__space_8cpp_source.html">animation_blend_space.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a26c1c41f384f2044843beb46662d024e" name="a26c1c41f384f2044843beb46662d024e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26c1c41f384f2044843beb46662d024e">&#9670;&#160;</a></span>compute_blend()</h2>
+<a id="a3a2efe06b2d2d271ff8092576e979898" name="a3a2efe06b2d2d271ff8092576e979898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2efe06b2d2d271ff8092576e979898">&#9670;&#160;</a></span>compute_blend()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,12 +209,31 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; std::pair&lt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &gt;, float &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_clips</em></span>&#160;) const</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structunravel_1_1blend__space__weight.html">blend_space_weight</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_clips</em></span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animation__blend__space_8cpp_source.html#l00353">353</a> of file <a class="el" href="animation__blend__space_8cpp_source.html">animation_blend_space.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__blend__space_8cpp_source.html#l00515">515</a> of file <a class="el" href="animation__blend__space_8cpp_source.html">animation_blend_space.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0f0ce044e3551b2396661b45fc331057" name="a0f0ce044e3551b2396661b45fc331057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0ce044e3551b2396661b45fc331057">&#9670;&#160;</a></span>get_2d_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::blend_space_def::get_2d_mode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespaceunravel.html#a6f0c69ff05d235b943aa3594f30db6db">blend_space_2d_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animation__blend__space_8cpp_source.html#l00783">783</a> of file <a class="el" href="animation__blend__space_8cpp_source.html">animation_blend_space.cpp</a>.</p>
 
 </div>
 </div>
@@ -220,7 +252,77 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animation__blend__space_8cpp_source.html#l00555">555</a> of file <a class="el" href="animation__blend__space_8cpp_source.html">animation_blend_space.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__blend__space_8cpp_source.html#l00793">793</a> of file <a class="el" href="animation__blend__space_8cpp_source.html">animation_blend_space.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0b27687f22d95ac9374dbbb7bfd1df1e" name="a0b27687f22d95ac9374dbbb7bfd1df1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b27687f22d95ac9374dbbb7bfd1df1e">&#9670;&#160;</a></span>get_points()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::blend_space_def::get_points </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;<a class="el" href="structunravel_1_1blend__space__point.html">blend_space_point</a>&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animation__blend__space_8cpp_source.html#l00788">788</a> of file <a class="el" href="animation__blend__space_8cpp_source.html">animation_blend_space.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a762a1c2ce81b15ffef8cf383f35339c4" name="a762a1c2ce81b15ffef8cf383f35339c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a762a1c2ce81b15ffef8cf383f35339c4">&#9670;&#160;</a></span>set_2d_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::blend_space_def::set_2d_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceunravel.html#a6f0c69ff05d235b943aa3594f30db6db">blend_space_2d_mode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animation__blend__space_8cpp_source.html#l00778">778</a> of file <a class="el" href="animation__blend__space_8cpp_source.html">animation_blend_space.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="abe3222ee3253813dbf04da96588cab5c" name="abe3222ee3253813dbf04da96588cab5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3222ee3253813dbf04da96588cab5c">&#9670;&#160;</a></span>operator==</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1blend__space__def.html">blend_space_def</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1blend__space__def.html">blend_space_def</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) -&gt;  bool=default</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same points (parameters and clips) and the same 2D mode. </p>
 
 </div>
 </div>

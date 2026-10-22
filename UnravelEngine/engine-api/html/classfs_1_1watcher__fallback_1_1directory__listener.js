@@ -1,22 +1,14 @@
 var classfs_1_1watcher__fallback_1_1directory__listener =
 [
-    [ "observed_changes", "structfs_1_1watcher__fallback_1_1directory__listener_1_1observed__changes.html", "structfs_1_1watcher__fallback_1_1directory__listener_1_1observed__changes" ],
-    [ "directory_listener", "classfs_1_1watcher__fallback_1_1directory__listener.html#a15578622c73a5e9083416d8896a8fe4b", null ],
-    [ "check_if_parent_dir_was_renamed", "classfs_1_1watcher__fallback_1_1directory__listener.html#ac43050c19f114d32cc4621a589d36bb5", null ],
-    [ "check_if_same_extension", "classfs_1_1watcher__fallback_1_1directory__listener.html#ad2db59c47e1b1870943bf655db3f933d", null ],
-    [ "collect_missing_entries", "classfs_1_1watcher__fallback_1_1directory__listener.html#a505c4adda6e28b0058b2380cb9adc04d", null ],
-    [ "emit_remaining_removed", "classfs_1_1watcher__fallback_1_1directory__listener.html#a005c7cb9381cea30d190360b02bf5f40", null ],
-    [ "get_original_path", "classfs_1_1watcher__fallback_1_1directory__listener.html#a539bb2f17b2ecba68fcc1ce1b0d7d293", null ],
+    [ "directory_listener", "classfs_1_1watcher__fallback_1_1directory__listener.html#abe0fabbca93225a5e2701a2a7748c3fe", null ],
+    [ "~directory_listener", "classfs_1_1watcher__fallback_1_1directory__listener.html#a50624a3bd5f5f4266ed0097c43a69b25", null ],
+    [ "directory_listener", "classfs_1_1watcher__fallback_1_1directory__listener.html#a3760dd56c42c6da36df9d5a356558caa", null ],
+    [ "get_due_time", "classfs_1_1watcher__fallback_1_1directory__listener.html#a5c3d55f09c08af6ce2b391415508a70a", null ],
     [ "get_path", "classfs_1_1watcher__fallback_1_1directory__listener.html#a0b706f53e0a8a31acd26f251714e24db", null ],
-    [ "get_recursive", "classfs_1_1watcher__fallback_1_1directory__listener.html#aa0e5de01cb5a8b3537ea75b13e739721", null ],
+    [ "is_recursive", "classfs_1_1watcher__fallback_1_1directory__listener.html#a4e329eabd5c6f2e17d9916d2ac99ae16", null ],
+    [ "operator=", "classfs_1_1watcher__fallback_1_1directory__listener.html#ab5bc512e71dcc7b10c0a7bbe84e92084", null ],
     [ "pause", "classfs_1_1watcher__fallback_1_1directory__listener.html#a0c90c42182b80c389a85cfd0ad9e7404", null ],
-    [ "poll_entry", "classfs_1_1watcher__fallback_1_1directory__listener.html#aa022e48b8656c22c864594261ec8067e", null ],
-    [ "process_modifications", "classfs_1_1watcher__fallback_1_1directory__listener.html#a860d28363d5ae3336fa49e2479b1e432", null ],
-    [ "remove_missing_candidate", "classfs_1_1watcher__fallback_1_1directory__listener.html#a27821f2512b6c7932576f10b41f0abfb", null ],
-    [ "request_immediate_poll", "classfs_1_1watcher__fallback_1_1directory__listener.html#a8769eb0aec0f0e9f5b35a9856ed20a20", null ],
-    [ "resume", "classfs_1_1watcher__fallback_1_1directory__listener.html#a79e37c4c1b12f2f0339c55e10674acdd", null ],
-    [ "try_match_rename", "classfs_1_1watcher__fallback_1_1directory__listener.html#a2537213cdd2738ec1066471ed6825a5b", null ],
-    [ "watch", "classfs_1_1watcher__fallback_1_1directory__listener.html#af225ea13629575e1e499e9ec039bc32b", null ],
-    [ "watcher_fallback", "classfs_1_1watcher__fallback_1_1directory__listener.html#afdb91273d4b8d368eafe048c6b0d5ba0", null ],
-    [ "on_changes", "classfs_1_1watcher__fallback_1_1directory__listener.html#a8e2653ce91f1ea1b2b8a4de5d7d9db58", null ]
+    [ "poll", "classfs_1_1watcher__fallback_1_1directory__listener.html#a3ebaed19b6b0d12cdba288be6282a9b0", null ],
+    [ "request_immediate_scan", "classfs_1_1watcher__fallback_1_1directory__listener.html#a590d59434b8441510e9c311d76ae625f", null ],
+    [ "resume", "classfs_1_1watcher__fallback_1_1directory__listener.html#a79e37c4c1b12f2f0339c55e10674acdd", null ]
 ];

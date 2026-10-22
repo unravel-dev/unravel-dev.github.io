@@ -177,7 +177,7 @@ Class LightComponent  <a class="header-action link-secondary" title="View source
 
   <h3 id="Unravel_Core_LightComponent_castsShadows" data-uid="Unravel.Core.LightComponent.castsShadows">
   castsShadows
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Whether the light casts shadows.</p>
@@ -209,7 +209,7 @@ Class LightComponent  <a class="header-action link-secondary" title="View source
 
   <h3 id="Unravel_Core_LightComponent_color" data-uid="Unravel.Core.LightComponent.color">
   color
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Color of the light.</p>
@@ -237,11 +237,77 @@ Class LightComponent  <a class="header-action link-secondary" title="View source
 
 
 
+  <a id="Unravel_Core_LightComponent_enabled_" data-uid="Unravel.Core.LightComponent.enabled*"></a>
+
+  <h3 id="Unravel_Core_LightComponent_enabled" data-uid="Unravel.Core.LightComponent.enabled">
+  enabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the light shines. A disabled light renders no light and no shadows and adds
+nothing to the global illumination, while its entity stays active. Intensity 0 is not
+&quot;off&quot;: the light still renders its shadow maps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_LightComponent_indirectIntensity_" data-uid="Unravel.Core.LightComponent.indirectIntensity*"></a>
+
+  <h3 id="Unravel_Core_LightComponent_indirectIntensity" data-uid="Unravel.Core.LightComponent.indirectIntensity">
+  indirectIntensity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Scale of the light in the global illumination (what it bounces); 0 leaves it out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float indirectIntensity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_LightComponent_intensity_" data-uid="Unravel.Core.LightComponent.intensity*"></a>
 
   <h3 id="Unravel_Core_LightComponent_intensity" data-uid="Unravel.Core.LightComponent.intensity">
   intensity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Light intensity.</p>
@@ -269,43 +335,11 @@ Class LightComponent  <a class="header-action link-secondary" title="View source
 
 
 
-  <a id="Unravel_Core_LightComponent_pointExponentFalloff_" data-uid="Unravel.Core.LightComponent.pointExponentFalloff*"></a>
-
-  <h3 id="Unravel_Core_LightComponent_pointExponentFalloff" data-uid="Unravel.Core.LightComponent.pointExponentFalloff">
-  pointExponentFalloff
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L90"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Point light exponent falloff.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float pointExponentFalloff { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="Unravel_Core_LightComponent_range_" data-uid="Unravel.Core.LightComponent.range*"></a>
 
   <h3 id="Unravel_Core_LightComponent_range" data-uid="Unravel.Core.LightComponent.range">
   range
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Range for point and spot lights.</p>
@@ -333,11 +367,77 @@ Class LightComponent  <a class="header-action link-secondary" title="View source
 
 
 
+  <a id="Unravel_Core_LightComponent_sourceLength_" data-uid="Unravel.Core.LightComponent.sourceLength*"></a>
+
+  <h3 id="Unravel_Core_LightComponent_sourceLength" data-uid="Unravel.Core.LightComponent.sourceLength">
+  sourceLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Length of a point or spot light's emitting tube along its local Y axis, in world units.
+0 = a sphere.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float sourceLength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_LightComponent_sourceRadius_" data-uid="Unravel.Core.LightComponent.sourceRadius*"></a>
+
+  <h3 id="Unravel_Core_LightComponent_sourceRadius" data-uid="Unravel.Core.LightComponent.sourceRadius">
+  sourceRadius
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Radius of a point or spot light's emitting sphere, in world units. Widens and softens
+the highlight without changing the light emitted. 0 = a point source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float sourceRadius { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_LightComponent_spotInnerAngle_" data-uid="Unravel.Core.LightComponent.spotInnerAngle*"></a>
 
   <h3 id="Unravel_Core_LightComponent_spotInnerAngle" data-uid="Unravel.Core.LightComponent.spotInnerAngle">
   spotInnerAngle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Spot light inner angle in degrees.</p>
@@ -369,7 +469,7 @@ Class LightComponent  <a class="header-action link-secondary" title="View source
 
   <h3 id="Unravel_Core_LightComponent_spotOuterAngle" data-uid="Unravel.Core.LightComponent.spotOuterAngle">
   spotOuterAngle
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Spot light outer angle in degrees.</p>
@@ -401,7 +501,7 @@ Class LightComponent  <a class="header-action link-secondary" title="View source
 
   <h3 id="Unravel_Core_LightComponent_type" data-uid="Unravel.Core.LightComponent.type">
   type
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/LightComponent.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Light type (spot, point, or directional).</p>

@@ -5,6 +5,9 @@ var dir_5a7548c3a2c76abc89d5d1163d675216 =
     [ "associative_archive.h", "associative__archive_8h.html", "associative__archive_8h" ],
     [ "binary_archive.h", "binary__archive_8h.html", "binary__archive_8h" ],
     [ "cereal_optional_nvp.h", "cereal__optional__nvp_8h.html", "cereal__optional__nvp_8h" ],
+    [ "document_paths.cpp", "document__paths_8cpp.html", "document__paths_8cpp" ],
+    [ "document_paths.h", "document__paths_8h.html", "document__paths_8h" ],
     [ "serialization.cpp", "serialization_8cpp.html", "serialization_8cpp" ],
-    [ "serialization.h", "serialization_8h.html", "serialization_8h" ]
+    [ "serialization.h", "serialization_8h.html", "serialization_8h" ],
+    [ "sparse_document.h", "sparse__document_8h.html", "sparse__document_8h" ]
 ];

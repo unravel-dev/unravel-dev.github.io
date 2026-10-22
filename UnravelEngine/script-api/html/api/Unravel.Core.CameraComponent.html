@@ -173,6 +173,39 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
 </h2>
 
 
+  <a id="Unravel_Core_CameraComponent_aspect_" data-uid="Unravel.Core.CameraComponent.aspect*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_aspect" data-uid="Unravel.Core.CameraComponent.aspect">
+  aspect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Width divided by height of the camera's projection (perspective mode uses it for the
+horizontal field of view). Follows <a class="xref" href="Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_viewportSize">viewportSize</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float aspect { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_CameraComponent_cullingMask_" data-uid="Unravel.Core.CameraComponent.cullingMask*"></a>
 
   <h3 id="Unravel_Core_CameraComponent_cullingMask" data-uid="Unravel.Core.CameraComponent.cullingMask">
@@ -397,6 +430,41 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="Unravel_Core_CameraComponent_viewportSize_" data-uid="Unravel.Core.CameraComponent.viewportSize*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_viewportSize" data-uid="Unravel.Core.CameraComponent.viewportSize">
+  viewportSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Size in pixels of the viewport this camera renders, in the same space as
+<a class="xref" href="Unravel.Core.Input.html#Unravel_Core_Input_mousePosition">mousePosition</a>. Each camera has its own; the host that shows the
+game sizes its cameras to <a class="xref" href="Unravel.Core.Screen.html#Unravel_Core_Screen_width">width</a> x <a class="xref" href="Unravel.Core.Screen.html#Unravel_Core_Screen_height">height</a>.
+Until then it holds the size saved with the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 viewportSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector2.html">Vector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -405,7 +473,7 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Unravel_Core_CameraComponent_ScreenPointToRay_Vector2_Unravel_Core_Ray__" data-uid="Unravel.Core.CameraComponent.ScreenPointToRay(Vector2,Unravel.Core.Ray@)">
   ScreenPointToRay(Vector2, out Ray)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts a position in screen space to a ray in 3D space.</p>
@@ -429,7 +497,8 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p><code>true</code> if the ray was successfully calculated; otherwise, <code>false</code>.</p>
+    <dd><p><code>true</code> if the ray was successfully calculated; otherwise, <code>false</code>
+(also while the camera has no viewport size yet).</p>
 </dd>
   </dl>
 
@@ -447,7 +516,7 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Unravel_Core_CameraComponent_ScreenPointToWorld_Vector2_" data-uid="Unravel.Core.CameraComponent.ScreenPointToWorld(Vector2)">
   ScreenPointToWorld(Vector2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts a 2D screen-space position to a world-space point on the camera's near plane.</p>
@@ -486,10 +555,11 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Unravel_Core_CameraComponent_ScreenPointToWorld_Vector3_" data-uid="Unravel.Core.CameraComponent.ScreenPointToWorld(Vector3)">
   ScreenPointToWorld(Vector3)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Converts a screen-space position with depth (z) to a world-space point.</p>
+  <div class="markdown level1 summary"><p>Converts a screen position with a depth to a world-space point; the inverse of
+<a class="xref" href="Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_WorldToScreenPoint_Vector3_">WorldToScreenPoint(Vector3)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -500,7 +570,8 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>pos</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
-    <dd><p>The position in screen space; z is depth.</p>
+    <dd><p>x, y in pixels (the space of <a class="xref" href="Unravel.Core.Input.html#Unravel_Core_Input_mousePosition">mousePosition</a>); z is the
+distance in front of the camera along its view direction, in world units.</p>
 </dd>
   </dl>
 
@@ -508,6 +579,169 @@ Class CameraComponent  <a class="header-action link-secondary" title="View sourc
   <dl class="parameters">
     <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
     <dd><p>The corresponding world-space position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CameraComponent_ViewportPointToRay_" data-uid="Unravel.Core.CameraComponent.ViewportPointToRay*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_ViewportPointToRay_Vector2_Unravel_Core_Ray__" data-uid="Unravel.Core.CameraComponent.ViewportPointToRay(Vector2,Unravel.Core.Ray@)">
+  ViewportPointToRay(Vector2, out Ray)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A ray from the camera through a viewport position ((0, 0) top left, (1, 1) bottom right).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ViewportPointToRay(Vector2 viewport, out Ray ray)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>viewport</code> <a class="xref" href="Vector2.html">Vector2</a></dt>
+    <dd></dd>
+    <dt><code>ray</code> <a class="xref" href="Unravel.Core.Ray.html">Ray</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>false</code> while the camera has no viewport size yet.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CameraComponent_ViewportToWorldPoint_" data-uid="Unravel.Core.CameraComponent.ViewportToWorldPoint*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_ViewportToWorldPoint_Vector3_" data-uid="Unravel.Core.CameraComponent.ViewportToWorldPoint(Vector3)">
+  ViewportToWorldPoint(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a viewport position with a depth to a world-space point; the inverse of
+<a class="xref" href="Unravel.Core.CameraComponent.html#Unravel_Core_CameraComponent_WorldToViewportPoint_Vector3_">WorldToViewportPoint(Vector3)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ViewportToWorldPoint(Vector3 viewport)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>viewport</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>x, y with (0, 0) top left and (1, 1) bottom right; z is the distance
+in front of the camera in world units.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CameraComponent_WorldToScreenPoint_" data-uid="Unravel.Core.CameraComponent.WorldToScreenPoint*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_WorldToScreenPoint_Vector3_" data-uid="Unravel.Core.CameraComponent.WorldToScreenPoint(Vector3)">
+  WorldToScreenPoint(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Projects a world-space point onto the screen. Use it to place UI over world objects
+(a screen-space UI document uses the same pixels) or to test what is on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 WorldToScreenPoint(Vector3 world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>The world-space position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>x, y in pixels from the top left (the space of <a class="xref" href="Unravel.Core.Input.html#Unravel_Core_Input_mousePosition">mousePosition</a>);
+z is the distance in front of the camera in world units. When z is 0 or less the point is
+behind the camera and x, y are meaningless.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_CameraComponent_WorldToViewportPoint_" data-uid="Unravel.Core.CameraComponent.WorldToViewportPoint*"></a>
+
+  <h3 id="Unravel_Core_CameraComponent_WorldToViewportPoint_Vector3_" data-uid="Unravel.Core.CameraComponent.WorldToViewportPoint(Vector3)">
+  WorldToViewportPoint(Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/CameraComponent.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Projects a world-space point into the viewport: (0, 0) top left, (1, 1) bottom right.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 WorldToViewportPoint(Vector3 world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>The world-space position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>x, y in viewport units; z is the distance in front of the camera in world units
+(0 or less: behind the camera, x and y meaningless). The point is on screen when x and y
+are within 0..1 and z is positive.</p>
 </dd>
   </dl>
 

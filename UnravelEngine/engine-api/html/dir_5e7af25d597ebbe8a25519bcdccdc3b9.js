@@ -14,11 +14,21 @@ var dir_5e7af25d597ebbe8a25519bcdccdc3b9 =
     [ "file_stream_common.h", "file__stream__common_8h.html", "file__stream__common_8h" ],
     [ "filesystem.cpp", "filesystem_8cpp.html", "filesystem_8cpp" ],
     [ "filesystem.h", "filesystem_8h.html", "filesystem_8h" ],
+    [ "mapped_file.cpp", "mapped__file_8cpp.html", null ],
+    [ "mapped_file.h", "mapped__file_8h.html", "mapped__file_8h" ],
+    [ "mirror.cpp", "mirror_8cpp.html", "mirror_8cpp" ],
+    [ "mirror.h", "mirror_8h.html", "mirror_8h" ],
+    [ "pack.cpp", "pack_8cpp.html", "pack_8cpp" ],
+    [ "pack.h", "pack_8h.html", "pack_8h" ],
+    [ "pack_format.cpp", "pack__format_8cpp.html", "pack__format_8cpp" ],
+    [ "pack_format.h", "pack__format_8h.html", "pack__format_8h" ],
+    [ "pack_image.cpp", "pack__image_8cpp.html", "pack__image_8cpp" ],
+    [ "pack_image.h", "pack__image_8h.html", "pack__image_8h" ],
+    [ "pack_writer.cpp", "pack__writer_8cpp.html", "pack__writer_8cpp" ],
     [ "pattern_filter.cpp", "pattern__filter_8cpp.html", "pattern__filter_8cpp" ],
     [ "pattern_filter.h", "pattern__filter_8h.html", "pattern__filter_8h" ],
     [ "syncer.cpp", "syncer_8cpp.html", "syncer_8cpp" ],
     [ "syncer.h", "syncer_8h.html", "syncer_8h" ],
     [ "watcher.cpp", "watcher_8cpp.html", "watcher_8cpp" ],
-    [ "watcher.h", "watcher_8h.html", "watcher_8h" ],
-    [ "xxhash.h", "xxhash_8h.html", "xxhash_8h" ]
+    [ "watcher.h", "watcher_8h.html", "watcher_8h" ]
 ];

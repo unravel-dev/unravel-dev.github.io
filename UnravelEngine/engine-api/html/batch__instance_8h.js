@@ -2,6 +2,7 @@ var batch__instance_8h =
 [
     [ "unravel::batch_instance", "structunravel_1_1batch__instance.html", "structunravel_1_1batch__instance" ],
     [ "unravel::instance_vertex_data", "structunravel_1_1instance__vertex__data.html", "structunravel_1_1instance__vertex__data" ],
+    [ "unravel::velocity_instance_vertex_data", "structunravel_1_1velocity__instance__vertex__data.html", "structunravel_1_1velocity__instance__vertex__data" ],
     [ "unravel::batch_instance_collection", "classunravel_1_1batch__instance__collection.html", "classunravel_1_1batch__instance__collection" ],
     [ "pack_instance_data", "batch__instance_8h.html#a59e47ef7cafe80e9245346d88723cd2a", null ],
     [ "pack_instances_bulk", "batch__instance_8h.html#a37a49bfd5497dd732b94f6cc14961d4f", null ],

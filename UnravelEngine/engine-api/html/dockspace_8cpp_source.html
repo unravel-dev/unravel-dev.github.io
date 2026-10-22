@@ -157,64 +157,68 @@ $(function(){initNavTree('dockspace_8cpp_source.html',''); initResizable(true); 
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> ImVec2 dockspacePos = ImVec2(viewport-&gt;WorkPos.x, viewport-&gt;WorkPos.y + headerSize);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    ImGui::SetNextWindowPos(dockspacePos);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    ImGui::SetNextWindowSize(dockspaceSize);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.0f, 0.0f));</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    ImGui::Begin(<span class="stringliteral">&quot;Engine Dock Space&quot;</span>, <span class="keyword">nullptr</span>, windowFlags);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">auto</span> dockspace_id = ImGui::GetID(<span class="stringliteral">&quot;Dockspace&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// Like the header and footer: the dock space host always lives in the main window. Left to</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// ImGui, it gets a platform window of its own whenever the merge into the main viewport fails</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// on the frame it appears.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    ImGui::SetNextWindowViewport(viewport-&gt;ID);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.0f, 0.0f));</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span>(!ImGui::DockBuilderGetNode(dockspace_id))</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        build_dockspace(dockspace_id);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_function" href="classunravel_1_1dockspace.html#a3c2d5a75cb3c27cb940a61885d52451f">refresh</a>();</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    ImGui::DockSpace(dockspace_id, dockspaceSize, dockspace_flags);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    ImGui::End();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    ImGui::PopStyleVar();</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    ImGui::Begin(<span class="stringliteral">&quot;Engine Dock Space&quot;</span>, <span class="keyword">nullptr</span>, windowFlags);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">auto</span> dockspace_id = ImGui::GetID(<span class="stringliteral">&quot;Dockspace&quot;</span>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">if</span>(!ImGui::DockBuilderGetNode(dockspace_id))</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        build_dockspace(dockspace_id);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <a class="code hl_function" href="classunravel_1_1dockspace.html#a3c2d5a75cb3c27cb940a61885d52451f">refresh</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    ImGui::DockSpace(dockspace_id, dockspaceSize, dockspace_flags);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    ImGui::End();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    ImGui::PopStyleVar();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
 </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classunravel_1_1dockspace.html#a3c2d5a75cb3c27cb940a61885d52451f">   75</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1dockspace.html#a3c2d5a75cb3c27cb940a61885d52451f">dockspace::refresh</a>()</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_variable" href="classunravel_1_1dockspace.html#aa3626fa91876fdd5a031ec45b8727dd2">reset_focus_counter_</a> = -1;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classunravel_1_1dockspace.html#a3c2d5a75cb3c27cb940a61885d52451f">   79</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1dockspace.html#a3c2d5a75cb3c27cb940a61885d52451f">dockspace::refresh</a>()</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_variable" href="classunravel_1_1dockspace.html#aa3626fa91876fdd5a031ec45b8727dd2">reset_focus_counter_</a> = -1;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
 </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classunravel_1_1dockspace.html#ac7867c8667502ffa2436e49595afa74a">   80</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1dockspace.html#ac7867c8667502ffa2436e49595afa74a">dockspace::execute_dock_builder_order_and_focus_workaround</a>()</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// only execute if we are in the second frame of our program</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">int</span>&amp; i = <a class="code hl_variable" href="classunravel_1_1dockspace.html#aa3626fa91876fdd5a031ec45b8727dd2">reset_focus_counter_</a>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;const char*&gt; focused_dock_tabs{<a class="code hl_define" href="panels__defs_8h.html#a7ccbe9d00fd9f8033d707ccb66fa6980">SCENE_VIEW</a>, <a class="code hl_define" href="panels__defs_8h.html#a029ffd11c7745cab86f33d389b0ba868">CONTENT_VIEW</a>, <a class="code hl_define" href="panels__defs_8h.html#a966d9ce62d4ef25c0828fe0990d7ade5">PROFILER_VIEW</a>};</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">int</span> tabs_count = int(focused_dock_tabs.size());</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">if</span>(i &lt; tabs_count)</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> tab_idx = 0; tab_idx &lt; tabs_count; ++tab_idx)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">if</span>(i == tab_idx)</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                ImGui::FocusWindow(ImGui::FindWindowByName(focused_dock_tabs[tab_idx]));</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        i++;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classunravel_1_1dockspace.html#ac7867c8667502ffa2436e49595afa74a">   84</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1dockspace.html#ac7867c8667502ffa2436e49595afa74a">dockspace::execute_dock_builder_order_and_focus_workaround</a>()</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// only execute if we are in the second frame of our program</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">int</span>&amp; i = <a class="code hl_variable" href="classunravel_1_1dockspace.html#aa3626fa91876fdd5a031ec45b8727dd2">reset_focus_counter_</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;const char*&gt; focused_dock_tabs{<a class="code hl_define" href="panels__defs_8h.html#a7ccbe9d00fd9f8033d707ccb66fa6980">SCENE_VIEW</a>, <a class="code hl_define" href="panels__defs_8h.html#a029ffd11c7745cab86f33d389b0ba868">CONTENT_VIEW</a>, <a class="code hl_define" href="panels__defs_8h.html#a966d9ce62d4ef25c0828fe0990d7ade5">PROFILER_VIEW</a>};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">int</span> tabs_count = int(focused_dock_tabs.size());</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">if</span>(i &lt; tabs_count)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> tab_idx = 0; tab_idx &lt; tabs_count; ++tab_idx)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">if</span>(i == tab_idx)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                ImGui::FocusWindow(ImGui::FindWindowByName(focused_dock_tabs[tab_idx]));</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        i++;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
 </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>} <span class="comment">// namespace unravel</span></div>
-<div class="ttc" id="aclassunravel_1_1dockspace_html_a3c2d5a75cb3c27cb940a61885d52451f"><div class="ttname"><a href="classunravel_1_1dockspace.html#a3c2d5a75cb3c27cb940a61885d52451f">unravel::dockspace::refresh</a></div><div class="ttdeci">void refresh()</div><div class="ttdef"><b>Definition</b> <a href="#l00075">dockspace.cpp:75</a></div></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>} <span class="comment">// namespace unravel</span></div>
+<div class="ttc" id="aclassunravel_1_1dockspace_html_a3c2d5a75cb3c27cb940a61885d52451f"><div class="ttname"><a href="classunravel_1_1dockspace.html#a3c2d5a75cb3c27cb940a61885d52451f">unravel::dockspace::refresh</a></div><div class="ttdeci">void refresh()</div><div class="ttdef"><b>Definition</b> <a href="#l00079">dockspace.cpp:79</a></div></div>
 <div class="ttc" id="aclassunravel_1_1dockspace_html_aa3626fa91876fdd5a031ec45b8727dd2"><div class="ttname"><a href="classunravel_1_1dockspace.html#aa3626fa91876fdd5a031ec45b8727dd2">unravel::dockspace::reset_focus_counter_</a></div><div class="ttdeci">int reset_focus_counter_</div><div class="ttdef"><b>Definition</b> <a href="dockspace_8h_source.html#l00013">dockspace.h:13</a></div></div>
-<div class="ttc" id="aclassunravel_1_1dockspace_html_ac7867c8667502ffa2436e49595afa74a"><div class="ttname"><a href="classunravel_1_1dockspace.html#ac7867c8667502ffa2436e49595afa74a">unravel::dockspace::execute_dock_builder_order_and_focus_workaround</a></div><div class="ttdeci">void execute_dock_builder_order_and_focus_workaround()</div><div class="ttdef"><b>Definition</b> <a href="#l00080">dockspace.cpp:80</a></div></div>
+<div class="ttc" id="aclassunravel_1_1dockspace_html_ac7867c8667502ffa2436e49595afa74a"><div class="ttname"><a href="classunravel_1_1dockspace.html#ac7867c8667502ffa2436e49595afa74a">unravel::dockspace::execute_dock_builder_order_and_focus_workaround</a></div><div class="ttdeci">void execute_dock_builder_order_and_focus_workaround()</div><div class="ttdef"><b>Definition</b> <a href="#l00084">dockspace.cpp:84</a></div></div>
 <div class="ttc" id="aclassunravel_1_1dockspace_html_ae990d2560f489550b4782a008d63c21a"><div class="ttname"><a href="classunravel_1_1dockspace.html#ae990d2560f489550b4782a008d63c21a">unravel::dockspace::on_frame_ui_render</a></div><div class="ttdeci">void on_frame_ui_render(float headerSize, float footerSize)</div><div class="ttdef"><b>Definition</b> <a href="#l00046">dockspace.cpp:46</a></div></div>
 <div class="ttc" id="adockspace_8h_html"><div class="ttname"><a href="dockspace_8h.html">dockspace.h</a></div></div>
-<div class="ttc" id="anamespaceunravel_html"><div class="ttname"><a href="namespaceunravel.html">unravel</a></div><div class="ttdef"><b>Definition</b> <a href="crash_8cpp_source.html#l00020">crash.cpp:21</a></div></div>
+<div class="ttc" id="anamespaceunravel_html"><div class="ttname"><a href="namespaceunravel.html">unravel</a></div><div class="ttdef"><b>Definition</b> <a href="crash_8cpp_source.html#l00037">crash.cpp:38</a></div></div>
 <div class="ttc" id="apanels__defs_8h_html"><div class="ttname"><a href="panels__defs_8h.html">panels_defs.h</a></div></div>
 <div class="ttc" id="apanels__defs_8h_html_a029ffd11c7745cab86f33d389b0ba868"><div class="ttname"><a href="panels__defs_8h.html#a029ffd11c7745cab86f33d389b0ba868">CONTENT_VIEW</a></div><div class="ttdeci">#define CONTENT_VIEW</div><div class="ttdef"><b>Definition</b> <a href="panels__defs_8h_source.html#l00008">panels_defs.h:8</a></div></div>
 <div class="ttc" id="apanels__defs_8h_html_a4b043e8d8e173942429cc60dd22d31ca"><div class="ttname"><a href="panels__defs_8h.html#a4b043e8d8e173942429cc60dd22d31ca">HIERARCHY_VIEW</a></div><div class="ttdeci">#define HIERARCHY_VIEW</div><div class="ttdef"><b>Definition</b> <a href="panels__defs_8h_source.html#l00009">panels_defs.h:9</a></div></div>

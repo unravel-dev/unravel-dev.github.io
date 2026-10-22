@@ -104,19 +104,26 @@ $(function(){initNavTree('auto__exposure__pass_8h.html',''); initResizable(true)
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="gpu__program_8h_source.html">engine/rendering/gpu_program.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="pre__exposure_8h_source.html">engine/rendering/pipeline/pre_exposure.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="render__view_8h_source.html">graphics/render_view.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
 <code>#include &lt;bgfx/bgfx.h&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="auto__exposure__pass_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1auto__exposure__pass.html">unravel::auto_exposure_pass</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Histogram auto exposure with temporal eye adaptation and local exposure.  <a href="classunravel_1_1auto__exposure__pass.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1auto__exposure__pass_1_1settings.html">unravel::auto_exposure_pass::settings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1auto__exposure__pass_1_1run__params.html">unravel::auto_exposure_pass::run_params</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1auto__exposure__pass_1_1local__exposure__view.html">unravel::auto_exposure_pass::local_exposure_view</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local exposure chain's two lookups for the tonemapper, or nulls when local exposure is off for this view (<a class="el" href="structunravel_1_1auto__exposure__pass_1_1settings.html#aee2bd4780da52139706a0ce638f02834">settings::is_local_exposure_enabled</a>).  <a href="structunravel_1_1auto__exposure__pass_1_1local__exposure__view.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>

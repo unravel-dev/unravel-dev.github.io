@@ -97,7 +97,6 @@ $(function(){initNavTree('bullet__backend_8cpp.html',''); initResizable(true); }
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">bullet_backend.cpp File Reference</div></div>
@@ -114,11 +113,13 @@ $(function(){initNavTree('bullet__backend_8cpp.html',''); initResizable(true); }
 <code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ecs_8h_source.html">engine/ecs/ecs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="contact__graph_8h_source.html">engine/physics/backend/contact_graph.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="character__controller__component_8h_source.html">engine/physics/ecs/components/character_controller_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script__component_8h_source.html">engine/scripting/ecs/components/script_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="script__system_8h_source.html">engine/scripting/ecs/systems/script_system.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2settings_2settings_8h_source.html">engine/settings/settings.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="profiler_8h_source.html">engine/profiler/profiler.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="thread_8hpp_source.html">base/platform/thread.hpp</a>&gt;</code><br />
 <code>#include &lt;BulletCollision/CollisionDispatch/btCollisionDispatcherMt.h&gt;</code><br />
 <code>#include &lt;BulletCollision/NarrowPhaseCollision/btRaycastCallback.h&gt;</code><br />
 <code>#include &lt;BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolverMt.h&gt;</code><br />
@@ -127,24 +128,18 @@ $(function(){initNavTree('bullet__backend_8cpp.html',''); initResizable(true); }
 <code>#include &lt;btBulletDynamicsCommon.h&gt;</code><br />
 <code>#include &lt;BulletDynamics/Character/btKinematicCharacterController.h&gt;</code><br />
 <code>#include &lt;BulletCollision/CollisionDispatch/btGhostObject.h&gt;</code><br />
-<code>#include &lt;hpp/flat_map.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;LinearMath/btQuickprof.h&quot;</code><br />
+<code>#include &quot;LinearMath/btThreads.h&quot;</code><br />
+<code>#include &lt;thread&gt;</code><br />
 </div>
 <p><a href="bullet__backend_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01contact__key_01_4.html">std::hash&lt; contact_key &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd.html">std</a></td></tr>
-<tr class="memdesc:namespacestd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash specialization for batch_key to enable use in std::unordered_map. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebullet.html">bullet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
@@ -154,6 +149,8 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a84d881004cd8d198a9e4e8496f79d352" id="r_a84d881004cd8d198a9e4e8496f79d352"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84d881004cd8d198a9e4e8496f79d352">BT_USE_SSE_IN_API</a></td></tr>
 <tr class="separator:a84d881004cd8d198a9e4e8496f79d352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eaacef4c83dd5f0e5b77e4b8d206913" id="r_a2eaacef4c83dd5f0e5b77e4b8d206913"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eaacef4c83dd5f0e5b77e4b8d206913">BULLET_MT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a2eaacef4c83dd5f0e5b77e4b8d206913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefad1ada50e73ff02512cd35932f541f" id="r_aefad1ada50e73ff02512cd35932f541f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefad1ada50e73ff02512cd35932f541f">COL32_R_SHIFT</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:aefad1ada50e73ff02512cd35932f541f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac694cc4588c050d338cd77a0fb9d530b" id="r_ac694cc4588c050d338cd77a0fb9d530b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac694cc4588c050d338cd77a0fb9d530b">COL32_G_SHIFT</a>&#160;&#160;&#160;8</td></tr>
@@ -178,7 +175,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00020">20</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00023">23</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2eaacef4c83dd5f0e5b77e4b8d206913" name="a2eaacef4c83dd5f0e5b77e4b8d206913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eaacef4c83dd5f0e5b77e4b8d206913">&#9670;&#160;</a></span>BULLET_MT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BULLET_MT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00041">41</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -260,28 +273,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">entt::handle</a> a {}</td>
+          <td class="memname"><a class="el" href="uniform_8cpp.html#aede4100ccf444f3c05584a629afa6f46">entt::handle</a> a {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00098">98</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
-
-</div>
-</div>
-<a id="abbff53480dd2e3bf22278f7d3537560c" name="abbff53480dd2e3bf22278f7d3537560c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbff53480dd2e3bf22278f7d3537560c">&#9670;&#160;</a></span>active_this_frame</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool active_this_frame = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00702">702</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00073">73</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -292,12 +289,12 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uniform_8cpp.html#a25110aea6715bd8cc91355b5f269eaf7">entt::handle</a> b {}</td>
+          <td class="memname"><a class="el" href="uniform_8cpp.html#aede4100ccf444f3c05584a629afa6f46">entt::handle</a> b {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00099">99</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00074">74</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -313,23 +310,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00686">686</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a4ea2581718877b7eead607ae448a693a" name="a4ea2581718877b7eead607ae448a693a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ea2581718877b7eead607ae448a693a">&#9670;&#160;</a></span>cm</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">contact_manifold cm</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00701">701</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00844">844</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +326,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00690">690</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00848">848</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -361,7 +342,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00671">671</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00799">799</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -377,39 +358,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00672">672</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00800">800</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a5f314d9b053faa526c4259e2f6eab8a3" name="a5f314d9b053faa526c4259e2f6eab8a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f314d9b053faa526c4259e2f6eab8a3">&#9670;&#160;</a></span>contacts</h2>
+<a id="a9f8fab12beb463a7c769fcad34f3f81e" name="a9f8fab12beb463a7c769fcad34f3f81e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8fab12beb463a7c769fcad34f3f81e">&#9670;&#160;</a></span>contacts</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structunravel_1_1manifold__point.html">unravel::manifold_point</a>&gt; contacts</td>
+          <td class="memname">contact_store contacts {&amp;find_contact_links}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00101">101</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a8c9b6317ac443b63ebf8c7eab621c888" name="a8c9b6317ac443b63ebf8c7eab621c888"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c9b6317ac443b63ebf8c7eab621c888">&#9670;&#160;</a></span>contacts_cache</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">hpp::flat_map&lt;contact_key, contact_record&gt; contacts_cache</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00704">704</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00078">78</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -425,7 +390,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00679">679</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00808">808</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -441,7 +406,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00687">687</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00845">845</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +422,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00691">691</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00849">849</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -473,7 +438,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00709">709</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00867">867</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -489,7 +454,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00097">97</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00072">72</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -505,7 +470,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00560">560</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00688">688</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a240945185669680bcfcd13289bd5376a" name="a240945185669680bcfcd13289bd5376a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a240945185669680bcfcd13289bd5376a">&#9670;&#160;</a></span>generation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t generation {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00858">858</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +502,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00677">677</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00806">806</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3178027d9cde248fbc7cfd4857aae1b2" name="a3178027d9cde248fbc7cfd4857aae1b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3178027d9cde248fbc7cfd4857aae1b2">&#9670;&#160;</a></span>ghost_pair_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;btGhostPairCallback&gt; ghost_pair_callback</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00843">843</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -537,7 +534,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00562">562</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00690">690</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -553,7 +550,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00708">708</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00866">866</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -569,7 +566,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00669">669</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00797">797</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -585,7 +582,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00670">670</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00798">798</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -601,7 +598,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00471">471</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00599">599</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7c6ff295d55480c048faf470a09847aa" name="a7c6ff295d55480c048faf470a09847aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c6ff295d55480c048faf470a09847aa">&#9670;&#160;</a></span>links</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structunravel_1_1contact__links.html">unravel::contact_links</a> links {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00801">801</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -617,7 +630,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00616">616</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00744">744</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -633,7 +646,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00559">559</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00687">687</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -649,7 +662,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00558">558</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00686">686</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9573db48a2c10972d705d0dedaa283e1" name="a9573db48a2c10972d705d0dedaa283e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9573db48a2c10972d705d0dedaa283e1">&#9670;&#160;</a></span>pending_displacement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">math::vec3 pending_displacement {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00812">812</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -665,7 +694,25 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00472">472</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00600">600</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aac27edbd1482f95fa1601d8cc5ac38e4" name="aac27edbd1482f95fa1601d8cc5ac38e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac27edbd1482f95fa1601d8cc5ac38e4">&#9670;&#160;</a></span>reason</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceunravel.html#a69698bb00290d472f4cfb81073073153">unravel::contact_end_reason</a> reason {<a class="el" href="namespaceunravel.html#a69698bb00290d472f4cfb81073073153a9471ed19416b8099e51855cb0ef61ae3">unravel::contact_end_reason::separated</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Only meaningful on exit. Always stated relative to <code>a</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00076">76</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -681,7 +728,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00678">678</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00807">807</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8da4ee0fe1f6d2dcab3b7562d79c10a1" name="a8da4ee0fe1f6d2dcab3b7562d79c10a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da4ee0fe1f6d2dcab3b7562d79c10a1">&#9670;&#160;</a></span>slot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t slot {<a class="el" href="structunravel_1_1contact__links.html#a07b084c92ee454c1ad2bd03f7603e138">unravel::contact_links::npos</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00857">857</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -697,7 +760,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00688">688</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00846">846</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -713,23 +776,23 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00689">689</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00847">847</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af5a21d25de873d6ab80ec8f05bfeadf8" name="af5a21d25de873d6ab80ec8f05bfeadf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5a21d25de873d6ab80ec8f05bfeadf8">&#9670;&#160;</a></span>to_enter</h2>
+<a id="a76e17333eb84b27719593c5d9e087781" name="a76e17333eb84b27719593c5d9e087781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e17333eb84b27719593c5d9e087781">&#9670;&#160;</a></span>to_enter</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceunravel.html#a8d33ed1f24d35134901fd1ae8fc1beca">unravel::physics_vector</a>&lt;contact_manifold&gt; to_enter</td>
+          <td class="memname"><a class="el" href="namespaceunravel.html#a8d33ed1f24d35134901fd1ae8fc1beca">unravel::physics_vector</a>&lt;slot_ref&gt; to_enter</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00705">705</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00863">863</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -745,7 +808,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00706">706</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00864">864</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>
@@ -761,7 +824,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00096">96</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="bullet__backend_8cpp_source.html#l00071">71</a> of file <a class="el" href="bullet__backend_8cpp_source.html">bullet_backend.cpp</a>.</p>
 
 </div>
 </div>

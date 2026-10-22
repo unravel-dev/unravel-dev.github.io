@@ -1,7 +1,7 @@
 var asset__compiler_8cpp =
 [
-    [ "unravel::asset_compiler::script_compilation_entry", "structunravel_1_1asset__compiler_1_1script__compilation__entry.html", "structunravel_1_1asset__compiler_1_1script__compilation__entry" ],
     [ "compile< animation_clip >", "asset__compiler_8cpp.html#ad1b249ffbf6156d2312ba76f0268549c", null ],
+    [ "compile< animation_controller >", "asset__compiler_8cpp.html#a8c544cf91c023a7095b5cb13c16fa7d9", null ],
     [ "compile< audio_clip >", "asset__compiler_8cpp.html#a861fd1c432fbce1bfd7efd712379df2b", null ],
     [ "compile< font >", "asset__compiler_8cpp.html#a87a57bd130660edb2ee1d07db8dffc95", null ],
     [ "compile< gfx::shader >", "asset__compiler_8cpp.html#a7b37611877d806e88eb751e5ff4a4d6b", null ],
@@ -15,14 +15,22 @@ var asset__compiler_8cpp =
     [ "compile< script_library >", "asset__compiler_8cpp.html#afa76b10eeeb43b44f747ef3467804457", null ],
     [ "compile< style_sheet >", "asset__compiler_8cpp.html#a43977f7fc13983eb05c5ac65488043cb", null ],
     [ "compile< ui_tree >", "asset__compiler_8cpp.html#ae527f6fbe971ffb9bf32f612876b47bc", null ],
+    [ "compile_texture_for_target", "asset__compiler_8cpp.html#aa4c99c76794bd04d1d665147aa5010d2", null ],
+    [ "get_last_script_compilation", "asset__compiler_8cpp.html#a275d04f9a71d93b9241eca02cc08b214", null ],
+    [ "get_texture_parameters", "asset__compiler_8cpp.html#af87c0ffb9bb4e5d2062bab1cb427c070", null ],
+    [ "is_texture_compiled_for_target", "asset__compiler_8cpp.html#ae6a517f2f89ca66444a76fa0ef2b3100", null ],
+    [ "is_texture_compiled_with", "asset__compiler_8cpp.html#af5d628f0dc3d17d3334224b342334175", null ],
+    [ "parse_compilation_entries", "asset__compiler_8cpp.html#a94fb66ebe14d88d5f586a84354d5f7bf", null ],
     [ "parse_compilation_errors", "asset__compiler_8cpp.html#ab61818f6d62a788be2d4ded1c1d4548c", null ],
     [ "parse_compilation_warnings", "asset__compiler_8cpp.html#a832743876b204a36fc8bd22967176988", null ],
     [ "read_importer< animation_clip >", "asset__compiler_8cpp.html#a65ff4bec9e2fa56f4d4295b94e764c13", null ],
     [ "read_importer< audio_clip >", "asset__compiler_8cpp.html#aa234e8de1c838b115d853d78ec40a152", null ],
     [ "read_importer< gfx::texture >", "asset__compiler_8cpp.html#ae42815964c62056306d62ac2dc2808ff", null ],
     [ "read_importer< mesh >", "asset__compiler_8cpp.html#ad1d0daf58fe786f69dd8f60ad8c5f84c", null ],
+    [ "read_texture_importer", "asset__compiler_8cpp.html#a25e69bc1509e5d32502c95515c7c2c9f", null ],
     [ "fits_max_size", "asset__compiler_8cpp.html#ad734ee10120baec9de74730ac0b1e186", null ],
-    [ "format", "asset__compiler_8cpp.html#aae58531c83698607139f2bf8c13d97fd", null ],
+    [ "format", "asset__compiler_8cpp.html#aecea3bd14b1978ca8975c7b0dd1651bb", null ],
     [ "height", "asset__compiler_8cpp.html#a6ad4f820ce4e75cda0686fcaad5168be", null ],
+    [ "num_mips", "asset__compiler_8cpp.html#a4591a004b647231abcf5fa2265a6ef47", null ],
     [ "width", "asset__compiler_8cpp.html#a325272ddd9a962f05deb905101d25cbd", null ]
 ];

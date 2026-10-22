@@ -97,8 +97,10 @@ $(function(){initNavTree('classunravel_1_1animation__player.html',''); initResiz
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classunravel_1_1animation__player-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::animation_player Class Reference</div></div>
 </div><!--header-->
@@ -109,6 +111,14 @@ $(function(){initNavTree('classunravel_1_1animation__player.html',''); initResiz
 
 <p><code>#include &lt;<a class="el" href="animation__player_8h_source.html">animation_player.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__player_1_1animation__layer.html">animation_layer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__player_1_1animation__layer__state.html">animation_layer_state</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of a single pose source feeding a layer (either the current state or the crossfade target).  <a href="structunravel_1_1animation__player_1_1animation__layer__state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a1d5a4e159b71e1183940c104332d5157" id="r_a1d5a4e159b71e1183940c104332d5157"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d5a4e159b71e1183940c104332d5157">seconds_t</a> = <a class="el" href="structunravel_1_1animation__clip.html#a896755d76ffd9444559d40b92c9b9664">animation_clip::seconds_t</a></td></tr>
@@ -118,15 +128,41 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a72edec01fe930f3ed51eb80f627cf0d9" id="r_a72edec01fe930f3ed51eb80f627cf0d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72edec01fe930f3ed51eb80f627cf0d9">blend_to</a> (size_t layer_idx, const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &gt; &amp;clip, <a class="el" href="#a1d5a4e159b71e1183940c104332d5157">seconds_t</a> duration=<a class="el" href="#a1d5a4e159b71e1183940c104332d5157">seconds_t</a>(0.3), bool loop=true, bool phase_sync=false, const <a class="el" href="namespaceunravel.html#a9b00c5857f296f7123935306ea131754">blend_easing_t</a> &amp;easing=math::linearInterpolation&lt; float &gt;)</td></tr>
+<tr class="memitem:a72edec01fe930f3ed51eb80f627cf0d9" id="r_a72edec01fe930f3ed51eb80f627cf0d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72edec01fe930f3ed51eb80f627cf0d9">blend_to</a> (size_t layer_idx, const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &gt; &amp;<a class="el" href="namespaceunravel.html#a8dd2c638eb13e83a86c9b6d1e4359930af6d8b886335927d46fad323c60335d09">clip</a>, <a class="el" href="#a1d5a4e159b71e1183940c104332d5157">seconds_t</a> <a class="el" href="ui__bindings_8cpp.html#a66625d8d6c0894b4828b43f826a09b8f">duration</a>=<a class="el" href="#a1d5a4e159b71e1183940c104332d5157">seconds_t</a>(0.3), bool loop=true, bool phase_sync=false, const <a class="el" href="namespaceunravel.html#a9b00c5857f296f7123935306ea131754">blend_easing_t</a> &amp;<a class="el" href="ui__bindings_8cpp.html#a2ddbd6c4874ed732a847318f047e8080">easing</a>=math::linearInterpolation&lt; float &gt;)</td></tr>
 <tr class="memdesc:a72edec01fe930f3ed51eb80f627cf0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blends to the animation over the specified time with the specified easing.  <br /></td></tr>
 <tr class="separator:a72edec01fe930f3ed51eb80f627cf0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44850334a25491cacc568a3f2f582fb7" id="r_a44850334a25491cacc568a3f2f582fb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44850334a25491cacc568a3f2f582fb7">play_clip</a> (size_t layer_idx, const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &gt; &amp;<a class="el" href="namespaceunravel.html#a8dd2c638eb13e83a86c9b6d1e4359930af6d8b886335927d46fad323c60335d09">clip</a>, const <a class="el" href="structunravel_1_1animation__play__params.html">animation_play_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>)</td></tr>
+<tr class="memdesc:a44850334a25491cacc568a3f2f582fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crossfades a layer to a clip.  <br /></td></tr>
+<tr class="separator:a44850334a25491cacc568a3f2f582fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb65b9d6667883c781e2724ba8a30eec" id="r_acb65b9d6667883c781e2724ba8a30eec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb65b9d6667883c781e2724ba8a30eec">play_blend_space</a> (size_t layer_idx, const std::shared_ptr&lt; <a class="el" href="classunravel_1_1blend__space__def.html">blend_space_def</a> &gt; &amp;blend_space, const <a class="el" href="structunravel_1_1animation__play__params.html">animation_play_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>)</td></tr>
+<tr class="memdesc:acb65b9d6667883c781e2724ba8a30eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crossfades a layer to a blend space. Parameters for the new state are set with set_state_parameters(layer, true, ...) while the crossfade runs.  <br /></td></tr>
+<tr class="separator:acb65b9d6667883c781e2724ba8a30eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205a255497bba67e50d3a794c80c273d" id="r_a205a255497bba67e50d3a794c80c273d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a205a255497bba67e50d3a794c80c273d">clear</a> (size_t layer_idx)</td></tr>
 <tr class="separator:a205a255497bba67e50d3a794c80c273d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38fbc40696bc809e42214b8ac4321fa0" id="r_a38fbc40696bc809e42214b8ac4321fa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38fbc40696bc809e42214b8ac4321fa0">set_blend_space</a> (size_t layer_idx, const std::shared_ptr&lt; <a class="el" href="classunravel_1_1blend__space__def.html">blend_space_def</a> &gt; &amp;blend_space, bool loop=true)</td></tr>
 <tr class="separator:a38fbc40696bc809e42214b8ac4321fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a45a09fc55c72c63ccefe389c426398" id="r_a8a45a09fc55c72c63ccefe389c426398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a45a09fc55c72c63ccefe389c426398">set_blend_space_parameters</a> (size_t layer_idx, const std::vector&lt; float &gt; &amp;params)</td></tr>
+<tr class="memitem:a8a45a09fc55c72c63ccefe389c426398" id="r_a8a45a09fc55c72c63ccefe389c426398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a45a09fc55c72c63ccefe389c426398">set_blend_space_parameters</a> (size_t layer_idx, const std::vector&lt; float &gt; &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>)</td></tr>
 <tr class="separator:a8a45a09fc55c72c63ccefe389c426398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb5d56addf4eb28d964f4451babd5ef" id="r_a6cb5d56addf4eb28d964f4451babd5ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cb5d56addf4eb28d964f4451babd5ef">set_state_parameters</a> (size_t layer_idx, bool <a class="el" href="particle__emitter__component__bindings_8cpp.html#a9959e632227e189dd7e5fb00d2aac1f8">target</a>, hpp::span&lt; const float &gt; <a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>)</td></tr>
+<tr class="memdesc:a6cb5d56addf4eb28d964f4451babd5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the blend-space parameters of the layer's current state, or of its crossfade target when <code>target</code> is true.  <br /></td></tr>
+<tr class="separator:a6cb5d56addf4eb28d964f4451babd5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5167d5e189a7a183c17d114dfe66a8" id="r_a5f5167d5e189a7a183c17d114dfe66a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f5167d5e189a7a183c17d114dfe66a8">set_state_speed</a> (size_t layer_idx, bool <a class="el" href="particle__emitter__component__bindings_8cpp.html#a9959e632227e189dd7e5fb00d2aac1f8">target</a>, float speed)</td></tr>
+<tr class="memdesc:a5f5167d5e189a7a183c17d114dfe66a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the playback rate of the layer's current state, or of its crossfade target.  <br /></td></tr>
+<tr class="separator:a5f5167d5e189a7a183c17d114dfe66a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15b637dd592366a8c030b9236c42cda" id="r_aa15b637dd592366a8c030b9236c42cda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa15b637dd592366a8c030b9236c42cda">set_layer_weight</a> (size_t layer_idx, float <a class="el" href="rig__system_8cpp.html#a8128625c9e3fd04c27b82957732d8781">weight</a>)</td></tr>
+<tr class="memdesc:aa15b637dd592366a8c030b9236c42cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Layer weight, 0..1. The base layer always counts as fully weighted.  <br /></td></tr>
+<tr class="separator:aa15b637dd592366a8c030b9236c42cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a238b8206772fa8b05a368346d381e" id="r_af2a238b8206772fa8b05a368346d381e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2a238b8206772fa8b05a368346d381e">get_layer_weight</a> (size_t layer_idx) const -&gt; float</td></tr>
+<tr class="separator:af2a238b8206772fa8b05a368346d381e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f871757fe55488286cf7920f6ce40bd" id="r_a7f871757fe55488286cf7920f6ce40bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f871757fe55488286cf7920f6ce40bd">set_layer_blend_mode</a> (size_t layer_idx, <a class="el" href="namespaceunravel.html#a6387480bcce2e8f6bc40a1db234ddca9">animation_layer_blend_mode</a> mode)</td></tr>
+<tr class="separator:a7f871757fe55488286cf7920f6ce40bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1406fb80eaa5cfa844bdd821a5f5cb" id="r_a8b1406fb80eaa5cfa844bdd821a5f5cb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b1406fb80eaa5cfa844bdd821a5f5cb">get_layer_blend_mode</a> (size_t layer_idx) const -&gt; <a class="el" href="namespaceunravel.html#a6387480bcce2e8f6bc40a1db234ddca9">animation_layer_blend_mode</a></td></tr>
+<tr class="separator:a8b1406fb80eaa5cfa844bdd821a5f5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e47e5e7349ac164000087f86500353c" id="r_a1e47e5e7349ac164000087f86500353c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e47e5e7349ac164000087f86500353c">set_layer_bone_mask</a> (size_t layer_idx, std::vector&lt; float &gt; weights)</td></tr>
+<tr class="memdesc:a1e47e5e7349ac164000087f86500353c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-bone weights of a layer, indexed by target skeleton index. Empty means every bone at weight 1; bones past the end of the list count as 0.  <br /></td></tr>
+<tr class="separator:a1e47e5e7349ac164000087f86500353c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4da73b43bfba38d80a67e3d0766689d" id="r_ac4da73b43bfba38d80a67e3d0766689d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4da73b43bfba38d80a67e3d0766689d">get_layer_bone_mask</a> (size_t layer_idx) const -&gt; const std::vector&lt; float &gt; &amp;</td></tr>
+<tr class="separator:ac4da73b43bfba38d80a67e3d0766689d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00f47a671515e71f12712854e7c15fe0" id="r_a00f47a671515e71f12712854e7c15fe0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00f47a671515e71f12712854e7c15fe0">play</a> () -&gt; bool</td></tr>
 <tr class="memdesc:a00f47a671515e71f12712854e7c15fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts or resumes the animation playback.  <br /></td></tr>
 <tr class="separator:a00f47a671515e71f12712854e7c15fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,22 +176,74 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a47584299c23e4917f188f904981872f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the animation playback and resets the time.  <br /></td></tr>
 <tr class="separator:a47584299c23e4917f188f904981872f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc6fac19b75d2c2ae162a5d9a33ca2d4" id="r_abc6fac19b75d2c2ae162a5d9a33ca2d4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc6fac19b75d2c2ae162a5d9a33ca2d4">update_time</a> (<a class="el" href="#a1d5a4e159b71e1183940c104332d5157">seconds_t</a> delta_time, bool <a class="el" href="namespaceunravel.html#affd248520b0507ba13ad6d424101ece6aae254d63f2381cc183c11594873793e0">force</a>=false) -&gt; bool</td></tr>
-<tr class="memdesc:abc6fac19b75d2c2ae162a5d9a33ca2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the animation player, advancing the animation time and applying transformations.  <br /></td></tr>
+<tr class="memdesc:abc6fac19b75d2c2ae162a5d9a33ca2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the animation time of every layer and records the events crossed.  <br /></td></tr>
 <tr class="separator:abc6fac19b75d2c2ae162a5d9a33ca2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a82e0e9fb0c5bcf6973d640212f421" id="r_ac5a82e0e9fb0c5bcf6973d640212f421"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5a82e0e9fb0c5bcf6973d640212f421">update_poses</a> (const <a class="el" href="structunravel_1_1animation__pose.html">animation_pose</a> &amp;ref_pose, <a class="el" href="namespaceunravel.html#add3623fbedd5a292b58d40e7a6a9c18e">animation_retargeting_mode</a> retargeting_mode, const <a class="el" href="#a495c60a54dc3390eef734854b9d68a3d">update_callback_t</a> &amp;set_transform_callback)</td></tr>
-<tr class="separator:ac5a82e0e9fb0c5bcf6973d640212f421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6fb4482301c8c9397114d147d50b85" id="r_aec6fb4482301c8c9397114d147d50b85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec6fb4482301c8c9397114d147d50b85">update_poses</a> (const <a class="el" href="structunravel_1_1animation__pose.html">animation_pose</a> &amp;ref_pose, const <a class="el" href="structunravel_1_1animation__skeleton__binding.html">animation_skeleton_binding</a> &amp;binding, bool extract_root_motion, const <a class="el" href="#a495c60a54dc3390eef734854b9d68a3d">update_callback_t</a> &amp;set_transform_callback)</td></tr>
+<tr class="memdesc:aec6fb4482301c8c9397114d147d50b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samples, blends and emits the final pose for every layer.  <br /></td></tr>
+<tr class="separator:aec6fb4482301c8c9397114d147d50b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc430e0ebc6a85750fc6561c8cc4a9a" id="r_a0fc430e0ebc6a85750fc6561c8cc4a9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fc430e0ebc6a85750fc6561c8cc4a9a">update_poses</a> (const <a class="el" href="structunravel_1_1animation__pose.html">animation_pose</a> &amp;ref_pose, <a class="el" href="namespaceunravel.html#add3623fbedd5a292b58d40e7a6a9c18e">animation_retargeting_mode</a> retargeting_mode, bool extract_root_motion, const <a class="el" href="#a495c60a54dc3390eef734854b9d68a3d">update_callback_t</a> &amp;set_transform_callback)</td></tr>
+<tr class="memdesc:a0fc430e0ebc6a85750fc6561c8cc4a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index-based overload kept for callers that sample clips onto their source skeleton.  <br /></td></tr>
+<tr class="separator:a0fc430e0ebc6a85750fc6561c8cc4a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad239ba918e35915a5cabbd9e99523d8f" id="r_ad239ba918e35915a5cabbd9e99523d8f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad239ba918e35915a5cabbd9e99523d8f">get_fired_events</a> () const -&gt; const std::vector&lt; <a class="el" href="structunravel_1_1animation__event__hit.html">animation_event_hit</a> &gt; &amp;</td></tr>
+<tr class="memdesc:ad239ba918e35915a5cabbd9e99523d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Events crossed during the last update_time, in layer order.  <br /></td></tr>
+<tr class="separator:ad239ba918e35915a5cabbd9e99523d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf22ae19645ff7840eb8793430114d6" id="r_acbf22ae19645ff7840eb8793430114d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbf22ae19645ff7840eb8793430114d6">clear_fired_events</a> ()</td></tr>
+<tr class="memdesc:acbf22ae19645ff7840eb8793430114d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the recorded events once they were delivered, so a frame that does not advance the player (an unrendered panel) cannot deliver them again.  <br /></td></tr>
+<tr class="separator:acbf22ae19645ff7840eb8793430114d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d1012aa4dca82589c1a81cd73cba00" id="r_a38d1012aa4dca82589c1a81cd73cba00"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38d1012aa4dca82589c1a81cd73cba00">get_curve_values</a> () const -&gt; const std::vector&lt; <a class="el" href="structunravel_1_1animation__curve__value.html">animation_curve_value</a> &gt; &amp;</td></tr>
+<tr class="memdesc:a38d1012aa4dca82589c1a81cd73cba00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blended curve values of the last update_poses, sorted by curve id.  <br /></td></tr>
+<tr class="separator:a38d1012aa4dca82589c1a81cd73cba00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4f30492fce5d77de00582a3a288b38" id="r_acd4f30492fce5d77de00582a3a288b38"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd4f30492fce5d77de00582a3a288b38">get_curve_value</a> (uint32_t curve_id, float fallback=0.0f) const -&gt; float</td></tr>
+<tr class="memdesc:acd4f30492fce5d77de00582a3a288b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blended value of a curve, or <code>fallback</code> when no playing clip has it.  <br /></td></tr>
+<tr class="separator:acd4f30492fce5d77de00582a3a288b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a78adefd02cae117136ad103f00ea2" id="r_a50a78adefd02cae117136ad103f00ea2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50a78adefd02cae117136ad103f00ea2">has_curve</a> (uint32_t curve_id) const -&gt; bool</td></tr>
+<tr class="separator:a50a78adefd02cae117136ad103f00ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c12ad099e673a5fee72d07aa769c37" id="r_ae0c12ad099e673a5fee72d07aa769c37"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0c12ad099e673a5fee72d07aa769c37">find_curve_value</a> (uint32_t curve_id) const -&gt; std::optional&lt; float &gt;</td></tr>
+<tr class="memdesc:ae0c12ad099e673a5fee72d07aa769c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">The blended value of a curve, or nothing when no playing clip has it.  <br /></td></tr>
+<tr class="separator:ae0c12ad099e673a5fee72d07aa769c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56926d5acdc067485cf97dfb62b742db" id="r_a56926d5acdc067485cf97dfb62b742db"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56926d5acdc067485cf97dfb62b742db">is_playing</a> () const -&gt; bool</td></tr>
 <tr class="memdesc:a56926d5acdc067485cf97dfb62b742db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the animation is currently playing.  <br /></td></tr>
 <tr class="separator:a56926d5acdc067485cf97dfb62b742db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd919fe008e0067520d0359cfd846e62" id="r_afd919fe008e0067520d0359cfd846e62"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd919fe008e0067520d0359cfd846e62">is_paused</a> () const -&gt; bool</td></tr>
 <tr class="memdesc:afd919fe008e0067520d0359cfd846e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the animation is currently paused.  <br /></td></tr>
 <tr class="separator:afd919fe008e0067520d0359cfd846e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fe5f7d59555602e10a3399a1c1785d" id="r_ae6fe5f7d59555602e10a3399a1c1785d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6fe5f7d59555602e10a3399a1c1785d">get_layers</a> () const -&gt; const std::vector&lt; <a class="el" href="structunravel_1_1animation__player_1_1animation__layer.html">animation_layer</a> &gt; &amp;</td></tr>
+<tr class="memdesc:ae6fe5f7d59555602e10a3399a1c1785d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only view over the player's layers for tooling and inspection.  <br /></td></tr>
+<tr class="separator:ae6fe5f7d59555602e10a3399a1c1785d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed291f28eee705b7724e5c122a070f2" id="r_a7ed291f28eee705b7724e5c122a070f2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ed291f28eee705b7724e5c122a070f2">get_blend_progress</a> (const <a class="el" href="structunravel_1_1animation__player_1_1animation__layer.html">animation_layer</a> &amp;<a class="el" href="namespaceunravel.html#ae6090d5a42ed75f43c1d36c74a863e5daf56b53e412e87751f665cb9f9061e50b">layer</a>) const -&gt; float</td></tr>
+<tr class="memdesc:a7ed291f28eee705b7724e5c122a070f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the normalized progress (0..1) of the layer's active crossfade, or 0 when no blend is in flight.  <br /></td></tr>
+<tr class="separator:a7ed291f28eee705b7724e5c122a070f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a51dc1232592bc023a51add82a9745" id="r_a04a51dc1232592bc023a51add82a9745"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04a51dc1232592bc023a51add82a9745">get_blend_weight</a> (const <a class="el" href="structunravel_1_1animation__player_1_1animation__layer.html">animation_layer</a> &amp;<a class="el" href="namespaceunravel.html#ae6090d5a42ed75f43c1d36c74a863e5daf56b53e412e87751f665cb9f9061e50b">layer</a>) const -&gt; float</td></tr>
+<tr class="memdesc:a04a51dc1232592bc023a51add82a9745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the eased crossfade weight of the layer's target state (0..1), or 0 when no crossfade is in flight.  <br /></td></tr>
+<tr class="separator:a04a51dc1232592bc023a51add82a9745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf76520a39b59b9765f5bef9e3b6d9b" id="r_adbf76520a39b59b9765f5bef9e3b6d9b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbf76520a39b59b9765f5bef9e3b6d9b">compute_blend_factor</a> (const <a class="el" href="structunravel_1_1animation__player_1_1animation__layer.html">animation_layer</a> &amp;<a class="el" href="namespaceunravel.html#ae6090d5a42ed75f43c1d36c74a863e5daf56b53e412e87751f665cb9f9061e50b">layer</a>, float normalized_blend_time) const -&gt; float</td></tr>
+<tr class="memdesc:adbf76520a39b59b9765f5bef9e3b6d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the crossfade weight of the layer's target state at <code>normalized_blend_time</code> (0..1): the easing taken from the crossfade's start weight to 1.  <br /></td></tr>
+<tr class="separator:adbf76520a39b59b9765f5bef9e3b6d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af376e80c5834d7c9a185900787ef27a6" id="r_af376e80c5834d7c9a185900787ef27a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af376e80c5834d7c9a185900787ef27a6">reset_root_motion</a> ()</td></tr>
+<tr class="memdesc:af376e80c5834d7c9a185900787ef27a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts root-motion tracking over, so the next pose sample measures no motion: for a character whose poses were not sampled (renderer-based culling), so it does not jump by everything it missed when it is seen again.  <br /></td></tr>
+<tr class="separator:af376e80c5834d7c9a185900787ef27a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016f742182052f3942433e1c2df118cf" id="r_a016f742182052f3942433e1c2df118cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a016f742182052f3942433e1c2df118cf">seek</a> (size_t layer_idx, float <a class="el" href="inspector__animation_8cpp.html#ac7abb4766cd3f65c31f56279d7decff8">progress</a>, bool <a class="el" href="inspector__animation_8cpp.html#a3083ffbf2838afa742c6ba3e201cee13">seek_target</a>=false)</td></tr>
+<tr class="memdesc:a016f742182052f3942433e1c2df118cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seeks a layer state to a normalized progress (0..1) without changing playback status. Does nothing for out-of-range layers or states whose duration is not known yet. Pair with <a class="el" href="#a280fa5bf6714ecd0f4a59dd112104121" title="Requests a one-shot pose refresh: the next update_time behaves as if playing but advances by zero tim...">request_pose_refresh()</a> to see the seeked pose while stopped or paused.  <br /></td></tr>
+<tr class="separator:a016f742182052f3942433e1c2df118cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280fa5bf6714ecd0f4a59dd112104121" id="r_a280fa5bf6714ecd0f4a59dd112104121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a280fa5bf6714ecd0f4a59dd112104121">request_pose_refresh</a> ()</td></tr>
+<tr class="memdesc:a280fa5bf6714ecd0f4a59dd112104121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests a one-shot pose refresh: the next update_time behaves as if playing but advances by zero time, so poses are re-sampled and re-applied at the current playback position even while stopped or paused (editor seeking / stepping).  <br /></td></tr>
+<tr class="separator:a280fa5bf6714ecd0f4a59dd112104121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a754e4947a696226b68fa92094243af22" id="r_a754e4947a696226b68fa92094243af22"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a754e4947a696226b68fa92094243af22">describe_binding</a> (const std::shared_ptr&lt; <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &gt; &amp;<a class="el" href="namespaceunravel.html#a8dd2c638eb13e83a86c9b6d1e4359930af6d8b886335927d46fad323c60335d09">clip</a>, const <a class="el" href="structunravel_1_1animation__skeleton__binding.html">animation_skeleton_binding</a> &amp;binding, const <a class="el" href="structunravel_1_1animation__target__skeleton.html">animation_target_skeleton</a> &amp;<a class="el" href="mesh__import__animation_8cpp.html#a6115d6d8e428b6c47e9d4271169afc68">skeleton</a>) -&gt; <a class="el" href="structunravel_1_1animation__binding__report.html">animation_binding_report</a></td></tr>
+<tr class="memdesc:a754e4947a696226b68fa92094243af22"><td class="mdescLeft">&#160;</td><td class="mdescRight">How <code>clip</code> binds onto <code>skeleton</code> under <code>binding</code>, built as playback builds it (on a player of its own, so no running player changes). <code>skeleton</code> names the target bones; with Rest Aligned it is the binding's target.  <br /></td></tr>
+<tr class="separator:a754e4947a696226b68fa92094243af22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6981cd3edcf1bb043fdbaea9d6e7be9" id="r_af6981cd3edcf1bb043fdbaea9d6e7be9"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6981cd3edcf1bb043fdbaea9d6e7be9">get_state_duration</a> (const <a class="el" href="structunravel_1_1animation__state.html">animation_state</a> &amp;<a class="el" href="mcp__tools__animation_8cpp.html#a07d8e5d100adf132824424a74b2fd233">state</a>) -&gt; <a class="el" href="#a1d5a4e159b71e1183940c104332d5157">seconds_t</a></td></tr>
+<tr class="memdesc:af6981cd3edcf1bb043fdbaea9d6e7be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the playback duration of one cycle of a state: the clip's duration, or the weight-averaged duration of the blend space's active clips (0 until first updated).  <br /></td></tr>
+<tr class="separator:af6981cd3edcf1bb043fdbaea9d6e7be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class responsible for playing animations on a skeletal mesh. </p>
-<p>This class handles the playback of animations, interpolating between keyframes and applying the appropriate transformations to the nodes of a skeletal mesh. </p>
+<p>This class handles the playback of animations, interpolating between keyframes and applying the appropriate transformations to the nodes of a skeletal mesh.</p>
+<p>Layer 0 is the base layer. Every other layer combines with the result below it by its weight, blend mode and bone mask. </p>
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8h_source.html#l00083">83</a> of file <a class="el" href="animation__player_8h_source.html">animation_player.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8h_source.html#l00351">351</a> of file <a class="el" href="animation__player_8h_source.html">animation_player.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a1d5a4e159b71e1183940c104332d5157" name="a1d5a4e159b71e1183940c104332d5157"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d5a4e159b71e1183940c104332d5157">&#9670;&#160;</a></span>seconds_t</h2>
@@ -169,7 +257,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8h_source.html#l00086">86</a> of file <a class="el" href="animation__player_8h_source.html">animation_player.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8h_source.html#l00354">354</a> of file <a class="el" href="animation__player_8h_source.html">animation_player.h</a>.</p>
 
 </div>
 </div>
@@ -184,13 +272,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line"> std::function&lt;void(<span class="keyword">const</span> animation_pose::node_desc&amp; <a class="code hl_variable" href="mesh__importer_8cpp.html#ae394bc3edac03ad324d7a62addc22081">desc</a>,</div>
+<b>Initial value:</b><div class="fragment"><div class="line"> std::function&lt;void(<span class="keyword">const</span> animation_pose::node_desc&amp; desc,</div>
 <div class="line">                                                 <span class="keyword">const</span> <a class="code hl_class" href="classmath_1_1transform__t.html">math::transform</a>&amp; abs,</div>
 <div class="line">                                                 <span class="keyword">const</span> animation_pose::root_motion_result&amp; motion_result)&gt;</div>
-<div class="ttc" id="aclassmath_1_1transform__t_html"><div class="ttname"><a href="classmath_1_1transform__t.html">math::transform_t</a></div><div class="ttdoc">General purpose transformation class designed to maintain each component of the transformation separa...</div><div class="ttdef"><b>Definition</b> <a href="core_2math_2transform_8hpp_source.html#l00026">transform.hpp:27</a></div></div>
-<div class="ttc" id="amesh__importer_8cpp_html_ae394bc3edac03ad324d7a62addc22081"><div class="ttname"><a href="mesh__importer_8cpp.html#ae394bc3edac03ad324d7a62addc22081">desc</a></div><div class="ttdeci">imported_texture desc</div><div class="ttdef"><b>Definition</b> <a href="mesh__importer_8cpp_source.html#l02612">mesh_importer.cpp:2612</a></div></div>
+<div class="ttc" id="aclassmath_1_1transform__t_html"><div class="ttname"><a href="classmath_1_1transform__t.html">math::transform_t</a></div><div class="ttdoc">General purpose transformation class designed to maintain each component of the transformation separa...</div><div class="ttdef"><b>Definition</b> <a href="core_2math_2transform_8hpp_source.html#l00054">transform.hpp:55</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="animation__player_8h_source.html#l00087">87</a> of file <a class="el" href="animation__player_8h_source.html">animation_player.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8h_source.html#l00364">364</a> of file <a class="el" href="animation__player_8h_source.html">animation_player.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +331,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00084">84</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00751">751</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
@@ -263,7 +350,347 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00078">78</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00746">746</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acbf22ae19645ff7840eb8793430114d6" name="acbf22ae19645ff7840eb8793430114d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf22ae19645ff7840eb8793430114d6">&#9670;&#160;</a></span>clear_fired_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::clear_fired_events </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drops the recorded events once they were delivered, so a frame that does not advance the player (an unrendered panel) cannot deliver them again. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02764">2764</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adbf76520a39b59b9765f5bef9e3b6d9b" name="adbf76520a39b59b9765f5bef9e3b6d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf76520a39b59b9765f5bef9e3b6d9b">&#9670;&#160;</a></span>compute_blend_factor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::compute_blend_factor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__player_1_1animation__layer.html">animation_layer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>layer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>normalized_blend_time</em></span>&#160;) const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the crossfade weight of the layer's target state at <code>normalized_blend_time</code> (0..1): the easing taken from the crossfade's start weight to 1. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01768">1768</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a754e4947a696226b68fa92094243af22" name="a754e4947a696226b68fa92094243af22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754e4947a696226b68fa92094243af22">&#9670;&#160;</a></span>describe_binding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::describe_binding </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>clip</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__skeleton__binding.html">animation_skeleton_binding</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>binding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__target__skeleton.html">animation_target_skeleton</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>skeleton</em></span>&#160;) -&gt; <a class="el" href="structunravel_1_1animation__binding__report.html">animation_binding_report</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How <code>clip</code> binds onto <code>skeleton</code> under <code>binding</code>, built as playback builds it (on a player of its own, so no running player changes). <code>skeleton</code> names the target bones; with Rest Aligned it is the binding's target. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01899">1899</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae0c12ad099e673a5fee72d07aa769c37" name="ae0c12ad099e673a5fee72d07aa769c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c12ad099e673a5fee72d07aa769c37">&#9670;&#160;</a></span>find_curve_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::find_curve_value </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>curve_id</em></span></td><td>)</td>
+          <td> const -&gt; std::optional&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The blended value of a curve, or nothing when no playing clip has it. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02774">2774</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7ed291f28eee705b7724e5c122a070f2" name="a7ed291f28eee705b7724e5c122a070f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ed291f28eee705b7724e5c122a070f2">&#9670;&#160;</a></span>get_blend_progress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::get_blend_progress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__player_1_1animation__layer.html">animation_layer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>layer</em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the normalized progress (0..1) of the layer's active crossfade, or 0 when no blend is in flight. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01745">1745</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a04a51dc1232592bc023a51add82a9745" name="a04a51dc1232592bc023a51add82a9745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a51dc1232592bc023a51add82a9745">&#9670;&#160;</a></span>get_blend_weight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::get_blend_weight </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__player_1_1animation__layer.html">animation_layer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>layer</em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the eased crossfade weight of the layer's target state (0..1), or 0 when no crossfade is in flight. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01759">1759</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd4f30492fce5d77de00582a3a288b38" name="acd4f30492fce5d77de00582a3a288b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4f30492fce5d77de00582a3a288b38">&#9670;&#160;</a></span>get_curve_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::get_curve_value </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>curve_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fallback</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0f</span>&#160;) const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blended value of a curve, or <code>fallback</code> when no playing clip has it. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02790">2790</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a38d1012aa4dca82589c1a81cd73cba00" name="a38d1012aa4dca82589c1a81cd73cba00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d1012aa4dca82589c1a81cd73cba00">&#9670;&#160;</a></span>get_curve_values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::get_curve_values </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;<a class="el" href="structunravel_1_1animation__curve__value.html">animation_curve_value</a>&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blended curve values of the last update_poses, sorted by curve id. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02769">2769</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad239ba918e35915a5cabbd9e99523d8f" name="ad239ba918e35915a5cabbd9e99523d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad239ba918e35915a5cabbd9e99523d8f">&#9670;&#160;</a></span>get_fired_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::get_fired_events </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;<a class="el" href="structunravel_1_1animation__event__hit.html">animation_event_hit</a>&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Events crossed during the last update_time, in layer order. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02759">2759</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b1406fb80eaa5cfa844bdd821a5f5cb" name="a8b1406fb80eaa5cfa844bdd821a5f5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1406fb80eaa5cfa844bdd821a5f5cb">&#9670;&#160;</a></span>get_layer_blend_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::get_layer_blend_mode </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespaceunravel.html#a6387480bcce2e8f6bc40a1db234ddca9">animation_layer_blend_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01087">1087</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac4da73b43bfba38d80a67e3d0766689d" name="ac4da73b43bfba38d80a67e3d0766689d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4da73b43bfba38d80a67e3d0766689d">&#9670;&#160;</a></span>get_layer_bone_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::get_layer_bone_mask </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;float&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01101">1101</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af2a238b8206772fa8b05a368346d381e" name="af2a238b8206772fa8b05a368346d381e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a238b8206772fa8b05a368346d381e">&#9670;&#160;</a></span>get_layer_weight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::get_layer_weight </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01066">1066</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae6fe5f7d59555602e10a3399a1c1785d" name="ae6fe5f7d59555602e10a3399a1c1785d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fe5f7d59555602e10a3399a1c1785d">&#9670;&#160;</a></span>get_layers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::get_layers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;<a class="el" href="structunravel_1_1animation__player_1_1animation__layer.html">animation_layer</a>&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read-only view over the player's layers for tooling and inspection. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02810">2810</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af6981cd3edcf1bb043fdbaea9d6e7be9" name="af6981cd3edcf1bb043fdbaea9d6e7be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6981cd3edcf1bb043fdbaea9d6e7be9">&#9670;&#160;</a></span>get_state_duration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::get_state_duration </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__state.html">animation_state</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="#a1d5a4e159b71e1183940c104332d5157">seconds_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the playback duration of one cycle of a state: the clip's duration, or the weight-averaged duration of the blend space's active clips (0 until first updated). </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01731">1731</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a50a78adefd02cae117136ad103f00ea2" name="a50a78adefd02cae117136ad103f00ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a78adefd02cae117136ad103f00ea2">&#9670;&#160;</a></span>has_curve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::animation_player::has_curve </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>curve_id</em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02795">2795</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
@@ -285,7 +712,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns whether the animation is currently paused. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the animation is paused, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00616">616</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02805">2805</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
@@ -307,7 +734,7 @@ Public Member Functions</h2></td></tr>
 <p>Returns whether the animation is currently playing. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the animation is playing, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00611">611</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02800">2800</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
@@ -328,7 +755,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Pauses the animation playback. </p>
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00209">209</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01123">1123</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +776,109 @@ Public Member Functions</h2></td></tr>
 
 <p>Starts or resumes the animation playback. </p>
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00197">197</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01111">1111</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acb65b9d6667883c781e2724ba8a30eec" name="acb65b9d6667883c781e2724ba8a30eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb65b9d6667883c781e2724ba8a30eec">&#9670;&#160;</a></span>play_blend_space()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::play_blend_space </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classunravel_1_1blend__space__def.html">blend_space_def</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>blend_space</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__play__params.html">animation_play_params</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crossfades a layer to a blend space. Parameters for the new state are set with set_state_parameters(layer, true, ...) while the crossfade runs. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00785">785</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a44850334a25491cacc568a3f2f582fb7" name="a44850334a25491cacc568a3f2f582fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44850334a25491cacc568a3f2f582fb7">&#9670;&#160;</a></span>play_clip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::play_clip </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>clip</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__play__params.html">animation_play_params</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crossfades a layer to a clip. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00766">766</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a280fa5bf6714ecd0f4a59dd112104121" name="a280fa5bf6714ecd0f4a59dd112104121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280fa5bf6714ecd0f4a59dd112104121">&#9670;&#160;</a></span>request_pose_refresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::request_pose_refresh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests a one-shot pose refresh: the next update_time behaves as if playing but advances by zero time, so poses are re-sampled and re-applied at the current playback position even while stopped or paused (editor seeking / stepping). </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02845">2845</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af376e80c5834d7c9a185900787ef27a6" name="af376e80c5834d7c9a185900787ef27a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af376e80c5834d7c9a185900787ef27a6">&#9670;&#160;</a></span>reset_root_motion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::reset_root_motion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts root-motion tracking over, so the next pose sample measures no motion: for a character whose poses were not sampled (renderer-based culling), so it does not jump by everything it missed when it is seen again. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02836">2836</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
@@ -370,7 +899,37 @@ Public Member Functions</h2></td></tr>
 
 <p>Resumes the animation playback. </p>
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00214">214</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01128">1128</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a016f742182052f3942433e1c2df118cf" name="a016f742182052f3942433e1c2df118cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016f742182052f3942433e1c2df118cf">&#9670;&#160;</a></span>seek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::seek </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>progress</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>seek_target</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Seeks a layer state to a normalized progress (0..1) without changing playback status. Does nothing for out-of-range layers or states whose duration is not known yet. Pair with <a class="el" href="#a280fa5bf6714ecd0f4a59dd112104121" title="Requests a one-shot pose refresh: the next update_time behaves as if playing but advances by zero tim...">request_pose_refresh()</a> to see the seeked pose while stopped or paused. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l02815">2815</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
@@ -398,7 +957,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00173">173</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01021">1021</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
@@ -421,7 +980,140 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00191">191</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01037">1037</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7f871757fe55488286cf7920f6ce40bd" name="a7f871757fe55488286cf7920f6ce40bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f871757fe55488286cf7920f6ce40bd">&#9670;&#160;</a></span>set_layer_blend_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::set_layer_blend_mode </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceunravel.html#a6387480bcce2e8f6bc40a1db234ddca9">animation_layer_blend_mode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01076">1076</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1e47e5e7349ac164000087f86500353c" name="a1e47e5e7349ac164000087f86500353c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e47e5e7349ac164000087f86500353c">&#9670;&#160;</a></span>set_layer_bone_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::set_layer_bone_mask </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; float &gt;</td>          <td class="paramname"><span class="paramname"><em>weights</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Per-bone weights of a layer, indexed by target skeleton index. Empty means every bone at weight 1; bones past the end of the list count as 0. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01096">1096</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa15b637dd592366a8c030b9236c42cda" name="aa15b637dd592366a8c030b9236c42cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15b637dd592366a8c030b9236c42cda">&#9670;&#160;</a></span>set_layer_weight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::set_layer_weight </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>weight</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Layer weight, 0..1. The base layer always counts as fully weighted. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01058">1058</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6cb5d56addf4eb28d964f4451babd5ef" name="a6cb5d56addf4eb28d964f4451babd5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb5d56addf4eb28d964f4451babd5ef">&#9670;&#160;</a></span>set_state_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::set_state_parameters </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">hpp::span&lt; const float &gt;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the blend-space parameters of the layer's current state, or of its crossfade target when <code>target</code> is true. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01043">1043</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5f5167d5e189a7a183c17d114dfe66a8" name="a5f5167d5e189a7a183c17d114dfe66a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5167d5e189a7a183c17d114dfe66a8">&#9670;&#160;</a></span>set_state_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::set_state_speed </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>layer_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speed</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the playback rate of the layer's current state, or of its crossfade target. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01051">1051</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
@@ -442,12 +1134,12 @@ Public Member Functions</h2></td></tr>
 
 <p>Stops the animation playback and resets the time. </p>
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00219">219</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01133">1133</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ac5a82e0e9fb0c5bcf6973d640212f421" name="ac5a82e0e9fb0c5bcf6973d640212f421"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5a82e0e9fb0c5bcf6973d640212f421">&#9670;&#160;</a></span>update_poses()</h2>
+<a id="a0fc430e0ebc6a85750fc6561c8cc4a9a" name="a0fc430e0ebc6a85750fc6561c8cc4a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fc430e0ebc6a85750fc6561c8cc4a9a">&#9670;&#160;</a></span>update_poses() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -465,12 +1157,61 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>extract_root_motion</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="#a495c60a54dc3390eef734854b9d68a3d">update_callback_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>set_transform_callback</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00282">282</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p>Index-based overload kept for callers that sample clips onto their source skeleton. </p>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01308">1308</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aec6fb4482301c8c9397114d147d50b85" name="aec6fb4482301c8c9397114d147d50b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec6fb4482301c8c9397114d147d50b85">&#9670;&#160;</a></span>update_poses() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::animation_player::update_poses </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__pose.html">animation_pose</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_pose</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__skeleton__binding.html">animation_skeleton_binding</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>binding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>extract_root_motion</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a495c60a54dc3390eef734854b9d68a3d">update_callback_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>set_transform_callback</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Samples, blends and emits the final pose for every layer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">binding</td><td>Maps clip channels to target skeleton indices. Pass an empty binding to use the channels' own indices (index-based retargeting). </td></tr>
+    <tr><td class="paramname">extract_root_motion</td><td>True when the caller consumes root_transform_delta (applies root motion). Extraction rewrites the root channel's pose to the constant clip-start baseline, which is only valid when the extracted delta is applied elsewhere; pass false to keep the authored root motion in the pose instead. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01318">1318</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>
@@ -493,16 +1234,17 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Updates the animation player, advancing the animation time and applying transformations. </p>
+<p>Advances the animation time of every layer and records the events crossed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">delta_time</td><td>The time to advance the animation by. </td></tr>
-    <tr><td class="paramname">set_transform_callback</td><td>The callback function to set the transform of a node. </td></tr>
+    <tr><td class="paramname">force</td><td>Advance even when not playing or paused (editor frame stepping). </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if time advanced and poses should be updated. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l00231">231</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="animation__player_8cpp_source.html#l01178">1178</a> of file <a class="el" href="animation__player_8cpp_source.html">animation_player.cpp</a>.</p>
 
 </div>
 </div>

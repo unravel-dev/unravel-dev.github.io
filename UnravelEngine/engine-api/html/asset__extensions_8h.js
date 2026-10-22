@@ -1,6 +1,7 @@
 var asset__extensions_8h =
 [
     [ "get_all_formats", "asset__extensions_8h.html#a0f3d5563efc47f9c22191a401ae07253", null ],
+    [ "get_asset_index_file_name", "asset__extensions_8h.html#a89c5564870612cffba70b1f68352d610", null ],
     [ "get_compiled_directory", "asset__extensions_8h.html#a9084511920c06eac49736e94a69c3f2c", null ],
     [ "get_compiled_directory_no_slash", "asset__extensions_8h.html#a20d367a7300bec4acbd5815faf5b1d25", null ],
     [ "get_data_directory", "asset__extensions_8h.html#a2beb5dab1cc4d4db92b09bfb4cc77d23", null ],
@@ -8,8 +9,10 @@ var asset__extensions_8h =
     [ "get_format", "asset__extensions_8h.html#a10364a2654501630fb598cec92b0e5f7", null ],
     [ "get_format_version", "asset__extensions_8h.html#ad281432fe43de76aff023ed49ca4ee54", null ],
     [ "get_format_version", "asset__extensions_8h.html#a48cb0ef4af75ca9701415c7a63c79dbc", null ],
+    [ "get_format_version< gfx::shader >", "asset__extensions_8h.html#ae2eb4835b5d76efc87d1d9f41d70252d", null ],
     [ "get_format_version< gfx::texture >", "asset__extensions_8h.html#abfb132666c63980733f6538587f9871d", null ],
     [ "get_format_version< unravel::animation_clip >", "asset__extensions_8h.html#a5d7275873a08123240fa2cb002bb6a7b", null ],
+    [ "get_format_version< unravel::animation_controller >", "asset__extensions_8h.html#aff0d100ba409d4f641a9771af6ef9bca", null ],
     [ "get_format_version< unravel::audio_clip >", "asset__extensions_8h.html#abcb318589574b6b7109e28f0a7cffac0", null ],
     [ "get_format_version< unravel::material >", "asset__extensions_8h.html#a3864bbb4a8eee42075a6950559b5c478", null ],
     [ "get_format_version< unravel::mesh >", "asset__extensions_8h.html#afe723d2f4e2d8037336dd8e7d4a3fe52", null ],
@@ -17,6 +20,9 @@ var asset__extensions_8h =
     [ "get_meta_directory", "asset__extensions_8h.html#aa5928dc24e3c99d6708a8be3f61548f9", null ],
     [ "get_meta_directory_no_slash", "asset__extensions_8h.html#a69b54c000e625d81a7661e93533db229", null ],
     [ "get_meta_format", "asset__extensions_8h.html#a8f12df46aeca0d26af3c52a4780622cc", null ],
+    [ "get_pack_file_name", "asset__extensions_8h.html#a0be5dadf824a4ac1d4b289765620f243", null ],
+    [ "get_patch_pack_file_name", "asset__extensions_8h.html#a34a4109ea49f89bbe8b212ba6f3fc640", null ],
+    [ "get_source_path_from_compiled", "asset__extensions_8h.html#ae47a69347c609e8e5336beaa6d33dc45", null ],
     [ "get_suported_dependencies_formats", "asset__extensions_8h.html#ae994f0340f673c808c7ca291ae56c418", null ],
     [ "get_suported_dependencies_formats< gfx::shader >", "asset__extensions_8h.html#aa2375853a932481e6a6230f654e2d10b", null ],
     [ "get_suported_dependencies_formats< unravel::ui_tree >", "asset__extensions_8h.html#add4952c0b479f44abf09d2423b3aba0f", null ],
@@ -24,6 +30,7 @@ var asset__extensions_8h =
     [ "get_suported_formats< gfx::shader >", "asset__extensions_8h.html#a0806c7b694c4e703f8f1a8b83cd90f39", null ],
     [ "get_suported_formats< gfx::texture >", "asset__extensions_8h.html#a9b3c688da206230c0c64f27882a35aef", null ],
     [ "get_suported_formats< unravel::animation_clip >", "asset__extensions_8h.html#a87117f094f4ed7f88827cfb1e136e9c4", null ],
+    [ "get_suported_formats< unravel::animation_controller >", "asset__extensions_8h.html#a956dec87aa801666d6c5769657837e56", null ],
     [ "get_suported_formats< unravel::audio_clip >", "asset__extensions_8h.html#a40193d80e9b4fead14495e548fa1b745", null ],
     [ "get_suported_formats< unravel::font >", "asset__extensions_8h.html#a8a1cca2688fc71419423ea22c50f10e0", null ],
     [ "get_suported_formats< unravel::material >", "asset__extensions_8h.html#ac15e49830153d750c429c51590422408", null ],
@@ -37,6 +44,11 @@ var asset__extensions_8h =
     [ "get_suported_formats_with_wildcard", "asset__extensions_8h.html#aec5a7b4ede0f14a7fe4bf2fba2d61e51", null ],
     [ "get_type", "asset__extensions_8h.html#a56a7b82ed8729b0d25d7d37a5fb6bcb8", null ],
     [ "get_type", "asset__extensions_8h.html#af56464daa377f9b125f425e0e3af32b7", null ],
+    [ "has_filename_extension", "asset__extensions_8h.html#a63bc4cffc1cbbeb1ab07e8934bd938a9", null ],
     [ "is_binary", "asset__extensions_8h.html#abc8f5419d0b3add306f158a20f28b0a3", null ],
-    [ "is_format", "asset__extensions_8h.html#a56bae4a3bf4248ce0f176020eca36b0b", null ]
+    [ "is_embedded_key", "asset__extensions_8h.html#ae68975c616c00f626052ef8da5cb1abc", null ],
+    [ "is_format", "asset__extensions_8h.html#a56bae4a3bf4248ce0f176020eca36b0b", null ],
+    [ "is_known_format", "asset__extensions_8h.html#ab6e3366dfaa4a54936cf00d504cb1330", null ],
+    [ "resolve_key_missing_extension", "asset__extensions_8h.html#a208d648f27d8e2e9ed986fb5342e6057", null ],
+    [ "should_keep_key_as_is", "asset__extensions_8h.html#a46fcff2293e4b77e7266da9cb5b96285", null ]
 ];

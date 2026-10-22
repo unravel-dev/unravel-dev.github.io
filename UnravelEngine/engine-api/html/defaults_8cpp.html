@@ -110,6 +110,7 @@ $(function(){initNavTree('defaults_8cpp.html',''); initResizable(true); });
 <code>#include &lt;<a class="el" href="tag__component_8h_source.html">engine/ecs/components/tag_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="assao__component_8h_source.html">engine/rendering/ecs/components/assao_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="gtao__component_8h_source.html">engine/rendering/ecs/components/gtao_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="auto__exposure__component_8h_source.html">engine/rendering/ecs/components/auto_exposure_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="camera__component_8h_source.html">engine/rendering/ecs/components/camera_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fxaa__component_8h_source.html">engine/rendering/ecs/components/fxaa_component.h</a>&gt;</code><br />
@@ -118,6 +119,7 @@ $(function(){initNavTree('defaults_8cpp.html',''); initResizable(true); });
 <code>#include &lt;<a class="el" href="tonemapping__component_8h_source.html">engine/rendering/ecs/components/tonemapping_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ssr__component_8h_source.html">engine/rendering/ecs/components/ssr_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ssil__component_8h_source.html">engine/rendering/ecs/components/ssil_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="gi__component_8h_source.html">engine/rendering/ecs/components/gi_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="light__component_8h_source.html">engine/rendering/ecs/components/light_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="model__component_8h_source.html">engine/rendering/ecs/components/model_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="reflection__probe__component_8h_source.html">engine/rendering/ecs/components/reflection_probe_component.h</a>&gt;</code><br />
@@ -157,7 +159,217 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00252">252</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00254">254</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9a1a51ede598157e799b7e864ed0750b" name="a9a1a51ede598157e799b7e864ed0750b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1a51ede598157e799b7e864ed0750b">&#9670;&#160;</a></span>gi_diffuse_quality</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gi_diffuse_quality {1.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Quality scales of the GI's heaviest stages (1 = the component's own default). </p>
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00665">665</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8184db32cf62d957b9e2a23635e6c755" name="a8184db32cf62d957b9e2a23635e6c755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8184db32cf62d957b9e2a23635e6c755">&#9670;&#160;</a></span>gi_lighting_quality</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gi_lighting_quality {1.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00667">667</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9fb5c897823fcaa968d767686b48f5e4" name="a9fb5c897823fcaa968d767686b48f5e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fb5c897823fcaa968d767686b48f5e4">&#9670;&#160;</a></span>gi_reflection_quality</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gi_reflection_quality {1.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00666">666</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa757708d5ad270e50e4d23294859f9ec" name="aa757708d5ad270e50e4d23294859f9ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa757708d5ad270e50e4d23294859f9ec">&#9670;&#160;</a></span>has_assao</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_assao {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00660">660</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2086173aeb33eadffd7c44eb506ebf8f" name="a2086173aeb33eadffd7c44eb506ebf8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2086173aeb33eadffd7c44eb506ebf8f">&#9670;&#160;</a></span>has_auto_exposure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_auto_exposure {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00657">657</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a28bcec67f787d6071e4f0350e17d8611" name="a28bcec67f787d6071e4f0350e17d8611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28bcec67f787d6071e4f0350e17d8611">&#9670;&#160;</a></span>has_bloom</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_bloom {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00658">658</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af2ffdb7a1f9e3497359372479abcd610" name="af2ffdb7a1f9e3497359372479abcd610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ffdb7a1f9e3497359372479abcd610">&#9670;&#160;</a></span>has_fxaa</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_fxaa {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00655">655</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a68f45d179fa0f1f55b8849b151c6c93a" name="a68f45d179fa0f1f55b8849b151c6c93a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f45d179fa0f1f55b8849b151c6c93a">&#9670;&#160;</a></span>has_gi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_gi {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00663">663</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b67f879123eb211d6ba914e02b0ae42" name="a7b67f879123eb211d6ba914e02b0ae42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b67f879123eb211d6ba914e02b0ae42">&#9670;&#160;</a></span>has_gtao</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_gtao {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00659">659</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d0dd54142290780ed621adec82a599e" name="a1d0dd54142290780ed621adec82a599e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d0dd54142290780ed621adec82a599e">&#9670;&#160;</a></span>has_ssil</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_ssil {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00662">662</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab11e0c9d9e5db9f61b26f3df8983b789" name="ab11e0c9d9e5db9f61b26f3df8983b789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11e0c9d9e5db9f61b26f3df8983b789">&#9670;&#160;</a></span>has_ssr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_ssr {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00661">661</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3405017cfbaa3277f0da8dec1fb800e9" name="a3405017cfbaa3277f0da8dec1fb800e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3405017cfbaa3277f0da8dec1fb800e9">&#9670;&#160;</a></span>has_taa</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_taa {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00656">656</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8ee8a5e15c8f0b89f9637f4a5a38bc70" name="a8ee8a5e15c8f0b89f9637f4a5a38bc70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee8a5e15c8f0b89f9637f4a5a38bc70">&#9670;&#160;</a></span>has_tonemapping</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_tonemapping {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00654">654</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
 
 </div>
 </div>
@@ -173,7 +385,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00051">51</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00053">53</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
 
 </div>
 </div>
@@ -189,7 +401,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00053">53</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00055">55</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +417,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00254">254</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00256">256</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +433,25 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00052">52</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00054">54</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a45171c10d5eaa9dd98f3ada52b801536" name="a45171c10d5eaa9dd98f3ada52b801536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45171c10d5eaa9dd98f3ada52b801536">&#9670;&#160;</a></span>ssr_resolution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">trace_resolution ssr_resolution {<a class="el" href="pipeline_8cpp.html#a98eac8820fba0e2492e77b7fe2a4ac98">trace_resolution::half</a>}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolution the screen-space reflections trace at. </p>
+
+<p class="definition">Definition at line <a class="el" href="defaults_8cpp_source.html#l00669">669</a> of file <a class="el" href="defaults_8cpp_source.html">defaults.cpp</a>.</p>
 
 </div>
 </div>

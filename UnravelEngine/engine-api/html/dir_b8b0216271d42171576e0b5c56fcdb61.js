@@ -31,5 +31,6 @@ var dir_b8b0216271d42171576e0b5c56fcdb61 =
     [ "mouse_action_map.hpp", "mouse__action__map_8hpp.html", "mouse__action__map_8hpp" ],
     [ "mouse_button.hpp", "mouse__button_8hpp.html", "mouse__button_8hpp" ],
     [ "point.hpp", "point_8hpp.html", "point_8hpp" ],
-    [ "to_string.hpp", "to__string_8hpp.html", "to__string_8hpp" ]
+    [ "to_string.hpp", "to__string_8hpp.html", "to__string_8hpp" ],
+    [ "touch.hpp", "touch_8hpp.html", "touch_8hpp" ]
 ];

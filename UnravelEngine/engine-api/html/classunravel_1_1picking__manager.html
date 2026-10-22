@@ -109,7 +109,7 @@ $(function(){initNavTree('classunravel_1_1picking__manager.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a100ddc8949ee47aa18b353cfe10c20d9" id="r_a100ddc8949ee47aa18b353cfe10c20d9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a100ddc8949ee47aa18b353cfe10c20d9">pick_callback</a> = std::function&lt;void(entt::handle <a class="el" href="rendering_2ecs_2components_2model__component_8cpp.html#a8881ff40e399ee1fad686418663aee85">entity</a>, const math::vec2&amp; screen_pos)&gt;</td></tr>
+<tr class="memitem:a100ddc8949ee47aa18b353cfe10c20d9" id="r_a100ddc8949ee47aa18b353cfe10c20d9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a100ddc8949ee47aa18b353cfe10c20d9">pick_callback</a> = std::function&lt;void(entt::handle <a class="el" href="rig__system_8cpp.html#a4c53fad247dc57870dab2ffc7e5de2b0">entity</a>, const math::vec2&amp; screen_pos)&gt;</td></tr>
 <tr class="separator:a100ddc8949ee47aa18b353cfe10c20d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -118,21 +118,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf456d8a4190ae4e4461b14d3b13e8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a48a71871050378761bc3f5f762647c" id="r_a9a48a71871050378761bc3f5f762647c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a48a71871050378761bc3f5f762647c">~picking_manager</a> ()</td></tr>
 <tr class="separator:a9a48a71871050378761bc3f5f762647c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3faca520b293431a6b4ad8bd312a01b9" id="r_a3faca520b293431a6b4ad8bd312a01b9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3faca520b293431a6b4ad8bd312a01b9">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a3faca520b293431a6b4ad8bd312a01b9" id="r_a3faca520b293431a6b4ad8bd312a01b9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3faca520b293431a6b4ad8bd312a01b9">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="separator:a3faca520b293431a6b4ad8bd312a01b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd959de74a2447f4bc0bc6769cba417d" id="r_afd959de74a2447f4bc0bc6769cba417d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd959de74a2447f4bc0bc6769cba417d">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:afd959de74a2447f4bc0bc6769cba417d" id="r_afd959de74a2447f4bc0bc6769cba417d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd959de74a2447f4bc0bc6769cba417d">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="separator:afd959de74a2447f4bc0bc6769cba417d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45690a54baba920fd31f6334f54ed759" id="r_a45690a54baba920fd31f6334f54ed759"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45690a54baba920fd31f6334f54ed759">request_pick</a> (const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="structunravel_1_1editing__manager.html#ab21fd7b015c2f14aedf711764746968f">editing_manager::select_mode</a> mode, math::vec2 pos, math::vec2 area={})</td></tr>
+<tr class="memitem:a45690a54baba920fd31f6334f54ed759" id="r_a45690a54baba920fd31f6334f54ed759"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45690a54baba920fd31f6334f54ed759">request_pick</a> (const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="structunravel_1_1editing__manager.html#ab21fd7b015c2f14aedf711764746968f">editing_manager::select_mode</a> mode, math::vec2 <a class="el" href="content__browser__item_8cpp.html#aba51aa24c69040654dac3633fe41394d">pos</a>, math::vec2 area={})</td></tr>
 <tr class="separator:a45690a54baba920fd31f6334f54ed759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a039f5e333d6f666592e75254f550ddb0" id="r_a039f5e333d6f666592e75254f550ddb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a039f5e333d6f666592e75254f550ddb0">query_pick</a> (math::vec2 pos, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="#a100ddc8949ee47aa18b353cfe10c20d9">pick_callback</a> callback, bool <a class="el" href="namespaceunravel.html#affd248520b0507ba13ad6d424101ece6aae254d63f2381cc183c11594873793e0">force</a>=false)</td></tr>
+<tr class="memitem:a039f5e333d6f666592e75254f550ddb0" id="r_a039f5e333d6f666592e75254f550ddb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a039f5e333d6f666592e75254f550ddb0">query_pick</a> (math::vec2 <a class="el" href="content__browser__item_8cpp.html#aba51aa24c69040654dac3633fe41394d">pos</a>, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="#a100ddc8949ee47aa18b353cfe10c20d9">pick_callback</a> callback, bool <a class="el" href="namespaceunravel.html#affd248520b0507ba13ad6d424101ece6aae254d63f2381cc183c11594873793e0">force</a>=false)</td></tr>
 <tr class="separator:a039f5e333d6f666592e75254f550ddb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e51320abef143b557e8e729ce76109b" id="r_a6e51320abef143b557e8e729ce76109b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e51320abef143b557e8e729ce76109b">is_picking</a> () const -&gt; bool</td></tr>
 <tr class="separator:a6e51320abef143b557e8e729ce76109b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4653fca8a40525191a6491ade0b5c687" id="r_a4653fca8a40525191a6491ade0b5c687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4653fca8a40525191a6491ade0b5c687">cancel_pick</a> ()</td></tr>
 <tr class="separator:a4653fca8a40525191a6491ade0b5c687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaccb211f1370905ded9c2096d514c4db" id="r_aaccb211f1370905ded9c2096d514c4db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaccb211f1370905ded9c2096d514c4db">on_frame_render</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, <a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> dt)</td></tr>
+<tr class="memitem:aaccb211f1370905ded9c2096d514c4db" id="r_aaccb211f1370905ded9c2096d514c4db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaccb211f1370905ded9c2096d514c4db">on_frame_render</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, <a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> <a class="el" href="rig__system_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>)</td></tr>
 <tr class="separator:aaccb211f1370905ded9c2096d514c4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed6e2868fdf6bada007bc6557fd53b76" id="r_aed6e2868fdf6bada007bc6557fd53b76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed6e2868fdf6bada007bc6557fd53b76">on_frame_pick</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, <a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> dt)</td></tr>
+<tr class="memitem:aed6e2868fdf6bada007bc6557fd53b76" id="r_aed6e2868fdf6bada007bc6557fd53b76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed6e2868fdf6bada007bc6557fd53b76">on_frame_pick</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, <a class="el" href="core_2base_2basetypes_8hpp.html#a23b3683b3d1282e3b4e7c28dca4bc827">delta_t</a> <a class="el" href="rig__system_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>)</td></tr>
 <tr class="separator:aed6e2868fdf6bada007bc6557fd53b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed941658392bf1dd638bef177ec21e50" id="r_aed941658392bf1dd638bef177ec21e50"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed941658392bf1dd638bef177ec21e50">get_pick_texture</a> () const -&gt; const std::shared_ptr&lt; <a class="el" href="structgfx_1_1texture.html">gfx::texture</a> &gt; &amp;</td></tr>
 <tr class="separator:aed941658392bf1dd638bef177ec21e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,7 +153,7 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a100ddc8949ee47aa18b353cfe10c20d9">unravel::picking_manager::pick_callback</a> = std::function&lt;void(entt::handle <a class="el" href="rendering_2ecs_2components_2model__component_8cpp.html#a8881ff40e399ee1fad686418663aee85">entity</a>, const math::vec2&amp; screen_pos)&gt;</td>
+          <td class="memname">using <a class="el" href="#a100ddc8949ee47aa18b353cfe10c20d9">unravel::picking_manager::pick_callback</a> = std::function&lt;void(entt::handle <a class="el" href="rig__system_8cpp.html#a4c53fad247dc57870dab2ffc7e5de2b0">entity</a>, const math::vec2&amp; screen_pos)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -178,7 +178,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00883">883</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00876">876</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -197,7 +197,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00887">887</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00880">880</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -217,7 +217,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00991">991</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00984">984</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00947">947</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00940">940</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l01054">1054</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l01047">1047</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -274,7 +274,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00891">891</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00884">884</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l01049">1049</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l01042">1042</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l01036">1036</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l01029">1029</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -405,7 +405,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l01002">1002</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="picking__manager_8cpp_source.html#l00995">995</a> of file <a class="el" href="picking__manager_8cpp_source.html">picking_manager.cpp</a>.</p>
 
 </div>
 </div>

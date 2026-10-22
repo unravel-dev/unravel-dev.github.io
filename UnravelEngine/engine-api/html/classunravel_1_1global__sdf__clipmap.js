@@ -1,0 +1,27 @@
+var classunravel_1_1global__sdf__clipmap =
+[
+    [ "composed_entry", "structunravel_1_1global__sdf__clipmap_1_1composed__entry.html", "structunravel_1_1global__sdf__clipmap_1_1composed__entry" ],
+    [ "level", "structunravel_1_1global__sdf__clipmap_1_1level.html", "structunravel_1_1global__sdf__clipmap_1_1level" ],
+    [ "settings", "structunravel_1_1global__sdf__clipmap_1_1settings.html", "structunravel_1_1global__sdf__clipmap_1_1settings" ],
+    [ "voxel_box", "structunravel_1_1global__sdf__clipmap_1_1voxel__box.html", "structunravel_1_1global__sdf__clipmap_1_1voxel__box" ],
+    [ "append_brick_boxes", "classunravel_1_1global__sdf__clipmap.html#ae1110d186d544135f6ed19ad536f12f5", null ],
+    [ "apply_settings", "classunravel_1_1global__sdf__clipmap.html#abb2d8febeb91a7ec01cb3f2ac509039c", null ],
+    [ "clear_dirty_levels", "classunravel_1_1global__sdf__clipmap.html#a8dff50d14dbcdfee2fedeac4d908dffc", null ],
+    [ "compute_scroll_boxes", "classunravel_1_1global__sdf__clipmap.html#ae4aafb9ec15f7b2751bfd011ad60c8f9", null ],
+    [ "find_level", "classunravel_1_1global__sdf__clipmap.html#adddd9851f7811aa337f6d55d7ff9df92", null ],
+    [ "get_dirty_levels", "classunravel_1_1global__sdf__clipmap.html#acc7299be039221b5ba958b8e24cb17fd", null ],
+    [ "get_level", "classunravel_1_1global__sdf__clipmap.html#acf92fdffbe89f12c5f0a08a53c42cebb", null ],
+    [ "get_level_extent", "classunravel_1_1global__sdf__clipmap.html#a9004546a4f1a40942690f6e3c0eef9d1", null ],
+    [ "get_memory_usage", "classunravel_1_1global__sdf__clipmap.html#a942f8f87fc715242e948e1ddd2d49e08", null ],
+    [ "get_settings", "classunravel_1_1global__sdf__clipmap.html#aa88b28c57dce8b713aeefe89bf504a2f", null ],
+    [ "get_stale_level_count", "classunravel_1_1global__sdf__clipmap.html#a733c51cec00fd1399ac1568e392a88b7", null ],
+    [ "init", "classunravel_1_1global__sdf__clipmap.html#a0d07deb59ef469c1217c1e8ad098b815", null ],
+    [ "is_partial_update_due", "classunravel_1_1global__sdf__clipmap.html#a469c3231e2d932eaccf45608f943060a", null ],
+    [ "sample", "classunravel_1_1global__sdf__clipmap.html#a9def0cc31aa258199cf7965950b9116d", null ],
+    [ "sample_ex", "classunravel_1_1global__sdf__clipmap.html#aaf0d431918b8686f7bae2b5b6a564a32", null ],
+    [ "sample_level", "classunravel_1_1global__sdf__clipmap.html#af1026e4cc1bbabe8d9fd9ad1863f4912", null ],
+    [ "update", "classunravel_1_1global__sdf__clipmap.html#a0aa3b280c6d5a73e3dfa8959ebac574e", null ],
+    [ "level_count", "classunravel_1_1global__sdf__clipmap.html#a3678987e0c2a53790d2eedbd5e4abded", null ],
+    [ "origin_snap_voxels", "classunravel_1_1global__sdf__clipmap.html#a87a6c0820b43c4528fafe63df156a302", null ],
+    [ "outside_distance", "classunravel_1_1global__sdf__clipmap.html#a6e87c16c0f8d184c7d834bf817ac5b2c", null ]
+];

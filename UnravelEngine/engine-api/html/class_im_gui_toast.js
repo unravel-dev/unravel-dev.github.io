@@ -9,6 +9,7 @@ var class_im_gui_toast =
     [ "get_content", "class_im_gui_toast.html#a74cb9f89a3d1b3671e5a85c2d7cb664d", null ],
     [ "get_default_title", "class_im_gui_toast.html#aa7e0ccdb73c150fc376c75c98ff8d10b", null ],
     [ "get_draw_callback", "class_im_gui_toast.html#a873543269345b91d1a55f70b689d581c", null ],
+    [ "get_edge_color", "class_im_gui_toast.html#a8e934f41f5f9b34fbebf45b9ce42fffe", null ],
     [ "get_elapsed_time", "class_im_gui_toast.html#a48a004dc64b510576b0ff4c4babe29f3", null ],
     [ "get_fade_percent", "class_im_gui_toast.html#a93c356510507670bcf11684e74f8fd62", null ],
     [ "get_frame_padding", "class_im_gui_toast.html#aa7160fc1640a62d5274ac7e0c8ef51a0", null ],

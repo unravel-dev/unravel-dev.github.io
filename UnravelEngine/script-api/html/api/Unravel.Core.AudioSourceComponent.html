@@ -637,6 +637,43 @@ listener-relative (2D / UI / music) and does not distance-attenuate.</p>
 </h2>
 
 
+  <a id="Unravel_Core_AudioSourceComponent_FadeTo_" data-uid="Unravel.Core.AudioSourceComponent.FadeTo*"></a>
+
+  <h3 id="Unravel_Core_AudioSourceComponent_FadeTo_System_Single_System_Single_System_Boolean_" data-uid="Unravel.Core.AudioSourceComponent.FadeTo(System.Single,System.Single,System.Boolean)">
+  FadeTo(float, float, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ramps the volume to @p volume over @p seconds of unscaled time, then stops the source when
+@p stopAtEnd. Setting volume ends a running fade.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FadeTo(float volume, float seconds, bool stopAtEnd = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>stopAtEnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_AudioSourceComponent_Pause_" data-uid="Unravel.Core.AudioSourceComponent.Pause*"></a>
 
   <h3 id="Unravel_Core_AudioSourceComponent_Pause" data-uid="Unravel.Core.AudioSourceComponent.Pause">
@@ -680,95 +717,6 @@ listener-relative (2D / UI / music) and does not distance-attenuate.</p>
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Unravel_Core_AudioSourceComponent_PlayClip_" data-uid="Unravel.Core.AudioSourceComponent.PlayClip*"></a>
-
-  <h3 id="Unravel_Core_AudioSourceComponent_PlayClip_Unravel_Core_AudioClip_System_Single_Unravel_Core_AudioBus_" data-uid="Unravel.Core.AudioSourceComponent.PlayClip(Unravel.Core.AudioClip,System.Single,Unravel.Core.AudioBus)">
-  PlayClip(AudioClip, float, AudioBus)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L280"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Plays a one-shot audio clip as a 2D audio source.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static AudioSourceComponent PlayClip(AudioClip clip, float volume = 1, AudioBus bus = AudioBus.Sfx)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>clip</code> <a class="xref" href="Unravel.Core.AudioClip.html">AudioClip</a></dt>
-    <dd><p>The audio clip to play.</p>
-</dd>
-    <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p>The volume at which the audio will be played. Default is 1.0.</p>
-</dd>
-    <dt><code>bus</code> <a class="xref" href="Unravel.Core.AudioBus.html">AudioBus</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Unravel.Core.AudioSourceComponent.html">AudioSourceComponent</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Unravel_Core_AudioSourceComponent_PlayClipAtPoint_" data-uid="Unravel.Core.AudioSourceComponent.PlayClipAtPoint*"></a>
-
-  <h3 id="Unravel_Core_AudioSourceComponent_PlayClipAtPoint_Unravel_Core_AudioClip_Vector3_System_Single_Unravel_Core_AudioBus_" data-uid="Unravel.Core.AudioSourceComponent.PlayClipAtPoint(Unravel.Core.AudioClip,Vector3,System.Single,Unravel.Core.AudioBus)">
-  PlayClipAtPoint(AudioClip, Vector3, float, AudioBus)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/components/AudioSourceComponent.cs/#L260"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Plays a one-shot audio clip at the specified position with a specified volume.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static AudioSourceComponent PlayClipAtPoint(AudioClip clip, Vector3 position, float volume = 1, AudioBus bus = AudioBus.Sfx)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>clip</code> <a class="xref" href="Unravel.Core.AudioClip.html">AudioClip</a></dt>
-    <dd><p>The audio clip to play.</p>
-</dd>
-    <dt><code>position</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
-    <dd><p>The world position where the audio will be played.</p>
-</dd>
-    <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><p>The volume at which the audio will be played. Default is 1.0.</p>
-</dd>
-    <dt><code>bus</code> <a class="xref" href="Unravel.Core.AudioBus.html">AudioBus</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Unravel.Core.AudioSourceComponent.html">AudioSourceComponent</a></dt>
-    <dd></dd>
-  </dl>
 
 
 

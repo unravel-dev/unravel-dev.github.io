@@ -1,22 +1,27 @@
 var bgfx__utils_8h =
 [
+    [ "ReadbackImage", "struct_readback_image.html", "struct_readback_image" ],
+    [ "ReadbackFn", "bgfx__utils_8h.html#a5e71cc2a54c40afe87ad5cfc9fc6dd31", null ],
     [ "TexturePreCreateFn", "bgfx__utils_8h.html#a4b2fa6513a91e9f6c39bd432162058c6", null ],
     [ "calcTangents", "bgfx__utils_8h.html#a491508725b1014fb0c4191ba597e2592", null ],
     [ "checkAvailTransientBuffers", "bgfx__utils_8h.html#af4e7c73ecd5643817441cbad5daa3569", null ],
+    [ "deliverLandedReadbacks", "bgfx__utils_8h.html#acc472108c3ed0a6a64c14c6a273aaaf8", null ],
     [ "encodeNormalRgba8", "bgfx__utils_8h.html#a1d721a46691df8bb39c821cd347deb6d", null ],
+    [ "finishReadbacks", "bgfx__utils_8h.html#a4685a36e8e0aa212084a5085699ca634", null ],
     [ "imageFlipTangentSpaceNormalY", "bgfx__utils_8h.html#a8c61b9c0c402b92836cacc469646337f", null ],
     [ "imageLoad", "bgfx__utils_8h.html#a6e92b44121835f93ae783c469b965e33", null ],
     [ "imageLoad", "bgfx__utils_8h.html#a3eb7660cc755f2ed0f0a9d8a146af19e", null ],
     [ "imageParseInfo", "bgfx__utils_8h.html#a6892b5a5650e34d98e4b23aff33e7170", null ],
     [ "imageParseInfo", "bgfx__utils_8h.html#ab343b0aa0d8a4f1ace26549f36f197e0", null ],
     [ "imagePrepareNormalMapBakePng", "bgfx__utils_8h.html#ab890e26cdc87996dff44716222cf7c76", null ],
-    [ "imageSave", "bgfx__utils_8h.html#a8c52c2b842ca50b4dcb761efd7f6a92b", null ],
+    [ "imageSave", "bgfx__utils_8h.html#aa76cff42f2c27a9f628cc390e7b36c89", null ],
     [ "load", "bgfx__utils_8h.html#a8d13d3cc3672961180bb8fe31d506837", null ],
     [ "loadProgram", "bgfx__utils_8h.html#a4d9994a36806a2172eba60f05338ba8d", null ],
     [ "loadShader", "bgfx__utils_8h.html#aec795e4713fde55bd645b7716d07802f", null ],
     [ "loadShader", "bgfx__utils_8h.html#a3d90e3a0dbad7c8bee994dd47a97bf05", null ],
     [ "loadTexture", "bgfx__utils_8h.html#ac6c3412f580de97164c116526e8a654b", null ],
     [ "loadTexture", "bgfx__utils_8h.html#a535cfe2aab653792e10a8979b551c0d9", null ],
+    [ "readTexture", "bgfx__utils_8h.html#abe6d6261f16ac76f00b9df562d421649", null ],
     [ "saveToFile", "bgfx__utils_8h.html#aec1bdd65d683731b797048bde6d080c4", null ],
     [ "unload", "bgfx__utils_8h.html#ac7e73b30345a101c4b692eedac03de47", null ]
 ];

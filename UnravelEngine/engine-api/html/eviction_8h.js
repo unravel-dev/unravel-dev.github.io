@@ -40,7 +40,7 @@ var eviction_8h =
     [ "init", "eviction_8h.html#ab10e15b3b577bb5a3b3cecf9e2629527", null ],
     [ "is_supported", "eviction_8h.html#a203b2e0a3e4521279fd2e02d069a2bcb", null ],
     [ "make_backing", "eviction_8h.html#a903a50ba43375a3b156b74e7a6b4cf3a", null ],
-    [ "make_backing_ref", "eviction_8h.html#a2a4b2b802e1630a3ee57d50edce928b6", null ],
+    [ "make_backing_ref", "eviction_8h.html#ab764b86777a010c6ce081b549c73e7cc", null ],
     [ "note_pending_allocation", "eviction_8h.html#a11599e681985ef6c4569d377f27791e3", null ],
     [ "peek_external_queued_bytes", "eviction_8h.html#ab1c99c736d45941ccdcd75e814560f88", null ],
     [ "peek_pending_release_bytes", "eviction_8h.html#a7fd3132fb0bc0720ded920508de4574b", null ],

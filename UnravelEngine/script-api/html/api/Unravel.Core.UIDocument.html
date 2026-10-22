@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UIDocument | Unravel Engine Scripting API ">
       
-      <meta name="description" content="Managed wrapper around a native RmlUi document (Rml::ElementDocument). Each  owns its own RmlUi context and document. Wrappers are cached by native pointer so repeated queries return the same instance.">
+      <meta name="description" content="Managed wrapper around a native RmlUi document (Rml::ElementDocument). Each  owns its own RmlUi context and document. Wrappers are cached by document, so repeated queries return the same instance. A wrapper is valid while its document is the component&#39;s open document: after  or a reload it reports  false and its calls do nothing.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_UIDocument" data-uid="Unravel.Core.UIDocument" class="text-break">
-Class UIDocument  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L12"><i class="bi bi-code-slash"></i></a>
+Class UIDocument  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -99,7 +99,9 @@ Class UIDocument  <a class="header-action link-secondary" title="View source" hr
 
   <div class="markdown summary"><p>Managed wrapper around a native RmlUi document (<code>Rml::ElementDocument</code>).
 Each <a class="xref" href="Unravel.Core.UIDocumentComponent.html">UIDocumentComponent</a> owns its own RmlUi context and document.
-Wrappers are cached by native pointer so repeated queries return the same instance.</p>
+Wrappers are cached by document, so repeated queries return the same instance. A wrapper is
+valid while its document is the component's open document: after <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_Close">Close()</a> or a
+reload it reports <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_IsValid">IsValid()</a> false and its calls do nothing.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -166,7 +168,7 @@ Wrappers are cached by native pointer so repeated queries return the same instan
 
   <h3 id="Unravel_Core_UIDocument_IsVisible" data-uid="Unravel.Core.UIDocument.IsVisible">
   IsVisible
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets whether the document is currently visible.</p>
@@ -198,7 +200,7 @@ Wrappers are cached by native pointer so repeated queries return the same instan
 
   <h3 id="Unravel_Core_UIDocument_Owner" data-uid="Unravel.Core.UIDocument.Owner">
   Owner
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the entity that owns this UI document.</p>
@@ -230,7 +232,7 @@ Wrappers are cached by native pointer so repeated queries return the same instan
 
   <h3 id="Unravel_Core_UIDocument_Title" data-uid="Unravel.Core.UIDocument.Title">
   Title
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the title of the document.</p>
@@ -258,6 +260,72 @@ Wrappers are cached by native pointer so repeated queries return the same instan
 
 
 
+  <a id="Unravel_Core_UIDocument_pixelsPerDp_" data-uid="Unravel.Core.UIDocument.pixelsPerDp*"></a>
+
+  <h3 id="Unravel_Core_UIDocument_pixelsPerDp" data-uid="Unravel.Core.UIDocument.pixelsPerDp">
+  pixelsPerDp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pixels per dp in this document. Geometry (<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_rect">rect</a>, screen points)
+is in pixels, RCSS lengths in dp: <code>marker.style.left = screenPoint.x / document.pixelsPerDp</code>
+places an absolutely positioned element of the body at a screen x.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float pixelsPerDp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDocument_root_" data-uid="Unravel.Core.UIDocument.root*"></a>
+
+  <h3 id="Unravel_Core_UIDocument_root" data-uid="Unravel.Core.UIDocument.root">
+  root
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The document's root element (its body), to add elements at the top level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement root { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -266,11 +334,12 @@ Wrappers are cached by native pointer so repeated queries return the same instan
 
   <h3 id="Unravel_Core_UIDocument_Close" data-uid="Unravel.Core.UIDocument.Close">
   Close()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Closes the document and removes it from the context.
-Invalidates this wrapper, clears related element wrappers, and drops event subscriptions.</p>
+  <div class="markdown level1 summary"><p>Closes the document: it disappears at once and stays closed until
+<a class="xref" href="Unravel.Core.UIDocumentComponent.html#Unravel_Core_UIDocumentComponent_Reload">Reload()</a>. Invalidates this wrapper and the element
+wrappers, and drops their event subscriptions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -290,11 +359,89 @@ Invalidates this wrapper, clears related element wrappers, and drops event subsc
 
 
 
+  <a id="Unravel_Core_UIDocument_CreateElement_" data-uid="Unravel.Core.UIDocument.CreateElement*"></a>
+
+  <h3 id="Unravel_Core_UIDocument_CreateElement_System_String_" data-uid="Unravel.Core.UIDocument.CreateElement(System.String)">
+  CreateElement(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an element in no tree yet; add it with <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_AppendChild_Unravel_Core_UIElement_">AppendChild(UIElement)</a> or
+<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_InsertBefore_Unravel_Core_UIElement_Unravel_Core_UIElement_">InsertBefore(UIElement, UIElement)</a>. Set its attributes and classes before or after. An
+element never added lives until the document closes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement CreateElement(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The tag, e.g. &quot;div&quot;, &quot;img&quot;, &quot;button&quot;.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDocument_ElementAt_" data-uid="Unravel.Core.UIDocument.ElementAt*"></a>
+
+  <h3 id="Unravel_Core_UIDocument_ElementAt_Vector2_" data-uid="Unravel.Core.UIDocument.ElementAt(Vector2)">
+  ElementAt(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The innermost element of this document at a point, or null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement ElementAt(Vector2 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="Vector2.html">Vector2</a></dt>
+    <dd><p>In the document's pixels: for a screen-space document, <a class="xref" href="Unravel.Core.Input.html#Unravel_Core_Input_mousePosition">mousePosition</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIDocument_GetElementById_" data-uid="Unravel.Core.UIDocument.GetElementById*"></a>
 
   <h3 id="Unravel_Core_UIDocument_GetElementById_System_String_" data-uid="Unravel.Core.UIDocument.GetElementById(System.String)">
   GetElementById(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets an element wrapper by its ID.</p>
@@ -329,11 +476,49 @@ Invalidates this wrapper, clears related element wrappers, and drops event subsc
 
 
 
+  <a id="Unravel_Core_UIDocument_GetModel_" data-uid="Unravel.Core.UIDocument.GetModel*"></a>
+
+  <h3 id="Unravel_Core_UIDocument_GetModel_System_String_" data-uid="Unravel.Core.UIDocument.GetModel(System.String)">
+  GetModel(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The data model the document declares with <code>data-model=&quot;name&quot;</code>; see
+<a class="xref" href="Unravel.Core.UIDocumentComponent.html#Unravel_Core_UIDocumentComponent_GetModel_System_String_">GetModel(string)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIDataModel GetModel(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIDataModel.html">UIDataModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIDocument_Hide_" data-uid="Unravel.Core.UIDocument.Hide*"></a>
 
   <h3 id="Unravel_Core_UIDocument_Hide" data-uid="Unravel.Core.UIDocument.Hide">
   Hide()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Hides the document.</p>
@@ -360,10 +545,10 @@ Invalidates this wrapper, clears related element wrappers, and drops event subsc
 
   <h3 id="Unravel_Core_UIDocument_IsValid" data-uid="Unravel.Core.UIDocument.IsValid">
   IsValid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L24"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets whether this wrapper still points to a valid native document.</p>
+  <div class="markdown level1 summary"><p>Gets whether this wrapper's document is still the owner's open document.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -388,11 +573,130 @@ Invalidates this wrapper, clears related element wrappers, and drops event subsc
 
 
 
+  <a id="Unravel_Core_UIDocument_Q_" data-uid="Unravel.Core.UIDocument.Q*"></a>
+
+  <h3 id="Unravel_Core_UIDocument_Q_System_String_" data-uid="Unravel.Core.UIDocument.Q(System.String)">
+  Q(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The first element matching an RCSS selector, or null; the same as <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_QuerySelector_System_String_">QuerySelector(string)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement Q(string selector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For example &quot;#score&quot;, &quot;.slot &gt; img&quot;, &quot;button.primary&quot;.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDocument_Q_" data-uid="Unravel.Core.UIDocument.Q*"></a>
+
+  <h3 id="Unravel_Core_UIDocument_Q__1_System_String_" data-uid="Unravel.Core.UIDocument.Q``1(System.String)">
+  Q&lt;T&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The first element matching an RCSS selector, as a control class, e.g.
+<code>Q&lt;UISlider&gt;(&quot;#volume&quot;)</code>; null when none matches, or (with a warning) when it is
+another kind of element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Q&lt;T&gt;(string selector) where T : UIElement</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDocument_QueryAll_" data-uid="Unravel.Core.UIDocument.QueryAll*"></a>
+
+  <h3 id="Unravel_Core_UIDocument_QueryAll_System_String_" data-uid="Unravel.Core.UIDocument.QueryAll(System.String)">
+  QueryAll(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Every element matching an RCSS selector, in document order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;UIElement&gt; QueryAll(string selector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Unravel.Core.UIElement.html">UIElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIDocument_QuerySelector_" data-uid="Unravel.Core.UIDocument.QuerySelector*"></a>
 
   <h3 id="Unravel_Core_UIDocument_QuerySelector_System_String_" data-uid="Unravel.Core.UIDocument.QuerySelector(System.String)">
   QuerySelector(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the first element that matches the specified CSS selector.</p>
@@ -431,7 +735,7 @@ Invalidates this wrapper, clears related element wrappers, and drops event subsc
 
   <h3 id="Unravel_Core_UIDocument_Show" data-uid="Unravel.Core.UIDocument.Show">
   Show()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Shows the document.</p>
@@ -458,7 +762,7 @@ Invalidates this wrapper, clears related element wrappers, and drops event subsc
 
   <h3 id="Unravel_Core_UIDocument_ToString" data-uid="Unravel.Core.UIDocument.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L300"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string representation of this UI document wrapper.</p>
@@ -486,11 +790,39 @@ Invalidates this wrapper, clears related element wrappers, and drops event subsc
 
 
 
+  <a id="Unravel_Core_UIDocument_UpdateLayout_" data-uid="Unravel.Core.UIDocument.UpdateLayout*"></a>
+
+  <h3 id="Unravel_Core_UIDocument_UpdateLayout" data-uid="Unravel.Core.UIDocument.UpdateLayout">
+  UpdateLayout()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Lays the document out now. Geometry reads (<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_rect">rect</a>) already do this
+when the document changed; call it to pay the cost at a moment of your choosing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateLayout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L12" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDocument.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

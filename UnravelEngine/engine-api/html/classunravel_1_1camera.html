@@ -127,10 +127,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3628919d668e87d1419757c00680f557" id="r_a3628919d668e87d1419757c00680f557"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3628919d668e87d1419757c00680f557">set_fov</a> (float degrees)</td></tr>
 <tr class="memdesc:a3628919d668e87d1419757c00680f557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the field of view angle of this camera (perspective only).  <br /></td></tr>
 <tr class="separator:a3628919d668e87d1419757c00680f557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea67a219b4fb63eecbee01106ffe1e16" id="r_aea67a219b4fb63eecbee01106ffe1e16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea67a219b4fb63eecbee01106ffe1e16">set_near_clip</a> (float distance)</td></tr>
+<tr class="memitem:aea67a219b4fb63eecbee01106ffe1e16" id="r_aea67a219b4fb63eecbee01106ffe1e16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea67a219b4fb63eecbee01106ffe1e16">set_near_clip</a> (float <a class="el" href="native__scene_8cpp.html#afe3fd165ac02cc3284d6145a1e1b481c">distance</a>)</td></tr>
 <tr class="memdesc:aea67a219b4fb63eecbee01106ffe1e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the near plane distance.  <br /></td></tr>
 <tr class="separator:aea67a219b4fb63eecbee01106ffe1e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1a5e63d24a4dc945f289c8f53b06178" id="r_aa1a5e63d24a4dc945f289c8f53b06178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1a5e63d24a4dc945f289c8f53b06178">set_far_clip</a> (float distance)</td></tr>
+<tr class="memitem:aa1a5e63d24a4dc945f289c8f53b06178" id="r_aa1a5e63d24a4dc945f289c8f53b06178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1a5e63d24a4dc945f289c8f53b06178">set_far_clip</a> (float <a class="el" href="native__scene_8cpp.html#afe3fd165ac02cc3284d6145a1e1b481c">distance</a>)</td></tr>
 <tr class="memdesc:aa1a5e63d24a4dc945f289c8f53b06178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the far plane distance.  <br /></td></tr>
 <tr class="separator:aa1a5e63d24a4dc945f289c8f53b06178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c971c0ce81900c7c8bd33fd96a7cb33" id="r_a3c971c0ce81900c7c8bd33fd96a7cb33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c971c0ce81900c7c8bd33fd96a7cb33">set_orthographic_size</a> (float <a class="el" href="structsize.html">size</a>)</td></tr>
@@ -193,53 +193,58 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5523ea9d4eb6dc6d15ae1545bf36bc2b" id="r_a5523ea9d4eb6dc6d15ae1545bf36bc2b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5523ea9d4eb6dc6d15ae1545bf36bc2b">get_projection</a> () const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
 <tr class="memdesc:a5523ea9d4eb6dc6d15ae1545bf36bc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current projection matrix.  <br /></td></tr>
 <tr class="separator:a5523ea9d4eb6dc6d15ae1545bf36bc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33ba255a2ecc0cf19b41cb6108e3900" id="r_ae33ba255a2ecc0cf19b41cb6108e3900"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae33ba255a2ecc0cf19b41cb6108e3900">get_prev_projection</a> () const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
-<tr class="separator:ae33ba255a2ecc0cf19b41cb6108e3900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bca723be7f4a1221c149b3f95550a2b" id="r_a4bca723be7f4a1221c149b3f95550a2b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bca723be7f4a1221c149b3f95550a2b">get_projection_unjittered</a> () const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td></tr>
+<tr class="memdesc:a4bca723be7f4a1221c149b3f95550a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current projection with the TAA subpixel jitter subtracted back out.  <br /></td></tr>
+<tr class="separator:a4bca723be7f4a1221c149b3f95550a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a761c0a2a2955ba77edc3e9161363a80c" id="r_a761c0a2a2955ba77edc3e9161363a80c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a761c0a2a2955ba77edc3e9161363a80c">get_view</a> () const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
 <tr class="memdesc:a761c0a2a2955ba77edc3e9161363a80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current view matrix.  <br /></td></tr>
 <tr class="separator:a761c0a2a2955ba77edc3e9161363a80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd37f1de8a03c724312aaf2d4cd6c2a4" id="r_abd37f1de8a03c724312aaf2d4cd6c2a4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd37f1de8a03c724312aaf2d4cd6c2a4">get_prev_view</a> () const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
-<tr class="separator:abd37f1de8a03c724312aaf2d4cd6c2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5245557f86fd022c16810c8829a8b91" id="r_ac5245557f86fd022c16810c8829a8b91"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5245557f86fd022c16810c8829a8b91">get_view_inverse</a> () const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
 <tr class="separator:ac5245557f86fd022c16810c8829a8b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaad39f9abed6e0d5028367e8f833c9ec" id="r_aaad39f9abed6e0d5028367e8f833c9ec"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaad39f9abed6e0d5028367e8f833c9ec">get_view_relative</a> () const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
 <tr class="separator:aaad39f9abed6e0d5028367e8f833c9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eefd5db09d895ff35bb5f15210c62c2" id="r_a2eefd5db09d895ff35bb5f15210c62c2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eefd5db09d895ff35bb5f15210c62c2">get_prev_view_relative</a> () const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
-<tr class="separator:a2eefd5db09d895ff35bb5f15210c62c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2a9eeaa94de6250cb5669a374e1ac48" id="r_af2a9eeaa94de6250cb5669a374e1ac48"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2a9eeaa94de6250cb5669a374e1ac48">get_view_inverse_relative</a> () const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
 <tr class="separator:af2a9eeaa94de6250cb5669a374e1ac48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd37f1de8a03c724312aaf2d4cd6c2a4" id="r_abd37f1de8a03c724312aaf2d4cd6c2a4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd37f1de8a03c724312aaf2d4cd6c2a4">get_prev_view</a> () const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
+<tr class="memdesc:abd37f1de8a03c724312aaf2d4cd6c2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The matrices the PREVIOUS frame rendered with - the complete set, mirroring the current-side convention (unsuffixed = jittered, _unjittered explicit):  <br /></td></tr>
+<tr class="separator:abd37f1de8a03c724312aaf2d4cd6c2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33ba255a2ecc0cf19b41cb6108e3900" id="r_ae33ba255a2ecc0cf19b41cb6108e3900"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae33ba255a2ecc0cf19b41cb6108e3900">get_prev_projection</a> () const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;</td></tr>
+<tr class="separator:ae33ba255a2ecc0cf19b41cb6108e3900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d49be97919fee582363dac56eca45a" id="r_a61d49be97919fee582363dac56eca45a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61d49be97919fee582363dac56eca45a">get_prev_projection_unjittered</a> () const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td></tr>
+<tr class="separator:a61d49be97919fee582363dac56eca45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c9574455a887aafd99c65992a32e1e" id="r_a29c9574455a887aafd99c65992a32e1e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29c9574455a887aafd99c65992a32e1e">get_prev_view_projection</a> () const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td></tr>
-<tr class="memdesc:a29c9574455a887aafd99c65992a32e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the previous view matrix.  <br /></td></tr>
 <tr class="separator:a29c9574455a887aafd99c65992a32e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bff491099a8e1a5da090caf0aaa2ea0" id="r_a9bff491099a8e1a5da090caf0aaa2ea0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bff491099a8e1a5da090caf0aaa2ea0">get_prev_view_projection_relative</a> () const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td></tr>
-<tr class="separator:a9bff491099a8e1a5da090caf0aaa2ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f8abae7afd0b65010f8b8e51271a1f" id="r_a25f8abae7afd0b65010f8b8e51271a1f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25f8abae7afd0b65010f8b8e51271a1f">get_taa_prev_view_projection</a> () const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td></tr>
-<tr class="memdesc:a25f8abae7afd0b65010f8b8e51271a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">View-projection used for the previous rendered frame (before the latest jitter sample).  <br /></td></tr>
-<tr class="separator:a25f8abae7afd0b65010f8b8e51271a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633dbeef1b8838a0555728e216d34730" id="r_a633dbeef1b8838a0555728e216d34730"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a633dbeef1b8838a0555728e216d34730">get_prev_view_projection_unjittered</a> () const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td></tr>
+<tr class="separator:a633dbeef1b8838a0555728e216d34730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311644d21f259c0078c51c88fffe903b" id="r_a311644d21f259c0078c51c88fffe903b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a311644d21f259c0078c51c88fffe903b">get_prev_view_projection_relative_unjittered</a> () const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td></tr>
+<tr class="memdesc:a311644d21f259c0078c51c88fffe903b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera-RELATIVE previous view-projection (previous rotation-only view x the UNJITTERED previous projection), for camera-relative passes (clouds). Derived from the absolute pair by dropping the view translation - valid because the view is rigid (lookAt), so its rotation-only form IS the relative view. Total.  <br /></td></tr>
+<tr class="separator:a311644d21f259c0078c51c88fffe903b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a43c71d57ec5e77f9f0d6b28daf9b3" id="r_ae3a43c71d57ec5e77f9f0d6b28daf9b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3a43c71d57ec5e77f9f0d6b28daf9b3">record_current_matrices</a> ()</td></tr>
+<tr class="memdesc:ae3a43c71d57ec5e77f9f0d6b28daf9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records the matrices THIS frame renders with; last frame's recording becomes the get_prev_* set. Called by the pipeline once per rendered frame, immediately after the frame's jitter is applied (so both the jittered and unjittered current pairs are final) - NOT from before-render code, where the frame's jitter does not exist yet and pipeline-only cameras (probe faces, tools) would be missed. Frame-stamped internally: repeated calls within one render frame are no-ops.  <br /></td></tr>
+<tr class="separator:ae3a43c71d57ec5e77f9f0d6b28daf9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8cfa3d6e86971c517a3940eccfd8963" id="r_ad8cfa3d6e86971c517a3940eccfd8963"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8cfa3d6e86971c517a3940eccfd8963">get_view_projection</a> () const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td></tr>
 <tr class="memdesc:ad8cfa3d6e86971c517a3940eccfd8963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current view-projection matrix.  <br /></td></tr>
 <tr class="separator:ad8cfa3d6e86971c517a3940eccfd8963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b74b52480258813ade8b6dcaa11b8bf" id="r_a9b74b52480258813ade8b6dcaa11b8bf"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b74b52480258813ade8b6dcaa11b8bf">get_view_projection_unjittered</a> () const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td></tr>
+<tr class="separator:a9b74b52480258813ade8b6dcaa11b8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a099ff43aa758d9fdf440c8224f04eded" id="r_a099ff43aa758d9fdf440c8224f04eded"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a099ff43aa758d9fdf440c8224f04eded">get_view_projection_relative</a> () const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td></tr>
 <tr class="separator:a099ff43aa758d9fdf440c8224f04eded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a43c71d57ec5e77f9f0d6b28daf9b3" id="r_ae3a43c71d57ec5e77f9f0d6b28daf9b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3a43c71d57ec5e77f9f0d6b28daf9b3">record_current_matrices</a> ()</td></tr>
-<tr class="memdesc:ae3a43c71d57ec5e77f9f0d6b28daf9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a copy of the current view and projection matrices before they are changed.  <br /></td></tr>
-<tr class="separator:ae3a43c71d57ec5e77f9f0d6b28daf9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25f3ee9a83c158b1fc0599e0f7a135c" id="r_aa25f3ee9a83c158b1fc0599e0f7a135c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa25f3ee9a83c158b1fc0599e0f7a135c">set_aa_data</a> (const <a class="el" href="core_2base_2basetypes_8hpp.html#a0d2fefde2689bfaa44a3488a02179057">usize32_t</a> &amp;viewport_size, std::uint32_t temporal_frame_index, std::uint32_t temporal_aa_samples, <a class="el" href="namespaceunravel.html#a4f4e01842769b1a374842efcbcd233b9">taa_jitter_mode</a> jitter_mode=<a class="el" href="namespaceunravel.html#a4f4e01842769b1a374842efcbcd233b9a8ac97eba71c3f59aef197df5f7b1a54c">taa_jitter_mode::progressive_golden</a>, float jitter_amplitude=1.0f, float jitter_temporal_phase_scale=1.0f)</td></tr>
-<tr class="memdesc:aa25f3ee9a83c158b1fc0599e0f7a135c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current jitter value for temporal anti-aliasing.  <br /></td></tr>
-<tr class="separator:aa25f3ee9a83c158b1fc0599e0f7a135c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e85d7fb6f99082efd77df3f5e016330" id="r_a8e85d7fb6f99082efd77df3f5e016330"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e85d7fb6f99082efd77df3f5e016330">set_aa_data</a> (const <a class="el" href="core_2base_2basetypes_8hpp.html#a0d2fefde2689bfaa44a3488a02179057">usize32_t</a> &amp;viewport_size, std::uint32_t temporal_frame_index, std::uint32_t temporal_aa_samples, float jitter_amplitude=1.0f)</td></tr>
+<tr class="memdesc:a8e85d7fb6f99082efd77df3f5e016330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current jitter value for temporal anti-aliasing.  <br /></td></tr>
+<tr class="separator:a8e85d7fb6f99082efd77df3f5e016330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeb4fda9e78988fe827c4d238b611841" id="r_afeb4fda9e78988fe827c4d238b611841"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afeb4fda9e78988fe827c4d238b611841">get_aa_data</a> () const -&gt; const math::vec4 &amp;</td></tr>
 <tr class="memdesc:afeb4fda9e78988fe827c4d238b611841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the anti-aliasing data.  <br /></td></tr>
 <tr class="separator:afeb4fda9e78988fe827c4d238b611841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc476c9c6869fbf977e085c468e0ef94" id="r_acc476c9c6869fbf977e085c468e0ef94"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc476c9c6869fbf977e085c468e0ef94">classify_aabb</a> (const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;bounds) const -&gt; <a class="el" href="namespacemath.html#ac7dea730150bc80b3eba8a7a75611554">math::volume_query</a></td></tr>
+<tr class="memitem:acc476c9c6869fbf977e085c468e0ef94" id="r_acc476c9c6869fbf977e085c468e0ef94"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc476c9c6869fbf977e085c468e0ef94">classify_aabb</a> (const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;<a class="el" href="native__scene_8cpp.html#a3199d7cdcf349c5025f68ae151954ebc">bounds</a>) const -&gt; <a class="el" href="namespacemath.html#ac7dea730150bc80b3eba8a7a75611554">math::volume_query</a></td></tr>
 <tr class="memdesc:acc476c9c6869fbf977e085c468e0ef94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the specified AABB falls within the frustum.  <br /></td></tr>
 <tr class="separator:acc476c9c6869fbf977e085c468e0ef94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82d3bebe595e62f49a805c4ab44a05f1" id="r_a82d3bebe595e62f49a805c4ab44a05f1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82d3bebe595e62f49a805c4ab44a05f1">test_aabb</a> (const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;bounds) const -&gt; bool</td></tr>
+<tr class="memitem:a82d3bebe595e62f49a805c4ab44a05f1" id="r_a82d3bebe595e62f49a805c4ab44a05f1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82d3bebe595e62f49a805c4ab44a05f1">test_aabb</a> (const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;<a class="el" href="native__scene_8cpp.html#a3199d7cdcf349c5025f68ae151954ebc">bounds</a>) const -&gt; bool</td></tr>
 <tr class="memdesc:a82d3bebe595e62f49a805c4ab44a05f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if the specified AABB is within the frustum.  <br /></td></tr>
 <tr class="separator:a82d3bebe595e62f49a805c4ab44a05f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e366f2fbaa57973ac7769babe38f8b" id="r_a20e366f2fbaa57973ac7769babe38f8b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20e366f2fbaa57973ac7769babe38f8b">classify_obb</a> (const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;bounds, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;t) const -&gt; <a class="el" href="namespacemath.html#ac7dea730150bc80b3eba8a7a75611554">math::volume_query</a></td></tr>
+<tr class="memitem:a20e366f2fbaa57973ac7769babe38f8b" id="r_a20e366f2fbaa57973ac7769babe38f8b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20e366f2fbaa57973ac7769babe38f8b">classify_obb</a> (const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;<a class="el" href="native__scene_8cpp.html#a3199d7cdcf349c5025f68ae151954ebc">bounds</a>, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;t) const -&gt; <a class="el" href="namespacemath.html#ac7dea730150bc80b3eba8a7a75611554">math::volume_query</a></td></tr>
 <tr class="memdesc:a20e366f2fbaa57973ac7769babe38f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the specified OBB is within the frustum.  <br /></td></tr>
 <tr class="separator:a20e366f2fbaa57973ac7769babe38f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e01dadb0ceb34034920691eb0d6ef7b" id="r_a2e01dadb0ceb34034920691eb0d6ef7b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e01dadb0ceb34034920691eb0d6ef7b">test_obb</a> (const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;bounds, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;t) const -&gt; bool</td></tr>
+<tr class="memitem:a2e01dadb0ceb34034920691eb0d6ef7b" id="r_a2e01dadb0ceb34034920691eb0d6ef7b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e01dadb0ceb34034920691eb0d6ef7b">test_obb</a> (const <a class="el" href="structmath_1_1bbox.html">math::bbox</a> &amp;<a class="el" href="native__scene_8cpp.html#a3199d7cdcf349c5025f68ae151954ebc">bounds</a>, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;t) const -&gt; bool</td></tr>
 <tr class="memdesc:a2e01dadb0ceb34034920691eb0d6ef7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if the specified OBB is within the frustum.  <br /></td></tr>
 <tr class="separator:a2e01dadb0ceb34034920691eb0d6ef7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a864522c9dda46b4827e5d3f68800a52d" id="r_a864522c9dda46b4827e5d3f68800a52d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a864522c9dda46b4827e5d3f68800a52d">test_billboard</a> (float <a class="el" href="structsize.html">size</a>, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;t) const -&gt; bool</td></tr>
@@ -247,9 +252,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a29530b6a861b5179fd63ba2db7dde5ef" id="r_a29530b6a861b5179fd63ba2db7dde5ef"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29530b6a861b5179fd63ba2db7dde5ef">viewport_to_ray</a> (const math::vec2 &amp;<a class="el" href="structpoint.html">point</a>, math::vec3 &amp;vec_ray_start, math::vec3 &amp;vec_ray_dir) const -&gt; bool</td></tr>
 <tr class="memdesc:a29530b6a861b5179fd63ba2db7dde5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the specified screen position into a ray origin and direction vector.  <br /></td></tr>
 <tr class="separator:a29530b6a861b5179fd63ba2db7dde5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a267e4a3538b1790d43d9f044e2a3dc3e" id="r_a267e4a3538b1790d43d9f044e2a3dc3e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a267e4a3538b1790d43d9f044e2a3dc3e">viewport_to_world</a> (const math::vec2 &amp;<a class="el" href="structpoint.html">point</a>, const <a class="el" href="structmath_1_1plane.html">math::plane</a> &amp;plane, math::vec3 &amp;position_out, bool clip) const -&gt; bool</td></tr>
+<tr class="memitem:a267e4a3538b1790d43d9f044e2a3dc3e" id="r_a267e4a3538b1790d43d9f044e2a3dc3e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a267e4a3538b1790d43d9f044e2a3dc3e">viewport_to_world</a> (const math::vec2 &amp;<a class="el" href="structpoint.html">point</a>, const <a class="el" href="structmath_1_1plane.html">math::plane</a> &amp;plane, math::vec3 &amp;position_out, bool <a class="el" href="namespaceunravel.html#a8dd2c638eb13e83a86c9b6d1e4359930af6d8b886335927d46fad323c60335d09">clip</a>) const -&gt; bool</td></tr>
 <tr class="memdesc:a267e4a3538b1790d43d9f044e2a3dc3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a screen position into a world space position on the specified plane.  <br /></td></tr>
 <tr class="separator:a267e4a3538b1790d43d9f044e2a3dc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abadc74c8bef654ce8851b56cdd5365b1" id="r_abadc74c8bef654ce8851b56cdd5365b1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abadc74c8bef654ce8851b56cdd5365b1">viewport_to_world_at_depth</a> (const math::vec2 &amp;<a class="el" href="structpoint.html">point</a>, float <a class="el" href="namespaceunravel.html#a191a63b32b3f3238e4d0dccf4e04f48ea12a055bf01a31369fe81ac35d85c7bc1">depth</a>, math::vec3 &amp;position_out) const -&gt; bool</td></tr>
+<tr class="memdesc:abadc74c8bef654ce8851b56cdd5365b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a screen position and a depth into a world space position.  <br /></td></tr>
+<tr class="separator:abadc74c8bef654ce8851b56cdd5365b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2f5ec18ebeac12eb360ec5116b65421" id="r_ad2f5ec18ebeac12eb360ec5116b65421"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2f5ec18ebeac12eb360ec5116b65421">project_to_quad</a> (const math::vec2 &amp;viewport_point, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;quad_transform, uint32_t quad_width, uint32_t quad_height, math::vec2 &amp;pixel_out) const -&gt; bool</td></tr>
 <tr class="memdesc:ad2f5ec18ebeac12eb360ec5116b65421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raycasts from viewport point onto a quad plane and returns pixel coordinates.  <br /></td></tr>
 <tr class="separator:ad2f5ec18ebeac12eb360ec5116b65421"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,19 +270,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab825b46fe3fe1f3bd17201e845171eb3" id="r_ab825b46fe3fe1f3bd17201e845171eb3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab825b46fe3fe1f3bd17201e845171eb3">viewport_to_camera</a> (const math::vec3 &amp;<a class="el" href="structpoint.html">point</a>, math::vec3 &amp;position_out) const -&gt; bool</td></tr>
 <tr class="memdesc:ab825b46fe3fe1f3bd17201e845171eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a screen position into a camera space position at the near plane.  <br /></td></tr>
 <tr class="separator:ab825b46fe3fe1f3bd17201e845171eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb7731c30286b097c5c3774ac5108e65" id="r_acb7731c30286b097c5c3774ac5108e65"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb7731c30286b097c5c3774ac5108e65">world_to_viewport</a> (const math::vec3 &amp;pos) const -&gt; math::vec3</td></tr>
+<tr class="memitem:acb7731c30286b097c5c3774ac5108e65" id="r_acb7731c30286b097c5c3774ac5108e65"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb7731c30286b097c5c3774ac5108e65">world_to_viewport</a> (const math::vec3 &amp;<a class="el" href="content__browser__item_8cpp.html#aba51aa24c69040654dac3633fe41394d">pos</a>) const -&gt; math::vec3</td></tr>
 <tr class="memdesc:acb7731c30286b097c5c3774ac5108e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a point from world space into screen space.  <br /></td></tr>
 <tr class="separator:acb7731c30286b097c5c3774ac5108e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d312b534c1d8824a5fa5fb0eab8e60" id="r_a93d312b534c1d8824a5fa5fb0eab8e60"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93d312b534c1d8824a5fa5fb0eab8e60">world_to_view_depth</a> (const math::vec3 &amp;<a class="el" href="content__browser__item_8cpp.html#aba51aa24c69040654dac3633fe41394d">pos</a>) const -&gt; float</td></tr>
+<tr class="memdesc:a93d312b534c1d8824a5fa5fb0eab8e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance of a world point in front of the camera along its view direction.  <br /></td></tr>
+<tr class="separator:a93d312b534c1d8824a5fa5fb0eab8e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a959989ab58ef1b1d8d27f91cf17e5624" id="r_a959989ab58ef1b1d8d27f91cf17e5624"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a959989ab58ef1b1d8d27f91cf17e5624">estimate_zoom_factor</a> (const <a class="el" href="structmath_1_1plane.html">math::plane</a> &amp;plane) const -&gt; float</td></tr>
 <tr class="memdesc:a959989ab58ef1b1d8d27f91cf17e5624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the zoom factor based on the specified plane.  <br /></td></tr>
 <tr class="separator:a959989ab58ef1b1d8d27f91cf17e5624"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a281911dae85810a37b52a80a68a78a93" id="r_a281911dae85810a37b52a80a68a78a93"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a281911dae85810a37b52a80a68a78a93">estimate_zoom_factor</a> (const math::vec3 &amp;<a class="el" href="defaults_8cpp.html#a55bc5b9b40c7f612c8f73e5d3acfab00">position</a>) const -&gt; float</td></tr>
+<tr class="memitem:a281911dae85810a37b52a80a68a78a93" id="r_a281911dae85810a37b52a80a68a78a93"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a281911dae85810a37b52a80a68a78a93">estimate_zoom_factor</a> (const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ac66edcab862b65e1d49ce97f9c74690c">position</a>) const -&gt; float</td></tr>
 <tr class="memdesc:a281911dae85810a37b52a80a68a78a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the zoom factor based on the specified position.  <br /></td></tr>
 <tr class="separator:a281911dae85810a37b52a80a68a78a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8cfbd175af490e0dba0aedbfc67289" id="r_a5c8cfbd175af490e0dba0aedbfc67289"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c8cfbd175af490e0dba0aedbfc67289">estimate_zoom_factor</a> (const <a class="el" href="structmath_1_1plane.html">math::plane</a> &amp;plane, float maximum_value) const -&gt; float</td></tr>
 <tr class="memdesc:a5c8cfbd175af490e0dba0aedbfc67289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the zoom factor based on the specified plane, constrained by a maximum value.  <br /></td></tr>
 <tr class="separator:a5c8cfbd175af490e0dba0aedbfc67289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec58d708076e44519ee3119328a11ff6" id="r_aec58d708076e44519ee3119328a11ff6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec58d708076e44519ee3119328a11ff6">estimate_zoom_factor</a> (const math::vec3 &amp;<a class="el" href="defaults_8cpp.html#a55bc5b9b40c7f612c8f73e5d3acfab00">position</a>, float maximum_value) const -&gt; float</td></tr>
+<tr class="memitem:aec58d708076e44519ee3119328a11ff6" id="r_aec58d708076e44519ee3119328a11ff6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec58d708076e44519ee3119328a11ff6">estimate_zoom_factor</a> (const math::vec3 &amp;<a class="el" href="native__scene_8cpp.html#ac66edcab862b65e1d49ce97f9c74690c">position</a>, float maximum_value) const -&gt; float</td></tr>
 <tr class="memdesc:aec58d708076e44519ee3119328a11ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the zoom factor based on the specified position, constrained by a maximum value.  <br /></td></tr>
 <tr class="separator:aec58d708076e44519ee3119328a11ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa277f7fd78e01cb451b0adf3ec97c2d1" id="r_aa277f7fd78e01cb451b0adf3ec97c2d1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa277f7fd78e01cb451b0adf3ec97c2d1">estimate_pick_tolerance</a> (float pixel_tolerance, const math::vec3 &amp;reference_position, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;object_transform) const -&gt; math::vec3</td></tr>
@@ -283,7 +294,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3852ab9454e3b867701c3d1bf6ecbef8" id="r_a3852ab9454e3b867701c3d1bf6ecbef8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3852ab9454e3b867701c3d1bf6ecbef8">look_at</a> (const math::vec3 &amp;eye, const math::vec3 &amp;at)</td></tr>
 <tr class="memdesc:a3852ab9454e3b867701c3d1bf6ecbef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the camera to look at a specified target.  <br /></td></tr>
 <tr class="separator:a3852ab9454e3b867701c3d1bf6ecbef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aa883b36f3cfeb13c53fed57b6ba5b8" id="r_a8aa883b36f3cfeb13c53fed57b6ba5b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8aa883b36f3cfeb13c53fed57b6ba5b8">look_at</a> (const math::vec3 &amp;eye, const math::vec3 &amp;at, const math::vec3 &amp;up)</td></tr>
+<tr class="memitem:a8aa883b36f3cfeb13c53fed57b6ba5b8" id="r_a8aa883b36f3cfeb13c53fed57b6ba5b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8aa883b36f3cfeb13c53fed57b6ba5b8">look_at</a> (const math::vec3 &amp;eye, const math::vec3 &amp;at, const math::vec3 &amp;<a class="el" href="animation__humanoid_8cpp.html#a4a85f8dbb02910ee8123a13858048b69">up</a>)</td></tr>
 <tr class="memdesc:a8aa883b36f3cfeb13c53fed57b6ba5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the camera to look at a specified target with an up vector.  <br /></td></tr>
 <tr class="separator:a8aa883b36f3cfeb13c53fed57b6ba5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5944dfeaefc8dacb83cf48ea85d38b0" id="r_ac5944dfeaefc8dacb83cf48ea85d38b0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5944dfeaefc8dacb83cf48ea85d38b0">get_position</a> () const -&gt; const math::vec3 &amp;</td></tr>
@@ -309,14 +320,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab683d0fb45aa6614305adeeb675d3f85 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab800b944cafcf43c8407e27d0c785300 inherit pub_methods_structcrtp__meta__type" id="r_ab800b944cafcf43c8407e27d0c785300"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#ab800b944cafcf43c8407e27d0c785300">is</a> () const -&gt; bool</td></tr>
 <tr class="separator:ab800b944cafcf43c8407e27d0c785300 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type" id="r_a85fd8cca6ee7590180c1d6b985292a98"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a85fd8cca6ee7590180c1d6b985292a98">is</a> (const entt::meta_type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) const -&gt; bool</td></tr>
+<tr class="memitem:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type" id="r_a85fd8cca6ee7590180c1d6b985292a98"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a85fd8cca6ee7590180c1d6b985292a98">is</a> (const entt::meta_type &amp;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) const -&gt; bool</td></tr>
 <tr class="separator:a85fd8cca6ee7590180c1d6b985292a98 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497e565cd9d212ea0579b9d6488a07a1 inherit pub_methods_structcrtp__meta__type" id="r_a497e565cd9d212ea0579b9d6488a07a1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a497e565cd9d212ea0579b9d6488a07a1">safe_cast</a> () -&gt; U *</td></tr>
+<tr class="separator:a497e565cd9d212ea0579b9d6488a07a1 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cba72d8d171229c304e39cede5570d9 inherit pub_methods_structcrtp__meta__type" id="r_a9cba72d8d171229c304e39cede5570d9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a9cba72d8d171229c304e39cede5570d9">safe_cast</a> () const -&gt; const U *</td></tr>
+<tr class="separator:a9cba72d8d171229c304e39cede5570d9 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a960687703825bbc6a1b6b452a517b2 inherit pub_methods_structcrtp__meta__type" id="r_a7a960687703825bbc6a1b6b452a517b2"><td class="memItemLeft" align="right" valign="top">virtual auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrtp__meta__type.html#a7a960687703825bbc6a1b6b452a517b2">as_derived</a> () -&gt; entt::meta_any</td></tr>
 <tr class="separator:a7a960687703825bbc6a1b6b452a517b2 inherit pub_methods_structcrtp__meta__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6eecbe732f9de86cff40f3d1a06b2b45" id="r_a6eecbe732f9de86cff40f3d1a06b2b45"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eecbe732f9de86cff40f3d1a06b2b45">get_face_camera</a> (std::uint32_t face, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;transform) -&gt; <a class="el" href="classunravel_1_1camera.html">camera</a></td></tr>
+<tr class="memitem:a6eecbe732f9de86cff40f3d1a06b2b45" id="r_a6eecbe732f9de86cff40f3d1a06b2b45"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eecbe732f9de86cff40f3d1a06b2b45">get_face_camera</a> (std::uint32_t face, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a36f502dd44cde6d957113723e5e2bbd1">transform</a>) -&gt; <a class="el" href="classunravel_1_1camera.html">camera</a></td></tr>
 <tr class="memdesc:a6eecbe732f9de86cff40f3d1a06b2b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a camera for one of six cube faces.  <br /></td></tr>
 <tr class="separator:a6eecbe732f9de86cff40f3d1a06b2b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_structcrtp__meta__type"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_structcrtp__meta__type')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="structcrtp__meta__type.html">crtp_meta_type&lt; camera &gt;</a></td></tr>
@@ -340,19 +355,22 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a7a829dc3193a110485beceb5c8f410d2" id="r_a7a829dc3193a110485beceb5c8f410d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a829dc3193a110485beceb5c8f410d2">projection_</a></td></tr>
 <tr class="memdesc:a7a829dc3193a110485beceb5c8f410d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached projection matrix.  <br /></td></tr>
 <tr class="separator:a7a829dc3193a110485beceb5c8f410d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812241305ef29626b4ca371576d22472" id="r_a812241305ef29626b4ca371576d22472"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a812241305ef29626b4ca371576d22472">last_view_</a></td></tr>
-<tr class="memdesc:a812241305ef29626b4ca371576d22472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached "previous" view matrix.  <br /></td></tr>
-<tr class="separator:a812241305ef29626b4ca371576d22472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3fb671445c0ea8a585f9e3ffbf6e5cb" id="r_ab3fb671445c0ea8a585f9e3ffbf6e5cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3fb671445c0ea8a585f9e3ffbf6e5cb">last_view_relative_</a></td></tr>
-<tr class="separator:ab3fb671445c0ea8a585f9e3ffbf6e5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6794a032e1b1321660120f542e0907e" id="r_ae6794a032e1b1321660120f542e0907e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6794a032e1b1321660120f542e0907e">last_projection_</a></td></tr>
-<tr class="memdesc:ae6794a032e1b1321660120f542e0907e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached "previous" projection matrix.  <br /></td></tr>
-<tr class="separator:ae6794a032e1b1321660120f542e0907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21c34e87f69a074bd1fbe32a2f145c0e" id="r_a21c34e87f69a074bd1fbe32a2f145c0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21c34e87f69a074bd1fbe32a2f145c0e">taa_prev_view_</a></td></tr>
-<tr class="memdesc:a21c34e87f69a074bd1fbe32a2f145c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Snapshot for temporal reprojection: view/projection before advancing jitter (see set_aa_data).  <br /></td></tr>
-<tr class="separator:a21c34e87f69a074bd1fbe32a2f145c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5bd35f025c0dc946e2ff879d37462ca" id="r_ae5bd35f025c0dc946e2ff879d37462ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5bd35f025c0dc946e2ff879d37462ca">taa_prev_projection_</a></td></tr>
-<tr class="separator:ae5bd35f025c0dc946e2ff879d37462ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ddff78ed453ff0e641f6768e85a6d64" id="r_a9ddff78ed453ff0e641f6768e85a6d64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ddff78ed453ff0e641f6768e85a6d64">prev_view_</a></td></tr>
+<tr class="separator:a9ddff78ed453ff0e641f6768e85a6d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f8c3f3d9fa721a1e24b07b0cae295a" id="r_ae2f8c3f3d9fa721a1e24b07b0cae295a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f8c3f3d9fa721a1e24b07b0cae295a">prev_projection_</a></td></tr>
+<tr class="separator:ae2f8c3f3d9fa721a1e24b07b0cae295a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e028bafec9ce9f19ce89dea08f75b0" id="r_a04e028bafec9ce9f19ce89dea08f75b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04e028bafec9ce9f19ce89dea08f75b0">prev_projection_unjittered_</a></td></tr>
+<tr class="separator:a04e028bafec9ce9f19ce89dea08f75b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960f686298d2f4859f82d27acdbeb267" id="r_a960f686298d2f4859f82d27acdbeb267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a960f686298d2f4859f82d27acdbeb267">frame_view_</a></td></tr>
+<tr class="separator:a960f686298d2f4859f82d27acdbeb267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1640013c43091a5d40195eb2938189" id="r_a9c1640013c43091a5d40195eb2938189"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c1640013c43091a5d40195eb2938189">frame_projection_</a></td></tr>
+<tr class="separator:a9c1640013c43091a5d40195eb2938189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec84efef938a298f44ffccc7ed047dd7" id="r_aec84efef938a298f44ffccc7ed047dd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec84efef938a298f44ffccc7ed047dd7">frame_projection_unjittered_</a></td></tr>
+<tr class="separator:aec84efef938a298f44ffccc7ed047dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ebe2d01a5406c8dad8e5687aad0686d" id="r_a2ebe2d01a5406c8dad8e5687aad0686d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ebe2d01a5406c8dad8e5687aad0686d">prev_matrices_valid_</a> = false</td></tr>
+<tr class="separator:a2ebe2d01a5406c8dad8e5687aad0686d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbaca78569eedb1b8b300cb8795d8b1" id="r_a7bbaca78569eedb1b8b300cb8795d8b1"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bbaca78569eedb1b8b300cb8795d8b1">prev_record_frame_</a> = 0xFFFFFFFFu</td></tr>
+<tr class="separator:a7bbaca78569eedb1b8b300cb8795d8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e717cb15b1de3e52a5ec743e4e983c4" id="r_a5e717cb15b1de3e52a5ec743e4e983c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmath_1_1frustum.html">math::frustum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e717cb15b1de3e52a5ec743e4e983c4">frustum_</a></td></tr>
 <tr class="memdesc:a5e717cb15b1de3e52a5ec743e4e983c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Details regarding the camera frustum.  <br /></td></tr>
 <tr class="separator:a5e717cb15b1de3e52a5ec743e4e983c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -405,7 +423,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class representing a camera. Contains functionality for manipulating and updating a camera. It should not be used as a standalone class - see <a class="el" href="classunravel_1_1camera__component.html" title="Class that contains core camera data, used for rendering and other purposes.">camera_component</a> and the entity system. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00061">61</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00034">34</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acc476c9c6869fbf977e085c468e0ef94" name="acc476c9c6869fbf977e085c468e0ef94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc476c9c6869fbf977e085c468e0ef94">&#9670;&#160;</a></span>classify_aabb()</h2>
@@ -431,7 +449,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result of the volume query. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00424">424</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00461">461</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -464,7 +482,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result of the volume query. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00442">442</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00479">479</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -503,7 +521,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The estimated pick tolerance. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00745">745</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00812">812</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -531,7 +549,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The estimated zoom factor. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00675">675</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00742">742</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -564,7 +582,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The estimated zoom factor. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00708">708</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00775">775</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -593,7 +611,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The estimated zoom factor. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00703">703</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00770">770</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -626,7 +644,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The estimated zoom factor. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00728">728</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00795">795</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -648,7 +666,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the anti-aliasing data. </p>
 <dl class="section return"><dt>Returns</dt><dd>The anti-aliasing data. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00858">858</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00895">895</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -670,7 +688,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the aspect ratio used to generate the horizontal FOV angle. </p>
 <dl class="section return"><dt>Returns</dt><dd>The aspect ratio. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00185">185</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00189">189</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -692,7 +710,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the frustum representing the space between the camera position and its near plane. </p>
 <dl class="section return"><dt>Returns</dt><dd>The clipping volume frustum. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00412">412</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00449">449</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -733,7 +751,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The corresponding face camera. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00872">872</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00909">909</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -755,7 +773,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the distance from the camera to the far clip plane. </p>
 <dl class="section return"><dt>Returns</dt><dd>The far clip distance. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00069">69</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00073">73</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -777,7 +795,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the current field of view angle in degrees. </p>
 <dl class="section return"><dt>Returns</dt><dd>The field of view angle. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00059">59</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00063">63</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -799,7 +817,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the current camera object frustum. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current frustum. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00372">372</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00409">409</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -821,7 +839,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the bounding box of this object. </p>
 <dl class="section return"><dt>Returns</dt><dd>The local bounding box. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00147">147</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00151">151</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -843,7 +861,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the distance from the camera to the near clip plane. </p>
 <dl class="section return"><dt>Returns</dt><dd>The near clip distance. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00064">64</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00068">68</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -865,7 +883,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the orthographic size. </p>
 <dl class="section return"><dt>Returns</dt><dd>The orthographic size. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00074">74</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00078">78</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -887,7 +905,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the current position of the camera. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current camera position. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00353">353</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00390">390</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -928,7 +946,26 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00273">273</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00323">323</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a61d49be97919fee582363dac56eca45a" name="a61d49be97919fee582363dac56eca45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d49be97919fee582363dac56eca45a">&#9670;&#160;</a></span>get_prev_projection_unjittered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::camera::get_prev_projection_unjittered </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00328">328</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -947,7 +984,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00283">283</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>The matrices the PREVIOUS frame rendered with - the complete set, mirroring the current-side convention (unsuffixed = jittered, _unjittered explicit): </p>
+<p>current | previous get_view | get_prev_view get_projection (jittered) | get_prev_projection (jittered) get_projection_unjittered | get_prev_projection_unjittered get_view_projection (jittered) | get_prev_view_projection (jittered) get_view_projection_unjittered | get_prev_view_projection_unjittered</p>
+<p>Recorded by <a class="el" href="#ae3a43c71d57ec5e77f9f0d6b28daf9b3" title="Records the matrices THIS frame renders with; last frame&#39;s recording becomes the get_prev_* set....">record_current_matrices()</a>, which the pipeline calls once per rendered frame AFTER applying the frame's jitter (frame-stamped: a camera rendered more than once per frame cannot collapse the previous pair onto the current one).</p>
+<p>Temporal reprojection consumers take get_prev_view_projection_unjittered: the history is the resolved, pixel-center-aligned image, so unprojecting the current pixel with the jittered current matrices and reprojecting with the UNJITTERED previous pair yields the correct history UV under camera motion (standard TAA formulation). The jittered variants exist for completeness and rasterization- aligned uses.</p>
+<p>All getters are TOTAL: on a camera never recorded they report the CURRENT matrices ("previous == current", zero motion) instead of default-constructed identity, so a consumer at worst treats the frame as fresh. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00318">318</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -966,21 +1009,18 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the previous view matrix. </p>
-<dl class="section return"><dt>Returns</dt><dd>The previous view matrix. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00313">313</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00335">335</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a9bff491099a8e1a5da090caf0aaa2ea0" name="a9bff491099a8e1a5da090caf0aaa2ea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bff491099a8e1a5da090caf0aaa2ea0">&#9670;&#160;</a></span>get_prev_view_projection_relative()</h2>
+<a id="a311644d21f259c0078c51c88fffe903b" name="a311644d21f259c0078c51c88fffe903b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311644d21f259c0078c51c88fffe903b">&#9670;&#160;</a></span>get_prev_view_projection_relative_unjittered()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::camera::get_prev_view_projection_relative </td>
+          <td class="memname">auto unravel::camera::get_prev_view_projection_relative_unjittered </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td>
@@ -988,26 +1028,28 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00328">328</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p>Camera-RELATIVE previous view-projection (previous rotation-only view x the UNJITTERED previous projection), for camera-relative passes (clouds). Derived from the absolute pair by dropping the view translation - valid because the view is rigid (lookAt), so its rotation-only form IS the relative view. Total. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00352">352</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a2eefd5db09d895ff35bb5f15210c62c2" name="a2eefd5db09d895ff35bb5f15210c62c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eefd5db09d895ff35bb5f15210c62c2">&#9670;&#160;</a></span>get_prev_view_relative()</h2>
+<a id="a633dbeef1b8838a0555728e216d34730" name="a633dbeef1b8838a0555728e216d34730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a633dbeef1b8838a0555728e216d34730">&#9670;&#160;</a></span>get_prev_view_projection_unjittered()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::camera::get_prev_view_relative </td>
+          <td class="memname">auto unravel::camera::get_prev_view_projection_unjittered </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a>&amp;</td>
+          <td> const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00293">293</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00340">340</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1071,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the current projection matrix. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current projection matrix. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00205">205</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00209">209</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1051,18 +1093,18 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the current projection mode for this camera. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current projection mode. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00054">54</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00058">58</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a25f8abae7afd0b65010f8b8e51271a1f" name="a25f8abae7afd0b65010f8b8e51271a1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25f8abae7afd0b65010f8b8e51271a1f">&#9670;&#160;</a></span>get_taa_prev_view_projection()</h2>
+<a id="a4bca723be7f4a1221c149b3f95550a2b" name="a4bca723be7f4a1221c149b3f95550a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bca723be7f4a1221c149b3f95550a2b">&#9670;&#160;</a></span>get_projection_unjittered()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::camera::get_taa_prev_view_projection </td>
+          <td class="memname">auto unravel::camera::get_projection_unjittered </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td>
@@ -1070,10 +1112,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>View-projection used for the previous rendered frame (before the latest jitter sample). </p>
-<p>Updated inside <a class="el" href="#aa25f3ee9a83c158b1fc0599e0f7a135c" title="Sets the current jitter value for temporal anti-aliasing.">set_aa_data()</a>; use for temporal reprojection (TAA) so history aligns with jittered projection. </p>
+<p>The current projection with the TAA subpixel jitter subtracted back out. </p>
+<p><a class="el" href="#a5523ea9d4eb6dc6d15ae1545bf36bc2b" title="Retrieves the current projection matrix.">get_projection()</a> carries the jitter <a class="el" href="#a8e85d7fb6f99082efd77df3f5e016330" title="Sets the current jitter value for temporal anti-aliasing.">set_aa_data()</a> injected, which is correct for rasterization but poison for any pass that reconstructs world positions from the inverse view-projection: the sub-pixel wobble times the ray's lever arm becomes a world-space sweep marching to the jitter sequence (measured as mirror shimmer in the GI reflection chain). Such passes take this matrix instead; with TAA off the two are identical. </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00318">318</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00278">278</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1137,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the current view matrix. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current view matrix. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00278">278</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00288">288</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1174,7 +1216,26 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00323">323</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00367">367</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9b74b52480258813ade8b6dcaa11b8bf" name="a9b74b52480258813ade8b6dcaa11b8bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b74b52480258813ade8b6dcaa11b8bf">&#9670;&#160;</a></span>get_view_projection_unjittered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::camera::get_view_projection_unjittered </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00313">313</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1193,7 +1254,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00288">288</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00293">293</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1215,7 +1276,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the position of the viewport. </p>
 <dl class="section return"><dt>Returns</dt><dd>The position of the viewport. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00042">42</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00046">46</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1298,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the size of the viewport. </p>
 <dl class="section return"><dt>Returns</dt><dd>The size of the viewport. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00037">37</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00041">41</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1281,7 +1342,7 @@ Protected Attributes</h2></td></tr>
 <p>Determines if the aspect ratio is currently being updated by the render driver. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the aspect ratio is locked, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00190">190</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00194">194</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1303,7 +1364,7 @@ Protected Attributes</h2></td></tr>
 <p>Checks if the frustum is currently locked. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the frustum is locked, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00195">195</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00199">199</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1391,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00200">200</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00204">204</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1362,7 +1423,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00333">333</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00373">373</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1461,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00338">338</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00378">378</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1452,7 +1513,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the ray hit the quad plane, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00582">582</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00649">649</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1471,14 +1532,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Makes a copy of the current view and projection matrices before they are changed. </p>
+<p>Records the matrices THIS frame renders with; last frame's recording becomes the get_prev_* set. Called by the pipeline once per rendered frame, immediately after the frame's jitter is applied (so both the jittered and unjittered current pairs are final) - NOT from before-render code, where the frame's jitter does not exist yet and pipeline-only cameras (probe faces, tools) would be missed. Frame-stamped internally: repeated calls within one render frame are no-ops. </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00759">759</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00860">860</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aa25f3ee9a83c158b1fc0599e0f7a135c" name="aa25f3ee9a83c158b1fc0599e0f7a135c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa25f3ee9a83c158b1fc0599e0f7a135c">&#9670;&#160;</a></span>set_aa_data()</h2>
+<a id="a8e85d7fb6f99082efd77df3f5e016330" name="a8e85d7fb6f99082efd77df3f5e016330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e85d7fb6f99082efd77df3f5e016330">&#9670;&#160;</a></span>set_aa_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1501,17 +1562,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceunravel.html#a4f4e01842769b1a374842efcbcd233b9">taa_jitter_mode</a></td>          <td class="paramname"><span class="paramname"><em>jitter_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespaceunravel.html#a4f4e01842769b1a374842efcbcd233b9a8ac97eba71c3f59aef197df5f7b1a54c">taa_jitter_mode::progressive_golden</a></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>jitter_amplitude</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>jitter_temporal_phase_scale</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>jitter_amplitude</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1519,17 +1570,15 @@ Protected Attributes</h2></td></tr>
 <p>Sets the current jitter value for temporal anti-aliasing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">viewport_size</td><td>Viewport size (pixels) for scaling jitter into clip space. </td></tr>
-    <tr><td class="paramname">temporal_frame_index</td><td>Monotonic frame counter (e.g. render frame). Drives progressive subpixel jitter (no short-period MSAA-style cycling); avoid large discontinuities. </td></tr>
-    <tr><td class="paramname">temporal_aa_samples</td><td>Values &gt; 1 enable jitter; count is stored for UI / future tuning. </td></tr>
-    <tr><td class="paramname">jitter_mode</td><td>Which subpixel sequence to use (see <code>taa_jitter_mode</code>). </td></tr>
-    <tr><td class="paramname">jitter_amplitude</td><td>Scales raw subpixel offsets before clip scaling; 1 = full ~±½ pixel. Lower values (e.g. 0.5–0.7) reduce visible whole-frame shake at some AA cost. </td></tr>
-    <tr><td class="paramname">jitter_temporal_phase_scale</td><td>Multiplies progression speed for golden / Halton / R2 (1 = legacy). MSAA rotating modes ignore this and advance one subsample per frame. </td></tr>
+    <tr><td class="paramname">viewport_size</td><td>Viewport size (pixels) for scaling jitter into clip space. The jitter is a Halton(2,3) sequence: offsets in [-0.5, 0.5] pixels over a repeating cycle of <code>temporal_aa_samples</code> frames, so every pixel sees the same short, well-spread set of positions.</td></tr>
+    <tr><td class="paramname">temporal_frame_index</td><td>Frame counter (e.g. render frame) that walks the cycle. </td></tr>
+    <tr><td class="paramname">temporal_aa_samples</td><td>Values &gt; 1 enable jitter; the cycle length. </td></tr>
+    <tr><td class="paramname">jitter_amplitude</td><td>Scales raw subpixel offsets before clip scaling; 1 = full +-0.5 pixel, 0 = no jitter. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00767">767</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00827">827</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1561,7 +1610,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00167">167</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00171">171</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1588,7 +1637,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00127">127</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00131">131</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1615,7 +1664,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00079">79</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00083">83</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1642,7 +1691,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00107">107</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00111">111</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1669,7 +1718,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00047">47</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00051">51</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1696,7 +1745,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00093">93</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00097">97</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1723,7 +1772,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00032">32</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00036">36</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1778,7 +1827,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the AABB is within the frustum, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00433">433</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00470">470</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1801,7 +1850,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00460">460</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00497">497</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1834,7 +1883,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the OBB is within the frustum, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00451">451</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00488">488</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1855,7 +1904,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Marks the camera as modified. </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00863">863</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00900">900</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1888,7 +1937,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the conversion is successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00661">661</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00728">728</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1939,7 +1988,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the conversion is successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00618">618</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00685">685</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -1984,7 +2033,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the conversion is successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00610">610</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00677">677</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -2023,7 +2072,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the conversion is successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00497">497</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00538">538</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -2068,7 +2117,74 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the conversion is successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00530">530</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00597">597</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abadc74c8bef654ce8851b56cdd5365b1" name="abadc74c8bef654ce8851b56cdd5365b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abadc74c8bef654ce8851b56cdd5365b1">&#9670;&#160;</a></span>viewport_to_world_at_depth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::camera::viewport_to_world_at_depth </td>
+          <td>(</td>
+          <td class="paramtype">const math::vec2 &amp;</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>depth</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">math::vec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>position_out</em></span>&#160;) const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a screen position and a depth into a world space position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>The screen position. </td></tr>
+    <tr><td class="paramname">depth</td><td>Distance in front of the camera along its view direction (see world_to_view_depth). </td></tr>
+    <tr><td class="paramname">position_out</td><td>The output world space position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>false while the camera has no viewport size. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00577">577</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a93d312b534c1d8824a5fa5fb0eab8e60" name="a93d312b534c1d8824a5fa5fb0eab8e60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93d312b534c1d8824a5fa5fb0eab8e60">&#9670;&#160;</a></span>world_to_view_depth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::camera::world_to_view_depth </td>
+          <td>(</td>
+          <td class="paramtype">const math::vec3 &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Distance of a world point in front of the camera along its view direction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>The world space position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The view space depth; negative behind the camera. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00533">533</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -2088,15 +2204,16 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transforms a point from world space into screen space. </p>
+<p>Uses the unjittered projection: screen positions of world points do not follow the TAA subpixel jitter. A point behind the camera projects mirrored; check world_to_view_depth.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pos</td><td>The world space position. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The screen space position. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The screen space position (pixels) and the NDC depth in z. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00473">473</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00510">510</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -2118,7 +2235,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the x-axis unit vector of the camera's local coordinate system. </p>
 <dl class="section return"><dt>Returns</dt><dd>The x-axis unit vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00358">358</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00395">395</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -2140,7 +2257,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the y-axis unit vector of the camera's local coordinate system. </p>
 <dl class="section return"><dt>Returns</dt><dd>The y-axis unit vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00362">362</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00399">399</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -2162,7 +2279,7 @@ Protected Attributes</h2></td></tr>
 <p>Retrieves the z-axis unit vector of the camera's local coordinate system. </p>
 <dl class="section return"><dt>Returns</dt><dd>The z-axis unit vector. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00367">367</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2camera_8cpp_source.html#l00404">404</a> of file <a class="el" href="rendering_2camera_8cpp_source.html">camera.cpp</a>.</p>
 
 </div>
 </div>
@@ -2189,7 +2306,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Anti-aliasing data. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00541">541</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00573">573</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2215,7 +2332,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Has the aspect ratio changed? </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00586">586</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00623">623</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2241,7 +2358,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Should the aspect ratio be automatically updated by the render driver? </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00590">590</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00627">627</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2267,7 +2384,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The aspect ratio used to generate the correct horizontal degrees (perspective only) </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00576">576</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00613">613</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2293,7 +2410,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The near clipping volume (area of space between the camera position and the near plane). </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00564">564</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00601">601</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2319,7 +2436,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Far clip plane Distance. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00572">572</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00609">609</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2345,7 +2462,79 @@ Protected Attributes</h2></td></tr>
 
 <p>Vertical degrees angle (perspective only). </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00568">568</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00605">605</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a9c1640013c43091a5d40195eb2938189" name="a9c1640013c43091a5d40195eb2938189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c1640013c43091a5d40195eb2938189">&#9670;&#160;</a></span>frame_projection_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::frame_projection_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00594">594</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+
+</div>
+</div>
+<a id="aec84efef938a298f44ffccc7ed047dd7" name="aec84efef938a298f44ffccc7ed047dd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec84efef938a298f44ffccc7ed047dd7">&#9670;&#160;</a></span>frame_projection_unjittered_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::frame_projection_unjittered_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00595">595</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a960f686298d2f4859f82d27acdbeb267" name="a960f686298d2f4859f82d27acdbeb267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a960f686298d2f4859f82d27acdbeb267">&#9670;&#160;</a></span>frame_view_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::frame_view_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00593">593</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2371,7 +2560,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Details regarding the camera frustum. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00562">562</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00599">599</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2397,7 +2586,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Are the frustum planes dirty ? </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00588">588</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00625">625</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2423,83 +2612,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Is the frustum locked? </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00592">592</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
-
-</div>
-</div>
-<a id="ae6794a032e1b1321660120f542e0907e" name="ae6794a032e1b1321660120f542e0907e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6794a032e1b1321660120f542e0907e">&#9670;&#160;</a></span>last_projection_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::last_projection_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Cached "previous" projection matrix. </p>
-
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00556">556</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
-
-</div>
-</div>
-<a id="a812241305ef29626b4ca371576d22472" name="a812241305ef29626b4ca371576d22472"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a812241305ef29626b4ca371576d22472">&#9670;&#160;</a></span>last_view_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::last_view_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Cached "previous" view matrix. </p>
-
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00552">552</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
-
-</div>
-</div>
-<a id="ab3fb671445c0ea8a585f9e3ffbf6e5cb" name="ab3fb671445c0ea8a585f9e3ffbf6e5cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3fb671445c0ea8a585f9e3ffbf6e5cb">&#9670;&#160;</a></span>last_view_relative_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::last_view_relative_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00553">553</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00629">629</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2525,7 +2638,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Near clip plane Distance. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00570">570</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00607">607</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2551,7 +2664,128 @@ Protected Attributes</h2></td></tr>
 
 <p>camera's half-size when in orthographic mode. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00574">574</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00611">611</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a2ebe2d01a5406c8dad8e5687aad0686d" name="a2ebe2d01a5406c8dad8e5687aad0686d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebe2d01a5406c8dad8e5687aad0686d">&#9670;&#160;</a></span>prev_matrices_valid_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool unravel::camera::prev_matrices_valid_ = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00596">596</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+
+</div>
+</div>
+<a id="ae2f8c3f3d9fa721a1e24b07b0cae295a" name="ae2f8c3f3d9fa721a1e24b07b0cae295a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f8c3f3d9fa721a1e24b07b0cae295a">&#9670;&#160;</a></span>prev_projection_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::prev_projection_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00591">591</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a04e028bafec9ce9f19ce89dea08f75b0" name="a04e028bafec9ce9f19ce89dea08f75b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e028bafec9ce9f19ce89dea08f75b0">&#9670;&#160;</a></span>prev_projection_unjittered_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::prev_projection_unjittered_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00592">592</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a7bbaca78569eedb1b8b300cb8795d8b1" name="a7bbaca78569eedb1b8b300cb8795d8b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbaca78569eedb1b8b300cb8795d8b1">&#9670;&#160;</a></span>prev_record_frame_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t unravel::camera::prev_record_frame_ = 0xFFFFFFFFu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00597">597</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a9ddff78ed453ff0e641f6768e85a6d64" name="a9ddff78ed453ff0e641f6768e85a6d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ddff78ed453ff0e641f6768e85a6d64">&#9670;&#160;</a></span>prev_view_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::prev_view_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Previous-frame matrix state (see record_current_matrices): the full set the previous frame rendered with (view + jittered and unjittered projections), plus the recording of this frame's set that becomes "previous" on the next call. The promotion is guarded by a render-frame stamp so a camera rendered more than once per frame (preview insets, multi-view) cannot collapse the previous set onto the current one. </p>
+
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00590">590</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2577,7 +2811,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Cached projection matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00550">550</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00582">582</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2603,7 +2837,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Projection matrix dirty ? </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00584">584</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00621">621</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2629,57 +2863,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The type of projection currently selected for this camera. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00566">566</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
-
-</div>
-</div>
-<a id="ae5bd35f025c0dc946e2ff879d37462ca" name="ae5bd35f025c0dc946e2ff879d37462ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5bd35f025c0dc946e2ff879d37462ca">&#9670;&#160;</a></span>taa_prev_projection_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::taa_prev_projection_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00560">560</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
-
-</div>
-</div>
-<a id="a21c34e87f69a074bd1fbe32a2f145c0e" name="a21c34e87f69a074bd1fbe32a2f145c0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21c34e87f69a074bd1fbe32a2f145c0e">&#9670;&#160;</a></span>taa_prev_view_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> unravel::camera::taa_prev_view_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Snapshot for temporal reprojection: view/projection before advancing jitter (see set_aa_data). </p>
-
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00559">559</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00603">603</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2705,7 +2889,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Cached view matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00543">543</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00575">575</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2731,7 +2915,7 @@ Protected Attributes</h2></td></tr>
 
 <p>View matrix dirty ? </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00582">582</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00619">619</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2755,7 +2939,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00544">544</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00576">576</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2779,7 +2963,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00547">547</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00579">579</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2803,7 +2987,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00546">546</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00578">578</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2829,7 +3013,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Viewport position. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00578">578</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00615">615</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>
@@ -2855,7 +3039,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Viewport size. </p>
 
-<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00580">580</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="camera_8h_source.html#l00617">617</a> of file <a class="el" href="camera_8h_source.html">camera.h</a>.</p>
 
 </div>
 </div>

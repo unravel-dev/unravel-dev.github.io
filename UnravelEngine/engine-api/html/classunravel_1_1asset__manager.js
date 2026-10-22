@@ -1,5 +1,6 @@
 var classunravel_1_1asset__manager =
 [
+    [ "database_filter", "classunravel_1_1asset__manager.html#af604f078a4d946a3fe9275cb3ef4b999", null ],
     [ "asset_manager", "classunravel_1_1asset__manager.html#a0f7f43a4ba3e3804051d1647b04a7f70", null ],
     [ "~asset_manager", "classunravel_1_1asset__manager.html#a2cd0ecee8675481c771e56690f281638", null ],
     [ "add_asset", "classunravel_1_1asset__manager.html#a4e03d0a9195ea490ec9c943810d84c23", null ],
@@ -18,6 +19,7 @@ var classunravel_1_1asset__manager =
     [ "get_asset_from_instance", "classunravel_1_1asset__manager.html#af50bdc2fdc184b2cc8a69c10e32c0103", null ],
     [ "get_assets", "classunravel_1_1asset__manager.html#a6ed25adc3881ff38420ade8e9c43731a", null ],
     [ "get_assets_with_predicate", "classunravel_1_1asset__manager.html#a60a1e4936adae1a14c54e362c32b9614", null ],
+    [ "get_database_snapshot", "classunravel_1_1asset__manager.html#af27997b52a548ea5703c8a3784de5358", null ],
     [ "get_header", "classunravel_1_1asset__manager.html#a56873b7799c826587b00a4c1b1c94541", null ],
     [ "get_metadata", "classunravel_1_1asset__manager.html#a50c7f0b87877d95dfea02fcf07241552", null ],
     [ "get_metadata_for_key", "classunravel_1_1asset__manager.html#a7a8c0b2d463f3e3fd142a2e4870c7dba", null ],
@@ -32,8 +34,10 @@ var classunravel_1_1asset__manager =
     [ "remove_asset_info_for_key", "classunravel_1_1asset__manager.html#a76873ca7266821868cbe6a64e31cabd5", null ],
     [ "remove_asset_info_for_path", "classunravel_1_1asset__manager.html#aa55b5f9ef11cce2783aef9e88c736178", null ],
     [ "rename_asset", "classunravel_1_1asset__manager.html#ab08e4e65e896882e3729bcb84e912c21", null ],
-    [ "save_database", "classunravel_1_1asset__manager.html#a0c26cea9157ea12f797cb3b6f7e81bfc", null ],
+    [ "rename_asset_info_for_path", "classunravel_1_1asset__manager.html#a23bed13920aeaa976ce39f9df14364bd", null ],
+    [ "save_database", "classunravel_1_1asset__manager.html#a9b2cc22128f0d8e68417266a85a42d2e", null ],
     [ "set_parent", "classunravel_1_1asset__manager.html#af1ca2a673ad346068c46325280b09bb2", null ],
+    [ "try_get_asset", "classunravel_1_1asset__manager.html#a30e191207d409493ae7cd015b7b75a7c", null ],
     [ "unload_all", "classunravel_1_1asset__manager.html#a26bbf59815d9d6e03477f5013908be67", null ],
     [ "unload_asset", "classunravel_1_1asset__manager.html#a3c0abf7607ac92218d9e9a32f661dae7", null ],
     [ "unload_group", "classunravel_1_1asset__manager.html#aecfba908fed80a84e055abd6c2c7e2ee", null ]

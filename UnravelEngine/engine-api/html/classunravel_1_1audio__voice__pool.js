@@ -1,0 +1,27 @@
+var classunravel_1_1audio__voice__pool =
+[
+    [ "bus_gains", "classunravel_1_1audio__voice__pool.html#af138b24b1b0ed75e1abedfd4f583d1bd", null ],
+    [ "audio_voice_pool", "classunravel_1_1audio__voice__pool.html#af24c998e1747428fb69339b7b326ea20", null ],
+    [ "~audio_voice_pool", "classunravel_1_1audio__voice__pool.html#a0dce6336edfd35ab5ad7c711a576a3ea", null ],
+    [ "audio_voice_pool", "classunravel_1_1audio__voice__pool.html#a9d883ef1fc695b72cef67fc36020f520", null ],
+    [ "acquire", "classunravel_1_1audio__voice__pool.html#a1a78b7c0703c803e7b4e3d0305816d0f", null ],
+    [ "fade_to", "classunravel_1_1audio__voice__pool.html#a5a110d2e0084a474eec41984cff447a6", null ],
+    [ "get_live_count", "classunravel_1_1audio__voice__pool.html#a57250af5c71f75f330d9a3151f725bb7", null ],
+    [ "get_source", "classunravel_1_1audio__voice__pool.html#afe06f6f77974e4cfdcb61ad01af2210b", null ],
+    [ "is_playing", "classunravel_1_1audio__voice__pool.html#aede2502ab81a24cbf6e1f85a3a8af9ec", null ],
+    [ "operator=", "classunravel_1_1audio__voice__pool.html#a1ef6a98715bd67fd7c8de6e6edf081f0", null ],
+    [ "pause_all", "classunravel_1_1audio__voice__pool.html#a86d1232ededf31271627912cb8485e92", null ],
+    [ "play", "classunravel_1_1audio__voice__pool.html#a22160b691fc62d149158384fb96bcf16", null ],
+    [ "resume_all", "classunravel_1_1audio__voice__pool.html#abcb0e6751785896144ba37f3a02e2b14", null ],
+    [ "set_bus", "classunravel_1_1audio__voice__pool.html#af97945705729a16fcb23ffb1e2550e84", null ],
+    [ "set_bus_gains", "classunravel_1_1audio__voice__pool.html#a608de3f5f69787e49d8b578b65ce3fe6", null ],
+    [ "set_clip_limit", "classunravel_1_1audio__voice__pool.html#a9aaa738cc1c5a2fda431d0670849b892", null ],
+    [ "set_distance", "classunravel_1_1audio__voice__pool.html#ad97b9547f088c86cb2f35e92ed7f9a06", null ],
+    [ "set_loop", "classunravel_1_1audio__voice__pool.html#a908d656729675026c5a71ab6e7b6c065", null ],
+    [ "set_pitch", "classunravel_1_1audio__voice__pool.html#a31782cf9a0371ba676bc880e17f8fbf2", null ],
+    [ "set_priority", "classunravel_1_1audio__voice__pool.html#a5c1230ba05e212d439efb6313272b4a5", null ],
+    [ "set_volume", "classunravel_1_1audio__voice__pool.html#aab08997ad7a75656cb0c5445ecb9e3ba", null ],
+    [ "stop", "classunravel_1_1audio__voice__pool.html#af160f1cabd8b81d506cd971b7ea3b1f2", null ],
+    [ "stop_all", "classunravel_1_1audio__voice__pool.html#ad46b4412a8c52a8717630a09e57acfa2", null ],
+    [ "update", "classunravel_1_1audio__voice__pool.html#a1128791a87412f3ca2b9dac413580ad4", null ]
+];

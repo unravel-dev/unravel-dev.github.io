@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Unravel Engine C++ Reference: engine/engine/assets/impl/asset_compiler.h File Reference</title>
+<title>Unravel Engine C++ Reference: editor/core/asset_compiler/asset_compiler.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,6 +97,7 @@ $(function(){initNavTree('asset__compiler_8h.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">asset_compiler.h File Reference</div></div>
@@ -104,9 +105,20 @@ $(function(){initNavTree('asset__compiler_8h.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="asset__compiler_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1asset__compiler_1_1script__compilation__entry.html">unravel::asset_compiler::script_compilation_entry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One compiler diagnostic, as parsed from the C# compiler output.  <a href="structunravel_1_1asset__compiler_1_1script__compilation__entry.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1asset__compiler_1_1script__compilation__result.html">unravel::asset_compiler::script_compilation_result</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The outcome of the most recent build of one script library.  <a href="structunravel_1_1asset__compiler_1_1script__compilation__result.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
@@ -117,18 +129,21 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abe2191e6543be154c6a7947d576675b2" id="r_abe2191e6543be154c6a7947d576675b2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abe2191e6543be154c6a7947d576675b2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__compiler.html#abe2191e6543be154c6a7947d576675b2">unravel::asset_compiler::compile</a> (<a class="el" href="classunravel_1_1asset__manager.html">asset_manager</a> &amp;am, const fs::path &amp;key, const fs::path &amp;output_key, uint32_t flags=0) -&gt; bool</td></tr>
+<tr class="memitem:abe2191e6543be154c6a7947d576675b2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__compiler.html#abe2191e6543be154c6a7947d576675b2">unravel::asset_compiler::compile</a> (<a class="el" href="classunravel_1_1asset__manager.html">asset_manager</a> &amp;<a class="el" href="mesh__import__materials_8cpp.html#a0960af58ad8ed1e55c995239a2afee0a">am</a>, const fs::path &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, const fs::path &amp;output_key, uint32_t <a class="el" href="renderer_8cpp.html#a773b39d480759f67926cb18ae2219281">flags</a>=0) -&gt; bool</td></tr>
 <tr class="separator:abe2191e6543be154c6a7947d576675b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa541711dec7ac46ab1a28f8dda3bd27f" id="r_aa541711dec7ac46ab1a28f8dda3bd27f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa541711dec7ac46ab1a28f8dda3bd27f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__compiler.html#aa541711dec7ac46ab1a28f8dda3bd27f">unravel::asset_compiler::read_importer</a> (<a class="el" href="classunravel_1_1asset__manager.html">asset_manager</a> &amp;am, const fs::path &amp;key) -&gt; std::shared_ptr&lt; <a class="el" href="structunravel_1_1asset__importer__meta.html">asset_importer_meta</a> &gt;</td></tr>
+<tr class="memitem:aa541711dec7ac46ab1a28f8dda3bd27f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__compiler.html#aa541711dec7ac46ab1a28f8dda3bd27f">unravel::asset_compiler::read_importer</a> (<a class="el" href="classunravel_1_1asset__manager.html">asset_manager</a> &amp;<a class="el" href="mesh__import__materials_8cpp.html#a0960af58ad8ed1e55c995239a2afee0a">am</a>, const fs::path &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>) -&gt; std::shared_ptr&lt; <a class="el" href="structunravel_1_1asset__importer__meta.html">asset_importer_meta</a> &gt;</td></tr>
 <tr class="separator:aa541711dec7ac46ab1a28f8dda3bd27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275d04f9a71d93b9241eca02cc08b214" id="r_a275d04f9a71d93b9241eca02cc08b214"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__compiler.html#a275d04f9a71d93b9241eca02cc08b214">unravel::asset_compiler::get_last_script_compilation</a> (const std::string &amp;<a class="el" href="pack_8cpp.html#ad08e873ce5aee68e809fb387a3bbbebb">protocol</a>) -&gt; <a class="el" href="structunravel_1_1asset__compiler_1_1script__compilation__result.html">script_compilation_result</a></td></tr>
+<tr class="memdesc:a275d04f9a71d93b9241eca02cc08b214"><td class="mdescLeft">&#160;</td><td class="mdescRight">The diagnostics of the last build of <code>protocol</code>'s script library ("app", "engine"). The build already parses them for the log; this keeps the latest set so a caller can read exactly one build's errors instead of searching the log. Thread-safe.  <br /></td></tr>
+<tr class="separator:a275d04f9a71d93b9241eca02cc08b214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a class="el" href="dir_d7cdb4e65164bd6dfc24cbda8766899e.html">engine</a></li><li class="navelem"><a class="el" href="dir_a560469ead448c43319bb3af34a17fad.html">assets</a></li><li class="navelem"><a class="el" href="dir_2958cc0af2fcb06b6c5625a9fb77cef1.html">impl</a></li><li class="navelem"><a class="el" href="asset__compiler_8h.html">asset_compiler.h</a></li>
+    <li class="navelem"><a class="el" href="dir_bac5aa69239d34ac960582aca466258e.html">editor</a></li><li class="navelem"><a class="el" href="dir_e68ff34b57632830b437309e692e43ef.html">core</a></li><li class="navelem"><a class="el" href="dir_42f3260c760cffff2ab51089bbac4616.html">asset_compiler</a></li><li class="navelem"><a class="el" href="asset__compiler_8h.html">asset_compiler.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>

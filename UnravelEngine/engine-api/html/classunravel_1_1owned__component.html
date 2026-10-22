@@ -115,14 +115,20 @@ Inheritance diagram for unravel::owned_component:</div>
   <img src="classunravel_1_1owned__component.png" usemap="#unravel::owned_5Fcomponent_map" alt=""/>
   <map id="unravel::owned_5Fcomponent_map" name="unravel::owned_5Fcomponent_map">
 <area href="structunravel_1_1basic__component.html" title="Basic component structure that other components can inherit from." alt="unravel::basic_component" shape="rect" coords="0,0,473,24"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; character_controller_component, owned_component &gt;" shape="rect" coords="483,112,956,136"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; model_component, owned_component &gt;" shape="rect" coords="483,168,956,192"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; particle_emitter_component, owned_component &gt;" shape="rect" coords="483,224,956,248"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; physics_component, owned_component &gt;" shape="rect" coords="483,280,956,304"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; prefab_component, owned_component &gt;" shape="rect" coords="483,336,956,360"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; script_component, owned_component &gt;" shape="rect" coords="483,392,956,416"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; transform_component, owned_component &gt;" shape="rect" coords="483,448,956,472"/>
-<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; ui_document_component, owned_component &gt;" shape="rect" coords="483,504,956,528"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; animation_component, owned_component &gt;" shape="rect" coords="483,112,956,136"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; chain_ik_component, owned_component &gt;" shape="rect" coords="483,168,956,192"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; character_controller_component, owned_component &gt;" shape="rect" coords="483,224,956,248"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; foot_ik_component, owned_component &gt;" shape="rect" coords="483,280,956,304"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; look_at_ik_component, owned_component &gt;" shape="rect" coords="483,336,956,360"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; model_component, owned_component &gt;" shape="rect" coords="483,392,956,416"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; particle_emitter_component, owned_component &gt;" shape="rect" coords="483,448,956,472"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; physics_component, owned_component &gt;" shape="rect" coords="483,504,956,528"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; prefab_component, owned_component &gt;" shape="rect" coords="483,560,956,584"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; script_component, owned_component &gt;" shape="rect" coords="483,616,956,640"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; spring_bone_component, owned_component &gt;" shape="rect" coords="483,672,956,696"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; transform_component, owned_component &gt;" shape="rect" coords="483,728,956,752"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; two_bone_ik_component, owned_component &gt;" shape="rect" coords="483,784,956,808"/>
+<area href="structunravel_1_1component__crtp.html" alt="unravel::component_crtp&lt; ui_document_component, owned_component &gt;" shape="rect" coords="483,840,956,864"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -163,7 +169,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Component that is owned by an entity. </p>
 
-<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00031">31</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00076">76</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aaace07f27ab0539925a223b9ce28be42" name="aaace07f27ab0539925a223b9ce28be42"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaace07f27ab0539925a223b9ce28be42">&#9670;&#160;</a></span>get_owner() <span class="overload">[1/2]</span></h2>
@@ -192,7 +198,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the owner of the component. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant handle to the owner entity. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00064">64</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00109">109</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
 
 </div>
 </div>
@@ -223,7 +229,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the owner of the component. </p>
 <dl class="section return"><dt>Returns</dt><dd>A handle to the owner entity. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00073">73</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00118">118</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
 
 </div>
 </div>
@@ -256,7 +262,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00036">36</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00081">81</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +295,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00045">45</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00090">90</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
 
 </div>
 </div>
@@ -349,7 +355,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00055">55</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="basic__component_8h_source.html#l00100">100</a> of file <a class="el" href="basic__component_8h_source.html">basic_component.h</a>.</p>
 
 </div>
 </div>

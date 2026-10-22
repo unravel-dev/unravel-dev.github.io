@@ -105,12 +105,13 @@ $(function(){initNavTree('classunravel_1_1batch__collector__t.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
+<p>Groups renderables by batch key for instanced submission.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa9fab94e95ab3316ee35e2785e9ce0db" id="r_aa9fab94e95ab3316ee35e2785e9ce0db"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9fab94e95ab3316ee35e2785e9ce0db">batch_map_t</a> = std::unordered_map&lt;Key, <a class="el" href="structunravel_1_1batch__group__t.html">batch_group_t</a>&lt;Key&gt;&gt;</td></tr>
-<tr class="separator:aa9fab94e95ab3316ee35e2785e9ce0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21964a14fb13f01f895ebd238696f5d3" id="r_a21964a14fb13f01f895ebd238696f5d3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21964a14fb13f01f895ebd238696f5d3">batch_list_t</a> = std::vector&lt;<a class="el" href="structunravel_1_1batch__group__t.html">batch_group_t</a>&lt;Key&gt;*&gt;</td></tr>
 <tr class="separator:a21964a14fb13f01f895ebd238696f5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -128,9 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade7dc124e2c0d01db260cb5589bbd3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dd902874f44860e815a43ba5359c6a4" id="r_a9dd902874f44860e815a43ba5359c6a4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dd902874f44860e815a43ba5359c6a4">operator=</a> (<a class="el" href="classunravel_1_1batch__collector__t.html">batch_collector_t</a> &amp;&amp;) noexcept -&gt; <a class="el" href="classunravel_1_1batch__collector__t.html">batch_collector_t</a> &amp;=default</td></tr>
 <tr class="separator:a9dd902874f44860e815a43ba5359c6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade913925a957baf3c6d1f256446fea95" id="r_ade913925a957baf3c6d1f256446fea95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade913925a957baf3c6d1f256446fea95">collect_renderable</a> (const Key &amp;key, const <a class="el" href="structunravel_1_1batch__instance.html">batch_instance</a> &amp;instance)</td></tr>
+<tr class="memitem:ade913925a957baf3c6d1f256446fea95" id="r_ade913925a957baf3c6d1f256446fea95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade913925a957baf3c6d1f256446fea95">collect_renderable</a> (const Key &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, const <a class="el" href="structunravel_1_1batch__instance.html">batch_instance</a> &amp;instance)</td></tr>
 <tr class="separator:ade913925a957baf3c6d1f256446fea95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a006821927581418850a12db97a655bd5" id="r_a006821927581418850a12db97a655bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a006821927581418850a12db97a655bd5">collect_renderable</a> (const Key &amp;key, const math::mat4 &amp;world_transform)</td></tr>
+<tr class="memitem:a006821927581418850a12db97a655bd5" id="r_a006821927581418850a12db97a655bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a006821927581418850a12db97a655bd5">collect_renderable</a> (const Key &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, const math::mat4 &amp;world_transform)</td></tr>
 <tr class="separator:a006821927581418850a12db97a655bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a420fda87d16efa4edbc0a8d81b5ec72e" id="r_a420fda87d16efa4edbc0a8d81b5ec72e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a420fda87d16efa4edbc0a8d81b5ec72e">prepare_batches</a> (const <a class="el" href="structunravel_1_1submit__context.html">submit_context</a> &amp;context)</td></tr>
 <tr class="separator:a420fda87d16efa4edbc0a8d81b5ec72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,8 +161,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Key&gt;<br />
-class unravel::batch_collector_t&lt; Key &gt;</div>
-<p class="definition">Definition at line <a class="el" href="batch__collector_8h_source.html#l00069">69</a> of file <a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>.</p>
+class unravel::batch_collector_t&lt; Key &gt;</div><p>Groups renderables by batch key for instanced submission. </p>
+<p>Frame protocol: <a class="el" href="#a6dda59f2dcc4f9cc8424fac8f8f432a0">clear()</a> -&gt; <a class="el" href="#ade913925a957baf3c6d1f256446fea95">collect_renderable()</a> ... -&gt; <a class="el" href="#a420fda87d16efa4edbc0a8d81b5ec72e">prepare_batches()</a> -&gt; any number of passes over <a class="el" href="#ae54a9638af48a3a774d3cf6946619ca0">get_prepared_batches()</a> -&gt; <a class="el" href="#a6dda59f2dcc4f9cc8424fac8f8f432a0">clear()</a>. Collecting a NEW key after <a class="el" href="#a420fda87d16efa4edbc0a8d81b5ec72e">prepare_batches()</a> drops the prepared list: its pointers address the group slots, which may move when a slot is added.</p>
+<p>Steady state allocates nothing. Groups live in slots that are recycled together with their instance storage, and the key lookup is an index table a <a class="el" href="#a6dda59f2dcc4f9cc8424fac8f8f432a0">clear()</a> merely refills - the node-based map this replaced freed and rebuilt every node and every instance vector each frame, once per shadow face per light on the shadow path. Storage grows to the largest frame seen and is released with the collector; a cleared collector holds no asset references. </p>
+
+<p class="definition">Definition at line <a class="el" href="batch__collector_8h_source.html#l00105">105</a> of file <a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a21964a14fb13f01f895ebd238696f5d3" name="a21964a14fb13f01f895ebd238696f5d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21964a14fb13f01f895ebd238696f5d3">&#9670;&#160;</a></span>batch_list_t</h2>
@@ -177,25 +181,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8h_source.html#l00073">73</a> of file <a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>.</p>
-
-</div>
-</div>
-<a id="aa9fab94e95ab3316ee35e2785e9ce0db" name="aa9fab94e95ab3316ee35e2785e9ce0db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9fab94e95ab3316ee35e2785e9ce0db">&#9670;&#160;</a></span>batch_map_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Key &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classunravel_1_1batch__collector__t.html">unravel::batch_collector_t</a>&lt; Key &gt;::batch_map_t = std::unordered_map&lt;Key, <a class="el" href="structunravel_1_1batch__group__t.html">batch_group_t</a>&lt;Key&gt;&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="batch__collector_8h_source.html#l00072">72</a> of file <a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8h_source.html#l00108">108</a> of file <a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>.</p>
 
 </div>
 </div>
@@ -326,7 +312,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00130">130</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00144">144</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -351,7 +337,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00061">61</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00071">71</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +362,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00080">80</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00092">92</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -397,7 +383,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00144">144</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00167">167</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -418,7 +404,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00150">150</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00173">173</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -439,7 +425,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00124">124</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00138">138</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -460,7 +446,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00138">138</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00161">161</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -481,7 +467,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00161">161</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00184">184</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -511,7 +497,7 @@ template&lt;typename Key &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8h_source.html#l00077">77</a> of file <a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8h_source.html#l00112">112</a> of file <a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>.</p>
 
 </div>
 </div>
@@ -586,7 +572,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00086">86</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00098">98</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -607,7 +593,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00167">167</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00190">190</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -628,7 +614,7 @@ template&lt;typename Key &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00173">173</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8hpp_source.html#l00196">196</a> of file <a class="el" href="batch__collector_8hpp_source.html">batch_collector.hpp</a>.</p>
 
 </div>
 </div>
@@ -657,7 +643,7 @@ template&lt;typename Key &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="batch__collector_8h_source.html#l00082">82</a> of file <a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="batch__collector_8h_source.html#l00117">117</a> of file <a class="el" href="batch__collector_8h_source.html">batch_collector.h</a>.</p>
 
 </div>
 </div>

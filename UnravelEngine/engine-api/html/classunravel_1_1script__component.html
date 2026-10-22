@@ -151,31 +151,36 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4664fdb0a327f1f987355002531455d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76877fb1db6643e6951773fd6a2a7391" id="r_a76877fb1db6643e6951773fd6a2a7391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76877fb1db6643e6951773fd6a2a7391">process_pending_actions_create</a> (<a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a> script_obj)</td></tr>
 <tr class="separator:a76877fb1db6643e6951773fd6a2a7391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0db62a29f0b934b8b041f6fa048e292" id="r_ac0db62a29f0b934b8b041f6fa048e292"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0db62a29f0b934b8b041f6fa048e292">add_script_component</a> (const dotnet::type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
+<tr class="memitem:ac0db62a29f0b934b8b041f6fa048e292" id="r_ac0db62a29f0b934b8b041f6fa048e292"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0db62a29f0b934b8b041f6fa048e292">add_script_component</a> (const dotnet::type &amp;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
 <tr class="separator:ac0db62a29f0b934b8b041f6fa048e292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88aee80954ad721077e207fee97a02ea" id="r_a88aee80954ad721077e207fee97a02ea"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88aee80954ad721077e207fee97a02ea">add_script_component</a> (const dotnet::object &amp;obj) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
 <tr class="separator:a88aee80954ad721077e207fee97a02ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcbbf60152a712edcbd66e912fd0ebee" id="r_afcbbf60152a712edcbd66e912fd0ebee"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcbbf60152a712edcbd66e912fd0ebee">add_script_component</a> (const <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a> &amp;obj, bool process_callbacks=true) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
+<tr class="memdesc:afcbbf60152a712edcbd66e912fd0ebee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a script, keeping its slot - a new one when it has none or the slot is taken here.  <br /></td></tr>
 <tr class="separator:afcbbf60152a712edcbd66e912fd0ebee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a66e702bd2e923f14ebe5fbcf575645" id="r_a1a66e702bd2e923f14ebe5fbcf575645"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a66e702bd2e923f14ebe5fbcf575645">insert_script_component</a> (const <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a> &amp;obj, size_t <a class="el" href="inspector__array_8cpp.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
+<tr class="memdesc:a1a66e702bd2e923f14ebe5fbcf575645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a script at a position in the list, so an undone removal goes back where it was.  <br /></td></tr>
+<tr class="separator:a1a66e702bd2e923f14ebe5fbcf575645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78afe86c7ed57007a14f194e30cd5ad3" id="r_a78afe86c7ed57007a14f194e30cd5ad3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78afe86c7ed57007a14f194e30cd5ad3">add_script_components</a> (const <a class="el" href="#ab2e9d0a009158bb6499b9ced00a608c3">script_components_t</a> &amp;comps)</td></tr>
 <tr class="separator:a78afe86c7ed57007a14f194e30cd5ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29619002379ad0922a4d4f02ceaf960a" id="r_a29619002379ad0922a4d4f02ceaf960a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29619002379ad0922a4d4f02ceaf960a">add_missing_script_components</a> (const <a class="el" href="#ab2e9d0a009158bb6499b9ced00a608c3">script_components_t</a> &amp;comps)</td></tr>
-<tr class="separator:a29619002379ad0922a4d4f02ceaf960a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7abbc3b6f41df2cdd2292a21c308cb9" id="r_ac7abbc3b6f41df2cdd2292a21c308cb9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7abbc3b6f41df2cdd2292a21c308cb9">add_native_component</a> (const dotnet::type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
+<tr class="memitem:ac7abbc3b6f41df2cdd2292a21c308cb9" id="r_ac7abbc3b6f41df2cdd2292a21c308cb9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7abbc3b6f41df2cdd2292a21c308cb9">add_native_component</a> (const dotnet::type &amp;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
 <tr class="separator:ac7abbc3b6f41df2cdd2292a21c308cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759bac48c681604b64f2050301fa93ef" id="r_a759bac48c681604b64f2050301fa93ef"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a759bac48c681604b64f2050301fa93ef">remove_script_component</a> (const dotnet::object &amp;obj) -&gt; bool</td></tr>
 <tr class="separator:a759bac48c681604b64f2050301fa93ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa968db19532f7f72511f3d70a8883ce8" id="r_aa968db19532f7f72511f3d70a8883ce8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa968db19532f7f72511f3d70a8883ce8">remove_script_component</a> (const dotnet::type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) -&gt; bool</td></tr>
+<tr class="memitem:aa968db19532f7f72511f3d70a8883ce8" id="r_aa968db19532f7f72511f3d70a8883ce8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa968db19532f7f72511f3d70a8883ce8">remove_script_component</a> (const dotnet::type &amp;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) -&gt; bool</td></tr>
 <tr class="separator:aa968db19532f7f72511f3d70a8883ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a592b0b72d671c73de4dd0764a31103b4" id="r_a592b0b72d671c73de4dd0764a31103b4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a592b0b72d671c73de4dd0764a31103b4">remove_native_component</a> (const dotnet::object &amp;obj) -&gt; bool</td></tr>
 <tr class="separator:a592b0b72d671c73de4dd0764a31103b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e84cc123ccced79177d845f0d3358fd" id="r_a7e84cc123ccced79177d845f0d3358fd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e84cc123ccced79177d845f0d3358fd">remove_native_component</a> (const dotnet::type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) -&gt; bool</td></tr>
+<tr class="memitem:a7e84cc123ccced79177d845f0d3358fd" id="r_a7e84cc123ccced79177d845f0d3358fd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e84cc123ccced79177d845f0d3358fd">remove_native_component</a> (const dotnet::type &amp;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) -&gt; bool</td></tr>
 <tr class="separator:a7e84cc123ccced79177d845f0d3358fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa935eda14365f00e99a1936afdda80f1" id="r_aa935eda14365f00e99a1936afdda80f1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa935eda14365f00e99a1936afdda80f1">get_script_components</a> (const dotnet::type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) -&gt; std::vector&lt; dotnet::object &gt;</td></tr>
+<tr class="memitem:aa935eda14365f00e99a1936afdda80f1" id="r_aa935eda14365f00e99a1936afdda80f1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa935eda14365f00e99a1936afdda80f1">get_script_components</a> (const dotnet::type &amp;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) -&gt; std::vector&lt; dotnet::object &gt;</td></tr>
 <tr class="separator:aa935eda14365f00e99a1936afdda80f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c212051f198c5b57cfc93cd1ff8da49" id="r_a1c212051f198c5b57cfc93cd1ff8da49"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c212051f198c5b57cfc93cd1ff8da49">get_script_component</a> (const dotnet::type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
+<tr class="memitem:a1c212051f198c5b57cfc93cd1ff8da49" id="r_a1c212051f198c5b57cfc93cd1ff8da49"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c212051f198c5b57cfc93cd1ff8da49">get_script_component</a> (const dotnet::type &amp;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
 <tr class="separator:a1c212051f198c5b57cfc93cd1ff8da49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb5d50536970f91d65efe3b52728838" id="r_aeeb5d50536970f91d65efe3b52728838"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeb5d50536970f91d65efe3b52728838">get_native_component</a> (const dotnet::type &amp;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">type</a>) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
+<tr class="memitem:a8b2dfa72d46f23b7706aae9385ff3d01" id="r_a8b2dfa72d46f23b7706aae9385ff3d01"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b2dfa72d46f23b7706aae9385ff3d01">get_script_component_by_slot</a> (const hpp::uuid &amp;<a class="el" href="box3d__backend_8cpp.html#a8da4ee0fe1f6d2dcab3b7562d79c10a1">slot</a>) const -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
+<tr class="memdesc:a8b2dfa72d46f23b7706aae9385ff3d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">The script with this slot, or an empty one. Scripts queued for removal are gone.  <br /></td></tr>
+<tr class="separator:a8b2dfa72d46f23b7706aae9385ff3d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb5d50536970f91d65efe3b52728838" id="r_aeeb5d50536970f91d65efe3b52728838"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeb5d50536970f91d65efe3b52728838">get_native_component</a> (const dotnet::type &amp;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td></tr>
 <tr class="separator:aeeb5d50536970f91d65efe3b52728838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84246d19348bcc6d9d7e5a806ec6bbf7" id="r_a84246d19348bcc6d9d7e5a806ec6bbf7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84246d19348bcc6d9d7e5a806ec6bbf7">get_script_components</a> () const -&gt; const <a class="el" href="#ab2e9d0a009158bb6499b9ced00a608c3">script_components_t</a> &amp;</td></tr>
 <tr class="separator:a84246d19348bcc6d9d7e5a806ec6bbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,12 +202,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a40d448c526094762bbe4fe073785ee5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a511666988832d4640711f759b6331f7e" id="r_a511666988832d4640711f759b6331f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a511666988832d4640711f759b6331f7e">on_sensor_enter</a> (entt::handle other, const std::vector&lt; <a class="el" href="structunravel_1_1manifold__point.html">manifold_point</a> &gt; &amp;manifolds)</td></tr>
 <tr class="separator:a511666988832d4640711f759b6331f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab17f1c2ebe2e3ccf029f890033a21258" id="r_ab17f1c2ebe2e3ccf029f890033a21258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab17f1c2ebe2e3ccf029f890033a21258">on_sensor_exit</a> (entt::handle other, const std::vector&lt; <a class="el" href="structunravel_1_1manifold__point.html">manifold_point</a> &gt; &amp;manifolds)</td></tr>
-<tr class="separator:ab17f1c2ebe2e3ccf029f890033a21258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238ed9e87aef1d60c5300f773a74f897" id="r_a238ed9e87aef1d60c5300f773a74f897"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a238ed9e87aef1d60c5300f773a74f897">on_sensor_exit</a> (entt::handle other, const std::vector&lt; <a class="el" href="structunravel_1_1manifold__point.html">manifold_point</a> &gt; &amp;manifolds, <a class="el" href="namespaceunravel.html#a69698bb00290d472f4cfb81073073153">contact_end_reason</a> <a class="el" href="box3d__backend_8cpp.html#aac27edbd1482f95fa1601d8cc5ac38e4">reason</a>)</td></tr>
+<tr class="separator:a238ed9e87aef1d60c5300f773a74f897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10bd0cf799c135b058c8349c65fd4f35" id="r_a10bd0cf799c135b058c8349c65fd4f35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10bd0cf799c135b058c8349c65fd4f35">on_collision_enter</a> (entt::handle other, const std::vector&lt; <a class="el" href="structunravel_1_1manifold__point.html">manifold_point</a> &gt; &amp;manifolds, bool use_b)</td></tr>
 <tr class="separator:a10bd0cf799c135b058c8349c65fd4f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31d84872512584ea82c053efab781bae" id="r_a31d84872512584ea82c053efab781bae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31d84872512584ea82c053efab781bae">on_collision_exit</a> (entt::handle other, const std::vector&lt; <a class="el" href="structunravel_1_1manifold__point.html">manifold_point</a> &gt; &amp;manifolds, bool use_b)</td></tr>
-<tr class="separator:a31d84872512584ea82c053efab781bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab331172dce3ca9db16840031c913ed9" id="r_aab331172dce3ca9db16840031c913ed9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab331172dce3ca9db16840031c913ed9">on_collision_exit</a> (entt::handle other, const std::vector&lt; <a class="el" href="structunravel_1_1manifold__point.html">manifold_point</a> &gt; &amp;manifolds, bool use_b, <a class="el" href="namespaceunravel.html#a69698bb00290d472f4cfb81073073153">contact_end_reason</a> <a class="el" href="box3d__backend_8cpp.html#aac27edbd1482f95fa1601d8cc5ac38e4">reason</a>)</td></tr>
+<tr class="separator:aab331172dce3ca9db16840031c913ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b772450a3c11b34cccf228eac54848" id="r_a96b772450a3c11b34cccf228eac54848"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96b772450a3c11b34cccf228eac54848">on_animation_event</a> (const <a class="el" href="structunravel_1_1animation__event__hit.html">animation_event_hit</a> &amp;<a class="el" href="defaults_8cpp.html#a60be6f7b3d0d908fcedf0842fd96c1f4">hit</a>)</td></tr>
+<tr class="memdesc:a96b772450a3c11b34cccf228eac54848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delivers an animation event to every script on the entity: OnAnimationEvent, plus a public method named exactly like the event.  <br /></td></tr>
+<tr class="separator:a96b772450a3c11b34cccf228eac54848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classunravel_1_1owned__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classunravel_1_1owned__component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classunravel_1_1owned__component.html">unravel::owned_component</a></td></tr>
 <tr class="memitem:a0a7c504d9d2455ab7208b881fd6146da inherit pub_methods_classunravel_1_1owned__component" id="r_a0a7c504d9d2455ab7208b881fd6146da"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1owned__component.html#a0a7c504d9d2455ab7208b881fd6146da">operator=</a> (const <a class="el" href="classunravel_1_1owned__component.html">owned_component</a> &amp;other) -&gt; <a class="el" href="classunravel_1_1owned__component.html">owned_component</a> &amp;=default</td></tr>
 <tr class="separator:a0a7c504d9d2455ab7208b881fd6146da inherit pub_methods_classunravel_1_1owned__component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,6 +236,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a840384cdd570fb39c04c9988fce8d250" id="r_a840384cdd570fb39c04c9988fce8d250"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a840384cdd570fb39c04c9988fce8d250">on_destroy_component</a> (entt::registry &amp;r, entt::entity e)</td></tr>
 <tr class="memdesc:a840384cdd570fb39c04c9988fce8d250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the component is destroyed.  <br /></td></tr>
 <tr class="separator:a840384cdd570fb39c04c9988fce8d250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f040f755363df8034ab8eba6adf342" id="r_a66f040f755363df8034ab8eba6adf342"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66f040f755363df8034ab8eba6adf342">get_script_type_source_location</a> (const dotnet::type &amp;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">type</a>) -&gt; std::string</td></tr>
+<tr class="memdesc:a66f040f755363df8034ab8eba6adf342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the source file recorded on a script type by ScriptSourceFileAttribute.  <br /></td></tr>
+<tr class="separator:a66f040f755363df8034ab8eba6adf342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classunravel_1_1owned__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classunravel_1_1owned__component')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classunravel_1_1owned__component.html">unravel::owned_component</a></td></tr>
 <tr class="memitem:a4862e642b971be7ea17a0d8726b5f6f7 inherit pub_static_methods_classunravel_1_1owned__component" id="r_a4862e642b971be7ea17a0d8726b5f6f7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4862e642b971be7ea17a0d8726b5f6f7 inherit pub_static_methods_classunravel_1_1owned__component"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classunravel_1_1owned__component.html#a4862e642b971be7ea17a0d8726b5f6f7">on_create_component</a> (entt::registry &amp;r, entt::entity e)</td></tr>
@@ -250,7 +261,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that contains core data for audio listeners. There can only be one instance of it per scene. </p>
 
-<p class="definition">Definition at line <a class="el" href="script__component_8h_source.html#l00021">21</a> of file <a class="el" href="script__component_8h_source.html">script_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="script__component_8h_source.html#l00023">23</a> of file <a class="el" href="script__component_8h_source.html">script_component.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ab2e9d0a009158bb6499b9ced00a608c3" name="ab2e9d0a009158bb6499b9ced00a608c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2e9d0a009158bb6499b9ced00a608c3">&#9670;&#160;</a></span>script_components_t</h2>
@@ -264,30 +275,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="script__component_8h_source.html#l00101">101</a> of file <a class="el" href="script__component_8h_source.html">script_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="script__component_8h_source.html#l00107">107</a> of file <a class="el" href="script__component_8h_source.html">script_component.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a29619002379ad0922a4d4f02ceaf960a" name="a29619002379ad0922a4d4f02ceaf960a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29619002379ad0922a4d4f02ceaf960a">&#9670;&#160;</a></span>add_missing_script_components()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void unravel::script_component::add_missing_script_components </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#ab2e9d0a009158bb6499b9ced00a608c3">script_components_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>comps</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00507">507</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
-
-</div>
-</div>
 <a id="ac7abbc3b6f41df2cdd2292a21c308cb9" name="ac7abbc3b6f41df2cdd2292a21c308cb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7abbc3b6f41df2cdd2292a21c308cb9">&#9670;&#160;</a></span>add_native_component()</h2>
 
@@ -303,7 +295,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00525">525</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00582">582</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -322,7 +314,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00472">472</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00529">529</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -341,7 +333,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00466">466</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00523">523</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -364,7 +356,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00478">478</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p>Adds a script, keeping its slot - a new one when it has none or the slot is taken here. </p>
+
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00535">535</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -383,7 +377,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00496">496</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00571">571</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -402,7 +396,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00066">66</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00072">72</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -421,7 +415,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00077">77</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00083">83</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -440,7 +434,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00102">102</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00108">108</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -459,7 +453,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00092">92</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00098">98</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -478,7 +472,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00576">576</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00650">650</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -497,7 +491,28 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00557">557</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00614">614</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b2dfa72d46f23b7706aae9385ff3d01" name="a8b2dfa72d46f23b7706aae9385ff3d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b2dfa72d46f23b7706aae9385ff3d01">&#9670;&#160;</a></span>get_script_component_by_slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::script_component::get_script_component_by_slot </td>
+          <td>(</td>
+          <td class="paramtype">const hpp::uuid &amp;</td>          <td class="paramname"><span class="paramname"><em>slot</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The script with this slot, or an empty one. Scripts queued for removal are gone. </p>
+
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00633">633</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -516,7 +531,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00714">714</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00788">788</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -535,7 +550,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00535">535</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00592">592</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +569,43 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00732">732</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00806">806</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a66f040f755363df8034ab8eba6adf342" name="a66f040f755363df8034ab8eba6adf342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f040f755363df8034ab8eba6adf342">&#9670;&#160;</a></span>get_script_type_source_location()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::script_component::get_script_type_source_location </td>
+          <td>(</td>
+          <td class="paramtype">const dotnet::type &amp;</td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td> -&gt; std::string</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the source file recorded on a script type by ScriptSourceFileAttribute. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The scriptable component type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The compiler-captured source path, or an empty string when the type carries no attribute. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00832">832</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -573,7 +624,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00719">719</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00793">793</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -592,7 +643,53 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00724">724</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00798">798</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1a66e702bd2e923f14ebe5fbcf575645" name="a1a66e702bd2e923f14ebe5fbcf575645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a66e702bd2e923f14ebe5fbcf575645">&#9670;&#160;</a></span>insert_script_component()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::script_component::insert_script_component </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;) -&gt; <a class="el" href="structunravel_1_1script__component_1_1script__object.html">script_object</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a script at a position in the list, so an undone removal goes back where it was. </p>
+
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00559">559</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a96b772450a3c11b34cccf228eac54848" name="a96b772450a3c11b34cccf228eac54848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96b772450a3c11b34cccf228eac54848">&#9670;&#160;</a></span>on_animation_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::script_component::on_animation_event </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1animation__event__hit.html">animation_event_hit</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>hit</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delivers an animation event to every script on the entity: OnAnimationEvent, plus a public method named exactly like the event. </p>
+
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00354">354</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -620,12 +717,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00134">134</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00142">142</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a31d84872512584ea82c053efab781bae" name="a31d84872512584ea82c053efab781bae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31d84872512584ea82c053efab781bae">&#9670;&#160;</a></span>on_collision_exit()</h2>
+<a id="aab331172dce3ca9db16840031c913ed9" name="aab331172dce3ca9db16840031c913ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab331172dce3ca9db16840031c913ed9">&#9670;&#160;</a></span>on_collision_exit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -643,12 +740,17 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>use_b</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>use_b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceunravel.html#a69698bb00290d472f4cfb81073073153">contact_end_reason</a></td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00145">145</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00153">153</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -688,7 +790,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00054">54</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00060">60</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -728,7 +830,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00062">62</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00068">68</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -751,12 +853,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00112">112</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00118">118</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab17f1c2ebe2e3ccf029f890033a21258" name="ab17f1c2ebe2e3ccf029f890033a21258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab17f1c2ebe2e3ccf029f890033a21258">&#9670;&#160;</a></span>on_sensor_exit()</h2>
+<a id="a238ed9e87aef1d60c5300f773a74f897" name="a238ed9e87aef1d60c5300f773a74f897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a238ed9e87aef1d60c5300f773a74f897">&#9670;&#160;</a></span>on_sensor_exit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -769,12 +871,17 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structunravel_1_1manifold__point.html">manifold_point</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>manifolds</em></span>&#160;)</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structunravel_1_1manifold__point.html">manifold_point</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>manifolds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceunravel.html#a69698bb00290d472f4cfb81073073153">contact_end_reason</a></td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00123">123</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00129">129</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -810,7 +917,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00439">439</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00496">496</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -829,7 +936,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00444">444</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00501">501</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -848,7 +955,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00405">405</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00462">462</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -867,7 +974,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00374">374</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00431">431</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -886,7 +993,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00422">422</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00479">479</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -905,7 +1012,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00669">669</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00743">743</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -924,7 +1031,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00691">691</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00765">765</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -943,7 +1050,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00595">595</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00669">669</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -962,7 +1069,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00631">631</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00705">705</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -981,7 +1088,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00070">70</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html#l00076">76</a> of file <a class="el" href="scripting_2ecs_2components_2script__component_8cpp_source.html">script_component.cpp</a>.</p>
 
 </div>
 </div>

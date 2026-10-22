@@ -124,12 +124,49 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae370a698636931c8525ea4fba8dc06f4" id="r_ae370a698636931c8525ea4fba8dc06f4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae370a698636931c8525ea4fba8dc06f4">cancel_if_pending</a> ()</td></tr>
 <tr class="memdesc:ae370a698636931c8525ea4fba8dc06f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dismiss a pending create-scene modal without invoking the callback.  <br /></td></tr>
 <tr class="separator:ae370a698636931c8525ea4fba8dc06f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f436505294d64b0a93cf7706f76525" id="r_aa1f436505294d64b0a93cf7706f76525"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1f436505294d64b0a93cf7706f76525">answer_if_pending</a> (const std::string &amp;<a class="el" href="about__window_8cpp.html#ab5fbdb5052858ca8d2538566229fbe64">label</a>) -&gt; bool</td></tr>
+<tr class="separator:aa1f436505294d64b0a93cf7706f76525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9777c3b9e141262d21d4b5b27ed1e9" id="r_a2d9777c3b9e141262d21d4b5b27ed1e9"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d9777c3b9e141262d21d4b5b27ed1e9">get_answer_labels</a> () -&gt; std::vector&lt; std::string &gt;</td></tr>
+<tr class="memdesc:a2d9777c3b9e141262d21d4b5b27ed1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The labels answer_if_pending takes: the two buttons, then the preset cards.  <br /></td></tr>
+<tr class="separator:a2d9777c3b9e141262d21d4b5b27ed1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75effa383b5b1090106ae6571420bf6a" id="r_a75effa383b5b1090106ae6571420bf6a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75effa383b5b1090106ae6571420bf6a">get_title</a> () -&gt; const char *</td></tr>
+<tr class="separator:a75effa383b5b1090106ae6571420bf6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf76b47bdaef6ecb6355bb165b4b6907" id="r_adf76b47bdaef6ecb6355bb165b4b6907"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf76b47bdaef6ecb6355bb165b4b6907">get_message</a> () -&gt; const char *</td></tr>
+<tr class="separator:adf76b47bdaef6ecb6355bb165b4b6907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Modal for selecting a scene preset when creating a new scene. Call ShowCreateSceneModal() to open; RenderCreateSceneModal() draws it each frame. </p>
 
-<p class="definition">Definition at line <a class="el" href="create__scene__modal_8h_source.html#l00013">13</a> of file <a class="el" href="create__scene__modal_8h_source.html">create_scene_modal.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="create__scene__modal_8h_source.html#l00015">15</a> of file <a class="el" href="create__scene__modal_8h_source.html">create_scene_modal.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa1f436505294d64b0a93cf7706f76525" name="aa1f436505294d64b0a93cf7706f76525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f436505294d64b0a93cf7706f76525">&#9670;&#160;</a></span>answer_if_pending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::create_scene_modal::answer_if_pending </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>label</em></span></td><td>)</td>
+          <td> -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Headless path (MCP): answer a pending modal as a click on the button or preset card labelled <code>label</code> would ("Create", "Cancel", "Standard", ..., case-insensitive). False when nothing is pending or no button or card has that label. </p>
+
+<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00217">217</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ae370a698636931c8525ea4fba8dc06f4" name="ae370a698636931c8525ea4fba8dc06f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae370a698636931c8525ea4fba8dc06f4">&#9670;&#160;</a></span>cancel_if_pending()</h2>
 
@@ -155,7 +192,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Dismiss a pending create-scene modal without invoking the callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00177">177</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00209">209</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
 
 </div>
 </div>
@@ -183,7 +220,90 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Headless path (MCP/CLI): if a create-scene modal is pending, invoke its callback with <code>preset</code> and dismiss it. Returns true when a pending modal was completed. </p>
 
-<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00156">156</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00188">188</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2d9777c3b9e141262d21d4b5b27ed1e9" name="a2d9777c3b9e141262d21d4b5b27ed1e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9777c3b9e141262d21d4b5b27ed1e9">&#9670;&#160;</a></span>get_answer_labels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::create_scene_modal::get_answer_labels </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; std::vector&lt;std::string&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The labels answer_if_pending takes: the two buttons, then the preset cards. </p>
+
+<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00241">241</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adf76b47bdaef6ecb6355bb165b4b6907" name="adf76b47bdaef6ecb6355bb165b4b6907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf76b47bdaef6ecb6355bb165b4b6907">&#9670;&#160;</a></span>get_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::create_scene_modal::get_message </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; const char*</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00256">256</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a75effa383b5b1090106ae6571420bf6a" name="a75effa383b5b1090106ae6571420bf6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75effa383b5b1090106ae6571420bf6a">&#9670;&#160;</a></span>get_title()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::create_scene_modal::get_title </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; const char*</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00251">251</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
 
 </div>
 </div>
@@ -212,7 +332,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>True when Show was requested and the user has not yet confirmed/cancelled. </p>
 
-<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00151">151</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00183">183</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
 
 </div>
 </div>
@@ -241,7 +361,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Draw the modal. Call every frame from the main UI render loop. </p>
 
-<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00185">185</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00261">261</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +396,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00142">142</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="create__scene__modal_8cpp_source.html#l00174">174</a> of file <a class="el" href="create__scene__modal_8cpp_source.html">create_scene_modal.cpp</a>.</p>
 
 </div>
 </div>

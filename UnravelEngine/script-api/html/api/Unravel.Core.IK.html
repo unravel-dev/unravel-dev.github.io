@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class IK | Unravel Engine Scripting API ">
       
-      <meta name="description" content="Inverse-kinematics helpers for skeletal chains.">
+      <meta name="description" content="Inverse-kinematics helpers for skeletal chains. Call these from OnUpdate. Scripts run after the animation system has evaluated the pose and before skinning, so bone writes made there are what gets rendered. Writing bones from OnFixedUpdate does not work - animation will overwrite them later in the frame. Every method returns true when a pose was written. A false means the chain was too short, the goal was not finite, or the weight was zero - not that the target was out of reach (an unreachable target still produces a valid stretched pose). The position solvers only orient the bones that drive the chain, never the end effector itself, so a solved foot keeps the orientation animation gave it. Follow a position solve with  to pin a foot to a slope or keep an aimed hand level. Poles must come from a reference the solve does not move - the character root, or a dedicated hint entity. A pole derived from the end effector&#39;s own transform closes a feedback loop: the solve rotates the effector, the pole follows it, the chain chases the pole, and the limb spins.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_IK" data-uid="Unravel.Core.IK" class="text-break">
-Class IK  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class IK  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,6 +98,22 @@ Class IK  <a class="header-action link-secondary" title="View source" href="http
   </div>
 
   <div class="markdown summary"><p>Inverse-kinematics helpers for skeletal chains.</p>
+<p>Call these from <code>OnUpdate</code>. Scripts run after the animation system
+has evaluated the pose and before skinning, so bone writes made there are
+what gets rendered. Writing bones from <code>OnFixedUpdate</code> does not work -
+animation will overwrite them later in the frame.</p>
+<p>Every method returns <code>true</code> when a pose was written. A <code>false</code>
+means the chain was too short, the goal was not finite, or the weight was
+zero - not that the target was out of reach (an unreachable target still
+produces a valid stretched pose).</p>
+<p>The position solvers only orient the bones that drive the chain, never the
+end effector itself, so a solved foot keeps the orientation animation gave
+it. Follow a position solve with <a class="xref" href="Unravel.Core.IK.html#Unravel_Core_IK_SetIKRotation_Unravel_Core_Entity_Quaternion_System_Single_">SetIKRotation(Entity, Quaternion, float)</a> to pin a foot
+to a slope or keep an aimed hand level.</p>
+<p>Poles must come from a reference the solve does not move - the character
+root, or a dedicated hint entity. A pole derived from the end effector's
+own transform closes a feedback loop: the solve rotates the effector, the
+pole follows it, the chain chases the pole, and the limb spins.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -153,19 +169,177 @@ Class IK  <a class="header-action link-secondary" title="View source" href="http
 </h2>
 
 
-  <a id="Unravel_Core_IK_SetIKLookAtPosition_" data-uid="Unravel.Core.IK.SetIKLookAtPosition*"></a>
+  <a id="Unravel_Core_IK_GetBoneAxis_" data-uid="Unravel.Core.IK.GetBoneAxis*"></a>
 
-  <h3 id="Unravel_Core_IK_SetIKLookAtPosition_Unravel_Core_Entity_Vector3_System_Single_" data-uid="Unravel.Core.IK.SetIKLookAtPosition(Unravel.Core.Entity,Vector3,System.Single)">
-  SetIKLookAtPosition(Entity, Vector3, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Unravel_Core_IK_GetBoneAxis_Unravel_Core_Entity_" data-uid="Unravel.Core.IK.GetBoneAxis(Unravel.Core.Entity)">
+  GetBoneAxis(Entity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Orients <code class="paramref">entity</code> to look toward <code class="paramref">target</code> with the given blend weight.</p>
+  <div class="markdown level1 summary"><p>Bone-local direction from <code class="paramref">entity</code> toward its first child,
+i.e. the axis the bone visually runs ALONG. Returns <code>Vector3.forward</code>
+for leaf bones.</p>
+<p>Use this with <a class="xref" href="Unravel.Core.IK.html#Unravel_Core_IK_SetIKAim_Unravel_Core_Entity_Vector3_Vector3_Vector3_Vector3_System_Single_System_Single_">SetIKAim(Entity, Vector3, Vector3, Vector3, Vector3, float, float)</a> only when you want to point the bone
+itself at something - a barrel, a tentacle, a limb. It is the wrong axis
+for a &quot;face the target&quot; aim on a spine, chest or head: aiming a spine
+along its own length points the torso at the target and folds the
+character in half. Which axis represents a bone's FACING cannot be derived
+from the skeleton (that is what a humanoid avatar mapping is for), so pass
+it explicitly - <code>Vector3.forward</code> for most rigs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetIKLookAtPosition(Entity entity, Vector3 target, float weight = 1)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vector3 GetBoneAxis(Entity entity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="Unravel.Core.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_IK_GetFacingAxis_" data-uid="Unravel.Core.IK.GetFacingAxis*"></a>
+
+  <h3 id="Unravel_Core_IK_GetFacingAxis_Unravel_Core_Entity_Vector3_" data-uid="Unravel.Core.IK.GetFacingAxis(Unravel.Core.Entity,Vector3)">
+  GetFacingAxis(Entity, Vector3)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Bone-local axis of <code class="paramref">entity</code> that currently points along
+<code class="paramref">worldDirection</code>, snapped to the nearest signed unit axis.</p>
+<p>This is how you get the <code>forwardAxis</code> for <a class="xref" href="Unravel.Core.IK.html#Unravel_Core_IK_SetIKAim_Unravel_Core_Entity_Vector3_Vector3_Vector3_Vector3_System_Single_System_Single_">SetIKAim(Entity, Vector3, Vector3, Vector3, Vector3, float, float)</a> on a
+torso or head without guessing. A rig authored with the chest's local -Z
+out of the front is structurally identical to one with +Z out of the
+front, and importers do not normalise it - so ask the rig which local axis
+lines up with the character's forward:</p>
+<pre><code class="lang-csharp">spineAimAxis = IK.GetFacingAxis(Spine, transform.forward);</code></pre>
+<p>Sample it in a neutral pose (OnStart is fine). Snapping means a spine
+slightly bent by the current animation frame still resolves cleanly.</p>
+<p>Contrast with <a class="xref" href="Unravel.Core.IK.html#Unravel_Core_IK_GetBoneAxis_Unravel_Core_Entity_">GetBoneAxis(Entity)</a>, which returns the axis the bone
+runs ALONG - a different question with a different answer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetFacingAxis(Entity entity, Vector3 worldDirection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="Unravel.Core.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>worldDirection</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_IK_SetIKAim_" data-uid="Unravel.Core.IK.SetIKAim*"></a>
+
+  <h3 id="Unravel_Core_IK_SetIKAim_Unravel_Core_Entity_Vector3_Vector3_Vector3_Vector3_System_Single_System_Single_" data-uid="Unravel.Core.IK.SetIKAim(Unravel.Core.Entity,Vector3,Vector3,Vector3,Vector3,System.Single,System.Single)">
+  SetIKAim(Entity, Vector3, Vector3, Vector3, Vector3, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Points a bone-local axis at <code class="paramref">target</code>.</p>
+<p>Imported rigs rarely run their bones along +Z - Mixamo bones run along
+local +Y - so pass the rig's actual axis, or <a class="xref" href="Unravel.Core.IK.html#Unravel_Core_IK_GetBoneAxis_Unravel_Core_Entity_">GetBoneAxis(Entity)</a> to
+derive it from the skeleton.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SetIKAim(Entity entity, Vector3 target, Vector3 forwardAxis, Vector3 upAxis, Vector3 worldUp, float maxAngleDegrees = 0, float weight = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="Unravel.Core.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>forwardAxis</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>Bone-local axis that ends up pointing at the target.</p>
+</dd>
+    <dt><code>upAxis</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>Bone-local axis kept close to <code class="paramref">worldUp</code>.</p>
+</dd>
+    <dt><code>worldUp</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
+    <dd><p>World-space up reference. Pass <code>Vector3.zero</code> to keep the bone's
+existing twist instead of forcing a roll - the safer default for spines.</p>
+</dd>
+    <dt><code>maxAngleDegrees</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Cone limit measured from the bone's current forward. 0 leaves the aim
+unlimited. The swing is clamped to the cone, so the bone eases to a stop
+at the limit rather than the caller having to switch the solve off.</p>
+</dd>
+    <dt><code>weight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_IK_SetIKLookAtPosition_" data-uid="Unravel.Core.IK.SetIKLookAtPosition*"></a>
+
+  <h3 id="Unravel_Core_IK_SetIKLookAtPosition_Unravel_Core_Entity_Vector3_System_Single_" data-uid="Unravel.Core.IK.SetIKLookAtPosition(Unravel.Core.Entity,Vector3,System.Single)">
+  SetIKLookAtPosition(Entity, Vector3, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Orients <code class="paramref">entity</code> so its local +Z axis points at
+<code class="paramref">target</code>, blended by <code class="paramref">weight</code> and
+preserving the bone's twist. Matches the engine's entity convention;
+for skeleton bones prefer <a class="xref" href="Unravel.Core.IK.html#Unravel_Core_IK_SetIKAim_Unravel_Core_Entity_Vector3_Vector3_Vector3_Vector3_System_Single_System_Single_">SetIKAim(Entity, Vector3, Vector3, Vector3, Vector3, float, float)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SetIKLookAtPosition(Entity entity, Vector3 target, float weight = 1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -178,6 +352,11 @@ Class IK  <a class="header-action link-secondary" title="View source" href="http
     <dd></dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -191,9 +370,9 @@ Class IK  <a class="header-action link-secondary" title="View source" href="http
 
   <a id="Unravel_Core_IK_SetIKPositionCCD_" data-uid="Unravel.Core.IK.SetIKPositionCCD*"></a>
 
-  <h3 id="Unravel_Core_IK_SetIKPositionCCD_Unravel_Core_Entity_Vector3_Vector3_System_Int32_System_Int32_System_Single_" data-uid="Unravel.Core.IK.SetIKPositionCCD(Unravel.Core.Entity,Vector3,Vector3,System.Int32,System.Int32,System.Single)">
-  SetIKPositionCCD(Entity, Vector3, Vector3, int, int, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Unravel_Core_IK_SetIKPositionCCD_Unravel_Core_Entity_Vector3_Vector3_System_Int32_System_Int32_System_Single_System_Single_" data-uid="Unravel.Core.IK.SetIKPositionCCD(Unravel.Core.Entity,Vector3,Vector3,System.Int32,System.Int32,System.Single,System.Single)">
+  SetIKPositionCCD(Entity, Vector3, Vector3, int, int, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Solves a CCD IK chain so the end effector reaches <code class="paramref">target</code>.
@@ -205,7 +384,7 @@ point in front of the character at knee height for legs. Pass
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetIKPositionCCD(Entity entity, Vector3 target, Vector3 pole, int numBonesInChain, int maxIterations = 10, float threshold = 0.001)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool SetIKPositionCCD(Entity entity, Vector3 target, Vector3 pole, int numBonesInChain, int maxIterations = 20, float threshold = 0.001, float weight = 1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -222,8 +401,16 @@ point in front of the character at knee height for legs. Pass
     <dd></dd>
     <dt><code>threshold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
+    <dt><code>weight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Blend against the animated pose, 0..1.</p>
+</dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -237,9 +424,9 @@ point in front of the character at knee height for legs. Pass
 
   <a id="Unravel_Core_IK_SetIKPositionFabrik_" data-uid="Unravel.Core.IK.SetIKPositionFabrik*"></a>
 
-  <h3 id="Unravel_Core_IK_SetIKPositionFabrik_Unravel_Core_Entity_Vector3_Vector3_System_Int32_System_Int32_System_Single_" data-uid="Unravel.Core.IK.SetIKPositionFabrik(Unravel.Core.Entity,Vector3,Vector3,System.Int32,System.Int32,System.Single)">
-  SetIKPositionFabrik(Entity, Vector3, Vector3, int, int, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Unravel_Core_IK_SetIKPositionFabrik_Unravel_Core_Entity_Vector3_Vector3_System_Int32_System_Int32_System_Single_System_Single_" data-uid="Unravel.Core.IK.SetIKPositionFabrik(Unravel.Core.Entity,Vector3,Vector3,System.Int32,System.Int32,System.Single,System.Single)">
+  SetIKPositionFabrik(Entity, Vector3, Vector3, int, int, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Solves a FABRIK IK chain so the end effector reaches <code class="paramref">target</code>.
@@ -252,7 +439,7 @@ disable the constraint.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetIKPositionFabrik(Entity entity, Vector3 target, Vector3 pole, int numBonesInChain, int maxIterations = 10, float threshold = 0.001)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool SetIKPositionFabrik(Entity entity, Vector3 target, Vector3 pole, int numBonesInChain, int maxIterations = 20, float threshold = 0.001, float weight = 1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -269,8 +456,16 @@ disable the constraint.</p>
     <dd></dd>
     <dt><code>threshold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
+    <dt><code>weight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Blend against the animated pose, 0..1.</p>
+</dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -286,18 +481,22 @@ disable the constraint.</p>
 
   <h3 id="Unravel_Core_IK_SetIKPositionTwoBone_Unravel_Core_Entity_Vector3_Vector3_System_Single_System_Single_" data-uid="Unravel.Core.IK.SetIKPositionTwoBone(Unravel.Core.Entity,Vector3,Vector3,System.Single,System.Single)">
   SetIKPositionTwoBone(Entity, Vector3, Vector3, float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Analytical two-bone IK (hip-knee-foot or shoulder-elbow-hand).
-<code class="paramref">pole</code> decides which side of the leg plane the knee
+  <div class="markdown level1 summary"><p>Analytical two-bone IK (hip-knee-foot or shoulder-elbow-hand). Prefer this
+over FABRIK for limbs: it is exact, single-pass, and cannot oscillate.
+<code class="paramref">pole</code> decides which side of the limb plane the knee
 (or elbow) bends to - typically a point in front of the character for
 legs, or off to the side for arms.</p>
+<p>Requires exactly three joints above and including <code class="paramref">entity</code>
+and returns <code>false</code> otherwise; it will not silently fall back to a
+different solver.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetIKPositionTwoBone(Entity entity, Vector3 target, Vector3 pole, float weight = 1, float soften = 1)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool SetIKPositionTwoBone(Entity entity, Vector3 target, Vector3 pole, float weight = 1, float soften = 0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -309,11 +508,64 @@ legs, or off to the side for arms.</p>
     <dt><code>pole</code> <a class="xref" href="Vector3.html">Vector3</a></dt>
     <dd></dd>
     <dt><code>weight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>Blend against the animated pose, 0..1.</p>
+</dd>
     <dt><code>soften</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Fraction of limb length over which reach eases out before the joint locks
+straight, 0..1. Softening always costs reach - at 1 a straight leg lands
+several centimetres short of the target - so it defaults to off and should
+only be dialled in to hide a snapping knee.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_IK_SetIKRotation_" data-uid="Unravel.Core.IK.SetIKRotation*"></a>
+
+  <h3 id="Unravel_Core_IK_SetIKRotation_Unravel_Core_Entity_Quaternion_System_Single_" data-uid="Unravel.Core.IK.SetIKRotation(Unravel.Core.Entity,Quaternion,System.Single)">
+  SetIKRotation(Entity, Quaternion, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Blends <code class="paramref">entity</code> toward a world-space orientation.
+Use after a position solve to orient a foot to the ground normal or to
+keep an aimed hand level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SetIKRotation(Entity entity, Quaternion rotation, float weight = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="Unravel.Core.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>weight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -329,7 +581,7 @@ legs, or off to the side for arms.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/kinematics/Kinematics.cs/#L30" class="edit-link">Edit this page</a>
         </div>
 
 

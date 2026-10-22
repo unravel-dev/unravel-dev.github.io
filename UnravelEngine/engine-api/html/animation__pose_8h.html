@@ -105,11 +105,15 @@ $(function(){initNavTree('animation__pose_8h.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="animation_8h_source.html">engine/animation/animation.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="math_8h_source.html">math/math.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 </div>
 <p><a href="animation__pose_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__curve__value.html">unravel::animation_curve_value</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blended value of one animation curve, keyed by get_animation_curve_id.  <a href="structunravel_1_1animation__curve__value.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__pose.html">unravel::animation_pose</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__pose_1_1node__desc.html">unravel::animation_pose::node_desc</a></td></tr>
@@ -133,6 +137,21 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:add3623fbedd5a292b58d40e7a6a9c18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Animation retargeting mode for bone matching.  <a href="namespaceunravel.html#add3623fbedd5a292b58d40e7a6a9c18e">More...</a><br /></td></tr>
 <tr class="separator:add3623fbedd5a292b58d40e7a6a9c18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f578fc44db66349450e8d860d4e51d" id="r_a26f578fc44db66349450e8d860d4e51d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a26f578fc44db66349450e8d860d4e51d">unravel::animation_pose_retargeting</a> : uint8_t { <a class="el" href="namespaceunravel.html#a26f578fc44db66349450e8d860d4e51da12cba3ee81cf4a793796a51b6327c678">unravel::copy</a>
+, <a class="el" href="namespaceunravel.html#a26f578fc44db66349450e8d860d4e51dae51572589151a019e16a99d8c2c43c87">unravel::rest_aligned</a>
+ }</td></tr>
+<tr class="memdesc:a26f578fc44db66349450e8d860d4e51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">How sampled clip poses are carried onto the playing skeleton.  <a href="namespaceunravel.html#a26f578fc44db66349450e8d860d4e51d">More...</a><br /></td></tr>
+<tr class="separator:a26f578fc44db66349450e8d860d4e51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea06b5fd5c289c06877f7bdbb55eed16" id="r_aea06b5fd5c289c06877f7bdbb55eed16"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aea06b5fd5c289c06877f7bdbb55eed16">unravel::animation_retarget_pose</a> : uint8_t { <a class="el" href="namespaceunravel.html#aea06b5fd5c289c06877f7bdbb55eed16a450fd05361f7b7bd1a20a567f695b3b6">unravel::bind_pose</a>
+, <a class="el" href="namespaceunravel.html#aea06b5fd5c289c06877f7bdbb55eed16a99c14abd82bcd216bc161a881c07bf9f">unravel::t_pose</a>
+ }</td></tr>
+<tr class="memdesc:aea06b5fd5c289c06877f7bdbb55eed16"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pose Rest Aligned retargeting measures motion from (on the clip's skeleton) and applies it to (on the playing one).  <a href="namespaceunravel.html#aea06b5fd5c289c06877f7bdbb55eed16">More...</a><br /></td></tr>
+<tr class="separator:aea06b5fd5c289c06877f7bdbb55eed16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6387480bcce2e8f6bc40a1db234ddca9" id="r_a6387480bcce2e8f6bc40a1db234ddca9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a6387480bcce2e8f6bc40a1db234ddca9">unravel::animation_layer_blend_mode</a> : uint8_t { <a class="el" href="namespaceunravel.html#a6387480bcce2e8f6bc40a1db234ddca9a1e2a522792ec652a09e682a89563aa86">unravel::override_pose</a>
+, <a class="el" href="namespaceunravel.html#a6387480bcce2e8f6bc40a1db234ddca9a496a7ccbdcacad75e85f9fe91d56f1ac">unravel::additive</a>
+ }</td></tr>
+<tr class="memdesc:a6387480bcce2e8f6bc40a1db234ddca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How a layer above the base layer combines with the layers below it.  <a href="namespaceunravel.html#a6387480bcce2e8f6bc40a1db234ddca9">More...</a><br /></td></tr>
+<tr class="separator:a6387480bcce2e8f6bc40a1db234ddca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

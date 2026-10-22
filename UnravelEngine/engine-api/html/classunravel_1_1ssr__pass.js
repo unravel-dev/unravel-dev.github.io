@@ -12,5 +12,5 @@ var classunravel_1_1ssr__pass =
     [ "run_fidelityfx_three_pass", "classunravel_1_1ssr__pass.html#a2544fd8351467fdacb0cf2021537ba50", null ],
     [ "run_spatial_denoise", "classunravel_1_1ssr__pass.html#a67cb939fb20dc7b2320b2efbe8b131e0", null ],
     [ "run_ssr_trace", "classunravel_1_1ssr__pass.html#a0400a6843dff84346126f18d563ad877", null ],
-    [ "run_temporal_resolve", "classunravel_1_1ssr__pass.html#adb4edca5dee25f27b5cd94a7b393b4e7", null ]
+    [ "run_temporal_resolve", "classunravel_1_1ssr__pass.html#a0cd6888bd8bd25054b3b6eb4da74294f", null ]
 ];

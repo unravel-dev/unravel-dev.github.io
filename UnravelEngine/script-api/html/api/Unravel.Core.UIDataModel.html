@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UIDataModel | Unravel Engine Scripting API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UIDataModel | Unravel Engine Scripting API ">
+      
+      <meta name="description" content="A data model of a UI document: the values and events its markup binds to. The document declares it with data-model=&amp;quot;name&amp;quot; on an element; inside that element {{ credit }}, data-if, data-for, data-class-, data-style-, data-attr-, data-value, data-checked and data-event- read the model.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/unravel-dev/UnravelEngine/new/main/apiSpec/new?filename=Unravel_Core_UIDataModel.md&amp;value=---%0Auid%3A%20Unravel.Core.UIDataModel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Unravel Engine Scripting API">
+            Unravel Engine Scripting API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Unravel.Core.UIDataModel">
+
+
+
+  <h1 id="Unravel_Core_UIDataModel" data-uid="Unravel.Core.UIDataModel" class="text-break">
+Class UIDataModel  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Unravel.html">Unravel</a>.<a class="xref" href="Unravel.Core.html">Core</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>A data model of a UI document: the values and events its markup binds to. The document
+declares it with <code>data-model=&quot;name&quot;</code> on an element; inside that element
+<code>{{ credit }}</code>, <code>data-if</code>, <code>data-for</code>, <code>data-class-<em></em></code>, <code>data-style-</code>,
+<code>data-attr-<em></em></code>, <code>data-value</code>, <code>data-checked</code> and <code>data-event-</code> read the model.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class UIDataModel</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UIDataModel</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+  <h2 id="Unravel_Core_UIDataModel_examples">Examples</h2>
+  <pre><code class="lang-csharp">// &lt;body data-model="hud"&gt; {{ credit | money }} &lt;button data-event-click="Spin()"&gt;
+var model = ui.GetModel("hud");
+model.Bind(hud);                                  // HudModel's public fields, properties, methods
+model.AddTransform&lt;long&gt;("money", v =&gt; $"{v:N0}");
+hud.credit += win;
+model.Dirty(nameof(HudModel.credit));</code></pre>
+
+
+  <h2 id="Unravel_Core_UIDataModel_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Get it with <a class="xref" href="Unravel.Core.UIDocumentComponent.html#Unravel_Core_UIDocumentComponent_GetModel_System_String_">GetModel(string)</a>; it exists before and across document
+(re)loads. Changes are pushed: after changing a bound value call <a class="xref" href="Unravel.Core.UIDataModel.html#Unravel_Core_UIDataModel_Dirty_System_String_">Dirty(string)</a> (or
+<a class="xref" href="Unravel.Core.UIDataModel.html#Unravel_Core_UIDataModel_DirtyAll">DirtyAll()</a>); views using it update at the next frame. Controls bound with
+data-value / data-checked write back and update by themselves. Values: bool, integers and
+floating point numbers, string, enums (as their name), <a class="xref" href="Color.html">Color</a> (as an RCSS
+colour); classes and structs become nested variables (<code>{{ row.name }}</code>), lists and
+arrays become arrays (<code>data-for=&quot;row : rows&quot;</code>, <code>rows.size</code>). Bindings end with the
+script that made them.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Unravel_Core_UIDataModel_autoDirty_" data-uid="Unravel.Core.UIDataModel.autoDirty*"></a>
+
+  <h3 id="Unravel_Core_UIDataModel_autoDirty" data-uid="Unravel.Core.UIDataModel.autoDirty">
+  autoDirty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares the top-level scalar variables each frame and dirties the changed ones, so no
+<a class="xref" href="Unravel.Core.UIDataModel.html#Unravel_Core_UIDataModel_Dirty_System_String_">Dirty(string)</a> calls are needed. Costs a read of every such variable every frame:
+for prototypes and small models.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool autoDirty { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDataModel_name_" data-uid="Unravel.Core.UIDataModel.name*"></a>
+
+  <h3 id="Unravel_Core_UIDataModel_name" data-uid="Unravel.Core.UIDataModel.name">
+  name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The model's name, as in the document's data-model attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDataModel_owner_" data-uid="Unravel.Core.UIDataModel.owner*"></a>
+
+  <h3 id="Unravel_Core_UIDataModel_owner" data-uid="Unravel.Core.UIDataModel.owner">
+  owner
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The entity whose UI document has the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity owner { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.Entity.html">Entity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Unravel_Core_UIDataModel_AddTransform_" data-uid="Unravel.Core.UIDataModel.AddTransform*"></a>
+
+  <h3 id="Unravel_Core_UIDataModel_AddTransform_System_String_System_Func_System_Object_System_Object___System_Object__" data-uid="Unravel.Core.UIDataModel.AddTransform(System.String,System.Func{System.Object,System.Object[],System.Object})">
+  AddTransform(string, Func&lt;object, object[], object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a transform for <code>{{ value | name }}</code> or <code>{{ value | name(arg) }}</code>. It serves
+every model of the document. Integers arrive as long and numbers as double; use
+<a class="xref" href="Unravel.Core.UIDataModel.html#Unravel_Core_UIDataModel_AddTransform__1_System_String_System_Func___0_System_Object__">AddTransform&lt;T&gt;(string, Func&lt;T, object&gt;)</a> to receive a converted value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTransform(string transformName, Func&lt;object, object[], object&gt; transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transformName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name used after the pipe.</p>
+</dd>
+    <dt><code>transform</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[], <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>Gets the value and the arguments; returns the new value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDataModel_AddTransform_" data-uid="Unravel.Core.UIDataModel.AddTransform*"></a>
+
+  <h3 id="Unravel_Core_UIDataModel_AddTransform__1_System_String_System_Func___0_System_Object__" data-uid="Unravel.Core.UIDataModel.AddTransform``1(System.String,System.Func{``0,System.Object})">
+  AddTransform&lt;T&gt;(string, Func&lt;T, object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a transform receiving the value converted to <code class="typeparamref">T</code>, e.g.
+<code>AddTransform&lt;long&gt;(&quot;money&quot;, v =&gt; $&quot;{v:N0} $&quot;)</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTransform&lt;T&gt;(string transformName, Func&lt;T, object&gt; transform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>transformName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>transform</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDataModel_Bind_" data-uid="Unravel.Core.UIDataModel.Bind*"></a>
+
+  <h3 id="Unravel_Core_UIDataModel_Bind_System_Object_" data-uid="Unravel.Core.UIDataModel.Bind(System.Object)">
+  Bind(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binds an object: its public fields and properties become variables (writable ones accept
+data-value writes), its public methods become events (<code>data-event-click=&quot;Spin()&quot;</code>;
+a first parameter of an event class receives the event, the others the expression's
+arguments; the model is marked dirty after it runs). Binding another object replaces
+this one; names it lacks become empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Bind(object source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object; it is read at every update of a view that uses it.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDataModel_BindEvent_" data-uid="Unravel.Core.UIDataModel.BindEvent*"></a>
+
+  <h3 id="Unravel_Core_UIDataModel_BindEvent_System_String_System_Action_Unravel_Core_UIEventBase_System_Object____" data-uid="Unravel.Core.UIDataModel.BindEvent(System.String,System.Action{Unravel.Core.UIEventBase,System.Object[]})">
+  BindEvent(string, Action&lt;UIEventBase, object[]&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binds an event for <code>data-event-*=&quot;name(args)&quot;</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BindEvent(string eventName, Action&lt;UIEventBase, object[]&gt; handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name used in the expression.</p>
+</dd>
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Unravel.Core.UIEventBase.html">UIEventBase</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]&gt;</dt>
+    <dd><p>Receives the UI event and the expression's arguments (integers
+as long, numbers as double, strings, bools).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDataModel_Bind_" data-uid="Unravel.Core.UIDataModel.Bind*"></a>
+
+  <h3 id="Unravel_Core_UIDataModel_Bind__1_System_String_System_Func___0__System_Action___0__" data-uid="Unravel.Core.UIDataModel.Bind``1(System.String,System.Func{``0},System.Action{``0})">
+  Bind&lt;T&gt;(string, Func&lt;T&gt;, Action&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binds one variable to a getter, and to a setter when data-value / data-checked controls
+may write it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Bind&lt;T&gt;(string variable, Func&lt;T&gt; getter, Action&lt;T&gt; setter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>getter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>setter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Unravel_Core_UIDataModel_Bind__1_System_String_System_Func___0__System_Action___0___examples">Examples</h4>
+  <pre><code class="lang-csharp">model.Bind("credit", () =&gt; credit);
+model.Bind("volume", () =&gt; volume, v =&gt; volume = v);</code></pre>
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDataModel_Dirty_" data-uid="Unravel.Core.UIDataModel.Dirty*"></a>
+
+  <h3 id="Unravel_Core_UIDataModel_Dirty_System_String_" data-uid="Unravel.Core.UIDataModel.Dirty(System.String)">
+  Dirty(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks a top-level variable changed: the views that use it update at the next frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dirty(string variable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIDataModel_DirtyAll_" data-uid="Unravel.Core.UIDataModel.DirtyAll*"></a>
+
+  <h3 id="Unravel_Core_UIDataModel_DirtyAll" data-uid="Unravel.Core.UIDataModel.DirtyAll">
+  DirtyAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Marks every variable changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DirtyAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIDataModel.cs/#L32" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

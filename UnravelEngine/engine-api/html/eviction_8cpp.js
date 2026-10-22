@@ -30,5 +30,5 @@ var eviction_8cpp =
     [ "unregister_resource", "eviction_8cpp.html#afa14b3267dfbba1791add5b21dfc4fa5", null ],
     [ "would_allocation_fit", "eviction_8cpp.html#a74f4a457ea3ed4fa5e3e7023b9d3a56b", null ],
     [ "bytes", "eviction_8cpp.html#a3a00ca04c0ed87681f126e891122e276", null ],
-    [ "chunks", "eviction_8cpp.html#a0fe52284f83100182faee14bebf26ac4", null ]
+    [ "chunks", "eviction_8cpp.html#a6fe0306d07b441d387136cc10a005dcf", null ]
 ];

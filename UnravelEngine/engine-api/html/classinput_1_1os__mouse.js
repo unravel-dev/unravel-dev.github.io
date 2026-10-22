@@ -12,6 +12,7 @@ var classinput_1_1os__mouse =
     [ "is_down", "classinput_1_1os__mouse.html#ac57a3c195e1dc3debb93fcf0ba7953b2", null ],
     [ "is_pressed", "classinput_1_1os__mouse.html#ab23cf1a97a4dd970706f4d57c87e42eb", null ],
     [ "is_released", "classinput_1_1os__mouse.html#ad74af955d6bf7c6814522299c4689641", null ],
+    [ "rebase_position", "classinput_1_1os__mouse.html#a833157d2456f6ef10bc86f1930c0e87c", null ],
     [ "set_position", "classinput_1_1os__mouse.html#af9fb1dcf1ef009b07421deca866fd878", null ],
     [ "set_scroll", "classinput_1_1os__mouse.html#a9ad2bfac28b405fa7a268563b384a7bc", null ],
     [ "update", "classinput_1_1os__mouse.html#a2d24ae90d19440296768cefc1e03de4c", null ]

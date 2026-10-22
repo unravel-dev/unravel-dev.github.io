@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_EntityPool" data-uid="Unravel.Core.EntityPool" class="text-break">
-Class EntityPool  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class EntityPool  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -145,6 +145,10 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
 
 
+  <h2 id="Unravel_Core_EntityPool_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p><a class="xref" href="Unravel.Core.EntityPool.html#Unravel_Core_EntityPool_For_Unravel_Core_Prefab_">For(Prefab)</a> returns one shared pool per prefab. Scripts on an instance's root that
+implement <a class="xref" href="Unravel.Core.IPoolable.html">IPoolable</a> are told when the instance is acquired and released.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -155,7 +159,7 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
   <h3 id="Unravel_Core_EntityPool__ctor_Unravel_Core_Prefab_System_Int32_" data-uid="Unravel.Core.EntityPool.#ctor(Unravel.Core.Prefab,System.Int32)">
   EntityPool(Prefab, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a pool for the given prefab and optionally prewarms inactive instances.</p>
@@ -195,7 +199,7 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
   <h3 id="Unravel_Core_EntityPool_InactiveCount" data-uid="Unravel.Core.EntityPool.InactiveCount">
   InactiveCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Number of inactive entities currently available.</p>
@@ -227,7 +231,7 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
   <h3 id="Unravel_Core_EntityPool_TotalCount" data-uid="Unravel.Core.EntityPool.TotalCount">
   TotalCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Total entities created by this pool (active + inactive).</p>
@@ -263,7 +267,7 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
   <h3 id="Unravel_Core_EntityPool_Acquire" data-uid="Unravel.Core.EntityPool.Acquire">
   Acquire()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Takes an entity from the pool (or instantiates one) and activates it.</p>
@@ -295,7 +299,7 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
   <h3 id="Unravel_Core_EntityPool_Acquire_Unravel_Core_Entity_" data-uid="Unravel.Core.EntityPool.Acquire(Unravel.Core.Entity)">
   Acquire(Entity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Acquires an entity, parents it, then activates it.</p>
@@ -332,7 +336,7 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
   <h3 id="Unravel_Core_EntityPool_Acquire_Vector3_Quaternion_" data-uid="Unravel.Core.EntityPool.Acquire(Vector3,Quaternion)">
   Acquire(Vector3, Quaternion)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Acquires an entity and places it at the given world pose.</p>
@@ -371,7 +375,7 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
   <h3 id="Unravel_Core_EntityPool_Clear" data-uid="Unravel.Core.EntityPool.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Destroys every entity owned by this pool and clears internal lists.</p>
@@ -394,11 +398,48 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
 
 
+  <a id="Unravel_Core_EntityPool_For_" data-uid="Unravel.Core.EntityPool.For*"></a>
+
+  <h3 id="Unravel_Core_EntityPool_For_Unravel_Core_Prefab_" data-uid="Unravel.Core.EntityPool.For(Unravel.Core.Prefab)">
+  For(Prefab)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The pool shared by every caller for @p prefab, created on first use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EntityPool For(Prefab prefab)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <a class="xref" href="Unravel.Core.Prefab.html">Prefab</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.EntityPool.html">EntityPool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_EntityPool_Prewarm_" data-uid="Unravel.Core.EntityPool.Prewarm*"></a>
 
   <h3 id="Unravel_Core_EntityPool_Prewarm_System_Int32_" data-uid="Unravel.Core.EntityPool.Prewarm(System.Int32)">
   Prewarm(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Instantiates inactive instances so later Acquire calls avoid spawn cost.</p>
@@ -430,10 +471,12 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
   <h3 id="Unravel_Core_EntityPool_Release_Unravel_Core_Entity_" data-uid="Unravel.Core.EntityPool.Release(Unravel.Core.Entity)">
   Release(Entity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns an entity to the pool. Stops audio on the root if present, then deactivates.</p>
+  <div class="markdown level1 summary"><p>Returns an entity to the pool. Stops audio on the root if present, then deactivates.
+Releasing an entity that is already in the pool does nothing; a pending delayed release
+of it is cancelled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -458,11 +501,46 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 
 
 
+  <a id="Unravel_Core_EntityPool_Release_" data-uid="Unravel.Core.EntityPool.Release*"></a>
+
+  <h3 id="Unravel_Core_EntityPool_Release_Unravel_Core_Entity_System_Single_" data-uid="Unravel.Core.EntityPool.Release(Unravel.Core.Entity,System.Single)">
+  Release(Entity, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an entity to the pool after @p delay seconds of game time (scaled by
+Time.timeScale). A later Release call replaces the pending one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Release(Entity entity, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>entity</code> <a class="xref" href="Unravel.Core.Entity.html">Entity</a></dt>
+    <dd></dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/EntityPool.cs/#L27" class="edit-link">Edit this page</a>
         </div>
 
 

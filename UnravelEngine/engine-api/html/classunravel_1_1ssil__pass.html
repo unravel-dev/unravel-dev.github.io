@@ -122,9 +122,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a335bd52589bd7faa7c97ab2b875847" id="r_a7a335bd52589bd7faa7c97ab2b875847"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a335bd52589bd7faa7c97ab2b875847">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a7a335bd52589bd7faa7c97ab2b875847" id="r_a7a335bd52589bd7faa7c97ab2b875847"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a335bd52589bd7faa7c97ab2b875847">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="separator:a7a335bd52589bd7faa7c97ab2b875847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0db63f31d6d814ed78fa6413dc921885" id="r_a0db63f31d6d814ed78fa6413dc921885"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0db63f31d6d814ed78fa6413dc921885">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssil__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
+<tr class="memitem:a0db63f31d6d814ed78fa6413dc921885" id="r_a0db63f31d6d814ed78fa6413dc921885"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0db63f31d6d814ed78fa6413dc921885">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1ssil__pass_1_1run__params.html">run_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
 <tr class="separator:a0db63f31d6d814ed78fa6413dc921885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a632c95f1ff7027c232cda7dfe14c7692" id="r_a632c95f1ff7027c232cda7dfe14c7692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a632c95f1ff7027c232cda7dfe14c7692">release_resources</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview)</td></tr>
 <tr class="memdesc:a632c95f1ff7027c232cda7dfe14c7692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases all GPU resources owned by this pass from the render_view.  <br /></td></tr>
@@ -132,7 +132,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ssil__pass_8h_source.html#l00013">13</a> of file <a class="el" href="ssil__pass_8h_source.html">ssil_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssil__pass_8h_source.html#l00014">14</a> of file <a class="el" href="ssil__pass_8h_source.html">ssil_pass.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7a335bd52589bd7faa7c97ab2b875847" name="a7a335bd52589bd7faa7c97ab2b875847"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a335bd52589bd7faa7c97ab2b875847">&#9670;&#160;</a></span>init()</h2>
@@ -170,7 +170,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Releases all GPU resources owned by this pass from the render_view. </p>
 
-<p class="definition">Definition at line <a class="el" href="ssil__pass_8cpp_source.html#l00743">743</a> of file <a class="el" href="ssil__pass_8cpp_source.html">ssil_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssil__pass_8cpp_source.html#l00745">745</a> of file <a class="el" href="ssil__pass_8cpp_source.html">ssil_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -194,7 +194,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Executes the full SSIL pipeline (trace -&gt; temporal -&gt; denoise -&gt; upsample). Returns the SSIL output texture: RGB = full hemispherical indirect diffuse in radiance-mean units (on-screen bounce where rays hit, environment SH where they miss); the consumer multiplies by PI to reach eval_irradiance_sh's irradiance units. A = SSIL blend weight: trace coverage without temporal, accumulated screen-hit evidence when temporal is enabled (mix(irradiance, ssil.rgb*PI, a)). </p>
 
-<p class="definition">Definition at line <a class="el" href="ssil__pass_8cpp_source.html#l00120">120</a> of file <a class="el" href="ssil__pass_8cpp_source.html">ssil_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ssil__pass_8cpp_source.html#l00104">104</a> of file <a class="el" href="ssil__pass_8cpp_source.html">ssil_pass.cpp</a>.</p>
 
 </div>
 </div>

@@ -110,6 +110,8 @@ $(function(){initNavTree('deferred_2pipeline_8cpp.html',''); initResizable(true)
 <code>#include &lt;<a class="el" href="camera__component_8h_source.html">engine/rendering/ecs/components/camera_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="fxaa__component_8h_source.html">engine/rendering/ecs/components/fxaa_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="light__component_8h_source.html">engine/rendering/ecs/components/light_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="particle__emitter__component_8h_source.html">engine/rendering/ecs/components/particle_emitter_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="gi__pass__constants_8h_source.html">engine/rendering/gi/gi_pass_constants.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="perez__luminance_8h_source.html">engine/rendering/perez_luminance.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="model__component_8h_source.html">engine/rendering/ecs/components/model_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="reflection__probe__component_8h_source.html">engine/rendering/ecs/components/reflection_probe_component.h</a>&gt;</code><br />
@@ -118,15 +120,21 @@ $(function(){initNavTree('deferred_2pipeline_8cpp.html',''); initResizable(true)
 <code>#include &lt;<a class="el" href="tonemapping__component_8h_source.html">engine/rendering/ecs/components/tonemapping_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="default__textures_8h_source.html">engine/rendering/default_textures.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="surface__cache__system_8h_source.html">engine/rendering/gi/surface_cache_system.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="surface__cache__view_8h_source.html">engine/rendering/gi/surface_cache_view.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="camera_8h_source.html">engine/rendering/camera.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="material_8h_source.html">engine/rendering/material.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mesh_8h_source.html">engine/rendering/mesh.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="model_8h_source.html">engine/rendering/model.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="render__scale_8h_source.html">engine/rendering/render_scale.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="renderer_8h_source.html">engine/rendering/renderer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="engine_2engine_2settings_2settings_8h_source.html">engine/settings/settings.h</a>&gt;</code><br />
+<code>#include &lt;hpp/optional.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="index__buffer_8h_source.html">graphics/index_buffer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="graphics_8h_source.html">graphics/graphics.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="render__pass_8h_source.html">graphics/render_pass.h</a>&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;<a class="el" href="render__view_8h_source.html">graphics/render_view.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="texture_8h_source.html">graphics/texture.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="vertex__buffer_8h_source.html">graphics/vertex_buffer.h</a>&gt;</code><br />
@@ -137,9 +145,113 @@ $(function(){initNavTree('deferred_2pipeline_8cpp.html',''); initResizable(true)
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1_a_n_o_n_y_m_o_u_s.html">unravel::ANONYMOUS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1rendering.html">unravel::rendering</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa331d8293270cc782e05c1142cbcb06b" name="aa331d8293270cc782e05c1142cbcb06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa331d8293270cc782e05c1142cbcb06b">&#9670;&#160;</a></span>color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The finished scene's color. </p>
+
+<p class="definition">Definition at line <a class="el" href="deferred_2pipeline_8cpp_source.html#l00397">397</a> of file <a class="el" href="deferred_2pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae98e73786f2d48f322add708dc59b379" name="ae98e73786f2d48f322add708dc59b379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98e73786f2d48f322add708dc59b379">&#9670;&#160;</a></span>color_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> color_depth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The same color with the scene's depth attached. </p>
+
+<p class="definition">Definition at line <a class="el" href="deferred_2pipeline_8cpp_source.html#l00399">399</a> of file <a class="el" href="deferred_2pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d2757acd5c44bb98f00d9e76ff3f542" name="a1d2757acd5c44bb98f00d9e76ff3f542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2757acd5c44bb98f00d9e76ff3f542">&#9670;&#160;</a></span>is_applied</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_applied = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="deferred_2pipeline_8cpp_source.html#l00106">106</a> of file <a class="el" href="deferred_2pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a807d72666f6071a102f2e30b1d5b01ce" name="a807d72666f6071a102f2e30b1d5b01ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807d72666f6071a102f2e30b1d5b01ce">&#9670;&#160;</a></span>layer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">math::vec4 layer {0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="deferred_2pipeline_8cpp_source.html#l00105">105</a> of file <a class="el" href="deferred_2pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4ffc68aa52d0ac2897989ea2f7034446" name="a4ffc68aa52d0ac2897989ea2f7034446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ffc68aa52d0ac2897989ea2f7034446">&#9670;&#160;</a></span>output_depth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a> output_depth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A scaled run's output with a depth of its own at the output's size (OBUFFER_DEPTH), which the upscale fills with the scene's depth; null unless the run asks for it (run_params::needs_output_depth). </p>
+
+<p class="definition">Definition at line <a class="el" href="deferred_2pipeline_8cpp_source.html#l00402">402</a> of file <a class="el" href="deferred_2pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a879f25babf893e0c0e5ab58b0cc6f836" name="a879f25babf893e0c0e5ab58b0cc6f836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a879f25babf893e0c0e5ab58b0cc6f836">&#9670;&#160;</a></span>placement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">math::vec4 placement {0.0f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="deferred_2pipeline_8cpp_source.html#l00104">104</a> of file <a class="el" href="deferred_2pipeline_8cpp_source.html">pipeline.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

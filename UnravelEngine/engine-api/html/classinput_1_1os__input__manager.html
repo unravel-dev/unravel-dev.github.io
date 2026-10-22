@@ -122,7 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2e33cf1d5b7d2f21e01f9f1128303818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c6dc3962053f3c479124e3340bbc7d" id="r_ad5c6dc3962053f3c479124e3340bbc7d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5c6dc3962053f3c479124e3340bbc7d">get_all_devices</a> () const -&gt; const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classinput_1_1input__device.html">input_device</a> &gt; &gt; &amp;</td></tr>
 <tr class="separator:ad5c6dc3962053f3c479124e3340bbc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab501902eece3cff4afb86073cc4fab2a" id="r_ab501902eece3cff4afb86073cc4fab2a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab501902eece3cff4afb86073cc4fab2a">get_gamepad</a> (uint32_t <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>) const -&gt; const <a class="el" href="classinput_1_1gamepad.html">gamepad</a> &amp;override</td></tr>
+<tr class="memitem:ab501902eece3cff4afb86073cc4fab2a" id="r_ab501902eece3cff4afb86073cc4fab2a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab501902eece3cff4afb86073cc4fab2a">get_gamepad</a> (uint32_t <a class="el" href="inspector__array_8cpp.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>) const -&gt; const <a class="el" href="classinput_1_1gamepad.html">gamepad</a> &amp;override</td></tr>
 <tr class="separator:ab501902eece3cff4afb86073cc4fab2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d96da92b2420fe21f535145b90720f8" id="r_a2d96da92b2420fe21f535145b90720f8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d96da92b2420fe21f535145b90720f8">get_max_gamepads</a> () const -&gt; uint32_t override</td></tr>
 <tr class="separator:a2d96da92b2420fe21f535145b90720f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,19 +146,44 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3abd5e422aa1fe2847cf728879567a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf61802ced8798fef918eec2509ca5e4" id="r_adf61802ced8798fef918eec2509ca5e4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf61802ced8798fef918eec2509ca5e4">remap_to_work_zone</a> (<a class="el" href="structinput_1_1coord.html">coord</a> global_pos) -&gt; <a class="el" href="structinput_1_1coord.html">coord</a></td></tr>
 <tr class="separator:adf61802ced8798fef918eec2509ca5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c393bd70b89fd3f05e9f4b000469ac9" id="r_a2c393bd70b89fd3f05e9f4b000469ac9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c393bd70b89fd3f05e9f4b000469ac9">remap_from_work_zone</a> (<a class="el" href="structinput_1_1coord.html">coord</a> work_pos) -&gt; <a class="el" href="structinput_1_1coord.html">coord</a></td></tr>
+<tr class="memdesc:a2c393bd70b89fd3f05e9f4b000469ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse of remap_to_work_zone: a position in work-zone space back to global.  <br /></td></tr>
+<tr class="separator:a2c393bd70b89fd3f05e9f4b000469ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eea80acb00358590e60eccc19eabea7" id="r_a0eea80acb00358590e60eccc19eabea7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eea80acb00358590e60eccc19eabea7">is_inside_work_zone</a> (<a class="el" href="structinput_1_1coord.html">coord</a> global_pos) -&gt; bool</td></tr>
 <tr class="separator:a0eea80acb00358590e60eccc19eabea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70858de316f2cb3930cfe25dc97f5da2" id="r_a70858de316f2cb3930cfe25dc97f5da2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70858de316f2cb3930cfe25dc97f5da2">set_is_input_allowed</a> (bool allowed)</td></tr>
 <tr class="separator:a70858de316f2cb3930cfe25dc97f5da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb58f2dc868d4f6e77b960aabb17fdb0" id="r_adb58f2dc868d4f6e77b960aabb17fdb0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb58f2dc868d4f6e77b960aabb17fdb0">is_input_allowed</a> () const -&gt; bool</td></tr>
 <tr class="separator:adb58f2dc868d4f6e77b960aabb17fdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa244e9158de211f62593b8dca44cea09" id="r_aa244e9158de211f62593b8dca44cea09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa244e9158de211f62593b8dca44cea09">set_virtual_mouse_position</a> (const hpp::optional&lt; <a class="el" href="structinput_1_1coord.html">coord</a> &gt; &amp;<a class="el" href="native__scene_8cpp.html#ac66edcab862b65e1d49ce97f9c74690c">position</a>)</td></tr>
+<tr class="separator:aa244e9158de211f62593b8dca44cea09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad0f86621b84e3c9a14d5f4ac3727d0" id="r_acad0f86621b84e3c9a14d5f4ac3727d0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acad0f86621b84e3c9a14d5f4ac3727d0">get_virtual_mouse_position</a> () const -&gt; const hpp::optional&lt; <a class="el" href="structinput_1_1coord.html">coord</a> &gt; &amp;</td></tr>
+<tr class="separator:acad0f86621b84e3c9a14d5f4ac3727d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0094a0be8a80b9c42ccf3e1c24108638" id="r_a0094a0be8a80b9c42ccf3e1c24108638"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0094a0be8a80b9c42ccf3e1c24108638">release_all</a> ()</td></tr>
+<tr class="memdesc:a0094a0be8a80b9c42ccf3e1c24108638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lets go of every key and mouse button: nothing reads as held until it is pressed again.  <br /></td></tr>
+<tr class="separator:a0094a0be8a80b9c42ccf3e1c24108638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ed0ab6c55fc9950dbd2e7f368810d9" id="r_a12ed0ab6c55fc9950dbd2e7f368810d9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12ed0ab6c55fc9950dbd2e7f368810d9">get_cursor</a> () -&gt; <a class="el" href="classinput_1_1os__cursor.html">os_cursor</a> &amp;</td></tr>
+<tr class="memdesc:a12ed0ab6c55fc9950dbd2e7f368810d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OS cursor: how scripts hold it, whether the host suspends it, what it shows.  <br /></td></tr>
+<tr class="separator:a12ed0ab6c55fc9950dbd2e7f368810d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a388d093bd3547e64a45e2f84fa03ad95" id="r_a388d093bd3547e64a45e2f84fa03ad95"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a388d093bd3547e64a45e2f84fa03ad95">get_cursor</a> () const -&gt; const <a class="el" href="classinput_1_1os__cursor.html">os_cursor</a> &amp;</td></tr>
+<tr class="separator:a388d093bd3547e64a45e2f84fa03ad95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4eaa434d989541bb1b736b900dc525f" id="r_af4eaa434d989541bb1b736b900dc525f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4eaa434d989541bb1b736b900dc525f">get_touches</a> () const -&gt; const <a class="el" href="classinput_1_1os__touches.html">os_touches</a> &amp;</td></tr>
+<tr class="memdesc:af4eaa434d989541bb1b736b900dc525f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fingers on the touch screen this frame, in work zone pixels.  <br /></td></tr>
+<tr class="separator:af4eaa434d989541bb1b736b900dc525f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa728a69afb4ad5e8fe74bec9b3b1557d" id="r_aa728a69afb4ad5e8fe74bec9b3b1557d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa728a69afb4ad5e8fe74bec9b3b1557d">get_input_frame</a> () const -&gt; uint64_t</td></tr>
+<tr class="separator:aa728a69afb4ad5e8fe74bec9b3b1557d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac83fc4018c7dca75d52260eed3a92c3" id="r_aac83fc4018c7dca75d52260eed3a92c3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac83fc4018c7dca75d52260eed3a92c3">map_window_position</a> (<a class="el" href="structinput_1_1coord.html">coord</a> window_position) -&gt; <a class="el" href="structinput_1_1coord.html">coord</a></td></tr>
+<tr class="separator:aac83fc4018c7dca75d52260eed3a92c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57594ac1b92c5646e80c745570837fa" id="r_ae57594ac1b92c5646e80c745570837fa"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae57594ac1b92c5646e80c745570837fa">map_finger_position</a> (const os::touch_finger_event &amp;finger) -&gt; <a class="el" href="structinput_1_1coord.html">coord</a></td></tr>
+<tr class="memdesc:ae57594ac1b92c5646e80c745570837fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">A finger's position in work zone pixels. Fingers come normalized to the window under them.  <br /></td></tr>
+<tr class="separator:ae57594ac1b92c5646e80c745570837fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classinput_1_1input__manager"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classinput_1_1input__manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classinput_1_1input__manager.html">input::input_manager</a></td></tr>
 <tr class="memitem:ac02916efbe46eff56ba44c65240301d2 inherit pub_methods_classinput_1_1input__manager" id="r_ac02916efbe46eff56ba44c65240301d2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinput_1_1input__manager.html#ac02916efbe46eff56ba44c65240301d2">~input_manager</a> ()=default</td></tr>
 <tr class="separator:ac02916efbe46eff56ba44c65240301d2 inherit pub_methods_classinput_1_1input__manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8hpp_source.html#l00031">31</a> of file <a class="el" href="os__input__manager_8hpp_source.html">os_input_manager.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8hpp_source.html#l00026">26</a> of file <a class="el" href="os__input__manager_8hpp_source.html">os_input_manager.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4cc9ad6cb5bd95674e12045d72ef6491" name="a4cc9ad6cb5bd95674e12045d72ef6491"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cc9ad6cb5bd95674e12045d72ef6491">&#9670;&#160;</a></span>os_input_manager()</h2>
@@ -205,7 +230,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classinput_1_1input__manager.html#a26c77d3cf00ef13032b4863b73520ae5">input::input_manager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00083">83</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00108">108</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,6 +282,46 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a12ed0ab6c55fc9950dbd2e7f368810d9" name="a12ed0ab6c55fc9950dbd2e7f368810d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12ed0ab6c55fc9950dbd2e7f368810d9">&#9670;&#160;</a></span>get_cursor() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto input::os_input_manager::get_cursor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="classinput_1_1os__cursor.html">os_cursor</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The OS cursor: how scripts hold it, whether the host suspends it, what it shows. </p>
+
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00098">98</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a388d093bd3547e64a45e2f84fa03ad95" name="a388d093bd3547e64a45e2f84fa03ad95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a388d093bd3547e64a45e2f84fa03ad95">&#9670;&#160;</a></span>get_cursor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto input::os_input_manager::get_cursor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="classinput_1_1os__cursor.html">os_cursor</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00103">103</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ab501902eece3cff4afb86073cc4fab2a" name="ab501902eece3cff4afb86073cc4fab2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab501902eece3cff4afb86073cc4fab2a">&#9670;&#160;</a></span>get_gamepad()</h2>
 
@@ -283,6 +348,26 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classinput_1_1input__manager.html#a80b55b39b2b3a6ac9319cc18f46729fe">input::input_manager</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00049">49</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa728a69afb4ad5e8fe74bec9b3b1557d" name="aa728a69afb4ad5e8fe74bec9b3b1557d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa728a69afb4ad5e8fe74bec9b3b1557d">&#9670;&#160;</a></span>get_input_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto input::os_input_manager::get_input_frame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; uint64_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Counts calls to before_events_update, which is the boundary where a pressed state becomes down and a released state becomes up - so it is the unit a synthesized tap or hold has to be measured in. </p>
+
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00396">396</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -373,6 +458,46 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af4eaa434d989541bb1b736b900dc525f" name="af4eaa434d989541bb1b736b900dc525f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4eaa434d989541bb1b736b900dc525f">&#9670;&#160;</a></span>get_touches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto input::os_input_manager::get_touches </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="classinput_1_1os__touches.html">os_touches</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The fingers on the touch screen this frame, in work zone pixels. </p>
+
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00346">346</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acad0f86621b84e3c9a14d5f4ac3727d0" name="acad0f86621b84e3c9a14d5f4ac3727d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad0f86621b84e3c9a14d5f4ac3727d0">&#9670;&#160;</a></span>get_virtual_mouse_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto input::os_input_manager::get_virtual_mouse_position </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const hpp::optional&lt;<a class="el" href="structinput_1_1coord.html">coord</a>&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00391">391</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a3abd5e422aa1fe2847cf728879567a36" name="a3abd5e422aa1fe2847cf728879567a36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3abd5e422aa1fe2847cf728879567a36">&#9670;&#160;</a></span>get_work_zone()</h2>
 
@@ -388,7 +513,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00107">107</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00132">132</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -426,7 +551,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00302">302</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00440">440</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -445,7 +570,48 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00264">264</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00401">401</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae57594ac1b92c5646e80c745570837fa" name="ae57594ac1b92c5646e80c745570837fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57594ac1b92c5646e80c745570837fa">&#9670;&#160;</a></span>map_finger_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto input::os_input_manager::map_finger_position </td>
+          <td>(</td>
+          <td class="paramtype">const os::touch_finger_event &amp;</td>          <td class="paramname"><span class="paramname"><em>finger</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structinput_1_1coord.html">coord</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A finger's position in work zone pixels. Fingers come normalized to the window under them. </p>
+
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00357">357</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aac83fc4018c7dca75d52260eed3a92c3" name="aac83fc4018c7dca75d52260eed3a92c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac83fc4018c7dca75d52260eed3a92c3">&#9670;&#160;</a></span>map_window_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto input::os_input_manager::map_window_position </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structinput_1_1coord.html">coord</a></td>          <td class="paramname"><span class="paramname"><em>window_position</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structinput_1_1coord.html">coord</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A position in the main window's pixels, in work zone pixels. The window zone places the window in the global space the mouse reports. </p>
+
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00351">351</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -464,7 +630,49 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00122">122</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00147">147</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0094a0be8a80b9c42ccf3e1c24108638" name="a0094a0be8a80b9c42ccf3e1c24108638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0094a0be8a80b9c42ccf3e1c24108638">&#9670;&#160;</a></span>release_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input::os_input_manager::release_all </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lets go of every key and mouse button: nothing reads as held until it is pressed again. </p>
+
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00339">339</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2c393bd70b89fd3f05e9f4b000469ac9" name="a2c393bd70b89fd3f05e9f4b000469ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c393bd70b89fd3f05e9f4b000469ac9">&#9670;&#160;</a></span>remap_from_work_zone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto input::os_input_manager::remap_from_work_zone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structinput_1_1coord.html">coord</a></td>          <td class="paramname"><span class="paramname"><em>work_pos</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="structinput_1_1coord.html">coord</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inverse of remap_to_work_zone: a position in work-zone space back to global. </p>
+
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00311">311</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -483,7 +691,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00240">240</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00287">287</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -502,7 +710,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00292">292</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00429">429</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +729,27 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00102">102</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00127">127</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa244e9158de211f62593b8dca44cea09" name="aa244e9158de211f62593b8dca44cea09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa244e9158de211f62593b8dca44cea09">&#9670;&#160;</a></span>set_virtual_mouse_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input::os_input_manager::set_virtual_mouse_position </td>
+          <td>(</td>
+          <td class="paramtype">const hpp::optional&lt; <a class="el" href="structinput_1_1coord.html">coord</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Drives the pointer from <code>position</code> (global space) instead of the OS cursor, so the cursor itself is left where the user put it. Reset it to hand control back. </p>
+
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00333">333</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -540,7 +768,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00092">92</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00117">117</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -559,7 +787,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00097">97</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="os__input__manager_8cpp_source.html#l00122">122</a> of file <a class="el" href="os__input__manager_8cpp_source.html">os_input_manager.cpp</a>.</p>
 
 </div>
 </div>

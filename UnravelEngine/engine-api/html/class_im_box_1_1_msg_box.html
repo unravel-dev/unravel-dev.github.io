@@ -110,7 +110,7 @@ $(function(){initNavTree('class_im_box_1_1_msg_box.html',''); initResizable(true
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8841dc54cd6d1d4d38b2215cc30fa90e" id="r_a8841dc54cd6d1d4d38b2215cc30fa90e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8841dc54cd6d1d4d38b2215cc30fa90e">MsgBox</a> (const std::string &amp;<a class="el" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a>, const std::string &amp;message, int buttons, const <a class="el" href="struct_im_box_1_1_msg_box_config.html">MsgBoxConfig</a> &amp;config=<a class="el" href="struct_im_box_1_1_msg_box_config.html">MsgBoxConfig</a>{})</td></tr>
+<tr class="memitem:a8841dc54cd6d1d4d38b2215cc30fa90e" id="r_a8841dc54cd6d1d4d38b2215cc30fa90e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8841dc54cd6d1d4d38b2215cc30fa90e">MsgBox</a> (const std::string &amp;<a class="el" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a>, const std::string &amp;<a class="el" href="inspector__entity_8cpp.html#a36bd74109f547f7f8198faf5a12d2879">message</a>, int buttons, const <a class="el" href="struct_im_box_1_1_msg_box_config.html">MsgBoxConfig</a> &amp;config=<a class="el" href="struct_im_box_1_1_msg_box_config.html">MsgBoxConfig</a>{})</td></tr>
 <tr class="memdesc:a8841dc54cd6d1d4d38b2215cc30fa90e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with configuration.  <br /></td></tr>
 <tr class="separator:a8841dc54cd6d1d4d38b2215cc30fa90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac43e256ec0924ca4f3868ce1563155e9" id="r_ac43e256ec0924ca4f3868ce1563155e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac43e256ec0924ca4f3868ce1563155e9">~MsgBox</a> ()</td></tr>
@@ -125,6 +125,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a9060981be91dfeee3b2c4d7b20ae55" id="r_a1a9060981be91dfeee3b2c4d7b20ae55"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a9060981be91dfeee3b2c4d7b20ae55">IsOpen</a> () const -&gt; bool</td></tr>
 <tr class="memdesc:a1a9060981be91dfeee3b2c4d7b20ae55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the message box is open.  <br /></td></tr>
 <tr class="separator:a1a9060981be91dfeee3b2c4d7b20ae55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87cd680db85cd37706299a976ba6bf9" id="r_aa87cd680db85cd37706299a976ba6bf9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa87cd680db85cd37706299a976ba6bf9">IsWaiting</a> () const -&gt; bool</td></tr>
+<tr class="memdesc:aa87cd680db85cd37706299a976ba6bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the box still waits for an answer: open and not answered yet.  <br /></td></tr>
+<tr class="separator:aa87cd680db85cd37706299a976ba6bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9639c744390edc027a8022fe3208c5" id="r_a3c9639c744390edc027a8022fe3208c5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c9639c744390edc027a8022fe3208c5">GetTitle</a> () const -&gt; const std::string &amp;</td></tr>
+<tr class="separator:a3c9639c744390edc027a8022fe3208c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566a261270a8617f044e037211529134" id="r_a566a261270a8617f044e037211529134"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a566a261270a8617f044e037211529134">GetMessage</a> () const -&gt; const std::string &amp;</td></tr>
+<tr class="separator:a566a261270a8617f044e037211529134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac947d0269a474df19e2fe6dd267bec9a" id="r_ac947d0269a474df19e2fe6dd267bec9a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac947d0269a474df19e2fe6dd267bec9a">GetButtons</a> () const -&gt; const std::vector&lt; std::pair&lt; <a class="el" href="namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01">ModalResult</a>, std::string &gt; &gt; &amp;</td></tr>
+<tr class="memdesc:ac947d0269a474df19e2fe6dd267bec9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buttons in the order drawn, with their labels.  <br /></td></tr>
+<tr class="separator:ac947d0269a474df19e2fe6dd267bec9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36940c98eefd4068ee733db9185af1f6" id="r_a36940c98eefd4068ee733db9185af1f6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36940c98eefd4068ee733db9185af1f6">RequestAnswer</a> (<a class="el" href="namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01">ModalResult</a> result) -&gt; bool</td></tr>
+<tr class="memdesc:a36940c98eefd4068ee733db9185af1f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Answers as a click on the button of <code>result</code> does, on the box's next draw.  <br /></td></tr>
+<tr class="separator:a36940c98eefd4068ee733db9185af1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ef9d6788a913be08cd9228e510608cb" id="r_a0ef9d6788a913be08cd9228e510608cb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ef9d6788a913be08cd9228e510608cb">SetCustomIcon</a> (const char *<a class="el" href="create__scene__modal_8cpp.html#a7b0a7c3f446f98e2152357b0145c5b1d">icon</a>) -&gt; void</td></tr>
 <tr class="memdesc:a0ef9d6788a913be08cd9228e510608cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom icon (overrides type-based icon)  <br /></td></tr>
 <tr class="separator:a0ef9d6788a913be08cd9228e510608cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +178,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Constructor with configuration. </p>
 
-<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00012">12</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00013">13</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
 
 </div>
 </div>
@@ -214,7 +227,90 @@ Public Member Functions</h2></td></tr>
 
 <p>Draw the message box (returns true if still open) </p>
 
-<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00036">36</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00037">37</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac947d0269a474df19e2fe6dd267bec9a" name="ac947d0269a474df19e2fe6dd267bec9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac947d0269a474df19e2fe6dd267bec9a">&#9670;&#160;</a></span>GetButtons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ImBox::MsgBox::GetButtons </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;std::pair&lt;<a class="el" href="namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01">ModalResult</a>, std::string&gt;&gt;&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The buttons in the order drawn, with their labels. </p>
+
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00104">104</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
+
+</div>
+</div>
+<a id="a566a261270a8617f044e037211529134" name="a566a261270a8617f044e037211529134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a566a261270a8617f044e037211529134">&#9670;&#160;</a></span>GetMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ImBox::MsgBox::GetMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::string&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00101">101</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
+
+</div>
+</div>
+<a id="a3c9639c744390edc027a8022fe3208c5" name="a3c9639c744390edc027a8022fe3208c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c9639c744390edc027a8022fe3208c5">&#9670;&#160;</a></span>GetTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ImBox::MsgBox::GetTitle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::string&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00100">100</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
 
 </div>
 </div>
@@ -247,6 +343,36 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa87cd680db85cd37706299a976ba6bf9" name="aa87cd680db85cd37706299a976ba6bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87cd680db85cd37706299a976ba6bf9">&#9670;&#160;</a></span>IsWaiting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ImBox::MsgBox::IsWaiting </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the box still waits for an answer: open and not answered yet. </p>
+
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00095">95</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
+
+</div>
+</div>
 <a id="a6dca28ed3ac965a6b51f7abc42bfc367" name="a6dca28ed3ac965a6b51f7abc42bfc367"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dca28ed3ac965a6b51f7abc42bfc367">&#9670;&#160;</a></span>OpenPopup()</h2>
 
@@ -264,7 +390,29 @@ Public Member Functions</h2></td></tr>
 
 <p>Open the popup with callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00027">27</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00028">28</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a36940c98eefd4068ee733db9185af1f6" name="a36940c98eefd4068ee733db9185af1f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36940c98eefd4068ee733db9185af1f6">&#9670;&#160;</a></span>RequestAnswer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ImBox::MsgBox::RequestAnswer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_im_box.html#a14978fda4d00e2bef836686b69e6af01">ModalResult</a></td>          <td class="paramname"><span class="paramname"><em>result</em></span></td><td>)</td>
+          <td> -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Answers as a click on the button of <code>result</code> does, on the box's next draw. </p>
+<dl class="section return"><dt>Returns</dt><dd>False when the box has no such button or no longer waits </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8cpp_source.html#l00222">222</a> of file <a class="el" href="imgui__messagebox_8cpp_source.html">imgui_messagebox.cpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +441,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Set custom icon (overrides type-based icon) </p>
 
-<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00096">96</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="imgui__messagebox_8h_source.html#l00112">112</a> of file <a class="el" href="imgui__messagebox_8h_source.html">imgui_messagebox.h</a>.</p>
 
 </div>
 </div>

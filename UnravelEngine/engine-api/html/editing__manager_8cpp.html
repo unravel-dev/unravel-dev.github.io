@@ -102,12 +102,17 @@ $(function(){initNavTree('editing__manager_8cpp.html',''); initResizable(true); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="editing__manager_8h_source.html">editing_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="animation__preview_8h_source.html">animation_preview.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="authoring__root_8h_source.html">authoring_root.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="core_2base_2basetypes_8hpp_source.html">base/basetypes.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="profiler_8h_source.html">engine/profiler/profiler.h</a>&quot;</code><br />
 <code>#include &quot;imgui/imgui.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="simulation_8h_source.html">simulation/simulation.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;hpp/string_view.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="id__component_8h_source.html">engine/ecs/components/id_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="prefab__component_8h_source.html">engine/ecs/components/prefab_component.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tag__component_8h_source.html">engine/ecs/components/tag_component.h</a>&gt;</code><br />
@@ -121,6 +126,7 @@ $(function(){initNavTree('editing__manager_8cpp.html',''); initResizable(true); 
 <code>#include &lt;<a class="el" href="engine_2engine_2settings_2settings_8h_source.html">engine/settings/settings.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="defaults_8h_source.html">engine/defaults/defaults.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="entity_8hpp_source.html">engine/meta/ecs/entity.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__dependency__graph_8h_source.html">engine/assets/asset_dependency_graph.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__writer_8h_source.html">engine/assets/impl/asset_writer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="editor_2editor_2events_8h_source.html">editor/events.h</a>&gt;</code><br />
@@ -152,7 +158,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editing__manager_8cpp_source.html#l00060">60</a> of file <a class="el" href="editing__manager_8cpp_source.html">editing_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editing__manager_8cpp_source.html#l00070">70</a> of file <a class="el" href="editing__manager_8cpp_source.html">editing_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -168,7 +174,7 @@ Namespaces</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editing__manager_8cpp_source.html#l00059">59</a> of file <a class="el" href="editing__manager_8cpp_source.html">editing_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editing__manager_8cpp_source.html#l00069">69</a> of file <a class="el" href="editing__manager_8cpp_source.html">editing_manager.cpp</a>.</p>
 
 </div>
 </div>

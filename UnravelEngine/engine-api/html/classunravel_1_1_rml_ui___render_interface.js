@@ -4,6 +4,7 @@ var classunravel_1_1_rml_ui___render_interface =
     [ "~RmlUi_RenderInterface", "classunravel_1_1_rml_ui___render_interface.html#ab1d1e1ab5a3f9f19d50b94141aa5fa95", null ],
     [ "begin_frame", "classunravel_1_1_rml_ui___render_interface.html#ac3163871ba2478fdfe5dbe69ec028919", null ],
     [ "clear", "classunravel_1_1_rml_ui___render_interface.html#afe1443d094a282179729c7ae581946df", null ],
+    [ "collect_changed_texture_sources", "classunravel_1_1_rml_ui___render_interface.html#a0fbb54fb2b338278b994144034baf238", null ],
     [ "CompileFilter", "classunravel_1_1_rml_ui___render_interface.html#add91f37fc41a5087e12d3c590c2505de", null ],
     [ "CompileGeometry", "classunravel_1_1_rml_ui___render_interface.html#af9da8c5afb740fd99d17bdbe04f24b60", null ],
     [ "CompileShader", "classunravel_1_1_rml_ui___render_interface.html#af64bfce581522fe3875ea975ed9801df", null ],

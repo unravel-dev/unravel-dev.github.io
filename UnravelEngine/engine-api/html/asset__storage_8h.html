@@ -103,7 +103,9 @@ $(function(){initNavTree('asset__storage_8h.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="asset__handle_8h_source.html">asset_handle.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="animation_8h_source.html">engine/animation/animation.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="asset__flags_8h_source.html">asset_flags.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="target__platform_8h_source.html">engine/settings/target_platform.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="context_8hpp_source.html">context/context.hpp</a>&gt;</code><br />
 <code>#include &lt;hpp/event.hpp&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
@@ -123,9 +125,18 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1texture__importer__meta_1_1quality__meta.html">unravel::texture_importer_meta::quality_meta</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1texture__importer__meta_1_1platform__quality__meta.html">unravel::texture_importer_meta::platform_quality_meta</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A platform's own quality, used on that platform instead of <code>quality</code> while overridden.  <a href="structunravel_1_1texture__importer__meta_1_1platform__quality__meta.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1texture__importer__meta_1_1platforms__meta.html">unravel::texture_importer_meta::platforms_meta</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh__importer__meta.html">unravel::mesh_importer_meta</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh__importer__meta_1_1model__meta.html">unravel::mesh_importer_meta::model_meta</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh__importer__meta_1_1sdf__meta.html">unravel::mesh_importer_meta::sdf_meta</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh__importer__meta_1_1cards__meta.html">unravel::mesh_importer_meta::cards_meta</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1mesh__importer__meta_1_1rig__meta.html">unravel::mesh_importer_meta::rig_meta</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +160,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__header__info.html">unravel::animation_header_info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1audio__header__info.html">unravel::audio_header_info</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1asset__generated__info.html">unravel::asset_generated_info</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks an asset an importer writes as a by-product of another asset, such as a model's default materials. The importer rewrites it only while it still holds what the importer last wrote.  <a href="structunravel_1_1asset__generated__info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1asset__meta.html">unravel::asset_meta</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata for an asset, including its UUID and type.  <a href="structunravel_1_1asset__meta.html#details">More...</a><br /></td></tr>

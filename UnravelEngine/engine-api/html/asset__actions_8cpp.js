@@ -1,10 +1,31 @@
 var asset__actions_8cpp =
 [
     [ "can_reimport", "asset__actions_8cpp.html#adcd52b32ae036c4036f6ce32b6ef871d", null ],
+    [ "create_animation_controller", "asset__actions_8cpp.html#afc04540d9e97fcbb1ecc8663e2ea0f61", null ],
+    [ "create_material", "asset__actions_8cpp.html#a0f4f1932522c423af63b07a71e0ab860", null ],
+    [ "create_physics_material", "asset__actions_8cpp.html#a2bf1f782fb4af5fdd0a3d43b31a86982", null ],
     [ "create_script_from_template", "asset__actions_8cpp.html#a63b762c9d8ce309d07289ccbf09def76", null ],
+    [ "create_style_sheet", "asset__actions_8cpp.html#abd5d70c8b4082e78d3310e046d9c5b8a", null ],
+    [ "create_ui_document", "asset__actions_8cpp.html#ad94f34b17f5d6de7d87197392ecc0144", null ],
+    [ "duplicate_entry", "asset__actions_8cpp.html#a1b4f76bc27ccb71d135d8b976bd0ea9f", null ],
+    [ "get_free_copy_path", "asset__actions_8cpp.html#aa910d67ffa9050fc7af79550af1464af", null ],
+    [ "get_generated_status", "asset__actions_8cpp.html#a66afda08d93e03dc8258baeb81ec548a", null ],
+    [ "get_trash_directory", "asset__actions_8cpp.html#a64d5ae5741a1212ed01f1f9608b1cbfd", null ],
     [ "is_valid_csharp_identifier", "asset__actions_8cpp.html#a0ac9848af6051f49b8e2a1e8a4330662", null ],
+    [ "list_trash_batches", "asset__actions_8cpp.html#a71fbf6bd0b121ad440785e1adb6fe8ca", null ],
+    [ "move_to_trash", "asset__actions_8cpp.html#a5cba7f27274918a923721fa1b3aeb93a", null ],
+    [ "read_text_file", "asset__actions_8cpp.html#a74af0c7c3747393a96e987ccc7a973ea", null ],
     [ "reimport_key", "asset__actions_8cpp.html#a20b3b94b87e2a8e70a6b0784593e1495", null ],
     [ "reimport_path", "asset__actions_8cpp.html#ac1128985ff3356311ee0a0d2fa8cb001", null ],
+    [ "rename_entry", "asset__actions_8cpp.html#a792e8a21ffbbb7e9c35357b9d7ba194e", null ],
+    [ "reset_to_imported", "asset__actions_8cpp.html#a1d07d89381f90c06f9bac11bc607cdc2", null ],
     [ "resolve_asset_source_path", "asset__actions_8cpp.html#ab327843ddf6ba7bc560df419c632e3ce", null ],
-    [ "resolve_asset_source_path", "asset__actions_8cpp.html#a208d0236ada1b987287c2d041f74797c", null ]
+    [ "resolve_asset_source_path", "asset__actions_8cpp.html#a208d0236ada1b987287c2d041f74797c", null ],
+    [ "restore_from_trash", "asset__actions_8cpp.html#a1648b991131cfaffea1aff7fd9335d0e", null ],
+    [ "sync_script_class_name", "asset__actions_8cpp.html#ae4f5a76cc9ab25ed819c3ec3c9ce0c0d", null ],
+    [ "write_text_file", "asset__actions_8cpp.html#ae1e8ed5138b79ceec77a6655fcbc088c", null ],
+    [ "fingerprint", "asset__actions_8cpp.html#a2d1843c1b4523a32769ad2efe50e344c", null ],
+    [ "is_edited", "asset__actions_8cpp.html#a149a3d2804182115119a44bb5cd72356", null ],
+    [ "is_known", "asset__actions_8cpp.html#ac0108c102e00dbd5bea66bd9d1948242", null ],
+    [ "write_time", "asset__actions_8cpp.html#a29c3b42f826469dde6264b33ef14f4de", null ]
 ];

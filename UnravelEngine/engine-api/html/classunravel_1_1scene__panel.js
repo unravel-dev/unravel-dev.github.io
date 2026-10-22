@@ -7,6 +7,13 @@ var classunravel_1_1scene__panel =
     [ "get_center", "classunravel_1_1scene__panel.html#ad6287e0803752f4cb3dece73067d7fa2", null ],
     [ "get_drag_selection_bounds", "classunravel_1_1scene__panel.html#a69948906657be3d2cf4629d0c446bcab", null ],
     [ "get_drag_selection_rect", "classunravel_1_1scene__panel.html#abc530ea668fea06a98afb389812ff864", null ],
+    [ "get_forced_render_size", "classunravel_1_1scene__panel.html#a44ae2a8e99987c247990c7f154b6e301", null ],
+    [ "get_gi_cursor_override", "classunravel_1_1scene__panel.html#a543f494084bf240099fa3674a70a7184", null ],
+    [ "get_gi_visualize", "classunravel_1_1scene__panel.html#a6189addaae94a3afccb588c47e115b37", null ],
+    [ "get_orbit_pivot", "classunravel_1_1scene__panel.html#ae0573d86a6fdbab570e5657a235097d3", null ],
+    [ "get_output", "classunravel_1_1scene__panel.html#aefe15084831a1472c39a2fc7d17e51d5", null ],
+    [ "get_visualization_mode", "classunravel_1_1scene__panel.html#ac62c3470dd29c1a0706da6d91bc886dd", null ],
+    [ "get_visualization_scale", "classunravel_1_1scene__panel.html#a814228fe58da027ada2ae49fb8c42c73", null ],
     [ "get_window_flags", "classunravel_1_1scene__panel.html#a9d04fc21819e83a1d6046c9918805afd", null ],
     [ "get_window_name", "classunravel_1_1scene__panel.html#ad7f6469945c433fc2d468ca4582dfa06", null ],
     [ "init", "classunravel_1_1scene__panel.html#a401f39bf577c3cfc07def8c276e99662", null ],
@@ -15,5 +22,12 @@ var classunravel_1_1scene__panel =
     [ "on_frame_render", "classunravel_1_1scene__panel.html#a138ea5bc7b99f2bdee68b335407699aa", null ],
     [ "on_frame_update", "classunravel_1_1scene__panel.html#a2317310e304b7e569ba531251d4b145b", null ],
     [ "on_project_opened", "classunravel_1_1scene__panel.html#a46fb3ab082863d5cb31c8a3483d94907", null ],
-    [ "reset_camera", "classunravel_1_1scene__panel.html#ad70a35327da09d6fb7d31e6f7a338ab7", null ]
+    [ "request_debug_popover", "classunravel_1_1scene__panel.html#ae915db08099608e99a0cab7f2d6a1160", null ],
+    [ "reset_camera", "classunravel_1_1scene__panel.html#ad70a35327da09d6fb7d31e6f7a338ab7", null ],
+    [ "set_forced_render_size", "classunravel_1_1scene__panel.html#a6a8f1b281429c1a10af0a1a0d9b7f678", null ],
+    [ "set_gi_cursor_override", "classunravel_1_1scene__panel.html#aad997ba90ecf01805733036c71a37606", null ],
+    [ "set_gi_visualize", "classunravel_1_1scene__panel.html#ae267d37f24fb9889f31b48ba391ef1b5", null ],
+    [ "set_visualization_mode", "classunravel_1_1scene__panel.html#a71443d7f6b9d73d41862d9faf9670679", null ],
+    [ "set_visualization_scale", "classunravel_1_1scene__panel.html#a981e4fe3a690779975f14b0bf373c190", null ],
+    [ "stop_camera_motion", "classunravel_1_1scene__panel.html#a8ce6fbc299be47b5bf3cc4da8300ba6a", null ]
 ];

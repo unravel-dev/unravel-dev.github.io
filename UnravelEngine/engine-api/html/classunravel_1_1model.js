@@ -3,6 +3,7 @@ var classunravel_1_1model =
     [ "submit_callbacks", "structunravel_1_1model_1_1submit__callbacks.html", "structunravel_1_1model_1_1submit__callbacks" ],
     [ "submit_vertex_pulling_callbacks", "structunravel_1_1model_1_1submit__vertex__pulling__callbacks.html", "structunravel_1_1model_1_1submit__vertex__pulling__callbacks" ],
     [ "seconds_t", "classunravel_1_1model.html#aa3b14b8644cf532fde0f56cc2093ed8a", null ],
+    [ "apply_default_materials", "classunravel_1_1model.html#a073f2ad6352504e8006aed6529445ef4", null ],
     [ "calculate_lod_data", "classunravel_1_1model.html#abf0e4715132e631440af50042dcad888", null ],
     [ "calculate_submesh_lod", "classunravel_1_1model.html#a0eb78f9e5def69aaf9b1f33a8ec186cb", null ],
     [ "calculate_submesh_lod_from_world_bounds", "classunravel_1_1model.html#a18a843d5089b5b5a8a404649086fb3f1", null ],
@@ -25,8 +26,10 @@ var classunravel_1_1model =
     [ "get_material_instances", "classunravel_1_1model.html#a9157d587e9c2e18c78e9a3c44f2e425d", null ],
     [ "get_materials", "classunravel_1_1model.html#ad8ced4a53e7b8c9bcb2264322b74bbd1", null ],
     [ "get_or_emplace_material_instance", "classunravel_1_1model.html#ac9a4dc648d5ed33ec10cdc8949160d09", null ],
+    [ "is_default_materials_pending", "classunravel_1_1model.html#af9f72e20e25550cbe9494f6e6681fef3", null ],
     [ "is_valid", "classunravel_1_1model.html#a4453a442d392cbc4512716065e0e2b7e", null ],
     [ "recalulate_lod_screen_size_limits", "classunravel_1_1model.html#acffaa95d76ff61e1ea59d19dadaf1c22", null ],
+    [ "set_default_materials_pending", "classunravel_1_1model.html#a29b4182e665db40de8bd4468480f7c13", null ],
     [ "set_lod", "classunravel_1_1model.html#ad5e0781f41b71bf2e15e10e25f75b2eb", null ],
     [ "set_lod_auto_screen_size_power_base", "classunravel_1_1model.html#a8aaecd4e5ca9473dbcf40c04955d747a", null ],
     [ "set_lod_hysteresis", "classunravel_1_1model.html#a9e90b362b4b9de1b983c792428124e77", null ],
@@ -43,6 +46,6 @@ var classunravel_1_1model =
     [ "set_materials", "classunravel_1_1model.html#a531a57759a66bbbf5601b5988cba8523", null ],
     [ "submit", "classunravel_1_1model.html#a7bda469b8f0c48dec1d012b51a46499e", null ],
     [ "submit_for_batching", "classunravel_1_1model.html#a7de6483cae21cf004b5704ca63a8befc", null ],
-    [ "submit_for_shadow_batching_cascaded", "classunravel_1_1model.html#aab5bcb85c540f6708a479c7279c53dca", null ],
+    [ "submit_for_shadow_batching_cascaded", "classunravel_1_1model.html#ac349b12b125056e870af308c787dae79", null ],
     [ "submit_for_vertex_pulling", "classunravel_1_1model.html#a0659038fbc64e2a7f1d06ae95f685236", null ]
 ];

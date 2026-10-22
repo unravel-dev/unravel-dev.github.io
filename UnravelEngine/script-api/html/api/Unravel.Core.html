@@ -105,6 +105,13 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.AnimationController.html">AnimationController</a></dt>
+      <dd><p>Animation controller asset handle: a state machine of animation states, transitions and
+parameters. Assign it to <a class="xref" href="Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_controller">controller</a> and drive it with
+<a class="xref" href="Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_SetFloat_System_String_System_Single_">SetFloat(string, float)</a>, <a class="xref" href="Unravel.Core.AnimationComponent.html#Unravel_Core_AnimationComponent_SetTrigger_System_String_">SetTrigger(string)</a> and friends.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.Application.html">Application</a></dt>
       <dd><p>Provides application-level functionality and control.</p>
 </dd>
@@ -121,7 +128,7 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.Audio.html">Audio</a></dt>
-      <dd><p>Global audio mixer controls (master + per-bus gains) and voice-limit info.</p>
+      <dd><p>Global audio mixer controls (master + per-bus gains), fire-and-forget sounds and voice-limit info.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -169,6 +176,12 @@ referencing the engine. On Mono it is ignored.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ChainIKComponent.html">ChainIKComponent</a></dt>
+      <dd><p>Iterative IK over any number of bones ending at the bone it sits on (tails, tentacles,
+spines, robot arms).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.CharacterControllerComponent.html">CharacterControllerComponent</a></dt>
       <dd><p>Provides character controller physics functionality for an entity.
 Uses a capsule shape internally with sweep-based movement.</p>
@@ -185,6 +198,17 @@ Uses a capsule shape internally with sweep-based movement.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Coroutine.html">Coroutine</a></dt>
+      <dd><p>A coroutine started with <a class="xref" href="Unravel.Core.ScriptComponent.html#Unravel_Core_ScriptComponent_StartCoroutine_System_Collections_IEnumerator_">StartCoroutine(IEnumerator)</a>. Yield it from another
+coroutine to wait until it finishes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Cursor.html">Cursor</a></dt>
+      <dd><p>The mouse cursor: lock it for mouse look, keep it inside the game view, or hide it.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.EntityPool.html">EntityPool</a></dt>
       <dd><p>Reuses prefab instances via SetActive instead of Instantiate/Destroy each time.
 Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</p>
@@ -198,6 +222,13 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.Font.html">Font</a></dt>
       <dd><p>Font asset handle.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.FootIKComponent.html">FootIKComponent</a></dt>
+      <dd><p>Plants a character feet on uneven ground: probes the ground under each foot, lowers the
+pelvis to the lowest planted foot, solves each leg with two-bone IK and tilts the feet onto
+the slope. Sits on the character root; the probes need physics, so it acts in play mode.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -223,6 +254,22 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.IK.html">IK</a></dt>
       <dd><p>Inverse-kinematics helpers for skeletal chains.</p>
+<p>Call these from <code>OnUpdate</code>. Scripts run after the animation system
+has evaluated the pose and before skinning, so bone writes made there are
+what gets rendered. Writing bones from <code>OnFixedUpdate</code> does not work -
+animation will overwrite them later in the frame.</p>
+<p>Every method returns <code>true</code> when a pose was written. A <code>false</code>
+means the chain was too short, the goal was not finite, or the weight was
+zero - not that the target was out of reach (an unreachable target still
+produces a valid stretched pose).</p>
+<p>The position solvers only orient the bones that drive the chain, never the
+end effector itself, so a solved foot keeps the orientation animation gave
+it. Follow a position solve with <a class="xref" href="Unravel.Core.IK.html#Unravel_Core_IK_SetIKRotation_Unravel_Core_Entity_Quaternion_System_Single_">SetIKRotation(Entity, Quaternion, float)</a> to pin a foot
+to a slope or keep an aimed hand level.</p>
+<p>Poles must come from a reference the solve does not move - the character
+root, or a dedicated hint entity. A pole derived from the end effector's
+own transform closes a feedback loop: the solve rotates the effector, the
+pole follows it, the chain chases the pole, and the limb spins.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -246,8 +293,15 @@ Suitable for high-churn gameplay objects (enemies, projectiles, pickups, VFX).</
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.LookAtIKComponent.html">LookAtIKComponent</a></dt>
+      <dd><p>Turns a chain of bones (head, neck, chest) toward a target, the lower bones taking a
+smaller share and the tip finishing the aim, each limited to a cone around its animated
+facing. Smoothed, and faded out when the target goes behind the character.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.Material.html">Material</a></dt>
-      <dd><p>Material asset with editable shading properties.</p>
+      <dd><p>Material with editable shading properties.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -322,6 +376,12 @@ Equality accounts for validity; invalid instances are never equal.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Screen.html">Screen</a></dt>
+      <dd><p>Size of the view the game is shown in: the window in the player, the Game panel's
+resolution in the editor. Same pixel space as <a class="xref" href="Unravel.Core.Input.html#Unravel_Core_Input_mousePosition">mousePosition</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.ScriptComponent.html">ScriptComponent</a></dt>
       <dd><p>Represents a script component that provides lifecycle hooks and event handling for an entity.</p>
 </dd>
@@ -347,6 +407,13 @@ Equality accounts for validity; invalid instances are never equal.</p>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.SkylightComponent.html">SkylightComponent</a></dt>
       <dd><p>Environment / sky light component.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.SpringBoneComponent.html">SpringBoneComponent</a></dt>
+      <dd><p>Secondary motion for a chain of bones hanging from the bone it sits on (tails, ears,
+ponytails, cloth strips): every joint is a damped particle pulled back to its animated
+direction, pushed by gravity and kept out of colliders, simulated at a fixed rate.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -404,16 +471,56 @@ Equality accounts for validity; invalid instances are never equal.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.TwoBoneIKComponent.html">TwoBoneIKComponent</a></dt>
+      <dd><p>Analytical two-bone IK on the bone it sits on (a hand or a foot): the bone reaches its
+target, bending its parent (elbow, knee) toward the pole. Runs after scripts, before
+skinning, on top of the animated pose, and leaves the animated pose untouched.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIAnimation.html">UIAnimation</a></dt>
+      <dd><p>A running property animation started with <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_Animate_System_String_System_String_System_Single_Unravel_Core_UIEasing_System_Int32_System_Boolean_System_Single_">Animate(string, string, float, UIEasing, int, bool, float)</a>.
+The animated value stays on the element as an inline style when it finishes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIAnimationEvent.html">UIAnimationEvent</a></dt>
+      <dd><p>An &quot;animationend&quot; or &quot;transitionend&quot;: an animation of one property finished. A keyframe
+animation of several properties sends one event per property.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIButton.html">UIButton</a></dt>
+      <dd><p>A &lt;button&gt;, or an &lt;input&gt; of type submit or button. React with
+<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_clicked">clicked</a>; disable with <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_disabled">disabled</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UIChangeEvent.html">UIChangeEvent</a></dt>
       <dd><p>Represents a UI change event for handling string value changes.
 This is for text inputs, dropdowns, and other elements that provide string values.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIClickEvent.html">UIClickEvent</a></dt>
+      <dd><p>A &quot;click&quot; or &quot;dblclick&quot;: pointer data plus the click count.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIDataModel.html">UIDataModel</a></dt>
+      <dd><p>A data model of a UI document: the values and events its markup binds to. The document
+declares it with <code>data-model=&quot;name&quot;</code> on an element; inside that element
+<code>{{ credit }}</code>, <code>data-if</code>, <code>data-for</code>, <code>data-class-<em></em></code>, <code>data-style-</code>,
+<code>data-attr-<em></em></code>, <code>data-value</code>, <code>data-checked</code> and <code>data-event-</code> read the model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UIDocument.html">UIDocument</a></dt>
       <dd><p>Managed wrapper around a native RmlUi document (<code>Rml::ElementDocument</code>).
 Each <a class="xref" href="Unravel.Core.UIDocumentComponent.html">UIDocumentComponent</a> owns its own RmlUi context and document.
-Wrappers are cached by native pointer so repeated queries return the same instance.</p>
+Wrappers are cached by document, so repeated queries return the same instance. A wrapper is
+valid while its document is the component's open document: after <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_Close">Close()</a> or a
+reload it reports <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_IsValid">IsValid()</a> false and its calls do nothing.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -423,22 +530,46 @@ Each component owns its own RmlUi context and document (context-per-document).</
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIDragEvent.html">UIDragEvent</a></dt>
+      <dd><p>A drag event: &quot;dragstart&quot;, &quot;drag&quot; and &quot;dragend&quot; on the dragged element (give it the RCSS
+'drag: drag' or 'drag: clone'), &quot;dragover&quot;, &quot;dragmove&quot;, &quot;dragout&quot; and &quot;dragdrop&quot; on the
+elements it passes over or is dropped on.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
       <dd><p>Managed wrapper around a native RmlUi element (<code>Rml::Element</code>).
-Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_GetElementById_System_String_">GetElementById(string)</a> /
-<a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_QuerySelector_System_String_">QuerySelector(string)</a> so wrappers are cached by native pointer.</p>
+Obtain instances via <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_GetElementById_System_String_">GetElementById(string)</a> /
+<a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_QuerySelector_System_String_">QuerySelector(string)</a>; each element has one wrapper.
+A wrapper outliving its element (after an <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_InnerRml">InnerRml</a> rebuild of an ancestor, or
+a document close or reload) is safe: it reports <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_IsValid">IsValid()</a> false, its setters do
+nothing and its getters return defaults. Fetch the element again from the document.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UIEventBase.html">UIEventBase</a></dt>
-      <dd><p>Base type for UI events dispatched through <a class="xref" href="Unravel.Core.UIEventManager.html">UIEventManager</a>.</p>
+      <dd><p>Base type for UI events dispatched through <a class="xref" href="Unravel.Core.UIEventManager.html">UIEventManager</a>.
+Event objects are reused: read what you need inside the callback and do not keep the event.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UIEventManager.html">UIEventManager</a></dt>
       <dd><p>Global UI event manager that handles all UI event dispatching.
-Subscriptions are keyed by native element pointer so multiple managed wrappers
-for the same element share one subscription set.</p>
+Subscriptions are kept per element handle, so every wrapper of one element shares them.
+A subscription ends when its element is destroyed or when the script that made it is
+destroyed: the script the callback belongs to, else the script that was running.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIFocusEvent.html">UIFocusEvent</a></dt>
+      <dd><p>A &quot;focus&quot; or &quot;blur&quot;: an element gained or lost keyboard focus. These events do not bubble;
+subscribe on the element itself.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIInput.html">UIInput</a></dt>
+      <dd><p>A text field: an &lt;input&gt; (text, password...) or a &lt;textarea&gt;. Its text is
+<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_value">value</a>; &quot;change&quot; fires while the user types.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -454,15 +585,69 @@ Generic enough to handle mouse, touch, pen, and other pointer devices.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIProgress.html">UIProgress</a></dt>
+      <dd><p>A &lt;progress&gt; bar. <a class="xref" href="Unravel.Core.UIProgress.html#Unravel_Core_UIProgress_value">value</a> runs from 0 to <a class="xref" href="Unravel.Core.UIProgress.html#Unravel_Core_UIProgress_max">max</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIScrollEvent.html">UIScrollEvent</a></dt>
+      <dd><p>A &quot;scroll&quot;: the element's content scrolled. Read the new position from
+<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_scrollTop">scrollTop</a> and <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_scrollLeft">scrollLeft</a> of <a class="xref" href="Unravel.Core.UIEventBase.html#Unravel_Core_UIEventBase_target">target</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UISelect.html">UISelect</a></dt>
+      <dd><p>A &lt;select&gt; drop-down. The selected option's value is the base class
+<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_value">value</a>. Adding and removing options never sends &quot;change&quot;, even
+when it moves the selection.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UISlider.html">UISlider</a></dt>
+      <dd><p>An &lt;input type=&quot;range&quot;&gt;. <a class="xref" href="Unravel.Core.UISlider.html#Unravel_Core_UISlider_value">value</a> is the number; the base class
+<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_value">value</a> is the same value as text.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UISliderEvent.html">UISliderEvent</a></dt>
       <dd><p>Represents a slider UI event for handling slider value changes.
 This is separate from key events to handle composed slider value changes properly.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIStyle.html">UIStyle</a></dt>
+      <dd><p>The inline style of an element (<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_style">style</a>). Values are RCSS text:
+<code>el.style[&quot;opacity&quot;] = &quot;0.5&quot;</code>; setting null removes the inline value, so the stylesheet
+applies again. The numeric shortcuts write without formatting text, for per-frame changes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UISubmitEvent.html">UISubmitEvent</a></dt>
+      <dd><p>A &quot;submit&quot; from a form: the values of its named controls.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UISubscription.html">UISubscription</a></dt>
+      <dd><p>A UI event subscription made with <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_On__1_System_String_System_Action___0__Unravel_Core_EventPhase_">On&lt;T&gt;(string, Action&lt;T&gt;, EventPhase)</a> or
+<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_Once__1_System_String_System_Action___0__">Once&lt;T&gt;(string, Action&lt;T&gt;)</a>. Dispose it to unsubscribe, which also works
+for lambdas. It also ends by itself when its element is destroyed or its script is destroyed.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UITabSet.html">UITabSet</a></dt>
+      <dd><p>A &lt;tabset&gt; of &lt;tab&gt; headers and &lt;panel&gt; pages.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UITextInputEvent.html">UITextInputEvent</a></dt>
       <dd><p>Represents a text input UI event for handling text entry.
 This is separate from key events to handle composed text input properly.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIToggle.html">UIToggle</a></dt>
+      <dd><p>An &lt;input type=&quot;checkbox&quot;&gt; or &lt;input type=&quot;radio&quot;&gt;. Its state is the 'checked'
+attribute; the base class <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_value">value</a> is the value it submits.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -475,12 +660,67 @@ This is separate from key events to handle composed text input properly.</p>
       <dd><p>Spatial volume that applies post-processing effects from sibling components.</p>
 </dd>
     </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.WaitForFrames.html">WaitForFrames</a></dt>
+      <dd><p>Resumes the coroutine after the given number of frames.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.WaitForSeconds.html">WaitForSeconds</a></dt>
+      <dd><p>Resumes the coroutine after the given number of seconds of game time (scaled by
+<a class="xref" href="Unravel.Core.Time.html#Unravel_Core_Time_timeScale">timeScale</a>).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.WaitForSecondsRealtime.html">WaitForSecondsRealtime</a></dt>
+      <dd><p>Resumes the coroutine after the given number of real seconds, whatever the time scale.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.WaitUntil.html">WaitUntil</a></dt>
+      <dd><p>Resumes the coroutine in the first frame the condition is true (checked once per frame).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.WaitWhile.html">WaitWhile</a></dt>
+      <dd><p>Resumes the coroutine in the first frame the condition is false (checked once per frame).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.YieldInstruction.html">YieldInstruction</a></dt>
+      <dd><p>Base of the wait objects a coroutine can yield. They only describe the wait, so one
+instance can be cached and yielded many times.</p>
+</dd>
+    </dl>
     <h3 id="structs">
 Structs
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.AnimationEvent.html">AnimationEvent</a></dt>
+      <dd><p>A marker on an animation clip's timeline that playback crossed this frame.</p>
+<p>Events are authored per clip (clip inspector, Events tab) and delivered to the scripts on the
+entity that has the <a class="xref" href="Unravel.Core.AnimationComponent.html">AnimationComponent</a> - or, when that entity has no scripts, on
+its nearest ancestor with scripts. Every script receives
+<a class="xref" href="Unravel.Core.ScriptComponent.html#Unravel_Core_ScriptComponent_OnAnimationEvent_Unravel_Core_AnimationEvent_">OnAnimationEvent(AnimationEvent)</a>, and a public method named exactly like the
+event is called as well, taking nothing, an <a class="xref" href="Unravel.Core.AnimationEvent.html">AnimationEvent</a>, or the event's
+string, float or int parameter.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.AudioVoice.html">AudioVoice</a></dt>
+      <dd><p>A sound started by <a class="xref" href="Unravel.Core.Audio.html#Unravel_Core_Audio_PlayOneShot_Unravel_Core_AudioClip_System_Single_System_Single_Unravel_Core_AudioBus_System_Int32_">PlayOneShot(AudioClip, float, float, AudioBus, int)</a>. Every
+call on a voice that finished, was stolen or never started does nothing.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.ContactPoint.html">ContactPoint</a></dt>
       <dd><p>Represents a contact point where a collision occurs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.EmitParams.html">EmitParams</a></dt>
+      <dd><p>Overrides for the particles of one <a class="xref" href="Unravel.Core.ParticleEmitterComponent.html#Unravel_Core_ParticleEmitterComponent_Emit_System_Int32_Unravel_Core_EmitParams_">Emit(int, EmitParams)</a>
+burst. Only the fields that were set apply; the others come from the emitter.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -504,6 +744,17 @@ Structs
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleBurst.html">ParticleBurst</a></dt>
+      <dd><p>A burst of particles at set times of the emission cycle. Matches C++ ps_soa::emitter_burst.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleSubEmitter.html">ParticleSubEmitter</a></dt>
+      <dd><p>A burst another emitter fires where this emitter's particles are born, die or collide.
+Matches C++ particle_sub_emitter.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.ProfilerScope.html">ProfilerScope</a></dt>
       <dd><p>Scoped profiler that measures execution time and automatically records it when disposed.
 Use with 'using' statement for automatic scope-based profiling.</p>
@@ -520,8 +771,22 @@ Use with 'using' statement for automatic scope-based profiling.</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.Touch.html">Touch</a></dt>
+      <dd><p>A finger on the touch screen. See <a class="xref" href="Unravel.Core.Input.html#Unravel_Core_Input_touchCount">touchCount</a> and <a class="xref" href="Unravel.Core.Input.html#Unravel_Core_Input_GetTouch_System_Int32_">GetTouch(int)</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.UpdateInfo.html">UpdateInfo</a></dt>
       <dd><p>Per-frame timing values pushed from native into managed code.</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.IPoolable.html">IPoolable</a></dt>
+      <dd><p>Implemented by a script on a pooled entity's root to reset itself when the pool hands the
+entity out and to clean up when it comes back.</p>
 </dd>
     </dl>
     <h3 id="enums">
@@ -538,8 +803,28 @@ Enums
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ChainIKSolver.html">ChainIKSolver</a></dt>
+      <dd><p>How a chain IK solves.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.CloudMode.html">CloudMode</a></dt>
       <dd><p>Cloud rendering mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ContactEndReason.html">ContactEndReason</a></dt>
+      <dd><p>Why a contact or sensor overlap ended.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ContactEventFlags.html">ContactEventFlags</a></dt>
+      <dd><p>Per-body opt-in for contact bookkeeping.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.CursorLockMode.html">CursorLockMode</a></dt>
+      <dd><p>How the cursor is held while the game has input.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -578,13 +863,109 @@ Enums
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.MaterialAlphaMode.html">MaterialAlphaMode</a></dt>
+      <dd><p>How a material treats alpha.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.MaterialCullMode.html">MaterialCullMode</a></dt>
+      <dd><p>Which triangle faces a material hides.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.MaterialProperty.html">MaterialProperty</a></dt>
+      <dd><p>A material field read or written on its own through a renderer, for example
+<a class="xref" href="Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_SetFloat_Unravel_Core_MaterialProperty_System_Single_System_UInt32_">SetFloat(MaterialProperty, float, uint)</a>. Each field belongs to one setter family.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.MouseButton.html">MouseButton</a></dt>
       <dd><p>Identifies a mouse button for <a class="xref" href="Unravel.Core.Input.html">Input</a> queries.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="Unravel.Core.ParticleSimBackend.html">ParticleSimBackend</a></dt>
-      <dd><p>Particle simulation/pack backend. Matches C++ ps_soa::particle_sim_backend.</p>
+      <dt><a class="xref" href="Unravel.Core.ParticleBlendMode.html">ParticleBlendMode</a></dt>
+      <dd><p>How particles blend over the scene. Matches C++ ps_soa::blend_mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleBoundsMode.html">ParticleBoundsMode</a></dt>
+      <dd><p>How an emitter's culling bounds are found. Matches C++ ps_soa::bounds_mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleCollisionMode.html">ParticleCollisionMode</a></dt>
+      <dd><p>What a particle does where its path first crosses a collision plane. Matches C++ ps_soa::collision_mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleCullingMode.html">ParticleCullingMode</a></dt>
+      <dd><p>Whether an emitter keeps simulating while no camera sees it. Matches C++ particle_emitter_component::culling_mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleEasing.html">ParticleEasing</a></dt>
+      <dd><p>Easing of particle positions over their lifetime. The values match the engine's easing table.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleEventType.html">ParticleEventType</a></dt>
+      <dd><p>What fires a sub-emitter. Matches C++ ps_soa::particle_event_type.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleLighting.html">ParticleLighting</a></dt>
+      <dd><p>How particles are lit. Matches C++ ps_soa::particle_lighting.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleMeshSpawnMode.html">ParticleMeshSpawnMode</a></dt>
+      <dd><p>Where a mesh shape spawns. Matches C++ ps_soa::mesh_spawn_mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticlePrimitive.html">ParticlePrimitive</a></dt>
+      <dd><p>Geometry each particle draws. Matches C++ ps_soa::particle_primitive.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleRenderMode.html">ParticleRenderMode</a></dt>
+      <dd><p>How particle quads face the camera. Matches C++ ps_soa::render_mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleRibbonFacing.html">ParticleRibbonFacing</a></dt>
+      <dd><p>Which way a ribbon's width runs. Matches C++ ps_soa::ribbon_facing.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleRibbonTextureMode.html">ParticleRibbonTextureMode</a></dt>
+      <dd><p>How a ribbon's texture runs along it. Matches C++ ps_soa::ribbon_texture_mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleSimulationSpace.html">ParticleSimulationSpace</a></dt>
+      <dd><p>Space particles live in. Matches C++ ps_soa::simulation_space.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleSortBackend.html">ParticleSortBackend</a></dt>
+      <dd><p>Where an emitter's particles are culled and sorted. Matches C++ ps_soa::particle_sort_backend.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleSortMode.html">ParticleSortMode</a></dt>
+      <dd><p>Order an emitter's own particles draw in. Matches C++ ps_soa::sort_mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleSpawnLocation.html">ParticleSpawnLocation</a></dt>
+      <dd><p>Where in the emission shape particles spawn. Matches C++ ps_soa::spawn_location.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.ParticleTextureMode.html">ParticleTextureMode</a></dt>
+      <dd><p>How the particle texture is read. Matches C++ ps_soa::texture_mode.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -635,6 +1016,17 @@ Enums
     <dl class="jumplist">
       <dt><a class="xref" href="Unravel.Core.TextStyleFlags.html">TextStyleFlags</a></dt>
       <dd><p>Text style flags for decorations and effects, matching gfx::text_style_flags.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.TouchPhase.html">TouchPhase</a></dt>
+      <dd><p>Where a finger is in its life on the touch screen, as one frame sees it.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Unravel.Core.UIEasing.html">UIEasing</a></dt>
+      <dd><p>Easing curves for <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_Animate_System_String_System_String_System_Single_Unravel_Core_UIEasing_System_Int32_System_Boolean_System_Single_">Animate(string, string, float, UIEasing, int, bool, float)</a>. In eases out of the start, Out into the
+end, InOut both.</p>
 </dd>
     </dl>
     <dl class="jumplist">

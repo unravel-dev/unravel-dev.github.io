@@ -25,6 +25,7 @@ var classmath_1_1transform__t =
     [ "get_scale", "classmath_1_1transform__t.html#a271ebc31b6d127eeb08c44da753e21a1", null ],
     [ "get_skew", "classmath_1_1transform__t.html#ab6258925940ab23010af3c98b28145d6", null ],
     [ "get_translation", "classmath_1_1transform__t.html#a39fa3a82250704e5f6f575236bc42ddb", null ],
+    [ "has_rotation_euler_hint", "classmath_1_1transform__t.html#a07c56515729309ea830872d538c3a5a2", null ],
     [ "identity", "classmath_1_1transform__t.html#ae01000721942af190ccd5a07ba5b9a03", null ],
     [ "inverse_transform_coord", "classmath_1_1transform__t.html#aa808988abc3795976c24a3632af0ca58", null ],
     [ "inverse_transform_coord", "classmath_1_1transform__t.html#aae5d287f3513935516dd98ad9aa247af", null ],
@@ -46,6 +47,7 @@ var classmath_1_1transform__t =
     [ "reset_scale", "classmath_1_1transform__t.html#a304aacff9285dd554f977a07c3d86c25", null ],
     [ "reset_skew", "classmath_1_1transform__t.html#a00154e59f71acb4a16b18eaa8cda41d4", null ],
     [ "reset_translation", "classmath_1_1transform__t.html#ae3c14c60e4f3f3713eea3529bd0f067a", null ],
+    [ "restore_euler_angles_hint_degrees", "classmath_1_1transform__t.html#a7dca5a7367ee2baf717940da12b71817", null ],
     [ "rotate", "classmath_1_1transform__t.html#a49e1fa752d131e5575e34f6df1629f8e", null ],
     [ "rotate", "classmath_1_1transform__t.html#a192db90c754fa7c3aa714bca12c1e015", null ],
     [ "rotate", "classmath_1_1transform__t.html#ad4ea0c86e059071ed985956e6cb10fa0", null ],
@@ -84,10 +86,12 @@ var classmath_1_1transform__t =
     [ "translate_local", "classmath_1_1transform__t.html#aa68ba76b711be65d945c7e6f0be1f26c", null ],
     [ "translation", "classmath_1_1transform__t.html#ab0b663c1b7f8be73556fa343b4b9e027", null ],
     [ "translation", "classmath_1_1transform__t.html#a727165217779b18d7317db71cc6894c9", null ],
+    [ "try_restore_euler_angles_hint_degrees", "classmath_1_1transform__t.html#a25934f0fe30cb88909cd85c6e0f0f9fd", null ],
     [ "x_axis", "classmath_1_1transform__t.html#ab6a09f32f499ede3b4d67aa5c00e4df6", null ],
     [ "x_unit_axis", "classmath_1_1transform__t.html#a2bf74b6ceaa7dcbf0fd6fde2d94caac4", null ],
     [ "y_axis", "classmath_1_1transform__t.html#a48e053007bc95c058db73fd963f544bd", null ],
     [ "y_unit_axis", "classmath_1_1transform__t.html#a7ea66db0a802132830c1460e36f0ac44", null ],
     [ "z_axis", "classmath_1_1transform__t.html#affec2df8a767592e3b38202b4660d6ec", null ],
-    [ "z_unit_axis", "classmath_1_1transform__t.html#a63051d2c127e0b14af037390cca4726d", null ]
+    [ "z_unit_axis", "classmath_1_1transform__t.html#a63051d2c127e0b14af037390cca4726d", null ],
+    [ "inverse", "classmath_1_1transform__t.html#a12d030a3089c8000232adb9a14e94f5f", null ]
 ];

@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_Time" data-uid="Unravel.Core.Time" class="text-break">
-Class Time  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L59"><i class="bi bi-code-slash"></i></a>
+Class Time  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -156,7 +156,7 @@ Class Time  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Unravel_Core_Time_deltaTime" data-uid="Unravel.Core.Time.deltaTime">
   deltaTime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Seconds since the previous update frame (scaled by <a class="xref" href="Unravel.Core.Time.html#Unravel_Core_Time_timeScale">timeScale</a>).</p>
@@ -187,7 +187,7 @@ Class Time  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Unravel_Core_Time_fixedDeltaTime" data-uid="Unravel.Core.Time.fixedDeltaTime">
   fixedDeltaTime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Seconds for the current fixed update step.</p>
@@ -218,7 +218,7 @@ Class Time  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Unravel_Core_Time_frameCount" data-uid="Unravel.Core.Time.frameCount">
   frameCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Number of update frames since play began.</p>
@@ -247,9 +247,40 @@ Class Time  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+  <h3 id="Unravel_Core_Time_realtimeSinceStartup" data-uid="Unravel.Core.Time.realtimeSinceStartup">
+  realtimeSinceStartup
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Real seconds since the application started, whatever the time scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float realtimeSinceStartup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="Unravel_Core_Time_time" data-uid="Unravel.Core.Time.time">
   time
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Elapsed time in seconds since play began.</p>
@@ -277,6 +308,37 @@ Class Time  <a class="header-action link-secondary" title="View source" href="ht
 
 
 
+
+  <h3 id="Unravel_Core_Time_unscaledDeltaTime" data-uid="Unravel.Core.Time.unscaledDeltaTime">
+  unscaledDeltaTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Seconds since the previous update frame, not scaled by <a class="xref" href="Unravel.Core.Time.html#Unravel_Core_Time_timeScale">timeScale</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float unscaledDeltaTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -285,7 +347,7 @@ Class Time  <a class="header-action link-secondary" title="View source" href="ht
 
   <h3 id="Unravel_Core_Time_timeScale" data-uid="Unravel.Core.Time.timeScale">
   timeScale
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets or sets the time scale for the application.</p>
@@ -317,7 +379,7 @@ Class Time  <a class="header-action link-secondary" title="View source" href="ht
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L59" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/system/System.cs/#L63" class="edit-link">Edit this page</a>
         </div>
 
 

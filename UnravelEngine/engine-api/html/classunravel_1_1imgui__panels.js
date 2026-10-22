@@ -7,6 +7,7 @@ var classunravel_1_1imgui__panels =
     [ "deinit", "classunravel_1_1imgui__panels.html#aa347ee6d17480e14662badf3a14a29e7", null ],
     [ "get_animation_panel", "classunravel_1_1imgui__panels.html#ac03d48f189238c303a3e3fbde3393e1e", null ],
     [ "get_console_log_panel", "classunravel_1_1imgui__panels.html#a8cb83de7829e6fd3c099cb3ff038090e", null ],
+    [ "get_content_browser_panel", "classunravel_1_1imgui__panels.html#a89dcc74749efdc6234cf69d48a7484eb", null ],
     [ "get_deploy_panel", "classunravel_1_1imgui__panels.html#a8a2b133739fe6b1f3ddc2fd016b46d80", null ],
     [ "get_dockspace", "classunravel_1_1imgui__panels.html#a56415690c0584d5af4d52d04597c90f0", null ],
     [ "get_editor_settings_panel", "classunravel_1_1imgui__panels.html#aa8cf1add228a88c9ea8c5b44ce08cb9c", null ],

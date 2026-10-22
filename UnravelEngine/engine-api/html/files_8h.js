@@ -1,0 +1,25 @@
+var files_8h =
+[
+    [ "compiled_file_filter", "files_8h.html#af7e1ec33b75280dd898c034bdab76472", null ],
+    [ "cooked_folders", "files_8h.html#a3cf64f5b86a5fad72c7d1e147dd756fc", null ],
+    [ "collect_pack_inputs", "files_8h.html#a3f8afa03d910f2c8b29b84e30692df6f", null ],
+    [ "copy_cooked_or_throw", "files_8h.html#af54d0a0748bb90ab46d45c30d235e810", null ],
+    [ "copy_file_or_throw", "files_8h.html#aede57b721347d226bc7f9cb955a9ca44", null ],
+    [ "get_binary_key", "files_8h.html#ab4ec292bfd3420b2bead8e60387c3543", null ],
+    [ "get_compiled_paths", "files_8h.html#a98aa6be99089222885ef0c2396d20ffc", null ],
+    [ "get_compiled_relative_path", "files_8h.html#af3833bacc4dd75c2e15b31282987b2b4", null ],
+    [ "get_shipped_variant", "files_8h.html#a8b4f1707899114f628a2f4f765c24898", null ],
+    [ "get_source_key", "files_8h.html#a9996ec80fafff497a5fe40ce9b24379c", null ],
+    [ "is_binary_file", "files_8h.html#ae2c2f659d39591c887271ed702ff4215", null ],
+    [ "is_debug_companion_file", "files_8h.html#abbdaebf6c32e4d2c538382e3b50fa03c", null ],
+    [ "is_loose_only_file", "files_8h.html#a7612bce5b1fc8f97b2c9b246c5b41346", null ],
+    [ "is_other_shader_variant", "files_8h.html#a11f02d908bf132fffeb0bba17f6a7d38", null ],
+    [ "is_script_key", "files_8h.html#ad546d57313a5bfe0b040dffccc536896", null ],
+    [ "is_shipped_compiled_file", "files_8h.html#aec5003cecaebd3eb83d02ef68da93a56", null ],
+    [ "mirror_or_throw", "files_8h.html#a047d65521d20a39bff562a4bf32b4d1b", null ],
+    [ "remove_siblings", "files_8h.html#a07cbe5e9b4a88fb5fe050e4829a2feb5", null ],
+    [ "remove_stale_binaries", "files_8h.html#aba26e8f2043d97ca9dac26758c84c536", null ],
+    [ "write_asset_index", "files_8h.html#a90abefed66684b53627e3cc9005103da", null ],
+    [ "DATA_FOLDER", "files_8h.html#a8eea100b02616092d991acce9047842c", null ],
+    [ "LEGACY_ASSET_INDEX_NAME", "files_8h.html#a24e276275ed6d80282d8e8684e56a1eb", null ]
+];

@@ -103,24 +103,40 @@ $(function(){initNavTree('classunravel_1_1deploy__panel.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
+<p>The Deploy Project window: tabs for what the game is and where it goes (Build), what it ships (Content) and the releases it patches (Releases); under them, always in view, what still keeps it from deploying, the steps of the deploy while it runs, and the buttons.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="deploy__panel_8h_source.html">deploy_panel.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a84aaccf99d0c9efc4efec9ad94df93" id="r_a9a84aaccf99d0c9efc4efec9ad94df93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a84aaccf99d0c9efc4efec9ad94df93">deploy_panel</a> (<a class="el" href="classunravel_1_1imgui__panels.html">imgui_panels</a> *parent)</td></tr>
+<tr class="memitem:a9a84aaccf99d0c9efc4efec9ad94df93" id="r_a9a84aaccf99d0c9efc4efec9ad94df93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a84aaccf99d0c9efc4efec9ad94df93">deploy_panel</a> (<a class="el" href="classunravel_1_1imgui__panels.html">imgui_panels</a> *<a class="el" href="mcp__tools__create_8cpp.html#ad4503be4473dd28e9ebea32ef9749384">parent</a>)</td></tr>
 <tr class="separator:a9a84aaccf99d0c9efc4efec9ad94df93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae38ee1176dabad1854c0b8734efca6ca" id="r_ae38ee1176dabad1854c0b8734efca6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae38ee1176dabad1854c0b8734efca6ca">on_frame_ui_render</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const char *<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
+<tr class="memitem:ae38ee1176dabad1854c0b8734efca6ca" id="r_ae38ee1176dabad1854c0b8734efca6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae38ee1176dabad1854c0b8734efca6ca">on_frame_ui_render</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, const char *<a class="el" href="android__icon_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
 <tr class="separator:ae38ee1176dabad1854c0b8734efca6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdb655d6e533a3b3ef7075c2c1eb508a" id="r_acdb655d6e533a3b3ef7075c2c1eb508a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdb655d6e533a3b3ef7075c2c1eb508a">show</a> (bool s)</td></tr>
 <tr class="separator:acdb655d6e533a3b3ef7075c2c1eb508a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5676b5f6a9bd30001a0181be28071c1" id="r_ad5676b5f6a9bd30001a0181be28071c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5676b5f6a9bd30001a0181be28071c1">deploy_and_run</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx, const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;params)</td></tr>
+<tr class="memitem:ad5676b5f6a9bd30001a0181be28071c1" id="r_ad5676b5f6a9bd30001a0181be28071c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5676b5f6a9bd30001a0181be28071c1">deploy_and_run</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>)</td></tr>
+<tr class="memdesc:ad5676b5f6a9bd30001a0181be28071c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a deploy, or opens the window to show what keeps it from deploying.  <br /></td></tr>
 <tr class="separator:ad5676b5f6a9bd30001a0181be28071c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bfc90720965d0bf3638736400a9c715" id="r_a6bfc90720965d0bf3638736400a9c715"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bfc90720965d0bf3638736400a9c715">start_deploy</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>) -&gt; bool</td></tr>
+<tr class="separator:a6bfc90720965d0bf3638736400a9c715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c4f094fe122663e2d266ef865469f5" id="r_aa7c4f094fe122663e2d266ef865469f5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7c4f094fe122663e2d266ef865469f5">run_last_android_build</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>, const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>) -&gt; bool</td></tr>
+<tr class="separator:aa7c4f094fe122663e2d266ef865469f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee958cee52df81c4b14c4abe0587398" id="r_a6ee958cee52df81c4b14c4abe0587398"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ee958cee52df81c4b14c4abe0587398">get_jobs</a> () const -&gt; const <a class="el" href="namespaceunravel_1_1deployment.html#a896aeee46c143facde8aa03a76b66206">deployment::deploy_jobs</a> &amp;</td></tr>
+<tr class="memdesc:a6ee958cee52df81c4b14c4abe0587398"><td class="mdescLeft">&#160;</td><td class="mdescRight">The steps of the running deploy, or of the last one until the window is closed.  <br /></td></tr>
+<tr class="separator:a6ee958cee52df81c4b14c4abe0587398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86d6207c0096bec56cbb0d52522ef71" id="r_ac86d6207c0096bec56cbb0d52522ef71"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac86d6207c0096bec56cbb0d52522ef71">is_deploying</a> () const -&gt; bool</td></tr>
 <tr class="separator:ac86d6207c0096bec56cbb0d52522ef71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5054d56575b56725c69ec00b0c5e0ea5" id="r_a5054d56575b56725c69ec00b0c5e0ea5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5054d56575b56725c69ec00b0c5e0ea5">get_progress</a> () const -&gt; float</td></tr>
+<tr class="memdesc:a5054d56575b56725c69ec00b0c5e0ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Share of the deploy steps that are done, 0 to 1; 1 while nothing deploys.  <br /></td></tr>
+<tr class="separator:a5054d56575b56725c69ec00b0c5e0ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="deploy__panel_8h_source.html#l00013">13</a> of file <a class="el" href="deploy__panel_8h_source.html">deploy_panel.h</a>.</p>
+<div class="textblock"><p>The Deploy Project window: tabs for what the game is and where it goes (Build), what it ships (Content) and the releases it patches (Releases); under them, always in view, what still keeps it from deploying, the steps of the deploy while it runs, and the buttons. </p>
+<p>It deploys one settings profile at a time, the deploy profile, chosen in the Build tab. The settings every profile shares are edited for all of them, or as overrides of the deploy profile. </p>
+
+<p class="definition">Definition at line <a class="el" href="deploy__panel_8h_source.html#l00039">39</a> of file <a class="el" href="deploy__panel_8h_source.html">deploy_panel.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9a84aaccf99d0c9efc4efec9ad94df93" name="a9a84aaccf99d0c9efc4efec9ad94df93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9a84aaccf99d0c9efc4efec9ad94df93">&#9670;&#160;</a></span>deploy_panel()</h2>
@@ -137,7 +153,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00015">15</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00301">301</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
 
 </div>
 </div>
@@ -161,7 +177,51 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00077">77</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
+<p>Starts a deploy, or opens the window to show what keeps it from deploying. </p>
+
+<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00432">432</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6ee958cee52df81c4b14c4abe0587398" name="a6ee958cee52df81c4b14c4abe0587398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee958cee52df81c4b14c4abe0587398">&#9670;&#160;</a></span>get_jobs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::deploy_panel::get_jobs </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="namespaceunravel_1_1deployment.html#a896aeee46c143facde8aa03a76b66206">deployment::deploy_jobs</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The steps of the running deploy, or of the last one until the window is closed. </p>
+
+<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00427">427</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5054d56575b56725c69ec00b0c5e0ea5" name="a5054d56575b56725c69ec00b0c5e0ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5054d56575b56725c69ec00b0c5e0ea5">&#9670;&#160;</a></span>get_progress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::deploy_panel::get_progress </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Share of the deploy steps that are done, 0 to 1; 1 while nothing deploys. </p>
+
+<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00380">380</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
 
 </div>
 </div>
@@ -180,7 +240,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00070">70</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00395">395</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +263,31 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00029">29</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00319">319</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa7c4f094fe122663e2d266ef865469f5" name="aa7c4f094fe122663e2d266ef865469f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c4f094fe122663e2d266ef865469f5">&#9670;&#160;</a></span>run_last_android_build()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::deploy_panel::run_last_android_build </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run Last Build: installs the package of an earlier Android deploy on the chosen device and starts it, its steps shown as a deploy's. </p><dl class="section return"><dt>Returns</dt><dd>False while a deploy runs. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00416">416</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
 
 </div>
 </div>
@@ -222,7 +306,31 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00019">19</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00305">305</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6bfc90720965d0bf3638736400a9c715" name="a6bfc90720965d0bf3638736400a9c715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bfc90720965d0bf3638736400a9c715">&#9670;&#160;</a></span>start_deploy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::deploy_panel::start_deploy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structunravel_1_1deploy__settings.html">deploy_settings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span>&#160;) -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Starts a deploy unless one is already running or the project cannot deploy. No UI. </p><dl class="section return"><dt>Returns</dt><dd>True when it started. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="deploy__panel_8cpp_source.html#l00405">405</a> of file <a class="el" href="deploy__panel_8cpp_source.html">deploy_panel.cpp</a>.</p>
 
 </div>
 </div>

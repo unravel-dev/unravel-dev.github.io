@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Animation retargeting | Unravel Engine Scripting API </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Animation retargeting | Unravel Engine Scripting API ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/unravel-dev/UnravelEngine/blob/main/docs/markdown/animation-retargeting.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Unravel Engine Scripting API">
+            Unravel Engine Scripting API
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="animation-retargeting">Animation retargeting</h1>
+
+<p>Retargeting plays a clip made for one skeleton on another: a clip from an animation pack on your
+own character, a clip exported from another tool, a clip of a taller or shorter rig. This page
+follows a clip from import to the pose on screen, then lists what to check when something looks
+wrong. It is written for people working in the editor and for agents driving the editor over MCP;
+the last section maps the code for engine work.</p>
+<h2 id="quick-start">Quick start</h2>
+<ol>
+<li>Import the character model and the animation files (FBX or glTF). Animation-only files (a clip
+saved without its mesh) import too.</li>
+<li>Select the character entity. Its <strong>Animation</strong> component plays the clips.</li>
+<li>Pick <strong>Pose Retargeting</strong>:
+<ul>
+<li><strong>Copy</strong> (default) when the clips were exported with this model, or for this exact skeleton.</li>
+<li><strong>Rest Aligned</strong> for anything else: another rig, other bone names, other units, other axes,
+other proportions. Leave <strong>Retargeting Mode</strong> on <strong>Name Based</strong>.</li>
+</ul>
+</li>
+<li>Open <strong>Retarget Check</strong> in the Animation inspector. It shows how the clip playing (or one you
+pick) binds to this skeleton: channels matched and how, bones left unreached, the height ratio,
+the bone root motion moves, how far the two rest poses differ, and a warning for each problem
+it finds. <strong>Humanoid Mapping</strong> above it lists the bone found for each role; its pencil button
+sets a role by hand when the wrong bone was found.</li>
+<li>When the clip's skeleton and the character rest in different poses (an A-pose clip on a T-pose
+character), set <strong>Retarget Pose</strong> to <strong>T-Pose</strong>: both skeletons are straightened before motion
+is carried over.</li>
+<li>When a character of other proportions puts its limbs through its body (short arms beside a big
+head and a wide body), add <strong>Retarget Pose Offsets</strong>: raising both upper arms 20 to 30 degrees
+keeps them clear in every clip.</li>
+<li>For clips that travel (walks, rolls, attacks that lunge), turn on <strong>Apply Root Motion</strong> and
+check each clip's root motion import settings.</li>
+</ol>
+<h2 id="concepts">Concepts</h2>
+<ul>
+<li><strong>Rest pose.</strong> The pose a skeleton is built in, before any animation: usually a T-pose or an
+A-pose.</li>
+<li><strong>Retarget pose.</strong> The pose Rest Aligned retargeting measures motion from on the clip's skeleton
+and applies it to on the character. By default each skeleton's rest pose, so both must rest in
+the same physical pose; with Retarget Pose T-Pose, both rests straightened to a T-pose; on the
+character, turned further by its Retarget Pose Offsets.</li>
+<li><strong>Channel.</strong> One animated node of a clip: its name and its position, rotation and scale keys, in
+the node's local space (relative to its parent).</li>
+<li><strong>Humanoid roles.</strong> Twenty-two bones every humanoid has in some form: hips, spine, chest, upper
+chest, neck, head, and per side shoulder, upper arm, lower arm, hand, upper leg, lower leg, foot
+and toes. The engine finds them from the skeleton's shape (two legs hang from the hips, the spine
+rises to where the arms branch, and so on), not from a table of names. Names only tell left from
+right; side-less names take their side from the way the toes point. Twist joints (<code>lShldrTwist</code>)
+and split segments (<code>upper_arm.L.001</code>) are passed over.</li>
+</ul>
+<h2 id="1-import-what-a-clip-records">1. Import: what a clip records</h2>
+<p>Each animation in a model file becomes its own <code>.anim</code> asset named <code>&lt;file&gt;_&lt;animation&gt;</code>. A clip
+holds:</p>
+<ul>
+<li><strong>Channels</strong>, one per animated node.</li>
+<li><strong>The source rest pose.</strong> For each channel: the node's rest transform in the file, the channel
+that animates its nearest animated ancestor, and the fixed transform of any unanimated nodes in
+between. The clip carries a description of the skeleton it was made on, so the character it was
+authored for never has to be imported.</li>
+<li><strong>Root-motion nodes.</strong> The importer picks the shallowest animated node on the skeleton's trunk
+(from the scene root down to where the skeleton branches): a root bone when the rig has one, else
+the hips. Its travel and turn can move the entity instead of the bone.</li>
+<li><strong>Import settings</strong> (in the clip's <code>.meta</code>, edited in the clip inspector): root motion options,
+plus the events and curves authored on the clip's timeline.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Import setting</th>
+<th>Default</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keep Position Y</td>
+<td>on</td>
+<td>Vertical motion stays in the pose (a jump lifts the hips, not the entity).</td>
+</tr>
+<tr>
+<td>Keep Position XZ</td>
+<td>off</td>
+<td>Horizontal travel stays in the pose instead of moving the entity.</td>
+</tr>
+<tr>
+<td>Keep Rotation</td>
+<td>off</td>
+<td>Turns stay in the pose instead of turning the entity.</td>
+</tr>
+<tr>
+<td>Keep In Place</td>
+<td>off</td>
+<td>Travel is removed: the clip plays on the spot and moves nothing.</td>
+</tr>
+</tbody>
+</table>
+<p>Files without meshes take every animated node and its ancestors as their skeleton, and an FBX root
+gets the same axis correction a file with meshes gets, so a clip-only export describes the same
+skeleton as the skinned one.</p>
+<h2 id="2-setup-the-animation-component">2. Setup: the Animation component</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Values</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Retargeting Mode</td>
+<td><strong>Name Based</strong> (default), Index Based</td>
+<td>How channels find bones. Name Based matches bone names; Index Based uses the node order in the file and only suits clips from the same file.</td>
+</tr>
+<tr>
+<td>Pose Retargeting</td>
+<td><strong>Copy</strong> (default), Rest Aligned</td>
+<td>How a pose reaches the bones. Copy writes the clip's local transforms as they are; Rest Aligned maps the motion from the clip's skeleton onto this one. Rest Aligned needs Name Based.</td>
+</tr>
+<tr>
+<td>Retarget Pose</td>
+<td><strong>Bind Pose</strong> (default), T-Pose</td>
+<td>Rest Aligned only. Bind Pose measures motion from each skeleton's rest pose. T-Pose first straightens both skeletons by role: upper and lower arms level along the character's sides, upper and lower legs straight down. Copies of one skeleton play the same either way.</td>
+</tr>
+<tr>
+<td>Retarget Pose Offsets</td>
+<td>role + rotation (degrees)</td>
+<td>Rest Aligned only. Turns of this character's bones in its retarget pose, in its own space: about its side axis (towards its left), up and forward. Right-side roles are mirrored, so (0, 0, 20) on both upper arms raises both. Every clip keeps them.</td>
+</tr>
+<tr>
+<td>Apply Root Motion</td>
+<td>off / on</td>
+<td>Moves the entity by the clip's root motion. With a Character Controller in play mode the move goes through it, so it collides.</td>
+</tr>
+</tbody>
+</table>
+<p>Copy is exact and fast when the skeletons really are the same. Across different skeletons it is
+wrong in visible ways: positions copy the source's bone lengths (limbs stretch or shrink), and
+rotations assume the same bone axes (a rig whose bones point along +Y twists on one whose bones
+point along +X).</p>
+<p>The target side of Rest Aligned is built from the model: its bone names, parents and bind pose,
+and the humanoid roles found in that bind pose.</p>
+<p><strong>Roles set by hand.</strong> Where the finder picks the wrong bone (a rig that animates a hand bone below
+the wrist it found), set the role in the model file's import settings: <strong>Rig &gt; Humanoid Overrides</strong>,
+a role and a bone name each, an empty name taking the role away. The pencil button in Humanoid
+Mapping writes them for you. They are compiled into the model and into every clip of the file, so
+they hold where the skeleton plays clips and where its clips play on others. The model is imported
+again when they change.</p>
+<h2 id="3-binding-done-once-per-clip-and-skeleton">3. Binding: done once per clip and skeleton</h2>
+<p>The first time a clip plays on a character, the player binds the clip to the skeleton and keeps
+the result until the clip or the model's armature changes.</p>
+<ol>
+<li><p><strong>Channels find bones</strong>, first match wins:</p>
+<ol>
+<li>the same name;</li>
+<li>the same name without its FBX namespace (<code>mixamorig:Hips</code> and <code>mixamorig1:Hips</code>);</li>
+<li>Rest Aligned only: the same humanoid role. The clip's skeleton gets its roles from its
+recorded rest pose, so <code>upperarm_l</code>, <code>mixamorig:LeftArm</code> and <code>DEF-upper_arm.L</code> all land on
+the target's left upper arm. Roles set by hand win on both sides.</li>
+</ol>
+<p>Bones no channel reaches keep their bind pose.</p>
+</li>
+<li><p><strong>Retarget poses.</strong> Each skeleton's rest pose, straightened to a T-pose when Retarget Pose asks
+for it; the character's then turned by its offsets.</p>
+</li>
+<li><p><strong>Frame fit.</strong> The two skeletons may stand in different frames: a Z-up export against a Y-up
+one, or a model the importer turned to face forward. The rotation that best lays the source
+joint positions onto the target's (in the retarget poses, without the offsets) is that frame
+difference. Joint positions do not depend on how a rig orients its bone axes, so the fit
+captures the frame only. Two humanoids both stand upright, so between them only the fit's
+heading (its turn about the up axis) is kept: where their proportions differ (a leaning spine,
+a big head) the fit tilts, and every carried motion would lean with it.</p>
+</li>
+<li><p><strong>Height ratio.</strong> The target's hip height over the source's. A shorter character takes shorter
+steps and jumps lower.</p>
+</li>
+<li><p><strong>Root-motion target.</strong> The root channel is matched like any other. When the target lacks that
+bone (a clip with a floor-level root bone on a rig that starts at the hips), the motion reports
+through the root's first matched descendant, normally the hips.</p>
+</li>
+</ol>
+<h2 id="4-each-frame-posing-the-target">4. Each frame: posing the target</h2>
+<p><strong>Copy</strong> writes each channel's sampled local transform onto its bone.</p>
+<p><strong>Rest Aligned</strong> samples the whole source pose, unmatched channels included (a root the target
+lacks still carries its children), builds it up to world space, and then poses each matched bone:</p>
+<ul>
+<li><strong>Rotation.</strong> How far the source bone turned from its retarget pose, in world space, is carried
+into the target's frame by the frame fit and applied on top of the target bone's retarget pose.
+Each rig keeps its own bone axes; only the change is carried.</li>
+<li><strong>Position.</strong> The target keeps its bone lengths. Only the source bone's move away from its rest
+(the hips bobbing, say) is carried, turned into the target's frame and scaled by the height
+ratio.</li>
+<li><strong>Scale.</strong> A change of scale is carried along the same physical direction: a stretch along a
+source bone that points along +Y stretches a target bone that points along +X along its length.</li>
+</ul>
+<p>Layers, crossfades, blend spaces and animation controllers all sample through the same binding.
+A blend space whose clips share one source skeleton is blended in that skeleton and retargeted
+once, which gives the pose retargeting each clip separately would, for less work.</p>
+<h2 id="5-root-motion">5. Root motion</h2>
+<p>The root's move over the frame is measured in its parent's frame on the source skeleton. It is
+carried into the target root's parent frame with the heading of the frame fit only (so the
+character never tilts), scaled by the height ratio, then mapped through the target's bones to the
+entity, which moves once per frame.</p>
+<p>The first frame of a clip moves the entity too, so travel does not depend on the frame rate.
+During a crossfade the moves of both clips blend by the crossfade weight.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>Start with the Animation inspector's <strong>Retarget Check</strong> (MCP: <code>animation_get_retarget</code>): its
+warnings name most of the causes below.</p>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Likely cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Character lies down, twists or stretches</td>
+<td>Copy with clips from another export or rig</td>
+<td>Set Pose Retargeting to Rest Aligned.</td>
+</tr>
+<tr>
+<td>Nothing moves</td>
+<td>Index Based with clips from another file, or no names or roles match</td>
+<td>Use Name Based; check Humanoid Mapping on both sides.</td>
+</tr>
+<tr>
+<td>Arms held too high or too low through every clip</td>
+<td>The rest poses differ (T-pose against A-pose); Retarget Check's Rest poses list shows the angle per limb</td>
+<td>Set Retarget Pose to T-Pose.</td>
+</tr>
+<tr>
+<td>Limbs pass through the body or the head</td>
+<td>The character's proportions differ (short arms, wide body, big head): human angles land inside it</td>
+<td>Add Retarget Pose Offsets, for example raise both upper arms 20 to 30 degrees.</td>
+</tr>
+<tr>
+<td>A limb or a hand does not move, or moves the wrong bone</td>
+<td>The finder gave the role to another bone (a hand role on the wrist while the clips animate the hand)</td>
+<td>Set the role by hand: the pencil button in Humanoid Mapping, or the model file's Rig &gt; Humanoid Overrides.</td>
+</tr>
+<tr>
+<td>Fingers, tail or accessory bones stay still</td>
+<td>They match neither by name nor by role (roles cover 22 body bones)</td>
+<td>Give them the same names on both rigs; FBX namespaces are already ignored.</td>
+</tr>
+<tr>
+<td>Left and right swapped</td>
+<td>Side-less bone names read the wrong way</td>
+<td>Check Humanoid Mapping; name the sides (<code>_l</code>, <code>.R</code>, <code>Left</code>).</td>
+</tr>
+<tr>
+<td>Steps too long or too short, feet slide</td>
+<td>Proportions differ; the hips found on one side are wrong</td>
+<td>Check that both sides found their hips; add Foot IK for contact.</td>
+</tr>
+<tr>
+<td>Character walks away from its entity and snaps back at the loop</td>
+<td>Root motion is not applied</td>
+<td>Turn on Apply Root Motion; check the clip's Keep Position XZ.</td>
+</tr>
+<tr>
+<td>Character drifts upward or sinks</td>
+<td>Vertical root motion moves the entity</td>
+<td>Keep Position Y on (the default).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="for-agents-mcp">For agents (MCP)</h2>
+<p>Set up a character for clips from other rigs:</p>
+<pre><code class="lang-json">{&quot;name&quot;: &quot;scene_set_component_properties_batch&quot;, &quot;arguments&quot;: {&quot;items&quot;: [
+  {&quot;entity_id&quot;: &quot;&lt;character&gt;&quot;, &quot;component&quot;: &quot;Animation&quot;,
+   &quot;properties&quot;: {&quot;retargeting_mode&quot;: &quot;name_based&quot;, &quot;pose_retargeting&quot;: &quot;rest_aligned&quot;,
+                  &quot;apply_root_motion&quot;: true}}]}}
+</code></pre>
+<p>Check how a clip binds to the character. Without <code>clip</code> it checks the clip the base layer plays, else the one its controller starts in,
+else the Animation clip;
+<code>&quot;channels&quot;: true</code> lists every channel with its bone and kind of match:</p>
+<pre><code class="lang-json">{&quot;name&quot;: &quot;animation_get_retarget&quot;, &quot;arguments&quot;: {&quot;entity_id&quot;: &quot;&lt;character&gt;&quot;,
+  &quot;clip&quot;: &quot;app:/data/Characters/Pack/Pack_Walk.anim&quot;}}
+</code></pre>
+<p>It returns the mode in effect, match counts per kind, the unmatched channels, the unreached bones,
+<code>height_ratio</code>, the frame turn, the root-motion channel and bone, rest differences per limb in
+degrees, and <code>warnings</code>; an empty <code>warnings</code> list is the goal.</p>
+<p>Straighten both skeletons, raise a stocky character's arms, and set a role by hand (the model file
+is imported again):</p>
+<pre><code class="lang-json">{&quot;name&quot;: &quot;scene_set_component_properties_batch&quot;, &quot;arguments&quot;: {&quot;items&quot;: [
+  {&quot;entity_id&quot;: &quot;&lt;character&gt;&quot;, &quot;component&quot;: &quot;Animation&quot;,
+   &quot;properties&quot;: {&quot;retarget_pose&quot;: &quot;t_pose&quot;, &quot;retarget_pose_offsets&quot;: [
+     {&quot;role&quot;: &quot;left_upper_arm&quot;, &quot;rotation&quot;: [0, 0, 25]},
+     {&quot;role&quot;: &quot;right_upper_arm&quot;, &quot;rotation&quot;: [0, 0, 25]}]}}]}}
+{&quot;name&quot;: &quot;assets_set_import_settings&quot;, &quot;arguments&quot;: {&quot;wait_ms&quot;: 120000, &quot;items&quot;: [
+  {&quot;key&quot;: &quot;app:/data/Characters/Pack/Pack.glb&quot;, &quot;settings&quot;: {&quot;rig&quot;: {&quot;humanoid_overrides&quot;: [
+    {&quot;role&quot;: &quot;left_hand&quot;, &quot;bone&quot;: &quot;hand.l&quot;}, {&quot;role&quot;: &quot;right_hand&quot;, &quot;bone&quot;: &quot;hand.r&quot;}]}}}]}}
+</code></pre>
+<p>Check the roles on both sides; every role the clip uses should exist on the character
+(<code>overrides</code> lists the roles set by hand):</p>
+<pre><code class="lang-json">{&quot;name&quot;: &quot;animation_get_humanoid&quot;, &quot;arguments&quot;: {&quot;entity_id&quot;: &quot;&lt;character&gt;&quot;}}
+{&quot;name&quot;: &quot;animation_get_humanoid&quot;, &quot;arguments&quot;: {&quot;clip&quot;: &quot;app:/data/Characters/Pack/Pack_Walk.anim&quot;}}
+</code></pre>
+<p>Read and change a clip's root motion settings (the clip is imported again with them):</p>
+<pre><code class="lang-json">{&quot;name&quot;: &quot;assets_get_import_settings&quot;, &quot;arguments&quot;: {&quot;keys&quot;: [&quot;app:/data/Characters/Pack/Pack_Walk.anim&quot;]}}
+{&quot;name&quot;: &quot;assets_set_import_settings&quot;, &quot;arguments&quot;: {&quot;items&quot;: [
+  {&quot;key&quot;: &quot;app:/data/Characters/Pack/Pack_Walk.anim&quot;, &quot;settings&quot;: {&quot;root_motion&quot;: {&quot;keep_position_xz&quot;: false}}}]}}
+</code></pre>
+<p>Verify on screen, not from reads alone: enter play mode, pause, step with <code>play_skip_frame</code> and
+capture with <code>viewport_capture_scene</code>; <code>animation_get_state</code> reports the clips and weights playing.
+Compare a retargeted crouch, sit or landing against the floor, and the hips' height standing still
+against the character's proportions.</p>
+<h2 id="code-map">Code map</h2>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clip import, root-motion node, source rest pose</td>
+<td><code>engine/engine/assets/impl/importers/mesh/mesh_import_animation.cpp</code></td>
+</tr>
+<tr>
+<td>Mesh-less FBX root correction</td>
+<td><code>engine/engine/assets/impl/importers/mesh_importer.cpp</code></td>
+</tr>
+<tr>
+<td>Humanoid roles, roles set by hand, T-pose straightening, pose offsets</td>
+<td><code>engine/engine/animation/animation_humanoid.cpp</code></td>
+</tr>
+<tr>
+<td>Binding, frame fit, height ratio, sampling, retargeting, root motion</td>
+<td><code>engine/engine/animation/animation_player.cpp</code> (<code>find_binding</code>, <code>retarget_source_pose</code>, <code>convert_root_delta</code>)</td>
+</tr>
+<tr>
+<td>Binding report</td>
+<td><code>animation_player::describe_binding</code> (engine), <code>editor/editor/editing/animation_retarget_check.cpp</code> (warnings; used by the inspector and the MCP tool)</td>
+</tr>
+<tr>
+<td>Target skeleton, name lookup, moving the entity</td>
+<td><code>engine/engine/animation/ecs/systems/animation_system.cpp</code></td>
+</tr>
+<tr>
+<td>Retarget pose settings</td>
+<td><code>animation_component</code> (<code>retarget_pose</code>, <code>retarget_pose_offsets</code>), <code>animation_target_skeleton::compute_reference_pose</code></td>
+</tr>
+<tr>
+<td>Roles set by hand</td>
+<td>model import settings <code>rig.humanoid_overrides</code>, compiled into the mesh and the clips (<code>asset_compiler.cpp</code>)</td>
+</tr>
+<tr>
+<td>Tests</td>
+<td><code>tests/tests/suites/animation.cpp</code> (<code>test_rest_aligned_retargeting</code>, <code>test_humanoid_roles_of_common_rigs</code>, <code>test_binding_report_explains_a_retarget</code>, <code>test_retarget_pose_in_playback</code>, <code>test_clip_overrides_choose_the_source_bone</code> and the retargeting tests beside them)</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/docs/markdown/animation-retargeting.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

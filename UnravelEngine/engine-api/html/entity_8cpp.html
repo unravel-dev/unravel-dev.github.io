@@ -97,6 +97,7 @@ $(function(){initNavTree('entity_8cpp.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -112,6 +113,9 @@ $(function(){initNavTree('entity_8cpp.html',''); initResizable(true); });
 <code>#include &lt;<a class="el" href="file__istream_8h_source.html">filesystem/file_istream.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="serialization_8h_source.html">serialization/serialization.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="all__components_8h_source.html">components/all_components.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__writer_8h_source.html">engine/assets/impl/asset_writer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="scene_8h_source.html">engine/ecs/scene.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_8h_source.html">engine/engine.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2events_8h_source.html">engine/events.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="rendering__system_8h_source.html">engine/rendering/ecs/systems/rendering_system.h</a>&gt;</code><br />
@@ -122,17 +126,29 @@ $(function(){initNavTree('entity_8cpp.html',''); initResizable(true); });
 <code>#include &quot;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="reflection_8h_source.html">reflection/reflection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="uuid_8h_source.html">uuid/uuid.h</a>&quot;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;charconv&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;hpp/string_view.hpp&gt;</code><br />
 <code>#include &lt;hpp/utility.hpp&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 </div>
 <p><a href="entity_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structser20_1_1component__keys.html">ser20::component_keys&lt; Component &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The serialization keys for one component type, derived once.  <a href="structser20_1_1component__keys.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceser20.html">ser20</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html">unravel::asset_writer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -149,7 +165,7 @@ Functions</h2></td></tr>
 <tr class="separator:ac8f3fe542394d820751114efc103fec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98f63936d38a21dce05101d7fc00529" id="r_ae98f63936d38a21dce05101d7fc00529"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ae98f63936d38a21dce05101d7fc00529">unravel::as_span</a> (const std::vector&lt; <a class="el" href="structunravel_1_1entity__data.html">entity_data</a>&lt; entt::handle &gt; &gt; &amp;entities) -&gt; hpp::span&lt; const entt::handle &gt;</td></tr>
 <tr class="separator:ae98f63936d38a21dce05101d7fc00529"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a633df8d0f67c4b3a8867d897d9ba0b44" id="r_a633df8d0f67c4b3a8867d897d9ba0b44"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a633df8d0f67c4b3a8867d897d9ba0b44">unravel::push_load_context</a> (entt::registry &amp;registry) -&gt; bool</td></tr>
+<tr class="memitem:a633df8d0f67c4b3a8867d897d9ba0b44" id="r_a633df8d0f67c4b3a8867d897d9ba0b44"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a633df8d0f67c4b3a8867d897d9ba0b44">unravel::push_load_context</a> (entt::registry &amp;<a class="el" href="rig__system_8cpp.html#a1d09fd79473cd0b52a5615f58f2ab1ad">registry</a>) -&gt; bool</td></tr>
 <tr class="separator:a633df8d0f67c4b3a8867d897d9ba0b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53d4811e5d03e032fef3e382a5713811" id="r_a53d4811e5d03e032fef3e382a5713811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a53d4811e5d03e032fef3e382a5713811">unravel::pop_load_context</a> (bool push_result)</td></tr>
 <tr class="separator:a53d4811e5d03e032fef3e382a5713811"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,11 +183,64 @@ Functions</h2></td></tr>
 <tr class="separator:ab7d6fe64f86a6b2bd59846bf6c5e2cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eb5968c98f598d4a806d43983f3810f" id="r_a7eb5968c98f598d4a806d43983f3810f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a7eb5968c98f598d4a806d43983f3810f">unravel::get_save_context</a> () -&gt; <a class="el" href="structunravel_1_1save__context.html">save_context</a> &amp;</td></tr>
 <tr class="separator:a7eb5968c98f598d4a806d43983f3810f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa18218109e88be42e5fd85645a0645cb" id="r_aa18218109e88be42e5fd85645a0645cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aa18218109e88be42e5fd85645a0645cb">unravel::add_to_uid_mapping</a> (entt::handle &amp;obj, bool recursive=true)</td></tr>
-<tr class="separator:aa18218109e88be42e5fd85645a0645cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8c75e349a1908d338d26d2e2258ef2" id="r_a9a8c75e349a1908d338d26d2e2258ef2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a9a8c75e349a1908d338d26d2e2258ef2">unravel::try_get_save_context</a> () -&gt; <a class="el" href="structunravel_1_1save__context.html">save_context</a> *</td></tr>
+<tr class="memdesc:a9a8c75e349a1908d338d26d2e2258ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The active save context, or nullptr outside a save.  <br /></td></tr>
+<tr class="separator:a9a8c75e349a1908d338d26d2e2258ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad213231c668e9e629205749db9d92e6f" id="r_ad213231c668e9e629205749db9d92e6f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ad213231c668e9e629205749db9d92e6f">unravel::begin_component_save</a> (entt::const_handle <a class="el" href="inspector__entity_8cpp.html#a535be24c9c6f25cabb7712b3500a1bfa">source</a>) -&gt; bool</td></tr>
+<tr class="memdesc:ad213231c668e9e629205749db9d92e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the save context a component saved on its own needs, as a scene save opens one: serializers of entity references (a script's Entity fields) resolve them through the source's registry. Defined with the entity serializers; returns whether this call opened the context.  <br /></td></tr>
+<tr class="separator:ad213231c668e9e629205749db9d92e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de8ecd1e7066cdc6c13700d76c61811" id="r_a5de8ecd1e7066cdc6c13700d76c61811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a5de8ecd1e7066cdc6c13700d76c61811">unravel::end_component_save</a> (bool began)</td></tr>
+<tr class="separator:a5de8ecd1e7066cdc6c13700d76c61811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32c0e85efd414abe519494dd77b659c" id="r_af32c0e85efd414abe519494dd77b659c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#af32c0e85efd414abe519494dd77b659c">unravel::begin_component_load</a> (entt::handle <a class="el" href="particle__emitter__component__bindings_8cpp.html#a9959e632227e189dd7e5fb00d2aac1f8">target</a>) -&gt; bool</td></tr>
+<tr class="memdesc:af32c0e85efd414abe519494dd77b659c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the load context a component loaded on its own needs (see begin_component_save).  <br /></td></tr>
+<tr class="separator:af32c0e85efd414abe519494dd77b659c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad020a9d9adc1422625a29e97dba39e21" id="r_ad020a9d9adc1422625a29e97dba39e21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ad020a9d9adc1422625a29e97dba39e21">unravel::end_component_load</a> (bool began)</td></tr>
+<tr class="separator:ad020a9d9adc1422625a29e97dba39e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a878522a20f679e9cd072e9ec1591d" id="r_a59a878522a20f679e9cd072e9ec1591d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a59a878522a20f679e9cd072e9ec1591d">unravel::try_get_load_context</a> () -&gt; <a class="el" href="structunravel_1_1load__context.html">load_context</a> *</td></tr>
+<tr class="memdesc:a59a878522a20f679e9cd072e9ec1591d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The active load context, or nullptr outside a load.  <br /></td></tr>
+<tr class="separator:a59a878522a20f679e9cd072e9ec1591d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1110785a391881b91a31af6c8e595d05" id="r_a1110785a391881b91a31af6c8e595d05"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a1110785a391881b91a31af6c8e595d05">unravel::instance_path_between</a> (entt::handle outer_root, entt::handle inner_root, std::vector&lt; hpp::uuid &gt; &amp;out) -&gt; bool</td></tr>
+<tr class="memdesc:a1110785a391881b91a31af6c8e595d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">The chain of slots from one instance root down to another, outermost first.  <br /></td></tr>
+<tr class="separator:a1110785a391881b91a31af6c8e595d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24def062eae96e261067f4226fb09537" id="r_a24def062eae96e261067f4226fb09537"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a24def062eae96e261067f4226fb09537">unravel::collect_statements_about</a> (entt::handle <a class="el" href="rig__system_8cpp.html#a255c1e78c1e79509170e16c3c7e032ff">root</a>) -&gt; <a class="el" href="structunravel_1_1statements__about__instance.html">statements_about_instance</a></td></tr>
+<tr class="separator:a24def062eae96e261067f4226fb09537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab26f5144788b3d7066afd96506c272" id="r_abab26f5144788b3d7066afd96506c272"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#abab26f5144788b3d7066afd96506c272">unravel::collect_replay_statements</a> (entt::handle <a class="el" href="rig__system_8cpp.html#a255c1e78c1e79509170e16c3c7e032ff">root</a>) -&gt; <a class="el" href="structunravel_1_1replay__statements.html">replay_statements</a></td></tr>
+<tr class="separator:abab26f5144788b3d7066afd96506c272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4832581898924ebc62d3ee871e5275b" id="r_af4832581898924ebc62d3ee871e5275b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#af4832581898924ebc62d3ee871e5275b">unravel::get_dropped_stale_statement_count</a> () -&gt; uint64_t</td></tr>
+<tr class="separator:af4832581898924ebc62d3ee871e5275b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad3538b85324863995cdddaf8bacd24" id="r_a5ad3538b85324863995cdddaf8bacd24"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a5ad3538b85324863995cdddaf8bacd24">unravel::fold_document_statements</a> (entt::handle <a class="el" href="rig__system_8cpp.html#a255c1e78c1e79509170e16c3c7e032ff">root</a>) -&gt; <a class="el" href="structunravel_1_1prefab__statements.html">prefab_statements</a></td></tr>
+<tr class="separator:a5ad3538b85324863995cdddaf8bacd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a4d4a5cce6bb086493df9d3a544c80" id="r_aa1a4d4a5cce6bb086493df9d3a544c80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aa1a4d4a5cce6bb086493df9d3a544c80">unravel::clear_local_statements_below</a> (entt::handle <a class="el" href="rig__system_8cpp.html#a255c1e78c1e79509170e16c3c7e032ff">root</a>)</td></tr>
+<tr class="memdesc:aa1a4d4a5cce6bb086493df9d3a544c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the local list of every named instance nested under root (root's own is kept).  <br /></td></tr>
+<tr class="separator:aa1a4d4a5cce6bb086493df9d3a544c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfae5a038acebf3a1f5c409c85dde7c" id="r_a4bfae5a038acebf3a1f5c409c85dde7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a4bfae5a038acebf3a1f5c409c85dde7c">unravel::re_home_document_statements</a> (entt::handle <a class="el" href="rig__system_8cpp.html#a255c1e78c1e79509170e16c3c7e032ff">root</a>)</td></tr>
+<tr class="separator:a4bfae5a038acebf3a1f5c409c85dde7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a6cec3929b16a9fa3fc264995022ef" id="r_a74a6cec3929b16a9fa3fc264995022ef"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a74a6cec3929b16a9fa3fc264995022ef">unravel::collect_replay_removals</a> (entt::handle <a class="el" href="rig__system_8cpp.html#a255c1e78c1e79509170e16c3c7e032ff">root</a>) -&gt; <a class="el" href="structunravel_1_1prefab__statements.html">prefab_statements</a></td></tr>
+<tr class="memdesc:a74a6cec3929b16a9fa3fc264995022ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every removal stated about content under <code>root</code>, relative to root: here, by the documents above, and by root's own document as last replayed.  <br /></td></tr>
+<tr class="separator:a74a6cec3929b16a9fa3fc264995022ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5004d8bf04643a3fecf46b8f7b80dfd" id="r_ad5004d8bf04643a3fecf46b8f7b80dfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ad5004d8bf04643a3fecf46b8f7b80dfd">unravel::convert_legacy_override_state</a> (entt::registry &amp;<a class="el" href="rig__system_8cpp.html#a1d09fd79473cd0b52a5615f58f2ab1ad">registry</a>, entt::handle document_root, const hpp::uuid &amp;document_uid)</td></tr>
+<tr class="memdesc:ad5004d8bf04643a3fecf46b8f7b80dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts override state from records in the released format.  <br /></td></tr>
+<tr class="separator:ad5004d8bf04643a3fecf46b8f7b80dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94898b468d1e72b55d8cef17b1a4a44" id="r_ab94898b468d1e72b55d8cef17b1a4a44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ab94898b468d1e72b55d8cef17b1a4a44">unravel::record_nested_instance</a> (entt::handle obj, <a class="el" href="structunravel_1_1load__context_1_1instance__frame.html">load_context::instance_frame</a> &amp;<a class="el" href="graphics_8cpp.html#a2756e49c974b080f5cfa99ebdc5067fe">frame</a>, std::vector&lt; hpp::uuid &gt; <a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>)</td></tr>
+<tr class="memdesc:ab94898b468d1e72b55d8cef17b1a4a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a live nested instance a scope the containing document can address.  <br /></td></tr>
+<tr class="separator:ab94898b468d1e72b55d8cef17b1a4a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61be50aa2f23197239eb7206d4ca0479" id="r_a61be50aa2f23197239eb7206d4ca0479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a61be50aa2f23197239eb7206d4ca0479">unravel::collect_scope_contents</a> (entt::handle obj, <a class="el" href="structunravel_1_1load__context_1_1instance__frame.html">load_context::instance_frame</a> &amp;<a class="el" href="graphics_8cpp.html#a2756e49c974b080f5cfa99ebdc5067fe">frame</a>, <a class="el" href="structunravel_1_1load__context_1_1instance__frame_1_1nested__scope.html">load_context::instance_frame::nested_scope</a> &amp;scope, const std::vector&lt; hpp::uuid &gt; &amp;<a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>, bool is_scope_root)</td></tr>
+<tr class="memdesc:a61be50aa2f23197239eb7206d4ca0479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records one nested instance's entities so the containing document can address them.  <br /></td></tr>
+<tr class="separator:a61be50aa2f23197239eb7206d4ca0479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2546b687e55736bb59540e095ef6ab83" id="r_a2546b687e55736bb59540e095ef6ab83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a2546b687e55736bb59540e095ef6ab83">unravel::add_to_uid_mapping_impl</a> (entt::handle obj, <a class="el" href="structunravel_1_1load__context_1_1instance__frame.html">load_context::instance_frame</a> &amp;<a class="el" href="graphics_8cpp.html#a2756e49c974b080f5cfa99ebdc5067fe">frame</a>, bool is_instance_root)</td></tr>
+<tr class="separator:a2546b687e55736bb59540e095ef6ab83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2ad0d25ecd8c2af2496a0631cfc7f2" id="r_a0c2ad0d25ecd8c2af2496a0631cfc7f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a0c2ad0d25ecd8c2af2496a0631cfc7f2">unravel::add_to_uid_mapping</a> (entt::handle &amp;obj)</td></tr>
+<tr class="memdesc:a0c2ad0d25ecd8c2af2496a0631cfc7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records the existing instance subtree so its records can be matched to it.  <br /></td></tr>
+<tr class="separator:a0c2ad0d25ecd8c2af2496a0631cfc7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb1ba03d27bfb8578a127fa587385d0d" id="r_aeb1ba03d27bfb8578a127fa587385d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aeb1ba03d27bfb8578a127fa587385d0d">unravel::cleanup_uid_mapping</a> ()</td></tr>
 <tr class="separator:aeb1ba03d27bfb8578a127fa587385d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a773da85051d6d3dd7e6a031684a750bc" id="r_a773da85051d6d3dd7e6a031684a750bc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a773da85051d6d3dd7e6a031684a750bc">unravel::is_parent</a> (entt::const_handle potential_parent, entt::const_handle child) -&gt; bool</td></tr>
+<tr class="memitem:a9f284922bb5a846a9947002045319096" id="r_a9f284922bb5a846a9947002045319096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a9f284922bb5a846a9947002045319096">unravel::qualify_legacy_prefab_ids</a> (entt::handle obj, hpp::uuid owner_document, bool is_walk_root)</td></tr>
+<tr class="memdesc:a9f284922bb5a846a9947002045319096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attributes prefab ids from a file in the released format, which named no document.  <br /></td></tr>
+<tr class="separator:a9f284922bb5a846a9947002045319096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3adb23e78ed41890c539c9c706e068b" id="r_ab3adb23e78ed41890c539c9c706e068b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ab3adb23e78ed41890c539c9c706e068b">unravel::prepare_prefab_identity</a> (entt::handle obj, entt::handle enclosing_instance, bool is_subtree_root, std::vector&lt; hpp::uuid &gt; document_chain)</td></tr>
+<tr class="memdesc:ab3adb23e78ed41890c539c9c706e068b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Settles the identities a prefab document needs, before any of it is written.  <br /></td></tr>
+<tr class="separator:ab3adb23e78ed41890c539c9c706e068b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773da85051d6d3dd7e6a031684a750bc" id="r_a773da85051d6d3dd7e6a031684a750bc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a773da85051d6d3dd7e6a031684a750bc">unravel::is_parent</a> (entt::const_handle potential_parent, entt::const_handle <a class="el" href="native__scene_8cpp.html#a269cc96e127de536696db1a8c5f9303c">child</a>) -&gt; bool</td></tr>
 <tr class="separator:a773da85051d6d3dd7e6a031684a750bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac606001229d727aa6c70674837ac7a79" id="r_ac606001229d727aa6c70674837ac7a79"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ac606001229d727aa6c70674837ac7a79">unravel::find_root</a> (entt::const_handle e) -&gt; entt::const_handle</td></tr>
 <tr class="separator:ac606001229d727aa6c70674837ac7a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,27 +256,47 @@ Functions</h2></td></tr>
 <tr class="memitem:af346274f22c46ad4ba03effe53c1fafc" id="r_af346274f22c46ad4ba03effe53c1fafc"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
 <tr class="memitem:af346274f22c46ad4ba03effe53c1fafc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#af346274f22c46ad4ba03effe53c1fafc">ser20::save_entity_prefab_uid</a> (Archive &amp;ar, const entt::const_handle &amp;obj)</td></tr>
 <tr class="separator:af346274f22c46ad4ba03effe53c1fafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158db487db4c881eb715571db4d00afb" id="r_a158db487db4c881eb715571db4d00afb"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
+<tr class="memitem:a158db487db4c881eb715571db4d00afb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a158db487db4c881eb715571db4d00afb">ser20::save_entity_instance_uid</a> (Archive &amp;ar, const entt::const_handle &amp;obj)</td></tr>
+<tr class="memdesc:a158db487db4c881eb715571db4d00afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes which nested instance of the document being saved this entity is.  <br /></td></tr>
+<tr class="separator:a158db487db4c881eb715571db4d00afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b834a502c10cff535401c0ac1b40d44" id="r_a1b834a502c10cff535401c0ac1b40d44"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
+<tr class="memitem:a1b834a502c10cff535401c0ac1b40d44"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a1b834a502c10cff535401c0ac1b40d44">ser20::save_entity_instance_path</a> (Archive &amp;ar, const entt::const_handle &amp;obj)</td></tr>
+<tr class="memdesc:a1b834a502c10cff535401c0ac1b40d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes which nested instance, if any, this entity lives inside.  <br /></td></tr>
+<tr class="separator:a1b834a502c10cff535401c0ac1b40d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b69d794dde211b02fe114d064b0131" id="r_a52b69d794dde211b02fe114d064b0131"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
 <tr class="memitem:a52b69d794dde211b02fe114d064b0131"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a52b69d794dde211b02fe114d064b0131">ser20::save_entity_uuid</a> (Archive &amp;ar, const entt::const_handle &amp;obj)</td></tr>
 <tr class="separator:a52b69d794dde211b02fe114d064b0131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaefa4c3f722862bac94a5b8eb2e4000" id="r_adaefa4c3f722862bac94a5b8eb2e4000"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
-<tr class="memitem:adaefa4c3f722862bac94a5b8eb2e4000"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#adaefa4c3f722862bac94a5b8eb2e4000">ser20::save_entity</a> (Archive &amp;ar, const entt::const_handle &amp;obj, <a class="el" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3d">entity_flags</a> flags)</td></tr>
+<tr class="memitem:adaefa4c3f722862bac94a5b8eb2e4000"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#adaefa4c3f722862bac94a5b8eb2e4000">ser20::save_entity</a> (Archive &amp;ar, const entt::const_handle &amp;obj, <a class="el" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3d">entity_flags</a> <a class="el" href="renderer_8cpp.html#a773b39d480759f67926cb18ae2219281">flags</a>)</td></tr>
 <tr class="separator:adaefa4c3f722862bac94a5b8eb2e4000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36ac479c8d389e489b13cf86208056ec" id="r_a36ac479c8d389e489b13cf86208056ec"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
-<tr class="memitem:a36ac479c8d389e489b13cf86208056ec"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a36ac479c8d389e489b13cf86208056ec">ser20::load_entity_from_id</a> (Archive &amp;ar, entt::handle &amp;obj, <a class="el" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3d">entity_flags</a> flags) -&gt; bool</td></tr>
+<tr class="memitem:a36ac479c8d389e489b13cf86208056ec"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a36ac479c8d389e489b13cf86208056ec">ser20::load_entity_from_id</a> (Archive &amp;ar, entt::handle &amp;obj, <a class="el" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3d">entity_flags</a> <a class="el" href="renderer_8cpp.html#a773b39d480759f67926cb18ae2219281">flags</a>) -&gt; bool</td></tr>
 <tr class="separator:a36ac479c8d389e489b13cf86208056ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a0eceb8903d552d8f48484b1a86321" id="r_a85a0eceb8903d552d8f48484b1a86321"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a85a0eceb8903d552d8f48484b1a86321">ser20::is_removed_instance_path</a> (const <a class="el" href="structunravel_1_1load__context_1_1instance__frame.html">load_context::instance_frame</a> &amp;<a class="el" href="graphics_8cpp.html#a2756e49c974b080f5cfa99ebdc5067fe">frame</a>, const std::vector&lt; hpp::uuid &gt; &amp;<a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>) -&gt; bool</td></tr>
+<tr class="memdesc:a85a0eceb8903d552d8f48484b1a86321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a record belongs to a nested instance that was deleted here.  <br /></td></tr>
+<tr class="separator:a85a0eceb8903d552d8f48484b1a86321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c1a7f7a3c5df4ad8ca7211440437b0" id="r_ae9c1a7f7a3c5df4ad8ca7211440437b0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceser20.html#ae9c1a7f7a3c5df4ad8ca7211440437b0">ser20::resolve_plain_prefab_uid</a> (<a class="el" href="structunravel_1_1load__context.html">load_context</a> &amp;load_ctx, <a class="el" href="structunravel_1_1load__context_1_1prefab__uid__mapping__t.html">load_context::prefab_uid_mapping_t</a> &amp;mapping, entt::handle &amp;obj) -&gt; bool</td></tr>
+<tr class="memdesc:ae9c1a7f7a3c5df4ad8ca7211440437b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves an entity addressed by prefab uid alone: the document's own direct content.  <br /></td></tr>
+<tr class="separator:ae9c1a7f7a3c5df4ad8ca7211440437b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a127b58bd04f65d78160354eb420d8ac0" id="r_a127b58bd04f65d78160354eb420d8ac0"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
-<tr class="memitem:a127b58bd04f65d78160354eb420d8ac0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a127b58bd04f65d78160354eb420d8ac0">ser20::load_entity_from_prefab_uid</a> (Archive &amp;ar, entt::handle &amp;obj, <a class="el" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3d">entity_flags</a> flags) -&gt; bool</td></tr>
+<tr class="memitem:a127b58bd04f65d78160354eb420d8ac0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a127b58bd04f65d78160354eb420d8ac0">ser20::load_entity_from_prefab_uid</a> (Archive &amp;ar, entt::handle &amp;obj, <a class="el" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3d">entity_flags</a> <a class="el" href="renderer_8cpp.html#a773b39d480759f67926cb18ae2219281">flags</a>) -&gt; bool</td></tr>
 <tr class="separator:a127b58bd04f65d78160354eb420d8ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa6566b66b37a9a57a9172038ba9562" id="r_a1aa6566b66b37a9a57a9172038ba9562"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
-<tr class="memitem:a1aa6566b66b37a9a57a9172038ba9562"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a1aa6566b66b37a9a57a9172038ba9562">ser20::load_entity_from_uuid</a> (Archive &amp;ar, entt::handle &amp;obj, <a class="el" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3d">entity_flags</a> flags) -&gt; bool</td></tr>
+<tr class="memitem:a1aa6566b66b37a9a57a9172038ba9562"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a1aa6566b66b37a9a57a9172038ba9562">ser20::load_entity_from_uuid</a> (Archive &amp;ar, entt::handle &amp;obj, <a class="el" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3d">entity_flags</a> <a class="el" href="renderer_8cpp.html#a773b39d480759f67926cb18ae2219281">flags</a>) -&gt; bool</td></tr>
 <tr class="separator:a1aa6566b66b37a9a57a9172038ba9562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23ef9dd821cad9e6903e29abadeabecd" id="r_a23ef9dd821cad9e6903e29abadeabecd"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
-<tr class="memitem:a23ef9dd821cad9e6903e29abadeabecd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a23ef9dd821cad9e6903e29abadeabecd">ser20::load_entity</a> (Archive &amp;ar, entt::handle &amp;obj, <a class="el" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3d">entity_flags</a> flags)</td></tr>
+<tr class="memitem:a23ef9dd821cad9e6903e29abadeabecd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a23ef9dd821cad9e6903e29abadeabecd">ser20::load_entity</a> (Archive &amp;ar, entt::handle &amp;obj, <a class="el" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3d">entity_flags</a> <a class="el" href="renderer_8cpp.html#a773b39d480759f67926cb18ae2219281">flags</a>)</td></tr>
 <tr class="separator:a23ef9dd821cad9e6903e29abadeabecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba6bdfd259180d637da10c0752cad3b" id="r_a9ba6bdfd259180d637da10c0752cad3b"><td class="memTemplParams" colspan="2">template&lt;typename Component &gt; </td></tr>
 <tr class="memitem:a9ba6bdfd259180d637da10c0752cad3b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a9ba6bdfd259180d637da10c0752cad3b">ser20::should_save_component</a> (const entt::const_handle &amp;obj) -&gt; bool</td></tr>
 <tr class="separator:a9ba6bdfd259180d637da10c0752cad3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df64b49939c5d2998bbc8274f0dccb2" id="r_a9df64b49939c5d2998bbc8274f0dccb2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a9df64b49939c5d2998bbc8274f0dccb2">ser20::is_stated_removed</a> (const std::string &amp;has_name) -&gt; bool</td></tr>
+<tr class="separator:a9df64b49939c5d2998bbc8274f0dccb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad733a2648a34c7b4a9f96bd7a132feaa" id="r_ad733a2648a34c7b4a9f96bd7a132feaa"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
+<tr class="memitem:ad733a2648a34c7b4a9f96bd7a132feaa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#ad733a2648a34c7b4a9f96bd7a132feaa">ser20::note_if_statement_stale</a> (Archive &amp;ar, const std::string &amp;has_name)</td></tr>
+<tr class="memdesc:ad733a2648a34c7b4a9f96bd7a132feaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports a statement that keeps a whole component of the document's own content the document no longer has.  <br /></td></tr>
+<tr class="separator:ad733a2648a34c7b4a9f96bd7a132feaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72cface893cb1bd85b7c8f12354759d3" id="r_a72cface893cb1bd85b7c8f12354759d3"><td class="memTemplParams" colspan="2">template&lt;typename Component &gt; </td></tr>
 <tr class="memitem:a72cface893cb1bd85b7c8f12354759d3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceser20.html#a72cface893cb1bd85b7c8f12354759d3">ser20::should_load_component</a> (const entt::handle &amp;obj) -&gt; bool</td></tr>
 <tr class="separator:a72cface893cb1bd85b7c8f12354759d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,12 +352,20 @@ Functions</h2></td></tr>
 <tr class="separator:a502f6c409e003b434dfdfc3afaa4c571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85bb32af03ab0ceaf8e95a18394ae3ac" id="r_a85bb32af03ab0ceaf8e95a18394ae3ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a85bb32af03ab0ceaf8e95a18394ae3ac">unravel::save_to_file</a> (const std::string &amp;absolute_path, entt::const_handle obj)</td></tr>
 <tr class="separator:a85bb32af03ab0ceaf8e95a18394ae3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1a49639f79b018efd83597aa1e2b56" id="r_adf1a49639f79b018efd83597aa1e2b56"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#adf1a49639f79b018efd83597aa1e2b56">unravel::asset_writer::atomic_save_to_file</a> (const fs::path &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, entt::const_handle obj) -&gt; bool</td></tr>
+<tr class="separator:adf1a49639f79b018efd83597aa1e2b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d49630e6a70fc9bfc7dadf51fb1fbe" id="r_ab9d49630e6a70fc9bfc7dadf51fb1fbe"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1asset__writer.html#ab9d49630e6a70fc9bfc7dadf51fb1fbe">unravel::asset_writer::atomic_save_to_file</a> (const fs::path &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, entt::handle obj) -&gt; bool</td></tr>
+<tr class="separator:ab9d49630e6a70fc9bfc7dadf51fb1fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d9e169950d539425001c14f6e9d2e03" id="r_a2d9e169950d539425001c14f6e9d2e03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a2d9e169950d539425001c14f6e9d2e03">unravel::save_to_stream_bin</a> (std::ostream &amp;stream, entt::const_handle obj)</td></tr>
 <tr class="separator:a2d9e169950d539425001c14f6e9d2e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab77f941d19d8cbc4d1af358cd5c1f224" id="r_ab77f941d19d8cbc4d1af358cd5c1f224"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ab77f941d19d8cbc4d1af358cd5c1f224">unravel::save_to_file_bin</a> (const std::string &amp;absolute_path, entt::const_handle obj)</td></tr>
 <tr class="separator:ab77f941d19d8cbc4d1af358cd5c1f224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf5e677b2b74ae80160daf56aab50f4d" id="r_adf5e677b2b74ae80160daf56aab50f4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#adf5e677b2b74ae80160daf56aab50f4d">unravel::load_from_view</a> (std::string_view <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a27694887ddb9ed0512542d67a4736ff7">view</a>, entt::handle &amp;obj)</td></tr>
-<tr class="separator:adf5e677b2b74ae80160daf56aab50f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf6b2f9b2a2b4803bcdfe85ba9abbba" id="r_abbf6b2f9b2a2b4803bcdfe85ba9abbba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#abbf6b2f9b2a2b4803bcdfe85ba9abbba">unravel::load_from_view</a> (hpp::string_view <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a27694887ddb9ed0512542d67a4736ff7">view</a>, entt::registry &amp;obj)</td></tr>
+<tr class="separator:abbf6b2f9b2a2b4803bcdfe85ba9abbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa205b46b0af93f4e00fe9ffe0f92e3da" id="r_aa205b46b0af93f4e00fe9ffe0f92e3da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aa205b46b0af93f4e00fe9ffe0f92e3da">unravel::load_from_stream</a> (std::istream &amp;stream, entt::registry &amp;obj)</td></tr>
+<tr class="separator:aa205b46b0af93f4e00fe9ffe0f92e3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94e2d4f58a4e66f689b97ffce9c1518" id="r_aa94e2d4f58a4e66f689b97ffce9c1518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aa94e2d4f58a4e66f689b97ffce9c1518">unravel::load_from_view</a> (hpp::string_view <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a27694887ddb9ed0512542d67a4736ff7">view</a>, entt::handle &amp;obj)</td></tr>
+<tr class="separator:aa94e2d4f58a4e66f689b97ffce9c1518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a301c47d0627a96248713939e84a3cda2" id="r_a301c47d0627a96248713939e84a3cda2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a301c47d0627a96248713939e84a3cda2">unravel::load_from_stream</a> (std::istream &amp;stream, entt::handle &amp;obj)</td></tr>
 <tr class="separator:a301c47d0627a96248713939e84a3cda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cedf24d82d271b0dc039f52bc149cd5" id="r_a4cedf24d82d271b0dc039f52bc149cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a4cedf24d82d271b0dc039f52bc149cd5">unravel::load_from_file</a> (const std::string &amp;absolute_path, entt::handle &amp;obj)</td></tr>
@@ -277,13 +374,25 @@ Functions</h2></td></tr>
 <tr class="separator:aa9d09ea1f882e38a96f229eae9952cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac869b108f0e4714467614f7d2a17470a" id="r_ac869b108f0e4714467614f7d2a17470a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ac869b108f0e4714467614f7d2a17470a">unravel::load_from_file_bin</a> (const std::string &amp;absolute_path, entt::handle &amp;obj)</td></tr>
 <tr class="separator:ac869b108f0e4714467614f7d2a17470a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac64d8b911ca83290962f70636ae3f3a" id="r_aac64d8b911ca83290962f70636ae3f3a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aac64d8b911ca83290962f70636ae3f3a">unravel::load_from_prefab_out</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1prefab.html">prefab</a> &gt; &amp;pfb, entt::registry &amp;registry, entt::handle &amp;obj) -&gt; bool</td></tr>
+<tr class="memitem:a62d509e84b4a168404ab186e3524dfd3" id="r_a62d509e84b4a168404ab186e3524dfd3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a62d509e84b4a168404ab186e3524dfd3">unravel::can_trust_resolved_marker</a> () -&gt; bool</td></tr>
+<tr class="memdesc:a62d509e84b4a168404ab186e3524dfd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a document's "nesting already resolved" claim can be believed.  <br /></td></tr>
+<tr class="separator:a62d509e84b4a168404ab186e3524dfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6992db64ea56166985632a84526df6b" id="r_ab6992db64ea56166985632a84526df6b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ab6992db64ea56166985632a84526df6b">unravel::sync_prefab_instance</a> (entt::handle instance) -&gt; bool</td></tr>
+<tr class="memdesc:ab6992db64ea56166985632a84526df6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reloads an instance from its prefab asset, keeping what belongs to the instance.  <br /></td></tr>
+<tr class="separator:ab6992db64ea56166985632a84526df6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d49577e7067248ab296c5f8474d628" id="r_ad1d49577e7067248ab296c5f8474d628"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ad1d49577e7067248ab296c5f8474d628">unravel::sync_nested_prefab_instances</a> (entt::handle <a class="el" href="rig__system_8cpp.html#a255c1e78c1e79509170e16c3c7e032ff">root</a>) -&gt; size_t</td></tr>
+<tr class="memdesc:ad1d49577e7067248ab296c5f8474d628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncs every prefab instance nested inside a subtree against its own asset.  <br /></td></tr>
+<tr class="separator:ad1d49577e7067248ab296c5f8474d628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc068f4257ef7ca8471e30888ab6ad8" id="r_a1cc068f4257ef7ca8471e30888ab6ad8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a1cc068f4257ef7ca8471e30888ab6ad8">unravel::sync_all_prefab_instances</a> (entt::registry &amp;<a class="el" href="rig__system_8cpp.html#a1d09fd79473cd0b52a5615f58f2ab1ad">registry</a>) -&gt; size_t</td></tr>
+<tr class="memdesc:a1cc068f4257ef7ca8471e30888ab6ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncs every prefab instance in a registry against its own asset.  <br /></td></tr>
+<tr class="separator:a1cc068f4257ef7ca8471e30888ab6ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac64d8b911ca83290962f70636ae3f3a" id="r_aac64d8b911ca83290962f70636ae3f3a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aac64d8b911ca83290962f70636ae3f3a">unravel::load_from_prefab_out</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1prefab.html">prefab</a> &gt; &amp;pfb, entt::registry &amp;<a class="el" href="rig__system_8cpp.html#a1d09fd79473cd0b52a5615f58f2ab1ad">registry</a>, entt::handle &amp;obj) -&gt; bool</td></tr>
 <tr class="separator:aac64d8b911ca83290962f70636ae3f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f3ab6568e31d3970115fa19c008845a" id="r_a1f3ab6568e31d3970115fa19c008845a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a1f3ab6568e31d3970115fa19c008845a">unravel::regenerate_entity_uids</a> (entt::handle obj)</td></tr>
 <tr class="separator:a1f3ab6568e31d3970115fa19c008845a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee4618c7664f5a32bda6a2f917798e70" id="r_aee4618c7664f5a32bda6a2f917798e70"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aee4618c7664f5a32bda6a2f917798e70">unravel::load_from_prefab</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1prefab.html">prefab</a> &gt; &amp;pfb, entt::registry &amp;registry) -&gt; entt::handle</td></tr>
+<tr class="memitem:aee4618c7664f5a32bda6a2f917798e70" id="r_aee4618c7664f5a32bda6a2f917798e70"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aee4618c7664f5a32bda6a2f917798e70">unravel::load_from_prefab</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1prefab.html">prefab</a> &gt; &amp;pfb, entt::registry &amp;<a class="el" href="rig__system_8cpp.html#a1d09fd79473cd0b52a5615f58f2ab1ad">registry</a>) -&gt; entt::handle</td></tr>
 <tr class="separator:aee4618c7664f5a32bda6a2f917798e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9966b92656ad26169a8725d8f630162c" id="r_a9966b92656ad26169a8725d8f630162c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a9966b92656ad26169a8725d8f630162c">unravel::load_from_prefab_bin</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1prefab.html">prefab</a> &gt; &amp;pfb, entt::registry &amp;registry) -&gt; entt::handle</td></tr>
+<tr class="memitem:a9966b92656ad26169a8725d8f630162c" id="r_a9966b92656ad26169a8725d8f630162c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a9966b92656ad26169a8725d8f630162c">unravel::load_from_prefab_bin</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="structunravel_1_1prefab.html">prefab</a> &gt; &amp;pfb, entt::registry &amp;<a class="el" href="rig__system_8cpp.html#a1d09fd79473cd0b52a5615f58f2ab1ad">registry</a>) -&gt; entt::handle</td></tr>
 <tr class="separator:a9966b92656ad26169a8725d8f630162c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac45c3481459d7623a2dab1ee01de4220" id="r_ac45c3481459d7623a2dab1ee01de4220"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ac45c3481459d7623a2dab1ee01de4220">unravel::has_prefab_component</a> (const entt::const_handle &amp;obj) -&gt; bool</td></tr>
 <tr class="separator:ac45c3481459d7623a2dab1ee01de4220"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,8 +406,8 @@ Functions</h2></td></tr>
 <tr class="separator:a73efe6230548d8b99fb57218688a065a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa296b031538b8c5bd5c9de11bc3e63" id="r_a1fa296b031538b8c5bd5c9de11bc3e63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a1fa296b031538b8c5bd5c9de11bc3e63">unravel::save_to_file_bin</a> (const std::string &amp;absolute_path, const <a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn)</td></tr>
 <tr class="separator:a1fa296b031538b8c5bd5c9de11bc3e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa18218371f5127d26c4e4d962e391a5c" id="r_aa18218371f5127d26c4e4d962e391a5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aa18218371f5127d26c4e4d962e391a5c">unravel::load_from_view</a> (std::string_view <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a27694887ddb9ed0512542d67a4736ff7">view</a>, <a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn)</td></tr>
-<tr class="separator:aa18218371f5127d26c4e4d962e391a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d83bcc88b2240a8a3cce8ab123ff93" id="r_a49d83bcc88b2240a8a3cce8ab123ff93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a49d83bcc88b2240a8a3cce8ab123ff93">unravel::load_from_view</a> (hpp::string_view <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a27694887ddb9ed0512542d67a4736ff7">view</a>, <a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn)</td></tr>
+<tr class="separator:a49d83bcc88b2240a8a3cce8ab123ff93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b1c890f7b2eaa5006d3e031ee6b5aef" id="r_a0b1c890f7b2eaa5006d3e031ee6b5aef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a0b1c890f7b2eaa5006d3e031ee6b5aef">unravel::load_from_stream</a> (std::istream &amp;stream, <a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn)</td></tr>
 <tr class="separator:a0b1c890f7b2eaa5006d3e031ee6b5aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fbf0c3c76cd4771ae89e24a7011b89a" id="r_a3fbf0c3c76cd4771ae89e24a7011b89a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a3fbf0c3c76cd4771ae89e24a7011b89a">unravel::load_from_file</a> (const std::string &amp;absolute_path, <a class="el" href="structunravel_1_1scene.html">scene</a> &amp;scn)</td></tr>
@@ -322,11 +431,58 @@ Variables</h2></td></tr>
 <tr class="separator:aac94fd27a745a0ae5cf4a3bc08fbf338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4196877f44009ce2d126dbe7e11e99b4" id="r_a4196877f44009ce2d126dbe7e11e99b4"><td class="memItemLeft" align="right" valign="top">thread_local <a class="el" href="structunravel_1_1post__load__callbacks.html">post_load_callbacks</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a4196877f44009ce2d126dbe7e11e99b4">unravel::post_load_callbacks_ptr</a> {}</td></tr>
 <tr class="separator:a4196877f44009ce2d126dbe7e11e99b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15ce120b64eeade36829348702b7ce8b" id="r_a15ce120b64eeade36829348702b7ce8b"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a15ce120b64eeade36829348702b7ce8b">unravel::writing</a> = false</td></tr>
-<tr class="separator:a15ce120b64eeade36829348702b7ce8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c1389f8544dd8429ce20c46aedb743" id="r_a90c1389f8544dd8429ce20c46aedb743"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a90c1389f8544dd8429ce20c46aedb743">unravel::reading</a> = false</td></tr>
-<tr class="separator:a90c1389f8544dd8429ce20c46aedb743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="afeb2cbccdb9a78544a26161d2499088a" name="afeb2cbccdb9a78544a26161d2499088a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb2cbccdb9a78544a26161d2499088a">&#9670;&#160;</a></span>component_path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hpp::string_view component_path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Everything after "components/", so "tag_component/name" or "has_tag_component". </p>
+
+<p class="definition">Definition at line <a class="el" href="entity_8cpp_source.html#l02488">2488</a> of file <a class="el" href="entity_8cpp_source.html">entity.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a122fd2f7586427d2db4146f51dbd73f5" name="a122fd2f7586427d2db4146f51dbd73f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122fd2f7586427d2db4146f51dbd73f5">&#9670;&#160;</a></span>entity_uuid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hpp::uuid entity_uuid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="entity_8cpp_source.html#l02485">2485</a> of file <a class="el" href="entity_8cpp_source.html">entity.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a28e3c179a86f337095088b3ca02a2b2a" name="a28e3c179a86f337095088b3ca02a2b2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e3c179a86f337095088b3ca02a2b2a">&#9670;&#160;</a></span>valid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool valid {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="entity_8cpp_source.html#l02489">2489</a> of file <a class="el" href="entity_8cpp_source.html">entity.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

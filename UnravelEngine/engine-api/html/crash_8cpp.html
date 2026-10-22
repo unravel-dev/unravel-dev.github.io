@@ -98,21 +98,26 @@ $(function(){initNavTree('crash_8cpp.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">crash.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Crash handlers: Windows SEH + POSIX sigaction, crash-safe I/O, minidumps.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="crash_8hpp_source.html">crash.hpp</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="config_8hpp_source.html">base/platform/config.hpp</a>&gt;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;cpptrace/cpptrace.hpp&gt;</code><br />
-<code>#include &lt;cpptrace/formatting.hpp&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;csignal&gt;</code><br />
-<code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;exception&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;typeinfo&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
 </div>
 <p><a href="crash_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -123,41 +128,17 @@ Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html">unravel::crash</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a794692b736be7aeaea74ff49178b595e" id="r_a794692b736be7aeaea74ff49178b595e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a794692b736be7aeaea74ff49178b595e">unravel::crash::signal_type</a> { <a class="el" href="namespaceunravel_1_1crash.html#a794692b736be7aeaea74ff49178b595ea2414c252176310b2c04547257948c7b7">unravel::crash::interrupt</a>
-, <a class="el" href="namespaceunravel_1_1crash.html#a794692b736be7aeaea74ff49178b595ea922ba8a7dcc2e092a994d9c72cabc9e6">unravel::crash::termination</a>
-, <a class="el" href="namespaceunravel_1_1crash.html#a794692b736be7aeaea74ff49178b595eadcaa9fd4f23aaf0c29f540becf35b46f">unravel::crash::crash</a>
- }</td></tr>
-<tr class="separator:a794692b736be7aeaea74ff49178b595e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a295652f6c489c1d9c9c979b5b02ef966" id="r_a295652f6c489c1d9c9c979b5b02ef966"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a295652f6c489c1d9c9c979b5b02ef966">unravel::crash::get_signal_name</a> (int sig) noexcept -&gt; std::string_view</td></tr>
-<tr class="separator:a295652f6c489c1d9c9c979b5b02ef966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f319ae7d275cd3b95cfe72dffcb591b" id="r_a8f319ae7d275cd3b95cfe72dffcb591b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a8f319ae7d275cd3b95cfe72dffcb591b">unravel::crash::is_crash_signal</a> (int sig) noexcept -&gt; bool</td></tr>
-<tr class="separator:a8f319ae7d275cd3b95cfe72dffcb591b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4be5943b704da8a53e8cbe7bcc93ad99" id="r_a4be5943b704da8a53e8cbe7bcc93ad99"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a4be5943b704da8a53e8cbe7bcc93ad99">unravel::crash::signal_handler</a> (int sig) -&gt; void</td></tr>
-<tr class="separator:a4be5943b704da8a53e8cbe7bcc93ad99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c90f0142570adc8c68b2f0269980a1b" id="r_a2c90f0142570adc8c68b2f0269980a1b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a2c90f0142570adc8c68b2f0269980a1b">unravel::crash::set_interrupt_handler</a> (<a class="el" href="namespaceunravel_1_1crash.html#a239c0f06bc42a11e1b6b2524795a8dbb">interrupt_handler_t</a> handler) -&gt; void</td></tr>
-<tr class="separator:a2c90f0142570adc8c68b2f0269980a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98539ca4fed7c1312dd026deb366d720" id="r_a98539ca4fed7c1312dd026deb366d720"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a98539ca4fed7c1312dd026deb366d720">unravel::crash::set_termination_handler</a> (<a class="el" href="namespaceunravel_1_1crash.html#a3c7e5d5b799c6ea230f7c333c6525ac1">termination_handler_t</a> handler) -&gt; void</td></tr>
-<tr class="separator:a98539ca4fed7c1312dd026deb366d720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb44a47a7663c5ed079337d9dfba1518" id="r_abb44a47a7663c5ed079337d9dfba1518"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#abb44a47a7663c5ed079337d9dfba1518">unravel::crash::set_crash_handler</a> (<a class="el" href="namespaceunravel_1_1crash.html#aa83651b37055f8dfa3bee630240c9542">crash_handler_t</a> handler) -&gt; void</td></tr>
-<tr class="separator:abb44a47a7663c5ed079337d9dfba1518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af97f2b8be19ab0859615e9678d6b8a4e" id="r_af97f2b8be19ab0859615e9678d6b8a4e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#af97f2b8be19ab0859615e9678d6b8a4e">unravel::crash::set_exception_handler</a> (<a class="el" href="namespaceunravel_1_1crash.html#a7edc6706c4ecaf5b5e1cbe695e82a7af">exception_handler_t</a> handler) -&gt; void</td></tr>
-<tr class="separator:af97f2b8be19ab0859615e9678d6b8a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6facd66d7b052dec439e2dfc08dde644" id="r_a6facd66d7b052dec439e2dfc08dde644"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a6facd66d7b052dec439e2dfc08dde644">unravel::crash::get_signal_type</a> (int sig) noexcept -&gt; <a class="el" href="namespaceunravel_1_1crash.html#a794692b736be7aeaea74ff49178b595e">signal_type</a></td></tr>
-<tr class="separator:a6facd66d7b052dec439e2dfc08dde644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8114505aa5614c94263fa25f81f39db" id="r_ad8114505aa5614c94263fa25f81f39db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#ad8114505aa5614c94263fa25f81f39db">unravel::crash::terminate_handler</a> ()</td></tr>
-<tr class="separator:ad8114505aa5614c94263fa25f81f39db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7388194971dbb71afa98a2b96deb5a0" id="r_ab7388194971dbb71afa98a2b96deb5a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#ab7388194971dbb71afa98a2b96deb5a0">unravel::crash::register_terminate_handler</a> ()</td></tr>
-<tr class="separator:ab7388194971dbb71afa98a2b96deb5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fe5b2580435a2bd56db5a13f3ebcfbc" id="r_a3fe5b2580435a2bd56db5a13f3ebcfbc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a3fe5b2580435a2bd56db5a13f3ebcfbc">unravel::crash::install_handlers</a> (const <a class="el" href="structunravel_1_1crash_1_1crash__handlers.html">crash_handlers</a> &amp;handlers) -&gt; void</td></tr>
-<tr class="memdesc:a3fe5b2580435a2bd56db5a13f3ebcfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install comprehensive crash handlers.  <br /></td></tr>
+<tr class="memdesc:a3fe5b2580435a2bd56db5a13f3ebcfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install crash handlers once for the process.  <br /></td></tr>
 <tr class="separator:a3fe5b2580435a2bd56db5a13f3ebcfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Crash handlers: Windows SEH + POSIX sigaction, crash-safe I/O, minidumps. </p>
+
+<p class="definition">Definition in file <a class="el" href="crash_8cpp_source.html">crash.cpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

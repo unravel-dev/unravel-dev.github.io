@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_Collision" data-uid="Unravel.Core.Collision" class="text-break">
-Class Collision  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class Collision  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -159,7 +159,7 @@ Class Collision  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Unravel_Core_Collision_contacts" data-uid="Unravel.Core.Collision.contacts">
   contacts
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the array of contact points where the collision occurred.</p>
@@ -190,7 +190,7 @@ Class Collision  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Unravel_Core_Collision_entity" data-uid="Unravel.Core.Collision.entity">
   entity
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the entity involved in the collision.</p>
@@ -218,6 +218,41 @@ Class Collision  <a class="header-action link-secondary" title="View source" hre
 
 
 
+
+  <h3 id="Unravel_Core_Collision_reason" data-uid="Unravel.Core.Collision.reason">
+  reason
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Why the overlap ended. Always <a class="xref" href="Unravel.Core.ContactEndReason.html#Unravel_Core_ContactEndReason_Separated">Separated</a> for enter events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContactEndReason reason</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.ContactEndReason.html">ContactEndReason</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="Unravel_Core_Collision_reason_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Exits synthesized because one side is going away carry the last known contact points
+rather than fresh ones - the manifold no longer exists by the time they are reported.</p>
+</div>
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -226,7 +261,7 @@ Class Collision  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Unravel_Core_Collision_ToString" data-uid="Unravel.Core.Collision.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the collision to its string representation.</p>
@@ -259,7 +294,7 @@ Class Collision  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Unravel_Core_Collision_ToString_System_String_" data-uid="Unravel.Core.Collision.ToString(System.String)">
   ToString(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the collision to its string representation with a specified format.</p>
@@ -298,7 +333,7 @@ Class Collision  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Unravel_Core_Collision_ToString_System_String_System_IFormatProvider_" data-uid="Unravel.Core.Collision.ToString(System.String,System.IFormatProvider)">
   ToString(string, IFormatProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converts the collision to its string representation with a specified format and format provider.</p>
@@ -340,7 +375,7 @@ Class Collision  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/scene/physics/Collision.cs/#L38" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -99,12 +99,13 @@ $(function(){initNavTree('classunravel_1_1taa__pass.html',''); initResizable(tru
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classunravel_1_1taa__pass-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::taa_pass Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>HDR temporal anti-aliasing resolve (depth reprojection). Phase 2: optional velocity buffer.  
+<p>HDR temporal anti-aliasing resolve. Reprojects through the velocity (motion vector) buffer when available (per-object motion, dilated at silhouettes), falling back to camera-only depth reprojection when the buffer is off or absent.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="taa__pass_8h_source.html">taa_pass.h</a>&gt;</code></p>
@@ -118,17 +119,22 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a190e5d15b8df016a7258f3e96218362e" id="r_a190e5d15b8df016a7258f3e96218362e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a190e5d15b8df016a7258f3e96218362e">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a190e5d15b8df016a7258f3e96218362e" id="r_a190e5d15b8df016a7258f3e96218362e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a190e5d15b8df016a7258f3e96218362e">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="separator:a190e5d15b8df016a7258f3e96218362e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea2edb32d99c56cb2fe8b8cc2f9a5ac7" id="r_aea2edb32d99c56cb2fe8b8cc2f9a5ac7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea2edb32d99c56cb2fe8b8cc2f9a5ac7">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1taa__pass_1_1run__params.html">run_params</a> &amp;params) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
+<tr class="memitem:aea2edb32d99c56cb2fe8b8cc2f9a5ac7" id="r_aea2edb32d99c56cb2fe8b8cc2f9a5ac7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea2edb32d99c56cb2fe8b8cc2f9a5ac7">run</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview, const <a class="el" href="structunravel_1_1taa__pass_1_1run__params.html">run_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::frame_buffer::ptr</a></td></tr>
 <tr class="separator:aea2edb32d99c56cb2fe8b8cc2f9a5ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1c026577130728619d8fef66ad72287" id="r_ae1c026577130728619d8fef66ad72287"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1c026577130728619d8fef66ad72287">release_resources</a> (<a class="el" href="classgfx_1_1render__view.html">gfx::render_view</a> &amp;rview)</td></tr>
 <tr class="separator:ae1c026577130728619d8fef66ad72287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a8c1b754bbe0daf65a5ce7a3ff45ce5bb" id="r_a8c1b754bbe0daf65a5ce7a3ff45ce5bb"><td class="memItemLeft" align="right" valign="top">static constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c1b754bbe0daf65a5ce7a3ff45ce5bb">settings_version</a> = 1</td></tr>
+<tr class="separator:a8c1b754bbe0daf65a5ce7a3ff45ce5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>HDR temporal anti-aliasing resolve (depth reprojection). Phase 2: optional velocity buffer. </p>
+<div class="textblock"><p>HDR temporal anti-aliasing resolve. Reprojects through the velocity (motion vector) buffer when available (per-object motion, dilated at silhouettes), falling back to camera-only depth reprojection when the buffer is off or absent. </p>
 
-<p class="definition">Definition at line <a class="el" href="taa__pass_8h_source.html#l00015">15</a> of file <a class="el" href="taa__pass_8h_source.html">taa_pass.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="taa__pass_8h_source.html#l00018">18</a> of file <a class="el" href="taa__pass_8h_source.html">taa_pass.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a190e5d15b8df016a7258f3e96218362e" name="a190e5d15b8df016a7258f3e96218362e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a190e5d15b8df016a7258f3e96218362e">&#9670;&#160;</a></span>init()</h2>
@@ -145,7 +151,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="taa__pass_8cpp_source.html#l00019">19</a> of file <a class="el" href="taa__pass_8cpp_source.html">taa_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="taa__pass_8cpp_source.html#l00021">21</a> of file <a class="el" href="taa__pass_8cpp_source.html">taa_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -164,7 +170,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="taa__pass_8cpp_source.html#l00151">151</a> of file <a class="el" href="taa__pass_8cpp_source.html">taa_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="taa__pass_8cpp_source.html#l00161">161</a> of file <a class="el" href="taa__pass_8cpp_source.html">taa_pass.cpp</a>.</p>
 
 </div>
 </div>
@@ -187,7 +193,33 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="taa__pass_8cpp_source.html#l00069">69</a> of file <a class="el" href="taa__pass_8cpp_source.html">taa_pass.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="taa__pass_8cpp_source.html#l00061">61</a> of file <a class="el" href="taa__pass_8cpp_source.html">taa_pass.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8c1b754bbe0daf65a5ce7a3ff45ce5bb" name="a8c1b754bbe0daf65a5ce7a3ff45ce5bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1b754bbe0daf65a5ce7a3ff45ce5bb">&#9670;&#160;</a></span>settings_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t unravel::taa_pass::settings_version = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Serialized with the settings. Data saved without it, or with an older value, is ignored on load and the settings keep their defaults: version 1 is the unjittered resolve with the 8-sample Halton cycle, and values tuned for the jittered resolve (an MSAA 2 pattern against its shake) do not carry over. </p>
+
+<p class="definition">Definition at line <a class="el" href="taa__pass_8h_source.html#l00024">24</a> of file <a class="el" href="taa__pass_8h_source.html">taa_pass.h</a>.</p>
 
 </div>
 </div>

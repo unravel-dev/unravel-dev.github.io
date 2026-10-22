@@ -1,0 +1,25 @@
+var classunravel_1_1surface__cache__system =
+[
+    [ "gi_source", "structunravel_1_1surface__cache__system_1_1gi__source.html", "structunravel_1_1surface__cache__system_1_1gi__source" ],
+    [ "instance", "structunravel_1_1surface__cache__system_1_1instance.html", "structunravel_1_1surface__cache__system_1_1instance" ],
+    [ "acquire_gi_card_build_debug", "classunravel_1_1surface__cache__system.html#a99ef632ea4938b978c69542580d64a85", null ],
+    [ "deinit", "classunravel_1_1surface__cache__system.html#af1b967f82346924f49bca0a999723d31", null ],
+    [ "get_atlas", "classunravel_1_1surface__cache__system.html#adc7ec6f4a6e098579ee5ccea455f0bd2", null ],
+    [ "get_clipmap_instances", "classunravel_1_1surface__cache__system.html#a0054e64414fe7cac153d2c243fa59841", null ],
+    [ "get_content_revision", "classunravel_1_1surface__cache__system.html#acfca4b56ec5b5ab99ce323f0275046f8", null ],
+    [ "get_experiment_flags", "classunravel_1_1surface__cache__system.html#aa0887a08d26fec7510541ccc3de9eb65", null ],
+    [ "get_gi_sources", "classunravel_1_1surface__cache__system.html#a6f6ffa0a44b57b3d150e1c83898b3a7c", null ],
+    [ "get_grid_buffer", "classunravel_1_1surface__cache__system.html#a21ead1ac55a2ec294cf4e7bdf962f92d", null ],
+    [ "get_grid_params", "classunravel_1_1surface__cache__system.html#aa198d48ee26317b6a7094e32a74037b6", null ],
+    [ "get_instance_buffer", "classunravel_1_1surface__cache__system.html#aab7a571523728cc67b3c4e2830e9fcca", null ],
+    [ "get_instance_order_hash", "classunravel_1_1surface__cache__system.html#a49aa670cb235778f2c9517042eaf60b1", null ],
+    [ "get_instances", "classunravel_1_1surface__cache__system.html#ae5b66055314cc82fd8df2ed38480d03a", null ],
+    [ "get_light_buffer", "classunravel_1_1surface__cache__system.html#a6ebbf4076c3b65c92fb1f289903600f2", null ],
+    [ "has_global_lighting_change", "classunravel_1_1surface__cache__system.html#a536a4cdf6a449d3d5d7d55b281b665b1", null ],
+    [ "init", "classunravel_1_1surface__cache__system.html#af9a7d04afd2ae25ae357e2dc48fca7a1", null ],
+    [ "is_enabled", "classunravel_1_1surface__cache__system.html#a189c5c7eb44062cb24036da08375025d", null ],
+    [ "release_gi_card_build_debug", "classunravel_1_1surface__cache__system.html#a38170a3e435c71fbdf4876c1f9e6b323", null ],
+    [ "set_experiment_flags", "classunravel_1_1surface__cache__system.html#a59d09027fdb069a2993b4c1d02303490", null ],
+    [ "update_world", "classunravel_1_1surface__cache__system.html#af984cffc0edc78bfeb32efce60e670ac", null ],
+    [ "instance_vec4_stride", "classunravel_1_1surface__cache__system.html#a3ac194087cf56a46a181f1f82a97ee17", null ]
+];

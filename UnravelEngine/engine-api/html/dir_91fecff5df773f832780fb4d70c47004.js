@@ -6,6 +6,7 @@ var dir_91fecff5df773f832780fb4d70c47004 =
     [ "pipeline.h", "pipeline_8h.html", "pipeline_8h" ],
     [ "pipeline_camera.cpp", "pipeline__camera_8cpp.html", null ],
     [ "pipeline_camera.h", "pipeline__camera_8h.html", "pipeline__camera_8h" ],
+    [ "pre_exposure.h", "pre__exposure_8h.html", "pre__exposure_8h" ],
     [ "volume_resolver.cpp", "volume__resolver_8cpp.html", "volume__resolver_8cpp" ],
     [ "volume_resolver.h", "volume__resolver_8h.html", "volume__resolver_8h" ]
 ];

@@ -97,7 +97,9 @@ $(function(){initNavTree('classgfx_1_1render__view.html',''); initResizable(true
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classgfx_1_1render__view-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">gfx::render_view Class Reference</div></div>
 </div><!--header-->
@@ -105,74 +107,194 @@ $(function(){initNavTree('classgfx_1_1render__view.html',''); initResizable(true
 
 <p><code>#include &lt;<a class="el" href="render__view_8h_source.html">render_view.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a3feff41ffc6dabc6b6fc14765a92cbd6" id="r_a3feff41ffc6dabc6b6fc14765a92cbd6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3feff41ffc6dabc6b6fc14765a92cbd6">texture_created_callback</a> = std::function&lt;void(const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a>&amp;)&gt;</td></tr>
+<tr class="memdesc:a3feff41ffc6dabc6b6fc14765a92cbd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs right after tex_acquire(id, desc, ...) (re)builds a texture.  <br /></td></tr>
+<tr class="separator:a3feff41ffc6dabc6b6fc14765a92cbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a407d23d5c085a78a7d86780c9dad6a86" id="r_a407d23d5c085a78a7d86780c9dad6a86"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a407d23d5c085a78a7d86780c9dad6a86">fbo_get_or_emplace</a> (const hpp::string_view &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">frame_buffer::ptr</a> &amp;</td></tr>
-<tr class="separator:a407d23d5c085a78a7d86780c9dad6a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a554493c9289cfebffb684d3b60d52d93" id="r_a554493c9289cfebffb684d3b60d52d93"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a554493c9289cfebffb684d3b60d52d93">fbo_get</a> (const hpp::string_view &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">frame_buffer::ptr</a> &amp;</td></tr>
-<tr class="separator:a554493c9289cfebffb684d3b60d52d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17cbc1bb878c9ffc527997d5c20a2ebb" id="r_a17cbc1bb878c9ffc527997d5c20a2ebb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17cbc1bb878c9ffc527997d5c20a2ebb">fbo_safe_get</a> (const hpp::string_view &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">frame_buffer::ptr</a> &amp;</td></tr>
-<tr class="separator:a17cbc1bb878c9ffc527997d5c20a2ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad539a67c1e53d9e5a07885443a0b24b8" id="r_ad539a67c1e53d9e5a07885443a0b24b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad539a67c1e53d9e5a07885443a0b24b8">fbo_remove</a> (const hpp::string_view &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>)</td></tr>
-<tr class="separator:ad539a67c1e53d9e5a07885443a0b24b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebeb8715eff0bb7033d5381336c20e1f" id="r_aebeb8715eff0bb7033d5381336c20e1f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebeb8715eff0bb7033d5381336c20e1f">tex_get_or_emplace</a> (const hpp::string_view &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a> &amp;</td></tr>
-<tr class="separator:aebeb8715eff0bb7033d5381336c20e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75c4ddabb251961306717c0d94f67bf3" id="r_a75c4ddabb251961306717c0d94f67bf3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75c4ddabb251961306717c0d94f67bf3">tex_get</a> (const hpp::string_view &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a> &amp;</td></tr>
+<tr class="memitem:a570f4ae3cabdd9d3c202ddd7d656b936" id="r_a570f4ae3cabdd9d3c202ddd7d656b936"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a570f4ae3cabdd9d3c202ddd7d656b936">tex_acquire</a> (const hpp::string_view &amp;<a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>, bool auto_collect=true) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a> &amp;</td></tr>
+<tr class="memdesc:a570f4ae3cabdd9d3c202ddd7d656b936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the (possibly null) entry slot for <code>id</code>, creating the slot when absent.  <br /></td></tr>
+<tr class="separator:a570f4ae3cabdd9d3c202ddd7d656b936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9f62dd223e229c81f5e905be1ad871" id="r_a5c9f62dd223e229c81f5e905be1ad871"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c9f62dd223e229c81f5e905be1ad871">tex_acquire</a> (const hpp::string_view &amp;<a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>, const <a class="el" href="structgfx_1_1texture__desc.html">texture_desc</a> &amp;desc, const <a class="el" href="#a3feff41ffc6dabc6b6fc14765a92cbd6">texture_created_callback</a> &amp;on_create={}, bool auto_collect=true) -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a> &amp;</td></tr>
+<tr class="memdesc:a5c9f62dd223e229c81f5e905be1ad871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the texture named <code>id</code>, built from <code>desc</code> when it is missing or was built from a different desc.  <br /></td></tr>
+<tr class="separator:a5c9f62dd223e229c81f5e905be1ad871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b05075bb2a0c7d29df008e5b4229d5" id="r_ae6b05075bb2a0c7d29df008e5b4229d5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6b05075bb2a0c7d29df008e5b4229d5">tex_acquire_transient</a> (const <a class="el" href="structgfx_1_1texture__desc.html">texture_desc</a> &amp;desc) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a></td></tr>
+<tr class="memdesc:ae6b05075bb2a0c7d29df008e5b4229d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lends a texture equal to <code>desc</code> from the view's pool of transient textures.  <br /></td></tr>
+<tr class="separator:ae6b05075bb2a0c7d29df008e5b4229d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b46ac5d78944630cceab699ec58d9e8" id="r_a7b46ac5d78944630cceab699ec58d9e8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b46ac5d78944630cceab699ec58d9e8">tex_find</a> (const hpp::string_view &amp;<a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>) const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a> &amp;</td></tr>
+<tr class="memdesc:a7b46ac5d78944630cceab699ec58d9e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the texture named <code>id</code>, or null when there is none. Counts as an access.  <br /></td></tr>
+<tr class="separator:a7b46ac5d78944630cceab699ec58d9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75c4ddabb251961306717c0d94f67bf3" id="r_a75c4ddabb251961306717c0d94f67bf3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75c4ddabb251961306717c0d94f67bf3">tex_get</a> (const hpp::string_view &amp;<a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>) const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a> &amp;</td></tr>
+<tr class="memdesc:a75c4ddabb251961306717c0d94f67bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the texture named <code>id</code>, which must exist (asserted). Counts as an access.  <br /></td></tr>
 <tr class="separator:a75c4ddabb251961306717c0d94f67bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab722d1b0f163673d329e284bf69aba13" id="r_ab722d1b0f163673d329e284bf69aba13"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab722d1b0f163673d329e284bf69aba13">tex_safe_get</a> (const hpp::string_view &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>) const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a> &amp;</td></tr>
-<tr class="separator:ab722d1b0f163673d329e284bf69aba13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c8f89becb9949a6664c91ea1686f724" id="r_a3c8f89becb9949a6664c91ea1686f724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c8f89becb9949a6664c91ea1686f724">tex_remove</a> (const hpp::string_view &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>)</td></tr>
+<tr class="memitem:aa42aceb11c367fd966d0d95a17717e82" id="r_aa42aceb11c367fd966d0d95a17717e82"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa42aceb11c367fd966d0d95a17717e82">fbo_acquire</a> (const hpp::string_view &amp;<a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>, bool auto_collect=true) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">frame_buffer::ptr</a> &amp;</td></tr>
+<tr class="memdesc:aa42aceb11c367fd966d0d95a17717e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the (possibly null) entry slot for <code>id</code>, creating the slot when absent.  <br /></td></tr>
+<tr class="separator:aa42aceb11c367fd966d0d95a17717e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c0a8329f4f22f1c359d6ab465ffd5b" id="r_ae1c0a8329f4f22f1c359d6ab465ffd5b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1c0a8329f4f22f1c359d6ab465ffd5b">fbo_find</a> (const hpp::string_view &amp;<a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>) const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">frame_buffer::ptr</a> &amp;</td></tr>
+<tr class="memdesc:ae1c0a8329f4f22f1c359d6ab465ffd5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the framebuffer named <code>id</code>, or null when there is none. Counts as an access.  <br /></td></tr>
+<tr class="separator:ae1c0a8329f4f22f1c359d6ab465ffd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554493c9289cfebffb684d3b60d52d93" id="r_a554493c9289cfebffb684d3b60d52d93"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a554493c9289cfebffb684d3b60d52d93">fbo_get</a> (const hpp::string_view &amp;<a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>) const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">frame_buffer::ptr</a> &amp;</td></tr>
+<tr class="memdesc:a554493c9289cfebffb684d3b60d52d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the framebuffer named <code>id</code>, which must exist (asserted). Counts as an access.  <br /></td></tr>
+<tr class="separator:a554493c9289cfebffb684d3b60d52d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad539a67c1e53d9e5a07885443a0b24b8" id="r_ad539a67c1e53d9e5a07885443a0b24b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad539a67c1e53d9e5a07885443a0b24b8">fbo_remove</a> (const hpp::string_view &amp;<a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>)</td></tr>
+<tr class="memdesc:ad539a67c1e53d9e5a07885443a0b24b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the framebuffer named <code>id</code>, if any.  <br /></td></tr>
+<tr class="separator:ad539a67c1e53d9e5a07885443a0b24b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8f89becb9949a6664c91ea1686f724" id="r_a3c8f89becb9949a6664c91ea1686f724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c8f89becb9949a6664c91ea1686f724">tex_remove</a> (const hpp::string_view &amp;<a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>)</td></tr>
+<tr class="memdesc:a3c8f89becb9949a6664c91ea1686f724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the texture named <code>id</code>, if any.  <br /></td></tr>
 <tr class="separator:a3c8f89becb9949a6664c91ea1686f724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd7bebb9eff64dfad14e7a763ceb6920" id="r_afd7bebb9eff64dfad14e7a763ceb6920"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd7bebb9eff64dfad14e7a763ceb6920">data_get_or_emplace</a> (const hpp::string_view &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>, uint32_t default_val=0) -&gt; uint32_t &amp;</td></tr>
-<tr class="separator:afd7bebb9eff64dfad14e7a763ceb6920"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d387ed5bfbe34ba9825db4d009eeba4" id="r_a3d387ed5bfbe34ba9825db4d009eeba4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d387ed5bfbe34ba9825db4d009eeba4">data_get</a> (const hpp::string_view &amp;<a class="el" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>, uint32_t default_val=0) const -&gt; uint32_t</td></tr>
-<tr class="separator:a3d387ed5bfbe34ba9825db4d009eeba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7064ad7d12ad292fc6198dac552ab4da" id="r_a7064ad7d12ad292fc6198dac552ab4da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7064ad7d12ad292fc6198dac552ab4da">release_unused</a> (uint32_t current_frame, uint32_t max_idle_frames=<a class="el" href="#aa7c139dbaa2a8e25797475db3ea8df01">default_max_idle_frames</a>, uint32_t max_transient_idle_frames=<a class="el" href="#ae8260cbbdc2881ecdf63653dd7ad8650">default_max_transient_idle_frames</a>)</td></tr>
+<tr class="memdesc:a7064ad7d12ad292fc6198dac552ab4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops every texture/framebuffer entry that has not been accessed for <code>max_idle_frames</code>, releasing the GPU resources with it.  <br /></td></tr>
+<tr class="separator:a7064ad7d12ad292fc6198dac552ab4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f50559e38ddfb206746ae8cee4a6ca" id="r_a88f50559e38ddfb206746ae8cee4a6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88f50559e38ddfb206746ae8cee4a6ca">touch_prefixed</a> (const hpp::string_view &amp;prefix)</td></tr>
+<tr class="memdesc:a88f50559e38ddfb206746ae8cee4a6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts every texture and framebuffer entry whose id starts with <code>prefix</code> as accessed this frame.  <br /></td></tr>
+<tr class="separator:a88f50559e38ddfb206746ae8cee4a6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af616ba8a0ae2a7fdd189e22b3dbe7257" id="r_af616ba8a0ae2a7fdd189e22b3dbe7257"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af616ba8a0ae2a7fdd189e22b3dbe7257">data</a> () -&gt; <a class="el" href="classrtti_1_1named__context.html">rtti::named_context</a> &amp;</td></tr>
+<tr class="memdesc:af616ba8a0ae2a7fdd189e22b3dbe7257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arbitrary per-view state, keyed by name.  <br /></td></tr>
+<tr class="separator:af616ba8a0ae2a7fdd189e22b3dbe7257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f942c892925bf0e71d873f4faae0c9" id="r_a06f942c892925bf0e71d873f4faae0c9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06f942c892925bf0e71d873f4faae0c9">data</a> () const -&gt; const <a class="el" href="classrtti_1_1named__context.html">rtti::named_context</a> &amp;</td></tr>
+<tr class="separator:a06f942c892925bf0e71d873f4faae0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa7c139dbaa2a8e25797475db3ea8df01" id="r_aa7c139dbaa2a8e25797475db3ea8df01"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7c139dbaa2a8e25797475db3ea8df01">default_max_idle_frames</a> = 240</td></tr>
+<tr class="separator:aa7c139dbaa2a8e25797475db3ea8df01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8260cbbdc2881ecdf63653dd7ad8650" id="r_ae8260cbbdc2881ecdf63653dd7ad8650"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8260cbbdc2881ecdf63653dd7ad8650">default_max_transient_idle_frames</a> = <a class="el" href="classgfx_1_1texture__pool.html#a175bd941f44479b3b6dbf3b7212e63ed">texture_pool::default_max_idle_frames</a></td></tr>
+<tr class="memdesc:ae8260cbbdc2881ecdf63653dd7ad8650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frames a free transient texture may go unacquired before <a class="el" href="#a7064ad7d12ad292fc6198dac552ab4da" title="Drops every texture/framebuffer entry that has not been accessed for max_idle_frames,...">release_unused()</a> drops it.  <br /></td></tr>
+<tr class="separator:ae8260cbbdc2881ecdf63653dd7ad8650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="render__view_8h_source.html#l00014">14</a> of file <a class="el" href="render__view_8h_source.html">render_view.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3d387ed5bfbe34ba9825db4d009eeba4" name="a3d387ed5bfbe34ba9825db4d009eeba4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d387ed5bfbe34ba9825db4d009eeba4">&#9670;&#160;</a></span>data_get()</h2>
+<p class="definition">Definition at line <a class="el" href="render__view_8h_source.html#l00016">16</a> of file <a class="el" href="render__view_8h_source.html">render_view.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3feff41ffc6dabc6b6fc14765a92cbd6" name="a3feff41ffc6dabc6b6fc14765a92cbd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3feff41ffc6dabc6b6fc14765a92cbd6">&#9670;&#160;</a></span>texture_created_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto gfx::render_view::data_get </td>
+          <td class="memname">using <a class="el" href="#a3feff41ffc6dabc6b6fc14765a92cbd6">gfx::render_view::texture_created_callback</a> = std::function&lt;void(const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs right after tex_acquire(id, desc, ...) (re)builds a texture. </p>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8h_source.html#l00027">27</a> of file <a class="el" href="render__view_8h_source.html">render_view.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af616ba8a0ae2a7fdd189e22b3dbe7257" name="af616ba8a0ae2a7fdd189e22b3dbe7257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af616ba8a0ae2a7fdd189e22b3dbe7257">&#9670;&#160;</a></span>data() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto gfx::render_view::data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="classrtti_1_1named__context.html">rtti::named_context</a>&amp;
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Arbitrary per-view state, keyed by name. </p>
+<p>Textures and framebuffers live per view because they are sized to the viewport. The same argument applies to anything else a pass must not share between cameras &ndash; a camera-centred cascade, a history index, an accumulation counter &ndash; but those are not textures, and several cameras need instances of IDENTICAL type, which a type-keyed store cannot express.</p>
+<p>Untyped from this library's point of view, on purpose. A render view has no business knowing what an engine feature parks in it, and moving engine types into the graphics library to give them a home would invert the dependency. The name is the whole contract. </p>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8h_source.html#l00144">144</a> of file <a class="el" href="render__view_8h_source.html">render_view.h</a>.</p>
+
+</div>
+</div>
+<a id="a06f942c892925bf0e71d873f4faae0c9" name="a06f942c892925bf0e71d873f4faae0c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f942c892925bf0e71d873f4faae0c9">&#9670;&#160;</a></span>data() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto gfx::render_view::data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="classrtti_1_1named__context.html">rtti::named_context</a>&amp;
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="render__view_8h_source.html#l00149">149</a> of file <a class="el" href="render__view_8h_source.html">render_view.h</a>.</p>
+
+</div>
+</div>
+<a id="aa42aceb11c367fd966d0d95a17717e82" name="aa42aceb11c367fd966d0d95a17717e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42aceb11c367fd966d0d95a17717e82">&#9670;&#160;</a></span>fbo_acquire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto gfx::render_view::fbo_acquire </td>
           <td>(</td>
           <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>default_val</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;) const -&gt; uint32_t</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>auto_collect</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">frame_buffer::ptr</a>&amp;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00098">98</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+<p>Returns the (possibly null) entry slot for <code>id</code>, creating the slot when absent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auto_collect</td><td>See tex_acquire(id, auto_collect). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00075">75</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
 
 </div>
 </div>
-<a id="afd7bebb9eff64dfad14e7a763ceb6920" name="afd7bebb9eff64dfad14e7a763ceb6920"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd7bebb9eff64dfad14e7a763ceb6920">&#9670;&#160;</a></span>data_get_or_emplace()</h2>
+<a id="ae1c0a8329f4f22f1c359d6ab465ffd5b" name="ae1c0a8329f4f22f1c359d6ab465ffd5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c0a8329f4f22f1c359d6ab465ffd5b">&#9670;&#160;</a></span>fbo_find()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto gfx::render_view::data_get_or_emplace </td>
+          <td class="memname">auto gfx::render_view::fbo_find </td>
           <td>(</td>
-          <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>default_val</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;) -&gt; uint32_t&amp;</td>
+          <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">frame_buffer::ptr</a>&amp;</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the framebuffer named <code>id</code>, or null when there is none. Counts as an access. </p>
 
 <p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00087">87</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
 
@@ -193,26 +315,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00059">59</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+<p>Returns the framebuffer named <code>id</code>, which must exist (asserted). Counts as an access. </p>
 
-</div>
-</div>
-<a id="a407d23d5c085a78a7d86780c9dad6a86" name="a407d23d5c085a78a7d86780c9dad6a86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a407d23d5c085a78a7d86780c9dad6a86">&#9670;&#160;</a></span>fbo_get_or_emplace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto gfx::render_view::fbo_get_or_emplace </td>
-          <td>(</td>
-          <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">frame_buffer::ptr</a>&amp;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00048">48</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00099">99</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
 
 </div>
 </div>
@@ -231,26 +336,159 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00078">78</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+<p>Drops the framebuffer named <code>id</code>, if any. </p>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00106">106</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a17cbc1bb878c9ffc527997d5c20a2ebb" name="a17cbc1bb878c9ffc527997d5c20a2ebb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17cbc1bb878c9ffc527997d5c20a2ebb">&#9670;&#160;</a></span>fbo_safe_get()</h2>
+<a id="a7064ad7d12ad292fc6198dac552ab4da" name="a7064ad7d12ad292fc6198dac552ab4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7064ad7d12ad292fc6198dac552ab4da">&#9670;&#160;</a></span>release_unused()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto gfx::render_view::fbo_safe_get </td>
+          <td class="memname">void gfx::render_view::release_unused </td>
           <td>(</td>
-          <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">frame_buffer::ptr</a>&amp;</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>current_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>max_idle_frames</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#aa7c139dbaa2a8e25797475db3ea8df01">default_max_idle_frames</a></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>max_transient_idle_frames</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#ae8260cbbdc2881ecdf63653dd7ad8650">default_max_transient_idle_frames</a></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00066">66</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+<p>Drops every texture/framebuffer entry that has not been accessed for <code>max_idle_frames</code>, releasing the GPU resources with it. </p>
+<p>Every accessor above counts as an access, the const gets included, and using a framebuffer counts as using its attachment textures: a texture entry referenced by a live fbo inherits that fbo entry's stamp, so a texture reached only through its fbo (created once, attached, then always bound via the fbo) ages IN LOCKSTEP with the fbo and the pair expires in the same call. It can neither die before the fbo &ndash; which would not free it (the fbo's strong attachment reference keeps it alive) but WOULD desync the name, handing the next tex_acquire a second texture while the fbo still renders into the old one &ndash; nor outlive it, which would open a window where a creation site keyed on the texture's validity finds a healthy texture next to a null fbo slot and hands its caller the null.</p>
+<p>Entries created with auto_collect = false are never dropped here, and their fbo attachments stay permanently refreshed. The OWNER of the view decides whether and when to call this (typically its component's per-frame update): lifetime is a per-view concern.</p>
+<p>Transient textures (<a class="el" href="#ae6b05075bb2a0c7d29df008e5b4229d5" title="Lends a texture equal to desc from the view&#39;s pool of transient textures.">tex_acquire_transient()</a>) that are free and have not been acquired for <code>max_transient_idle_frames</code> are dropped as well. </p>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00132">132</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a570f4ae3cabdd9d3c202ddd7d656b936" name="a570f4ae3cabdd9d3c202ddd7d656b936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a570f4ae3cabdd9d3c202ddd7d656b936">&#9670;&#160;</a></span>tex_acquire() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto gfx::render_view::tex_acquire </td>
+          <td>(</td>
+          <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>auto_collect</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the (possibly null) entry slot for <code>id</code>, creating the slot when absent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auto_collect</td><td>Whether <a class="el" href="#a7064ad7d12ad292fc6198dac552ab4da" title="Drops every texture/framebuffer entry that has not been accessed for max_idle_frames,...">release_unused()</a> may drop the entry once it goes unaccessed for the idle window (the default). Pass false for resources whose absence their consumers cannot detect or regenerate &ndash; a reflection probe's product cubemaps go unaccessed for as long as the probe is frustum-culled, and the bake bookkeeping would not know to rebuild them. The flag is part of the entry's description and is applied on every call: owning call sites for a key must agree on it, the same way they must agree on size and format. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00009">9</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5c9f62dd223e229c81f5e905be1ad871" name="a5c9f62dd223e229c81f5e905be1ad871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9f62dd223e229c81f5e905be1ad871">&#9670;&#160;</a></span>tex_acquire() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto gfx::render_view::tex_acquire </td>
+          <td>(</td>
+          <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structgfx_1_1texture__desc.html">texture_desc</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>desc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a3feff41ffc6dabc6b6fc14765a92cbd6">texture_created_callback</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>on_create</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>auto_collect</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;) -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the texture named <code>id</code>, built from <code>desc</code> when it is missing or was built from a different desc. </p>
+<p>The desc is the whole description of the texture: owning call sites for a key must agree on it, and a change rebuilds the texture (contents lost). A framebuffer holding the old texture keeps rendering into it until rebuilt; compare its attachments with the returned texture.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">on_create</td><td>Runs only after a (re)build, with the new texture: seed its contents, reset per-view state that describes them. </td></tr>
+    <tr><td class="paramname">auto_collect</td><td>See tex_acquire(id, auto_collect). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00021">21</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae6b05075bb2a0c7d29df008e5b4229d5" name="ae6b05075bb2a0c7d29df008e5b4229d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b05075bb2a0c7d29df008e5b4229d5">&#9670;&#160;</a></span>tex_acquire_transient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto gfx::render_view::tex_acquire_transient </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structgfx_1_1texture__desc.html">texture_desc</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>desc</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lends a texture equal to <code>desc</code> from the view's pool of transient textures. </p>
+<p>For textures that live within one pass or one frame. The texture is the caller's for as long as it holds the returned pointer; once every copy is dropped a later acquire of an equal desc may get it. Contents are undefined: write every texel that is read. See <a class="el" href="classgfx_1_1texture__pool.html" title="Textures lent out by desc and taken back once the borrower lets go.">texture_pool</a> for the ordering rules. </p>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00042">42</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b46ac5d78944630cceab699ec58d9e8" name="a7b46ac5d78944630cceab699ec58d9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b46ac5d78944630cceab699ec58d9e8">&#9670;&#160;</a></span>tex_find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto gfx::render_view::tex_find </td>
+          <td>(</td>
+          <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the texture named <code>id</code>, or null when there is none. Counts as an access. </p>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00047">47</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
 
 </div>
 </div>
@@ -269,26 +507,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00018">18</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+<p>Returns the texture named <code>id</code>, which must exist (asserted). Counts as an access. </p>
 
-</div>
-</div>
-<a id="aebeb8715eff0bb7033d5381336c20e1f" name="aebeb8715eff0bb7033d5381336c20e1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebeb8715eff0bb7033d5381336c20e1f">&#9670;&#160;</a></span>tex_get_or_emplace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto gfx::render_view::tex_get_or_emplace </td>
-          <td>(</td>
-          <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
-          <td> -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a>&amp;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00007">7</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00059">59</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
 
 </div>
 </div>
@@ -307,26 +528,83 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00039">39</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+<p>Drops the texture named <code>id</code>, if any. </p>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00066">66</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab722d1b0f163673d329e284bf69aba13" name="ab722d1b0f163673d329e284bf69aba13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab722d1b0f163673d329e284bf69aba13">&#9670;&#160;</a></span>tex_safe_get()</h2>
+<a id="a88f50559e38ddfb206746ae8cee4a6ca" name="a88f50559e38ddfb206746ae8cee4a6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f50559e38ddfb206746ae8cee4a6ca">&#9670;&#160;</a></span>touch_prefixed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto gfx::render_view::tex_safe_get </td>
+          <td class="memname">void gfx::render_view::touch_prefixed </td>
           <td>(</td>
-          <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">texture::ptr</a>&amp;</td>
+          <td class="paramtype">const hpp::string_view &amp;</td>          <td class="paramname"><span class="paramname"><em>prefix</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00026">26</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+<p>Counts every texture and framebuffer entry whose id starts with <code>prefix</code> as accessed this frame. </p>
+<p>For a feature that keeps its targets across frames without binding them (a held result): without the stamp, <a class="el" href="#a7064ad7d12ad292fc6198dac552ab4da" title="Drops every texture/framebuffer entry that has not been accessed for max_idle_frames,...">release_unused()</a> drops them once the hold outlasts the idle window, and the feature resumes on fresh targets with no history. </p>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8cpp_source.html#l00115">115</a> of file <a class="el" href="render__view_8cpp_source.html">render_view.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa7c139dbaa2a8e25797475db3ea8df01" name="aa7c139dbaa2a8e25797475db3ea8df01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c139dbaa2a8e25797475db3ea8df01">&#9670;&#160;</a></span>default_max_idle_frames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t gfx::render_view::default_max_idle_frames = 240</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Frames an entry may go unaccessed before <a class="el" href="#a7064ad7d12ad292fc6198dac552ab4da" title="Drops every texture/framebuffer entry that has not been accessed for max_idle_frames,...">release_unused()</a> drops it. Generous on purpose: a feature in use touches its entries every frame, so only targets of a disabled or idle feature ever reach the window. </p>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8h_source.html#l00022">22</a> of file <a class="el" href="render__view_8h_source.html">render_view.h</a>.</p>
+
+</div>
+</div>
+<a id="ae8260cbbdc2881ecdf63653dd7ad8650" name="ae8260cbbdc2881ecdf63653dd7ad8650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8260cbbdc2881ecdf63653dd7ad8650">&#9670;&#160;</a></span>default_max_transient_idle_frames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t gfx::render_view::default_max_transient_idle_frames = <a class="el" href="classgfx_1_1texture__pool.html#a175bd941f44479b3b6dbf3b7212e63ed">texture_pool::default_max_idle_frames</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Frames a free transient texture may go unacquired before <a class="el" href="#a7064ad7d12ad292fc6198dac552ab4da" title="Drops every texture/framebuffer entry that has not been accessed for max_idle_frames,...">release_unused()</a> drops it. </p>
+
+<p class="definition">Definition at line <a class="el" href="render__view_8h_source.html#l00024">24</a> of file <a class="el" href="render__view_8h_source.html">render_view.h</a>.</p>
 
 </div>
 </div>

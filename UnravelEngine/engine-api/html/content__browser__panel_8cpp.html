@@ -105,6 +105,7 @@ $(function(){initNavTree('content__browser__panel_8cpp.html',''); initResizable(
 <code>#include &lt;<a class="el" href="editor_2editor_2events_8h_source.html">editor/events.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="project__manager_8h_source.html">editor/system/project_manager.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="panel_8h_source.html">../panel.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="panel__toolbar_8h_source.html">../panel_toolbar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="panels__defs_8h_source.html">../panels_defs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&quot;</code><br />
 <code>#include &quot;imgui_widgets/utils.h&quot;</code><br />
@@ -128,6 +129,7 @@ $(function(){initNavTree('content__browser__panel_8cpp.html',''); initResizable(
 <code>#include &lt;<a class="el" href="ui__tree_8hpp_source.html">engine/meta/ui/ui_tree.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="style__sheet_8hpp_source.html">engine/meta/ui/style_sheet.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="physics__material_8h_source.html">engine/physics/physics_material.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animation__controller_8h_source.html">engine/animation/animation_controller.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="material_8h_source.html">engine/rendering/material.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mesh_8h_source.html">engine/rendering/mesh.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="font_8h_source.html">engine/rendering/font.h</a>&gt;</code><br />
@@ -141,7 +143,8 @@ $(function(){initNavTree('content__browser__panel_8cpp.html',''); initResizable(
 <code>#include &lt;<a class="el" href="asset__writer_8h_source.html">engine/assets/impl/asset_writer.h</a>&gt;</code><br />
 <code>#include &lt;filedialog/filedialog.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="watcher_8h_source.html">filesystem/watcher.h</a>&gt;</code><br />
-<code>#include &lt;filesystem&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;hpp/filesystem.hpp&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;regex&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
@@ -152,6 +155,7 @@ $(function(){initNavTree('content__browser__panel_8cpp.html',''); initResizable(
 <code>#include &lt;imgui_widgets/imcoolbar.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="subprocess_8hpp_source.html">subprocess/subprocess.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="inspectors_8h_source.html">editor/hub/panels/inspector_panel/inspectors/inspectors.h</a>&gt;</code><br />
 </div>
 <p><a href="content__browser__panel_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -159,53 +163,55 @@ $(function(){initNavTree('content__browser__panel_8cpp.html',''); initResizable(
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1browser__entry.html">unravel::browser_entry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a94e3a4a532a0b093700954fffee71b98" name="a94e3a4a532a0b093700954fffee71b98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94e3a4a532a0b093700954fffee71b98">&#9670;&#160;</a></span>k_style_color_count</h2>
+<a id="a073b6b7bdee554a9e7f63ad59a5fa767" name="a073b6b7bdee554a9e7f63ad59a5fa767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073b6b7bdee554a9e7f63ad59a5fa767">&#9670;&#160;</a></span>action</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int k_style_color_count = 2</td>
+          <td class="memname">entry_action action {entry_action::none}</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="content__browser__panel_8cpp_source.html#l00280">280</a> of file <a class="el" href="content__browser__panel_8cpp_source.html">content_browser_panel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="content__browser__panel_8cpp_source.html#l00243">243</a> of file <a class="el" href="content__browser__panel_8cpp_source.html">content_browser_panel.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a47012be6b93fe84be315931f753ff53a" name="a47012be6b93fe84be315931f753ff53a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47012be6b93fe84be315931f753ff53a">&#9670;&#160;</a></span>k_style_var_count</h2>
+<a id="ab0b54cdc8893717138f20f00ec7ff895" name="ab0b54cdc8893717138f20f00ec7ff895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0b54cdc8893717138f20f00ec7ff895">&#9670;&#160;</a></span>is_popup_opened</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int k_style_var_count = 4</td>
+          <td class="memname">bool is_popup_opened {}</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="content__browser__panel_8cpp_source.html#l00279">279</a> of file <a class="el" href="content__browser__panel_8cpp_source.html">content_browser_panel.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="content__browser__panel_8cpp_source.html#l00245">245</a> of file <a class="el" href="content__browser__panel_8cpp_source.html">content_browser_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8afd4068a8f4025249ddcff518510013" name="a8afd4068a8f4025249ddcff518510013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8afd4068a8f4025249ddcff518510013">&#9670;&#160;</a></span>open_rename_menu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool open_rename_menu {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="content__browser__panel_8cpp_source.html#l00244">244</a> of file <a class="el" href="content__browser__panel_8cpp_source.html">content_browser_panel.cpp</a>.</p>
 
 </div>
 </div>

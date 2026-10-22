@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class Material | Unravel Engine Scripting API ">
       
-      <meta name="description" content="Material asset with editable shading properties.">
+      <meta name="description" content="Material with editable shading properties.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_Material" data-uid="Unravel.Core.Material" class="text-break">
-Class Material  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L134"><i class="bi bi-code-slash"></i></a>
+Class Material  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class Material  <a class="header-action link-secondary" title="View source" href
   
   </div>
 
-  <div class="markdown summary"><p>Material asset with editable shading properties.</p>
+  <div class="markdown summary"><p>Material with editable shading properties.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -160,6 +160,11 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 
 
 
+  <h2 id="Unravel_Core_Material_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>A material with a non-empty <a class="xref" href="Unravel.Core.Asset-1.html#Unravel_Core_Asset_1_uid">uid</a> refers to a shared material asset.
+A material with an empty uid is a standalone property block that can only be applied as a
+per-renderer override, for example through <a class="xref" href="Unravel.Core.ModelComponent.html#Unravel_Core_ModelComponent_SetMaterial_Unravel_Core_Material_System_UInt32_">SetMaterial(Material, uint)</a>.</p>
+</div>
 
 
   <h2 class="section" id="constructors">Constructors
@@ -170,7 +175,7 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Unravel_Core_Material__ctor" data-uid="Unravel.Core.Material.#ctor">
   Material()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L196"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates an empty material handle.</p>
@@ -197,10 +202,10 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Unravel_Core_Material__ctor_Unravel_Core_Material_" data-uid="Unravel.Core.Material.#ctor(Unravel.Core.Material)">
   Material(Material)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L208"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a material copy with the same properties as <code class="paramref">rhs</code>.</p>
+  <div class="markdown level1 summary"><p>Creates a copy of <code class="paramref">rhs</code> that is not bound to any asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -222,6 +227,10 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 
 
 
+  <h4 class="section" id="Unravel_Core_Material__ctor_Unravel_Core_Material__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The uid is deliberately not copied, so the result is a standalone property block. This
+is the idiomatic way to derive an editable material from a shared asset.</p>
+</div>
 
 
 
@@ -233,7 +242,7 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Unravel_Core_Material_bumpiness" data-uid="Unravel.Core.Material.bumpiness">
   bumpiness
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Normal-map bump intensity.</p>
@@ -264,7 +273,7 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Unravel_Core_Material_color" data-uid="Unravel.Core.Material.color">
   color
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L250"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Base (albedo) color.</p>
@@ -295,7 +304,7 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Unravel_Core_Material_emissiveColor" data-uid="Unravel.Core.Material.emissiveColor">
   emissiveColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L255"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Emissive color.</p>
@@ -324,9 +333,40 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 
 
 
+  <h3 id="Unravel_Core_Material_emissiveIntensity" data-uid="Unravel.Core.Material.emissiveIntensity">
+  emissiveIntensity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplier of the emissive color: emitted light = emissiveColor x emissiveIntensity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float emissiveIntensity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="Unravel_Core_Material_metalness" data-uid="Unravel.Core.Material.metalness">
   metalness
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L270"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Surface metalness.</p>
@@ -357,10 +397,10 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Unravel_Core_Material_roughness" data-uid="Unravel.Core.Material.roughness">
   roughness
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Surface roughness.</p>
+  <div class="markdown level1 summary"><p>Surface roughness. Defaults to the engine's material default.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -388,7 +428,7 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 
   <h3 id="Unravel_Core_Material_tiling" data-uid="Unravel.Core.Material.tiling">
   tiling
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L260"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>UV tiling scale.</p>
@@ -420,7 +460,7 @@ Class Material  <a class="header-action link-secondary" title="View source" href
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L134" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/assets/Assets.cs/#L191" class="edit-link">Edit this page</a>
         </div>
 
 

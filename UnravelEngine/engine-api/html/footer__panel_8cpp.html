@@ -106,10 +106,15 @@ $(function(){initNavTree('footer__panel_8cpp.html',''); initResizable(true); });
 <code>#include &lt;<a class="el" href="threader_8h_source.html">engine/threading/threader.h</a>&gt;</code><br />
 <code>#include &lt;imgui/imgui.h&gt;</code><br />
 <code>#include &lt;imgui/imgui_internal.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="imgui_8h_source.html">editor/imgui/integration/imgui.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="imgui__notify_8h_source.html">editor/imgui/integration/imgui_notify.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="imgui__style_8h_source.html">editor/imgui/integration/imgui_style.h</a>&gt;</code><br />
 <code>#include &lt;imgui_widgets/tooltips.h&gt;</code><br />
 <code>#include &lt;imgui_widgets/utils.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="footer__panel_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -117,7 +122,138 @@ $(function(){initNavTree('footer__panel_8cpp.html',''); initResizable(true); });
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1job__status.html">unravel::job_status</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a06f18b7e05b64c4ff0d03f07ae379a68" name="a06f18b7e05b64c4ff0d03f07ae379a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06f18b7e05b64c4ff0d03f07ae379a68">&#9670;&#160;</a></span>detail</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string detail</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="footer__panel_8cpp_source.html#l00053">53</a> of file <a class="el" href="footer__panel_8cpp_source.html">footer_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aadee99df979f447195f6e9c7103077fa" name="aadee99df979f447195f6e9c7103077fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadee99df979f447195f6e9c7103077fa">&#9670;&#160;</a></span>done</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t done {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="footer__panel_8cpp_source.html#l00051">51</a> of file <a class="el" href="footer__panel_8cpp_source.html">footer_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac44e359a90f5a32d6128a16a66f42c08" name="ac44e359a90f5a32d6128a16a66f42c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac44e359a90f5a32d6128a16a66f42c08">&#9670;&#160;</a></span>elapsed_seconds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float elapsed_seconds {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="footer__panel_8cpp_source.html#l00059">59</a> of file <a class="el" href="footer__panel_8cpp_source.html">footer_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a85af2441aff66e7e63f0c781e94e11ad" name="a85af2441aff66e7e63f0c781e94e11ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85af2441aff66e7e63f0c781e94e11ad">&#9670;&#160;</a></span>hidden_kind_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t hidden_kind_count {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="footer__panel_8cpp_source.html#l00062">62</a> of file <a class="el" href="footer__panel_8cpp_source.html">footer_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9b45b3e13bd9167aab02e17e08916231" name="a9b45b3e13bd9167aab02e17e08916231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b45b3e13bd9167aab02e17e08916231">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="footer__panel_8cpp_source.html#l00050">50</a> of file <a class="el" href="footer__panel_8cpp_source.html">footer_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5b7a862178203763904e2cb8241a095f" name="a5b7a862178203763904e2cb8241a095f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7a862178203763904e2cb8241a095f">&#9670;&#160;</a></span>pending</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pending {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="footer__panel_8cpp_source.html#l00060">60</a> of file <a class="el" href="footer__panel_8cpp_source.html">footer_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ade71902bbb735551f7df3cf93be1dd39" name="ade71902bbb735551f7df3cf93be1dd39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade71902bbb735551f7df3cf93be1dd39">&#9670;&#160;</a></span>rows</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;job_row&gt; rows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="footer__panel_8cpp_source.html#l00061">61</a> of file <a class="el" href="footer__panel_8cpp_source.html">footer_panel.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3fab45bb4d7cd7e889bdf00080096e8e" name="a3fab45bb4d7cd7e889bdf00080096e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fab45bb4d7cd7e889bdf00080096e8e">&#9670;&#160;</a></span>total</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t total {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="footer__panel_8cpp_source.html#l00052">52</a> of file <a class="el" href="footer__panel_8cpp_source.html">footer_panel.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

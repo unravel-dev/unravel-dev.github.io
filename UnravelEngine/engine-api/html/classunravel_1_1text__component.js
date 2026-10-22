@@ -44,5 +44,5 @@ var classunravel_1_1text__component =
     [ "set_overflow_type", "classunravel_1_1text__component.html#a6928491830597c1f1c063cd5486c2f2a", null ],
     [ "set_style", "classunravel_1_1text__component.html#aeffca672d7f3780f27a23cf3c1ccd8d8", null ],
     [ "set_text", "classunravel_1_1text__component.html#a87fce3f9bc0dc9b28d0f77d8b28a98cf", null ],
-    [ "submit", "classunravel_1_1text__component.html#a9d7f45afc94b038b7fecb821562bd6eb", null ]
+    [ "submit", "classunravel_1_1text__component.html#aee9133d98dd8efab21c2ad5d3504f815", null ]
 ];

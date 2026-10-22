@@ -1,6 +1,5 @@
 var classunravel_1_1transform__component =
 [
-    [ "dirty_ids", "structunravel_1_1transform__component_1_1dirty__ids.html", null ],
     [ "flags_t", "classunravel_1_1transform__component.html#a998763760907ffcaa5921cef206a3849", null ],
     [ "_clear_relationships", "classunravel_1_1transform__component.html#a65db558653ad2e355490e94406ca22f9", null ],
     [ "get_children", "classunravel_1_1transform__component.html#af51c6e12d77ee473cdab8335074a3189", null ],
@@ -45,6 +44,7 @@ var classunravel_1_1transform__component =
     [ "reset_rotation_local", "classunravel_1_1transform__component.html#a8388e51fc32bd316b40177f4a7b88e25", null ],
     [ "reset_scale_global", "classunravel_1_1transform__component.html#a27455744c8f3e486f670fd7efc693bcd", null ],
     [ "reset_scale_local", "classunravel_1_1transform__component.html#a1b5c758da8c431f312ea5e6648197b44", null ],
+    [ "resolve_shared_ancestors", "classunravel_1_1transform__component.html#a7991dd09484cf94b8ffc473b8f9f3dbb", null ],
     [ "resolve_transform_global", "classunravel_1_1transform__component.html#a5aa5b1bdab314c7acfcf066a9273d0a2", null ],
     [ "rotate_around_global", "classunravel_1_1transform__component.html#a345733b2c8777fbf3d84e99b96e487fd", null ],
     [ "rotate_around_global", "classunravel_1_1transform__component.html#a04b77817948b432d7a29cb01ad416ed9", null ],

@@ -120,10 +120,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aae38d5ec5a118658a3c898c3b59acf7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a610f0922438f00dac613841e4d8bfaea" id="r_a610f0922438f00dac613841e4d8bfaea"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a610f0922438f00dac613841e4d8bfaea">transparent_texture</a> () const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
 <tr class="separator:a610f0922438f00dac613841e4d8bfaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b84c174e626d6f31c36ae87e8f9728" id="r_ab9b84c174e626d6f31c36ae87e8f9728"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9b84c174e626d6f31c36ae87e8f9728">black_cube_texture</a> () const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
+<tr class="separator:ab9b84c174e626d6f31c36ae87e8f9728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2611f1f39ab55dcf970583687bc303d4" id="r_a2611f1f39ab55dcf970583687bc303d4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2611f1f39ab55dcf970583687bc303d4">transparent_texture_3d</a> () const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
+<tr class="separator:a2611f1f39ab55dcf970583687bc303d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc120a98c3c8fd80d7745c2ea1469dc4" id="r_acc120a98c3c8fd80d7745c2ea1469dc4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc120a98c3c8fd80d7745c2ea1469dc4">white_texture_3d</a> () const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a></td></tr>
+<tr class="memdesc:acc120a98c3c8fd80d7745c2ea1469dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque white 3D texture for a 3D sampler whose neutral value is one (the global SDF's coverage: all covered).  <br /></td></tr>
+<tr class="separator:acc120a98c3c8fd80d7745c2ea1469dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4092551ef723ce9a7f395cd09178aaf" id="r_ab4092551ef723ce9a7f395cd09178aaf"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4092551ef723ce9a7f395cd09178aaf">cloud_noise</a> () -&gt; <a class="el" href="structunravel_1_1cloud__noise__textures.html">cloud_noise_textures</a> &amp;</td></tr>
 <tr class="separator:ab4092551ef723ce9a7f395cd09178aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7104d6f3fad1d8dcdc7221c46449629" id="r_aa7104d6f3fad1d8dcdc7221c46449629"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7104d6f3fad1d8dcdc7221c46449629">cloud_noise</a> () const -&gt; const <a class="el" href="structunravel_1_1cloud__noise__textures.html">cloud_noise_textures</a> &amp;</td></tr>
 <tr class="separator:aa7104d6f3fad1d8dcdc7221c46449629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9818123bb848de0184ff45ad74f2500e" id="r_a9818123bb848de0184ff45ad74f2500e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9818123bb848de0184ff45ad74f2500e">specular_occlusion</a> () const -&gt; const <a class="el" href="structunravel_1_1specular__occlusion__lut.html">specular_occlusion_lut</a> &amp;</td></tr>
+<tr class="memdesc:a9818123bb848de0184ff45ad74f2500e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GTSO specular occlusion table (SpecularOcclusionGTSO in lighting.sh).  <br /></td></tr>
+<tr class="separator:a9818123bb848de0184ff45ad74f2500e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -132,8 +142,36 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00010">10</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00011">11</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab9b84c174e626d6f31c36ae87e8f9728" name="ab9b84c174e626d6f31c36ae87e8f9728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b84c174e626d6f31c36ae87e8f9728">&#9670;&#160;</a></span>black_cube_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::default_textures::black_cube_texture </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Opaque black cube map for a cube sampler a program declares but a given submit does not read: D3D11 flags an empty slot, and a 2D default would not match the sampler type. </p>
+
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00027">27</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+
+</div>
+</div>
 <a id="a3e7754f5e6f77b6488fcb8e0fc14f632" name="a3e7754f5e6f77b6488fcb8e0fc14f632"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e7754f5e6f77b6488fcb8e0fc14f632">&#9670;&#160;</a></span>black_texture()</h2>
 
@@ -157,7 +195,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00018">18</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00019">19</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
 
 </div>
 </div>
@@ -176,7 +214,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="default__textures_8cpp_source.html#l00055">55</a> of file <a class="el" href="default__textures_8cpp_source.html">default_textures.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="default__textures_8cpp_source.html#l00092">92</a> of file <a class="el" href="default__textures_8cpp_source.html">default_textures.cpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +241,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00025">25</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00034">34</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +268,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00026">26</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00035">35</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
 
 </div>
 </div>
@@ -249,7 +287,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="default__textures_8cpp_source.html#l00045">45</a> of file <a class="el" href="default__textures_8cpp_source.html">default_textures.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="default__textures_8cpp_source.html#l00078">78</a> of file <a class="el" href="default__textures_8cpp_source.html">default_textures.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +314,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="default__textures_8cpp_source.html#l00039">39</a> of file <a class="el" href="default__textures_8cpp_source.html">default_textures.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="default__textures_8cpp_source.html#l00072">72</a> of file <a class="el" href="default__textures_8cpp_source.html">default_textures.cpp</a>.</p>
 
 </div>
 </div>
@@ -303,7 +341,36 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00020">20</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00021">21</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+
+</div>
+</div>
+<a id="a9818123bb848de0184ff45ad74f2500e" name="a9818123bb848de0184ff45ad74f2500e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9818123bb848de0184ff45ad74f2500e">&#9670;&#160;</a></span>specular_occlusion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::default_textures::specular_occlusion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="structunravel_1_1specular__occlusion__lut.html">specular_occlusion_lut</a>&amp; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The GTSO specular occlusion table (SpecularOcclusionGTSO in lighting.sh). </p>
+
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00038">38</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
 
 </div>
 </div>
@@ -331,7 +398,35 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Fully transparent black (alpha 0). Used as the SSIL-disabled fallback so the indirect-lighting mix(irradiance, ssil.rgb, ssil.a) collapses to the SH probe. </p>
 
-<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00023">23</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00024">24</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+
+</div>
+</div>
+<a id="a2611f1f39ab55dcf970583687bc303d4" name="a2611f1f39ab55dcf970583687bc303d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2611f1f39ab55dcf970583687bc303d4">&#9670;&#160;</a></span>transparent_texture_3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::default_textures::transparent_texture_3d </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Transparent black 3D texture for a 3D sampler a program declares but a given submit does not read (a 2D default would not match the sampler type). </p>
+
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00030">30</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
 
 </div>
 </div>
@@ -358,7 +453,36 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00019">19</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00020">20</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
+
+</div>
+</div>
+<a id="acc120a98c3c8fd80d7745c2ea1469dc4" name="acc120a98c3c8fd80d7745c2ea1469dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc120a98c3c8fd80d7745c2ea1469dc4">&#9670;&#160;</a></span>white_texture_3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::default_textures::white_texture_3d </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classgfx_1_1handle__impl.html#aa964511c43cec8dd6220c986732a8c6b">gfx::texture::ptr</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opaque white 3D texture for a 3D sampler whose neutral value is one (the global SDF's coverage: all covered). </p>
+
+<p class="definition">Definition at line <a class="el" href="default__textures_8h_source.html#l00032">32</a> of file <a class="el" href="default__textures_8h_source.html">default_textures.h</a>.</p>
 
 </div>
 </div>

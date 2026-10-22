@@ -122,6 +122,13 @@ Inheritance diagram for unravel::model_component:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a80b3146348f267cdc4847aad60b87228" id="r_a80b3146348f267cdc4847aad60b87228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b3146348f267cdc4847aad60b87228">touch</a> ()</td></tr>
+<tr class="memdesc:a80b3146348f267cdc4847aad60b87228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks every consumer of this model's render state dirty, and bumps the scene's <a class="el" href="structunravel_1_1shadow__caster__revision.html" title="Counts changes to the SET of shadow casters that the per-frame model walk cannot observe: a model or ...">shadow_caster_revision</a> because the caster SET may have changed.  <br /></td></tr>
+<tr class="separator:a80b3146348f267cdc4847aad60b87228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6d1e4b0e8880fa9183431be56c3a0e" id="r_adc6d1e4b0e8880fa9183431be56c3a0e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc6d1e4b0e8880fa9183431be56c3a0e">is_dirty</a> (uint8_t <a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>) const noexcept -&gt; bool</td></tr>
+<tr class="separator:adc6d1e4b0e8880fa9183431be56c3a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfba0fbbc4e716632b94ec775431860" id="r_a4cfba0fbbc4e716632b94ec775431860"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cfba0fbbc4e716632b94ec775431860">set_dirty</a> (uint8_t <a class="el" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>, bool dirty) noexcept</td></tr>
+<tr class="separator:a4cfba0fbbc4e716632b94ec775431860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a84b2075a85868544ba666ccec199d" id="r_a41a84b2075a85868544ba666ccec199d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41a84b2075a85868544ba666ccec199d">set_enabled</a> (bool <a class="el" href="volume__resolver_8cpp.html#a8740ba80e30dd75e71d09fa1dcf04f3d">enabled</a>)</td></tr>
 <tr class="memdesc:a41a84b2075a85868544ba666ccec199d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the model is enabled.  <br /></td></tr>
 <tr class="separator:a41a84b2075a85868544ba666ccec199d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +153,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abedc5dd8b198df40b8e93e7a981c4824" id="r_abedc5dd8b198df40b8e93e7a981c4824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abedc5dd8b198df40b8e93e7a981c4824">set_model</a> (const <a class="el" href="classunravel_1_1model.html">model</a> &amp;<a class="el" href="classunravel_1_1model.html">model</a>)</td></tr>
 <tr class="memdesc:abedc5dd8b198df40b8e93e7a981c4824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the model.  <br /></td></tr>
 <tr class="separator:abedc5dd8b198df40b8e93e7a981c4824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c2183363435d9b80034f69e9da7271" id="r_a72c2183363435d9b80034f69e9da7271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72c2183363435d9b80034f69e9da7271">set_shared_material</a> (const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1material.html">material</a> &gt; &amp;<a class="el" href="classunravel_1_1material.html">material</a>, uint32_t <a class="el" href="inspector__array_8cpp.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>)</td></tr>
+<tr class="memdesc:a72c2183363435d9b80034f69e9da7271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the shared material asset for a slot.  <br /></td></tr>
+<tr class="separator:a72c2183363435d9b80034f69e9da7271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569d60d9bc3250cbc467baea3e6298d5" id="r_a569d60d9bc3250cbc467baea3e6298d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a569d60d9bc3250cbc467baea3e6298d5">set_material_instance</a> (const <a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a> &amp;instance, uint32_t <a class="el" href="inspector__array_8cpp.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>)</td></tr>
+<tr class="memdesc:a569d60d9bc3250cbc467baea3e6298d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the runtime material instance override for a slot.  <br /></td></tr>
+<tr class="separator:a569d60d9bc3250cbc467baea3e6298d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2b019c3e2894d42cfa157a47ca3de8" id="r_aaa2b019c3e2894d42cfa157a47ca3de8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa2b019c3e2894d42cfa157a47ca3de8">get_or_emplace_material_instance</a> (uint32_t <a class="el" href="inspector__array_8cpp.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>) -&gt; <a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a></td></tr>
+<tr class="memdesc:aaa2b019c3e2894d42cfa157a47ca3de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the material instance for a slot, cloning the shared asset on first edit.  <br /></td></tr>
+<tr class="separator:aaa2b019c3e2894d42cfa157a47ca3de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3531c725926dcd4374e2229e2c2f566a" id="r_a3531c725926dcd4374e2229e2c2f566a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3531c725926dcd4374e2229e2c2f566a">get_bone_transforms</a> () const -&gt; const <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &amp;</td></tr>
 <tr class="memdesc:a3531c725926dcd4374e2229e2c2f566a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the bone transforms.  <br /></td></tr>
 <tr class="separator:a3531c725926dcd4374e2229e2c2f566a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,18 +171,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad497e2cc3dab64ce622faeb12ffaf88a" id="r_ad497e2cc3dab64ce622faeb12ffaf88a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad497e2cc3dab64ce622faeb12ffaf88a">get_armature_entities</a> () const -&gt; const std::vector&lt; entt::handle &gt; &amp;</td></tr>
 <tr class="memdesc:ad497e2cc3dab64ce622faeb12ffaf88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the armature entities.  <br /></td></tr>
 <tr class="separator:ad497e2cc3dab64ce622faeb12ffaf88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a196a9a8e8c3f367171c313ae6c240554" id="r_a196a9a8e8c3f367171c313ae6c240554"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a196a9a8e8c3f367171c313ae6c240554">get_armature_by_index</a> (size_t <a class="el" href="gpu__frame__stats__widgets_8cpp.html#a3f42f10d93f6edb91d7d3f6edad25921">index</a>) const -&gt; entt::handle</td></tr>
+<tr class="memitem:a196a9a8e8c3f367171c313ae6c240554" id="r_a196a9a8e8c3f367171c313ae6c240554"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a196a9a8e8c3f367171c313ae6c240554">get_armature_by_index</a> (size_t <a class="el" href="inspector__array_8cpp.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>) const -&gt; entt::handle</td></tr>
 <tr class="separator:a196a9a8e8c3f367171c313ae6c240554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f6bbed54b1769f1d2d599f40ae2f32a" id="r_a9f6bbed54b1769f1d2d599f40ae2f32a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f6bbed54b1769f1d2d599f40ae2f32a">get_armature_index_by_name_cached</a> (const std::string &amp;node_name) const -&gt; int</td></tr>
 <tr class="memdesc:a9f6bbed54b1769f1d2d599f40ae2f32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets armature index by name using cached lookup (O(1)).  <br /></td></tr>
 <tr class="separator:a9f6bbed54b1769f1d2d599f40ae2f32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34d7597f68faffe4cbbb12ea44fcd75" id="r_ad34d7597f68faffe4cbbb12ea44fcd75"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad34d7597f68faffe4cbbb12ea44fcd75">get_armature_index_by_base_name_cached</a> (const std::string &amp;node_name) const -&gt; int</td></tr>
+<tr class="memdesc:ad34d7597f68faffe4cbbb12ea44fcd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the armature node whose name matches <code>node_name</code> once both drop their namespace (see get_name_without_namespace), or -1 when no node or several do.  <br /></td></tr>
+<tr class="separator:ad34d7597f68faffe4cbbb12ea44fcd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a046d0aae1b4b7b515d2c2210237282de" id="r_a046d0aae1b4b7b515d2c2210237282de"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a046d0aae1b4b7b515d2c2210237282de">get_armature_version</a> () const noexcept -&gt; uint64_t</td></tr>
+<tr class="memdesc:a046d0aae1b4b7b515d2c2210237282de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes whenever the armature entity set changes, so caches keyed by armature index (animation clip bindings, layer masks) know to rebuild.  <br /></td></tr>
+<tr class="separator:a046d0aae1b4b7b515d2c2210237282de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab94b8bbbe4f48981e0b7b8838f3bd534" id="r_ab94b8bbbe4f48981e0b7b8838f3bd534"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab94b8bbbe4f48981e0b7b8838f3bd534">get_skinning_transforms</a> () const -&gt; const std::vector&lt; <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &gt; &amp;</td></tr>
 <tr class="separator:ab94b8bbbe4f48981e0b7b8838f3bd534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74a818eb6131ec29c43f41663f82b2cb" id="r_a74a818eb6131ec29c43f41663f82b2cb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74a818eb6131ec29c43f41663f82b2cb">init_armature</a> (bool <a class="el" href="namespaceunravel.html#affd248520b0507ba13ad6d424101ece6aae254d63f2381cc183c11594873793e0">force</a>) -&gt; bool</td></tr>
-<tr class="memdesc:a74a818eb6131ec29c43f41663f82b2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the armature of the model.  <br /></td></tr>
-<tr class="separator:a74a818eb6131ec29c43f41663f82b2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a572fa0e5ac8a64661121fb707698b" id="r_a38a572fa0e5ac8a64661121fb707698b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38a572fa0e5ac8a64661121fb707698b">init_armature</a> (bool <a class="el" href="namespaceunravel.html#affd248520b0507ba13ad6d424101ece6aae254d63f2381cc183c11594873793e0">force</a>, std::vector&lt; entt::handle &gt; *created_roots=nullptr) -&gt; bool</td></tr>
+<tr class="memdesc:a38a572fa0e5ac8a64661121fb707698b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the armature of the model.  <br /></td></tr>
+<tr class="separator:a38a572fa0e5ac8a64661121fb707698b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3302481132f743691c09d62d926ad910" id="r_a3302481132f743691c09d62d926ad910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3302481132f743691c09d62d926ad910">resolve_pending_default_materials</a> ()</td></tr>
+<tr class="memdesc:a3302481132f743691c09d62d926ad910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the model its mesh's default materials once the mesh loads, when it was made while the mesh was still loading (<a class="el" href="classunravel_1_1model.html#a29b4182e665db40de8bd4468480f7c13" title="Marks the model to take LOD 0&#39;s default materials once that mesh loads: a model made from a mesh that...">model::set_default_materials_pending</a>).  <br /></td></tr>
+<tr class="separator:a3302481132f743691c09d62d926ad910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5303f9661bfa02f672d64e425a97ae74" id="r_a5303f9661bfa02f672d64e425a97ae74"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5303f9661bfa02f672d64e425a97ae74">is_armature_rebuild_pending</a> () const -&gt; bool</td></tr>
+<tr class="memdesc:a5303f9661bfa02f672d64e425a97ae74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the mesh changed since the armature was built: the next init_armature rebuilds it and sorts the old mesh's node entities into kept and stale.  <br /></td></tr>
+<tr class="separator:a5303f9661bfa02f672d64e425a97ae74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81aad9723f975d417fa69eee9e8a9b0f" id="r_a81aad9723f975d417fa69eee9e8a9b0f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81aad9723f975d417fa69eee9e8a9b0f">rebuild_armature</a> () -&gt; std::vector&lt; entt::handle &gt;</td></tr>
+<tr class="memdesc:a81aad9723f975d417fa69eee9e8a9b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the rebuild a mesh change left pending now instead of in the next frame update.  <br /></td></tr>
+<tr class="separator:a81aad9723f975d417fa69eee9e8a9b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad110976160869363625c464022702a00" id="r_ad110976160869363625c464022702a00"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad110976160869363625c464022702a00">take_stale_armature_entities</a> () -&gt; std::vector&lt; entt::handle &gt;</td></tr>
+<tr class="memdesc:ad110976160869363625c464022702a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes the node entities only a previous mesh used: the roots of the subtrees the current mesh no longer binds. A subtree that also holds anything else, such as a child added under a node, is not among them.  <br /></td></tr>
+<tr class="separator:ad110976160869363625c464022702a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6f375e4a3a806a0cac8f88ef387073" id="r_aec6f375e4a3a806a0cac8f88ef387073"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec6f375e4a3a806a0cac8f88ef387073">update_armature</a> () -&gt; bool</td></tr>
-<tr class="memdesc:aec6f375e4a3a806a0cac8f88ef387073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes pose-derived render data: submesh/bone poses, cached world-space render-proxy bounds, material overrides and skinning palettes.  <br /></td></tr>
+<tr class="memdesc:aec6f375e4a3a806a0cac8f88ef387073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes pose-derived render data: submesh/bone poses, cached world-space render-proxy bounds and skinning palettes.  <br /></td></tr>
 <tr class="separator:aec6f375e4a3a806a0cac8f88ef387073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6cfbb02e2218570c48f0c2cc9ad1876" id="r_ab6cfbb02e2218570c48f0c2cc9ad1876"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6cfbb02e2218570c48f0c2cc9ad1876">mark_pose_dirty</a> () noexcept</td></tr>
 <tr class="memdesc:ab6cfbb02e2218570c48f0c2cc9ad1876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces the next update_armature call to run a full refresh even when no armature transform is dirty (armature rebuilds, submesh entry settings edits).  <br /></td></tr>
@@ -187,9 +221,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab78874e8cc88be5badf11a046462c4d5" id="r_ab78874e8cc88be5badf11a046462c4d5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab78874e8cc88be5badf11a046462c4d5">get_render_proxies</a> () const -&gt; const <a class="el" href="structunravel_1_1submesh__render__proxies.html">submesh_render_proxies</a> &amp;</td></tr>
 <tr class="memdesc:ab78874e8cc88be5badf11a046462c4d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retained render proxies: cached world-space per-submesh bounds (including animated bounds for skinned submeshes) refreshed alongside the pose data.  <br /></td></tr>
 <tr class="separator:ab78874e8cc88be5badf11a046462c4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16bf70b41c1b941302b70128d7500293" id="r_a16bf70b41c1b941302b70128d7500293"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16bf70b41c1b941302b70128d7500293">get_submesh_material_overrides</a> () const -&gt; const std::vector&lt; <a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a> &gt; &amp;</td></tr>
-<tr class="memdesc:a16bf70b41c1b941302b70128d7500293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-submesh material overrides (indexed by submesh index; null = model material), resolved from the <a class="el" href="structunravel_1_1submesh__component.html">submesh_component</a> entries on the armature node entities.  <br /></td></tr>
-<tr class="separator:a16bf70b41c1b941302b70128d7500293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b3954ca365b78dedad95735ac94bc6" id="r_a52b3954ca365b78dedad95735ac94bc6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52b3954ca365b78dedad95735ac94bc6">get_submit_extras</a> (bool shadow_pass=false) const -&gt; <a class="el" href="structunravel_1_1model__submit__extras.html">model_submit_extras</a></td></tr>
 <tr class="memdesc:a52b3954ca365b78dedad95735ac94bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience: builds the submit extras referencing the retained proxy data.  <br /></td></tr>
 <tr class="separator:a52b3954ca365b78dedad95735ac94bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,6 +232,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a25500f4531776d82802e85cbb417481f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1231f62efed0e94651dea9385556fba0" id="r_a1231f62efed0e94651dea9385556fba0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1231f62efed0e94651dea9385556fba0">was_used_last_frame</a> () const noexcept -&gt; bool</td></tr>
 <tr class="separator:a1231f62efed0e94651dea9385556fba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce2470fcb0ab171dd87d580c4dc8f9f" id="r_a0ce2470fcb0ab171dd87d580c4dc8f9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ce2470fcb0ab171dd87d580c4dc8f9f">record_velocity_state</a> (uint32_t <a class="el" href="graphics_8cpp.html#a2756e49c974b080f5cfa99ebdc5067fe">frame</a>, const math::mat4 &amp;current_world, bool transform_moved)</td></tr>
+<tr class="memdesc:a0ce2470fcb0ab171dd87d580c4dc8f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Promotes the previous-frame motion state (world matrix, submesh pose, skinning palettes) exactly once per render frame. Must run BEFORE update_armature refreshes the pose caches (the caches still hold last frame's values at that point). Guarded against the editor's multiple before-render invocations per frame (scene + game panels, thumbnails) by a render-frame stamp.  <br /></td></tr>
+<tr class="separator:a0ce2470fcb0ab171dd87d580c4dc8f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef109ab0ced33342b185e75ca7199d9" id="r_a4ef109ab0ced33342b185e75ca7199d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ef109ab0ced33342b185e75ca7199d9">mark_motion</a> (bool moved)</td></tr>
+<tr class="memdesc:a4ef109ab0ced33342b185e75ca7199d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ORs additional motion evidence into this frame's mover flag (e.g. an armature pose refresh that ran without the owner transform changing). Safe to call repeatedly.  <br /></td></tr>
+<tr class="separator:a4ef109ab0ced33342b185e75ca7199d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d04d44541a8395623513b39022684c1" id="r_a2d04d44541a8395623513b39022684c1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d04d44541a8395623513b39022684c1">has_motion</a> () const -&gt; bool</td></tr>
+<tr class="separator:a2d04d44541a8395623513b39022684c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02dc1b2ecf0dbafc1a680418863bc49f" id="r_a02dc1b2ecf0dbafc1a680418863bc49f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02dc1b2ecf0dbafc1a680418863bc49f">get_prev_world_transform</a> () const -&gt; const math::mat4 &amp;</td></tr>
+<tr class="separator:a02dc1b2ecf0dbafc1a680418863bc49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8ebc4adc77b6d0ecfbe83885ca2d77" id="r_aca8ebc4adc77b6d0ecfbe83885ca2d77"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca8ebc4adc77b6d0ecfbe83885ca2d77">get_prev_submesh_transforms</a> () const -&gt; const <a class="el" href="structunravel_1_1submesh__pose__mat4.html">submesh_pose_mat4</a> &amp;</td></tr>
+<tr class="separator:aca8ebc4adc77b6d0ecfbe83885ca2d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bffbe761af8a1de0a865f08971f687f" id="r_a3bffbe761af8a1de0a865f08971f687f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bffbe761af8a1de0a865f08971f687f">get_prev_skinning_transforms</a> () const -&gt; const std::vector&lt; <a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a> &gt; &amp;</td></tr>
+<tr class="separator:a3bffbe761af8a1de0a865f08971f687f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab839de53bdb2ccbedfa38836ab162d9f" id="r_ab839de53bdb2ccbedfa38836ab162d9f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab839de53bdb2ccbedfa38836ab162d9f">is_skinned</a> () const -&gt; bool</td></tr>
 <tr class="separator:ab839de53bdb2ccbedfa38836ab162d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70adc3bfe2cb1a6bc0804333babf3037" id="r_a70adc3bfe2cb1a6bc0804333babf3037"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70adc3bfe2cb1a6bc0804333babf3037">get_bind_pose</a> () const -&gt; const <a class="el" href="structunravel_1_1animation__pose.html">animation_pose</a> &amp;</td></tr>
@@ -242,6 +287,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ee84008c3ec44f9c1a22cbe4caee33d" id="r_a7ee84008c3ec44f9c1a22cbe4caee33d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ee84008c3ec44f9c1a22cbe4caee33d">on_destroy_component</a> (entt::registry &amp;r, entt::entity e)</td></tr>
 <tr class="memdesc:a7ee84008c3ec44f9c1a22cbe4caee33d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the component is destroyed.  <br /></td></tr>
 <tr class="separator:a7ee84008c3ec44f9c1a22cbe4caee33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f57ff8cbd1d20f8c0d204f7b45c98c9" id="r_a9f57ff8cbd1d20f8c0d204f7b45c98c9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f57ff8cbd1d20f8c0d204f7b45c98c9">request_velocity_recording</a> (uint32_t <a class="el" href="graphics_8cpp.html#a2756e49c974b080f5cfa99ebdc5067fe">frame</a>)</td></tr>
+<tr class="memdesc:a9f57ff8cbd1d20f8c0d204f7b45c98c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global request window for velocity (motion vector) state recording. The deferred pipeline requests recording on every camera run that produces the velocity buffer; recording decays two frames after the last request, so the feature-off CPU cost is zero.  <br /></td></tr>
+<tr class="separator:a9f57ff8cbd1d20f8c0d204f7b45c98c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4abb62f33625d42f83353ece09cff72" id="r_ad4abb62f33625d42f83353ece09cff72"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4abb62f33625d42f83353ece09cff72">is_velocity_recording_active</a> (uint32_t <a class="el" href="graphics_8cpp.html#a2756e49c974b080f5cfa99ebdc5067fe">frame</a>) -&gt; bool</td></tr>
+<tr class="separator:ad4abb62f33625d42f83353ece09cff72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classunravel_1_1owned__component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classunravel_1_1owned__component')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classunravel_1_1owned__component.html">unravel::owned_component</a></td></tr>
 <tr class="memitem:a4862e642b971be7ea17a0d8726b5f6f7 inherit pub_static_methods_classunravel_1_1owned__component" id="r_a4862e642b971be7ea17a0d8726b5f6f7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4862e642b971be7ea17a0d8726b5f6f7 inherit pub_static_methods_classunravel_1_1owned__component"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classunravel_1_1owned__component.html#a4862e642b971be7ea17a0d8726b5f6f7">on_create_component</a> (entt::registry &amp;r, entt::entity e)</td></tr>
@@ -267,7 +317,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that contains core data for meshes. </p>
 
-<p class="definition">Definition at line <a class="el" href="model__component_8h_source.html#l00015">15</a> of file <a class="el" href="model__component_8h_source.html">model_component.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="model__component_8h_source.html#l00035">35</a> of file <a class="el" href="model__component_8h_source.html">model_component.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a726b4924cd985231bb31099ff09e1360" name="a726b4924cd985231bb31099ff09e1360"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a726b4924cd985231bb31099ff09e1360">&#9670;&#160;</a></span>casts_shadow()</h2>
@@ -287,7 +337,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Checks if the model casts shadows. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the model casts shadows, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00818">818</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01023">1023</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -319,7 +369,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00975">975</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01306">1306</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -338,7 +388,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00948">948</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01279">1279</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -360,7 +410,28 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the armature entities. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the vector of armature entity handles. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00943">943</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01274">1274</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad34d7597f68faffe4cbbb12ea44fcd75" name="ad34d7597f68faffe4cbbb12ea44fcd75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34d7597f68faffe4cbbb12ea44fcd75">&#9670;&#160;</a></span>get_armature_index_by_base_name_cached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::get_armature_index_by_base_name_cached </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>node_name</em></span></td><td>)</td>
+          <td> const -&gt; int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Index of the armature node whose name matches <code>node_name</code> once both drop their namespace (see get_name_without_namespace), or -1 when no node or several do. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01259">1259</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -388,7 +459,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The index of the armature node, or -1 if not found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00933">933</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01249">1249</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -409,7 +480,36 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Armature root entity (first node of the imported skeleton hierarchy). </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00717">717</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00883">883</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a046d0aae1b4b7b515d2c2210237282de" name="a046d0aae1b4b7b515d2c2210237282de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a046d0aae1b4b7b515d2c2210237282de">&#9670;&#160;</a></span>get_armature_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::get_armature_version </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; uint64_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes whenever the armature entity set changes, so caches keyed by armature index (animation clip bindings, layer masks) know to rebuild. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01269">1269</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -428,7 +528,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00712">712</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00878">878</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -450,7 +550,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the bone transforms. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the vector of bone transforms. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00847">847</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01086">1086</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -471,7 +571,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Local rotation of the armature root (used for root motion / IK remapping). </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00748">748</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00914">914</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -498,7 +598,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00677">677</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00843">843</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -520,7 +620,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the bind-pose local bounding box of the mesh asset for a given LOD. </p>
 <p>NEVER use this for culling: it does not track node or bone animation. It is only meaningful for editor tooling (placement helpers, bounds gizmos). </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00655">655</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00821">821</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -553,7 +653,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the LOD data for this view. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00958">958</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01289">1289</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -575,7 +675,92 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the model. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the model. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00828">828</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01033">1033</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aaa2b019c3e2894d42cfa157a47ca3de8" name="aaa2b019c3e2894d42cfa157a47ca3de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2b019c3e2894d42cfa157a47ca3de8">&#9670;&#160;</a></span>get_or_emplace_material_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::get_or_emplace_material_instance </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> -&gt; <a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the material instance for a slot, cloning the shared asset on first edit. </p>
+<p>The returned material is owned by this component; mutating it takes effect immediately. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The material slot index. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The owned material instance for the slot. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01077">1077</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3bffbe761af8a1de0a865f08971f687f" name="a3bffbe761af8a1de0a865f08971f687f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bffbe761af8a1de0a865f08971f687f">&#9670;&#160;</a></span>get_prev_skinning_transforms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::get_prev_skinning_transforms </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const std::vector&lt;<a class="el" href="structunravel_1_1pose__mat4.html">pose_mat4</a>&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01170">1170</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aca8ebc4adc77b6d0ecfbe83885ca2d77" name="aca8ebc4adc77b6d0ecfbe83885ca2d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8ebc4adc77b6d0ecfbe83885ca2d77">&#9670;&#160;</a></span>get_prev_submesh_transforms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::get_prev_submesh_transforms </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const <a class="el" href="structunravel_1_1submesh__pose__mat4.html">submesh_pose_mat4</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01165">1165</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a02dc1b2ecf0dbafc1a680418863bc49f" name="a02dc1b2ecf0dbafc1a680418863bc49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02dc1b2ecf0dbafc1a680418863bc49f">&#9670;&#160;</a></span>get_prev_world_transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::get_prev_world_transform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; const math::mat4&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01160">1160</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -596,7 +781,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Retained render proxies: cached world-space per-submesh bounds (including animated bounds for skinned submeshes) refreshed alongside the pose data. </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00862">862</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01175">1175</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -615,28 +800,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00852">852</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a16bf70b41c1b941302b70128d7500293" name="a16bf70b41c1b941302b70128d7500293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16bf70b41c1b941302b70128d7500293">&#9670;&#160;</a></span>get_submesh_material_overrides()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto unravel::model_component::get_submesh_material_overrides </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const -&gt; const std::vector&lt;<a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a>&gt;&amp;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Per-submesh material overrides (indexed by submesh index; null = model material), resolved from the <a class="el" href="structunravel_1_1submesh__component.html">submesh_component</a> entries on the armature node entities. </p>
-
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00867">867</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01091">1091</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -658,7 +822,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the submesh transforms. </p>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the submesh pose structure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00857">857</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01096">1096</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -685,7 +849,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00872">872</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01180">1180</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -707,7 +871,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Gets the pose-aware world-space bounding box for this model. </p>
 <p>Static mesh bounds transformed to world space, unioned with the cached pose bounds (node-attached submesh placements and skinned geometry). Refreshed every frame by <a class="el" href="classunravel_1_1model__system.html#a612947c8718a6cec6edc50921e4be193">model_system::on_frame_before_render</a>, before any render path runs. This is the ONLY box that is valid for culling. </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00645">645</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00811">811</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -726,12 +890,32 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00650">650</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00816">816</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a74a818eb6131ec29c43f41663f82b2cb" name="a74a818eb6131ec29c43f41663f82b2cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74a818eb6131ec29c43f41663f82b2cb">&#9670;&#160;</a></span>init_armature()</h2>
+<a id="a2d04d44541a8395623513b39022684c1" name="a2d04d44541a8395623513b39022684c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d04d44541a8395623513b39022684c1">&#9670;&#160;</a></span>has_motion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::has_motion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>True when this model moved since the last rendered frame (or is skinned) and should be drawn into the velocity buffer with per-object motion. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01155">1155</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a38a572fa0e5ac8a64661121fb707698b" name="a38a572fa0e5ac8a64661121fb707698b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38a572fa0e5ac8a64661121fb707698b">&#9670;&#160;</a></span>init_armature()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -739,15 +923,74 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">auto unravel::model_component::init_armature </td>
           <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>force</em></span></td><td>)</td>
-          <td> -&gt; bool</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>force</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; entt::handle &gt; *</td>          <td class="paramname"><span class="paramname"><em>created_roots</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;) -&gt; bool</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Updates the armature of the model. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">created_roots</td><td>When not null, receives the roots of the node entities the build created (the nodes no existing child of the owner provided). </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00504">504</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00584">584</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5303f9661bfa02f672d64e425a97ae74" name="a5303f9661bfa02f672d64e425a97ae74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5303f9661bfa02f672d64e425a97ae74">&#9670;&#160;</a></span>is_armature_rebuild_pending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::is_armature_rebuild_pending </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the mesh changed since the armature was built: the next init_armature rebuilds it and sorts the old mesh's node entities into kept and stale. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00643">643</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adc6d1e4b0e8880fa9183431be56c3a0e" name="adc6d1e4b0e8880fa9183431be56c3a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6d1e4b0e8880fa9183431be56c3a0e">&#9670;&#160;</a></span>is_dirty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::is_dirty </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd>transform_component::is_dirty(uint8_t) </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00972">972</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -769,7 +1012,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Checks if the model is enabled. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the model is enabled, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00813">813</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01018">1018</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -796,7 +1039,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00682">682</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00848">848</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -815,7 +1058,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00695">695</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00861">861</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -837,7 +1080,55 @@ Additional Inherited Members</h2></td></tr>
 <p>Checks if the model is static. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the model is static, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00823">823</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01028">1028</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad4abb62f33625d42f83353ece09cff72" name="ad4abb62f33625d42f83353ece09cff72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4abb62f33625d42f83353ece09cff72">&#9670;&#160;</a></span>is_velocity_recording_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::is_velocity_recording_active </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>frame</em></span></td><td>)</td>
+          <td> -&gt; bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01109">1109</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4ef109ab0ced33342b185e75ca7199d9" name="a4ef109ab0ced33342b185e75ca7199d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef109ab0ced33342b185e75ca7199d9">&#9670;&#160;</a></span>mark_motion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model_component::mark_motion </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>moved</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ORs additional motion evidence into this frame's mover flag (e.g. an armature pose refresh that ran without the owner transform changing). Safe to call repeatedly. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01147">1147</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -866,7 +1157,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Forces the next update_armature call to run a full refresh even when no armature transform is dirty (armature rebuilds, submesh entry settings edits). </p>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00912">912</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01220">1220</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -906,7 +1197,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00763">763</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00929">929</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -946,7 +1237,115 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00773">773</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00943">943</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a81aad9723f975d417fa69eee9e8a9b0f" name="a81aad9723f975d417fa69eee9e8a9b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81aad9723f975d417fa69eee9e8a9b0f">&#9670;&#160;</a></span>rebuild_armature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::rebuild_armature </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; std::vector&lt;entt::handle&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs the rebuild a mesh change left pending now instead of in the next frame update. </p>
+<dl class="section return"><dt>Returns</dt><dd>The roots of the node entities the rebuild created. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00633">633</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0ce2470fcb0ab171dd87d580c4dc8f9f" name="a0ce2470fcb0ab171dd87d580c4dc8f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce2470fcb0ab171dd87d580c4dc8f9f">&#9670;&#160;</a></span>record_velocity_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model_component::record_velocity_state </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const math::mat4 &amp;</td>          <td class="paramname"><span class="paramname"><em>current_world</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>transform_moved</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Promotes the previous-frame motion state (world matrix, submesh pose, skinning palettes) exactly once per render frame. Must run BEFORE update_armature refreshes the pose caches (the caches still hold last frame's values at that point). Guarded against the editor's multiple before-render invocations per frame (scene + game panels, thumbnails) by a render-frame stamp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform_moved</td><td>The consumed <a class="el" href="classunravel_1_1transform__component.html" title="Component that handles transformations (position, rotation, scale, etc.) in the ACE framework.">transform_component</a> velocity dirty bit. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01117">1117</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f57ff8cbd1d20f8c0d204f7b45c98c9" name="a9f57ff8cbd1d20f8c0d204f7b45c98c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f57ff8cbd1d20f8c0d204f7b45c98c9">&#9670;&#160;</a></span>request_velocity_recording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model_component::request_velocity_recording </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Global request window for velocity (motion vector) state recording. The deferred pipeline requests recording on every camera run that produces the velocity buffer; recording decays two frames after the last request, so the feature-off CPU cost is zero. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01103">1103</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3302481132f743691c09d62d926ad910" name="a3302481132f743691c09d62d926ad910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3302481132f743691c09d62d926ad910">&#9670;&#160;</a></span>resolve_pending_default_materials()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model_component::resolve_pending_default_materials </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gives the model its mesh's default materials once the mesh loads, when it was made while the mesh was still loading (<a class="el" href="classunravel_1_1model.html#a29b4182e665db40de8bd4468480f7c13" title="Marks the model to take LOD 0&#39;s default materials once that mesh loads: a model made from a mesh that...">model::set_default_materials_pending</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00620">620</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -973,7 +1372,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00885">885</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01192">1192</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +1399,38 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00789">789</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00994">994</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4cfba0fbbc4e716632b94ec775431860" name="a4cfba0fbbc4e716632b94ec775431860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cfba0fbbc4e716632b94ec775431860">&#9670;&#160;</a></span>set_dirty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model_component::set_dirty </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>dirty</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00977">977</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1457,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00777">777</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00982">982</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1476,39 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00672">672</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00838">838</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a569d60d9bc3250cbc467baea3e6298d5" name="a569d60d9bc3250cbc467baea3e6298d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569d60d9bc3250cbc467baea3e6298d5">&#9670;&#160;</a></span>set_material_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model_component::set_material_instance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classunravel_1_1material.html#a6478333e1fd76b64b2ce961517e67284">material::sptr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>instance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assigns the runtime material instance override for a slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>The material instance to assign, or null to fall back to the shared asset. </td></tr>
+    <tr><td class="paramname">index</td><td>The material slot index. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01070">1070</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1535,39 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00833">833</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01038">1038</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a72c2183363435d9b80034f69e9da7271" name="a72c2183363435d9b80034f69e9da7271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72c2183363435d9b80034f69e9da7271">&#9670;&#160;</a></span>set_shared_material()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model_component::set_shared_material </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; <a class="el" href="classunravel_1_1material.html">material</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>material</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assigns the shared material asset for a slot. </p>
+<p>Materials are resolved live at submit time and cannot move geometry, so this skips the pose, proxy and bounds invalidation <a class="el" href="#abedc5dd8b198df40b8e93e7a981c4824">set_model</a> performs. Prefer it over the get_model / mutate / set_model round trip, which copies the whole model twice and forces a redundant armature refresh. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">material</td><td>The material asset to assign. </td></tr>
+    <tr><td class="paramname">index</td><td>The material slot index. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01063">1063</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1100,7 +1594,52 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00801">801</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l01006">1006</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad110976160869363625c464022702a00" name="ad110976160869363625c464022702a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad110976160869363625c464022702a00">&#9670;&#160;</a></span>take_stale_armature_entities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::model_component::take_stale_armature_entities </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> -&gt; std::vector&lt;entt::handle&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Takes the node entities only a previous mesh used: the roots of the subtrees the current mesh no longer binds. A subtree that also holds anything else, such as a child added under a node, is not among them. </p>
+<p>The caller removes them: the editor through an undoable delete, play mode directly. </p><dl class="section return"><dt>Returns</dt><dd>The valid stale roots; the list is empty afterwards. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00648">648</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a80b3146348f267cdc4847aad60b87228" name="a80b3146348f267cdc4847aad60b87228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b3146348f267cdc4847aad60b87228">&#9670;&#160;</a></span>touch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::model_component::touch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Marks every consumer of this model's render state dirty, and bumps the scene's <a class="el" href="structunravel_1_1shadow__caster__revision.html" title="Counts changes to the SET of shadow casters that the per-frame model walk cannot observe: a model or ...">shadow_caster_revision</a> because the caster SET may have changed. </p>
+<p>Indexed dirty flags for this model's render state. The slots are <a class="el" href="structunravel_1_1dirty__ids.html" title="Consumer slots for the indexed dirty flags a component carries (is_dirty(id) / set_dirty(id,...">unravel::dirty_ids</a>, the same ones <a class="el" href="classunravel_1_1transform__component.html" title="Component that handles transformations (position, rotation, scale, etc.) in the ACE framework.">transform_component</a> uses: the transform's copy says where a model IS, this one what it renders as. </p>
+<p>Hides <a class="el" href="structunravel_1_1basic__component.html#a77b51a3686a5557487ae8fb473f3de33" title="Marks the component as &#39;touched&#39;.">basic_component::touch()</a>, which is an empty function, so the flag setters that already call it gain the signal. Name hiding is enough here: every caller is a member of this class or holds a <a class="el" href="classunravel_1_1model__component.html" title="Class that contains core data for meshes.">model_component</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00959">959</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1119,14 +1658,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Refreshes pose-derived render data: submesh/bone poses, cached world-space render-proxy bounds, material overrides and skinning palettes. </p>
+<p>Refreshes pose-derived render data: submesh/bone poses, cached world-space render-proxy bounds and skinning palettes. </p>
 <p>Two gates keep this cheap:</p><ul>
 <li>Visibility: models not consumed by any view (camera/shadow) recently skip both the dirty scan and the refresh entirely (O(1)). Whole-model culling stays valid because update_world_bounds switches to the conservative grow-only culling bounds anchored to the root bone, which never depend on fresh proxies. When those bounds enter a frustum the model is drawn conservatively (stale proxies withheld), which marks it used and un-gates the full refresh on the next frame - a wrong skip self-heals in one frame and can never permanently hide a model.</li>
-<li>Change-driven: visible models early-out when no armature entity transform changed since the last refresh (<a class="el" href="structunravel_1_1transform__component_1_1dirty__ids.html#a99507c808ddb62c56264d2e8eda1ac96aa56c639bc37bd68e14181a857589dada">transform_component::dirty_ids::model_pose</a> bit-scan).</li>
+<li>Change-driven: visible models early-out when no armature entity transform changed since the last refresh (<a class="el" href="structunravel_1_1dirty__ids.html#afe2e4305b766b28dbd64b11d615e4712a67afabd4c50ed9f77707361c28b0d8e0">dirty_ids::model_pose</a> bit-scan).</li>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>True when a refresh actually ran, false when skipped or no mesh is loaded. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00381">381</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00461">461</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1684,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00531">531</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00683">683</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1711,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00687">687</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html#l00853">853</a> of file <a class="el" href="rendering_2ecs_2components_2model__component_8cpp_source.html">model_component.cpp</a>.</p>
 
 </div>
 </div>

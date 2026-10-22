@@ -10,6 +10,8 @@ var classunravel_1_1material =
     [ "default_normal_map", "classunravel_1_1material.html#a16e3ebb3d1c7db65fac05b340cca6216", null ],
     [ "get_cull_type", "classunravel_1_1material.html#ade1840decb2bd98c1c882c7d1852d3cc", null ],
     [ "get_render_states", "classunravel_1_1material.html#ab17ae0d95341199a09479559f368473d", null ],
+    [ "get_revision", "classunravel_1_1material.html#a213764a7a67158d1f74f56f13f136122", null ],
+    [ "mark_changed", "classunravel_1_1material.html#ac7e602ce9ddffa98a18d62bb0d9a05b0", null ],
     [ "set_cull_type", "classunravel_1_1material.html#aac201cbdc885dccb31e094e4a6ade5d2", null ],
     [ "submit", "classunravel_1_1material.html#aaef8760f1e4c8394578647aa43ee4b6e", null ],
     [ "cull_type_", "classunravel_1_1material.html#ad11dbb1ebf929ed820a3d20dad17c0b0", null ]

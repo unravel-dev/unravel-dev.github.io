@@ -104,6 +104,9 @@ $(function(){initNavTree('crash_8hpp.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">crash.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Cross-platform crash handlers (POSIX signals + Windows SEH) with crash-safe logging and optional minidumps.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 </div>
 <p><a href="crash_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -111,11 +114,10 @@ $(function(){initNavTree('crash_8hpp.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1crash_1_1signal__info.html">unravel::crash::signal_info</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal information structure.  <a href="structunravel_1_1crash_1_1signal__info.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal / fault information.  <a href="structunravel_1_1crash_1_1signal__info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1crash_1_1exception__info.html">unravel::crash::exception_info</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception information structure <br  />
-  <a href="structunravel_1_1crash_1_1exception__info.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception information (std::terminate path)  <a href="structunravel_1_1crash_1_1exception__info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1crash_1_1trace__info.html">unravel::crash::trace_info</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack trace information.  <a href="structunravel_1_1crash_1_1trace__info.html#details">More...</a><br /></td></tr>
@@ -132,22 +134,26 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a239c0f06bc42a11e1b6b2524795a8dbb" id="r_a239c0f06bc42a11e1b6b2524795a8dbb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a239c0f06bc42a11e1b6b2524795a8dbb">unravel::crash::interrupt_handler_t</a> = void(*)(const <a class="el" href="structunravel_1_1crash_1_1signal__info.html">signal_info</a>&amp; info)</td></tr>
-<tr class="separator:a239c0f06bc42a11e1b6b2524795a8dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c7e5d5b799c6ea230f7c333c6525ac1" id="r_a3c7e5d5b799c6ea230f7c333c6525ac1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a3c7e5d5b799c6ea230f7c333c6525ac1">unravel::crash::termination_handler_t</a> = void(*)(const <a class="el" href="structunravel_1_1crash_1_1signal__info.html">signal_info</a>&amp; info)</td></tr>
-<tr class="separator:a3c7e5d5b799c6ea230f7c333c6525ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa83651b37055f8dfa3bee630240c9542" id="r_aa83651b37055f8dfa3bee630240c9542"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#aa83651b37055f8dfa3bee630240c9542">unravel::crash::crash_handler_t</a> = void(*)(const <a class="el" href="structunravel_1_1crash_1_1signal__info.html">signal_info</a>&amp; info, const <a class="el" href="structunravel_1_1crash_1_1trace__info.html">trace_info</a>&amp; trace)</td></tr>
-<tr class="separator:aa83651b37055f8dfa3bee630240c9542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7edc6706c4ecaf5b5e1cbe695e82a7af" id="r_a7edc6706c4ecaf5b5e1cbe695e82a7af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a7edc6706c4ecaf5b5e1cbe695e82a7af">unravel::crash::exception_handler_t</a> = void(*)(const <a class="el" href="structunravel_1_1crash_1_1exception__info.html">exception_info</a>&amp; info, const <a class="el" href="structunravel_1_1crash_1_1trace__info.html">trace_info</a>&amp; trace)</td></tr>
-<tr class="separator:a7edc6706c4ecaf5b5e1cbe695e82a7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a4e75eb0b34a06ad320b8c9b8c827e" id="r_aa5a4e75eb0b34a06ad320b8c9b8c827e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#aa5a4e75eb0b34a06ad320b8c9b8c827e">unravel::crash::interrupt_handler_t</a> = void (*)(const <a class="el" href="structunravel_1_1crash_1_1signal__info.html">signal_info</a>&amp; info)</td></tr>
+<tr class="separator:aa5a4e75eb0b34a06ad320b8c9b8c827e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58785b3f1d78113e1c9760eb890d802" id="r_ac58785b3f1d78113e1c9760eb890d802"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#ac58785b3f1d78113e1c9760eb890d802">unravel::crash::termination_handler_t</a> = void (*)(const <a class="el" href="structunravel_1_1crash_1_1signal__info.html">signal_info</a>&amp; info)</td></tr>
+<tr class="separator:ac58785b3f1d78113e1c9760eb890d802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92454e1b3519ddfaf7e0e080755d3ac" id="r_aa92454e1b3519ddfaf7e0e080755d3ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#aa92454e1b3519ddfaf7e0e080755d3ac">unravel::crash::crash_handler_t</a> = void (*)(const <a class="el" href="structunravel_1_1crash_1_1signal__info.html">signal_info</a>&amp; info, const <a class="el" href="structunravel_1_1crash_1_1trace__info.html">trace_info</a>&amp; trace)</td></tr>
+<tr class="separator:aa92454e1b3519ddfaf7e0e080755d3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb19b326d12a0db2503125dfe7aef0b" id="r_a1eb19b326d12a0db2503125dfe7aef0b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a1eb19b326d12a0db2503125dfe7aef0b">unravel::crash::exception_handler_t</a> = void (*)(const <a class="el" href="structunravel_1_1crash_1_1exception__info.html">exception_info</a>&amp; info, const <a class="el" href="structunravel_1_1crash_1_1trace__info.html">trace_info</a>&amp; trace)</td></tr>
+<tr class="separator:a1eb19b326d12a0db2503125dfe7aef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3fe5b2580435a2bd56db5a13f3ebcfbc" id="r_a3fe5b2580435a2bd56db5a13f3ebcfbc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel_1_1crash.html#a3fe5b2580435a2bd56db5a13f3ebcfbc">unravel::crash::install_handlers</a> (const <a class="el" href="structunravel_1_1crash_1_1crash__handlers.html">crash_handlers</a> &amp;handlers) -&gt; void</td></tr>
-<tr class="memdesc:a3fe5b2580435a2bd56db5a13f3ebcfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install comprehensive crash handlers.  <br /></td></tr>
+<tr class="memdesc:a3fe5b2580435a2bd56db5a13f3ebcfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install crash handlers once for the process.  <br /></td></tr>
 <tr class="separator:a3fe5b2580435a2bd56db5a13f3ebcfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Cross-platform crash handlers (POSIX signals + Windows SEH) with crash-safe logging and optional minidumps. </p>
+
+<p class="definition">Definition in file <a class="el" href="crash_8hpp_source.html">crash.hpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

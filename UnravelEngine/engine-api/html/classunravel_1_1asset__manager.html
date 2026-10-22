@@ -97,6 +97,7 @@ $(function(){initNavTree('classunravel_1_1asset__manager.html',''); initResizabl
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classunravel_1_1asset__manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::asset_manager Class Reference</div></div>
@@ -108,55 +109,63 @@ $(function(){initNavTree('classunravel_1_1asset__manager.html',''); initResizabl
 
 <p><code>#include &lt;<a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af604f078a4d946a3fe9275cb3ef4b999" id="r_af604f078a4d946a3fe9275cb3ef4b999"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af604f078a4d946a3fe9275cb3ef4b999">database_filter</a> = std::function&lt;bool(const std::string&amp; <a class="el" href="mcp__tools__deploy_8cpp.html#ac16cbc544c32e6cc93292e5cfee6f9e5">location</a>)&gt;</td></tr>
+<tr class="memdesc:af604f078a4d946a3fe9275cb3ef4b999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides, by asset location, which database entries a saved copy keeps.  <br /></td></tr>
+<tr class="separator:af604f078a4d946a3fe9275cb3ef4b999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f7f43a4ba3e3804051d1647b04a7f70" id="r_a0f7f43a4ba3e3804051d1647b04a7f70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f7f43a4ba3e3804051d1647b04a7f70">asset_manager</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx)</td></tr>
+<tr class="memitem:a0f7f43a4ba3e3804051d1647b04a7f70" id="r_a0f7f43a4ba3e3804051d1647b04a7f70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f7f43a4ba3e3804051d1647b04a7f70">asset_manager</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>)</td></tr>
 <tr class="memdesc:a0f7f43a4ba3e3804051d1647b04a7f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an asset manager with the given context.  <br /></td></tr>
 <tr class="separator:a0f7f43a4ba3e3804051d1647b04a7f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cd0ecee8675481c771e56690f281638" id="r_a2cd0ecee8675481c771e56690f281638"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cd0ecee8675481c771e56690f281638">~asset_manager</a> ()</td></tr>
 <tr class="memdesc:a2cd0ecee8675481c771e56690f281638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs the asset manager.  <br /></td></tr>
 <tr class="separator:a2cd0ecee8675481c771e56690f281638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1ca2a673ad346068c46325280b09bb2" id="r_af1ca2a673ad346068c46325280b09bb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1ca2a673ad346068c46325280b09bb2">set_parent</a> (<a class="el" href="classunravel_1_1asset__manager.html">asset_manager</a> *parent)</td></tr>
+<tr class="memitem:af1ca2a673ad346068c46325280b09bb2" id="r_af1ca2a673ad346068c46325280b09bb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1ca2a673ad346068c46325280b09bb2">set_parent</a> (<a class="el" href="classunravel_1_1asset__manager.html">asset_manager</a> *<a class="el" href="mcp__tools__create_8cpp.html#ad4503be4473dd28e9ebea32ef9749384">parent</a>)</td></tr>
 <tr class="memdesc:af1ca2a673ad346068c46325280b09bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parent asset manager.  <br /></td></tr>
 <tr class="separator:af1ca2a673ad346068c46325280b09bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bf5d681c9fa1d921947942365002a13" id="r_a2bf5d681c9fa1d921947942365002a13"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bf5d681c9fa1d921947942365002a13">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a2bf5d681c9fa1d921947942365002a13" id="r_a2bf5d681c9fa1d921947942365002a13"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bf5d681c9fa1d921947942365002a13">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="memdesc:a2bf5d681c9fa1d921947942365002a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the asset manager with the given context.  <br /></td></tr>
 <tr class="separator:a2bf5d681c9fa1d921947942365002a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a17d9da40542136f15fce2af500b303" id="r_a6a17d9da40542136f15fce2af500b303"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a17d9da40542136f15fce2af500b303">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx) -&gt; bool</td></tr>
+<tr class="memitem:a6a17d9da40542136f15fce2af500b303" id="r_a6a17d9da40542136f15fce2af500b303"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a17d9da40542136f15fce2af500b303">deinit</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>) -&gt; bool</td></tr>
 <tr class="memdesc:a6a17d9da40542136f15fce2af500b303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes the asset manager with the given context.  <br /></td></tr>
 <tr class="separator:a6a17d9da40542136f15fce2af500b303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26bbf59815d9d6e03477f5013908be67" id="r_a26bbf59815d9d6e03477f5013908be67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26bbf59815d9d6e03477f5013908be67">unload_all</a> ()</td></tr>
 <tr class="memdesc:a26bbf59815d9d6e03477f5013908be67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads all assets.  <br /></td></tr>
 <tr class="separator:a26bbf59815d9d6e03477f5013908be67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecfba908fed80a84e055abd6c2c7e2ee" id="r_aecfba908fed80a84e055abd6c2c7e2ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecfba908fed80a84e055abd6c2c7e2ee">unload_group</a> (const std::string &amp;group)</td></tr>
+<tr class="memitem:aecfba908fed80a84e055abd6c2c7e2ee" id="r_aecfba908fed80a84e055abd6c2c7e2ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecfba908fed80a84e055abd6c2c7e2ee">unload_group</a> (const std::string &amp;<a class="el" href="mcp__tools__settings_8cpp.html#a594b9dbf859de02330b2b4fddf2dc7d6">group</a>)</td></tr>
 <tr class="memdesc:aecfba908fed80a84e055abd6c2c7e2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads all assets in a specified group.  <br /></td></tr>
 <tr class="separator:aecfba908fed80a84e055abd6c2c7e2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04a1d40f6abec202f5f8d649dd54b928" id="r_a04a1d40f6abec202f5f8d649dd54b928"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04a1d40f6abec202f5f8d649dd54b928">load_database</a> (const std::string &amp;protocol) -&gt; bool</td></tr>
+<tr class="memitem:a04a1d40f6abec202f5f8d649dd54b928" id="r_a04a1d40f6abec202f5f8d649dd54b928"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04a1d40f6abec202f5f8d649dd54b928">load_database</a> (const std::string &amp;<a class="el" href="pack_8cpp.html#ad08e873ce5aee68e809fb387a3bbbebb">protocol</a>) -&gt; bool</td></tr>
 <tr class="memdesc:a04a1d40f6abec202f5f8d649dd54b928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an asset database from a protocol.  <br /></td></tr>
 <tr class="separator:a04a1d40f6abec202f5f8d649dd54b928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c26cea9157ea12f797cb3b6f7e81bfc" id="r_a0c26cea9157ea12f797cb3b6f7e81bfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c26cea9157ea12f797cb3b6f7e81bfc">save_database</a> (const std::string &amp;protocol, const fs::path &amp;path)</td></tr>
-<tr class="memdesc:a0c26cea9157ea12f797cb3b6f7e81bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the asset database to a specified path.  <br /></td></tr>
-<tr class="separator:a0c26cea9157ea12f797cb3b6f7e81bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa55b5f9ef11cce2783aef9e88c736178" id="r_aa55b5f9ef11cce2783aef9e88c736178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa55b5f9ef11cce2783aef9e88c736178">remove_asset_info_for_path</a> (const fs::path &amp;path)</td></tr>
+<tr class="memitem:a9b2cc22128f0d8e68417266a85a42d2e" id="r_a9b2cc22128f0d8e68417266a85a42d2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b2cc22128f0d8e68417266a85a42d2e">save_database</a> (const std::string &amp;<a class="el" href="pack_8cpp.html#ad08e873ce5aee68e809fb387a3bbbebb">protocol</a>, const fs::path &amp;<a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>, const <a class="el" href="#af604f078a4d946a3fe9275cb3ef4b999">database_filter</a> &amp;<a class="el" href="mcp__tools__skills_8cpp.html#abc9df33d1e251ba74a94df072ea8b02d">include</a>={})</td></tr>
+<tr class="memdesc:a9b2cc22128f0d8e68417266a85a42d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the asset database to a specified path.  <br /></td></tr>
+<tr class="separator:a9b2cc22128f0d8e68417266a85a42d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55b5f9ef11cce2783aef9e88c736178" id="r_aa55b5f9ef11cce2783aef9e88c736178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa55b5f9ef11cce2783aef9e88c736178">remove_asset_info_for_path</a> (const fs::path &amp;<a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>)</td></tr>
 <tr class="memdesc:aa55b5f9ef11cce2783aef9e88c736178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes asset information for a specified path.  <br /></td></tr>
 <tr class="separator:aa55b5f9ef11cce2783aef9e88c736178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76873ca7266821868cbe6a64e31cabd5" id="r_a76873ca7266821868cbe6a64e31cabd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76873ca7266821868cbe6a64e31cabd5">remove_asset_info_for_key</a> (const std::string &amp;key)</td></tr>
+<tr class="memitem:a23bed13920aeaa976ce39f9df14364bd" id="r_a23bed13920aeaa976ce39f9df14364bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23bed13920aeaa976ce39f9df14364bd">rename_asset_info_for_path</a> (const fs::path &amp;<a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>, const fs::path &amp;new_path)</td></tr>
+<tr class="separator:a23bed13920aeaa976ce39f9df14364bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76873ca7266821868cbe6a64e31cabd5" id="r_a76873ca7266821868cbe6a64e31cabd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76873ca7266821868cbe6a64e31cabd5">remove_asset_info_for_key</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>)</td></tr>
 <tr class="memdesc:a76873ca7266821868cbe6a64e31cabd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes asset information for a specified key.  <br /></td></tr>
 <tr class="separator:a76873ca7266821868cbe6a64e31cabd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1f34690ce97491d15c7e3ad45a0f43a" id="r_ae1f34690ce97491d15c7e3ad45a0f43a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1f34690ce97491d15c7e3ad45a0f43a">register_asset_info_for_path</a> (const fs::path &amp;path, bool override)</td></tr>
+<tr class="memitem:ae1f34690ce97491d15c7e3ad45a0f43a" id="r_ae1f34690ce97491d15c7e3ad45a0f43a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1f34690ce97491d15c7e3ad45a0f43a">register_asset_info_for_path</a> (const fs::path &amp;<a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>, bool override)</td></tr>
 <tr class="separator:ae1f34690ce97491d15c7e3ad45a0f43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa559c566d4897b233ee8d90e6dc4c931" id="r_aa559c566d4897b233ee8d90e6dc4c931"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa559c566d4897b233ee8d90e6dc4c931">add_asset_info_for_path</a> (const fs::path &amp;path, const <a class="el" href="structunravel_1_1asset__meta.html">asset_meta</a> &amp;meta, bool override) -&gt; hpp::uuid</td></tr>
+<tr class="memitem:aa559c566d4897b233ee8d90e6dc4c931" id="r_aa559c566d4897b233ee8d90e6dc4c931"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa559c566d4897b233ee8d90e6dc4c931">add_asset_info_for_path</a> (const fs::path &amp;<a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>, const <a class="el" href="structunravel_1_1asset__meta.html">asset_meta</a> &amp;meta, bool override) -&gt; hpp::uuid</td></tr>
 <tr class="memdesc:aa559c566d4897b233ee8d90e6dc4c931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds asset information for a specified path.  <br /></td></tr>
 <tr class="separator:aa559c566d4897b233ee8d90e6dc4c931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9355299df25bc9144842e48fa59a9907" id="r_a9355299df25bc9144842e48fa59a9907"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9355299df25bc9144842e48fa59a9907">add_asset_info_for_key</a> (const std::string &amp;key, const <a class="el" href="structunravel_1_1asset__meta.html">asset_meta</a> &amp;meta, bool override) -&gt; hpp::uuid</td></tr>
+<tr class="memitem:a9355299df25bc9144842e48fa59a9907" id="r_a9355299df25bc9144842e48fa59a9907"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9355299df25bc9144842e48fa59a9907">add_asset_info_for_key</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, const <a class="el" href="structunravel_1_1asset__meta.html">asset_meta</a> &amp;meta, bool override) -&gt; hpp::uuid</td></tr>
 <tr class="memdesc:a9355299df25bc9144842e48fa59a9907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds asset information for a specified key.  <br /></td></tr>
 <tr class="separator:a9355299df25bc9144842e48fa59a9907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50c7f0b87877d95dfea02fcf07241552" id="r_a50c7f0b87877d95dfea02fcf07241552"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50c7f0b87877d95dfea02fcf07241552">get_metadata</a> (const hpp::uuid &amp;uid) const -&gt; <a class="el" href="structunravel_1_1asset__database_1_1meta.html">asset_database::meta</a></td></tr>
 <tr class="memdesc:a50c7f0b87877d95dfea02fcf07241552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets metadata for a resource uid.  <br /></td></tr>
 <tr class="separator:a50c7f0b87877d95dfea02fcf07241552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2078ac425d44e30aa9a4fa43c5154255" id="r_a2078ac425d44e30aa9a4fa43c5154255"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2078ac425d44e30aa9a4fa43c5154255">get_metadata_for_path</a> (const fs::path &amp;path) const -&gt; <a class="el" href="structunravel_1_1asset__database_1_1meta.html">asset_database::meta</a></td></tr>
+<tr class="memitem:a2078ac425d44e30aa9a4fa43c5154255" id="r_a2078ac425d44e30aa9a4fa43c5154255"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2078ac425d44e30aa9a4fa43c5154255">get_metadata_for_path</a> (const fs::path &amp;<a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>) const -&gt; <a class="el" href="structunravel_1_1asset__database_1_1meta.html">asset_database::meta</a></td></tr>
 <tr class="separator:a2078ac425d44e30aa9a4fa43c5154255"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a8c0b2d463f3e3fd142a2e4870c7dba" id="r_a7a8c0b2d463f3e3fd142a2e4870c7dba"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a8c0b2d463f3e3fd142a2e4870c7dba">get_metadata_for_key</a> (const std::string &amp;key) const -&gt; <a class="el" href="structunravel_1_1asset__database_1_1meta.html">asset_database::meta</a></td></tr>
+<tr class="memitem:a7a8c0b2d463f3e3fd142a2e4870c7dba" id="r_a7a8c0b2d463f3e3fd142a2e4870c7dba"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a8c0b2d463f3e3fd142a2e4870c7dba">get_metadata_for_key</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>) const -&gt; <a class="el" href="structunravel_1_1asset__database_1_1meta.html">asset_database::meta</a></td></tr>
 <tr class="separator:a7a8c0b2d463f3e3fd142a2e4870c7dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1088e66c5f3e9ff1ee930f06762e954c" id="r_a1088e66c5f3e9ff1ee930f06762e954c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1088e66c5f3e9ff1ee930f06762e954c">generate_metadata</a> (const fs::path &amp;p) const -&gt; <a class="el" href="structunravel_1_1asset__meta.html">asset_meta</a></td></tr>
 <tr class="separator:a1088e66c5f3e9ff1ee930f06762e954c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,15 +178,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6a44ec3818951c3ffca3dd5ea456918e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a storage for a specific type.  <br /></td></tr>
 <tr class="separator:a6a44ec3818951c3ffca3dd5ea456918e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a0116e201611bf3f7500398f0c61397" id="r_a7a0116e201611bf3f7500398f0c61397"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7a0116e201611bf3f7500398f0c61397"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7a0116e201611bf3f7500398f0c61397">get_asset</a> (const std::string &amp;key, <a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395">load_flags</a> flags=<a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395ac00f0c4675b91fb8b918e4079a0b1bac">load_flags::standard</a>, <a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8c">load_mode</a> mode=<a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8ca516ff1e73f558b0ae701ae4561a63e2c">load_mode::immediate</a>) -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt;</td></tr>
+<tr class="memitem:a7a0116e201611bf3f7500398f0c61397"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7a0116e201611bf3f7500398f0c61397">get_asset</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, <a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395">load_flags</a> <a class="el" href="renderer_8cpp.html#a773b39d480759f67926cb18ae2219281">flags</a>=<a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395ac00f0c4675b91fb8b918e4079a0b1bac">load_flags::standard</a>, <a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8c">load_mode</a> mode=<a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8ca516ff1e73f558b0ae701ae4561a63e2c">load_mode::immediate</a>) -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt;</td></tr>
 <tr class="memdesc:a7a0116e201611bf3f7500398f0c61397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an asset by its key.  <br /></td></tr>
 <tr class="separator:a7a0116e201611bf3f7500398f0c61397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74073c9cda6d7579213aed544d428f9b" id="r_a74073c9cda6d7579213aed544d428f9b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a74073c9cda6d7579213aed544d428f9b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a74073c9cda6d7579213aed544d428f9b">get_asset</a> (const hpp::uuid &amp;uid, <a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395">load_flags</a> flags=<a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395ac00f0c4675b91fb8b918e4079a0b1bac">load_flags::standard</a>, <a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8c">load_mode</a> mode=<a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8ca516ff1e73f558b0ae701ae4561a63e2c">load_mode::immediate</a>) -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt;</td></tr>
+<tr class="memitem:a74073c9cda6d7579213aed544d428f9b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a74073c9cda6d7579213aed544d428f9b">get_asset</a> (const hpp::uuid &amp;uid, <a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395">load_flags</a> <a class="el" href="renderer_8cpp.html#a773b39d480759f67926cb18ae2219281">flags</a>=<a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395ac00f0c4675b91fb8b918e4079a0b1bac">load_flags::standard</a>, <a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8c">load_mode</a> mode=<a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8ca516ff1e73f558b0ae701ae4561a63e2c">load_mode::immediate</a>) -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt;</td></tr>
 <tr class="memdesc:a74073c9cda6d7579213aed544d428f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an asset by its UUID.  <br /></td></tr>
 <tr class="separator:a74073c9cda6d7579213aed544d428f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e191207d409493ae7cd015b7b75a7c" id="r_a30e191207d409493ae7cd015b7b75a7c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a30e191207d409493ae7cd015b7b75a7c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a30e191207d409493ae7cd015b7b75a7c">try_get_asset</a> (const hpp::uuid &amp;uid, <a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395">load_flags</a> <a class="el" href="renderer_8cpp.html#a773b39d480759f67926cb18ae2219281">flags</a>=<a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395ac00f0c4675b91fb8b918e4079a0b1bac">load_flags::standard</a>, <a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8c">load_mode</a> mode=<a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8ca516ff1e73f558b0ae701ae4561a63e2c">load_mode::immediate</a>) -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt;</td></tr>
+<tr class="memdesc:a30e191207d409493ae7cd015b7b75a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an asset by its UUID, or an empty handle when it cannot be resolved.  <br /></td></tr>
+<tr class="separator:a30e191207d409493ae7cd015b7b75a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19600d5c1b78f1f4c0628c5020dcc247" id="r_a19600d5c1b78f1f4c0628c5020dcc247"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a19600d5c1b78f1f4c0628c5020dcc247"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a19600d5c1b78f1f4c0628c5020dcc247">register_asset</a> (const std::string &amp;key) -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt;</td></tr>
+<tr class="memitem:a19600d5c1b78f1f4c0628c5020dcc247"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a19600d5c1b78f1f4c0628c5020dcc247">register_asset</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>) -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt;</td></tr>
 <tr class="memdesc:a19600d5c1b78f1f4c0628c5020dcc247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an asset by key without loading it. The actual load is triggered on the first handle.get() call.  <br /></td></tr>
 <tr class="separator:a19600d5c1b78f1f4c0628c5020dcc247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a195b91c979bc8ca62b045aee9919e9f9" id="r_a195b91c979bc8ca62b045aee9919e9f9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -192,23 +205,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0bb28740b47be1341c87926d5013a94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers loading on all deferred handles across every registered storage. Non-blocking: starts background loads but does not wait. Useful for game runtime preloading after scene deserialization.  <br /></td></tr>
 <tr class="separator:a0bb28740b47be1341c87926d5013a94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacfdfd6f904c342f3609a3a8cddde23e" id="r_aacfdfd6f904c342f3609a3a8cddde23e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aacfdfd6f904c342f3609a3a8cddde23e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aacfdfd6f904c342f3609a3a8cddde23e">find_asset</a> (const std::string &amp;key) const -&gt; const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &amp;</td></tr>
+<tr class="memitem:aacfdfd6f904c342f3609a3a8cddde23e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aacfdfd6f904c342f3609a3a8cddde23e">find_asset</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>) const -&gt; const <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &amp;</td></tr>
 <tr class="memdesc:aacfdfd6f904c342f3609a3a8cddde23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an asset by its key.  <br /></td></tr>
 <tr class="separator:aacfdfd6f904c342f3609a3a8cddde23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af50bdc2fdc184b2cc8a69c10e32c0103" id="r_af50bdc2fdc184b2cc8a69c10e32c0103"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af50bdc2fdc184b2cc8a69c10e32c0103"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af50bdc2fdc184b2cc8a69c10e32c0103">get_asset_from_instance</a> (const std::string &amp;key, std::shared_ptr&lt; T &gt; entry) -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt;</td></tr>
+<tr class="memitem:af50bdc2fdc184b2cc8a69c10e32c0103"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af50bdc2fdc184b2cc8a69c10e32c0103">get_asset_from_instance</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, std::shared_ptr&lt; T &gt; entry) -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt;</td></tr>
 <tr class="memdesc:af50bdc2fdc184b2cc8a69c10e32c0103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an asset handle from an instance.  <br /></td></tr>
 <tr class="separator:af50bdc2fdc184b2cc8a69c10e32c0103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab08e4e65e896882e3729bcb84e912c21" id="r_ab08e4e65e896882e3729bcb84e912c21"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab08e4e65e896882e3729bcb84e912c21"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab08e4e65e896882e3729bcb84e912c21">rename_asset</a> (const std::string &amp;key, const std::string &amp;new_key)</td></tr>
+<tr class="memitem:ab08e4e65e896882e3729bcb84e912c21"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab08e4e65e896882e3729bcb84e912c21">rename_asset</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, const std::string &amp;<a class="el" href="inspector__associative_8cpp.html#a20a52cde2ae501a47bef4bf96010f36f">new_key</a>)</td></tr>
 <tr class="memdesc:ab08e4e65e896882e3729bcb84e912c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames an asset.  <br /></td></tr>
 <tr class="separator:ab08e4e65e896882e3729bcb84e912c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c0abf7607ac92218d9e9a32f661dae7" id="r_a3c0abf7607ac92218d9e9a32f661dae7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3c0abf7607ac92218d9e9a32f661dae7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3c0abf7607ac92218d9e9a32f661dae7">unload_asset</a> (const std::string &amp;key)</td></tr>
+<tr class="memitem:a3c0abf7607ac92218d9e9a32f661dae7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3c0abf7607ac92218d9e9a32f661dae7">unload_asset</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>)</td></tr>
 <tr class="memdesc:a3c0abf7607ac92218d9e9a32f661dae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads an asset by its key.  <br /></td></tr>
 <tr class="separator:a3c0abf7607ac92218d9e9a32f661dae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ed25adc3881ff38420ade8e9c43731a" id="r_a6ed25adc3881ff38420ade8e9c43731a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6ed25adc3881ff38420ade8e9c43731a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6ed25adc3881ff38420ade8e9c43731a">get_assets</a> (const std::string &amp;group={}) const -&gt; std::vector&lt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &gt;</td></tr>
+<tr class="memitem:a6ed25adc3881ff38420ade8e9c43731a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6ed25adc3881ff38420ade8e9c43731a">get_assets</a> (const std::string &amp;<a class="el" href="mcp__tools__settings_8cpp.html#a594b9dbf859de02330b2b4fddf2dc7d6">group</a>={}) const -&gt; std::vector&lt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt; T &gt; &gt;</td></tr>
 <tr class="memdesc:a6ed25adc3881ff38420ade8e9c43731a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all assets in a specified group.  <br /></td></tr>
 <tr class="separator:a6ed25adc3881ff38420ade8e9c43731a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60a1e4936adae1a14c54e362c32b9614" id="r_a60a1e4936adae1a14c54e362c32b9614"><td class="memTemplParams" colspan="2">template&lt;typename T , typename F &gt; </td></tr>
@@ -219,24 +232,46 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a44959710149cc34a677611ee24748122"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a44959710149cc34a677611ee24748122">for_each_asset</a> (F &amp;&amp;callback)</td></tr>
 <tr class="memdesc:a44959710149cc34a677611ee24748122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a callback function to each asset.  <br /></td></tr>
 <tr class="separator:a44959710149cc34a677611ee24748122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c65c8ac7cdf3bd4f9bcc579ac1f6c8" id="r_a17c65c8ac7cdf3bd4f9bcc579ac1f6c8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17c65c8ac7cdf3bd4f9bcc579ac1f6c8">get_all_assets</a> (const std::string &amp;group) const -&gt; std::vector&lt; std::string &gt;</td></tr>
+<tr class="memitem:a17c65c8ac7cdf3bd4f9bcc579ac1f6c8" id="r_a17c65c8ac7cdf3bd4f9bcc579ac1f6c8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17c65c8ac7cdf3bd4f9bcc579ac1f6c8">get_all_assets</a> (const std::string &amp;<a class="el" href="mcp__tools__settings_8cpp.html#a594b9dbf859de02330b2b4fddf2dc7d6">group</a>) const -&gt; std::vector&lt; std::string &gt;</td></tr>
 <tr class="memdesc:a17c65c8ac7cdf3bd4f9bcc579ac1f6c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all assets.  <br /></td></tr>
 <tr class="separator:a17c65c8ac7cdf3bd4f9bcc579ac1f6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21a48f9560f6553f72b6d21225a6b134" id="r_a21a48f9560f6553f72b6d21225a6b134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21a48f9560f6553f72b6d21225a6b134">evict_unused_assets</a> (const std::string &amp;group, std::chrono::steady_clock::duration max_idle)</td></tr>
+<tr class="memitem:af27997b52a548ea5703c8a3784de5358" id="r_af27997b52a548ea5703c8a3784de5358"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af27997b52a548ea5703c8a3784de5358">get_database_snapshot</a> (const std::string &amp;<a class="el" href="mcp__tools__settings_8cpp.html#a594b9dbf859de02330b2b4fddf2dc7d6">group</a>) const -&gt; <a class="el" href="classunravel_1_1asset__database.html#acc9227778018819442f061fccafe404e">asset_database::database_t</a></td></tr>
+<tr class="memdesc:af27997b52a548ea5703c8a3784de5358"><td class="mdescLeft">&#160;</td><td class="mdescRight">A copy of a protocol's asset database (uid to location and metadata), for walks that look many assets up and must not hold the database lock meanwhile.  <br /></td></tr>
+<tr class="separator:af27997b52a548ea5703c8a3784de5358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a48f9560f6553f72b6d21225a6b134" id="r_a21a48f9560f6553f72b6d21225a6b134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21a48f9560f6553f72b6d21225a6b134">evict_unused_assets</a> (const std::string &amp;<a class="el" href="mcp__tools__settings_8cpp.html#a594b9dbf859de02330b2b4fddf2dc7d6">group</a>, std::chrono::steady_clock::duration max_idle)</td></tr>
 <tr class="memdesc:a21a48f9560f6553f72b6d21225a6b134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evicts full-loaded assets not accessed within the given duration. Demotes them back to deferred state so they can be re-loaded on next access.  <br /></td></tr>
 <tr class="separator:a21a48f9560f6553f72b6d21225a6b134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e03d0a9195ea490ec9c943810d84c23" id="r_a4e03d0a9195ea490ec9c943810d84c23"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e03d0a9195ea490ec9c943810d84c23">add_asset</a> (const std::string &amp;key, bool override=false) -&gt; hpp::uuid</td></tr>
+<tr class="memitem:a4e03d0a9195ea490ec9c943810d84c23" id="r_a4e03d0a9195ea490ec9c943810d84c23"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e03d0a9195ea490ec9c943810d84c23">add_asset</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>, bool override=false) -&gt; hpp::uuid</td></tr>
 <tr class="memdesc:a4e03d0a9195ea490ec9c943810d84c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an asset with a specified key.  <br /></td></tr>
 <tr class="separator:a4e03d0a9195ea490ec9c943810d84c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab960bec351afce3da241b11a82a198bb" id="r_ab960bec351afce3da241b11a82a198bb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab960bec351afce3da241b11a82a198bb">add_asset_for_path</a> (const fs::path &amp;path, bool override=false) -&gt; hpp::uuid</td></tr>
+<tr class="memitem:ab960bec351afce3da241b11a82a198bb" id="r_ab960bec351afce3da241b11a82a198bb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab960bec351afce3da241b11a82a198bb">add_asset_for_path</a> (const fs::path &amp;<a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>, bool override=false) -&gt; hpp::uuid</td></tr>
 <tr class="memdesc:ab960bec351afce3da241b11a82a198bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an asset with a specified path.  <br /></td></tr>
 <tr class="separator:ab960bec351afce3da241b11a82a198bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages assets, including loading, unloading, and storage. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00018">18</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00020">20</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="af604f078a4d946a3fe9275cb3ef4b999" name="af604f078a4d946a3fe9275cb3ef4b999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af604f078a4d946a3fe9275cb3ef4b999">&#9670;&#160;</a></span>database_filter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#af604f078a4d946a3fe9275cb3ef4b999">unravel::asset_manager::database_filter</a> = std::function&lt;bool(const std::string&amp; <a class="el" href="mcp__tools__deploy_8cpp.html#ac16cbc544c32e6cc93292e5cfee6f9e5">location</a>)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decides, by asset location, which database entries a saved copy keeps. </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00073">73</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0f7f43a4ba3e3804051d1647b04a7f70" name="a0f7f43a4ba3e3804051d1647b04a7f70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f7f43a4ba3e3804051d1647b04a7f70">&#9670;&#160;</a></span>asset_manager()</h2>
 
@@ -260,7 +295,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00024">24</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00025">25</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -320,7 +355,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The UUID of the added asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00210">210</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00239">239</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -353,7 +388,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The UUID of the added asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00216">216</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00245">245</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -391,7 +426,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The UUID of the added asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00228">228</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00257">257</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -429,7 +464,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The UUID of the added asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00222">222</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00251">251</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -475,7 +510,7 @@ template&lt;typename S , typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the added storage. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00142">142</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00153">153</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -503,7 +538,7 @@ template&lt;typename S , typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if deinitialization was successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00121">121</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00127">127</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -535,7 +570,7 @@ template&lt;typename S , typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00304">304</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00341">341</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -580,7 +615,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A constant reference to the handle of the asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00264">264</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00337">337</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -624,7 +659,7 @@ template&lt;typename T , typename F &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00380">380</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00468">468</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +678,7 @@ template&lt;typename T , typename F &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00272">272</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00301">301</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -665,7 +700,7 @@ template&lt;typename T , typename F &gt; </div>
 <p>Gets all assets. </p>
 <dl class="section return"><dt>Returns</dt><dd>A vector of handles to the assets. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00159">159</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00165">165</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -715,13 +750,13 @@ template&lt;typename T &gt; </div>
   <table class="params">
     <tr><td class="paramname">uid</td><td>The UUID of the asset. </td></tr>
     <tr><td class="paramname">flags</td><td>The load flags for the asset. </td></tr>
-    <tr><td class="paramname">mode</td><td>Whether to load immediately or defer until first get(). </td></tr>
+    <tr><td class="paramname">mode</td><td>Whether to load immediately or defer until first <a class="el" href="mcp__tools__settings_8cpp.html#a46a9999d5a3a30b1167997d60a4ca7d6">get()</a>. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00181">181</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00204">204</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -771,13 +806,13 @@ template&lt;typename T &gt; </div>
   <table class="params">
     <tr><td class="paramname">key</td><td>The key of the asset. </td></tr>
     <tr><td class="paramname">flags</td><td>The load flags for the asset. </td></tr>
-    <tr><td class="paramname">mode</td><td>Whether to load immediately or defer until first get(). </td></tr>
+    <tr><td class="paramname">mode</td><td>Whether to load immediately or defer until first <a class="el" href="mcp__tools__settings_8cpp.html#a46a9999d5a3a30b1167997d60a4ca7d6">get()</a>. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00159">159</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00170">170</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +862,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00278">278</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00356">356</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -872,7 +907,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of handles to the assets. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00345">345</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00433">433</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -918,7 +953,34 @@ template&lt;typename T , typename F &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of handles to the assets that satisfy the predicate. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00367">367</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00455">455</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+
+</div>
+</div>
+<a id="af27997b52a548ea5703c8a3784de5358" name="af27997b52a548ea5703c8a3784de5358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27997b52a548ea5703c8a3784de5358">&#9670;&#160;</a></span>get_database_snapshot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::asset_manager::get_database_snapshot </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>group</em></span></td><td>)</td>
+          <td> const -&gt; <a class="el" href="classunravel_1_1asset__database.html#acc9227778018819442f061fccafe404e">asset_database::database_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A copy of a protocol's asset database (uid to location and metadata), for walks that look many assets up and must not hold the database lock meanwhile. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>A path of the protocol, such as "app:/". </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00186">186</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -963,7 +1025,7 @@ template&lt;typename HeaderT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Shared pointer to the header, or nullptr if not available. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00124">124</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00135">135</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -991,7 +1053,7 @@ template&lt;typename HeaderT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Meta object containing information. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00235">235</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00264">264</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1072,7 @@ template&lt;typename HeaderT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00256">256</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00285">285</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1091,7 @@ template&lt;typename HeaderT &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00250">250</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00279">279</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1057,7 +1119,7 @@ template&lt;typename HeaderT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if initialization was successful, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00035">35</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00036">36</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1085,7 +1147,7 @@ template&lt;typename HeaderT &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the database was loaded successfully, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00194">194</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00208">208</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1106,7 +1168,7 @@ template&lt;typename HeaderT &gt; </div>
 
 <p>Triggers loading on all deferred handles across every registered storage. Non-blocking: starts background loads but does not wait. Useful for game runtime preloading after scene deserialization. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00312">312</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00349">349</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1143,7 +1205,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00244">244</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00317">317</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1188,7 +1250,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A deferred handle to the asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00224">224</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00297">297</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1295,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A deferred handle to the asset. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00207">207</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00270">270</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1281,7 +1343,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00297">297</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00334">334</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1308,7 +1370,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00291">291</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00320">320</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1356,12 +1418,36 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00295">295</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00374">374</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
-<a id="a0c26cea9157ea12f797cb3b6f7e81bfc" name="a0c26cea9157ea12f797cb3b6f7e81bfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c26cea9157ea12f797cb3b6f7e81bfc">&#9670;&#160;</a></span>save_database()</h2>
+<a id="a23bed13920aeaa976ce39f9df14364bd" name="a23bed13920aeaa976ce39f9df14364bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23bed13920aeaa976ce39f9df14364bd">&#9670;&#160;</a></span>rename_asset_info_for_path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::asset_manager::rename_asset_info_for_path </td>
+          <td>(</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>new_path</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Moves the database entry of the asset at <code>path</code> to <code>new_path</code>, keeping its id: what a rename of the source file means, whether or not its compiled asset could move along. </p>
+
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00326">326</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9b2cc22128f0d8e68417266a85a42d2e" name="a9b2cc22128f0d8e68417266a85a42d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b2cc22128f0d8e68417266a85a42d2e">&#9670;&#160;</a></span>save_database()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1374,7 +1460,12 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
+          <td class="paramtype">const fs::path &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#af604f078a4d946a3fe9275cb3ef4b999">database_filter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>include</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1384,11 +1475,12 @@ template&lt;typename T &gt; </div>
   <table class="params">
     <tr><td class="paramname">protocol</td><td>The protocol to use for saving. </td></tr>
     <tr><td class="paramname">path</td><td>The path to save the database to. </td></tr>
+    <tr><td class="paramname">include</td><td>Keeps the entries it accepts; empty keeps every entry. The database itself is not changed. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00203">203</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00217">217</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1415,7 +1507,63 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00030">30</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00031">31</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a30e191207d409493ae7cd015b7b75a7c" name="a30e191207d409493ae7cd015b7b75a7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30e191207d409493ae7cd015b7b75a7c">&#9670;&#160;</a></span>try_get_asset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::asset_manager::try_get_asset </td>
+          <td>(</td>
+          <td class="paramtype">const hpp::uuid &amp;</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395">load_flags</a></td>          <td class="paramname"><span class="paramname"><em>flags</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespaceunravel.html#ad3e90185b60ce28b555b78ab139bb395ac00f0c4675b91fb8b918e4079a0b1bac">load_flags::standard</a></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8c">load_mode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespaceunravel.html#ad186cf793d83ef7a522d54cd36f18e8ca516ff1e73f558b0ae701ae4561a63e2c">load_mode::immediate</a></span>&#160;) -&gt; <a class="el" href="structasset__handle.html">asset_handle</a>&lt;T&gt;
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets an asset by its UUID, or an empty handle when it cannot be resolved. </p>
+<p>Unlike <a class="el" href="#a7a0116e201611bf3f7500398f0c61397">get_asset</a> this tolerates a manager that is not initialized yet: the per-type storages are registered in <a class="el" href="#a2bf5d681c9fa1d921947942365002a13">init</a>, and the context holds the manager from <a class="el" href="structunravel_1_1engine.html#a83c3c534c6faaf071fa390d8a2caafb7">engine::create</a> onwards, so anything running in between - deserializing an asset handle out of the project settings peeked for cold boot, for instance - would otherwise ask for a storage that does not exist. A nil uid is answered the same way. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the asset. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>The UUID of the asset. </td></tr>
+    <tr><td class="paramname">flags</td><td>The load flags for the asset. </td></tr>
+    <tr><td class="paramname">mode</td><td>Whether to load immediately or defer until first <a class="el" href="mcp__tools__settings_8cpp.html#a46a9999d5a3a30b1167997d60a4ca7d6">get()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The handle to the asset, or an empty handle. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00251">251</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1436,7 +1584,7 @@ template&lt;typename T &gt; </div>
 
 <p>Unloads all assets. </p>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00132">132</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00138">138</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -1479,7 +1627,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00327">327</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8h_source.html#l00415">415</a> of file <a class="el" href="asset__manager_8h_source.html">asset_manager.h</a>.</p>
 
 </div>
 </div>
@@ -1506,7 +1654,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00146">146</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="asset__manager_8cpp_source.html#l00152">152</a> of file <a class="el" href="asset__manager_8cpp_source.html">asset_manager.cpp</a>.</p>
 
 </div>
 </div>

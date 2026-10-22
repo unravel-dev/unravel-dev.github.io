@@ -1,7 +1,6 @@
 var format_8h =
 [
     [ "gfx::format_details", "structgfx_1_1format__details.html", "structgfx_1_1format__details" ],
-    [ "texture_format", "format_8h.html#a41c939b88cfa449146b653d53896354b", null ],
     [ "e", "format_8h.html#a4006da86f52de2fc747bc825bcba9bdb", [
       [ "one_channel", "format_8h.html#a4006da86f52de2fc747bc825bcba9bdba0c4ba336b03d48b7610c96bbcf704d08", null ],
       [ "two_channels", "format_8h.html#a4006da86f52de2fc747bc825bcba9bdbaf19fcdd9f847a6d76c05ffcc090893a1", null ],
@@ -15,11 +14,11 @@ var format_8h =
       [ "full_precision_float", "format_8h.html#a4006da86f52de2fc747bc825bcba9bdbaa02cf70d40795bdaa4f883481351d25f", null ],
       [ "floating_point", "format_8h.html#a4006da86f52de2fc747bc825bcba9bdba673efef86e9c797e19fe1cb4f5ccbc51", null ]
     ] ],
-    [ "get_best_format", "format_8h.html#afe9afccdc4ef2f8724868884ad854026", null ],
+    [ "get_best_format", "format_8h.html#a0f254c674f2cefd6dd4196974ea6b09e", null ],
     [ "get_default_rt_sampler_flags", "format_8h.html#ae8330a94e2c62a8b9babf721a6c9ce33", null ],
-    [ "get_format_info", "format_8h.html#aa16a1da14080444e8672655b4842b16c", null ],
-    [ "is_compressed_format", "format_8h.html#a371b51ba1d0d3fb321f15edfc82c6837", null ],
-    [ "is_format_supported", "format_8h.html#ab64d026d10e0bef20c4ef960d56e654c", null ],
-    [ "normal_map_needs_z_reconstruction", "format_8h.html#a4f12a12a5ed33a52348f5c8eea4b0357", null ],
-    [ "to_string", "format_8h.html#a00f91f24de230ac751049d180838ae87", null ]
+    [ "get_format_info", "format_8h.html#ac4327e7a4d91542ff9169d24ab156ce7", null ],
+    [ "is_compressed_format", "format_8h.html#ac29ecedf42dc21bd662d55acd00786d2", null ],
+    [ "is_format_supported", "format_8h.html#aac5887ce9e9ccd57bcaf67621b3fd167", null ],
+    [ "normal_map_needs_z_reconstruction", "format_8h.html#ad93ec2ee915d32f03e644f4730096fac", null ],
+    [ "to_string", "format_8h.html#a4d5e34d13b1db9b56fe9cc3b04f2f717", null ]
 ];

@@ -108,11 +108,11 @@ $(function(){initNavTree('editor__actions_8h.html',''); initResizable(true); });
 <code>#include &lt;<a class="el" href="defaults_8h_source.html">engine/defaults/defaults.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="prefab_8h_source.html">engine/ecs/prefab.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="threader_8h_source.html">engine/threading/threader.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="deploy_8h_source.html">editor/deploy/deploy.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
@@ -127,7 +127,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1log__query__entry.html">unravel::log_query_entry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1import__files__item.html">unravel::import_files_item</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One async content-browser-style import job (external path -&gt; project folder).  <a href="structunravel_1_1import__files__item.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One content-browser-style import entry (external path -&gt; project folder).  <a href="structunravel_1_1import__files__item.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1import__files__result.html">unravel::import_files_result</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Batch import result: resolved items plus one future for the whole copy job.  <a href="structunravel_1_1import__files__result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1editor__actions.html">unravel::editor_actions</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

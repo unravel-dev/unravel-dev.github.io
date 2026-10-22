@@ -4,6 +4,7 @@ var asset__reader_8h =
     [ "compiled_extension", "asset__reader_8h.html#a959f5da69994a5cdf56aa8a87d021ee0", null ],
     [ "compiled_extension< gfx::shader >", "asset__reader_8h.html#ae2db43a112122afab02acb9c41ed1790", null ],
     [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#afcc8130593182b2c2610078cf163fda8", null ],
+    [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#a54ff239d8a88eab13efff014cb76de3c", null ],
     [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#ab3ec603158b8badd90fbceb11cae31d9", null ],
     [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#ad9436160a7e2380fdad1c40730f6ff1d", null ],
     [ "DECLARE_LOADER_SPEC", "asset__reader_8h.html#aae3e880b9a3b03d93b5f3dcf207fea66", null ],

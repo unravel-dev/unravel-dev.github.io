@@ -119,7 +119,8 @@ Enum ProbeUpdateMode  <a class="header-action link-secondary" title="View source
   <dl class="parameters">
     <dt id="Unravel_Core_ProbeUpdateMode_OnDemand"><code>OnDemand = 0</code></dt>
   
-  <dd><p>Refresh only when <a class="xref" href="Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_MarkDirty_System_Boolean_">MarkDirty(bool)</a> is called.</p>
+  <dd><p>Bake once on load, then refresh only when <a class="xref" href="Unravel.Core.ReflectionProbeComponent.html#Unravel_Core_ReflectionProbeComponent_MarkDirty_System_Boolean_">MarkDirty(bool)</a> is called.
+In play mode reactivating the entity does not rebake: the probe adds no reflections until marked dirty.</p>
 </dd>
     <dt id="Unravel_Core_ProbeUpdateMode_Once"><code>Once = 1</code></dt>
   

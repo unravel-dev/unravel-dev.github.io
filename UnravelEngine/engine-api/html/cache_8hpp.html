@@ -107,7 +107,7 @@ $(function(){initNavTree('cache_8hpp.html',''); initResizable(true); });
 <div class="textblock"><code>#include &quot;<a class="el" href="watcher_8h_source.html">watcher.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pattern__filter_8h_source.html">pattern_filter.h</a>&quot;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;filesystem&gt;</code><br />
+<code>#include &lt;hpp/filesystem.hpp&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
@@ -135,7 +135,7 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9b8c338b7375a0c1e3833f996db04fcf" id="r_a9b8c338b7375a0c1e3833f996db04fcf"><td class="memTemplParams" colspan="2">template&lt;typename Iterator  = recursive_directory_iterator&gt; </td></tr>
-<tr class="memitem:a9b8c338b7375a0c1e3833f996db04fcf"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefs.html#a9b8c338b7375a0c1e3833f996db04fcf">fs::make_filtered_cache</a> (const fs::path &amp;path, const std::vector&lt; std::string &gt; &amp;includes, const std::vector&lt; std::string &gt; &amp;excludes={}, std::chrono::steady_clock::duration scan_frequency=std::chrono::milliseconds(500)) -&gt; <a class="el" href="classfs_1_1cache.html">cache</a>&lt; Iterator &gt;</td></tr>
+<tr class="memitem:a9b8c338b7375a0c1e3833f996db04fcf"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefs.html#a9b8c338b7375a0c1e3833f996db04fcf">fs::make_filtered_cache</a> (const fs::path &amp;<a class="el" href="mesh__import__dependencies_8cpp.html#acf59817b7053ce33c8d96406e1ca31b7">path</a>, const std::vector&lt; std::string &gt; &amp;includes, const std::vector&lt; std::string &gt; &amp;excludes={}, std::chrono::steady_clock::duration scan_frequency=std::chrono::milliseconds(500)) -&gt; <a class="el" href="classfs_1_1cache.html">cache</a>&lt; Iterator &gt;</td></tr>
 <tr class="memdesc:a9b8c338b7375a0c1e3833f996db04fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to create a directory cache with pattern filtering.  <br /></td></tr>
 <tr class="separator:a9b8c338b7375a0c1e3833f996db04fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

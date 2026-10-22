@@ -6,6 +6,7 @@ var classunravel_1_1compiled__resource__manager =
     [ "compiled_resource_manager", "classunravel_1_1compiled__resource__manager.html#a41e474b07928cc6bb2707481cdbd245f", null ],
     [ "alloc", "classunravel_1_1compiled__resource__manager.html#a4575aae82657e40f871e9d8d24b5fedd", null ],
     [ "cleanup_all", "classunravel_1_1compiled__resource__manager.html#ad96af21c5cb96cfb763f920f0d75d9a2", null ],
+    [ "for_each", "classunravel_1_1compiled__resource__manager.html#a5fc2804a24d3e7c8d0da5c0b50beeeed", null ],
     [ "free", "classunravel_1_1compiled__resource__manager.html#a0f24f8934c6b6e33d7a59a8d46fb548d", null ],
     [ "from_rml_handle", "classunravel_1_1compiled__resource__manager.html#a89f3ddc1a6d5bac9ba2120d519713ec3", null ],
     [ "get", "classunravel_1_1compiled__resource__manager.html#a2ad9c743355f5d3ff72a9f57f4146b53", null ],

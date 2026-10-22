@@ -104,7 +104,11 @@ $(function(){initNavTree('asset__extensions_8h.html',''); initResizable(true); }
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="script_8h_source.html">engine/scripting/script.h</a>&quot;</code><br />
 <code>#include &lt;engine/engine_export.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cctype&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;hpp/string_view.hpp&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="asset__extensions_8h_source.html">Go to the source code of this file.</a></p>
@@ -153,6 +157,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a87117f094f4ed7f88827cfb1e136e9c4" id="r_a87117f094f4ed7f88827cfb1e136e9c4"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a87117f094f4ed7f88827cfb1e136e9c4"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#a87117f094f4ed7f88827cfb1e136e9c4">ex::get_suported_formats&lt; unravel::animation_clip &gt;</a> () -&gt; const std::vector&lt; std::string &gt; &amp;</td></tr>
 <tr class="separator:a87117f094f4ed7f88827cfb1e136e9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956dec87aa801666d6c5769657837e56" id="r_a956dec87aa801666d6c5769657837e56"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a956dec87aa801666d6c5769657837e56"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#a956dec87aa801666d6c5769657837e56">ex::get_suported_formats&lt; unravel::animation_controller &gt;</a> () -&gt; const std::vector&lt; std::string &gt; &amp;</td></tr>
+<tr class="separator:a956dec87aa801666d6c5769657837e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aace3a491bc07faab6d2019d77c3d3843" id="r_aace3a491bc07faab6d2019d77c3d3843"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:aace3a491bc07faab6d2019d77c3d3843"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#aace3a491bc07faab6d2019d77c3d3843">ex::get_suported_formats&lt; unravel::prefab &gt;</a> () -&gt; const std::vector&lt; std::string &gt; &amp;</td></tr>
 <tr class="separator:aace3a491bc07faab6d2019d77c3d3843"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +180,9 @@ Functions</h2></td></tr>
 <tr class="separator:a7979306aa40a83b948887928d75b2d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f3d5563efc47f9c22191a401ae07253" id="r_a0f3d5563efc47f9c22191a401ae07253"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#a0f3d5563efc47f9c22191a401ae07253">ex::get_all_formats</a> () -&gt; const std::vector&lt; std::vector&lt; std::string &gt; &gt; &amp;</td></tr>
 <tr class="separator:a0f3d5563efc47f9c22191a401ae07253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e3366dfaa4a54936cf00d504cb1330" id="r_ab6e3366dfaa4a54936cf00d504cb1330"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#ab6e3366dfaa4a54936cf00d504cb1330">ex::is_known_format</a> (const std::string &amp;extension) -&gt; bool</td></tr>
+<tr class="memdesc:ab6e3366dfaa4a54936cf00d504cb1330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether <code>extension</code> (with its dot, any case) is a format some asset type imports.  <br /></td></tr>
+<tr class="separator:ab6e3366dfaa4a54936cf00d504cb1330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56bae4a3bf4248ce0f176020eca36b0b" id="r_a56bae4a3bf4248ce0f176020eca36b0b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a56bae4a3bf4248ce0f176020eca36b0b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#a56bae4a3bf4248ce0f176020eca36b0b">ex::is_format</a> (const std::string &amp;ex) -&gt; bool</td></tr>
 <tr class="separator:a56bae4a3bf4248ce0f176020eca36b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,6 +198,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5d7275873a08123240fa2cb002bb6a7b" id="r_a5d7275873a08123240fa2cb002bb6a7b"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a5d7275873a08123240fa2cb002bb6a7b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#a5d7275873a08123240fa2cb002bb6a7b">ex::get_format_version&lt; unravel::animation_clip &gt;</a> () -&gt; uint64_t</td></tr>
 <tr class="separator:a5d7275873a08123240fa2cb002bb6a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff0d100ba409d4f641a9771af6ef9bca" id="r_aff0d100ba409d4f641a9771af6ef9bca"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:aff0d100ba409d4f641a9771af6ef9bca"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#aff0d100ba409d4f641a9771af6ef9bca">ex::get_format_version&lt; unravel::animation_controller &gt;</a> () -&gt; uint64_t</td></tr>
+<tr class="separator:aff0d100ba409d4f641a9771af6ef9bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae137025fd98c77665e6ba69f8e746544" id="r_ae137025fd98c77665e6ba69f8e746544"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:ae137025fd98c77665e6ba69f8e746544"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#ae137025fd98c77665e6ba69f8e746544">ex::get_format_version&lt; unravel::physics_material &gt;</a> () -&gt; uint64_t</td></tr>
 <tr class="separator:ae137025fd98c77665e6ba69f8e746544"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,11 +210,29 @@ Functions</h2></td></tr>
 <tr class="memitem:abfb132666c63980733f6538587f9871d" id="r_abfb132666c63980733f6538587f9871d"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:abfb132666c63980733f6538587f9871d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#abfb132666c63980733f6538587f9871d">ex::get_format_version&lt; gfx::texture &gt;</a> () -&gt; uint64_t</td></tr>
 <tr class="separator:abfb132666c63980733f6538587f9871d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2eb4835b5d76efc87d1d9f41d70252d" id="r_ae2eb4835b5d76efc87d1d9f41d70252d"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ae2eb4835b5d76efc87d1d9f41d70252d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#ae2eb4835b5d76efc87d1d9f41d70252d">ex::get_format_version&lt; gfx::shader &gt;</a> () -&gt; uint64_t</td></tr>
+<tr class="separator:ae2eb4835b5d76efc87d1d9f41d70252d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48cb0ef4af75ca9701415c7a63c79dbc" id="r_a48cb0ef4af75ca9701415c7a63c79dbc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#a48cb0ef4af75ca9701415c7a63c79dbc">ex::get_format_version</a> (const std::string &amp;extension) -&gt; uint64_t</td></tr>
 <tr class="separator:a48cb0ef4af75ca9701415c7a63c79dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10364a2654501630fb598cec92b0e5f7" id="r_a10364a2654501630fb598cec92b0e5f7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a10364a2654501630fb598cec92b0e5f7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#a10364a2654501630fb598cec92b0e5f7">ex::get_format</a> (bool include_dot=true) -&gt; std::string</td></tr>
 <tr class="separator:a10364a2654501630fb598cec92b0e5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63bc4cffc1cbbeb1ab07e8934bd938a9" id="r_a63bc4cffc1cbbeb1ab07e8934bd938a9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#a63bc4cffc1cbbeb1ab07e8934bd938a9">ex::has_filename_extension</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>) noexcept -&gt; bool</td></tr>
+<tr class="memdesc:a63bc4cffc1cbbeb1ab07e8934bd938a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when the last path segment has a filename extension (e.g. ".spfb").  <br /></td></tr>
+<tr class="separator:a63bc4cffc1cbbeb1ab07e8934bd938a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68975c616c00f626052ef8da5cb1abc" id="r_ae68975c616c00f626052ef8da5cb1abc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#ae68975c616c00f626052ef8da5cb1abc">ex::is_embedded_key</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>) noexcept -&gt; bool</td></tr>
+<tr class="memdesc:ae68975c616c00f626052ef8da5cb1abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">True for runtime/embedded instance keys such as "engine:/embedded/cube".  <br /></td></tr>
+<tr class="separator:ae68975c616c00f626052ef8da5cb1abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47a69347c609e8e5336beaa6d33dc45" id="r_ae47a69347c609e8e5336beaa6d33dc45"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#ae47a69347c609e8e5336beaa6d33dc45">ex::get_source_path_from_compiled</a> (const fs::path &amp;compiled) -&gt; fs::path</td></tr>
+<tr class="memdesc:ae47a69347c609e8e5336beaa6d33dc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <code>key</code> should be used as-is (has an extension or is embedded).  <br /></td></tr>
+<tr class="separator:ae47a69347c609e8e5336beaa6d33dc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fcff2293e4b77e7266da9cb5b96285" id="r_a46fcff2293e4b77e7266da9cb5b96285"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#a46fcff2293e4b77e7266da9cb5b96285">ex::should_keep_key_as_is</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>) noexcept -&gt; bool</td></tr>
+<tr class="separator:a46fcff2293e4b77e7266da9cb5b96285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208d648f27d8e2e9ed986fb5342e6057" id="r_a208d648f27d8e2e9ed986fb5342e6057"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a208d648f27d8e2e9ed986fb5342e6057"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#a208d648f27d8e2e9ed986fb5342e6057">ex::resolve_key_missing_extension</a> (const std::string &amp;<a class="el" href="particle__system__soa_8cpp.html#ab889bf192829d81b14acffa5b10e9df3">key</a>) -&gt; std::string</td></tr>
+<tr class="memdesc:a208d648f27d8e2e9ed986fb5342e6057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a supported extension when <code>key</code> has none.  <br /></td></tr>
+<tr class="separator:a208d648f27d8e2e9ed986fb5342e6057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec5a7b4ede0f14a7fe4bf2fba2d61e51" id="r_aec5a7b4ede0f14a7fe4bf2fba2d61e51"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aec5a7b4ede0f14a7fe4bf2fba2d61e51"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceex.html#aec5a7b4ede0f14a7fe4bf2fba2d61e51">ex::get_suported_formats_with_wildcard</a> () -&gt; std::vector&lt; std::string &gt;</td></tr>
 <tr class="separator:aec5a7b4ede0f14a7fe4bf2fba2d61e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +250,12 @@ Functions</h2></td></tr>
 <tr class="separator:a2beb5dab1cc4d4db92b09bfb4cc77d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9084511920c06eac49736e94a69c3f2c" id="r_a9084511920c06eac49736e94a69c3f2c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#a9084511920c06eac49736e94a69c3f2c">ex::get_compiled_directory</a> (const std::string &amp;prefix={}) -&gt; std::string</td></tr>
 <tr class="separator:a9084511920c06eac49736e94a69c3f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be5dadf824a4ac1d4b289765620f243" id="r_a0be5dadf824a4ac1d4b289765620f243"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#a0be5dadf824a4ac1d4b289765620f243">ex::get_pack_file_name</a> () -&gt; std::string</td></tr>
+<tr class="separator:a0be5dadf824a4ac1d4b289765620f243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c5564870612cffba70b1f68352d610" id="r_a89c5564870612cffba70b1f68352d610"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#a89c5564870612cffba70b1f68352d610">ex::get_asset_index_file_name</a> () -&gt; std::string</td></tr>
+<tr class="separator:a89c5564870612cffba70b1f68352d610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a4109ea49f89bbe8b212ba6f3fc640" id="r_a34a4109ea49f89bbe8b212ba6f3fc640"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#a34a4109ea49f89bbe8b212ba6f3fc640">ex::get_patch_pack_file_name</a> (std::uint32_t level) -&gt; std::string</td></tr>
+<tr class="separator:a34a4109ea49f89bbe8b212ba6f3fc640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af56464daa377f9b125f425e0e3af32b7" id="r_af56464daa377f9b125f425e0e3af32b7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#af56464daa377f9b125f425e0e3af32b7">ex::get_type</a> (const std::string &amp;ex, bool is_directory=false) -&gt; const std::string &amp;</td></tr>
 <tr class="separator:af56464daa377f9b125f425e0e3af32b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc8f5419d0b3add306f158a20f28b0a3" id="r_abc8f5419d0b3add306f158a20f28b0a3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceex.html#abc8f5419d0b3add306f158a20f28b0a3">ex::is_binary</a> (const std::string &amp;ex) -&gt; bool</td></tr>

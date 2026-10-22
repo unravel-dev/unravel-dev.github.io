@@ -1,6 +1,11 @@
 var asset__reader_8cpp =
 [
+    [ "source_fallback", "asset__reader_8cpp.html#a574c76af5cc987982e0e1e0e3975a720", [
+      [ "allowed", "asset__reader_8cpp.html#a574c76af5cc987982e0e1e0e3975a720a22ee71e9dcc9ca12fc313c6e1ce3f806", null ],
+      [ "none", "asset__reader_8cpp.html#a574c76af5cc987982e0e1e0e3975a720a334c4a4c42fdb79d7ebc3e73b517e6f8", null ]
+    ] ],
     [ "load_from_file< animation_clip >", "asset__reader_8cpp.html#aa9f6c7cd1cbe1c8e5ed92b1e95179c96", null ],
+    [ "load_from_file< animation_controller >", "asset__reader_8cpp.html#ac0b7f98ed0ef68718e8c3c9adbccba2b", null ],
     [ "load_from_file< audio_clip >", "asset__reader_8cpp.html#ab6387233e7684aeb305ca9ef0c3c4936", null ],
     [ "load_from_file< font >", "asset__reader_8cpp.html#ae87a7cacf448308f2acd259413f68bb8", null ],
     [ "load_from_file< gfx::shader >", "asset__reader_8cpp.html#a793743bd5b7bd0044cdc286d7bbdcfb4", null ],
@@ -15,11 +20,12 @@ var asset__reader_8cpp =
     [ "load_from_file< ui_tree >", "asset__reader_8cpp.html#a958728ed6a46e86cbbf6bea50b54c38e", null ],
     [ "log_missing_compiled_asset_for_key", "asset__reader_8cpp.html#a2dc1ea27a3f6e6c02cb91936da276ce2", null ],
     [ "log_missing_raw_asset_for_key", "asset__reader_8cpp.html#acacc2015671c7bce2986d0734034ebcf", null ],
+    [ "log_uncompiled_asset_for_key", "asset__reader_8cpp.html#a2337f9ad44f7ed91bc3cc38350f9379c", null ],
     [ "log_unknown_protocol_for_key", "asset__reader_8cpp.html#a1e0a3fe63f0b4c2e37574d1955707f8e", null ],
     [ "resolve_compiled_asset_path", "asset__reader_8cpp.html#a514d0df2afb27c90b4651cf4b3bfa4b8", null ],
     [ "resolve_compiled_key", "asset__reader_8cpp.html#ac74501361d75be4b06b0528453c076ba", null ],
     [ "resolve_compiled_path", "asset__reader_8cpp.html#a6f5535d059d12fff6255982d842c2b3b", null ],
     [ "resolve_path", "asset__reader_8cpp.html#a055e3c9a83d8f272bd83071dcc3805ff", null ],
-    [ "schedule_load", "asset__reader_8cpp.html#a6a4a2473bd26aec9c141f7f05b57e6a1", null ],
-    [ "validate", "asset__reader_8cpp.html#a71105ed918ddd8eb7522ce86ec60209a", null ]
+    [ "schedule_load", "asset__reader_8cpp.html#a4bd16c66b90d921e89b7ce2739743ab3", null ],
+    [ "validate", "asset__reader_8cpp.html#a45bd9410cade8795bfd327611eaa92bb", null ]
 ];

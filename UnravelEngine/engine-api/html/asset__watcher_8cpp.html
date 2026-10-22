@@ -107,10 +107,11 @@ $(function(){initNavTree('asset__watcher_8cpp.html',''); initResizable(true); })
 <code>#include &quot;threadpp/thread.h&quot;</code><br />
 <code>#include &lt;<a class="el" href="animation_8h_source.html">engine/animation/animation.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="asset__compiler_8h_source.html">engine/assets/impl/asset_compiler.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="asset__dependencies_8h_source.html">engine/assets/impl/asset_dependencies.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__compiler_8h_source.html">asset_compiler/asset_compiler.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__dependencies_8h_source.html">asset_compiler/asset_dependencies.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__extensions_8h_source.html">engine/assets/impl/asset_extensions.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="asset__manifest_8h_source.html">engine/assets/impl/asset_manifest.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__manifest_8h_source.html">asset_compiler/asset_manifest.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="texture__target_8h_source.html">asset_compiler/texture_target.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__writer_8h_source.html">engine/assets/impl/asset_writer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="asset__dependency__graph_8h_source.html">engine/assets/asset_dependency_graph.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="audio__clip_8h_source.html">engine/audio/audio_clip.h</a>&gt;</code><br />
@@ -118,6 +119,7 @@ $(function(){initNavTree('asset__watcher_8cpp.html',''); initResizable(true); })
 <code>#include &lt;<a class="el" href="prefab_8h_source.html">engine/ecs/prefab.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="engine_2engine_2events_8h_source.html">engine/events.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="physics__material_8h_source.html">engine/physics/physics_material.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animation__controller_8h_source.html">engine/animation/animation_controller.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="font_8h_source.html">engine/rendering/font.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="material_8h_source.html">engine/rendering/material.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mesh_8h_source.html">engine/rendering/mesh.h</a>&gt;</code><br />
@@ -129,8 +131,10 @@ $(function(){initNavTree('asset__watcher_8cpp.html',''); initResizable(true); })
 <code>#include &lt;<a class="el" href="editing__manager_8h_source.html">editor/editing/editing_manager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="thumbnail__invalidation_8h_source.html">editor/editing/thumbnail_invalidation.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="thumbnail__manager_8h_source.html">editor/editing/thumbnail_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="parallel_8h_source.html">concurrency/parallel.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="watcher_8h_source.html">filesystem/watcher.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="graphics_8h_source.html">graphics/graphics.h</a>&gt;</code><br />
+<code>#include &lt;hpp/string_view.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />

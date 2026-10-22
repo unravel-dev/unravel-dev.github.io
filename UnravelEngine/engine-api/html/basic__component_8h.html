@@ -98,7 +98,9 @@ $(function(){initNavTree('basic__component_8h.html',''); initResizable(true); })
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">basic_component.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -110,6 +112,9 @@ $(function(){initNavTree('basic__component_8h.html',''); initResizable(true); })
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1dirty__ids.html">unravel::dirty_ids</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumer slots for the indexed dirty flags a component carries (is_dirty(id) / set_dirty(id, ...)).  <a href="structunravel_1_1dirty__ids.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1basic__component.html">unravel::basic_component</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic component structure that other components can inherit from.  <a href="structunravel_1_1basic__component.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,6 +124,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1component__crtp.html">unravel::component_crtp&lt; T, Base &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRTP (Curiously Recurring Template Pattern) base structure for components.  <a href="structunravel_1_1component__crtp.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1component__save__scope.html">unravel::component_save_scope</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps the component save context open for its lifetime.  <a href="classunravel_1_1component__save__scope.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1component__load__scope.html">unravel::component_load_scope</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps the component load context open for its lifetime.  <a href="classunravel_1_1component__load__scope.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1component__meta.html">unravel::component_meta&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -126,6 +137,24 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html">unravel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad213231c668e9e629205749db9d92e6f" id="r_ad213231c668e9e629205749db9d92e6f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ad213231c668e9e629205749db9d92e6f">unravel::begin_component_save</a> (entt::const_handle <a class="el" href="inspector__entity_8cpp.html#a535be24c9c6f25cabb7712b3500a1bfa">source</a>) -&gt; bool</td></tr>
+<tr class="memdesc:ad213231c668e9e629205749db9d92e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the save context a component saved on its own needs, as a scene save opens one: serializers of entity references (a script's Entity fields) resolve them through the source's registry. Defined with the entity serializers; returns whether this call opened the context.  <br /></td></tr>
+<tr class="separator:ad213231c668e9e629205749db9d92e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de8ecd1e7066cdc6c13700d76c61811" id="r_a5de8ecd1e7066cdc6c13700d76c61811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a5de8ecd1e7066cdc6c13700d76c61811">unravel::end_component_save</a> (bool began)</td></tr>
+<tr class="separator:a5de8ecd1e7066cdc6c13700d76c61811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32c0e85efd414abe519494dd77b659c" id="r_af32c0e85efd414abe519494dd77b659c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#af32c0e85efd414abe519494dd77b659c">unravel::begin_component_load</a> (entt::handle <a class="el" href="particle__emitter__component__bindings_8cpp.html#a9959e632227e189dd7e5fb00d2aac1f8">target</a>) -&gt; bool</td></tr>
+<tr class="memdesc:af32c0e85efd414abe519494dd77b659c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the load context a component loaded on its own needs (see begin_component_save).  <br /></td></tr>
+<tr class="separator:af32c0e85efd414abe519494dd77b659c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad020a9d9adc1422625a29e97dba39e21" id="r_ad020a9d9adc1422625a29e97dba39e21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#ad020a9d9adc1422625a29e97dba39e21">unravel::end_component_load</a> (bool began)</td></tr>
+<tr class="separator:ad020a9d9adc1422625a29e97dba39e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa14debb184d0f15fcac3977981c57a81" id="r_aa14debb184d0f15fcac3977981c57a81"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#aa14debb184d0f15fcac3977981c57a81">unravel::ALL_CONSUMERS_DIRTY</a> = ~0ULL</td></tr>
+<tr class="separator:aa14debb184d0f15fcac3977981c57a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

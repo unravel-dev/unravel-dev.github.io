@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UIElement | Unravel Engine Scripting API ">
       
-      <meta name="description" content="Managed wrapper around a native RmlUi element (Rml::Element). Prefer obtaining instances via  /  so wrappers are cached by native pointer.">
+      <meta name="description" content="Managed wrapper around a native RmlUi element (Rml::Element). Obtain instances via  / ; each element has one wrapper. A wrapper outliving its element (after an  rebuild of an ancestor, or a document close or reload) is safe: it reports  false, its setters do nothing and its getters return defaults. Fetch the element again from the document.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Unravel_Core_UIElement" data-uid="Unravel.Core.UIElement" class="text-break">
-Class UIElement  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class UIElement  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,8 +98,11 @@ Class UIElement  <a class="header-action link-secondary" title="View source" hre
   </div>
 
   <div class="markdown summary"><p>Managed wrapper around a native RmlUi element (<code>Rml::Element</code>).
-Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_GetElementById_System_String_">GetElementById(string)</a> /
-<a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_QuerySelector_System_String_">QuerySelector(string)</a> so wrappers are cached by native pointer.</p>
+Obtain instances via <a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_GetElementById_System_String_">GetElementById(string)</a> /
+<a class="xref" href="Unravel.Core.UIDocument.html#Unravel_Core_UIDocument_QuerySelector_System_String_">QuerySelector(string)</a>; each element has one wrapper.
+A wrapper outliving its element (after an <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_InnerRml">InnerRml</a> rebuild of an ancestor, or
+a document close or reload) is safe: it reports <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_IsValid">IsValid()</a> false, its setters do
+nothing and its getters return defaults. Fetch the element again from the document.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -126,6 +129,18 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
     </dd>
   </dl>
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Unravel.Core.UIButton.html">UIButton</a></div>
+      <div><a class="xref" href="Unravel.Core.UIInput.html">UIInput</a></div>
+      <div><a class="xref" href="Unravel.Core.UIProgress.html">UIProgress</a></div>
+      <div><a class="xref" href="Unravel.Core.UISelect.html">UISelect</a></div>
+      <div><a class="xref" href="Unravel.Core.UISlider.html">UISlider</a></div>
+      <div><a class="xref" href="Unravel.Core.UITabSet.html">UITabSet</a></div>
+      <div><a class="xref" href="Unravel.Core.UIToggle.html">UIToggle</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
@@ -166,7 +181,7 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_ElementId" data-uid="Unravel.Core.UIElement.ElementId">
   ElementId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the element ID.</p>
@@ -198,10 +213,12 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_InnerRml" data-uid="Unravel.Core.UIElement.InnerRml">
   InnerRml
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the inner RML content of the element.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the inner RML content of the element. Setting parses the value as markup and
+replaces every child (wrappers of the old children become invalid); setting the current
+content does nothing. Use <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_SetText_System_String_">SetText(string)</a> for plain text.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -230,10 +247,13 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_IsVisible" data-uid="Unravel.Core.UIElement.IsVisible">
   IsVisible
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets whether the element is visible.</p>
+  <div class="markdown level1 summary"><p>Gets or sets whether the element is visible by its own style ('display' not 'none',
+'visibility' visible). Setting false writes an inline 'display: none'; setting true
+removes it, so the stylesheet's display (flex, inline-block...) applies again, and writes
+'display: block' only when the stylesheet itself hides the element.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -262,7 +282,7 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_Owner" data-uid="Unravel.Core.UIElement.Owner">
   Owner
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L39"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the entity that owns this UI element.</p>
@@ -290,15 +310,641 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
 
 
+  <a id="Unravel_Core_UIElement_children_" data-uid="Unravel.Core.UIElement.children*"></a>
+
+  <h3 id="Unravel_Core_UIElement_children" data-uid="Unravel.Core.UIElement.children">
+  children
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The child elements in order, as a new list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;UIElement&gt; children { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Unravel.Core.UIElement.html">UIElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_contentRect_" data-uid="Unravel.Core.UIElement.contentRect*"></a>
+
+  <h3 id="Unravel_Core_UIElement_contentRect" data-uid="Unravel.Core.UIElement.contentRect">
+  contentRect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The content box (inside the padding) in the document's pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect contentRect { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_disabled_" data-uid="Unravel.Core.UIElement.disabled*"></a>
+
+  <h3 id="Unravel_Core_UIElement_disabled" data-uid="Unravel.Core.UIElement.disabled">
+  disabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the element is disabled: form controls ignore input and match :disabled rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool disabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_paddingRect_" data-uid="Unravel.Core.UIElement.paddingRect*"></a>
+
+  <h3 id="Unravel_Core_UIElement_paddingRect" data-uid="Unravel.Core.UIElement.paddingRect">
+  paddingRect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The padding box (inside the border) in the document's pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect paddingRect { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_parent_" data-uid="Unravel.Core.UIElement.parent*"></a>
+
+  <h3 id="Unravel_Core_UIElement_parent" data-uid="Unravel.Core.UIElement.parent">
+  parent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The parent element; null for a document's root element and for an element in no tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement parent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_rect_" data-uid="Unravel.Core.UIElement.rect*"></a>
+
+  <h3 id="Unravel_Core_UIElement_rect" data-uid="Unravel.Core.UIElement.rect">
+  rect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The border box in the document's pixels, y down. For a screen-space document that is the
+space of <a class="xref" href="Unravel.Core.Input.html#Unravel_Core_Input_mousePosition">mousePosition</a>. CSS transforms are not applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rect rect { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rect.html">Rect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_scrollHeight_" data-uid="Unravel.Core.UIElement.scrollHeight*"></a>
+
+  <h3 id="Unravel_Core_UIElement_scrollHeight" data-uid="Unravel.Core.UIElement.scrollHeight">
+  scrollHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Height of the scrollable content in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scrollHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_scrollLeft_" data-uid="Unravel.Core.UIElement.scrollLeft*"></a>
+
+  <h3 id="Unravel_Core_UIElement_scrollLeft" data-uid="Unravel.Core.UIElement.scrollLeft">
+  scrollLeft
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Horizontal scroll position of the content in pixels; setting it scrolls at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scrollLeft { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_scrollTop_" data-uid="Unravel.Core.UIElement.scrollTop*"></a>
+
+  <h3 id="Unravel_Core_UIElement_scrollTop" data-uid="Unravel.Core.UIElement.scrollTop">
+  scrollTop
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Vertical scroll position of the content in pixels; setting it scrolls at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scrollTop { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_scrollWidth_" data-uid="Unravel.Core.UIElement.scrollWidth*"></a>
+
+  <h3 id="Unravel_Core_UIElement_scrollWidth" data-uid="Unravel.Core.UIElement.scrollWidth">
+  scrollWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Width of the scrollable content in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scrollWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_style_" data-uid="Unravel.Core.UIElement.style*"></a>
+
+  <h3 id="Unravel_Core_UIElement_style" data-uid="Unravel.Core.UIElement.style">
+  style
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The element's inline style: <code>el.style[&quot;opacity&quot;] = &quot;0.5&quot;</code>, <code>el.style.opacity = 0.5f</code>.
+Setting a property to null removes the inline value, so the stylesheet applies again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIStyle style { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIStyle.html">UIStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_tagName_" data-uid="Unravel.Core.UIElement.tagName*"></a>
+
+  <h3 id="Unravel_Core_UIElement_tagName" data-uid="Unravel.Core.UIElement.tagName">
+  tagName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The element's tag, e.g. &quot;div&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string tagName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_text_" data-uid="Unravel.Core.UIElement.text*"></a>
+
+  <h3 id="Unravel_Core_UIElement_text" data-uid="Unravel.Core.UIElement.text">
+  text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The element's text: the text of all its descendants, without markup. Setting replaces
+every child with plain text, like <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_SetText_System_String_">SetText(string)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string text { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_value_" data-uid="Unravel.Core.UIElement.value*"></a>
+
+  <h3 id="Unravel_Core_UIElement_value" data-uid="Unravel.Core.UIElement.value">
+  value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The value of a form control (input, select, textarea) as text, or the 'value' attribute
+of any other element. Setting it sends one &quot;change&quot; event, so change callbacks and
+data bindings react as to a user edit; see <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_SetValueWithoutNotify_System_String_">SetValueWithoutNotify(string)</a>.
+The control classes (<a class="xref" href="Unravel.Core.UISlider.html">UISlider</a>...) add typed views of the same value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_visible_" data-uid="Unravel.Core.UIElement.visible*"></a>
+
+  <h3 id="Unravel_Core_UIElement_visible" data-uid="Unravel.Core.UIElement.visible">
+  visible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Same as <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_IsVisible">IsVisible</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool visible { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
+
+
+  <a id="Unravel_Core_UIElement_Animate_" data-uid="Unravel.Core.UIElement.Animate*"></a>
+
+  <h3 id="Unravel_Core_UIElement_Animate_System_String_System_String_System_Single_Unravel_Core_UIEasing_System_Int32_System_Boolean_System_Single_" data-uid="Unravel.Core.UIElement.Animate(System.String,System.String,System.Single,Unravel.Core.UIEasing,System.Int32,System.Boolean,System.Single)">
+  Animate(string, string, float, UIEasing, int, bool, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Animates a property from its current value to @p target. Another animation of the same
+property is replaced. RCSS keyframes and transitions remain the way to author designed
+motion; this is for motion decided in code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIAnimation Animate(string property, string target, float duration, UIEasing easing = UIEasing.Linear, int loops = 1, bool alternate = false, float delay = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>An animatable RCSS property, e.g. &quot;opacity&quot;, &quot;left&quot;, &quot;transform&quot;, &quot;color&quot;.</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The end value as RCSS text, e.g. &quot;0&quot;, &quot;120dp&quot;, &quot;rotate(90deg)&quot;, &quot;#ff0000&quot;.</p>
+</dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Seconds per run.</p>
+</dd>
+    <dt><code>easing</code> <a class="xref" href="Unravel.Core.UIEasing.html">UIEasing</a></dt>
+    <dd><p>The curve.</p>
+</dd>
+    <dt><code>loops</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>How many runs; -1 runs forever.</p>
+</dd>
+    <dt><code>alternate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Every other run goes backwards.</p>
+</dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Seconds before the first run.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIAnimation.html">UIAnimation</a></dt>
+    <dd><p>The animation; check <a class="xref" href="Unravel.Core.UIAnimation.html#Unravel_Core_UIAnimation_isRunning">isRunning</a> - false when the property or value is invalid.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="Unravel_Core_UIElement_Animate_System_String_System_String_System_Single_Unravel_Core_UIEasing_System_Int32_System_Boolean_System_Single__examples">Examples</h4>
+  <pre><code class="lang-csharp">panel.Animate("opacity", "0", 0.3f, UIEasing.CubicOut).completed += () =&gt; panel.visible = false;
+coin.Animate("transform", "scale(1.4)", 0.15f, UIEasing.BackOut, loops: 2, alternate: true);</code></pre>
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_AppendChild_" data-uid="Unravel.Core.UIElement.AppendChild*"></a>
+
+  <h3 id="Unravel_Core_UIElement_AppendChild_Unravel_Core_UIElement_" data-uid="Unravel.Core.UIElement.AppendChild(Unravel.Core.UIElement)">
+  AppendChild(UIElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds @p child as this element's last child, moving it from where it was. Data bindings and
+classes of the child take effect from here.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement AppendChild(UIElement child)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>child</code> <a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd><p>The child, or null when it cannot move here (a document, this element or one of its ancestors).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_As_" data-uid="Unravel.Core.UIElement.As*"></a>
+
+  <h3 id="Unravel_Core_UIElement_As__1" data-uid="Unravel.Core.UIElement.As``1">
+  As&lt;T&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This element as a control class, e.g. <code>el.As&lt;UISlider&gt;()</code>; null (with a warning)
+when it is another kind of element. <code>el is UISlider slider</code> tests without the warning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T As&lt;T&gt;() where T : UIElement</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
 
 
   <a id="Unravel_Core_UIElement_Blur_" data-uid="Unravel.Core.UIElement.Blur*"></a>
 
   <h3 id="Unravel_Core_UIElement_Blur" data-uid="Unravel.Core.UIElement.Blur">
   Blur()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes focus from this element.</p>
@@ -325,7 +971,7 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_Click" data-uid="Unravel.Core.UIElement.Click">
   Click()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L311"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Simulates a click on this element.</p>
@@ -348,11 +994,116 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
 
 
+  <a id="Unravel_Core_UIElement_Clone_" data-uid="Unravel.Core.UIElement.Clone*"></a>
+
+  <h3 id="Unravel_Core_UIElement_Clone" data-uid="Unravel.Core.UIElement.Clone">
+  Clone()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A deep copy of the element, in no tree yet: add it with <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_AppendChild_Unravel_Core_UIElement_">AppendChild(UIElement)</a> or
+<a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_InsertBefore_Unravel_Core_UIElement_Unravel_Core_UIElement_">InsertBefore(UIElement, UIElement)</a>. A copy never added lives until its document closes. Event
+subscriptions are not copied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_Closest_" data-uid="Unravel.Core.UIElement.Closest*"></a>
+
+  <h3 id="Unravel_Core_UIElement_Closest_System_String_" data-uid="Unravel.Core.UIElement.Closest(System.String)">
+  Closest(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The nearest ancestor matching an RCSS selector, or null. The element itself is not considered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement Closest(string selector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_EnableClass_" data-uid="Unravel.Core.UIElement.EnableClass*"></a>
+
+  <h3 id="Unravel_Core_UIElement_EnableClass_System_String_System_Boolean_" data-uid="Unravel.Core.UIElement.EnableClass(System.String,System.Boolean)">
+  EnableClass(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds or removes a class; the same as <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_SetClass_System_String_System_Boolean_">SetClass(string, bool)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableClass(string className, bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>className</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>enable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIElement_Focus_" data-uid="Unravel.Core.UIElement.Focus*"></a>
 
   <h3 id="Unravel_Core_UIElement_Focus" data-uid="Unravel.Core.UIElement.Focus">
   Focus()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gives focus to this element.</p>
@@ -379,7 +1130,7 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_GetAttribute_System_String_" data-uid="Unravel.Core.UIElement.GetAttribute(System.String)">
   GetAttribute(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the value of an attribute.</p>
@@ -414,11 +1165,50 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
 
 
+  <a id="Unravel_Core_UIElement_GetComputed_" data-uid="Unravel.Core.UIElement.GetComputed*"></a>
+
+  <h3 id="Unravel_Core_UIElement_GetComputed_System_String_" data-uid="Unravel.Core.UIElement.GetComputed(System.String)">
+  GetComputed(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The value a property resolves to on this element, from its inline style, the stylesheet,
+its parent or the default, as RCSS text; null for an unknown property or a shorthand.
+For laid-out sizes and positions read <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_rect">rect</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetComputed(string property)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>property</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIElement_HasAttribute_" data-uid="Unravel.Core.UIElement.HasAttribute*"></a>
 
   <h3 id="Unravel_Core_UIElement_HasAttribute_System_String_" data-uid="Unravel.Core.UIElement.HasAttribute(System.String)">
   HasAttribute(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the element has a specific attribute.</p>
@@ -453,11 +1243,126 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
 
 
+  <a id="Unravel_Core_UIElement_HasClass_" data-uid="Unravel.Core.UIElement.HasClass*"></a>
+
+  <h3 id="Unravel_Core_UIElement_HasClass_System_String_" data-uid="Unravel.Core.UIElement.HasClass(System.String)">
+  HasClass(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the class is set; the same as <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_IsClassSet_System_String_">IsClassSet(string)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasClass(string className)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>className</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_HasPseudoClass_" data-uid="Unravel.Core.UIElement.HasPseudoClass*"></a>
+
+  <h3 id="Unravel_Core_UIElement_HasPseudoClass_System_String_" data-uid="Unravel.Core.UIElement.HasPseudoClass(System.String)">
+  HasPseudoClass(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether a pseudo class is set, including the ones RmlUi sets (:hover, :focus, :active).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPseudoClass(string pseudoClass)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pseudoClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_InsertBefore_" data-uid="Unravel.Core.UIElement.InsertBefore*"></a>
+
+  <h3 id="Unravel_Core_UIElement_InsertBefore_Unravel_Core_UIElement_Unravel_Core_UIElement_" data-uid="Unravel.Core.UIElement.InsertBefore(Unravel.Core.UIElement,Unravel.Core.UIElement)">
+  InsertBefore(UIElement, UIElement)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds @p child before @p before, one of this element's children, moving it from where it
+was; with a null @p before (or one that is not a child here) it is added last.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement InsertBefore(UIElement child, UIElement before)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>child</code> <a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+    <dt><code>before</code> <a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd><p>The child, or null when it cannot move here.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIElement_IsClassSet_" data-uid="Unravel.Core.UIElement.IsClassSet*"></a>
 
   <h3 id="Unravel_Core_UIElement_IsClassSet_System_String_" data-uid="Unravel.Core.UIElement.IsClassSet(System.String)">
   IsClassSet(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the element has a specific CSS class.</p>
@@ -496,10 +1401,10 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_IsValid" data-uid="Unravel.Core.UIElement.IsValid">
   IsValid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets whether this wrapper still points to a valid native element.</p>
+  <div class="markdown level1 summary"><p>Gets whether the element still exists.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -524,11 +1429,354 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
 
 
+  <a id="Unravel_Core_UIElement_Is_" data-uid="Unravel.Core.UIElement.Is*"></a>
+
+  <h3 id="Unravel_Core_UIElement_Is__1" data-uid="Unravel.Core.UIElement.Is``1">
+  Is&lt;T&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this element is of a control class, e.g. <code>el.Is&lt;UIButton&gt;()</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Is&lt;T&gt;() where T : UIElement</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_On_" data-uid="Unravel.Core.UIElement.On*"></a>
+
+  <h3 id="Unravel_Core_UIElement_On__1_System_Action___0__Unravel_Core_EventPhase_" data-uid="Unravel.Core.UIElement.On``1(System.Action{``0},Unravel.Core.EventPhase)">
+  On&lt;T&gt;(Action&lt;T&gt;, EventPhase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L678"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subscribes to the event a class stands for: <a class="xref" href="Unravel.Core.UIClickEvent.html">UIClickEvent</a> &quot;click&quot;,
+<a class="xref" href="Unravel.Core.UIChangeEvent.html">UIChangeEvent</a> &quot;change&quot;, <a class="xref" href="Unravel.Core.UIAnimationEvent.html">UIAnimationEvent</a> &quot;animationend&quot;,
+<a class="xref" href="Unravel.Core.UISubmitEvent.html">UISubmitEvent</a> &quot;submit&quot;, <a class="xref" href="Unravel.Core.UIScrollEvent.html">UIScrollEvent</a> &quot;scroll&quot;,
+<a class="xref" href="Unravel.Core.UITextInputEvent.html">UITextInputEvent</a> &quot;textinput&quot;. Other classes need the event's name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UISubscription On&lt;T&gt;(Action&lt;T&gt; callback, EventPhase phase = EventPhase.Bubble) where T : UIEventBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>Runs for each event.</p>
+</dd>
+    <dt><code>phase</code> <a class="xref" href="Unravel.Core.EventPhase.html">EventPhase</a></dt>
+    <dd><p>Bubble (default): at the element and when the event bubbles up from a
+descendant. Capture: before descendants see it. Target: only for the element's own events.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UISubscription.html">UISubscription</a></dt>
+    <dd><p>Dispose it to unsubscribe.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_On_" data-uid="Unravel.Core.UIElement.On*"></a>
+
+  <h3 id="Unravel_Core_UIElement_On__1_System_String_System_Action___0__Unravel_Core_EventPhase_" data-uid="Unravel.Core.UIElement.On``1(System.String,System.Action{``0},Unravel.Core.EventPhase)">
+  On&lt;T&gt;(string, Action&lt;T&gt;, EventPhase)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L690"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subscribes to an event by name, e.g. <code>On&lt;UIPointerEvent&gt;(&quot;mousemove&quot;, OnMove)</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UISubscription On&lt;T&gt;(string eventType, Action&lt;T&gt; callback, EventPhase phase = EventPhase.Bubble) where T : UIEventBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The RmlUi event name.</p>
+</dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>Runs for each event.</p>
+</dd>
+    <dt><code>phase</code> <a class="xref" href="Unravel.Core.EventPhase.html">EventPhase</a></dt>
+    <dd><p>Bubble (default), Capture or Target; see <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_On__1_System_Action___0__Unravel_Core_EventPhase_">On&lt;T&gt;(Action&lt;T&gt;, EventPhase)</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UISubscription.html">UISubscription</a></dt>
+    <dd><p>Dispose it to unsubscribe.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_Once_" data-uid="Unravel.Core.UIElement.Once*"></a>
+
+  <h3 id="Unravel_Core_UIElement_Once__1_System_Action___0__" data-uid="Unravel.Core.UIElement.Once``1(System.Action{``0})">
+  Once&lt;T&gt;(Action&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L698"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Like <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_On__1_System_Action___0__Unravel_Core_EventPhase_">On&lt;T&gt;(Action&lt;T&gt;, EventPhase)</a>, ending after the first event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UISubscription Once&lt;T&gt;(Action&lt;T&gt; callback) where T : UIEventBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UISubscription.html">UISubscription</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_Once_" data-uid="Unravel.Core.UIElement.Once*"></a>
+
+  <h3 id="Unravel_Core_UIElement_Once__1_System_String_System_Action___0__" data-uid="Unravel.Core.UIElement.Once``1(System.String,System.Action{``0})">
+  Once&lt;T&gt;(string, Action&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L706"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Like <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_On__1_System_String_System_Action___0__Unravel_Core_EventPhase_">On&lt;T&gt;(string, Action&lt;T&gt;, EventPhase)</a>, ending after the first event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UISubscription Once&lt;T&gt;(string eventType, Action&lt;T&gt; callback) where T : UIEventBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UISubscription.html">UISubscription</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_Q_" data-uid="Unravel.Core.UIElement.Q*"></a>
+
+  <h3 id="Unravel_Core_UIElement_Q_System_String_" data-uid="Unravel.Core.UIElement.Q(System.String)">
+  Q(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The first descendant matching an RCSS selector, or null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIElement Q(string selector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For example &quot;#score&quot;, &quot;.slot &gt; img&quot;, &quot;button.primary&quot;.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Unravel.Core.UIElement.html">UIElement</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_Q_" data-uid="Unravel.Core.UIElement.Q*"></a>
+
+  <h3 id="Unravel_Core_UIElement_Q__1_System_String_" data-uid="Unravel.Core.UIElement.Q``1(System.String)">
+  Q&lt;T&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The first descendant matching an RCSS selector, as a control class, e.g.
+<code>Q&lt;UISlider&gt;(&quot;#volume&quot;)</code>; null when none matches, or (with a warning) when it is
+another kind of element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Q&lt;T&gt;(string selector) where T : UIElement</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_QueryAll_" data-uid="Unravel.Core.UIElement.QueryAll*"></a>
+
+  <h3 id="Unravel_Core_UIElement_QueryAll_System_String_" data-uid="Unravel.Core.UIElement.QueryAll(System.String)">
+  QueryAll(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Every descendant matching an RCSS selector, in document order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;UIElement&gt; QueryAll(string selector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selector</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Unravel.Core.UIElement.html">UIElement</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIElement_RegisterCallback_" data-uid="Unravel.Core.UIElement.RegisterCallback*"></a>
 
   <h3 id="Unravel_Core_UIElement_RegisterCallback_System_String_Unravel_Core_UIEventCallback_" data-uid="Unravel.Core.UIElement.RegisterCallback(System.String,Unravel.Core.UIEventCallback)">
   RegisterCallback(string, UIEventCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L619"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an event listener to this element.</p>
@@ -564,7 +1812,7 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_RegisterCallback__1_System_String_System_Action___0__" data-uid="Unravel.Core.UIElement.RegisterCallback``1(System.String,System.Action{``0})">
   RegisterCallback&lt;T&gt;(string, Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L641"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Registers a typed event callback with compile-time type safety and zero runtime casting.</p>
@@ -602,11 +1850,39 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
 
 
+  <a id="Unravel_Core_UIElement_Remove_" data-uid="Unravel.Core.UIElement.Remove*"></a>
+
+  <h3 id="Unravel_Core_UIElement_Remove" data-uid="Unravel.Core.UIElement.Remove">
+  Remove()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the element from its tree and destroys it with its children, at once: their
+wrappers become invalid and their subscriptions end. A document's root cannot be removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIElement_RemoveAttribute_" data-uid="Unravel.Core.UIElement.RemoveAttribute*"></a>
 
   <h3 id="Unravel_Core_UIElement_RemoveAttribute_System_String_" data-uid="Unravel.Core.UIElement.RemoveAttribute(System.String)">
   RemoveAttribute(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes an attribute from the element.</p>
@@ -635,11 +1911,38 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
 
 
+  <a id="Unravel_Core_UIElement_RestartAnimation_" data-uid="Unravel.Core.UIElement.RestartAnimation*"></a>
+
+  <h3 id="Unravel_Core_UIElement_RestartAnimation" data-uid="Unravel.Core.UIElement.RestartAnimation">
+  RestartAnimation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Restarts the element's RCSS keyframe animations (its 'animation' property) from the beginning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestartAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIElement_ScrollIntoView_" data-uid="Unravel.Core.UIElement.ScrollIntoView*"></a>
 
   <h3 id="Unravel_Core_UIElement_ScrollIntoView_System_Boolean_" data-uid="Unravel.Core.UIElement.ScrollIntoView(System.Boolean)">
   ScrollIntoView(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L320"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Scrolls the element into view.</p>
@@ -668,11 +1971,47 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
 
 
+  <a id="Unravel_Core_UIElement_ScrollTo_" data-uid="Unravel.Core.UIElement.ScrollTo*"></a>
+
+  <h3 id="Unravel_Core_UIElement_ScrollTo_Vector2_System_Boolean_" data-uid="Unravel.Core.UIElement.ScrollTo(Vector2,System.Boolean)">
+  ScrollTo(Vector2, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Scrolls the content to @p offset (left, top) in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollTo(Vector2 offset, bool smooth = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offset</code> <a class="xref" href="Vector2.html">Vector2</a></dt>
+    <dd><p>The scroll position.</p>
+</dd>
+    <dt><code>smooth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Glide there instead of jumping.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIElement_SetAttribute_" data-uid="Unravel.Core.UIElement.SetAttribute*"></a>
 
   <h3 id="Unravel_Core_UIElement_SetAttribute_System_String_System_String_" data-uid="Unravel.Core.UIElement.SetAttribute(System.String,System.String)">
   SetAttribute(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the value of an attribute.</p>
@@ -708,7 +2047,7 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_SetClass_System_String_System_Boolean_" data-uid="Unravel.Core.UIElement.SetClass(System.String,System.Boolean)">
   SetClass(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets or removes a CSS class on the element.</p>
@@ -740,11 +2079,110 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
 
 
+  <a id="Unravel_Core_UIElement_SetPseudoClass_" data-uid="Unravel.Core.UIElement.SetPseudoClass*"></a>
+
+  <h3 id="Unravel_Core_UIElement_SetPseudoClass_System_String_System_Boolean_" data-uid="Unravel.Core.UIElement.SetPseudoClass(System.String,System.Boolean)">
+  SetPseudoClass(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets or clears a pseudo class such as &quot;checked&quot; or &quot;selected&quot;, for :checked rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPseudoClass(string pseudoClass, bool active)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pseudoClass</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>active</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_SetText_" data-uid="Unravel.Core.UIElement.SetText*"></a>
+
+  <h3 id="Unravel_Core_UIElement_SetText_System_String_" data-uid="Unravel.Core.UIElement.SetText(System.String)">
+  SetText(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replaces the element's content with plain text: markup characters show as written.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text to show.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Unravel_Core_UIElement_SetValueWithoutNotify_" data-uid="Unravel.Core.UIElement.SetValueWithoutNotify*"></a>
+
+  <h3 id="Unravel_Core_UIElement_SetValueWithoutNotify_System_String_" data-uid="Unravel.Core.UIElement.SetValueWithoutNotify(System.String)">
+  SetValueWithoutNotify(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_value">value</a> without sending &quot;change&quot; to scripts (data bindings still update).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValueWithoutNotify(string newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIElement_SyncTransformToEntity_" data-uid="Unravel.Core.UIElement.SyncTransformToEntity*"></a>
 
   <h3 id="Unravel_Core_UIElement_SyncTransformToEntity_Unravel_Core_Entity_" data-uid="Unravel.Core.UIElement.SyncTransformToEntity(Unravel.Core.Entity)">
   SyncTransformToEntity(Entity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Synchronizes this element's transform to follow the given entity.</p>
@@ -777,7 +2215,7 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_ToString" data-uid="Unravel.Core.UIElement.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L724"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a string representation of this UI element wrapper.</p>
@@ -805,11 +2243,49 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
 
 
+  <a id="Unravel_Core_UIElement_ToggleClass_" data-uid="Unravel.Core.UIElement.ToggleClass*"></a>
+
+  <h3 id="Unravel_Core_UIElement_ToggleClass_System_String_" data-uid="Unravel.Core.UIElement.ToggleClass(System.String)">
+  ToggleClass(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the class when it is missing, removes it when it is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ToggleClass(string className)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>className</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether the class is set now.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Unravel_Core_UIElement_UnregisterCallback_" data-uid="Unravel.Core.UIElement.UnregisterCallback*"></a>
 
   <h3 id="Unravel_Core_UIElement_UnregisterCallback_System_String_Unravel_Core_UIEventCallback_" data-uid="Unravel.Core.UIElement.UnregisterCallback(System.String,Unravel.Core.UIEventCallback)">
   UnregisterCallback(string, UIEventCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L630"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes an event listener from this element.</p>
@@ -851,7 +2327,7 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_UnregisterCallback__1_System_String_System_Action___0__" data-uid="Unravel.Core.UIElement.UnregisterCallback``1(System.String,System.Action{``0})">
   UnregisterCallback&lt;T&gt;(string, Action&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L653"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unregisters a typed event callback.</p>
@@ -899,7 +2375,7 @@ Prefer obtaining instances via <a class="xref" href="Unravel.Core.UIDocument.htm
 
   <h3 id="Unravel_Core_UIElement_UnsubscribeAll" data-uid="Unravel.Core.UIElement.UnsubscribeAll">
   UnsubscribeAll()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L663"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Unsubscribe all callbacks from this UIElement.
@@ -929,11 +2405,47 @@ This removes all event listeners (both legacy and typed) from this element.</p>
 
 
 
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Unravel_Core_UIElement_clicked" data-uid="Unravel.Core.UIElement.clicked">
+  clicked
+  <a class="header-action link-secondary" title="View source" href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L715"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Raised when the element is clicked (pointer press and release on it, or <a class="xref" href="Unravel.Core.UIElement.html#Unravel_Core_UIElement_Click">Click()</a>).
+Unlike a &quot;click&quot; callback it takes no event, and removing it works for the same method or delegate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action clicked</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/unravel-dev/UnravelEngine/blob/main/engine_data/data/scripts/ui/UIElement.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

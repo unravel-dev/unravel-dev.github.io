@@ -102,11 +102,31 @@ $(function(){initNavTree('animation__panel_8cpp.html',''); initResizable(true); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="animation__panel_8h_source.html">animation_panel.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="animation__controller__inspectors_8h_source.html">animation_controller_inspectors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="panels__defs_8h_source.html">../panels_defs.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="editing__manager_8h_source.html">editor/editing/editing_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="inspectors_8h_source.html">editor/hub/panels/inspector_panel/inspectors/inspectors.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="shortcuts_8h_source.html">editor/shortcuts.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animation__controller__instance_8h_source.html">engine/animation/animation_controller_instance.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animation__component_8h_source.html">engine/animation/ecs/components/animation_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__manager_8h_source.html">engine/assets/asset_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__extensions_8h_source.html">engine/assets/impl/asset_extensions.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="asset__writer_8h_source.html">engine/assets/impl/asset_writer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tag__component_8h_source.html">engine/ecs/components/tag_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="transform__component_8h_source.html">engine/ecs/components/transform_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ecs_8h_source.html">engine/ecs/ecs.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="animation__controller_8hpp_source.html">engine/meta/animation/animation_controller.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="play__mode_8h_source.html">engine/play_mode.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="model__component_8h_source.html">engine/rendering/ecs/components/model_component.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mesh_8h_source.html">engine/rendering/mesh.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="filesystem_8h_source.html">filesystem/filesystem.h</a>&gt;</code><br />
 <code>#include &lt;imgui/imgui.h&gt;</code><br />
 <code>#include &lt;imgui/imgui_internal.h&gt;</code><br />
-<code>#include &lt;imgui_widgets/gizmo.h&gt;</code><br />
-<code>#include &lt;imgui_widgets/imanim/im_anim.h&gt;</code><br />
+<code>#include &lt;imgui_widgets/splitter.h&gt;</code><br />
+<code>#include &lt;imgui_widgets/tooltips.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="logging_8h_source.html">logging/logging.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 </div>
 <p><a href="animation__panel_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">

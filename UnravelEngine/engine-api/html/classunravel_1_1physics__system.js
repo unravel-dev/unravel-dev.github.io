@@ -1,12 +1,14 @@
 var classunravel_1_1physics__system =
 [
-    [ "backend_type", "classunravel_1_1physics__system.html#a70ee939c5622ee653036c7d5be3bfb43", null ],
     [ "apply_explosion_force", "classunravel_1_1physics__system.html#af504978c7c63c817b311ab32fc2b59aa", null ],
     [ "apply_force", "classunravel_1_1physics__system.html#a0154c7a652d828b00fc6b1b60a3ccd7a", null ],
     [ "apply_impulse_character", "classunravel_1_1physics__system.html#a7bc95aa729c05b6b337414bc079e1513", null ],
     [ "apply_torque", "classunravel_1_1physics__system.html#a034408e825ec142936ed6923ddb264a5", null ],
     [ "clear_kinematic_velocities", "classunravel_1_1physics__system.html#a0c4efb90702255880fbe427a98aabb99", null ],
     [ "deinit", "classunravel_1_1physics__system.html#a17534bcd9ba99c9bb7c48a686931562c", null ],
+    [ "draw_system_gizmos", "classunravel_1_1physics__system.html#adbd2e2a50f22c7bf5bfa16dcf696a51b", null ],
+    [ "get_backend", "classunravel_1_1physics__system.html#adcddc19db454bf84412de16e64bfa42c", null ],
+    [ "get_backend", "classunravel_1_1physics__system.html#a4d8e9ad17044159f7728ce741ec55cc3", null ],
     [ "init", "classunravel_1_1physics__system.html#ab39a22bd73e61261d351f71d45b78151", null ],
     [ "jump_character", "classunravel_1_1physics__system.html#a1f384478b56d22a1f780f491de482f96", null ],
     [ "move_character", "classunravel_1_1physics__system.html#a959c8a20a78620fccdc1e7ed012a9206", null ],

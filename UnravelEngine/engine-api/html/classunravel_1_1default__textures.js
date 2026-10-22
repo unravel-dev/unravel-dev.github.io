@@ -1,5 +1,6 @@
 var classunravel_1_1default__textures =
 [
+    [ "black_cube_texture", "classunravel_1_1default__textures.html#ab9b84c174e626d6f31c36ae87e8f9728", null ],
     [ "black_texture", "classunravel_1_1default__textures.html#a3e7754f5e6f77b6488fcb8e0fc14f632", null ],
     [ "clear", "classunravel_1_1default__textures.html#a7a78076d3ee046fb3778674e3af08b66", null ],
     [ "cloud_noise", "classunravel_1_1default__textures.html#ab4092551ef723ce9a7f395cd09178aaf", null ],
@@ -7,6 +8,9 @@ var classunravel_1_1default__textures =
     [ "generate", "classunravel_1_1default__textures.html#af360c72befc1a23f0259078b3aa09b66", null ],
     [ "get", "classunravel_1_1default__textures.html#a857d892b43717be146cf23a4668f8f8e", null ],
     [ "missing_texture", "classunravel_1_1default__textures.html#aae38d5ec5a118658a3c898c3b59acf7f", null ],
+    [ "specular_occlusion", "classunravel_1_1default__textures.html#a9818123bb848de0184ff45ad74f2500e", null ],
     [ "transparent_texture", "classunravel_1_1default__textures.html#a610f0922438f00dac613841e4d8bfaea", null ],
-    [ "white_texture", "classunravel_1_1default__textures.html#a5bbebbaa24d5af76906daa069130280c", null ]
+    [ "transparent_texture_3d", "classunravel_1_1default__textures.html#a2611f1f39ab55dcf970583687bc303d4", null ],
+    [ "white_texture", "classunravel_1_1default__textures.html#a5bbebbaa24d5af76906daa069130280c", null ],
+    [ "white_texture_3d", "classunravel_1_1default__textures.html#acc120a98c3c8fd80d7745c2ea1469dc4", null ]
 ];

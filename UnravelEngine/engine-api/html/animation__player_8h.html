@@ -99,14 +99,21 @@ $(function(){initNavTree('animation__player_8h.html',''); initResizable(true); }
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">animation_player.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="animation__blend__space_8h_source.html">animation_blend_space.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="animation__humanoid_8h_source.html">animation_humanoid.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="asset__handle_8h_source.html">engine/assets/asset_handle.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="model_8h_source.html">engine/rendering/model.h</a>&gt;</code><br />
+<code>#include &lt;hpp/span.hpp&gt;</code><br />
 <code>#include &lt;hpp/variant.hpp&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 </div>
 <p><a href="animation__player_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -120,8 +127,36 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1blend__state.html">unravel::blend_state</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__play__params.html">unravel::animation_play_params</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">How a new motion enters a layer.  <a href="structunravel_1_1animation__play__params.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__event__hit.html">unravel::animation_event_hit</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An animation event crossed during the last time step.  <a href="structunravel_1_1animation__event__hit.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__target__skeleton.html">unravel::animation_target_skeleton</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The skeleton a player retargets onto: per target index the parent, the bind (rest) local transform and the accumulated rest global transform. Parents must precede their children.  <a href="structunravel_1_1animation__target__skeleton.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__skeleton__binding.html">unravel::animation_skeleton_binding</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps clip channels onto a target skeleton.  <a href="structunravel_1_1animation__skeleton__binding.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__binding__report.html">unravel::animation_binding_report</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">How one clip binds onto one skeleton, as playback binds it: the bone every channel reaches and how it matched, the bones no channel reaches, and the constants Rest Aligned retargeting works with. For tools that explain why a clip plays the way it does.  <a href="structunravel_1_1animation__binding__report.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__binding__report_1_1channel__entry.html">unravel::animation_binding_report::channel_entry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__binding__report_1_1rest__difference.html">unravel::animation_binding_report::rest_difference</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A limb's rest direction on both skeletons, from <code>role</code> to the next joint of its chain.  <a href="structunravel_1_1animation__binding__report_1_1rest__difference.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classunravel_1_1animation__player.html">unravel::animation_player</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class responsible for playing animations on a skeletal mesh.  <a href="classunravel_1_1animation__player.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__player_1_1animation__layer__state.html">unravel::animation_player::animation_layer_state</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of a single pose source feeding a layer (either the current state or the crossfade target).  <a href="structunravel_1_1animation__player_1_1animation__layer__state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__player_1_1animation__layer__state_1_1reference__pose.html">unravel::animation_player::animation_layer_state::reference_pose</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">First-frame pose of one of the state's clips: the reference an additive layer subtracts.  <a href="structunravel_1_1animation__player_1_1animation__layer__state_1_1reference__pose.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunravel_1_1animation__player_1_1animation__layer.html">unravel::animation_player::animation_layer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -133,6 +168,19 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a9b00c5857f296f7123935306ea131754" id="r_a9b00c5857f296f7123935306ea131754"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a9b00c5857f296f7123935306ea131754">unravel::blend_easing_t</a> = std::function&lt;float(float)&gt;</td></tr>
 <tr class="separator:a9b00c5857f296f7123935306ea131754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:af585f867e8a841eebce6fb0c4db2be58" id="r_af585f867e8a841eebce6fb0c4db2be58"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#af585f867e8a841eebce6fb0c4db2be58">unravel::find_clip_humanoid_bones</a> (const <a class="el" href="structunravel_1_1animation__clip.html">animation_clip</a> &amp;<a class="el" href="namespaceunravel.html#a8dd2c638eb13e83a86c9b6d1e4359930af6d8b886335927d46fad323c60335d09">clip</a>) -&gt; <a class="el" href="namespaceunravel.html#a75799ec89cf60b1168364c4276eaac0b">humanoid_map</a></td></tr>
+<tr class="memdesc:af585f867e8a841eebce6fb0c4db2be58"><td class="mdescLeft">&#160;</td><td class="mdescRight">The humanoid roles of the skeleton a clip was authored on, as channel indices.  <br /></td></tr>
+<tr class="separator:af585f867e8a841eebce6fb0c4db2be58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a239ef3f2f796b6149fe87faaa9a10a85" id="r_a239ef3f2f796b6149fe87faaa9a10a85"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a239ef3f2f796b6149fe87faaa9a10a85">unravel::MAX_ANIMATION_LAYERS</a> = 32</td></tr>
+<tr class="separator:a239ef3f2f796b6149fe87faaa9a10a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c252cbc9cd5c0493f99e722c482e598" id="r_a5c252cbc9cd5c0493f99e722c482e598"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceunravel.html#a5c252cbc9cd5c0493f99e722c482e598">unravel::REST_POSE_WARNING_DEGREES</a> = 20.0f</td></tr>
+<tr class="separator:a5c252cbc9cd5c0493f99e722c482e598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

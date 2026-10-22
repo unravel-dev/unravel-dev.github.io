@@ -117,7 +117,7 @@ $(function(){initNavTree('any__shape_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> shape_t&gt;</div>
 <div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classgenerator_1_1any__shape.html#a016d57603f01b21053b9780c19fe6052">   18</a></span>    <a class="code hl_function" href="classgenerator_1_1any__shape.html#a016d57603f01b21053b9780c19fe6052">any_shape</a>(shape_t <a class="code hl_variable" href="bullet__backend_8cpp.html#ab32ba9711f3b323f966229372c16f43a">shape</a>) : base_{new derived&lt;shape_t&gt;{std::move(<a class="code hl_variable" href="bullet__backend_8cpp.html#ab32ba9711f3b323f966229372c16f43a">shape</a>)}}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classgenerator_1_1any__shape.html#a016d57603f01b21053b9780c19fe6052">   18</a></span>    <a class="code hl_function" href="classgenerator_1_1any__shape.html#a016d57603f01b21053b9780c19fe6052">any_shape</a>(shape_t <a class="code hl_variable" href="box3d__backend_8cpp.html#acdcb029950207ab0195a0900d70b888e">shape</a>) : base_{new derived&lt;shape_t&gt;{std::move(<a class="code hl_variable" href="box3d__backend_8cpp.html#acdcb029950207ab0195a0900d70b888e">shape</a>)}}</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
 </div>
@@ -148,26 +148,26 @@ $(function(){initNavTree('any__shape_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">class </span>derived : <span class="keyword">public</span> base</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">explicit</span> derived(shape_t <a class="code hl_variable" href="bullet__backend_8cpp.html#ab32ba9711f3b323f966229372c16f43a">shape</a>) : <a class="code hl_variable" href="particle__system__soa_8cpp.html#a1dc2b1bfc052ce22e1aa42a95de3dbe7">shape_</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(<a class="code hl_variable" href="bullet__backend_8cpp.html#ab32ba9711f3b323f966229372c16f43a">shape</a>))</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">explicit</span> derived(shape_t <a class="code hl_variable" href="box3d__backend_8cpp.html#acdcb029950207ab0195a0900d70b888e">shape</a>) : shape_(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(<a class="code hl_variable" href="box3d__backend_8cpp.html#acdcb029950207ab0195a0900d70b888e">shape</a>))</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        std::unique_ptr&lt;base&gt; clone()<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">        </span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">return</span> std::unique_ptr&lt;base&gt;{<span class="keyword">new</span> derived{<a class="code hl_variable" href="particle__system__soa_8cpp.html#a1dc2b1bfc052ce22e1aa42a95de3dbe7">shape_</a>}};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">return</span> std::unique_ptr&lt;base&gt;{<span class="keyword">new</span> derived{shape_}};</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        any_generator&lt;edge_t&gt; edges()<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">        </span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="particle__system__soa_8cpp.html#a1dc2b1bfc052ce22e1aa42a95de3dbe7">shape_</a>.edges();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> shape_.edges();</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        any_generator&lt;shape_vertex_t&gt; vertices()<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        any_generator&lt;shape_vertex_t&gt; <a class="code hl_enumvalue" href="namespaceunravel_1_1ps__soa.html#a5b76572ee50893f084ac0d0d85b32615aeb62d795002ea5ff009cb0dadb4e1cef">vertices</a>()<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">        </span>{</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="particle__system__soa_8cpp.html#a1dc2b1bfc052ce22e1aa42a95de3dbe7">shape_</a>.vertices();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">return</span> shape_.vertices();</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        shape_t <a class="code hl_variable" href="particle__system__soa_8cpp.html#a1dc2b1bfc052ce22e1aa42a95de3dbe7">shape_</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        shape_t shape_;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    };</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    std::unique_ptr&lt;base&gt; base_;</div>
@@ -177,7 +177,7 @@ $(function(){initNavTree('any__shape_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aany__generator_8hpp_html"><div class="ttname"><a href="any__generator_8hpp.html">any_generator.hpp</a></div></div>
-<div class="ttc" id="abullet__backend_8cpp_html_ab32ba9711f3b323f966229372c16f43a"><div class="ttname"><a href="bullet__backend_8cpp.html#ab32ba9711f3b323f966229372c16f43a">shape</a></div><div class="ttdeci">std::shared_ptr&lt; btCapsuleShape &gt; shape</div><div class="ttdef"><b>Definition</b> <a href="bullet__backend_8cpp_source.html#l00678">bullet_backend.cpp:678</a></div></div>
+<div class="ttc" id="abox3d__backend_8cpp_html_acdcb029950207ab0195a0900d70b888e"><div class="ttname"><a href="box3d__backend_8cpp.html#acdcb029950207ab0195a0900d70b888e">shape</a></div><div class="ttdeci">b3ShapeId shape</div><div class="ttdef"><b>Definition</b> <a href="box3d__backend_8cpp_source.html#l00334">box3d_backend.cpp:334</a></div></div>
 <div class="ttc" id="aclassgenerator_1_1any__generator_html"><div class="ttname"><a href="classgenerator_1_1any__generator.html">generator::any_generator</a></div><div class="ttdef"><b>Definition</b> <a href="any__generator_8hpp_source.html#l00012">any_generator.hpp:13</a></div></div>
 <div class="ttc" id="aclassgenerator_1_1any__shape_html"><div class="ttname"><a href="classgenerator_1_1any__shape.html">generator::any_shape</a></div><div class="ttdoc">A type erasing container that can store any shape.</div><div class="ttdef"><b>Definition</b> <a href="#l00014">any_shape.hpp:15</a></div></div>
 <div class="ttc" id="aclassgenerator_1_1any__shape_html_a016d57603f01b21053b9780c19fe6052"><div class="ttname"><a href="classgenerator_1_1any__shape.html#a016d57603f01b21053b9780c19fe6052">generator::any_shape::any_shape</a></div><div class="ttdeci">any_shape(shape_t shape)</div><div class="ttdef"><b>Definition</b> <a href="#l00018">any_shape.hpp:18</a></div></div>
@@ -186,8 +186,8 @@ $(function(){initNavTree('any__shape_8hpp_source.html',''); initResizable(true);
 <div class="ttc" id="aclassgenerator_1_1shape__vertex__t_html"><div class="ttname"><a href="classgenerator_1_1shape__vertex__t.html">generator::shape_vertex_t</a></div><div class="ttdef"><b>Definition</b> <a href="shape__vertex_8hpp_source.html#l00011">shape_vertex.hpp:12</a></div></div>
 <div class="ttc" id="aedge_8hpp_html"><div class="ttname"><a href="edge_8hpp.html">edge.hpp</a></div></div>
 <div class="ttc" id="anamespacegenerator_html"><div class="ttname"><a href="namespacegenerator.html">generator</a></div><div class="ttdef"><b>Definition</b> <a href="any__generator_8hpp_source.html#l00006">any_generator.hpp:7</a></div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">Hash specialization for batch_key to enable use in std::unordered_map.</div><div class="ttdef"><b>Definition</b> <a href="render__view__keys_8h_source.html#l00036">render_view_keys.h:37</a></div></div>
-<div class="ttc" id="aparticle__system__soa_8cpp_html_a1dc2b1bfc052ce22e1aa42a95de3dbe7"><div class="ttname"><a href="particle__system__soa_8cpp.html#a1dc2b1bfc052ce22e1aa42a95de3dbe7">shape_</a></div><div class="ttdeci">emitter_shape shape_</div><div class="ttdef"><b>Definition</b> <a href="particle__system__soa_8cpp_source.html#l01448">particle_system_soa.cpp:1448</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">Hash specialization for batch_key to enable use in std::unordered_map.</div><div class="ttdef"><b>Definition</b> <a href="batch__key_8h_source.html#l00154">batch_key.h:155</a></div></div>
+<div class="ttc" id="anamespaceunravel_1_1ps__soa_html_a5b76572ee50893f084ac0d0d85b32615aeb62d795002ea5ff009cb0dadb4e1cef"><div class="ttname"><a href="namespaceunravel_1_1ps__soa.html#a5b76572ee50893f084ac0d0d85b32615aeb62d795002ea5ff009cb0dadb4e1cef">unravel::ps_soa::mesh_spawn_mode::vertices</a></div><div class="ttdeci">@ vertices</div><div class="ttdoc">On the vertices.</div></div>
 <div class="ttc" id="ashape__vertex_8hpp_html"><div class="ttname"><a href="shape__vertex_8hpp.html">shape_vertex.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

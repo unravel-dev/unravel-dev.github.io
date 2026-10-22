@@ -117,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6cd3af0994cad693afe8cf0834795729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa005921531d4a8ec704d26c99f0df213" id="r_aa005921531d4a8ec704d26c99f0df213"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa005921531d4a8ec704d26c99f0df213">~YAMLInputArchive</a> () noexcept=default</td></tr>
 <tr class="separator:aa005921531d4a8ec704d26c99f0df213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0e3bb566e4e0e6ffd716e4568cf4a32" id="r_ac0e3bb566e4e0e6ffd716e4568cf4a32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0e3bb566e4e0e6ffd716e4568cf4a32">loadBinaryValue</a> (void *data, size_t <a class="el" href="structsize.html">size</a>, const char *<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>=nullptr)</td></tr>
+<tr class="memitem:ac0e3bb566e4e0e6ffd716e4568cf4a32" id="r_ac0e3bb566e4e0e6ffd716e4568cf4a32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0e3bb566e4e0e6ffd716e4568cf4a32">loadBinaryValue</a> (void *data, size_t <a class="el" href="structsize.html">size</a>, const char *<a class="el" href="android__icon_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>=nullptr)</td></tr>
 <tr class="memdesc:ac0e3bb566e4e0e6ffd716e4568cf4a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads some binary data, encoded as a base64 string.  <br /></td></tr>
 <tr class="separator:ac0e3bb566e4e0e6ffd716e4568cf4a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -133,16 +133,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5934568f1697d4ac8ec31fb491d0ab62" id="r_a5934568f1697d4ac8ec31fb491d0ab62"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5934568f1697d4ac8ec31fb491d0ab62">getNodeName</a> () const</td></tr>
 <tr class="memdesc:a5934568f1697d4ac8ec31fb491d0ab62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current node name.  <br /></td></tr>
 <tr class="separator:a5934568f1697d4ac8ec31fb491d0ab62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29a67085effbd250d36fce6345c85bec" id="r_a29a67085effbd250d36fce6345c85bec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29a67085effbd250d36fce6345c85bec">setNextName</a> (const char *<a class="el" href="hub_8cpp.html#a9b45b3e13bd9167aab02e17e08916231">name</a>)</td></tr>
+<tr class="memitem:af9a883958738a65b7b014f9160da90a9" id="r_af9a883958738a65b7b014f9160da90a9"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9a883958738a65b7b014f9160da90a9">getNodeDepth</a> () const</td></tr>
+<tr class="memdesc:af9a883958738a65b7b014f9160da90a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many nodes deep the read position is, counting the root node.  <br /></td></tr>
+<tr class="separator:af9a883958738a65b7b014f9160da90a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7931fe81eea5c01caf941ee8279e0e78" id="r_a7931fe81eea5c01caf941ee8279e0e78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7931fe81eea5c01caf941ee8279e0e78">restoreNodeDepth</a> (std::size_t <a class="el" href="animation__humanoid_8cpp.html#a961bb679917dadf5b87186177fa9ca22">depth</a>)</td></tr>
+<tr class="memdesc:a7931fe81eea5c01caf941ee8279e0e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes the nodes that a failed load entered and never finished.  <br /></td></tr>
+<tr class="separator:a7931fe81eea5c01caf941ee8279e0e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc405c7ccd65a307a4457e1c3166228" id="r_a7fc405c7ccd65a307a4457e1c3166228"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fc405c7ccd65a307a4457e1c3166228">hasNextName</a> (const char *<a class="el" href="android__icon_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>) const -&gt; bool</td></tr>
+<tr class="memdesc:a7fc405c7ccd65a307a4457e1c3166228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is a member with this name available at the current level?  <br /></td></tr>
+<tr class="separator:a7fc405c7ccd65a307a4457e1c3166228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a67085effbd250d36fce6345c85bec" id="r_a29a67085effbd250d36fce6345c85bec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29a67085effbd250d36fce6345c85bec">setNextName</a> (const char *<a class="el" href="android__icon_8cpp.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>)</td></tr>
 <tr class="memdesc:a29a67085effbd250d36fce6345c85bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name for the next node created with startNode.  <br /></td></tr>
 <tr class="separator:a29a67085effbd250d36fce6345c85bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cb352285bf36d07ec0b0f4392915ff7" id="r_a3cb352285bf36d07ec0b0f4392915ff7"><td class="memTemplParams" colspan="2">template&lt;class T &gt; <br />
-requires (std::is_signed&lt;T&gt;::value &amp;&amp; sizeof(T) &lt; sizeof(int64_t))</td></tr>
+requires (std::is_signed&lt;T&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; sizeof(T) &lt; sizeof(int64_t))</td></tr>
 <tr class="memitem:a3cb352285bf36d07ec0b0f4392915ff7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3cb352285bf36d07ec0b0f4392915ff7">loadValue</a> (T &amp;val)</td></tr>
 <tr class="memdesc:a3cb352285bf36d07ec0b0f4392915ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a value from the current node - small signed overload.  <br /></td></tr>
 <tr class="separator:a3cb352285bf36d07ec0b0f4392915ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b95653de2597e8d590671e9d001c37c" id="r_a2b95653de2597e8d590671e9d001c37c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; <br />
-requires (std::is_unsigned&lt;T&gt;::value &amp;&amp; sizeof(T) &lt; sizeof(uint64_t) &amp;&amp; !std::is_same&lt;bool, T&gt;::value)</td></tr>
+requires (std::is_unsigned&lt;T&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; sizeof(T) &lt; sizeof(uint64_t) &amp;&amp; !std::is_same&lt;bool, T&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a>)</td></tr>
 <tr class="memitem:a2b95653de2597e8d590671e9d001c37c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2b95653de2597e8d590671e9d001c37c">loadValue</a> (T &amp;val)</td></tr>
 <tr class="memdesc:a2b95653de2597e8d590671e9d001c37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a value from the current node - small unsigned overload.  <br /></td></tr>
 <tr class="separator:a2b95653de2597e8d590671e9d001c37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,15 +177,15 @@ requires (std::is_unsigned&lt;T&gt;::value &amp;&amp; sizeof(T) &lt; sizeof(uint
 <tr class="memdesc:ab48388055ebb89a06c7c16a59546779b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a nullptr from the current node.  <br /></td></tr>
 <tr class="separator:ab48388055ebb89a06c7c16a59546779b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0236f6b07902df611d1307247bdcaf3" id="r_ab0236f6b07902df611d1307247bdcaf3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ab0236f6b07902df611d1307247bdcaf3"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; T, long &gt;::value &amp;&amp;sizeof(T)&gt;=sizeof(std::int64_t)&amp;&amp;!std::is_same&lt; T, std::int64_t &gt;::value, void &gt;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">::type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab0236f6b07902df611d1307247bdcaf3">loadValue</a> (T &amp;t)</td></tr>
+<tr class="memitem:ab0236f6b07902df611d1307247bdcaf3"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; T, long &gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp;sizeof(T)&gt;=sizeof(std::int64_t)&amp;&amp;!std::is_same&lt; T, std::int64_t &gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a>, void &gt;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">::type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab0236f6b07902df611d1307247bdcaf3">loadValue</a> (T &amp;t)</td></tr>
 <tr class="memdesc:ab0236f6b07902df611d1307247bdcaf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a long if it would not be caught otherwise.  <br /></td></tr>
 <tr class="separator:ab0236f6b07902df611d1307247bdcaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1be9d7298cbc17e58429aecfcfcb4ec" id="r_ac1be9d7298cbc17e58429aecfcfcb4ec"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ac1be9d7298cbc17e58429aecfcfcb4ec"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; T, unsignedlong &gt;::value &amp;&amp;sizeof(T)&gt;=sizeof(std::uint64_t)&amp;&amp;!std::is_same&lt; T, std::uint64_t &gt;::value, void &gt;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">::type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac1be9d7298cbc17e58429aecfcfcb4ec">loadValue</a> (T &amp;t)</td></tr>
+<tr class="memitem:ac1be9d7298cbc17e58429aecfcfcb4ec"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; T, unsignedlong &gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp;sizeof(T)&gt;=sizeof(std::uint64_t)&amp;&amp;!std::is_same&lt; T, std::uint64_t &gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a>, void &gt;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">::type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac1be9d7298cbc17e58429aecfcfcb4ec">loadValue</a> (T &amp;t)</td></tr>
 <tr class="memdesc:ac1be9d7298cbc17e58429aecfcfcb4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize an unsigned long if it would not be caught otherwise.  <br /></td></tr>
 <tr class="separator:ac1be9d7298cbc17e58429aecfcfcb4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aae865951c97195e7437e7adb2cb1a2" id="r_a0aae865951c97195e7437e7adb2cb1a2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; <br />
-requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long&gt;::value &amp;&amp; !std::is_same&lt;T, unsigned long&gt;::value &amp;&amp; !std::is_same&lt;T, std::int64_t&gt;::value &amp;&amp; !std::is_same&lt;T, std::uint64_t&gt;::value &amp;&amp; (sizeof(T) &gt;= sizeof(long double) || sizeof(T) &gt;= sizeof(long long)))</td></tr>
+requires (std::is_arithmetic&lt;T&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; !std::is_same&lt;T, long&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; !std::is_same&lt;T, unsigned long&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; !std::is_same&lt;T, std::int64_t&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; !std::is_same&lt;T, std::uint64_t&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; (sizeof(T) &gt;= sizeof(long double) || sizeof(T) &gt;= sizeof(long long)))</td></tr>
 <tr class="memitem:a0aae865951c97195e7437e7adb2cb1a2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0aae865951c97195e7437e7adb2cb1a2">loadValue</a> (T &amp;val)</td></tr>
 <tr class="memdesc:a0aae865951c97195e7437e7adb2cb1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a value from the current node - long double and long long overloads.  <br /></td></tr>
 <tr class="separator:a0aae865951c97195e7437e7adb2cb1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,7 +275,37 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Finishes the most recently started node. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00543">543</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00587">587</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af9a883958738a65b7b014f9160da90a9" name="af9a883958738a65b7b014f9160da90a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a883958738a65b7b014f9160da90a9">&#9670;&#160;</a></span>getNodeDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t ser20::YAMLInputArchive::getNodeDepth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many nodes deep the read position is, counting the root node. </p>
+<p>Pairs with <a class="el" href="#a7931fe81eea5c01caf941ee8279e0e78" title="Finishes the nodes that a failed load entered and never finished.">restoreNodeDepth()</a>: a caller that carries on after a failed load records the depth before it, so it can get back to its own node however deep the failure was. </p>
+
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00604">604</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -296,7 +335,40 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 <p>Retrieves the current node name. </p>
 <dl class="section return"><dt>Returns</dt><dd>nullptr if no name exists </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00551">551</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00595">595</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7fc405c7ccd65a307a4457e1c3166228" name="a7fc405c7ccd65a307a4457e1c3166228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc405c7ccd65a307a4457e1c3166228">&#9670;&#160;</a></span>hasNextName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ser20::YAMLInputArchive::hasNextName </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td> const -&gt; bool
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is a member with this name available at the current level? </p>
+<p>Lets a caller distinguish "absent" from "present" without provoking the exception that search() throws, which is otherwise the only way this archive can report a miss. Intended for genuinely optional fields, where absence is expected rather than exceptional. Does not move the read position, so a true answer must still be followed by the normal load.</p>
+<p>Note this is a membership test, not a comparison against <a class="el" href="#a5934568f1697d4ac8ec31fb491d0ab62" title="Retrieves the current node name.">getNodeName()</a>: a caller that skips a field without reading it leaves the cursor behind, and the next name it asks for is then legitimately ahead of the cursor.</p>
+<p>Returns true when the current node is not a mapping, where names are not used to address elements. </p>
+
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00635">635</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -365,7 +437,7 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Loads the size for a SizeTag. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00723">723</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00811">811</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -394,7 +466,7 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Loads a value from the current node - bool overload. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00585">585</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00673">673</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -423,7 +495,7 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Loads a value from the current node - double overload. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00613">613</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00701">701</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -452,7 +524,7 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Loads a value from the current node - float overload. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00606">606</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00694">694</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -481,7 +553,7 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Loads a value from the current node - int64 overload. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00592">592</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00680">680</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -510,7 +582,7 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Loads a nullptr from the current node. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00627">627</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00715">715</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -539,7 +611,7 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Loads a value from the current node - string overload. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00620">620</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00708">708</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -555,7 +627,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt; std::is_same&lt; T, long &gt;::value &amp;&amp;sizeof(T)&gt;=sizeof(std::int64_t)&amp;&amp;!std::is_same&lt; T, std::int64_t &gt;::value, void &gt;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">::type</a> ser20::YAMLInputArchive::loadValue </td>
+          <td class="memname">std::enable_if&lt; std::is_same&lt; T, long &gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp;sizeof(T)&gt;=sizeof(std::int64_t)&amp;&amp;!std::is_same&lt; T, std::int64_t &gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a>, void &gt;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">::type</a> ser20::YAMLInputArchive::loadValue </td>
           <td>(</td>
           <td class="paramtype">T &amp;</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
           <td></td>
@@ -570,7 +642,7 @@ template&lt;class T &gt; </div>
 
 <p>Serialize a long if it would not be caught otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00675">675</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00763">763</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -586,7 +658,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt; std::is_same&lt; T, unsignedlong &gt;::value &amp;&amp;sizeof(T)&gt;=sizeof(std::uint64_t)&amp;&amp;!std::is_same&lt; T, std::uint64_t &gt;::value, void &gt;<a class="el" href="mesh__importer_8cpp.html#a098440f5606f8f56f1544f5ec074db65">::type</a> ser20::YAMLInputArchive::loadValue </td>
+          <td class="memname">std::enable_if&lt; std::is_same&lt; T, unsignedlong &gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp;sizeof(T)&gt;=sizeof(std::uint64_t)&amp;&amp;!std::is_same&lt; T, std::uint64_t &gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a>, void &gt;<a class="el" href="box3d__backend_8cpp.html#a2542a9066337faae1d42acb19fc0efbe">::type</a> ser20::YAMLInputArchive::loadValue </td>
           <td>(</td>
           <td class="paramtype">T &amp;</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
           <td></td>
@@ -601,7 +673,7 @@ template&lt;class T &gt; </div>
 
 <p>Serialize an unsigned long if it would not be caught otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00685">685</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00773">773</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -612,7 +684,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; <br />
-requires (std::is_signed&lt;T&gt;::value &amp;&amp; sizeof(T) &lt; sizeof(int64_t))</div>
+requires (std::is_signed&lt;T&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; sizeof(T) &lt; sizeof(int64_t))</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -633,7 +705,7 @@ requires (std::is_signed&lt;T&gt;::value &amp;&amp; sizeof(T) &lt; sizeof(int64_
 
 <p>Loads a value from the current node - small signed overload. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00564">564</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00652">652</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -644,7 +716,7 @@ requires (std::is_signed&lt;T&gt;::value &amp;&amp; sizeof(T) &lt; sizeof(int64_
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; <br />
-requires (std::is_unsigned&lt;T&gt;::value &amp;&amp; sizeof(T) &lt; sizeof(uint64_t) &amp;&amp; !std::is_same&lt;bool, T&gt;::value)</div>
+requires (std::is_unsigned&lt;T&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; sizeof(T) &lt; sizeof(uint64_t) &amp;&amp; !std::is_same&lt;bool, T&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a>)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -665,7 +737,7 @@ requires (std::is_unsigned&lt;T&gt;::value &amp;&amp; sizeof(T) &lt; sizeof(uint
 
 <p>Loads a value from the current node - small unsigned overload. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00575">575</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00663">663</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -676,7 +748,7 @@ requires (std::is_unsigned&lt;T&gt;::value &amp;&amp; sizeof(T) &lt; sizeof(uint
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; <br />
-requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long&gt;::value &amp;&amp; !std::is_same&lt;T, unsigned long&gt;::value &amp;&amp; !std::is_same&lt;T, std::int64_t&gt;::value &amp;&amp; !std::is_same&lt;T, std::uint64_t&gt;::value &amp;&amp; (sizeof(T) &gt;= sizeof(long double) || sizeof(T) &gt;= sizeof(long long)))</div>
+requires (std::is_arithmetic&lt;T&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; !std::is_same&lt;T, long&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; !std::is_same&lt;T, unsigned long&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; !std::is_same&lt;T, std::int64_t&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; !std::is_same&lt;T, std::uint64_t&gt;<a class="el" href="particle__emitter__component__bindings_8cpp.html#accf05f83b2f9d8e3e93869b7420f2f09">::value</a> &amp;&amp; (sizeof(T) &gt;= sizeof(long double) || sizeof(T) &gt;= sizeof(long long)))</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -697,7 +769,7 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Loads a value from the current node - long double and long long overloads. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00711">711</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00799">799</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -726,7 +798,37 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Loads a value from the current node - uint64 overload. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00599">599</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00687">687</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7931fe81eea5c01caf941ee8279e0e78" name="a7931fe81eea5c01caf941ee8279e0e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7931fe81eea5c01caf941ee8279e0e78">&#9670;&#160;</a></span>restoreNodeDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ser20::YAMLInputArchive::restoreNodeDepth </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>depth</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finishes the nodes that a failed load entered and never finished. </p>
+<p>A throw between <a class="el" href="#a1e1172232c1cd61557560467896cb070" title="Starts a new node, going into its proper iterator.">startNode()</a> and <a class="el" href="#ae667b18008202fbe578bf251e7a053fb" title="Finishes the most recently started node.">finishNode()</a> leaves the child node current, so a caller that carries on would look for its next names inside that child and find none of them. Finishes every node deeper than depth, as their loads would have; does nothing when the read position is not deeper. </p>
+
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00614">614</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -755,7 +857,7 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 
 <p>Sets the name for the next node created with startNode. </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00557">557</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00645">645</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>
@@ -787,7 +889,7 @@ requires (std::is_arithmetic&lt;T&gt;::value &amp;&amp; !std::is_same&lt;T, long
 <p>By default our strategy is to start with the document root node and then recursively iterate through all children in the order they show up in the document. We don't need to know NVPs to do this; we'll just blindly load in the order things appear in.</p>
 <p>If we were given an NVP, we will search for it if it does not match our the name of the next node that would normally be loaded. This functionality is provided by search(). </p>
 
-<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00526">526</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="yaml_8hpp_source.html#l00570">570</a> of file <a class="el" href="yaml_8hpp_source.html">yaml.hpp</a>.</p>
 
 </div>
 </div>

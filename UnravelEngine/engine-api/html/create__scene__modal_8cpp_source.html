@@ -104,317 +104,406 @@ $(function(){initNavTree('create__scene__modal_8cpp_source.html',''); initResiza
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;<a class="code" href="imgui_8h.html">editor/imgui/integration/imgui.h</a>&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;imgui/imgui.h&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;imgui/imgui_internal.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceunravel.html">unravel</a></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">struct </span>preset_card_info</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">   15</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="create__scene__modal_8cpp.html#a7b0a7c3f446f98e2152357b0145c5b1d">   16</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="create__scene__modal_8cpp.html#a7b0a7c3f446f98e2152357b0145c5b1d">icon</a>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">   17</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="create__scene__modal_8cpp.html#a68344fa88cf4e86b5079fd69a5c22d57">   18</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="create__scene__modal_8cpp.html#a68344fa88cf4e86b5079fd69a5c22d57">description</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">   19</a></span>    <a class="code hl_enumeration" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25">defaults::scene_preset</a> <a class="code hl_variable" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">const</span> preset_card_info presets[] = {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {<span class="stringliteral">&quot;preset_low&quot;</span>,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>     <a class="code hl_define" href="icons__material__design__icons_8h.html#a7d577c431ba2153c305de517aae95809">ICON_MDI_LIGHTNING_BOLT_OUTLINE</a>,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>     <span class="stringliteral">&quot;Low End&quot;</span>,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>     <span class="stringliteral">&quot;Basic lighting and minimal post-processing.\n&quot;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>     <span class="stringliteral">&quot;Best for low-end hardware or mobile targets.&quot;</span>,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>     <a class="code hl_enumvalue" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a53cced8d281a1a0ace3cb6594daaa4f7">defaults::scene_preset::low</a>},</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    {<span class="stringliteral">&quot;preset_medium&quot;</span>,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>     <a class="code hl_define" href="icons__material__design__icons_8h.html#a501dcc54e289e2477504c931ae3b62c9">ICON_MDI_LAYERS</a>,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>     <span class="stringliteral">&quot;Standard&quot;</span>,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>     <span class="stringliteral">&quot;Balanced lighting, soft shadows and post-processing.\n&quot;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>     <span class="stringliteral">&quot;Recommended for most projects.&quot;</span>,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>     <a class="code hl_enumvalue" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a075a3e36a0a52dcbc568c05788e8a713">defaults::scene_preset::medium</a>},</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {<span class="stringliteral">&quot;preset_high&quot;</span>,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>     <a class="code hl_define" href="icons__material__design__icons_8h.html#a007c5b8f8cf54203b1ec600871cc198c">ICON_MDI_DIAMOND_STONE</a>,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>     <span class="stringliteral">&quot;High End&quot;</span>,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>     <span class="stringliteral">&quot;Full Lighting, SSR, Bloom, Volumetric Clouds, Soft Shadows and Post-Processing.\n&quot;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>     <span class="stringliteral">&quot;Best for high-end desktop builds.&quot;</span>,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>     <a class="code hl_enumvalue" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a8d966b2253a917086c8604959e152243">defaults::scene_preset::high</a>},</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {<span class="stringliteral">&quot;preset_showcase&quot;</span>,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>     <a class="code hl_define" href="icons__material__design__icons_8h.html#a4e0d159d7f679d23e3be1d12eee04ee5">ICON_MDI_GIFT</a>,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>     <span class="stringliteral">&quot;Showcase&quot;</span>,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>     <span class="stringliteral">&quot;Full Lighting, SSIL, SSR, Bloom, TAA, Volumetric Clouds, Soft Shadows and Post-Processing.\n&quot;</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>     <span class="stringliteral">&quot;Best for showcase builds. Requires a powerful GPU.&quot;</span>,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>     <a class="code hl_enumvalue" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a88c5ba0ad717231c45ce638a11060487">defaults::scene_preset::showcase</a>},</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">enum class</span> card_action</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_enumvalue" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3daca9e9531625d9b1cc5b0a971b9eed6c6">none</a>,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    selected,</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    confirmed</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">auto</span> draw_preset_card(<span class="keyword">const</span> preset_card_info&amp; info, <span class="keywordtype">float</span> card_width, <span class="keywordtype">bool</span> is_selected) -&gt; card_action</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">auto</span> result = card_action::none;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">bool</span> is_hovered = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    ImGui::PushStyleVar(ImGuiStyleVar_ChildRounding, 8.0f);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(20, 16));</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    ImGui::PushStyleVar(ImGuiStyleVar_FrameRounding, 8.0f);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">if</span>(is_selected)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        ImGui::PushStyleColor(ImGuiCol_ChildBg, ImGui::GetColorU32(ImGuiCol_ButtonActive, 0.25f));</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        ImGui::PushStyleColor(ImGuiCol_ChildBg, ImGui::GetColorU32(ImGuiCol_FrameBg, 0.6f));</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    ImVec2 card_size(card_width, 0);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">if</span>(ImGui::BeginChild(info.id, card_size,</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                         ImGuiChildFlags_FrameStyle | ImGuiChildFlags_Borders | ImGuiChildFlags_AutoResizeY))</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        is_hovered = ImGui::IsWindowHovered();</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="utils_8h.html">string_utils/utils.h</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;iterator&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceunravel.html">unravel</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">struct </span>preset_card_info</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">   19</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="create__scene__modal_8cpp.html#a7b0a7c3f446f98e2152357b0145c5b1d">   20</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="create__scene__modal_8cpp.html#a7b0a7c3f446f98e2152357b0145c5b1d">icon</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">   21</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="create__scene__modal_8cpp.html#a68344fa88cf4e86b5079fd69a5c22d57">   22</a></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="create__scene__modal_8cpp.html#a68344fa88cf4e86b5079fd69a5c22d57">description</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">   23</a></span>    <a class="code hl_enumeration" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25">defaults::scene_preset</a> <a class="code hl_variable" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">const</span> preset_card_info presets[] = {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {<span class="stringliteral">&quot;preset_low&quot;</span>,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>     <a class="code hl_define" href="icons__material__design__icons_8h.html#a7d577c431ba2153c305de517aae95809">ICON_MDI_LIGHTNING_BOLT_OUTLINE</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>     <span class="stringliteral">&quot;Low End&quot;</span>,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>     <span class="stringliteral">&quot;Sky lighting, soft shadows, tonemapping and FXAA. No clouds, no reflection bakes.\n&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>     <span class="stringliteral">&quot;Best for low-end or mobile.&quot;</span>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>     <a class="code hl_enumvalue" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a53cced8d281a1a0ace3cb6594daaa4f7">defaults::scene_preset::low</a>},</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {<span class="stringliteral">&quot;preset_medium&quot;</span>,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>     <a class="code hl_define" href="icons__material__design__icons_8h.html#a501dcc54e289e2477504c931ae3b62c9">ICON_MDI_LAYERS</a>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>     <span class="stringliteral">&quot;Standard&quot;</span>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>     <span class="stringliteral">&quot;Flat clouds, soft shadows, tonemapping, TAA and GTAO ambient occlusion.\n&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>     <span class="stringliteral">&quot;Recommended for most projects.&quot;</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>     <a class="code hl_enumvalue" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a075a3e36a0a52dcbc568c05788e8a713">defaults::scene_preset::medium</a>},</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {<span class="stringliteral">&quot;preset_high&quot;</span>,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>     <a class="code hl_define" href="icons__material__design__icons_8h.html#a007c5b8f8cf54203b1ec600871cc198c">ICON_MDI_DIAMOND_STONE</a>,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>     <span class="stringliteral">&quot;High End&quot;</span>,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>     <span class="stringliteral">&quot;Volumetric clouds and contact shadows. Dynamic global illumination provides the indirect &quot;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>     <span class="stringliteral">&quot;lighting, the reflections and the ambient occlusion; tonemapping, TAA, bloom and &quot;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>     <span class="stringliteral">&quot;auto-exposure finish the frame.\n&quot;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>     <span class="stringliteral">&quot;Best for high-end desktop.&quot;</span>,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>     <a class="code hl_enumvalue" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a8d966b2253a917086c8604959e152243">defaults::scene_preset::high</a>},</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {<span class="stringliteral">&quot;preset_showcase&quot;</span>,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>     <a class="code hl_define" href="icons__material__design__icons_8h.html#a4e0d159d7f679d23e3be1d12eee04ee5">ICON_MDI_GIFT</a>,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>     <span class="stringliteral">&quot;Showcase&quot;</span>,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>     <span class="stringliteral">&quot;High End with the global illumination at twice the quality and high-resolution shadow maps.\n&quot;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>     <span class="stringliteral">&quot;Highest quality lighting and shadows. Requires a powerful GPU.&quot;</span>,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>     <a class="code hl_enumvalue" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a88c5ba0ad717231c45ce638a11060487">defaults::scene_preset::showcase</a>},</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">enum class</span> card_action</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_enumvalue" href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3daca9e9531625d9b1cc5b0a971b9eed6c6">none</a>,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    selected,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    confirmed</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">auto</span> draw_preset_card(<span class="keyword">const</span> preset_card_info&amp; info, <span class="keywordtype">float</span> card_width, <span class="keywordtype">bool</span> is_selected) -&gt; card_action</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">auto</span> result = card_action::none;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="content__browser__item_8cpp.html#a1edc01844856bc4a86757184ee2cb24e">is_hovered</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    ImGui::PushStyleVar(ImGuiStyleVar_ChildRounding, 8.0f);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(20, 16));</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    ImGui::PushStyleVar(ImGuiStyleVar_FrameRounding, 8.0f);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span>(is_selected)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        ImGui::PushStyleColor(ImGuiCol_ChildBg, ImGui::GetColorU32(ImGuiCol_ButtonActive, 0.25f));</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        ImGui::PushStyleColor(ImGuiCol_ChildBg, ImGui::GetColorU32(ImGuiCol_FrameBg, 0.6f));</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        ImDrawList* draw_list = ImGui::GetWindowDrawList();</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        ImVec2 p_min = ImGui::GetWindowPos();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        ImVec2 p_max = ImVec2(p_min.x + ImGui::GetWindowSize().x, p_min.y + ImGui::GetWindowSize().y);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span>(is_hovered)</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            draw_list-&gt;AddRectFilled(p_min, p_max, ImGui::GetColorU32(ImGuiCol_ButtonHovered, 0.4f), 8.0f);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            draw_list-&gt;AddRect(p_min, p_max, ImGui::GetColorU32(ImGuiCol_ButtonActive, 0.6f), 8.0f, 0, 2.0f);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(is_selected)</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            draw_list-&gt;AddRect(p_min, p_max, ImGui::GetColorU32(ImGuiCol_ButtonActive, 0.6f), 8.0f, 0, 1.5f);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        ImGui::SetCursorPos(ImVec2(ImGui::GetCursorPosX() + 4, ImGui::GetCursorPosY() + 2));</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        ImGui::BeginGroup();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    ImVec2 card_size(card_width, 0);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">if</span>(ImGui::BeginChild(info.id, card_size,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                         ImGuiChildFlags_FrameStyle | ImGuiChildFlags_Borders | ImGuiChildFlags_AutoResizeY))</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_variable" href="content__browser__item_8cpp.html#a1edc01844856bc4a86757184ee2cb24e">is_hovered</a> = ImGui::IsWindowHovered();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        ImDrawList* <a class="code hl_variable" href="loading__page_8cpp.html#a6e5438e4b5e540fe8371280c28b0aeac">draw_list</a> = ImGui::GetWindowDrawList();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        ImVec2 p_min = ImGui::GetWindowPos();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        ImVec2 p_max = ImVec2(p_min.x + ImGui::GetWindowSize().x, p_min.y + ImGui::GetWindowSize().y);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="content__browser__item_8cpp.html#a1edc01844856bc4a86757184ee2cb24e">is_hovered</a>)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <a class="code hl_variable" href="loading__page_8cpp.html#a6e5438e4b5e540fe8371280c28b0aeac">draw_list</a>-&gt;AddRectFilled(p_min, p_max, ImGui::GetColorU32(ImGuiCol_ButtonHovered, 0.4f), 8.0f);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_variable" href="loading__page_8cpp.html#a6e5438e4b5e540fe8371280c28b0aeac">draw_list</a>-&gt;AddRect(p_min, p_max, ImGui::GetColorU32(ImGuiCol_ButtonActive, 0.6f), 8.0f, 0, 2.0f);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(is_selected)</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_function" href="namespace_im_gui.html#abe1060f569cf59db4f64e5717679c8ba">ImGui::PushWindowFontScale</a>(1.3f);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordflow">if</span>(is_hovered || is_selected)</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                ImGui::PushStyleColor(ImGuiCol_Text, ImGui::GetColorU32(ImGuiCol_ButtonActive));</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="comment">// Icon in regular font (Black font has no icons)</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            ImGui::Text(<span class="stringliteral">&quot;%s&quot;</span>, info.icon);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            ImGui::SameLine(0.0f, ImGui::GetStyle().ItemInnerSpacing.x);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="comment">// Title in Black font</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <a class="code hl_function" href="namespace_im_gui.html#a432beb05036842846e739e4df59c257d">ImGui::PushFont</a>(<a class="code hl_enumvalue" href="struct_im_gui_1_1_font.html#a328b7a5b692d04ddc34fe84bd113f088a04a0d640e6cc4032632ba8f5b9651b5e">ImGui::Font::Black</a>);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            ImGui::Text(<span class="stringliteral">&quot;%s&quot;</span>, info.title);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            ImGui::PopFont();</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">if</span>(is_hovered || is_selected)</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                ImGui::PopStyleColor();</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <a class="code hl_function" href="namespace_im_gui.html#a7f0cfacb6ecf2c634d1406fb3e4074ad">ImGui::PopWindowFontScale</a>();</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            ImGui::Spacing();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            ImGui::PushStyleColor(ImGuiCol_Text, ImGui::GetColorU32(ImGuiCol_TextDisabled, 0.9f));</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            ImGui::TextWrapped(<span class="stringliteral">&quot;%s&quot;</span>, info.description);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            ImGui::PopStyleColor();</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        ImGui::EndGroup();</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    ImGui::EndChild();</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    ImGui::PopStyleColor();</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    ImGui::PopStyleVar(3);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordflow">if</span>(is_hovered &amp;&amp; ImGui::IsMouseDoubleClicked(0))</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        result = card_action::confirmed;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(is_hovered &amp;&amp; ImGui::IsMouseClicked(0))</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    {</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        result = card_action::selected;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>} <span class="comment">// namespace</span></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#a245ebf3a1d7741e83ffc52728377ca0d">  142</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#a245ebf3a1d7741e83ffc52728377ca0d">create_scene_modal::show</a>(std::function&lt;<span class="keywordtype">void</span>(<a class="code hl_enumeration" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25">defaults::scene_preset</a>)&gt; on_preset_selected)</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keyword">auto</span>&amp; inst = get_instance();</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    inst.callback_ = std::move(on_preset_selected);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    inst.show_requested_ = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    inst.open_requested_ = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    inst.selected_preset_ = <a class="code hl_enumvalue" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a075a3e36a0a52dcbc568c05788e8a713">defaults::scene_preset::medium</a>;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>}</div>
-</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_variable" href="loading__page_8cpp.html#a6e5438e4b5e540fe8371280c28b0aeac">draw_list</a>-&gt;AddRect(p_min, p_max, ImGui::GetColorU32(ImGuiCol_ButtonActive, 0.6f), 8.0f, 0, 1.5f);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        ImGui::SetCursorPos(ImVec2(ImGui::GetCursorPosX() + 4, ImGui::GetCursorPosY() + 2));</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        ImGui::BeginGroup();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <a class="code hl_function" href="namespace_im_gui.html#abe1060f569cf59db4f64e5717679c8ba">ImGui::PushWindowFontScale</a>(1.3f);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="content__browser__item_8cpp.html#a1edc01844856bc4a86757184ee2cb24e">is_hovered</a> || is_selected)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                ImGui::PushStyleColor(ImGuiCol_Text, ImGui::GetColorU32(ImGuiCol_ButtonActive));</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="comment">// Icon in regular font (Black font has no icons)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            ImGui::Text(<span class="stringliteral">&quot;%s&quot;</span>, info.icon);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            ImGui::SameLine(0.0f, ImGui::GetStyle().ItemInnerSpacing.x);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="comment">// Title in Black font</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <a class="code hl_function" href="namespace_im_gui.html#a432beb05036842846e739e4df59c257d">ImGui::PushFont</a>(<a class="code hl_enumvalue" href="struct_im_gui_1_1_font.html#a328b7a5b692d04ddc34fe84bd113f088a04a0d640e6cc4032632ba8f5b9651b5e">ImGui::Font::Black</a>);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            ImGui::Text(<span class="stringliteral">&quot;%s&quot;</span>, info.title);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            ImGui::PopFont();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordflow">if</span>(<a class="code hl_variable" href="content__browser__item_8cpp.html#a1edc01844856bc4a86757184ee2cb24e">is_hovered</a> || is_selected)</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                ImGui::PopStyleColor();</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <a class="code hl_function" href="namespace_im_gui.html#a7f0cfacb6ecf2c634d1406fb3e4074ad">ImGui::PopWindowFontScale</a>();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            ImGui::Spacing();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            ImGui::PushStyleColor(ImGuiCol_Text, ImGui::GetColorU32(ImGuiCol_TextDisabled, 0.9f));</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            ImGui::TextWrapped(<span class="stringliteral">&quot;%s&quot;</span>, info.description);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            ImGui::PopStyleColor();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        ImGui::EndGroup();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    ImGui::EndChild();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    ImGui::PopStyleColor();</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    ImGui::PopStyleVar(3);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="content__browser__item_8cpp.html#a1edc01844856bc4a86757184ee2cb24e">is_hovered</a> &amp;&amp; ImGui::IsMouseDoubleClicked(0))</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        result = card_action::confirmed;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="content__browser__item_8cpp.html#a1edc01844856bc4a86757184ee2cb24e">is_hovered</a> &amp;&amp; ImGui::IsMouseClicked(0))</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        result = card_action::selected;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* CREATE_SCENE_TITLE = <span class="stringliteral">&quot;Create Scene&quot;</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* CREATE_SCENE_MESSAGE = <span class="stringliteral">&quot;Choose a preset for your new scene.&quot;</span>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* CREATE_SCENE_CREATE_LABEL = <span class="stringliteral">&quot;Create&quot;</span>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* CREATE_SCENE_CANCEL_LABEL = <span class="stringliteral">&quot;Cancel&quot;</span>;</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#a953e249320c0da22e6ba220b9f98c6c1">  151</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#a953e249320c0da22e6ba220b9f98c6c1">create_scene_modal::is_pending</a>() -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keyword">auto</span> is_answer_label(<span class="keyword">const</span> std::string&amp; <a class="code hl_variable" href="about__window_8cpp.html#ab5fbdb5052858ca8d2538566229fbe64">label</a>, <span class="keyword">const</span> <span class="keywordtype">char</span>* candidate) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>{</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">return</span> get_instance().show_requested_;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacestring__utils.html#a3e1f354ef6a25b41b87cb892771fc5d7">string_utils::to_lower</a>(<a class="code hl_variable" href="about__window_8cpp.html#ab5fbdb5052858ca8d2538566229fbe64">label</a>) == <a class="code hl_function" href="namespacestring__utils.html#a3e1f354ef6a25b41b87cb892771fc5d7">string_utils::to_lower</a>(candidate);</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
-</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="foldopen" id="foldopen00156" data-start="{" data-end="}">
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#a39b4889075bb58bab8046d9ac2a42356">  156</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#a39b4889075bb58bab8046d9ac2a42356">create_scene_modal::complete_if_pending</a>(<a class="code hl_enumeration" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25">defaults::scene_preset</a> <a class="code hl_variable" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a>) -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>{</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keyword">auto</span>&amp; inst = get_instance();</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">if</span>(!inst.show_requested_)</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keyword">auto</span> callback = std::move(inst.callback_);</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    inst.callback_ = {};</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    inst.show_requested_ = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    inst.open_requested_ = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    inst.selected_preset_ = <a class="code hl_variable" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a>;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">if</span>(callback)</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    {</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        callback(<a class="code hl_variable" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a>);</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keywordtype">void</span> close_withdrawn_popup()</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>{</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    ImGuiContext&amp; <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeeccab2f5ff47436671b6e533d8dc3614845d">g</a> = *GImGui;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">const</span> ImGuiID popup_id = ImGui::GetID(CREATE_SCENE_TITLE);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> level = 0; <a class="code hl_enumeration" href="namespacecompression.html#aa737737d9ed70a2b3e2613fcf40361e3">level</a> &lt; <a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeeccab2f5ff47436671b6e533d8dc3614845d">g</a>.OpenPopupStack.Size; ++<a class="code hl_enumeration" href="namespacecompression.html#aa737737d9ed70a2b3e2613fcf40361e3">level</a>)</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">if</span>(<a class="code hl_enumvalue" href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeeccab2f5ff47436671b6e533d8dc3614845d">g</a>.OpenPopupStack[level].PopupId == popup_id)</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            ImGui::ClosePopupToLevel(level, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        }</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>} <span class="comment">// namespace</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="foldopen" id="foldopen00174" data-start="{" data-end="}">
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#a245ebf3a1d7741e83ffc52728377ca0d">  174</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#a245ebf3a1d7741e83ffc52728377ca0d">create_scene_modal::show</a>(std::function&lt;<span class="keywordtype">void</span>(<a class="code hl_enumeration" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25">defaults::scene_preset</a>)&gt; on_preset_selected)</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>{</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">auto</span>&amp; inst = get_instance();</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    inst.callback_ = std::move(on_preset_selected);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    inst.show_requested_ = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    inst.open_requested_ = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    inst.selected_preset_ = <a class="code hl_enumvalue" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a075a3e36a0a52dcbc568c05788e8a713">defaults::scene_preset::medium</a>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
 </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="foldopen" id="foldopen00177" data-start="{" data-end="}">
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#ae370a698636931c8525ea4fba8dc06f4">  177</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#ae370a698636931c8525ea4fba8dc06f4">create_scene_modal::cancel_if_pending</a>()</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>{</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keyword">auto</span>&amp; inst = get_instance();</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    inst.callback_ = {};</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    inst.show_requested_ = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    inst.open_requested_ = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>}</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="foldopen" id="foldopen00183" data-start="{" data-end="}">
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#a953e249320c0da22e6ba220b9f98c6c1">  183</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#a953e249320c0da22e6ba220b9f98c6c1">create_scene_modal::is_pending</a>() -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>{</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordflow">return</span> get_instance().show_requested_;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>}</div>
 </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#a32095c169e12acfbf552fba18f3176ce">  185</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#a32095c169e12acfbf552fba18f3176ce">create_scene_modal::render</a>()</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keyword">auto</span>&amp; inst = get_instance();</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">if</span>(!inst.show_requested_)</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    {</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    }</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="comment">// if(inst.open_requested_)</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        ImGui::OpenPopup(<span class="stringliteral">&quot;Create Scene&quot;</span>);</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="comment">// inst.open_requested_ = false;</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    }</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keyword">auto</span>* viewport = ImGui::GetMainViewport();</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    ImGui::SetNextWindowPos(viewport-&gt;GetCenter(),</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    ImGuiCond_Always,</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                            ImVec2(0.5f, 0.5f));</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> modal_width = viewport-&gt;Size.x * 0.3f;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    ImGui::SetNextWindowSize(ImVec2(modal_width, 0), ImGuiCond_Always);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(24, 20));</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 10.0f);</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(12, 10));</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordflow">if</span>(!ImGui::BeginPopupModal(<span class="stringliteral">&quot;Create Scene&quot;</span>, <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>                               ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoSavedSettings))</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    {</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        ImGui::PopStyleVar(3);</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    ImGui::PushStyleColor(ImGuiCol_Text, ImGui::GetColorU32(ImGuiCol_TextDisabled, 0.8f));</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    ImGui::TextWrapped(<span class="stringliteral">&quot;Choose a preset for your new scene.&quot;</span>);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    ImGui::PopStyleColor();</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    ImGui::Spacing();</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    ImGui::PushStyleColor(ImGuiCol_Separator, ImVec4(0.25f, 0.25f, 0.25f, 1.0f));</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    ImGui::Separator();</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    ImGui::PopStyleColor();</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    ImGui::Spacing();</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="comment">// Cards list</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(0, 10.0f));</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordtype">float</span> card_width = ImGui::GetContentRegionAvail().x;</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordtype">bool</span> should_confirm = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : presets)</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    {</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="keywordtype">bool</span> is_selected = (p.preset == inst.selected_preset_);</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="keyword">auto</span> action = draw_preset_card(p, card_width, is_selected);</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">if</span>(action == card_action::confirmed)</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        {</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            inst.selected_preset_ = p.preset;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            should_confirm = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        }</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(action == card_action::selected)</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        {</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            inst.selected_preset_ = p.preset;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    }</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    ImGui::PopStyleVar();</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    ImGui::Spacing();</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    ImGui::PushStyleColor(ImGuiCol_Separator, ImVec4(0.25f, 0.25f, 0.25f, 1.0f));</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    ImGui::Separator();</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    ImGui::PopStyleColor();</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    ImGui::Spacing();</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="comment">// Bottom button row, right-aligned</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="keywordtype">float</span> button_width = 100.0f;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordtype">float</span> total_buttons_w = button_width * 2 + ImGui::GetStyle().ItemSpacing.x;</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    ImGui::PushStyleVar(ImGuiStyleVar_FrameRounding, 6.0f);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="foldopen" id="foldopen00188" data-start="{" data-end="}">
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#a39b4889075bb58bab8046d9ac2a42356">  188</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#a39b4889075bb58bab8046d9ac2a42356">create_scene_modal::complete_if_pending</a>(<a class="code hl_enumeration" href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25">defaults::scene_preset</a> <a class="code hl_variable" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a>) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>{</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keyword">auto</span>&amp; inst = get_instance();</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordflow">if</span>(!inst.show_requested_)</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    {</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keyword">auto</span> callback = std::move(inst.callback_);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    inst.callback_ = {};</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    inst.show_requested_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    inst.open_requested_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    inst.selected_preset_ = <a class="code hl_variable" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordflow">if</span>(callback)</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        callback(<a class="code hl_variable" href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a>);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}</div>
+</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="foldopen" id="foldopen00209" data-start="{" data-end="}">
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#ae370a698636931c8525ea4fba8dc06f4">  209</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#ae370a698636931c8525ea4fba8dc06f4">create_scene_modal::cancel_if_pending</a>()</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>{</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keyword">auto</span>&amp; inst = get_instance();</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    inst.callback_ = {};</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    inst.show_requested_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    inst.open_requested_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>}</div>
+</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#aa1f436505294d64b0a93cf7706f76525">  217</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#aa1f436505294d64b0a93cf7706f76525">create_scene_modal::answer_if_pending</a>(<span class="keyword">const</span> std::string&amp; <a class="code hl_variable" href="about__window_8cpp.html#ab5fbdb5052858ca8d2538566229fbe64">label</a>) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>{</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <span class="keywordflow">if</span>(!is_pending())</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    {</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    }</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keywordflow">if</span>(is_answer_label(<a class="code hl_variable" href="about__window_8cpp.html#ab5fbdb5052858ca8d2538566229fbe64">label</a>, CREATE_SCENE_CANCEL_LABEL))</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    {</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        cancel_if_pending();</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    }</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keywordflow">if</span>(is_answer_label(<a class="code hl_variable" href="about__window_8cpp.html#ab5fbdb5052858ca8d2538566229fbe64">label</a>, CREATE_SCENE_CREATE_LABEL))</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <span class="keywordflow">return</span> complete_if_pending(get_instance().selected_preset_);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_variable" href="content__browser__item_8cpp.html#a2ddc4f79806c66c658990d957c9e6a1b">card</a> = std::find_if(std::begin(presets),</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                                   std::end(presets),</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                                   [&amp;<a class="code hl_variable" href="about__window_8cpp.html#ab5fbdb5052858ca8d2538566229fbe64">label</a>](<span class="keyword">const</span> preset_card_info&amp; info)</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                                   {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                                       <span class="keywordflow">return</span> is_answer_label(<a class="code hl_variable" href="about__window_8cpp.html#ab5fbdb5052858ca8d2538566229fbe64">label</a>, info.title);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                                   });</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="content__browser__item_8cpp.html#a2ddc4f79806c66c658990d957c9e6a1b">card</a> != std::end(presets) &amp;&amp; complete_if_pending(<a class="code hl_variable" href="content__browser__item_8cpp.html#a2ddc4f79806c66c658990d957c9e6a1b">card</a>-&gt;preset);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>}</div>
+</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="foldopen" id="foldopen00241" data-start="{" data-end="}">
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#a2d9777c3b9e141262d21d4b5b27ed1e9">  241</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#a2d9777c3b9e141262d21d4b5b27ed1e9">create_scene_modal::get_answer_labels</a>() -&gt; std::vector&lt;std::string&gt;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>{</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    std::vector&lt;std::string&gt; labels{CREATE_SCENE_CREATE_LABEL, CREATE_SCENE_CANCEL_LABEL};</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; info : presets)</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        labels.emplace_back(info.title);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    }</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordflow">return</span> labels;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>}</div>
+</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="foldopen" id="foldopen00251" data-start="{" data-end="}">
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#a75effa383b5b1090106ae6571420bf6a">  251</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#a75effa383b5b1090106ae6571420bf6a">create_scene_modal::get_title</a>() -&gt; <span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>{</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordflow">return</span> CREATE_SCENE_TITLE;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>}</div>
+</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="foldopen" id="foldopen00256" data-start="{" data-end="}">
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#adf76b47bdaef6ecb6355bb165b4b6907">  256</a></span><span class="keyword">auto</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#adf76b47bdaef6ecb6355bb165b4b6907">create_scene_modal::get_message</a>() -&gt; <span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>{</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keywordflow">return</span> CREATE_SCENE_MESSAGE;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>}</div>
+</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    ImGui::AlignedItem(1.0f, ImGui::GetContentRegionAvail().<a class="code hl_variable" href="cloud__noise_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, total_buttons_w, [&amp;]() -&gt; <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    {</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="keywordflow">if</span>(ImGui::Button(<span class="stringliteral">&quot;Create&quot;</span>, ImVec2(button_width, 30)) || should_confirm)</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        {</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            <span class="keywordflow">if</span>(inst.callback_)</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            {</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                inst.callback_(inst.selected_preset_);</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            }</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            ImGui::CloseCurrentPopup();</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            inst.show_requested_ = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        }</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        ImGui::SameLine();</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="keywordflow">if</span>(ImGui::Button(<span class="stringliteral">&quot;Cancel&quot;</span>, ImVec2(button_width, 30)))</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        {</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>            ImGui::CloseCurrentPopup();</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            inst.show_requested_ = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        }</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    });</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    ImGui::PopStyleVar(); <span class="comment">// FrameRounding</span></div>
+<div class="foldopen" id="foldopen00261" data-start="{" data-end="}">
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="classunravel_1_1create__scene__modal.html#a32095c169e12acfbf552fba18f3176ce">  261</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classunravel_1_1create__scene__modal.html#a32095c169e12acfbf552fba18f3176ce">create_scene_modal::render</a>()</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>{</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keyword">auto</span>&amp; inst = get_instance();</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keywordflow">if</span>(!inst.show_requested_)</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        close_withdrawn_popup();</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    }</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="comment">// if(inst.open_requested_)</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    {</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        ImGui::OpenPopup(CREATE_SCENE_TITLE);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="comment">// inst.open_requested_ = false;</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    }</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keyword">auto</span>* viewport = ImGui::GetMainViewport();</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    ImGui::SetNextWindowPos(viewport-&gt;GetCenter(),</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    ImGuiCond_Always,</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                            ImVec2(0.5f, 0.5f));</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> modal_width = viewport-&gt;Size.x * 0.3f;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    ImGui::SetNextWindowSize(ImVec2(modal_width, 0), ImGuiCond_Always);</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    ImGui::EndPopup();</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    ImGui::PopStyleVar(3); <span class="comment">// WindowPadding, WindowRounding, ItemSpacing</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>}</div>
-</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(24, 20));</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 10.0f);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(12, 10));</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="keyword">auto</span> create_scene_modal::get_instance() -&gt; <a class="code hl_class" href="classunravel_1_1create__scene__modal.html">create_scene_modal</a>&amp;</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>{</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    <span class="keyword">static</span> <a class="code hl_class" href="classunravel_1_1create__scene__modal.html">create_scene_modal</a> instance;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span> instance;</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>} <span class="comment">// namespace unravel</span></div>
-<div class="ttc" id="aclassunravel_1_1create__scene__modal_html"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html">unravel::create_scene_modal</a></div><div class="ttdoc">Modal for selecting a scene preset when creating a new scene. Call ShowCreateSceneModal() to open; Re...</div><div class="ttdef"><b>Definition</b> <a href="create__scene__modal_8h_source.html#l00013">create_scene_modal.h:14</a></div></div>
-<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_a245ebf3a1d7741e83ffc52728377ca0d"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#a245ebf3a1d7741e83ffc52728377ca0d">unravel::create_scene_modal::show</a></div><div class="ttdeci">static void show(std::function&lt; void(defaults::scene_preset)&gt; on_preset_selected)</div><div class="ttdoc">Request the create scene modal to open.</div><div class="ttdef"><b>Definition</b> <a href="#l00142">create_scene_modal.cpp:142</a></div></div>
-<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_a32095c169e12acfbf552fba18f3176ce"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#a32095c169e12acfbf552fba18f3176ce">unravel::create_scene_modal::render</a></div><div class="ttdeci">static void render()</div><div class="ttdoc">Draw the modal. Call every frame from the main UI render loop.</div><div class="ttdef"><b>Definition</b> <a href="#l00185">create_scene_modal.cpp:185</a></div></div>
-<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_a39b4889075bb58bab8046d9ac2a42356"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#a39b4889075bb58bab8046d9ac2a42356">unravel::create_scene_modal::complete_if_pending</a></div><div class="ttdeci">static auto complete_if_pending(defaults::scene_preset preset) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l00156">create_scene_modal.cpp:156</a></div></div>
-<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_a953e249320c0da22e6ba220b9f98c6c1"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#a953e249320c0da22e6ba220b9f98c6c1">unravel::create_scene_modal::is_pending</a></div><div class="ttdeci">static auto is_pending() -&gt; bool</div><div class="ttdoc">True when Show was requested and the user has not yet confirmed/cancelled.</div><div class="ttdef"><b>Definition</b> <a href="#l00151">create_scene_modal.cpp:151</a></div></div>
-<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_ae370a698636931c8525ea4fba8dc06f4"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#ae370a698636931c8525ea4fba8dc06f4">unravel::create_scene_modal::cancel_if_pending</a></div><div class="ttdeci">static void cancel_if_pending()</div><div class="ttdoc">Dismiss a pending create-scene modal without invoking the callback.</div><div class="ttdef"><b>Definition</b> <a href="#l00177">create_scene_modal.cpp:177</a></div></div>
-<div class="ttc" id="acloud__noise_8cpp_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="cloud__noise_8cpp.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> <a href="cloud__noise_8cpp_source.html#l00039">cloud_noise.cpp:39</a></div></div>
-<div class="ttc" id="acreate__scene__modal_8cpp_html_a0931616bd1ccdb2c40f5045a6c91e8a5"><div class="ttname"><a href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a></div><div class="ttdeci">defaults::scene_preset preset</div><div class="ttdef"><b>Definition</b> <a href="#l00019">create_scene_modal.cpp:19</a></div></div>
-<div class="ttc" id="acreate__scene__modal_8cpp_html_a68344fa88cf4e86b5079fd69a5c22d57"><div class="ttname"><a href="create__scene__modal_8cpp.html#a68344fa88cf4e86b5079fd69a5c22d57">description</a></div><div class="ttdeci">const char * description</div><div class="ttdef"><b>Definition</b> <a href="#l00018">create_scene_modal.cpp:18</a></div></div>
-<div class="ttc" id="acreate__scene__modal_8cpp_html_a7b0a7c3f446f98e2152357b0145c5b1d"><div class="ttname"><a href="create__scene__modal_8cpp.html#a7b0a7c3f446f98e2152357b0145c5b1d">icon</a></div><div class="ttdeci">const char * icon</div><div class="ttdef"><b>Definition</b> <a href="#l00016">create_scene_modal.cpp:16</a></div></div>
-<div class="ttc" id="acreate__scene__modal_8cpp_html_a8214780964530800368b406c681fd1d9"><div class="ttname"><a href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a></div><div class="ttdeci">const char * title</div><div class="ttdef"><b>Definition</b> <a href="#l00017">create_scene_modal.cpp:17</a></div></div>
-<div class="ttc" id="acreate__scene__modal_8cpp_html_aeffa2f0815ce90fecbda9aac199143db"><div class="ttname"><a href="create__scene__modal_8cpp.html#aeffa2f0815ce90fecbda9aac199143db">id</a></div><div class="ttdeci">const char * id</div><div class="ttdef"><b>Definition</b> <a href="#l00015">create_scene_modal.cpp:15</a></div></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">if</span>(!ImGui::BeginPopupModal(CREATE_SCENE_TITLE, <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                               ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoSavedSettings))</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    {</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        ImGui::PopStyleVar(3);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    }</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    ImGui::PushStyleColor(ImGuiCol_Text, ImGui::GetColorU32(ImGuiCol_TextDisabled, 0.8f));</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    ImGui::TextWrapped(<span class="stringliteral">&quot;%s&quot;</span>, CREATE_SCENE_MESSAGE);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    ImGui::PopStyleColor();</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    ImGui::Spacing();</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    ImGui::PushStyleColor(ImGuiCol_Separator, ImVec4(0.25f, 0.25f, 0.25f, 1.0f));</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    ImGui::Separator();</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    ImGui::PopStyleColor();</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    ImGui::Spacing();</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="comment">// Cards list</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(0, 10.0f));</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordtype">float</span> card_width = ImGui::GetContentRegionAvail().x;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keywordtype">bool</span> should_confirm = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : presets)</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    {</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        <span class="keywordtype">bool</span> is_selected = (p.preset == inst.selected_preset_);</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        <span class="keyword">auto</span> <a class="code hl_variable" href="content__browser__panel_8cpp.html#a073b6b7bdee554a9e7f63ad59a5fa767">action</a> = draw_preset_card(p, card_width, is_selected);</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="content__browser__panel_8cpp.html#a073b6b7bdee554a9e7f63ad59a5fa767">action</a> == card_action::confirmed)</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        {</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            inst.selected_preset_ = p.preset;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            should_confirm = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        }</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="content__browser__panel_8cpp.html#a073b6b7bdee554a9e7f63ad59a5fa767">action</a> == card_action::selected)</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        {</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>            inst.selected_preset_ = p.preset;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        }</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    }</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    ImGui::PopStyleVar();</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    ImGui::Spacing();</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    ImGui::PushStyleColor(ImGuiCol_Separator, ImVec4(0.25f, 0.25f, 0.25f, 1.0f));</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    ImGui::Separator();</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    ImGui::PopStyleColor();</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    ImGui::Spacing();</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="comment">// Bottom button row, right-aligned</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keywordtype">float</span> button_width = 100.0f;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="keywordtype">float</span> total_buttons_w = button_width * 2 + ImGui::GetStyle().ItemSpacing.x;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    ImGui::PushStyleVar(ImGuiStyleVar_FrameRounding, 6.0f);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    ImGui::AlignedItem(1.0f, ImGui::GetContentRegionAvail().<a class="code hl_variable" href="native__scene_8cpp.html#a06f4e1658837ff47f3acc0e7d2cdcfb9">x</a>, total_buttons_w, [&amp;]() -&gt; <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    {</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordflow">if</span>(ImGui::Button(CREATE_SCENE_CREATE_LABEL, ImVec2(button_width, 30)) || should_confirm)</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        {</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            <span class="keywordflow">if</span>(inst.callback_)</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>            {</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                inst.callback_(inst.selected_preset_);</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            }</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>            ImGui::CloseCurrentPopup();</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            inst.show_requested_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        }</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        ImGui::SameLine();</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        <span class="keywordflow">if</span>(ImGui::Button(CREATE_SCENE_CANCEL_LABEL, ImVec2(button_width, 30)))</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        {</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>            ImGui::CloseCurrentPopup();</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            inst.show_requested_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        }</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    });</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    ImGui::PopStyleVar(); <span class="comment">// FrameRounding</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    ImGui::EndPopup();</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    ImGui::PopStyleVar(3); <span class="comment">// WindowPadding, WindowRounding, ItemSpacing</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>}</div>
+</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="keyword">auto</span> create_scene_modal::get_instance() -&gt; <a class="code hl_class" href="classunravel_1_1create__scene__modal.html">create_scene_modal</a>&amp;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>{</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="keyword">static</span> <a class="code hl_class" href="classunravel_1_1create__scene__modal.html">create_scene_modal</a> instance;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>}</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>} <span class="comment">// namespace unravel</span></div>
+<div class="ttc" id="aabout__window_8cpp_html_ab5fbdb5052858ca8d2538566229fbe64"><div class="ttname"><a href="about__window_8cpp.html#ab5fbdb5052858ca8d2538566229fbe64">label</a></div><div class="ttdeci">const char * label</div><div class="ttdef"><b>Definition</b> <a href="about__window_8cpp_source.html#l00060">about_window.cpp:60</a></div></div>
+<div class="ttc" id="aclassunravel_1_1create__scene__modal_html"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html">unravel::create_scene_modal</a></div><div class="ttdoc">Modal for selecting a scene preset when creating a new scene. Call ShowCreateSceneModal() to open; Re...</div><div class="ttdef"><b>Definition</b> <a href="create__scene__modal_8h_source.html#l00015">create_scene_modal.h:16</a></div></div>
+<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_a245ebf3a1d7741e83ffc52728377ca0d"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#a245ebf3a1d7741e83ffc52728377ca0d">unravel::create_scene_modal::show</a></div><div class="ttdeci">static void show(std::function&lt; void(defaults::scene_preset)&gt; on_preset_selected)</div><div class="ttdoc">Request the create scene modal to open.</div><div class="ttdef"><b>Definition</b> <a href="#l00174">create_scene_modal.cpp:174</a></div></div>
+<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_a2d9777c3b9e141262d21d4b5b27ed1e9"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#a2d9777c3b9e141262d21d4b5b27ed1e9">unravel::create_scene_modal::get_answer_labels</a></div><div class="ttdeci">static auto get_answer_labels() -&gt; std::vector&lt; std::string &gt;</div><div class="ttdoc">The labels answer_if_pending takes: the two buttons, then the preset cards.</div><div class="ttdef"><b>Definition</b> <a href="#l00241">create_scene_modal.cpp:241</a></div></div>
+<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_a32095c169e12acfbf552fba18f3176ce"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#a32095c169e12acfbf552fba18f3176ce">unravel::create_scene_modal::render</a></div><div class="ttdeci">static void render()</div><div class="ttdoc">Draw the modal. Call every frame from the main UI render loop.</div><div class="ttdef"><b>Definition</b> <a href="#l00261">create_scene_modal.cpp:261</a></div></div>
+<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_a39b4889075bb58bab8046d9ac2a42356"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#a39b4889075bb58bab8046d9ac2a42356">unravel::create_scene_modal::complete_if_pending</a></div><div class="ttdeci">static auto complete_if_pending(defaults::scene_preset preset) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l00188">create_scene_modal.cpp:188</a></div></div>
+<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_a75effa383b5b1090106ae6571420bf6a"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#a75effa383b5b1090106ae6571420bf6a">unravel::create_scene_modal::get_title</a></div><div class="ttdeci">static auto get_title() -&gt; const char *</div><div class="ttdef"><b>Definition</b> <a href="#l00251">create_scene_modal.cpp:251</a></div></div>
+<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_a953e249320c0da22e6ba220b9f98c6c1"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#a953e249320c0da22e6ba220b9f98c6c1">unravel::create_scene_modal::is_pending</a></div><div class="ttdeci">static auto is_pending() -&gt; bool</div><div class="ttdoc">True when Show was requested and the user has not yet confirmed/cancelled.</div><div class="ttdef"><b>Definition</b> <a href="#l00183">create_scene_modal.cpp:183</a></div></div>
+<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_aa1f436505294d64b0a93cf7706f76525"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#aa1f436505294d64b0a93cf7706f76525">unravel::create_scene_modal::answer_if_pending</a></div><div class="ttdeci">static auto answer_if_pending(const std::string &amp;label) -&gt; bool</div><div class="ttdef"><b>Definition</b> <a href="#l00217">create_scene_modal.cpp:217</a></div></div>
+<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_adf76b47bdaef6ecb6355bb165b4b6907"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#adf76b47bdaef6ecb6355bb165b4b6907">unravel::create_scene_modal::get_message</a></div><div class="ttdeci">static auto get_message() -&gt; const char *</div><div class="ttdef"><b>Definition</b> <a href="#l00256">create_scene_modal.cpp:256</a></div></div>
+<div class="ttc" id="aclassunravel_1_1create__scene__modal_html_ae370a698636931c8525ea4fba8dc06f4"><div class="ttname"><a href="classunravel_1_1create__scene__modal.html#ae370a698636931c8525ea4fba8dc06f4">unravel::create_scene_modal::cancel_if_pending</a></div><div class="ttdeci">static void cancel_if_pending()</div><div class="ttdoc">Dismiss a pending create-scene modal without invoking the callback.</div><div class="ttdef"><b>Definition</b> <a href="#l00209">create_scene_modal.cpp:209</a></div></div>
+<div class="ttc" id="acontent__browser__item_8cpp_html_a1edc01844856bc4a86757184ee2cb24e"><div class="ttname"><a href="content__browser__item_8cpp.html#a1edc01844856bc4a86757184ee2cb24e">is_hovered</a></div><div class="ttdeci">bool is_hovered</div><div class="ttdef"><b>Definition</b> <a href="content__browser__item_8cpp_source.html#l00153">content_browser_item.cpp:153</a></div></div>
+<div class="ttc" id="acontent__browser__item_8cpp_html_a2ddc4f79806c66c658990d957c9e6a1b"><div class="ttname"><a href="content__browser__item_8cpp.html#a2ddc4f79806c66c658990d957c9e6a1b">card</a></div><div class="ttdeci">ImRect card</div><div class="ttdef"><b>Definition</b> <a href="content__browser__item_8cpp_source.html#l00142">content_browser_item.cpp:142</a></div></div>
+<div class="ttc" id="acontent__browser__panel_8cpp_html_a073b6b7bdee554a9e7f63ad59a5fa767"><div class="ttname"><a href="content__browser__panel_8cpp.html#a073b6b7bdee554a9e7f63ad59a5fa767">action</a></div><div class="ttdeci">entry_action action</div><div class="ttdef"><b>Definition</b> <a href="content__browser__panel_8cpp_source.html#l00243">content_browser_panel.cpp:243</a></div></div>
+<div class="ttc" id="acreate__scene__modal_8cpp_html_a0931616bd1ccdb2c40f5045a6c91e8a5"><div class="ttname"><a href="create__scene__modal_8cpp.html#a0931616bd1ccdb2c40f5045a6c91e8a5">preset</a></div><div class="ttdeci">defaults::scene_preset preset</div><div class="ttdef"><b>Definition</b> <a href="#l00023">create_scene_modal.cpp:23</a></div></div>
+<div class="ttc" id="acreate__scene__modal_8cpp_html_a68344fa88cf4e86b5079fd69a5c22d57"><div class="ttname"><a href="create__scene__modal_8cpp.html#a68344fa88cf4e86b5079fd69a5c22d57">description</a></div><div class="ttdeci">const char * description</div><div class="ttdef"><b>Definition</b> <a href="#l00022">create_scene_modal.cpp:22</a></div></div>
+<div class="ttc" id="acreate__scene__modal_8cpp_html_a7b0a7c3f446f98e2152357b0145c5b1d"><div class="ttname"><a href="create__scene__modal_8cpp.html#a7b0a7c3f446f98e2152357b0145c5b1d">icon</a></div><div class="ttdeci">const char * icon</div><div class="ttdef"><b>Definition</b> <a href="#l00020">create_scene_modal.cpp:20</a></div></div>
+<div class="ttc" id="acreate__scene__modal_8cpp_html_a8214780964530800368b406c681fd1d9"><div class="ttname"><a href="create__scene__modal_8cpp.html#a8214780964530800368b406c681fd1d9">title</a></div><div class="ttdeci">const char * title</div><div class="ttdef"><b>Definition</b> <a href="#l00021">create_scene_modal.cpp:21</a></div></div>
 <div class="ttc" id="acreate__scene__modal_8h_html"><div class="ttname"><a href="create__scene__modal_8h.html">create_scene_modal.h</a></div></div>
 <div class="ttc" id="aicons__material__design__icons_8h_html"><div class="ttname"><a href="icons__material__design__icons_8h.html">icons_material_design_icons.h</a></div></div>
 <div class="ttc" id="aicons__material__design__icons_8h_html_a007c5b8f8cf54203b1ec600871cc198c"><div class="ttname"><a href="icons__material__design__icons_8h.html#a007c5b8f8cf54203b1ec600871cc198c">ICON_MDI_DIAMOND_STONE</a></div><div class="ttdeci">#define ICON_MDI_DIAMOND_STONE</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l01669">icons_material_design_icons.h:1669</a></div></div>
@@ -422,17 +511,24 @@ $(function(){initNavTree('create__scene__modal_8cpp_source.html',''); initResiza
 <div class="ttc" id="aicons__material__design__icons_8h_html_a501dcc54e289e2477504c931ae3b62c9"><div class="ttname"><a href="icons__material__design__icons_8h.html#a501dcc54e289e2477504c931ae3b62c9">ICON_MDI_LAYERS</a></div><div class="ttdeci">#define ICON_MDI_LAYERS</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l02972">icons_material_design_icons.h:2972</a></div></div>
 <div class="ttc" id="aicons__material__design__icons_8h_html_a7d577c431ba2153c305de517aae95809"><div class="ttname"><a href="icons__material__design__icons_8h.html#a7d577c431ba2153c305de517aae95809">ICON_MDI_LIGHTNING_BOLT_OUTLINE</a></div><div class="ttdeci">#define ICON_MDI_LIGHTNING_BOLT_OUTLINE</div><div class="ttdef"><b>Definition</b> <a href="icons__material__design__icons_8h_source.html#l03027">icons_material_design_icons.h:3027</a></div></div>
 <div class="ttc" id="aimgui_8h_html"><div class="ttname"><a href="imgui_8h.html">imgui.h</a></div></div>
-<div class="ttc" id="anamespace_im_gui_html_a432beb05036842846e739e4df59c257d"><div class="ttname"><a href="namespace_im_gui.html#a432beb05036842846e739e4df59c257d">ImGui::PushFont</a></div><div class="ttdeci">void PushFont(Font::Enum _font)</div><div class="ttdef"><b>Definition</b> <a href="imgui_8cpp_source.html#l00646">imgui.cpp:646</a></div></div>
-<div class="ttc" id="anamespace_im_gui_html_a7f0cfacb6ecf2c634d1406fb3e4074ad"><div class="ttname"><a href="namespace_im_gui.html#a7f0cfacb6ecf2c634d1406fb3e4074ad">ImGui::PopWindowFontScale</a></div><div class="ttdeci">void PopWindowFontScale()</div><div class="ttdef"><b>Definition</b> <a href="imgui_8cpp_source.html#l00734">imgui.cpp:734</a></div></div>
-<div class="ttc" id="anamespace_im_gui_html_abe1060f569cf59db4f64e5717679c8ba"><div class="ttname"><a href="namespace_im_gui.html#abe1060f569cf59db4f64e5717679c8ba">ImGui::PushWindowFontScale</a></div><div class="ttdeci">void PushWindowFontScale(float scale)</div><div class="ttdef"><b>Definition</b> <a href="imgui_8cpp_source.html#l00721">imgui.cpp:721</a></div></div>
-<div class="ttc" id="anamespaceunravel_html"><div class="ttname"><a href="namespaceunravel.html">unravel</a></div><div class="ttdef"><b>Definition</b> <a href="crash_8cpp_source.html#l00020">crash.cpp:21</a></div></div>
-<div class="ttc" id="anamespaceunravel_html_a20e92efc6899180021bc9a12a2bfef3daca9e9531625d9b1cc5b0a971b9eed6c6"><div class="ttname"><a href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3daca9e9531625d9b1cc5b0a971b9eed6c6">unravel::none</a></div><div class="ttdeci">@ none</div><div class="ttdef"><b>Definition</b> <a href="entity_8cpp_source.html#l00243">entity.cpp:243</a></div></div>
+<div class="ttc" id="aloading__page_8cpp_html_a6e5438e4b5e540fe8371280c28b0aeac"><div class="ttname"><a href="loading__page_8cpp.html#a6e5438e4b5e540fe8371280c28b0aeac">draw_list</a></div><div class="ttdeci">ImDrawList * draw_list</div><div class="ttdoc">Null measures the page without drawing it.</div><div class="ttdef"><b>Definition</b> <a href="loading__page_8cpp_source.html#l00157">loading_page.cpp:157</a></div></div>
+<div class="ttc" id="anamespace_im_gui_html_a432beb05036842846e739e4df59c257d"><div class="ttname"><a href="namespace_im_gui.html#a432beb05036842846e739e4df59c257d">ImGui::PushFont</a></div><div class="ttdeci">void PushFont(Font::Enum _font)</div><div class="ttdef"><b>Definition</b> <a href="imgui_8cpp_source.html#l00689">imgui.cpp:689</a></div></div>
+<div class="ttc" id="anamespace_im_gui_html_a7f0cfacb6ecf2c634d1406fb3e4074ad"><div class="ttname"><a href="namespace_im_gui.html#a7f0cfacb6ecf2c634d1406fb3e4074ad">ImGui::PopWindowFontScale</a></div><div class="ttdeci">void PopWindowFontScale()</div><div class="ttdef"><b>Definition</b> <a href="imgui_8cpp_source.html#l00793">imgui.cpp:793</a></div></div>
+<div class="ttc" id="anamespace_im_gui_html_abe1060f569cf59db4f64e5717679c8ba"><div class="ttname"><a href="namespace_im_gui.html#abe1060f569cf59db4f64e5717679c8ba">ImGui::PushWindowFontScale</a></div><div class="ttdeci">void PushWindowFontScale(float scale)</div><div class="ttdef"><b>Definition</b> <a href="imgui_8cpp_source.html#l00780">imgui.cpp:780</a></div></div>
+<div class="ttc" id="anamespacecompression_html_aa737737d9ed70a2b3e2613fcf40361e3"><div class="ttname"><a href="namespacecompression.html#aa737737d9ed70a2b3e2613fcf40361e3">compression::level</a></div><div class="ttdeci">level</div><div class="ttdef"><b>Definition</b> <a href="compression_8h_source.html#l00016">compression.h:17</a></div></div>
+<div class="ttc" id="anamespaceinput_html_ab9139595ac6ca03adefcdfd7463eeeccab2f5ff47436671b6e533d8dc3614845d"><div class="ttname"><a href="namespaceinput.html#ab9139595ac6ca03adefcdfd7463eeeccab2f5ff47436671b6e533d8dc3614845d">input::key_code::g</a></div><div class="ttdeci">@ g</div></div>
+<div class="ttc" id="anamespacestring__utils_html_a3e1f354ef6a25b41b87cb892771fc5d7"><div class="ttname"><a href="namespacestring__utils.html#a3e1f354ef6a25b41b87cb892771fc5d7">string_utils::to_lower</a></div><div class="ttdeci">auto to_lower(const std::string &amp;str) -&gt; std::string</div><div class="ttdef"><b>Definition</b> <a href="utils_8cpp_source.html#l00042">utils.cpp:42</a></div></div>
+<div class="ttc" id="anamespaceunravel_html"><div class="ttname"><a href="namespaceunravel.html">unravel</a></div><div class="ttdef"><b>Definition</b> <a href="crash_8cpp_source.html#l00037">crash.cpp:38</a></div></div>
+<div class="ttc" id="anamespaceunravel_html_a20e92efc6899180021bc9a12a2bfef3daca9e9531625d9b1cc5b0a971b9eed6c6"><div class="ttname"><a href="namespaceunravel.html#a20e92efc6899180021bc9a12a2bfef3daca9e9531625d9b1cc5b0a971b9eed6c6">unravel::none</a></div><div class="ttdeci">@ none</div><div class="ttdef"><b>Definition</b> <a href="entity_8cpp_source.html#l00966">entity.cpp:966</a></div></div>
+<div class="ttc" id="anative__scene_8cpp_html_a06f4e1658837ff47f3acc0e7d2cdcfb9"><div class="ttname"><a href="native__scene_8cpp.html#a06f4e1658837ff47f3acc0e7d2cdcfb9">x</a></div><div class="ttdeci">math::vec4 x</div><div class="ttdef"><b>Definition</b> <a href="native__scene_8cpp_source.html#l00778">native_scene.cpp:778</a></div></div>
+<div class="ttc" id="anative__scene_8cpp_html_ab6bc26e1d75ae935ca71be540f281631"><div class="ttname"><a href="native__scene_8cpp.html#ab6bc26e1d75ae935ca71be540f281631">id</a></div><div class="ttdeci">std::array&lt; uint32_t, k_block_triangles &gt; id</div><div class="ttdef"><b>Definition</b> <a href="native__scene_8cpp_source.html#l00664">native_scene.cpp:664</a></div></div>
 <div class="ttc" id="astruct_im_gui_1_1_font_html_a328b7a5b692d04ddc34fe84bd113f088a04a0d640e6cc4032632ba8f5b9651b5e"><div class="ttname"><a href="struct_im_gui_1_1_font.html#a328b7a5b692d04ddc34fe84bd113f088a04a0d640e6cc4032632ba8f5b9651b5e">ImGui::Font::Black</a></div><div class="ttdeci">@ Black</div><div class="ttdef"><b>Definition</b> <a href="imgui_8h_source.html#l00056">imgui.h:56</a></div></div>
-<div class="ttc" id="astructunravel_1_1defaults_html_a1f95603cd1038f962483bcd63f6aae25"><div class="ttname"><a href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25">unravel::defaults::scene_preset</a></div><div class="ttdeci">scene_preset</div><div class="ttdoc">Quality presets for new scene creation (low = less expensive, high = more expensive).</div><div class="ttdef"><b>Definition</b> <a href="defaults_8h_source.html#l00214">defaults.h:215</a></div></div>
+<div class="ttc" id="astructunravel_1_1defaults_html_a1f95603cd1038f962483bcd63f6aae25"><div class="ttname"><a href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25">unravel::defaults::scene_preset</a></div><div class="ttdeci">scene_preset</div><div class="ttdoc">Quality presets for new scene creation (low = less expensive, high = more expensive).</div><div class="ttdef"><b>Definition</b> <a href="defaults_8h_source.html#l00231">defaults.h:232</a></div></div>
 <div class="ttc" id="astructunravel_1_1defaults_html_a1f95603cd1038f962483bcd63f6aae25a075a3e36a0a52dcbc568c05788e8a713"><div class="ttname"><a href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a075a3e36a0a52dcbc568c05788e8a713">unravel::defaults::scene_preset::medium</a></div><div class="ttdeci">@ medium</div></div>
 <div class="ttc" id="astructunravel_1_1defaults_html_a1f95603cd1038f962483bcd63f6aae25a53cced8d281a1a0ace3cb6594daaa4f7"><div class="ttname"><a href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a53cced8d281a1a0ace3cb6594daaa4f7">unravel::defaults::scene_preset::low</a></div><div class="ttdeci">@ low</div></div>
 <div class="ttc" id="astructunravel_1_1defaults_html_a1f95603cd1038f962483bcd63f6aae25a88c5ba0ad717231c45ce638a11060487"><div class="ttname"><a href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a88c5ba0ad717231c45ce638a11060487">unravel::defaults::scene_preset::showcase</a></div><div class="ttdeci">@ showcase</div></div>
 <div class="ttc" id="astructunravel_1_1defaults_html_a1f95603cd1038f962483bcd63f6aae25a8d966b2253a917086c8604959e152243"><div class="ttname"><a href="structunravel_1_1defaults.html#a1f95603cd1038f962483bcd63f6aae25a8d966b2253a917086c8604959e152243">unravel::defaults::scene_preset::high</a></div><div class="ttdeci">@ high</div></div>
+<div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

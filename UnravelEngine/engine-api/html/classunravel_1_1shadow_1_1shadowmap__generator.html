@@ -98,6 +98,7 @@ $(function(){initNavTree('classunravel_1_1shadow_1_1shadowmap__generator.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classunravel_1_1shadow_1_1shadowmap__generator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">unravel::shadow::shadowmap_generator Class Reference</div></div>
 </div><!--header-->
@@ -114,7 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad981a3253f04b99a089c8445a5ff6a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3240720994d44d4085e4092621032f50" id="r_a3240720994d44d4085e4092621032f50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3240720994d44d4085e4092621032f50">~shadowmap_generator</a> ()</td></tr>
 <tr class="separator:a3240720994d44d4085e4092621032f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84263538f74afe5b0a06e89aadc6700b" id="r_a84263538f74afe5b0a06e89aadc6700b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84263538f74afe5b0a06e89aadc6700b">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;ctx)</td></tr>
+<tr class="memitem:a84263538f74afe5b0a06e89aadc6700b" id="r_a84263538f74afe5b0a06e89aadc6700b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84263538f74afe5b0a06e89aadc6700b">init</a> (<a class="el" href="structrtti_1_1context.html">rtti::context</a> &amp;<a class="el" href="hierarchy__panel_8cpp.html#a80beb77f5f68b1854cfac64336ed7451">ctx</a>)</td></tr>
 <tr class="separator:a84263538f74afe5b0a06e89aadc6700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a055bf23f55f5675042df8290074abd3a" id="r_a055bf23f55f5675042df8290074abd3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a055bf23f55f5675042df8290074abd3a">deinit</a> ()</td></tr>
 <tr class="separator:a055bf23f55f5675042df8290074abd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,31 +123,39 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1ae3a47f088d718998a62bb346c4d5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b16bb26f2cf96901e14517aca576927" id="r_a9b16bb26f2cf96901e14517aca576927"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b16bb26f2cf96901e14517aca576927">deinit_uniforms</a> ()</td></tr>
 <tr class="separator:a9b16bb26f2cf96901e14517aca576927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a775efd3cd08ecbae5d37473758d935bd" id="r_a775efd3cd08ecbae5d37473758d935bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a775efd3cd08ecbae5d37473758d935bd">update</a> (const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, const <a class="el" href="structunravel_1_1light.html">light</a> &amp;l, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;ltrans, bool is_active)</td></tr>
+<tr class="memitem:a775efd3cd08ecbae5d37473758d935bd" id="r_a775efd3cd08ecbae5d37473758d935bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a775efd3cd08ecbae5d37473758d935bd">update</a> (const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, const <a class="el" href="structunravel_1_1light.html">light</a> &amp;l, const <a class="el" href="namespacemath.html#a8092dad7740b8d4c640e362b2b85fa3f">math::transform</a> &amp;ltrans, bool <a class="el" href="panel__toolbar_8cpp.html#a407c3efba665d276a38229f905bef352">is_active</a>)</td></tr>
 <tr class="separator:a775efd3cd08ecbae5d37473758d935bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa56e10d326bf227cafa46172a5d9bff4" id="r_aa56e10d326bf227cafa46172a5d9bff4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa56e10d326bf227cafa46172a5d9bff4">already_updated</a> () const -&gt; bool</td></tr>
-<tr class="separator:aa56e10d326bf227cafa46172a5d9bff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09de0ac8e14a90c3b32732f0886cfce9" id="r_a09de0ac8e14a90c3b32732f0886cfce9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09de0ac8e14a90c3b32732f0886cfce9">already_resolved</a> () const -&gt; bool</td></tr>
+<tr class="memdesc:a09de0ac8e14a90c3b32732f0886cfce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when this light's shadow maps already hold their result for the current render frame.  <br /></td></tr>
+<tr class="separator:a09de0ac8e14a90c3b32732f0886cfce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668319ead9e43b142a8cdc235f623d9b" id="r_a668319ead9e43b142a8cdc235f623d9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a668319ead9e43b142a8cdc235f623d9b">mark_resolved</a> ()</td></tr>
+<tr class="separator:a668319ead9e43b142a8cdc235f623d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a7139373bc89ebe057a05d9a6bbc1e" id="r_a16a7139373bc89ebe057a05d9a6bbc1e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16a7139373bc89ebe057a05d9a6bbc1e">needs_clear</a> () const -&gt; bool</td></tr>
+<tr class="separator:a16a7139373bc89ebe057a05d9a6bbc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e12dec01c3e6d2b58026fe52cce9487" id="r_a7e12dec01c3e6d2b58026fe52cce9487"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e12dec01c3e6d2b58026fe52cce9487">generate_shadowmaps</a> (const <a class="el" href="namespaceunravel_1_1shadow.html#a74f8e3c3cdd81526a65115682ed78ac4">shadow_map_models_t</a> &amp;<a class="el" href="classunravel_1_1model.html">model</a>, const <a class="el" href="classunravel_1_1camera.html">camera</a> &amp;cam, <a class="el" href="structunravel_1_1rendering_1_1pipeline__stats.html">::unravel::rendering::pipeline_stats</a> *stats=nullptr)</td></tr>
 <tr class="separator:a7e12dec01c3e6d2b58026fe52cce9487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41f905e755eb3a9c487acd1d8eed1fd4" id="r_a41f905e755eb3a9c487acd1d8eed1fd4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41f905e755eb3a9c487acd1d8eed1fd4">get_depth_type</a> () const -&gt; <a class="el" href="structunravel_1_1shadow_1_1_pack_depth.html#af103fccdf5bc264be6610bfcf38b4135">PackDepth::Enum</a></td></tr>
 <tr class="separator:a41f905e755eb3a9c487acd1d8eed1fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e7f069c6d5ffa39d4e03bd475a0a3b" id="r_a54e7f069c6d5ffa39d4e03bd475a0a3b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54e7f069c6d5ffa39d4e03bd475a0a3b">get_rt_texture</a> (uint8_t split) const -&gt; bgfx::TextureHandle</td></tr>
 <tr class="separator:a54e7f069c6d5ffa39d4e03bd475a0a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9d18bcf9fa29e7cc37c1cf041a447d0" id="r_ab9d18bcf9fa29e7cc37c1cf041a447d0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9d18bcf9fa29e7cc37c1cf041a447d0">get_depth_render_program</a> (<a class="el" href="structunravel_1_1shadow_1_1_pack_depth.html#af103fccdf5bc264be6610bfcf38b4135">PackDepth::Enum</a> depth) const -&gt; <a class="el" href="classunravel_1_1gpu__program.html#a2532fed17b041d3fa219822763d05cb9">gpu_program::ptr</a></td></tr>
+<tr class="memitem:ab9d18bcf9fa29e7cc37c1cf041a447d0" id="r_ab9d18bcf9fa29e7cc37c1cf041a447d0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9d18bcf9fa29e7cc37c1cf041a447d0">get_depth_render_program</a> (<a class="el" href="structunravel_1_1shadow_1_1_pack_depth.html#af103fccdf5bc264be6610bfcf38b4135">PackDepth::Enum</a> <a class="el" href="namespaceunravel.html#a191a63b32b3f3238e4d0dccf4e04f48ea12a055bf01a31369fe81ac35d85c7bc1">depth</a>) const -&gt; <a class="el" href="classunravel_1_1gpu__program.html#a2532fed17b041d3fa219822763d05cb9">gpu_program::ptr</a></td></tr>
 <tr class="separator:ab9d18bcf9fa29e7cc37c1cf041a447d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53f6b0994db031ac863c2a5de943b048" id="r_a53f6b0994db031ac863c2a5de943b048"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53f6b0994db031ac863c2a5de943b048">submit_uniforms</a> (uint8_t stage) const</td></tr>
-<tr class="separator:a53f6b0994db031ac863c2a5de943b048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe3afc0d3d3a6b4c2c964f9b67ecadf" id="r_aefe3afc0d3d3a6b4c2c964f9b67ecadf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefe3afc0d3d3a6b4c2c964f9b67ecadf">submit_uniforms</a> (uint8_t <a class="el" href="loading__page_8cpp.html#a6cd5f523f0e0be41a803270720ecfe6a">stage</a>, uint8_t compare_stage=<a class="el" href="#a9be40e9cca303098ba1c1b490b21a4ed">no_compare_stage</a>) const</td></tr>
+<tr class="separator:aefe3afc0d3d3a6b4c2c964f9b67ecadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c3f6bae8ead21cecceddb6052ade74" id="r_a09c3f6bae8ead21cecceddb6052ade74"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09c3f6bae8ead21cecceddb6052ade74">get_shadow_map_size</a> () const -&gt; uint16_t</td></tr>
+<tr class="memdesc:a09c3f6bae8ead21cecceddb6052ade74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edge of every split's map in texels.  <br /></td></tr>
+<tr class="separator:a09c3f6bae8ead21cecceddb6052ade74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abde04a3bcd7f8309d183d23cd8226838" id="r_abde04a3bcd7f8309d183d23cd8226838"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abde04a3bcd7f8309d183d23cd8226838">set_frustum_calculation_method</a> (<a class="el" href="structunravel_1_1shadow_1_1frustum__calculation__method.html#a6d709d14839f47b4371c6e38583fca93">frustum_calculation_method::Enum</a> method)</td></tr>
 <tr class="separator:abde04a3bcd7f8309d183d23cd8226838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ad0d98e6863c5a47d53d014e06068d" id="r_a29ad0d98e6863c5a47d53d014e06068d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29ad0d98e6863c5a47d53d014e06068d">get_frustum_calculation_method</a> () const -&gt; <a class="el" href="structunravel_1_1shadow_1_1frustum__calculation__method.html#a6d709d14839f47b4371c6e38583fca93">frustum_calculation_method::Enum</a></td></tr>
 <tr class="separator:a29ad0d98e6863c5a47d53d014e06068d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd86ab11f26c5c09ac8cffb89874b5e" id="r_a8bd86ab11f26c5c09ac8cffb89874b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bd86ab11f26c5c09ac8cffb89874b5e">set_csm_optimization_flags</a> (uint32_t flags)</td></tr>
+<tr class="memitem:a8bd86ab11f26c5c09ac8cffb89874b5e" id="r_a8bd86ab11f26c5c09ac8cffb89874b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bd86ab11f26c5c09ac8cffb89874b5e">set_csm_optimization_flags</a> (uint32_t <a class="el" href="renderer_8cpp.html#a773b39d480759f67926cb18ae2219281">flags</a>)</td></tr>
 <tr class="separator:a8bd86ab11f26c5c09ac8cffb89874b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bf6164607738ed187f438c63c5ff689" id="r_a1bf6164607738ed187f438c63c5ff689"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bf6164607738ed187f438c63c5ff689">get_csm_optimization_flags</a> () const -&gt; uint32_t</td></tr>
 <tr class="separator:a1bf6164607738ed187f438c63c5ff689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9aaaad0dc0e622c860250e254d772d0" id="r_ae9aaaad0dc0e622c860250e254d772d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9aaaad0dc0e622c860250e254d772d0">enable_adaptive_shadows</a> (bool enable)</td></tr>
 <tr class="separator:ae9aaaad0dc0e622c860250e254d772d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0992ca5f1700104eb75cc34ca75c9d73" id="r_a0992ca5f1700104eb75cc34ca75c9d73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0992ca5f1700104eb75cc34ca75c9d73">set_adaptive_params</a> (const <a class="el" href="structunravel_1_1shadow_1_1adaptive__shadow__params.html">adaptive_shadow_params</a> &amp;params)</td></tr>
+<tr class="memitem:a0992ca5f1700104eb75cc34ca75c9d73" id="r_a0992ca5f1700104eb75cc34ca75c9d73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0992ca5f1700104eb75cc34ca75c9d73">set_adaptive_params</a> (const <a class="el" href="structunravel_1_1shadow_1_1adaptive__shadow__params.html">adaptive_shadow_params</a> &amp;<a class="el" href="particle__system__soa_8cpp.html#a7a8a4d8eceb8bd94d051d01d44141324">params</a>)</td></tr>
 <tr class="separator:a0992ca5f1700104eb75cc34ca75c9d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e42382a51c0c7850738639e7515dd5" id="r_a32e42382a51c0c7850738639e7515dd5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32e42382a51c0c7850738639e7515dd5">get_adaptive_params</a> () const -&gt; const <a class="el" href="structunravel_1_1shadow_1_1adaptive__shadow__params.html">adaptive_shadow_params</a> &amp;</td></tr>
 <tr class="separator:a32e42382a51c0c7850738639e7515dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +169,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a386514fcee1ec1678bae9b2732599b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a663dcfdac0c9952b81f78894a64acbfa" id="r_a663dcfdac0c9952b81f78894a64acbfa"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a663dcfdac0c9952b81f78894a64acbfa">get_max_altitude_boost</a> () const -&gt; float</td></tr>
 <tr class="separator:a663dcfdac0c9952b81f78894a64acbfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a9be40e9cca303098ba1c1b490b21a4ed" id="r_a9be40e9cca303098ba1c1b490b21a4ed"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9be40e9cca303098ba1c1b490b21a4ed">no_compare_stage</a> = UINT8_MAX</td></tr>
+<tr class="memdesc:a9be40e9cca303098ba1c1b490b21a4ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">submit_uniforms: leave the depth attachments unbound.  <br /></td></tr>
+<tr class="separator:a9be40e9cca303098ba1c1b490b21a4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Shadow mapping generator with improved algorithms for high-altitude cameras. </p>
@@ -175,7 +190,7 @@ Public Member Functions</h2></td></tr>
 <p>// Use hybrid mode for gradual transition generator.set_frustum_calculation_method(frustum_calculation_method::hybrid);</p>
 <p>// Switch back to legacy for comparison generator.set_frustum_calculation_method(frustum_calculation_method::legacy); </p>
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00653">653</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00737">737</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad981a3253f04b99a089c8445a5ff6a26" name="ad981a3253f04b99a089c8445a5ff6a26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad981a3253f04b99a089c8445a5ff6a26">&#9670;&#160;</a></span>shadowmap_generator()</h2>
@@ -192,7 +207,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00388">388</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00407">407</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
@@ -211,19 +226,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00393">393</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00412">412</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa56e10d326bf227cafa46172a5d9bff4" name="aa56e10d326bf227cafa46172a5d9bff4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa56e10d326bf227cafa46172a5d9bff4">&#9670;&#160;</a></span>already_updated()</h2>
+<a id="a09de0ac8e14a90c3b32732f0886cfce9" name="a09de0ac8e14a90c3b32732f0886cfce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09de0ac8e14a90c3b32732f0886cfce9">&#9670;&#160;</a></span>already_resolved()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto unravel::shadow::shadowmap_generator::already_updated </td>
+          <td class="memname">auto unravel::shadow::shadowmap_generator::already_resolved </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const -&gt; bool</td>
@@ -231,7 +246,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01140">1140</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p>True when this light's shadow maps already hold their result for the current render frame. </p>
+<p>Set where the light is FINISHED - generate_shadowmaps, or a caller finding there is nothing to draw - and deliberately NOT by <a class="el" href="#a775efd3cd08ecbae5d37473758d935bd">update</a>, which runs before the caller knows whether the light matters to the view being rendered. A frame renders several views (reflection probe faces, then the camera), and the shadow maps of a point / spot light are the same for all of them, so the first view to resolve one wins. Latching on <a class="el" href="#a775efd3cd08ecbae5d37473758d935bd">update</a> instead let a probe face that could not see a light latch it out of the main view's shadow generation, leaving that view sampling a stale map. </p>
+
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01189">1189</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +268,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00398">398</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00417">417</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
@@ -269,7 +287,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00407">407</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00426">426</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
@@ -288,7 +306,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00432">432</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00451">451</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
@@ -315,7 +333,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00681">681</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00801">801</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +365,7 @@ Public Member Functions</h2></td></tr>
 <p>RENDERVIEW_SHADOWMAP_0_ID - Clear entire shadow map. RENDERVIEW_SHADOWMAP_1_ID - Craft green tetrahedron shadow face. RENDERVIEW_SHADOWMAP_2_ID - Craft yellow tetrahedron shadow face. RENDERVIEW_SHADOWMAP_3_ID - Craft blue tetrahedron shadow face. RENDERVIEW_SHADOWMAP_4_ID - Craft red tetrahedron shadow face. RENDERVIEW_VBLUR_0_ID - Vertical blur. RENDERVIEW_HBLUR_0_ID - Horizontal blur.</p>
 <p>RENDERVIEW_SHADOWMAP_1_ID - Craft shadow map for first split. RENDERVIEW_SHADOWMAP_2_ID - Craft shadow map for second split. RENDERVIEW_SHADOWMAP_3_ID - Craft shadow map for third split. RENDERVIEW_SHADOWMAP_4_ID - Craft shadow map for fourth split. RENDERVIEW_VBLUR_0_ID - Vertical blur for first split. RENDERVIEW_HBLUR_0_ID - Horizontal blur for first split. RENDERVIEW_VBLUR_1_ID - Vertical blur for second split. RENDERVIEW_HBLUR_1_ID - Horizontal blur for second split. RENDERVIEW_VBLUR_2_ID - Vertical blur for third split. RENDERVIEW_HBLUR_2_ID - Horizontal blur for third split. RENDERVIEW_VBLUR_3_ID - Vertical blur for fourth split. RENDERVIEW_HBLUR_3_ID - Horizontal blur for fourth split.</p>
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01834">1834</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01934">1934</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
@@ -374,7 +392,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00693">693</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00813">813</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -401,7 +419,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00696">696</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00816">816</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +446,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00679">679</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00799">799</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -447,7 +465,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01114">1114</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01141">1141</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
@@ -466,7 +484,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01098">1098</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01125">1125</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
@@ -493,7 +511,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00676">676</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00796">796</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -520,7 +538,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00704">704</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00824">824</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -547,7 +565,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00703">703</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00823">823</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -566,7 +584,37 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01104">1104</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01131">1131</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a09c3f6bae8ead21cecceddb6052ade74" name="a09c3f6bae8ead21cecceddb6052ade74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c3f6bae8ead21cecceddb6052ade74">&#9670;&#160;</a></span>get_shadow_map_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::shadow::shadowmap_generator::get_shadow_map_size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; uint16_t
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Edge of every split's map in texels. </p>
+
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00789">789</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -585,7 +633,47 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00448">448</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l00471">471</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a668319ead9e43b142a8cdc235f623d9b" name="a668319ead9e43b142a8cdc235f623d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668319ead9e43b142a8cdc235f623d9b">&#9670;&#160;</a></span>mark_resolved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void unravel::shadow::shadowmap_generator::mark_resolved </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Marks the shadow maps as holding this frame's result without generating: the light is off, casts no shadows, or nothing is in range and the maps are already clear. </p>
+
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01194">1194</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a16a7139373bc89ebe057a05d9a6bbc1e" name="a16a7139373bc89ebe057a05d9a6bbc1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a7139373bc89ebe057a05d9a6bbc1e">&#9670;&#160;</a></span>needs_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto unravel::shadow::shadowmap_generator::needs_clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const -&gt; bool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>True while the shadow maps hold anything but a cleared surface: casters rendered by the last generate_shadowmaps, or fresh render targets that were never cleared. A light whose caster list came back empty still has to generate once in that state, or the lighting pass keeps sampling whatever the maps held last. </p>
+
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01199">1199</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
@@ -612,7 +700,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00692">692</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00812">812</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +731,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00698">698</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00818">818</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -670,7 +758,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00695">695</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00815">815</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -697,7 +785,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00678">678</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00798">798</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
@@ -724,12 +812,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00675">675</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00795">795</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
-<a id="a53f6b0994db031ac863c2a5de943b048" name="a53f6b0994db031ac863c2a5de943b048"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53f6b0994db031ac863c2a5de943b048">&#9670;&#160;</a></span>submit_uniforms()</h2>
+<a id="aefe3afc0d3d3a6b4c2c964f9b67ecadf" name="aefe3afc0d3d3a6b4c2c964f9b67ecadf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe3afc0d3d3a6b4c2c964f9b67ecadf">&#9670;&#160;</a></span>submit_uniforms()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -737,13 +825,18 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void unravel::shadow::shadowmap_generator::submit_uniforms </td>
           <td>(</td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>stage</em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>stage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>compare_stage</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a9be40e9cca303098ba1c1b490b21a4ed">no_compare_stage</a></span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Binds the stored-depth maps from <code>stage</code> on and, unless <code>compare_stage</code> is no_compare_stage, the maps' depth attachments with LEQUAL comparison samplers from <code>compare_stage</code> on (point-sampled maps only: hard, PCF and PCSS). </p>
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01119">1119</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01146">1146</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
 
 </div>
 </div>
@@ -776,7 +869,34 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01145">1145</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="shadow_8cpp_source.html#l01204">1204</a> of file <a class="el" href="shadow_8cpp_source.html">shadow.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9be40e9cca303098ba1c1b490b21a4ed" name="a9be40e9cca303098ba1c1b490b21a4ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be40e9cca303098ba1c1b490b21a4ed">&#9670;&#160;</a></span>no_compare_stage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t unravel::shadow::shadowmap_generator::no_compare_stage = UINT8_MAX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>submit_uniforms: leave the depth attachments unbound. </p>
+
+<p class="definition">Definition at line <a class="el" href="shadow_8h_source.html#l00741">741</a> of file <a class="el" href="shadow_8h_source.html">shadow.h</a>.</p>
 
 </div>
 </div>
